@@ -17,7 +17,7 @@ import modal
 
 HERE = Path('/rhysbot/training') if Path('/rhysbot/training/runtime.py').exists() else Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-from runtime import ROOT, read_json, write_json, safe_run_id
+from runtime import ROOT, read_json, write_json, safe_run_id, file_sha
 from budget import committed, reserve, finish
 from modal_app import core_image, volume, CONFIG
 
@@ -82,6 +82,43 @@ def choose_rhys(profiles):
             or (len(ranked) > 1 and ranked[0][0] - ranked[1][0] < .10)):
         return None
     return ranked[0][1]
+
+
+def voice_intervals(segments, speaker):
+    """Sample non-overlapping clean 4–8 second clips across a speaker's audio."""
+    clean = [s for s in segments if s['Speaker'] == speaker and s['End']-s['Start'] >= 4
+             and not any(o['Speaker'] != speaker and o['Start'] < s['End'] and o['End'] > s['Start'] for o in segments)]
+    clips = []
+    for segment in clean:
+        start, stop = segment['Start']+.1, segment['End']-.1
+        while stop-start >= 4:
+            end = min(stop, start+8)
+            clips.append((start,end));start=end+.3
+    if len(clips) <= 8:
+        return clips
+    return [clips[round(i*(len(clips)-1)/7)] for i in range(8)]
+
+
+def checked_staged_audio(item, run_id, artifacts=Path('/artifacts')):
+    import re
+    staged = item['staged_audio']
+    if not isinstance(staged,dict) or set(staged) != {'relative_path','sha256','bytes'}:
+        raise ValueError('Exact staged public audio metadata required')
+    relative = staged['relative_path']
+    suffix = Path(relative).suffix if isinstance(relative,str) else ''
+    if (suffix not in {'.m4a','.webm','.mp3','.ogg','.opus'} or relative != f'audio-inputs/{run_id}/{item["id"]}{suffix}'
+            or type(staged['bytes']) is not int or not 0 < staged['bytes'] <= 500*1024*1024
+            or not isinstance(staged['sha256'],str) or not re.fullmatch('[a-f0-9]{64}',staged['sha256'])):
+        raise ValueError('Fixed source/run path, byte ceiling and SHA256 required')
+    path = artifacts / relative
+    for parent in [path,*path.parents]:
+        if parent.is_symlink():
+            raise ValueError('Redirected staged audio forbidden')
+        if parent == artifacts:
+            break
+    if not path.is_file() or path.stat().st_size != staged['bytes'] or file_sha(path) != staged['sha256']:
+        raise ValueError('Staged public audio bytes/hash mismatch')
+    return path
 
 
 def validate_items(items):
@@ -186,8 +223,15 @@ def process(run_id, items, timeout_seconds, reference=None):
                 # One recording at a time, no cookies or local archive upload.
                 import requests
                 audio_path = scratch / 'episode.mp3'
+                staged_source = None
                 digest, size = hashlib.sha256(), 0
-                if item.get('audio_source_kind') == 'youtube_audio':
+                if item.get('audio_source_kind') == 'youtube_audio' and item.get('staged_audio'):
+                    staged_source = checked_staged_audio(item,run_id)
+                    audio_path = staged_source
+                    size = audio_path.stat().st_size
+                    with audio_path.open('rb') as stream:
+                        for chunk in iter(lambda: stream.read(1024*1024), b''):digest.update(chunk)
+                elif item.get('audio_source_kind') == 'youtube_audio':
                     command = [sys.executable, '-m', 'yt_dlp', '--ignore-config', '--no-playlist', '--no-cache-dir',
                         '--js-runtimes', 'node:/opt/node-v24.11.0-linux-x64/bin/node',
                         '--socket-timeout', '15', '--retries', '0', '--fragment-retries', '0', '--extractor-retries', '0',
@@ -234,10 +278,7 @@ def process(run_id, items, timeout_seconds, reference=None):
                 profiles, rhys = {}, None
                 if reference_vector is not None:
                     for speaker in sorted({s['Speaker'] for s in segments}):
-                        clean = [s for s in segments if s['Speaker'] == speaker and s['End'] - s['Start'] >= 4
-                                 and not any(o['Speaker'] != speaker and o['Start'] < s['End'] and o['End'] > s['Start'] for o in segments)]
-                        chosen = clean[::max(1, len(clean)//8)][:8]
-                        chunks = [audio[int((s['Start']+.1)*16000):int(min(s['End']-.1,s['Start']+8)*16000)] for s in chosen]
+                        chunks = [audio[int(start*16000):int(end*16000)] for start,end in voice_intervals(segments,speaker)]
                         if len(chunks) >= 4:
                             profiles['speaker_%d' % speaker] = (embedding(chunks) @ reference_vector).cpu().tolist()
                     rhys = choose_rhys(profiles)
@@ -257,6 +298,10 @@ def process(run_id, items, timeout_seconds, reference=None):
                 write_json(destination, evidence)
                 status.update(status='completed', words=len(words), speakers=len({s['Speaker'] for s in segments}),
                               unknown_word_fraction=unknown / len(words), audio_duration_seconds=duration)
+                if staged_source is not None:
+                    # Keep failed inputs for diagnosis; successful raw media is
+                    # a regenerable task cache, not a requested public archive.
+                    staged_source.unlink()
                 del audio, words, turns
                 torch.cuda.empty_cache()
             except Exception as error:

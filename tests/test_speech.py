@@ -4,17 +4,19 @@ import hashlib
 import json
 from pathlib import Path
 import sys
+import tempfile
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'training'))
 from budget import initial_ledger, committed, reserve
-from runtime import safe_run_id
+from runtime import safe_run_id, file_sha
 
 tree = ast.parse((ROOT / 'training/speech.py').read_text())
 functions = [node for node in tree.body if isinstance(node, ast.FunctionDef) and node.name in {
-    'align_words', 'validate_items', 'manifest_sha', 'reserve_corpus', 'choose_rhys', 'corpus_lane'}]
-namespace = dict(hashlib=hashlib, json=json, safe_run_id=safe_run_id, reserve=reserve)
+    'align_words', 'validate_items', 'manifest_sha', 'reserve_corpus', 'choose_rhys', 'corpus_lane',
+    'voice_intervals','checked_staged_audio'}]
+namespace = dict(hashlib=hashlib, json=json, safe_run_id=safe_run_id, reserve=reserve, Path=Path, file_sha=file_sha)
 exec(compile(ast.Module(body=functions, type_ignores=[]), 'speech-pure', 'exec'), namespace)
 ITEMS = [{'id': 'episode-one', 'enclosure_url': 'https://feeds.soundcloud.com/stream/123-show.mp3'}]
 
@@ -77,3 +79,25 @@ class SpeechTests(unittest.TestCase):
         ledger['initial_spent_usd']=184
         with self.assertRaisesRegex(ValueError,'cap'):
             namespace['reserve_corpus'](ledger,'speech-extra',[video],900,config)
+
+    def test_long_monologue_supplies_multiple_clean_voice_clips_but_overlap_does_not(self):
+        sample=namespace['voice_intervals']
+        clips=sample([{'Start':0,'End':120,'Speaker':0}],0)
+        self.assertEqual(len(clips),8)
+        self.assertTrue(all(4<=b-a<=8 for a,b in clips))
+        self.assertTrue(all(clips[i][1]<clips[i+1][0] for i in range(len(clips)-1)))
+        self.assertEqual(sample([{'Start':0,'End':20,'Speaker':0},{'Start':3,'End':5,'Speaker':1}],0),[])
+
+    def test_staged_audio_rejects_corrupt_bytes_paths_and_symlinks(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);path=root/'audio-inputs/speech-video/episode-one.m4a'
+            path.parent.mkdir(parents=True);path.write_bytes(b'public audio fixture')
+            staged={'relative_path':str(path.relative_to(root)),'sha256':file_sha(path),'bytes':path.stat().st_size}
+            item={'id':'episode-one','staged_audio':staged}
+            self.assertEqual(namespace['checked_staged_audio'](item,'speech-video',root),path)
+            for changes in ({'relative_path':'../checkpoints/model.pt'},{'bytes':1},{'sha256':'0'*64}):
+                with self.assertRaises(ValueError):
+                    namespace['checked_staged_audio']({**item,'staged_audio':{**staged,**changes}},'speech-video',root)
+            target=path.with_name('other.m4a');path.rename(target);path.symlink_to(target)
+            with self.assertRaises(ValueError):
+                namespace['checked_staged_audio'](item,'speech-video',root)
