@@ -14,3 +14,7 @@ jobs:
       - run: python scripts/validate_corpus.py
       - run: python scripts/integrate_speaker_transcripts.py --validate-only
       - run: python scripts/check_publication.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node --test platform/train.test.mjs platform/chat-pages/rhysbot-chat.test.mjs site/chat/app.test.mjs

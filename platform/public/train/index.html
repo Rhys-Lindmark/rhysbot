@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>Private training pilot · Rhysbot</title>
+<style>body{font:17px/1.6 system-ui;background:#111714;color:#e7ede7;margin:auto;max-width:760px;padding:32px 22px}a{color:#a0dfbb}h1{line-height:1.15;font-size:2.5rem}section{border-top:1px solid #3d5345;padding:24px 0}button,input,select{font:inherit;padding:9px;max-width:100%}button{background:#a0dfbb;color:#102017;border:0;border-radius:5px;cursor:pointer}button:disabled{opacity:.45;cursor:default}label{display:block;margin:14px 0}code{overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow-wrap:anywhere}.muted{color:#b2c4b8}.notice{border:1px solid #739b7d;padding:16px}#status{min-height:3em}textarea{width:100%;min-height:70px;background:#1b271f;color:inherit}small{display:block}</style>
+<script src="./app.js" type="module"></script></head><body>
+<a href="/rhysbot/">← Rhysbot</a><h1>Your corpus. One bounded training pilot.</h1>
+<p class="notice"><strong>Test mode only. No real charge.</strong> Stripe test Checkout uses test payment details. Sandbox checkout is a local confirmation with no card form or Stripe payment. Both share one lifetime training slot across this pilot.</p>
+<p>Upload text you have permission to process. This private upload is separate from Rhys’s public corpus. It will not be added to that corpus or used to change existing checkpoints.</p>
+<p id="availability" role="status">Checking configuration…</p>
+<section><h2>1. Upload</h2><p>UTF-8 TXT or JSONL, up to 5 MiB. Use at least a few pages (the training recipe requires 512 tokenized tokens). Each JSONL row must contain only <code>{"text":"…"}</code>. No ZIPs, remote URLs or executable files. Text is data; training must never execute instructions in it.</p>
+<label>Corpus <input id="file" type="file" accept=".txt,.jsonl,text/plain,application/x-ndjson"></label>
+<label><input id="consent" type="checkbox"> I have permission to process this text and understand it is an experimental training job.</label>
+<div id="human"></div><button id="upload" disabled>Upload privately</button>
+<p class="muted">Storage is private (D1 chunks, or an optional R2 bucket). Processing uses authenticated Cloudflare and Modal services. Uploaded corpus access expires after seven days; deletion and scheduled storage cleanup are separate. Do not upload secrets. Keep your recovery token: no account or email recovery exists.</p>
+</section>
+<section><h2>2. Test checkout</h2><p id="recipe">Recipe unavailable until configured.</p><button id="checkout" disabled>Continue to test checkout</button><p id="identity"></p>
+<details><summary>Recovery token</summary><p>Anyone with this token can read this job’s status or delete eligible data. It is saved in this tab’s session storage and never put into the checkout URL.</p><textarea id="recovery" readonly aria-label="Job recovery token"></textarea></details>
+</section>
+<section><h2>3. Job status</h2><p id="status" role="status" aria-live="polite">No job selected.</p><button id="refresh" disabled>Refresh status</button> <button id="download" disabled>Download trained adapter + metrics</button> <button id="delete" disabled>Delete uploaded corpus</button>
+<p class="muted">Refreshing only reads status. An uncertain dispatch is held for operator reconciliation and never launches again automatically. Queued/running/payment-open jobs cannot be deleted until safely reconciled. Training results are reported only after the real backend completes; no model is promised by a checkout redirect.</p>
+<details><summary>Restore a job</summary><label>Job ID <input id="restoreId" autocomplete="off"></label><label>Recovery token <input id="restoreToken" type="password" autocomplete="off"></label><button id="restore">Restore status</button></details>
+</section></body></html>

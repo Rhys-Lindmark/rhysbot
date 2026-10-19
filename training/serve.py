@@ -28,6 +28,7 @@ CALL_WAIT_TIMEOUT = GPU_TIMEOUT + 20
 # Two HTTP inputs share one mount. Never reload over another thread's writes.
 _LEDGER_IO_LOCK = threading.RLock()
 _LOCAL_COORDINATORS = set()
+_QWEN_CACHE = {}  # Immutable checkpoint key; only loaded after the existing budget gate.
 MAX_BODY_BYTES = 8192
 MAX_PROMPT_BYTES = 1600
 MAX_INPUT_TOKENS = 384
@@ -163,6 +164,27 @@ def reserve_request(ledger, token, request, client, budget, now=None):
     return amount
 
 
+def cached_qwen_checkpoint(paths, pins, target):
+    import torch
+    key = (str(paths["directory"]), target["weights_sha256"], target["adapter_config_sha256"])
+    if key in _QWEN_CACHE:
+        return _QWEN_CACHE[key]
+    from qwen_run import load_model
+    model_id = 'Qwen/Qwen3.5-4B-Base'
+    model, tokenizer, _ = load_model(model_id, pins['models'][model_id]['revision'], adapter=paths['directory'])
+    # Verify every saved adapter tensor was actually restored, rather than
+    # accepting PEFT missing-key warnings or an accidental unadapted base.
+    from peft.utils.save_and_load import get_peft_model_state_dict
+    from safetensors.torch import load_file
+    saved, loaded = load_file(str(paths['weights'])), get_peft_model_state_dict(model)
+    if set(saved) != set(loaded) or not all(torch.equal(loaded[k].detach().cpu(), saved[k].to(loaded[k].dtype)) for k in saved):
+        raise ValueError('Qwen adapter tensors were not completely restored')
+    model.eval()
+    _QWEN_CACHE.clear()
+    _QWEN_CACHE[key] = (model, tokenizer)
+    return model, tokenizer
+
+
 def generate_checkpoint(request, target, paths, pins):
     import torch
     maximum = request['max_new_tokens']
@@ -193,17 +215,8 @@ def generate_checkpoint(request, target, paths, pins):
                     break
                 tokens.append(next_token)
         return tokenizer.decode(tokens[initial:]), initial, len(tokens) - initial
-    from qwen_run import load_model, chat_prompt
-    model_id = 'Qwen/Qwen3.5-4B-Base'
-    model, tokenizer, _ = load_model(model_id, pins['models'][model_id]['revision'], adapter=paths['directory'])
-    # Verify every saved adapter tensor was actually restored, rather than
-    # accepting PEFT missing-key warnings or an accidental unadapted base.
-    from peft.utils.save_and_load import get_peft_model_state_dict
-    from safetensors.torch import load_file
-    saved, loaded = load_file(str(paths['weights'])), get_peft_model_state_dict(model)
-    if set(saved) != set(loaded) or not all(torch.equal(loaded[k].detach().cpu(), saved[k].to(loaded[k].dtype)) for k in saved):
-        raise ValueError('Qwen adapter tensors were not completely restored')
-    model.eval()
+    from qwen_run import chat_prompt
+    model, tokenizer = cached_qwen_checkpoint(paths, pins, target)
     encoded = tokenizer(chat_prompt(tokenizer, messages), return_tensors='pt', add_special_tokens=False).to('cuda')
     initial = encoded['input_ids'].shape[1]
     if initial > MAX_INPUT_TOKENS or initial + maximum > 512:
@@ -369,7 +382,7 @@ def create_modal_app(targets):
 
     @app.function(name='infer', image=serving_image, gpu='A100-80GB', cpu=(2, 4), memory=(16384, 32768),
                   timeout=GPU_TIMEOUT, retries=0, serialized=True, min_containers=0, max_containers=1,
-                  scaledown_window=2, volumes={'/artifacts': volume})
+                  scaledown_window=30, volumes={'/artifacts': volume})
     def infer(token, request):
         import modal
         singleton = modal.Dict.from_name('rhysbot-training-singleton')
@@ -384,7 +397,7 @@ def create_modal_app(targets):
                 or job.get('checkpoint_run_id') != targets[request['model']]['run_id']):
             raise ValueError('No matching active inference reservation')
         started = time.monotonic()
-        os.environ.update(HF_HOME='/tmp/rhysbot-serving-hf', TOKENIZERS_PARALLELISM='false', OMP_NUM_THREADS='2')
+        os.environ.update(HF_HOME='/artifacts/rhysbot-hf-cache', TOKENIZERS_PARALLELISM='false', OMP_NUM_THREADS='2')
         try:
             family = request['model']
             paths = checkpoint_artifacts('/artifacts', family, targets[family], PINS)
