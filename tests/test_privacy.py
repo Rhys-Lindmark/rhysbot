@@ -19,6 +19,7 @@ class PrivacyTests(unittest.TestCase):
             '/Users/example/private.txt': 'private_path',
             'Do not share this': 'private_marker',
             'Change in net worth this year': 'personal_health_or_finance',
+            'Source https://example.test/asset.png?token=synthetic_access': 'signed_access_url',
         }
         for text, reason in cases.items():
             with self.subTest(reason=reason):

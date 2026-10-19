@@ -1,40 +1,40 @@
 {
   "release_date": "2026-10-18",
   "status": "partial_reviewed_release",
-  "records": 30438,
-  "unique_documents": 25154,
-  "words": 2607316,
-  "characters": 15098654,
-  "tokens": 3465109,
+  "records": 38789,
+  "unique_documents": 33505,
+  "words": 2929408,
+  "characters": 17178210,
+  "tokens": 3960666,
   "token_count_note": "Exact count of released text only, without extra special tokens or source headers.",
   "by_source": {
-    "anki": 12571,
+    "anki": 20923,
     "hee_transcript": 771,
     "linked_writing": 23,
     "podcast_transcript": 32,
     "substack": 765,
-    "x": 12071,
+    "x": 12070,
     "youtube_transcript": 4205
   },
+  "retained_anki_cards_before_text_deduplication": 20980,
   "by_split": {
-    "train": 27323,
-    "test": 1718,
-    "validation": 1397
+    "test": 2129,
+    "train": 34832,
+    "validation": 1828
   },
   "source_processing": {
     "anki": {
       "input_documents": 21301,
-      "documents_with_public_excerpts": 12571,
-      "public_excerpts_before_dedup": 12571,
-      "withheld_unapproved_or_flagged": 8729,
-      "withheld_low_text_excerpts": 1
+      "documents_with_public_excerpts": 20980,
+      "public_excerpts_before_dedup": 20980,
+      "withheld_unapproved_or_flagged": 321
     },
     "x": {
       "input_documents": 12746,
-      "documents_with_public_excerpts": 12065,
-      "public_excerpts_before_dedup": 12071,
+      "documents_with_public_excerpts": 12064,
+      "public_excerpts_before_dedup": 12070,
       "withheld_low_text_excerpts": 485,
-      "withheld_flagged_excerpts": 199
+      "withheld_flagged_excerpts": 200
     },
     "hee_transcript": {
       "input_documents": 89,
@@ -73,17 +73,12 @@
   },
   "exclusion_flags_aggregate": {
     "anki": {
-      "personal_reference": 2073,
-      "family": 574,
-      "relationship_or_intimacy": 100,
-      "image_dependent": 3885,
-      "incomplete_card": 2641,
-      "credential": 4,
-      "phone": 2,
-      "personal_health_or_finance": 24,
-      "private_marker": 2,
-      "street_address": 4,
-      "ssn": 1
+      "personal_reference": 205,
+      "family": 39,
+      "relationship_or_intimacy": 11,
+      "image_dependent": 25,
+      "incomplete_card": 24,
+      "personal_health_or_finance": 2
     },
     "x": {
       "family": 143,
@@ -92,6 +87,7 @@
       "personal_health_or_finance": 7,
       "credential": 16,
       "private_marker": 10,
+      "signed_access_url": 1,
       "phone": 1,
       "private_path": 2
     },
@@ -130,8 +126,8 @@
     }
   },
   "deduplication": {
-    "exact_duplicates_removed": 2,
-    "near_duplicate_pairs_grouped": 15,
+    "exact_duplicates_removed": 59,
+    "near_duplicate_pairs_grouped": 20,
     "near_duplicate_threshold": 0.8
   },
   "privacy": {
@@ -140,12 +136,12 @@
     "sensitive_raw_inputs_uploaded": false
   },
   "tokens_by_source": {
-    "anki": 651436,
+    "anki": 1147215,
     "hee_transcript": 314639,
     "linked_writing": 10280,
     "podcast_transcript": 13171,
     "substack": 324974,
-    "x": 608464,
+    "x": 608242,
     "youtube_transcript": 1542145
   },
   "tokenizer": {
@@ -153,5 +149,5 @@
     "revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
     "tokenizer_file_sha256": "fe000e3ed39ed12b8d2481d527d44f93c65d37e87645d2dcc80d1bf9d50d2927"
   },
-  "token_count_corpus_sha256": "c9da91edda4c908d8954841368025a5bba13f589a1919668c6d3d7bb1881ab4a"
+  "token_count_corpus_sha256": "6da8afa85c1b9c8e4406823f643a8bdf80fecccac4bd58c28878ca950e6544d8"
 }

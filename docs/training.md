@@ -41,7 +41,7 @@ redirects their data hooks without editing the pinned checkout:
 2. Train an 8,192-token BPE tokenizer from the training shard only.
 3. Initialize a **depth-4, width-256, 512-token-context** model from random
    weights. The pilot uses 20 pretraining steps; the initial full recipe uses
-   120 steps with 8,192 tokens per optimizer step. Actual parameter counts,
+   2,000 steps with 8,192 tokens per optimizer step after measuring pilot throughput. Actual parameter counts,
    throughput, peak allocation, validation BPB and checkpoints are logged.
 4. SFT the resulting checkpoint using only our sourced conversations. The wrapper
    replaces SmolTalk with local train/validation tasks and substitutes empty
@@ -50,7 +50,7 @@ redirects their data hooks without editing the pinned checkout:
 5. Evaluate both base and SFT checkpoints on the frozen held-out inputs and emit
    bounded sample completions for manual review.
 
-The pilot disables `torch.compile` to reduce startup time. Both recipes use
+Both bounded recipes use eager execution; measured tiny-model throughput exceeds 100k tokens/s, so compilation cold starts are unnecessary. Both recipes use
 PyTorch SDPA and disable upstream optional unpinned Hub-kernel downloads. The
 regular recipe retains upstream compilation. SFT may stop at its first completed dataset pass
 before the configured maximum; checkpoint metadata records actual steps. This
@@ -187,3 +187,18 @@ remapping/loading on GPU, hybrid attention performance, backward passes,
 checkpoints, measured pilot cost, model quality and live serving. The first paid
 pilot is the integration test; a failure is preserved as a billed failed run,
 never reported as a trained model.
+
+
+## Pilot integration findings
+
+Actual initial artifacts and measurements are recorded in `results/pilots.json`.
+The first nanochat pilot completed all stages, but SFT exposed an upstream
+microbatch/prefetch counting defect that produced fewer optimizer updates and a
+negative learning-rate multiplier. The wrapper now translates optimizer steps
+and verifies actual checkpoint updates; corrected runs must precede full-model
+claims. Current full nanochat targets are 2,000 pretraining and 80 SFT updates.
+The first Qwen pilot loaded real pretrained weights and completed four CPT
+updates, then failed writing set-valued loading diagnostics as JSON. Those
+values are now preserved as arrays. Saved partial adapters are not successful
+post-training/evaluation runs. Initial pilot outputs establish execution, not
+useful chat or faithful personality simulation.

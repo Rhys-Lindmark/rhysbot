@@ -1,0 +1,48 @@
+{
+  "status": "pilots_in_progress; not_deployed_models",
+  "compute_authorization_usd": 200,
+  "provider_billing": "pending; conservative reservations retained",
+  "conservative_reserved_usd": 15,
+  "nanochat_pilot": {
+    "run_id": "nanochat-pilot-20261019b",
+    "release_commit": "a60548d54056f4094574ac6efbd8ff676a613880",
+    "status": "actual_checkpoints_and_evaluations_saved; SFT_schedule_defect_found",
+    "pretrain_optimizer_updates": 20,
+    "sft_optimizer_updates": 1,
+    "gpu_job_seconds": 59.430993125,
+    "pretrain_median_tokens_per_second": 121549,
+    "peak_pretrain_cuda_allocated_mib": 482.56,
+    "heldout_base": {
+      "nats": 19221.258850097656,
+      "tokens": 2386,
+      "utf8_bytes": 9117,
+      "nll_per_token": 8.055850314374542,
+      "perplexity": 3152.1823907034477,
+      "bits_per_byte": 3.041616192023581
+    },
+    "heldout_sft": {
+      "nats": 21250.262603759766,
+      "tokens": 2386,
+      "utf8_bytes": 9117,
+      "nll_per_token": 8.906229087912726,
+      "perplexity": 7377.7875886382435,
+      "bits_per_byte": 3.3626904108843263
+    },
+    "defect": "Pinned upstream SFT counts prefetched microbatches, not optimizer updates; passing 4 requested steps produced 1 update and a negative LR multiplier. Wrapper now accounts for accumulation/prefetch and verifies exact updates. Corrected pilot required.",
+    "quality": "Tiny pilot outputs are not useful chat; this is pipeline evidence, not a successful personality model."
+  },
+  "qwen_pilot": {
+    "run_id": "qwen-pilot-20261019a",
+    "status": "failed_metadata_serialization_after_saved_CPT_adapter",
+    "observed_cpt_optimizer_updates": 4,
+    "observed_losses": [
+      2.8872690200805664,
+      4.008050262928009,
+      3.7745726704597473,
+      3.747502624988556
+    ],
+    "completed_sft": false,
+    "completed_evaluation": false,
+    "defect": "Transformers loading diagnostics contain Python sets; JSON report serialization failed after adapter save. Diagnostics now normalized to JSON arrays; retry required."
+  }
+}

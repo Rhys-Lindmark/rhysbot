@@ -8,7 +8,7 @@ import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from corpus_lib import clean_text, digest, group_split, privacy_flags, read_jsonl, write_jsonl
+from corpus_lib import anki_release_approved, clean_text, digest, group_split, privacy_flags, read_jsonl, write_jsonl
 
 
 def chunks(text, max_words=350):
@@ -20,10 +20,7 @@ def chunks(text, max_words=350):
 
 def approve_anki(record, approvals):
     entry = approvals.get(record['id'])
-    return bool(entry and entry.get('decision') == 'approve'
-                and entry.get('content_sha256') == digest(record['text'])
-                and not privacy_flags(record['text'], local=True)
-                and not record.get('privacy_flags'))
+    return anki_release_approved(record, entry)
 
 
 def source_group(record):
@@ -127,6 +124,17 @@ def build(private_root, output):
         # Candidate acquisition logs are append-only. Only the latest version
         # of a source document can define release eligibility.
         latest = {raw['id']: raw for raw in read_jsonl(path)}
+        if path.name == 'anki-candidates.jsonl':
+            overlay = private_root/'local/anki-release-overrides.jsonl'
+            if overlay.exists():
+                seen_overrides = set()
+                for replacement in read_jsonl(overlay):
+                    identifier = replacement['id']
+                    if (identifier in seen_overrides or identifier not in latest
+                            or replacement.get('original_content_sha256') != digest(latest[identifier]['text'])):
+                        raise ValueError('Anki redaction overlay source mismatch')
+                    seen_overrides.add(identifier)
+                    latest[identifier] = replacement
         for raw in latest.values():
             kind = raw['source_type']
             counts[kind]['input_documents'] += 1
@@ -152,11 +160,11 @@ def build(private_root, output):
             emitted = 0
             for n, text in enumerate(segments):
                 flags = privacy_flags(text, local=(kind == 'anki'))
-                if flags:
+                if flags and kind != 'anki':
                     counts[kind]['withheld_flagged_excerpts'] += 1
                     flags_by_source[kind].update(flags)
                     continue
-                if len(text.split()) < 5:
+                if len(text.split()) < 5 and kind != 'anki':
                     counts[kind]['withheld_low_text_excerpts'] += 1
                     continue
                 row = {k: raw.get(k) for k in ('source_type','source_url','title','published_at','authorship','source_group_id')}
@@ -174,15 +182,34 @@ def build(private_root, output):
                 row['linked_own_articles'] = raw.get('acquisition', {}).get('linked_own_articles', []) if isinstance(raw.get('acquisition'), dict) else []
                 if kind == 'anki':
                     row.update(front=raw['front'], back=raw['back'], citation=raw['citation'])
+                    row['title'] = raw['front'] or 'Study note without a text question'
                     row['review'] = {'reviewer': approvals[raw['id']]['reviewer'], 'reviewed_at': approvals[raw['id']]['reviewed_at'], 'scope': 'privacy_only_not_factual_validation'}
+                    row['text_completeness'] = ('question_and_answer_text' if raw['front'].strip() and raw['back'].strip()
+                                                else 'front_text_without_answer' if raw['front'].strip()
+                                                else 'answer_text_without_question' if raw['back'].strip() else 'no_front_or_back_text')
+                    row['source_has_images'] = 'image_dependent' in raw.get('privacy_flags', [])
+                    if raw.get('privacy_redaction'):
+                        row['privacy_redaction'] = raw['privacy_redaction']
+                    row['review']['contextual_privacy_review'] = approvals[raw['id']].get('contextual_privacy_review', False)
+                    if row['review']['contextual_privacy_review']:
+                        row['review']['resolved_automatic_flags'] = approvals[raw['id']]['approved_privacy_flags']
                 rows.append(row)
                 emitted += 1
             counts[kind]['documents_with_public_excerpts'] += bool(emitted)
             counts[kind]['public_excerpts_before_dedup'] += emitted
+    # Preserve every approved card, including duplicates and cards with no text
+    # answer. The research corpus can still deduplicate identical text.
+    anki_cards = [dict(row) for row in rows if row['source_type'] == 'anki']
     rows, dedup = deduplicate_and_split(rows)
     rows.sort(key=lambda r:r['id'])
     output.mkdir(parents=True, exist_ok=True)
     write_jsonl(output/'corpus.jsonl', rows)
+    text_splits = {digest(' '.join(r['text'].lower().split())):
+                   (r['split_group_id'], r['split'], r['id']) for r in rows}
+    for card in anki_cards:
+        card['split_group_id'], card['split'], card['corpus_record_id'] = text_splits[digest(' '.join(card['text'].lower().split()))]
+        card.pop('linked_own_articles', None)
+    write_jsonl(output/'anki-cards.jsonl', sorted(anki_cards, key=lambda r: r['id']))
     for split in ('train','validation','test'):
         write_jsonl(output/(split+'.jsonl'), (r for r in rows if r['split'] == split))
     summary = {
@@ -192,6 +219,7 @@ def build(private_root, output):
         'characters': sum(len(r['text']) for r in rows),
         'tokens': None, 'token_count_note': 'Not yet tokenized. Words and characters are exact; no token estimate is presented as a measurement.',
         'by_source': dict(Counter(r['source_type'] for r in rows)),
+        'retained_anki_cards_before_text_deduplication': len(anki_cards),
         'by_split': dict(Counter(r['split'] for r in rows)),
         'source_processing': dict(counts), 'exclusion_flags_aggregate': dict(flags_by_source),
         'deduplication': dedup,

@@ -20,6 +20,8 @@ def examples(rows):
             continue
         if row['authorship']=='rhys_public_reply_parent_context_not_included':
             continue
+        if row['source_type'] == 'anki' and not (row.get('front', '').strip() or row.get('back', '').strip()):
+            continue
         origin = row['source_url'] or 'curated study note; not necessarily original'
         text = ('Source: '+origin+'\nAuthorship: '+row['authorship']+'\n\n'+row['text'])
         pretraining.append({'id':row['id'],'text':text,'split':row['split'],'split_group_id':row['split_group_id']})
@@ -36,7 +38,7 @@ def examples(rows):
             task = 'sourced_passage_continuation'
         if task:
             sft.append({'id':row['id'],'split':row['split'],'split_group_id':row['split_group_id'],
-                        'source_url':row['source_url'],'task':task,'answer_is_verbatim_source':True,
+                        'source_url':row['source_url'],'task':task,'answer_is_verbatim_source':not bool(row.get('privacy_redaction')),
                         'messages':[{'role':'system','content':SYSTEM},{'role':'user','content':prompt},{'role':'assistant','content':answer}]})
     return pretraining,sft
 

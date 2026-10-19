@@ -5,13 +5,16 @@ import tempfile
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
-from corpus_lib import digest
+from corpus_lib import CONTEXTUAL_RATIONALE, digest, privacy_flags
 from import_anki_reviews import merge, RATIONALE
 
 
 class ImportReviewTests(unittest.TestCase):
     def setup_shard(self, root, text='Question: What powers cells?\nAnswer: ATP transfers chemical energy.'):
         raw = {'id': 'anki-example', 'text': text, 'content_sha256': digest(text), 'privacy_flags': []}
+        question, _, answer = text.partition('\nAnswer: ')
+        raw.update(front=question.removeprefix('Question: ') if hasattr(question, 'removeprefix') else question[len('Question: '):],
+                   back=answer, citation='')
         source = json.dumps(raw) + '\n'
         (root/'assigned.jsonl').write_text(source)
         (root/'assignment.json').write_text(json.dumps({'assigned_sha256': digest(source), 'records': 1,
@@ -72,3 +75,22 @@ class ImportReviewTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'Flagged record'):
                 merge(root, manifest)
             self.assertEqual(manifest.read_text(), '')
+
+    def test_contextual_import_requires_review_scope_and_exact_flag_adjudication(self):
+        for text, accepted in [('Question: Father of biogeography?\nAnswer: Wallace.', True),
+                               ('Question: My password is synthetic.\nAnswer: Keep private.', False)]:
+            with self.subTest(accepted=accepted), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                manifest = self.setup_shard(root, text)
+                assignment = json.loads((root/'assignment.json').read_text())
+                assignment['review_scope'] = 'reconsider_cached_flags'
+                (root/'assignment.json').write_text(json.dumps(assignment))
+                value = json.loads((root/'approvals.jsonl').read_text())
+                value.update(contextual_privacy_review=True, supersedes_cached_flags=True,
+                             approved_privacy_flags=privacy_flags(text, local=True), rationale=CONTEXTUAL_RATIONALE)
+                (root/'approvals.jsonl').write_text(json.dumps(value)+'\n')
+                if accepted:
+                    self.assertEqual(merge(root, manifest)['new_approvals'], 1)
+                else:
+                    with self.assertRaises(ValueError): merge(root, manifest)
+                    self.assertEqual(manifest.read_text(), '')

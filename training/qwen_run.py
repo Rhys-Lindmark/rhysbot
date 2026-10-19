@@ -16,6 +16,15 @@ LANGUAGE_PREFIX = "model.language_model."
 KEY_MAPPING = {r"^model\.language_model\.": "model."}
 
 
+def json_loading_info(info):
+    """Transformers returns sets for key diagnostics; preserve them as arrays."""
+    def convert(value):
+        if isinstance(value, set):
+            return sorted(value)
+        raise TypeError('Unsupported loading diagnostic type: ' + type(value).__name__)
+    return json.loads(json.dumps(info, default=convert))
+
+
 def mapped_language_keys(weight_map):
     return {"model." + key[len(LANGUAGE_PREFIX):] for key in weight_map if key.startswith(LANGUAGE_PREFIX)}
 
@@ -61,7 +70,7 @@ def load_model(model_id, revision, adapter=None, trainable=False):
         from peft import PeftModel
         model = PeftModel.from_pretrained(model, str(adapter), is_trainable=trainable)
     return model, tokenizer, {"model_id": model_id, "revision": revision,
-                              "loading_info": info, "language_checkpoint_tensors": len(mapped_language_keys(weight_map))}
+                              "loading_info": json_loading_info(info), "language_checkpoint_tensors": len(mapped_language_keys(weight_map))}
 
 
 def chat_tokens(tokenizer, messages, limit=None):

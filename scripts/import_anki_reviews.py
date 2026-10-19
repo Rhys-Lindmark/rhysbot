@@ -8,7 +8,7 @@ import argparse
 import json
 from pathlib import Path
 
-from corpus_lib import digest, privacy_flags, read_jsonl
+from corpus_lib import CONTEXTUAL_RATIONALE, anki_release_approved, digest, privacy_flags, read_jsonl
 from ingest_local import assert_private_output
 
 
@@ -32,6 +32,7 @@ def validate_shard(shard):
         raise ValueError('Missing private review shard')
     assert_private_output(shard)
     assignment = json.loads((shard / 'assignment.json').read_text())
+    contextual = assignment.get('review_scope') in {'reconsider_cached_flags', 'personal_life_only_reconsideration'}
     assigned_file = shard / 'assigned.jsonl'
     if digest(assigned_file.read_text()) != assignment['assigned_sha256']:
         raise ValueError('Assigned source file changed')
@@ -54,16 +55,23 @@ def validate_shard(shard):
             raise ValueError('Unknown review decision')
         if decision['decision'] == 'withhold':
             continue
-        if raw.get('privacy_flags') or privacy_flags(raw['text'], local=True):
+        if not contextual and (raw.get('privacy_flags') or privacy_flags(raw['text'], local=True)):
             raise ValueError('Flagged record cannot receive a release approval')
         entry = approvals.get(identifier)
-        if not entry or set(entry) != PUBLIC_KEYS:
+        expected_keys = PUBLIC_KEYS | ({'contextual_privacy_review', 'approved_privacy_flags', 'supersedes_cached_flags'} if contextual else set())
+        if not entry or set(entry) != expected_keys:
             raise ValueError('Missing approval or unexpected public metadata')
         expected = {'id': identifier, 'content_sha256': content_hash, 'decision': 'approve',
                     'reviewer': 'codex-semantic-review', 'reviewed_at': '2026-10-18',
                     'scope': 'privacy_only_not_factual_validation', 'rationale': RATIONALE}
+        if contextual:
+            expected.update(contextual_privacy_review=True, supersedes_cached_flags=True,
+                            approved_privacy_flags=privacy_flags(raw['text'], local=True),
+                            rationale=CONTEXTUAL_RATIONALE)
         if entry != expected:
             raise ValueError('Approval metadata mismatch')
+        if not anki_release_approved(raw, entry):
+            raise ValueError('Current privacy rules or exact contextual adjudication prevent approval')
         approved[identifier] = expected
     if set(approvals) != set(approved):
         raise ValueError('Approval/decision disagreement')

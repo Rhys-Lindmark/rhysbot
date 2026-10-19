@@ -76,6 +76,14 @@ class TrainingSafetyTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             qwen.verify_loaded_language_weights(names + ["model.norm.weight"], source, {})
 
+    def test_real_transformers_set_diagnostics_remain_serializable(self):
+        info = {'missing_keys': set(), 'unexpected_keys': {'model.visual.b', 'model.visual.a'},
+                'mismatched_keys': [], 'error_msgs': []}
+        normalized = qwen.json_loading_info(info)
+        self.assertEqual(normalized['unexpected_keys'], ['model.visual.a', 'model.visual.b'])
+        self.assertEqual(normalized['missing_keys'], [])
+        self.assertEqual(json.loads(json.dumps({'loading': normalized}))['loading'], normalized)
+
     def test_sft_masks_system_user_and_assistant_role_prefix(self):
         tok = CharTokenizer()
         messages = [{"role": "system", "content": "instructions"}, {"role": "user", "content": "question"}, {"role": "assistant", "content": "sourced answer"}]
@@ -120,6 +128,18 @@ class TrainingSafetyTests(unittest.TestCase):
         self.assertIs(nano.eager_compile(direct, dynamic=False), direct)
         decorated = nano.eager_compile(dynamic=False, fullgraph=True)(direct)
         self.assertIs(decorated, direct)
+
+    def test_sft_prefetch_and_gradient_accumulation_do_not_end_early(self):
+        for requested in (4, 80):
+            maximum = nano.sft_microbatch_limit(requested, CONFIG['nanochat'])
+            accumulation = CONFIG['nanochat']['total_batch_size'] // (
+                CONFIG['nanochat']['device_batch_size'] * CONFIG['nanochat']['max_seq_len'])
+            yielded, updates = 1, 0  # initial prefetch before the optimizer loop
+            while yielded < maximum:
+                yielded += accumulation
+                updates += 1
+                self.assertLessEqual(yielded / maximum, 1)
+            self.assertEqual(updates, requested)
 
 
 if __name__ == "__main__":

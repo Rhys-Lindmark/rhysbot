@@ -20,8 +20,8 @@
     "total_batch_size": 8192,
     "pilot_pretrain_steps": 20,
     "pilot_sft_steps": 4,
-    "pretrain_steps": 120,
-    "sft_steps": 40,
+    "pretrain_steps": 2000,
+    "sft_steps": 80,
     "eval_tokens": 8192,
     "parquet_document_max_chars": 4096,
     "tokenizer_max_chars": 20000000
@@ -33,7 +33,20 @@
     "lora_rank": 8,
     "lora_alpha": 16,
     "lora_dropout": 0.05,
-    "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "in_proj_qkv", "in_proj_z", "in_proj_b", "in_proj_a", "out_proj", "gate_proj", "up_proj", "down_proj"],
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "in_proj_qkv",
+      "in_proj_z",
+      "in_proj_b",
+      "in_proj_a",
+      "out_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
     "learning_rate": 0.0001,
     "gradient_accumulation_steps": 4,
     "pilot_cpt_steps": 4,
@@ -46,7 +59,13 @@
     "max_pretrain_test_documents": 32,
     "max_sft_test_examples": 10,
     "max_new_tokens": 64,
-    "metrics": ["heldout_next_token_nll", "heldout_bits_per_byte", "assistant_only_nll", "perplexity", "generation_latency_seconds"],
+    "metrics": [
+      "heldout_next_token_nll",
+      "heldout_bits_per_byte",
+      "assistant_only_nll",
+      "perplexity",
+      "generation_latency_seconds"
+    ],
     "quality_claim": "NLL and sample outputs do not establish factuality, personality fidelity, or task utility."
   }
 }

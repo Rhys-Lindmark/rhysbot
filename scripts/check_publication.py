@@ -15,7 +15,10 @@ def main():
             continue
         # Check the staged blob, not merely the working-tree file.
         data=subprocess.check_output(['git','-C',str(root),'show',':'+name])
-        if len(data)>40*1024*1024:
+        # The reviewed corpus and its train split intentionally exceed 40 MiB.
+        # Other artifacts retain the tighter accidental-bulk guard.
+        limit_mib = 64 if name in {'data/public/corpus.jsonl', 'data/public/train.jsonl'} else 40
+        if len(data)>limit_mib*1024*1024:
             errors.append((name,'unexpectedly large artifact'))
         text=data.decode('utf-8',errors='replace')
         if re.search(r'/Users/[^/\s]+/(?:Downloads|Documents|Library)/',text):

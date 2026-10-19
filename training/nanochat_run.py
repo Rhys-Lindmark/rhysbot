@@ -105,6 +105,19 @@ def common_args(config):
             f"--eval-tokens={config['eval_tokens']}"]
 
 
+def sft_microbatch_limit(optimizer_steps, config):
+    """Pinned upstream counts yielded microbatches, including one prefetch.
+
+    Passing optimizer steps directly makes progress exceed 100%, creates a
+    negative learning rate, and ends before the requested optimizer updates.
+    """
+    batch = config['device_batch_size'] * config['max_seq_len']
+    if optimizer_steps < 1 or config['total_batch_size'] % batch:
+        raise ValueError('Invalid single-GPU SFT batch/step configuration')
+    accumulation = config['total_batch_size'] // batch
+    return optimizer_steps * accumulation + 1
+
+
 def evaluate(data, base, source, tag, out, config):
     import torch
     from nanochat.checkpoint_manager import load_model
@@ -208,9 +221,10 @@ def main():
     import kernels
     kernels.has_kernel = lambda *unused, **kwargs: False
     kernels.get_kernel = forbidden
-    if args.pilot:
-        import torch
-        torch.compile = eager_compile
+    # Measured eager throughput is already >100k tokens/s for this tiny model.
+    # Keep finite jobs free of compilation cold starts and compiler workers.
+    import torch
+    torch.compile = eager_compile
     cfg = config["nanochat"]
     if args.stage == "tokenizer":
         upstream("scripts.tok_train", [f"--vocab-size={cfg['vocab_size']}",
@@ -220,13 +234,17 @@ def main():
         upstream("scripts.base_train", common_args(cfg) + [f"--depth={cfg['depth']}",
                  f"--aspect-ratio={cfg['aspect_ratio']}", "--window-pattern=L", f"--num-iterations={steps}",
                  "--target-param-data-ratio=-1", "--core-metric-every=-1", "--sample-every=-1",
-                 "--warmup-steps=2", "--eval-every=20", "--save-every=20", f"--model-tag={args.tag}"])
+                 "--warmup-steps=2", f"--eval-every={20 if args.pilot else 200}",
+                 f"--save-every={20 if args.pilot else 200}", f"--model-tag={args.tag}"])
     elif args.stage == "sft":
         install_local_tasks(args.data)
         steps = cfg["pilot_sft_steps" if args.pilot else "sft_steps"]
         upstream("scripts.chat_sft", common_args(cfg) + [f"--model-tag={args.tag}",
-                 f"--num-iterations={steps}", "--load-optimizer=0", "--chatcore-every=-1",
+                 f"--num-iterations={sft_microbatch_limit(steps, cfg)}", "--load-optimizer=0", "--chatcore-every=-1",
                  "--eval-every=20", "--mmlu-epochs=0", "--gsm8k-epochs=0"])
+        metas = list((args.base/'chatsft_checkpoints'/args.tag).glob('meta_*.json'))
+        if not metas or max(read_json(path)['step'] for path in metas) != steps:
+            raise ValueError('SFT did not complete the requested optimizer updates')
     else:
         source = "base" if args.stage == "eval-base" else "sft"
         report_root = args.report_root or args.base

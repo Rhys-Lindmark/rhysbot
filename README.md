@@ -8,13 +8,13 @@ Source: **https://github.com/Rhys-Lindmark/rhysbot**
 
 ## Status
 
-**Corpus release in progress. Models are not trained or deployed yet.**
+**Reviewed corpus published; training pilots underway. No model demo is live yet.**
 
 - Located a 21,301-note Anki export, local HEE transcripts, and the original X archive.
-- Published corpus contains only individually approved Anki cards and conservatively screened public excerpts. Raw exports, private review material, family/dating details, DMs and account metadata are excluded.
+- Published corpus contains only individually approved Anki cards and conservatively screened public excerpts. Raw exports, private review material, personal family/dating details, DMs and account metadata are excluded.
 - Collected all 223 listed public Substack bodies, 212 YouTube caption tracks and 89 local HEE transcripts. Three additional public RSS recordings were transcribed locally: the two spoken caption gaps and one audio-only episode. The remaining caption gap is title-labeled solo piano. Exact release counts are in [data/public/stats.json](data/public/stats.json); acquisition gaps are in [docs/acquisition-coverage.json](docs/acquisition-coverage.json) when generated.
 - Training data and launch recipes preserve source splits. Mixed/unverified guest speech is not silently trained as Rhys's voice.
-- Total authorized paid-compute budget: **$200** across both models and evaluation. No GPU training has run at initial publication. Modal is connected; bounded pilots are next.
+- Total authorized paid-compute budget: **$200** across both models and evaluation. Modal is connected. Pilots expose implementation issues before the longer runs; completed artifacts and evaluations will be reported separately.
 
 Read the [dataset card](docs/DATASET_CARD.md), [acquisition notes](docs/public-ingestion.md), and [training guide](docs/training.md) before use.
 
@@ -22,6 +22,7 @@ Read the [dataset card](docs/DATASET_CARD.md), [acquisition notes](docs/public-i
 
 | Artifact | Purpose |
 |---|---|
+| `data/public/anki-cards.jsonl` | Every approved card, including duplicates/incomplete text, with completeness labels |
 | `data/public/corpus.jsonl` | Source-linked released excerpts |
 | `data/public/{train,validation,test}.jsonl` | Grouped research splits |
 | `data/public/sources.jsonl` | Provenance and split metadata |

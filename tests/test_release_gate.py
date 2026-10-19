@@ -28,7 +28,8 @@ class ReleaseGateTests(unittest.TestCase):
             self.assertEqual(stats['source_processing']['substack']['withheld_not_full_public_body'], 1)
 
     def test_unreviewed_or_changed_anki_never_passes(self):
-        row={'id':'a','text':'Question: What is ATP?\nAnswer: An energy carrier.','privacy_flags':[]}
+        row={'id':'a','text':'Question: What is ATP?\nAnswer: An energy carrier.','privacy_flags':[],
+             'front':'What is ATP?', 'back':'An energy carrier.', 'citation':''}
         self.assertFalse(approve_anki(row,{}))
         approvals={'a':{'decision':'approve','content_sha256':digest(row['text'])}}
         self.assertTrue(approve_anki(row,approvals))
