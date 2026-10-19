@@ -4,6 +4,8 @@ Building a small language model from scratch and adapting Qwen to Rhys Lindmark'
 
 Project: **https://ai.rhyslindmark.com/rhysbot**
 
+[Browse every corpus source](https://ai.rhyslindmark.com/rhysbot/#corpus): [YouTube/podcasts](https://ai.rhyslindmark.com/rhysbot/?source=youtube_transcript#corpus), [HEE](https://ai.rhyslindmark.com/rhysbot/?source=hee_transcript#corpus), [original-audio transcripts](https://ai.rhyslindmark.com/rhysbot/?source=podcast_transcript#corpus), [Substack](https://ai.rhyslindmark.com/rhysbot/?source=substack#corpus), and [X](https://ai.rhyslindmark.com/rhysbot/?source=x#corpus). Speaker separation/identification has not been done. All podcast, YouTube and HEE transcripts are available in the research corpus but were excluded from both models' pretraining and fine-tuning inputs. See [podcast coverage and methods](docs/public-ingestion.md#original-podcast-rss-and-cpu-transcription).
+
 Source: **https://github.com/Rhys-Lindmark/rhysbot**
 
 ## Status
