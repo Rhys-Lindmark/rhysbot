@@ -230,7 +230,7 @@ def process(run_id, items, timeout_seconds, reference=None):
                 audio_path = scratch / 'episode.mp3'
                 staged_source = None
                 digest, size = hashlib.sha256(), 0
-                if item.get('audio_source_kind') == 'youtube_audio' and item.get('staged_audio'):
+                if item.get('staged_audio'):
                     staged_source = checked_staged_audio(item,run_id)
                     audio_path = staged_source
                     size = audio_path.stat().st_size

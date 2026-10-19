@@ -196,3 +196,16 @@ The explicitly authorized single-pilot apply then passed both validators:
 limit. Protected non-podcast corpus rows, the complete Anki card registry and
 all seven frozen training files retained their pre-apply hashes. This is local
 pilot integration evidence, not full-archive completion or ASR quality grading.
+
+An explicitly inventoried RSS recording may also use a staged public audio file
+when remote retrieval failed but the same public enclosure remains obtainable.
+Its source remains RSS audio. The same run/episode path, SHA-256, byte ceiling,
+trusted mount boundary and descendant-symlink checks apply before decoding.
+This is a new, separately reserved repair run, never an automatic inference
+retry or a substitution of a different YouTube edition.
+
+`scripts/speech_coverage.py` combines the RSS and YouTube-only inventories with
+actual run reports and released sidecars. It distinguishes released speaker
+transcripts, completed processing awaiting release, processing failures and
+recordings not completed. It publishes only whitelisted source and coverage
+fields; private word arrays, voice measurements and exception text stay private.
