@@ -40,21 +40,29 @@ export async function boundedBody(request, limit) {
 }
 function json(bytes) { try { return JSON.parse(decoder.decode(bytes)); } catch { fail(400, 'invalid_json'); } }
 function exact(obj, keys) { return obj && !Array.isArray(obj) && Object.keys(obj).every(k => keys.includes(k)); }
+function minimumPlainText(text) {
+  // Python str.strip() + len() in train_job counts code points, not UTF16 units.
+  const whitespace = '[\\u0009-\\u000d\\u001c-\\u0020\\u0085\\u00a0\\u1680\\u2000-\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000]';
+  const plain = text.replace(new RegExp(`^${whitespace}+|${whitespace}+$`, 'gu'), '');
+  let count = 0; for (const _ of plain) if (++count === 200) return;
+  fail(400, 'corpus_too_short_minimum_200_characters');
+}
 export function validateCorpus(bytes, format) {
   if (!bytes.length || bytes.length > MAX_BYTES) fail(413, 'corpus_size');
   let text; try { text = decoder.decode(bytes); } catch { fail(400, 'invalid_utf8'); }
   if (!text.trim() || /[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/.test(text)) fail(400, 'binary_or_empty_corpus');
-  if (format === 'txt') return;
+  if (format === 'txt') { minimumPlainText(text); return; }
   if (format !== 'jsonl') fail(400, 'unsupported_format');
-  let count = 0;
+  const texts = [];
   for (const line of text.split('\n')) {
     if (!line.trim()) continue;
     if (enc.encode(line).length > 32768) fail(400, 'jsonl_line_too_large');
     let row; try { row = JSON.parse(line); } catch { fail(400, 'invalid_jsonl'); }
     if (!exact(row, ['text']) || typeof row.text !== 'string' || !row.text.trim() || /[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/.test(row.text)) fail(400, 'jsonl_text_only');
-    count++;
+    texts.push(row.text);
   }
-  if (!count) fail(400, 'empty_corpus');
+  if (!texts.length) fail(400, 'empty_corpus');
+  minimumPlainText(texts.join('\n\n'));
 }
 function bridgeURL(value) {
   try { const u = new URL(value); if (u.protocol !== 'https:' || !u.hostname.endsWith('.modal.run') || u.username || u.password || u.port || u.search || u.hash || !['','/'].includes(u.pathname)) return null;

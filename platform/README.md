@@ -1,7 +1,7 @@
 # Private corpus training pilot
 
-Local source implementation; provisioning, credentials, actual paid compute and
-deployment are separate owner-controlled steps. No Stripe account or live
+Deployed private pilot; credentials and paid compute remain bounded by the
+owner-controlled authorization and ledgers. No Stripe account or live
 payment is claimed. This prototype accepts **Stripe TEST mode only**, or a
 clearly labeled **Sandbox confirmation** with no card form/payment. Test money
 does not buy GPU budget: both modes share **one global lifetime GPU claim**.
@@ -20,7 +20,7 @@ does not buy GPU budget: both modes share **one global lifetime GPU claim**.
   unavailable state, explicit sandbox/test labels and recovery token.
 - [x] Fourteen focused Node built-in tests with real in-memory SQLite and mocked
   Turnstile/Stripe/Modal transports. No network/Matplotlib/ML imports.
-- [ ] Root provisions schema/bindings/secrets and configures the Modal bridge.
+- [x] Root provisions schema/bindings/secrets and configures the deployed Modal bridge.
 - [ ] Actual hosted upload → Sandbox or Stripe test → one bounded real training
   job → verified saved adapter+metrics download → authorized corpus deletion.
 

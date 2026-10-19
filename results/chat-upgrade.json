@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "date": "2026-10-19",
+  "fast_mode": {
+    "model": "@cf/qwen/qwen3-30b-a3b-fp8",
+    "comparison": "approved Rhys retrieval versus same model without retrieval; not fine-tuning",
+    "first_visible_seconds": 0.741867,
+    "pair_finished_seconds": 1.580233,
+    "multi_turn_pair_seconds": [
+      0.841621,
+      0.931436
+    ],
+    "numeric_token_regression": "2019 [1] and 42."
+  },
+  "saved_checkpoint_comparison": {
+    "response": {
+      "rhys": {
+        "text": "Cultural evolution is the process by which ideas, behaviors, and practices are transmitted, modified, and selected over time within a population. It involves mechanisms such as imitation, learning, and innovation, leading to the spread and adaptation of cultural traits across generations.",
+        "output_tokens": 52
+      },
+      "qwen": {
+        "text": "Cultural evolution refers to the process by which human societies develop and change over time through the transmission of knowledge, beliefs, and practices. It involves the accumulation and modification of cultural traits across generations, driven by factors such as innovation, imitation, and social learning.",
+        "output_tokens": 53
+      },
+      "checkpoint_run_id": "qwen-train-20261019a",
+      "weights_sha256": "493bfdbc2279e44edd33092dc50a7376a42a38e89c7e5e157aded3f4753b1637",
+      "baseline": "same pinned Qwen3.5-4B-Base with adapter disabled",
+      "elapsed_seconds": 108.15099717,
+      "input_tokens": {
+        "rhys": 57,
+        "qwen": 57
+      },
+      "comparison": "same system, template, retained user turns and decoding; independent assistant histories, saved CPT/SFT adapter enabled versus disabled"
+    },
+    "cold_http_seconds": 124.786332,
+    "cold_cache": true
+  },
+  "budget": {
+    "monthly_chat_voice_usd": 10,
+    "conservative_chat_per_model_usd": 0.005,
+    "conservative_voice_request_usd": 0.15,
+    "conservative_checkpoint_pair_usd": 0.2,
+    "training_cap_usd": 200,
+    "training_holds_before_customer_pilot_usd": 151.6
+  },
+  "limitations": [
+    "Latency measurements are individual probes, not percentiles or an uptime guarantee.",
+    "Loss/completion comparisons do not establish personality, truthfulness or overall model improvement.",
+    "No live Stripe account/charges configured; deployed confirmation is Sandbox."
+  ],
+  "voice": {
+    "model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "revision": "5d83992436eae1d760afd27aff78a71d676296fc",
+    "text": "Hello. This is AI-generated Rhys voice for a short integration test.",
+    "audio": "site/audio/ai-rhys-preview.wav",
+    "sha256": "43121d97ef3742cfbdfb6061906f8723b249a6f69e69c8e2fa986d946c92e3ad",
+    "sample_rate": 24000,
+    "duration_seconds": 5.84,
+    "bytes": 280364,
+    "cold_http_seconds": 58.647726,
+    "waveform": {
+      "peak_abs": 22784,
+      "rms": 4204.324856212732,
+      "clipped_samples": 0,
+      "nonzero_fraction": 0.9972674086757991,
+      "human_voice_similarity": "not assessed by a listener"
+    }
+  }
+}

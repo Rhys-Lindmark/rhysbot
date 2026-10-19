@@ -14,8 +14,8 @@ app=APP  # Modal CLI discovers this conventional module attribute.
 TARGETS=json.loads(os.environ.get('RHYSBOT_SERVING_TARGETS','{}'))
 SECRET=modal.Secret.from_name('rhysbot-platform')
 CPU=modal.Image.debian_slim(python_version='3.12').pip_install('fastapi==0.115.12').add_local_dir(str(HERE),remote_path='/rhysbot/training',copy=True).env({'PYTHONPATH':'/rhysbot/training'})
-GPU=core_image.add_local_dir(str(HERE),remote_path='/rhysbot/training',copy=True).env({'PYTHONPATH':'/rhysbot/training','RHYSBOT_SERVING_TARGETS':json.dumps(TARGETS)})
-VOICE=(modal.Image.debian_slim(python_version='3.12').apt_install('libsndfile1','sox').pip_install('torch==2.9.1','torchaudio==2.9.1','qwen-tts==0.1.1','numpy==2.2.6','soundfile==0.13.1').add_local_dir(str(HERE),remote_path='/rhysbot/training',copy=True).env({'PYTHONPATH':'/rhysbot/training'}))
+GPU=core_image.add_local_dir(str(HERE),remote_path='/rhysbot/training',copy=True).env({'PYTHONPATH':'/rhysbot/training','HF_HOME':'/artifacts/rhysbot-hf-cache','HF_HUB_CACHE':'/artifacts/rhysbot-hf-cache/hub','RHYSBOT_SERVING_TARGETS':json.dumps(TARGETS)})
+VOICE=(modal.Image.debian_slim(python_version='3.12').apt_install('libsndfile1','sox').pip_install('torch==2.9.1','torchaudio==2.9.1','qwen-tts==0.1.1','numpy==2.2.6','soundfile==0.13.1').add_local_dir(str(HERE),remote_path='/rhysbot/training',copy=True).env({'PYTHONPATH':'/rhysbot/training','HF_HOME':'/artifacts/rhysbot-voice-hf','HF_HUB_CACHE':'/artifacts/rhysbot-voice-hf'}))
 if os.environ.get('RHYSBOT_VOICE_REFERENCE'):
  VOICE=VOICE.add_local_file(os.environ['RHYSBOT_VOICE_REFERENCE'],'/voice/rhys.wav',copy=True)
 TTS_MODEL='Qwen/Qwen3-TTS-12Hz-0.6B-Base'
@@ -110,6 +110,12 @@ def provider_timeout_report(key,error,timeout_class):
  if type(error) is timeout_class:return {'status':'failed','job_id':key,'error_type':'FunctionTimeoutError','provider_terminal':True}
  return None
 
+def pending_poll_timeout(error,modal_timeout_class):
+ # Modal 1.6.2 poll_function raises builtin TimeoutError for unfinished calls.
+ # Keep both exact poll types; subclasses such as FunctionTimeoutError are NOT
+ # pending and must go through the explicit provider-terminal classifier.
+ return type(error) in {TimeoutError,modal_timeout_class}
+
 def terminal_training(key,report,store,guard,artifacts,root='/artifacts'):
  """Commit full retained hold BEFORE terminal publication/unlock. Idempotent."""
  if report.get('job_id')!=key or report.get('status') not in {'completed','failed'}:raise ValueError('Unverified terminal report')
@@ -144,6 +150,8 @@ def comparison_histories(messages,qwen_messages):
 
 @APP.function(image=GPU,gpu='L4',cpu=(2,4),memory=(12288,24576),timeout=900,retries=0,min_containers=0,max_containers=1,scaledown_window=2,secrets=[SECRET],volumes={'/artifacts':volume})
 def train_job(key,body):
+ # HF constants freeze at import: establish mounted cache before torch/peft/HF.
+ os.environ.update(HF_HOME='/artifacts/rhysbot-hf-cache',HF_HUB_CACHE='/artifacts/rhysbot-hf-cache/hub',TOKENIZERS_PARALLELISM='false',OMP_NUM_THREADS='2',WANDB_MODE='disabled')
  import math,torch
  from peft import LoraConfig,get_peft_model
  from qwen_run import load_model
@@ -157,7 +165,6 @@ def train_job(key,body):
   out=customer_path(key);raw=fetch_corpus(body,os.environ['RHYSBOT_TRAIN_BRIDGE_SECRET'])
   text=corpus_text(raw,body['corpus']['format']);del raw
   if len(text.strip())<200:raise ValueError('At least 200 characters required')
-  os.environ.update(HF_HOME='/artifacts/rhysbot-hf-cache',TOKENIZERS_PARALLELISM='false',OMP_NUM_THREADS='2',WANDB_MODE='disabled')
   torch.set_num_threads(2);torch.manual_seed(42)
   model_id='Qwen/Qwen3.5-4B-Base';model,tokenizer,loading=load_model(model_id,PINS['models'][model_id]['revision'])
   targets=CONFIG['qwen']['target_modules']
@@ -196,6 +203,7 @@ def train_job(key,body):
 
 @APP.function(image=VOICE,gpu='L4',cpu=(2,4),memory=(8192,16384),timeout=180,retries=0,min_containers=0,max_containers=1,scaledown_window=2,volumes={'/artifacts':volume})
 def voice_job(nonce,text):
+ os.environ.update(HF_HOME='/artifacts/rhysbot-voice-hf',HF_HUB_CACHE='/artifacts/rhysbot-voice-hf',TOKENIZERS_PARALLELISM='false',OMP_NUM_THREADS='2')
  global _VOICE_MODEL
  # Ongoing voice/compare are separately authorized by the CF $10/month ledger,
  # charged BEFORE this private service. They never consume the $200 training
@@ -206,7 +214,7 @@ def voice_job(nonce,text):
  import torch,soundfile as sf
  from huggingface_hub import snapshot_download
  from qwen_tts import Qwen3TTSModel
- os.environ.update(HF_HOME='/artifacts/rhysbot-voice-hf',TOKENIZERS_PARALLELISM='false',OMP_NUM_THREADS='2');torch.set_num_threads(2)
+ torch.set_num_threads(2)
  start=time.monotonic()
  if hashlib.sha256(Path('/voice/rhys.wav').read_bytes()).hexdigest()!='392b8c0ce6e2b70f1ed7bb4e00ce964d08190e892a3e9f5f274c4d5c644d1622':raise ValueError('Unapproved voice reference')
  if _VOICE_MODEL is None:
@@ -222,13 +230,14 @@ def voice_job(nonce,text):
 
 @APP.function(image=GPU,gpu='L4',cpu=(2,4),memory=(12288,24576),timeout=180,retries=0,min_containers=0,max_containers=1,scaledown_window=2,volumes={'/artifacts':volume})
 def compare_job(nonce,messages,qwen_messages=None):
+ os.environ.update(HF_HOME='/artifacts/rhysbot-hf-cache',HF_HUB_CACHE='/artifacts/rhysbot-hf-cache/hub',TOKENIZERS_PARALLELISM='false',OMP_NUM_THREADS='2')
  messages,qwen_messages=comparison_histories(messages,qwen_messages);store=jobs();state=store.get('compare:'+nonce)
  if state!={'messages_sha256':digest({'messages':messages,'qwen_messages':qwen_messages})}:raise ValueError('No comparison grant')
  if not store.put('execution:compare:'+nonce,True,skip_if_exists=True):raise ValueError('Comparison already executed')
  import torch
  from serve import checkpoint_artifacts,cached_qwen_checkpoint
  from qwen_run import chat_prompt
- os.environ.update(HF_HOME='/artifacts/rhysbot-hf-cache',TOKENIZERS_PARALLELISM='false',OMP_NUM_THREADS='2');torch.set_num_threads(2)
+ torch.set_num_threads(2)
  targets=json.loads(os.environ['RHYSBOT_SERVING_TARGETS']);target=targets['qwen'];paths=checkpoint_artifacts('/artifacts','qwen',target,PINS);start=time.monotonic();model,tokenizer=cached_qwen_checkpoint(paths,PINS,target)
  left=list(messages);right=list(qwen_messages)
  def encode(rows):return tokenizer(chat_prompt(tokenizer,[{'role':'system','content':COMPARISON_SYSTEM}]+rows),return_tensors='pt',add_special_tokens=False).to('cuda')
@@ -301,7 +310,7 @@ def api():
     timeout_report=provider_timeout_report(key,error,modal.exception.FunctionTimeoutError)
     if timeout_report:
      terminal_training(key,timeout_report,store,modal.Dict.from_name('rhysbot-training-singleton'),volume)
-    elif type(error) is not modal.exception.TimeoutError:return {'job_id':key,'state':'recovery_required','artifact_ready':False}
+    elif not pending_poll_timeout(error,modal.exception.TimeoutError):return {'job_id':key,'state':'recovery_required','artifact_ready':False}
    state=job_state(store,key)
   return {'job_id':key,'state':state['state'],'artifact_ready':bool(state.get('artifact_ready'))}
  @web.get('/artifact')

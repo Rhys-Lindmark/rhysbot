@@ -24,6 +24,10 @@ labels do not alter the historical model training data.
 
 Source: **https://github.com/Rhys-Lindmark/rhysbot**
 
+## Chat and private training pilot
+
+[Open conversational Rhysbot](https://ai.rhyslindmark.com/rhysbot/chat/): streaming source-grounded chat, side-by-side Qwen comparisons, a separate actual trained-4B comparison, and opt-in authorized synthetic Rhys voice. Chat and voice share a $10/month guard. [Train yours](https://ai.rhyslindmark.com/rhysbot/train/) is a private, bounded Sandbox pilot; no live payments. See [service methods and limits](docs/CHAT_SERVICE.md).
+
 ## Status
 
 **The reviewed corpus and measured model results are published. Both trained

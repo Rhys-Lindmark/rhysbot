@@ -6,6 +6,7 @@
 <header><div class="brand">rhys<span>bot</span></div><nav aria-label="Rhysbot"><a href="/rhysbot/#corpus" target="_top">Explore corpus</a><a href="/rhysbot/train/" target="_top">Train yours ↗</a></nav></header>
 <div class="eyebrow">An AI conversation, grounded in public sources</div><h1>Think out loud with AI Rhys.</h1>
 <p class="intro">Ask a question. Compare a source-grounded answer with Qwen’s own response. This is an AI simulation—not the human Rhys. Replies can be wrong.</p>
+<details class="settings"><summary>Hear the AI Rhys voice</summary><p>A generated sample using Rhys’s authorized voice reference.</p><audio controls preload="none" src="../audio/ai-rhys-preview.wav">Your browser does not support audio playback.</audio></details>
 <div class="toolbar"><label>Conversation mode<select id="mode"><option value="compare">Rhys sources vs Qwen · streaming</option><option value="rhys">Rhys sources · streaming</option><option value="qwen">Qwen · no corpus</option><option value="checkpoints">Trained 4B vs Qwen 4B base</option></select></label><button id="new" type="button">New chat</button></div>
 <p id="mode-note" class="mode-note">The same unmodified Qwen model on both sides; only the left receives Rhys source excerpts. This mode is not the trained checkpoint.</p>
 <section id="thread" aria-label="Conversation"></section>

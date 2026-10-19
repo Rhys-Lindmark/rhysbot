@@ -1,5 +1,6 @@
 """Stdlib source/helper regressions. No Modal, torch, models or network imports."""
 import ast
+import builtins
 import hashlib
 import io
 import json
@@ -7,11 +8,12 @@ from pathlib import Path
 import re
 import tempfile
 import time
+from types import SimpleNamespace
 import unittest
 import uuid
 
 SOURCE=Path(__file__).resolve().parents[1]/'training/platform_service.py'
-NAMES={'job_id','nonce_id','digest','job_state','validated_dispatch','corpus_text','fetch_corpus','token_blocks','customer_path','terminal_training','provider_timeout_report','comparison_histories'}
+NAMES={'job_id','nonce_id','digest','job_state','validated_dispatch','corpus_text','fetch_corpus','token_blocks','customer_path','terminal_training','provider_timeout_report','pending_poll_timeout','comparison_histories'}
 scope={'hashlib':hashlib,'json':json,'Path':Path,'re':re,'time':time,'uuid':uuid}
 tree=ast.parse(SOURCE.read_text())
 exec(compile(ast.Module(body=[node for node in tree.body if isinstance(node,ast.FunctionDef) and node.name in NAMES],type_ignores=[]),str(SOURCE),'exec'),scope)
@@ -104,6 +106,40 @@ class PlatformTests(unittest.TestCase):
   key=payload()['job_id']
   self.assertTrue(scope['provider_timeout_report'](key,ProviderTimeout(),ProviderTimeout)['provider_terminal'])
   for error in [TimeoutError(),ExpiredOutput(),OtherTimeout(),RuntimeError()]:self.assertIsNone(scope['provider_timeout_report'](key,error,ProviderTimeout))
+
+ def test_builtin_poll_timeout_keeps_current_state_and_never_proves_terminal(self):
+  class ModalPollTimeout(Exception):pass
+  class FunctionTimeout(ModalPollTimeout):pass
+  key=payload()['job_id'];store=Store({key:{'job_id':key,'state':'running'}});guard=Store(active=key)
+  for error in [TimeoutError(),ModalPollTimeout()]:
+   self.assertTrue(scope['pending_poll_timeout'](error,ModalPollTimeout))
+   self.assertIsNone(scope['provider_timeout_report'](key,error,FunctionTimeout))
+   self.assertEqual(scope['job_state'](store,key)['state'],'running');self.assertEqual(guard['active'],key)
+  self.assertFalse(scope['pending_poll_timeout'](FunctionTimeout(),ModalPollTimeout))
+  self.assertIsNotNone(scope['provider_timeout_report'](key,FunctionTimeout(),FunctionTimeout))
+
+ def test_persistent_cache_is_visible_when_model_libraries_first_import(self):
+  expected={'train_job':('/artifacts/rhysbot-hf-cache','/artifacts/rhysbot-hf-cache/hub'),'compare_job':('/artifacts/rhysbot-hf-cache','/artifacts/rhysbot-hf-cache/hub'),'voice_job':('/artifacts/rhysbot-voice-hf','/artifacts/rhysbot-voice-hf')}
+  library_roots={'torch','peft','qwen_run','serve','huggingface_hub','qwen_tts'}
+  for name,(home,hub) in expected.items():
+   fn=next(n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name==name);environment={};seen=[];nodes=[]
+   for n in fn.body:
+    if isinstance(n,ast.Expr) and isinstance(n.value,ast.Call) and ast.unparse(n.value.func)=='os.environ.update':nodes.append(n)
+    elif isinstance(n,(ast.Import,ast.ImportFrom)):nodes.append(n)
+   def fake_import(module,globals=None,locals=None,fromlist=(),level=0):
+    if module.split('.')[0] in library_roots:
+     seen.append((module,dict(environment)))
+     return SimpleNamespace(**{field:object() for field in (fromlist or ())})
+    if module=='soundfile':return SimpleNamespace()
+    return builtins.__import__(module,globals,locals,fromlist,level)
+   ns={'os':SimpleNamespace(environ=environment),'__builtins__':{**vars(builtins),'__import__':fake_import}}
+   exec(compile(ast.Module(body=nodes,type_ignores=[]),str(SOURCE),'exec'),ns)
+   self.assertTrue(seen,name)
+   for module,frozen in seen:self.assertEqual((frozen.get('HF_HOME'),frozen.get('HF_HUB_CACHE')),(home,hub),(name,module))
+  for image,(home,hub) in [('GPU',expected['train_job']),('VOICE',expected['voice_job'])]:
+   assign=next(n for n in tree.body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id==image for t in n.targets))
+   env=assign.value.args[0];values={k.value:v for k,v in zip(env.keys,env.values)}
+   self.assertEqual(ast.literal_eval(values['HF_HOME']),home);self.assertEqual(ast.literal_eval(values['HF_HUB_CACHE']),hub)
 
  def test_artifacts_reject_descendant_symlink_and_nonce_is_canonical(self):
   self.assertEqual(scope['nonce_id']('12345678-1234-4234-8234-123456789abc'),'12345678-1234-4234-8234-123456789abc')

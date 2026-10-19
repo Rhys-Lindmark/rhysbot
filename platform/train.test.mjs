@@ -8,6 +8,7 @@ import { createTrainingHandler, ORIGIN, MAX_BYTES, LIMITS, validateCorpus, verif
 const NOW = 1800000000;
 const schema = readFileSync(new URL('./schema.sql', import.meta.url), 'utf8');
 const bytes = text => new TextEncoder().encode(text);
+const study = label => `${label} General educational source material for a bounded private adaptation test. `.repeat(5);
 function database() {
   const db = new DatabaseSync(':memory:'); db.exec(schema);
   const adapter = {
@@ -57,7 +58,7 @@ function setup({ stripe = false, dispatchThrows = false, pay = 'paid', storage =
   };
   const handler = createTrainingHandler({ fetcher, clock: () => NOW });
   const call = request => handler({ request, env });
-  async function upload(text = 'Public example corpus. General educational text.', format = 'txt') {
+  async function upload(text = study('Default'), format = 'txt') {
     const r = await call(req(`train-upload?format=${format}`, { method: 'POST', body: typeof text === 'string' ? bytes(text) : text, headers: { 'Content-Type': format === 'txt' ? 'text/plain' : 'application/x-ndjson', 'X-Turnstile-Token': 'proof' } }));
     assert.equal(r.status, 201); return r.json();
   }
@@ -84,7 +85,7 @@ test('unconfigured/live Stripe/missing quota fail closed, public config reveals 
   assert.equal((await x.call(req('train-upload?format=txt', { method: 'POST', body: 'text' }))).status, 503);
 });
 test('private D1 upload uses immutable hashes, scoped capabilities and no unpaid dispatch', async () => {
-  const x = setup(); const a = await x.upload(); const b = await x.upload('Another example text.');
+  const x = setup(); const a = await x.upload(); const b = await x.upload(study('Another example text.'));
   assert.equal(dispatches(x).length, 0);
   const row = x.db.prepare('SELECT * FROM training_jobs WHERE id=?').get(a.job_id);
   assert.notEqual(row.auth_mac, a.access_token); assert.equal(row.storage, 'd1');
@@ -99,7 +100,16 @@ test('private D1 upload uses immutable hashes, scoped capabilities and no unpaid
 test('strict streaming bound, UTF8/binary/JSONL text-only validation and origin guard', async () => {
   const x = setup();
   for (const [body, format] of [[new Uint8Array([0xff]),'txt'],[bytes('a\0b'),'txt'],[bytes('{"text":"ok","url":"https://external"}'),'jsonl'],[bytes('{"text":"\\u0000"}'),'jsonl'],[bytes('{"text":""}'),'jsonl'],[bytes('not json'),'jsonl']]) assert.throws(() => validateCorpus(body, format));
-  validateCorpus(bytes('{"text":"Safe study text."}\n'), 'jsonl');
+  validateCorpus(bytes(JSON.stringify({text:study('Safe study')})+'\n'), 'jsonl');
+  for (const [body,format] of [['hi','txt'],[JSON.stringify({text:'hi'}),'jsonl']]) {
+    const short=await x.call(req(`train-upload?format=${format}`,{method:'POST',body,headers:{'Content-Type':format==='txt'?'text/plain':'application/x-ndjson','X-Turnstile-Token':'proof'}}));
+    assert.equal(short.status,400);assert.equal((await short.json()).error,'corpus_too_short_minimum_200_characters');
+  }
+  assert.equal(x.db.prepare('SELECT COUNT(*) AS n FROM training_jobs').get().n,0);assert.equal(x.db.prepare('SELECT COUNT(*) AS n FROM training_sandbox_claim').get().n,0);assert.equal(dispatches(x).length,0);
+  assert.throws(()=>validateCorpus(bytes('🌱'.repeat(100)),'txt'),/200/);
+  assert.throws(()=>validateCorpus(bytes('\u0085'.repeat(199)+'a'),'txt'),/200/);
+  validateCorpus(bytes('🌱'.repeat(200)),'txt');
+  validateCorpus(bytes([JSON.stringify({text:'a'.repeat(99)}),JSON.stringify({text:'b'.repeat(99)})].join('\n')),'jsonl');
   const stream = new ReadableStream({ start(c) { c.enqueue(new Uint8Array(MAX_BYTES)); c.enqueue(bytes('overflow')); c.close(); } });
   const r = await x.call(req('train-upload?format=txt', { method: 'POST', body: stream, headers: { 'Content-Type': 'text/plain', 'X-Turnstile-Token': 'proof' } })); assert.equal(r.status, 413);
   assert.equal(x.db.prepare('SELECT COUNT(*) AS n FROM training_jobs').get().n, 0);
@@ -107,7 +117,7 @@ test('strict streaming bound, UTF8/binary/JSONL text-only validation and origin 
   assert.equal((await x.call(req('train-upload?format=txt', { method: 'POST', body: 'text', headers: { 'Content-Type': 'text/plain' } }))).status, 403);
 });
 test('sandbox confirmation claims one global lifetime job; replay/status cannot relaunch', async () => {
-  const x = setup(); const a = await x.upload(); const b = await x.upload('Second educational corpus.');
+  const x = setup(); const a = await x.upload(); const b = await x.upload(study('Second educational corpus.'));
   const [r1,r2] = await Promise.all([x.checkout(a),x.checkout(a)]);
   assert.deepEqual([r1.status,r2.status].sort(), [202,409]); assert.equal(dispatches(x).length, 1);
   const call = dispatches(x)[0]; const payload = JSON.parse(call.init.body);
@@ -146,7 +156,7 @@ test('test checkout never dispatches; only verified paid webhook claims quota on
 });
 test('unpaid/live event cannot claim job, and multiple Stripe TEST payments share global one-slot quota', async () => {
   const unpaid=setup({stripe:true,pay:'unpaid'});const u=await unpaid.upload();await unpaid.checkout(u);assert.equal((await unpaid.call(unpaid.event(u))).status,400);assert.equal(dispatches(unpaid).length,0);assert.equal(unpaid.db.prepare('SELECT COUNT(*) AS n FROM training_sandbox_claim').get().n,0);
-  const x=setup({stripe:true});const a=await x.upload();const b=await x.upload('Other text');await x.checkout(a);await x.checkout(b);
+  const x=setup({stripe:true});const a=await x.upload();const b=await x.upload(study('Other text'));await x.checkout(a);await x.checkout(b);
   assert.equal((await x.call(x.event(a,'evt_live',{livemode:true}))).status,400);assert.equal(dispatches(x).length,0);
   await x.call(x.event(a));await x.call(x.event(b,'evt_second'));assert.equal(dispatches(x).length,1);assert.equal(x.db.prepare('SELECT state FROM training_jobs WHERE id=?').get(b.job_id).state,'budget_blocked');
 });
@@ -164,11 +174,11 @@ test('optional private R2 uses the same auth and deletion boundaries', async () 
   x.db.prepare("UPDATE training_jobs SET state='failed' WHERE id=?").run(a.job_id);assert.equal((await x.call(req(`train-job?job=${a.job_id}`,{method:'DELETE',token:a.access_token}))).status,200);assert.equal(x.objects.size,0);
 });
 test('global lifetime upload admission stops at ten even after deletions', async () => {
-  const x=setup();for(let i=0;i<10;i++) await x.upload(`Educational study ${i}.`);
-  const r=await x.call(req('train-upload?format=txt',{method:'POST',body:'extra',headers:{'Content-Type':'text/plain','X-Turnstile-Token':'proof'}}));assert.equal(r.status,409);assert.equal(x.db.prepare('SELECT COUNT(*) AS n FROM training_jobs').get().n,10);
+  const x=setup();for(let i=0;i<10;i++) await x.upload(study(`Educational study ${i}.`));
+  const r=await x.call(req('train-upload?format=txt',{method:'POST',body:study('Extra'),headers:{'Content-Type':'text/plain','X-Turnstile-Token':'proof'}}));assert.equal(r.status,409);assert.equal(x.db.prepare('SELECT COUNT(*) AS n FROM training_jobs').get().n,10);
 });
 test('completed artifact needs same-job capability, strips headers, streams only fixed bridge path', async () => {
-  const x=setup();const a=await x.upload();const b=await x.upload('Other safe text.');
+  const x=setup();const a=await x.upload();const b=await x.upload(study('Other safe text.'));
   assert.equal((await x.call(req(`train-artifact?job=${a.job_id}`,{token:a.access_token}))).status,409);
   x.db.prepare("UPDATE training_jobs SET state='completed' WHERE id=?").run(a.job_id);
   assert.equal((await x.call(req(`train-artifact?job=${a.job_id}`,{token:b.access_token}))).status,404);
@@ -179,7 +189,7 @@ test('completed artifact needs same-job capability, strips headers, streams only
 });
 test('D1 batch rollback leaves no partial corpus/job when a chunk statement fails', async () => {
   const x=setup(); x.db.exec("CREATE TRIGGER reject_chunk BEFORE INSERT ON training_corpus_chunks BEGIN SELECT RAISE(ABORT,'test failure'); END;");
-  const r=await x.call(req('train-upload?format=txt',{method:'POST',body:'educational',headers:{'Content-Type':'text/plain','X-Turnstile-Token':'proof'}}));assert.equal(r.status,503);assert.equal(x.db.prepare('SELECT COUNT(*) AS n FROM training_jobs').get().n,0);assert.equal(x.db.prepare('SELECT COUNT(*) AS n FROM training_corpus_chunks').get().n,0);
+  const r=await x.call(req('train-upload?format=txt',{method:'POST',body:study('Rollback'),headers:{'Content-Type':'text/plain','X-Turnstile-Token':'proof'}}));assert.equal(r.status,503);assert.equal(x.db.prepare('SELECT COUNT(*) AS n FROM training_jobs').get().n,0);assert.equal(x.db.prepare('SELECT COUNT(*) AS n FROM training_corpus_chunks').get().n,0);
 });
 test('exact 5MiB D1 corpus is twenty bounded chunks; same verified bytes stream back', async () => {
   const x=setup();const data=new Uint8Array(MAX_BYTES).fill(97);const a=await x.upload(data);const rows=x.db.prepare('SELECT COUNT(*) AS n,MAX(length(data)) AS largest,SUM(bytes) AS bytes FROM training_corpus_chunks').get();assert.equal(rows.n,20);assert.equal(rows.largest,262144);assert.equal(rows.bytes,MAX_BYTES);
