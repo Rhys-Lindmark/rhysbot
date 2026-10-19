@@ -8,8 +8,8 @@ Source: **https://github.com/Rhys-Lindmark/rhysbot**
 
 ## Status
 
-**Reviewed corpus published; nanochat training completed; full Qwen adaptation
-underway. No model demo is live yet.** See the [model card](docs/MODEL_CARD.md)
+**Reviewed corpus published; nanochat and Qwen training completed. Qwen baseline
+comparison and live checkpoint verification are underway. No model demo is live yet.** See the [model card](docs/MODEL_CARD.md)
 for measured results and current limitations.
 
 - Located a 21,301-note Anki export, local HEE transcripts, and the original X archive.

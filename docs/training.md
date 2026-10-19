@@ -1,9 +1,11 @@
 # Rhysbot training pipeline
 
-**Status: corrected GPU pilots completed for both families; full training,
-baseline comparisons and live serving remain pending.** Measured pilot results
-are in `results/pilots.json`; provider billing remains pending. No downloaded base
-model or configuration is presented as a trained Rhysbot model.
+**Status: actual full nanochat and Qwen CPT/SFT training completed. The separate
+four-way Qwen evaluation is running; GPU serving verification remains pending.**
+Measured evidence is in `results/pilots.json`, `results/nanochat-full.json` and
+`results/qwen-full.json`. The small held-out evaluations are diagnostic and do
+not validate factuality, personality fidelity or app usefulness. Provider billing
+remains pending; reservations are not actual charges.
 
 The user authorized **$200 total compute across both models and evaluations** on
 2026-10-18. The initial spend is $0. Every model family starts with a finite
@@ -83,10 +85,17 @@ or unusable example counts through its usable-example total and fixed limits.
 
 Pilot: four CPT optimizer steps and two SFT steps. Initial full recipe: 1,000 CPT
 steps and 400 SFT steps, four microbatches per update, maximum sequence length
-512. These are bounded starting experiments, not validated optimal settings.
-The adapter saves separate CPT and SFT directories and their provenance. A
-separate evaluation job compares the untouched base, pinned instruction-model
-baseline, CPT adapter and SFT adapter.
+512. Full run `qwen-train-20261019a` completed exactly those updates, with
+16,232,448 trainable parameters and separate saved CPT/SFT adapters. It processed
+371,002 CPT and 85,151 SFT target tokens; the optimization loops took 2,863.84
+and 1,280.70 seconds, respectively. The full job, including model loading, saving
+and SFT evaluation, took 4,278.06 seconds. These are bounded experiments, not
+validated optimal settings. See `results/qwen-full.json` for allocation, throughput,
+loss, loading diagnostics, samples and exact SFT artifact hashes.
+
+Separate evaluation `qwen-eval-20261019a`, launched from release `1be5cf0`, is
+running. It compares the untouched base, pinned instruction-model baseline, CPT
+adapter and SFT adapter; comparative results remain pending.
 
 ## Evaluation and inference artifacts
 
@@ -102,9 +111,13 @@ These metrics do not establish truthful beliefs, privacy behavior, personality
 fidelity or usefulness. Blind human comparisons, attribution tests and app
 workflow evaluation remain necessary. Test answers are public; do not train or
 select hyperparameters on them. Actual inference paths already use nanochat's
-Engine and Transformers `generate` to emit batch samples. A persistent API and
-the website's model-backed chat are later deployment work; there is no automatic
-serving endpoint or base-model substitute for trained weights.
+Engine and Transformers `generate` to emit batch samples. The scale-to-zero
+serving endpoint has deployed with both completed checkpoint targets. An earlier
+nanochat-only deployment returned an actual
+authenticated HTTP 409 while training held the shared lock. That proves startup
+and concurrency protection, not GPU generation. Real GPU inference and the
+website's model-backed chat still need verification; no unadapted base model
+substitutes for trained weights.
 
 The final Qwen comparison uses the instruction baseline's pinned official chat
 template with `enable_thinking=False` for sample generation, so the 64-token
@@ -193,11 +206,19 @@ Source compatibility was inspected against the exact nanochat revision and
 [Transformers 5.20.1 Qwen source](https://github.com/huggingface/transformers/blob/v5.20.1/src/transformers/models/qwen3_5/modeling_qwen3_5.py),
 the pinned Hugging Face checkpoint config/index, and the installed Modal SDK.
 
-Still unverified: remote image dependency resolution/build, actual Qwen checkpoint
-remapping/loading on GPU, hybrid attention performance, backward passes,
-checkpoints, measured pilot cost, model quality and live serving. The first paid
-pilot is the integration test; a failure is preserved as a billed failed run,
-never reported as a trained model.
+Actual corrected pilots and full training now verify remote image builds, Qwen
+text-backbone remapping/loading, forward/backward execution through hybrid
+attention, and saved checkpoints. Both full-run Qwen stages report 426 language
+checkpoint tensors and empty missing/unexpected/mismatched/error diagnostics.
+These are GPU integration results, not a general performance or quality guarantee.
+
+Still pending: the running four-way Qwen comparison, real saved-checkpoint GPU
+serving, end-to-end browser generation, and provider-billed costs. Current shared
+reservations total $62.80 of the $200 authorization, including the new evaluation;
+no elapsed-time estimate refunds those holds. Failed attempts remain recorded
+and reserved until provider receipts are reconciled. The small completed SFT
+evaluation is diagnostic and does not validate personality fidelity, factuality
+or app usefulness.
 
 
 ## Pilot integration findings

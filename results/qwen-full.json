@@ -1,0 +1,275 @@
+{
+  "run_id": "qwen-train-20261019a",
+  "release_commit": "c0747a0d88f4d503b9d578cf66bf36b093f98049",
+  "status": "completed_actual_artifacts",
+  "gpu_job_seconds": 4278.0603993820005,
+  "gpu": "A100-80GB",
+  "cpt_optimizer_updates": 1000,
+  "sft_optimizer_updates": 400,
+  "training": {
+    "cpt": {
+      "status": "actual_adapter_saved",
+      "optimizer_steps": 1000,
+      "training_examples": 23798,
+      "target_tokens": 371002,
+      "seconds": 2863.8394415109997,
+      "target_tokens_per_second": 129.54706699767164,
+      "peak_cuda_allocated_bytes": 10307323392,
+      "loss_first": 4.171059608459473,
+      "loss_last": 1.9398644417524338,
+      "trainable_parameters": 16232448,
+      "loading": {
+        "model_id": "Qwen/Qwen3.5-4B-Base",
+        "revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+        "loading_info": {
+          "missing_keys": [],
+          "unexpected_keys": [],
+          "mismatched_keys": [],
+          "error_msgs": []
+        },
+        "language_checkpoint_tensors": 426
+      }
+    },
+    "sft": {
+      "status": "actual_adapter_saved",
+      "optimizer_steps": 400,
+      "training_examples": 17181,
+      "target_tokens": 85151,
+      "seconds": 1280.7039257749998,
+      "target_tokens_per_second": 66.48765439558724,
+      "peak_cuda_allocated_bytes": 10307193344,
+      "loss_first": 2.101390093564987,
+      "loss_last": 2.0624040067195892,
+      "trainable_parameters": 16232448,
+      "loading": {
+        "model_id": "Qwen/Qwen3.5-4B-Base",
+        "revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+        "loading_info": {
+          "missing_keys": [],
+          "unexpected_keys": [],
+          "mismatched_keys": [],
+          "error_msgs": []
+        },
+        "language_checkpoint_tensors": 426
+      }
+    }
+  },
+  "training_configuration": {
+    "model_id": "Qwen/Qwen3.5-4B-Base",
+    "baseline_id": "Qwen/Qwen3.5-4B",
+    "max_seq_len": 512,
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "in_proj_qkv",
+      "in_proj_z",
+      "in_proj_b",
+      "in_proj_a",
+      "out_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "learning_rate": 0.0001,
+    "gradient_accumulation_steps": 4,
+    "pilot_cpt_steps": 4,
+    "pilot_sft_steps": 2,
+    "cpt_steps": 1000,
+    "sft_steps": 400,
+    "precision": "bfloat16_lora_no_quantization"
+  },
+  "measurement_notes": [
+    "target_tokens counts unmasked next-token labels actually processed, including repeated examples; it is not the full corpus token count.",
+    "training_examples is the usable tokenized example pool, not the number of examples processed by the bounded updates.",
+    "Per-stage seconds and throughput cover the optimization loop; gpu_job_seconds covers all three remote commands, including loading, saving and SFT evaluation.",
+    "Peak CUDA allocated bytes is PyTorch allocation, not total device memory or provider billing."
+  ],
+  "heldout_sft": {
+    "nats": 3728.35960572958,
+    "tokens": 2343,
+    "utf8_bytes": 10382,
+    "nll_per_token": 1.5912759734227828,
+    "perplexity": 4.910009975246429,
+    "bits_per_byte": 0.5180972754610669
+  },
+  "assistant_only_sft": {
+    "nll_per_token": 2.250138864192096,
+    "tokens": 220,
+    "perplexity": 9.489053434611751
+  },
+  "evaluation": {
+    "status": "measured_no_personality_quality_claim",
+    "max_pretrain_test_documents": 32,
+    "max_sft_test_examples": 10,
+    "max_new_tokens": 64,
+    "generation_format": "shared_manual_chatml",
+    "assistant_loss_format": "shared_manual_chatml_assistant_only_not_template_native",
+    "format_provenance": "Formats source-reviewed at the frozen release commit; original full-run evaluation predates explicit format metadata.",
+    "loading": {
+      "model_id": "Qwen/Qwen3.5-4B-Base",
+      "revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+      "loading_info": {
+        "missing_keys": [],
+        "unexpected_keys": [],
+        "mismatched_keys": [],
+        "error_msgs": []
+      },
+      "language_checkpoint_tensors": 426
+    }
+  },
+  "samples_for_manual_review": [
+    {
+      "id": "anki-000d5e286f702f164ec9",
+      "task": "study_note_qa_not_verified_fact",
+      "completion": "1. Pre-registration\n2. Double-blind\n3. Falsification",
+      "reference": "Easy to disagree, disconfirming questions, consider the opposite\n\nOne, we can make it easier for people to disagree with us. Two, we can ask questions that are more likely to surface contrary information. Three, we can check ourselves by considering the opposite.",
+      "latency_seconds": 1.528850651000539
+    },
+    {
+      "id": "anki-00650a156f2ed8f4ed81",
+      "task": "study_note_qa_not_verified_fact",
+      "completion": "1000",
+      "reference": "Within each eg County, there are 1000 knight vassals, each of which has 100 peasants",
+      "latency_seconds": 0.46501880300002085
+    },
+    {
+      "id": "anki-0080b4a04cb213ae9464",
+      "task": "study_note_qa_not_verified_fact",
+      "completion": "C2H4\nDouble bond",
+      "reference": "C2H4",
+      "latency_seconds": 0.7284964629998285
+    },
+    {
+      "id": "anki-0112f5df4e314d566519",
+      "task": "study_note_qa_not_verified_fact",
+      "completion": "1000+ scientists, 100+ projects, 100+ compounds\n\n1000+ scientists, 100+ projects, 100+ compounds\n\n1000+ scientists, 100+ projects, 100+ compounds",
+      "reference": "Puts Wooly Mammoth genes into Asian elephants. (Oxygen at low temperatures, fatty tissue)",
+      "latency_seconds": 5.672534106999592
+    },
+    {
+      "id": "anki-011a209a7ebad0b95c20",
+      "task": "study_note_qa_not_verified_fact",
+      "completion": "- 10000000000000000000000000000000000000000000000000000000000000",
+      "reference": "260,000 soldiers, 2x British Army\n\n50% of world trade from 1750-1800",
+      "latency_seconds": 5.718446116999985
+    },
+    {
+      "id": "anki-0186ec9a6cf573732e96",
+      "task": "study_note_qa_not_verified_fact",
+      "completion": "Memeplex",
+      "reference": "Blind imitation",
+      "latency_seconds": 0.37509971499912353
+    },
+    {
+      "id": "anki-01a606a8759d10abbdaf",
+      "task": "study_note_qa_not_verified_fact",
+      "completion": "Pride in the house.\n\nPride in the house.",
+      "reference": "Tidy → feels good → tidy again",
+      "latency_seconds": 1.248764852000022
+    },
+    {
+      "id": "anki-01a6deed143f8d26f082",
+      "task": "study_note_qa_not_verified_fact",
+      "completion": "Build, do but for architecture",
+      "reference": "Form follows function\nForm precedes function\n\nBe before do",
+      "latency_seconds": 0.6283435360001022
+    },
+    {
+      "id": "anki-01ab36f1f6cc9971d6f9",
+      "task": "study_note_qa_not_verified_fact",
+      "completion": "Quipu",
+      "reference": "Quipu. Really started ~0 CE, and key during Inca ~1500 CE",
+      "latency_seconds": 0.28505573800066486
+    },
+    {
+      "id": "anki-01fad0c3e668da37a3c7",
+      "task": "study_note_qa_not_verified_fact",
+      "completion": "Inhibit serotonin reuptake",
+      "reference": "Block reabsorption of serotin. More in the brain.\n\nselective serotonin reuptake inhibitors",
+      "latency_seconds": 0.642792560000089
+    }
+  ],
+  "provenance": {
+    "source_corpus_commit": "1e20626c7b3b2b2bc3404fdb0b1fd39a93419b3d",
+    "source_corpus_sha256": "6da8afa85c1b9c8e4406823f643a8bdf80fecccac4bd58c28878ca950e6544d8",
+    "training_files_sha256": {
+      "pretrain-train.jsonl": "7000aaa2c3000eee234a65bd2498357fbc57088e2c2a7f190e17f690a30b6660",
+      "pretrain-validation.jsonl": "a6fc0c599f76a22ea184e13da7b6d3853d2543dd817dcd371faf56ca6342759c",
+      "pretrain-test.jsonl": "975bf521a65cc5c492152e31e7d2dd2646b23830e00e938de578164460edb8d1",
+      "sft-train.jsonl": "4ab8a1d61267d42d2a3f403ed3278e2b26ce097c3a2e8e68097ff487a0552217",
+      "sft-validation.jsonl": "a6272191fb0b72e26dd2ecf86733773da5aa4a500398cfff2e98d94382cacad7",
+      "sft-test.jsonl": "83285b34ce4892692e8213d9472a4530f91f7ffdbe19b048261469a80944b7b7"
+    },
+    "split_counts": {
+      "pretrain-train.jsonl": 23465,
+      "pretrain-validation.jsonl": 1322,
+      "pretrain-test.jsonl": 1316,
+      "sft-train.jsonl": 17181,
+      "sft-validation.jsonl": 943,
+      "sft-test.jsonl": 962
+    },
+    "model_pins": {
+      "Qwen/Qwen3.5-4B-Base": {
+        "revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+        "license": "apache-2.0"
+      },
+      "Qwen/Qwen3.5-4B": {
+        "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+        "license": "apache-2.0"
+      }
+    },
+    "package_versions_observed_in_pins": {
+      "transformers": "5.20.1",
+      "trl": "1.16.0",
+      "peft": "0.21.2",
+      "accelerate": "1.15.0",
+      "datasets": "5.1.0",
+      "modal": "1.6.2"
+    }
+  },
+  "artifact_hashes": {
+    "qwen/sft/adapter_model.safetensors": {
+      "sha256": "493bfdbc2279e44edd33092dc50a7376a42a38e89c7e5e157aded3f4753b1637",
+      "bytes": 64996408
+    },
+    "qwen/sft/run.json": {
+      "sha256": "d1ecb875bc6fb8bf947482807ba6f39d3604e178895d6da5e57b6c3d3df02d27",
+      "bytes": 4659
+    },
+    "qwen/sft/adapter_config.json": {
+      "sha256": "2125fe7bcfb8a3f6a162f8ecd99fc078955adaabd030a5394e3628b279efb847",
+      "bytes": 1261
+    }
+  },
+  "served_target_candidate": {
+    "run_id": "qwen-train-20261019a",
+    "weights_sha256": "493bfdbc2279e44edd33092dc50a7376a42a38e89c7e5e157aded3f4753b1637",
+    "metadata_sha256": "d1ecb875bc6fb8bf947482807ba6f39d3604e178895d6da5e57b6c3d3df02d27",
+    "adapter_config_sha256": "2125fe7bcfb8a3f6a162f8ecd99fc078955adaabd030a5394e3628b279efb847"
+  },
+  "artifact_verification": "Remote acquisition recorded the SFT artifact hashes; local metadata/config copies match. Adapter weights remain in the authenticated Modal Volume and were not downloaded for this report.",
+  "four_way_comparison": {
+    "run_id": "qwen-eval-20261019a",
+    "release_commit": "1be5cf0",
+    "status": "running_results_pending",
+    "variants": [
+      "base",
+      "instruction_baseline",
+      "cpt",
+      "sft"
+    ]
+  },
+  "serving_gpu_verification": "pending",
+  "quality": "Actual CPT and SFT completed. This small held-out evaluation is diagnostic; some completions match study answers while others mismatch, repeat or degenerate. No validated factuality, personality fidelity, or useful-app claim; baseline comparison remains pending.",
+  "accounting": {
+    "training_reservation_usd": 24.6,
+    "shared_committed_reservations_usd": 62.8,
+    "authorization_usd": 200,
+    "provider_billing_status": "pending_not_actual_charges"
+  }
+}

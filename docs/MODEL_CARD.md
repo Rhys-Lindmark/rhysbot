@@ -2,9 +2,11 @@
 
 ## Current state
 
-The nanochat scratch experiment has completed actual training and evaluation.
-The longer Qwen adaptation is running; its completed pilot is pipeline evidence,
-not the final model. No model-backed website demo is live yet.
+The nanochat scratch experiment and full Qwen adaptation have completed actual
+training and bounded SFT evaluation. The separate four-way Qwen comparison is
+running. Real GPU serving checks remain pending; no model-backed website demo
+is live yet. These small evaluations are diagnostic and do not validate
+factuality, personality fidelity or app usefulness.
 
 The released input is the frozen corpus from commit
 `1e20626c7b3b2b2bc3404fdb0b1fd39a93419b3d`, with source corpus SHA256
@@ -55,15 +57,37 @@ in [nanochat-full.json](../results/nanochat-full.json).
 
 The recipe starts from `Qwen/Qwen3.5-4B-Base`, revision
 `1001bb4d826a52d1f399e183466143f4da7b741b`. It strictly loads the pretrained text
-backbone and trains 16,232,448 rank-8 LoRA parameters in BF16. The longer run
-requests 1,000 continued-pretraining updates followed by 400 assistant-only SFT
-updates. Its adapter continues from CPT into SFT; it is not a replacement base
-checkpoint or an instruction-model download presented as fine-tuning.
+backbone and trained 16,232,448 rank-8 LoRA parameters in BF16. Full run
+`qwen-train-20261019a` completed on code/config release
+`c0747a0d88f4d503b9d578cf66bf36b093f98049`: 1,000 continued-pretraining
+updates followed by 400 assistant-only SFT updates. Its adapter continued from
+CPT into SFT; it is not a replacement base checkpoint or an instruction-model
+download presented as fine-tuning. Both stages restored 426 language checkpoint
+tensors with no reported missing, unexpected or mismatched weights.
 
-The completed corrected pilot saved separate CPT/SFT adapters and actual held-out
-evaluations. Its four CPT and two SFT updates do not establish improvement.
-The full run and a separate comparison against the untouched base, pinned Qwen
-instruction baseline, CPT adapter and SFT adapter remain pending.
+One A100 80 GB completed training and the SFT evaluation in 4,278.06 GPU-job
+seconds. CPT processed 371,002 target tokens in 2,863.84 optimization seconds;
+SFT processed 85,151 assistant targets in 1,280.70 seconds. These counts are
+unmasked labels actually processed, not the entire corpus size. Peak allocated
+CUDA memory was 10,307,323,392 bytes during CPT and 10,307,193,344 during SFT.
+
+| Frozen SFT held-out measurement | Post-trained checkpoint |
+| --- | ---: |
+| Next-token bits per byte | 0.5181 |
+| Next-token NLL per token | 1.5913 |
+| Assistant-only NLL per target token | 2.2501 |
+
+This small diagnostic evaluation covers the first 32 held-out source documents
+(2,343 next-token targets, 10,382 UTF-8 bytes) and 10 held-out SFT examples
+(220 assistant targets), with at most 64 generated tokens each. Some completions
+match short study answers; others mismatch the reference, repeat text, or emit
+degenerate numbers. It does not validate factuality, personality fidelity or
+useful chat. Machine-readable metrics, actual completions, frozen provenance and
+SFT artifact hashes are in [qwen-full.json](../results/qwen-full.json).
+
+A separate four-way evaluation, `qwen-eval-20261019a` from release `1be5cf0`, is
+running against the untouched base, pinned Qwen instruction baseline, CPT adapter
+and SFT adapter. Comparative improvement has not yet been measured in this report.
 
 For the final comparison, instruction-baseline samples use its pinned official
 chat template with thinking disabled; adapted-model samples use their training
@@ -87,7 +111,8 @@ trained checkpoint. See [serving.md](serving.md).
 ## Compute accounting
 
 Provider billing is pending. Pilot/setup reservations total $25; the completed
-nanochat run reserves $6.60; the running Qwen job reserves $24.60, for a current
-conservative commitment of $56.20. These are budget holds, not confirmed charges.
+nanochat run reserves $6.60; the completed Qwen job reserves $24.60; the separate
+Qwen comparison reserves $6.60, for a current conservative commitment of $62.80.
+These are budget holds, not confirmed charges.
 Failed jobs retain their reservations until provider billing is reconciled.
 Evaluation and inference must fit within the remaining shared authorization.
