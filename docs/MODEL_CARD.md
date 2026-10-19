@@ -139,3 +139,7 @@ verification snapshot. Each further admitted request adds a conservative $1.20
 hold; consult the shared ledger for the current total. These are budget holds, not confirmed charges.
 Failed jobs retain their reservations until provider billing is reconciled.
 Evaluation and inference must fit within the remaining shared authorization.
+
+### Actual optimizer curves (2026-10-19 follow-up)
+
+[Curve data](../results/training-curves.json) contains all 2,000 logged nanochat scratch-loss samples, 80 nanochat SFT samples, 1,000 Qwen CPT updates and 400 Qwen SFT updates, with SHA256 hashes of the source logs. Standalone figures live in `site/charts/`. Nanochat scratch validation was best at step800 (1.483018 bits/byte) and worsened thereafter. Its SFT display recorded37 nonfinite loss values from step44 onward; these are explicit nulls with logged_nonfinite markers, not omitted or interpolated. Validation values stayed finite. Nonfinite logged loss does not itself establish that all checkpoint tensors are nonfinite; the observed incoherent generations remain the relevant quality limitation. Qwen training-loss samples were finite. Objectives and tokenizers differ, so cross-model training-loss magnitudes are not a capability ranking. The refreshed research corpus was not used to retrain these historical checkpoints.
