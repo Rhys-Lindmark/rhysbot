@@ -21,8 +21,9 @@ does not buy GPU budget: both modes share **one global lifetime GPU claim**.
 - [x] Fourteen focused Node built-in tests with real in-memory SQLite and mocked
   Turnstile/Stripe/Modal transports. No network/Matplotlib/ML imports.
 - [x] Root provisions schema/bindings/secrets and configures the deployed Modal bridge.
-- [ ] Actual hosted upload → Sandbox or Stripe test → one bounded real training
-  job → verified saved adapter+metrics download → authorized corpus deletion.
+- [x] Actual hosted private corpus → bounded real training → verified saved
+  adapter+metrics download → authorized corpus deletion. Owner integration probes
+  seeded D1 rows directly; browser upload/checkout is covered by focused API tests.
 
 These checks validate source behavior, not a live payment or GPU integration.
 The parent manager owns project progress; this checklist records this phase's
@@ -186,8 +187,10 @@ of old frozen inputs/checkpoints. Stripe test payments add no real budget. The
 separate $10/month chat/voice budget does not authorize more training spend.
 
 The UI downloads a completed ZIP through the capability route, never a supplied
-URL. Proxy and browser both enforce a 100 MiB streaming count and finite timeout;
-only the browser materializes the bounded Blob. Operator reconciliation is still
+URL. Proxy and browser require authoritative artifact byte count and SHA256 headers.
+Cloudflare uses native FixedLengthStream delivery; the browser verifies exact
+size and SHA256 before offering a download, with a 100 MiB ceiling and finite
+timeout. Only the browser materializes the bounded Blob. Operator reconciliation is still
 needed after an interrupted request. No production payment/uptime/SLA claim is
 made by this source implementation.
 
@@ -199,3 +202,10 @@ made by this source implementation.
 - [D1 limits](https://developers.cloudflare.com/d1/platform/limits/): 2,000,000-byte row/BLOB, 50 Free queries.
 - [D1 database API](https://developers.cloudflare.com/d1/worker-api/d1-database/): prepared statements and transactional batch.
 - [R2 Workers API](https://developers.cloudflare.com/r2/api/workers/workers-api-reference/): private optional binding reads/writes.
+
+Terminal training accounting runs in the CPU status handler after an actual
+provider report, retaining the shared guard until the ledger commit succeeds.
+The GPU worker commits the adapter/ZIP and returns its measured report; it does
+not reload the artifact volume while Hugging Face cache files may remain open.
+Refresh status after the job completes. This read can reconcile finished work
+and clear its retained guard; it never launches or retries GPU training.

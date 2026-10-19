@@ -98,3 +98,32 @@ release with `platform/build_chat_index.py`; never index raw exports or private
 review files. Credentials, owner reference and job capability values stay outside
 Git. Deployment reads the explicit saved-checkpoint target manifest and the
 approved private voice reference; it never retrains the historical models.
+
+## Measured verification
+
+Individual hosted probes measured 0.742 seconds to first fast-mode text and
+1.580 seconds to finish both replies. Two-turn memory probes finished in
+0.842/0.931 seconds per pair. Numeric-token handling was verified with exact
+`2019 [1] and 42.` output. These are samples, not latency percentiles.
+
+The actual saved 4B pair took 124.79 seconds on the first base-weight download
+and 43.06 seconds on a follow-up using persistent cached weights. Its Rhys-side
+follow-up answered just “Language,” illustrating that adaptation does not assure
+better or more useful answers. The synthetic voice sample is 5.84 seconds at
+24 kHz; first synthesis took 58.65 seconds. Voice similarity has not been assessed
+by a human listener.
+
+Two owner verification jobs each completed32 real training updates. Their small
+held-out loss changed from 3.04697 to 2.85306/2.85325. The first needed verified
+operator accounting after an open cache log blocked a volume reload; the second
+completed through the repaired CPU finalizer. Status reads can finalize a
+finished job and release its retained training guard; they never launch or
+retry training. Refresh the job status after completion. Owner probes seeded
+private D1 corpus rows directly; upload/checkout behavior was covered by focused
+API tests rather than a new CAPTCHA/browser automation run.
+
+Adapter downloads require authoritative byte count and SHA256 metadata. The
+Cloudflare proxy uses native fixed-length streaming; the browser verifies both
+the complete size and digest before offering a file. A truncated response cannot
+be offered as a successful download. See [public verification data](../results/chat-upgrade.json)
+for measured results and limitations.

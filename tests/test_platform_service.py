@@ -155,4 +155,19 @@ class PlatformTests(unittest.TestCase):
   source=SOURCE.read_text();self.assertIn('app=APP',source);self.assertIn("provider_timeout_report(key,error,modal.exception.FunctionTimeoutError)",source)
   self.assertNotIn('TTS_TOKENIZER_REV',source);self.assertIn('x_vector_only_mode=True',source)
 
+ def test_gpu_returns_report_without_reload_accounting_or_terminal_publish(self):
+  train=next(n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name=='train_job')
+  calls=[n for n in ast.walk(train) if isinstance(n,ast.Call)]
+  self.assertFalse(any(isinstance(n.func,ast.Name) and n.func.id in {'terminal_training','finish'} for n in calls))
+  self.assertFalse(any(isinstance(n.func,ast.Attribute) and n.func.attr in {'reload','pop'} for n in calls))
+  self.assertIsInstance(train.body[-1],ast.Return);self.assertEqual(train.body[-1].value.id,'report')
+  # Structurally prohibit GPU finally-accounting; the executable CPU commit/
+  # publication ordering regression above checks the actual finalizer behavior.
+  block=next(n for n in train.body if isinstance(n,ast.Try))
+  self.assertFalse(block.finalbody)
+  cpu=next(n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name=='api')
+  status=next(n for n in ast.walk(cpu) if isinstance(n,ast.AsyncFunctionDef) and n.name=='status')
+  terminal_calls=[n for n in ast.walk(status) if isinstance(n,ast.Call) and isinstance(n.func,ast.Name) and n.func.id=='terminal_training']
+  self.assertEqual(len(terminal_calls),2)  # actual returned report or exact provider timeout
+
 if __name__=='__main__':unittest.main()

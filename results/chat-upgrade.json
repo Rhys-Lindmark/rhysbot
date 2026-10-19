@@ -33,7 +33,29 @@
       "comparison": "same system, template, retained user turns and decoding; independent assistant histories, saved CPT/SFT adapter enabled versus disabled"
     },
     "cold_http_seconds": 124.786332,
-    "cold_cache": true
+    "cold_cache": true,
+    "cached_followup": {
+      "http_seconds": 43.056369625,
+      "response": {
+        "rhys": {
+          "text": "Language",
+          "output_tokens": 2
+        },
+        "qwen": {
+          "text": "One concrete example of cultural evolution is the development of written language, which allowed for the preservation and transmission of complex ideas, stories, and knowledge across generations, significantly impacting societal organization and intellectual advancement.",
+          "output_tokens": 40
+        },
+        "checkpoint_run_id": "qwen-train-20261019a",
+        "weights_sha256": "493bfdbc2279e44edd33092dc50a7376a42a38e89c7e5e157aded3f4753b1637",
+        "baseline": "same pinned Qwen3.5-4B-Base with adapter disabled",
+        "elapsed_seconds": 23.678854047999998,
+        "input_tokens": {
+          "rhys": 124,
+          "qwen": 125
+        },
+        "comparison": "same system, template, retained user turns and decoding; independent assistant histories, saved CPT/SFT adapter enabled versus disabled"
+      }
+    }
   },
   "budget": {
     "monthly_chat_voice_usd": 10,
@@ -41,7 +63,10 @@
     "conservative_voice_request_usd": 0.15,
     "conservative_checkpoint_pair_usd": 0.2,
     "training_cap_usd": 200,
-    "training_holds_before_customer_pilot_usd": 151.6
+    "training_holds_before_customer_pilot_usd": 151.6,
+    "training_holds_after_two_owner_pilots_usd": 158.8,
+    "monthly_reserved_after_verification_usd": 0.6,
+    "public_sandbox_training_claims_used": 0
   },
   "limitations": [
     "Latency measurements are individual probes, not percentiles or an uptime guarantee.",
@@ -65,5 +90,137 @@
       "nonzero_fraction": 0.9972674086757991,
       "human_voice_similarity": "not assessed by a listener"
     }
+  },
+  "owner_training_pilots": [
+    {
+      "model": "Qwen/Qwen3.5-4B-Base",
+      "revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+      "optimizer_steps": 32,
+      "sequence_length": 256,
+      "training_tokens": 3584,
+      "optimizer_target_tokens": 8160,
+      "heldout_tokens": 256,
+      "heldout_loss_before": 3.046973943710327,
+      "heldout_loss_after": 2.853060007095337,
+      "elapsed_seconds": 93.993388424,
+      "trainable_parameters": 16232448,
+      "loss": [
+        2.591187000274658,
+        3.461524724960327,
+        3.355470895767212,
+        2.8950612545013428,
+        2.978250741958618,
+        3.05804181098938,
+        3.045971393585205,
+        3.3804564476013184,
+        3.2949399948120117,
+        3.5272376537323,
+        3.3194901943206787,
+        3.06197190284729,
+        2.7469921112060547,
+        3.333651065826416,
+        2.0149788856506348,
+        2.968510150909424,
+        2.8599393367767334,
+        2.433488368988037,
+        2.5044150352478027,
+        2.603529930114746,
+        2.5451931953430176,
+        2.8455710411071777,
+        2.896979808807373,
+        2.9983222484588623,
+        2.8598034381866455,
+        2.594167470932007,
+        2.3398430347442627,
+        2.8968796730041504,
+        1.4913865327835083,
+        2.431396484375,
+        2.335319995880127,
+        1.8869985342025757
+      ],
+      "limitations": [
+        "Bounded 32-step adaptation pilot, not a full production model.",
+        "Small held-out text sample; loss is not factual accuracy.",
+        "Input capped to first 250000 characters / 100000 tokens; corpus remains private."
+      ],
+      "artifact_sha256": "b52cbe6f452c3767ac9ed78f14fd9a9faa2747c7b09dc925f2aaf48dd7862b05",
+      "artifact_bytes": 63952674,
+      "terminal_accounting": "Saved adapter verified and reconciled after a provider-terminal volume reload bookkeeping failure; full hold retained, no GPU retry.",
+      "protected_download_verified": true,
+      "uploaded_corpus_deleted": true
+    },
+    {
+      "model": "Qwen/Qwen3.5-4B-Base",
+      "revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+      "optimizer_steps": 32,
+      "sequence_length": 256,
+      "training_tokens": 3584,
+      "optimizer_target_tokens": 8160,
+      "heldout_tokens": 256,
+      "heldout_loss_before": 3.046973943710327,
+      "heldout_loss_after": 2.8532536029815674,
+      "elapsed_seconds": 43.125552307,
+      "trainable_parameters": 16232448,
+      "loss": [
+        2.591187000274658,
+        3.459897756576538,
+        3.357367753982544,
+        2.893322467803955,
+        2.9792068004608154,
+        3.0613362789154053,
+        3.050532341003418,
+        3.3791096210479736,
+        3.295630693435669,
+        3.525832414627075,
+        3.3158764839172363,
+        3.0640156269073486,
+        2.743972063064575,
+        3.3333160877227783,
+        2.016160249710083,
+        2.9651947021484375,
+        2.86106538772583,
+        2.4378058910369873,
+        2.5054399967193604,
+        2.6025776863098145,
+        2.5459353923797607,
+        2.8461966514587402,
+        2.9095823764801025,
+        2.9913861751556396,
+        2.8572347164154053,
+        2.5928473472595215,
+        2.339637041091919,
+        2.8968281745910645,
+        1.4894897937774658,
+        2.427684783935547,
+        2.332980155944824,
+        1.8893414735794067
+      ],
+      "limitations": [
+        "Bounded 32-step adaptation pilot, not a full production model.",
+        "Small held-out text sample; loss is not factual accuracy.",
+        "Input capped to first 250000 characters / 100000 tokens; corpus remains private."
+      ],
+      "artifact_sha256": "4a34d51d50fb4c4fef8d529f7cd96e6d31751aa9a6608e2c9b11c8ee49d41bf3",
+      "artifact_bytes": 63952141,
+      "terminal_accounting": "Completed normally through CPU status finalization and shared lock release.",
+      "protected_download_verified": true,
+      "uploaded_corpus_deleted": true,
+      "protected_download_http_seconds": 29.996848125
+    }
+  ],
+  "validation": {
+    "python_tests": 149,
+    "source_node_tests": 35,
+    "website_tests": "32 relevant inference, upload and artifact tests passed.",
+    "browser_visual_qa": "Not run in this phase while host memory remained under pressure. DOM behavior tests and real hosted HTTP/ML probes used.",
+    "artifact_delivery": "Actual 63,952,141-byte protected ZIP matched authoritative byte count and SHA256. Wrong capability rejected; both uploaded corpora deleted.",
+    "unchanged_corpus_and_frozen_inputs_from_commit": "e50633317c2306a7236d2814f440ccff92ebb6d2"
+  },
+  "deployment": {
+    "website_commit": "d5087d35558bb4bcf80b2b6d3d8153890014ad7e",
+    "website_deployment": "c85ad56d-2e57-44ed-8221-dbe42dae92d1",
+    "platform_endpoint": "https://rhys-lindmark--rhysbot-platform-api.us-east.modal.run",
+    "payment_mode": "sandbox; no live Stripe credentials/charges configured",
+    "public_sandbox_claims_used": 0
   }
 }

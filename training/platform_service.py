@@ -197,8 +197,10 @@ def train_job(key,body):
   report.update(artifact_sha256=hashlib.sha256((out/'adapter.zip').read_bytes()).hexdigest(),artifact_bytes=(out/'adapter.zip').stat().st_size)
   volume.commit()
  except Exception as error:report.update(status='failed',error_type=type(error).__name__,elapsed_seconds=time.monotonic()-start)
- finally:
-  terminal_training(key,report,store,d,volume)
+ # CPU /status finalizes this exact returned report. HF/Xet may keep cache
+ # descriptors open in this GPU process, so it must never volume.reload(),
+ # account/publish a terminal state, or unlock here. Until positive CPU-side
+ # completion, state remains running and the full reservation/guard is retained.
  return report
 
 @APP.function(image=VOICE,gpu='L4',cpu=(2,4),memory=(8192,16384),timeout=180,retries=0,min_containers=0,max_containers=1,scaledown_window=2,volumes={'/artifacts':volume})
@@ -327,7 +329,7 @@ def api():
   def chunks():
    with path.open('rb') as f:
     for part in iter(lambda:f.read(262144),b''):yield part
-  return StreamingResponse(chunks(),media_type='application/zip',headers={'Content-Length':str(path.stat().st_size),'Cache-Control':'no-store'})
+  return StreamingResponse(chunks(),media_type='application/zip',headers={'Content-Length':str(path.stat().st_size),'X-Rhysbot-Artifact-Bytes':str(path.stat().st_size),'X-Rhysbot-Artifact-SHA256':state['report']['artifact_sha256'],'Cache-Control':'no-store'})
  @web.post('/voice')
  async def voice(request:Request):
   if not await auth(request):return JSONResponse({'error':'unauthorized'},403)

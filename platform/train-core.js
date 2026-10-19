@@ -113,6 +113,16 @@ async function human(request, env, fetcher) {
   if (result.success !== true || result.hostname !== 'ai.rhyslindmark.com' || result.action !== 'rhysbot_train') fail(403, 'verification_failed');
 }
 function publicJob(job) { return { job_id: job.id, state: job.state, recipe: RECIPE, authorization_mode: job.authorization_mode || null, corpus_bytes: job.bytes, created_at: job.created_at, expires_at: job.expires_at, artifact_available: job.state === 'completed', message_code: job.message_code || null }; }
+export function artifactStream(body, size, FixedLength = globalThis.FixedLengthStream) {
+  // Native Workers stream preserves a known length without per-chunk JS work.
+  // https://developers.cloudflare.com/workers/runtime-apis/streams/transformstream/#fixedlengthstream
+  if (typeof FixedLength === 'function') return body.pipeThrough(new FixedLength(size));
+  // Node's standards-only tests lack FixedLengthStream; still fail on short/long bodies.
+  let count = 0;
+  return body.pipeThrough(new TransformStream({ transform(chunk, controller) {
+    count += chunk.byteLength; if (count > size) throw new Error('artifact_size_mismatch'); controller.enqueue(chunk);
+  }, flush() { if (count !== size) throw new Error('artifact_size_mismatch'); } }));
+}
 async function dispatch(env, job, fetcher, now) {
   // Called only after a durable payment/sandbox claim; never from public status.
   try {
@@ -211,11 +221,12 @@ export function createTrainingHandler({ fetcher = fetch, clock = () => Math.floo
         const job = await authorized(request, env, url.searchParams.get('job'));
         if (job.state !== 'completed') fail(409, 'artifact_not_ready');
         const upstream = await fetcher(`${config.bridge}/artifact?job=${job.id}`, { method: 'GET', headers: bridgeHeaders(env), redirect: 'manual', signal: AbortSignal.timeout(230000) });
-        const size = upstream.headers.get('Content-Length'); const maxArtifact = 100 * 1024 * 1024;
-        if (upstream.status !== 200 || upstream.headers.get('Content-Type')?.split(';')[0] !== 'application/zip' || !upstream.body || (size && (!/^\d+$/.test(size) || Number(size) > maxArtifact || Number(size) < 1))) { await upstream.body?.cancel(); fail(502, 'artifact_unavailable'); }
-        let count = 0;
-        const bounded = new TransformStream({ transform(chunk, controller) { count += chunk.byteLength; if (count > maxArtifact) throw new Error('artifact_size_limit'); controller.enqueue(chunk); }, flush() { if (!count || (size && count !== Number(size))) throw new Error('artifact_size_mismatch'); } });
-        return new Response(upstream.body.pipeThrough(bounded), { headers: { 'Content-Type': 'application/zip', 'Content-Disposition': `attachment; filename="${job.id}-adapter.zip"`, 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff', ...(size ? { 'Content-Length': size } : {}) } });
+        const bytes = upstream.headers.get('X-Rhysbot-Artifact-Bytes'), digest = upstream.headers.get('X-Rhysbot-Artifact-SHA256'), length = upstream.headers.get('Content-Length');
+        if (upstream.status !== 200 || upstream.headers.get('Content-Type')?.split(';')[0] !== 'application/zip' || !upstream.body || !/^[1-9]\d*$/.test(bytes || '') || !Number.isSafeInteger(Number(bytes)) || Number(bytes) > 100 * 1024 * 1024 || !/^[a-f0-9]{64}$/.test(digest || '') || (length !== null && length !== bytes)) { await upstream.body?.cancel(); fail(502, 'artifact_unavailable'); }
+        const body = artifactStream(upstream.body, Number(bytes));
+        // Workers ignores manually supplied Content-Length for generic streams;
+        // the native FixedLengthStream above establishes the actual wire length.
+        return new Response(body, { headers: { 'Content-Type': 'application/zip', 'Content-Disposition': `attachment; filename="${job.id}-adapter.zip"`, 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff', 'Content-Length': bytes, 'X-Rhysbot-Artifact-Bytes': bytes, 'X-Rhysbot-Artifact-SHA256': digest } });
       }
       if (action === 'train-job' && ['GET','DELETE'].includes(request.method)) {
         let job = await authorized(request, env, url.searchParams.get('job'));

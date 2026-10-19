@@ -3,7 +3,8 @@ import assert from 'node:assert/strict';
 import { DatabaseSync } from 'node:sqlite';
 import { createHmac } from 'node:crypto';
 import { readFileSync } from 'node:fs';
-import { createTrainingHandler, ORIGIN, MAX_BYTES, LIMITS, validateCorpus, verifyStripeSignature, sha256 } from './train-core.js';
+import { createTrainingHandler, ORIGIN, MAX_BYTES, LIMITS, validateCorpus, verifyStripeSignature, sha256, artifactStream } from './train-core.js';
+import { verifiedArtifactBlob } from './public/train/artifact.js';
 
 const NOW = 1800000000;
 const schema = readFileSync(new URL('./schema.sql', import.meta.url), 'utf8');
@@ -31,7 +32,7 @@ function req(action, { method = 'GET', body, token, origin = ORIGIN, headers = {
   if (body !== undefined) { init.body = typeof body === 'string' || body instanceof Uint8Array || body instanceof ReadableStream ? body : JSON.stringify(body); if (body instanceof ReadableStream) init.duplex = 'half'; }
   return new Request(`${ORIGIN}/api/rhysbot/${action}`, init);
 }
-function setup({ stripe = false, dispatchThrows = false, pay = 'paid', storage = 'd1', artifactSize = '4' } = {}) {
+function setup({ stripe = false, dispatchThrows = false, pay = 'paid', storage = 'd1', artifactSize = '4', artifactBytes = '4', artifactHash } = {}) {
   const { db, adapter } = database(); const calls = []; const objects = new Map(); let n = 0;
   const env = { RHYSBOT_TRAIN_DB: adapter, RHYSBOT_TRAIN_AUTH_SECRET: 'auth-secret-'.repeat(4), RHYSBOT_TRAIN_BRIDGE_SECRET: 'bridge-secret-'.repeat(4), RHYSBOT_TRAIN_BRIDGE_URL: 'https://test--train.modal.run', MODAL_PROXY_KEY: 'proxy-key', MODAL_PROXY_SECRET: 'proxy-secret', RHYSBOT_TURNSTILE_SECRET: 'human-secret', RHYSBOT_TURNSTILE_SITE_KEY: 'public-key', RHYSBOT_TRAIN_SANDBOX_QUOTA: '1' };
   if (stripe) Object.assign(env, { RHYSBOT_TRAIN_STRIPE_KEY: 'sk_test_testing', RHYSBOT_TRAIN_STRIPE_WEBHOOK_SECRET: 'whsec_testing', RHYSBOT_TRAIN_STRIPE_PRICE: 'price_testing', RHYSBOT_TRAIN_PRICE_CENTS: '100' });
@@ -53,7 +54,7 @@ function setup({ stripe = false, dispatchThrows = false, pay = 'paid', storage =
       const payload = JSON.parse(init.body); return Response.json({ job_id: payload.job_id, state: 'queued', provider_id: 'must-not-leak' }, { status: 202 });
     }
     if (url.includes('/status?')) return Response.json({ unknown: true }, { status: 404 });
-    if (url.includes('/artifact?')) return new Response(bytes('PKxx'), { headers: { 'Content-Type': 'application/zip', ...(artifactSize === null ? {} : { 'Content-Length': artifactSize }), 'Set-Cookie': 'secret', 'X-Provider': 'private' } });
+    if (url.includes('/artifact?')) return new Response(bytes('PKxx'), { headers: { 'Content-Type': 'application/zip', ...(artifactSize === null ? {} : { 'Content-Length': artifactSize }), ...(artifactBytes === null ? {} : { 'X-Rhysbot-Artifact-Bytes': artifactBytes }), ...(artifactHash === null ? {} : { 'X-Rhysbot-Artifact-SHA256': artifactHash || await sha256(bytes('PKxx')) }), 'Set-Cookie': 'secret', 'X-Provider': 'private' } });
     throw new Error('Unexpected network call');
   };
   const handler = createTrainingHandler({ fetcher, clock: () => NOW });
@@ -182,10 +183,29 @@ test('completed artifact needs same-job capability, strips headers, streams only
   assert.equal((await x.call(req(`train-artifact?job=${a.job_id}`,{token:a.access_token}))).status,409);
   x.db.prepare("UPDATE training_jobs SET state='completed' WHERE id=?").run(a.job_id);
   assert.equal((await x.call(req(`train-artifact?job=${a.job_id}`,{token:b.access_token}))).status,404);
-  const r=await x.call(req(`train-artifact?job=${a.job_id}`,{token:a.access_token,origin:null}));assert.equal(r.status,200);assert.equal(await r.text(),'PKxx');assert.equal(r.headers.get('Set-Cookie'),null);assert.equal(r.headers.get('X-Provider'),null);
+  const r=await x.call(req(`train-artifact?job=${a.job_id}`,{token:a.access_token,origin:null}));assert.equal(r.status,200);assert.equal(r.headers.get('X-Rhysbot-Artifact-Bytes'),'4');assert.equal(r.headers.get('X-Rhysbot-Artifact-SHA256'),await sha256(bytes('PKxx')));assert.equal(await r.text(),'PKxx');assert.equal(r.headers.get('Set-Cookie'),null);assert.equal(r.headers.get('X-Provider'),null);
   const call=x.calls.find(x=>x.url.includes('/artifact?'));assert.equal(call.url,`${x.env.RHYSBOT_TRAIN_BRIDGE_URL}/artifact?job=${a.job_id}`);assert.equal(call.init.headers.Authorization,`Bearer ${x.env.RHYSBOT_TRAIN_BRIDGE_SECRET}`);
   const y=setup({artifactSize:String(100*1024*1024+1)});const c=await y.upload();y.db.prepare("UPDATE training_jobs SET state='completed' WHERE id=?").run(c.job_id);assert.equal((await y.call(req(`train-artifact?job=${c.job_id}`,{token:c.access_token}))).status,502);
-  const z=setup({artifactSize:'5'});const d=await z.upload();z.db.prepare("UPDATE training_jobs SET state='completed' WHERE id=?").run(d.job_id);const short=await z.call(req(`train-artifact?job=${d.job_id}`,{token:d.access_token}));await assert.rejects(()=>short.arrayBuffer());
+  const z=setup({artifactSize:null,artifactBytes:'5'});const d=await z.upload();z.db.prepare("UPDATE training_jobs SET state='completed' WHERE id=?").run(d.job_id);const short=await z.call(req(`train-artifact?job=${d.job_id}`,{token:d.access_token}));await assert.rejects(()=>short.arrayBuffer());
+});
+test('artifact proxy requires verified metadata even without Content-Length, native stream selected when available',async()=>{
+  for(const options of [{artifactBytes:null},{artifactHash:null},{artifactHash:'not-a-digest'},{artifactSize:'5'},{artifactBytes:String(100*1024*1024+1),artifactSize:null}]){
+    const x=setup(options),job=await x.upload();x.db.prepare("UPDATE training_jobs SET state='completed' WHERE id=?").run(job.job_id);assert.equal((await x.call(req(`train-artifact?job=${job.job_id}`,{token:job.access_token}))).status,502);
+  }
+  const x=setup({artifactSize:null}),job=await x.upload();x.db.prepare("UPDATE training_jobs SET state='completed' WHERE id=?").run(job.job_id);const result=await x.call(req(`train-artifact?job=${job.job_id}`,{token:job.access_token}));assert.equal(result.status,200);assert.equal(await (await verifiedArtifactBlob(result)).text(),'PKxx');
+  let declared;
+  class NativeFixed extends TransformStream{constructor(n){super();declared=n;}}
+  const body=artifactStream(new Response('PKxx').body,4,NativeFixed);assert.equal(await new Response(body).text(),'PKxx');assert.equal(declared,4);
+});
+test('browser verifies exact metadata size and SHA256 before offering Blob, including lost Content-Length',async()=>{
+  const digest=await sha256(bytes('PKxx'));
+  const response=(data='PKxx',extra={})=>new Response(data,{headers:{'Content-Type':'application/zip','X-Rhysbot-Artifact-Bytes':'4','X-Rhysbot-Artifact-SHA256':digest,...extra}});
+  assert.equal(await (await verifiedArtifactBlob(response())).text(),'PKxx');
+  await assert.rejects(()=>verifiedArtifactBlob(response('PKx')),/Incomplete/);
+  await assert.rejects(()=>verifiedArtifactBlob(response('PKxxx')),/exceeds/);
+  await assert.rejects(()=>verifiedArtifactBlob(response('PKxy')),/hash mismatch/);
+  await assert.rejects(()=>verifiedArtifactBlob(response('PKxx',{'Content-Length':'5'})),/metadata/);
+  await assert.rejects(()=>verifiedArtifactBlob(new Response('PKxx',{headers:{'Content-Type':'application/zip'}})),/metadata/);
 });
 test('D1 batch rollback leaves no partial corpus/job when a chunk statement fails', async () => {
   const x=setup(); x.db.exec("CREATE TRIGGER reject_chunk BEFORE INSERT ON training_corpus_chunks BEGIN SELECT RAISE(ABORT,'test failure'); END;");

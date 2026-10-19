@@ -1,3 +1,4 @@
+import { verifiedArtifactBlob } from './artifact.js';
 const $ = id => document.getElementById(id);
 const API = '/api/rhysbot/';
 let config, job, verification = '', widget;
@@ -53,13 +54,8 @@ $('download').addEventListener('click', async () => {
   $('download').disabled = true;
   try {
     const r = await fetch(`${API}train-artifact?job=${encodeURIComponent(job.job_id)}`, { headers: { Authorization: `Bearer ${job.access_token}` }, credentials: 'omit', cache: 'no-store', redirect: 'error', signal: AbortSignal.timeout(250000) });
-    if (!r.ok || r.headers.get('Content-Type')?.split(';')[0] !== 'application/zip') throw new Error('Trained artifact is unavailable');
-    const size = r.headers.get('Content-Length'), limit = 100 * 1024 * 1024;
-    if (size && (!/^\d+$/.test(size) || Number(size) > limit)) throw new Error('Artifact exceeds download limit');
-    const reader = r.body.getReader(); const chunks = []; let total = 0;
-    try { for (;;) { const { value, done } = await reader.read(); if (done) break; total += value.byteLength; if (total > limit) { await reader.cancel(); throw new Error('Artifact exceeds download limit'); } chunks.push(value); } } finally { reader.releaseLock(); }
-    if (!total || (size && total !== Number(size))) throw new Error('Incomplete artifact');
-    const href = URL.createObjectURL(new Blob(chunks, { type: 'application/zip' })); const a = document.createElement('a'); a.href = href; a.download = `${job.job_id}-adapter.zip`; a.click(); setTimeout(() => URL.revokeObjectURL(href), 1000);
+    const blob = await verifiedArtifactBlob(r);
+    const href = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = href; a.download = `${job.job_id}-adapter.zip`; a.click(); setTimeout(() => URL.revokeObjectURL(href), 1000);
   } catch (e) { error(e); } finally { display(); }
 });
 $('delete').addEventListener('click', async () => {
