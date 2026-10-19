@@ -33,7 +33,14 @@
       "status": "passed",
       "public_sidecars": 214,
       "linked_corpus_excerpts": 5090
-    }
+    },
+    "release_ci_passed": [
+      39331346258,
+      39331378743
+    ],
+    "live_http_checks_passed": 14,
+    "full_live_corpus_hash_matches": true,
+    "api_status": "available"
   },
   "corpus_size_chart_sha256": {
     "corpus-bytes.png": "f7b610c965ede1e956ad07aa552e5f2285ec1d4a3a69bdaeb0ef26a57bb65e54",
@@ -44,5 +51,14 @@
     "conservative_committed_holds_usd": 148.0,
     "provider_billing": "pending; holds are not final charges",
     "includes": "training, evaluation, inference, speech, helper/setup failures and chart rendering"
+  },
+  "live_release": {
+    "data_commit": "152fbf26ee4d92f08508451d2a9a65e84b8b1e07",
+    "website_commit": "ca5f9451d114809fac72eb230581947498d2cf98",
+    "production_deployment": "28be15b2-8afa-48bc-8f77-530cec202299",
+    "deployment_status": "success",
+    "verified_at": "2026-10-19T21:59:07.135378+00:00",
+    "live_browser_repeated": false,
+    "browser_logic_tests_passed": 4
   }
 }
