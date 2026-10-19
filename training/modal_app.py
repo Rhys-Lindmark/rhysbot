@@ -28,7 +28,7 @@ REVISION = PINS["nanochat"]["revision"]
 app = modal.App("rhysbot-training")
 volume = modal.Volume.from_name("rhysbot-training-artifacts", create_if_missing=True)
 singleton = modal.Dict.from_name("rhysbot-training-singleton", create_if_missing=True)
-image = (modal.Image.debian_slim(python_version="3.12")
+core_image = (modal.Image.debian_slim(python_version="3.12")
          .apt_install("git", "build-essential")
          .pip_install("torch==2.9.1", "transformers==" + PINS["package_versions_observed"]["transformers"],
                       "peft==" + PINS["package_versions_observed"]["peft"],
@@ -39,8 +39,8 @@ image = (modal.Image.debian_slim(python_version="3.12")
          .run_commands("git init /opt/nanochat",
                        "git -C /opt/nanochat remote add origin https://github.com/karpathy/nanochat.git",
                        "git -C /opt/nanochat fetch --depth=1 origin " + REVISION,
-                       "git -C /opt/nanochat checkout --detach FETCH_HEAD")
-         .add_local_dir(str(HERE), remote_path="/rhysbot/training", copy=True)
+                       "git -C /opt/nanochat checkout --detach FETCH_HEAD"))
+image = (core_image.add_local_dir(str(HERE), remote_path="/rhysbot/training", copy=True)
          .add_local_dir(str(ROOT / "data/training"), remote_path="/rhysbot/data/training", copy=True))
 
 

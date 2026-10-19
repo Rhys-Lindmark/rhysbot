@@ -17,9 +17,9 @@ import modal
 
 HERE = Path('/rhysbot/training') if Path('/rhysbot/training/runtime.py').exists() else Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-from runtime import read_json, write_json, safe_run_id
+from runtime import ROOT, read_json, write_json, safe_run_id
 from budget import committed, reserve, finish
-from modal_app import image as base_image, volume, CONFIG
+from modal_app import core_image, volume, CONFIG
 
 PINS = {
     'diarization': ['nvidia/Nemotron-3-Diarization', 'f667ed73aee57d40cc39428eb768b4fd87a0a29e'],
@@ -27,9 +27,12 @@ PINS = {
     'voice': ['microsoft/wavlm-base-plus-sv', 'feb593a6c23c1cc3d9510425c29b0a14d2b07b1e'],
 }
 app = modal.App('rhysbot-speakers')
-image = (base_image.apt_install('ffmpeg', 'libsndfile1')
+image = (core_image.apt_install('ffmpeg', 'libsndfile1')
          .pip_install('faster-whisper==1.2.1', 'ctranslate2==4.8.3', 'av==16.1.0',
-                      'librosa==0.11.0', 'soundfile==0.13.1'))
+                      'librosa==0.11.0', 'soundfile==0.13.1', 'yt-dlp==2026.8.19', 'yt-dlp-ejs==0.8.0')
+         .run_commands("python -c \"import urllib.request,hashlib,tarfile; from pathlib import Path; p=Path('/tmp/node.tar.xz'); urllib.request.urlretrieve('https://nodejs.org/dist/v24.11.0/node-v24.11.0-linux-x64.tar.xz',p); assert hashlib.sha256(p.read_bytes()).hexdigest()=='46da9a098973ab7ba4fca76945581ecb2eaf468de347173897044382f10e0a0a'; tarfile.open(p).extractall('/opt',filter='data'); p.unlink()\"")
+         .add_local_dir(str(HERE), remote_path='/rhysbot/training', copy=True)
+         .add_local_dir(str(ROOT / 'data/training'), remote_path='/rhysbot/data/training', copy=True))
 cpu_image = modal.Image.debian_slim(python_version='3.12').add_local_dir(
     str(HERE), remote_path='/rhysbot/training', copy=True)
 
@@ -91,6 +94,14 @@ def validate_items(items):
         if item['id'] in ids:
             raise ValueError('Duplicate episode')
         ids.add(item['id'])
+        if item.get('audio_source_kind') == 'youtube_audio':
+            import re
+            video_id = item.get('youtube_id', '')
+            if (not re.fullmatch(r'[A-Za-z0-9_-]{11}', video_id)
+                    or item.get('youtube_url') != 'https://www.youtube.com/watch?v=' + video_id
+                    or item.get('enclosure_url') is not None):
+                raise ValueError('Explicit canonical public YouTube audio source required')
+            continue
         url = urlparse(item['enclosure_url'])
         if url.scheme != 'https' or url.hostname != 'feeds.soundcloud.com' or not url.path.startswith('/stream/'):
             raise ValueError('Only inventoried public SoundCloud RSS enclosures allowed')
@@ -165,15 +176,32 @@ def process(run_id, items, timeout_seconds, reference=None):
                 import requests
                 audio_path = scratch / 'episode.mp3'
                 digest, size = hashlib.sha256(), 0
-                with requests.get(item['enclosure_url'], stream=True, timeout=(15, 30)) as response:
-                    response.raise_for_status()
-                    with audio_path.open('wb') as stream:
-                        for chunk in response.iter_content(1024 * 1024):
-                            size += len(chunk)
-                            if size > 500 * 1024 * 1024 or time.monotonic() - started > timeout_seconds - 90:
-                                raise ValueError('Audio size/time ceiling reached')
-                            digest.update(chunk)
-                            stream.write(chunk)
+                if item.get('audio_source_kind') == 'youtube_audio':
+                    command = [sys.executable, '-m', 'yt_dlp', '--ignore-config', '--no-playlist', '--no-cache-dir',
+                        '--js-runtimes', 'node:/opt/node-v24.11.0-linux-x64/bin/node',
+                        '--socket-timeout', '15', '--retries', '0', '--fragment-retries', '0', '--extractor-retries', '0',
+                        '--max-filesize', '500M', '-f', 'bestaudio[ext=m4a]/bestaudio', '--no-part',
+                        '-o', str(scratch / 'episode.%(ext)s'), item['youtube_url']]
+                    subprocess.run(command, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=150)
+                    candidates = list(scratch.glob('episode.*'))
+                    if len(candidates) != 1:
+                        raise ValueError('No unique downloaded public audio')
+                    audio_path = candidates[0]
+                    with audio_path.open('rb') as stream:
+                        for chunk in iter(lambda: stream.read(1024*1024), b''):
+                            size += len(chunk); digest.update(chunk)
+                    if size > 500*1024*1024:
+                        raise ValueError('Audio size ceiling reached')
+                else:
+                    with requests.get(item['enclosure_url'], stream=True, timeout=(15, 30)) as response:
+                        response.raise_for_status()
+                        with audio_path.open('wb') as stream:
+                            for chunk in response.iter_content(1024 * 1024):
+                                size += len(chunk)
+                                if size > 500 * 1024 * 1024 or time.monotonic() - started > timeout_seconds - 90:
+                                    raise ValueError('Audio size/time ceiling reached')
+                                digest.update(chunk)
+                                stream.write(chunk)
                 decoded = subprocess.check_output(['ffmpeg', '-v', 'error', '-i', str(audio_path),
                     '-f', 'f32le', '-ac', '1', '-ar', '16000', '-'], timeout=120)
                 audio = np.frombuffer(decoded, dtype=np.float32).copy()

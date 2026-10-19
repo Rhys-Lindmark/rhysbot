@@ -46,6 +46,14 @@ class SpeechTests(unittest.TestCase):
         for items in ([], ITEMS * 2, [{**ITEMS[0], 'enclosure_url': 'http://localhost:80/secret'}]):
             with self.assertRaises(ValueError):
                 namespace['validate_items'](items)
+        video = {'id': 'youtube-one', 'youtube_id': 'g2BAKx2Rr-E',
+                 'youtube_url': 'https://www.youtube.com/watch?v=g2BAKx2Rr-E',
+                 'enclosure_url': None, 'audio_source_kind': 'youtube_audio'}
+        namespace['validate_items']([video])
+        for changed in ({'youtube_url': 'https://www.youtube.com.evil.invalid/watch?v=g2BAKx2Rr-E'},
+                        {'youtube_id': '../private'}, {'enclosure_url': 'https://private.invalid'}):
+            with self.assertRaises(ValueError):
+                namespace['validate_items']([{**video, **changed}])
 
     def test_voice_identity_requires_multiple_consistent_clips_and_margin(self):
         choose = namespace['choose_rhys']
