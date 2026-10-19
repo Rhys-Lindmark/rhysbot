@@ -1,0 +1,92 @@
+{
+  "run_id": "nanochat-train-20261019a",
+  "release_commit": "c0747a0d88f4d503b9d578cf66bf36b093f98049",
+  "status": "completed_actual_artifacts",
+  "gpu_job_seconds": 307.961359942,
+  "pretrain_optimizer_updates": 2000,
+  "sft_optimizer_updates": 80,
+  "heldout_pretrain_final": {
+    "nats": 15518.704864501953,
+    "tokens": 2610,
+    "utf8_bytes": 10382,
+    "nll_per_token": 5.945863932759369,
+    "perplexity": 382.1693873703494,
+    "bits_per_byte": 2.1564976448696207
+  },
+  "heldout_sft": {
+    "nats": 13088.627899169922,
+    "tokens": 2610,
+    "utf8_bytes": 10382,
+    "nll_per_token": 5.014799961367786,
+    "perplexity": 150.62600273246946,
+    "bits_per_byte": 1.818811265861431
+  },
+  "assistant_only_pretrain_final": {
+    "nll_per_token": 7.28985597235132,
+    "tokens": 249,
+    "perplexity": 1465.3596297026343
+  },
+  "assistant_only_sft": {
+    "nll_per_token": 5.441878154095876,
+    "tokens": 249,
+    "perplexity": 230.87539608405763
+  },
+  "pretrain_validation_curve": [
+    {
+      "step": 0,
+      "validation_bpb": 3.150128
+    },
+    {
+      "step": 200,
+      "validation_bpb": 1.78604
+    },
+    {
+      "step": 400,
+      "validation_bpb": 1.564337
+    },
+    {
+      "step": 600,
+      "validation_bpb": 1.496245
+    },
+    {
+      "step": 800,
+      "validation_bpb": 1.483018
+    },
+    {
+      "step": 1000,
+      "validation_bpb": 1.487169
+    },
+    {
+      "step": 1200,
+      "validation_bpb": 1.527994
+    },
+    {
+      "step": 1400,
+      "validation_bpb": 1.572202
+    },
+    {
+      "step": 1600,
+      "validation_bpb": 1.611911
+    },
+    {
+      "step": 1800,
+      "validation_bpb": 1.643734
+    },
+    {
+      "step": 2000,
+      "validation_bpb": 1.659144
+    }
+  ],
+  "best_pretrain_validation_checkpoint": {
+    "step": 800,
+    "validation_bpb": 1.483018
+  },
+  "served_target_candidate": {
+    "run_id": "nanochat-train-20261019a",
+    "step": 80,
+    "weights_sha256": "228f3b6c3d8dc6c8820badc01bf414c1c625c7892ce13e4fcd7c91fc77ee9261",
+    "metadata_sha256": "9b7bf94fa320550cdb457f904c35551dc44cfceff00dec70797d5ed0c8cb7e7b",
+    "tokenizer_sha256": "0bc1f0fc2604b69edb7b0918f8bbfe6e6615fd67ce0c81500572a5ee3eab45fa"
+  },
+  "quality": "Actual tiny scratch-model training completed. Samples remain incoherent; useful chat or personality fidelity not demonstrated. Later pretraining validation loss worsened; all checkpoints preserved."
+}

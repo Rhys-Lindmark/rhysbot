@@ -8,7 +8,9 @@ Source: **https://github.com/Rhys-Lindmark/rhysbot**
 
 ## Status
 
-**Reviewed corpus published; training pilots underway. No model demo is live yet.**
+**Reviewed corpus published; nanochat training completed; full Qwen adaptation
+underway. No model demo is live yet.** See the [model card](docs/MODEL_CARD.md)
+for measured results and current limitations.
 
 - Located a 21,301-note Anki export, local HEE transcripts, and the original X archive.
 - Published corpus contains only individually approved Anki cards and conservatively screened public excerpts. Raw exports, private review material, personal family/dating details, DMs and account metadata are excluded.
