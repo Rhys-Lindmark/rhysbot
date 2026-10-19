@@ -1,0 +1,55 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rhysbot progress</title>
+<style>body{max-width:850px;margin:3rem auto;padding:0 1rem;font:16px/1.6 system-ui;background:#f7f5ee;color:#24322c}pre{white-space:pre-wrap;overflow-wrap:anywhere}svg{width:100%;height:110px}</style>
+<h1>Rhysbot progress</h1><p>9 / 16 acceptance items complete. Partial and blocked items remain unchecked.</p>
+<svg viewBox="0 0 800 100" role="img" aria-label="Completed checklist items over time"><polyline points="20.0,85.0 400.0,60.0 780.0,45.0" fill="none" stroke="#27735b" stroke-width="3"/></svg><pre># Rhysbot project state
+
+Goal: a privacy-reviewed personal corpus published to GitHub, then a nanochat model trained from scratch and Qwen adapted/post-trained on that corpus. Intended website: https://ai.rhyslindmark.com/rhysbot .
+
+## Operating constraints
+- Raw local inputs, excluded material, review queues, local paths, credentials and private reviews stay outside this repository in ../work/rhysbot-private (mode 700).
+- No private source text may enter any Git commit, including a temporary commit. Use explicit staged file lists and inspect the initial commit before push.
+- Dating, family and other sensitive personal details must be excluded from Anki. Automated keyword checks alone do not constitute semantic privacy approval. Unreviewed records default to quarantine.
+- X ingestion reads only public posts and account identity needed for attribution, never DMs or other account archives.
+- Preserve third-party quotations, guest speech and uncertain authorship as such; never label them as Rhys&#x27;s beliefs.
+- User authorized a $200 TOTAL paid-compute cap on 2026-10-18. No Modal/Runpod credentials detected. Cumulative compute spend starts at $0; budget must cover both models and evals. Use bounded pilot first and record actual provider billing. No always-on serving under this cap.
+- Resource baseline: 16 GiB RAM, 29 GiB disk free, workspace 672 MiB; swap 1.68 GiB, compressor 4.90 GiB, no process above 1.1 GiB RSS in initial top-process sample. Sequential workloads; no model downloads or local GPU training. Stall interval: 25 minutes.
+- Hourly heartbeat: rhysbot-hourly-progress (active).
+
+## Phases and acceptance criteria
+### 1. Inventory and ingestion
+- [x] I1 Locate latest Anki Information export, HEE transcript folder and X archive (local paths in private inventory only).
+- [x] I2 Parse Anki text/database without media extraction; validate note count and field structure. Evidence: 21,301 three-field notes; no media extracted.
+- [ ] I3 Ingest local HEE transcripts and enumerate channel videos/podcast sources; preserve acquisition failures and coverage gaps.
+- [ ] I4 Collect public Substack archive with title, URL, publication date and full accessible body.
+- [x] I5 Extract public original X posts and matched long posts, excluding reposts, DMs and account metadata. Evidence: 18,726 archive entries; 12,746 candidates including 8,254 labeled public replies, 79 matched long posts. Reposts and low-text posts excluded; contextless replies excluded from default adaptation.
+Exit: reproducible scripts and private normalized JSONL, source counts, provenance and gap manifest.
+
+### 2. Privacy and corpus construction
+- [x] P1 Conservative sensitive-data detection and quarantines for local sources, with meaningful tests. Evidence: 6,480 Anki notes quarantined; tests cover contacts, family, relationships, credentials and release gate.
+- [ ] P2 Semantic review of candidate Anki records; only approved records enter public corpus; private cases remain quarantined.
+- [x] P3 Normalize text, exact/near duplicate checks and document-level train/validation/test grouping; no guest speech as Rhys instruction targets. Evidence: build/validate scripts and training-data tests.
+- [x] P4 Public dataset card, source manifest, privacy methodology, limitations and coverage report. Evidence: docs/DATASET_CARD.md, data/public/sources.jsonl, docs/acquisition-coverage.json.
+Exit: public artifacts pass privacy gate; all included local records have review evidence, with exclusions counted but not exposed.
+
+### 3. GitHub and website
+- [ ] G1 Create Rhys-Lindmark/rhysbot repository and push only reviewed corpus/code/docs.
+- [ ] G2 Publish a useful project/corpus page at ai.rhyslindmark.com/rhysbot with truthful status and coverage.
+Exit: verified remote repository and website route; no private data in Git history.
+
+### 4. Training and evaluation
+- [x] T1 Pin nanochat upstream and prepare corpus/tokenizer/training configs with contamination-safe splits. Evidence: training/upstream-pins.json, nanochat_run.py; source/static checks only, GPU unverified.
+- [x] T2 Pin Qwen model and prepare continued-pretraining/SFT configs and actual sourced training examples. Evidence: qwen_run.py strict weight loading and assistant-only SFT; data/training/manifest.json.
+- [x] T3 Prepare shared eval set, baselines, checkpoint comparison and inference launch scripts. Evidence: held-out loss/sample evaluators and baseline plans; 23 unit tests, no real checkpoints yet.
+- [ ] T4 Run bounded GPU pilot, record throughput/memory/cost, then authorized training and post-training runs.
+- [ ] T5 Evaluate actual checkpoints and deploy inference; no stub or base model may be represented as trained.
+Exit: real checkpoint artifacts, run metadata, eval results and live inference. Missing credentials or authorization is a blocker, not completion.
+
+## Current phase
+Phases 1–3: preparing first public release. Current frozen corpus snapshot: 17,356 excerpts, 1,939,854 words, 2,495,670 measured Qwen tokens, 379 included Anki cards. 382 initial approvals from 413 full semantic reviews; other local notes remain private. A worker is reviewing up to 1,500 further cards and owns append-only approval updates; do not publish those candidates without rebuilding/validating.
+
+89 HEE transcripts match the HEE channel&#x27;s 89 public videos. Merged YouTube inventory: 304 videos (215 podcast-channel + 89 HEE). Healthy caption collector session 89572 currently handles the original 215-item inventory; after it completes rerun the same command so 89 already-transcribed HEE entries receive coverage statuses. Substack resume session 67059 now succeeds with 2-second pacing after the earlier 429; finish and summarize both collectors before the next data snapshot.
+
+Training implementation accepted as source/static verified: 23 tests pass, Python compiles, shell parses, Modal definitions import without remote calls. $200 total paid-compute authorization; $0 spent. No GPU credentials yet. Modal login session 48214 is pending; credentials must stay in the ignored private workspace config. Never claim a trained model until real optimizer/checkpoint evidence exists.
+
+Tools venv: ../work/rhysbot-tools (Modal/tokenizers only; no torch or weights). Pinned tokenizer: private workspace, 12.8 MB. Latest memory sample: compressor 5.98 GiB, swap 1.68 GiB, normal pressure (48% reported free); Codex family last measured 4.0 GiB RSS. Owned workloads are lightweight text collectors/login; no preview/build servers. Disposable Anki DB extractions (17 MB) removed after successful normalized ingestion; originals untouched. Stall interval remains 25 minutes.
+</pre></html>

@@ -1,0 +1,32 @@
+{
+  "source_corpus_sha256": "43311ad7a9bf973cdafd6333ea1b5e98efbd273b3a363aad425337431b375892",
+  "pretraining_records": 5342,
+  "sft_records": 895,
+  "sft_tasks": {
+    "study_note_qa_not_verified_fact": 379,
+    "sourced_passage_continuation": 516
+  },
+  "splits": {
+    "pretrain": {
+      "train": 4793,
+      "test": 284,
+      "validation": 265
+    },
+    "sft": {
+      "train": 806,
+      "test": 62,
+      "validation": 27
+    }
+  },
+  "excluded_from_default_training": [
+    "mixed_or_unverified_speakers",
+    "rhys_hosted_speaker_attribution_unverified"
+  ],
+  "limitations": [
+    "Small seed SFT set, not a validated Rhys personality dataset.",
+    "Study cards are not fact checked.",
+    "Continuation examples are verbatim public text, not invented question answers.",
+    "Test answers are public; do not tune on them.",
+    "Freeze the Git release commit for every run."
+  ]
+}
