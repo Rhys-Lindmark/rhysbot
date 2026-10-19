@@ -106,6 +106,14 @@ Engine and Transformers `generate` to emit batch samples. A persistent API and
 the website's model-backed chat are later deployment work; there is no automatic
 serving endpoint or base-model substitute for trained weights.
 
+The final Qwen comparison uses the instruction baseline's pinned official chat
+template with `enable_thinking=False` for sample generation, so the 64-token
+output limit is not spent on its default reasoning prefill. Base/CPT/SFT samples
+keep the explicit ChatML format used in our training. Assistant-only NLL retains
+the same explicit ChatML inputs across all variants as a controlled-format
+measurement; it is not a claim about each model's best possible native prompting.
+Reports distinguish the generation format from the loss format.
+
 ## Bounded Modal execution
 
 Use the existing lightweight tooling environment or an environment containing

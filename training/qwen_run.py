@@ -181,6 +181,18 @@ def train(model, tokenizer, data, stage, out, config, pilot, loading):
     return report
 
 
+def evaluation_generation_prompt(tokenizer, messages, config, loading):
+    """Use the instruct checkpoint's non-thinking template only for generation.
+
+    Held-out and assistant-only losses retain the shared manual ChatML format.
+    """
+    if loading.get("model_id") == config["qwen"]["baseline_id"]:
+        return (tokenizer.apply_chat_template(messages[:-1], tokenize=False,
+                    add_generation_prompt=True, enable_thinking=False),
+                "official_chat_template_enable_thinking_false")
+    return chat_prompt(tokenizer, messages[:-1]), "shared_manual_chatml"
+
+
 def evaluate(model, tokenizer, data, out, config, loading):
     import torch
     model.eval()
@@ -205,6 +217,7 @@ def evaluate(model, tokenizer, data, out, config, loading):
                                                clean_up_tokenization_spaces=False).encode())
         assistant_nats, assistant_tokens = 0.0, 0
         samples = []
+        generation_format = None
         for row in list(rows(data / "sft-test.jsonl"))[:config["evaluation"]["max_sft_test_examples"]]:
             ids, labels = chat_tokens(tokenizer, row["messages"], limit)
             count = sum(t != -100 for t in labels[1:])
@@ -212,7 +225,7 @@ def evaluate(model, tokenizer, data, out, config, loading):
                          labels=torch.tensor([labels], device="cuda"), use_cache=False).loss.item()
             assistant_nats += loss * count
             assistant_tokens += count
-            prompt = chat_prompt(tokenizer, row["messages"][:-1])
+            prompt, generation_format = evaluation_generation_prompt(tokenizer, row["messages"], config, loading)
             encoded = tokenizer(prompt, return_tensors="pt", add_special_tokens=False).to("cuda")
             encoded = {key: value[:, -limit:] for key, value in encoded.items()}
             start = time.monotonic()
@@ -225,6 +238,8 @@ def evaluate(model, tokenizer, data, out, config, loading):
                             "reference": row["messages"][-1]["content"],
                             "latency_seconds": time.monotonic() - start})
     result = {"family": "qwen", "loading": loading, "heldout": metrics(nats, ntokens, nbytes),
+              "generation_format": generation_format,
+              "assistant_loss_format": "shared_manual_chatml_assistant_only_not_template_native",
               "assistant_only": {"nll_per_token": assistant_nats / assistant_tokens,
                                  "tokens": assistant_tokens,
                                  "perplexity": math.exp(min(assistant_nats / assistant_tokens, 80))},

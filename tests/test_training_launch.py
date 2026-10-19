@@ -94,6 +94,36 @@ class TrainingSafetyTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             qwen.chat_tokens(tok, messages, limit=10)
 
+    def test_instruction_baseline_uses_official_non_thinking_generation_only(self):
+        class TemplateTokenizer(CharTokenizer):
+            def __init__(self):
+                self.calls = []
+
+            def apply_chat_template(self, messages, **kwargs):
+                self.calls.append((copy.deepcopy(messages), kwargs))
+                return "official prompt<think>\n\n</think>\n\n"
+
+        tok = TemplateTokenizer()
+        messages = [{"role": "system", "content": "instructions"},
+                    {"role": "user", "content": "question"},
+                    {"role": "assistant", "content": "sourced answer"}]
+        original = copy.deepcopy(messages)
+        shared_loss = qwen.chat_tokens(tok, messages)
+        prompt, format_name = qwen.evaluation_generation_prompt(
+            tok, messages, CONFIG, {"model_id": CONFIG["qwen"]["baseline_id"]})
+        self.assertEqual(prompt, "official prompt<think>\n\n</think>\n\n")
+        self.assertEqual(format_name, "official_chat_template_enable_thinking_false")
+        self.assertEqual(tok.calls, [(messages[:-1], {"tokenize": False,
+            "add_generation_prompt": True, "enable_thinking": False})])
+        for stage in ("base", "cpt", "sft"):
+            prompt, format_name = qwen.evaluation_generation_prompt(
+                tok, messages, CONFIG, {"model_id": CONFIG["qwen"]["model_id"], "stage": stage})
+            self.assertEqual(prompt, qwen.chat_prompt(tok, messages[:-1]))
+            self.assertEqual(format_name, "shared_manual_chatml")
+        self.assertEqual(len(tok.calls), 1)
+        self.assertEqual(qwen.chat_tokens(tok, messages), shared_loss)
+        self.assertEqual(messages, original)
+
     def test_source_group_cannot_cross_splits_and_frozen_hash_detects_edits(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

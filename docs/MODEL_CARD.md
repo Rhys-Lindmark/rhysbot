@@ -65,6 +65,12 @@ evaluations. Its four CPT and two SFT updates do not establish improvement.
 The full run and a separate comparison against the untouched base, pinned Qwen
 instruction baseline, CPT adapter and SFT adapter remain pending.
 
+For the final comparison, instruction-baseline samples use its pinned official
+chat template with thinking disabled; adapted-model samples use their training
+format. Assistant-only NLL uses a common explicit ChatML format across variants.
+This controls the loss inputs, but does not establish best-case performance with
+each model's native prompting. Generation/loss formats are recorded separately.
+
 ## Access and deployment
 
 The corpus and training code are public. Trained artifacts currently remain in
