@@ -101,3 +101,18 @@ class SpeechTests(unittest.TestCase):
             target=path.with_name('other.m4a');path.rename(target);path.symlink_to(target)
             with self.assertRaises(ValueError):
                 namespace['checked_staged_audio'](item,'speech-video',root)
+
+    def test_provider_mount_symlink_is_trusted_but_descendant_redirects_are_not(self):
+        with tempfile.TemporaryDirectory() as directory:
+            base=Path(directory);storage=base/'storage';storage.mkdir()
+            mount=base/'artifacts';mount.symlink_to(storage,target_is_directory=True)
+            path=mount/'audio-inputs/speech-video/episode-one.m4a'
+            path.parent.mkdir(parents=True);path.write_bytes(b'public audio fixture')
+            item={'id':'episode-one','staged_audio':{'relative_path':str(path.relative_to(mount)),
+                  'sha256':file_sha(path),'bytes':path.stat().st_size}}
+            self.assertEqual(namespace['checked_staged_audio'](item,'speech-video',mount),path)
+            actual=storage/'audio-inputs/speech-video'
+            actual.rename(storage/'redirected')
+            actual.symlink_to(storage/'redirected',target_is_directory=True)
+            with self.assertRaisesRegex(ValueError,'Redirected'):
+                namespace['checked_staged_audio'](item,'speech-video',mount)

@@ -112,10 +112,14 @@ def checked_staged_audio(item, run_id, artifacts=Path('/artifacts')):
         raise ValueError('Fixed source/run path, byte ceiling and SHA256 required')
     path = artifacts / relative
     for parent in [path,*path.parents]:
-        if parent.is_symlink():
-            raise ValueError('Redirected staged audio forbidden')
+        # Modal's trusted mount itself is a provider-managed symlink. Reject
+        # redirects below that boundary, not the mount implementation.
         if parent == artifacts:
             break
+        if parent.is_symlink():
+            raise ValueError('Redirected staged audio forbidden')
+    if not path.resolve().is_relative_to(artifacts.resolve()):
+        raise ValueError('Staged audio escapes trusted artifact mount')
     if not path.is_file() or path.stat().st_size != staged['bytes'] or file_sha(path) != staged['sha256']:
         raise ValueError('Staged public audio bytes/hash mismatch')
     return path
