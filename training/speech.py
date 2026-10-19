@@ -223,6 +223,7 @@ def process(run_id, items, timeout_seconds, reference=None):
             status = {'id': item['id'], 'title': item['title']}
             scratch = Path('/tmp/rhysbot-audio')
             scratch.mkdir(exist_ok=True)
+            failure_stage = 'fetch_audio'
             try:
                 # One recording at a time, no cookies or local archive upload.
                 import requests
@@ -261,6 +262,7 @@ def process(run_id, items, timeout_seconds, reference=None):
                                     raise ValueError('Audio size/time ceiling reached')
                                 digest.update(chunk)
                                 stream.write(chunk)
+                failure_stage = 'decode_audio'
                 decoded = subprocess.check_output(['ffmpeg', '-v', 'error', '-i', str(audio_path),
                     '-f', 'f32le', '-ac', '1', '-ar', '16000', '-'], timeout=120)
                 audio = np.frombuffer(decoded, dtype=np.float32).copy()
@@ -268,17 +270,20 @@ def process(run_id, items, timeout_seconds, reference=None):
                 duration = len(audio) / 16000
                 if duration > 12000 or duration < 2:
                     raise ValueError('Unexpected audio duration')
+                failure_stage = 'diarize'
                 inputs = processor(audio, sampling_rate=16000).to(diarizer.device, dtype=diarizer.dtype)
                 with torch.inference_mode():
                     logits = diarizer(**inputs).logits
                 segments = processor.extract_speaker_dict(logits, inputs.attention_mask)[0]
                 del logits, inputs
+                failure_stage = 'transcribe'
                 transcription, info = asr.transcribe(audio, batch_size=8, language='en',
                     word_timestamps=True, vad_filter=True, condition_on_previous_text=False,
                     beam_size=1)
                 words = [{'start': w.start, 'end': w.end, 'word': w.word, 'probability': w.probability}
                          for segment in transcription for w in (segment.words or [])]
                 turns, unknown = align_words(words, segments)
+                failure_stage = 'match_voice'
                 profiles, rhys = {}, None
                 if reference_vector is not None:
                     for speaker in sorted({s['Speaker'] for s in segments}):
@@ -297,6 +302,7 @@ def process(run_id, items, timeout_seconds, reference=None):
                     'rhys_speaker_id': rhys, 'voice_match_cosines': profiles, 'identity_anchor': report.get('identity_anchor_evidence'),
                     'limitations': ['Automatic ASR and diarization; no human audio audit.',
                                     'Speaker IDs are local to this episode, not guest names.']}
+                failure_stage = 'validate_output'
                 if not words or any(t['start'] < 0 or t['end'] > duration + 2 or t['end'] < t['start'] for t in turns):
                     raise ValueError('Empty or out-of-range ASR output')
                 write_json(destination, evidence)
@@ -310,7 +316,10 @@ def process(run_id, items, timeout_seconds, reference=None):
                 torch.cuda.empty_cache()
             except Exception as error:
                 # No inference retries, no credential/URL/prompt exception text.
-                status.update(status='failed_no_retry', error_type=type(error).__name__)
+                status.update(status='failed_no_retry', error_type=type(error).__name__, failure_stage=failure_stage)
+                code = getattr(getattr(error, 'response', None), 'status_code', None)
+                if type(code) is int and 400 <= code <= 599:
+                    status['http_status'] = code
             finally:
                 shutil.rmtree(scratch, ignore_errors=True)
             report['episodes'].append(status)

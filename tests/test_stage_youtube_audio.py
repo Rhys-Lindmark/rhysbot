@@ -90,6 +90,37 @@ class StagingTests(unittest.TestCase):
             saved=json.loads(state.read_text());saved['episodes'][0]['staged_audio']['relative_path']='../../secret.m4a';state.write_text(json.dumps(saved))
             with self.assertRaises(ValueError):staging.stage([item()],state,work/'out.json',work,RUN,'yt','node')
 
+    def test_bounded_public_sdk_adapter_version_signature_and_no_overwrite(self):
+        class Volume:
+            calls=[]
+            def batch_upload(self,force=False):self.calls.append(force);return 'public-context'
+        volume=Volume()
+        self.assertEqual(staging.bounded_upload_context(volume,sdk_version='1.6.2'),'public-context')
+        self.assertEqual(volume.calls,[False])
+        with self.assertRaises(RuntimeError):staging.bounded_upload_context(volume,sdk_version='1.6.3')
+        self.assertEqual(volume.calls,[False])
+        class Drift:
+            def batch_upload(self,force=True):raise AssertionError('Drifted SDK must not be invoked')
+        with self.assertRaises(RuntimeError):staging.bounded_upload_context(Drift(),sdk_version='1.6.2')
+
+    def test_bounded_file_object_preserves_large_hash_and_rejects_full_read_and_reopen(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)/'audio.m4a';block=b'abcde'*200000
+            with path.open('wb') as output:
+                for _ in range(7):output.write(block)
+            expected=staging.stream_hash(path)[0]
+            with staging.BoundedAudioReader(path) as reader:
+                with self.assertRaises(RuntimeError):reader.read()
+                with self.assertRaises(RuntimeError):getattr(reader,'name')
+                digest=hashlib.sha256();size=0
+                while chunk:=reader.read(16*1024*1024):
+                    self.assertLessEqual(len(chunk),1024*1024);digest.update(chunk);size+=len(chunk)
+                self.assertEqual(digest.hexdigest(),expected);self.assertEqual(size,path.stat().st_size)
+                self.assertEqual(reader.max_read_bytes,1024*1024)
+                reader.seek(0);self.assertEqual(reader.tell(),0)
+            tiny=Path(directory)/'short.m4a';tiny.write_bytes(b'public audio')
+            with staging.BoundedAudioReader(tiny) as reader:self.assertEqual(reader.read(),b'public audio')
+
     def test_cleanup_failure_preserves_confirmed_upload_and_local_evidence(self):
         with tempfile.TemporaryDirectory() as directory:
             work=Path(directory);state=work/'state.json';audio=work/(item()['id']+'.m4a')

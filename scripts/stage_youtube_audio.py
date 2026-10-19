@@ -117,6 +117,59 @@ def download(item, work, command, timeout, checkpoint):
     return candidates[0]
 
 
+class BoundedAudioReader:
+    """Seekable public file-object input with bounded reads and no reopen bypass."""
+    CHUNK_BYTES=1024*1024
+    INLINE_BYTES=4*1024*1024
+
+    def __init__(self,path):
+        if path.is_symlink() or not path.is_file(): raise ValueError('Regular audio file required')
+        self._file=path.open('rb',buffering=0)
+        self.size=path.stat().st_size
+        if not 0 < self.size <= MAX_BYTES:
+            self._file.close();raise ValueError('Bounded nonempty input required')
+        self.max_read_bytes=0
+
+    def read(self,size=-1):
+        if size is None or size < 0:
+            size=self.size-self.tell()
+            if size > self.INLINE_BYTES: raise RuntimeError('Unbounded blob reads prohibited')
+            # The SDK inline path requires the complete <=4MiB value.
+        else:
+            size=min(size,self.CHUNK_BYTES)
+        self.max_read_bytes=max(self.max_read_bytes,size)
+        return self._file.read(size)
+
+    def seek(self,*args):return self._file.seek(*args)
+    def tell(self):return self._file.tell()
+    def readable(self):return True
+    def seekable(self):return True
+    def close(self):self._file.close()
+    def __enter__(self):return self
+    def __exit__(self,*args):self.close()
+
+    @property
+    def name(self):
+        # Modal v1 multipart reopens this name, bypassing the bounded reader.
+        # Reject before it can reopen an unbounded file; never silently fallback.
+        raise RuntimeError('Multipart reopen is not supported by bounded upload')
+
+
+def bounded_upload_context(volume, *, sdk_version=None):
+    """Reviewed Modal1.6.2 public API plus a bounded file-object input."""
+    import inspect
+    if sdk_version is None:
+        from importlib.metadata import version
+        sdk_version=version('modal')
+    if sdk_version != '1.6.2': raise RuntimeError('Bounded upload requires reviewed Modal 1.6.2')
+    signature=inspect.signature(volume.batch_upload)
+    if (tuple(signature.parameters) not in {('force',),('self','force')}
+            or signature.parameters['force'].kind != inspect.Parameter.POSITIONAL_OR_KEYWORD
+            or signature.parameters['force'].default is not False):
+        raise RuntimeError('Bounded upload SDK public signature changed')
+    return volume.batch_upload(force=False)
+
+
 def upload_file(local, relative, timeout, checkpoint):
     # A separate finite SDK process bounds SDK connection/upload waits and keeps
     # Modal out of the downloader's resident working set. No credentials in args.
@@ -266,9 +319,10 @@ def main():
             raise ValueError('Safe staged audio basename required')
         local = work / args.worker_basename; stream_hash(local)
         import modal
-        volume = modal.Volume.from_name(VOLUME, create_if_missing=False)
-        with volume.batch_upload(force=False) as batch:
-            batch.put_file(str(local), '/audio-inputs/' + args.run_id + '/' + local.name)
+        volume = modal.Volume.from_name(VOLUME, create_if_missing=False, version=1)
+        with BoundedAudioReader(local) as reader:
+            with bounded_upload_context(volume) as batch:
+                batch.put_file(reader, '/audio-inputs/' + args.run_id + '/' + local.name)
         return
     if not all((args.manifest,args.state,args.output_manifest,args.yt_dlp,args.node)):
         parser.error('Explicit manifest/state/output-manifest/yt-dlp/node required')

@@ -22,13 +22,32 @@ limit, live output-size monitor, streaming hash ceiling and 64 KiB log guards
 bound the operation. Concurrent invocations on the same staging directory are
 blocked by a file lock. There is no background monitor.
 
-Only existing volume `rhysbot-training-artifacts` is used. The SDK worker uses
-`Volume.from_name(..., create_if_missing=False)` and
-`batch_upload(force=False)`. The only remote destination is:
+Only existing **v1** volume `rhysbot-training-artifacts` is used. It is never
+created, converted or overwritten. The public SDK context is
+`Volume.from_name(..., create_if_missing=False, version=1).batch_upload(force=False)`.
+The destination remains:
 
 ```text
 audio-inputs/<speech-youtube-run-id>/<podcast-20hex>.(m4a|webm|mp3|ogg|opus)
 ```
+
+The uploader uses a source-reviewed bounded **file object**, rather than passing
+a path or complete bytes. Modal 1.6.2's v1 implementation retains the provided
+seekable object for blob hashing and `BytesIOSegmentPayload` streaming. Its
+default 16 MiB reads create large transport buffers; the wrapper returns at most
+1 MiB per requested read. The payload advances by actual bytes read, preserving
+hashes and all media bytes. SDK inline content below 4 MiB may be read completely,
+but an unexpected unbounded large-file read fails closed. If the provider selects
+multipart, the SDK tries to reopen `.name` and would bypass this reader; that
+access also fails closed. No internal SDK constructor, global monkeypatch,
+provider RPC forgery or unbounded fallback remains in the accepted source.
+
+Installed Modal must be exactly **1.6.2**, and the public `batch_upload` signature
+must match its reviewed `force=False` interface. Version/signature drift fails
+before upload. The object stays readable throughout the upload context. Public
+SDK checksum, error and no-overwrite behavior is retained. SDK transport retries
+can occur internally within the overall deadline; the stager never retries an
+uncertain upload as a new attempt.
 
 The private progress JSON contains `schema_version`, `run_id`, `volume_name`,
 `input_sha256` and `episodes`. Each episode entry contains the original `episode`,
@@ -92,7 +111,7 @@ creates parallel downloads. Staged input is still machine-source material: root
 must verify declared size/SHA before decoding and separately reserve any GPU
 speech work. Upload success does not mean transcription or publication succeeded.
 
-Nine stdlib tests cover canonical identities, safe command arguments, exact
+Eleven stdlib tests cover canonical identities, safe command arguments, exact
 upload metadata, durable resume/cleanup, uncertain upload blocking, immutable
 resume provenance, symlinks/byte ceilings and actual child timeout/reaping. These
 source tests use synthetic media and mocked upload; real pilot evidence is
@@ -115,3 +134,31 @@ The observed network-tool peak exceeds the earlier corpus-only 120 MiB target;
 further staging requires resource admission using this actual measurement. Both
 pilot child processes exited. No local ML, GPU work, full-archive staging,
 transcription or corpus publication was performed by this tool acceptance.
+
+## Corrected large-file acceptance
+
+The first large-file loop was stopped after observed default-uploader child RSS
+reached 362,184,704 bytes. Two uploads had durable confirmations; a third upload
+was uncertain and its 92,845,292-byte local recording was retained. Read-only
+Volume readback returned FileNotFoundError for that exact third object; no
+success was inferred from elapsed time. Previous state/failure evidence remains
+private. The existing shared Volume was verified as **v1**; no conversion or
+alternate Volume was created.
+
+After implementing the public bounded file-object input, an offline check using
+installed Modal 1.6.2 verified an 8,704,000-byte blob's SDK hash and actual
+`BytesIOSegmentPayload` output, with maximum read/write chunks of 1 MiB. The
+reviewed SDK preserves short reads correctly. Eleven focused stdlib tests cover
+read bounds, seek/hash integrity, blocked unbounded reads/multipart reopen,
+public API version/signature drift and the existing no-overwrite/resume rules.
+
+The explicitly authorized retained-file upload then succeeded in 23.377 seconds:
+92,845,292 original media bytes, unchanged SHA256
+`76b8dc6a0b1faa8a90d22cf8e141bca02c703abd5442bbcce3377c7286d58c77`.
+SDK-child peak RSS was **99,958,784 bytes (95.3 MiB)**; main-process peak was
+34,144,256 bytes (32.6 MiB). Their separate maxima total about 127.9 MiB, below
+the admitted 250 MiB envelope; this is not a simultaneous full-machine memory
+measurement. Durable uploaded state preceded local deletion. The remaining-video
+run now has three confirmed uploaded entries, 72 pending and no uncertain upload.
+Bulk resume remains subject to manager admission and ongoing resource checks.
+No normalization, local ML, GPU job or corpus mutation was required.
