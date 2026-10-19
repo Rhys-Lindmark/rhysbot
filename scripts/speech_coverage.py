@@ -9,7 +9,7 @@ import re
 from urllib.parse import urlsplit
 
 
-def coverage(rss, videos, public_dir, reports=()):
+def coverage(rss, videos, public_dir, reports=(), exclusions=()):
     rows = []
     for item in rss['episodes']:
         rows.append({'id': item['id'], 'source_url': item['source_url'],
@@ -40,13 +40,30 @@ def coverage(rss, videos, public_dir, reports=()):
             raise ValueError('Finite inventoried duration required')
     if len({r['id'] for r in rows}) != len(rows):
         raise ValueError('Duplicate recording inventory')
+    excluded = {}
+    inventory = {row['id']: row for row in rows}
+    video_titles = {'podcast-' + hashlib.sha256(('youtube:' + video['id']).encode()).hexdigest()[:20]: video.get('title') for video in videos}
+    for entry in exclusions:
+        key = entry['id']
+        if (key in excluded or key not in inventory or inventory[key]['audio_source_kind'] != 'youtube_audio'
+                or entry['source_url'] != inventory[key]['source_url']
+                or entry.get('reason') != 'title_indicates_solo_piano_audio_not_audited'
+                or not isinstance(entry.get('inventory_title'), str)
+                or entry['inventory_title'] != video_titles.get(key)
+                or 'solo piano' not in entry['inventory_title'].lower()):
+            raise ValueError('Explicit source-matched title-based exclusion required')
+        excluded[key] = entry['reason']
     attempts = {}
     for report in reports:
         for item in report['episodes']:
             attempts.setdefault(item['id'], []).append(item['status'])
     for row in rows:
         path = Path(public_dir) / 'speaker-transcripts' / (row['id'] + '.json')
-        if path.exists():
+        if row['id'] in excluded:
+            if path.exists():
+                raise ValueError('Title-flagged media needs an audio audit before publishing a speech sidecar')
+            row.update(status='not_transcribed_instrumental_title', exclusion_basis=excluded[row['id']])
+        elif path.exists():
             sidecar = json.loads(path.read_text())
             if sidecar['source_url'] != row['source_url'] or sidecar['audio_source_kind'] != row['audio_source_kind']:
                 raise ValueError('Published sidecar/inventory mismatch')
@@ -79,14 +96,18 @@ def main():
     parser.add_argument('--youtube-only-inventory', type=Path, required=True)
     parser.add_argument('--public-dir', type=Path, default=Path(__file__).resolve().parents[1] / 'data/public')
     parser.add_argument('--report', type=Path, action='append', default=[])
+    parser.add_argument('--exclusions', type=Path)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
     result = coverage(json.loads(args.rss_inventory.read_text()), json.loads(args.youtube_only_inventory.read_text()),
-                      args.public_dir, [json.loads(path.read_text()) for path in args.report])
+                      args.public_dir, [json.loads(path.read_text()) for path in args.report],
+                      json.loads(args.exclusions.read_text()) if args.exclusions else [])
     # Paths, exception messages, raw words, speaker embeddings and private
     # inventory metadata never enter this explicit public schema.
     result['input_sha256'] = {'rss_inventory': hashlib.sha256(args.rss_inventory.read_bytes()).hexdigest(),
                               'youtube_only_inventory': hashlib.sha256(args.youtube_only_inventory.read_bytes()).hexdigest()}
+    if args.exclusions:
+        result['input_sha256']['explicit_exclusions'] = hashlib.sha256(args.exclusions.read_bytes()).hexdigest()
     args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')
     print(json.dumps(result['summary'], indent=2))
 

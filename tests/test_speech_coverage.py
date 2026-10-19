@@ -6,9 +6,27 @@ import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from speech_coverage import coverage
+import hashlib
 
 
 class CoverageTests(unittest.TestCase):
+    def test_instrumental_title_exclusion_is_explicit_source_matched_and_never_a_claim_of_audio_audit(self):
+        video = {'id': 'abcdefghijk', 'title': 'Solo Piano in C'}
+        key = 'podcast-' + hashlib.sha256(b'youtube:abcdefghijk').hexdigest()[:20]
+        exclusion = {'id': key, 'source_url': 'https://www.youtube.com/watch?v=abcdefghijk',
+                     'inventory_title': video['title'], 'reason': 'title_indicates_solo_piano_audio_not_audited'}
+        with tempfile.TemporaryDirectory() as directory:
+            result = coverage({'episodes': []}, [video], directory, exclusions=[exclusion])
+            self.assertEqual(result['recordings'][0]['status'], 'not_transcribed_instrumental_title')
+            self.assertEqual(result['recordings'][0]['exclusion_basis'], exclusion['reason'])
+            for change in ({'id': 'unknown'}, {'source_url': 'https://www.youtube.com/watch?v=other-video'},
+                           {'inventory_title': 'An interview'}, {'reason': 'verified_instrumental'}):
+                with self.assertRaises(ValueError):
+                    coverage({'episodes': []}, [video], directory, exclusions=[{**exclusion, **change}])
+            root = Path(directory) / 'speaker-transcripts'; root.mkdir(); (root / (key + '.json')).write_text('{}')
+            with self.assertRaisesRegex(ValueError, 'audio audit'):
+                coverage({'episodes': []}, [video], directory, exclusions=[exclusion])
+
     def test_release_is_established_by_public_sidecar_and_private_fields_never_escape(self):
         rss = {'episodes': [{'id': 'episode-one', 'source_url': 'https://soundcloud.com/the-rhys-show/one',
                              'rss_duration_seconds': 123, 'private_note': 'PRIVATE_MARKER'}]}
