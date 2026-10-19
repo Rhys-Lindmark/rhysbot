@@ -14,7 +14,9 @@ import shutil
 
 import modal
 
-HERE = Path(__file__).resolve().parent
+# Modal mounts the entry module at /root/modal_app.py, separately from the
+# explicitly copied training package. Resolve helpers/data from that package.
+HERE = Path('/rhysbot/training') if Path('/rhysbot/training/runtime.py').is_file() else Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from runtime import ROOT, read_json, write_json, release_manifest, verify_manifest, safe_run_id
 from budget import initial_ledger, committed, reserve, finish, reconcile
