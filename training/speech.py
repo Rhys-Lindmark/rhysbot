@@ -119,7 +119,8 @@ def process(run_id, items, timeout_seconds, reference=None):
     out = Path('/artifacts/speech') / run_id
     out.mkdir(parents=True, exist_ok=False)
     report = {'run_id': run_id, 'pins': PINS, 'episodes': [], 'manifest_sha256': manifest_sha(items),
-              'identity_reference': reference, 'status': 'processing', 'raw_audio_published': False}
+              'identity_reference': reference, 'status': 'processing', 'raw_audio_published': False,
+              'execution_source_sha256': hashlib.sha256((HERE / 'speech.py').read_bytes()).hexdigest()}
     try:
         processor = AutoProcessor.from_pretrained(PINS['diarization'][0], revision=PINS['diarization'][1])
         diarizer = AutoModelForAudioFrameClassification.from_pretrained(
@@ -203,7 +204,7 @@ def process(run_id, items, timeout_seconds, reference=None):
                     rhys = choose_rhys(profiles)
                 for turn in turns:
                     turn['speaker'] = 'Rhys Lindmark' if turn['speaker_id'] == rhys else (
-                        'Unknown / overlap' if turn['speaker_id'] == 'unknown' else turn['speaker_id'].replace('speaker_', 'Speaker '))
+                        'Unknown / overlap' if turn['speaker_id'] == 'unknown' else 'Speaker %d' % (int(turn['speaker_id'].split('_')[1]) + 1))
                 evidence = {'schema_version': 1, 'episode': item, 'audio_sha256': digest.hexdigest(),
                     'audio_bytes': size, 'audio_duration_seconds': duration, 'pins': PINS,
                     'speaker_segments': segments, 'words': words, 'turns': turns,
@@ -230,6 +231,11 @@ def process(run_id, items, timeout_seconds, reference=None):
             volume.commit()
         if report['status'] == 'processing':
             report['status'] = 'completed' if all(x['status'] == 'completed' for x in report['episodes']) else 'completed_with_gaps'
+        return report
+    except Exception as error:
+        # An ordinary in-container failure is a terminal result, not uncertain
+        # transport. Record it without replaying or leaking arbitrary text.
+        report.update(status='failed_no_retry', error_type=type(error).__name__)
         return report
     finally:
         report['elapsed_seconds'] = time.monotonic() - started
