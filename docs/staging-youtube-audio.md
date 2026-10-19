@@ -148,7 +148,7 @@ alternate Volume was created.
 After implementing the public bounded file-object input, an offline check using
 installed Modal 1.6.2 verified an 8,704,000-byte blob's SDK hash and actual
 `BytesIOSegmentPayload` output, with maximum read/write chunks of 1 MiB. The
-reviewed SDK preserves short reads correctly. Eleven focused stdlib tests cover
+reviewed SDK preserves short reads correctly. Twelve focused stdlib tests cover
 read bounds, seek/hash integrity, blocked unbounded reads/multipart reopen,
 public API version/signature drift and the existing no-overwrite/resume rules.
 
@@ -162,3 +162,33 @@ measurement. Durable uploaded state preceded local deletion. The remaining-video
 run now has three confirmed uploaded entries, 72 pending and no uncertain upload.
 Bulk resume remains subject to manager admission and ongoing resource checks.
 No normalization, local ML, GPU job or corpus mutation was required.
+
+## Explicit JavaScript runtime and corrected download probe
+
+An explicit `--js-runtimes node:...` alone did not clear yt-dlp's default Deno:
+an isolated diagnostic observed Deno even while Node was named. That does **not**
+establish which process caused the earlier cumulative peak. The corrected
+command puts `--no-js-runtimes` before `--js-runtimes node:...`, so only the
+explicit bundled Node runtime is enabled. The download child receives its own
+copied environment with
+`NODE_OPTIONS=--max-old-space-size=64 --max-semi-space-size=4`; the parent and SDK
+upload environment are not mutated. The Node heap cap is not a total-RSS limit.
+Tests verify option order, actual child environment, and unchanged parent value.
+
+One corrected finite download of the unfinished Federal Reserve clip succeeded
+in 2.945 seconds: 919,912 bytes, SHA256
+`9b498cb55c39eba3ee021bfd1a457c093d32c01676f064c079edc5c107e9fd1c`.
+The actual observed descendant was Node PID 75194; no Deno was observed. The real
+source's Popen received the exact 64/4 MiB heap options. Download-phase reaped
+child peak RSS was 55,820,288 bytes; sampled owned-family peak was 93,585,408
+bytes (89.3 MiB), below 250 MiB. Sampling was every 50 ms and cannot exclude a
+shorter unsampled spike. Caller environment remained unchanged. The original
+batch state/manifest was not changed and bulk resume still requires acceptance.
+
+The separate diagnostic SDK upload succeeded under a unique memory-probe prefix
+in 1.868 seconds, with 61,227,008-byte child peak and 88,391,680-byte sampled
+family peak. It used the original 947,293-byte recording/hash. Content-addressed
+storage may reuse existing global bytes, so a new remote path does not prove the
+blob body was retransmitted. Its temporary remote object is recorded privately
+for later cleanup; this probe did not overwrite the original batch object or
+run any speech/GPU job. Historical failures and per-PID evidence remain private.

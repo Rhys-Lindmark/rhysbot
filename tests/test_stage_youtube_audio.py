@@ -34,6 +34,8 @@ class StagingTests(unittest.TestCase):
         for flag in ['--retries','--fragment-retries','--extractor-retries','--file-access-retries']:
             self.assertEqual(command[command.index(flag)+1],'0')
         self.assertIn('--ignore-config',command);self.assertIn('--no-cache-dir',command)
+        self.assertLess(command.index('--no-js-runtimes'),command.index('--js-runtimes'))
+        self.assertEqual(command[command.index('--js-runtimes')+1],'node:node24')
         self.assertEqual(command[-1],item()['youtube_url'])
         self.assertEqual(command[command.index('-o')+1],'/private/test/'+item()['id']+'.%(ext)s')
 
@@ -134,6 +136,18 @@ class StagingTests(unittest.TestCase):
             self.assertEqual(result['uploaded'],1);self.assertTrue(audio.exists())
             self.assertEqual(json.loads(state.read_text())['episodes'][0]['attempt']['cleanup_error_type'],'PermissionError')
             self.assertEqual(len(json.loads((work/'out.json').read_text())),1)
+
+    def test_heap_options_are_child_only_and_override_parent_without_mutation(self):
+        with tempfile.TemporaryDirectory() as directory:
+            work=Path(directory);target=work/(item()['id']+'.m4a')
+            command=[sys.executable,'-c','from pathlib import Path; import os,json; Path('+repr(str(target))+').write_bytes(b"audio"); print(json.dumps({"NODE_OPTIONS":os.environ.get("NODE_OPTIONS")}))']
+            import os
+            with patch.dict(os.environ,{'NODE_OPTIONS':'parent-value-must-remain'}):
+                result=staging.download(item(),work,command,5,lambda metadata:None)
+                self.assertEqual(os.environ['NODE_OPTIONS'],'parent-value-must-remain')
+            value=json.loads((work/('download-'+item()['id']+'.log')).read_text())
+            self.assertEqual(value['NODE_OPTIONS'],'--max-old-space-size=64 --max-semi-space-size=4')
+            self.assertEqual(result.read_bytes(),b'audio')
 
     def test_real_child_timeout_is_reaped_and_output_is_bounded(self):
         with tempfile.TemporaryDirectory() as directory:

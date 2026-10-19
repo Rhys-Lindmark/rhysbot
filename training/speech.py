@@ -177,7 +177,8 @@ def process(run_id, items, timeout_seconds, reference=None):
     if job['status'] != 'running_reserved' or job['phase'] != 'corpus_processing' or job['manifest_sha256'] != manifest_sha(items):
         raise ValueError('No matching persisted paid-compute reservation')
     started = time.monotonic()
-    os.environ.update(HF_HOME='/tmp/rhysbot-speech-hf', TOKENIZERS_PARALLELISM='false', OMP_NUM_THREADS='2')
+    os.environ.update(HF_HOME='/tmp/rhysbot-speech-hf', TOKENIZERS_PARALLELISM='false', OMP_NUM_THREADS='2',
+                      NODE_OPTIONS='--max-old-space-size=64 --max-semi-space-size=4')
     torch.set_num_threads(2)
     out = Path('/artifacts/speech') / run_id
     out.mkdir(parents=True, exist_ok=False)
@@ -238,7 +239,7 @@ def process(run_id, items, timeout_seconds, reference=None):
                         for chunk in iter(lambda: stream.read(1024*1024), b''):digest.update(chunk)
                 elif item.get('audio_source_kind') == 'youtube_audio':
                     command = [sys.executable, '-m', 'yt_dlp', '--ignore-config', '--no-playlist', '--no-cache-dir',
-                        '--js-runtimes', 'node:/opt/node-v24.11.0-linux-x64/bin/node',
+                        '--no-js-runtimes', '--js-runtimes', 'node:/opt/node-v24.11.0-linux-x64/bin/node',
                         '--socket-timeout', '15', '--retries', '0', '--fragment-retries', '0', '--extractor-retries', '0',
                         '--max-filesize', '500M', '-f', 'bestaudio[ext=m4a]/bestaudio', '--no-part',
                         '-o', str(scratch / 'episode.%(ext)s'), item['youtube_url']]

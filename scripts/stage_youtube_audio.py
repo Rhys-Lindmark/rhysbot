@@ -14,6 +14,7 @@ import time
 VOLUME = 'rhysbot-training-artifacts'
 MAX_BYTES = 500 * 1024 * 1024
 MAX_MANIFEST = 8 * 1024 * 1024
+NODE_HEAP_OPTIONS = '--max-old-space-size=64 --max-semi-space-size=4'
 EXTENSIONS = {'m4a', 'webm', 'mp3', 'ogg', 'opus'}
 PRIVATE_ROOT = Path(__file__).resolve().parents[2] / 'work/rhysbot-private'
 
@@ -76,7 +77,7 @@ def stream_hash(path):
 
 def download_command(item, work, yt_dlp, node):
     return [str(yt_dlp), '--ignore-config', '--no-playlist', '--no-cache-dir',
-            '--js-runtimes', 'node:' + str(node), '--quiet', '--no-progress',
+            '--no-js-runtimes', '--js-runtimes', 'node:' + str(node), '--quiet', '--no-progress',
             '--socket-timeout', '15', '--retries', '0', '--fragment-retries', '0',
             '--extractor-retries', '0', '--file-access-retries', '0',
             '--max-filesize', str(MAX_BYTES), '--no-part', '--no-mtime', '--fixup', 'never',
@@ -99,7 +100,9 @@ def download(item, work, command, timeout, checkpoint):
     log = Path(work) / ('download-' + item['id'] + '.log')
     with log.open('wb') as output:
         os.chmod(log, 0o600)
-        process = subprocess.Popen(command, stdout=output, stderr=subprocess.STDOUT, start_new_session=True,
+        child_env=dict(os.environ)
+        child_env['NODE_OPTIONS']=NODE_HEAP_OPTIONS
+        process = subprocess.Popen(command, stdout=output, stderr=subprocess.STDOUT, env=child_env, start_new_session=True,
                                    preexec_fn=lambda: resource.setrlimit(resource.RLIMIT_FSIZE,(MAX_BYTES,MAX_BYTES)))
         checkpoint({'command': command, 'pid': process.pid, 'started_at_unix': time.time()})
         try:
