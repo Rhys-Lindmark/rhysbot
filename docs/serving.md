@@ -88,7 +88,7 @@ never receive Modal proxy tokens. The route must:
    client per hour, six per day, and 25 total per day. Use persistent rate-limit
    state; do not rely on browser state or CORS as authentication. A verified
    human challenge or existing signed-in session must precede paid requests.
-3. Derive `X-Rhysbot-Client` as a salted SHA256 of the edge's trusted client
+3. Derive `X-Rhysbot-Client` using HMAC-SHA256 and the secret salt over the edge's trusted client
    identity. Do not trust an incoming client-supplied identity header or retain
    raw client addresses in the spend ledger. Forward the exact allowed Origin.
 4. Attach `Modal-Key` and `Modal-Secret` from server-side secrets, forwarding to
@@ -118,8 +118,10 @@ A successful public response contains `ok`, `text`, `model`, `checkpoint_run_id`
 The backend additionally records request/reservation identifiers and accounting;
 the public proxy does not expose those accounting fields. Render text
 as text, and show the returned identity label. Failures return `error` and a
-4xx/503 status; 409 means training/inference is busy, 429 is the quota, and 503
-includes closed budget, missing checkpoint, or uncertain execution. No errors
+4xx/503 status; 409 means a job is in progress, 429 is the quota, and 503
+includes closed budget, missing checkpoint, or uncertain execution requiring
+operator inspection. Busy/uncertain responses also carry a bounded status
+summary described below. No errors
 produce synthetic or base-model answers.
 
 ## Spend and operation limits
@@ -145,19 +147,126 @@ to accrue even after serving scales to zero. Stop the deployment when the demo
 window ends, and separately review retained checkpoints/volume lifecycle with
 the operator. Never delete unique trained checkpoints automatically.
 
-If a remote RPC times out or its termination is unknown, serving preserves the
-`active` lock and reservation. Both training and serving then fail closed.
-Confirm the GPU call has terminated before an operator repairs the active
-record/lock and attaches billing evidence. Do not clear the lock merely to make
-the demo respond. A known terminal model failure is marked failed pending billing
-and releases the lock. Prompts/output text are not persisted in ledger evidence;
-it stores a request digest, checkpoint identity, counts and latency.
+## Coordination, busy responses and recovery
+
+The source now dispatches exactly once with Modal `Function.spawn()`, records the
+returned `FunctionCall.object_id` in the existing reserved ledger job, commits
+that metadata, then waits with `FunctionCall.get(timeout=200)`. The GPU function
+still has its 180-second provider timeout; API/proxy/browser deadlines remain
+240/230/250 seconds. The wait deadline also bounds queue/cold-start waiting; it
+does not prove that a timed-out provider call stopped. This coordination update
+has local regression evidence; deployment and platform recovery checks must be
+recorded separately from the earlier successful inference evidence.
+
+The API permits two simultaneous HTTP inputs in one container: one can await the
+GPU while a second returns status or a fast busy error. A per-process mutex
+protects Volume reload/write/commit operations across those threads. The GPU's
+one-container limit, shared training Dict singleton, pilot gate, quotas and spend
+ledger still permit only one admitted GPU call. There is no automatic generation
+queue, retry, cancellation, lock expiration or reservation refund.
+
+After dispatch or persistence uncertainty, the coordinator retains the `active`
+lock and full reservation and best-effort marks `coordination_state=uncertain`.
+The private job also records `provider_call_id`, the request digest, checkpoint
+identity, trusted client HMAC and generic exception type. It stores no prompt or
+completion text. Even dispatch failure can occur after the provider accepted the
+call; absence of a call ID is not proof that nothing started.
+
+### Read-only status contract
+
+Authenticated `GET /status` on the same returned Modal endpoint requires the
+exact Origin and a server-derived `X-Rhysbot-Client`, just like `/generate`.
+It never spawns a function, reserves budget, changes the ledger or clears a lock.
+It reads the lock and ledger consistently, then, when a call ID exists, uses
+`FunctionCall.from_id(id).get(timeout=0)` to inspect that existing call. A plain
+Modal polling timeout means pending; expired output, provider function timeout,
+network failure or other exceptions are unknown and require operator evidence.
+No age threshold changes this decision.
+
+The response exposes only `ok`, `state`, `reason`, `operator_action_required`,
+`retry_after_seconds` and, for the same trusted client only, its opaque
+`request_id`. It never exposes provider call IDs, other clients' request IDs,
+raw/HMAC client identities, request digests, prompts, outputs or spend figures.
+A successful status read returns HTTP 200 even when its state requires recovery.
+It is a snapshot, not a reservation or a promise that the next POST is admitted.
+
+| State | Meaning | Client behavior |
+| --- | --- | --- |
+| `available` | No active lock or active ledger job | Permit a new user-initiated generation; normal gates still apply |
+| `busy` | Pending tracked inference, active training/billing, or an observed coordination transition | Show an in-progress message; check status after the 10-second hint |
+| `recovery_required` | Untracked/unknown call, terminal call with an active ledger, orphan lock/job, or inconsistent metadata | Show an operator-recovery message; do not resubmit generation |
+
+A terminal provider result while this container's coordinator is still recording
+it remains `busy`; it needs no intervention yet. A terminal result after the
+coordinator is gone remains locked until safe operator reconciliation. A status
+lookup failure returns 503 and is never interpreted as availability. Legacy
+requests without call IDs remain recoverable only through independent provider
+inspection; installing this update cannot reconstruct their missing IDs.
+
+A second POST returns 409 with `error=training_or_inference_busy` for a pending
+job, or 503 with `error=execution_uncertain_operator_check_required` when recovery
+is needed. Both include the same public status fields. Neither POST launches a
+second GPU call or consumes another reservation. If a lock owner changes during
+inspection, the response requests another status check; it never repairs either
+owner.
+
+Frontend/proxy integration is separate: add a fixed edge status route that
+forwards only to this endpoint's `/status`, supplies the existing proxy secrets,
+Origin and derived client HMAC, and projects only these public status fields.
+Keep GET configuration separate. Status checks require no Turnstile generation
+token and cannot initiate paid work; still rate-limit them at the edge. Poll only
+a small finite number of times (for example three checks, ten seconds apart),
+then stop and show the state. Reset verification after a generation attempt;
+never automatically replay its POST. Do not replace `recovery_required` with a
+perpetual generic “model busy” message. A new generation requires a user action
+and fresh verification after availability is observed.
+
+### Safe operator reconciliation
+
+There is intentionally no HTTP unlock endpoint or automatic recovery mutation.
+For a stuck job, follow this finite procedure in the authenticated operator
+context, keeping snapshots and provider identifiers private:
+
+1. Pause new generation admissions. Preserve fresh snapshots of the named Dict
+   owner and Volume ledger. Identify the exact active token, reserved job,
+   recorded call ID if present, and corresponding API coordinator execution.
+2. Inspect that exact provider call. The supported existing-call lookup is
+   `modal.FunctionCall.from_id(call_id).get(timeout=0)`. A plain polling timeout
+   means it is still pending: wait, without restarting or spawning anything.
+   A missing ID, exception or best-effort call graph is insufficient termination
+   evidence. For legacy calls, correlate provider input/container records and
+   logs independently; do not guess from `created_at` or the 180-second setting.
+3. Confirm both that the GPU input is terminal and that its old coordinator can
+   no longer write the ledger. If either fact is uncertain, leave lock and
+   reservation intact. A returned provider result is useful evidence; record
+   only sanitized identity/count/latency metadata, not prompts or completions.
+4. While the same old token still owns `active`, reload the ledger, verify the
+   exact job and call ID still match the snapshots, and record the confirmed
+   terminal outcome using the existing `budget.finish` semantics. Preserve its
+   full `reserved_usd`; no elapsed-time refund or billing guess is permitted.
+   Commit that ledger first. Recheck the owner immediately before removing only
+   that matching token. Any mismatch or persistence failure aborts repair.
+5. Read back lock and ledger and check status. Re-enable admissions only after
+   consistency is confirmed. A subsequent retry is an explicit new request with
+   a fresh reservation. Reconcile actual money later using a provider receipt;
+   job termination alone never authorizes a refund.
+
+Finite acceptance checks for the coordinator update: reservation is durable
+before exactly one spawn; call ID is committed before waiting; spawn/commit/wait
+failure retains active lock and full hold; concurrent status/POST never admits a
+second GPU; terminal-result recording releases only its matching lock; legacy,
+orphan, changed-owner and unknown-provider states fail closed; public responses
+omit private metadata. Local tests cover these cases. After reviewed deployment,
+record a real read-only status response during one bounded admitted call and a
+terminal status response afterwards, then verify any actual stuck legacy job
+against independent provider evidence before operator repair.
 
 ## Verification and remaining checks
 
 Local stdlib tests cover request/deployment restrictions, shared spend/pilot
 gates, rate limits, unreconciled failures, uncertain RPC locks, missing ledger,
-and hash-bound checkpoint eligibility. Actual deployment verified copied-module
+hash-bound checkpoint eligibility, durable provider call IDs, read-only status
+classification and concurrent HTTP rejection without duplicate GPU admission. Actual deployment verified copied-module
 paths and lazy named-Dict resolution. A real authenticated HTTP 409 verified
 shared-lock enforcement while Qwen trained. Subsequent HTTP 200 operator calls
 verified GPU loading, exact saved hashes and real completions for both families.

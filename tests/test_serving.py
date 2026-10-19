@@ -1,3 +1,4 @@
+import asyncio
 import importlib.util
 import inspect
 import json
@@ -8,6 +9,7 @@ import types
 from pathlib import Path
 import sys
 import tempfile
+import threading
 import unittest
 from unittest.mock import Mock, patch
 
@@ -32,6 +34,19 @@ class Singleton(dict):
             return False
         self[key] = value
         return True
+
+
+class Call:
+    object_id = 'fc-test123'
+
+    def __init__(self, result=None, error=None):
+        self.result, self.error = result, error
+        self.get = Mock(side_effect=self.wait)
+
+    def wait(self, timeout):
+        if self.error:
+            raise self.error
+        return self.result
 
 
 class ServingTests(unittest.TestCase):
@@ -98,10 +113,12 @@ class ServingTests(unittest.TestCase):
                 self.assertEqual(ledger['jobs'][token]['request_sha256'], serve.request_digest(request))
                 self.assertGreater(committed(ledger), 0)
                 raise TimeoutError('RPC status unknown')
-            with self.assertRaises(TimeoutError):
+            with self.assertRaises(serve.Rejected) as rejected:
                 serve.coordinate_request(REQUEST, CLIENT, TARGETS, BUDGET, volume, singleton,
                                          uncertain, path, Mock())
+            self.assertEqual(rejected.exception.status, 503)
             token = singleton['active']
+            self.assertEqual(rejected.exception.details['request_id'], token)
             self.assertEqual(json.loads(path.read_text())['jobs'][token]['status'], 'active')
             with self.assertRaises(serve.Rejected):
                 serve.coordinate_request(REQUEST, CLIENT, TARGETS, BUDGET, volume, singleton,
@@ -113,7 +130,7 @@ class ServingTests(unittest.TestCase):
             write_json(path, self.ledger())
             singleton = Singleton()
             response = serve.coordinate_request(REQUEST, CLIENT, TARGETS, BUDGET, Mock(), singleton,
-                lambda *_: {'ok': False, 'status': 503, 'error': 'checkpoint_failed'}, path, Mock())
+                lambda *_: Call({'ok': False, 'status': 503, 'error': 'checkpoint_failed'}), path, Mock())
             self.assertNotIn('active', singleton)
             ledger = json.loads(path.read_text())
             self.assertEqual(ledger['jobs'][response['request_id']]['status'], 'failed_pending_billing')
@@ -134,6 +151,168 @@ class ServingTests(unittest.TestCase):
                                          invoke, path, Mock(side_effect=ValueError('missing checkpoint')))
             invoke.assert_not_called()
             self.assertEqual(committed(json.loads(path.read_text())), 0)
+
+    def test_call_id_is_committed_before_wait_and_known_completion_releases_lock(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'ledger.json'
+            write_json(path, self.ledger())
+            volume, singleton = Mock(), Singleton()
+            call = Call({'ok': True, 'model': 'nanochat', 'output_tokens': 2})
+            def wait(timeout):
+                job = json.loads(path.read_text())['jobs'][singleton['active']]
+                self.assertEqual(job['provider_call_id'], call.object_id)
+                self.assertEqual(job['coordination_state'], 'waiting_for_result')
+                self.assertEqual(volume.commit.call_count, 2)
+                self.assertEqual(timeout, serve.CALL_WAIT_TIMEOUT)
+                return call.result
+            call.get.side_effect = wait
+            spawn = Mock(return_value=call)
+            response = serve.coordinate_request(REQUEST, CLIENT, TARGETS, BUDGET, volume, singleton,
+                                                spawn, path, Mock())
+            spawn.assert_called_once()
+            self.assertNotIn('active', singleton)
+            job = json.loads(path.read_text())['jobs'][response['request_id']]
+            self.assertEqual(job['coordination_state'], 'terminal_result_recorded')
+            self.assertEqual(job['status'], 'completed_pending_billing')
+            self.assertAlmostEqual(committed(json.loads(path.read_text())), 1.20)
+
+    def test_call_wait_or_call_id_commit_failure_preserves_reservation_and_lock(self):
+        for commit_failure in (False, True):
+            with self.subTest(commit_failure=commit_failure), tempfile.TemporaryDirectory() as directory:
+                path = Path(directory) / 'ledger.json'
+                write_json(path, self.ledger())
+                volume, singleton = Mock(), Singleton()
+                if commit_failure:
+                    volume.commit.side_effect = [None, OSError('persist failed'), None]
+                call = Call(error=TimeoutError('get status unknown'))
+                spawn = Mock(return_value=call)
+                with self.assertRaises(serve.Rejected) as rejected:
+                    serve.coordinate_request(REQUEST, CLIENT, TARGETS, BUDGET, volume, singleton,
+                                             spawn, path, Mock())
+                self.assertEqual(rejected.exception.status, 503)
+                job = json.loads(path.read_text())['jobs'][singleton['active']]
+                self.assertEqual(job['provider_call_id'], call.object_id)
+                self.assertEqual(job['coordination_state'], 'uncertain')
+                self.assertEqual(job['status'], 'active')
+                self.assertAlmostEqual(committed(json.loads(path.read_text())), 1.20)
+                spawn.assert_called_once()
+                if commit_failure:
+                    call.get.assert_not_called()
+                else:
+                    call.get.assert_called_once_with(timeout=serve.CALL_WAIT_TIMEOUT)
+
+    def test_positive_provider_timeout_finishes_without_replay_or_refund(self):
+        class ProviderExecutionTimeout(Exception):
+            pass
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'ledger.json'
+            write_json(path, self.ledger())
+            singleton, spawn = Singleton(), Mock(return_value=Call(error=ProviderExecutionTimeout()))
+            result = serve.coordinate_request(REQUEST, CLIENT, TARGETS, BUDGET, Mock(), singleton,
+                spawn, path, Mock(), provider_terminal_error=lambda e: type(e) is ProviderExecutionTimeout)
+            spawn.assert_called_once()
+            self.assertFalse(result['ok'])
+            self.assertEqual(result['error'], 'provider_execution_timeout')
+            self.assertNotIn('active', singleton)
+            ledger = json.loads(path.read_text())
+            self.assertEqual(ledger['jobs'][result['request_id']]['status'], 'failed_pending_billing')
+            self.assertAlmostEqual(committed(ledger), 1.20)
+
+    def test_status_is_read_only_and_never_uses_age_to_clear_uncertainty(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'ledger.json'
+            ledger, singleton, volume = self.ledger(), Singleton(), Mock()
+            write_json(path, ledger)
+            self.assertEqual(serve.serving_status(volume, singleton, path, CLIENT)['state'], 'available')
+            serve.reserve_request(ledger, 'serve-pending', REQUEST, CLIENT, BUDGET, now=1)
+            singleton['active'] = 'serve-pending'
+            job = ledger['jobs']['serve-pending']
+            job['created_at'] = 0  # Arbitrarily old is not a termination signal.
+            write_json(path, ledger)
+            status = serve.serving_status(volume, singleton, path, CLIENT)
+            self.assertEqual(status['state'], 'recovery_required')
+            self.assertEqual(status['reason'], 'untracked_inference')
+            job.update(provider_call_id='fc-test123', coordination_state='uncertain')
+            write_json(path, ledger)
+            original = path.read_bytes()
+            for provider, expected in [('running', 'busy'), ('terminal', 'recovery_required'), ('unknown', 'recovery_required')]:
+                probe = Mock(return_value=provider)
+                status = serve.serving_status(volume, singleton, path, CLIENT, probe)
+                self.assertEqual(status['state'], expected)
+                self.assertEqual(status['request_id'], 'serve-pending')
+                probe.assert_called_once_with('fc-test123')
+                self.assertEqual(path.read_bytes(), original)
+                self.assertEqual(singleton, {'active': 'serve-pending'})
+                self.assertNotIn('fc-test123', json.dumps(status))
+                self.assertNotIn(CLIENT, json.dumps(status))
+                self.assertNotIn('committed_usd', status)
+            with patch.object(serve, '_LOCAL_COORDINATORS', {'serve-pending'}):
+                recording = serve.serving_status(volume, singleton, path, CLIENT, lambda _: 'terminal')
+                self.assertEqual(recording['state'], 'busy')
+                self.assertEqual(recording['reason'], 'inference_result_recording')
+            other = serve.serving_status(volume, singleton, path, '2' * 64, lambda _: 'running')
+            self.assertNotIn('request_id', other)
+            volume.commit.assert_not_called()
+
+    def test_orphan_ledger_terminal_lock_and_owner_change_fail_closed(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'ledger.json'
+            ledger, singleton, volume = self.ledger(), Singleton(), Mock()
+            serve.reserve_request(ledger, 'serve-pending', REQUEST, CLIENT, BUDGET)
+            write_json(path, ledger)
+            self.assertEqual(serve.serving_status(volume, singleton, path, CLIENT)['reason'], 'active_ledger_without_lock')
+            singleton['active'] = 'serve-pending'
+            serve.finish(ledger, 'serve-pending', True, {})
+            write_json(path, ledger)
+            self.assertEqual(serve.serving_status(volume, singleton, path, CLIENT)['reason'], 'lock_ledger_mismatch')
+            # An owner transition during a read is a transient busy snapshot,
+            # never grounds to repair either owner or admit another GPU call.
+            volume.reload.side_effect = lambda: singleton.update(active='different-owner')
+            self.assertEqual(serve.serving_status(volume, singleton, path, CLIENT)['state'], 'busy')
+            self.assertEqual(singleton['active'], 'different-owner')
+
+    def test_status_and_second_request_work_while_first_call_waits_without_duplicate_gpu(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'ledger.json'
+            write_json(path, self.ledger())
+            singleton, volume = Singleton(), Mock()
+            waiting, release = threading.Event(), threading.Event()
+            call = Call({'ok': True, 'model': 'nanochat', 'output_tokens': 1})
+            def wait(timeout):
+                waiting.set()
+                if not release.wait(3):
+                    raise TimeoutError('test failed to release')
+                return call.result
+            call.get.side_effect = wait
+            spawn, responses, errors = Mock(return_value=call), [], []
+            def first():
+                try:
+                    responses.append(serve.coordinate_request(REQUEST, CLIENT, TARGETS, BUDGET, volume,
+                        singleton, spawn, path, Mock(), lambda _: 'running'))
+                except Exception as error:
+                    errors.append(error)
+            thread = threading.Thread(target=first)
+            thread.start()
+            try:
+                self.assertTrue(waiting.wait(3))
+                status = serve.serving_status(volume, singleton, path, CLIENT, lambda _: 'running')
+                self.assertEqual(status['state'], 'busy')
+                second_spawn = Mock()
+                with self.assertRaises(serve.Rejected) as rejected:
+                    serve.coordinate_request(REQUEST, CLIENT, TARGETS, BUDGET, volume, singleton,
+                        second_spawn, path, Mock(), lambda _: 'running')
+                self.assertEqual(rejected.exception.status, 409)
+                self.assertEqual(rejected.exception.details['state'], 'busy')
+                second_spawn.assert_not_called()
+            finally:
+                release.set()
+                thread.join(3)
+            self.assertFalse(thread.is_alive())
+            self.assertEqual(errors, [])
+            self.assertEqual(len(responses), 1)
+            spawn.assert_called_once()
+            self.assertAlmostEqual(committed(json.loads(path.read_text())), 1.20)
+            self.assertNotIn('active', singleton)
 
     def fixture(self, directory, family):
         root = Path(directory) / 'runs/trained-run'
@@ -195,6 +374,7 @@ class ServingPackagingTests(unittest.TestCase):
             def function(self, **options):
                 def decorate(function):
                     function.remote = Mock()
+                    function.spawn = Mock()
                     self.functions[options['name']] = function
                     return function
                 return decorate
@@ -211,7 +391,8 @@ class ServingPackagingTests(unittest.TestCase):
         modal = types.ModuleType('modal')
         modal.App = App
         modal.Dict = types.SimpleNamespace(from_name=lookup)
-        modal.concurrent = lambda **_: lambda function: function
+        inputs = []
+        modal.concurrent = lambda **options: (inputs.append(options) or (lambda function: function))
         modal.asgi_app = lambda **_: lambda function: function
         backend = types.ModuleType('modal_app')
         backend.image, backend.volume, backend.singleton = Image(), object(), lazy
@@ -232,8 +413,34 @@ class ServingPackagingTests(unittest.TestCase):
             with patch.object(serve, 'coordinate_request', return_value={'ok': False}) as route:
                 self.assertEqual(coordinate(REQUEST, CLIENT), {'ok': False})
                 self.assertIs(route.call_args.args[5], lock)
+            self.assertEqual(inputs, [{'max_inputs': 2}])
+            asgi = app.functions['api']()
+            async def request_status():
+                messages = []
+                async def send(message): messages.append(message)
+                await asgi({'type': 'http', 'method': 'GET', 'path': '/status',
+                            'headers': [(b'origin', serve.ORIGIN.encode()),
+                                        (b'x-rhysbot-client', CLIENT.encode())]}, Mock(), send)
+                return messages
+            with patch.object(serve, 'serving_status', return_value={'ok': True, 'state': 'busy'}) as read_status:
+                messages = asyncio.run(request_status())
+                self.assertEqual(messages[0]['status'], 200)
+                self.assertEqual(json.loads(messages[1]['body'])['state'], 'busy')
+                self.assertIs(read_status.call_args.args[1], lock)
+                probe = read_status.call_args.args[4]
+            class PollTimeout(Exception): pass
+            class ExpiredOutput(PollTimeout): pass
+            class ExecutionTimeout(PollTimeout): pass
+            modal.exception = types.SimpleNamespace(TimeoutError=PollTimeout, FunctionTimeoutError=ExecutionTimeout)
+            call = Mock()
+            modal.FunctionCall = types.SimpleNamespace(from_id=Mock(return_value=call))
+            for error, expected in [(PollTimeout(), 'running'), (ExecutionTimeout(), 'terminal'), (ExpiredOutput(), 'unknown'),
+                                    (OSError(), 'unknown'), (None, 'terminal')]:
+                call.get.side_effect = error
+                self.assertEqual(probe('fc-test123'), expected)
+                call.get.assert_called_with(timeout=0)
             self.assertEqual(lookup.call_args_list,
-                             [unittest.mock.call('rhysbot-training-singleton')] * 2)
+                             [unittest.mock.call('rhysbot-training-singleton')] * 3)
 
     def test_registered_helpers_roundtrip_via_actual_image_package_path(self):
         # Capture the real image configuration by executing the factory with

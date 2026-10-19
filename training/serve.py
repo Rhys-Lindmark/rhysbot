@@ -12,6 +12,7 @@ from pathlib import Path
 import re
 import shutil
 import sys
+import threading
 import time
 import uuid
 
@@ -23,6 +24,10 @@ from budget import CAP, committed, reserve, finish
 
 ORIGIN = 'https://ai.rhyslindmark.com'
 GPU_TIMEOUT = 180
+CALL_WAIT_TIMEOUT = GPU_TIMEOUT + 20
+# Two HTTP inputs share one mount. Never reload over another thread's writes.
+_LEDGER_IO_LOCK = threading.RLock()
+_LOCAL_COORDINATORS = set()
 MAX_BODY_BYTES = 8192
 MAX_PROMPT_BYTES = 1600
 MAX_INPUT_TOKENS = 384
@@ -36,9 +41,13 @@ IDENTITY = {
 
 
 class Rejected(ValueError):
-    def __init__(self, status, code):
+    def __init__(self, status, code, details=None):
         super().__init__(code)
         self.status, self.code = status, code
+        self.details = details or {}
+
+    def payload(self):
+        return {"error": self.code, **self.details}
 
 
 def deployment_targets(raw):
@@ -144,7 +153,8 @@ def reserve_request(ledger, token, request, client, budget, now=None):
     except ValueError as error:
         raise Rejected(503, 'budget_or_training_gate_closed') from error
     ledger['jobs'][token].update(phase='inference', request_sha256=request_digest(request),
-                                checkpoint_family=request['model'])
+                                checkpoint_family=request['model'], client_sha256=client,
+                                coordination_state='reserved_not_dispatched')
     limits.setdefault('clients', {})[client] = {'hour': hour, 'hour_count': hourly + 1,
                                                'day': day, 'day_count': daily + 1}
     limits.update(day=day, day_count=total + 1)
@@ -206,42 +216,147 @@ def generate_checkpoint(request, target, paths, pins):
     return tokenizer.decode(completion, skip_special_tokens=True), initial, len(completion)
 
 
-def coordinate_request(request, client, targets, budget, volume, singleton, invoke, ledger_path, verify_target):
-    request = validated_request(request, targets)
-    token = 'serve-' + uuid.uuid4().hex
-    if not singleton.put('active', token, skip_if_exists=True):
-        raise Rejected(409, 'training_or_inference_busy')
-    reserved, terminal = False, False
-    try:
+def serving_status(volume, singleton, ledger_path, client, probe_call=None):
+    """Read-only snapshot. Age is never termination evidence or unlock authority."""
+    if not re.fullmatch('[a-f0-9]{64}', client or ''):
+        raise Rejected(403, 'trusted_proxy_client_required')
+    def state(value, reason, own_request=None):
+        result = {'ok': True, 'state': value, 'reason': reason,
+                  'operator_action_required': value == 'recovery_required',
+                  'retry_after_seconds': 10 if value == 'busy' else None}
+        if own_request:
+            result['request_id'] = own_request
+        return result
+    with _LEDGER_IO_LOCK:
+        before = singleton.get('active')
         volume.reload()
         path = Path(ledger_path)
-        # Serving must never initialize/reset the training spend ledger.
         if not path.is_file():
-            raise Rejected(503, 'training_ledger_missing')
+            return state('recovery_required', 'training_ledger_missing')
         ledger = read_json(path)
-        verify_target(request['model'], targets[request['model']])
-        amount = reserve_request(ledger, token, request, client, budget)
-        reserved = True  # persistence failure is uncertain; retain lock for inspection
-        ledger['jobs'][token]['checkpoint_run_id'] = targets[request['model']]['run_id']
-        write_json(path, ledger)
-        volume.commit()
-        # A lost/timeout RPC has uncertain termination. Preserve both lock
-        # and active reservation until an operator confirms the GPU stopped.
-        result = invoke(token, request)
-        volume.reload()
-        ledger = read_json(path)
-        evidence = {k: result[k] for k in ('model', 'checkpoint_run_id', 'weights_sha256',
-                    'input_tokens', 'output_tokens', 'latency_seconds', 'error') if k in result}
-        finish(ledger, token, result['ok'], evidence)
-        write_json(path, ledger)
-        volume.commit()
-        terminal = True
-        result.update(request_id=token, reserved_usd=amount, committed_usd=committed(ledger),
-                      reservation_status='pending_provider_billing')
+        after = singleton.get('active')
+        local = before in _LOCAL_COORDINATORS
+    if before != after:
+        return state('busy', 'coordination_changed_check_again')
+    active = {key: job for key, job in ledger.get('jobs', {}).items() if job.get('status') == 'active'}
+    if before is None:
+        return state('recovery_required', 'active_ledger_without_lock') if active else state('available', 'no_active_job')
+    job = ledger.get('jobs', {}).get(before)
+    own = before if job and job.get('client_sha256') == client and job.get('phase') == 'inference' else None
+    if job is None:
+        return state('busy', 'coordinator_starting', own) if local else state('recovery_required', 'lock_without_matching_job', own)
+    if job.get('status') != 'active' or set(active) != {before}:
+        return state('recovery_required', 'lock_ledger_mismatch', own)
+    if job.get('phase') != 'inference':
+        return state('busy', 'training_or_billing_active')
+    call_id = job.get('provider_call_id')
+    if not call_id:
+        return state('busy', 'inference_dispatching', own) if local else state('recovery_required', 'untracked_inference', own)
+    if probe_call is None:
+        return state('recovery_required', 'provider_state_unavailable', own)
+    try:
+        provider = probe_call(call_id)
+    except Exception:
+        provider = 'unknown'
+    # Probe outside the mount mutex; never return a result for a changed owner.
+    if singleton.get('active') != before:
+        return state('busy', 'coordination_changed_check_again')
+    if provider == 'running':
+        return state('busy', 'inference_in_progress', own)
+    if provider == 'terminal' and local:
+        return state('busy', 'inference_result_recording', own)
+    return state('recovery_required', 'provider_terminal_ledger_active' if provider == 'terminal'
+                 else 'provider_state_unknown', own)
+
+
+def coordinate_request(request, client, targets, budget, volume, singleton, spawn, ledger_path,
+                       verify_target, probe_call=None, provider_terminal_error=None):
+    request = validated_request(request, targets)
+    if not re.fullmatch('[a-f0-9]{64}', client or ''):
+        raise Rejected(403, 'trusted_proxy_client_required')
+    token = 'serve-' + uuid.uuid4().hex
+    if not singleton.put('active', token, skip_if_exists=True):
+        status = serving_status(volume, singleton, ledger_path, client, probe_call)
+        uncertain = status['state'] == 'recovery_required'
+        raise Rejected(503 if uncertain else 409,
+                       'execution_uncertain_operator_check_required' if uncertain else 'training_or_inference_busy',
+                       {key: value for key, value in status.items() if key != 'ok'})
+    reserved, terminal = False, False
+    with _LEDGER_IO_LOCK:
+        _LOCAL_COORDINATORS.add(token)
+    try:
+        with _LEDGER_IO_LOCK:
+            volume.reload()
+            path = Path(ledger_path)
+            if not path.is_file():
+                raise Rejected(503, 'training_ledger_missing')
+            ledger = read_json(path)
+            verify_target(request['model'], targets[request['model']])
+            amount = reserve_request(ledger, token, request, client, budget)
+            reserved = True  # persistence failure is uncertain; retain lock
+            ledger['jobs'][token]['checkpoint_run_id'] = targets[request['model']]['run_id']
+            write_json(path, ledger)
+            volume.commit()
+        # A dispatch error can occur AFTER the provider accepted the call.
+        # Never retry spawn, or infer termination from a missing call ID.
+        call = spawn(token, request)
+        call_id = call.object_id
+        if not isinstance(call_id, str) or not re.fullmatch(r'fc-[A-Za-z0-9]+', call_id):
+            raise ValueError('Provider FunctionCall ID required')
+        with _LEDGER_IO_LOCK:
+            volume.reload()
+            ledger = read_json(path)
+            ledger['jobs'][token].update(provider_call_id=call_id, coordination_state='waiting_for_result')
+            write_json(path, ledger)
+            volume.commit()
+        # Cold-start/queue time is bounded too. Timeout does NOT cancel the call.
+        try:
+            result = call.get(timeout=CALL_WAIT_TIMEOUT)
+        except Exception as error:
+            # Only a positively identified provider execution timeout proves
+            # termination. Transport/poll timeouts and expired outputs do not.
+            if provider_terminal_error is None or not provider_terminal_error(error):
+                raise
+            result = {'ok': False, 'status': 503, 'error': 'provider_execution_timeout'}
+        if not isinstance(result, dict) or type(result.get('ok')) is not bool:
+            raise ValueError('No valid terminal inference result')
+        with _LEDGER_IO_LOCK:
+            volume.reload()
+            ledger = read_json(path)
+            evidence = {k: result[k] for k in ('model', 'checkpoint_run_id', 'weights_sha256',
+                        'input_tokens', 'output_tokens', 'latency_seconds', 'error') if k in result}
+            finish(ledger, token, result['ok'], evidence)
+            ledger['jobs'][token]['coordination_state'] = 'terminal_result_recorded'
+            write_json(path, ledger)
+            volume.commit()
+            terminal = True
+            result.update(request_id=token, reserved_usd=amount, committed_usd=committed(ledger),
+                          reservation_status='pending_provider_billing')
         return result
+    except Exception as error:
+        if not reserved:
+            raise
+        # Best-effort annotation only: inability to write must NEVER release
+        # the lock/reservation or launch another call. No exception text/prompts.
+        try:
+            with _LEDGER_IO_LOCK:
+                volume.reload()
+                ledger = read_json(path)
+                if ledger['jobs'][token]['status'] == 'active':
+                    ledger['jobs'][token].update(coordination_state='uncertain',
+                                               coordination_error_type=type(error).__name__)
+                    write_json(path, ledger)
+                    volume.commit()
+        except Exception:
+            pass
+        raise Rejected(503, 'execution_uncertain_operator_check_required',
+                       {'state': 'recovery_required', 'operator_action_required': True,
+                        'request_id': token, 'retry_after_seconds': None}) from error
     finally:
-        if (not reserved or terminal) and singleton.get('active') == token:
-            singleton.pop('active')
+        with _LEDGER_IO_LOCK:
+            _LOCAL_COORDINATORS.discard(token)
+            if (not reserved or terminal) and singleton.get('active') == token:
+                singleton.pop('active')
 
 
 def create_modal_app(targets):
@@ -285,17 +400,37 @@ def create_modal_app(targets):
         finally:
             shutil.rmtree('/tmp/rhysbot-serving-hf', ignore_errors=True)
 
+    def probe_call(call_id):
+        import modal
+        try:
+            modal.FunctionCall.from_id(call_id).get(timeout=0)
+        except modal.exception.TimeoutError as error:
+            # A plain polling timeout means unfinished. Subclasses include
+            # expired outputs/function timeouts: these need operator evidence.
+            if type(error) is modal.exception.FunctionTimeoutError:
+                return 'terminal'
+            return 'running' if type(error) is modal.exception.TimeoutError else 'unknown'
+        except Exception:
+            return 'unknown'
+        return 'terminal'
+
+    def status(client):
+        import modal
+        singleton = modal.Dict.from_name('rhysbot-training-singleton')
+        return serving_status(volume, singleton, '/artifacts/spend-ledger.json', client, probe_call)
+
     def coordinate(request, client):
         import modal
         singleton = modal.Dict.from_name('rhysbot-training-singleton')
         return coordinate_request(request, client, targets, CONFIG['budget'], volume, singleton,
-                                  infer.remote, Path('/artifacts/spend-ledger.json'),
-                                  lambda family, target: checkpoint_artifacts('/artifacts', family, target, PINS))
+                                  infer.spawn, Path('/artifacts/spend-ledger.json'),
+                                  lambda family, target: checkpoint_artifacts('/artifacts', family, target, PINS),
+                                  probe_call, lambda error: type(error) is modal.exception.FunctionTimeoutError)
 
     @app.function(name='api', image=serving_image, cpu=0.25, memory=512, timeout=GPU_TIMEOUT + 60,
                   serialized=True, min_containers=0, max_containers=1, scaledown_window=2,
                   volumes={'/artifacts': volume})
-    @modal.concurrent(max_inputs=1)
+    @modal.concurrent(max_inputs=2)
     @modal.asgi_app(requires_proxy_auth=True)
     def api():
         async def respond(send, status, payload, cors=False):
@@ -318,6 +453,15 @@ def create_modal_app(targets):
             cors = headers.get(b'origin', b'').decode() == ORIGIN
             if not cors:
                 return await respond(send, 403, {'error': 'origin_not_allowed'})
+            if scope.get('path') == '/status' and scope.get('method') == 'GET':
+                try:
+                    client = headers.get(b'x-rhysbot-client', b'').decode()
+                    result = await asyncio.to_thread(status, client)
+                    return await respond(send, 200, result, True)
+                except Rejected as error:
+                    return await respond(send, error.status, error.payload(), True)
+                except Exception:
+                    return await respond(send, 503, {'error': 'status_unavailable_operator_check_required'}, True)
             if scope.get('path') != '/generate' or scope.get('method') != 'POST':
                 return await respond(send, 405, {'error': 'post_generate_required'}, True)
             if headers.get(b'content-type', b'').split(b';')[0] != b'application/json':
@@ -338,7 +482,7 @@ def create_modal_app(targets):
                 result = await asyncio.to_thread(coordinate, request, client)
                 return await respond(send, 200 if result['ok'] else result['status'], result, True)
             except Rejected as error:
-                return await respond(send, error.status, {'error': error.code}, True)
+                return await respond(send, error.status, error.payload(), True)
             except (ValueError, UnicodeError, asyncio.TimeoutError):
                 return await respond(send, 400, {'error': 'invalid_request'}, True)
             except Exception:
