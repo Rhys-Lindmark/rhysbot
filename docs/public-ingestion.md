@@ -26,10 +26,16 @@ All candidates still pass the main corpus privacy/publication gate.
   metadata and rolling repeated words. Caption text is not verified against
   audio and lacks reliable speaker labels.
 - Additional HEE inventory: YouTube oEmbed verified the existing HEE transcript source channel as `https://www.youtube.com/@HowEverythingEvolved`. Its 89 public videos were merged into the 215-video podcast inventory, yielding 304 unique public videos. Existing HEE transcripts cover these 89 without another caption download. Use `youtube-enumerate --channel-url https://www.youtube.com/@HowEverythingEvolved` to reproduce the merged inventory.
-- Linked writing: two full AI 2026 articles directly linked from acquired public
-  Substack posts are available as local public HTML. Only their static `<main>`
-  text is extracted; dynamic charts are excluded. Other local pages/drafts are
-  not crawled.
+- Linked writing: two full AI 2026 articles directly linked from Substack were
+  extracted from existing public HTML. A public-only follow-up resolved 101
+  unique own-domain links: 12 navigation/assets excluded; 64 exact unique slugs
+  match acquired Substack bodies; two redirects verified existing bodies; five
+  full static articles extracted; 18 historical URLs returned HTTP 404. Of the
+  five, the two AI 2026 articles were already included. Newly added sources are
+  *Marriage Counseling with Capitalism*, *Music for 18 Pianos*, and *Us*. The
+  last publicly describes an in-progress 2024 book version; no local book draft
+  was read. Visuals, charts and audio are not transcribed. Exact slug matches
+  do not assert a working redirect or identical historical article versions.
 
 Exact current acquisition counts and every failed/unattempted public URL live in
 private `coverage-summary.json` and `coverage-gaps.json`. Source inventories are
@@ -40,7 +46,7 @@ have full publicly accessible bodies; all 304 videos have coverage statuses.
 Acquired 212 English caption tracks and reused 89 existing HEE transcripts.
 Two videos lack available English captions; one caption request still returned
 HTTP 429 after a single cooled-down retry. These three gaps await later audio
-transcription or a future retry. Two linked local article bodies are included.
+transcription or a future retry. Two linked local article bodies plus three newly acquired public article bodies are included after normal excerpt screening.
 
 A public post discussing Medium's “paywall” initially triggered a conservative
 text match. Its complete public body was checked and reacquired after fixing the
@@ -62,6 +68,7 @@ python3 scripts/ingest_public.py linked-local-writing --website-source "$WEBSITE
 python3 scripts/ingest_public.py youtube-enumerate --output "$CANDIDATE_DIR"
 python3 scripts/ingest_public.py youtube-captions --output "$CANDIDATE_DIR"
 python3 scripts/ingest_public.py summarize --output "$CANDIDATE_DIR"
+python3 scripts/ingest_linked_writing.py --coverage "$CANDIDATE_DIR/substack-coverage.jsonl" --output "$LINKED_PRIVATE_DIR"
 python3 -m unittest discover -s tests -p test_ingest_public.py
 ```
 
@@ -102,3 +109,12 @@ The initial Substack run hit rate limiting before this stop-on-429 safeguard was
 added; its 51 failed attempts remain in the coverage log as evidence. No missing
 body was replaced with a preview. Later retries append new status entries;
 summary generation resolves them by source ID to the most recent status.
+
+The linked collector preserves canonical URLs, titles, available dates and body
+selectors; requires verified article metadata or the inspected own-domain
+h1/title/main template; strips navigation and scripts; and blocks paid previews.
+It uses HTTPS, allowed-domain redirects, two-second pacing, 8 MiB responses and
+explicit 429 stop/cooldown behavior. Private candidates are not auto-released.
+Before integration, inspect extraction examples and exclude URLs already in
+`linked-writing.jsonl`; store only genuinely new documents in the private
+`public-source-candidates/linked-articles.jsonl`, then rebuild and validate.

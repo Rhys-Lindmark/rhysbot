@@ -29,6 +29,7 @@ Read the [dataset card](docs/DATASET_CARD.md), [acquisition notes](docs/public-i
 | `data/training/` | Derived pretraining text and sourced instruction examples |
 | `scripts/ingest_local.py` | Anki database-only and original-public-X extraction |
 | `scripts/ingest_public.py` | HEE, public Substack bodies, YouTube captions |
+| `scripts/ingest_linked_writing.py` | Public articles linked from Substack, with canonical/extraction checks |
 | `scripts/build_corpus.py` | Privacy gate, excerpt construction, deduplication and splits |
 | `scripts/validate_corpus.py` | Fail-closed release checks |
 | `training/` | Pinned upstreams and bounded training jobs |
