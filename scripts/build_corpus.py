@@ -11,6 +11,86 @@ from pathlib import Path
 from corpus_lib import anki_release_approved, clean_text, digest, group_split, privacy_flags, read_jsonl, write_jsonl
 
 
+COLLECTIONS = {'substack': 'writing', 'linked_writing': 'writing',
+               'youtube_transcript': 'podcasts_youtube', 'podcast_transcript': 'podcasts_youtube',
+               'hee_transcript': 'hee', 'anki': 'anki', 'x': 'x'}
+
+
+def collection(source_type):
+    if source_type not in COLLECTIONS:
+        raise ValueError('Unknown source type requires an explicit collection')
+    return COLLECTIONS[source_type]
+
+
+HEE_SPEAKER_ATTRIBUTION = {
+    'speaker': 'Rhys Lindmark',
+    'basis': 'owner_confirmed_all_HEE_narration_2026-10-19',
+    'method': 'owner_confirmation_not_acoustic_diarization',
+    'quoted_material_may_be_other_authors': True,
+}
+
+
+def enrich_collection(row):
+    row['collection'] = collection(row['source_type'])
+    if row['source_type'] == 'hee_transcript':
+        if row.get('authorship') != 'rhys_lindmark_narration_owner_confirmed':
+            row['original_authorship'] = row.get('authorship')
+        row['authorship'] = 'rhys_lindmark_narration_owner_confirmed'
+        row['speaker_attribution'] = dict(HEE_SPEAKER_ATTRIBUTION)
+    return row
+
+
+def public_writing_reviews(path=None):
+    path = Path(path) if path else Path(__file__).resolve().parents[1] / 'data/public/public-writing-review-approvals.json'
+    if not path.exists():
+        return {}
+    data = json.loads(path.read_text())
+    if data.get('schema_version') != 1:
+        raise ValueError('Unsupported public-writing review schema')
+    reviews = {}
+    for item in data['documents']:
+        key = (item['source_url'], item['document_id'])
+        if key in reviews:
+            raise ValueError('Duplicate public-writing review')
+        reviews[key] = item
+    return reviews
+
+
+def public_excerpt_review(row, reviews, document_sha=None):
+    """Validate exact persisted judgments; never approve from topic or source alone."""
+    flags = privacy_flags(row['text'])
+    entry = reviews.get((row.get('source_url'), row.get('document_id', row.get('id'))), {})
+    metadata = row.get('public_writing_review') or {}
+    expected_sha = document_sha or metadata.get('document_content_sha256')
+    if (row.get('source_type') != 'linked_writing' or not flags
+            or not set(flags) <= {'family', 'street_address'}
+            or entry.get('source_type') != 'linked_writing'
+            or entry.get('document_content_sha256') != expected_sha
+            or entry.get('reviewer') != 'codex-public-writing-contextual-review'
+            or entry.get('scope') != 'privacy_only_not_factual_validation'):
+        return None
+    for approved in entry.get('excerpt_approvals', []):
+        if approved.get('content_sha256') == digest(row['text']) and approved.get('flags') == flags:
+            return entry
+    return None
+
+
+def corpus_metrics(rows):
+    metrics, documents = {}, defaultdict(set)
+    for row in rows:
+        for level, key in [('collection', row['collection']), ('source', row['source_type'])]:
+            group = metrics.setdefault(level, {}).setdefault(key, Counter())
+            group['excerpts'] += 1
+            group['words'] += len(row['text'].split())
+            group['text_utf8_bytes'] += len(row['text'].encode('utf-8'))
+            group['corpus_jsonl_bytes'] += len((json.dumps(row, ensure_ascii=False, sort_keys=True) + '\n').encode('utf-8'))
+            documents[(level, key)].add(row['document_id'])
+    for level, groups in metrics.items():
+        for key, group in groups.items():
+            group['documents'] = len(documents[(level, key)])
+    return metrics
+
+
 def chunks(text, max_words=350):
     """Non-overlapping chunks; no excerpts cross original document boundaries."""
     words = text.split()
@@ -113,6 +193,7 @@ def build(private_root, output):
     repo = Path(__file__).resolve().parents[1]
     approval_file = repo / 'data/anki-review-approvals.jsonl'
     approvals = {r['id']: r for r in read_jsonl(approval_file)}
+    writing_reviews = public_writing_reviews()
     rows, counts = [], defaultdict(Counter)
     flags_by_source = defaultdict(Counter)
     inputs = [private_root/'local/anki-candidates.jsonl', private_root/'local/x-candidates.jsonl']
@@ -157,10 +238,12 @@ def build(private_root, output):
                     continue
                 segments = list(chunks(clean_text(raw['text'])))
                 status = 'public_source_automated_screen'
+            document_sha = digest(clean_text(raw['text'])) if kind == 'linked_writing' else None
             emitted = 0
             for n, text in enumerate(segments):
                 flags = privacy_flags(text, local=(kind == 'anki'))
-                if flags and kind != 'anki':
+                reviewed = public_excerpt_review(dict(raw, text=text), writing_reviews, document_sha) if flags and kind != 'anki' else None
+                if flags and kind != 'anki' and not reviewed:
                     counts[kind]['withheld_flagged_excerpts'] += 1
                     flags_by_source[kind].update(flags)
                     continue
@@ -169,13 +252,17 @@ def build(private_root, output):
                     continue
                 row = {k: raw.get(k) for k in ('source_type','source_url','title','published_at','authorship','source_group_id')}
                 row['source_group_id'] = source_group(raw)
+                enrich_collection(row)
                 if kind == 'podcast_transcript' and not row['authorship']:
                     row['authorship'] = 'mixed_or_unverified_speakers'
                 row['id'] = raw['id'] if kind == 'anki' else raw['id'] + ':chunk-' + str(n)
                 row['document_id'] = raw['id']
                 row['text'] = text
                 row['content_sha256'] = digest(text)
-                row['privacy_status'] = status
+                row['privacy_status'] = 'public_source_exact_contextual_review' if reviewed else status
+                if reviewed:
+                    row['public_writing_review'] = {key: reviewed[key] for key in ('document_content_sha256', 'reviewer', 'reviewed_at')}
+                    row['public_writing_review']['resolved_flags'] = flags
                 row['acquisition'] = raw.get('acquisition')
                 row['excerpt_index'] = n
                 row['excerpt_count_before_filtering'] = len(segments)
@@ -212,9 +299,27 @@ def build(private_root, output):
     write_jsonl(output/'anki-cards.jsonl', sorted(anki_cards, key=lambda r: r['id']))
     for split in ('train','validation','test'):
         write_jsonl(output/(split+'.jsonl'), (r for r in rows if r['split'] == split))
+    metrics = corpus_metrics(rows)
+    sources = ({k:r[k] for k in ('id','document_id','source_type','collection','source_url','title','published_at','authorship','content_sha256','split','split_group_id','privacy_status')} for r in rows)
+    write_jsonl(output/'sources.jsonl', sources)
+    jsonl_bytes = (output/'corpus.jsonl').stat().st_size
+    if jsonl_bytes >= 64 * 1024 * 1024:
+        raise ValueError('Corpus JSONL exceeds publication limit')
+    assert sum(v['corpus_jsonl_bytes'] for v in metrics['source'].values()) == jsonl_bytes
+    training_manifest = json.loads((repo/'data/training/manifest.json').read_text()) if (repo/'data/training/manifest.json').exists() else {}
     summary = {
-        'release_date': '2026-10-18', 'status': 'partial_reviewed_release',
-        'records': len(rows), 'unique_documents': len({r['document_id'] for r in rows}),
+        'release_date': '2026-10-19', 'status': 'partial_reviewed_release',
+        'schema_version': 2,
+        'records': len(rows),
+        'text_utf8_bytes': sum(len(r['text'].encode('utf-8')) for r in rows),
+        'corpus_jsonl_bytes': jsonl_bytes,
+        'byte_measurement_note': 'text_utf8_bytes counts released text fields only; corpus_jsonl_bytes counts complete serialized corpus rows including keys, metadata and newline delimiters. No media bytes are included.',
+        'collection_metrics': metrics['collection'], 'source_metrics': metrics['source'],
+        'by_collection': dict(Counter(r['collection'] for r in rows)),
+        'artifact_bytes': {name: (output/name).stat().st_size for name in ('corpus.jsonl','anki-cards.jsonl','train.jsonl','validation.jsonl','test.jsonl','sources.jsonl')},
+        'frozen_model_training_input': {'source_corpus_sha256': training_manifest.get('source_corpus_sha256'),
+                                        'corpus_release_commit': '1e20626c7b3b2b2bc3404fdb0b1fd39a93419b3d',
+                                        'note': 'Historical model input remains frozen in data/training; later research-corpus enrichment is not a retraining claim.'}, 'unique_documents': len({r['document_id'] for r in rows}),
         'words': sum(len(r['text'].split()) for r in rows),
         'characters': sum(len(r['text']) for r in rows),
         'tokens': None, 'token_count_note': 'Not yet tokenized. Words and characters are exact; no token estimate is presented as a measurement.',
@@ -226,7 +331,6 @@ def build(private_root, output):
         'privacy': {'anki_requires_hash_bound_semantic_approval': True, 'public_sources': 'automated conservative excerpt screening; not exhaustive semantic audit', 'sensitive_raw_inputs_uploaded': False},
     }
     (output/'stats.json').write_text(json.dumps(summary, indent=2, ensure_ascii=False)+'\n')
-    write_jsonl(output/'sources.jsonl', ({k:r[k] for k in ('id','document_id','source_type','source_url','title','published_at','authorship','content_sha256','split','split_group_id','privacy_status')} for r in rows))
     print(json.dumps({k:summary[k] for k in ('records','unique_documents','words','by_source','by_split')}, indent=2))
     return rows, summary
 

@@ -135,8 +135,8 @@ class Page(HTMLParser):
         self.stack[-1].children.append(value)
 
 
-OMIT = {"script", "style", "nav", "footer", "header", "aside", "form", "button", "noscript", "svg"}
-BLOCK = {"p", "div", "section", "article", "main", "li", "h1", "h2", "h3", "h4", "blockquote", "br", "tr", "pre"}
+OMIT = {"script", "style", "nav", "footer", "header", "aside", "form", "button", "noscript", "video", "audio"}
+BLOCK = {"p", "div", "section", "article", "main", "li", "h1", "h2", "h3", "h4", "blockquote", "br", "tr", "pre", "figure", "figcaption", "text", "title", "desc", "dt", "dd"}
 
 
 def text(node):
@@ -146,6 +146,8 @@ def text(node):
     if node.tag in OMIT or re.search(r"\b(comment|comments|subscribe|subscription|share-dialog|post-ufi|post-footer|related-posts|recommendations|series-hero)\b", classes):
         return ""
     value = "".join(text(child) for child in node.children)
+    if node.tag == "span":
+        return " " + value + " "
     return "\n\n" + value + "\n\n" if node.tag in BLOCK else value
 
 
@@ -207,6 +209,9 @@ def extract_article(source, final_url):
     return {"status": "article_extracted", "canonical_url": canonical, "title": title, "text": value,
             "published_at": next((obj.get("datePublished") for obj in articles if obj.get("datePublished")), meta.get("article:published_time")),
             "body_selector": body.tag + "." + ".".join(body.attrs.get("class", "").split()),
+            "text_coverage": "static_article_text_including_svg_text_and_accessible_descriptions",
+            "limitations": ["Scripts were not executed; runtime-only chart labels/data, images and media are not transcribed.",
+                            "SVG titles/descriptions are source-provided accessible text, not independently verified chart data."],
             "provenance": {"canonical_url": canonical, "h1": h1, "document_title": document_title,
                            "og_type": meta.get("og:type"), "jsonld_article": bool(articles), "own_domain_titled_main": own_titled_main}}
 

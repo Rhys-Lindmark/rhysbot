@@ -4,7 +4,21 @@ Building a small language model from scratch and adapting Qwen to Rhys Lindmark'
 
 Project: **https://ai.rhyslindmark.com/rhysbot**
 
-[Browse every corpus source](https://ai.rhyslindmark.com/rhysbot/#corpus): [YouTube/podcasts](https://ai.rhyslindmark.com/rhysbot/?source=youtube_transcript#corpus), [HEE](https://ai.rhyslindmark.com/rhysbot/?source=hee_transcript#corpus), [original-audio transcripts](https://ai.rhyslindmark.com/rhysbot/?source=podcast_transcript#corpus), [Substack](https://ai.rhyslindmark.com/rhysbot/?source=substack#corpus), and [X](https://ai.rhyslindmark.com/rhysbot/?source=x#corpus). Speaker separation/identification has not been done. All podcast, YouTube and HEE transcripts are available in the research corpus but were excluded from both models' pretraining and fine-tuning inputs. See [podcast coverage and methods](docs/public-ingestion.md#original-podcast-rss-and-cpu-transcription).
+[Browse the research corpus](https://ai.rhyslindmark.com/rhysbot/#corpus).
+Its additive collection labels unify **Writing** (Substack and linked essays) and
+**Podcasts/YouTube** (captions and original-audio transcripts), with **HEE**,
+**Anki** and **X** separate. Original source types/URLs/acquisition remain intact.
+HEE narration is explicitly labeled as owner-confirmed Rhys; podcast guest identities must not
+be inferred from titles or text. All transcripts were excluded from the already
+trained models' frozen input. See the [dataset card](docs/DATASET_CARD.md) and
+[podcast methods](docs/public-ingestion.md#original-podcast-rss-and-cpu-transcription).
+
+`stats.json` distinguishes exact UTF-8 text bytes from JSONL file bytes, and
+reports documents/excerpts/words per source and collection. The validated refresh
+contains 38,812 excerpts: 17,273,127 text bytes versus 55,688,301 corpus JSONL
+bytes. Its new token count is not yet measured.
+AI2026 Parts 1/2/3 are refreshed by canonical URL; new research-corpus text and
+labels do not alter the historical model training data.
 
 Source: **https://github.com/Rhys-Lindmark/rhysbot**
 
@@ -37,6 +51,9 @@ Read the [dataset card](docs/DATASET_CARD.md), [acquisition notes](docs/public-i
 | `scripts/ingest_podcast_feed.py` | RSS episode inventory and reviewed YouTube identity mapping |
 | `scripts/transcribe_podcast.py` | Bounded, pinned local CPU transcription of public RSS audio |
 | `scripts/ingest_linked_writing.py` | Public articles linked from Substack, with canonical/extraction checks |
+| `scripts/ingest_ai2026.py` | Offline canonical upsert of three saved public AI2026 HTML articles |
+| `scripts/refresh_research_corpus.py` | Bounded-memory refresh from an already screened corpus and public essays |
+| `data/public/public-writing-review-approvals.json` | Exact document/excerpt contextual reviews for two public-writing false positives |
 | `scripts/build_corpus.py` | Privacy gate, excerpt construction, deduplication and splits |
 | `scripts/validate_corpus.py` | Fail-closed release checks |
 | `training/` | Pinned upstreams and bounded training jobs |
@@ -50,9 +67,12 @@ Python 3.9+ is sufficient for ingestion and corpus checks; modern Python/CUDA de
 python3 scripts/ingest_local.py --anki "$ANKI_EXPORT" --x-archive "$X_ARCHIVE" --out "$PRIVATE_WORK/local"
 # See docs/public-ingestion.md for source acquisition commands.
 # Individually review local Anki candidates and add approvals only after reading.
+# Full regeneration from private inputs, only when resource limits permit:
 python3 scripts/build_corpus.py --private-root "$PRIVATE_WORK"
+# Or bounded-memory enrichment of the already screened release from public essays:
+python3 scripts/refresh_research_corpus.py --private-root "$PRIVATE_WORK"
 python3 scripts/validate_corpus.py
-python3 scripts/prepare_training.py
+# data/training is a frozen experiment input: do not regenerate it during a research-corpus refresh.
 python3 -m unittest discover -s tests -v
 ```
 
