@@ -52,6 +52,10 @@ def align_words(words, segments):
         ranked = sorted(overlap.items(), key=lambda x: x[1], reverse=True)
         duration = max(end - start, .01)
         speaker = 'unknown'
+        if end == start:
+            at_point = {s['Speaker'] for s in segments if s['Start'] <= start < s['End']}
+            if len(at_point) == 1:
+                speaker = 'speaker_%d' % next(iter(at_point))
         if ranked and ranked[0][1] / duration >= .6 and (len(ranked) == 1 or ranked[1][1] / duration < .2):
             speaker = 'speaker_%d' % ranked[0][0]
         if speaker == 'unknown':
@@ -65,6 +69,16 @@ def align_words(words, segments):
     for turn in turns:
         turn['text'] = turn['text'].strip()
     return turns, unknown
+
+
+def choose_rhys(profiles):
+    """Conservative cosine/margin rule, not a calibrated identity probability."""
+    import statistics
+    ranked = sorted(((statistics.median(v), key, min(v)) for key, v in profiles.items() if len(v) >= 4), reverse=True)
+    if (not ranked or ranked[0][0] < .86 or ranked[0][2] < .75
+            or (len(ranked) > 1 and ranked[0][0] - ranked[1][0] < .10)):
+        return None
+    return ranked[0][1]
 
 
 def validate_items(items):
@@ -113,6 +127,30 @@ def process(run_id, items, timeout_seconds, reference=None):
         diarizer.eval()
         asr_path = snapshot_download(PINS['asr'][0], revision=PINS['asr'][1])
         asr = BatchedInferencePipeline(model=WhisperModel(asr_path, device='cuda', compute_type='float16', cpu_threads=2))
+        voice, feature_extractor, reference_vector = None, None, None
+        if reference:
+            from transformers import AutoFeatureExtractor, WavLMForXVector
+            safe_run_id(reference['run_id']); safe_run_id(reference['episode_id'])
+            anchor_path = Path('/artifacts/speech') / reference['run_id'] / (reference['episode_id'] + '.json')
+            anchor = read_json(anchor_path)
+            validate_items([anchor['episode']])
+            if reference['basis'] != 'spoken_host_self_introduction_Rhys_founder_of_Roote':
+                raise ValueError('Explicit reviewed identity anchor required')
+            feature_extractor = AutoFeatureExtractor.from_pretrained(PINS['voice'][0], revision=PINS['voice'][1])
+            voice = WavLMForXVector.from_pretrained(PINS['voice'][0], revision=PINS['voice'][1]).to('cuda').eval()
+            reference_audio = np.frombuffer(subprocess.check_output(['ffmpeg', '-v', 'error', '-i',
+                anchor['episode']['enclosure_url'], '-t', '60', '-f', 'f32le', '-ac', '1', '-ar', '16000', '-'], timeout=90), dtype=np.float32)
+            def embedding(chunks):
+                inputs = feature_extractor(chunks, sampling_rate=16000, return_tensors='pt', padding=True).to('cuda')
+                with torch.inference_mode():
+                    return torch.nn.functional.normalize(voice(**inputs).embeddings, dim=-1)
+            chunks = [reference_audio[int(a*16000):int(b*16000)] for a,b in reference['clean_intervals_seconds']]
+            reference_vector = torch.nn.functional.normalize(embedding(chunks).mean(dim=0), dim=-1)
+            report['identity_anchor_evidence'] = {'run_id': reference['run_id'], 'episode_id': reference['episode_id'],
+                'audio_sha256': anchor['audio_sha256'], 'basis': reference['basis'],
+                'not_acoustically_compared_to_Digicene': True, 'cosine_threshold': .86, 'minimum_margin': .10,
+                'voiceprints_public': False}
+            del reference_audio, chunks
         for item in items:
             if time.monotonic() - started > timeout_seconds - 120:
                 report['status'] = 'partial_deadline'
@@ -153,11 +191,25 @@ def process(run_id, items, timeout_seconds, reference=None):
                 words = [{'start': w.start, 'end': w.end, 'word': w.word, 'probability': w.probability}
                          for segment in transcription for w in (segment.words or [])]
                 turns, unknown = align_words(words, segments)
+                profiles, rhys = {}, None
+                if reference_vector is not None:
+                    for speaker in sorted({s['Speaker'] for s in segments}):
+                        clean = [s for s in segments if s['Speaker'] == speaker and s['End'] - s['Start'] >= 4
+                                 and not any(o['Speaker'] != speaker and o['Start'] < s['End'] and o['End'] > s['Start'] for o in segments)]
+                        chosen = clean[::max(1, len(clean)//8)][:8]
+                        chunks = [audio[int((s['Start']+.1)*16000):int(min(s['End']-.1,s['Start']+8)*16000)] for s in chosen]
+                        if len(chunks) >= 4:
+                            profiles['speaker_%d' % speaker] = (embedding(chunks) @ reference_vector).cpu().tolist()
+                    rhys = choose_rhys(profiles)
+                for turn in turns:
+                    turn['speaker'] = 'Rhys Lindmark' if turn['speaker_id'] == rhys else (
+                        'Unknown / overlap' if turn['speaker_id'] == 'unknown' else turn['speaker_id'].replace('speaker_', 'Speaker '))
                 evidence = {'schema_version': 1, 'episode': item, 'audio_sha256': digest.hexdigest(),
                     'audio_bytes': size, 'audio_duration_seconds': duration, 'pins': PINS,
                     'speaker_segments': segments, 'words': words, 'turns': turns,
                     'word_count': len(words), 'unknown_word_count': unknown,
-                    'speaker_identity_status': 'anonymous_pending_reference_alignment',
+                    'speaker_identity_status': 'rhys_voice_match_to_self_introduction_anchor' if rhys else 'anonymous_or_ambiguous_voice_match',
+                    'rhys_speaker_id': rhys, 'voice_match_cosines': profiles, 'identity_anchor': report.get('identity_anchor_evidence'),
                     'limitations': ['Automatic ASR and diarization; no human audio audit.',
                                     'Speaker IDs are local to this episode, not guest names.']}
                 if not words or any(t['start'] < 0 or t['end'] > duration + 2 or t['end'] < t['start'] for t in turns):
@@ -201,7 +253,7 @@ def reserve_corpus(ledger, run_id, items, timeout_seconds, budget):
 
 @app.function(image=cpu_image, cpu=.25, memory=256, timeout=7800, retries=0,
               min_containers=0, max_containers=1, scaledown_window=2, volumes={'/artifacts': volume})
-def coordinate(run_id, items, timeout_seconds):
+def coordinate(run_id, items, timeout_seconds, reference=None):
     singleton = modal.Dict.from_name('rhysbot-training-singleton')
     if not singleton.put('active-corpus', run_id, skip_if_exists=True):
         raise ValueError('Another corpus batch is active; no duplicate dispatch')
@@ -222,7 +274,7 @@ def coordinate(run_id, items, timeout_seconds):
             if (not reserved or accounting_committed) and singleton.get('active') == run_id:
                 singleton.pop('active')
         # Only own output files are mutated during this remote GPU call.
-        call = process.with_options(timeout=timeout_seconds).spawn(run_id, items, timeout_seconds)
+        call = process.with_options(timeout=timeout_seconds).spawn(run_id, items, timeout_seconds, reference)
         singleton.put('corpus-call-' + run_id, call.object_id)
         report = call.get(timeout=timeout_seconds + 60)
         for _ in range(120):
@@ -251,7 +303,7 @@ def coordinate(run_id, items, timeout_seconds):
 
 
 @app.local_entrypoint()
-def main(run_id: str, manifest: str, timeout_seconds: int = 900):
+def main(run_id: str, manifest: str, timeout_seconds: int = 900, reference_file: str = ''):
     safe_run_id(run_id)
     items = read_json(manifest)
     validate_items(items)
@@ -259,4 +311,5 @@ def main(run_id: str, manifest: str, timeout_seconds: int = 900):
         raise ValueError('Finite job timeout required')
     if run_id.startswith('speech-pilot') and timeout_seconds > 900:
         raise ValueError('Pilot ceiling is 900 seconds ($3.60 reservation)')
-    print(json.dumps(coordinate.remote(run_id, items, timeout_seconds), indent=2))
+    reference = read_json(reference_file) if reference_file else None
+    print(json.dumps(coordinate.remote(run_id, items, timeout_seconds, reference), indent=2))

@@ -13,7 +13,7 @@ from runtime import safe_run_id
 
 tree = ast.parse((ROOT / 'training/speech.py').read_text())
 functions = [node for node in tree.body if isinstance(node, ast.FunctionDef) and node.name in {
-    'align_words', 'validate_items', 'manifest_sha', 'reserve_corpus'}]
+    'align_words', 'validate_items', 'manifest_sha', 'reserve_corpus', 'choose_rhys'}]
 namespace = dict(hashlib=hashlib, json=json, safe_run_id=safe_run_id, reserve=reserve)
 exec(compile(ast.Module(body=functions, type_ignores=[]), 'speech-pure', 'exec'), namespace)
 ITEMS = [{'id': 'episode-one', 'enclosure_url': 'https://feeds.soundcloud.com/stream/123-show.mp3'}]
@@ -46,3 +46,11 @@ class SpeechTests(unittest.TestCase):
         for items in ([], ITEMS * 2, [{**ITEMS[0], 'enclosure_url': 'http://localhost:80/secret'}]):
             with self.assertRaises(ValueError):
                 namespace['validate_items'](items)
+
+    def test_voice_identity_requires_multiple_consistent_clips_and_margin(self):
+        choose = namespace['choose_rhys']
+        self.assertEqual(choose({'speaker_0': [.95]*4, 'speaker_1': [.65]*4}), 'speaker_0')
+        for profiles in ({'speaker_0': [.95]*3}, {'speaker_0': [.85]*8},
+                         {'speaker_0': [.95]*4, 'speaker_1': [.90]*4},
+                         {'speaker_0': [.95,.95,.95,.50]}):
+            self.assertIsNone(choose(profiles))
