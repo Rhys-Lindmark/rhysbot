@@ -8,15 +8,15 @@ Source: **https://github.com/Rhys-Lindmark/rhysbot**
 
 ## Status
 
-**Reviewed corpus published; nanochat and Qwen training completed. Qwen baseline
-comparison and live checkpoint verification are underway. No model demo is live yet.** See the [model card](docs/MODEL_CARD.md)
-for measured results and current limitations.
+**The reviewed corpus and measured model results are published. Both trained
+checkpoints are served in the [live experimental demo](https://ai.rhyslindmark.com/rhysbot/).** See the [model card](docs/MODEL_CARD.md)
+for measured results and current limitations. Nanochat outputs are incoherent; Qwen answers remain unreliable. Saved artifacts live in the authenticated Modal volume, with hashes and access instructions in the model card.
 
 - Located a 21,301-note Anki export, local HEE transcripts, and the original X archive.
 - Published corpus contains only individually approved Anki cards and conservatively screened public excerpts. Raw exports, private review material, personal family/dating details, DMs and account metadata are excluded.
 - Collected all 223 listed public Substack bodies, 212 YouTube caption tracks and 89 local HEE transcripts. Three additional public RSS recordings were transcribed locally: the two spoken caption gaps and one audio-only episode. The remaining caption gap is title-labeled solo piano. Exact release counts are in [data/public/stats.json](data/public/stats.json); acquisition gaps are in [docs/acquisition-coverage.json](docs/acquisition-coverage.json) when generated.
 - Training data and launch recipes preserve source splits. Mixed/unverified guest speech is not silently trained as Rhys's voice.
-- Total authorized paid-compute budget: **$200** across both models and evaluation. Modal is connected. Pilots expose implementation issues before the longer runs; completed artifacts and evaluations will be reported separately.
+- Total authorized paid-compute budget: **$200** across both models and evaluation. Full nanochat and Qwen CPT/SFT runs, four-way Qwen evaluation and hosted inference are complete. Conservative holds at verification total $66.40; provider billing is pending.
 
 Read the [dataset card](docs/DATASET_CARD.md), [acquisition notes](docs/public-ingestion.md), and [training guide](docs/training.md) before use.
 

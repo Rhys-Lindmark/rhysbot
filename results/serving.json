@@ -1,0 +1,73 @@
+{
+  "verified_at": "2026-10-19T07:30:27.816697+00:00",
+  "public_endpoint": "https://ai.rhyslindmark.com/api/rhysbot",
+  "deployment_source": "1be5cf0738005c752474d7b59bbee9c9204aea08",
+  "website_commit": "1bdb0a1e4489a4fe2512add92402d7529af13d9c",
+  "operator_gpu_checks": [
+    {
+      "http_status": 200,
+      "prompt": "Explain entropy in plain language.",
+      "ok": true,
+      "model": "nanochat",
+      "checkpoint_run_id": "nanochat-train-20261019a",
+      "weights_sha256": "228f3b6c3d8dc6c8820badc01bf414c1c625c7892ce13e4fcd7c91fc77ee9261",
+      "identity": "Rhysbot scratch experiment: tiny nanochat checkpoint, limited training; not a capable general chat model.",
+      "text": "finventy",
+      "input_tokens": 72,
+      "output_tokens": 4,
+      "latency_seconds": 11.334963292000001,
+      "tools_executed": false
+    },
+    {
+      "http_status": 200,
+      "prompt": "Explain entropy in plain language.",
+      "ok": true,
+      "model": "qwen",
+      "checkpoint_run_id": "qwen-train-20261019a",
+      "weights_sha256": "493bfdbc2279e44edd33092dc50a7376a42a38e89c7e5e157aded3f4753b1637",
+      "identity": "Rhysbot Qwen adaptation: pinned Qwen base plus actual saved CPT/SFT adapter; not Rhys or a validated personality model.",
+      "text": "Entropy is a measure of disorder.\n\nThe more disordered a system is, the higher its entropy.",
+      "input_tokens": 72,
+      "output_tokens": 22,
+      "latency_seconds": 30.808089398999996,
+      "tools_executed": false
+    }
+  ],
+  "public_browser_generation": {
+    "status": "verified_live_browser_answer_and_checkpoint_display",
+    "url": "https://ai.rhyslindmark.com/rhysbot/",
+    "prompt": "Explain entropy in plain language.",
+    "text": "Entropy is a measure of disorder.\n\nThe more disordered a system is, the higher its entropy.",
+    "model": "qwen",
+    "checkpoint_run_id": "qwen-train-20261019a",
+    "weights_sha256": "493bfdbc2279e44edd33092dc50a7376a42a38e89c7e5e157aded3f4753b1637",
+    "input_tokens": 72,
+    "output_tokens": 22,
+    "latency_seconds": 84.541700702,
+    "verification": "Widget completed automatically; no agent CAPTCHA interaction. Normal form submission traversed Siteverify and the Cloudflare proxy.",
+    "displayed_checkpoint_hash_prefix": "493bfdbc2279"
+  },
+  "accounting": {
+    "conservative_committed_usd_after_two_operator_requests": 65.2,
+    "provider_bill": "pending; reservations are not confirmed charges",
+    "conservative_committed_usd_at_verification_snapshot": 66.4,
+    "inference_requests_verified": 3,
+    "active_lock_after_verification": null
+  },
+  "edge_denial_checks": [
+    {
+      "case": "invalid_verification",
+      "status": 403,
+      "response": {
+        "error": "verification_failed"
+      }
+    },
+    {
+      "case": "wrong_origin",
+      "status": 403,
+      "response": {
+        "error": "origin_not_allowed"
+      }
+    }
+  ]
+}

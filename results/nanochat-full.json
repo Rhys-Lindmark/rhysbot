@@ -88,5 +88,10 @@
     "metadata_sha256": "9b7bf94fa320550cdb457f904c35551dc44cfceff00dec70797d5ed0c8cb7e7b",
     "tokenizer_sha256": "0bc1f0fc2604b69edb7b0918f8bbfe6e6615fd67ce0c81500572a5ee3eab45fa"
   },
-  "quality": "Actual tiny scratch-model training completed. Samples remain incoherent; useful chat or personality fidelity not demonstrated. Later pretraining validation loss worsened; all checkpoints preserved."
+  "quality": "Actual tiny scratch-model training completed. Samples remain incoherent; useful chat or personality fidelity not demonstrated. Later pretraining validation loss worsened; all checkpoints preserved.",
+  "serving_gpu_verification": {
+    "status": "actual_saved_checkpoint_gpu_generation_verified",
+    "evidence": "results/serving.json",
+    "public_demo": "https://ai.rhyslindmark.com/rhysbot/"
+  }
 }

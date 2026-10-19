@@ -255,8 +255,9 @@
   "artifact_verification": "Remote acquisition recorded the SFT artifact hashes; local metadata/config copies match. Adapter weights remain in the authenticated Modal Volume and were not downloaded for this report.",
   "four_way_comparison": {
     "run_id": "qwen-eval-20261019a",
-    "release_commit": "1be5cf0",
-    "status": "running_results_pending",
+    "release_commit": "1be5cf0738005c752474d7b59bbee9c9204aea08",
+    "status": "completed_actual_artifacts",
+    "results_file": "qwen-comparison.json",
     "variants": [
       "base",
       "instruction_baseline",
@@ -264,8 +265,12 @@
       "sft"
     ]
   },
-  "serving_gpu_verification": "pending",
-  "quality": "Actual CPT and SFT completed. This small held-out evaluation is diagnostic; some completions match study answers while others mismatch, repeat or degenerate. No validated factuality, personality fidelity, or useful-app claim; baseline comparison remains pending.",
+  "serving_gpu_verification": {
+    "status": "actual_saved_checkpoint_gpu_generation_verified",
+    "evidence": "results/serving.json",
+    "public_demo": "https://ai.rhyslindmark.com/rhysbot/"
+  },
+  "quality": "Actual CPT and SFT completed. This small held-out evaluation is diagnostic; some completions match study answers while others mismatch, repeat or degenerate. No validated factuality, personality fidelity, or useful-app claim; the separate completed baseline comparison is recorded in qwen-comparison.json.",
   "accounting": {
     "training_reservation_usd": 24.6,
     "shared_committed_reservations_usd": 62.8,

@@ -1,9 +1,9 @@
 # Rhysbot training pipeline
 
-**Status: actual full nanochat and Qwen CPT/SFT training completed. The separate
-four-way Qwen evaluation is running; GPU serving verification remains pending.**
-Measured evidence is in `results/pilots.json`, `results/nanochat-full.json` and
-`results/qwen-full.json`. The small held-out evaluations are diagnostic and do
+**Status: actual full nanochat and Qwen CPT/SFT training, the four-way Qwen
+evaluation and real hosted GPU checks completed. The experimental demo is live.**
+Measured evidence is in `results/pilots.json`, `results/nanochat-full.json`,
+`results/qwen-full.json` and `results/qwen-comparison.json`. The small held-out evaluations are diagnostic and do
 not validate factuality, personality fidelity or app usefulness. Provider billing
 remains pending; reservations are not actual charges.
 
@@ -93,9 +93,25 @@ and SFT evaluation, took 4,278.06 seconds. These are bounded experiments, not
 validated optimal settings. See `results/qwen-full.json` for allocation, throughput,
 loss, loading diagnostics, samples and exact SFT artifact hashes.
 
-Separate evaluation `qwen-eval-20261019a`, launched from release `1be5cf0`, is
-running. It compares the untouched base, pinned instruction-model baseline, CPT
-adapter and SFT adapter; comparative results remain pending.
+Separate evaluation `qwen-eval-20261019a` completed in 294.81 GPU-job seconds
+from release `1be5cf0738005c752474d7b59bbee9c9204aea08`, while the parent adapters
+retain training release `c0747a0d88f4d503b9d578cf66bf36b093f98049`.
+
+| Variant | Next-token BPB | Next-token NLL | Assistant-only NLL |
+| --- | ---: | ---: | ---: |
+| Untouched base | 1.3143 | 4.0368 | 2.9791 |
+| Pinned instruction baseline | 1.2529 | 3.8480 | 3.7246 |
+| CPT adapter | 0.5178 | 1.5905 | 2.4637 |
+| CPT then SFT adapter | 0.5181 | 1.5913 | 2.2501 |
+
+Each variant used 2,343 next-token targets (10,382 UTF-8 bytes) and 220 assistant
+targets across the first 32 held-out source documents and 10 held-out SFT
+examples. `results/qwen-comparison.json` preserves all 40 exact completions,
+released questions/input messages, references, formats and provenance. SFT
+improved assistant-only NLL relative to CPT but slightly worsened next-token loss.
+This small diagnostic sample establishes no factuality, personality or native
+prompting superiority; answers include unsupported assertions and repetition.
+No invented grades or aggregate answer-accuracy claims accompany these losses.
 
 ## Evaluation and inference artifacts
 
@@ -114,12 +130,12 @@ select hyperparameters on them. Actual inference paths already use nanochat's
 Engine and Transformers `generate` to emit batch samples. The scale-to-zero
 serving endpoint has deployed with both completed checkpoint targets. An earlier
 nanochat-only deployment returned an actual
-authenticated HTTP 409 while training held the shared lock. That proves startup
-and concurrency protection, not GPU generation. Real GPU inference and the
-website's model-backed chat still need verification; no unadapted base model
-substitutes for trained weights.
+authenticated HTTP 409 while training held the shared lock. Subsequent operator HTTP 200 calls restored both actual checkpoints and generated
+text. A public browser submission passed the verification widget, Siteverify,
+Cloudflare proxy and Qwen generation, displaying the matching checkpoint hash.
+See `results/serving.json`; no unadapted base model substitutes for trained weights.
 
-The final Qwen comparison uses the instruction baseline's pinned official chat
+The completed Qwen comparison uses the instruction baseline's pinned official chat
 template with `enable_thinking=False` for sample generation, so the 64-token
 output limit is not spent on its default reasoning prefill. Base/CPT/SFT samples
 keep the explicit ChatML format used in our training. Assistant-only NLL retains
@@ -212,10 +228,12 @@ attention, and saved checkpoints. Both full-run Qwen stages report 426 language
 checkpoint tensors and empty missing/unexpected/mismatched/error diagnostics.
 These are GPU integration results, not a general performance or quality guarantee.
 
-Still pending: the running four-way Qwen comparison, real saved-checkpoint GPU
-serving, end-to-end browser generation, and provider-billed costs. Current shared
-reservations total $62.80 of the $200 authorization, including the new evaluation;
-no elapsed-time estimate refunds those holds. Failed attempts remain recorded
+Actual saved-checkpoint GPU serving and the public Qwen browser path are now
+verified. Provider-billed costs remain pending. Training and comparison reservations total $62.80 of
+the $200 authorization before serving requests. Each admitted inference request
+adds a conservative $1.20 reservation. Three verified calls brought the
+verification snapshot to $66.40; the shared ledger holds the current total.
+No elapsed-time estimate refunds those holds. Failed attempts remain recorded
 and reserved until provider receipts are reconciled. The small completed SFT
 evaluation is diagnostic and does not validate personality fidelity, factuality
 or app usefulness.

@@ -1,9 +1,14 @@
 # Serving actual checkpoints
 
-`training/serve.py` is source and mock tested. It has not been deployed or GPU
-validated. No completed checkpoint is enabled by default. An inert import needs
-neither Modal nor torch. Actual availability requires a completed training run,
-reviewed artifact hashes, deployment, and the authenticated site proxy below.
+`training/serve.py` is deployed with the actual full nanochat step-80 checkpoint
+and Qwen CPT/SFT adapter. Authenticated operator requests verified both saved
+checkpoint hashes and returned real GPU-generated text: nanochat in 11.33 seconds
+(incoherent output), Qwen in 30.81 seconds. Both models are enabled on the site;
+the public Qwen browser path also passed automatic widget verification,
+Siteverify, proxying and generation. Wrong-origin and invalid-token requests
+returned HTTP 403. See [serving.json](../results/serving.json).
+An inert import needs neither Modal nor torch; no checkpoint is enabled merely
+by importing the source.
 
 The service reuses the training image, `rhysbot-training-artifacts` volume at
 `/artifacts`, `rhysbot-training-singleton` Dict, and `/artifacts/spend-ledger.json`.
@@ -152,10 +157,12 @@ it stores a request digest, checkpoint identity, counts and latency.
 
 Local stdlib tests cover request/deployment restrictions, shared spend/pilot
 gates, rate limits, unreconciled failures, uncertain RPC locks, missing ledger,
-and hash-bound checkpoint eligibility. The installed Modal 1.6.2 SDK can construct
-the application locally without a cloud call. Actual GPU loading, completions,
-cold-start costs, deployed proxy authentication and browser requests remain
-unverified until real checkpoints and the edge proxy are available.
+and hash-bound checkpoint eligibility. Actual deployment verified copied-module
+paths and lazy named-Dict resolution. A real authenticated HTTP 409 verified
+shared-lock enforcement while Qwen trained. Subsequent HTTP 200 operator calls
+verified GPU loading, exact saved hashes and real completions for both families.
+Provider-billed costs remain pending; public browser results and edge rejection
+checks are recorded in the serving evidence artifact.
 
 Source references: [Modal ASGI web functions](https://modal.com/docs/guide/webhooks),
 [proxy authentication](https://modal.com/docs/guide/webhook-proxy-auth), and

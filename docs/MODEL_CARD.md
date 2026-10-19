@@ -3,9 +3,10 @@
 ## Current state
 
 The nanochat scratch experiment and full Qwen adaptation have completed actual
-training and bounded SFT evaluation. The separate four-way Qwen comparison is
-running. Real GPU serving checks remain pending; no model-backed website demo
-is live yet. These small evaluations are diagnostic and do not validate
+training and evaluation, including the separate four-way Qwen comparison. Both
+saved checkpoints passed real hosted GPU inference. The public Qwen browser
+flow also passed verification, proxying and checkpoint display; the experimental
+[demo is live](https://ai.rhyslindmark.com/rhysbot/). These small evaluations are diagnostic and do not validate
 factuality, personality fidelity or app usefulness.
 
 The released input is the frozen corpus from commit
@@ -85,11 +86,28 @@ degenerate numbers. It does not validate factuality, personality fidelity or
 useful chat. Machine-readable metrics, actual completions, frozen provenance and
 SFT artifact hashes are in [qwen-full.json](../results/qwen-full.json).
 
-A separate four-way evaluation, `qwen-eval-20261019a` from release `1be5cf0`, is
-running against the untouched base, pinned Qwen instruction baseline, CPT adapter
-and SFT adapter. Comparative improvement has not yet been measured in this report.
+Separate four-way evaluation `qwen-eval-20261019a` completed in 294.81 GPU-job
+seconds on release `1be5cf0738005c752474d7b59bbee9c9204aea08`. It evaluates the
+same held-out inputs and the actual adapters from `qwen-train-20261019a`:
 
-For the final comparison, instruction-baseline samples use its pinned official
+| Variant | Next-token BPB | Next-token NLL | Assistant-only NLL |
+| --- | ---: | ---: | ---: |
+| Untouched base | 1.3143 | 4.0368 | 2.9791 |
+| Pinned instruction baseline | 1.2529 | 3.8480 | 3.7246 |
+| CPT adapter | 0.5178 | 1.5905 | 2.4637 |
+| CPT then SFT adapter | 0.5181 | 1.5913 | 2.2501 |
+
+CPT lowered next-token loss on this sample; SFT lowered assistant-only loss
+relative to CPT while slightly worsening next-token loss. These are small
+controlled-input measurements, not accuracy or personality scores. The 64-token
+cap cuts off longer answers; some samples contain unsupported assertions,
+reference mismatches, repetition or degenerate numbers. No preference or accuracy
+grades were assigned. All 40 exact completions, their released questions/input
+messages and study-note references are in
+[qwen-comparison.json](../results/qwen-comparison.json), with model revisions,
+formats, frozen input hashes and parent-run provenance.
+
+In this comparison, instruction-baseline samples use its pinned official
 chat template with thinking disabled; adapted-model samples use their training
 format. Assistant-only NLL uses a common explicit ChatML format across variants.
 This controls the loss inputs, but does not establish best-case performance with
@@ -102,9 +120,12 @@ the authenticated `rhysbot-training-artifacts` Modal Volume under `runs/<run_id>
 Operators can inspect individual files with `modal volume ls` and download them
 with `modal volume get`; credentials and model weights stay out of Git.
 
-The prepared inference code permits only explicitly hashed completed checkpoints,
-uses the same shared $200 budget ledger, and scales to zero. Actual cold-start
-inference and the website connection still need verification. No synthetic
+The deployed inference code permits only explicitly hashed completed checkpoints,
+uses the same shared $200 budget ledger, and scales to zero. Actual operator
+requests restored both saved models and generated text. Public browser generation
+returned the named Qwen checkpoint and matching hash; invalid verification and
+wrong-origin requests returned HTTP 403. Evidence and exact output are in
+[serving.json](../results/serving.json). No synthetic
 answer, random checkpoint, or unadapted base-model fallback substitutes for a
 trained checkpoint. See [serving.md](serving.md).
 
@@ -112,7 +133,9 @@ trained checkpoint. See [serving.md](serving.md).
 
 Provider billing is pending. Pilot/setup reservations total $25; the completed
 nanochat run reserves $6.60; the completed Qwen job reserves $24.60; the separate
-Qwen comparison reserves $6.60, for a current conservative commitment of $62.80.
-These are budget holds, not confirmed charges.
+Qwen comparison reserves $6.60, for $62.80 committed before serving requests.
+Three verified inference requests added $3.60, giving $66.40 committed at the
+verification snapshot. Each further admitted request adds a conservative $1.20
+hold; consult the shared ledger for the current total. These are budget holds, not confirmed charges.
 Failed jobs retain their reservations until provider billing is reconciled.
 Evaluation and inference must fit within the remaining shared authorization.

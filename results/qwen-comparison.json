@@ -1,0 +1,969 @@
+{
+  "run_id": "qwen-eval-20261019a",
+  "release_commit": "1be5cf0738005c752474d7b59bbee9c9204aea08",
+  "status": "completed_actual_artifacts",
+  "parent_training_run_id": "qwen-train-20261019a",
+  "parent_training_release_commit": "c0747a0d88f4d503b9d578cf66bf36b093f98049",
+  "gpu_job_seconds": 294.80529380400003,
+  "gpu": "A100-80GB",
+  "evaluation_scope": {
+    "max_pretrain_test_documents": 32,
+    "max_sft_test_examples": 10,
+    "max_new_tokens": 64,
+    "decoding": "greedy",
+    "shared_next_token_targets": 2343,
+    "shared_next_token_utf8_bytes": 10382,
+    "shared_assistant_targets": 220,
+    "sample_completions": 40,
+    "sample_selection": "First 10 released held-out SFT examples in file order; no selection by model output.",
+    "grades_assigned": false
+  },
+  "variants": {
+    "base": {
+      "status": "measured_no_personality_quality_claim",
+      "loading": {
+        "model_id": "Qwen/Qwen3.5-4B-Base",
+        "revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+        "loading_info": {
+          "missing_keys": [],
+          "unexpected_keys": [],
+          "mismatched_keys": [],
+          "error_msgs": []
+        },
+        "language_checkpoint_tensors": 426
+      },
+      "heldout": {
+        "nats": 9458.211807727814,
+        "tokens": 2343,
+        "utf8_bytes": 10382,
+        "nll_per_token": 4.036795479183873,
+        "perplexity": 56.64453306916974,
+        "bits_per_byte": 1.314324337380693
+      },
+      "assistant_only": {
+        "nll_per_token": 2.979128476706418,
+        "tokens": 220,
+        "perplexity": 19.67066572875371
+      },
+      "generation_format": "shared_manual_chatml",
+      "assistant_loss_format": "shared_manual_chatml_assistant_only_not_template_native",
+      "checkpoint": {
+        "kind": "unadapted_pinned_model",
+        "parent_training_run_id": null,
+        "adapter_stage": null
+      },
+      "samples_for_manual_review": [
+        {
+          "id": "anki-000d5e286f702f164ec9",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "In the book *Decisive*, by Chip Heath and Dan Heath, they discuss three approaches for fighting the confirmation bias by generating negative results. These approaches are:\n\n1. **Seeking Disconfirming Evidence**: This involves actively looking for information that contradicts your initial beliefs or hypotheses. By doing so, you",
+          "reference": "Easy to disagree, disconfirming questions, consider the opposite\n\nOne, we can make it easier for people to disagree with us. Two, we can ask questions that are more likely to surface contrary information. Three, we can check ourselves by considering the opposite.",
+          "latency_seconds": 3.4645820209999982,
+          "question": "Answer this question from a curated study note: three approaches for fighting the confirmation bias by generating negative results. In Decisive book.",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: three approaches for fighting the confirmation bias by generating negative results. In Decisive book.",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-00650a156f2ed8f4ed81",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "Based on the curated study notes, the number of feudal manors per polity varies significantly depending on the historical period and the specific political entity being examined. For instance, in medieval Europe, the number of manors could range from a few hundred to several thousand, depending on the size and power of the polity. In smaller",
+          "reference": "Within each eg County, there are 1000 knight vassals, each of which has 100 peasants",
+          "latency_seconds": 3.354684626000001,
+          "question": "Answer this question from a curated study note: Number of feudal manors per polity?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Number of feudal manors per polity?",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-0080b4a04cb213ae9464",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "<think>\nHmm, the user is asking about ethylene's chemical formula and structure based on a curated study note. I need to recall Rhysbot's typical style—concise, factual, and distinguishing Rhys's views from other sources. \n\nEthylene is a straightforward organic compound, so the formula and structure should",
+          "reference": "C2H4",
+          "latency_seconds": 3.312233795999987,
+          "question": "Answer this question from a curated study note: Ethylene chemical formula and structure?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Ethylene chemical formula and structure?",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-0112f5df4e314d566519",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "Colossal Biosciences is a biotech company that focuses on developing therapies for rare diseases, particularly those affecting the central nervous system. The company works by leveraging its expertise in gene therapy and cell therapy to create treatments for conditions such as spinal muscular atrophy (SMA), Duchenne muscular dystrophy (DMD),",
+          "reference": "Puts Wooly Mammoth genes into Asian elephants. (Oxygen at low temperatures, fatty tissue)",
+          "latency_seconds": 3.331977708000011,
+          "question": "Answer this question from a curated study note: How does Colossal Biosciences company work?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: How does Colossal Biosciences company work?",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-011a209a7ebad0b95c20",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "<think>\nHmm, the user is asking about metrics to show the influence of the East India Company based on curated study notes. This seems like a straightforward request for specific data points from historical records. \n\nI recall that the East India Company's influence was often measured through economic, territorial, and administrative indicators. The user likely",
+          "reference": "260,000 soldiers, 2x British Army\n\n50% of world trade from 1750-1800",
+          "latency_seconds": 3.3043742710000004,
+          "question": "Answer this question from a curated study note: Metrics to show influence of East India Company:",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Metrics to show influence of East India Company:",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-0186ec9a6cf573732e96",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "<think>\nHmm, the user is asking about a specific term from Boyd's work, referencing a curated study note. The question is straightforward and requires a precise answer. \n\nI recall that in Boyd's \"The Social Dilemma,\" he discusses the concept of \"copying\" ideas from others as a form of intellectual",
+          "reference": "Blind imitation",
+          "latency_seconds": 3.316633063000012,
+          "question": "Answer this question from a curated study note: What does Boyd call copying ideas from others?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: What does Boyd call copying ideas from others?",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-01a606a8759d10abbdaf",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "<think>\nHmm, the user is asking for an example of pride motivating house tidying from a curated study note. The query is straightforward, but I need to ensure the response aligns with the assistant's guidelines—distinguishing Rhys's views from others and avoiding invented facts.  \n\nThe example should be clear and",
+          "reference": "Tidy → feels good → tidy again",
+          "latency_seconds": 3.307560976000005,
+          "question": "Answer this question from a curated study note: Example of pride motivating us to tidy the house:",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Example of pride motivating us to tidy the house:",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-01a6deed143f8d26f082",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "<think>\nHmm, the user is asking about a specific phrase from a curated study note. The phrase \"Be, do but for architecture\" seems to be a conceptual statement, likely from Rhys Lindmark's work. \n\nI recall that Rhys often explores the intersection of architecture, philosophy, and human experience. The",
+          "reference": "Form follows function\nForm precedes function\n\nBe before do",
+          "latency_seconds": 3.1761247150000003,
+          "question": "Answer this question from a curated study note: Be, do but for architecture:",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Be, do but for architecture:",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-01ab36f1f6cc9971d6f9",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "The early Andes writing system is known as **Quipu** (or **Khipu**). It was used by the Inca civilization and consisted of knotted strings that encoded information, primarily numerical data, but also potentially other types of information. Quipus were an important tool for record-keeping and communication",
+          "reference": "Quipu. Really started ~0 CE, and key during Inca ~1500 CE",
+          "latency_seconds": 3.4101954469999924,
+          "question": "Answer this question from a curated study note: Name of early Andes writing system?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Name of early Andes writing system?",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-01fad0c3e668da37a3c7",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "<think>\nHmm, the user is asking about how SSRIs work, specifically requesting an answer from a curated study note. The query is straightforward and clinical in nature. \n\nI recall that SSRIs are a well-documented class of antidepressants, so the response should focus on their mechanism of action without veering into personal",
+          "reference": "Block reabsorption of serotin. More in the brain.\n\nselective serotonin reuptake inhibitors",
+          "latency_seconds": 3.290192254999994,
+          "question": "Answer this question from a curated study note: How do SSRIs work?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: How do SSRIs work?",
+              "role": "user"
+            }
+          ]
+        }
+      ]
+    },
+    "instruction_baseline": {
+      "status": "measured_no_personality_quality_claim",
+      "loading": {
+        "model_id": "Qwen/Qwen3.5-4B",
+        "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+        "loading_info": {
+          "missing_keys": [],
+          "unexpected_keys": [],
+          "mismatched_keys": [],
+          "error_msgs": []
+        },
+        "language_checkpoint_tensors": 426
+      },
+      "heldout": {
+        "nats": 9015.86054801941,
+        "tokens": 2343,
+        "utf8_bytes": 10382,
+        "nll_per_token": 3.8479985266834866,
+        "perplexity": 46.89910193134425,
+        "bits_per_byte": 1.2528546813691055
+      },
+      "assistant_only": {
+        "nll_per_token": 3.7246499668468127,
+        "tokens": 220,
+        "perplexity": 41.45671897876436
+      },
+      "generation_format": "official_chat_template_enable_thinking_false",
+      "assistant_loss_format": "shared_manual_chatml_assistant_only_not_template_native",
+      "checkpoint": {
+        "kind": "unadapted_pinned_model",
+        "parent_training_run_id": null,
+        "adapter_stage": null
+      },
+      "samples_for_manual_review": [
+        {
+          "id": "anki-000d5e286f702f164ec9",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "Based on the curated study notes regarding *Decisive* by Chip and Dan Heath, here are the three approaches for fighting confirmation bias by generating negative results:\n\n1.  **The \"No\" Test**: Before making a decision, ask yourself, \"What is the best reason to say no to this?\" If",
+          "reference": "Easy to disagree, disconfirming questions, consider the opposite\n\nOne, we can make it easier for people to disagree with us. Two, we can ask questions that are more likely to surface contrary information. Three, we can check ourselves by considering the opposite.",
+          "latency_seconds": 3.2916741120000097,
+          "question": "Answer this question from a curated study note: three approaches for fighting the confirmation bias by generating negative results. In Decisive book.",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: three approaches for fighting the confirmation bias by generating negative results. In Decisive book.",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-00650a156f2ed8f4ed81",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "Based on the curated study notes regarding the structure of feudalism, particularly within the context of the English polity, the number of feudal manors per polity is **not a fixed or universal constant**.\n\nThe density of manors varied significantly depending on the specific region, the economic base of the polity, and the period of",
+          "reference": "Within each eg County, there are 1000 knight vassals, each of which has 100 peasants",
+          "latency_seconds": 3.2130806870000015,
+          "question": "Answer this question from a curated study note: Number of feudal manors per polity?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Number of feudal manors per polity?",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-0080b4a04cb213ae9464",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "Based on the curated study notes regarding organic chemistry and plant physiology, here is the information regarding ethylene:\n\n**Chemical Formula**\nThe chemical formula for ethylene is **C₂H₄**. It is the simplest alkene, consisting of two carbon atoms and four hydrogen atoms.\n\n**Structure**\n",
+          "reference": "C2H4",
+          "latency_seconds": 3.21716995700001,
+          "question": "Answer this question from a curated study note: Ethylene chemical formula and structure?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Ethylene chemical formula and structure?",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-0112f5df4e314d566519",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "Based on the curated study notes regarding **Colossal Biosciences**, here is how the company operates:\n\nColossal Biosciences is a biotechnology company founded by **Rhys Lindmark** (the creator of the *Rhysbot* persona) and **David H. Koch**. The company's primary mission",
+          "reference": "Puts Wooly Mammoth genes into Asian elephants. (Oxygen at low temperatures, fatty tissue)",
+          "latency_seconds": 3.195837919000013,
+          "question": "Answer this question from a curated study note: How does Colossal Biosciences company work?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: How does Colossal Biosciences company work?",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-011a209a7ebad0b95c20",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "Based on the curated study notes regarding the East India Company (EIC), here are the key metrics used to demonstrate its immense influence, particularly in the context of British India:\n\n*   **Territorial Control**: The EIC was not merely a trading entity but a sovereign power. By the mid-19th century",
+          "reference": "260,000 soldiers, 2x British Army\n\n50% of world trade from 1750-1800",
+          "latency_seconds": 3.202151802000003,
+          "question": "Answer this question from a curated study note: Metrics to show influence of East India Company:",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Metrics to show influence of East India Company:",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-0186ec9a6cf573732e96",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "Based on the curated study notes regarding **Boyd's** work on information ethics (specifically *Information Ethics: A Guide for the Perplexed*), Boyd distinguishes between \"copying\" and \"plagiarism.\"\n\nIn this context, Boyd refers to the act of copying ideas from others as **pl",
+          "reference": "Blind imitation",
+          "latency_seconds": 3.2032346510000025,
+          "question": "Answer this question from a curated study note: What does Boyd call copying ideas from others?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: What does Boyd call copying ideas from others?",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-01a606a8759d10abbdaf",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "Based on the curated study notes regarding **Rhys Lindmark's** work on the psychology of pride and motivation, here is the answer to your question:\n\n**Example of pride motivating us to tidy the house:**\nThe act of tidying a house is often driven by the desire to maintain a sense of **order",
+          "reference": "Tidy → feels good → tidy again",
+          "latency_seconds": 3.2631348649999836,
+          "question": "Answer this question from a curated study note: Example of pride motivating us to tidy the house:",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Example of pride motivating us to tidy the house:",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-01a6deed143f8d26f082",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "Based on the curated study notes regarding **Rhys Lindmark's** work on architecture and the philosophy of being, here is the answer to the prompt:\n\n**\"Be, do but for architecture\"** is a directive that frames the architect's role not as a creator of static objects, but as a facilitator of",
+          "reference": "Form follows function\nForm precedes function\n\nBe before do",
+          "latency_seconds": 3.200608735000003,
+          "question": "Answer this question from a curated study note: Be, do but for architecture:",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Be, do but for architecture:",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-01ab36f1f6cc9971d6f9",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "Based on the curated study notes regarding Andean history and archaeology, the early writing system of the Andes is known as **Quipu** (or *khipu*).\n\nWhile often misunderstood as a purely pictographic script, the Quipu is a complex system of knotted strings used by the Inca and",
+          "reference": "Quipu. Really started ~0 CE, and key during Inca ~1500 CE",
+          "latency_seconds": 3.2348795860000052,
+          "question": "Answer this question from a curated study note: Name of early Andes writing system?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Name of early Andes writing system?",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-01fad0c3e668da37a3c7",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "Based on the curated study notes regarding pharmacology and mental health treatment, here is an explanation of how Selective Serotonin Reuptake Inhibitors (SSRIs) work:\n\nSSRIs function by inhibiting the reuptake of serotonin, a neurotransmitter, in the synaptic cleft. By blocking",
+          "reference": "Block reabsorption of serotin. More in the brain.\n\nselective serotonin reuptake inhibitors",
+          "latency_seconds": 3.189705700000019,
+          "question": "Answer this question from a curated study note: How do SSRIs work?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: How do SSRIs work?",
+              "role": "user"
+            }
+          ]
+        }
+      ]
+    },
+    "cpt": {
+      "status": "measured_no_personality_quality_claim",
+      "loading": {
+        "model_id": "Qwen/Qwen3.5-4B-Base",
+        "revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+        "loading_info": {
+          "missing_keys": [],
+          "unexpected_keys": [],
+          "mismatched_keys": [],
+          "error_msgs": []
+        },
+        "language_checkpoint_tensors": 426
+      },
+      "heldout": {
+        "nats": 3726.488385915756,
+        "tokens": 2343,
+        "utf8_bytes": 10382,
+        "nll_per_token": 1.5904773307365583,
+        "perplexity": 4.906090197149809,
+        "bits_per_byte": 0.5178372485350586
+      },
+      "assistant_only": {
+        "nll_per_token": 2.4636626075614583,
+        "tokens": 220,
+        "perplexity": 11.747760275402186
+      },
+      "generation_format": "shared_manual_chatml",
+      "assistant_loss_format": "shared_manual_chatml_assistant_only_not_template_native",
+      "checkpoint": {
+        "kind": "trained_lora_adapter",
+        "parent_training_run_id": "qwen-train-20261019a",
+        "adapter_stage": "cpt",
+        "adapter_weights_sha256": null
+      },
+      "samples_for_manual_review": [
+        {
+          "id": "anki-000d5e286f702f164ec9",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "In the book *Decisive*, Chip and Dan Heath discuss three approaches to fighting the confirmation bias by generating negative results:\n\n1. **Seeking Disconfirming Evidence**: Actively look for information that contradicts your beliefs or hypotheses. This involves asking questions that challenge your assumptions and seeking out sources or data that",
+          "reference": "Easy to disagree, disconfirming questions, consider the opposite\n\nOne, we can make it easier for people to disagree with us. Two, we can ask questions that are more likely to surface contrary information. Three, we can check ourselves by considering the opposite.",
+          "latency_seconds": 5.772179999000002,
+          "question": "Answer this question from a curated study note: three approaches for fighting the confirmation bias by generating negative results. In Decisive book.",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: three approaches for fighting the confirmation bias by generating negative results. In Decisive book.",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-00650a156f2ed8f4ed81",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "- **England**: ~10,000 manors (1086 Domesday Book)\n- **France**: ~10,000 manors (13th century)\n- **Germany**: ~10,000 manors (13th century)\n",
+          "reference": "Within each eg County, there are 1000 knight vassals, each of which has 100 peasants",
+          "latency_seconds": 5.6794926690000125,
+          "question": "Answer this question from a curated study note: Number of feudal manors per polity?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Number of feudal manors per polity?",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-0080b4a04cb213ae9464",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "Ethylene, also known as ethene, has the chemical formula C₂H₄. Its structure consists of two carbon atoms double-bonded to each other, with each carbon atom also bonded to two hydrogen atoms. The double bond between the carbon atoms is a key feature of ethylene's structure, making it",
+          "reference": "C2H4",
+          "latency_seconds": 5.689248711000005,
+          "question": "Answer this question from a curated study note: Ethylene chemical formula and structure?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Ethylene chemical formula and structure?",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-0112f5df4e314d566519",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "Colossal Biosciences is a company that uses AI to design new proteins. They use a deep learning model to predict the structure of proteins and then use that information to design new proteins with specific functions. They have already designed proteins that can bind to specific molecules, which could be used for drug discovery.",
+          "reference": "Puts Wooly Mammoth genes into Asian elephants. (Oxygen at low temperatures, fatty tissue)",
+          "latency_seconds": 5.496339927000008,
+          "question": "Answer this question from a curated study note: How does Colossal Biosciences company work?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: How does Colossal Biosciences company work?",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-011a209a7ebad0b95c20",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "The East India Company's influence can be measured through several key metrics:\n\n1. **Territorial Control**: The company controlled vast territories in India, including Bengal, Bihar, Orissa, and parts of the Deccan. By the late 18th century, it had effectively ruled over a significant portion of",
+          "reference": "260,000 soldiers, 2x British Army\n\n50% of world trade from 1750-1800",
+          "latency_seconds": 5.636815471999995,
+          "question": "Answer this question from a curated study note: Metrics to show influence of East India Company:",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Metrics to show influence of East India Company:",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-0186ec9a6cf573732e96",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "Boyd calls copying ideas from others \"intellectual theft.\"",
+          "reference": "Blind imitation",
+          "latency_seconds": 1.1681853290000106,
+          "question": "Answer this question from a curated study note: What does Boyd call copying ideas from others?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: What does Boyd call copying ideas from others?",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-01a606a8759d10abbdaf",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "The desire to maintain a tidy house can be seen as a form of pride. People often feel a sense of accomplishment and satisfaction when their living space is organized and clean. This pride motivates them to continue tidying up, as they take pride in their ability to create and maintain an orderly environment. It's a way",
+          "reference": "Tidy → feels good → tidy again",
+          "latency_seconds": 5.698299522999974,
+          "question": "Answer this question from a curated study note: Example of pride motivating us to tidy the house:",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Example of pride motivating us to tidy the house:",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-01a6deed143f8d26f082",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "Be, do, but for architecture:\n\n- Be: Be a good architect.\n- Do: Do good architecture.\n- But for architecture: But for architecture, we would be doing something else.",
+          "reference": "Form follows function\nForm precedes function\n\nBe before do",
+          "latency_seconds": 3.8290013879999947,
+          "question": "Answer this question from a curated study note: Be, do but for architecture:",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Be, do but for architecture:",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-01ab36f1f6cc9971d6f9",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "The early Andes writing system is known as **Quipu** (or **Khipu**). It was used by the Inca Empire and consisted of knotted strings that encoded information, primarily numerical data, but also possibly other types of information.",
+          "reference": "Quipu. Really started ~0 CE, and key during Inca ~1500 CE",
+          "latency_seconds": 4.639058310999985,
+          "question": "Answer this question from a curated study note: Name of early Andes writing system?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Name of early Andes writing system?",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-01fad0c3e668da37a3c7",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "SSRIs (Selective Serotonin Reuptake Inhibitors) work by inhibiting the reuptake of serotonin, a neurotransmitter, in the brain. This increases the availability of serotonin in the synaptic cleft, which can help to improve mood and reduce symptoms of depression and anxiety. SSRIs are commonly prescribed",
+          "reference": "Block reabsorption of serotin. More in the brain.\n\nselective serotonin reuptake inhibitors",
+          "latency_seconds": 5.694365680000004,
+          "question": "Answer this question from a curated study note: How do SSRIs work?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: How do SSRIs work?",
+              "role": "user"
+            }
+          ]
+        }
+      ]
+    },
+    "sft": {
+      "status": "measured_no_personality_quality_claim",
+      "loading": {
+        "model_id": "Qwen/Qwen3.5-4B-Base",
+        "revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+        "loading_info": {
+          "missing_keys": [],
+          "unexpected_keys": [],
+          "mismatched_keys": [],
+          "error_msgs": []
+        },
+        "language_checkpoint_tensors": 426
+      },
+      "heldout": {
+        "nats": 3728.35960572958,
+        "tokens": 2343,
+        "utf8_bytes": 10382,
+        "nll_per_token": 1.5912759734227828,
+        "perplexity": 4.910009975246429,
+        "bits_per_byte": 0.5180972754610669
+      },
+      "assistant_only": {
+        "nll_per_token": 2.250138864192096,
+        "tokens": 220,
+        "perplexity": 9.489053434611751
+      },
+      "generation_format": "shared_manual_chatml",
+      "assistant_loss_format": "shared_manual_chatml_assistant_only_not_template_native",
+      "checkpoint": {
+        "kind": "trained_lora_adapter",
+        "parent_training_run_id": "qwen-train-20261019a",
+        "adapter_stage": "sft",
+        "adapter_weights_sha256": "493bfdbc2279e44edd33092dc50a7376a42a38e89c7e5e157aded3f4753b1637"
+      },
+      "samples_for_manual_review": [
+        {
+          "id": "anki-000d5e286f702f164ec9",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "1. Pre-registration\n2. Double-blind\n3. Falsification",
+          "reference": "Easy to disagree, disconfirming questions, consider the opposite\n\nOne, we can make it easier for people to disagree with us. Two, we can ask questions that are more likely to surface contrary information. Three, we can check ourselves by considering the opposite.",
+          "latency_seconds": 1.5458131620000017,
+          "question": "Answer this question from a curated study note: three approaches for fighting the confirmation bias by generating negative results. In Decisive book.",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: three approaches for fighting the confirmation bias by generating negative results. In Decisive book.",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-00650a156f2ed8f4ed81",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "1000",
+          "reference": "Within each eg County, there are 1000 knight vassals, each of which has 100 peasants",
+          "latency_seconds": 0.48923821300002146,
+          "question": "Answer this question from a curated study note: Number of feudal manors per polity?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Number of feudal manors per polity?",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-0080b4a04cb213ae9464",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "C2H4\nDouble bond",
+          "reference": "C2H4",
+          "latency_seconds": 0.7437360430000126,
+          "question": "Answer this question from a curated study note: Ethylene chemical formula and structure?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Ethylene chemical formula and structure?",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-0112f5df4e314d566519",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "1000+ scientists, 100+ projects, 100+ compounds\n\n1000+ scientists, 100+ projects, 100+ compounds\n\n1000+ scientists, 100+ projects, 100+ compounds",
+          "reference": "Puts Wooly Mammoth genes into Asian elephants. (Oxygen at low temperatures, fatty tissue)",
+          "latency_seconds": 5.614359874999991,
+          "question": "Answer this question from a curated study note: How does Colossal Biosciences company work?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: How does Colossal Biosciences company work?",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-011a209a7ebad0b95c20",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "- 10000000000000000000000000000000000000000000000000000000000000",
+          "reference": "260,000 soldiers, 2x British Army\n\n50% of world trade from 1750-1800",
+          "latency_seconds": 5.716557265999995,
+          "question": "Answer this question from a curated study note: Metrics to show influence of East India Company:",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Metrics to show influence of East India Company:",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-0186ec9a6cf573732e96",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "Memeplex",
+          "reference": "Blind imitation",
+          "latency_seconds": 0.37880617199999733,
+          "question": "Answer this question from a curated study note: What does Boyd call copying ideas from others?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: What does Boyd call copying ideas from others?",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-01a606a8759d10abbdaf",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "Pride in the house.\n\nPride in the house.",
+          "reference": "Tidy → feels good → tidy again",
+          "latency_seconds": 1.2705517449999775,
+          "question": "Answer this question from a curated study note: Example of pride motivating us to tidy the house:",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Example of pride motivating us to tidy the house:",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-01a6deed143f8d26f082",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "Build, do but for architecture",
+          "reference": "Form follows function\nForm precedes function\n\nBe before do",
+          "latency_seconds": 0.6517862779999746,
+          "question": "Answer this question from a curated study note: Be, do but for architecture:",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Be, do but for architecture:",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-01ab36f1f6cc9971d6f9",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "Quipu",
+          "reference": "Quipu. Really started ~0 CE, and key during Inca ~1500 CE",
+          "latency_seconds": 0.2927027389999921,
+          "question": "Answer this question from a curated study note: Name of early Andes writing system?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: Name of early Andes writing system?",
+              "role": "user"
+            }
+          ]
+        },
+        {
+          "id": "anki-01fad0c3e668da37a3c7",
+          "task": "study_note_qa_not_verified_fact",
+          "completion": "Inhibit serotonin reuptake",
+          "reference": "Block reabsorption of serotin. More in the brain.\n\nselective serotonin reuptake inhibitors",
+          "latency_seconds": 0.6503213750000327,
+          "question": "Answer this question from a curated study note: How do SSRIs work?",
+          "input_messages": [
+            {
+              "content": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+              "role": "system"
+            },
+            {
+              "content": "Answer this question from a curated study note: How do SSRIs work?",
+              "role": "user"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "source_corpus_commit": "1e20626c7b3b2b2bc3404fdb0b1fd39a93419b3d",
+    "source_corpus_sha256": "6da8afa85c1b9c8e4406823f643a8bdf80fecccac4bd58c28878ca950e6544d8",
+    "training_files_sha256": {
+      "pretrain-train.jsonl": "7000aaa2c3000eee234a65bd2498357fbc57088e2c2a7f190e17f690a30b6660",
+      "pretrain-validation.jsonl": "a6fc0c599f76a22ea184e13da7b6d3853d2543dd817dcd371faf56ca6342759c",
+      "pretrain-test.jsonl": "975bf521a65cc5c492152e31e7d2dd2646b23830e00e938de578164460edb8d1",
+      "sft-train.jsonl": "4ab8a1d61267d42d2a3f403ed3278e2b26ce097c3a2e8e68097ff487a0552217",
+      "sft-validation.jsonl": "a6272191fb0b72e26dd2ecf86733773da5aa4a500398cfff2e98d94382cacad7",
+      "sft-test.jsonl": "83285b34ce4892692e8213d9472a4530f91f7ffdbe19b048261469a80944b7b7"
+    },
+    "split_counts": {
+      "pretrain-train.jsonl": 23465,
+      "pretrain-validation.jsonl": 1322,
+      "pretrain-test.jsonl": 1316,
+      "sft-train.jsonl": 17181,
+      "sft-validation.jsonl": 943,
+      "sft-test.jsonl": 962
+    },
+    "model_pins": {
+      "Qwen/Qwen3.5-4B-Base": {
+        "revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+        "license": "apache-2.0"
+      },
+      "Qwen/Qwen3.5-4B": {
+        "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+        "license": "apache-2.0"
+      }
+    },
+    "package_versions_observed_in_pins": {
+      "transformers": "5.20.1",
+      "trl": "1.16.0",
+      "peft": "0.21.2",
+      "accelerate": "1.15.0",
+      "datasets": "5.1.0",
+      "modal": "1.6.2"
+    },
+    "source_evidence_sha256": {
+      "launch.json": "5ac833248fa09ef3ced3b2e76be06c402511175844c65d7078caaec2693f66b1",
+      "base-eval.json": "bc13a891327238843364094c5b68197aeec3534e9bc776db8dbc4b91efa8cedc",
+      "instruct-baseline-eval.json": "e5d2624abfcbe573e2086d4ff28fc5d2f32c1209a4b6c318991f0716b930ac69",
+      "cpt-eval.json": "929db9be060714f13f78891a7595ae526286320183ecaae663d16c4c00a20d1e",
+      "sft-eval.json": "a27a3b91e233ceea0240781dd7de4e6f0df2170e410ad9b3a90b08d6425594a0"
+    },
+    "parent_sft_artifact_hashes": {
+      "qwen/sft/adapter_model.safetensors": {
+        "sha256": "493bfdbc2279e44edd33092dc50a7376a42a38e89c7e5e157aded3f4753b1637",
+        "bytes": 64996408
+      },
+      "qwen/sft/run.json": {
+        "sha256": "d1ecb875bc6fb8bf947482807ba6f39d3604e178895d6da5e57b6c3d3df02d27",
+        "bytes": 4659
+      },
+      "qwen/sft/adapter_config.json": {
+        "sha256": "2125fe7bcfb8a3f6a162f8ecd99fc078955adaabd030a5394e3628b279efb847",
+        "bytes": 1261
+      }
+    },
+    "checkpoint_hash_limitations": "Parent SFT hashes are recorded in qwen-full.json. A CPT adapter weight hash was not included in these acquired evaluation reports; its field remains null. No new weights were downloaded for this comparison."
+  },
+  "format_caveats": [
+    "Instruction-baseline generation uses the pinned official chat template with enable_thinking=False; base/CPT/SFT generation uses the explicit manual ChatML training format.",
+    "Assistant-only NLL uses the same explicit manual ChatML inputs for all variants, not each model's native template. It is a controlled-format loss comparison, not native-best-quality evaluation.",
+    "The 64-token generation cap truncates longer answers; completions are exact recorded outputs, not edited or graded.",
+    "Questions, input messages and references are copied from the released held-out SFT file after exact ID/reference alignment. Study-note references are not verified ground truth."
+  ],
+  "quality": "This is a small diagnostic evaluation. Adaptation lowers loss on this held-out sample, but outputs include unsupported assertions, mismatches, repetition and degenerate numbers. Lower NLL does not validate factuality, personality fidelity or app usefulness; no accuracy or preference grades are assigned.",
+  "serving_gpu_verification": {
+    "status": "actual_saved_checkpoint_gpu_generation_verified",
+    "evidence": "results/serving.json",
+    "public_demo": "https://ai.rhyslindmark.com/rhysbot/"
+  },
+  "accounting": {
+    "evaluation_reservation_usd": 6.6,
+    "training_and_comparison_committed_reservations_usd_before_serving": 62.8,
+    "subsequent_inference_reservation_usd_per_request": 1.2,
+    "authorization_usd": 200,
+    "provider_billing_status": "pending_not_actual_charges",
+    "note": "The shared ledger is authoritative; this snapshot does not total subsequent operator inference requests."
+  }
+}
