@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "source_reviewed_not_gpu_verified",
+  "status": "corrected_pilots_verified_full_runs_pending",
   "budget": {
     "authorization_usd": 200,
     "initial_spent_usd": 0,
@@ -22,6 +22,7 @@
     "pilot_sft_steps": 4,
     "pretrain_steps": 2000,
     "sft_steps": 80,
+    "sft_initial_lr_fraction": 0.05,
     "eval_tokens": 8192,
     "parquet_document_max_chars": 4096,
     "tokenizer_max_chars": 20000000
@@ -51,8 +52,8 @@
     "gradient_accumulation_steps": 4,
     "pilot_cpt_steps": 4,
     "pilot_sft_steps": 2,
-    "cpt_steps": 80,
-    "sft_steps": 40,
+    "cpt_steps": 1000,
+    "sft_steps": 400,
     "precision": "bfloat16_lora_no_quantization"
   },
   "evaluation": {

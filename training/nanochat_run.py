@@ -241,6 +241,7 @@ def main():
         steps = cfg["pilot_sft_steps" if args.pilot else "sft_steps"]
         upstream("scripts.chat_sft", common_args(cfg) + [f"--model-tag={args.tag}",
                  f"--num-iterations={sft_microbatch_limit(steps, cfg)}", "--load-optimizer=0", "--chatcore-every=-1",
+                 f"--init-lr-frac={cfg['sft_initial_lr_fraction']}",
                  "--eval-every=20", "--mmlu-epochs=0", "--gsm8k-epochs=0"])
         metas = list((args.base/'chatsft_checkpoints'/args.tag).glob('meta_*.json'))
         if not metas or max(read_json(path)['step'] for path in metas) != steps:

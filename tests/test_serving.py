@@ -1,10 +1,14 @@
 import importlib.util
 import json
+import os
+import shutil
+import subprocess
+import types
 from pathlib import Path
 import sys
 import tempfile
 import unittest
-from unittest.mock import Mock
+from unittest.mock import Mock, patch
 
 TRAINING = Path(__file__).resolve().parents[1] / 'training'
 sys.path.insert(0, str(TRAINING))
@@ -175,6 +179,82 @@ class ServingTests(unittest.TestCase):
             weights.unlink()
             with self.assertRaises(ValueError):
                 serve.checkpoint_artifacts(directory, 'qwen', target, pins)
+
+
+class ServingPackagingTests(unittest.TestCase):
+    def test_registered_helpers_roundtrip_via_actual_image_package_path(self):
+        # Capture the real image configuration by executing the factory with
+        # inert SDK handles. This neither mocks helper imports nor needs Modal.
+        class Image:
+            def env(self, values):
+                self.values = values
+                return self
+
+        class App:
+            def __init__(self, *_):
+                pass
+
+            def function(self, **_):
+                return lambda function: function
+
+        modal = types.ModuleType('modal')
+        modal.App = App
+        modal.concurrent = lambda **_: lambda function: function
+        modal.asgi_app = lambda **_: lambda function: function
+        backend = types.ModuleType('modal_app')
+        backend.image = Image()
+        backend.volume = backend.singleton = object()
+        backend.CONFIG = {'budget': {}}
+        backend.PINS = {}
+        spec = importlib.util.spec_from_file_location('serving_packaging_probe', TRAINING / 'serve.py')
+        serve = importlib.util.module_from_spec(spec)
+        with patch.dict(os.environ), patch.object(sys, 'path', [str(TRAINING), *sys.path]), patch.dict(
+                sys.modules, {'modal': modal, 'modal_app': backend, 'serving_packaging_probe': serve}):
+            os.environ.pop('RHYSBOT_SERVING_TARGETS', None)
+            spec.loader.exec_module(serve)
+            serve.create_modal_app(TARGETS)
+        remote_path = backend.image.values.get('PYTHONPATH')
+        self.assertEqual(remote_path, '/rhysbot/training')
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            package = root / remote_path.lstrip('/')
+            package.mkdir(parents=True)
+            empty = root / 'empty-cwd'
+            empty.mkdir()
+            # Only the actual helper sources, no dependencies/models/data.
+            for filename in ('serve.py', 'runtime.py', 'budget.py'):
+                shutil.copyfile(TRAINING / filename, package / filename)
+            env = dict(os.environ, PYTHONDONTWRITEBYTECODE='1')
+            env.pop('RHYSBOT_SERVING_TARGETS', None)
+            env.pop('PYTHONPATH', None)
+            packaged_env = dict(env, PYTHONPATH=str(package))
+            producer = subprocess.run([sys.executable, '-c',
+                'import serve,pickle,base64;'
+                'print(base64.b64encode(pickle.dumps((serve.deployment_targets,serve.coordinate_request))).decode())'],
+                cwd=empty, env=packaged_env, capture_output=True, text=True, timeout=20, check=True)
+            encoded = producer.stdout.strip()
+            # Ordinary registered-module functions pickle by module reference,
+            # as Modal's serializer does; they cannot appear from the empty cwd.
+            negative = subprocess.run([sys.executable, '-c',
+                'import sys,pickle,base64;pickle.loads(base64.b64decode(sys.stdin.read()))'],
+                input=encoded, cwd=empty, env=env, capture_output=True, text=True, timeout=20)
+            self.assertNotEqual(negative.returncode, 0)
+            self.assertIn("No module named 'serve'", negative.stderr)
+            consumer = """
+import sys,pickle,base64,json
+validate,coordinate=pickle.loads(base64.b64decode(sys.stdin.read()))
+import serve,runtime,budget
+value=validate(sys.argv[1])
+print(json.dumps({'targets':value,'module':coordinate.__module__,
+                 'files':[serve.__file__,runtime.__file__,budget.__file__]}))
+"""
+            positive = subprocess.run([sys.executable, '-c', consumer, json.dumps(TARGETS)], input=encoded,
+                cwd=empty, env=packaged_env, capture_output=True, text=True, timeout=20, check=True)
+            result = json.loads(positive.stdout)
+            self.assertEqual(result['targets'], TARGETS)
+            self.assertEqual(result['module'], 'serve')
+            self.assertEqual({Path(name).resolve().parent for name in result['files']}, {package.resolve()})
 
 
 if __name__ == '__main__':

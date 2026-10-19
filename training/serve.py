@@ -15,7 +15,8 @@ import sys
 import time
 import uuid
 
-HERE = Path(__file__).resolve().parent
+# Serialized Modal functions import helpers from the explicitly copied package.
+HERE = Path('/rhysbot/training') if Path('/rhysbot/training/runtime.py').is_file() else Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from runtime import read_json, write_json, file_sha, safe_run_id
 from budget import CAP, committed, reserve, finish
@@ -248,7 +249,8 @@ def create_modal_app(targets):
     from modal_app import image, volume, singleton, CONFIG, PINS
     app = modal.App('rhysbot-serving')
     # Frozen deployment metadata, not an HTTP parameter or a mutable user path.
-    serving_image = image.env({'RHYSBOT_SERVING_TARGETS': json.dumps(targets, sort_keys=True)})
+    serving_image = image.env({'RHYSBOT_SERVING_TARGETS': json.dumps(targets, sort_keys=True),
+                               'PYTHONPATH': '/rhysbot/training'})
 
     @app.function(name='infer', image=serving_image, gpu='A100-80GB', cpu=(2, 4), memory=(16384, 32768),
                   timeout=GPU_TIMEOUT, retries=0, serialized=True, min_containers=0, max_containers=1,

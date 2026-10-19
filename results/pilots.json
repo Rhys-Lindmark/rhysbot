@@ -1,48 +1,108 @@
 {
-  "status": "pilots_in_progress; not_deployed_models",
+  "status": "corrected_pilots_completed; full_training_pending; no_live_demo",
   "compute_authorization_usd": 200,
   "provider_billing": "pending; conservative reservations retained",
-  "conservative_reserved_usd": 15,
+  "conservative_reserved_usd": 25,
   "nanochat_pilot": {
-    "run_id": "nanochat-pilot-20261019b",
-    "release_commit": "a60548d54056f4094574ac6efbd8ff676a613880",
-    "status": "actual_checkpoints_and_evaluations_saved; SFT_schedule_defect_found",
+    "run_id": "nanochat-pilot-20261019c",
+    "release_commit": "1e20626c7b3b2b2bc3404fdb0b1fd39a93419b3d",
+    "status": "completed_actual_checkpoints_and_evaluations; exact_optimizer_update_checks_passed",
     "pretrain_optimizer_updates": 20,
-    "sft_optimizer_updates": 1,
-    "gpu_job_seconds": 59.430993125,
-    "pretrain_median_tokens_per_second": 121549,
+    "sft_optimizer_updates": 4,
+    "gpu_job_seconds": 42.162698156,
+    "pretrain_median_tokens_per_second": 126093.5,
     "peak_pretrain_cuda_allocated_mib": 482.56,
     "heldout_base": {
-      "nats": 19221.258850097656,
-      "tokens": 2386,
-      "utf8_bytes": 9117,
-      "nll_per_token": 8.055850314374542,
-      "perplexity": 3152.1823907034477,
-      "bits_per_byte": 3.041616192023581
+      "nats": 18111.35530090332,
+      "tokens": 2610,
+      "utf8_bytes": 10382,
+      "nll_per_token": 6.939216590384414,
+      "perplexity": 1031.96144968192,
+      "bits_per_byte": 2.5167754263524618
     },
     "heldout_sft": {
-      "nats": 21250.262603759766,
-      "tokens": 2386,
-      "utf8_bytes": 9117,
-      "nll_per_token": 8.906229087912726,
-      "perplexity": 7377.7875886382435,
-      "bits_per_byte": 3.3626904108843263
+      "nats": 20979.434997558594,
+      "tokens": 2610,
+      "utf8_bytes": 10382,
+      "nll_per_token": 8.03809770021402,
+      "perplexity": 3096.7167001441117,
+      "bits_per_byte": 2.9153271847071998
     },
-    "defect": "Pinned upstream SFT counts prefetched microbatches, not optimizer updates; passing 4 requested steps produced 1 update and a negative LR multiplier. Wrapper now accounts for accumulation/prefetch and verifies exact updates. Corrected pilot required.",
-    "quality": "Tiny pilot outputs are not useful chat; this is pipeline evidence, not a successful personality model."
+    "validation_base_bpb": 2.4953811867100315,
+    "validation_sft_bpb": 3.238728833424583,
+    "quality": "Poor pilot completions; SFT validation loss worsened. Pipeline passed, useful chat not demonstrated."
   },
   "qwen_pilot": {
-    "run_id": "qwen-pilot-20261019a",
-    "status": "failed_metadata_serialization_after_saved_CPT_adapter",
-    "observed_cpt_optimizer_updates": 4,
-    "observed_losses": [
-      2.8872690200805664,
-      4.008050262928009,
-      3.7745726704597473,
-      3.747502624988556
-    ],
-    "completed_sft": false,
-    "completed_evaluation": false,
-    "defect": "Transformers loading diagnostics contain Python sets; JSON report serialization failed after adapter save. Diagnostics now normalized to JSON arrays; retry required."
+    "run_id": "qwen-pilot-20261019b",
+    "release_commit": "1e20626c7b3b2b2bc3404fdb0b1fd39a93419b3d",
+    "status": "completed_actual_artifacts",
+    "gpu_job_seconds": 123.34251864199999,
+    "cpt_optimizer_updates": 4,
+    "sft_optimizer_updates": 2,
+    "cpt_training_seconds": 8.178891632000003,
+    "sft_training_seconds": 4.366413461999997,
+    "cpt_target_tokens": 1356,
+    "sft_target_tokens": 616,
+    "peak_cuda_allocated_bytes": 10000668160,
+    "trainable_parameters": 16232448,
+    "heldout_sft": {
+      "nats": 7579.082921743393,
+      "tokens": 2343,
+      "utf8_bytes": 10382,
+      "nll_per_token": 3.2347771753066126,
+      "perplexity": 25.400711242523695,
+      "bits_per_byte": 1.0531983573189587
+    },
+    "assistant_only_sft": {
+      "nll_per_token": 2.7437126365574924,
+      "tokens": 220,
+      "perplexity": 15.54458950933205
+    },
+    "sample_count": 10,
+    "quality": "Pilot verifies loading, optimization, saved adapters and evaluation. Baseline comparison and full adaptation remain pending."
+  },
+  "previous_attempts": {
+    "nanochat-pilot-20261019b": {
+      "run_id": "nanochat-pilot-20261019b",
+      "release_commit": "a60548d54056f4094574ac6efbd8ff676a613880",
+      "status": "actual_checkpoints_and_evaluations_saved; SFT_schedule_defect_found",
+      "pretrain_optimizer_updates": 20,
+      "sft_optimizer_updates": 1,
+      "gpu_job_seconds": 59.430993125,
+      "pretrain_median_tokens_per_second": 121549,
+      "peak_pretrain_cuda_allocated_mib": 482.56,
+      "heldout_base": {
+        "nats": 19221.258850097656,
+        "tokens": 2386,
+        "utf8_bytes": 9117,
+        "nll_per_token": 8.055850314374542,
+        "perplexity": 3152.1823907034477,
+        "bits_per_byte": 3.041616192023581
+      },
+      "heldout_sft": {
+        "nats": 21250.262603759766,
+        "tokens": 2386,
+        "utf8_bytes": 9117,
+        "nll_per_token": 8.906229087912726,
+        "perplexity": 7377.7875886382435,
+        "bits_per_byte": 3.3626904108843263
+      },
+      "defect": "Pinned upstream SFT counts prefetched microbatches, not optimizer updates; passing 4 requested steps produced 1 update and a negative LR multiplier. Wrapper now accounts for accumulation/prefetch and verifies exact updates. Corrected pilot required.",
+      "quality": "Tiny pilot outputs are not useful chat; this is pipeline evidence, not a successful personality model."
+    },
+    "qwen-pilot-20261019a": {
+      "run_id": "qwen-pilot-20261019a",
+      "status": "failed_metadata_serialization_after_saved_CPT_adapter",
+      "observed_cpt_optimizer_updates": 4,
+      "observed_losses": [
+        2.8872690200805664,
+        4.008050262928009,
+        3.7745726704597473,
+        3.747502624988556
+      ],
+      "completed_sft": false,
+      "completed_evaluation": false,
+      "defect": "Transformers loading diagnostics contain Python sets; JSON report serialization failed after adapter save. Diagnostics now normalized to JSON arrays; retry required."
+    }
   }
 }

@@ -1,7 +1,8 @@
 # Rhysbot training pipeline
 
-**Status: source reviewed and static checks passed; GPU integration, training,
-checkpoint quality, costs and serving are not yet verified.** No downloaded base
+**Status: corrected GPU pilots completed for both families; full training,
+baseline comparisons and live serving remain pending.** Measured pilot results
+are in `results/pilots.json`; provider billing remains pending. No downloaded base
 model or configuration is presented as a trained Rhysbot model.
 
 The user authorized **$200 total compute across both models and evaluations** on
@@ -20,8 +21,8 @@ and the source manifest. Remote bytes must match this frozen launch manifest.
 Remote execution requires a clean committed training/data release and records
 that Git commit, all model/code revisions and installed package versions.
 
-This is a **small seed corpus**, initially around half a million Qwen tokens in
-the strict training subset. Acquisition and approval may grow it. Mixed podcast
+This is a **small personal corpus**, with 23,465 pretraining documents and 17,181
+sourced SFT examples in the frozen training splits. Mixed podcast
 or HEE captions are excluded by the default dataset builder. Anki answers are
 curated notes rather than verified facts; public-writing continuations are
 verbatim passages rather than invented conversational answers. Inspect the
@@ -52,8 +53,10 @@ redirects their data hooks without editing the pinned checkout:
 
 Both bounded recipes use eager execution; measured tiny-model throughput exceeds 100k tokens/s, so compilation cold starts are unnecessary. Both recipes use
 PyTorch SDPA and disable upstream optional unpinned Hub-kernel downloads. The
-regular recipe retains upstream compilation. SFT may stop at its first completed dataset pass
-before the configured maximum; checkpoint metadata records actual steps. This
+wrapper translates upstream's prefetched microbatch counter into exactly the
+requested optimizer updates and verifies the saved step. The full SFT recipe
+uses 80 updates and a 0.05 initial learning-rate fraction after the pilot's
+validation BPB worsened at 0.8. This
 scratch model is a limited learning experiment, with a small personal corpus
 and no claim to general chat capability. Extending training without checking
 validation curves risks memorization.
@@ -78,8 +81,8 @@ user and role-prefix tokens are masked. Explicit ChatML works with the base
 checkpoint without relying on a missing chat template. The run records skipped
 or unusable example counts through its usable-example total and fixed limits.
 
-Pilot: four CPT optimizer steps and two SFT steps. Initial full recipe: 80 CPT
-steps and 40 SFT steps, four microbatches per update, maximum sequence length
+Pilot: four CPT optimizer steps and two SFT steps. Initial full recipe: 1,000 CPT
+steps and 400 SFT steps, four microbatches per update, maximum sequence length
 512. These are bounded starting experiments, not validated optimal settings.
 The adapter saves separate CPT and SFT directories and their provenance. A
 separate evaluation job compares the untouched base, pinned instruction-model
@@ -132,8 +135,8 @@ bash training/launch.sh --execute qwen eval rhysbot-qwen-eval-001 1800 rhysbot-q
 `training/modal_app.py` builds the pinned remote Python/GPU image and uploads only
 the training code and already released training files. Heavy downloads and all
 optimization happen remotely. It does not upload private candidates, account
-archives, review queues or the full workspace. No GPU job has been launched as
-part of source/static verification.
+archives, review queues or the full workspace. Actual corrected pilots have
+saved checkpoints and evaluations; source tests alone do not establish quality.
 
 Before each GPU call a CPU coordinator atomically acquires a persistent named
 distributed singleton and reserves budget in the artifact Volume ledger. A

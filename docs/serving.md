@@ -64,7 +64,7 @@ reviewed deployment. Record its returned endpoint URL for the site proxy.
 ## Site proxy and browser contract
 
 The Modal ASGI endpoint uses `requires_proxy_auth=True`. Configure a server-side
-route such as `https://ai.rhyslindmark.com/rhysbot/api/generate`; the browser must
+route `https://ai.rhyslindmark.com/api/rhysbot`; the browser must
 never receive Modal proxy tokens. The route must:
 
 1. Accept only JSON POST from exact origin `https://ai.rhyslindmark.com` and cap
@@ -85,19 +85,23 @@ never receive Modal proxy tokens. The route must:
 The browser sends:
 
 ```json
-{"model":"nanochat","prompt":"Explain entropy.","max_new_tokens":32}
+{"model":"nanochat","prompt":"Explain entropy.","max_new_tokens":32,"verification_token":"fresh-widget-token"}
 ```
 
-Only `model`, `prompt`, and optional `max_new_tokens` are accepted. Model is an
+The edge verifies and removes `verification_token` before forwarding. Only
+`model`, `prompt`, and optional `max_new_tokens` reach Modal. Model is an
 enabled deployment key, prompt is at most 1,600 UTF-8 bytes, generated tokens are
 1–64. Tokenized input is capped at 384 tokens; total context at 512. Reserved
 special-token delimiters, caller-defined roles, paths, tools, model IDs and run
-IDs are rejected. Single-turn generation is supported; the UI keeps any history
+IDs are rejected. The 384-token input limit includes the system message; a prompt
+within the byte limit can still exceed this further tokenized limit. Single-turn
+generation is supported; the UI keeps any history
 locally and must not silently concatenate unbounded history.
 
-A successful response contains `ok`, `text`, `model`, `checkpoint_run_id`,
-`weights_sha256`, `identity`, token counts, measured latency, `tools_executed:false`,
-`request_id`, `reserved_usd`, `committed_usd`, and reservation status. Render text
+A successful public response contains `ok`, `text`, `model`, `checkpoint_run_id`,
+`weights_sha256`, `identity`, token counts, measured latency, and `tools_executed:false`.
+The backend additionally records request/reservation identifiers and accounting;
+the public proxy does not expose those accounting fields. Render text
 as text, and show the returned identity label. Failures return `error` and a
 4xx/503 status; 409 means training/inference is busy, 429 is the quota, and 503
 includes closed budget, missing checkpoint, or uncertain execution. No errors
