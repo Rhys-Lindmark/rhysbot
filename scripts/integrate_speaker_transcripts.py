@@ -514,7 +514,9 @@ def integrate(evidence_dir, public_dir, work_dir, apply=False):
                 'replaced_excerpts_by_source':dict(replaced),'turns':counts,
                 'gaps_aggregate':dict(gaps),'exact_new_excerpt_duplicates_removed':len(dropped),
                 'canonical_scope':'Only screened processed episodes replace explicit RSS/YouTube aliases; other videos/audio remain.',
-                'recordings_assumed_identical':False,'frozen_training_changed':False,'applied':apply}
+                'recordings_assumed_identical':False,'frozen_training_changed':False,'applied':apply,
+                'output_excerpts':records,'output_corpus_jsonl_bytes':(output/'corpus.jsonl').stat().st_size,
+                'output_text_utf8_bytes':sum(x['text_utf8_bytes'] for x in values['source'].values())}
         summary.update(records=records,unique_documents=len(documents),words=sum(x['words'] for x in values['source'].values()),
                        characters=metrics.characters,text_utf8_bytes=sum(x['text_utf8_bytes'] for x in values['source'].values()),
                        corpus_jsonl_bytes=(output/'corpus.jsonl').stat().st_size,collection_metrics=values['collection'],source_metrics=values['source'],

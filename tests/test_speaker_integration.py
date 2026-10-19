@@ -149,6 +149,9 @@ class SpeakerIntegrationTests(unittest.TestCase):
             self.assertEqual(stats['frozen_model_training_input'],{'source_corpus_sha256':'FROZEN'})
             self.assertIsNone(stats['tokens']);self.assertNotIn('tokens_by_source',stats)
             self.assertEqual(stats['corpus_jsonl_bytes'],(public/'corpus.jsonl').stat().st_size)
+            self.assertEqual(report['output_corpus_jsonl_bytes'],stats['corpus_jsonl_bytes'])
+            self.assertEqual(report['output_text_utf8_bytes'],stats['text_utf8_bytes'])
+            self.assertEqual(report['output_excerpts'],len(rows))
 
     def test_audio_only_and_unscreenable_episode_keep_precise_replacement_scope(self):
         with tempfile.TemporaryDirectory() as directory:
