@@ -94,6 +94,8 @@ def validate_items(items):
         if item['id'] in ids:
             raise ValueError('Duplicate episode')
         ids.add(item['id'])
+        if item.get('audio_source_kind', 'rss_audio') not in {'rss_audio', 'youtube_audio'}:
+            raise ValueError('Unsupported audio source kind')
         if item.get('audio_source_kind') == 'youtube_audio':
             import re
             video_id = item.get('youtube_id', '')
@@ -107,6 +109,15 @@ def validate_items(items):
             raise ValueError('Only inventoried public SoundCloud RSS enclosures allowed')
 
 
+def corpus_lane(items):
+    kinds = {item.get('audio_source_kind', 'rss_audio') for item in items}
+    if kinds == {'rss_audio'}:
+        return 'active-corpus'
+    if kinds == {'youtube_audio'}:
+        return 'active-corpus-youtube'
+    raise ValueError('Keep the two finite source batches separate')
+
+
 @app.function(image=image, gpu='A100-80GB', cpu=(2, 4), memory=(16384, 32768),
               timeout=900, retries=0, min_containers=0, max_containers=1,
               scaledown_window=2, volumes={'/artifacts': volume})
@@ -117,7 +128,7 @@ def process(run_id, items, timeout_seconds, reference=None):
     from transformers import AutoProcessor, AutoModelForAudioFrameClassification
     from faster_whisper import WhisperModel, BatchedInferencePipeline
     singleton = modal.Dict.from_name('rhysbot-training-singleton')
-    if singleton.get('active-corpus') != run_id:
+    if singleton.get(corpus_lane(items)) != run_id:
         raise ValueError('No corpus lane owns this GPU call')
     validate_items(items)
     volume.reload()
@@ -125,7 +136,7 @@ def process(run_id, items, timeout_seconds, reference=None):
     if job['status'] != 'running_reserved' or job['phase'] != 'corpus_processing' or job['manifest_sha256'] != manifest_sha(items):
         raise ValueError('No matching persisted paid-compute reservation')
     started = time.monotonic()
-    os.environ.update(HF_HOME='/artifacts/rhysbot-speech-cache', TOKENIZERS_PARALLELISM='false', OMP_NUM_THREADS='2')
+    os.environ.update(HF_HOME='/tmp/rhysbot-speech-hf', TOKENIZERS_PARALLELISM='false', OMP_NUM_THREADS='2')
     torch.set_num_threads(2)
     out = Path('/artifacts/speech') / run_id
     out.mkdir(parents=True, exist_ok=False)
@@ -268,7 +279,7 @@ def process(run_id, items, timeout_seconds, reference=None):
     finally:
         report['elapsed_seconds'] = time.monotonic() - started
         write_json(out / 'report.json', report)
-        shutil.rmtree('/artifacts/rhysbot-speech-cache', ignore_errors=True)
+        shutil.rmtree('/tmp/rhysbot-speech-hf', ignore_errors=True)
         volume.commit()
 
 
@@ -289,7 +300,8 @@ def reserve_corpus(ledger, run_id, items, timeout_seconds, budget):
               min_containers=0, max_containers=1, scaledown_window=2, volumes={'/artifacts': volume})
 def coordinate(run_id, items, timeout_seconds, reference=None):
     singleton = modal.Dict.from_name('rhysbot-training-singleton')
-    if not singleton.put('active-corpus', run_id, skip_if_exists=True):
+    lane = corpus_lane(items)
+    if not singleton.put(lane, run_id, skip_if_exists=True):
         raise ValueError('Another corpus batch is active; no duplicate dispatch')
     reserved, accounting_committed = False, False
     path = Path('/artifacts/spend-ledger.json')
@@ -328,12 +340,12 @@ def coordinate(run_id, items, timeout_seconds, reference=None):
         finally:
             if singleton.get('active') == run_id:
                 singleton.pop('active')
-        singleton.pop('active-corpus')
+        singleton.pop(lane)
         return result
     finally:
         # Unknown dispatch/result retains the corpus lane and full paid hold.
-        if not reserved and singleton.get('active-corpus') == run_id:
-            singleton.pop('active-corpus')
+        if not reserved and singleton.get(lane) == run_id:
+            singleton.pop(lane)
 
 
 @app.local_entrypoint()

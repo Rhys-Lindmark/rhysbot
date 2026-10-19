@@ -13,7 +13,7 @@ from runtime import safe_run_id
 
 tree = ast.parse((ROOT / 'training/speech.py').read_text())
 functions = [node for node in tree.body if isinstance(node, ast.FunctionDef) and node.name in {
-    'align_words', 'validate_items', 'manifest_sha', 'reserve_corpus', 'choose_rhys'}]
+    'align_words', 'validate_items', 'manifest_sha', 'reserve_corpus', 'choose_rhys', 'corpus_lane'}]
 namespace = dict(hashlib=hashlib, json=json, safe_run_id=safe_run_id, reserve=reserve)
 exec(compile(ast.Module(body=functions, type_ignores=[]), 'speech-pure', 'exec'), namespace)
 ITEMS = [{'id': 'episode-one', 'enclosure_url': 'https://feeds.soundcloud.com/stream/123-show.mp3'}]
@@ -62,3 +62,18 @@ class SpeechTests(unittest.TestCase):
                          {'speaker_0': [.95]*4, 'speaker_1': [.90]*4},
                          {'speaker_0': [.95,.95,.95,.50]}):
             self.assertIsNone(choose(profiles))
+
+    def test_source_lanes_cannot_bypass_shared_cap_or_accept_mixed_batches(self):
+        video = {'id': 'video-one', 'audio_source_kind': 'youtube_audio', 'youtube_id': 'g2BAKx2Rr-E',
+                 'youtube_url': 'https://www.youtube.com/watch?v=g2BAKx2Rr-E', 'enclosure_url': None}
+        self.assertNotEqual(namespace['corpus_lane'](ITEMS), namespace['corpus_lane']([video]))
+        with self.assertRaises(ValueError):
+            namespace['corpus_lane'](ITEMS+[video])
+        ledger=initial_ledger();ledger['pilot_passed']['qwen']='passed'
+        config=json.loads((ROOT/'training/config.json').read_text())['budget']
+        namespace['reserve_corpus'](ledger,'speech-rss',ITEMS,900,config)
+        namespace['reserve_corpus'](ledger,'speech-video',[video],3600,config)
+        self.assertAlmostEqual(committed(ledger),16.20)
+        ledger['initial_spent_usd']=184
+        with self.assertRaisesRegex(ValueError,'cap'):
+            namespace['reserve_corpus'](ledger,'speech-extra',[video],900,config)
