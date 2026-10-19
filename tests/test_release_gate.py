@@ -1,12 +1,32 @@
 import sys
 import unittest
+import contextlib
+import io
+import json
+import tempfile
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from corpus_lib import digest
-from build_corpus import approve_anki, deduplicate_and_split
+from build_corpus import approve_anki, deduplicate_and_split, build
 
 
 class ReleaseGateTests(unittest.TestCase):
+    def test_substack_latest_document_must_be_confirmed_full(self):
+        with tempfile.TemporaryDirectory() as directory:
+            private = Path(directory)
+            candidates = private/'public-source-candidates'
+            candidates.mkdir()
+            def row(identifier, coverage):
+                return {'id':identifier,'source_type':'substack','source_url':'https://example.org/'+identifier,'title':'General ideas','text':'Public knowledge can make collective understanding stronger.','source_group_id':identifier,'acquisition':{'coverage':coverage}}
+            records = [row('a','full_public_body'), row('a','restricted_or_preview'),
+                       row('b','paywall_marker_review'), row('b','full_public_body')]
+            (candidates/'substack.jsonl').write_text(''.join(json.dumps(r)+'\n' for r in records))
+            with contextlib.redirect_stdout(io.StringIO()):
+                released, stats = build(private, private/'output')
+            self.assertEqual([r['document_id'] for r in released], ['b'])
+            self.assertEqual(stats['source_processing']['substack']['input_documents'], 2)
+            self.assertEqual(stats['source_processing']['substack']['withheld_not_full_public_body'], 1)
+
     def test_unreviewed_or_changed_anki_never_passes(self):
         row={'id':'a','text':'Question: What is ATP?\nAnswer: An energy carrier.','privacy_flags':[]}
         self.assertFalse(approve_anki(row,{}))

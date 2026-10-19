@@ -35,11 +35,19 @@ Exact current acquisition counts and every failed/unattempted public URL live in
 private `coverage-summary.json` and `coverage-gaps.json`. Source inventories are
 not proof that all associated bodies or caption tracks have been acquired.
 
-Checkpoint at 2026-10-19 04:30 UTC (acquisition continues): 89 HEE transcripts;
-54/223 full Substack bodies, 51 rate-limited attempts and 118 unattempted posts;
-2 linked local article bodies; 33/215 YouTube English caption tracks, 182
-unattempted videos. There are no confirmed absent-caption cases at this point.
-Substack collection is stopped for cooldown; YouTube collection remains active.
+Acquisition checkpoint, 2026-10-19 04:48 UTC: all 223 inventoried Substack posts
+have full publicly accessible bodies; all 304 videos have coverage statuses.
+Acquired 212 English caption tracks and reused 89 existing HEE transcripts.
+Two videos lack available English captions; one caption request still returned
+HTTP 429 after a single cooled-down retry. These three gaps await later audio
+transcription or a future retry. Two linked local article bodies are included.
+
+A public post discussing Medium's “paywall” initially triggered a conservative
+text match. Its complete public body was checked and reacquired after fixing the
+classifier to detect structural paywall markers rather than the ordinary word.
+Restricted audiences, access requirements and actual HTML paywall markers still
+fail the full-body gate. The release builder and validator independently require
+`full_public_body`, including after resumed acquisition.
 
 ## Reproduction
 
@@ -66,11 +74,15 @@ directory into a repository, even temporarily.
 
 The private `public-ingestion-state.json` records stage start/end status. JSONL
 coverage logs retain failures; latest status for each source ID is authoritative.
-Successful records are skipped on resume. Substack's exhausted archive inventory
-is reused; failed bodies can be retried after cooldown. HTTP 429 stops new post
+Successful records are skipped on resume. Candidate files preserve append-only
+history; summaries and corpus construction use the latest version of each
+source document. Substack's exhausted archive inventory is reused; failed bodies can be retried after cooldown. HTTP 429 stops new post
 requests immediately; normal requests are spaced two seconds apart. YouTube
 stops after two consecutive acquisition failures, retains exact reasons, and
-does not label unattempted videos as lacking captions. Network responses are
+does not label unattempted videos as lacking captions. Use
+`youtube-captions --retry-failed` only after a cooldown for a single new attempt
+per failed video; successful acquisitions and confirmed absent-caption cases
+are skipped. Network responses are
 bounded to 8 MiB, enumeration to 2,000 entries/tab, and subprocesses have finite
 timeouts. Bulk media is never downloaded.
 

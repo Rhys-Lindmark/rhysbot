@@ -143,7 +143,10 @@ def classify_post(post):
         return "restricted_or_preview"
     if post.get("is_geoblocked") or post.get("free_unlock_required"):
         return "restricted_or_preview"
-    if "paywall" in post["body_html"].lower():
+    # A public essay discussing a paywall is not itself paywalled. Keep
+    # structural markers quarantined, alongside audience/access checks above.
+    if re.search(r'''<!--\s*paywall\b|\b(?:class|id|data-component-name)\s*=\s*["'][^"']*\bpaywall\b''',
+                 post["body_html"], re.I):
         return "paywall_marker_review"
     return "full_public_body"
 
@@ -180,7 +183,7 @@ def ingest_substack(out, max_pages=40):
         "posts": len(archive), "archive_exhausted": complete, "next_offset": offset or previous.get("next_offset", 0)})
     statuses = {r["id"]: r for r in read_jsonl(out / "substack-coverage.jsonl")}
     for post in archive:
-        if post["id"] in statuses and statuses[post["id"]]["status"] != "failed":
+        if post["id"] in statuses and statuses[post["id"]]["status"] not in {"failed", "paywall_marker_review"}:
             continue
         url = post["canonical_url"] or root + "/p/" + post["slug"]
         status = {"id": post["id"], "source_url": url, "title": post["title"]}
@@ -324,14 +327,14 @@ def enumerate_youtube(out, channel_url="https://www.youtube.com/user/RhysLindmar
     print("youtube unique videos", len(found), flush=True)
 
 
-def ingest_youtube(out, limit=2000):
+def ingest_youtube(out, limit=2000, retry_failed=False):
     inventory = json.loads((out / "youtube-inventory.json").read_text())
     existing = {r["acquisition"]["youtube_video_id"] for r in read_jsonl(out / "hee.jsonl")}
     statuses = {r["video_id"]: r for r in read_jsonl(out / "youtube-coverage.jsonl")}
     consecutive_failures = 0
     for row in inventory[:limit]:
         video_id = row["id"]
-        if video_id in statuses:
+        if video_id in statuses and not (retry_failed and statuses[video_id]["status"] == "failed"):
             continue
         url = "https://www.youtube.com/watch?v=" + video_id
         status = {"video_id": video_id, "source_url": url, "title": row["title"]}
@@ -401,7 +404,7 @@ def summarize(out):
                            "statuses": dict(Counter(r["status"] for r in yt_status.values()))},
                "candidates": {}}
     for name in ("hee", "substack", "linked-writing", "youtube"):
-        rows = read_jsonl(out / (name + ".jsonl"))
+        rows = list({r["id"]: r for r in read_jsonl(out / (name + ".jsonl"))}.values())
         summary["candidates"][name] = {"records": len(rows), "characters": sum(len(r["text"]) for r in rows)}
     gaps = {"substack": [], "youtube": []}
     for row in archive:
@@ -429,6 +432,8 @@ def main():
     parser.add_argument("--max-pages", type=int, default=40)
     parser.add_argument("--limit", type=int, default=2000)
     parser.add_argument("--channel-url", default="https://www.youtube.com/user/RhysLindmark")
+    parser.add_argument("--retry-failed", action="store_true",
+                        help="Retry failed YouTube acquisitions once; use only after a cooldown")
     args = parser.parse_args()
     out = args.output.resolve()
     if out == REPO or REPO in out.parents:
@@ -454,7 +459,7 @@ def main():
         elif args.stage == "summarize":
             summarize(out)
         else:
-            ingest_youtube(out, args.limit)
+            ingest_youtube(out, args.limit, args.retry_failed)
         state[args.stage]["status"] = "completed_with_coverage_manifest"
     except KeyboardInterrupt:
         state[args.stage]["status"] = "interrupted_resumable"

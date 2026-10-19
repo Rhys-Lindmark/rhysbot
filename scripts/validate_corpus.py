@@ -28,6 +28,8 @@ def validate(root):
             assert row['privacy_status']=='semantic_review_approved', 'Anki review bypass'
         else:
             assert row['source_url'].startswith(('https://','http://')), 'Missing public provenance'
+            if row['source_type'] == 'substack':
+                assert row.get('acquisition', {}).get('coverage') == 'full_public_body', 'Restricted or unverified Substack body'
     split_ids = []
     for split in ('train','validation','test'):
         selected = list(read_jsonl(root/('data/public/'+split+'.jsonl')))

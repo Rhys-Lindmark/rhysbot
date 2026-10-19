@@ -1,21 +1,21 @@
 {
-  "source_corpus_sha256": "43311ad7a9bf973cdafd6333ea1b5e98efbd273b3a363aad425337431b375892",
-  "pretraining_records": 5342,
-  "sft_records": 895,
+  "source_corpus_sha256": "d17bdddb6deaf1258775305f661b83c2e3e6de95bcc6675014c7a8618aa6bf34",
+  "pretraining_records": 6809,
+  "sft_records": 2349,
   "sft_tasks": {
-    "study_note_qa_not_verified_fact": 379,
-    "sourced_passage_continuation": 516
+    "study_note_qa_not_verified_fact": 1640,
+    "sourced_passage_continuation": 709
   },
   "splits": {
     "pretrain": {
-      "train": 4793,
-      "test": 284,
-      "validation": 265
+      "train": 6108,
+      "test": 372,
+      "validation": 329
     },
     "sft": {
-      "train": 806,
-      "test": 62,
-      "validation": 27
+      "train": 2108,
+      "test": 150,
+      "validation": 91
     }
   },
   "excluded_from_default_training": [

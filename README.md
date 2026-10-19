@@ -12,7 +12,7 @@ Source: **https://github.com/Rhys-Lindmark/rhysbot**
 
 - Located a 21,301-note Anki export, local HEE transcripts, and the original X archive.
 - Published corpus contains only individually approved Anki cards and conservatively screened public excerpts. Raw exports, private review material, family/dating details, DMs and account metadata are excluded.
-- Public writing and podcast acquisition is resumable; some bodies/captions remain unacquired. Exact release counts are in [data/public/stats.json](data/public/stats.json); acquisition gaps are in [docs/acquisition-coverage.json](docs/acquisition-coverage.json) when generated.
+- Collected all 223 listed public Substack bodies, 212 YouTube caption tracks and 89 local HEE transcripts. Three inventoried videos remain acquisition gaps. Exact release counts are in [data/public/stats.json](data/public/stats.json); acquisition gaps are in [docs/acquisition-coverage.json](docs/acquisition-coverage.json) when generated.
 - Training data and launch recipes preserve source splits. Mixed/unverified guest speech is not silently trained as Rhys's voice.
 - Total authorized paid-compute budget: **$200** across both models and evaluation. No GPU training has run at initial publication. GPU credentials are required.
 

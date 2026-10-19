@@ -104,9 +104,15 @@ def build(private_root, output):
     for path in inputs:
         if path.name not in allowed_names or not path.exists():
             continue
-        for raw in read_jsonl(path):
+        # Candidate acquisition logs are append-only. Only the latest version
+        # of a source document can define release eligibility.
+        latest = {raw['id']: raw for raw in read_jsonl(path)}
+        for raw in latest.values():
             kind = raw['source_type']
             counts[kind]['input_documents'] += 1
+            if kind == 'substack' and raw.get('acquisition', {}).get('coverage') != 'full_public_body':
+                counts[kind]['withheld_not_full_public_body'] += 1
+                continue
             if kind == 'anki':
                 if not approve_anki(raw, approvals):
                     counts[kind]['withheld_unapproved_or_flagged'] += 1
