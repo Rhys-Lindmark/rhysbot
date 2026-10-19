@@ -1,31 +1,33 @@
 {
   "release_date": "2026-10-18",
   "status": "partial_reviewed_release",
-  "records": 19475,
-  "unique_documents": 14220,
-  "words": 2254621,
-  "characters": 12787144,
-  "tokens": 2879798,
+  "records": 30438,
+  "unique_documents": 25154,
+  "words": 2607316,
+  "characters": 15098654,
+  "tokens": 3465109,
   "token_count_note": "Exact count of released text only, without extra special tokens or source headers.",
   "by_source": {
-    "anki": 1640,
+    "anki": 12571,
     "hee_transcript": 771,
     "linked_writing": 23,
+    "podcast_transcript": 32,
     "substack": 765,
     "x": 12071,
     "youtube_transcript": 4205
   },
   "by_split": {
-    "train": 17455,
-    "test": 1185,
-    "validation": 835
+    "train": 27323,
+    "test": 1718,
+    "validation": 1397
   },
   "source_processing": {
     "anki": {
       "input_documents": 21301,
-      "withheld_unapproved_or_flagged": 19661,
-      "documents_with_public_excerpts": 1640,
-      "public_excerpts_before_dedup": 1640
+      "documents_with_public_excerpts": 12571,
+      "public_excerpts_before_dedup": 12571,
+      "withheld_unapproved_or_flagged": 8729,
+      "withheld_low_text_excerpts": 1
     },
     "x": {
       "input_documents": 12746,
@@ -46,6 +48,12 @@
       "withheld_flagged_excerpts": 12,
       "documents_with_public_excerpts": 5,
       "public_excerpts_before_dedup": 23
+    },
+    "podcast_transcript": {
+      "input_documents": 3,
+      "withheld_flagged_excerpts": 3,
+      "documents_with_public_excerpts": 3,
+      "public_excerpts_before_dedup": 32
     },
     "substack": {
       "input_documents": 223,
@@ -99,6 +107,9 @@
       "personal_health_or_finance": 1,
       "street_address": 1
     },
+    "podcast_transcript": {
+      "family": 3
+    },
     "substack": {
       "family": 184,
       "private_marker": 2,
@@ -129,9 +140,10 @@
     "sensitive_raw_inputs_uploaded": false
   },
   "tokens_by_source": {
-    "anki": 79296,
+    "anki": 651436,
     "hee_transcript": 314639,
     "linked_writing": 10280,
+    "podcast_transcript": 13171,
     "substack": 324974,
     "x": 608464,
     "youtube_transcript": 1542145
@@ -141,5 +153,5 @@
     "revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
     "tokenizer_file_sha256": "fe000e3ed39ed12b8d2481d527d44f93c65d37e87645d2dcc80d1bf9d50d2927"
   },
-  "token_count_corpus_sha256": "9635e396a0e1d40f1cb809bd42323a91a9ca7d64bd6e46c7605cf79e1fc0dbdc"
+  "token_count_corpus_sha256": "c9da91edda4c908d8954841368025a5bba13f589a1919668c6d3d7bb1881ab4a"
 }

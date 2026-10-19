@@ -26,6 +26,26 @@ def approve_anki(record, approvals):
                 and not record.get('privacy_flags'))
 
 
+def source_group(record):
+    """Keep explicitly identified audio/video editions in one evaluation split.
+
+    This relation is supplied by reviewed acquisition metadata; it does not
+    assert identical audio or infer identity from similar episode titles.
+    """
+    if record['source_type'] == 'podcast_transcript':
+        acquisition = record.get('acquisition')
+        identifier = acquisition.get('corresponding_youtube_video_id') if isinstance(acquisition, dict) else None
+        if identifier:
+            if not isinstance(identifier, str) or not re.fullmatch(r'[A-Za-z0-9_-]{11}', identifier):
+                raise ValueError('Invalid corresponding YouTube video ID in podcast metadata')
+            return 'https://www.youtube.com/watch?v=' + identifier
+        group = record.get('source_group_id') or record.get('source_url')
+        if not group:
+            raise ValueError('Podcast transcript requires public source grouping')
+        return str(group).rstrip('/')
+    return str(record.get('source_group_id')).rstrip('/')
+
+
 class Groups:
     def __init__(self):
         self.parent = {}
@@ -100,7 +120,7 @@ def build(private_root, output):
     flags_by_source = defaultdict(Counter)
     inputs = [private_root/'local/anki-candidates.jsonl', private_root/'local/x-candidates.jsonl']
     inputs += sorted((private_root/'public-source-candidates').glob('*.jsonl'))
-    allowed_names = {'anki-candidates.jsonl','x-candidates.jsonl','hee.jsonl','substack.jsonl','youtube.jsonl','linked-articles.jsonl','linked-writing.jsonl'}
+    allowed_names = {'anki-candidates.jsonl','x-candidates.jsonl','hee.jsonl','substack.jsonl','youtube.jsonl','podcasts.jsonl','linked-articles.jsonl','linked-writing.jsonl'}
     for path in inputs:
         if path.name not in allowed_names or not path.exists():
             continue
@@ -140,7 +160,9 @@ def build(private_root, output):
                     counts[kind]['withheld_low_text_excerpts'] += 1
                     continue
                 row = {k: raw.get(k) for k in ('source_type','source_url','title','published_at','authorship','source_group_id')}
-                row['source_group_id'] = str(row['source_group_id']).rstrip('/')
+                row['source_group_id'] = source_group(raw)
+                if kind == 'podcast_transcript' and not row['authorship']:
+                    row['authorship'] = 'mixed_or_unverified_speakers'
                 row['id'] = raw['id'] if kind == 'anki' else raw['id'] + ':chunk-' + str(n)
                 row['document_id'] = raw['id']
                 row['text'] = text

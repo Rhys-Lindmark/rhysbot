@@ -1,0 +1,36 @@
+{
+  "status": "initially_clear_review_complete; automatic_quarantine_false_positive_review_in_progress",
+  "export_notes": 21301,
+  "initially_flagged_excluded_automatically": 6480,
+  "initially_clear_candidates_individually_reviewed": 14821,
+  "unreviewed_initially_clear_candidates": 0,
+  "approval_manifest_entries": 12572,
+  "released_anki_expected_before_build": 12571,
+  "excluded_from_release": 8730,
+  "approval_manifest_sha256": "04749f8ca0ed2137ceeb377abbfa39e38e80adedb405cb29fd12bc0e0abd807e",
+  "reviewer": "Codex semantic review; not human-owner approval or factual verification",
+  "checks": [
+    "Question, answer and citation reading declarations reconciled with candidate IDs.",
+    "Exact candidate/approval content hashes match.",
+    "Current sensitive-pattern exclusions are reapplied after review.",
+    "Initial quarantine and ambiguous/incomplete material stay private."
+  ],
+  "additional_review": {
+    "independent_sample_reviewed": 250,
+    "quotation_only_exclusions_re_read": 1275,
+    "quotation_policy_reapprovals": 1246
+  },
+  "evidence_limitations": [
+    "This audit checks persisted declarations and source coverage; it does not independently re-read all cards or turn clean keyword scans into approvals.",
+    "Initial 382 approvals use legacy reviewed-count, explicit excluded-index decisions and approval reading declarations, rather than a per-card all_front_back_citation_read boolean. Science snapshot matches every front/back/citation character after removing whitespace; the current manifest is exact-hash bound.",
+    "The first 175 legacy queue cards use fully_read batch counts without the later explicit front/back/citation boolean; later batch and shard declarations are stronger. Additional release-audit re-reads are recorded separately."
+  ],
+  "publication": "Aggregates only; raw candidate text, excluded IDs and private reasons are not published.",
+  "exclusion_note": "The initially flagged set includes image attachments and missing text answers, as well as privacy flags; these are overlapping categories. Withholding is not a finding that every excluded card is sensitive.",
+  "quarantine_categories_overlapping": {
+    "image_dependent": 3885,
+    "incomplete_card": 2641,
+    "personal_reference": 2073,
+    "family": 574
+  }
+}

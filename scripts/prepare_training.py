@@ -24,7 +24,7 @@ def examples(rows):
         text = ('Source: '+origin+'\nAuthorship: '+row['authorship']+'\n\n'+row['text'])
         pretraining.append({'id':row['id'],'text':text,'split':row['split'],'split_group_id':row['split_group_id']})
         task = None
-        if row['source_type']=='anki':
+        if row['source_type']=='anki' and row.get('front', '').strip() and row.get('back', '').strip():
             prompt = 'Answer this question from a curated study note: '+row['front']
             answer = row['back']
             task = 'study_note_qa_not_verified_fact'
