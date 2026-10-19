@@ -61,6 +61,16 @@ This document does not authorize deployment or enable nonexistent checkpoints.
 The deployment environment fixes the targets; an update requires another
 reviewed deployment. Record its returned endpoint URL for the site proxy.
 
+Serialized handlers resolve the shared named budget Dict during remote execution;
+they must not capture an unhydrated local handle. Their copied helper package is
+explicitly on `PYTHONPATH`. Deployment and real requests still verify packaging.
+
+Use a dedicated Modal web proxy token (`wk-`/`ws-`), never the account API token.
+The current workspace issues workspace-wide proxy tokens; environment scoping
+is unavailable for this token. Keep it only in encrypted server bindings. Public
+site variables belong in the website's `wrangler.toml`, because Git deployments
+replace dashboard plaintext variables. Encrypted secrets remain server-side.
+
 ## Site proxy and browser contract
 
 The Modal ASGI endpoint uses `requires_proxy_auth=True`. Configure a server-side

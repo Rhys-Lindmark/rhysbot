@@ -246,7 +246,7 @@ def coordinate_request(request, client, targets, budget, volume, singleton, invo
 
 def create_modal_app(targets):
     import modal
-    from modal_app import image, volume, singleton, CONFIG, PINS
+    from modal_app import image, volume, CONFIG, PINS
     app = modal.App('rhysbot-serving')
     # Frozen deployment metadata, not an HTTP parameter or a mutable user path.
     serving_image = image.env({'RHYSBOT_SERVING_TARGETS': json.dumps(targets, sort_keys=True),
@@ -256,6 +256,8 @@ def create_modal_app(targets):
                   timeout=GPU_TIMEOUT, retries=0, serialized=True, min_containers=0, max_containers=1,
                   scaledown_window=2, volumes={'/artifacts': volume})
     def infer(token, request):
+        import modal
+        singleton = modal.Dict.from_name('rhysbot-training-singleton')
         if singleton.get('active') != token:
             raise ValueError('No shared budget singleton owns inference')
         volume.reload()
@@ -284,6 +286,8 @@ def create_modal_app(targets):
             shutil.rmtree('/tmp/rhysbot-serving-hf', ignore_errors=True)
 
     def coordinate(request, client):
+        import modal
+        singleton = modal.Dict.from_name('rhysbot-training-singleton')
         return coordinate_request(request, client, targets, CONFIG['budget'], volume, singleton,
                                   infer.remote, Path('/artifacts/spend-ledger.json'),
                                   lambda family, target: checkpoint_artifacts('/artifacts', family, target, PINS))

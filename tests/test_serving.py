@@ -1,4 +1,5 @@
 import importlib.util
+import inspect
 import json
 import os
 import shutil
@@ -182,6 +183,58 @@ class ServingTests(unittest.TestCase):
 
 
 class ServingPackagingTests(unittest.TestCase):
+    def test_factory_resolves_same_named_lock_only_at_remote_execution(self):
+        class Image:
+            def env(self, _):
+                return self
+
+        class App:
+            def __init__(self, *_):
+                self.functions = {}
+
+            def function(self, **options):
+                def decorate(function):
+                    function.remote = Mock()
+                    self.functions[options['name']] = function
+                    return function
+                return decorate
+
+        # This represents the precise deployment failure: a workspace Dict
+        # handle cannot be captured before Modal has hydrated it.
+        class LazyDict:
+            def __reduce__(self):
+                raise ValueError('Unhydrated Dict must not be serialized')
+
+        lazy = LazyDict()
+        lock = Singleton()
+        lookup = Mock(return_value=lock)
+        modal = types.ModuleType('modal')
+        modal.App = App
+        modal.Dict = types.SimpleNamespace(from_name=lookup)
+        modal.concurrent = lambda **_: lambda function: function
+        modal.asgi_app = lambda **_: lambda function: function
+        backend = types.ModuleType('modal_app')
+        backend.image, backend.volume, backend.singleton = Image(), object(), lazy
+        backend.CONFIG, backend.PINS = {'budget': BUDGET}, {}
+        with patch.dict(sys.modules, {'modal': modal, 'modal_app': backend}):
+            app = serve.create_modal_app(TARGETS)
+            lookup.assert_not_called()
+            infer = app.functions['infer']
+            coordinate = inspect.getclosurevars(app.functions['api']).nonlocals['coordinate']
+            for function in (infer, coordinate):
+                captured = inspect.getclosurevars(function).nonlocals
+                self.assertNotIn('singleton', captured)
+                self.assertFalse(any(value is lazy for value in captured.values()))
+            # No reservation owns this token: the original fail-closed check
+            # must still run using the remotely resolved shared lock.
+            with self.assertRaisesRegex(ValueError, 'No shared budget singleton'):
+                infer('unreserved', REQUEST)
+            with patch.object(serve, 'coordinate_request', return_value={'ok': False}) as route:
+                self.assertEqual(coordinate(REQUEST, CLIENT), {'ok': False})
+                self.assertIs(route.call_args.args[5], lock)
+            self.assertEqual(lookup.call_args_list,
+                             [unittest.mock.call('rhysbot-training-singleton')] * 2)
+
     def test_registered_helpers_roundtrip_via_actual_image_package_path(self):
         # Capture the real image configuration by executing the factory with
         # inert SDK handles. This neither mocks helper imports nor needs Modal.
