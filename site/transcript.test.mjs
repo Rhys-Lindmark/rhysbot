@@ -17,7 +17,7 @@ async function load(episode) {
   const elements = new Map(); let fetches = 0;
   const document = { querySelector(key) { if (!elements.has(key)) elements.set(key, element()); return elements.get(key); }, createElement: element };
   const context = vm.createContext({ document, location: { search: '?episode=' + encodeURIComponent(episode) }, URL, URLSearchParams,
-    fetch: async url => { fetches++; assert.equal(url, `https://raw.githubusercontent.com/Rhys-Lindmark/rhysbot/main/data/public/speaker-transcripts/${id}.json`); return { ok: true, json: async () => fixture }; } });
+    fetch: async url => { fetches++; assert.equal(url, `https://raw.githubusercontent.com/Rhys-Lindmark/rhysbot/152fbf26ee4d92f08508451d2a9a65e84b8b1e07/data/public/speaker-transcripts/${id}.json`); return { ok: true, json: async () => fixture }; } });
   const script = fs.readFileSync(new URL('./transcript.html', import.meta.url), 'utf8').match(/<script type="module">([\s\S]*?)<\/script>/)[1];
   await vm.runInContext('(async()=>{' + script + '})()', context);
   return { elements, fetches };
