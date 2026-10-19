@@ -67,11 +67,11 @@ def validate(root):
     assert stats['text_utf8_bytes'] == sum(value['text_utf8_bytes'] for value in metrics['source'].values()), 'Stale UTF-8 text bytes'
     assert stats['corpus_jsonl_bytes'] == (root/'data/public/corpus.jsonl').stat().st_size, 'Stale JSONL bytes'
     assert stats['corpus_jsonl_bytes'] < 64 * 1024 * 1024, 'Corpus publication limit exceeded'
-    for name, size in stats['artifact_bytes'].items():
-        assert (root/'data/public'/name).stat().st_size == size, 'Stale artifact byte count'
     cards_file = root/'data/public/anki-cards.jsonl'
     if 'retained_anki_cards_before_text_deduplication' in stats:
         assert cards_file.is_file(), 'Required complete Anki card registry missing'
+    for name, size in stats['artifact_bytes'].items():
+        assert (root/'data/public'/name).stat().st_size == size, 'Stale artifact byte count'
     if cards_file.exists():
         card_ids = set()
         for card in read_jsonl(cards_file):
