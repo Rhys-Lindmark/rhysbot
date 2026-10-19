@@ -8,15 +8,17 @@ Project: **https://ai.rhyslindmark.com/rhysbot**
 Its additive collection labels unify **Writing** (Substack and linked essays) and
 **Podcasts/YouTube** (captions and original-audio transcripts), with **HEE**,
 **Anki** and **X** separate. Original source types/URLs/acquisition remain intact.
-HEE narration is explicitly labeled as owner-confirmed Rhys; podcast guest identities must not
-be inferred from titles or text. All transcripts were excluded from the already
-trained models' frozen input. See the [dataset card](docs/DATASET_CARD.md) and
-[podcast methods](docs/public-ingestion.md#original-podcast-rss-and-cpu-transcription).
+All 89 HEE narrations are explicitly labeled as owner-confirmed Rhys. Screened
+speaker transcripts cover 214 recordings: 140 RSS recordings and 74 YouTube-only
+recordings. Rhys matches are machine attribution; guest identities are not inferred
+from titles or text. All transcripts were excluded from the already trained
+models' frozen input. See the [dataset card](docs/DATASET_CARD.md) and
+[speaker transcript methods](docs/speaker-transcripts.md).
 
 `stats.json` distinguishes exact UTF-8 text bytes from JSONL file bytes, and
-reports documents/excerpts/words per source and collection. The validated refresh
-contains 38,812 excerpts: 17,273,127 text bytes versus 55,688,301 corpus JSONL
-bytes. Its new token count is not yet measured.
+reports documents/excerpts/words per source and collection. The applied refresh
+contains 39,692 excerpts from 33,508 documents: 22,609,936 text bytes versus
+65,167,948 corpus JSONL bytes (below the 64 MiB publication limit). Its new token count is not yet measured.
 AI2026 Parts 1/2/3 are refreshed by canonical URL; new research-corpus text and
 labels do not alter the historical model training data.
 
@@ -30,9 +32,10 @@ for measured results and current limitations. Nanochat outputs are incoherent; Q
 
 - Located a 21,301-note Anki export, local HEE transcripts, and the original X archive.
 - Published corpus contains only individually approved Anki cards and conservatively screened public excerpts. Raw exports, private review material, personal family/dating details, DMs and account metadata are excluded.
-- Collected all 223 listed public Substack bodies, 212 YouTube caption tracks and 89 local HEE transcripts. Three additional public RSS recordings were transcribed locally: the two spoken caption gaps and one audio-only episode. The remaining caption gap is title-labeled solo piano. Exact release counts are in [data/public/stats.json](data/public/stats.json); acquisition gaps are in [docs/acquisition-coverage.json](docs/acquisition-coverage.json) when generated.
+- Collected all 223 listed public Substack bodies and refreshed AI2026 Parts 1/2/3. The audio inventory has 216 recordings (140 RSS plus 76 YouTube-only); 214 have released speaker transcripts. MetaBlockchain audio acquisition failed, so its screened captions remain; the title-labeled Solo Piano recording is explicitly excluded from speech processing without claiming an audio audit. See [recording coverage](docs/speaker-coverage.json) and exact [release stats](data/public/stats.json).
+- The 214 speaker transcripts contain 113,830 turns: 113,008 published texts and 822 privacy-withheld texts. There are 142 episodes with a machine Rhys match and 72 anonymous/ambiguous episodes. These labels and automatic transcripts are not human-verified identity or accuracy claims.
 - Training data and launch recipes preserve source splits. Mixed/unverified guest speech is not silently trained as Rhys's voice.
-- Total authorized paid-compute budget: **$200** across both models and evaluation. Full nanochat and Qwen CPT/SFT runs, four-way Qwen evaluation and hosted inference are complete. Conservative holds at verification total $66.40; provider billing is pending.
+- Total authorized paid-compute budget: **$200** across training, evaluation, inference and audio processing. Full nanochat and Qwen CPT/SFT runs, four-way Qwen evaluation and hosted inference are complete. Paid-compute reservations are conservative holds, not final provider charges; billing remains pending.
 
 Read the [dataset card](docs/DATASET_CARD.md), [acquisition notes](docs/public-ingestion.md), and [training guide](docs/training.md) before use.
 
@@ -44,6 +47,8 @@ Read the [dataset card](docs/DATASET_CARD.md), [acquisition notes](docs/public-i
 | `data/public/corpus.jsonl` | Source-linked released excerpts |
 | `data/public/{train,validation,test}.jsonl` | Grouped research splits |
 | `data/public/sources.jsonl` | Provenance and split metadata |
+| `data/public/speaker-transcripts/` | Screened timestamped speaker turns for 214 recordings; no voiceprints or raw media |
+| `docs/speaker-coverage.json` | Recording-level release coverage and explicit gaps |
 | `data/anki-review-approvals.jsonl` | Exact-content approval evidence for included local notes |
 | `data/training/` | Derived pretraining text and sourced instruction examples |
 | `scripts/ingest_local.py` | Anki database-only and original-public-X extraction |
@@ -53,6 +58,7 @@ Read the [dataset card](docs/DATASET_CARD.md), [acquisition notes](docs/public-i
 | `scripts/ingest_linked_writing.py` | Public articles linked from Substack, with canonical/extraction checks |
 | `scripts/ingest_ai2026.py` | Offline canonical upsert of three saved public AI2026 HTML articles |
 | `scripts/refresh_research_corpus.py` | Bounded-memory refresh from an already screened corpus and public essays |
+| `scripts/integrate_speaker_transcripts.py` | Screened canonical RSS/YouTube audio editions and speaker sidecars |
 | `data/public/public-writing-review-approvals.json` | Exact document/excerpt contextual reviews for two public-writing false positives |
 | `scripts/build_corpus.py` | Privacy gate, excerpt construction, deduplication and splits |
 | `scripts/validate_corpus.py` | Fail-closed release checks |

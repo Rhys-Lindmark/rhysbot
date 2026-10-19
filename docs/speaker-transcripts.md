@@ -3,11 +3,12 @@
 `scripts/integrate_speaker_transcripts.py` prepares speaker-turn sidecars and a
 canonical audio-text edition of the research corpus. It performs no speech/model
 inference, network requests, training-data regeneration or deployment. A completed
-ASR batch and reviewed publication are separate prerequisites. The initial local
-acceptance uses only the completed voice pilot. After its read-only plan passed,
-the operator-authorized single-pilot integration was applied locally and
-validated. This does not establish full-archive completion or publish anything
-automatically.
+ASR batch and reviewed publication are separate prerequisites. The release uses
+original RSS audio where available, with the corresponding YouTube edition kept
+as an alias. YouTube-only recordings use their own audio. This avoids counting
+caption and audio editions of an interview as separate source documents.
+See `docs/speaker-coverage.json` for recording-level release status and explicit
+gaps; a launched or completed GPU job alone does not establish publication.
 
 ## Private input contract
 
@@ -37,7 +38,11 @@ The importer ignores incoming display names. Only `rhys_speaker_id` produces
 transcript, model score or guest name. Other `speaker_N` IDs display as
 “Guest Speaker N+1” while retaining zero-based IDs. `unknown` / `overlap` display
 as “Unknown / overlap.” The provided identity can still be wrong; it is machine
-attribution, not a calibrated probability or a claim about Rhys's beliefs.
+attribution, not a calibrated probability or a claim about Rhys's beliefs. The
+host reference was cross-checked against owner-confirmed Digicene narration;
+see `results/speaker-reference-verification.json`. HEE narration is separately
+attributed by the owner’s confirmation; it was not passed through this
+interview-diarization batch.
 
 Full private input must never be published. Word arrays/confidences, speaker
 segments, voiceprints, cosine arrays, identity-anchor evidence, raw audio,
@@ -209,3 +214,13 @@ actual run reports and released sidecars. It distinguishes released speaker
 transcripts, completed processing awaiting release, processing failures and
 recordings not completed. It publishes only whitelisted source and coverage
 fields; private word arrays, voice measurements and exception text stay private.
+
+## Timestamp ordering
+
+One completed YouTube transcript (`podcast-416cf0c22dc809c05b1a`) contained
+two adjacent overlapping ASR turns whose starts moved backward by 0.13 seconds.
+Before publication, those turns were stably ordered by their original start
+timestamps. All text, speaker IDs, start/end values and turn membership were
+preserved; no audio was retranscribed and no speaker identity was changed.
+The original evidence and before/after hashes remain private. Overlapping turns
+remain overlapping, and these automatic timestamps are not a human audio audit.

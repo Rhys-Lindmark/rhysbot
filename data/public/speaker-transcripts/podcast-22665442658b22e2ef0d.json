@@ -1,0 +1,1800 @@
+{
+  "schema_version": 1,
+  "id": "podcast-22665442658b22e2ef0d",
+  "title": "#48 Joe Lubin, ConsenSys: Building the Institutions and Myths of Web 3.0",
+  "published_at": "2018-08-20T20:06:27Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/48-joe-lubin-consensys-building-the-institutions-and-myths-of-web-30",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/488237553-the-rhys-show-48-joe-lubin-consensys-building-the-institutions-and-myths-of-web-30.mp3",
+  "youtube_id": "BMLa34kSEmY",
+  "youtube_url": "https://www.youtube.com/watch?v=BMLa34kSEmY",
+  "audio_sha256": "64b422be2d461ee6e5196f1b8d9689081abdd020441900d483c770befc0aacb5",
+  "audio_duration_seconds": 2999.9281875,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 8165,
+    "unknown_words": 106,
+    "unknown_words_fraction": 0.012982241273729333,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_1",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.66,
+      "end": 1.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Now",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 1.48,
+      "end": 5.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "entering the Bitcoin Podcast Network.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 27.78,
+      "end": 35.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Today's episode is brought to you by KeepKee, the easy, safe, and simple way to protect your Bitcoin, ether, light coin, and many other digital assets.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 35.86,
+      "end": 36.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 36.3,
+      "end": 47.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "no time like the present to protect yourself from hackers, malware, and viruses. Visit keepkey.com to order your secure hardware wallet today and use the code Humanist 10 for a limited time 10% discount.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 49.5,
+      "end": 57.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "And I also have a Patreon, and on that people pay me money, you know, for food or cheese or saltines or whatever. But you know what?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 58.34,
+      "end": 58.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 58.72,
+      "end": 146.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "don't want your filthy nation state fiat. I would, however, take your five-star reviews, though. So if you like the show, please rate it on iTunes or Google Play or whatever. I really would appreciate it. Okay, thank you. Hello, everybody. In today's episode, I chat with Joseph Lubin, the founder of Consensus. And just as a quick note, my intro here is a little bit long. It's about 10 minutes because there's lots of philosophical juiciness. And then Joe, for the first five minutes or so, talks about kind of his founding story with consensus. And then after that, we kind of dive into the meat of some of this stuff. So we talk about kind of three main things. At a high level, we're speaking from this transitional lens, which is... essentially the idea that you need a different lens when you're in a time of macro transition, a different lens to view and understand the world. And right now we are in the midst of the information revolution, so we need a different lens. So we need this transitionary lens. And when we use that, we can kind of apply it in a couple different ways. One, you can think of the institutional economics. So it's like the Kocene theory of the firm stuff, how these institutions kind of co-evolve with each other. And Joe talks a lot about how blockchain is based on this trust infrastructure and how that's key to the blockchain as an institution evolving. The second piece that we talk about is what are the myths that kind of wrap around these new institutions? You know, what are the stories we tell? How do we legibilize these things? And, you know, Joe talks a lot about the story behind consensus or in Ethereum and Blockchain, how there's this world computer and the Web 2.0 versus the Web 3.0, which is a really good meme. And he also talks a little bit about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 146.48,
+      "end": 233.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "the difficulties in telling this story. Both A, when you kind of see the big picture, it's profoundly transphrenate. transformational. And so that's difficult to convey that. And then B, we're dealing with money as a core primitive. And so that, when that money is attached, it's both difficult to talk about the transformational thing around money because we're so used to it in kind of the nation state fiat way. And then also it's difficult because it's connected. Money is connected to financial markets and greed and things of that variety. So that makes it difficult as well. So in addition to the institutional economics piece and then also the myths that wrap around those new institutions, we also chat about how he's kind of instantiating these things within consensus. So this is their, you know, holocratic bottom-up structure they call meshocracy, how they dog food things, how they wrap everything in API is kind of Amazon style. And one interesting note he makes is that how it's becoming... Consensus becoming more permissionless, more open, more free. It's becoming kind of fuzzy what a consensus project is, where you have consensus ventures and token foundry and consensus diligence, and then maybe your company that gets funded through those things and then uses some of the infrastructure like Infura or Metamask or Truffle or whatever. And then also maybe you actually start to integrate things like OpenLaw or use Gitcoin for Bounty. So there's kind of this ecosystem that he's building that consensus is building is it's making things fuzzy in terms of where the mesh ends and the ecosystem begins. So those are the things we chat about.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 234.35,
+      "end": 234.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Come",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 234.83,
+      "end": 289.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "on. take a high level note on a couple different points here before we begin with Joe, though. The first is that, you know, Joe and I are talking about how the future's not evenly distributed yet, and how, and he's talking about this awesome new world that can exist, where you can work on the things that you're excited about and aligned on, and how you can, he talks about, hey, you can go make music or build rockets to go places or whatever. And I think that's true, and that's our long-term great outcome, that kind of self-actualization. But I actually think, and it's not like he makes a big point of this, but I want to push back on it and say, hey, that kind of self-actualization is important, but the more important kind is the helping others kind, and where you also try to get others to self-actualize. So this is to say that when you yourself feel like you have enough, when you feel like you've made it to really, when you're living your best life, you know, when you're living your good life, then your main goal at that point should be to really help other self-actualize and remind yourself how,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 290.4,
+      "end": 290.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 290.76,
+      "end": 320.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "everybody in the world is where you're at and kind of push money back into the ecosystem to do that. So, you know, that's the kind of self-taxing mindset. So that's the first piece. The second piece is this piece about speed. So again, this is connected to, you know, Joe and I are talking about this new world in which, you know, trust is kind of abstracted and becoming abundant and which, you know, these permissionless fast ecosystems that are interoperable and fluid and now capital itself is kind of becoming abstracted and abundant as well. And that. It's all true and I agree with him. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 320.65,
+      "end": 321.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 321.61,
+      "end": 387.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "thing knows that if you're claiming that progress, and Joe and I talk about this to some extent, but if you're claiming that progress itself is becoming abundant and that change is becoming abundant, then that necessarily means that stability is scarce, right? And this is something I think a lot of the kind of new age. progress types don't acknowledge it all. You know, like Stephen Pinker and Enlightenment Now or, you know, Matt Ridley with rational optimist. They're saying, hey, look at how much abundance we have. Look at how much progress we have. And I agree with them on that point. And I totally agree. But if you believe that we have so much abundance and we have so much progress and we're making so much change and that things are getting faster, then you also... very connected to that is that we're then things are moving kind of too fast almost and that we're that things are becoming that stability itself is becoming scarce this is one of these macro transitions from something that's abundant to something that's scarce um or rather when something that was scarce aka progress the rate of change that was scarce now it's becoming abstracted and becoming abundant and that makes a different thing scarce the next thing scarce what is that next thing it's going to be stability so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 387.54,
+      "end": 388.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 388.72,
+      "end": 394.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "the point If we have abundance, then stability is scarce. So the final piece here is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 394.54,
+      "end": 396.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "two",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 396.12,
+      "end": 487.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "notes on freedom that I think are kind of interesting. The first is that, you know, Joe's talking about how it's how money makes this story kind of difficult and how, you know, money is both foundational. It's also connected to greed. And I also think it's this massive opportunity when we have this kind of new kind of freedom now that we have... release the constraints around money, and now it's no longer kind of always nation-state fiat, but rather there's a market for money itself or whatever. And that's cool. And I think that this idea of things becoming free or abstracted away happens a lot in crypto. And I think for a lot of kind of my friends in the crypto industry, they're feeling this themselves, where they are their lives are ones where they feel like they have enough money, they feel like they can travel a lot, they feel very aligned with their work. And the difficult thing becomes, once you start having all the options, once a lot of constraints are taken away, then you yourself have to kind of make the choice for what you do. And this is then where you go and you get texture on yourself. You do self-understanding. Then you kind of align yourself with the world. And that's been kind of a difficult process for a lot of my friends in crypto is saying, oh, man, I have all this freedom. What should I do with it? And so I think that that's similar, that kind of freedom is similar to the freedom that we're going to experience with money, which is where we say, hey, we no longer have these. constraints that we've had in the past, what should we do with this new thing? And that middle time is kind of unstable and uncertain, but hopefully we'll be able to kind of migrate to and iterate towards a global maximum here. That's one piece on freedom. The other piece on freedom",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 487.19,
+      "end": 487.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "is...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 487.86,
+      "end": 488.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 488.26,
+      "end": 501.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "know, Joe talks about how this fuzziness where the mesh is kind of being decentralized into the ecosystem through permissionless structure. And I agree with that. And that's kind of building on top of this trust layer that they're making.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 502.74,
+      "end": 503.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 503.18,
+      "end": 538.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "the thing that I just want to connect this to is a lot of the work that's been done already around this kind of permissionless open and free infrastructure. And that's pushed by what they call like the open community. This is Mozilla, Creative Commons, Wikimedia. They are thinking, that group is often associated with kind of like left-wing, maybe like progressive types. But the interesting part is that, you know, if you think about this and I was just rereading Lawrence Lessig's free culture, and in free culture, he says, hey, we're thinking about free, and not free as in speech, like free speech, not as in free beer. And what he means by that is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 538.47,
+      "end": 539.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "he",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 539.31,
+      "end": 554.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "wants culture itself to become permissionless. And this was in the age, you know, early internet days or early 2000s, where, you know, the copyright holders were just, you know, too aggressive with saying, hey, you can only do these things in these places, and that exists still to some extent today.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 556.18,
+      "end": 594.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "And if you have, and so when he says, though, that's funny with that, is like, if we want this free culture, like a permissionless culture, that's essentially the same argument. And he says as saying you could replace culture with market. So he's also arguing kind of for like a free market or a free or permissionless market. And That's kind of weird because that's traditionally associated with, you know, the right, not the left. So these are kind of these weird things where we're starting to, when we start to think from these root level primitives of like permissionlessness, those don't necessarily align with left or right. They kind of can align with both in this weird new way. And I guess the key point for us to understand here is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 594.68,
+      "end": 595.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 596.01,
+      "end": 622.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "When we make things free or permissionless, and whether this is a market, whether this is a culture, or whether with something like crypto, this is a kind of a value ecosystem, we have to then, that then almost requires us to think about values. So you can think about it with this free culture sense where you say, hey, if you have a permissionless and free culture, well, then you start to allow a bunch of these weird subredits that maybe don't benefit society, like, you know, fat-shaming ones or whatever.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 624.35,
+      "end": 624.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 624.75,
+      "end": 645.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "a similar thing will hold true with the permissionless value infrastructure where you say, hey, if value can flow it freely and permissionlessly, well, then actually, what should it flow to? So that's kind of another if-then statement around freedom. So with that, I hope you enjoy this episode with Joe. He's definitely thinking about and operating on this level of kind of macro-systemic change. So I hope you enjoy the episode. Goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 655.17,
+      "end": 686.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, hello everybody. My name is Reeslin Mark, and you're listening to another episode of creating a humanist blockchain future. In this podcast, you take a systems thinking approach, doing good in the world. We have a couple different series that focus on different system scopes. And today we're focused on Series A Macrosystems, where we ask the question, where are we, as humanity, heading? And I'm very happy to introduce Joe Lubin today to chat about that. Joe is the co-founder, was the co-founder of Ethereum, and then founded Consentus, a company building the infrastructure, applications, and practices that enable a decentralized world. Joe, thanks for being on show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 687.21,
+      "end": 688.15,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Hey, Reese. How you doing?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 688.39,
+      "end": 705.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "I'm doing well. Excite to chat. We're in Joe's office right now. And in Consensus, we turned off the AC. So it's going to get hot as we do this episode. But we'll make it through. So first, before we go kind of macro philosophical, Joe, could you just give our listeners an overview of, like, what is consensus?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 707.01,
+      "end": 707.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 709.1,
+      "end": 752.21,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a About a year into the Ethereum project, we were getting close to releasing version one of the Ethereum platform and there weren't a lot of people building at the application layer. So I started talking to a bunch of people, gathering some people together to start building. We did make some early attempts at an accounting system and an app store, a bunch of different applications, proof of existence. And we realized it was very hard to build decentralized applications, essentially with no developer tools on a platform that wasn't yet released in an ecosystem that didn't exist. So the person who was building the App Store, Tim Coulter,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 753.97,
+      "end": 775.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "was in parallel starting to build scripts and other kinds of tools to make his life a little better. And other people started using that. And that grew into the Truffle Suite. which is seen, I think the core product has seen about 700,000 downloads at this point, and the other elements are also pretty heavily downloaded.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 777.79,
+      "end": 916.71,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "We hooked up with Aaron Davis early on. Back then, if you wanted to release an application for your consumers, for your customers, you would basically say, here's the URL. go to the Ethereum website, please download the client, depending on your computer. Please spend eight hours or three days syncing the blockchain and at that point, VRPC or IPC, our web application will run on your version of Ethereum. So that wasn't obviously tenable for building a decentralized application platform. But those were the baby steps that had to be taken. Aaron Davis assembled a brilliant team and put together Metamask, and they've got millions of people using that to release applications and use applications. In-house, we started putting together infrastructure to enable all of our different projects to have. test networks and that evolved into a project called Infura. In fear, we soon think in Shanghai at that Ethereum conference, I believe that was the first time we externalized it for for non-consensus developers and it turned into a service, an ecosystem infrastructure service. So on Ethereum, we have around a million transactions per day. which are basically rights against the public world computer database. But when you're building applications, you do much more than just writing to a database. So those million transactions are around 80% of the volume of the entire blockchain space. But there are many reads, and you don't need to go directly to the blockchain for those and many other kinds of queries. And Infeura handles somewhere between 8 and 10 billion of those queries a day. which is about twice what Google handles, believe it or not. So when you're sitting there refreshing a coin market",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 916.71,
+      "end": 917.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "cap",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 917.07,
+      "end": 920.87,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "or something like that, a lot of that is.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 920.97,
+      "end": 921.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Which we don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 921.43,
+      "end": 922.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "do. We don't do that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 924.23,
+      "end": 924.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 924.59,
+      "end": 940.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "at the beginning, as you said, I mean, it was a crazy thing at the beginning of consensus where you start to see, hey, we need to start building on this application layer. And as you start to do that, you're like trying to build these applications. You're like, well, that's is really tough too. So we just need to build stuff in between those two layers, a bunch of these developer tooling",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 940.26,
+      "end": 940.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "things,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 941.0,
+      "end": 943.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Metamask, Truffle, and Furrow, which are all incredible pieces",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 943.66,
+      "end": 944.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of the Ethereum ecosystem. That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 944.9,
+      "end": 985.99,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 988.1,
+      "end": 1083.87,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "It's currently used a single sign-on for different applications. It's been used in Zougan, Switzerland, by citizens to access government services, and they just ran a vote, sort of experimental vote. So that's pretty exciting stuff. So core components like that, like accounting systems, like governance tools, we have a whole lot of projects that are exploring the hypothesis that the nature of the firm is going to change from these entities, these centralized entities that we invest in. and we rely on the people running those entities for our return on investment to these networked business models where many different actors, people and companies can be in different roles on these protocol-based open platforms. We log into those things via our self-sovereign identity. You could be one of those that you use. And essentially, in those systems, there isn't the opportunity or the likelihood that a A major actor will be in the center, the intermediary, the facilitator, the way a record company or set of record companies or a set of financial institutions or ride-sharing companies are really extracting lots of the value of that ecosystem, but essentially will have non-dominating roles and it'll, I believe, enable... more people, more smaller companies to have greater agency as we build adjacent music industries and adjacent financial industries and health care systems, etc. on these open platforms. So lots of those projects.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 1084.51,
+      "end": 1085.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Early",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 1085.35,
+      "end": 1123.69,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "on we were contacted by companies and governments to help them understand blockchain and early on build POCs and then since we've established many regional offices around the world for our consulting arm, consensus solutions, which works with enterprises and governments and central banks and building some significant things using the Ethereum technology, usually in private permission contexts, but in some cases we are using the public blockchain and in some cases we're intending the project is designed to move to public blockchain when it's built out.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 1125.32,
+      "end": 1137.64,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "an education arm consensus academy. It's, uh, uh, it has educated around 1,500 blockchain engineers and a whole bunch of lawyers in continuing legal education and other kinds of learners and, uh, um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 1139.1,
+      "end": 1140.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a set",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 1140.43,
+      "end": 1157.91,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of activities that I call capital markets activities. So it's a project called trustology, which will be a very sophisticated way of custody and value tokens. It's, uh, uh, very strong team of financial industry professionals and technologists.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 1158.33,
+      "end": 1159.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Atomic",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 1161.4,
+      "end": 1161.78,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "swap",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 1162.87,
+      "end": 1164.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "protocols",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 1164.17,
+      "end": 1192.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "like air swap and exchange mechanisms, decentralized exchange mechanisms like Dutchex and some other projects that can't be named yet. Over the last year, a bunch of venture investing where we've invested in It's getting close to 20 companies now. But that gives us a sort of front seat at the table as our industry explodes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 1192.02,
+      "end": 1193.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 1193.02,
+      "end": 1218.57,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "innovation. So that's been really exciting. And token founder, token launch services, where we can either issue an investor token or one of those consumer utility tokens that Bill Hymondon of the SEC said. wouldn't be deemed securities if you structured the token properly and if you market it properly. So you know, market it in huge quantities to speculators.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 1218.81,
+      "end": 1289.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep. Yeah. So as you say that, I mean, it's funny to hear both the initial part of that story of like, hey... And this was, this was two and a half years ago that it was like, oh man, you know, let's try to like spin up some stuff here and like, okay, let's build inferior, let's build meta, you know, and then now you guys have almost a thousand people working on all these different kind of parallel exciting things and kind of this, I think it was kind of like a barbell, bimodal system where you're saying deep infrastructure and then also kind of, you know, these experiments. So let's actually see on that experimental track for a bit and talk about the nature of the firm and that kind of thing because that's something that we talk about a lot on this podcast is how, From like an institutional economics perspective or a new institutional economics perspective How will these things change as we as we go through this information revolution? So for example, you know at the Industrial Revolution that kind of changed itself the nation state rose to more power and something like the church or kind of religious institutions you know weakened in power and now we're seeing power of stuff like platforms like you're talking about whether it's Facebook or Uber coming to power and How do you see something like blockchain enabling new kinds of organizational technology? And how will that blockchain-based organizational technology co-evolve with the existing systems?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 1289.95,
+      "end": 1326.65,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So the central innovation is that it pioneers a new kind of trust infrastructure. So we're moving from a world in which our societies have top-down command and control structures, which... enable the top to define the rules by which we operate our society and then the top and its different minions or agents in a hierarchy implement those rule-based systems. And so moving from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 1326.84,
+      "end": 1327.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 1327.76,
+      "end": 1332.12,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "world of monarchs doing that to a world in which elected officials are doing that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 1333.04,
+      "end": 1333.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 1333.3,
+      "end": 1367.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "many cases it works well. In many cases, it works not so well in often capriciously, even if you have so-called elected officials doing it. And so we're moving from that subjective trust, capricious implementation, to automated trust and guaranteed enforcement or implementation. And that can happen at the level of laws of a nation state. It can happen at the contractual level where you've got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 1369.79,
+      "end": 1426.54,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "legally enforceable agreements on a blockchain. We have a project called Open Law, which is doing really brilliant things, enabling hybrid blockchain-based legally enforceable agreements. And you can write your agreement in prose as you normally do, but you can also have clauses that are programmatic elements on the blockchain. So you can escrow money into a clause or send data into a clause. A clause can act when certain conditions are met, pay out some money perhaps. You can use one of those things as a treaty, perhaps. Often it's hard to enforce a treaty. Things break down and you go to war or, you know, economic war or some other war. But if the different parties were forced to escrow some value into a treaty, maybe they'd be a little bit more enforceable. So this new trust layer will enable us often...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 1428.65,
+      "end": 1473.96,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "entities to find easier ways to collaborate to much more fluidly transact with actors that we don't trust, actors we compete with, actors we've never even met around the world in lending platforms or insurance platforms or whatever. And so moving the infrastructure from siloed vault garden systems, which was necessitated by the database technology of the past, to shared infrastructure, which is facilitated by essentially the new blockchain database technology. Shared infrastructure will enable industries, sectors, supply chains, other kinds of value chains to just operate much more fluidly, much more quickly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 1474.28,
+      "end": 1507.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, I mean, so I love all of that and I agree with you in saying that the, A, that the trust is the key underlying element here, this primitive of trust. The thing that I might push back on is I feel like, and this is something that you've talked about in some of your other talks where you say, hey, we have this new kind of more fluid, more interoperable world based off this layer of trust, and that's part of this macro transition, you know, towards the abundance of trust, and you say something like, and we're going to have the rate of value compounding events or value events will be, will compound, will happen more",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 1507.37,
+      "end": 1507.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and more quickly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 1508.15,
+      "end": 1526.3,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "That's related to the fact that we're moving from this old analog frictional infrastructure that's filled with delays where the foundational elements of our society are written on pieces of paper in in angstance and their subjective jurisprudence",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 1526.3,
+      "end": 1526.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 1526.82,
+      "end": 1527.38,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 1527.38,
+      "end": 1528.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "slow that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 1528.14,
+      "end": 1538.16,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "incarcerates people with force and so every transaction involving those foundational elements clears and settles over way too much time",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 1538.16,
+      "end": 1539.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "basically hours",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 1539.48,
+      "end": 1558.07,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "days weeks whatever but um These foundational elements are money, their identity, their elements of reputation, their certificates, government, educational, whatever, their legally enforceable agreements. All of these we've already implemented in natively digital form on Ethereum.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 1558.31,
+      "end": 1558.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Totally.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 1558.77,
+      "end": 1579.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Every single one. And so as we start to build much more mature, much more sophisticated systems, any transaction involving those things can clear and settle in the instant of the transaction. You don't need complex reconciliation systems because you've got 11 different databases that are saying the same, the wrong things and wrong things about the same transaction.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 1580.28,
+      "end": 1580.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 1580.58,
+      "end": 1609.52,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I think what you're hinting at is that when you squeeze all the delays out of your economy, out of your transactions, clearing and settling in the instant of the transaction enables us to compound value creation events much more closely in time. And as with as we know with the power of compounding interest you want to do that a lot and you want to do that as frequently as you can and i think that'll be a tremendous growth driver",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 1609.52,
+      "end": 1609.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 1609.82,
+      "end": 1646.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "i think and i think and i think you said it all very well there in that that compounding value events thing i think in and sometimes in the past you've talked about we're going to transition toward closer to like a world of abundance because if we have more value than we'll be close to abundance but the thing that i want to get your take on is i'm a little bit worried that we might be going in that we might go too fast, that we might be a little bit too fragile, that our connections will be too fluid, everything's going to be on internet time, that we're too interconnected, that the old power structures are going to, you know, get taken by these new underlying, you know, new bottom-up power structures too quickly. Are you worried about that fragility piece at all, or how do you think about that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 1647.14,
+      "end": 1652.18,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "It's definitely complicated being sort of linear beings living in exponential",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 1652.18,
+      "end": 1652.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "times. Exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 1653.08,
+      "end": 1684.75,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "We're bumping up against our ability to process information effectively. That's been happening for a couple decades already. And we're evolving, mostly because we're building better and better tools. But it's definitely really hard. I don't know about you, but I have to constantly reprioritize what I can pay attention to, especially as our company grows, as our ecosystem grows. And I need better tools and lots more amazing people handling stuff that I... used to do.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 1686.75,
+      "end": 1766.11,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So I think it's about tooling. I think we're going to get to a point where we operate better in collectives. With the trust infrastructure, I think we're going to do better jobs of generating value for one another and it'll be much less of a a zero-sum mindset or a scarcity or fear mindset because I think blockchain technology facilitating trust and sharing collaboration with AI and other kinds of technologies essentially enabling exponential growth in interesting ways with machines able to feed us better and healthier and shelter us better and both us, et cetera, I think we're going to move probably in our lifetimes in some parts of the world. The future does arrive in different places at different times. But I think we're going to get to the point where we can not work at stuff that we don't want to work at and still have our needs taken care of and focus on things that we do want to do, which is making music.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 1767.84,
+      "end": 1785.46,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "learning stuff and building rockets to go places and just incredible stuff that we'll all be passionate about. And we will need better tools in order to handle all of that. But I'm not so concerned that it's going to spiral",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 1785.46,
+      "end": 1786.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "out",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 1786.86,
+      "end": 1793.56,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of control and we'll all be just numbed and blathering because too much data is coming at us.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 1793.9,
+      "end": 1794.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 1794.54,
+      "end": 1811.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "when we get some really great AR and VR interfaces and brain computer interfaces. I think we're going to be able to process information in categorically different ways from how we are now.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 1811.79,
+      "end": 1835.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yes, 100%. So, yes, I think, I mean, I agree with the law of what you're saying there. I think long term, the hope is abundance. And I just, I think... We'll see what this, I think, yeah, we clearly have differing instincts around the fragility piece. And the other thing with the weird thing without fragility is like, I think your first key point was the key one is that we're linear beings living in an exponential time. We can't even understand what it's going to be like. So we'll deal with that if it happens.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 1836.56,
+      "end": 1838.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Ultimately, if you're an idealist,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 1838.82,
+      "end": 1838.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 1838.88,
+      "end": 1840.62,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "optimist, you're like, bring it on.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 1840.72,
+      "end": 1840.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 1841.1,
+      "end": 1841.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "exactly. Let's do this thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 1842.22,
+      "end": 1842.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "If you're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 1842.96,
+      "end": 1847.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "not one of those people, they're... So many things you can point to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 1847.14,
+      "end": 1847.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 1847.68,
+      "end": 1848.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are terrifying.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 1848.46,
+      "end": 1849.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yes, exactly, exactly, exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 1852.59,
+      "end": 1875.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Cryptocurrency is vibrant and exciting, but it's not without a share of bad actors. Exchanges and personal accounts can get hacked, computers can be infected with malware. Left unprotected, your digital wealth is up for grabs. Don't let yourself be a victim. Keep you as a safest and simplest way to protect your Bitcoin, Ether, Lightcoin, and other tokenized assets. This hardware wallet is a separate device that you control.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 1875.72,
+      "end": 1876.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Brought",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 1876.14,
+      "end": 1909.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "to you by the pioneering team at ShapeShift, Keep Keyworks with the wallet software on your computer to manage your private keys and transactions. Your device is pin protected, which provides protection if it falls into the wrong hands. Its large display lets you carefully view and approve every transaction. And, if your keep keys ever lost or stolen, you can safely recover your device without compromising its private keys. The bottom line, you'll sleep easier knowing that your digital wealth is safe and secure. Visit keepkey.com to order yours today and use the code Humanist 10 for a limited time 10% discount.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 1911.3,
+      "end": 1954.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "So do you think that, so on one other way that I like to think about this is from, so we have these new kinds of organizational technology like blockchain that enables some of these new, you know, trust structures and collaborations, what have you, new ways to motivate and coordinate people. One part of that that's also talked about, though, especially from like a sapiens perspective, is like, what are the myths that exist on top of those infrastructure? So it's like we have something new, like Ethereum, and then what are the stories that we tell about? What are the myths that we tell about it? I know, like, a classic one is like this world computer kind of story. How are you thinking about, like, the stories that we should talk about. How should we talk about Ethereum to make it kind of more legible to the world and society?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 1955.39,
+      "end": 1957.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Um... So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 1957.32,
+      "end": 1962.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I guess we've been having this discussion since the start of Ethereum. And we had some little workshops",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 1962.9,
+      "end": 1965.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 1965.44,
+      "end": 1972.4,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the Ethereum project about how we position it, how we market it for consumers. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 1972.4,
+      "end": 1973.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "pretty",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 1973.48,
+      "end": 1998.45,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "early on, I think we realized that we're building infrastructure, we're building... the new decentralized worldwide web were facilitating transition from web 2.0 to web 3.0. There are going to be a lot of technologists. There are lots of technologists, millions at this point, who are really excited about not building out the web 2.0 infrastructure because it's become",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 1998.45,
+      "end": 2000.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "broken",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 2000.97,
+      "end": 2006.39,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "in a sense and exploitative of human beings that it should really be serving.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 2008.05,
+      "end": 2019.61,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "doing startups or joining companies and building out the Web 3 infrastructure either at the protocol level or at the application layer and so those are the people that we really need to speak to early on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 2019.61,
+      "end": 2020.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 2021.67,
+      "end": 2027.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are two difficulties one is that the technology is so promising it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 2027.25,
+      "end": 2028.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 2028.51,
+      "end": 2032.33,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "prospects are so profoundly transformational of all aspects of society",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 2032.33,
+      "end": 2032.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 2032.79,
+      "end": 2033.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "crazy",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 2034.97,
+      "end": 2035.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "idiots",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 2035.57,
+      "end": 2039.09,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "like you and I get too excited and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 2039.09,
+      "end": 2039.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we start",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 2039.73,
+      "end": 2048.09,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "sharing that with normal people and normal people feel like they have to understand it keep up pay attention and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 2048.09,
+      "end": 2051.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "they think that we might be crazy as well because we feel like we're existing in this weird",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 2051.25,
+      "end": 2052.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "future reality too",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 2052.71,
+      "end": 2100.39,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "many too many people are scary are saying this wonderful yet terrifying stuff that nobody understands and the other difficulty is that There's a token attached to all of these ideas and those tokens are shooting up enormously, they're shooting down enormously, the financial press is going crazy about it and that also attracts lots of attention. And it's both wonderful and unfortunate. It's wonderful because it brings a lot of attention into the space, a lot of technical and entrepreneurial talent, a lot of value, a lot of money into the space, which gets transformed into fundamental infrastructure. But it does drive a lot of people crazy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 2100.67,
+      "end": 2115.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, I agree. I think that is tough too, because you'll get these, the story, we've officially transitioned for a lot of people. We've transitioned away from like the Bitcoin blockchain as drugs, like, you know, like we're just buying drugs off the internet story. We've transitioned to something new or different.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 2116.17,
+      "end": 2116.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 2116.37,
+      "end": 2117.63,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "still quite a bit of that, actually.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 2118.03,
+      "end": 2118.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 2118.45,
+      "end": 2124.52,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you're very sophisticated. you're really orders of magnitude ahead of the curve but there's a lot of people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 2124.52,
+      "end": 2126.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I agree a lot of people still just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 2126.3,
+      "end": 2129.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think about the Bitcoin and the the money the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 2129.88,
+      "end": 2130.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "internet",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 2130.12,
+      "end": 2131.18,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "money going up and down",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 2131.18,
+      "end": 2131.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 2131.38,
+      "end": 2136.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "totally and I think well I think that the the I see the drug one is different than the internet the magic internet money one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 2136.92,
+      "end": 2137.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 2137.32,
+      "end": 2157.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "that one is like you say it's very when when something so fundamental to us gets changed something like money It's almost impossible for us to understand what's happening there. It reminds me, obviously, of the thing that you said earlier about with new AR and VR systems, we're going to have new ways to communicate with each other. Language is another thing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 2157.79,
+      "end": 2158.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that is kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 2158.39,
+      "end": 2164.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "of deep underlying within us. And even as stuff like emojis have popped up, it's kind of tough for people to understand them in some ways. I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 2164.97,
+      "end": 2165.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 2165.45,
+      "end": 2166.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "seeing that with money to some extent.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 2167.25,
+      "end": 2167.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 2167.55,
+      "end": 2180.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think you hit on a big one, that money is so fundamental to what we are as human beings. this point in our evolution that messing with the concept of money",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 2180.73,
+      "end": 2181.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 2181.39,
+      "end": 2218.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "implementation of money that that's a really big one and i think it's going to evolve pretty dramatically for quite a while i think we're going to have lots of different tokenized value systems and certainly for as long as people continue to live In these bodies near one another, we're going to need governance, and governments will do that for us, and governments should have their own token, of course. They should be able to issue their own token and require people on their protocol-based open platform to basically pay for their services",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 2218.25,
+      "end": 2218.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 2218.85,
+      "end": 2251.36,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that token, and so US dollar is not going away anytime soon. But it will be setting up these topical global villages, so groups of people on network platforms that care about the same thing and set goals together and have decentralized governance systems together and issue tokens to help them achieve their goals. There will be people who accept those tokens in exchange for goods and services and you can set up one of these things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 2252.96,
+      "end": 2278.46,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to support your favorite band or you can cure some disease with one of these things. And I think lots more activity will move into those things than being carried out in, say, government-funded programs. And so the nature of money is going to change. There are going to be a qualitatively different perspective",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 2278.46,
+      "end": 2278.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 2278.9,
+      "end": 2301.94,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "money. And I think we're going to get to the point where we just pay for stuff rather than thinking about what we're paying. in. So I'll have a smart wallet. You'll have a smart point of sale. We'll both order which tokens we want to spend, which tokens we want to receive, and I'll just acquire something and our smart agents will figure that out for us.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 2302.06,
+      "end": 2388.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yes, totally. Yeah, I agree with that. I think you can kind of imagine as, you know, Albert Wenger's book, The World After Capital, we're getting to a point where like capital, lots of kinds of capital, especially I think this, the thing that we're talking about now is financial capital, where money itself, once that becomes abstracted into these weird forms, then it can become abundant. We get like these weird capital as a service and all these kind of new versions of reality that are changing the very nature. A thing that I want to check with you on is, so I like what you said about the kind of my old mentor called startup vertigo where you have this dream of like what the future could look like, and especially for something like consensus with the blockchain ecosystem, it's like that dream is like total restructuring of how society, the political, economic, and social structures of society work. That is crazy and then you also have your day-to-day stuff like you know we're in this room and the AC's not on it's kind of hotter or so you have this funny difference between those two things something that I love to check with I think the final piece and the final question maybe for today's episode is we talked about so blockchain as kind of organizational technology then we talked about the stories and the myths that can kind of wrap around it another piece here is the kind of organizational design that exists with new blockchain based companies and so for something like firms exist in a given way, something like platforms exist in a different way, something like Uber has a certain kind of way that they treat their both employees and drivers or whatever. For you at consensus, you guys have done a lot of great experimental work around these new kinds of bottom-up, teal, holocratic,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 2389.04,
+      "end": 2405.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "meshocracy kind of organizations. Tell us a little bit about what that experiment looks like, and especially I think for other blockchain listeners What advice would you give them as they're trying to kind of decentralize and kind of change their structure to be more bottom up?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 2405.81,
+      "end": 2406.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 2406.49,
+      "end": 2435.39,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So I don't know if we're qualified at this point yet to give advice, but we certainly have done a lot of work on creating meshocracy. We call consensus the mesh, a mesh of different projects and companies and riffing off holocracy. We use that term. So we take... decentralization seriously wouldn't make a lot of sense to build a hierarchical top-down command and control computer",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 2436.96,
+      "end": 2498.71,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "software company and we do lots of other things too that's based on this new decentralizing technology so we we also had the thesis that because information is so fluid because entrepreneurs are so capable barriers to entry to putting a startup together are so low. And now that we can tokenize projects and fund things with capital from around the world, they've gotten even lower, that it just doesn't make sense to try to stand up a big monolith like a Google or an Apple anymore. So the thesis going into this was that we would be, instead of setting up a project, that would be run by a department and those people would be employees of the corporation. They would never own the product that they built. We would do our best to enable every project, so a product project,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 2500.27,
+      "end": 2504.99,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to have a chance at externalizing, become their own legal entity.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 2507.45,
+      "end": 2522.97,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "contributors to that project would have significant direct equity in that project. Consensus would retain equity in that project, which share the same DNA. And together we would build an ecosystem of these different components that teams still communicate well with one another,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 2524.68,
+      "end": 2631.52,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "cooperate, collaborate, interoperate. And so that's worked out reasonably well so far. It continues to evolve. And the idea is that we want to keep doing that to the point where it's sort of a radical new construct. We have a team consensus labs that is helping our different product teams essentially wrap themselves in APIs and attach service level agreements to those APIs. Open law can be attached as a service level agreement. And so that's one way for our spokes, our product teams to define themselves well in the mesh and they're free to externalize via token launch or success revenue or other kinds of external investment. But we're also, we think we're pioneering how a finance department will work in this more decentralized world and how HR will work and how marketing will work. And so we're starting to try to wrap those kinds of services and APIs, and ideally enable them to externalize some of what they offer to our internal projects. And so we're doing so many things that it's starting to get a little fuzzy about what a consensus project is. So we have our internal and dogenously created product teams. We call them spokes, and they're obviously consensus core projects, but We're venture investing in projects. We're token launching our own internal projects and external projects. We security audit code from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 2631.52,
+      "end": 2631.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "different",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 2631.78,
+      "end": 2641.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "projects. We're educating and but start placing blockchain engineers into different projects. So as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 2642.31,
+      "end": 2643.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "external",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 2643.63,
+      "end": 2676.0,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "entities start using our, maybe we venture fund them and then we token launch them after that and we security audit their code and oh by the way they want to use our decentralized employment organization software and our balance three accounting and so I think we're gonna get to the point where this decentralized relatively flat mesh of different projects and companies will become permissionless to attach your company to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 2676.0,
+      "end": 2676.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 2676.54,
+      "end": 2679.05,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so that's it's gonna be fun",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 2679.05,
+      "end": 2680.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 2680.58,
+      "end": 2681.22,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "way you get there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 2681.76,
+      "end": 2682.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 2682.12,
+      "end": 2721.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "I agree with that. And like you said, you guys have done the, I mean, it's crazy that something like consensus. It's a thousand-person company. You guys really does have this interesting, you know, bottom-up vibe with these circles, with the API wrappers on top of them, kind of in an Amazon way, but probably even more aggressive. And so what would you say to someone? So I know that there are lots of people who are working on their... on various blockchain companies and they want to, they're 10 people or they're maybe getting up to 100 people and they're trying to do some kind of things like this, to leverage the crowd, to do whatever. What would your recommendation to them be or any kind of big learnings, especially around that 50 to 100 person zone where you're like, here's things that I'd recommend you do?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 2722.64,
+      "end": 2751.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So it's hard to come up with general advice. So we're trying to be horizontal, flat, fluid. hierarchy pops up all over the place. Sometimes it's good and useful. We try to recognize and stay away from rigid structural hierarchy. We've seen it develop in a few projects at consensus, and we've seen those projects where essentially experience tissue rejection",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 2751.37,
+      "end": 2753.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 2753.91,
+      "end": 2779.44,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "some people are trying to structure things their way within that project, and others are like, wait, this is... supposed to be consensus, isn't this supposed to be decentralized? Aren't we supposed to have at minimum voice, if not real direct governance in this project that we're devoting our lives to? And so those situations have worked themselves out quite well over time, but required some attention. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 2779.44,
+      "end": 2780.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "general",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 2780.96,
+      "end": 2788.94,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "advice, open, honest, make sure everybody has a voice, try to figure out those kinds of systems.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 2790.63,
+      "end": 2790.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 2790.95,
+      "end": 2801.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "don't have to vote on everything. So our Governex team is working on liquid democracy systems to enable delegated voting on different issues.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 2804.35,
+      "end": 2819.33,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Try to define an appropriate set of decision makers and make sure that everybody can be aware of what's going on and can have voice when decisions are being made, even if they're not empowered to decide.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 2819.7,
+      "end": 2837.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. Yeah, I like that. I honestly, the point you made there about being open and honest, that is for me, the crucial one. And I know you guys work a lot on emotional intelligence and on communication, things at that Friday. It's like, within any company, whether you're a holocratic or whether you're super top-down, you have to be able to be frank with each other, to be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 2837.64,
+      "end": 2837.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "honest with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 2837.94,
+      "end": 2840.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "each other, and to be curious about what other people are talking about.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 2840.92,
+      "end": 2841.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 2841.28,
+      "end": 2842.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we find that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 2842.14,
+      "end": 2843.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 2843.73,
+      "end": 2875.47,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "whatever reasons, political, power, convenience, so many... parallel conversations are being had about the same topic where people are just trying to understand something or gain an edge in something or manipulate somebody perhaps and we're finding more and more that having larger open discussions it may seem crazy to bring a thousand people into a discussion for a hundred and twenty minutes it's an expensive discussion but if you think about how many",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 2878.07,
+      "end": 2920.17,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "little two-person or three-person discussions that sidelines and how you can feel free to, and I think people are free to ask anything in those open town hall contexts. Know that you will be heard, know that you won't be suppressed in your expression, and know that as we talk through these difficult issues, everybody is on the same page, or at least here's the same words. They may process them differently, I think that's actually the most effective way for us to come into sync. So we're starting to do that more and more, either company-wide or in... sizable but more focus groups.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 2920.41,
+      "end": 2949.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, yeah. A thousand person meeting, that's a big one. So with that, Joe, thank you so much for your time. If you're listening to this, you can, if you go to Consensus.net, you can go check them out. They're hiring for lots of various positions and lots of various interesting things, especially if you're, I mean, they're both on the coding side, on the numb coding side, in the United States, but also all around the world. You can work remotely, whatever. It's very fluid, as we've heard. So definitely check that out. And then, Joe, how can they find you on like Twitter, for example.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 2950.38,
+      "end": 2952.16,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Ethereum Joseph on Twitter.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 2952.3,
+      "end": 2969.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Perfect. Well, Joe, thank you so much. And by the way, one final note to my listeners, if you want to support me in a fluid bottom-up peer-to-peer way, you can go to Patreon.com slash Reese Lamarck. This is patreon.com slash R-H-Y-S-L-I-N-D-M-A-R-K. Okay, thanks, goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 2969.44,
+      "end": 2970.8,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Thanks, Reese. Thanks, Reese. You do a great work.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 2970.96,
+      "end": 2972.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Peace, thank you. Thanks, Joe.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 194,
+    "withheld": 1,
+    "published": 193
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

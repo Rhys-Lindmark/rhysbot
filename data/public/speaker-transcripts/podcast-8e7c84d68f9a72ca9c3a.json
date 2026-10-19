@@ -1,0 +1,5346 @@
+{
+  "schema_version": 1,
+  "id": "podcast-8e7c84d68f9a72ca9c3a",
+  "title": "Dr. Joshua Bongard & Dr. Michael Levin on All You Need to Know About Coexisting With Living Robots",
+  "published_at": "2022-03-28T13:53:08Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/dr-joshua-bongard-dr-michael-levin-on-all-you-need-to-know-about-coexisting-with-living-robots",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/1240134895-the-rhys-show-dr-joshua-bongard-dr-michael-levin-on-all-you-need-to-know-about-coexisting-with-living-robots.mp3",
+  "youtube_id": "-mkC9nGAos0",
+  "youtube_url": "https://www.youtube.com/watch?v=-mkC9nGAos0",
+  "audio_sha256": "9fd7b0c26046a2a577c6e4db56eba3fcf2cb08004d753a03dfb2c35325acd133",
+  "audio_duration_seconds": 2924.8,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 9541,
+    "unknown_words": 322,
+    "unknown_words_fraction": 0.03374908290535583,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 4.5,
+      "end": 5.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 5.1,
+      "end": 15.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everyone and welcome to The Rees Show, where we interview experts to help you understand where technology is headed and how it will impact society as a whole and also your daily life.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 16.34,
+      "end": 16.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Thanks",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 16.82,
+      "end": 18.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so much for learning with us and enjoy the episode.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 21.4,
+      "end": 21.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Today",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 21.86,
+      "end": 30.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I chat with Josh Bondgard and Michael Levin, who are the co-directors of this really crazy center called the Institute for Computationally Designed Organisms.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 30.94,
+      "end": 31.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 31.42,
+      "end": 41.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this is part of our series on how we're going to rewrite all of biology in the biosphere. And Michael and Josh are maybe the most futuristic about it of all of my conversations.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 42.7,
+      "end": 43.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "One",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 43.14,
+      "end": 61.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "idea that really stuck with me that you'll learn about today is this idea of morphology space, which is that there's lots of physical possibilities for how animals and robots can exist. There's cats and pine trees. There's like robots, like drones that are around. But we've really only explored a small part of morphology design space thus far.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 62.44,
+      "end": 62.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 62.88,
+      "end": 66.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "now, everything around us is just from natural selection, from Earth from 4 billion years.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 67.28,
+      "end": 67.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 67.8,
+      "end": 71.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "in the next 100 plus years, we're going to create",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 71.54,
+      "end": 72.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 72.52,
+      "end": 86.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "bunch of crazy different organisms that exist, organisms and robots all around us, not just from natural selection, but from AI and other things. And so we're going to live in this new kind of men-and-black reality where everything around us is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 86.72,
+      "end": 87.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 87.68,
+      "end": 93.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "just humans and the plants and animals we're used to, but also are all these computationally designed organisms.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 94.4,
+      "end": 94.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 94.92,
+      "end": 119.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that will be a crazy future. So we chat about that and many other things. Hope you enjoy the episode. Hello, listeners. My name is Reese Lindmark, and I'm the founder of Root, and welcome to the Rees Show. And today I'm excited to chat with two amazing folks. We have Josh Bondgard and Michael Levin. And there are these co-directors of this really cool new institute, the Institute for Computationally Designs, which is, you may have guessed it, a research center for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 119.22,
+      "end": 120.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "organisms",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 120.38,
+      "end": 125.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that are computationally designed. So we're going to chat a lot about that today. Josh and Michael, thanks for being on show, and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 125.89,
+      "end": 126.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Thanks for having us,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 126.77,
+      "end": 126.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Reese.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 127.93,
+      "end": 139.81,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Woohoo. Your thank yous were roughly at the same time, which is perfect. And by the way, this is one of my first co-this is a three-person interview. So this would be kind of fun to see us all kind of navigate this. You all are kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 139.81,
+      "end": 140.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "two",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 140.27,
+      "end": 151.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "halves of the same brain slash maybe 1.5 brains each for three brains total. I'm not sure how to do the math. So we'll explore that today. Before we dive into some of those computationally designed organisms,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 151.93,
+      "end": 152.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 152.11,
+      "end": 153.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "guess I want to ask each of you like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 153.9,
+      "end": 154.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 154.36,
+      "end": 163.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, you each have this weird perspective of both the computational side, but also the biology side. And maybe starting with Josh, what is like the through line that ties all of your work together?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 164.62,
+      "end": 165.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 165.06,
+      "end": 175.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "all the work that goes on in my lab falls under this heading of AI-driven design. If we turn over some of the increasingly exotic creatures and systems and buildings and bridges and materials",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 175.66,
+      "end": 176.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 176.3,
+      "end": 180.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "our society is designing, it's getting harder and harder for a human engineer to figure out how to do it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 180.58,
+      "end": 181.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 181.02,
+      "end": 182.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "let's see what an AI comes up with.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 183.52,
+      "end": 183.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 183.9,
+      "end": 193.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it, cool. So it's like, let's point the AI at the design and have them make it. You know, I'm not very good at designing stuff, so let's have the AI do it. And then Michael, for you, what's the three line that ties all of your work together?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 193.96,
+      "end": 200.64,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah, basically everything that we do in my group, and some of which is bench biology and some of which is theory and so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 200.64,
+      "end": 201.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 201.88,
+      "end": 208.82,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is fundamentally it's all about understanding how it happens that some physical things in the universe have minds. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 208.82,
+      "end": 209.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 209.26,
+      "end": 216.76,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "really interested in intelligence. I want to know how. scaling works in terms of competency, how small subunits like cells or other things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 217.0,
+      "end": 217.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 217.28,
+      "end": 220.76,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "all bags of cells, right? We have this unified perspective, but we're really a collection of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 220.76,
+      "end": 221.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "various",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 221.38,
+      "end": 230.04,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "cells, some of which are neurons. And so how does that happen? And what kind of bodies can exist? What kind of minds can inhabit those bodies, all those kinds of questions.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 230.62,
+      "end": 231.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Interesting. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 231.78,
+      "end": 232.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 232.5,
+      "end": 243.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "like, Josh is the like designing side. And then Michael, it sounds like here's almost more of like an understanding side. It's like how does the mind work or something? Is that correct?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 243.96,
+      "end": 244.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 244.26,
+      "end": 258.06,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "mean, that's certainly part of it. The thing is that what keeps us honest in terms of how do we know whether any of our theories are any good is that our outputs are at least supposed to be advances in regenerative medicine.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 258.54,
+      "end": 258.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 258.94,
+      "end": 269.4,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "our, right, so my lab is trying to understand the collective intelligence of cells, for example. And if we knew what we were doing, we would have good theories about how to make these cells do what we want them to do.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 269.62,
+      "end": 269.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 269.86,
+      "end": 273.3,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that would be the equivalent of the design, you know, sort of side, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 273.76,
+      "end": 278.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it, cool. Yeah, I like the, and for me as person, I, you know, was at the MIT Media Lab for a bit,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 279.06,
+      "end": 279.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 279.34,
+      "end": 289.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I never really, like, fit in there in the sense that I was like, it's too, like, academic for me. And so it's like, for me, when I hear more, like, applied research center, I get more excited, like, just the applied side I get more excited about. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 289.68,
+      "end": 290.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 290.5,
+      "end": 298.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "other kind of funny thing with your collaboration with the two of you is that. You're collaborating this way where you got like kind of a biologist, Michael, and the kind of computer science, you know, Josh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 298.92,
+      "end": 298.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 299.18,
+      "end": 302.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "how did you all start to collaborate together and what has that look like?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 304.77,
+      "end": 306.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Mike, do you want to tell our origin story?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 307.51,
+      "end": 342.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Sure, sure, yeah. So I've, you know, I've been, I've been following Josh's work since the beginning. I thought it was, I thought it was amazing. And I thought it was exactly what we needed in biology. And I think our first actual, you know, sort of encounter was I put on, I put on this little conference and invited, you know, four or five people that I thought were, you know, really doing breakthrough things that I thought could be. could lead to something big. And so that's the first time we met in person, but I've been following the work for, you know, forever.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 343.95,
+      "end": 344.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 344.03,
+      "end": 344.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I obviously",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 344.65,
+      "end": 347.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "knew about Mike's work as well. And,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 347.49,
+      "end": 348.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 348.07,
+      "end": 388.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, as a roboticist and someone who works in the AI space, we're obviously always bio-inspired, right, trying to borrow ideas from nature to make smarter robots and AI. And as I learned more about Mike's work and looked at, you know, the work that they were doing, it wasn't necessarily that they were. viewing organisms as, you know, raw materials to learn hypotheses was also treating them as machines or agents in and of their own right, creating these crazy, you know, animals and organisms that had never existed on Earth before. It didn't look that different from what roboticists and researchers and AI were trying to do. And the more I learned about Mike's work, this distinction between biology and computer science",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 388.19,
+      "end": 388.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "started",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 388.95,
+      "end": 390.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to blur, and that's just...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 391.02,
+      "end": 391.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 391.46,
+      "end": 394.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "lines become blurrier the further we've collaborated together.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 395.1,
+      "end": 395.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 395.58,
+      "end": 404.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I love that. It's funny. It's like, well, A, I think so much of it is just these like weird little terms, like the phrasing, the framing at the beginning has all kinds of downstream effects. It's like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 404.5,
+      "end": 404.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 404.9,
+      "end": 410.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "framing, you know, the biological units as agents or machines",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 410.22,
+      "end": 411.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "makes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 411.12,
+      "end": 433.41,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you think about them in a different way instead of like thinking of it as some kind of like an organism or something. And then also it makes me think, yeah, I mean, it's like, this underlying perspective of as we've learned about obviously DNA, you know, like 50, you know, 75 years ago. And it's like, okay, what are, yeah, everything is just kind of computationally driven information processors. And so you can look at it from one perspective or the other, but that's kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 433.41,
+      "end": 433.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 433.87,
+      "end": 444.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it's turtles all the way down. So thinking about specifically what, you know, the work that you all are doing now, which is, and to kind of frame it both for the audience and for you all,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 444.89,
+      "end": 445.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 445.09,
+      "end": 448.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of think of this is like the goal for the audience. is to help them understand",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 448.56,
+      "end": 449.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 449.0,
+      "end": 459.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of how synthetic biology might impact their daily life and also society as a whole in the coming decades. And so with that in mind, could one of you two kind of, maybe Michael, do you just want to explain what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 459.56,
+      "end": 460.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 460.24,
+      "end": 464.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a xenobot and what is this institution for computationally designed organisms?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 465.26,
+      "end": 465.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 466.5,
+      "end": 475.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So maybe let's take a step back and start with what you were just saying about how it's going to impact people's lives, right? So one thing to understand is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 476.29,
+      "end": 476.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Pretty",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 476.85,
+      "end": 494.51,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "much every problem in medicine with perhaps the exception of infectious disease. So we're talking about birth defects. We're talking about traumatic injuries, losing limbs, cancer, degenerative disease, aging. All of these things would go away and be completely resolvable",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 494.51,
+      "end": 495.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 495.17,
+      "end": 500.71,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we knew the answer to the following question. How do collections of cells decide what they're going to build?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 500.75,
+      "end": 501.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 501.35,
+      "end": 511.59,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "if we could convince cells to build new organs, all of this stuff would be solved. So what keeps, so for people, you know, listening to this, right, you're all going to get older. We're all going to experience",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 511.59,
+      "end": 512.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "various,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 512.17,
+      "end": 514.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you know, various issues. Yeah. And unfortunately.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 515.83,
+      "end": 538.07,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And what keeps us from really radical advances in regenerative medicine is really fundamental knowledge gaps about this, about this question. Right. It's kind of widely believed, and biologists perpetuate this by, you know, our developmental biology textbooks, let's say make it sound like all of this is solved, right? You have this beautiful textbooks where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 538.07,
+      "end": 538.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "everything",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 538.77,
+      "end": 542.23,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it looks like that by paying attention to the genetics and to the molecular biology,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 542.35,
+      "end": 542.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 542.75,
+      "end": 555.97,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we've kind of have a handle on this stuff, right? And we can dig into this, but I'm here to tell you that we don't have a handle on it. There are major, major, like major questions that are completely, deep areas of deep ignorance.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 556.37,
+      "end": 556.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 556.97,
+      "end": 561.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "what we need to understand is not just the hardware of life or the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 561.85,
+      "end": 563.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "materials",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 563.35,
+      "end": 572.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of which it's made and how all the little proteins and pathways and everything else to act. But actually, how do they know what to do, the informational side of things? And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 572.73,
+      "end": 573.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 573.39,
+      "end": 576.51,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I hope this institute is going to do is use",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 576.51,
+      "end": 577.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 577.03,
+      "end": 581.13,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "medium of synthetic morphology, meaning we're not just going to look at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 581.13,
+      "end": 581.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 581.63,
+      "end": 588.21,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "few examples that life has given us as these evolved like standards model species, which is what all developmental biology",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 588.21,
+      "end": 588.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "has",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 588.81,
+      "end": 598.0,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "been doing. We're going to make new ones because we all know that by making new thing, by making things from scratch, you learn about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 598.0,
+      "end": 598.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 598.56,
+      "end": 599.84,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "going on and how much you understand it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 600.02,
+      "end": 600.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 600.5,
+      "end": 609.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we're really going to crack what I think of as the software of life, right? The really important addition to understanding how all the mechanisms work.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 610.19,
+      "end": 610.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "How",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 610.45,
+      "end": 621.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "do the algorithms work? How do any of these things know what to do, right? What's the information? What's the computation? And then what are the interventions? How do we get it to do what we want it to do? So that's what I hope this institute will do.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 621.73,
+      "end": 626.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. And let me, let me pause you for a second. That's a great overview. And I love the kind of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 626.37,
+      "end": 627.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 627.51,
+      "end": 643.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of an interesting thing. It's like, yeah, we have. in our bodies, everything is degenerating. And it's like, oh, what if we use these induced pluripotent stem cells or whatever to make a new retina or something? It's like, let's just like rebuild the things, um, these collections of cells to like build new things for ourselves. And it's so interesting. I think that like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 643.23,
+      "end": 643.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "part",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 643.81,
+      "end": 646.65,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of, I think a really powerful perspective that you both bring here is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 646.65,
+      "end": 647.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 647.27,
+      "end": 648.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "idea that we have,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 648.45,
+      "end": 649.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 649.11,
+      "end": 657.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of funny because yeah, we have like the DNA which builds the protein. And then the protein goes and like, does something, but how does it know what to do? You know, like, where is it? Like, what is that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 657.29,
+      "end": 657.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 657.77,
+      "end": 658.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think that there's something",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 658.57,
+      "end": 659.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 659.19,
+      "end": 663.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this kind of like information processing piece, which is really interesting. And as you said there, Michael, it's like, how do we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 663.93,
+      "end": 664.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "trying",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 664.65,
+      "end": 668.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "to understand our bodies is so complicated because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 668.23,
+      "end": 668.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 668.87,
+      "end": 678.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of evolved over, you know, four billion years or whatever versus just like, let's like treat this in a lab and just do some synthetic morphology. So that'll kind of make sense to me. Is there, and then maybe,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 678.33,
+      "end": 678.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 678.37,
+      "end": 685.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, Josh, how does the xenobot kind of fit into that vision? of, you know, synthetic morphology.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 686.13,
+      "end": 686.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 686.53,
+      "end": 704.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "as you were just saying, right, it's comfortable to sort of say, well, let's just decide the genes encode this part of the body and that part of the body and we'll write this nice textbook and, okay, I feel better. It's very intuitive, very simple. You know, there's some details to figure out. And as Mike mentioned, it is definitely not that. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 704.17,
+      "end": 704.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 704.95,
+      "end": 709.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "do we do? If we want to achieve, you know, these goals that Mike has mentioned,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 711.1,
+      "end": 720.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "How do we design? How do we intervene? Where do we push? Where do we press? Where do we twist? This is something that I and my students have thought about for a long time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 721.24,
+      "end": 721.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 721.64,
+      "end": 741.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "need to bring in one of the most recent tools that humans have invented, this thing called AI, which maybe, and this is still not proved, that maybe it... can figure out some of these interventions better. Maybe it can build from cells and tissues and blood vessels and genes and bioelectric networks",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 741.36,
+      "end": 742.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 742.32,
+      "end": 748.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the way that humans built with concrete and metal and plastics and ceramics and electronics in the 20th century.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 748.72,
+      "end": 749.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 749.24,
+      "end": 756.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "moving into the space where the materials are extremely powerful. They are competent, as Mike can tell you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 756.74,
+      "end": 757.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "They",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 757.02,
+      "end": 760.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "do things on their own and we're not quite sure what they will do under what conditions. They are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 760.72,
+      "end": 761.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "not...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 761.32,
+      "end": 765.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "dead materials like steel and plastic and electronics that will just sit there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 765.84,
+      "end": 766.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "until",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 766.34,
+      "end": 769.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we push them into modules and get them to do what they want.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 769.44,
+      "end": 769.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 769.96,
+      "end": 772.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is living and lively material",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 772.22,
+      "end": 772.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 772.78,
+      "end": 776.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "building stuff from that. I think we're going to need some help.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 777.18,
+      "end": 777.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Cool.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 778.16,
+      "end": 782.96,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I mean, one of the funny things that a lot of people don't think about is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 782.96,
+      "end": 783.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 783.76,
+      "end": 788.96,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "mean, developmental biology has some beautiful, beautiful work over, you know, many, many decades, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 789.35,
+      "end": 789.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 789.57,
+      "end": 791.91,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "if Josh were to call me up and he would say,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 792.29,
+      "end": 792.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 793.09,
+      "end": 806.09,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you know, you're a developmental biologist. I want a robot that grows its leg back. Can you point me to something in this textbook that's going to help me out with this? There's literally nothing. There is almost nothing in a developmental biology textbook",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 806.09,
+      "end": 806.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 806.59,
+      "end": 828.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I could hand over to someone and say, here, this, you can use this to make something that does something. That's, you know, that's a major gap here, right? We should be our. Our goal should be to pull out these general engineering principles where somebody could say, oh, I see, so I should do this, this, and this, and then I'll have, instead we handle, you know, the best we can do is hand over a list of genes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 829.4,
+      "end": 829.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 829.76,
+      "end": 837.44,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "he would say, well, well, where's the magic? Is it these ones? Like, nah, it really kind of doesn't matter what any of them are. And then what do we have, right? So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 837.56,
+      "end": 837.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 837.9,
+      "end": 845.92,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's where I think there's a, there's a major opportunity here is to actually understand, get the information that's needed to cross fertilize these fields.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 846.29,
+      "end": 848.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, cool. Yeah, it's like, as you said, it's like the,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 849.37,
+      "end": 849.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 850.21,
+      "end": 864.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "hey, I want to build this bit. And we know the genes are very simple in somewhere. It's like, you know, blue eye, brown eye. You can do like some simple things like that. But then once it gets to these more complex kind of physical things, it's like, yeah, we have no idea. So talking about a xenobot for a second. And for our listeners, it's kind of.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 864.28,
+      "end": 864.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 864.5,
+      "end": 900.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "to give you the TLDR here, it's kind of a, it's these beautiful little creatures where you say, okay, we want this little creature to, it's made of a frog skin cells and heart cells. And you say, hey, let's like design this little creature. It's very small. It has a bunch of these little cells. You make it in the kind of the wet lab. And then it can go around like do stuff, like push the plastic into the into like a little circle or like do, you know, like move a little thing somewhere, kind of like run around. Is that? And it's weird because it's. this little thing that kind of looks like an organism, but it's not, it's like, it's designed by, you know, Michael and Josh and really by the AI. And so is that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 900.89,
+      "end": 901.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 901.21,
+      "end": 904.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that my, is that right? Is that what a xenobotist? I kind of get it right.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 906.22,
+      "end": 921.54,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I mean, physically that's what it is. It's a new proto-organism made from skin cells or, or skin and muscle cells. But the, I think, I think the more significant piece of this is this, if I, if I were to ask you,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 921.88,
+      "end": 922.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "What",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 922.42,
+      "end": 951.86,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "do the skin cells of a frog embryo want to do? Right? Usually you'll get, you'll get two answers. Either that's a stupid question, nothing. They don't want to do anything. Or, well, what they want to do is to be a nice two-dimensional outer layer on a tadpole and keep out the bacteria because that's what evolution has evolved them for, right? What the xenobots are are an experimental answer to this question that tells us that both of those are wrong. What happens is if you take those cells",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 951.86,
+      "end": 952.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 952.52,
+      "end": 963.98,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we don't add anything, we don't add new genes, we don't edit their genome, we don't add nanomaterials, we don't do any of this weird stuff. What we do is we liberate them from the instructive influence of the other cells.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 964.1,
+      "end": 964.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 964.5,
+      "end": 969.48,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we really ask them, okay, what do you want to do? You're off by yourself. You're in this novel environment. What do you want to do?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 969.9,
+      "end": 970.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 970.12,
+      "end": 992.22,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it turns out that actually what they will actually do, when they're not forced into this kind of boring two-dimensional surfacey life, they actually want to be this other organism that runs around and does interesting things. And then it turns out from, and Josh will explain all this, we can use AI to actually manipulate that process and get them to do slightly other things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 992.38,
+      "end": 992.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 992.78,
+      "end": 997.24,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we can start to play the role of evolution at how many millions of years to.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 997.86,
+      "end": 998.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 998.22,
+      "end": 1002.54,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "figure out how to get the other cells to sort of beat them into submission to be skin.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1002.74,
+      "end": 1003.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1003.1,
+      "end": 1021.86,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "now we're starting to, we want to pull back. So the idea is let's pull back and say, what is the default that they would like to do? And this is the default. It's amazing. Nobody would have guessed this, right? And then say, okay, now can we do, can we do the other thing, which is to figure out how to get them to do something else? So what they, what they really are, are a technology that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1021.86,
+      "end": 1022.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1022.9,
+      "end": 1029.33,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "starting to show us how to. really understand what's what's behind this collective intelligence of cells",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1029.33,
+      "end": 1030.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1030.11,
+      "end": 1034.83,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "how to you know how to manipulate it, how to communicate with it, how to study it. That's what I think they really are.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 1035.27,
+      "end": 1041.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Cool. And Josh, before you talk about the like how to like make them do certain things, I just love that perspective, Michael. Like, okay, it's like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 1041.47,
+      "end": 1041.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 1042.11,
+      "end": 1054.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this is really, you all are just like, you know, social justice activist for skin cells. You know, it's like free the cells for they've been under the. Poor cells. They've been, oh, and they've been mean. They actually could be a, they need to be liberated, you know.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 1055.95,
+      "end": 1056.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 1056.31,
+      "end": 1058.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "love it. I haven't heard that take on it yet. That's great.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 1059.03,
+      "end": 1059.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I love it. I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 1059.43,
+      "end": 1060.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "guess liberate the skin cells.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 1061.07,
+      "end": 1061.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We're going to make some",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 1061.63,
+      "end": 1063.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "slogans in the lab tomorrow.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 1063.21,
+      "end": 1078.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Exactly. You got to spread the meme. So, so Josh, now that we have these skin cells that actually are liberated and they're their own people now, which is their own, you know, what, so if you want to get them, I know, like some of the what I've read about xenobots, and am I saying right, xenobots? I heard, or how do you say it?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 1080.01,
+      "end": 1080.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 1080.53,
+      "end": 1084.89,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "mean, I say Zenobot, but either way is okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 1084.89,
+      "end": 1085.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "What do you say,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 1085.63,
+      "end": 1086.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Josh? Do you say Zeno or Zeno?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 1086.75,
+      "end": 1087.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 1087.09,
+      "end": 1094.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like saying both because there's actually two meanings of the Zeno and Zinobod, right? There's the fact that these are made from Xenipus-Lavis.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 1094.93,
+      "end": 1095.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 1095.39,
+      "end": 1102.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Zeno or Zeno is also the Greek cognate of, you know, stranger, newcomer, alien. You know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 1102.63,
+      "end": 1103.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "xenophobia",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 1103.21,
+      "end": 1103.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 1103.55,
+      "end": 1104.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of. Yeah, exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 1105.93,
+      "end": 1107.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Xenomorphs from the alien movies.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 1107.83,
+      "end": 1108.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 1108.49,
+      "end": 1108.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 1108.63,
+      "end": 1109.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, those two,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 1110.17,
+      "end": 1110.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 1110.57,
+      "end": 1111.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "good to pronounce it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 1111.41,
+      "end": 1111.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 1111.83,
+      "end": 1115.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "two different ways to remind ourselves that there's at least two different meanings hidden in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 1115.63,
+      "end": 1116.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the name itself.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 1116.65,
+      "end": 1116.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Good,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 1116.87,
+      "end": 1116.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "good,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 1117.05,
+      "end": 1125.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "good. So either are. So with these Zinobots, how, I know that like you can get them to like, push like plastic together or like tell me josh how do you get them to like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 1125.27,
+      "end": 1125.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 1125.95,
+      "end": 1127.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "like to get them to do things yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 1127.79,
+      "end": 1128.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "yeah so okay",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 1128.67,
+      "end": 1129.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 1129.77,
+      "end": 1137.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "can ask questions about what can we get xenobots to do we can also ask the question of what you know what are zinobots what are they capable of what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 1137.69,
+      "end": 1138.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kinds of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 1138.17,
+      "end": 1140.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "forms can they take on what can they do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 1140.61,
+      "end": 1141.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 1141.35,
+      "end": 1145.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "can if we're going to ask the question of what they can do we can break that down into two categories",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 1145.39,
+      "end": 1146.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 1146.45,
+      "end": 1160.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "can they do that's useful for people So if we're going to focus on the bot part of xenobot, that's why we make robots or that's why humans make any machines, is they do something kind of on their own that's helpful directly or indirectly for people.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 1160.9,
+      "end": 1161.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 1161.42,
+      "end": 1193.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 1193.66,
+      "end": 1194.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 1194.1,
+      "end": 1194.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is itself a tool.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 1195.4,
+      "end": 1195.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "What",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 1195.8,
+      "end": 1207.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Mike has been mentioning, I think, is the much deeper implication of xenobots is we can ask the AI to design xenobots that are new scientific tools. They're like a new telescope or a new microscope",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 1207.22,
+      "end": 1208.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 1208.16,
+      "end": 1213.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we might be able to pull new understanding of biology, mind, life",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 1213.52,
+      "end": 1214.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "out",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 1214.06,
+      "end": 1215.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of xenobots more easily",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 1215.4,
+      "end": 1216.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "than",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 1216.24,
+      "end": 1228.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we can from natural organisms. If you want a xenobot that chases down microplastics, you can ask questions like, how big do they have to be, what shape do they have to be, how many have to be together, how do they have to cooperate?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 1228.9,
+      "end": 1229.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 1229.34,
+      "end": 1234.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "can ask the same thing. If you want to learn new biology, what should that xenobot look like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 1234.28,
+      "end": 1234.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 1234.92,
+      "end": 1238.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "be more conceptually transparent, to more easily give up its secrets",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 1238.82,
+      "end": 1239.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "compared",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 1239.86,
+      "end": 1242.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to naturally evolved organisms? And I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 1242.44,
+      "end": 1243.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "going",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 1243.26,
+      "end": 1248.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "forward, that's something that the Institute is going to really focus on. It's going to be extremely exciting.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 1248.49,
+      "end": 1250.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Cool. I mean,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 1250.31,
+      "end": 1255.01,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it's, it's, it's very interesting, you know, what Josh was just saying, because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 1255.01,
+      "end": 1256.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "these",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 1256.25,
+      "end": 1262.01,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "standard model systems, right, they lull you into a false sense of security because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 1262.01,
+      "end": 1262.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 1262.51,
+      "end": 1268.89,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "see a frog egg and, and it's pretty reliable. It's pretty good at becoming a taphole every single time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 1268.91,
+      "end": 1269.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 1269.33,
+      "end": 1278.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you say, Yeah, that's obvious. What else would it do? You know, we get it. The tap, you know, acorns make oak trees and frog eggs make frogs, right? It's got to be. It's got to be. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 1278.88,
+      "end": 1279.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 1279.54,
+      "end": 1284.98,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "xenobots have exactly the same genome as a standard frog. And yet",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 1284.98,
+      "end": 1285.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 1285.54,
+      "end": 1287.48,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "not tadpoles. They're xenobots. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 1287.48,
+      "end": 1288.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 1288.7,
+      "end": 1310.08,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it allows you to do is to question, right? It allows you to question, like, how much do I really know? What could I have really predicted? And. The reality is, you know, I don't know if this is common knowledge, but, you know, given a genome, you can't actually tell anything about the shape of the organism, right? You can cheat and compare it to other genomes that you know what they are, and then you can sort of figure it out.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 1310.28,
+      "end": 1310.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 1310.48,
+      "end": 1317.96,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "if you didn't know, you couldn't figure it out from the genome, nor could you figure it out. If I shrunk you down to a tiny size and put you inside an embryo,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 1318.26,
+      "end": 1318.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 1318.52,
+      "end": 1344.8,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you sort of looked around at what was going on, all the noise, the cells running around, all this stuff going on. If you didn't even, if you didn't already know what embryonic development was and the fact that it was going to be reliable, there's no way in hell you would say, oh, I get it. This whole thing is going to make the same thing every single time. It's going to be a fish. You would never know that, right? At that level of. And so, you know, you get lulled into this kind of like feeling that we know what's going on, but just because standard, standard development is so reliable.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 1345.4,
+      "end": 1345.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 1345.8,
+      "end": 1350.52,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's why I think using these synthetic, synthetic models is so, so instructive.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 1350.64,
+      "end": 1351.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 1351.18,
+      "end": 1362.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's cool. It's kind of like a different version of like, It reminds me a bit of some of the work that's happening with artificial intelligence safety and these transformer models where what they're doing is they're simplifying",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 1362.02,
+      "end": 1362.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 1362.78,
+      "end": 1397.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and they're trying to do mechanistic interpretability where they really look deep inside the system. And they say, okay, what are each of these different neurons actually? Like, what are these little like circuits doing? What's the attention layer doing? And they're actually able to look at the, and instead of looking, you know, GPT3 has 96 layers and they're looking at zero, one, and two layer systems. It's like making it very, very simple. getting kind of the mechanistic interpretability that you all are doing, and then being like, okay, now we can actually see what these things do and we combine them into more complex things later. We shouldn't necessarily just take this super complex thing that looks simple from a standard model perspective, but it's actually more complex. Is there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 1397.3,
+      "end": 1398.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 1399.45,
+      "end": 1401.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so let me understand one thing about ZinaBoss. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 1401.73,
+      "end": 1402.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 1402.17,
+      "end": 1402.41,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "get",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 1402.41,
+      "end": 1403.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "these",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 1403.05,
+      "end": 1416.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "cells. So, hmm, what's the way to say this? Is there? You know, when you look at like pictures for xenobot on the internet or whatever, you see this little, you know, this little xenobot which has the skin cells and has the heart cells. Is the thing that makes it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 1416.32,
+      "end": 1417.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "go?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 1417.88,
+      "end": 1418.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 1418.26,
+      "end": 1418.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 1419.5,
+      "end": 1437.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "if I wanted it to do something different, do I change? It sounds like you're not changing the genome. Is all you're doing changing the like arrangement of cells in like three dimensional space? Or is what you're doing like doing some of these kind of biochemical, bioelectrical signaling? Like how do you make it? How do we, we will make these things do different things?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 1438.92,
+      "end": 1454.46,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So ultimately, of course, there will be, you could, on top of this, you could put everything. You could put synthetic biology circuits. We're going to, of course, do bioelectric signaling. We're going to do all that. For now, the thing to understand, and there's two kinds of Zenobots. There's the kind that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 1454.46,
+      "end": 1455.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 1455.14,
+      "end": 1485.19,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a bit of, it's got skin and then it's got some muscle. And what they do is, and they're sculpted to have these little legs and they sort of walk along, right? That's one kind. There's the other kind, which is just skin, no muscle at all. And what they do is they have these little hairs called cilia that beat, and they basically row and they swim, you know, they swim through the water like a marine larvae. So the thing to keep in mind is that baseline, like most of the heavy lifting so far is done by the cells themselves. Like they are already super competent",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 1485.19,
+      "end": 1485.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 1485.85,
+      "end": 1487.13,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "getting together with others.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 1487.29,
+      "end": 1487.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 1487.47,
+      "end": 1512.49,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "mean, just think about it. We take these skin cells. We put them in a separate environment. what could they have done? Well, they could have crawled away from each other and just like been independent. They could have formed a flat monolayer the way that cell culture does. They could have died. There's a million things they could have done. Instead, what they do is they get together and they form this thing and they repurpose their hardware, meaning these the cilia and some other stuff. They repurpose that towards new functionality.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 1513.61,
+      "end": 1514.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 1514.01,
+      "end": 1546.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "didn't have to tell them to do that, right? This is what Josh was saying before about this is a, it's, uh, It's an agential material, meaning that you're not working with passive components. You're working with something that has an agenda. They like, cells like being next to other cells. They like forming sheets that are polarized in a particular way, right? And then everything we're going to do is on top of that. Then whatever you're going to do, let's say, sculpt them the way that, you know, Doug Blackiston does is when he sculpts these cuts away certain things. So what's happening here is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 1546.37,
+      "end": 1546.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 1546.9,
+      "end": 1550.2,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "We work exactly the same way that evolution works",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 1550.2,
+      "end": 1550.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 1550.96,
+      "end": 1557.2,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "evolution has to also work on top of this material. Evolution doesn't just get to pick all of the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 1557.2,
+      "end": 1558.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "micro",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 1558.22,
+      "end": 1569.24,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "level details. It's already dealing with cells that natively want to do certain things. They're going to do certain things. And all you can do is come up with ways to modify. It's guided self-assembly. All you're going to do is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 1569.24,
+      "end": 1569.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "come",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 1569.62,
+      "end": 1572.94,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "up with ways to manipulate them, hopefully, into doing something else.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 1573.0,
+      "end": 1573.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 1573.4,
+      "end": 1575.86,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you're not on a blank canvas. You're on this like...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 1576.22,
+      "end": 1576.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 1576.46,
+      "end": 1583.8,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, you're dealing with this with this very rich medium that in the absence of your clever manipulations is going to do whatever it wants to do, right? With it, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 1584.18,
+      "end": 1584.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 1584.36,
+      "end": 1603.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of reminds me of like a toddler or something where it's like, okay, you have a toddler. The toddler wants to eat. It wants to run around. It wants to scream. It's like, if you want to, you could try to get the toddler to like sit and like code something for a little bit. But like probably the toddler just go like run around and be. So it's like it's an agential material. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 1603.28,
+      "end": 1603.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 1603.74,
+      "end": 1604.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "some ways, yeah, it sounds like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 1604.8,
+      "end": 1605.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 1605.18,
+      "end": 1624.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of just like, shove the stuff together and see like, oh, what is this agential material? What? And then that's how that's kind of that reflective perspective of long term. We'll try to make them helpful for humans, but short term, we'll do both in both times. But in short term, we're going to try to just understand what it wants, you know? And so that is, I love the term, agential material there. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 1624.94,
+      "end": 1625.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thinking about.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 1625.76,
+      "end": 1626.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "You mentioned,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 1626.18,
+      "end": 1627.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you mentioned",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 1627.56,
+      "end": 1629.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this metaphor about the toddler, you know, this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 1629.96,
+      "end": 1630.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 1630.36,
+      "end": 1647.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "say in evolutionary robotics, the field that I work in, when you evolve or you get an AI to design a robot, it's like a teenager. It'll do what you want it to do, but in retrospect, absolutely not the way you wanted it to do it. And this exists all over AI, right? It's called perverse instantiation.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 1647.66,
+      "end": 1647.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 1647.94,
+      "end": 1656.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there's hilarious examples, you know, autocorrect fails and, you know, tragic examples. There's been several human pedestrians killed by autonomous cars so far. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 1656.46,
+      "end": 1656.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 1657.1,
+      "end": 1665.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, under all of all of AI and robotics, this huge global infrastructure and economic sectors that we are, you know, calling into being",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 1665.18,
+      "end": 1665.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 338,
+      "start": 1665.86,
+      "end": 1669.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "top of this technology, it's all sitting on top of technology, which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 339,
+      "start": 1669.24,
+      "end": 1670.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "will",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 340,
+      "start": 1670.22,
+      "end": 1680.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "often perversely instantiate what you want it to do. This is extremely, extremely dangerous. Along come Mike and Doug Blackist and Zinobots, which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 341,
+      "start": 1680.19,
+      "end": 1680.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 342,
+      "start": 1680.69,
+      "end": 1681.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "different.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 343,
+      "start": 1681.35,
+      "end": 1681.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "They",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 344,
+      "start": 1681.67,
+      "end": 1698.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "are materials that aren't stupid. If you try and put them together, they fall apart or fall apart hilariously or dangerously, like when you're building with metals and plastics and electronics and deep networks and transformers. They self-organize. They do things that maybe you weren't expecting, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 345,
+      "start": 1698.41,
+      "end": 1698.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 346,
+      "start": 1698.87,
+      "end": 1703.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "don't know that they're necessarily always bad, right? We are biological systems.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 347,
+      "start": 1703.9,
+      "end": 1704.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "They",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 348,
+      "start": 1704.42,
+      "end": 1706.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "are biological systems. There's general things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 349,
+      "start": 1706.9,
+      "end": 1707.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 350,
+      "start": 1707.74,
+      "end": 1716.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we both like to have happen. Hold your shape. You know, don't harm anything nearby. Don't suddenly go out of control. So I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 351,
+      "start": 1716.5,
+      "end": 1717.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 352,
+      "start": 1717.26,
+      "end": 1718.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "going to be interesting to see",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 353,
+      "start": 1718.84,
+      "end": 1720.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 354,
+      "start": 1720.38,
+      "end": 1727.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "or whether perverse instantiation crops up in xenobots and biobots and synthetic biology",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 355,
+      "start": 1727.24,
+      "end": 1728.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in general.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 356,
+      "start": 1728.56,
+      "end": 1728.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 357,
+      "start": 1728.64,
+      "end": 1729.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "think there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 358,
+      "start": 1729.24,
+      "end": 1731.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "ways that it might offer us a path out.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 359,
+      "start": 1732.35,
+      "end": 1732.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 360,
+      "start": 1732.61,
+      "end": 1736.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this fundamental impasse that currently exists in AI and robotics.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 361,
+      "start": 1737.34,
+      "end": 1737.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 362,
+      "start": 1737.78,
+      "end": 1739.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a really interesting perspective. Yeah, because it's like if you have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 363,
+      "start": 1739.98,
+      "end": 1740.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 364,
+      "start": 1740.66,
+      "end": 1743.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "much of the issue with all of our, if we think about,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 365,
+      "start": 1743.52,
+      "end": 1743.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 366,
+      "start": 1743.78,
+      "end": 1748.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, this frame of like meta existential risk where we have these existential risks for humanity, whether it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 367,
+      "start": 1748.26,
+      "end": 1748.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "climate",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 368,
+      "start": 1748.74,
+      "end": 1764.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "change or whether it's artificial intelligence and that becoming too intense and perverse instantiation's there or like, you know, nuclear security and we have, you know, we went from zero to 50,000 nuclear warheads in the world or whatever. or if we think about biotechnology and the cost to,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 369,
+      "start": 1764.88,
+      "end": 1765.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 370,
+      "start": 1765.14,
+      "end": 1778.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, sequence and synthesize and create these kind of bio, um, bio weapons or bio things. It's like all of those issues are things of like these exponential curves. While biology, as you're saying, it has some of these",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 371,
+      "start": 1778.02,
+      "end": 1778.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 372,
+      "start": 1778.98,
+      "end": 1791.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of homeostatic or kind of, um, self chilling, um, mechanisms into it. So it's like, hey, let's just like use these things that are more of a fit. with the way that we want to be instead of doing these things that are kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 373,
+      "start": 1791.98,
+      "end": 1792.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 374,
+      "start": 1792.44,
+      "end": 1795.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "get on exponentials too intensely or something. Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 375,
+      "start": 1797.45,
+      "end": 1799.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I mean, I'm not a biologist, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 376,
+      "start": 1799.25,
+      "end": 1799.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that, as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 377,
+      "start": 1799.95,
+      "end": 1801.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a technologist, that's exactly it,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 378,
+      "start": 1802.19,
+      "end": 1802.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right? Nuclear",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 379,
+      "start": 1802.59,
+      "end": 1816.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "warheads, all these technologies we've developed. They don't have the benefit of biological cells, which have had 3.5 billion years to figure out that you shouldn't explode. You should balance exponential processes against one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 380,
+      "start": 1816.97,
+      "end": 1817.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "another,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 381,
+      "start": 1817.53,
+      "end": 1818.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "dynamic equilibrium,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 382,
+      "start": 1820.29,
+      "end": 1821.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "homeostasis.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 383,
+      "start": 1821.45,
+      "end": 1821.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 384,
+      "start": 1822.17,
+      "end": 1822.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That exists",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 385,
+      "start": 1822.81,
+      "end": 1830.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "throughout biology, and we can just, you know, that that's maybe a more, a safer foundation to build technology on top of.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 386,
+      "start": 1831.09,
+      "end": 1831.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 387,
+      "start": 1831.55,
+      "end": 1831.65,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "cool.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 388,
+      "start": 1832.09,
+      "end": 1832.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Interesting. Yeah, I like that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 389,
+      "start": 1833.33,
+      "end": 1843.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Is there, so maybe taking a step back and for both myself and for the listeners, if we imagine this, you know, for me, I'm writing this book on what information wants, which is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 390,
+      "start": 1843.29,
+      "end": 1843.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 391,
+      "start": 1843.67,
+      "end": 1855.35,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, the history of genes, creating the biosphere and the tree of life and then kind of memes, creating this tree of ideas and the technosphere, both, you know, factories, but also religions and things like that. And now we're in this weird place where we have.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 392,
+      "start": 1856.11,
+      "end": 1856.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 393,
+      "start": 1856.47,
+      "end": 1861.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "ability both for humans and these new kind of artificial intelligence is to kind of rewrite",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 394,
+      "start": 1861.07,
+      "end": 1861.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 395,
+      "start": 1861.53,
+      "end": 1872.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "biosphere in these different ways. And whether it's like creating new xenobots or whether it's changing our DNA, how do you, and maybe starting with Michael, how do you think about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 396,
+      "start": 1872.49,
+      "end": 1873.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 397,
+      "start": 1873.61,
+      "end": 1878.05,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the biosphere is going to change in the next couple decades? Is it going to be,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 398,
+      "start": 1878.13,
+      "end": 1878.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 399,
+      "start": 1878.67,
+      "end": 1882.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, AI designed biosphere? Is that what we're going towards? How do you think about that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 400,
+      "start": 1883.54,
+      "end": 1883.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 401,
+      "start": 1883.98,
+      "end": 1905.49,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think that the, the, biggest change that's going to come is, which I think is going to blow up other things in a way that we haven't even, you know, begun to dealt with with all the revolutions that we've had so far, is that this distinction between, basically a lot of, a lot of terms that are currently thought of as binary.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 402,
+      "start": 1905.71,
+      "end": 1907.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So, you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 403,
+      "start": 1907.21,
+      "end": 1933.78,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, a machine, organism, right? robot, living thing, designed, evolved, all of these things, which seemed like these were good terms that pick out natural kinds that were like truly different. All of that was basically just technological limitations. And now that those limitations are starting to be lifted, we're starting to see that those things are actually not sharp categories at all. In fact, for many of them, it's unclear whether there is something deep",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 404,
+      "start": 1933.78,
+      "end": 1934.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 405,
+      "start": 1934.3,
+      "end": 1945.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it to be dug out and you and, you know, what is that term really going to do for us? at all. And so what we're going to see in the biosphere, I think, is a basically,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 406,
+      "start": 1946.33,
+      "end": 1946.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 407,
+      "start": 1946.85,
+      "end": 1953.79,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, and I've got a beautiful kind of illustration of this that we're using in some of the papers where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 408,
+      "start": 1953.79,
+      "end": 1955.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Darwin",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 409,
+      "start": 1955.15,
+      "end": 1965.01,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "had this phrase, you know, endless forms most beautiful, right? So he's looking out into the natural world and he's saying, wow, look at all the variety here, right? The actual space of possible beings",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 410,
+      "start": 1965.01,
+      "end": 1965.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 411,
+      "start": 1966.08,
+      "end": 1974.28,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So astronomical that all of that stuff is a tiny dot. Okay, all the natural things we've seen so far as a tiny dot. And what's coming is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 412,
+      "start": 1974.28,
+      "end": 1974.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "every",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 413,
+      "start": 1974.9,
+      "end": 1987.56,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "possible combination of evolved material, designed material and software that you can imagine. One of the cool things about life is that it's highly interoperable. So cells from different species will live together fine",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 414,
+      "start": 1987.56,
+      "end": 1988.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 415,
+      "start": 1988.08,
+      "end": 1997.01,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you can, you can, cells will work with electrodes and with weird materials that live on crazy scaffolds. So what we are going to see is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 416,
+      "start": 1997.11,
+      "end": 1997.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 417,
+      "start": 1997.47,
+      "end": 2007.01,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, and already you're seeing some of this cyborgs, hybrots, novel organisms that have different materials at every level from the molecular, from the DNA",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 418,
+      "start": 2007.01,
+      "end": 2007.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 419,
+      "start": 2007.55,
+      "end": 2013.13,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the cells to the tissues, mix and match. Every combination that you can imagine is going to be created.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 420,
+      "start": 2013.57,
+      "end": 2014.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 421,
+      "start": 2014.01,
+      "end": 2019.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "this is going to be very profound because the whole notion of biosphere, right, we already have examples of.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 422,
+      "start": 2020.08,
+      "end": 2020.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "parts",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 423,
+      "start": 2020.52,
+      "end": 2038.38,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of the biosphere modifying other parts of the biosphere, right? That's not new. You know, animals do this to each other. There's, there's, they, they change their niche. They change. They, they deform each other, both on the lifespan of a single individual and of course, evolutionarily. We do it all the time through our activities, even before the technical, technological revolutions.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 424,
+      "start": 2039.3,
+      "end": 2039.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 425,
+      "start": 2039.74,
+      "end": 2067.61,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "this is going to go, this is going to go exponential. And so every possible way of being an agent. with diverse, with highly diverse intelligences, diverse capabilities, different, different senses, different, you know, these things are going to live in different spaces. So all of that, all of that is going to be part of our biosphere. We are going to have to learn to relate to creatures that don't share any obvious phylogenetic position relative to us,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 426,
+      "start": 2067.61,
+      "end": 2067.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 427,
+      "start": 2068.01,
+      "end": 2095.15,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So we know what it's like, you know, you look at something and say, yeah, that kind of looks like a fish. I know what fish are. I know what to do with this. There are going to be things where you'll be surrounded by stuff in your home, outside, everywhere, where you cannot tell what to do with it based on what it looks like and how it got here, right, whether it was it evolved or design. And that's, you know, that makes sense, right? We should have better ways of judging other beings other than what they look like and how they got here. And we are going to have to develop everything from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 428,
+      "start": 2095.18,
+      "end": 2096.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "frameworks",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 429,
+      "start": 2096.5,
+      "end": 2098.44,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to sort of gauge the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 430,
+      "start": 2098.44,
+      "end": 2099.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "intellectual,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 431,
+      "start": 2099.06,
+      "end": 2099.06,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 432,
+      "start": 2102.44,
+      "end": 2121.74,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you know, sort of level of whatever you're interacting with. And, of course, a new ethics for dealing with creatures where, again, you can't just put a line somewhere and say, okay, those are insects, do whatever you want. These are vertebrates. You know, you've got to be nice to them. Like all of that stuff is going to have a major meltdown. We're going to have to reimagine all of that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 433,
+      "start": 2122.32,
+      "end": 2122.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Cool.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 434,
+      "start": 2122.88,
+      "end": 2127.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I love that overview. Josh, what do you think about the, how do you think we're going to,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 435,
+      "start": 2127.48,
+      "end": 2127.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 436,
+      "start": 2127.98,
+      "end": 2130.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "at all, rewrite the biosphere in the coming couple decades?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 437,
+      "start": 2130.92,
+      "end": 2131.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 438,
+      "start": 2131.14,
+      "end": 2133.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think it's exactly what Mike said is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 439,
+      "start": 2133.8,
+      "end": 2135.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is these",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 440,
+      "start": 2135.46,
+      "end": 2137.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "increasingly exotic creatures. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 441,
+      "start": 2137.5,
+      "end": 2138.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 442,
+      "start": 2138.16,
+      "end": 2149.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Mike said, you know, it's everything you can possibly imagine is coming. But it's more than that. It's also the things that we can't imagine. So there are, you know, safe, useful,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 443,
+      "start": 2149.52,
+      "end": 2150.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "safe",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 444,
+      "start": 2150.96,
+      "end": 2154.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and useful machines slash creatures that are deserving of our empathy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 445,
+      "start": 2155.75,
+      "end": 2156.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 446,
+      "start": 2156.15,
+      "end": 2165.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we can't imagine. Where are they, right? It would be great if we could call them into being. They're safe. They're useful. We learn something from them. They are rich our lives. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 447,
+      "start": 2165.41,
+      "end": 2166.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 448,
+      "start": 2166.13,
+      "end": 2181.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in the morphal space? So where in the space of all possible things does it lie? That from a technology point of view, that's the question. How do we tell an AI to go find it? Because if we can't imagine it, you've got to catch 22. You can't go looking.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 449,
+      "start": 2182.26,
+      "end": 2182.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 450,
+      "start": 2182.72,
+      "end": 2190.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what we can do is take this very small point in the space of all possible beings, that is stuff we know about, which now includes xenobots.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 451,
+      "start": 2190.92,
+      "end": 2191.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 452,
+      "start": 2191.3,
+      "end": 2202.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we can tell an AI to say, See all this stuff over here? Head in the other direction. Get as far into the morphal space. Bring us back the most alien creatures you can find.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 453,
+      "start": 2202.99,
+      "end": 2203.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "If",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 454,
+      "start": 2203.47,
+      "end": 2215.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you can build with frog cells, genes, bioelectrics, chemicals, you know, artificial materials, that's going to be really interesting. If we want to understand the space of all possible beings,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 455,
+      "start": 2216.73,
+      "end": 2217.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 456,
+      "start": 2217.09,
+      "end": 2229.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we need to have a way to navigate through that space and have the AI bring us back, you know, interesting, useful instances. And so, you know, what lies out there, it's going to be really exciting to see.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 457,
+      "start": 2230.23,
+      "end": 2234.19,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that is, I like both of those things and just to reflect a little bit,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 458,
+      "start": 2234.49,
+      "end": 2234.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 459,
+      "start": 2234.87,
+      "end": 2266.65,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I'm hearing is, yeah, that we have, and I love the framing. And I know, like, Daniel didn't, it has a similarish framing where it's like, okay, you have, you can imagine the whole space of possibilities where, you know, things are, There are some things that are logically possible, like a horse with wings or whatever. And then there are things that are biologically possible. It's like a horse with wings might work. And there's stuff like historically possible. Like does that actually exist in the world? Does like the Pegasus exist? Not really or whatever. And so you can kind of imagine. And then all these things have to somehow, if a being needs to exist,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 460,
+      "start": 2267.41,
+      "end": 2267.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 461,
+      "start": 2267.83,
+      "end": 2270.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "needs to kind of, you know, the survival of the.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 462,
+      "start": 2271.18,
+      "end": 2271.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 463,
+      "start": 2271.28,
+      "end": 2276.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, just rereading the selfish gene. It's like it's a survival of the stable. It's like this new thing in the morpho space has to exist",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 464,
+      "start": 2276.76,
+      "end": 2277.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 465,
+      "start": 2277.18,
+      "end": 2278.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "at least some period of time",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 466,
+      "start": 2278.68,
+      "end": 2279.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 467,
+      "start": 2279.08,
+      "end": 2281.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "us to like label it as a thing. And then that thing needs to kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 468,
+      "start": 2281.98,
+      "end": 2282.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 469,
+      "start": 2282.58,
+      "end": 2284.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "stable and exist through time. And then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 470,
+      "start": 2284.6,
+      "end": 2285.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "obviously",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 471,
+      "start": 2285.38,
+      "end": 2324.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "capture energy or at least keep its kind of informational state or whatever. And so as we, what we've had thus far is just like this random. not a random walk, but this kind of energetic walk through design space. And now we're getting into the space where it's like, okay, it's kind of scary when you talk about like that, but it's very excited. It's like, okay. And it makes me also think of, um, the Spotify Every Noise at Once Map, which looks at these 6,000 different genres. And you can, and some of the stuff is normal. It's like, oh, here's Katie Perry. But then you can also be like, let's go as far this way as possible. And before long, you're listening to like flemish metal, like, 8-bit music. And you're like, what even is this? Who's creating this? And so I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 472,
+      "start": 2324.66,
+      "end": 2325.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 473,
+      "start": 2325.44,
+      "end": 2331.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that looks like in the morphosphere will be really interesting. And it'll be really interesting to see that kind of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 474,
+      "start": 2331.08,
+      "end": 2331.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 475,
+      "start": 2331.62,
+      "end": 2341.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you all said, like, you know, maybe 100 years from now or who knows how long. will just exist at multi-scales, you know, with these new things that didn't really exist before but are kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 476,
+      "start": 2341.34,
+      "end": 2342.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 477,
+      "start": 2342.28,
+      "end": 2344.42,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "possible in the design space. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 478,
+      "start": 2344.42,
+      "end": 2345.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 479,
+      "start": 2345.28,
+      "end": 2349.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "sounds cool and interesting. Any other reflections on that before we move into this final",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 480,
+      "start": 2349.64,
+      "end": 2350.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "question? You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 481,
+      "start": 2350.16,
+      "end": 2359.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "mentioned it's scary. And, you know, anything that's new is scary. But I think, you know, we are learning, of course, that we can make things or things can evolve that are dangerous to us.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 482,
+      "start": 2360.36,
+      "end": 2360.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "If",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 483,
+      "start": 2360.8,
+      "end": 2371.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we want to understand the difference between dangerous and safe, biological systems, for example, we need to move through morphospace. We don't need to necessarily call all the things we find into being",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 484,
+      "start": 2371.74,
+      "end": 2372.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "outside",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 485,
+      "start": 2372.74,
+      "end": 2375.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of a petri dish or outside of a computer simulation. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 486,
+      "start": 2375.4,
+      "end": 2376.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 487,
+      "start": 2376.0,
+      "end": 2381.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "does it mean in general for a living system to be dangerous for humans or to be safe and helpful for humans?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 488,
+      "start": 2382.02,
+      "end": 2382.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "All",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 489,
+      "start": 2382.54,
+      "end": 2388.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we can do is reason from the admittedly limited number of organisms that currently exist or have existed.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 490,
+      "start": 2389.24,
+      "end": 2389.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 491,
+      "start": 2389.76,
+      "end": 2391.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think a lot of the...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 492,
+      "start": 2391.05,
+      "end": 2391.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 493,
+      "start": 2391.21,
+      "end": 2405.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, a lot of the health challenges we're wrestling with, climate questions, energy questions. We need to understand this better. And the space of all possible things and systems as they relate to us, what does it mean in general for something to be dangerous",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 494,
+      "start": 2405.49,
+      "end": 2406.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 495,
+      "start": 2406.15,
+      "end": 2406.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "safe and useful?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 496,
+      "start": 2407.87,
+      "end": 2408.35,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 497,
+      "start": 2408.61,
+      "end": 2408.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Michael,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 498,
+      "start": 2408.77,
+      "end": 2408.97,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "any other",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 499,
+      "start": 2408.97,
+      "end": 2409.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "five reflections?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 500,
+      "start": 2409.89,
+      "end": 2421.23,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah, well, just to add to that, again, addressing this, the scary part of this, one of the reasons that... people often find this expansion of the possible scary is this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 501,
+      "start": 2421.23,
+      "end": 2422.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "baseline",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 502,
+      "start": 2422.21,
+      "end": 2423.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "assumption that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 503,
+      "start": 2423.27,
+      "end": 2424.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 504,
+      "start": 2424.75,
+      "end": 2426.51,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are things that are natural and good.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 505,
+      "start": 2426.95,
+      "end": 2427.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 506,
+      "start": 2427.39,
+      "end": 2440.57,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "then there are a bunch of these crazy scientists who are going to muck it all up by inventing something, you know, something that's not natural and that's going to, you know, be scary, right? And so I just want to kind of remind ourselves that what we see around us in the biosphere",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 507,
+      "start": 2440.57,
+      "end": 2441.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 508,
+      "start": 2441.51,
+      "end": 2466.91,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "not the result of... of a process that had any of our values. In other words, what you're seeing is the result of a constrained random walk, right, through evolution, that basically what does evolution optimize? It doesn't optimize happiness or intelligence or any of the things that we like. It optimizes biomass. That's it. If there's some way of staying alive and being observable in the future, that's what you got. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 509,
+      "start": 2466.91,
+      "end": 2467.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 510,
+      "start": 2467.55,
+      "end": 2472.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "just think we need to realize when we get scared about making things that are not natural,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 511,
+      "start": 2472.85,
+      "end": 2473.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 512,
+      "start": 2473.19,
+      "end": 2490.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "ought to be able to do better than that. We, right, better than a random walk. We ought to be able to improve on things. And in fact, I'll go one step further and I'll say, we have a moral duty to improve on things because I think there are people who say, you know, don't do stuff, you know, leave it natural. To me, this is, this is, this is complete moral cowardice",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 513,
+      "start": 2490.55,
+      "end": 2491.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 514,
+      "start": 2491.01,
+      "end": 2514.83,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it assumes. that, and I don't think that view is, you know, particularly viable anymore, that there is some way, some way of saying that everything we see around us is sort of perfect. It's the way it's supposed to be, whatever that is, and then let's not muck it up. I think we look around at the suffering around us, both human and animal, right? Incredible. I mean, environmental challenges, medical, I mean, the emails I get every week is just unbelievable from people with medical challenges. It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 515,
+      "start": 2514.83,
+      "end": 2515.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "horrible.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 516,
+      "start": 2515.61,
+      "end": 2523.17,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And right? And this view that it's all natural, let's just leave it like this, is completely untenable from an ethical point of view.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 517,
+      "start": 2523.29,
+      "end": 2523.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 518,
+      "start": 2523.65,
+      "end": 2527.23,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "need to be able to do better than blind evolutionary search. We just have to.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 519,
+      "start": 2527.44,
+      "end": 2528.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 520,
+      "start": 2528.24,
+      "end": 2528.86,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's my take.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 521,
+      "start": 2528.94,
+      "end": 2529.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "No,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 522,
+      "start": 2529.2,
+      "end": 2531.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I like that. I like, well, A, it makes me think of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 523,
+      "start": 2531.34,
+      "end": 2531.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 524,
+      "start": 2531.66,
+      "end": 2563.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it's funny because like, when I say that, I'm like, oh, a little bit worried about something. Like, I have hyper. I'm like very open to experience. Like I live in San Francisco. I'm in like burning, you know, like some of my friends are like all. Like all that. Like I have you two of my podcast. And so it's like when I'm like triggered or whatever, that's how you know you're out. But as you said, it's like, hey, we need to kind of. check in and see what is safe and what is dangerous within the morphos space. And also totally agree with you, Michael, to say that, like, yeah, I mean, it's like, we have the lowest, a really low bar that was set. It's like, all that we've optimized for is biomass. Like, we could do better. Like, let's have, let's put our, it makes me think of like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 525,
+      "start": 2563.43,
+      "end": 2563.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 526,
+      "start": 2563.79,
+      "end": 2566.01,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "wild animal initiative, which looks at the 10 trillion",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 527,
+      "start": 2566.01,
+      "end": 2566.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "animals",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 528,
+      "start": 2566.79,
+      "end": 2573.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "in the wild. It's like, okay, is that? how should we help them or not help them? If so, you know, it's like, how should we, can we make a world",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 529,
+      "start": 2573.3,
+      "end": 2573.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 530,
+      "start": 2573.92,
+      "end": 2588.42,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "actually has our values kind of baked into it in this different way? So that's an exciting future. So as a kind of a wrap question, in the last kind of five or so minutes here, I guess, A, I kind of want to ask, you know, both of you a version of this, but, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 531,
+      "start": 2589.16,
+      "end": 2589.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 532,
+      "start": 2589.6,
+      "end": 2591.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "think that, and especially, you know, I'm thinking about,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 533,
+      "start": 2591.88,
+      "end": 2592.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 534,
+      "start": 2592.5,
+      "end": 2601.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, seeing the world as this kind of. complex systems and through the lens of complexity and informational processing and that kind of thing. That's kind of a very,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 535,
+      "start": 2602.12,
+      "end": 2602.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 536,
+      "start": 2602.82,
+      "end": 2612.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of a weird lens. It's kind of complicated. But then once you start to like taste it, it gets it's very delightful and juicy, but it's kind of hard to get into it. So maybe starting with Michael, how did you kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 537,
+      "start": 2612.7,
+      "end": 2613.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "get",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 538,
+      "start": 2613.44,
+      "end": 2622.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "into this lens or what would you call this complexity kind of informational processing lens? And do you have any advice for listeners on how to like go deeper down that rabbit hole?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 539,
+      "start": 2623.43,
+      "end": 2623.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 540,
+      "start": 2624.15,
+      "end": 2633.79,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and it's hard to do it in a couple of minutes. If anybody's really interested, drop me an email and, you know, and I'll kind of point you along. The biggest thing that I think we need to do is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 541,
+      "start": 2633.79,
+      "end": 2634.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 542,
+      "start": 2634.31,
+      "end": 2648.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a phenomenon that I call teleophobia. And it's this idea that people are, people are, and we're taught this in classes, we're taught to be terrified to overestimate the amount of agency in whatever system, right? So the goal is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 543,
+      "start": 2648.67,
+      "end": 2649.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "let's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 544,
+      "start": 2649.47,
+      "end": 2682.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "treat everything like the simplest possible machine we can. And, you know, woe be you if you attribute something, you know, more to it. I think that's fundamentally wrong because it's just as bad to underestimate as it is to overestimate. Okay. And a lot of people won't agree with that. So that's probably controversial. But that's what fuels the work that I do, which is that we all do together is that. you need to get it right, not just, not just head blindly for the lowest, you know, for the lowest possible level of description,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 545,
+      "start": 2683.08,
+      "end": 2683.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 546,
+      "start": 2683.92,
+      "end": 2694.58,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "because that's where you think, you know, you're some, a kind of reductionist. I mean, not really, because you don't really want to talk about quantum foam all day. You like chemistry, you know, and so, and so we'll just do everything in terms of chemistry, right? This is like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 547,
+      "start": 2694.82,
+      "end": 2694.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 548,
+      "start": 2695.14,
+      "end": 2697.38,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's, that's what people like, but, um, I think, uh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 549,
+      "start": 2697.69,
+      "end": 2697.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 550,
+      "start": 2698.21,
+      "end": 2702.17,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I think I think you need to realize that you could get, you could be wrong in either direction. And what's important",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 551,
+      "start": 2702.17,
+      "end": 2702.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 552,
+      "start": 2702.65,
+      "end": 2709.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to get the right level, the optimal level of agency for a given system, not just, you know, not just to assume it's low.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 553,
+      "start": 2710.17,
+      "end": 2710.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 554,
+      "start": 2710.71,
+      "end": 2712.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that opens up all sorts of avenues.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 555,
+      "start": 2712.87,
+      "end": 2720.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I love that. Yeah, Josh, do you have any other advice for kind of interdisciplinary thinkers on the podcast for how they kind of traverse their career and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 556,
+      "start": 2720.61,
+      "end": 2721.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "these are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 557,
+      "start": 2721.01,
+      "end": 2721.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "other adjacent fields?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 558,
+      "start": 2722.01,
+      "end": 2722.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 559,
+      "start": 2722.17,
+      "end": 2730.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "mean, when I was a student starting to learn about all these various fields that we've kind of touched on, the thing that over the years I've absorbed from it is that it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 560,
+      "start": 2730.39,
+      "end": 2731.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 561,
+      "start": 2731.31,
+      "end": 2737.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "inherently optimistic way of viewing the universe because it asks the question, what is possible? And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 562,
+      "start": 2737.67,
+      "end": 2738.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "often",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 563,
+      "start": 2738.43,
+      "end": 2744.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's in a literal scientific engineering point of view. What's possible with frog tissue in the case of the xenobots, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 564,
+      "start": 2744.67,
+      "end": 2744.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 565,
+      "start": 2744.99,
+      "end": 2770.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then you get to these bigger questions of what's possible in morphos space, the space of all possible? organisms, machines. And then it leads you when you start to think about those machines interacting with us and our infrastructure and our planet and the planets in the solar system. Then you start coming to, you know, social and philosophical questions. What is possible? Like Mike said, there's huge amounts of suffering. Can we do things differently?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 566,
+      "start": 2770.87,
+      "end": 2771.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 567,
+      "start": 2771.39,
+      "end": 2778.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you're coming to, you know, a social and philosophical deep question, an important question, but you're coming.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 568,
+      "start": 2778.89,
+      "end": 2779.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 569,
+      "start": 2779.19,
+      "end": 2786.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it via science and engineering. You're grounded as you approach these big questions. It's not just political platitudes and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 570,
+      "start": 2786.85,
+      "end": 2787.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "let's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 571,
+      "start": 2787.43,
+      "end": 2809.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "make a great planet. Let's stop climate change, but I have no idea how. So I think there's something fundamentally optimistic about AI, robotics, synthetic biology, interdisciplinary work that's really trying to ask this question, what's possible, and get those options out there and then let us as a society decide where do we want to go? What do we want to try?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 572,
+      "start": 2809.99,
+      "end": 2811.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Beautiful. Yeah, I like both those. It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 573,
+      "start": 2811.89,
+      "end": 2812.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "make",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 574,
+      "start": 2812.73,
+      "end": 2816.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "sure you get the right level of agency in a system and even using the term just like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 575,
+      "start": 2816.45,
+      "end": 2816.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 576,
+      "start": 2816.89,
+      "end": 2828.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "agentic material. You know, it's like how agentic is it? That seems great. And then also, yeah, what is possible reminds me of like a David Deich perspective here of like sustainability is not necessarily good. You know, you don't just want something to just continue as is.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 577,
+      "start": 2828.42,
+      "end": 2828.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 578,
+      "start": 2828.7,
+      "end": 2854.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, it's like, yeah, what can we actually make good in the world? You know, like let's be, let's go and make something possible and exciting. So with that, thank you both for coming on the show for listeners. If you want to, A, just check out Zeno, just like Google Xenobots, Z, and I'll put all this in show notes, Z-E-N-O. B-O-T-S. And then also on Twitter, they both have great Twitters. Michael is Dr. Michael Levin on Twitter. And Josh is Dr. Josh on Twitter. Both doctors.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 579,
+      "start": 2856.18,
+      "end": 2863.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So, thank you, again, both for coming. And thank you listeners. And we'll work towards this new Morpho space. That will be exciting. That sounds fun. Thanks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 580,
+      "start": 2864.3,
+      "end": 2864.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Thank",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 581,
+      "start": 2864.62,
+      "end": 2865.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you, Reese. Thanks",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 582,
+      "start": 2865.06,
+      "end": 2866.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "very much. Thanks",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 583,
+      "start": 2866.54,
+      "end": 2881.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so much for listening today. If you like the show, please give us a five-star podcast review or subscribe on YouTube. And if you'd like to chat about this episode with the community of amazing, smart, ambitious, divergent people, come on by and join our Discord.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 584,
+      "start": 2881.32,
+      "end": 2881.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 585,
+      "start": 2881.88,
+      "end": 2885.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "can find it at root.co. That's r-o-o-t-e.com.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 586,
+      "start": 2886.34,
+      "end": 2886.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 587,
+      "start": 2886.9,
+      "end": 2903.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then finally, if you'd like to contribute to these ideas being shared more widely in society, you can support the podcast production team at patreon.com slash Reese Lindmark. It's patreon.com slash R-H-Y-S-L-I-N-D-M-A-R-K. Thank you so much.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 588,
+    "withheld": 1,
+    "published": 587
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

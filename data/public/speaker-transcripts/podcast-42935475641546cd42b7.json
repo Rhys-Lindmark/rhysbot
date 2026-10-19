@@ -1,0 +1,3267 @@
+{
+  "schema_version": 1,
+  "id": "podcast-42935475641546cd42b7",
+  "title": "#11 Larry Lessig, Harvard: #POTUS1 to \"Fix Democracy First\"",
+  "published_at": "2019-05-21T18:54:21Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/11-larry-lessig-harvard-potus1-to-fix-democracy-first",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/624343776-the-rhys-show-11-larry-lessig-harvard-potus1-to-fix-democracy-first.mp3",
+  "youtube_id": "ZLZI4tMCFag",
+  "youtube_url": "https://www.youtube.com/watch?v=ZLZI4tMCFag",
+  "audio_sha256": "2b3efbe033a1c8c5b7ab2428a698884929c7f6c360a37577ad07e1c01b11acf3",
+  "audio_duration_seconds": 3405.4008125,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 10453,
+    "unknown_words": 211,
+    "unknown_words_fraction": 0.02018559265282694,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 10.77,
+      "end": 11.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 11.53,
+      "end": 38.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everyone. My name is Reeslin Mark, and you're listening to Gray Mirror, a podcast from MIT Media Labs Digital Currency Initiative on Technology, and Ethics. And unlike something like Black Mirror, which just looks at the negative impacts of technology on society, we are Gray Mirror, so we look at the positive and negative impacts of technology on society. And please, if you have any feedback, reach out on Twitter. And if you like the show, give us a five-star rating on your favorite podcast app. We really do appreciate it. Thanks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 41.86,
+      "end": 42.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 42.64,
+      "end": 133.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everybody. So today I chat with Larry Lessig, who's a professor of law and leadership at Harvard, and a co-founder of Creative Commons, and now a prominent anti-corruption advocate. And we chat about the politics side and also the tech side. And on the politics side, we chat about this hashtag POTUS one thing that he's trying to do, which is really to push presidential candidates to fix democracy first as the very first thing they do when they get into office and some of the norm shaping that he's trying to do around that. And we chat a lot about this. balance between exit and voice where Larry's trying to push for voice within our current system, and that's in contrast to what I usually do, which is push for exit into a blockchain-based, naive techno-utopianism. So we chat about the balance there. And then we also chat about tech more generally, his class about digital governance mechanisms, which is interesting. And of course, at the meta-level about frameworks and how he currently thinks about his pathetic dot. We chat a little bit about the Creative Commons and a new version of that, maybe for privacy. We, you know, where before it was like, let the data be free. Let the people remix it. And now it's like, oh, God, it's too free. And we chat. You know, some sub points here on this Creative Commons piece. One is Larry really wants to emphasize the uses in the context of data rather than just the data itself. which I think is a good point. And then second, we chat about this funny consent culture that we have where you're clicking like, I agree all the time for terms of service and cookies and whatever and saying that you've read it. And it really just means you're lying all the time because you haven't read any of it. And when that's true, when you're essentially lying",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 133.34,
+      "end": 162.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "all the time, that's an issue with society and our architecture, not with the people who are quote unquote lying by clicking, I agree. And then finally, in the tech bucket, we also chat about crypto and blockchain stuff and how he thinks using crypto and blockchain in places without trust is very powerful. So all that said, I just want to reemphasize one thing here, which is this idea that he has of fixing democracy first and this hashtag POTUS one thing. And the key problem here is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 162.21,
+      "end": 162.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 163.14,
+      "end": 218.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "goal is for us to have a representative democracy and we don't. And this is because there's this great study recently where you would expect individuals to, you know, individual preferences to have an impact on what policies get implemented, right? So if like not very many people are into something, maybe it doesn't get implemented. But if a lot of people are into something, maybe it does get implemented. And in fact, if you look at the bottom 90% in the United States, there's no correlation. So if lots of people are are really not into something, then it has, it's, there's a 30% chance that that proposal, you know, gets into policy. But if, like, everybody's into it, if really everybody loves this thing, there's still only a 30% chance. It's a flat line. It's a totally flat line. And to quote from this Princeton study, the preferences of the average American appear to only have, appear to have only a minuscule near zero statistically insignificant impact on policy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 221.78,
+      "end": 233.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "especially when compared to the study also shows the elites and lobbied interests and how that line fits much better. So if they're not into something, it doesn't happen. But if they are into something, it does happen. And all of this is to say that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 233.58,
+      "end": 234.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 234.78,
+      "end": 247.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a powerful sign that we don't really have a representative democracy. And that's why I'm convinced by a lot of Larry's arguments here to fix democracy first and this hashtag pot is one thing. So with that, enjoy today's episode with Larry.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 253.26,
+      "end": 258.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Buddy and welcome to Gray Mirror. Today I'm really excited to interview Larry Lessig. Larry, thanks for being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 259.0,
+      "end": 260.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Glad to be here. Thanks for having me here.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 260.7,
+      "end": 296.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, it'll be fun. We are in person and we just turned off the AC so it might get a little hot in the room, but better noise for us. So Larry, we're kind of going to break up the interview into two big sections. The first is kind of on the political side and thinking about how you've moved more into politics and corruption. And the second, we'll be talking more about tech side and kind of the creative comments piece. So let's start with the first. thing. I know over time you've moved from copyright and thinking more about copyright towards kind of corruption and thinking about campaign finance reform. Could you tell us in the listeners a little bit more about kind of what that transition's been like and why you've transitioned more there?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 297.74,
+      "end": 298.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 298.32,
+      "end": 300.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I've told this story before, but happy to tell it again.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 302.26,
+      "end": 302.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 302.74,
+      "end": 307.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just about a dozen years ago that Aaron Swartz came to visit me when I was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 307.2,
+      "end": 308.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 308.29,
+      "end": 322.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Germany at the American Academy and I was just finishing what would become the last book I wrote about copyright remix, and I was preparing for my first mainstage TED talk. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 322.13,
+      "end": 323.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 323.33,
+      "end": 326.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "was excited to share this work with him, and Aaron was a little",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 326.41,
+      "end": 327.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "bit,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 328.02,
+      "end": 342.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "he seemed a little bit put off, not interested, really. And at a certain point, he said to me, so why do you think you're ever going to make any progress on these issues so long as... we face, we have this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 342.96,
+      "end": 345.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "corrupt government.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 346.14,
+      "end": 357.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And I said, you know, Aaron, it's not my field. And he said, you mean as an academic? And I said, yeah, as an academic, it's not my field. And he said, well, what about as a citizen? Is it your field as a citizen?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 359.1,
+      "end": 359.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 359.24,
+      "end": 367.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "he kind of had me because I didn't really have an excuse for not taking up this part, this challenge. You know, I had tenure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 368.33,
+      "end": 368.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 368.77,
+      "end": 375.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the hell is tenure for, except that freedom to do what you want to do or what you think is important to do. And by the end of that evening,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 377.07,
+      "end": 381.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I had decided with him that I would give up the work that I was doing on copyright and the internet.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 382.55,
+      "end": 382.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 382.99,
+      "end": 384.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I would take up this work on,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 385.23,
+      "end": 385.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 385.77,
+      "end": 390.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the corruption. I was focused on Congress, but it was a more general project of corruption. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 390.33,
+      "end": 391.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 391.03,
+      "end": 399.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "summer I announced at the Creative Commons International. conference in Dubrovnik, that that was it. And that fall, he and I started an organization called",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 399.6,
+      "end": 400.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Change",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 400.66,
+      "end": 401.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Congress,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 402.72,
+      "end": 405.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "which then morphed into Root Strikers.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 406.9,
+      "end": 407.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 407.46,
+      "end": 408.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that was the beginning.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 408.67,
+      "end": 448.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I think that that, and honestly, that transition and you saying, in taking a step back and saying, as a citizen, what are my duties here? And I think that that you do similar things as you evaluate in free culture. You're talking about like, hey, how some of the ideas of like free code are similar to the ideas of free markets. And it's like, hey, but your macro goal is just to have a better society. And so there's just different mechanisms through which you want to get there. So taking a step back, I think makes a lot of sense. And so these days, you've kind of gone down that rabbit hole more. And actually, I want to ask an additional question here, though, before we go into some of the specifics you do today, do you, how should we think about...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 448.48,
+      "end": 448.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 449.34,
+      "end": 465.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "fixing the kind of root causes, like something like corruption, which is a big kind of macro systemic issue versus some of the things that are, you know, that are higher up on the chain and more specific, like big abstract things versus root cause things. How do you think about those leverage points?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 466.82,
+      "end": 503.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Well, everybody gets excited to the extent they're excited at all about politics when they think about particular issues, you know, that really get them going. So, you know, many people are. really animated by global warming concerns. Many people about the plight of the poor, the consequences of inequality, the access to opportunity, economic opportunity, access to health care. These are all the issues that we tend to think we need to solve better than we have. And to the extent you think government has a role, you think government needs to solve them better than it has.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 504.65,
+      "end": 504.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 504.93,
+      "end": 511.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, and I guess what my work has tried to do is to get people to recognize how before we can solve those problems,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 511.48,
+      "end": 512.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 512.48,
+      "end": 522.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a first problem we have to solve first, which is we need a representative democracy. Like right now, we have a democracy that is deeply captured by special interests,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 523.26,
+      "end": 524.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 524.02,
+      "end": 533.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not just, you know, captured by the rich, but captured in ways that make it almost impossible for our government to address any significant issue sensibly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 535.03,
+      "end": 541.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And, you know, for many years in this, you know, struggle, those last dozen years, for many of those 12 years,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 542.84,
+      "end": 550.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "most people would think, you know, I don't really have to worry about that problem. We can solve climate change. We just have to elect Democrats to Congress. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 550.14,
+      "end": 551.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "again",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 551.58,
+      "end": 556.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and again, you know, what I've tried to argue is...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 556.6,
+      "end": 556.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 556.86,
+      "end": 602.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is not a Republican versus Democrat problem. You can be angry at Republicans, and I know people on my side of the aisle are deeply angry at Republicans, but that's a symptom of the more fundamental problem. And the fundamental problem, I think, is the fact we don't have a representative system, which means that there are people who have enormous power in this system, and leveraging that power, they can block real change. And so we need to fix that first. So it's not that... that corruption is the most important problem, but it's just the first problem. And if we fix that, then we can turn to these million other issues that we know we need the government to be able to help society solve. And what's encouraging to me is I think that perspective is increasingly familiar.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 603.4,
+      "end": 603.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 603.88,
+      "end": 618.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, when I tried to become a candidate in the Democratic primary in 2016, the slogan of my campaign was fixed democracy first. And I was so excited when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 618.02,
+      "end": 619.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 619.4,
+      "end": 620.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "wonderful group,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 622.03,
+      "end": 626.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Issue 1, when Congress was considering the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 626.63,
+      "end": 629.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "HR1,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 629.81,
+      "end": 639.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sent around to email, and they had a slogan on the email, which was fixed democracy first. And I terrified that. executive director by threatening a trademark action",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 639.83,
+      "end": 640.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "against him.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 640.59,
+      "end": 641.31,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Nice. Nice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 642.23,
+      "end": 659.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But it's just like this moment of realizing, like, people are there. Like, we get to this place that more and more people are saying, yeah, we've just got to put aside the differences and focus on what we hold in common. And that thing we hold in common, Republicans and Democrats alike, is that this is a broken democracy and we need to find a way to fix it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 659.63,
+      "end": 661.35,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that makes sense. I think that...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 661.59,
+      "end": 661.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 661.73,
+      "end": 694.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "was watching one of your TED talks recently that gave a... Because we've heard this story to some extent of like, oh, we need to fix democracy. It needs to be more representative of us. And I think that the stat that you gave, which I really loved, was looking across elites and organizations and the average people and how much... different people wanted or didn't want an issue, and then how much it actually resulted in what the politicians did. And for elites, it had a big impact. If elites like something, then it would happen. If not, then not. But for the average people, it had no correlation. It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 694.76,
+      "end": 695.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a flat",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 695.72,
+      "end": 700.42,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "line. And I was just like, oh, God, that's it. So that study really, really drove at home for me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 700.58,
+      "end": 745.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah. And, you know, that wasn't a theoretical study. That was the largest... empirical study of the actual decisions of our government, maybe in the history of political science, that relates them to the attitudes of the elite, attitudes of the economic organized interest groups, and then attitudes of your average voter. And when you see no connection between what the average voter thinks and what a democracy does, you've got to begin to wonder is at a democracy. You know, we have this image of us steering the bus. That's what democracy is, like the people there are steering the bus. But the steering wheels removed from the bus. It doesn't steer anything anymore. And we need to address that if we're going to avoid this catastrophe of a... of a democracy that just can't govern.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 745.79,
+      "end": 804.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I agree. So if you think about, so you briefly mentioned this HR1 thing, which is this kind of like a campaign finance reform plus a couple other things that was the first thing that the House of Representatives, the first measure that they like put up in their, in the 2019. And there's a similar one that you seem to be arguing for, for this like POTUS one to have the presidential candidate to say, hey, we need to fix democracy first. It's their first thing. Tell me. more. And as you said earlier, in 2016, you ran for office for a president for a bit of time and then, and they had different laws for who got to get into the first debate. And so I think that the, how are you thinking now, and I know you like recently did an interview with Andrew Yang. So it's kind of giving this like mellow of a bunch of different things that exist for you in politics in 2016, 2020. How are you thinking about? how you'd like to kind of shape politics or how your goals within politics for 2020?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 804.4,
+      "end": 824.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, you know, for the last decade, I've committed myself to doing whatever I can to make this issue fundamental, to make it central in the debate, so that we finally can get political parties committed to doing something about it, and then if elected, they would do something about it. In 2016, I thought the way to do that was to become a candidate.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 826.28,
+      "end": 826.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 826.68,
+      "end": 830.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "at least a candidate who got to be on stage in the debate so that in the debates,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 831.26,
+      "end": 832.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 832.08,
+      "end": 859.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "could bring every issue back to this fundamental issue. I mean, I wouldn't imagine being there like, you know, remember that guy in New York, the rent is too damn high guy, who every single question the answer was, the rent is too damn high. That's not how I would do it. But what I would want to do was to take every issue people want to, you know, argue about, whether it's health care or immigration or climate change. or economic growth, and then show how our ability to make progress on any of these",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 859.12,
+      "end": 860.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 860.28,
+      "end": 885.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "crippled by the catastrophe that we have at the core of our democracy right now. And, you know, there was a real shot when I launched that campaign. that I would be on those debates. And indeed, according to the rules that were in place at the time I launched the campaign, I should have been in that debate. But when it was clear, they were going to do whatever they could to make sure that I was not in that debate, I stepped aside. This time around, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 886.85,
+      "end": 887.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 887.15,
+      "end": 895.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "wanted to try another way to make this central. And that's what we've begun with this project called POTUS-1. So H-R-1",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 895.61,
+      "end": 896.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 896.71,
+      "end": 943.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so incredibly... important, not just because it was the most ambitious reform package Congress has considered since the Voting Rights Act of 1965, because it had not only public funding for congressional campaigns, it had a way to deal with partisan gerrymandering, it had an automatic voter registration, it had a promise to deal with the restoration of the Voting Rights Act, it had a ethics proposal to slow the revolving door so the congressman would stay focused on their constituents rather than focused on their job as lobbyists once they're finished for Congress. I mean, this was an extraordinary package. But more important to me was the fact that Nancy Pelosi was willing to say, and it's the first package. It's fixed democracy first.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 944.35,
+      "end": 944.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 944.83,
+      "end": 959.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so there's this framework, which is not only do we need to fix it, but we have to fix it first. that we want to leverage in the presidential campaign. So we want to say, let's not talk about HR1, which was great, let's talk about POTUS1, and we want the candidates to tell us",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 959.99,
+      "end": 961.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 961.01,
+      "end": 965.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "are the commitments they will make as the first steps that they will take",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 965.29,
+      "end": 966.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 966.23,
+      "end": 970.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they are elected president. So, you know, Elizabeth Warren,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 972.2,
+      "end": 995.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think Kirsten Gillibrand, Pete Buttigieg, I think all of them have signaled that they have a primary commitment to reforming democracy. Like, that's the first thing they will do. And they've not been perfectly clear about what's in their package. But some of them are incredibly ambitious. I mean, Kirsten Gillibrand is talking about giving every voter",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 995.94,
+      "end": 997.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "$200",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 997.36,
+      "end": 1055.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in vouchers for every federal election that they get a chance to vote in. So, you know, in a certain year, you might have just Congress. Then other years, you'll have, every four years, we'll have Congress and president. And every N years, you'll have Congress, president, and senator. So in that year, you'll get $600. In every four years, you get $400. But you'll get this as vouchers, which you can then turn over to the candidates so that the candidates raise their money from ordinary people. That's how they fund their campaign, as opposed to spending 30 to 70% of their time, sucking up to the tiniest fraction of the 1%. who now fund their campaigns. That's an incredibly ambitious proposal. She's put it out there as like a primary thing she would do if she were elected. And so that's what we're trying to do. We're trying to focus attention, and we've got a bunch of things we're going to deploy to do that on the POTUS-1 commitment. And we want to distinguish between POTUS-1 candidates and non-POTUS-1 candidates.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 1056.18,
+      "end": 1056.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 1056.5,
+      "end": 1082.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, there'll be people who might say, yeah, I don't think we have to worry about that. I don't think this is like a priority. My priority is, I don't know. climate change or whatever. So we want to have that conversation. And then once we can build the recognition of what POTUS 1 is, that, you know, my hope is we get a president elected who makes a POTUS 1 commitment. Because if a president were elected with a POTUS 1 commitment and really elected, not like by the electoral college, but like a majority of Americans support",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 1082.18,
+      "end": 1082.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this candidate",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 1082.74,
+      "end": 1119.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and the electoral college supports him as well, him or her as well. Then there's a real shot that that presidential candidate gets what... he or she is asking for. You know, that's the standard pattern that we've had. You know, you come in and you get in your first hundred days the thing you made a commitment about, you know. So Obama got Obamacare. Had the Mexicans agreed to fund the wall, I'm sure President Trump would have gotten his wall. Right? So, you know, just think about it. We actually could get fundamental reform if we get them to make this commitment and that person gets elected. So this is the strategy we're going to try this time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 1122.26,
+      "end": 1122.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 1122.66,
+      "end": 1123.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, I've been",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 1123.4,
+      "end": 1124.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "disappointed",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 1124.84,
+      "end": 1130.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "because we don't really have a reform candidate. We have candidates who are talking about reform.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 1131.57,
+      "end": 1132.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 1132.01,
+      "end": 1193.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I've been convinced that what we really need is a reform candidate, somebody who just says, look, this is it. This is what I'm talking about. And all this other stuff is just, you know, a bunch of fantasy politics. It's not that I don't have desires for climate change or... for climate change legislation or desires that we deal with the health care crisis. Of course I do. It's just got to be real. None of that's real. None of those arguments have any reality to them until we solve this problem first. I want that kind of candidate. We don't have that. We had a great moment with Andrew Yang, who's a, you know, a brilliant guy running for president who, his, you know, main... issue has been UBI, universal basic income, which I think is an incredibly important idea that America needs to think about and grapple with, and I would certainly support. But we did a town hall with him in New Hampshire, and midway through the town hall, he said, you know, I've spent the last year going around this country telling people I'm going to get them $1,000 a month. That's the universal basic income.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 1195.27,
+      "end": 1195.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 1195.57,
+      "end": 1222.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the first thing I'm going to do, he said, I'm going to amend that now. I'm going to say that the first thing I'm going to do is to fix democracy. And then after I fix democracy, then we're going to get $1,000 a month. And so I think we get people to begin to recognize the priority of this, but we don't yet have a candidate who's saying I'm a reform candidate only. And my view is, if it doesn't work this time, next time, I guarantee there will be a reform candidate. There will be somebody who says, this is what I'm doing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 1224.55,
+      "end": 1232.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I still think that person wins. I just, I can't see how if it's framed in the right way, he or she doesn't win. And so I want to make sure that happens.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 1232.39,
+      "end": 1260.63,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that's cool. It's interesting to hear that full journey from you doing it yourself and then this time saying, okay, now instead let's try to make it the case that for all these 20 different candidates that they each think about POTUS 1, turn them into POTUS 1 and non-POTUS 1 candidates and say, hey, this is a really important part of the picture. I think that that's, yeah, I think that that's super powerful. And I think that they're, with you, I kind of agree, or something that I might be skeptical of is thinking about,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 1260.79,
+      "end": 1261.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 1261.65,
+      "end": 1284.05,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "mean, so there's this, there's talk about, you know, whether it's draining the swamp or whether it's reforming, you know, fixing democracy first. But there's also this question of if you have something like our current democracy as it exists, how do you think about... voice within that democracy and trying to change the system from within versus exiting that system and saying, hey, I'm going to try to make change through some of these other levers.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 1284.37,
+      "end": 1284.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 1284.73,
+      "end": 1322.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just don't think we have the luxury to avoid fixing this government. I mean, there are a lot of people who are cynical and skeptical that anything to be done, they've given up. They think, you know, what we're going to do is go to Silicon Valley and get, like, the blockchain to fix everything. And I just think that's so hopelessly naive. You know, we've got climate change. That's a reality. you know, if I were Bill Nye, I'd start swearing and lighting a globe on fire to say, you know, for fuck's sake, let's finally wake up, grow up, this is a reality. We've got to deal with that. We're not going to deal with that through the blockchain, right? It's just not going to be solved through the blockchain. What we need to do is to recognize that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 1323.51,
+      "end": 1324.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "complex",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 1324.71,
+      "end": 1412.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "societies need governments that can function. They just need that. And other countries... have it. It's not like there isn't a well-functioning government in the world. None of them are perfect. But, you know, China has a government. It can actually think about things like, you know, artificial intelligence or surveillance or climate change. It can think about it. It can decide about it and then implement it. Germany has a government. And that government, like, solves all sorts of problems. You can argue about whether they get it right, but they solve them. We can't decide anything. I mean, even when Obama had a super majority in Congress, so he had two-thirds in the Senate, and he had, I mean, he had 60 votes in the Senate, and he had a majority in the House of Representatives that he was the freaking president. They couldn't get climate change legislation. I mean, like, well, what more do you want? So, like, we blame Republicans, but it's not Republicans, it's money. It's money. The Democrats knew if they passed climate change legislation, the carbon monopoly would blow them out of the water. They knew that when they passed Obamacare, if they had given a public option, which was the essential component to that legislation that would have made it so there would have been competition to keep the price of health care down. They knew if they'd put the public option in there, insurance companies would have spent $100 million to defeat the Democrats. They knew if they had made pharmaceuticals competitive,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 1413.56,
+      "end": 1414.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 1414.36,
+      "end": 1416.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "at least give the government the capacity to...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 1418.32,
+      "end": 1472.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "negotiate about prices for drugs. Pharmaceutical companies would have spent millions of dollars to defeat the donor cuts. They knew it. So they had to cave on these critically important issues because that was the only way for them to keep power. And you had a certain point to say, what the hell is power for? If you can't do anything with it. Like, why do you want to become president in the United States? If once president, all you can do is be a kind of petty monarch, you know, and like graduate to becoming like the hero of the nation after you've left office. I mean, so at a certain point, we've got to say, you know, this is just a broken government. It is a fundamentally broken government. And when that happens, we've got to stop and fix it. We can't just pretend like everything's okay because it's not. And this recognition, I think, you know, I'm excited because I think more people get it. The only question is whether enough at the top get it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 1473.11,
+      "end": 1482.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And whether enough at the top both get it. And given that they are in a system of power, that is nice, systems of power perpetuate themselves, how much they will continue to perpetuate",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 1482.83,
+      "end": 1483.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "themselves there. I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 1483.77,
+      "end": 1520.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "mean, what's striking is the number of people who are there now who kind of think, what is this all for? You know, why am I, you know. You look at a member of the House of Representatives. It's not a great job. You know, because they're spending all of this time. I mean, if you go to the Capitol Hill, it's this kind of elementary school-like experience because the bell rings, the signals they've got to race to the floor of the house. They race to the floor of the house. Some aid on the floor says vote, yes, vote. No, they don't even know what they're voting on. Then they race off out of the house. They race the call center. They make their telephone calls. Then they race back for another. And you're like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1520.6,
+      "end": 1521.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1521.0,
+      "end": 1538.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is just a broken system. You know, and it's not like all government in America is like this. You go to the, you know, I had this extraordinary experience of testifying in New Hampshire, the Elections Committee in New Hampshire, about ranked choice voting, which is an issue we're trying to push for New Hampshire.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1540.38,
+      "end": 1543.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So, you know, here's a committee. There are probably 15 members of that committee.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1545.04,
+      "end": 1545.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "A",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1545.44,
+      "end": 1553.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "hearing that lasts three hours. And... All 15 members of that committee are sitting there for the full three hours paying",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1553.77,
+      "end": 1554.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "full",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1554.79,
+      "end": 1555.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "attention",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1555.29,
+      "end": 1556.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1556.23,
+      "end": 1656.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "everybody who's testifying. And some people are like crazies. Who knows why they're there or what they're? And some people are serious. I mean, it's an incredible range of testimony. It was really interesting, especially for election geeks like me. But I looked at them and I thought, holy shit, this is what democracy is. Like representatives doing their job. They're not sitting there on their Blackberries or their iPhones or their Android devices. Like they're not reading the newspaper. They're not sitting there listening to ordinary people testifying about important legislation. And then at the end of that, then they make decisions about what they're going to do. Same experience in Delaware, same experience in Vermont. And you think, you know, there are actually examples of representative democracy working, just not in Washington. I mean, it's an embarrassment to look at our Congress today and compare it to these other institutions of American democracy. And we need to leverage that embarrassment, and we need to shame people who are not willing to step up and do something about it. And, you know, part of this is about calling evil evil, you know, the dark lord of Washington, Mitch McConnell. has done more harm to our democracy. I think that any other American, save Newt Gingrich, I mean, the two of them together are so implicated in the destruction of representative democracy. It's hard to figure who did it worse. But Mitch McConnell is so shameless and shameful at the same time. Shameless about his... glee at destroying the capacity of representative democracy to work and shameful at his complete lack of principle",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1656.8,
+      "end": 1658.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1658.18,
+      "end": 1666.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, every single thing that he does. You know, you can be damn certain that if a Supreme Court justice dies in February 2020,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1667.77,
+      "end": 1672.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Mitch McConnell will have a nominee on the floor of the Senate within six weeks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1673.71,
+      "end": 1698.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And somebody will stand up and say, well, wait a minute, Mr. McConnell, you know, when Barack Obama had a nominee that was thrust upon him in February of his last year of his administration, you said it wasn't appropriate. You know, he'd be like, I don't remember that. I don't know what you're talking about. So he has just, he has got to be removed. You know, the people of Kentucky have got to take him back. And, but if he is removed.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1699.56,
+      "end": 1699.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1699.82,
+      "end": 1710.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think we'll get enough of those people to reflect on just the misery of what they live in right now and say, you know, we can make this better. There's no reason democracy has to be this broken and they can fix it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1710.82,
+      "end": 1711.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1711.8,
+      "end": 1712.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1712.3,
+      "end": 1753.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think, and it's always this, I think this goes back to that exit and voice thing. I think you're right to, I mean, I am a young child who thinks who's in a naive way about like, hey. Like, man, maybe we can make a bottom-up civil society that will be able to co-evolve with institutions and be able to provide some exit pressure on these institutions such that they have to reform themselves. And I think that, and part of it also is just for me, seeing something like politics and just being like, oh, man, that's such like a hearing discuss all this. I'm like, ooh, God, that sounds brutal. I'm going to do stuff that is more... perhaps like uh it triggers my curiosity more or something like that so i think there's there's both pieces there so let's let's kind of move away",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1753.94,
+      "end": 1756.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "no but i'm gonna emphasize a point yeah yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1756.04,
+      "end": 1756.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1756.18,
+      "end": 1756.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "i",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1756.62,
+      "end": 1805.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "mean i don't i'm not saying you shouldn't try to do both i think you need to do both we need to vitalize many aspects revitalize many aspects of the society in the capacity of people to act collectively is something that, you know, we have an extraordinary opportunity to reinvigorate, given technologies and innovation about how we could be doing that. So I'm not saying we shouldn't be doing that too, but we've got to be able to walk and chew gum and tweet at the same time. So I think that we need to recognize that there's no opting out of fixing the government part. You know, you've got to devote at least 20%, maybe just 10%, maybe just tithe, just tithe, just tithe the project of fixing this democracy. And that's all it would take. I mean, this is what's so frustratingly obvious about this. You know, we've got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1805.85,
+      "end": 1807.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "almost,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1808.99,
+      "end": 1809.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1809.31,
+      "end": 1823.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, we've been sort of gaming out how this could be, how we could elect a reform Congress, kind of figure that if we could get a billion dollars on the table, we could do it. Do you think, you know, 50 billionaires could. cough up $20 million. That's it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1824.19,
+      "end": 1825.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It would be nothing. And you're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1825.33,
+      "end": 1847.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like, wouldn't you want to rather be on the list of the 50 billionaires who saved America as opposed to some wing of some hospital? And, you know, in my view, this is the only thing the billionaires should be spending their money on. You know, spending their money to make sure they have as much power in this democracy as you and I do, which means... much less power",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1847.0,
+      "end": 1847.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "than they have right",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1847.64,
+      "end": 1897.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1898.01,
+      "end": 1904.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I agree. So the billionaires who are listening now, please donate now. So let's transition.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1905.07,
+      "end": 1905.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I know you're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1905.33,
+      "end": 1906.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there, Bill. I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1906.39,
+      "end": 1907.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "can hear you. I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1907.07,
+      "end": 1908.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "can hear you coughing in the background.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1910.27,
+      "end": 1910.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's funny.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1911.59,
+      "end": 1937.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So let's talk about it. about your pathetic dot for a second, some of the tech stuff, so kind of switching away from the politics side. So you have this idea of a, it's kind of a framework that I call Lessig's pathetic dot, and I think there's a Wikipedia page on it. And the idea is that if you want to shape society or individuals, then you can, there are many mechanisms for doing so, and the four big ones are changing the code or the architecture and saying, oh, if you change the code, then it can change behavior.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1937.37,
+      "end": 1937.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1937.49,
+      "end": 1938.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in a law school. We start with law.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1938.93,
+      "end": 1978.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, sorry. Yeah, sorry. Yeah, so law is the first and the best, you know, the best mechanism. We love it. We all love it. And then so you can obviously do law. And that's kind of what you're talking about now. Some of these politics stuff. There's incentives and changing the market. And then there is the, oh, God, what is the last? Norms. Yeah, norms, social norms, that kind of side. So I think that this is something that I actually talk about on my show, a good amount in thinking about these different mechanisms. I mean, you wrote about it maybe like 20 years ago at this point. Do you still think of this framework and the pathetic dot framework these days? Or have you updated it all? What are your thoughts on the framework now?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1978.11,
+      "end": 1978.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1978.51,
+      "end": 1988.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "yeah. I mean, you know, I've had this weird experience of like moving away from that and not working on it, not thinking about it much, and then recently coming directly back to it. So this year I've taught a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1988.25,
+      "end": 1989.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "seminar",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1989.87,
+      "end": 2007.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "called governing virtual worlds because I've been really excited to think about. how these virtual environments will govern themselves. I came, I had this really wonderful experience of meeting the founder of a game company called Clang.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 2009.41,
+      "end": 2017.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And it was a party and he was a party, it was a party celebrating cross-dressing. I mean,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 2017.91,
+      "end": 2019.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I... I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 2019.12,
+      "end": 2039.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not a cross-dresser, but there was. I was at this party. He was cross-dressing, and we got talking. And he was describing this game that he was building where they were going to use this new platform built by a company called Improbable that would enable the largest persistent simultaneous virtual environment",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 2039.8,
+      "end": 2041.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "ever.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 2041.44,
+      "end": 2044.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So you could have a million different settlements.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 2046.44,
+      "end": 2074.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 2075.04,
+      "end": 2075.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 2075.3,
+      "end": 2092.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "he said, what do you mean? I said, well, you know, if you're going to try to build these settlements of a large number of people, what we know is that at a certain stage, you need infrastructure of governance. Like you can't get 100 people to work together, a thousand people to work together on a common project unless there's some mechanism of coordination. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 2092.56,
+      "end": 2093.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "he",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 2093.26,
+      "end": 2096.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "said, you know, we never even thought about that. So we started talking about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 2096.46,
+      "end": 2097.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 2097.62,
+      "end": 2098.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they could",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 2098.1,
+      "end": 2099.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "build",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 2099.26,
+      "end": 2107.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "as an option inside of this world, the ability to... you know, select an architect and layer on top of their communities",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 2107.09,
+      "end": 2108.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 2108.19,
+      "end": 2118.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "underneath their communities, depending on you want to think about it, structures of governance. And that brought me back to this world of thinking about these tradeoffs because as we began thinking about this, it was clear,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 2118.83,
+      "end": 2118.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 2118.97,
+      "end": 2129.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, as a settlement develops, they're going to decide, okay, we're going to have a representative democracy, let's say, and we're going to say the representatives are randomly selected. So.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 2129.55,
+      "end": 2129.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 2129.73,
+      "end": 2144.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, like a jury, you will be called to serve as a representative for, you know, a week every year. And in that week, you have to make these decisions. But then the decisions need to be implemented. And will they be implemented as rules enforced by the state",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 2144.27,
+      "end": 2145.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 2145.03,
+      "end": 2148.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "as code? So let's say you want to say, no blue shirts on Wednesdays.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 2148.21,
+      "end": 2149.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah. You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 2149.03,
+      "end": 2157.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, you could say, okay, that rule will be enforced in the way we enforce law. So if you're seen with a blue shirt on Wednesday and a police officer catches you, then you will be punished.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 2158.57,
+      "end": 2158.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 2158.79,
+      "end": 2163.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we can enforce it through norms. So people will scorn you if you walk around",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 2163.11,
+      "end": 2163.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with a blue shirt on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 2163.99,
+      "end": 2164.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Wednesday. Shame.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 2165.13,
+      "end": 2165.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 2165.13,
+      "end": 2169.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we could tax you. Blue shirts cost $50 if you wear it on a Wednesday.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 2169.27,
+      "end": 2170.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Tax benefits for green shirts.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 2170.83,
+      "end": 2170.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, right.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 2171.53,
+      "end": 2183.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Or we could make it impossible. You try to put on a blue shirt on a Wednesday and just doesn't stick. So this tradeoff is real. In this environment, it's completely real. You've got to make that choice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 2185.34,
+      "end": 2195.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "The lawmaker needs to make that choice. Where are we going to do it? And what was so excited about this is that when you begin to think about a million different, you know, these settlements",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 2195.15,
+      "end": 2196.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "making",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 2196.35,
+      "end": 2262.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "these kind of tradeoffs, I said, Dumondi, I'd love to help you build this, and here's my price. You have to give us the data. You have to make it so we have a fire hose of all this data so that we can begin to evaluate like which systems seem to work better. You know, does it turn out, you know, sortition system of random representatives makes it possible for larger communities to function effectively than, you know, monarchs or... than traditional elected representatives. And so if we could get all of these data to be able to analyze this, we could begin to learn something in real space. So this brought me right back to this question. And I taught the seminar this term about governing virtual worlds where we were working through all of this. And And, you know, as you look at all of this stuff about Facebook and the surveillance society and stuff going on in China, it's kind of hard to avoid recognizing that, you know, we're at a place where, you know, 20 years ago I was terrified we would be. Where in the architecture,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 2263.12,
+      "end": 2263.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 2263.36,
+      "end": 2266.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "had embedded all of these structures of control",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 2266.42,
+      "end": 2267.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 2267.54,
+      "end": 2288.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "radically changed the environment of our freedoms. And... Nobody ever thought about it. Like, you know, we woke up one day and there was. We were, you know, we were a Black Mirror episode and what now. So, yeah, I'm back to it. This is what I'm thinking about a lot. And not that I have a clear sense of what the solution is, but I have a pretty clear sense of the problem.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 2289.11,
+      "end": 2299.97,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, and I think that it is a, as you can layer it on to any of the different systems, and it's just like, oh, you can change. It's just a way to think about the world. I think... Do you know Donella Meadows and Thinking in Systems, by",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 2299.97,
+      "end": 2301.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the way? Yeah, yeah, yeah. So one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 2301.99,
+      "end": 2341.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "addition that I might add, and I'll just propose this to you and get your thoughts on it. Often when I think about your pathetic dot and then her, if you think, so Dinelle Meadows thinking in systems, she talks about different leverage points to change a system. And at the very most meta-abstract level is changing the paradigm in and of itself. And so when I think about like my work, I think about changing like the value-based paradigm of the system and then that kind of trickles down or up again depending on. I think about to your pathetic dot. Do you think, does that framework make sense to you? Do you think they're on those two different levels, i.e. the paradigm above and then like your dot below, or how do you think about paradigms in the context of the pathetic dot?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 2341.88,
+      "end": 2342.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 2342.26,
+      "end": 2361.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think the paradigms are a kind of norm inside this system, right? You know, so we have a norm. We're going along. We think that our job is to kind of get rich. That's what all of us are doing. So we're all behaving in a way that we're just like, fuck you. I'm just going to try to get rich. And then somebody comes along and says, you know, we should be thinking differently about this. You know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 2363.99,
+      "end": 2418.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Rachel Carson, we should start thinking about an environment, to give the environment, what we're doing in the environment. And you change the paradigm of how we're going about what we're doing. And that then trickles down into a lot of different kinds of choices. And so that project of changing the paradigm is a kind of problem of regulation. How do you change the social meaning of? what people are supposed to be doing. Like, what is the technique? Is it about, like, inspiring them through a speech? Is it about creating the right incentives so that they start thinking differently? I mean, you know, so it's embedded within each of these questions is all of these same kind of mechanism problems. So I think that I think of her work as as complementing I mean I think she has a very distinctive approach and I'm not saying you know it's not like adding something to think of it the way that she thinks of it but I don't think of it as is really intention the part that I would add if I were thinking again",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 2418.45,
+      "end": 2420.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 2420.15,
+      "end": 2424.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the stuff that's suggested by like Tristan Harris's brain hacking stuff",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 2424.69,
+      "end": 2427.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 2427.45,
+      "end": 2430.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a you know the fifth modality here is like psychological",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 2430.73,
+      "end": 2432.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 2432.09,
+      "end": 2437.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we have a very clear intuition about this in the context of food right now. We all understand the way the process food industry",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 2437.77,
+      "end": 2438.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 2438.93,
+      "end": 2449.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "very focused on the science of food addiction. Like, how do I tweak the mix between salt, fat, and sugar to make it so you can't resist these buffalo wings?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 2449.15,
+      "end": 2449.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Like, there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 2449.61,
+      "end": 2530.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "nothing you can do to resist them. And, like, there's a huge science behind it. Like, they know they can actually test it. And, like, this bit more salt will make it so that it's 30% more addictive than it. So we understand brain hacking in that context, especially I find among digital natives or digital native Wadipies, there's still incredible resistance to recognizing the same dynamic in the context of, you know, not food, but like attention. And what Tristan's work, I think, does really well is like to get us to the place where we see this framework for brain hacking. like finding ways to trigger our natural psychological mechanisms to draw us in and to pull us and to drive our attention in ways that people, you know, would profit from. And, you know, it's not just profit. So in this class that I taught, this was one of the issues. And, you know, we were comparing, like, the Facebook environment to... Chinese social credit system. And of course, all of us, everybody has this natural kind of aversion and terror to what China is doing. And Facebook seems so familiar and happy. But at a certain point, one of the students, a really brilliant student named Robin said, you know, the difference is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 2530.7,
+      "end": 2531.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "China",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 2531.88,
+      "end": 2542.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is doing all of this for the purpose of making Chinese society better. Whether you agree with what they do or not, they're trying to make society better. Facebook is doing it for the purpose of making Mark Zuckerberg richer.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 2544.01,
+      "end": 2544.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 2544.43,
+      "end": 2569.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, why is this obviously a better, you know, but the point is the thing that they're doing is finding a way to control us at a level that's not really, I mean, it's implicated by these other dimensions, but it's not quite the same. So if I were to add one, it would be the psychological and recognize that this now becomes the new battlefield for freedom. And, you know, Shoshana Zuboff's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 2569.35,
+      "end": 2570.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "really",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 2570.11,
+      "end": 2573.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "an extraordinary book. surveillance capitalism",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 2573.61,
+      "end": 2575.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "reflects",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 2575.59,
+      "end": 2593.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "all the time about like what is freedom mean in the world where you're constantly being nudged by these technologies of control. And you know at the end you kind of say I don't I'm kind of lost I don't know what freedom means anymore because we've kind of constructed this hive",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 2593.47,
+      "end": 2594.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "environment",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 2594.55,
+      "end": 2596.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "where we all become these little",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 2597.08,
+      "end": 2597.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 2597.28,
+      "end": 2604.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, bees doing, worker bees doing our part, and they're kind of nudged into the right place, and we're kind of happy because we're getting the,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 2604.9,
+      "end": 2605.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 2605.56,
+      "end": 2614.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and, uh, it's a, it's not so much a brave new world as, uh, you know, I don't know, I don't know what the right word is anymore, but it's, it's a world we don't yet understand.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 2614.74,
+      "end": 2684.63,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. Yeah, I think that, and I agree with you to say that, Well, A, there's the, it does seem like something like paradigms are adjacent to a possibly orthogonal. And you could either categorize them within norms or I think I might want to categorize them as the thing that the paradigm is the thing that gets manifested in each of the parts of the dot. And then as you say, I also agree that, I definitely agree that the psychological side and the internal side and the internal, how the market mechanisms for surveillance capitalism and the attention economy then create these incentives for people to mess with our internal psychological systems. in physiological systems. So my, so, so kind of let's let's take that and go a little bit further with it, specifically in the realm of crypto, in cryptocurrency blockchain stuff. The, so my question here is, so if you imagine, so Creative Commons was a beautiful thing that you helps create at the beginning of the early internet times that said, hey, let's make information with zero marginal cost. Hey, let's make it more free than like aggressive. Let's enable remix culture for society. And then there's this other piece that you wrote about but didn't necessarily create a movement about, which is this projections towards surveillance capitalism. And.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 2685.34,
+      "end": 2685.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "In",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 2685.78,
+      "end": 2698.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "thinking about the cryptocurrency and blockchain world, so I'm teaching a cryptocurrency ethics class with Joey Ito next semester. And the question is, if we think about how can we map something like the Creative Commons into the crypto",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 2698.5,
+      "end": 2698.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "world?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 2699.02,
+      "end": 2702.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And how can we map something like dodging surveillance capitalism into the crypto world?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 2703.14,
+      "end": 2708.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, this is really hard. We had a great brainstorming session that Joey actually sponsored",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 2708.1,
+      "end": 2709.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 2709.12,
+      "end": 2717.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we brought. about a year ago, we brought a bunch of people together and said, like, what would Creative Commons in the context of privacy be? Like, what would it look like? And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 2717.86,
+      "end": 2719.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "everybody",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 2719.62,
+      "end": 2723.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "kind of... Actually, no, I'm sorry, that's wrong. What we said was what should the next",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 2723.12,
+      "end": 2724.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "version",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 2724.42,
+      "end": 2731.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of a Creative Commons be? Like, what's the Creative Commons of today? And privacy came out. Elizabeth Hanson, who's a professor",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 2731.46,
+      "end": 2733.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 2733.88,
+      "end": 2737.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a graduate student in business school, a kind of just finished our PhD.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 2738.8,
+      "end": 2739.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 2739.16,
+      "end": 2754.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, we're saying, like, back then it was about how do you make sure information can be free? Now it's about how do you make sure your information is not free? Like, what is the way to control that? And I genuinely think this is a problem we don't yet have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 2755.07,
+      "end": 2756.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 2757.87,
+      "end": 2764.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "clear sense of solution for. And part of the reason we don't have a sense of the solution is we don't really have a sense of the problem.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 2765.93,
+      "end": 2766.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 2766.33,
+      "end": 2776.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, I... came across this piece I'd forgotten I'd written 2002. Privacy as property, which grew out of my book. But, you know, where I'm trying to think of, if we just take",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 2777.03,
+      "end": 2778.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "privacy,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 2778.73,
+      "end": 2786.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "private data, and think of it as your property, then you could have control over it. And just like copyright is the property of the copyright owners, your data is your property.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 2787.43,
+      "end": 2787.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 2787.87,
+      "end": 2792.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I increasingly think this is the wrong layer at which to think about this problem.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 2792.81,
+      "end": 2793.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 2793.25,
+      "end": 2795.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we should stop worrying about,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 2795.61,
+      "end": 2795.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 2796.19,
+      "end": 2796.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the data.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 2797.03,
+      "end": 2797.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 2797.37,
+      "end": 2805.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "start worrying about the uses of the data. You know, just like in the copyright days, what we who are copyright activists were saying was,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 2805.81,
+      "end": 2806.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "stop",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 2806.59,
+      "end": 2820.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "trying to control the copy. That's like such a stupid unit of analysis. Like the fact that I copy in a digital environment is completely accidental or irrelevant or focus on what my use is. So if I'm using this for a commercial purpose,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 2822.61,
+      "end": 2825.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then fine. Tax me. I ought to pay the copyright owner.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 2826.71,
+      "end": 2827.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 2827.23,
+      "end": 2830.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "if I'm remixing for non-commercial purposes and sharing with my friends, this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 2830.63,
+      "end": 2831.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "should",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 2831.23,
+      "end": 2845.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "be nowhere close to the regime regulated by the state. And I increasingly think that's the issue with data. Like, we should think about those uses where we clearly think the use should be proscribed.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 2846.46,
+      "end": 2846.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 2846.94,
+      "end": 2855.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "let's say you watch my typing on Facebook and you determine that my typing has slowed in a way that predicts that I have a certain degenerative nerve disease.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 2855.62,
+      "end": 2856.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 2856.1,
+      "end": 2860.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "instead of like telling me, you tell my insurance company. That's not on.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 2860.36,
+      "end": 2861.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's wrong.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 2861.28,
+      "end": 2863.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "That's a use of my data that should be banned.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 2865.22,
+      "end": 2865.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 2865.7,
+      "end": 2870.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "if, you know, you see that I like Kassunstein's books and you see that I like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 2870.3,
+      "end": 2871.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 2871.18,
+      "end": 2901.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, books by Jeff Stone and you recommend a new book by David Strauss. That's great. That's exactly what I want you to do. That use of my data is helping me. And while there are many hard cases and many ways in which we can be skeptical about all uses of data, and I think Shoshana's book sometimes is that, I do think that we need to start interrogating the contexts more carefully. And we need especially to give up the idea that somehow consent.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 2901.95,
+      "end": 2902.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 2902.43,
+      "end": 2908.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the tool we should use to distinguish between contexts which are okay and contexts which are not okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 2908.89,
+      "end": 2909.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 2909.37,
+      "end": 2914.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think we've become so enamored of the idea that just if we say it's okay, it's okay,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 2915.61,
+      "end": 2922.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that we've, you know, oblivious to the fact that we don't know what we're saying okay to, 99.9% of the time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 2923.17,
+      "end": 2923.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 2923.65,
+      "end": 2926.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we live this life of constantly lying.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 2927.67,
+      "end": 2928.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 2928.15,
+      "end": 2934.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, and... I mean, you know, when I was a kid, I was an obsessive truth teller. Kind of pathologically so.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 2935.29,
+      "end": 2935.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Pathological",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 2935.71,
+      "end": 2935.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "truth",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 2935.99,
+      "end": 2936.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "teller. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 2936.57,
+      "end": 2940.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I would never get myself in a position where I knew I had to lie.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 2941.47,
+      "end": 2941.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 2941.89,
+      "end": 2950.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so that controlled my behavior in, you know, some pretty trivial ways, some important ways. But, you know, I could list them 10 ways in which 10 things I couldn't do because I never wanted to lie.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 2951.17,
+      "end": 2951.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 2951.59,
+      "end": 2953.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "couldn't live that life today.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 2954.38,
+      "end": 2954.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 2954.78,
+      "end": 2958.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I go through life all the time saying, yes, I've read the terms of service, and I agree to them.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 2958.96,
+      "end": 2959.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Cookies, of course.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 2959.92,
+      "end": 2960.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Cookers,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 2960.16,
+      "end": 3036.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of course. You know, and you live this constant experience of constantly lying, and it's like the Soviet Union, you know, 25, 30 years ago, where you know, just everybody expects this is what you do. You just lie to get along, and if you don't lie, you don't get along. And it's like a certain point you want to say, don't force me. to be that person in order to be able to live in this society. If your society is forcing me to lie, there's something wrong with your society, not with me, because I'm normal. Like the society is what's crazy here. And I think that the obsession with consent, the obsession with the idea that if I've consented, then it's okay, has produced that world. And if we didn't, if we, you know, if we said like 99% of that cases, or 90% of the cases, were either authorized or not. And a tiny fraction, like where I might be uniquely different from, you know, where you might think people are interestingly different, where you say, make a choice, that would be a better balance. And so we've got to get to that. And I think we don't yet know enough, like, what do we do to architect that? And I'm not sure I yet see the path for a CC-like solution to it. Because if it's not really about controlling the data,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 3038.59,
+      "end": 3039.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "If",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 3039.03,
+      "end": 3056.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you were about controlling the data, I can imagine all sorts of blockchain-like, you know, really cool ways to control that distribution of my data, just like people are now thinking about blockchain ways to control the distribution of, you know, copyright material, like real, have a real way to determine whether you've gotten permission to, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 3056.99,
+      "end": 3057.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 3057.59,
+      "end": 3064.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's not that, if it's really about use, regulating use, then I don't yet see it, but I'm eager to see it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 3064.65,
+      "end": 3065.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 3065.03,
+      "end": 3067.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I don't think government's going to solve it anytime soon.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 3068.27,
+      "end": 3068.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 3068.89,
+      "end": 3084.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "well, I think that there's, that's true for sure. And I think that there's a, as you said, so there's, you guys thought about what does CC look like in today's world and you came to privacy as like the thing. And I like the difference between information be free. It's like, oh no, now these days it's like information. That's like, let's like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 3084.89,
+      "end": 3085.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "too free.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 3085.41,
+      "end": 3131.19,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, too free. And I agree with you also say like thinking of the data as property versus thinking about what of the uses of it. That seems like a powerful perspective. I want to push. A little bit here in ask, maybe a, maybe rephrase my question to see what your thoughts are. I think this is a final question, which is, so within the blockchain and crypto world, what I'm more asking is not necessarily taking creative commons as a thing that thinks from a legal perspective and you have these old legal laws that then map into this new world not very well. I'm more thinking from like. If you imagine if they're like do-goaters in the crypto and blockchain world who want to make sure that the technology has positive implications for society, what kinds of things should they be thinking about and working on?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 3131.95,
+      "end": 3132.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 3132.65,
+      "end": 3138.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I mean, I think blockchain has some obvious great things that it can do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 3139.24,
+      "end": 3140.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 3140.28,
+      "end": 3153.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it equalizes opportunity around the world. So, you know, what is blockchain? Blockchain is a technology to make it. so that I don't need to rely on institutions for trust,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 3153.06,
+      "end": 3155.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right? You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 3155.35,
+      "end": 3163.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, so because the trust is what's manifested in the technology itself. Like so, I know from the technology",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 3163.21,
+      "end": 3164.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 3164.27,
+      "end": 3177.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I can believe this value is here and it's been transferred to me. And I don't have to rely on the bank being honest with me when the bank says the money is there and it's been transferred to you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 3178.09,
+      "end": 3178.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 3178.55,
+      "end": 3195.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the reality is for people living in the first world, that's not worth very much. Certainly not worth the overhead cost of producing it. I mean, you think of the extraordinary energy that's producing this. You're like, you know, I can just, if Chase doesn't tell me the truth, like, you know, there's enough of a regulatory infrastructure to me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 3196.87,
+      "end": 3197.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 3197.39,
+      "end": 3225.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I have lots of other ways of getting what blockchain would be giving me. And I'm going to bracket all the kind of Ethereum. potential and the kind of general purpose programming environment that we can imagine, which has all sorts of separate questions we're going to run with. But I'm just talking about the value, stored value context. In first world environments, it's not really that important. But in third world environments, it's critically important. You know, if you're in the middle of Nigeria",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 3225.59,
+      "end": 3226.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 3226.91,
+      "end": 3228.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you're trying to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 3228.03,
+      "end": 3228.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 3228.95,
+      "end": 3229.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a business",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 3229.39,
+      "end": 3230.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 3230.45,
+      "end": 3236.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you're trying to say, I'm going to transfer... You give me a million dollars and I'm going to send you, you know, this cotton.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 3238.89,
+      "end": 3239.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 3239.37,
+      "end": 3246.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "are not many institutions that we can really be confident that the money getting transferred to it will get to you in Nigeria, you know, because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 3246.33,
+      "end": 3247.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Nigeria",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 3247.49,
+      "end": 3260.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is a deeply corrupted government. It's got deeply corrupted businesses inside. There's all sorts of places where, you know, hands touch whatever passes through. And so that person is shut off from a world market.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 3261.19,
+      "end": 3261.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 3261.71,
+      "end": 3266.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of that failure of local institutions. Well, here is a layer",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 3266.59,
+      "end": 3267.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 3267.53,
+      "end": 3289.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "solves the failure of those local institutions in just the way that, you know, voice over IP solved the failure of their telecom industry, right? They had terrible telecom. They couldn't talk to anybody. It was so expensive. Then you put voice over IP and bingo. Now everybody can talk for free. And so I think that is the place where it has enormous potential. So if I were thinking,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 338,
+      "start": 3290.28,
+      "end": 3290.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 339,
+      "start": 3290.64,
+      "end": 3291.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "am I going to invest my",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 340,
+      "start": 3292.06,
+      "end": 3293.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "blockchain",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 341,
+      "start": 3293.36,
+      "end": 3301.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "-like or even Ethereum-like power? I would think where could it really take advantage of this gap?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 342,
+      "start": 3302.7,
+      "end": 3303.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Now,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 343,
+      "start": 3303.36,
+      "end": 3317.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in the first world, there's also gaps. Places where the cost of contracting is so high that you could use blockchain technologies to lower the cost of contracting, you enable all sorts of contracts that didn't exist before. I kind of think the market will take care of that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 344,
+      "start": 3318.33,
+      "end": 3318.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 345,
+      "start": 3318.85,
+      "end": 3331.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the really interesting thing is, like, where can we start including people from around the world who now are excluded because of the accident of where they're born or the, you know, the lack of capacity in the institutions that's around them?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 346,
+      "start": 3331.47,
+      "end": 3357.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, I agree. And as you say, it's like those... that you know if you want to get rid of the trusted institution it's like oh well if the institution is reasonably trusted well there's no reason to get rid of it you know um and so yeah i generally agree with that so i think we are in wrap up mode here so uh larry good thanks you for coming on for Thank you for coming on today. I enjoyed our conversation. I think that there are, I mean, A, at a high level for our listeners, you can check out Larry on Twitter. What's your Twitter handle?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 347,
+      "start": 3357.86,
+      "end": 3358.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Lessig.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 348,
+      "start": 3358.32,
+      "end": 3362.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Lesig. L-E-S-S-I-G. And then should they go to Equalcitizens.com.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 349,
+      "start": 3364.12,
+      "end": 3364.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 350,
+      "start": 3364.46,
+      "end": 3374.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and that's to check out the... And I also, I recommend reading, like, free culture, one of Larry's old books, for a historical take on the rise of the internet. Any other thing else to tell the listeners?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 351,
+      "start": 3376.33,
+      "end": 3381.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "No, I mean, this would have been great. I mean, there's a lot, there's a lot more to do, but there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 352,
+      "start": 3381.49,
+      "end": 3382.35,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a lot of work to be done.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 353,
+      "start": 3382.53,
+      "end": 3382.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "A lot of work",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 354,
+      "start": 3382.83,
+      "end": 3383.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to be done.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 355,
+      "start": 3383.87,
+      "end": 3385.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, thank you everybody, goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 356,
+      "start": 3385.91,
+      "end": 3386.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Thanks.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 357,
+    "withheld": 2,
+    "published": 355
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

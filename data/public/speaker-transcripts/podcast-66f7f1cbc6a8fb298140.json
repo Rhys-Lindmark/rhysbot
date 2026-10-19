@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "id": "podcast-66f7f1cbc6a8fb298140",
+  "title": "Cognitive tasks",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=FLeHc4wdZc4",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "FLeHc4wdZc4",
+  "youtube_url": "https://www.youtube.com/watch?v=FLeHc4wdZc4",
+  "audio_sha256": "51ff5e3e2c64737f989b815d4243aca990edf07ea2c9e9673431fe04a97815b8",
+  "audio_duration_seconds": 55.4260625,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 107,
+    "unknown_words": 3,
+    "unknown_words_fraction": 0.028037383177570093,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 11.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "All creatures, even viruses, live in a world, in a spatial world. And they need to move toward things that will sustain them",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 11.24,
+      "end": 12.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 12.16,
+      "end": 20.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "away from things that will hound them. So the basic decision that even viruses have to make",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 20.0,
+      "end": 20.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 20.64,
+      "end": 27.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "what to approach and what to avoid. And that basic decision is a decision about acting in space.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 28.67,
+      "end": 29.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 29.19,
+      "end": 51.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "it comes with emotion. There are positive emotions towards things that will sustain us and negative emotions, keeping us away from things that will harm us. So that basic decision, whether to approach or avoid, is retreat with emotion. And it's the basis for spatial cognition.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 7,
+    "withheld": 0,
+    "published": 7
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

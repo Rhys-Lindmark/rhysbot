@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "id": "podcast-16d81eafbe1da547b594",
+  "title": "Unveiling Government's Hidden Failure",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=YwG42YZkRWg",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "YwG42YZkRWg",
+  "youtube_url": "https://www.youtube.com/watch?v=YwG42YZkRWg",
+  "audio_sha256": "facb33df0cec498a95ebb797061ed2e366767ee2d4529faabb020ac05a4293b0",
+  "audio_duration_seconds": 51.0375,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 115,
+    "unknown_words": 7,
+    "unknown_words_fraction": 0.06086956521739131,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.27,
+      "end": 0.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 0.73,
+      "end": 3.63,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "at 17, you're still learning the complexities",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 3.63,
+      "end": 6.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of policy,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 6.77,
+      "end": 8.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "process, regulation, technology",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 8.51,
+      "end": 9.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 9.69,
+      "end": 14.35,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "we have made this system be. And I don't mean the technology system.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 15.98,
+      "end": 17.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "I mean, the full system",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 17.92,
+      "end": 18.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 18.82,
+      "end": 24.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "so complex that you can't really even learn it in 17 years, which means that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 24.38,
+      "end": 25.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 25.06,
+      "end": 43.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "program is supposed to scale up and scale down. scales up when we have more unemployed people, scales down in times of low unemployment. If you can't make new claims processors and lots of your claims have to go through these trained claims processors, you by definition cannot scale up and scale down. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 43.94,
+      "end": 45.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 45.04,
+      "end": 47.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "things like that that I think we fail to see.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 13,
+    "withheld": 0,
+    "published": 13
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

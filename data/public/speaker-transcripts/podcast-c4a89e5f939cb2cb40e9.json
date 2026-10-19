@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "id": "podcast-c4a89e5f939cb2cb40e9",
+  "title": "Transforming Public Input with Tech",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=0tF2z8DC_hs",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "0tF2z8DC_hs",
+  "youtube_url": "https://www.youtube.com/watch?v=0tF2z8DC_hs",
+  "audio_sha256": "241a91a07dfa21cf37599cc3ea7d18f207a54145c2ff52616db725184642b307",
+  "audio_duration_seconds": 59.9539375,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 158,
+    "unknown_words": 11,
+    "unknown_words_fraction": 0.06962025316455696,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.24,
+      "end": 0.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 0.66,
+      "end": 2.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "is really hard and difficult and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 2.86,
+      "end": 3.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "resource",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 3.52,
+      "end": 6.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "-intensive to gather input from the public",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 6.58,
+      "end": 7.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "these",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 7.38,
+      "end": 8.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "days. Like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 8.84,
+      "end": 9.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 9.16,
+      "end": 11.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "know, governments generally have a lot of resource",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 11.74,
+      "end": 12.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 12.48,
+      "end": 17.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "doing the kind of, like, high fidelity information collection processes that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 17.76,
+      "end": 18.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 18.3,
+      "end": 19.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "might want. And so,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 19.24,
+      "end": 19.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 19.74,
+      "end": 21.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "know, can these tools that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 21.08,
+      "end": 21.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "make",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 21.66,
+      "end": 23.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "it much easier to aggregate",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 23.44,
+      "end": 24.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "qualitative",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 24.58,
+      "end": 31.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "date? The way that I think about it is they make it easier to aggregate. qualitative data and not just quantitative data. So you can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 31.37,
+      "end": 31.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "say,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 32.11,
+      "end": 48.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "like, what's the summary of these, like, five people's opinions? Or, you know, what is the crux of, like, these people's argument? How do I transform, you know, this kind of viewpoint into a different viewpoint that other people from different cultures or political backgrounds can better understand? And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 48.69,
+      "end": 49.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 49.33,
+      "end": 55.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "is just kind of, like, would be really amazing to speed that kind of thing up if we can do it in a safe way.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 22,
+    "withheld": 0,
+    "published": 22
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

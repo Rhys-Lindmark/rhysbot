@@ -1,0 +1,1206 @@
+{
+  "schema_version": 1,
+  "id": "podcast-c673bef9be95f44b767c",
+  "title": "#17: Raine Revere, Shapeshift: Blockchains and Diversity at Denver Startup Week (S1 Ep4",
+  "published_at": "2017-11-08T04:47:29Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/17-raine-revere-shapeshift-blockchains-and-diversity-at-denver-startup-week-s1-ep4",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/352715864-the-rhys-show-17-raine-revere-shapeshift-blockchains-and-diversity-at-denver-startup-week-s1-ep4.mp3",
+  "youtube_id": "GrOqSxp0ano",
+  "youtube_url": "https://www.youtube.com/watch?v=GrOqSxp0ano",
+  "audio_sha256": "d054a195ea60847ee388bc56a4b993f761ade60a54c8915c4e20f1ae0004cfc5",
+  "audio_duration_seconds": 1092.4408125,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 2947,
+    "unknown_words": 68,
+    "unknown_words_fraction": 0.02307431286053614,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 12.68,
+      "end": 13.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 13.24,
+      "end": 20.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "episode is brought to you by Shapeshift.io, the easiest, fastest, and most secure way to swap your digital assets.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 20.42,
+      "end": 20.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 20.98,
+      "end": 25.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "run the risk of leaving your funds on centralized exchange. Visit Shapeshift.I.O. to get started today.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 29.82,
+      "end": 30.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 30.38,
+      "end": 35.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "everybody, and welcome to another episode of creating a humanist blockchain future.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 35.44,
+      "end": 35.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 35.94,
+      "end": 112.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "in this episode, this is actually pulled from a talk and a... handle that I moderated at Denver Startup Week. And in this one, we chat with Rain Revere, who's the lead architect at Shapeshift Prism. And it's also the co-founder of Maiden, a blockchain diversity startup. And so in the episode we talked about... diversity in blockchain. But before we dive into the episode, I just want to talk a little bit about diversity and blockchain because I think it can be a little bit of a controversial subject. And for me, I want to say two high-level points on it. The first is about this loop between technology and society, where we both inform the technology that we make and then the technology informs us. And there's this loop between us and technology. And this is one of the key kind of highest-level system loops that you can think about. When we think about this, it just becomes so clear that we really, really need to think about our values because those values will be, you know, reflected in the tech that's there. And you can hear this in the most recent podcast with Albert Wenger, you know, Trent McConaughey gave a talk at 9984 Summit about the ocean protocol and the values that are within their. Sweetbridge gave this nine blog post outline of their values. So really. This concept of values is just crucial, I think, is a little bit not emphasized enough.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 112.79,
+      "end": 113.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 113.19,
+      "end": 177.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "you can argue whether diversity should be in that value set, but as long as we're thinking about values and thinking about that tech society loop, I think that's key. And then the other part here that actually Rain gave me the words for at the end of this talk that you'll hear is really thinking about, you know, the not only, so this is a systems level podcast at a high level, but it also has these pledges to decentralized power. And one of those pledges is by having at least 33% women on my podcast. And the way to think about that that rained help help me with is thinking about the systems and thinking about the systems really as an object and what we're talking about but then also thinking about the subject and thinking about who is talking about those systems who is defining them and that's just something to keep in mind as as you go forward where you whenever you're evaluating a thing or looking at a thing you can look at the thing itself but you have to ask yourself hey who are the people that are defining it who are the experts who are we looking for um to make decisions to get advice from and that's another crucial point so with that uh hope you enjoy the talk um where rain and i dive into diversity and blockchain enjoy room",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 183.5,
+      "end": 184.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "here",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 184.84,
+      "end": 187.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "um okay so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 187.68,
+      "end": 189.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "rain",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 189.12,
+      "end": 232.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "could you guess the way that i think about this is We talk about decentralization as kind of a key underlying, almost like a value within this space. I'm saying things are too centralized right now, we want to decentralize all the things. And one of those things that people don't often bring up by the least part of this is like the decentralization of who has power. And specifically which kinds of genders and races and ethnicities are represented. And I think about this a lot as like a rich white male in America within the space. So I guess could you tell me first for diving into how it's, yeah, could you, I guess, start first talking about decentralization and whether or not, how do you think it aligns with the kind of diverse?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 242.3,
+      "end": 243.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "That's better.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 244.18,
+      "end": 245.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So that's,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 245.62,
+      "end": 248.61,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "yeah, that's a small question. I'll just tackle that right now.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 249.65,
+      "end": 250.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 250.85,
+      "end": 258.49,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "well, in just words, so I'm the lead architect of Shapeship Prism and I'm the co-founder of Maiden and with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 258.49,
+      "end": 259.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Maiden,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 259.89,
+      "end": 263.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we are looking at diversity within the blockchain space a lot",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 263.53,
+      "end": 264.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "more.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 264.63,
+      "end": 286.75,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And so I have a rich experience on the engineering side and then due to my psychology background, I'm aware of the social issues that are all around this. Social issues in tech, social issues in finance. And like if you look at, even just taking like one group of women, like the number of women in tech",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 287.14,
+      "end": 287.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 287.54,
+      "end": 291.6,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "this much, and then the number of women in finance is this much, and the number of women",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 291.6,
+      "end": 292.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 292.12,
+      "end": 296.62,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "FinTech blockchain is even smaller. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 296.62,
+      "end": 297.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 297.5,
+      "end": 324.4,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's a problem. It's something we should be talking about. We, in the blockchain space, right, the decentralized vision is one where there aren't these third-party intermediaries that are extracting too much value from the system, right? Peer-to-peer allows that value to be exchanged and held and benefit the users themselves. And I think too often we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 324.4,
+      "end": 325.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "talk",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 325.32,
+      "end": 344.16,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "about the potential of this technology and sort of glorify this decentralized future. And again you go to a blockchain meetup. And if you look out into the crowd at a blockchain meetup, like this is your, this is the future? Is that really what we want if there's no women in this space?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 345.8,
+      "end": 350.1,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "women in our lives, we all know people from different backgrounds. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 350.1,
+      "end": 351.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "why",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 351.22,
+      "end": 361.7,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "isn't, why isn't that diversity and the intelligence that's innate to that diversity? And why aren't we ensuring that our future has that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 363.21,
+      "end": 363.89,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah, and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 363.89,
+      "end": 365.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 365.47,
+      "end": 379.78,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "go back to your question, like where is that alignment? You know, the intention of a decentralized economy is, I would say, democratization of value transfers and democratization of wealth",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 379.78,
+      "end": 380.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 380.7,
+      "end": 386.0,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I think most people would agree we also want a democratization of intelligence and a democratization of backgrounds",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 386.0,
+      "end": 386.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 386.46,
+      "end": 387.3,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it actually matters",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 387.3,
+      "end": 388.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 388.38,
+      "end": 389.3,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "actually not enough",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 389.3,
+      "end": 389.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 389.82,
+      "end": 390.22,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "say",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 390.22,
+      "end": 391.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 391.59,
+      "end": 392.09,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "an engineer",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 392.09,
+      "end": 393.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 393.95,
+      "end": 396.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know this about the technology actually matters to say",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 396.85,
+      "end": 397.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 397.57,
+      "end": 398.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a woman I'm a trans woman",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 398.85,
+      "end": 399.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 399.67,
+      "end": 402.39,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "this is my experience being a trans woman in the space",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 402.39,
+      "end": 402.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 402.91,
+      "end": 406.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And this is why I think this technology matters and what we can do with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 406.85,
+      "end": 407.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it. I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 407.99,
+      "end": 422.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "really like that. I think it reminds me of another key thing that people talk about in the space, which is this to lead concept around like anti-fragility and having resilience within the system and the ability to say, hey, it's just a bunch of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 422.59,
+      "end": 422.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 422.59,
+      "end": 443.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "rich white dudes in America that are thinking about this. that's gonna be, that's like a central point of failure, essentially. And people try to make systems that have trust us or that don't have trust points of failure. I think this is a version of that, for kind of like at the human level. So could you kind of talk a little bit more about what they did is trying to do in the space as a way to consult in the blockchain ecosystem?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 443.63,
+      "end": 464.03,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Sure. I love the way you put that back in time for dealing. It's really, yeah, if you're gonna invest a diverse portfolio, why not invest, I invest in a, a diverse economy and a diverse society. And to invest in diversity and society means that you listen",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 464.03,
+      "end": 464.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 464.83,
+      "end": 471.31,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the diverse experiences that are there. It means that you care about different perspectives and you recognize the value",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 471.31,
+      "end": 471.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 471.99,
+      "end": 475.41,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "those. So Maiden is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 477.07,
+      "end": 477.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "say,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 477.87,
+      "end": 501.03,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "primarily an educational blockchain company. We're a for-profit company with a social mission. And that social mission is about educating and empowering people with cryptocurrency skills and blockchain skills, anything from cryptocurrency investment to smart contract development. Really exciting to see what Kirk talked about, like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 501.03,
+      "end": 501.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 501.57,
+      "end": 523.62,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "educational initiative and blockchain is new enough, like eight, nine years old, that there's this huge gap in understanding. And so, you know, Consensus is a leader in this space and they're taking on the education challenge and there's not a lot of others that I know So there's really need for it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 523.62,
+      "end": 524.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 524.12,
+      "end": 525.92,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "what's unique about maintenance is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 525.92,
+      "end": 526.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 526.6,
+      "end": 543.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "taking on that educational challenge But we're doing so in a socially conscious way which is to say that it actually matters who we train up and it actually matters who we get access because if it's just an open platform the people with the most access and the most resources are the ones that rise to the top.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 544.55,
+      "end": 574.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, that's interesting. I feel like, and as you say, the opportunity, in one way it kind of sad in space, it kind of compounds of the existing power structures that exist. Like you had a bunch of people in startups, in tech, in fentech that were, you know, rich white males or banks or what have you thought, as the, as you're saying here, that it's also kind of an opportunity, which is say, hey, we're at the very beginning of this ecosystem, which kind of nascent, this is the time to really, double down on the diversity from a human perspective.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 576.68,
+      "end": 608.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So I like that. So tell me a little bit more, something that I think about a lot of this space is like what I, this space is a lot of kind of, whether it's libertarianism or crypto anarchism or things of that variety and then kind of a self, you know, a self-solvering, what should I do in the space? And so I'd like to just get your kind of initial take, I have this podcast and on the podcast, not even on purpose, just kind of by accident, The first six people on the podcast, the first six interviewees, were all like white males. And I, can I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 608.16,
+      "end": 609.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "agree about? It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 609.48,
+      "end": 627.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not an accident. No, totally, totally, totally. So, when someone like me, like, realize that when you look at an event, there's a lot of people like me here, and you have that underlying decentralization desire, what should I think about me personally doing good working space to help this go forward?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 627.26,
+      "end": 627.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 627.82,
+      "end": 628.64,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "thank you for that question.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 630.64,
+      "end": 692.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "The beauty of blockchain is that people, have a vision and have, there's a shared vision of this space and people are excited about creating an economy that's not so reliant on these central authorities. So people's hearts are there, you can feel it when you talk to them. And it's the nature of privilege and access to resources to not really be aware of the kind of struggles that women or people of color or trans or queer people have in the same kinds of spaces. So your question about, how to help. One big thing is just naming it, like name what your identity is, be curious about other people's identities. Don't avoid the feeling of discomfort about bringing that up. There's a kind of myopic ideal that we shouldn't have to talk about identities and that we should just be talking about the content. But that's not the reality we live in. We live in a massively interconnected reality, interdependent. where our",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 692.26,
+      "end": 693.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "origination",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 693.3,
+      "end": 723.72,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "actually factors in to every aspect of our lives and what we have access to. So, Maiden is attempting to create opportunities for new culture, right, so that we can create meetups that are more inclusive, we can create events that speak to different perspectives, and so that people want to come back. A lot of the reason, like, you say how it's an accident, you know, that like, wow, you know, all male or whatever that is. And there's so many factors that play into that. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 723.72,
+      "end": 725.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 725.64,
+      "end": 770.44,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "often you don't hear about it. So if you have an event and a woman shows up in that event and feels like she doesn't have a place there or that she's not respected if she talks about her experience being a woman, she's going to go home and not going to come back and you're not going to hear about it. So it's not your fault. I get the sense that people have really great intentions and hearts in the space. But the longer we don't talk about diversity and incredible intelligence that is within diversity, we want to unlock that intelligence. We need to name that and invite people in and ask people what's their experience. It's not offensive to honestly ask someone, what's it been like being a woman in blockchain? Or what's it been like being a person of color working in the tech space?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 771.3,
+      "end": 781.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think, yeah, I like that. I think just purely asking, it might be a different person as well saying, hey, what being curious what has been like. You get up here my master first and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 781.39,
+      "end": 781.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "from now on,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 782.03,
+      "end": 782.21,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "okay?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 785.21,
+      "end": 792.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So acknowledging it and then being curious about what it has like. And then I guess finally asking how can I help? I guess that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 792.95,
+      "end": 793.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "try",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 793.77,
+      "end": 796.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and prong approach should be helpful.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 798.81,
+      "end": 803.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So talking from those with an individual level a little bit and what can like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 803.57,
+      "end": 804.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 804.57,
+      "end": 829.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "as individuals do with the space. I guess another part of it is what How do you think about kind of the system level? A lot of blockchain is kind of, you know, we're talking about tokens and how you can kind of incentivize different kinds of behaviors within the space. How do you think at that system level and changing the operating system or other humanity, this little bit. How do you think about that set of things and what can we do at a system level to kind of create more diversity in this space?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 829.82,
+      "end": 830.7,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Another small question.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 830.96,
+      "end": 831.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Thank you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 832.66,
+      "end": 862.4,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "You're right that blockchain is giving us a means to incentivize all sorts of creators. I really, I love looking at blockchain through the perspective of incentive and for trust. And blockchain is an economic tool that allows us to shift the incentives so they're more aligned with our human values. Right? We forget that when we talk about technology, technology, technology, technology, like we're doing all of this because there's some human value that we're wanting to amplify. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 862.4,
+      "end": 864.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "blockchain",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 864.06,
+      "end": 874.96,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "allows us to incentivize behaviors that are aligned with that And so it's a really interesting question. How can we incentivize diversity? How can we incentivize action? How can we incentivize organizing?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 875.66,
+      "end": 878.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Like you say, there's a lot of people working on this. And some things are kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 878.32,
+      "end": 878.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 878.96,
+      "end": 889.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "first step necessary before you get to those later stages. And that's like, you know, financial inclusion is a big thing within the space and saying, hey, let's, you know, it's a big goal of, you know, shape, a big goal of coin base that like kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 889.22,
+      "end": 889.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 889.92,
+      "end": 901.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, bank, the unbanked and get them integrated into this ecosystem. And so I think there's that at a high level, and then later we can start to work this other version of diversity that exists.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 901.75,
+      "end": 936.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "The only thing I would add to that is we don't have to wait. We can actually look at the space and instead of just having social impact, looking at impact, it's almost like this one directional kind of focus. It takes the focus away from the subject and puts focus on the object. What are we helping? Who are we helping? And I think of just as important. Better question is who's doing the helping, who is in the leadership position, and who are we listening to when we're seeking advice and seeking and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 937.98,
+      "end": 941.1,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "like that? Oh, we're thinking from the system level, the process of how to do this?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 942.28,
+      "end": 942.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 942.44,
+      "end": 944.34,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "guess to wrap up here, is there one final",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 944.34,
+      "end": 945.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 945.36,
+      "end": 949.3,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that you would say to people we're working in a space around things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 949.3,
+      "end": 949.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 949.5,
+      "end": 950.1,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we all can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 950.1,
+      "end": 952.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "do to kind of make blockchain,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 952.18,
+      "end": 957.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like, because I imagine a awesome future. Blockchain is the place that all the other tech industries look at, say,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 959.5,
+      "end": 964.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "diversity, you know? What can what can is there one final thought of talking about?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 966.97,
+      "end": 967.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Sure",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 967.25,
+      "end": 967.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 968.53,
+      "end": 972.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "talked to a good friend of mine question about blockchain.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 984.99,
+      "end": 987.43,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "First step is to recognize there is unequal",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 989.58,
+      "end": 1000.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is due to a system is set up with unequal resources and so first step is acknowledge that and the second step is start asking like recognize",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 1008.06,
+      "end": 1012.43,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "blockchain and start to embody the normalcy of diversity",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 1012.43,
+      "end": 1013.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "start",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1013.11,
+      "end": 1025.06,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to say like hey like how can we get more women on that would seem like that would add a lot so people recognize the value instead of it being like the side thing, start talking about it and pull",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1028.96,
+      "end": 1031.74,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "together and we seek the experts start looking forward.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1033.32,
+      "end": 1033.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1033.62,
+      "end": 1035.46,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "love it. Well, thank you so much for Aynne. Thank you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1035.66,
+      "end": 1036.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1043.41,
+      "end": 1071.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "episode is brought to you by Shapeshift.io, the world's leading trustless digital asset exchange. Quickly swap between dozens of cryptocurrencies including Bitcoin, Third Dash, Bitcoin Cash, Auger, Golem, and many more. And this is not your typical crypto exchange. You don't need to create an account. or share your personal information, and your funds are never stored on Shapeshift. This means that your hard-earned digital wealth is never up for grabs by hackers or other malicious actors.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1072.01,
+      "end": 1072.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "To",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1072.49,
+      "end": 1080.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "get started, visit Shapeshift.io, choose the tokens you'd like to swap, input your receiving address, and send your funds. It's that easy.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 128,
+    "withheld": 0,
+    "published": 128
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

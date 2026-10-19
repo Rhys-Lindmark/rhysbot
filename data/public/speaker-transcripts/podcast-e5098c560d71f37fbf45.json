@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "id": "podcast-e5098c560d71f37fbf45",
+  "title": "Is the Federal Reserve enabling fraud and greed in the banking sector?",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=LxhgUrnZRNQ",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "LxhgUrnZRNQ",
+  "youtube_url": "https://www.youtube.com/watch?v=LxhgUrnZRNQ",
+  "audio_sha256": "19182e11e1ae9be3015b0ae46e7549ec82f9866cf5e98f4ce9081e16e8c863b4",
+  "audio_duration_seconds": 58.630375,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 131,
+    "unknown_words": 3,
+    "unknown_words_fraction": 0.022900763358778626,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 2.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "The Fed kept rates low",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 2.62,
+      "end": 3.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 3.3,
+      "end": 6.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "stimulate the economy, particularly 0304.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 7.08,
+      "end": 7.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 7.5,
+      "end": 30.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "know, as a reporter, I love, everybody loves beating up on greedy bankers and short-sighted idiotic mortgage loan companies like countrywide. Like that all was real for sure. But the Fed, by pushing so much money out in the system, by keeping borrowing costs so low, it was feeding that. It was like enabling that. the fraud and the greedy bankers. This was all part of the,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 31.21,
+      "end": 31.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 31.61,
+      "end": 51.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "know, dumb mortgages are weather. Fed policy is climate. Like the Fed was creating the climate. And so that played a huge role in the housing bubble, building, building, building, building, and then correcting crash. And then you had the contagion effect as all the derivatives and stuff like that.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 7,
+    "withheld": 0,
+    "published": 7
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

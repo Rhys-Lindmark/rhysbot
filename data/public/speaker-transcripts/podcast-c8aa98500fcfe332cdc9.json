@@ -1,0 +1,4113 @@
+{
+  "schema_version": 1,
+  "id": "podcast-c8aa98500fcfe332cdc9",
+  "title": "#52 Arthur Brock, Holochain: Verbing the World Through an Agent-Centric Blockchain",
+  "published_at": "2018-10-24T23:23:42Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/52-arthur-brock-holochain-verbing-the-world-through-an-agent-centric-blockchain",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/519437436-the-rhys-show-52-arthur-brock-holochain-verbing-the-world-through-an-agent-centric-blockchain.mp3",
+  "youtube_id": "OWL3DjWe7yY",
+  "youtube_url": "https://www.youtube.com/watch?v=OWL3DjWe7yY",
+  "audio_sha256": "44440a9729467dcf938899e87f603e719f786c1647f113588aa1d6c38d6de2be",
+  "audio_duration_seconds": 2807.9281875,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 7947,
+    "unknown_words": 234,
+    "unknown_words_fraction": 0.02944507361268403,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_1",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.66,
+      "end": 1.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Now",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 1.5,
+      "end": 5.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "entering the Bitcoin Podcast Network.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 28.1,
+      "end": 35.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Today's episode is brought to you by KeepKee, the easy, safe, and simple way to protect your Bitcoin, ether, light coin, and many other digital assets.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 35.86,
+      "end": 36.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 36.3,
+      "end": 47.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "no time like the present to protect yourself from hackers, malware, and viruses. Visit keepkey.com to order your secure hardware wallet today and use the code Humanist 10 for a limited time 10% discount.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 49.79,
+      "end": 50.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 50.67,
+      "end": 90.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "everybody. So, before, Before I start today's episode, I just want to do a life update. So I've joined the MIT Media Labs Digital Currency Initiative as their head of community and long-term societal impact, which I'm pretty excited about. A really nice group of aligned people there. So that means that I'm going to shut down my Patreon. I've shut down my Patreon and that this podcast will likely continue, but... possibly in a different form with the Media Lab or with the DCI or whatever. So we'll see. And I just, as another quick note there, this podcast was recorded before I joined the DCI. So clearly these are my views and do not reflect those of the digital currency initiative, the DCI.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 91.96,
+      "end": 104.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello everybody. Today I chat with Arthur Brock, the founder and acting CEO of HoloChane. which is this interesting agent-centric blockchain platform. And the conversation is kind of broken into two parts. The first half, we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 104.6,
+      "end": 105.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "chat",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 105.64,
+      "end": 126.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "mostly at a systems level about this shift from an object-centric paradigm to an action-centric paradigm, i.e. this shift from nouns to verbs. And we chat about some... Arthur has some interesting thoughts on this around, especially like objects as a temporary configuration, i.e. a subset of information flows. That's kind of a weird thought that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 126.54,
+      "end": 127.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like... You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 127.51,
+      "end": 172.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "got all these atoms flowing around. Eventually they come together to become a coffee, or a coffee cup, and then they go back to their flow state. So that's the first half. And then the second half, we chat about, you know, kind of dive in a little bit to the technicals about how HoloChane works with its agent-centric instead of token-centric model. And also how it doesn't have consensus. You know, you essentially just put things on this peer-to-peer ledger. And so it's just interesting to... get this powerful perspective that we don't get very often, where you say, hey, these are things that must be true within the blockchain ecosystem, and it's just nice to kind of be pushed out of that mindset. So I wish I could have spent more time diving in, understanding the difference with UTXOs or whatever, but I did not, or we did not have enough time. In any case, enjoy the episode.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 175.5,
+      "end": 175.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 176.3,
+      "end": 206.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "everybody. My name is Reeslinmark, and you're listening to another episode of creating a humanist blockchain future. In this podcast, we take a systems thinking approach to doing good in the world. We have a couple different series to focus on different systems. And today we're focusing on both series A, macro systems, where we as humanity headed, and also series C software systems where we ask the question, how is the digital world structured? And to chat about both those things, I'm very happy to introduce Arthur Brock to the show. Arthur is a co-founder of HoloChain, an agent-based distributed computing system. So, Arthur, thanks for being on show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 207.23,
+      "end": 208.77,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Thanks, for us. Good to be here.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 209.09,
+      "end": 226.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, we succeeded in with the microphone stuff, so we're chatting now. So at a high level, Arthur, before we actually dive into HoloChane, tell me how you, because I think you kind of see the world in an interesting way. Tell me how do you see the world, how do you see our current context, and how are you trying to kind of positively shape it?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 227.99,
+      "end": 228.75,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Well, um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 230.99,
+      "end": 231.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Whole",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 231.51,
+      "end": 241.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Chain actually comes out of sort of a bunch of other work. And that other work has really been looking at contextualizing the economy differently and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 241.73,
+      "end": 243.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "social",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 243.17,
+      "end": 249.75,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "systems and how it is that we actually can coordinate with each other on large scale. And I think we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 249.88,
+      "end": 252.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "didn't,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 252.12,
+      "end": 264.03,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "this project didn't grow up out of sort of crypto token ICO world. It has really grown up out of building social coherence in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 264.54,
+      "end": 265.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "computing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 265.8,
+      "end": 280.06,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "on all scales so that small groups or large groups could actually like agree to a set of rules they're following together or a tool that they're using together and be able to have a context in which that is mutually held and hosted.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 281.09,
+      "end": 281.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 281.45,
+      "end": 304.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "it. Interesting. Yeah. So you're saying, yeah, you've been working on this for extended period of time and then only re and then as the kind of blockchain crypto ICO world kind of popped up. You were part of that, but you were working at creating social coherence, especially through a computing layer for a long time. And so tell me then, so when you think about positively shaping it, your goal is to kind of create, or like, tell me your goal there around the kind of social coherence coordination piece.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 306.53,
+      "end": 306.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 307.41,
+      "end": 314.09,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I see you mentioned later in the agenda here, SEPter and Metacurrency, but I kind of want to pull it up to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 314.09,
+      "end": 314.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "now. Yeah, let's do it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 315.19,
+      "end": 315.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 315.53,
+      "end": 318.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "All right, cool. So, yeah, out of the Metacurrency project,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 320.0,
+      "end": 326.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the simple goal, like the most simple way of stating the goal was, is transcending",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 326.9,
+      "end": 328.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "our",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 329.35,
+      "end": 334.39,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "current framework of currencies to what we believe is really the next",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 334.39,
+      "end": 335.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "upcoming",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 335.77,
+      "end": 345.15,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "kind of post-monetary economy. And one of the core requirements in terms of the functional systems we build is just a really simple thing of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 345.15,
+      "end": 345.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 345.99,
+      "end": 349.17,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and I should be able to interact or you could say transact",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 349.39,
+      "end": 350.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "without",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 350.55,
+      "end": 352.71,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "any third party",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 352.71,
+      "end": 353.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "being",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 353.63,
+      "end": 355.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "inserted between us, not of our choosing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 356.37,
+      "end": 357.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "No",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 357.01,
+      "end": 361.15,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "point of enclosure where some third party is controlling our interaction.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 362.4,
+      "end": 364.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 364.11,
+      "end": 368.91,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "sounds straightforward and simple to some degree to do that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 369.47,
+      "end": 369.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 369.91,
+      "end": 410.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you know, when you consider that PayPal calls itself peer-to-peer payments, all you need is an email address, you know, well, there's all of this centralized stuff accidentally boiled in there. It's not actually peer-to-peer. Even an email address happens in a domain name space, which has a centralized authority, and an email server is a centralized server. And you have to go to PayPal's website and, you know, do the transaction through their centralized site and use a centralized... currency to do it. And like there's, and you have to connect to the internet, which you need an IP address, which there's like all of these things actually put third party agents not necessarily of your choosing in between",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 410.85,
+      "end": 411.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "us.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 412.85,
+      "end": 413.11,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 413.11,
+      "end": 414.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 414.82,
+      "end": 426.78,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we had some pretty big goals about how to do this. And just a note in the, in the metacurrency context, we don't mean money when we say currency.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 427.36,
+      "end": 427.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 427.92,
+      "end": 431.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "have this little mnemonic where you can think of it like current, like flow",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 432.16,
+      "end": 433.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 433.36,
+      "end": 437.56,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "see, the ability to see currents or flows. We make symbol systems",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 437.56,
+      "end": 438.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 438.34,
+      "end": 442.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "coordinate on large scales, and money is just one part of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 442.14,
+      "end": 442.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 443.16,
+      "end": 454.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "You know, college degrees and credits and grades are also currencies that are non-monetary that everybody learns to use. And, you know, they're all over the place, and we don't think about it. But...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 454.7,
+      "end": 455.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 455.14,
+      "end": 461.56,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "shapes social behavior, and it's part of how we create collective intelligence. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 461.56,
+      "end": 462.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 462.93,
+      "end": 471.05,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "in terms of positively shaping the future and the current context, we started building a grand",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 471.05,
+      "end": 472.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "platform",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 472.37,
+      "end": 491.96,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "for rebuilding some of these things in a way that took out all of the centralization. Modeling on nature, using biomimicry and patterns that we find in nature and in our bodies. you know, that kind of thing. That's called SEPTor, which is short for receptor, because it's receptor-based computing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 493.47,
+      "end": 493.77,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 493.77,
+      "end": 495.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 495.54,
+      "end": 503.82,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we saw the trajectory, or rather kind of the hype that was building around blockchain, we took a small piece of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 503.82,
+      "end": 505.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "SEPTor",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 505.38,
+      "end": 508.7,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and made a standalone version, basically how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 508.7,
+      "end": 509.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "multi",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 509.64,
+      "end": 514.62,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "-instance receptors synchronize data with each other to maintain shared state.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 515.88,
+      "end": 516.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 516.2,
+      "end": 516.56,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "took",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 516.56,
+      "end": 517.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 517.66,
+      "end": 522.08,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "piece of SEPter and built a standalone version, which is HoloChane.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 523.58,
+      "end": 535.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And so HoloChane is really coming out of much deeper work about collective intelligence rather than managing tokens. And so we end up having a very different architecture and structure to it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 535.3,
+      "end": 544.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it, got it. And we'll dive into that structure in a bit. And at a high level, it's agent-based versus non-agent-based consensus, or agent-centric versus, you know, kind of consensus-centric. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 544.92,
+      "end": 545.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I do want to turn",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 545.78,
+      "end": 592.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "it. Yeah, I do want to stay on that point of the currency piece, which I think is actually very powerful because... Thinking in terms of, if you think about from a system's perspective, you have kind of stocks and flows. And for much of our life, we've thought in terms of objects and those stocks and how, and there's object-oriented programming and all those things. And I think we're transitioning to this world of flows. And as you talk about, there's all these different flows that are based around trust, whether it's trust in money or trust in institutions, we would have academic credentialing or what have you. And I think that that flow perspective is one that is just very, very helpful for understanding our current reality because things are happening in flows, as you say, all the time around us, and we just kind of need to be a little bit woke to think in the flow perspective to then see all the flows happening all around us.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 593.4,
+      "end": 593.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 593.8,
+      "end": 635.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "I guess... That makes, so you're starting to answer also some of my, staying a little bit at a high level for a second, you're starting to answer some of my question around why some of the folks in both the platform co-op world and also in kind of like the deep systems thinking world like, you know, Jordan Greenhall and Daniel Schmockenberger, why they feel kind of aligned with you, which is because you are kind of. you've come at this from a root cause kind of social coherence perspective and then only as a result of that have kind of built this blockchain project. So could you kind of give me a little bit more texture and give our listeners a little bit more texture on why? I mean, I know that there aren't that many blockchain projects that went to this like, for example, this platform co-op open thing that just happened, but you were there. So tell me a little bit more about, you know, why you're aligned with those worlds.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 637.43,
+      "end": 637.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Cool.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 637.97,
+      "end": 641.19,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah. Let me go back actually to the thing that you were just saying about stocks and flows.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 643.28,
+      "end": 643.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 643.62,
+      "end": 645.78,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think that really hits the nail on the head.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 647.31,
+      "end": 647.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 647.91,
+      "end": 648.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "if I were to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 648.53,
+      "end": 649.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 649.31,
+      "end": 654.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of blow it up into a really large-scale thing, I would say that we are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 654.27,
+      "end": 655.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "playing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 655.83,
+      "end": 656.31,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "out",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 656.31,
+      "end": 658.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 658.31,
+      "end": 664.07,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of end game of an object-centric paradigm, a stock-centric, but I think object-centric paradigm,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 665.71,
+      "end": 668.93,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "with our kind of Western reductive materialist",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 668.93,
+      "end": 670.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "worldview.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 670.57,
+      "end": 675.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that kind of turns everything into objects bouncing off of each other, sort of, right, at all levels.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 675.93,
+      "end": 676.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 676.57,
+      "end": 680.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And anything that isn't an object bouncing around is kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 680.53,
+      "end": 681.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "something",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 681.51,
+      "end": 685.57,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we sweep under the carpet and we'll figure out how it really boils down to objects later kind of thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 687.21,
+      "end": 687.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 688.15,
+      "end": 689.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "I'm staying on that for, or sorry, keep going.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 690.47,
+      "end": 690.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "No,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 690.83,
+      "end": 691.01,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "go ahead.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 691.21,
+      "end": 691.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 691.37,
+      "end": 693.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "was going to say that the, I agree with you that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 694.12,
+      "end": 694.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 694.28,
+      "end": 705.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "mean, you can see it. There's a bunch of different forms of this happening, but there's things like Kevin Kelly wrote a book recently called The Inevitable, which is, it's these 12 different forces that are shaping the future, and they're all just the verbs.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 707.82,
+      "end": 741.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "It's just screening. It's all these verbs. So he's kind of, he's moving away from that noun-based world. You can also see it just from a programming perspective, moving a lot of people are moving from, or not a lot, but some people on the cutting edge are moving from object-based programming towards these, like, kind of functional programming. And I think that you're right to say, that when we think about our kind of societal transition right now, you can think of it as like the end of the industrial age and the beginning of the information and computing digital age, or as you say, we can think of as the end of kind of the noun-based object-oriented age in the start of the verb-based kind of action-oriented flow-based age. Is that kind of what you're getting at?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 741.75,
+      "end": 742.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 742.09,
+      "end": 744.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is. Like, I think of it as the...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 744.55,
+      "end": 744.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 744.83,
+      "end": 775.63,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "scientific paradigm and the systems paradigm. Like systems are alive, dynamic, and changing. They are characterized by flow, and science is characterized by cutting things into parts and analyzing the parts, kind of. I mean, what's interesting is that's right in the root of the word science, which is the same root as scissors and schism and schizo, right? It's to cut and separate. And I think there's also a lot of ways that we are suffering from that separation.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 776.01,
+      "end": 777.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep, yep, I agree with that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 777.83,
+      "end": 778.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That whole",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 778.31,
+      "end": 778.97,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "worldview.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 779.73,
+      "end": 779.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 780.19,
+      "end": 789.63,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And inside of Flows, and I'm not speaking metaphorically, literally everything is connected. We are breathing the same air, drinking the same water. You know, we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 789.63,
+      "end": 791.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 791.09,
+      "end": 811.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "boundaries are temporary and permeable. And again, back to the Stocks versus Flows thing, objects. are always and only a temporary configuration in a flow. This coffee mug I'm holding in my hand, you know, the ceramic came out of the ground somewhere, the, you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 812.15,
+      "end": 812.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 813.07,
+      "end": 843.08,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the dyes on it, it's all holographically colored and all this kind of stuff. Aurora, Borealis colors, all those beautiful stuff. Like all those came from, you know, they were. processed as chemicals and then painted onto here. There's a whole series of flows that brought this thing together. And it is at the moment a temporary accumulation that I'm holding in my hand. And, you know, when it gets dropped on the tile floor and shatters and swept into the wastebasket or whatever, you know, like it's flowing to somewhere as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 843.08,
+      "end": 844.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 844.2,
+      "end": 846.24,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "You know, objects are always",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 846.24,
+      "end": 848.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a way",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 848.42,
+      "end": 852.52,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of understanding flow constrained to certain membranes at certain times.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 853.22,
+      "end": 853.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 854.64,
+      "end": 873.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Objects don't get you flows necessarily. Flows get you objects. So it really is a super set that we can move into, and we don't lose all of the great knowledge we've accumulated in the realm of objects. But we have a better chance at understanding the health of systems, which really comes down to flows.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 874.14,
+      "end": 874.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 874.56,
+      "end": 917.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "I agree with that. And I agree with you to say that it's a, we're working on a superset here that flows create objects, not really vice versa, that objects are just a, and I like when people think about information theory in this way, where information is just a... information kind of is a pattern. And you can think of your coffee cup as a temporary pattern based off of some random information flows. And especially true today, as we have 4 billion network smartphones and hyper-connected kind of supply chain stuff. It's like we have flows of physical stuff, you know, Amazon supply chains, whatever. We have flows of information. That's all the internet connected age. And then we also have flows. We're starting to see these flows of value, especially with kind of blockchain-enabled permissionless value flow. So, yeah, we're getting into the world where where things are going to be fluid.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 920.03,
+      "end": 923.81,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And fast, you know, the world is changing really fast. And when our",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 923.81,
+      "end": 925.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "worldview,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 925.31,
+      "end": 936.39,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "our mindset, is tuned to objects, which tend to be static and stay the same, it's harder for us to integrate the rate of change that we're starting to move at.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 936.65,
+      "end": 936.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 937.05,
+      "end": 941.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "so let's stay on that for a second. How do you think, I mean, because this is something that I kind of harp on in my show a lot, which is like, hey,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 942.57,
+      "end": 942.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 942.91,
+      "end": 959.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "are going too fast. We need to keep, we need to, we're in a fragile time. How do we make sure that, um, how do we kind of put on a transitionary lens given our, this period of transition and speed? How, what is your kind of transitionary lens? How do you kind of view the world, um, given this time of, of kind of hyper exponential change?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 960.78,
+      "end": 961.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 961.46,
+      "end": 966.5,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "if you go to my personal website, artbrock.com, scroll down to the middle-ish.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 967.14,
+      "end": 967.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 967.54,
+      "end": 969.56,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a diagram about living systems wealth",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 969.56,
+      "end": 970.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 970.4,
+      "end": 977.68,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we created in the metacurrency project a lot for talking about wealth that is deeper than speculative tokens.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 978.12,
+      "end": 978.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 978.64,
+      "end": 984.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I actually want to connect this back to your last question about positively shaping some of the tech as well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 984.56,
+      "end": 985.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 985.08,
+      "end": 992.0,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "there's these different layers that all living systems have, right? There's the current economy, which is these speculative tokens, these sort of poker chips.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 992.69,
+      "end": 992.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 992.97,
+      "end": 997.61,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are betting on the living economy, but they're not really a part of the living economy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1000.19,
+      "end": 1000.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1000.63,
+      "end": 1003.63,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "could explain that more thoroughly, but I kind of want to shortcut",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1003.63,
+      "end": 1004.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1004.41,
+      "end": 1013.17,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "say, you know, there's parts and products, which are the stocks and flows of stocks and commodities and that type of stuff are all parts and products of a living system,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1013.27,
+      "end": 1013.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1013.87,
+      "end": 1019.09,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "there's properties of living systems, which are measurable but not tradable like parts and products are.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1019.91,
+      "end": 1020.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1020.49,
+      "end": 1071.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And then there's... performance of a living system, which is comparably rankable. You can compare performance. Like we send Olympic athletes to go run the race on the same track at the same altitude together. You know, like we can rank performance, but we can't trade it either, right? Like we think tradable is sort of the ultimate thing, but it's a tiny little part of this picture. You know, then there's the relationships, the relational level of wealth, which is acknowledgeable or nameable, but it's not even rankable or measurable in the same way. And then we get all the way out to, and this is back to the rate of change question, we get out to the realm of possible wealth. And that has to do with the evolutionary capacity of a system. And the evolutionary capacity of a system",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1071.39,
+      "end": 1072.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1072.67,
+      "end": 1075.81,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "correlated to its information handling capacity.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1076.98,
+      "end": 1077.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1077.5,
+      "end": 1084.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "as we have... exploded in our information handling capacity in this computing and networking age and that kind of stuff,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1084.64,
+      "end": 1085.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "literally",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1085.98,
+      "end": 1105.78,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "evolution speeds up. Evolution, our capacity to evolve ourselves because of the ability to see the system feedback and have better information and that kind of stuff accelerates. And without stopping the information handling capacity, without limiting the information handling capacity, things only accelerate.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1108.01,
+      "end": 1130.61,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "evolution only accelerate, change accelerates. And so I don't think we can fight that. What I think we need is a frame that can integrate that. Because in some ways, we're kind of socially retarded. Like we, I mean, retard as in slow, like we can't change socially very fast, right? We,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1131.41,
+      "end": 1131.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "uh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1132.07,
+      "end": 1134.87,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it takes us a while to integrate things and we,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1136.47,
+      "end": 1141.91,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "When you consider that there are people alive today, you know, that did not grow up with electricity",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1141.91,
+      "end": 1143.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1143.25,
+      "end": 1148.99,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you know, still remember horses on the roads and that kind of stuff. That's all in one lifetime.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1149.86,
+      "end": 1150.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "How",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1150.34,
+      "end": 1151.48,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "different this world is.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1152.24,
+      "end": 1152.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1152.72,
+      "end": 1153.94,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it's only accelerating.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1155.1,
+      "end": 1208.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. So some notes on that. So A, I agree with you to say that this deeper wealth piece is interesting. And you can kind of think of our world as one where We've had generally one-dimensional money, aka nation-state fiat and a bunch of different versions of it. And in a way, this kind of blockchain crypto world kind of allows for indimensional money. But as you say, money is just a form of the exchangeable versions of things. But there's also these underlying deeper forms of wealth, like the performance, the relational, all these other kinds that are not as easily exchangeable. And those should also be accounted for, hopefully, within our, like, how we think of the health of the system. So I agree with that. I also definitely agree with you that, yeah, our information in this, our information has gone up a ton. And our information handling capacity hasn't really gone up. We've kind of had decreasing coherence, even though we've had exponentially increasing kind of amounts of information at us.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1208.99,
+      "end": 1209.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1209.39,
+      "end": 1211.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "that gets this last point that you said around,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1211.39,
+      "end": 1211.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1211.79,
+      "end": 1215.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "know, can we have a frame that can integrate the speed?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1215.96,
+      "end": 1216.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1216.32,
+      "end": 1217.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "as you say, there are people,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1217.88,
+      "end": 1218.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1218.06,
+      "end": 1232.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "think of, you know, wait, but wise progress die units, which says, hey, if there's a person 10,000 years ago versus, you know, 9,000 years ago, the world wasn't that different. But if a person was 1,000 years ago versus today, or even 100 years ago versus today, the world is super, super different. And so, like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1232.26,
+      "end": 1232.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1232.68,
+      "end": 1234.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "rate of change is going up a ton.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1234.66,
+      "end": 1235.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1235.02,
+      "end": 1240.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "feel like when we think about trying to kind of... take that into account. The thing that I think about is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1240.68,
+      "end": 1241.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1241.0,
+      "end": 1244.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "know, progressives versus kind of conservatives and how that perspective",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1244.9,
+      "end": 1246.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is, is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 1246.52,
+      "end": 1275.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "around this tension around how much should be changed and how quickly should we change. And the conservatives have a good point, which is, hey, let's keep some things stable. Let's keep things rolling in this old way because the old way was good for these reasons. And the progressives also have a good perspective, which is, hey, let's, we got to progress. We got to make things different and we've got to incorporate all these new kinds of change. And I feel like as we go through this. this period, people need, yeah, we'll need to think a lot more about, yeah, that rate of change question and how to incorporate the speed in with our kind of social sphere and social systems.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 1276.25,
+      "end": 1276.39,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Totally.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 1277.27,
+      "end": 1278.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "One quick thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 1278.65,
+      "end": 1282.83,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I don't know if you ever saw my blog post about the future of governance is not governance.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1284.53,
+      "end": 1284.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1284.97,
+      "end": 1291.09,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I define governance right at the beginning exactly connected to what you're talking about in terms of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1291.09,
+      "end": 1292.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1292.61,
+      "end": 1302.17,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "living systems. have to be able to adapt to changing circumstances around them, and they have to maintain their system integrity. They can't adapt so fully or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1302.17,
+      "end": 1303.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "randomly",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1303.37,
+      "end": 1305.51,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "or quickly that things fall apart,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 1305.58,
+      "end": 1306.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 1306.68,
+      "end": 1306.82,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 1306.82,
+      "end": 1309.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this governance",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 1309.16,
+      "end": 1313.84,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "or decision-making or, you know, those kinds of things are all about both",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 1313.87,
+      "end": 1315.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "progress",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 1315.19,
+      "end": 1334.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and conserving, right? So the idea that there's a, this sort of dichotomy where you have to vote for a progressive or a conservative is a false dichotomy right that's actually something that I think diminishes our capacity to navigate the nature of integrating change by putting change",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 1334.54,
+      "end": 1335.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 1335.92,
+      "end": 1340.44,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "integrity at odds with each other when they're actually a part of each other",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 1340.44,
+      "end": 1341.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 1341.5,
+      "end": 1342.06,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 1342.78,
+      "end": 1348.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "I agree with that. I think one final note, and then we let's transition to the HoloChance of self, even though clearly we could talk about this rages.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 1350.48,
+      "end": 1355.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "I feel like the future of governance is not government. That's another great example that I like to give around.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 1357.35,
+      "end": 1360.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "objects turning to nouns turning to verbs. It's like, no, no, no.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 1360.79,
+      "end": 1360.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "What is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 1360.99,
+      "end": 1393.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "governance? You know, that's, that's a, that's an action-oriented thing, not a government, which is a noun kind of institution. And the other piece there is when people talk about liquid democracy and they say, hey, we have a current system now. That's too bad. Or you like, you vote for your person or whatever and then you can't change for two years or four years or whatever. And then it's like, well, do you actually want to be able to change every second? Well, that might not be good either because people might be in and out too quickly. And then that gets you to this question of viscosity of the system and viscosity of the liquidness of the democracy. And you need to have a, there's a middle number there that works better than either extreme or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 1393.52,
+      "end": 1393.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "whatever.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 1395.88,
+      "end": 1409.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Cryptocurrency is vibrant and exciting, but it's not without a share of bad actors. Exchanges and personal accounts can be hacked. Computers can be infected with malware. Left unprotected, your digital wealth is up for grabs. Don't let yourself be a victim.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 1409.61,
+      "end": 1410.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Keep",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 1410.11,
+      "end": 1440.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Key is a safest and simplest way to protect your Bitcoin, Ether, Litecoin, and other tokenized assets. This hardware wallet is a separate device that you control. Brought to you by the pioneering team at ShapeShift, Keepke works with the wallet software on your computer to manage your private keys and transactions. Your device is pin protected, which provides protection if it falls into the wrong hands. Its large display lets you carefully view and approve every transaction. And if your key key keys ever lost or stolen, you can safely recover your device without compromising its private keys.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 1440.52,
+      "end": 1440.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 1440.98,
+      "end": 1444.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "bottom line, you'll sleep easier knowing that your digital wealth is safe and secure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 1445.18,
+      "end": 1445.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Visit",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 1445.74,
+      "end": 1452.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "keepkey.com to order yours today and use the code Humanist 10 for a limited time 10% discount.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 1455.19,
+      "end": 1465.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "So with that, let's talk about HoloChain. So it's agent-centric. Tell me more, what is how does HoloChane work? How does it solve a double-spin problem?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 1466.41,
+      "end": 1467.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 1467.37,
+      "end": 1468.61,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so part of what we're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 1468.61,
+      "end": 1469.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "doing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 1469.71,
+      "end": 1480.63,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "when we're talking about agent-centric is we're contrasting that with token-centric because blockchain architectures are token-centric. They make a set of tokens that exist as the data.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 1482.85,
+      "end": 1507.71,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that everybody has to agree on. So we have to have consensus. And any change to that data, we have to have agreement about that the change happened, that it was a valid change and what order in which it happened. So that, like you just said, double spend. If you have rival data, you know, I can't change it while you're changing it because you're the only one allowed to change it or only one change is allowed to be made or, you know.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 1508.91,
+      "end": 1509.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 1509.35,
+      "end": 1509.69,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 1509.69,
+      "end": 1510.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 1510.59,
+      "end": 1511.83,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "end up in this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 1512.98,
+      "end": 1514.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this problem",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 1514.02,
+      "end": 1520.3,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of trying to manage consensus about large quantities of data across large quantities of machines. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 1520.3,
+      "end": 1521.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 1521.64,
+      "end": 1534.22,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think that fundamentally, I haven't answered the question about what is HoloChain yet. Let me actually do that first. In HoloChain, part of what we're suggesting is there's no such thing as global state.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 1534.48,
+      "end": 1534.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "All",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 1534.98,
+      "end": 1538.1,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "state is local, and all state changes must be local.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 1541.31,
+      "end": 1541.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 1541.81,
+      "end": 1553.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "can have global discoverability of the state changes that have been made, and you can have global validation of state changes and those kinds of things. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 1553.55,
+      "end": 1554.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 1554.95,
+      "end": 1558.87,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you recognize that all state change must be local,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 1559.83,
+      "end": 1561.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "suddenly",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 1561.03,
+      "end": 1584.86,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the problems that you're trying to solve and that blockchain needs consensus for, a lot of them actually just fall away. And there's a much smaller, it's a different subset of problems. There's other problems we have to solve for. But there's a much smaller set of problems that I think lets us scale and be agile, scale and grow and change a lot faster than blockchain architectures can.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 1586.25,
+      "end": 1586.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Before",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 1588.69,
+      "end": 1589.79,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I get too technical",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 1589.79,
+      "end": 1590.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 1591.01,
+      "end": 1592.43,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that, I just want to say,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 1594.86,
+      "end": 1595.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 1595.42,
+      "end": 1595.42,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 1595.85,
+      "end": 1596.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "No,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 1596.49,
+      "end": 1597.71,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you have it later in the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 1597.71,
+      "end": 1598.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 1598.76,
+      "end": 1599.6,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I'll skip it. I'll come back",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 1599.6,
+      "end": 1599.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 1600.24,
+      "end": 1629.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, so yeah, I mean, I think that the, it's interesting. So token-centric versus agent-centric. Yeah, I think I mostly agree with you to say that. the world of blockchain is token-centric. Though you could also argue some of it is just like transaction-centric, not necessarily with like supply chain stuff that people are exploring, that stuff might be it's just a series of transactions, not necessarily with tokens. Do you see what I'm saying there, I guess? Or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 1629.64,
+      "end": 1630.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 1630.22,
+      "end": 1633.72,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "It's also why we use the phrase data-centric.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 1635.18,
+      "end": 1635.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "If",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 1635.62,
+      "end": 1638.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you give data first-order existence,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 1639.3,
+      "end": 1639.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Instead",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 1639.9,
+      "end": 1652.58,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of recognize that all data is authored, all data comes from some source of information and is only as good as that source of information, if you give data first order existence over agents,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 1653.18,
+      "end": 1654.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 1654.67,
+      "end": 1656.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think you've already broken data integrity.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 1657.51,
+      "end": 1658.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 1658.11,
+      "end": 1658.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 1658.53,
+      "end": 1664.05,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "can go into detail about that, but I think that actually blockchain is starting from a broken data integrity model.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 1666.28,
+      "end": 1686.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Interesting. Yeah. So, yeah, so you haven't. And just to check here, so imagine that I, just for me to explore this for a second. So imagine that we are, we're in this, this hollow chain reality. And let's say I want to, I'm an agent and I want to, can I send you some money? And then if I send you some money within my worldview,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 1687.3,
+      "end": 1687.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 1687.48,
+      "end": 1704.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "I also send that same money to our friend over here? Or how does that? I guess from my perspective, from the agent-centric perspective, maybe my agent just sees, hey, you only have $2 and you try to give it to $2 each to two people. Is that how it would solve the kind of double-spend problem there?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 1705.36,
+      "end": 1705.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 1705.5,
+      "end": 1707.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "am I still thinking from a backwards mindset?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 1707.94,
+      "end": 1708.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 1709.29,
+      "end": 1726.61,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "let's back up one second because you jumped straight to money. And understandably from, again, from blockchain context, because pretty much all blockchains have currencies built into them. as an incentive to get people to run a very efficient, sorry, a very inefficient architecture that you have to pay people to run.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 1728.25,
+      "end": 1742.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "HoloChain does not have a built-in currency. We believe that HoloChane has to be currency neutral, like the internet protocol, is currency neutral, so that you can build many and different and competing and contrasting currencies on top of it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 1745.31,
+      "end": 1745.83,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 1746.51,
+      "end": 1746.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 1746.99,
+      "end": 1759.05,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "whole chain doesn't have a built-in currency, and I don't think it has to be able to incent people for the very same reason that Dropbox doesn't pay you to have you hold a copy of your files.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 1759.95,
+      "end": 1760.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 1760.73,
+      "end": 1799.69,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "You already want your data. You already want to have control of your data. And, you know, you pay Dropbox to store a backup copy on the cloud, you know, and then you synchronize these directories, but they don't pay you to store your own data. Google Drive, when you sync your files, they don't pay you to store local copies, right? I think HoloChain is built around the self-interest incentive in that regard of if you run a HoloChane instance, you control your identity, you control your data, you own it, and then you can publish it into a shared space that's collectively held and globally validatable and that kind of stuff. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 1799.69,
+      "end": 1801.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 1801.7,
+      "end": 1808.59,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "actually... maximizes your autonomy and freedom and the ability to fork away from a group that you may not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 1808.59,
+      "end": 1809.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "want",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 1809.43,
+      "end": 1813.39,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to continue to work with or whatever. Nobody can steal your data because you have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 1813.39,
+      "end": 1815.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it. Interesting.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 1816.37,
+      "end": 1818.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "And that was kind of pushing back on the...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 1819.17,
+      "end": 1819.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 1819.43,
+      "end": 1836.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "perspective, as you say, there's this money perspective where, as you say, like, all blockchains need to have validation. In order to have validation, you need to incent people to validate and to come to consensus. And you do that with money, with magic internet money. And so in a HoloChine world, if you don't need that, then you might not need to start with that kind of money first perspective.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 1838.13,
+      "end": 1841.39,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "HoloChane has validation. It just doesn't necessarily have consensus.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 1842.09,
+      "end": 1842.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 1843.47,
+      "end": 1849.28,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And. I know this may sound crazy to people in the blockchain space because they think you have to have it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 1849.68,
+      "end": 1850.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 1850.2,
+      "end": 1861.96,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "now let's take as an example of a HoloChain app building a currency on HoloChain. Because the kind of apps that we build on HoloChane are wikis and Slack groups and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 1861.96,
+      "end": 1864.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Twitter",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 1864.0,
+      "end": 1867.54,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and Facebook. And like we can run those kinds of apps on HoloChane",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 1867.54,
+      "end": 1868.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 1868.42,
+      "end": 1875.18,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "ways that it's not practical to run them on blockchain because of the... expense of storage and compute.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 1877.35,
+      "end": 1879.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 1879.15,
+      "end": 1892.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we're running a currency on HoloChain, we recommend that you take an agent-centric approach to the currency rather than a token-centric approach. So in other words, treat it like accounts, not tokens.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 1894.47,
+      "end": 1910.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And so that's already very parallel to double-entry accounting, every transaction in Holo Fuel, which is a currency that we're building for a project called Holo on top of HoloChane.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 1911.0,
+      "end": 1911.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Holo",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 1911.68,
+      "end": 1919.96,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Fuel, we build kind of like a double entry accounting system. Technically, it's more like REA accounting, resource event agent accounting,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 1921.64,
+      "end": 1928.5,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "but every transaction is an offsetting debit and credit to the sender and receiver accounts.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 1930.67,
+      "end": 1933.93,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "never are tokens created from nothing, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 1935.85,
+      "end": 1943.57,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "The net supply in the system is always zero, because all positive and negative balances always must balance.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 1944.79,
+      "end": 1946.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 1946.89,
+      "end": 1953.05,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "just not a way, that's called a mutual credit currency, and most people aren't used to thinking of mutual credit currencies. They",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 1953.05,
+      "end": 1953.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 1953.93,
+      "end": 1967.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "thinking of in terms of fiat currencies. And so interestingly, Although the blockchain world refers to national currencies as fiat, pretty much all blockchain currencies are fiat. They're spoken into being from nothing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 1968.13,
+      "end": 1968.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 1968.63,
+      "end": 1972.49,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, with every new block that you mine on Bitcoin, you get to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 1972.49,
+      "end": 1973.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "put",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 1973.33,
+      "end": 1975.59,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "12.5 new coins on it. And, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 1976.37,
+      "end": 1976.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 1976.97,
+      "end": 1979.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's, those came from nowhere.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 1980.27,
+      "end": 1980.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 1980.67,
+      "end": 1982.31,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "They were spoken into being by the miner.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 1982.92,
+      "end": 1983.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 1983.92,
+      "end": 2029.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "So it sounds interesting, and I agree with you, they are spoken into being by the miner and they're inflationary by nature. Like we have this kind of inflationary mindset around currencies while it says that this other one, it sounds like there's no inflation within Hollow, which is a... As you say, there's lots of on HoloChain. You can, because you don't have the data and compute issues that blockchain has, you can do a bunch of different apps like Wiki and Slack and whatever. And if you really want to, and maybe you want to, you could do some kind of digital currency versions. And within those digital currency versions, you are agent-centric rather than token-centric. And as a result, you have, it looks more like this style of accounting, the CEA accounting. And within that, you said that the... amount of tokens within the system is always essentially kind of constant. Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 2030.54,
+      "end": 2031.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Well, it's always zero.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 2032.12,
+      "end": 2032.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "It's always zero. It's always zero. It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 2032.82,
+      "end": 2033.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 2033.7,
+      "end": 2035.76,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "offsetting balance.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 2036.18,
+      "end": 2042.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, exactly. Okay, interesting. So then, and just to dive one more quickly on that, so where did the tokens come from?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 2044.24,
+      "end": 2046.86,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "There are no tokens. There's just your balance.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 2047.52,
+      "end": 2048.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So if I,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 2048.38,
+      "end": 2049.28,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "if I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 2049.28,
+      "end": 2050.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "spend",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 2050.54,
+      "end": 2053.34,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "10 credits with you, I go down 10, you go up 10.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 2053.84,
+      "end": 2054.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 2054.52,
+      "end": 2078.74,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Right? Fundamentally, if we were in a situation where I'm a host on Holo, because Holo hosts actually can get credit limits, so I can spend, and we both had zero balances at this moment, if I spend 10 credits because I have a credit limit that I haven't started using yet, I go down 10, my balance is negative 10, yours is positive 10.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 2079.2,
+      "end": 2079.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 2080.18,
+      "end": 2084.86,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So the net number of credits in the system from that hasn't changed.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 2086.38,
+      "end": 2087.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Every",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 2087.0,
+      "end": 2088.52,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "transaction is in that format.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 338,
+      "start": 2088.96,
+      "end": 2089.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 339,
+      "start": 2089.56,
+      "end": 2091.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "you're allowed to go negative in that version.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 340,
+      "start": 2092.7,
+      "end": 2099.6,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Certain accounts are allowed to go negative according to algorithms that manage credit limits to keep the supply",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 341,
+      "start": 2099.6,
+      "end": 2101.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "correlated",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 342,
+      "start": 2102.38,
+      "end": 2108.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to the asset that it's backed by. In the case of Holo, it's backed by computing power of a hosting network.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 343,
+      "start": 2109.08,
+      "end": 2118.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay. Interesting. Interesting. Should you say more on that for a second? So how is hollow that currency backed by the computing network?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 344,
+      "start": 2118.68,
+      "end": 2119.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 345,
+      "start": 2119.18,
+      "end": 2122.98,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "first, I kind of skipped over saying what the difference between Holo and Holo Chain is. So let me",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 346,
+      "start": 2122.98,
+      "end": 2123.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "do that. Let's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 347,
+      "start": 2123.96,
+      "end": 2124.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "dive into that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 348,
+      "start": 2124.92,
+      "end": 2136.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I think our branding may have been too proximal, right? The two words can, I think people get confused about the two projects. So HoloChane is this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 349,
+      "start": 2136.9,
+      "end": 2138.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "neutral",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 350,
+      "start": 2138.52,
+      "end": 2147.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "platform for running peer-to-peer apps. It has no currency. It is an open-source project and held by charitable trust. It's,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 351,
+      "start": 2149.56,
+      "end": 2149.56,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 352,
+      "start": 2151.77,
+      "end": 2157.81,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's HoloChane. It is basically a cryptographic data integrity engine for peer-to-peer apps.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 353,
+      "start": 2159.44,
+      "end": 2159.7,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Holo",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 354,
+      "start": 2159.7,
+      "end": 2160.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 355,
+      "start": 2160.76,
+      "end": 2166.62,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "us building kind of the first large commercial app on top of Holo chain.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 356,
+      "start": 2166.96,
+      "end": 2167.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 357,
+      "start": 2167.52,
+      "end": 2170.94,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the app that we're building is basically",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 358,
+      "start": 2171.9,
+      "end": 2172.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "has",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 359,
+      "start": 2172.42,
+      "end": 2182.23,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "us building like the Airbnb alternative to cloud hosting. In the same way that Airbnb competes with the biggest hotel chains and has never built a hotel,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 360,
+      "start": 2183.86,
+      "end": 2188.0,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we think we can use HoloChane as a scalability platform",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 361,
+      "start": 2188.0,
+      "end": 2189.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 362,
+      "start": 2189.36,
+      "end": 2198.0,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "be able to use computers in people's homes, be able to use spare computing power, all that kind of stuff where people get paid in HoloFuel. They get paid in a cryptocurrency.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 363,
+      "start": 2199.43,
+      "end": 2199.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 364,
+      "start": 2199.91,
+      "end": 2208.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think we can use HoloChane to create things on that scale without ever having to build a data center and compete with Amazon's and Googles and Azure's on that scale.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 365,
+      "start": 2208.97,
+      "end": 2209.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 366,
+      "start": 2209.45,
+      "end": 2216.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "that sounds similar perhaps to something like Filecoin, is that correct? That Filecoin does that for hard drive space, perhaps?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 367,
+      "start": 2216.43,
+      "end": 2245.42,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Well, exactly. There are a bunch of projects that do it for hard drive space. There are a bunch of things that do it for storage. There are not projects that do it for compute so successfully. There are projects like Golem and stuff that kind of do render farm stuff, like compute jobs that you can split up and break off into different peers and that kind of thing, but not for peer-to-peer apps, not for just being able to run the same kind of thing, everything that you would run on Amazon or Google or Azure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 368,
+      "start": 2245.98,
+      "end": 2246.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 369,
+      "start": 2247.24,
+      "end": 2275.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "that's the weird thing I think that people don't get with something like, because there's Gollum and there's Trubit, and something like Gollum, as you say, you can run very specific kinds. kinds of tasks on Golem. And on Truebit, it's another similar thing where you can run, if you want to kind of outsource the compute, you can outsource it. And I think it's a very specific kinds of tasks that you can run. And what your claim here is that with Hollow, that you can run, that it can be any kind of arbitrary compute, essentially.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 370,
+      "start": 2277.63,
+      "end": 2278.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 371,
+      "start": 2278.63,
+      "end": 2282.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "but it's specifically targeted to the web hosting world.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 372,
+      "start": 2285.03,
+      "end": 2300.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So let me back up. HoloChain is peer-to-peer. You have to install HoloChain to talk to other HoloChane instances. You have to be running a HoloChane app. Like when you download HoloChane right now, it comes with a peer-to-peer Twitter app called Clutter.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 373,
+      "start": 2301.21,
+      "end": 2301.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 374,
+      "start": 2301.69,
+      "end": 2304.11,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "just so that you have something to test and play with,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 375,
+      "start": 2304.45,
+      "end": 2305.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 376,
+      "start": 2305.49,
+      "end": 2308.93,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "have to be running a clutter node to talk to other clutter users.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 377,
+      "start": 2309.99,
+      "end": 2310.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 378,
+      "start": 2310.47,
+      "end": 2320.41,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "can't just go to a website. and expect to find clutter hosted centrally somewhere because there is no central host. Every host is hosting, every peer is hosting themselves",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 379,
+      "start": 2320.41,
+      "end": 2321.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 380,
+      "start": 2321.69,
+      "end": 2325.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "HoloChane. What Holo does is it builds a bridge",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 381,
+      "start": 2325.67,
+      "end": 2326.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 382,
+      "start": 2326.63,
+      "end": 2334.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "mainstream web users. It allows some, some HoloChane nodes to say, I will carry more than my share. I will host more than myself.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 383,
+      "start": 2335.79,
+      "end": 2336.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 384,
+      "start": 2336.43,
+      "end": 2339.99,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I'll get paid for carrying that extra load.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 385,
+      "start": 2341.48,
+      "end": 2341.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 386,
+      "start": 2341.98,
+      "end": 2349.76,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I'll extend virtual HoloChain space on behalf of web users that are not running a HoloChane node to carry their own share of the load.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 387,
+      "start": 2351.88,
+      "end": 2353.72,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And so you can,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 388,
+      "start": 2353.8,
+      "end": 2354.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 389,
+      "start": 2354.48,
+      "end": 2373.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 390,
+      "start": 2374.29,
+      "end": 2374.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 391,
+      "start": 2374.73,
+      "end": 2390.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "it, got it. Interesting. That makes sense. I like the idea of extending, imagining to my mind the extension of hollow chain space into other people. So I think, I mean, the, I think we should be in pseudo-wrap-up mode here because you don't have that much time. And I think, is there anything else?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 392,
+      "start": 2391.5,
+      "end": 2391.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 393,
+      "start": 2391.7,
+      "end": 2450.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "mean, one thing that I will say is, A, so you can tell that, you know, Arthur's coming at this from a very, a very kind of macro systemic perspective, came from a kind of a social coherence perspective from the start, and then kind of has come to this blockchain world. And from that, they have all these projects, both the, there's the metacurrency project, there's the SEPTA project, and then from SEPter, out came HoloChane, and then from HoloChane, Hollow is the first app. to be built on HoloChain. And you can tell that, and you can even see from my perspective here, it's like, I'm trying to kind of put this into my worldview, my blockchain-based worldview. And it's kind of interesting and hard and fun. And so this is also if you're interested in kind of what Arthur and I were talking about at the top, and essentially why, you know, I brought Arthur on the podcast, was because you can tell that he's thinking in these interesting ways at the top. And then there's also this kind of weird new agent-based reality from a technical perspective. So that's interesting in and of itself. And we clearly weren't able to dive as deep into that as possible. But there's clearly resources online to do that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 394,
+      "start": 2450.79,
+      "end": 2451.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Before",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 395,
+      "start": 2451.03,
+      "end": 2453.61,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you wrap, can I say one more thing about consensus? Because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 396,
+      "start": 2454.02,
+      "end": 2455.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 397,
+      "start": 2455.16,
+      "end": 2498.34,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think blockchain people will think I'm crazy because I gave no substance around that. And... From a transactional perspective, right, you're making changes to states of coins or, you know, or whatever. You have to know what order those things happen to prevent a double spend, all that kind of stuff. So what we do with blockchain is we build a fictional order. We take one person's perspective and we go, yep, that's the order it happened in for that little block of time. And then we take another person's perspective and we have this sort of random lottery through proof of work or we do a proof of stake or we do, you know, a... a supposed consensus algorithm is what that's called, but it's not really building consensus. It's just choosing a leader. It's just choosing one person's perspective through kind of a randomization approach.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 398,
+      "start": 2499.92,
+      "end": 2500.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 399,
+      "start": 2500.02,
+      "end": 2501.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 400,
+      "start": 2502.14,
+      "end": 2525.95,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "reason you don't need to do that in HoloChain is if all state change is local. So, like, there's this big question about different blockchain scalability things where they talk about transactions per second. Transactions per second doesn't make any sense. in terms of a HoloChain app any more than it does to talk about the internet in terms of transactions per second. There's no finite limit",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 401,
+      "start": 2525.95,
+      "end": 2526.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 402,
+      "start": 2526.83,
+      "end": 2531.87,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "transactions on the internet because it's decentralized. There isn't a... So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 403,
+      "start": 2531.87,
+      "end": 2533.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 404,
+      "start": 2533.23,
+      "end": 2537.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we're running a currency built on HoloChane like HoloFuel",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 405,
+      "start": 2537.7,
+      "end": 2538.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 406,
+      "start": 2538.78,
+      "end": 2542.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we're doing this... I'm spending this 10 credits to you that we were talking about.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 407,
+      "start": 2543.01,
+      "end": 2543.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "What",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 408,
+      "start": 2543.53,
+      "end": 2559.89,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we do is we send a little message back and forth to each other to construct a transaction that we then both sign to our own local chains. So the chain part of HoloChain is that every agent has their own immutable chain.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 409,
+      "start": 2560.61,
+      "end": 2561.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "What",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 410,
+      "start": 2561.13,
+      "end": 2562.51,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "makes it immutable is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 411,
+      "start": 2562.73,
+      "end": 2563.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "header",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 412,
+      "start": 2563.73,
+      "end": 2576.94,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "information from that chain gets published to a Dht, a distributed hash table, a shared data space. And once you've shared that top hash, you can't go back and change anything in your past without breaking that hash. So that's what makes it immutable.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 413,
+      "start": 2577.49,
+      "end": 2578.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 414,
+      "start": 2578.01,
+      "end": 2617.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "both sign this identical transaction to our chain. And we're the only two people whose states changed. There wasn't some token in a global inventory list of tokens. There was my account and your account. The only accounts that changed were ours. We both signed that transaction to it. We both timestamped it. We both put it in a series. of a hash chain. So we know exactly which transaction it came after for me and came after for you. And before for me and before for you, there's no question at all about order of events and order and sequence of change. And we don't need to do any kind of global consensus to produce that order. We have it encoded straight into our chains.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 415,
+      "start": 2618.84,
+      "end": 2619.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 416,
+      "start": 2619.32,
+      "end": 2641.2,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it absolutely preserves order of change, sequence of events and all that kind of stuff without having to create a consensus about global data or global time, which saves tons of compute and tons of gossip and tons of coordination and then all the extra sort of derivative wasted compute of proof of work or proof of stake and that kind of stuff.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 417,
+      "start": 2642.6,
+      "end": 2643.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 418,
+      "start": 2643.14,
+      "end": 2646.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "cool. So thank you for explaining that because, yeah, as you say it is...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 419,
+      "start": 2646.51,
+      "end": 2646.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 420,
+      "start": 2646.73,
+      "end": 2682.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "still have that ordering. And as you say, it's not just like a random leader ordering that you say, hey, here's the global consensus given by Bitmain. You know, um, instead you say, hey, we have within, from an agent's perspective, the agents, um, know they're ordering. But that ordering in many ways, it's a kind of a peer to peer ordering. It doesn't really matter that ordering with respect to kind of the whole global state. It doesn't need to say, hey, I gave you some money, Arthur. And then like two weeks later, um, I gave you some money. Again, that makes sense from our perspective. It's like, it happen once, it happened later, versus saying, hey, I gave you some money, Arthur. Also, all this other crap happened. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 421,
+      "start": 2682.02,
+      "end": 2682.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "then I gave",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 422,
+      "start": 2682.48,
+      "end": 2685.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "you some more money. So that does make sense. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 423,
+      "start": 2685.96,
+      "end": 2686.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 424,
+      "start": 2686.66,
+      "end": 2687.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "the idea of pushing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 425,
+      "start": 2687.82,
+      "end": 2688.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it to. And Bob and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 426,
+      "start": 2688.5,
+      "end": 2692.92,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Alice are doing a transaction at the same time. Our transaction doesn't affect their state.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 427,
+      "start": 2693.46,
+      "end": 2693.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 428,
+      "start": 2693.82,
+      "end": 2697.7,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "no bottleneck. Nobody needs to be held up. And in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 429,
+      "start": 2697.7,
+      "end": 2698.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 430,
+      "start": 2698.66,
+      "end": 2709.36,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "HoloChane, the technical limit of transactions is basically the number of users divided by two. simultaneous transactions because everybody has to be transacting with somebody else, right? So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 431,
+      "start": 2709.36,
+      "end": 2710.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 432,
+      "start": 2710.6,
+      "end": 2714.48,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "not really a finite limit. You keep growing the number of users and this keeps growing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 433,
+      "start": 2714.48,
+      "end": 2715.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 434,
+      "start": 2715.24,
+      "end": 2716.64,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "scale of speed.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 435,
+      "start": 2717.16,
+      "end": 2728.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Exactly. Yep, that makes sense. Okay, well, so we are out of time now, but Arthur, thank you again for coming on the show. If you'd like to learn more about HoloChane, where should they go on the internet and where can they also find you on something like Twitter?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 436,
+      "start": 2730.71,
+      "end": 2751.3,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "HoloChane.org. And chat.holochane.org is a great as a great chat community with really helpful people in there. On Twitter, we're also HoloChane. Also, if you're interested about Holohost or some of the devices that you can run to do Holo hosting, that kind of thing, you can find that at hollow.host.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 437,
+      "start": 2752.45,
+      "end": 2755.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Oh, perfect. And what's your Twitter? I always ask people.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 438,
+      "start": 2755.17,
+      "end": 2755.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "HoloChane.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 439,
+      "start": 2756.45,
+      "end": 2758.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Oh, your Twitter name is HoloChane?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 440,
+      "start": 2758.93,
+      "end": 2760.17,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Oh, mine is Art Brock.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 441,
+      "start": 2760.56,
+      "end": 2761.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 442,
+      "start": 2761.42,
+      "end": 2762.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "okay, sweet, sweet, sweet.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 443,
+      "start": 2762.22,
+      "end": 2763.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "A-R-T-B",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 444,
+      "start": 2763.06,
+      "end": 2765.22,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "-R-O-C-K. That's awesome my",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 445,
+      "start": 2765.22,
+      "end": 2765.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "website,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 446,
+      "start": 2766.02,
+      "end": 2766.36,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "our Brock.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 447,
+      "start": 2766.48,
+      "end": 2766.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 448,
+      "start": 2766.64,
+      "end": 2768.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "forgot you even had an ego, you know?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 449,
+      "start": 2770.1,
+      "end": 2770.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 450,
+      "start": 2770.46,
+      "end": 2782.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "are our self, Arthur. Great, well, thank you so much. And definitely, listeners, if you're interested in either the macro stuff or some of the kind of how HoloChain works from a consensus perspective, then definitely check out Arthur and HoloChane.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 451,
+    "withheld": 1,
+    "published": 450
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

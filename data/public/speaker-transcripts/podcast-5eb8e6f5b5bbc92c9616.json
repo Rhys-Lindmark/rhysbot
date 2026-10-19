@@ -1,0 +1,3096 @@
+{
+  "schema_version": 1,
+  "id": "podcast-5eb8e6f5b5bbc92c9616",
+  "title": "#19: Nick Johnson, Ethereum Foundation’s ENS: Governance Tradeoffs, Squatting, DNS Porting (S1 Ep 6)",
+  "published_at": "2017-11-09T21:57:43Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/19-nick-johnson-ethereum-foundations-ens-governance-tradeoffs-squatting-dns-porting-s1-ep-6",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/353529443-the-rhys-show-19-nick-johnson-ethereum-foundations-ens-governance-tradeoffs-squatting-dns-porting-s1-ep-6.mp3",
+  "youtube_id": "uoXkyql8_BQ",
+  "youtube_url": "https://www.youtube.com/watch?v=uoXkyql8_BQ",
+  "audio_sha256": "200270618b87eb2b8430f19a6eb24e94c8c7fd6bd0860796594157382bb26ba3",
+  "audio_duration_seconds": 2400.8620625,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 7384,
+    "unknown_words": 220,
+    "unknown_words_fraction": 0.029794149512459372,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 12.94,
+      "end": 13.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 13.46,
+      "end": 20.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "episode is brought to you by Shapeshift.io, the easiest, fastest, and most secure way to swap your digital assets.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 20.66,
+      "end": 21.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 21.22,
+      "end": 26.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "run the risk of leaving your funds on centralized exchange. Visit Shapeshift.io to get started today.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 30.16,
+      "end": 65.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello, everyone. Today's interviews with Nick Johnson and is part of these live interviews that I did at DevCon with various members of the Ethereum Foundation. And Nick is the head of the Ethereum naming system, or ENS. And Nick is really quite perfect for the job because he's been kind of this Google community representative for years before he joined the Ethereum Foundation so he can both, A, synthesize these complex concepts and kind of produce them in a form that someone else can understand. And then also, he's really good at kind of working with the community. And that's especially key with E&S because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 65.49,
+      "end": 66.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 66.71,
+      "end": 70.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "all these financial interests involved with buying and selling domain names. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 70.49,
+      "end": 70.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 70.95,
+      "end": 74.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "was a fun conversation and we talked a little bit about some of the awesome work they're doing with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 74.99,
+      "end": 75.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 75.45,
+      "end": 84.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of ENS's ability to kind of port DNS names into ENS by essentially these new cryptographic proofs in Metropolis where you can kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 84.55,
+      "end": 84.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 84.98,
+      "end": 97.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "all the layers of a DNS registration. Once you've done that, you can kind of get the name in ENS. So kind of an automatic superset of DNS. So that's kind of awesome and beautiful. And this is just a general pattern to keep in mind where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 97.82,
+      "end": 98.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Ethereum",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 98.6,
+      "end": 100.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and when you're in the Ethereum space, you can kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 100.56,
+      "end": 100.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "check",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 100.98,
+      "end": 106.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and prove cryptography and RSA cryptography outside Ethereum. So the other thing that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 106.9,
+      "end": 107.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Nick",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 107.26,
+      "end": 134.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and I talk about, which is fascinating, is this kind of these tradeoffs and governance, specifically around like these name squatters, people who will buy names just to sell them later. And we talked a lot about the mechanisms for governance. And right now, the mechanisms for governance are purely based on money. You know, if you own a name, then the only way that someone else can get it is by buying it from you. But Nick talks about some other options that might be on the table, like voting and what have you. So with that, hope you enjoy the show.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 137.49,
+      "end": 138.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 138.05,
+      "end": 163.19,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everybody. We are here live at DevCon 3 with Nick Johnson, the head of the ENS registrar, which is a way to register domain names on the Ethereum ecosystem. But Nick, thanks so much for being here. And could you actually dive in more deeply to what the ENS is as a thing and how it's kind of different than our classic domain name service that we have with things like GoDaddy?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 163.69,
+      "end": 200.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Sure, E&S is first and foremost intended to be a naming service for Ethereum. So its primary goal isn't so much to replace every other naming system as to provide naming services on Ethereum where previously they didn't exist. So it focuses initially on providing names for wallets and for contracts, for swarm addresses. whisper, public keys and so forth. But it's perfectly capable of naming DNS resources and so on as well. We're really sort of focusing initially on building a platform that can serve Ethereum as best as possible before worrying about taking over the world.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 203.43,
+      "end": 241.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And it's a decentralized system. It's built on top of Ethereum using smart contracts. It's got two main components. The registry, which is effectively a big telephone book of the owner of every name or subdomain or sub-subdomain and the resolver for it. And then the resolvers, and resolvers are, you know, anyone can write one and deploy one. And their job is to map from a name to a resource. So you ask the... registry what is the resolver for nick johnson.eath and then it responds and you ask that resolver what is the address for nick johnson.eath or what is the public key or what is his you know who is data got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 241.97,
+      "end": 242.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 242.65,
+      "end": 274.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it yeah so you essentially and like you say here it is it is decentralized which is interesting it's built through the smart contract system is it also Something where like, so compare and contrast it to like the domain names or it's like something like GoDaddy or whatever. Is this purely within the Ethereum like Eco's? Like if I have, if I could I buy, I could buy a domain name like you know Reese.Eath. That would be in like an IP address, but that would be different than what you're talking about here. Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 275.66,
+      "end": 308.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So it is, it's entirely separate in construction from D&S. And the system itself operates a whole sort of tree of names. And then you can set up registrars under any name. And a registrar is just a contract that leads you issue subdomains. So there is a registrar on dot-eath, which is what most people think of as E&S. And that will give you any dot-eath name by an auction process. And you can do that without being involved with GoDaddy or any other.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 309.79,
+      "end": 322.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "DNS domain registrar. It's an entirely autonomous process. It's, you know, no humans involved and so forth. And in the present interim registrar, as we call it, there's no dispute process, you know, that once you get a name, it's yours.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 324.45,
+      "end": 330.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Independent of that, we announced just a couple of days ago at DevCon that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 330.15,
+      "end": 331.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 331.41,
+      "end": 349.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "adding support for DNSSEC. proofs and the result of that is that anyone who has a DNS name on most of the TLDs, not quite all of them, but most of them, will be able to prove that they own that name inside Ethereum and once they've proved it, they can claim the corresponding name in E&S.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 350.15,
+      "end": 351.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 351.05,
+      "end": 376.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "would be possible for you to claim, you know, my name.com or my name.io or xyz. inside an S and then use it just like getting an estimate. So on the one hand you have this decentralized system with dot-eath which is entirely absent the usual requirements of who is data and dispute resolution and so on and on the other you have access to the entire iCan namespace.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 377.09,
+      "end": 408.05,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So you kind of get the best both worlds in theory. Let's let me Because I know very little about the domain name services thing. So let's dive into and make sure I understand that first before we go into the overlap between those two systems. So when I think about the IP, when I think about something like a, like if I want to get like Reese.com, thinking about like domain, a classic domain name, I have to say, hey, I want Reese.com, and then I go through like I can, the international consortium of. something",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 408.05,
+      "end": 408.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "internet",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 408.75,
+      "end": 410.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "company for assigned names and numbers",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 410.57,
+      "end": 410.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "oh",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 410.97,
+      "end": 422.01,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yes you know it um and they essentially connect they say hey when you go to this rees.com it connects you to like a given IP address is that the right way to think about it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 422.01,
+      "end": 422.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "pretty",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 422.17,
+      "end": 422.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "much",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 422.51,
+      "end": 422.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "okay",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 422.83,
+      "end": 443.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and then so if if domain name services that DNS is connecting a reese.com to a um an IP address then ENS is connecting a um is it all essentially a .eath to an Ethereum address? Is that the right way to think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 443.66,
+      "end": 444.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "about it?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 444.18,
+      "end": 446.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So both systems are a little broader than that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 446.54,
+      "end": 448.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in that IP",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 448.73,
+      "end": 454.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "addresses are the most common thing you resolve with a DNS name, but you can actually resolve a whole series of different records.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 454.65,
+      "end": 454.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 454.83,
+      "end": 459.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "for instance, when you send an email, it resolves an MX record, which tells it where to send mail.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 460.96,
+      "end": 465.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "The mail also uses other profiles called RRs",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 465.94,
+      "end": 466.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 466.66,
+      "end": 481.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "describing things like spam policies and authentication and so on. And the same is true with the NS. So you can't just, it's not just one question you can ask it, which is, you know, what is the address? You can ask it many questions like, you know, what is the name or what is the public key and so on.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 482.12,
+      "end": 482.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 484.46,
+      "end": 485.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "E",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 485.0,
+      "end": 488.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "&S and DNS sort of exist in overlapping namespaces.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 488.56,
+      "end": 489.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 489.1,
+      "end": 513.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in theory you can have any name in either of them. When we first deployed ENS, we used only the .eath top level domain because we wanted to avoid colliding with the public namespace. And, you know, recently with the introduction of the DNS-sex stuff, you can now bring names over from one system to the other, from DNS to DNS. The difference is that they're governed quite differently.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 513.72,
+      "end": 513.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 513.92,
+      "end": 522.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "DNS, the global route is governed by Ayanah, and all the top-level domains, the non-country code that top-level domains are governed by ICANN.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 522.94,
+      "end": 523.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 523.34,
+      "end": 538.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they have their dispute resolution process, and they delegate to registrars, and IANA delegates to different countries for their country code, top-level domains, and so on. E&S, the Rouge is governed by a multi-sig for now. Their job is mostly to do nothing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 540.52,
+      "end": 550.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And then the different domains are either, you know, in the case of .Eath, it's governed by an autonomous system with no human involvement, in the case of the...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 550.49,
+      "end": 550.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "top",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 550.57,
+      "end": 561.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "level domains that correspond to internet ones, we'll be gradually, you know, adding support for mirroring them over. And that's, again, an autonomous system that effectively respects the decisions of the DNS system.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 562.41,
+      "end": 588.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay. So, yeah, so I'm still trying to break down these two different systems. So as you said, it wasn't just that... For DNS, it's not just, hey, rees.com, it points to an IP address. You can make any kind of human readable thing point to any kind of computer readable, whatever. It's like, hey, if you're dealing with these primitives in an email ecosystem, you can have different text, essentially different strings, point to different parts of this email subsystem.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 589.09,
+      "end": 589.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 589.51,
+      "end": 616.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then with ENS, like you said as well, it's definitely not just for .eith names. That was the one that you guys started with. Tell me, and so I'm still trying to break it down, so these two systems, the way that they overlap. I guess that, like right now I could go on to a DNS thing and say, hey, I want to buy Reese.eath, not Reese.com. That could all go through ICAN's system, that could go through GoDaddy, whatever, from a DNS perspective.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 616.97,
+      "end": 617.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "In",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 617.31,
+      "end": 621.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "theory, but in practice ICAN hasn't allocated dot-eath to anyone.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 621.31,
+      "end": 622.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So there is no",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 622.47,
+      "end": 625.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "dot-eath, and that's part of the reason we chose of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 625.21,
+      "end": 625.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "course.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 625.79,
+      "end": 626.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Interesting,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 626.49,
+      "end": 627.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "great. But the system",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 627.19,
+      "end": 632.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "itself is capable of registering any top-level domain, just like ENS is capable of any top-level domain.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 632.83,
+      "end": 633.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 633.17,
+      "end": 640.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And so from a technical perspective, from a... you know, organizational perspective, we both try and avoid stepping on each other's toes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 640.33,
+      "end": 640.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Obviously,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 640.97,
+      "end": 642.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "ICANN is the 100-pound gorilla",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 642.61,
+      "end": 643.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "here. Yes,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 643.49,
+      "end": 643.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 644.09,
+      "end": 645.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And we're the, you know, the mouse.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 646.47,
+      "end": 646.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 646.55,
+      "end": 649.35,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "by top-level domain, you mean the dot, blah, blah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 649.51,
+      "end": 650.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "blah. Is that right? Okay,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 650.57,
+      "end": 655.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "sweet. So, yeah, it's interesting. As you said, I couldn't get Reese.Eath right now through DNS.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 655.91,
+      "end": 656.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes. I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 656.51,
+      "end": 658.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "could only get through ENS. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 658.61,
+      "end": 660.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 660.21,
+      "end": 680.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that makes sense. So right now, so you guys essentially took... part of the thing that they weren't doing, the .eath, and said, hey, we're going to sell these .eath domains, and we're going to, or not you guys are going to sell them, but you're rather going to create a decentralized marketplace such that people can, um, can register that rather, not really a marketplace, but rather a registration system.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 680.52,
+      "end": 686.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But the broader system there is that first we built another way of registering names in general.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 687.04,
+      "end": 687.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 687.42,
+      "end": 697.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, we chose to use .eath as the only top-level domain that we'd make available initially. because we wanted to avoid collision, but it's actually, it's an entirely sort of parallel system to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 697.91,
+      "end": 698.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "DNS that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 698.85,
+      "end": 705.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "can resolve names entirely independently of it, and it has, you know, different goals, but overlapping goals from DNS.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 705.79,
+      "end": 706.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 706.37,
+      "end": 731.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's interesting. So let's say that DNS, or so that someone like ICANN or what have you, did add the top-level domain for .eath eventually. And let's say I purchased. Reese.Eth through ENS.N.S. What would be, I could then, it sounds like I could also purchase Reese.Eath through the DNS system. And how would I, why would I do that? What would be the overlap there?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 731.61,
+      "end": 731.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 731.89,
+      "end": 733.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "worse, somebody else could",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 733.39,
+      "end": 733.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "purchase",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 733.83,
+      "end": 734.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "rees.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 734.41,
+      "end": 734.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 735.03,
+      "end": 735.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yes,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 735.13,
+      "end": 735.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yes. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 735.59,
+      "end": 748.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then anyone who visits. anyone who types that name into, say, a web browser that expects DNS names would get the DNS name, and anyone who types into a wallet would be owned by that other person, and anyone who types into a wallet would get the ENS resolution",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 748.94,
+      "end": 749.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "owned by",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 749.6,
+      "end": 749.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 750.08,
+      "end": 750.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 750.66,
+      "end": 751.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "would be horribly confusing,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 752.1,
+      "end": 752.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "which is why",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 752.44,
+      "end": 762.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we've been doing our vest to avoid, you know, that sort of collision. We recently presented, or rather one of our volunteers, Leonard Tan, presented to the ICAN meeting in Abu Dhabi a few days ago.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 762.92,
+      "end": 763.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Great.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 765.09,
+      "end": 772.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "You know, he told them about E&S and how we're operating and so on. And they've sort of, so I guess you could say they've taken official notice at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 772.05,
+      "end": 772.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this point to us.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 773.35,
+      "end": 785.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And so hopefully that will mean that, you know, better cooperation going forward and there's a much lower probability that, you know, they're going to go off and allocate dot ETH to anyone else, you know, while we're not looking.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 785.89,
+      "end": 786.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 786.57,
+      "end": 821.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah. So I have one before me, because I think this is fascinating. Before we go a click deeper on these things, I want to say, this stuff is kind of surprisingly large when you think about. I mean, there are, you know, dot Google, I think, you know, went live about a year ago or something. And Google, it was tens of millions of dollars they purchased of these names. And some of the top names here, the ones that are less than four characters or, you know, five characters long, you know, there was hundreds of thousands of dollars. And so by you guys creating this, I don't know if you aggregated, do you know if you aggravated all of the domain names, how much money exists within the DNS system?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 822.01,
+      "end": 823.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "It would be very hard to say.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 825.39,
+      "end": 828.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "The original top level domains.com.netnet.org",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 828.53,
+      "end": 829.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "didn't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 829.41,
+      "end": 832.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "have any sort of pre-reservation or auction system",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 832.17,
+      "end": 832.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or whatever.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 833.09,
+      "end": 836.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So everyone who bought them originally just paid the base registration",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 836.53,
+      "end": 836.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "fee.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 837.59,
+      "end": 841.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So if you measure it in terms of that, you could just take the number of domains and multiply it by the registration",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 841.89,
+      "end": 842.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "fee.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 842.49,
+      "end": 842.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But of course,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 843.29,
+      "end": 844.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "domains get sold on a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 844.43,
+      "end": 845.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "secondary market.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 845.25,
+      "end": 845.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "How do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 845.65,
+      "end": 848.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you... have you figure the value of Google",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 848.85,
+      "end": 849.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": ".com.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 850.57,
+      "end": 856.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "It's worth an immense amount to Google, clearly. It would be probably worth a lot less to somebody",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 856.03,
+      "end": 856.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "else,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 856.71,
+      "end": 860.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "except some people who might want to use it to scam and spam people,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 860.13,
+      "end": 860.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 860.35,
+      "end": 862.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "case they might make quite a nice penny off it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 862.45,
+      "end": 862.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 862.85,
+      "end": 867.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's very, very hard to assess what the global DNS system is worth or what that means, I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 867.63,
+      "end": 867.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "think.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 868.51,
+      "end": 875.05,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yes, so that makes so, in any case, we're dealing with some large numbers here, likely. So going back to ENS and saying, okay,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 875.84,
+      "end": 876.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 876.1,
+      "end": 910.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "guys have these two different systems here. Is the goal to, I guess, I guess, so how do you see these two systems kind of interoperating as we go forward here? You know, let's say with like Reese.Eath as an example here, do you think it's going to be a thing where, like, a bifurcation where you guys have certain domains within, like, certain like token or cryptoeconomic specific domains within E&S and then, you know, other, like, you know, normal domains within DNS? Like, how do you see this kind of going over time? What happens when they start to overlap?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 911.06,
+      "end": 914.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yep. I think that in the short term,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 915.9,
+      "end": 931.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we'll have .eath as purely on ENES, so it won't be internet resolvable unless you have some form of plug-in or as alternate route for DNS and so on. So most people will not see it as a DNS name that they can type into their ordinary unorganmented web browser.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 933.22,
+      "end": 966.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "ENS will add, you know, already is adding support for letting people claim their DNS names on ENS. So you'll be able to use all of those in your wallet and so forth. And so the interaction on that will be mostly a case of Ethereum, of ENS pulling in names for people to use. In the longer term, I'm optimistic that we could come to some form of arrangement if I can that would get either .Eth or another top-level domain in the global route under, you know, rules that are sort of compatible with the crypto community.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 968.21,
+      "end": 976.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And that, you know, that then basically everything that's resolvable on ENS would be a resolvable on DNS as well, which would be nice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 976.49,
+      "end": 977.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But given",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 977.69,
+      "end": 982.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that we now have the ability to pull in DNS names, I would...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 982.74,
+      "end": 983.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 983.2,
+      "end": 1011.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think I would probably rather that .Eth remained only resolvable through E&S than that it became globally resolvable but had to adhere to the same set of rules as other ICAN top-level domains as they stand right now. And I mean, this, I can't guarantee how things will go forward in the future, but we have a plethora of, you know, 1,000 plus top-level domains for people to choose from that... that fit the ICAN model",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1011.69,
+      "end": 1012.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1012.67,
+      "end": 1015.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that can now be imported into ENS to use there as well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1016.29,
+      "end": 1016.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1016.73,
+      "end": 1032.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I don't think we'd gain much by, you know, by trying to cram Eott-Eath into that perspective. You know, it's good to provide an alternative to people who want to build a crypto-centric application that adheres to our own, you know, homegrown rules and ones that we're built with consensus of the community",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1032.23,
+      "end": 1033.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1033.07,
+      "end": 1036.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "be suitable for... our blockchain specifically.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1036.8,
+      "end": 1036.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1038.18,
+      "end": 1050.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But it's possible that we'll come to some arrangement with ICAN or IANN, and that it will be exposed in DNS as well in the future. It remains to be seen. That's long term. The earliest is likely to be sort of 2020",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1050.24,
+      "end": 1050.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1050.98,
+      "end": 1053.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "ICAN considers a new round of TLDs.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1053.68,
+      "end": 1091.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. Got it. Interesting. So yeah, I think that's in... As you said, so it might be the case that there could be kind of like a DNS wrapper on top of ENS in a way, such that they then point to ENS specific domains. And so that's one side of things that might happen in 2020 when they give a re-evaluation of these top-level domains, aka the TLDs. And going though to this move that you guys made recently around bringing in the allowing ENS to kind of pull in DNS names. Could you talk? Could you explain that one more time and kind of like how it works? I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1091.74,
+      "end": 1092.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "guess. Sure. Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1093.54,
+      "end": 1106.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "If you have a, if you own a DNS name, that basically means you have the right to set DNS records for that name, which is, you know, A records to pointed IP addresses and all the other sorts. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1106.04,
+      "end": 1107.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1107.4,
+      "end": 1140.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1140.96,
+      "end": 1141.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1142.28,
+      "end": 1158.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So the way this works is the chain of trust. You have the root key, which is owned by ICAN. I'm pretty sure it's owned by ICAN now. and they, it's divided up into key shares and they publish the root key periodically and update it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1159.24,
+      "end": 1161.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1161.92,
+      "end": 1182.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "root key is then used to sign the keys for each of the top level domains. So dot com.net.org.xyz and so on. Actually what it signs is a hash of those keys. So you start with the root key and then you get the hash of one of, or somebody claims this is the hash of dot XYZ and you can use the, um, the signature on that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1182.54,
+      "end": 1182.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it will be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1182.78,
+      "end": 1185.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "signed with the root key, you can then verify that and say, yes, that's accurate.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1186.12,
+      "end": 1186.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1186.48,
+      "end": 1199.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then somebody says, okay, here's the key for XYZ. And you can hash that and compare it to the hash you already proved, and if that's correct, then you know, you've got that. And then they go, okay, here's the hash for the key for FLLab. XYZ.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1199.32,
+      "end": 1199.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1199.68,
+      "end": 1222.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then you can verify that against, you know, that was signed with dot XYZ and so on. And so the way it works in practice is you buy a domain. you set up signing and you set up keys and so on and then you give a copy of the the hashes of your keys to your registrar like Ghandi or Gaudetti or Simple DNS and they insert that record into the the top level domain that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1222.72,
+      "end": 1224.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you're using and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1224.4,
+      "end": 1226.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they sign it so that it can be proven",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1226.86,
+      "end": 1227.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1227.48,
+      "end": 1231.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what you end up with is a chain of trust all the way from the route which is the master key for the whole internet",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1231.98,
+      "end": 1235.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "basically all the way down to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1235.76,
+      "end": 1242.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "your And so the way it works with ENS is you publish a record, a text record, saying,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1244.0,
+      "end": 1253.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "effectively, my Ethereum address is this. And you sign that just like everything else. And then you go to this DNSSEC Oracle we have on. on Ethereum",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1253.71,
+      "end": 1254.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1254.41,
+      "end": 1276.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you send it proofs of all of these things. So if it doesn't yet know about the dot xyz key, you send it proof of the xyz key, if it doesn't yet know about a thladd.x.ex.0.X.E. You send it proof of that. And then finally, you send it proof of your text record. So now you have a cryptographically proven DNS record that's stored in Ethereum. And it knows it's accurate because it's followed the chain of trust all the way to the route.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1276.49,
+      "end": 1276.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1276.93,
+      "end": 1298.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then finally, you go to... this new DNS registrar and you say, I assert that I own, this address owns, Ethlab.xyZ, and it goes and consults the Oracle and says, is there a text record for that? Looks it up, passes it, determines that it's equal to your address. And if it is, then it gives you ownership of Ethelab.xyZ in ENS.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1298.9,
+      "end": 1299.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1299.5,
+      "end": 1299.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1299.56,
+      "end": 1304.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so now you've got full control of that in the ENS system as well, and you can do anything you want with it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1304.32,
+      "end": 1333.31,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it, yep. So, yeah, as you said, there's this web of, this chain of trust that starts with ICANN, like the global root node essentially there. And they have their key that says, hey, these things are trusted, and that goes down to the register level or to the top level domain level as well, and then eventually to you as a person that says, hey, I own this thing. And essentially, if you can prove all those steps in E&S land, then you can essentially get that DNS top level or that DNS domain within ENS.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1333.39,
+      "end": 1334.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes, exactly. Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1334.88,
+      "end": 1335.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1335.66,
+      "end": 1338.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um... This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 1338.1,
+      "end": 1366.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "episode is brought to you by Shapeshift.io, the world's leading, trustless digital asset exchange. Quickly swap between dozens of cryptocurrencies, including Bitcoin, Ether, Dash, Bitcoin Cash, Auger, Golem, and many more. And this is not your typical crypto exchange. You don't need to create an account or share your personal information, and your funds are never stored on Shapeshift. This means that your hard-earned digital wealth is never up for grabs by hackers or other malicious actors.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 1366.73,
+      "end": 1367.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "To",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 1367.21,
+      "end": 1374.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "get started, visit shapeshift.io, choose the tokens you'd like to swap, input your receiving address, and send your funds. It's that easy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 1378.81,
+      "end": 1379.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1379.05,
+      "end": 1404.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that makes sense as a concept. And actually Nick and I were just talking about, they have a big Gitter channel that you should come and join to talk about E&S stuff. And we're talking about maybe some debate, and I don't understand exactly what's happening here around maybe some... recent debate around what this decision and what it feels like. So tell me a little bit about like what both sides of the debate are, like why people might be unhappy with this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1404.29,
+      "end": 1404.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1404.75,
+      "end": 1441.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there's a couple of issues that this is brought up. One is that by making all of these names available that are governed by the ICANN process and by the IETF and so on, a lot of people are You know, a lot of people in the crypto community are skeptical of centralized control and so on and understandably we're building a distributed ecosystem. And there is, although DNS is a distributed system, there is a degree of centralized control because, you know, Iana hands out, you know, and I can hand out. you know, top-level domains to registrars, you hand out domains to,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1441.87,
+      "end": 1441.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1441.95,
+      "end": 1444.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, and they have all these appeals policies and so on.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1444.47,
+      "end": 1445.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 1445.01,
+      "end": 1479.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "whole thing is under human control rather than autonomous control. And so some people feel that by introducing access to these inside ENS, we're sort of shifting over to, you know, to that model. Personally, I disagree because we're maintaining .eath, you know, I believe it has useful unique properties that... maybe you know other TLDs don't and that I would like to see it continue to evolve like in the same talk I talked about ENS now which lets you claim an ENS a dot euth subdomain instantly for to name your wallet",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 1479.61,
+      "end": 1480.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 1480.53,
+      "end": 1484.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a far quicker and easier process than going through the whole DNS foo for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 1484.29,
+      "end": 1485.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "art so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 1485.85,
+      "end": 1488.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think there's real value remains in dot-eath",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 1488.59,
+      "end": 1489.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 1489.23,
+      "end": 1504.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think that if those people are right but but you know the the DNS hierarchy is broken because of its centralised administration, then that will be borne out by, you know, lack of use of those in a substantial use of .eath.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 1504.31,
+      "end": 1504.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 1504.61,
+      "end": 1516.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "would rather see that evolve in its own way. The other big debate that comes up, and I expected it, is that a lot of people bought .Eath names as a speculative investment,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 1516.93,
+      "end": 1517.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "anticipating",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 1517.37,
+      "end": 1527.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that other people would want them more and be prepared to pay more money for them. and that now that you can access your DNS names, there's perhaps less market for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 1527.1,
+      "end": 1527.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 1527.6,
+      "end": 1528.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "ENS names.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 1528.82,
+      "end": 1529.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 1529.16,
+      "end": 1537.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "instance, you know, somebody bought up Hitachi.eath, anticipating that if Hitachi wanted a presence on the blockchain, they would have to buy the .eath.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 1537.44,
+      "end": 1537.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Now",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 1537.88,
+      "end": 1540.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they can have Hitachi.com, so maybe they don't care so much.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 1540.58,
+      "end": 1540.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 1542.18,
+      "end": 1547.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And my perspective on that is that... we never built E&S intending it to be an investment platform.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 1547.9,
+      "end": 1548.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "If",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 1548.3,
+      "end": 1562.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "people want to try and use it as an investment platform, fine. Like, you know, if the game theory permits that, then people are going to do that. But I don't think we have an obligation to preserve its value as an investment platform at the expense of its usefulness",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 1562.6,
+      "end": 1563.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 1563.04,
+      "end": 1564.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what it was built for, which was better naming.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 1565.24,
+      "end": 1586.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that makes sense. So, yeah, you have, especially, I mean, yeah, the first level is kind of like the philosophical, like, hey, What about bad decent or bad centralization, you know? And I think I agree with you to say that, hey, the whole goal with decentralization is to purely provide an exit, if you want, like from the voice and do you know, exit voice",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 1586.62,
+      "end": 1588.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and loyalty? No.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 1588.42,
+      "end": 1635.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "It's just this concept. It's like, you can either choose this or it's not that complicated. It's just, you can either, within a given system, you can either express voice within that system. So if you're within a centralized system, you can. express voice within it, or you could exit that system to maybe a decentralized system. And what is beautiful about the blockchain community and all these things is we can now say, hey, there are two subsystems that are happening in parallel with each other. You can either choose to express voice within either system, or if you don't like that system, you can exit to the other system. And so that's a great thing that you guys have done. And like you're saying, hey, if it turns out that the ENS system is better in various ways, people will use it in those ways. And if it turns out that the DNS system is better in various ways, you can use it in those ways. But it's kind of not for you to decide what should happen. It's for the market to decide what they want to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 1635.11,
+      "end": 1635.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "do. Exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 1635.69,
+      "end": 1635.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 1636.05,
+      "end": 1636.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 1637.07,
+      "end": 1665.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And then maybe to the second point there, I guess the one thing I might push back on is, because I agree with you that your goal wasn't to make a speculative trading platform or whatever. It was to do that first, the first point that we talked about. Did you, like, I guess one thing in here is like, How were these things like on the roadmap or what have you like back in the day to know like hey we're going to be porting in all the DNS names into ENS or like that might be one place or I'm like, oh, maybe I do feel kind of bad for the speculators, you know.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 1666.25,
+      "end": 1672.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "It didn't even occur to me back when we first started building ENS that this was going to be a plausible possibility.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 1672.41,
+      "end": 1672.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 1672.95,
+      "end": 1685.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Like Byzantium was, you know, called Metropolis at the time. It was on the horizon. It was possible it would involve, it would include support for RSA signature verification. So I guess I could have foreseen the possibility to do this, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 1685.97,
+      "end": 1686.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 1686.15,
+      "end": 1686.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a long way off.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 1687.07,
+      "end": 1687.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It honestly",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 1687.47,
+      "end": 1691.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "didn't occur to me as a... a necessary or desirable integration at that point.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 1691.63,
+      "end": 1691.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 1691.89,
+      "end": 1699.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "only fairly recently with Byzantium being solidified and, you know, the possibility for this. It was a bit of a sudden realization fairly",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 1699.89,
+      "end": 1700.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "recently, hey,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 1700.73,
+      "end": 1702.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we can actually prove all of this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 1702.95,
+      "end": 1705.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And I'm not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 1705.63,
+      "end": 1710.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "going to, you know, fail to build an elegant technical solution because I'm afraid of the consequences.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 1710.85,
+      "end": 1711.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "At least",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 1711.13,
+      "end": 1711.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I hope not, you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 1711.87,
+      "end": 1712.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "know.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 1712.69,
+      "end": 1718.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And it's, I think it's a really cool thing that we can actually trustlessly prove DNS records on the blockchain.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 1720.97,
+      "end": 1721.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 1721.33,
+      "end": 1722.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think like what you're saying here it's like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 1722.95,
+      "end": 1723.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 1723.95,
+      "end": 1746.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I mean and with all of these and everybody talks about this like all these things are experiments you know and and you guys I think have done a good job by actively saying hey we're not going to sell some of the less than seven character domains, you know, because we want, this is a whole new thing, we don't know exactly what the roadmap looks like, we're going to try to keep it. Are the, is it still the case that less than seven character domains haven't been sold yet?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 1746.51,
+      "end": 1747.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yes, that's right.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 1747.55,
+      "end": 1757.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, so I think things like that make a lot of sense. You're saying, hey, if you are a speculator, we're still trying to keep the most high impact things. until it's more of a solidified system.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 1757.71,
+      "end": 1757.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 1758.25,
+      "end": 1773.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And we didn't want, we wanted to release those names when we were fairly sure that the people who would want to use them were watching. You know, we didn't want a whole bunch of people to have to buy them in the secondary market simply because they weren't aware of their existence until too late.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 1773.47,
+      "end": 1773.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 1773.77,
+      "end": 1774.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "wanted a fair auction",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 1774.83,
+      "end": 1775.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 1775.85,
+      "end": 1777.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the name when it became available.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 1777.45,
+      "end": 1780.81,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep, that makes sense. So I guess maybe in kind of pseudo",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 1780.81,
+      "end": 1782.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "-wrap",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 1782.03,
+      "end": 1845.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "-up mode here, first at a, like, So what do you think about, I mean, because part of this whole, the names are just such an important part, and names and the ability to frictionlessly get to the information you want, you know, to buy the three character names or whatever is a surprisingly, there's a lot of money in these things. How do you think about like the squatters and the speculation and like for you as a person who's building? the underlying infrastructure here. Yeah, tell me a little bit more about how you think about the kind of financial side of things and the speculation side of things. And just as a note here, like there's a new, um, This district OX, they're making these, is a decentralized peer-to-peer marketplace platform built on Ethereum. Their second district that they released is called NameBazaar, which is a decentralized way to, a decentralized marketplace for E&S names that actually Nick audited for them, which is sweet. And so this is a good example of that where there's this marketplace that's already come up for these names. How do you think about those, especially as like the builder of the underlying infrastructure?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 1845.9,
+      "end": 1846.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 1846.42,
+      "end": 1851.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I'm somewhat skeptical of squatting. in that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 1851.55,
+      "end": 1853.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "especially",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 1853.87,
+      "end": 1865.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "squatting of trademark names and so on, but more or less in general, because I don't think they add a lot of value to the system. I think they exert a deadweight loss in economic",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 1865.59,
+      "end": 1866.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "terms by",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 1866.59,
+      "end": 1880.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "making a profit but not adding anything. And so I'm a little skeptical of markets, secondary markets, because they have the potential to make squatting more profitable.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 1881.12,
+      "end": 1882.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 1882.85,
+      "end": 1889.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not a black and white thing because there are like... Well, I think it is pretty black and white if you register Microsoft.Eath,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 1889.8,
+      "end": 1890.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you've",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 1890.02,
+      "end": 1891.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "only got one customer.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 1891.2,
+      "end": 1891.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 1891.54,
+      "end": 1894.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you're effectively extorting them. I mean, it's strong words,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 1894.98,
+      "end": 1894.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 1894.98,
+      "end": 1901.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you're saying, you know, give me money or you won't be able to use this thing, you know, and I've got no other plausible use for it myself.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 1901.48,
+      "end": 1901.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "On",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 1901.84,
+      "end": 1921.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the other hand, if you register blockchain.eath or wallet.eath or, you know, any number of useful generic words, then I don't think anyone else has a more legitimate right to it than you. And, you know, if you... paid more for it than anyone else and you were right that later somebody else will want it more than you then i think you're perfectly free to resell it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 1921.14,
+      "end": 1921.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 1921.68,
+      "end": 1932.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know that there's no um there's no if we tried to build a meritocracy around it you would you would have to try and assess like which of these two business ideas is a more viable use",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 1932.24,
+      "end": 1932.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of blockchain",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 1932.76,
+      "end": 1935.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "dot eath and that just seemed that way madness lies you know",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 1935.22,
+      "end": 1936.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 1936.0,
+      "end": 1945.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "i think secondary markets have uses even though i'm a little skeptical of their um Not so much skeptical. I'm concerned about their potential to encourage unwanted behaviour.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 1945.85,
+      "end": 1945.91,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 1946.65,
+      "end": 1952.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I also want all of the architecture built on top of the NS to be as robust and well-written as possible.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 1952.71,
+      "end": 1952.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 1953.47,
+      "end": 1960.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And I really like the Strip OX guys. And so that's why I audited their system, because I wanted to be well built. I think it does have positive uses.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 1960.33,
+      "end": 1960.41,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 1961.69,
+      "end": 1964.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And I wanted to help them build the best system they could.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 1964.65,
+      "end": 2042.91,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. Yeah. I think that this... I think that that gradient that you just said there is a great way to think about this, which is if there's really just one customer for a thing, you're kind of in strong words extorting, or you're being profit-driven and say, hey, I got this domain name before you did, ha-ha, and now you have to pay me lots of money for it. And then these things that are further along in gradient where it's like, oh, if your name is blockchain, if it's like super-decent, you know, super, if your name is the.eath, you know, like that's pretty, it could be for anybody. And so I think in right now, our main governance mechanism for this is money, is primarily money-based. Do you see, by the way, and so when I think about this, I think about, like, I guess there's two ways to go. One is, like, different governance mechanisms to determine where domain names go, but like you're saying, that could be a fraught territory. Are there going to be new kinds of, like I know Blockstack has a, you know, a name registrar for their system? You know, we're starting to see some of these new, like, is that maybe part of this? Is like, E&S, just the start of decentralized naming systems? Like, how will there be this big ecosystem of decentralized naming platforms and you kind of choose which one to go to at a given time? Or like, how do you see this kind of maybe the universes of these different naming systems?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 2043.24,
+      "end": 2046.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So I should first disclaim that E&S definitely wasn't the first.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 2046.82,
+      "end": 2047.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes, it is.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 2047.52,
+      "end": 2085.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "You know, name coin, I think, came first, and there's others like Blockstack and so on have got a head start on us. And I think it's useful to divide, you're right, there's this big overlapping group of decentralized naming services. I think it's useful to divide their goals up in terms of whether they're seeking to be a native naming service for the platform they're on, or whether they're seeking to be a global naming service. And E&S's goal is to start off, at least, as a native naming service, because nothing was naming Ethereum resources effectively. And my prime goal was to improve usability so that people didn't have to type, you know, big, long, OX",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 2085.3,
+      "end": 2085.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "addresses",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 2085.88,
+      "end": 2091.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in. So, you know, I would be delighted if, you know, a year from now, DevConFOR, nobody was having to do that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 2092.1,
+      "end": 2092.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 2093.98,
+      "end": 2100.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "It's a, so the other category is global systems and things like name coins basically seek to dethrone DNS,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 2100.28,
+      "end": 2100.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 2100.64,
+      "end": 2111.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to replace it entirely, which I think is a noble goal, and I think DNS is definitely going to end up integrating blockchain components one way or another.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 2111.18,
+      "end": 2111.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 2111.56,
+      "end": 2116.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But it's also orders of magnitude harder. You know, they are facing a real uphill battle",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 2116.82,
+      "end": 2117.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 2117.32,
+      "end": 2119.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "reform or change DNS like that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 2121.16,
+      "end": 2121.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 2122.08,
+      "end": 2124.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and they've got several competitors in that area.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 2126.4,
+      "end": 2141.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So yeah, I guess you'll see specialised systems like ENS building up and then potentially taking on more general responsibilities. And you'll see generalised systems like Blockstack and Namecoin. attempting citizens of colonize the old world,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 2141.71,
+      "end": 2141.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 2142.47,
+      "end": 2144.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and I don't know how it's going to pay out.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 2144.85,
+      "end": 2152.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. Well, that'll be interesting, and I might change the words away from colonize the old world to create exit invoice within the old world.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 2153.19,
+      "end": 2153.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Fair enough?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 2153.47,
+      "end": 2168.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, to marketize it, essentially. So maybe in the future we'll have this brilliant market of all these different naming services, and you can choose among all the naming services. different governance systems, some of them are money-based, some of them are weirdly governance voting base, who knows, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 2168.7,
+      "end": 2178.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "That sounds like good world to me, and I hope we end up with that rather than everybody, like, you know, overlapping on the same namespace, you know, I hope we can sort of agree not to step on each other's toes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 2178.86,
+      "end": 2201.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, yeah, yeah, yeah, that would be the cool. Um, any of, Nick, this has been fun to kind of dive into Enos, and I didn't know we had to start from the very beginning of like, what even is D&S and how does the Thank you for explaining these things in such a good way. Is there any other thoughts on the top of your mind? Is it like, you know, things that are coming up in the next year? Any final, like, non-sequiters or anything that you'd like to say in these final moments?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 2202.37,
+      "end": 2209.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I mean, I guess I announced that we're going to be forming a, I've called it the Ennis Foundation. It may not be a foundation, but we some form of nonprofit.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 2209.43,
+      "end": 2209.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 2210.11,
+      "end": 2216.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And I'm so I'm really looking forward to sort of putting things into high gear and being able to dedicate, you know, really most of my efforts to this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 2217.19,
+      "end": 2217.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 2217.93,
+      "end": 2235.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And expanding things. expanding clients support and so on. I'm also, I think there are some exciting potentials that we haven't even started exploring yet. For instance, and this blew my mind when I realized it, you've got the existing SSL certificate hierarchy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 2236.25,
+      "end": 2236.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 2236.29,
+      "end": 2251.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "also relies on a central issuer for keys, well, several issuers, and then browsers choose which ones to trust, and then they can issue certificates to different people with... blockchain-based naming you can actually do away with that you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 2251.74,
+      "end": 2251.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 2251.88,
+      "end": 2266.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "have i could have you know my name.eath or my name.xyz I could generate an essential certificate sign it myself and then publish it to the blockchain with some proof that that is that I really own that my name.eath or my name.xyz.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 2267.37,
+      "end": 2267.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 2267.89,
+      "end": 2304.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then anyone who goes to that site with the right blockchain support could look that up and verify that it's me. And I establish a secure channel with my website without ever having to rely on a central signer. So if you take that in the .eath example, you've just issued a domain without having a central authority other than a smart contract. And then you've established a secure channel with my site without having to rely on a signing hierarchy or anything. effectively nobody can stand in the middle and rewrite things or issue duplicate certificates to the NSA or what have you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 2305.2,
+      "end": 2305.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 2305.48,
+      "end": 2307.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that seems like an incredibly cool opportunity",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 2307.54,
+      "end": 2308.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 2308.44,
+      "end": 2315.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like, not just evolutionarily change it, but actually completely revolutionize how we look at. website security for instance",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 2315.69,
+      "end": 2316.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 2316.09,
+      "end": 2344.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "i love it yeah so um the ens foundation whatever that looks like the nonprofit or otherwise is coming up it'll be exciting to see that happen nick really is i mean he's in the gitter community very as far as i can tell um into the trying to build this in a bottom of decentralized way with with community people here getting the client support of all these various different clients and then as you say here that final piece of like being able to have Not only decentralized name issuance, but decentralized SSL issuance",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 2344.57,
+      "end": 2345.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 2345.49,
+      "end": 2352.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "going to be part of this cool future, too. And with that, Nick, thank you so much for your time. Thanks for being here. And yeah, thanks for being on the show.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 2352.75,
+      "end": 2353.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "My pleasure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 2353.35,
+      "end": 2354.85,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, sweet. Thank you and goodbye, everybody.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 2373.86,
+      "end": 2399.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello, everyone. Thanks so much for listening to today's episode. If you have any feedback, please tweet at me yet. Reese Lindmark, that's R-H-Y-S-L-I-N-D-M-A-R-K at Reese-L-L-L-L-L-L-K on Twitter. If you have any feedback, that'd be awesome, or if you want to sign up for the newsletter, follow me on Twitter or support me on Patreon. I have about 25 patrons supporting me, and that's how I make my money. So you can support me at patreon.com slash R-H-Y-S-L-I-N-D-M-A-R-K. Thanks so much and bye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 338,
+    "withheld": 1,
+    "published": 337
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

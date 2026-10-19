@@ -1,0 +1,2178 @@
+{
+  "schema_version": 1,
+  "id": "podcast-60d451804ac8ed6955f1",
+  "title": "#5: The Mechanisms of Networkism",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=M4aWqPUn1VI",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "M4aWqPUn1VI",
+  "youtube_url": "https://www.youtube.com/watch?v=M4aWqPUn1VI",
+  "audio_sha256": "e8f3b3c0c1ba2f6b3140bb07028e1e3aff54c032b9487eaacc5d174fdda1aac9",
+  "audio_duration_seconds": 2255.3541875,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 6316,
+    "unknown_words": 106,
+    "unknown_words_fraction": 0.016782773907536415,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 1.42,
+      "end": 2.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 2.12,
+      "end": 21.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everyone. So today we are going to chat about the mechanisms of networkism. But first, a reminder that these videos are brought to you by Root. And there is a beautiful thing called the Root Fellowship, which is a community of world-class systems thinkers looking to understand and build the future. So if you're into these ideas, check out root.com.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 22.41,
+      "end": 22.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 22.89,
+      "end": 27.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "also, I just want to express to you, listener on the internet, I hope you're doing well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 28.46,
+      "end": 28.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 28.94,
+      "end": 33.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "love you and your... people and you, and I want the best for you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 35.38,
+      "end": 36.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 36.2,
+      "end": 37.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 37.4,
+      "end": 50.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "chatting about networkism, which is the second big concept here, and there are a bunch of pieces of it, and today we're going to chat about the mechanisms of networkism. Well, next time, we're going to chat about impacts of it. So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 50.24,
+      "end": 51.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 51.32,
+      "end": 91.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we're going to chat today about why are we learning about these mechanisms and two specific forms of that, the protocolization and information abundance. So, yeah, first, why are we learning about networkism? Well, it hopefully will give you an underlying sense of how the internet will evolve, and then how that evolution will then impact society. So today is more about how the internet evolves, and then those future ones are about how it will impact society. And again, like with all of root, the goal is to see the world more clearly and to build backwards from the future. and help within your own life to leverage new opportunities and things like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 91.39,
+      "end": 92.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 93.43,
+      "end": 101.85,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, so now let's chat about these mechanisms, protocols and information abundance. And what I mean by mechanisms is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 103.48,
+      "end": 104.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 104.64,
+      "end": 105.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "makes,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 106.74,
+      "end": 122.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what is the underlying cause of the internet? So understanding the underlying pieces for how it works will let you then understand everything else about the internet. So that's what we mean by mechanism. It's like how it works under the hood.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 124.22,
+      "end": 124.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 124.72,
+      "end": 125.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 125.9,
+      "end": 151.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a reminder, society has done a lot of information sharing over time and it has changed over time. We talked about this a bit in the last video, but yeah, we innovated with spoken language and written language, we made the printing press, we made the postage stamp. These things are cool and the internet is the final evolution to some extent. or what we see now is the final evolution of this information sharing. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 151.74,
+      "end": 152.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 152.96,
+      "end": 158.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the internet has done is it has abstracted this process of information creation.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 160.58,
+      "end": 181.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And abstracting a process, that's kind of what we mean by a protocol. It has taken, what the internet has done is it has allowed us to take electricity, turn it into these little bits, these zeros and ones, use this internet stack. here, all these layers to send it around the world and to send information around the world.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 183.49,
+      "end": 204.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "That's very powerful. And what that has led to is this abundance of information, where we went from not very much information to, ooh, now it's really cheap to send to, you know, to send information. Wow, now we have so much information, both good information and bad information. So let's talk more about this protocol and this process of standardization.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 205.7,
+      "end": 205.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 205.94,
+      "end": 207.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the idea here is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 208.31,
+      "end": 209.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 209.33,
+      "end": 232.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "want people to be able to talk to each other in this network. You have a bunch of information, you have a bunch of computers, and if I'm sending you something, and I'm speaking in German, and you only speak English, you're going to say, well, I don't get it. And so this protocol, what we mean by protocol is it's a standard or kind of a language expressed in code.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 233.16,
+      "end": 233.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 233.6,
+      "end": 250.13,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "instead, when I send you something, I can say, blah, blah, blah, blah, blah. And you're like, oh, that's English. I understand that. And then we can actually talk to each other. And so that's what this is all about. Is it really, by creating these protocols and these standards, it really decreases, it allows everybody to talk to each other, and it allows",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 250.25,
+      "end": 251.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "less",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 251.59,
+      "end": 283.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "friction for all of this. So the first key protocol or standard happened with transistors. This was right after World War II. And these transistors are just a little... way to store information in binary. And what that means is either the electricity is on or the electricity is off. If it's off, it's a zero. If it's on, it's a one. And binary language was the first crucial standard here. And in binary language, you can represent anything. So in traditional language,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 284.66,
+      "end": 304.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so in binary language, zero equals zero. If it's off, that means it means zero. And one equals one. But what if you want to say cat? in binary with only zeros and ones. That's kind of hard. And so what you can do is you can create a standard. The standard is called the ASCY standard that takes a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 305.08,
+      "end": 306.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "letter",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 306.42,
+      "end": 313.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "like C and maps it to a binary number. Here, one zero zero zero zero one.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 314.78,
+      "end": 315.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 315.22,
+      "end": 341.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then and what again what this one zero zero zero one means is transistor on, transistor off, off, off, off. transistor on, transistor on. So that's what this looks like. And you can map C to that. You can map A to 1-0-0-0-0-0-0-0-0. And you can map T to 101-1-0. These are hard to say. And then you can combine them all together to say cat equals blah blah blah blah blah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 341.53,
+      "end": 341.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 341.97,
+      "end": 364.91,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's how binary works. And it's crucial because then it's what allows you to take an MP3 file from my computer and put it onto your computer, and then your computer also speaks binary. Everybody speaks binary, and so they can all read the same language. So that when you read a 1000011, you read it as a C instead of something else.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 365.54,
+      "end": 366.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 366.02,
+      "end": 367.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that was the first crucial standard,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 367.68,
+      "end": 368.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 368.56,
+      "end": 400.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what that allowed for was, yeah, the first key part of the information revolution, which is the ability to store lots and lots of information as electricity. And so our boy, Bill Gates here, I think this is from the late 90s or sometime in the 90s, he is sitting on top of all this paper, and he's saying, wow, so much paper, so much paper, you could store all that paper in this one little CD. If you want to store it in binary, boom, it's all in this little CD. That's amazing. So that's what binary is a standard or as a protocol allowed us to do.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 402.55,
+      "end": 402.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 402.95,
+      "end": 411.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's step one, but step two is... you know how do you send it to the network if i have all these zeros and ones over here how do i send it to you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 411.22,
+      "end": 412.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 412.2,
+      "end": 482.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what you need for that is this protocol between computers and so that protocol was the internet stack so you have a bunch of these computers and there's this thing that people call the internet stack and it has four primary layers and this was made in like the essentially 60s, 70s, 80s, et cetera. The physical layer is the actual cables connecting things. And then on top of that, you have the transport layer and the network layer, or TCPIP. And TCPIP was, quote, unquote, invented in the 70s. And what it did is it allowed you to say, okay, the transport layer said, well, how am I going to send this binary to you? And the answer was in these little packets. I'm going to send you a little box and a bunch of little boxes, and then they'll go through the network, they'll talk to the computers. Eventually they'll get to you, and then you'll look at them and say, oh, here's packet one, here's packet two, and then you'll be able to reconstruct the message. Kind of like with Morse code, dot, dot, beep, you know, dot dash stuff. That's kind of similar to packets.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 483.51,
+      "end": 483.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 483.87,
+      "end": 499.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 500.42,
+      "end": 500.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 500.98,
+      "end": 513.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 514.24,
+      "end": 514.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 514.66,
+      "end": 532.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so what TCP IP allows us to do, is it allows us to take our binary on our computers, package them into these little packets, and then say, oh, I'm going to send that anywhere in the world. I'm going to send it over there. Their IP address is blah, blah, blah. Great. I'm going to send it there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 533.53,
+      "end": 533.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 533.97,
+      "end": 542.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this is crazy. This allows us to create information as electricity, store tons and tons of it, and send it anywhere in the world all for free.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 544.9,
+      "end": 545.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We'll",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 545.34,
+      "end": 555.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "talk about this application layer later. Yeah. So that is what the internet stack was, and it created this abundance of information. Now, so much information that can be,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 555.9,
+      "end": 556.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 556.74,
+      "end": 559.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, shared in the world at zero marginal cost.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 560.38,
+      "end": 560.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 560.86,
+      "end": 573.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what that meant is, you know, there just was a lot of information. So this is a picture from Usenet, which was a first, like, forum on the internet. And it was really popular in the 80s. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 573.15,
+      "end": 574.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 574.32,
+      "end": 582.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "can see here, here's all these different categories of... information that people were starting to share in communities that were starting to form. It's pretty crazy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 584.38,
+      "end": 600.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And then as that information got more and more, we also saw people create these landing pages. In Yahoo, in 1997, they said, okay, here's your landing page. Here's how to get, there's so much information. So it's like, where should I even look? Oh, I'll go to Yahoo, a nice landing page.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 601.0,
+      "end": 601.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 601.4,
+      "end": 603.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "issue, though, is that this was hard to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 604.65,
+      "end": 605.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "keep",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 605.21,
+      "end": 631.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "up. You had to have a human curate all of this stuff, which is pretty difficult. And so what we got is another protocol, essentially. So on top of our existing protocol stack, we got some new protocols. And the first one was this Google PageRank protocol. And this happened. The paper was in 1998. And the idea of PageRank is shown by these fun little faces.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 633.12,
+      "end": 658.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "essentially if you have a bunch of, when you're trying to determine importance, what Yahoo was doing was like using humans to say like, oh, this is important or like, let's point to the New York Times or whatever. But what page rank did is it said, you know what, we'll just say that the importance of any page is determined by how many links point to it. So for something like the New York Times, wow, a lot of people are pointing to the New York Times, it must be very important.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 658.92,
+      "end": 659.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 659.32,
+      "end": 685.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 686.11,
+      "end": 686.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 686.47,
+      "end": 689.65,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this protocol was cool. It allowed us to.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 690.54,
+      "end": 691.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 691.02,
+      "end": 696.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, abstract, it used links to abstract this idea of importance. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 696.54,
+      "end": 697.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 697.52,
+      "end": 701.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "created this, yeah, this additional kind of search layer on top of the existing stack.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 702.2,
+      "end": 702.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 702.8,
+      "end": 703.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that was very powerful.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 704.12,
+      "end": 704.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "As",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 704.64,
+      "end": 769.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 769.94,
+      "end": 770.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 771.1,
+      "end": 782.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "show, get important things. So you can kind of imagine it as this new importance layer on top of the existing stack. where you use links and friends and things like that to say, ah, this stuff is important.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 784.77,
+      "end": 786.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And the crucial idea here is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 787.37,
+      "end": 788.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 788.39,
+      "end": 791.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "get to protocolization. And what I mean by that is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 791.37,
+      "end": 792.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 792.45,
+      "end": 836.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is a, the internet is this constant process of creating something that's abundant. Like, for example, oh, TCPIP creates so much information. Oh, so much information. Oh, too much information. How do we create a new? protocol or a new process or a new standard that can take all that information and say, look, here's the stuff that matters. Let's take the abundance, turn it into the thing that people actually want, which is important stuff, and provide that to people. And so that's what we mean by protocolization. Is this new, is this process of taking the abundant thing, saying, ah, it's too much, crunching it down and saying, ah, here's the stuff that actually matters, and then providing that to people, providing that new.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 836.91,
+      "end": 837.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 837.79,
+      "end": 840.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of scarce thing to people, aka important information.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 841.53,
+      "end": 842.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 842.13,
+      "end": 854.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this process happens a lot on the internet. And this is the infrastructure app loop. This is from a great Union Square Ventures article. And you can see here that infrastructures on the bottom and apps are on top.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 854.98,
+      "end": 855.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 855.32,
+      "end": 860.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what happens is this infrastructure gets built and then these apps get built on top of it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 861.04,
+      "end": 861.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 861.6,
+      "end": 939.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "for example, infrastructure here, TCPIP in 1974. Boom, it was built. And then something that got built on top of TCPIP was AOL. Like, boom, now we have this amazing AOL thing. You can see here infrastructure in 1998, Google Search. Okay, Google Search was created as a needed thing. Ah, what were some of the apps that happened on top of that? Well, maybe something like, you know, SurveyMonkey or Reddit or YouTube, that those things were able to, you know, build off of a, the Google search functionality. In these days, you can see something like 2006 AWS or Amazon Web Services that allows anybody on the internet to kind of spin up a server and to use that server to give people information. So back in the day, if you were trying to create a startup, Like when Bill Gates or whatever was creating Microsoft, you had to spin up your own servers and you had to get like physical hardware, which is tough versus now we have the cloud. And that's amazing. It allows people to produce something like in 2010, Instagram. Instagram was able to, you know, with only 13 employees, get to 30 million users and then sell for a billion dollars",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 939.75,
+      "end": 940.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 941.31,
+      "end": 953.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Facebook in only two years. And why was that possible? Well, it's because all this underlying infrastructure like AWS was helping them. They would not have been able to do it without using something like AWS.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 954.08,
+      "end": 954.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 954.6,
+      "end": 958.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's this infrastructure apps loop that happens on the internet.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 960.14,
+      "end": 960.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 960.66,
+      "end": 980.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you can see it here as well, like something like SSL in 1996, which is a way to, it's called Secure Sockets Layer, it's just a way to send secure information over the internet. That allowed us to have PayPal in 1998. So some of these layers that, you know, produced by researchers and consortiums and nonprofits, then produce these companies that are built on top.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 982.41,
+      "end": 982.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 982.93,
+      "end": 983.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 983.25,
+      "end": 986.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the tough",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 986.0,
+      "end": 1008.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "thing here, or the truth here, is that the protocols are thin and the platforms are fat. And what we mean by that is, and again, this is a Union Square Ventures piece, there is a thin protocol layer like TCPIP. And then on top of TCPIP, you get these applications that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 1008.54,
+      "end": 1010.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "capture",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 1010.12,
+      "end": 1023.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and create lots of value. So the way you think about this is like there's no TCPIP company, right? We don't know no one is the CEO of that company. It's just a protocol that's governed by one of these weird internet",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 1023.96,
+      "end": 1025.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "nonprofits.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 1025.6,
+      "end": 1058.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "But then all these applications built on top of it, Google, Amazon, Facebook, etc. Those are the ones that capture all the value. So as a simple example here, you can see here's our final applications layer that has these protocols. And one of these protocols is SMTP, which is the simple mail transfer protocol. And this is a protocol that says, hey, when you're sending and receiving mail from folks, here's kind of how you should do it. Or here's how you should speak to each other or whatever. And then that was a thin thing. Like there's no one knows about SMTP.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 1059.61,
+      "end": 1060.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 1060.09,
+      "end": 1075.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the fat applications that got built on top of that, Gmail, Yahoo, those ones use the protocol, put a UX layer, put a user interface on top of it, and then get to capture lots of that. They create value and they also are able to capture that value, aka make money.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 1076.11,
+      "end": 1076.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 1076.59,
+      "end": 1079.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that is what's happening. You can imagine all of these",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 1079.69,
+      "end": 1080.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "page",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 1080.89,
+      "end": 1096.35,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "rank and the Facebook social graph. Those are platforms on the applications layer. Right. PageRank is not a, it is an algorithm. It is a standard. It is a protocol. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 1096.99,
+      "end": 1098.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 1098.07,
+      "end": 1128.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "not the way that that protocol is on Google.com. So Google makes all the money from it. So that's the difference kind of between a protocol and a platform. A protocol is. governed by an open source thing, it is, you know, or a nonprofit, and it just defines how people should talk to each other, and then people can build on top of it in a permissionless way, while a platform uses some of these abstractions like page rank or the Facebook social graph in order to capture attention and make money.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 1130.74,
+      "end": 1151.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So, yeah, one interesting piece here is that these abstractions create new planes of competition. And what I mean by that is, PageRank said, okay, if you have a lot of links pointing to you, you are important. And so what that created is this whole field of SEO, of search engine optimization.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 1152.68,
+      "end": 1156.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Google essentially captured lots of attention, said, hey, if you want to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 1156.0,
+      "end": 1157.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "also",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1157.28,
+      "end": 1191.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "get attention, well, we have it all ourselves and you need to play our game, which is this page rank game. And so you need to get good at SEO or at, you know, making all the links point to you and using the correct keywords, etc. Another example here is something like Facebook where they have their feed and that's, again, you want to get high up in the feed. You want to be prioritized in the feed. And so it creates this new plane of competition around feed optimization being something that's very, yeah, you want to be prioritized in the feed. And so there's all these rules to get higher up on the feed.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1192.57,
+      "end": 1192.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1192.97,
+      "end": 1216.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the main thing I want to say here is that this is a kind of self-organizing system, right, where you have, a new plane of competition, a lot of people get to battle versus each other, and then winners rise to the top. So for something like page rank in SEO, an example of a funny thing that rose to the top is clickbait. You know, 15 things you need to eat right now.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1217.86,
+      "end": 1222.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "That is just an inevitable result of SEO and of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1222.76,
+      "end": 1223.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "needing,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1224.26,
+      "end": 1226.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah, of wanting to get clicks and wanting to get links pointed to you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1228.44,
+      "end": 1270.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So, yeah. these are self-organizing systems. I think it's helpful now to look at blockchain as an example protocol. And the reason this is helpful is because TCPIP was built in the 70s. You know, we don't really know much about it in society. It's just, it's too old. Or I mean, maybe if you were around that time, then you were part of that. That's awesome. For me, it's like I wasn't there. But blockchain is being built today. And so we can kind of see this new protocol being built to understand protocols better. So what blockchain does, and I don't, uh, blockchain creates a protocol for value. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1270.64,
+      "end": 1271.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1271.82,
+      "end": 1308.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that means is there's this difference between information and money, right? Money needs scarcity, but the information, or sorry, but the internet is all about abundance. It's all about abundance of information, right? You can take this in this image here, you can take info and send it, you can copy it, just as we talked about, you can take you 0-1-0-0-1, copy it, and send that anywhere in the world all for free. So that's tough when I, if I have a dollar, I shouldn't be able to copy that dollar as many times as I want and then send it all around the world for free. That doesn't really work. You need the scarcity.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1309.86,
+      "end": 1324.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And the difficult thing here is like right now we have a protocol for information. We have this zeros and ones, copy it. distributed all around the world over TCPIP, boom, that's great. But we don't have a protocol for value. There's no",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1324.16,
+      "end": 1325.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "system",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1325.72,
+      "end": 1329.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "right now, except for blockchain, where you can take this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1329.86,
+      "end": 1332.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "money",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1332.32,
+      "end": 1334.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "on the internet and then send it anywhere.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1336.0,
+      "end": 1387.05,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And so the crucial thing that we need to solve here is what's called the double spend problem, which is where you have, if I have some Bitcoin or some internet money, It's a magic internet money. And I want to send it to both you but also your friend. Well, I shouldn't be able to send it to you and then send it to your friend. And then you both say, okay, thank you for sending it to me. I'm going to now give you your t-shirt. Let's say I'm buying t-shirts from both of you. Now I'm going to give you your t-shirts back. And then when you look at the money, you're like, oh, where is it? Oh, it turns out your friend already took it. And so we need to find a way to solve this double spend problem for me not to be able to send it all around the world. We need scarcity. And the way that we do scarcity is we need to have a trusted ledger.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1387.71,
+      "end": 1388.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1388.15,
+      "end": 1400.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what that means is if I send it to send some money to seller A or to you, I can't also send it to seller B because it's already on the ledger as me not having it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1400.39,
+      "end": 1400.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1400.83,
+      "end": 1435.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, so we have to have this ledger that says Reese has the Bitcoin. Now Reese doesn't have the Bitcoin, so he can't send it to that person. And traditionally, you know, this trusted ledger has been held by centralized institutions. You have a bunch of central banks. You have this clearinghouse. And they kind of keep track of the, you know, balances on all the different ledgers. And then they go to the clearinghouse and they say, okay, let's reconcile these terms. Okay, Reese sent his money to you. Great. Done and done. So the banks kind of keep the ledger, but it's like a centralized ledger.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1437.4,
+      "end": 1481.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "What we have here is this, with blockchain, we have a protocol to create a trusted decentralized ledger or a distributed ledger where everybody has copies of the ledger. And what that means is that everybody can kind of check it on their own time and be like, oh, can Reese actually send me this money? Oh, yes, he can. Sweet. And the way that that works is... Yes, this trusted ledger, that allows us then to create this protocol for value. It allows us to send money all around the world and for anybody to check it and to check the ledger and say, ah, yes, re-sent me this money or rescind this other person that money. Great, great, great, we're all good. You don't need to kind of check with the bank. It's all just on this ledger that anybody has access to.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1482.7,
+      "end": 1483.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1483.14,
+      "end": 1514.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the way that we create this protocol for value. And yes, it's kind of a protocol that's on top of the existing systems, just like Facebook and Google are kind of existing platforms on top of the existing Internet stack. So this protocol for value, the way it works, just like with TCPIP, you say, well, where am I sending my Bitcoin? Ah, I'm going to send it to you. And you're going to get, instead of an IP address, you're going to get a Bitcoin address. And your address is going to say 0x25D, blah, blah, blah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1515.44,
+      "end": 1515.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1515.82,
+      "end": 1533.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then, well, how am I going to send you that money? Well, that gets into this complicated process of Bitcoin mining and how you keep that trusted ledger in ways to make sure that everybody has the same copy of the ledger and stuff. We don't really need to get into that. But the crucial idea is that this allows us to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1533.52,
+      "end": 1535.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1535.18,
+      "end": 1595.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a protocol for value. If you want to send money over the internet, you don't have to go through a central bank. You go through... or your commercial bank. Instead, you just have your Bitcoin, you find somebody else on the internet. You say, oh, I want to send it to you in Guatemala. Great. I'm going to send you this money. What's your address? Oh, this is your Bitcoin address. Cool. Here's the money. So that's how this works. It's pretty crazy. Let's look even deeper to understand this more fully with Ethereum as a protocol not just for money, but for programmatic money. So Ethereum was created... Bitcoin was created in 2008. Ethereum was created in 2015. It's another kind of cryptocurrency, but really it's another kind of protocol. So just like with Bitcoin, Bitcoin is a protocol for finding anybody else in the world and saying, ah, I want to send you money. Great, I can find your address and then send you that money. Ethereum allows you to do this programmatic piece. So it allows you to make these if-then statements.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1595.87,
+      "end": 1596.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1596.27,
+      "end": 1699.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what that means is something like, If you view my web page, then I'll pay you one Reescoin. So you can imagine that as something where it's like, oh, you're scrolling through stuff. I want you to view my stuff. If you view my stuff, I will pay you one Reescoin to view my stuff. Okay. So that's an if, an example of an if-then statement. And you can do lots of if-then statements. So the Ethereum is a new... self-organizing system. It's a new protocol for creating all these if-then statements. And an example of an if-then statement is this initial coin offering or ICO. And the way that it worked is it said, if you send eth to me or Ethereum to me, then I will send you one Rees coin. So yeah, it's all these people putting money in this box and saying, here, I'm going to give you some eth. And then once I give you that eth, Ethereum, you can, you'll give me my. Reese coin. And what people did with this is they said something like, hey, everybody, I have this awesome new project. It's going to be amazing. It's a new startup. It's a new blockchain startup. It's going to use these Reese coins. And they're going to be in pretty high demand later. So you probably want to get in on them now. And I'm selling them at a presale right now. So if you want to get in on them, just send money to this address, send some Ethereum here. And you can get your Rees coins, which are going to be awesome because they're going to be crucial for this new startup that I have. And you'll also be able to sell them to other people later, even if you don't want to use them. And so that's what happened. People got really into this. It was permissionless. It was just like anybody could spin this up. and send money to these addresses, and then anybody could run an ICO. And what happened is lots and lots of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1699.16,
+      "end": 1722.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "people did ICOs. So this is a graph on the right here of all the ICOs that happened. Most of these are essentially just in the like year and a half in 2017, 2018. And there are a massive, this is $30 billion worth of ICOs. And these are all things that are just using. that same protocol of okay",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1722.32,
+      "end": 1723.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "send",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1723.44,
+      "end": 1754.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "money to this address and i'll send you my cool coins that will allow you to that you'll be able to use in the future um and yeah so this room should you remind you of a graph this little thing from earlier where we had this new tcpip protocol and then people just went crazy They were like, oh, man, I'm going to create this community about cats and this community about dogs and blah, blah, blah. They create all kinds of stuff. And similarly with ICOs, they said, I'm going to create cat coin. I'm going to create dog coin, whatever.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1756.26,
+      "end": 1758.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And the idea with both of these, again, is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1758.9,
+      "end": 1759.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1759.86,
+      "end": 1801.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "like with the internet, you have, when you say anybody can create any information and send it wherever, you're going to get a lot of information, and some of it's going to be bad and some of it's going to be good. And similarly with ICOs, you're going to get. A lot of money created, and some of it's going to be bad and some of it's going to be good. So that is what has happened. And, yeah, again, this is a new self-organizing system. It's a new plane of competition. So the key idea with all of this and the reason why I went into blockchain is because it is an example of new protocols that are being built out today, these new protocols of value exchange on the internet.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1802.38,
+      "end": 1802.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1802.82,
+      "end": 1807.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think it's helpful to look at them to understand how protocols are created on the internet.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1808.77,
+      "end": 1809.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1810.03,
+      "end": 1816.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So the key idea with all of this is that permissionless protocols reduce friction and create abundance.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1816.97,
+      "end": 1817.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1817.67,
+      "end": 1840.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "You have this new protocol of binary, the new TCPIP stack, and then all of the protocols on top of TCPIP, like Google PageRank and Facebook, you know, social graph, et cetera. And those things. reduce the friction for sending information everywhere. And what that means is that, boom, we just get a lot of information.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1842.27,
+      "end": 1843.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And pretty much everything else,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1845.41,
+      "end": 1850.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "most things on the internet follow from this. So if you understand these mechanisms, you'll understand the world.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1852.39,
+      "end": 1857.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Another way to think of this is, hey, once the marginal cost of sharing information is at zero,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1858.57,
+      "end": 1859.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1859.19,
+      "end": 1860.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everything else follows.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1862.92,
+      "end": 1863.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Cool.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1863.99,
+      "end": 1873.31,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So let us conclude by reminding ourselves, what do permissionless protocols create abundance? What does that feel like in your body?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1875.63,
+      "end": 1876.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Part",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1895.1,
+      "end": 1897.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of it is the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1900.86,
+      "end": 1902.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "excitement of human ingenuity",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1902.84,
+      "end": 1903.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1904.62,
+      "end": 1912.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "seeing the thousand flowers blooming, seeing all those weird ICOs and all of those weird usnet groups.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1912.7,
+      "end": 1913.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1913.52,
+      "end": 1918.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "cool. Like the internet's really big and there's a lot of us. And when we reduce the friction, wow, people go crazy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1920.72,
+      "end": 1923.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So that's cool. It's also overwhelming.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1926.21,
+      "end": 1935.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And it's scary as well. And kind of sad. Like most of those ICOs were not good. They were people scamming each other on the internet.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1943.86,
+      "end": 1948.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Interactive time. So how do you determine what's important to you on the internet?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1949.29,
+      "end": 1949.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1949.71,
+      "end": 1953.05,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you use things like Google or Facebook or other ways that you say,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1953.21,
+      "end": 1953.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "eh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1954.23,
+      "end": 1956.01,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "how am I determining importance here?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1956.45,
+      "end": 1956.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1956.89,
+      "end": 1962.01,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then when you think about that, say, oh, what kind of platforms or protocols are telling me that something is important?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1964.03,
+      "end": 1972.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "The second question here is, what do sharing economy platforms like Uber and Airbnb, what do they abstract and make abundant?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1974.16,
+      "end": 1974.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1974.6,
+      "end": 1978.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we're going to get to this in a future video, but yeah, think about that. How",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1978.04,
+      "end": 1979.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "did",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1979.57,
+      "end": 1988.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Uber and Airbnb, what do they? What are they like wrapping? What are they putting containers around and making it just like an easy click to say, yes, I want to do this?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1990.3,
+      "end": 1990.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "What",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1990.7,
+      "end": 1993.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "do they need to? Yeah, what do they need to make abundant?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1995.74,
+      "end": 1998.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay. So today we chat about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1998.92,
+      "end": 2000.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "protocols",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 2000.12,
+      "end": 2002.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and information abundance. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 2002.92,
+      "end": 2004.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 2004.95,
+      "end": 2006.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it'll feel like to integrate this into your learning",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 2006.79,
+      "end": 2007.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 2007.67,
+      "end": 2024.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "also some things to watch out for. Well, A, you'll start to see the world in terms of these platforms versus protocols. So you'll see, especially these platforms, you'll see these massive platforms and you're like, and you'll see how they, you'll start to see something like Amazon as a.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 2024.67,
+      "end": 2025.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 2025.41,
+      "end": 2041.91,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a set of APIs, essentially. This gets to the second point here, these APIs for human needs, where you're like, okay, I want food. Boom, Amazon has a button for that. And so they've abstracted all these processes away such that you can just click a little button to get what you want to get your human needs.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 2043.17,
+      "end": 2043.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You'll",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 2043.57,
+      "end": 2056.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "also, you know, and this is this example of findahom.com. That's a thing that a human need is happening right now. It's during the COVID-19 pandemic, and lots of people are moving out of cities. And so I've started to get these",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 2056.37,
+      "end": 2057.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "advertisements",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 2057.85,
+      "end": 2070.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "for, hey, do you want to go somewhere else in the world for six months? Here's how you do it. Here's a one-click button to move to Austin or whatever. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 2070.16,
+      "end": 2071.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yes,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 2071.2,
+      "end": 2083.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you can kind of see these new things pop up as... as access points, you know, as these layers on the internet, this like onion-based layers for us to meet human needs.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 2083.88,
+      "end": 2084.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 2084.26,
+      "end": 2102.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "do want to say one other thing here, which is this platform versus protocols piece, which is you'll start to see the internet and say, oh, here's this thing. What part of that thing is a platform and what part of that thing is a protocol? And so, for example, with something like Zoom, the underlying protocol is called voice over IP or VoIP.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 2103.53,
+      "end": 2103.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 2103.97,
+      "end": 2111.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then you can see, ah, that's the protocol. And then there's all these platforms, Zoom and Skype, et cetera, et cetera, all built on top of that protocol.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 2113.45,
+      "end": 2116.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Third, you'll start to differentiate between atoms and bits",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 2116.69,
+      "end": 2117.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 2117.63,
+      "end": 2130.91,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this world. So something like Instacart is, you know, needs to deal with bits or sorry, they need to deal with atoms. They're dealing with actual food and like humans bringing you that food. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 2130.91,
+      "end": 2132.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 2132.31,
+      "end": 2133.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "just,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 2134.47,
+      "end": 2134.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 2134.71,
+      "end": 2179.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "internet world can have very little friction. And that's why things like Facebook and Google, they're just purely, it's really zero marginal cost. It's just the information, the bits just fly around. Once the underlying infrastructure and the servers have been built, boom, you can just send the information wherever. But something like Instacart, well, you have to, if I want to get Instacart to my home, then there are all those humans that need to do it. It's not like the food can just be inserted through my computer. I need to, someone needs to go to the grocery store, pick up the loaf of bread and bring that loaf of bread to me, and then it can work. So, yeah, just understanding where the frictions are. And that leads to this fourth piece of something to watch out for, which is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 2179.66,
+      "end": 2180.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "seeing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 2180.9,
+      "end": 2187.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the world in terms of APIs and in terms of these protocols and platforms is pretty dehumanizing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 2188.71,
+      "end": 2189.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "As",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 2189.15,
+      "end": 2193.05,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "an example of this, there's this idea of ghost work, which is...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 2193.86,
+      "end": 2194.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 2194.3,
+      "end": 2213.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "these workers that are behind these platforms, Amazon, Instacart, et cetera, and you don't see them. When I buy something off Amazon, I don't see anything when I click the button, you know, buy this, you know, physical book. But what's actually happening is all of those, you know, minimum wage workers",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 2213.9,
+      "end": 2215.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 2215.2,
+      "end": 2219.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the warehouses, in the drive, doing the driving, et cetera, et cetera. And so,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 2220.02,
+      "end": 2220.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 2220.68,
+      "end": 2230.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "there's something amazingly powerful about. giving us in the world access to all these APIs for stuff we need, for human needs. And we need to remind ourselves of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 2230.72,
+      "end": 2231.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 2231.22,
+      "end": 2232.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "human side of this as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 2232.74,
+      "end": 2233.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 2235.41,
+      "end": 2244.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay. Again, hope you enjoyed this. Hope you're doing well. Let me know if you have any thoughts or questions. And thank you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 2244.88,
+      "end": 2245.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Again,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 2245.36,
+      "end": 2247.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "if you're interested in this, please check out the root fellowship",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 2247.98,
+      "end": 2249.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 2249.12,
+      "end": 2250.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "go to root.com to learn more.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 2251.14,
+      "end": 2251.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Thank",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 2251.54,
+      "end": 2252.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you, everybody, and goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 236,
+    "withheld": 4,
+    "published": 232
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

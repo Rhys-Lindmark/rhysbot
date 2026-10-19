@@ -1,0 +1,1521 @@
+{
+  "schema_version": 1,
+  "id": "podcast-2e04d850ae938f9d398e",
+  "title": "#7: Nathan Schneider—Platform Cooperativism on the Blockchain",
+  "published_at": "2017-08-01T21:30:34Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/7-nathan-schneiderplatform-cooperativism-on-the-blockchain",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/335852784-the-rhys-show-7-nathan-schneiderplatform-cooperativism-on-the-blockchain.mp3",
+  "youtube_id": "DQKZeDcFAnU",
+  "youtube_url": "https://www.youtube.com/watch?v=DQKZeDcFAnU",
+  "audio_sha256": "ddf28578a0a372b073cbe50bd5d71c395a032722b9ad95aa61576d7959298a16",
+  "audio_duration_seconds": 2377.378,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 6332,
+    "unknown_words": 72,
+    "unknown_words_fraction": 0.011370814908401769,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 1.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 13.69,
+      "end": 54.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everybody, my name is Reislin Mark and welcome to another edition of Creating a Humanist Blockchain Future where we explore the intersection of effective altruism, universal basic income, the attention economy and blockchain. And today we're going to kind of be looking at a aspect of blockchain for good, kind of coming from a different perspective, namely the platform cooperativism perspective. And today we'll be interviewing Nathan Schneider, who is a writer and scholar in residence of media studies at the University of Colorado Boulder. He's also a leader of the platform cooperative movement, edited the main and only book on the subject, ours to hack and to own, and report on blockchain technology for vice, the new republic, et cetera. So Nathan, thanks for being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 55.53,
+      "end": 56.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Thank you. I'm glad to be here.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 56.89,
+      "end": 98.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Excited to talk about this. And the reason I kind of want this episode arc to kind of be... you know, how we can cross-apply the mindset of platform cooperativism into blockchain. And I think about it as this kind of once I talked with you and heard about platform cooperativism, it was like, wow, it felt kind of like the beginning of calculus with like Liebnitz and Newton where it's like, You have a monopolized, kind of centralized Internet, and you have things like the sharing economy and things where a lot of money is going to these big aggregators. And so one technology response to that is blockchain, but kind of the platform co-op response to that is kind of from a societal perspective. So could you talk a little bit more about what is platform cooperatism and how you kind of got?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 100.38,
+      "end": 100.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 101.74,
+      "end": 187.3,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "thank you. And the entry point for me was with this language of the sharing economy. Right, you know, I was right on the heels of my previous book, which was called Thank You Anarchy. It was a study of Occupy Wall Street. And I was seeing a lot of those activists who'd been involved in that movement trying to find a different way of doing the economy. and they were looking for as the protest movements are settling down they were looking for what to do next they were looking for jobs things that they could do for their own livelihoods that resonated and aligned with their political interests they were looking to technology you know they'd been involved in A lot of technological innovation and experimentation in Occupaya, and we're looking to carry that forward. And around that time, this is like 2012, 1314, this language of the sharing economy started to emerge and started to become more common. This idea that through online platforms, we would... find ourselves in a situation where we would be sharing the stuff of our lives, sharing the things that we post online,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 188.8,
+      "end": 201.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that we would be able to own less and share more. And on the one hand, that was very exciting to many people, but it didn't take long before people started wondering, hey, wait a second.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 203.31,
+      "end": 237.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "this isn't really sharing going on here. This is a kind of corporate rental device in which we really have no ownership or governance. We're not doing any sharing over the platforms themselves. And that started to become a problem, especially as we started to see cases like Uber drivers where the standards of labor were going down. And it seemed to be a kind of race to the bottom for workers. and then of course issues of surveillance and to see for all kinds of users",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 237.53,
+      "end": 238.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 238.51,
+      "end": 238.91,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 238.91,
+      "end": 240.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 240.41,
+      "end": 343.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of smaller subset of people frustrated with that framing started turning back to an old tradition a tradition that has really helped build the economy of the world as we know it in ways that aren't widely appreciated and that's the cooperative tradition the tradition of cooperative enterprise these are businesses owned and governed by the people that they serve. The people who most depend on them are the ones to whom those businesses are most accountable. And I started looking at the ways in which people were starting to figure out how to build online platforms using this kind of model. And so I started writing stories about them and then soon organizing conferences, co-organizing them with colleagues, including Trevor Schultz at the New School, and starting to see a different kind of ecosystem forming for what online economies might look like. And from the beginning, blockchain has been... really key to that conversation and and I'd been following the development especially of the kind of blockchain 2.0 projects starting in early 2014 with the with the first white paper on Ethereum and and on the one hand it seemed to me like there were incredible opportunities for overlap, for using these technologies to bring that cooperative tradition back to life. But then also some real dilemmas in ways in which that cooperative tradition might actually have something to offer to remedy some of the shortcomings of this emerging blockchain space.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 343.95,
+      "end": 435.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I think that's fascinating. I think the three, or three quick notes on that. First, I think the language piece that you're talking there is huge. And I listened to your TED Talk recently and this language of the sharing economy and of access versus ownership. And like you're saying, words are just so, so important. And we need to be very careful with how we use our words within this. So I think that's a key point. The second one is, yeah, you look back on these old traditions and... you know, you think so much of history in a non-digitized way was built within, and not a ton, but a lot of it was built within these kind of platform cooperative movements, or sorry, just old-school cooperative movements. And so really looking to history in order to inform our future, I think, is a really good pattern match. And then finally, just talking about all these different, something that I was surprised by when I read your book was how many, as part of the book, you have all these different case studies of examples of different... people within the space that are doing different things. And I was like, whoa, I'd only heard about the non-platform cooperative movements, more the platform capitalist movements, you know, the Ubers and the Airbnbs and what have you. And just to see all these other ones out there, I was very surprised. I was like, wow, there's a lot of work happening in kind of this bottom-up fashion here. So I found that cool. Kind of diving deeper into some of that, though, especially on the blockchain side, how do you, so if I'm a person who is... doing is looking to do like an ICO in the near future, let's say. We don't exactly know what's on. Let's say it's something that's like the basic, or it doesn't really matter what it's on. How would I, you know, are the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 435.52,
+      "end": 442.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "ICOs does they currently stand? Are they, are they, do they align with platform cooperativism or how could they more align with platform cooperativism?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 443.98,
+      "end": 461.78,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 463.5,
+      "end": 501.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 502.88,
+      "end": 526.7,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And one of the features of that was that in building this kind of do-it-yourself economy as an alternative to the utility companies, the investor-owned utilities, they had to build trust. And a way of building trust was through democracy. They were building businesses. where each member had one vote",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 526.7,
+      "end": 527.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 527.88,
+      "end": 541.2,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it didn't matter when you joined as long as you were part of it you were you know you were an equal citizen so to speak an equal member of the business and and that the business was accountable to them",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 543.42,
+      "end": 544.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "With",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 544.0,
+      "end": 623.57,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the emergence of the blockchain technology, there is this drive toward trustlessness. You know, that's kind of a technical term in the technology, but it's also kind of part of the culture, this idea that we can build communities without trust. And I think we've seen over and over again in the experience with Bitcoin and forks and all kinds of all coins, that trust is going to enter into the process at one place or another. You know, you've got to trust in exchange. You've got to trust the people who have the power, whether it's social power or technological power, to manage something like a fork. Trust is a part of the process and I think there would be benefits to seeing how cooperative enterprise has made that trust explicit at the beginning of the process. So with something like an ICO, we're still, on the one hand, it's like a cooperative project in that it's allowing people to kind of scrap together resources and in this case in some ways kind of create resources together, create value together. and build enterprises on it, which is really exciting, not having to rely on the kind of corporate gatekeepers in order to do that. That's very powerful.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 624.25,
+      "end": 624.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 624.85,
+      "end": 738.87,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 739.23,
+      "end": 779.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I think that that is really interesting in the sense that. So, I mean, one part of this that I wonder about is, how to determine, you know, if something is a platform cooperative or not in from a blockchain perspective. And so, I mean, we're having a tough time doing this from a scam perspective, you know, someone saying, hey, let's raise a bunch of money through this ICO. It might be a scam. And there are things like consensus diligence or co-founded or a coin list or coin fund or whatever that kind of are in this space. Is there a way, a specific way for me? If I'm looking online, I'm like, okay, I'd like to know whether this is a kind of a co-op style blockchain ICO or a non-co-op style. What kind of specific indicators could I look for?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 779.99,
+      "end": 780.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 781.05,
+      "end": 867.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's a good question, and it's a tough one. It's something that, for instance, in the offline cooperative movement is not always easy. There's a lot of gray area, and there are a lot of very proud co-ops that, for instance, in some interesting ways, fudge the... the standard definitions of a cooperative. It's worth it for anybody interested in this model to just make sure to look at the definitions available from the International Cooperative Alliance. That's ICA.coop. This is actually an international body of cooperatives around the world that sets the standards for what a cooperative is. There are seven principles that more or less date back. almost two centuries and there are a set of values and a definition that help identify a co-op from others. They actually use that for instance to determine the availability of dot co-op top level domains. So they actually do some investigation to make sure that you know, you're serious as a member of the cooperative movement. And in many places, if a company is registered as a cooperative, that many countries and states have particular co-op laws. Here in Colorado, we have quite good cooperative laws. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 867.04,
+      "end": 867.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "being",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 867.66,
+      "end": 879.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "incorporated as a cooperative is one way of doing that. But I think that there are a few really critical. definitional points. One is that basic principle that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 879.42,
+      "end": 881.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 881.86,
+      "end": 921.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "business is owned by the people participating in it. That it's not just investor control, it's participant control. And that those participants generally have one vote each. So it's more like what you would experience in a local government. than what we're used to in investor-owned businesses, where, for instance, there are the more shares you hold, the more shares you've bought, the more votes you have. Those are some of the critical principles, and then the others are fleshed out from there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 922.02,
+      "end": 978.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. Yeah, so I think that looking for... And that makes me think of essentially Dow-style governance, where you say, hey, you have this DAO, and the token holders themselves get to determine where we go with this protocol, whether it's something like Tezos or whether something like District X, OX, saying, hey, you as the protocol, as owners of the token, essentially get to determine what the governance is. The other thing that that makes me think of is some of the allocation percentages for these different ICOs. And if you have one, where one chair equals one vote, but you only open up 10% of the ICO to the community, well, it's unlikely to be that distributed or decentralized. So, yeah, I think that that's interesting. I want, as this space continues further, I would love for there to be something, kind of like a B corporation or what have you, that you can just like add a stamp to a given blockchain ICO that says, hey, this is certified co-op. Would that be possible?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 978.73,
+      "end": 979.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 979.83,
+      "end": 1025.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "absolutely. And it would be something worth, for instance, engaging the ICA on and some of these existing institutions that can offer that kind of certifying authority. And, you know, I'm in constant contact with ICA and the National Cooperative Business Association here in the United States to try to help bring them into these conversations. And so... So as need emerges, I think we already have the infrastructure for doing that sort of thing. You know, I think there's a tendency in the blockchain space to want to dispense with institutions. So the kind of thing that I just described sounds very troubling. Though, you know, I think we've already seen",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 1025.83,
+      "end": 1026.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 1026.67,
+      "end": 1034.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is really happening is we're just displacing institutions. We're changing institutions. And, you know, we're switching our trust from,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 1036.5,
+      "end": 1054.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "from certain kinds of banks to certain kinds of investors and certain other players who invest trust in the projects that we're talking about and playing around with. And I think we would do a lot better to be conscious about that, you know, to make sure that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 1054.12,
+      "end": 1055.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 1055.32,
+      "end": 1070.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "recognize this is an opportunity to change the structures of trust of our economy rather than to imagine that we're going to totally dispense with them. Because if we do that, I think we're going to end up trusting people who aren't really worthy of that trust.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 1070.34,
+      "end": 1133.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. Yeah, I think that that is, and that reminds me a couple things. One, there's going to be a recentralization vector. At some of these conferences in New York, they were talking about, yeah, we're going to, there was kind of an initial decentralization at the beginning of the internet, and then there's a recentralization, and now we might have more decentralization as a result of blockchain, but then there's going to be recentralization vectors, and we can kind of determine what those are going to be. So we should find kind of, know and accept that they're going to happen and then direct them in the correct location. The other thing that makes me think of is in kind of taking a step away from some of the specific kind of blockchain platform co-op work that you're doing and kind of, you know, maybe abstracting one out and going to kind of the more future-facing things here. So in a recent interview, I talked with this guy Simon de LaRouviere from Consensus about how to, about these different levels of coordination that can exist now with blockchain, and it's easier to coordinate essentially than it used to be in the past. And I'd love to just get your perspective on, you know, if you think about something like Uber.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 1133.78,
+      "end": 1134.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 1134.24,
+      "end": 1178.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Uber essentially has a centralized coordination in Silicon Valley with massive, they have a platform and then you have all the riders and the drivers essentially operating on a platform with 30% or whatever going to Silicon Valley. And you're in like an optimal platform co-op world. You know, in Denver we have the Green Taxi Initiative and it allows, it's like a Denver-owned kind of cooperative kind of like Uber. In your optimal world, Would there be like a bunch of, would there be a ride sharing service for every city or for every county? And those would have, could like have interoperable data between each other. What does this kind of optimal ride sharing platform co-op world look like?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 1178.47,
+      "end": 1178.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 1178.99,
+      "end": 1198.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I was just talking with some folks in Europe who are working on this on a kind of blockchain and platform co-op basis. So it's a very live question and people are engaged in. in the work in this direction. You know, one thing that is really cool about cooperative enterprises is that they have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 1198.59,
+      "end": 1200.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "often",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 1200.35,
+      "end": 1243.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 1243.99,
+      "end": 1244.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 1244.37,
+      "end": 1289.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they want the benefits of economies of scale. So this is a model that has long used federated structures in order to govern and also to do financing. And so there are a lot of ways in which blockchain technologies might be used to kind of bring some of these advantages into the 21st century. For something like ride sharing, I think... there's incredible opportunity to solve some of the regulatory and local control challenges that platforms like Uber oppose. And this is why we've had policymakers very, very excited about platform co-ops. You know, Jeremy Corbyn in the UK, has, you know, the head of the Labor Party has made platform cooperativism part of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 1289.97,
+      "end": 1290.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "his...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 1291.26,
+      "end": 1296.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "part of his digital democracy strategy and the city of Barcelona has been integrating",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 1296.88,
+      "end": 1297.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 1297.82,
+      "end": 1334.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "work into what they're doing, because they want more options. And you could imagine a vision of a ride-sharing system in which anywhere you go, you might be using the same app, the same protocol, right? But in each place that you go, the users of the protocol are a local cooperative or a local company. or even just individuals who then access that protocol. And maybe the protocol is there's some governance standards where those different entities in different places, which are accountable to local laws,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 1335.03,
+      "end": 1335.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "then...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 1335.37,
+      "end": 1346.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "kind of come together and make protocol level decisions. You know, we already have stuff like this with, you know, the organizations like WC3 that regulate",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 1346.81,
+      "end": 1347.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 1347.25,
+      "end": 1359.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "World Wide Web and that set standards where you have people coming together from many different organizations. And making that kind of governance more explicit could be very, very powerful",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 1359.25,
+      "end": 1359.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 1359.87,
+      "end": 1382.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "could really create competitive advantages against a company like Uber, that really has to do a kind of one-size-fits-all product. And I think this spreads across a great many sectors. And one area that we're starting to see a lot of growth in is medical data, you know, where there's a lot of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 1382.02,
+      "end": 1382.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "different",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 1382.74,
+      "end": 1404.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "kinds of regulatory arenas there. But there are opportunities for sharing software in different places, enabling different countries. or states even to set up their own health data cooperatives, linking them together, allowing them to pool data, but allowing them to handle the local regulation on their",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 1404.11,
+      "end": 1404.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "own.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 1404.95,
+      "end": 1435.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I think that the, so like you said, I like how you use the protocol level there where you might use a single app, but it's really just this, they're operating at the protocol level, and at the sub level, it's really these local co-ops that are essentially interoperable with each other. And like you said, they're in the future. we might have, you know, the federation versus essentially acquisition or interoperability versus acquisition. So instead of Facebook, you know, acquiring WhatsApp and Instagram and Oculus, they might just make messaging protocols between each of those things to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 1435.95,
+      "end": 1436.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "operate with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 1436.89,
+      "end": 1437.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Facebook or something of that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 1438.09,
+      "end": 1438.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 1438.35,
+      "end": 1495.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, to your point, I don't think that the centralization of the Internet is a necessary process. It's a chosen process and it's a structural process. You know, the... the internet is itself a decentralized network. And, you know, blockchain technologies are fundamentally decentralized networks. The problem is, is that we've adopted a highly centralized business model for these things. You know, I mean, many people listening to this might be aware of federated social networks, you know, tools like... diaspora, Gnu Social, the latest one is Mastodon, you know, these social networks that are based on people having local control of their data, but being able to interact with a larger network. It's basically like email. You know, you have, it doesn't matter what server or your email addresses that, you can still send to each other because of a shared protocol. And this has been technologically possible for a long time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 1495.96,
+      "end": 1496.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 1496.48,
+      "end": 1506.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "problem has been that there hasn't been investors willing to back it because they want to control the whole pie. So they back companies like Twitter and Facebook.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 1508.58,
+      "end": 1509.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 1509.36,
+      "end": 1546.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think cooperative models could create a business model for this kind of federated social network in a way that investors otherwise wouldn't. And there are great many parallels to this, there are great many opportunities where cooperative models through their local control and federation could re-decentralize the internet, re-decentralize the blockchain and unlock the trapped value in these technologies that we haven't been able to see because of the centralizing investor-owned business models that we've allowed to dominate.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 1547.64,
+      "end": 1547.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 1547.98,
+      "end": 1585.41,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I mean, and so I would love to go deeper on the investor models, and especially from a pushback perspective. So the classic mindset is like, okay, you know, I'm a startup founder and here's an investor. And in order to bet on me, you kind of have to invest, I have to be creating a black swan startup one that has 100 X returns, hopefully 1,000 extra turns, and the investor needs to be thinking from that perspective as well. And so how. why would I as a startup founder or why would the investor want to back a startup that's not 100x black swan? How does the platform cooperative say, you know, we actually could be better and you should back us, Mr. or Mrs. investor person?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 1586.26,
+      "end": 1586.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 1587.12,
+      "end": 1624.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the fact is, is there's a lot of value between zero and unicorn, right? There's a lot of, you know, there are companies like MailChimp that grew without any venture capital money. You know, this is perfectly possible. And then there are companies that are a million ways in between, you know, where they've taken some, they've had different kinds of blended models, and they've grown on a kind of mix between investment and revenue. And this idea that it's either unicorn or bust, I think, is demonstrably false. It's a kind of myth that we've told ourselves. And this is a reason why, for instance,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 1627.58,
+      "end": 1629.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "firms like Unions Square Ventures have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 1629.66,
+      "end": 1630.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "been",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 1630.3,
+      "end": 1655.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "very interested in both blockchain and platform cooperativism because they recognize, they're smart enough to recognize that there's value in decentralized strategies. And there's value in linear growth curves as well as exponential ones. And there's value in creating community value.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 1656.87,
+      "end": 1657.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 1657.09,
+      "end": 1658.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, I just think of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 1658.57,
+      "end": 1659.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 1659.69,
+      "end": 1665.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there's a worker co-op solar installation company up the road for me here in Boulder, Colorado called Namaste Solar.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 1666.07,
+      "end": 1666.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 1666.31,
+      "end": 1683.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, that's a company owned by its workers. It has no trouble raising capital. You know, they're, they're not selling any voting shares, right, to their investors, but they're able to offer a really great reward or return, a really great",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 1683.01,
+      "end": 1684.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "risk",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 1684.23,
+      "end": 1684.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "profile.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 1687.07,
+      "end": 1699.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "because like, hey, you know, if they run into trouble, you know, the workers don't get paid until the investors do. So the workers have a really strong incentive to make sure that the investors get a fair return. And,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 1700.25,
+      "end": 1701.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 1701.37,
+      "end": 1707.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, and they're doing their growth by federation. You know, they're growing their business on a linear curve, but then they're also setting up",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 1707.85,
+      "end": 1709.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "purchasing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 1709.73,
+      "end": 1716.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "cooperatives on a national scale. for solar panels for services and now setting up a credit union for financing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 1716.79,
+      "end": 1717.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 1717.59,
+      "end": 1723.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so so it's just it's a different model it's a different set of of possibilities",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 1723.03,
+      "end": 1723.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 1723.75,
+      "end": 1728.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "but it's one with a tremendous amount of value it's one that has helped",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 1728.03,
+      "end": 1728.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "uh",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 1728.59,
+      "end": 1729.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know build",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 1729.51,
+      "end": 1730.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "uh",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 1730.19,
+      "end": 1732.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "economies around the world",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 1732.07,
+      "end": 1732.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "uh",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 1732.91,
+      "end": 1735.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and and create value",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 1735.41,
+      "end": 1736.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "uh",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 1736.07,
+      "end": 1736.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that i think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 1737.55,
+      "end": 1738.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 1738.09,
+      "end": 1744.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think deserves a lot more attention in the online space, where these kinds of models have so far been almost totally ignored.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 1744.83,
+      "end": 1773.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah. I think that the, and I think a key thing, hopefully with blockchains that we'll be able to enable this is what we're optimizing around. And when you said, you know, we've classically optimized for dollar value. And when you have one investor over here, another investor over here, and these ones are better at getting 100 extra turns, well, then if everything is optimized around dollar value, then you have to choose the ones who are the best at picking the black swans. But as you're saying like, hey, there's value and community value. And that's not something that's naturally...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 1774.89,
+      "end": 1813.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "as optimized for measured. But if you think about, you know, Robert Putnam's social capital and things at that, where you say, hey, these things are important and matter to us. I hope to be able to measure them in more explicit ways with like blockchain-based tokens, essentially, so that then when someone invests, they say, hey, I'm investing in this early startup. I expect to get a 5x return on my money. I expect to get a 5x increase of social capital in the communities that it's providing. I expect there to be increased trust. I expect there to be, you know, maybe it's for a nonprofit. It's not necessarily value for me, but it's value for the world. So I think that there are ways. hopefully ways that we can optimize around things that aren't just dollars.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 1814.43,
+      "end": 1827.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, and to recognize the competitive value of those other forms of value. You know, when you look at companies like Organic Valley, you know, which helps",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 1827.05,
+      "end": 1827.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "build",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 1827.69,
+      "end": 1842.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the organic food industry, right, it's a cooperative owned by farmers. It created a whole sector. or helped create a sector along with food co-ops and other kinds of cooperative enterprises that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 1842.29,
+      "end": 1842.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "other",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 1842.85,
+      "end": 1854.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "kinds of businesses just couldn't do. It stitched together an economy. And when you look at, for instance, Associated Press, a kind of earlier generations media cooperative started in 1846 or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 1854.83,
+      "end": 1855.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 1856.19,
+      "end": 1862.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, it's had investor-owned competitors its entire lifespan and it's beaten them all out.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 1862.43,
+      "end": 1862.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 1862.65,
+      "end": 1892.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, because the cooperative model... just aligned better with the kind of business that they were doing. And as a result, we have this really powerful media utility in our country, and many other countries have similar things as well, also organized as cooperatives, that has enabled a kind of source of factual news that both Fox News and CNN are members of. And that's a very powerful thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 1894.19,
+      "end": 1894.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 1894.19,
+      "end": 1899.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, relying and waiting for people's better angels to take over. It's recognizing that this is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 1899.55,
+      "end": 1900.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 1900.03,
+      "end": 1904.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "different set of, uh, of alignments. And, and, and it could even mean,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 1904.55,
+      "end": 1904.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 1904.81,
+      "end": 1907.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, a different view of the human person. Um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1908.17,
+      "end": 1908.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "uh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1908.45,
+      "end": 1922.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, when you look at, uh, uh, Bitcoin technology, blockchain technology so far, uh, you know, one, one analyst early on pointed out to me, you know, only like a third or a half of what secures Bitcoin is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1923.42,
+      "end": 1923.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1923.88,
+      "end": 1928.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "crypto stuff, you know, the tech. You know, a big chunk of it is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1928.54,
+      "end": 1930.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "game",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1930.24,
+      "end": 1942.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "theory, right? It's a theory about human beings. It's a theory about how we act and what we will do and what we won't do. And it works, but I don't think it fully encompasses what we're capable of.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1943.16,
+      "end": 1943.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1943.6,
+      "end": 1946.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so, you know, I think it's worth posing the challenge",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1946.44,
+      "end": 1947.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1947.22,
+      "end": 1963.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what, how could we design blockchain technologies in ways that take advantage and operate along the lines of other kinds of human values and human capacities. The value of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1963.13,
+      "end": 1965.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "well",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1966.31,
+      "end": 1968.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "-aligned, well-incentivized cooperation",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1968.75,
+      "end": 1969.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1969.67,
+      "end": 1980.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "something that could be very powerful. And according to the prevailing anthropology of the blockchain space, is being overlooked.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1981.03,
+      "end": 1982.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1982.49,
+      "end": 1982.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1982.83,
+      "end": 2021.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "think that there is a lot of, so I can kind of take that and to turn it into a kind of our final topic here and say, hey, what, you know, if you were to recommend to someone in, and I think a lot of people in blockchain don't necessarily know about platform cooperativism, even though they're hyper-aligned, what is something, and you're kind of at this intersection, so what, if you were to tell someone who's working in the blockchain world, hey, try to, you know, do this thing that's more platform cooperativism, E, what would you tell them to, how could they actually, how could they get it more into the work that they're doing, the company that they're at, how could they think more from this platform co-op mindset?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 2022.76,
+      "end": 2069.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 2069.13,
+      "end": 2069.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 2069.67,
+      "end": 2096.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "space to learn about what the different options that this model could have. I certainly recommend taking a look at our book, ours to hack and to own. which offers a kind of tour of some of the very early projects. We're going to have our next conference, our third conference in the U.S. in November in New York City. You can learn more about that platform.coop. You can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 2096.1,
+      "end": 2096.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "browse",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 2096.9,
+      "end": 2105.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the directory of this emerging ecosystem at the Internet of Ownership, which is I-O-O.coop.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 2107.79,
+      "end": 2116.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And you can find more events that are happening there as well. We've even got an email list that's linked to there on the bottom of that site",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 2116.03,
+      "end": 2116.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 2116.47,
+      "end": 2121.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you want to really go deep with people who are working hands-on and this stuff. But,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 2121.83,
+      "end": 2122.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 2122.13,
+      "end": 2127.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, again, I would just emphasize, you know, when I first saw came across",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 2127.63,
+      "end": 2129.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 2129.11,
+      "end": 2129.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 2129.51,
+      "end": 2130.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 2130.91,
+      "end": 2139.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "possibilities of the blockchain 2.0, you know, when I first recognized that this is about more than just. money, you know. It seemed to me that this is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 2139.93,
+      "end": 2140.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 2140.53,
+      "end": 2141.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "chance for us to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 2141.75,
+      "end": 2142.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "bring",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 2142.69,
+      "end": 2154.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "about a renaissance of democracy, you know, a renaissance of experimentation and exploration of how we do governance, how we create appropriate accountable economic structures. And,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 2154.73,
+      "end": 2155.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 2155.09,
+      "end": 2162.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, so far there's been a lot of really cool stuff happening in blockchain, but I don't know that that has really",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 2162.33,
+      "end": 2164.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "been even",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 2168.02,
+      "end": 2194.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "tapped. You know, I think there's so much more to be done in terms of building real democracy into the smart contracts that we're coding up here. And I really look forward to seeing a new generation of blockchain developers start recognizing the power of stuff that came before them and the power of democracy in the code that they write.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 2195.33,
+      "end": 2292.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I love that. That reminds me of, so A, I super recommend the book, Arstackintone. I read it. I loved it. It's a great thing that you can just check in on later. In the directory, I just checked that out earlier today as well. And it was just like, oh, here's a bunch of co-ops that are in my area. And now, the next time I take a ride-sharing app, I'm going to try the green taxi instead of Uber Lyft just to see. I'm not sure. And then on your final note, there, these new kinds of... I might disagree on how much experimentation is happening on this level, and I'm excited for, especially at the Dow level, the distributed autonomous organization level, of things like Aragon are in the space working here. You know, Olaf from Polychain Capital talks a lot about new Dow level scaffolding and infrastructure that he's excited by. So I'm pumped for that as well. As a final conclusion, I want to do a quick takeaway of what we talked about. So the goal essentially was to talk about how to cross-apply some platform co-op mindsets into blockchain. And we looked at first how Nathan got into it from the language of the sharing economy, super important to look at language, also super important to look at history and see that, hey, blockchain kind of cooperative style governance systems have been around for many, many years. So we looked at language and history for a bit. Then we looked at these kinds of new, if we're looking at a new ICO, kind of checking its ownership and governance models is a great way to see, A, who gets to vote on what within the system? Is it kind of Dow-based voting or is it more explicitly just like the first investors? And what is the kind of ownership percentages for the community versus for other people in the project? So those are two ways to kind of check",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 2292.72,
+      "end": 2353.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "in ICO for platform co-cooperativism mindset. Then we talked a little bit about the new way that some of these systems will interoperate with each other and how platform cooperativeness kind of allows for instead of kind of acquisition of bigger companies by smaller companies instead kind of interoperability between those companies so that's something to hope for and expect for with platform co-ops and blockchain and then finally we talked about the you know what we're optimizing around and how investors are classically going for 100x returns and that's a dollar value but things like union square ventures are really into some of these new platform co-op and decentralizing the internet kinds of takes on investors on investing which allows you to optimize not just around dollar value but also things like social capital so with that much said thank you nathan for your time if you guys want to check out me go to You can go to patreon.com slash Reese Lindmark. That's slash R-H-Y-S-L-I-N-D-M-A-R-K. And Nathan, again, thank you so much for your time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 2354.06,
+      "end": 2357.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Thank you. Thank you for your thought and your questions.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 2357.78,
+      "end": 2359.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Great. Thanks, everybody. And goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 163,
+    "withheld": 5,
+    "published": 158
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

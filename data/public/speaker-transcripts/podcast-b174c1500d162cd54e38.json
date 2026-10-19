@@ -1,0 +1,4698 @@
+{
+  "schema_version": 1,
+  "id": "podcast-b174c1500d162cd54e38",
+  "title": "#39 Ryan John King, FOAM: Location for the Blockchain, n-Dimensional Block Rewards, Objective TCRs",
+  "published_at": "2018-05-11T02:34:59Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/39-ryan-john-king-foam-location-for-the-blockchain-n-dimensional-block-rewards-objective-tcrs",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/442418043-the-rhys-show-39-ryan-john-king-foam-location-for-the-blockchain-n-dimensional-block-rewards-objective-tcrs.mp3",
+  "youtube_id": "IwInpkqApaA",
+  "youtube_url": "https://www.youtube.com/watch?v=IwInpkqApaA",
+  "audio_sha256": "9c4f24be22910600c8004bbcdd42e3941be9b60edb002ee8419c5603ebed088e",
+  "audio_duration_seconds": 3630.6024375,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 11963,
+    "unknown_words": 396,
+    "unknown_words_fraction": 0.03310206469949009,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_1",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.66,
+      "end": 1.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Now",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 1.52,
+      "end": 5.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "entering the Bitcoin Podcast Network.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 17.44,
+      "end": 17.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 17.98,
+      "end": 24.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "episode is brought to you by Shapeshift.io, the easiest, fastest, and most secure way to swap your digital assets.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 25.18,
+      "end": 25.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 25.72,
+      "end": 30.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "run the risk of leaving your funds on centralized exchange. Visit Shapeshift.io to get started today.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 35.13,
+      "end": 35.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 35.67,
+      "end": 44.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "this episode is also sponsored by my patrons on Patreon. We got about 40, at about 700 bucks a month. And so I like to give different examples each episode for why they support.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 44.82,
+      "end": 45.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 45.18,
+      "end": 126.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "here's what Keegan says. He says, I think you're a great dude investing in an important cause, and I want you to be successful. Thank you, Keegan. And today, I interview Ryan from Foam, and my highest level takeaway is that foam is impressive. They've been working on it for a while, and every time that I'd ask questions, it would feel like, oh, I kind of understand that, but wait, there's more unboxing to be had underneath it. So, for example, when we talked about proof of location, it was like, oh, We're talking about that, but there's actually static versus dynamic proof of location. And it feels honestly like sometimes when I talk to my friends about crypto or I say, hey, say, what do you do? And I do like cryptocurrency stuff. And there's just this endless rabbit hole of questions. That's kind of how it felt with Ryan in a good way, though. So we talk about various things with Ryan today. And primarily we just kind of go over their protocol, the three main things that they have, which is this cryptospatial coordinate system, which is kind of like a latitude and launch. standard for the blockchain. We talk about the ux that they're putting on top of it. And then we talk about kind of proving your location through the blockchain, especially the static version of proof of location where it uses token curated registries or TCRs. So we essentially go over all those things and kind of dive into the protocol. And for me, kind of three big, interesting things are on my mind after I read, listen to it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 127.07,
+      "end": 127.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 127.25,
+      "end": 127.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "first is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 127.89,
+      "end": 128.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 128.75,
+      "end": 132.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "feels like there's this new crypto economic primitive that's being made.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 134.24,
+      "end": 166.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "where so if you think about it like this so bitcoin is and i'm not really sure how to explain this but um bitcoin mining um is just you get the mining records just purely with respect to time um so it's just it's a one-dimensional kind of reward function where you say what is the time okay it was this time therefore you get this amount of bitcoins But now we're seeing these, so someone like foam does these rewards over both time, but also XY space. And the way that they do that is pretty much if you want, let's say you want location services in a place, well, then you signal",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 166.75,
+      "end": 167.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 167.69,
+      "end": 190.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "show that you want them in a given location, let's say Times Square. And then if someone creates a location anchor there, then they receive more of these block rewards in the location that has more signaling. So this to say, if you put a... one of these anchor nodes in a place that has lots of signaling like Times Square, you'll get more block rewards than if you put it in another place like randomly middle of nowhere in Wyoming. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 190.82,
+      "end": 191.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 191.68,
+      "end": 213.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "That essentially changes the block rewards from a pure one-dimensional time function like Bitcoin to in kind of three-dimensional XY and time function in foam. And it reminds me of my interview recently with Trent McConaughey in Ocean Protocol, where they use these curation markets for staking for data, where essentially the rewards are given based off of how folks are kind of staking to that data.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 214.08,
+      "end": 214.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 214.4,
+      "end": 240.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "again, it's another thing where you're like, you're staking to the data and you're essentially saying, hey, when people get rewards from it, those rewards are based off the stake. So I don't know. I think that there's some kind of crypto economic primitive at this intersection of creation market style staking in these new versions of multidimensional space, not just 1D like Bitcoin, but rather n-dimensional, whether it's XY space like foam or kind of in the data space with ocean. So that's one kind of interesting takeaway. The second is...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 241.09,
+      "end": 241.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 241.35,
+      "end": 288.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "in this podcast, I essentially learn about tenderment and plasma, which are these scaling solutions that I know nothing about, are very little about, and how foam is kind of creating something very similar to them. And the idea is that foam, you essentially, if you want to open up, there's essentially these levels of synchronicity in their system where you say, you know, if I open up this zone anchor, which are these like little... places in xy space um and i then i want i essentially get a signal um when i signal uh to that zone anchor i send a radio signal to it that zone anchor then puts that in a log in kind of the semi-synchronous fashion and eventually that semi-synchronous log is put asynchronously um back to the main blockchain like ethereum and so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 289.8,
+      "end": 290.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 290.12,
+      "end": 371.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "interesting thing with this is that, and that anchor node, by the way, the one that was sending the things back to Ethereum, when they got started up, they had to stake to the main blockchain to say, hey, I will be a good node and I will participate in this network accordingly. And that's pretty similar to some of these plasma and tendermint style things, where you are essentially... creating a semi-synchronous system that stakes to, or a semi-synchronous, like, node that essentially stakes to the main chain. So I'm excited to see how stuff like foam and plasma and tendermint, kind of overlap and create standards around synchronous, semi-synchronous, and asynchronous kind of staking to the main chain as ways to scale. So that was kind of another thing that we talked about that I was interested by. And the third is this idea of an objective TCR. So foam really kind of pushes back and says, hey, when we're going to make this token curate registry, this TCR, we want to make sure that ours is objective. And this is... And this is kind of in response to this guy, Alex from Coin Fund, who's pushed back against TCRs. And he says, hey, a TCR, which is a desensurized way to make a list, is really just an Oracle? It just gives you, you say, hey, is this thing on the list? And you say, like, yes or no. And that's similar to an Oracle that says, hey, what was the answer to this question or whatever? What's the magnitude of this thing? And so when you think about it, so you can imagine a TCR as a one-dimensional version of an Oracle, which is kind of just a zero-dimensional or like just a point in space.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 372.58,
+      "end": 372.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 372.9,
+      "end": 417.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "so... But when he's Alex from Coin Fund, he says, hey, if you want to make a TCR, first. an objective answer needs to exist. B, it needs to be publicly observable, and C, it must be really cheap to observe it. And so we're going to kind of see, I bet, a bunch of these new TCRs that instead of just being purely like any kind of random list, instead we're going to see more TCRs like Foams that have actual objective data that is easy to check. And Foam does it because they essentially do it with point of interest data where you say, hey, Statue of Liberty is here. And that's like a very easy thing to check against. pretty objective thing. So this all say, it was a fascinating episode, and we go kind of relatively deep on a bunch of various crypto-economic subjects, and I hope you enjoy. Thanks and bye.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 425.43,
+      "end": 454.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello, everyone. My name is Reislin Mark, and you're listening to another episode of creating a humanist blockchain future. And in this podcast, we take a systems thinking approach to doing good in the world, and we have a couple different series that focus on different system scopes. And today we're focusing on Series C software systems, where we ask the question, What structures are we making in code? And for today's episode, I'm very happy to introduce Ryan John King to the show. Ryan is a co-founder and CEO of Frome, a protocol for proof of location. Ryan, thanks for being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 454.51,
+      "end": 459.31,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah, Rhys, thanks for having me. Really excited to talk more about foam and the protocols and standards we're building.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 459.65,
+      "end": 470.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I'm excited. And as a note, we're doing this live so Ryan can, we can see each other face to face in the flesh. And so let's start at the high level and say, what is foam?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 471.07,
+      "end": 471.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 472.33,
+      "end": 530.43,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so foam is a project primarily right now on the Ethereum ecosystem where we're trying to bring location standards and spatial protocols to blockchain technology. So currently there is no way to think or reason about location in a way that's standardized. Further, there is no real robust user experience tools, as we know, across the field in applications, but specifically when it comes to adding in map or geospatial data to adapt, there's no real way to help visualize that. And third, then, there's no way if blockchain is going to be bleeding into the real world to verify events in the real world, autonomously or trustlessly. So Foam has three different elements to its project, the cryptospatial coordinate for encoding location standards in the smart contract. Spatial Index Visualizer. It's a full-stack general-purpose web app, kind of like a Bloomberg terminal mixed with a Google Map, so it's a visual blockchain explorer. And the third component is proof of location, a protocol from saying, hey, are these smart contracts with location showing up on the map actually there?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 530.71,
+      "end": 542.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay. So, yeah, there's three components. There's the cryptospatial coordinates, which is the, and we'll dive into each of them in a second, but that's the standard for saying, here's how you say, here's how you say where your location is on the blockchain.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 543.19,
+      "end": 543.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 543.53,
+      "end": 548.2,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "how a smart contract can inherit. this location standard and then they can customize where they claim to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 548.2,
+      "end": 548.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "be. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 548.74,
+      "end": 556.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "got. So kind of like something like how if you want to say, hey, I want to be a token, you be an ERC 20. If you say, hey, I want to be a location, you use this cryptospatial coordinate standard.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 556.9,
+      "end": 557.42,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Pretty much exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 557.64,
+      "end": 557.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 558.06,
+      "end": 565.31,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "something free to inherit. And if everyone uses the same standard, then you can start to index the contract spatially and then... visualize them in the other elements.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 565.59,
+      "end": 582.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. Yeah, and that's part two, which is once you have everybody using the standard, the CSC, or the cryptospaceal coordinates, then you can say, okay, now all of these things have the standard. You can start to visualize them instead of looking at blocks with respect to time, you can look at blocks with respect to X, Y, space.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 582.99,
+      "end": 583.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 583.71,
+      "end": 609.41,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "exactly. And it's completely, these components are free and open source and for anyone to inherit or build on. So you can, you know, say, let's see every... smart contract with a spatial address or you know you can then start to build in filters. So if you're only building a supply chain application or you're only building a Pokemon Go or an NFT game, you know, those can still inherit these properties and you can still use the visualizer, but you can also, you know, siphon off all the other noise and just use these tools for your application.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 609.57,
+      "end": 633.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, got it. Okay. And then the third piece is once everybody is using the standards and once you, and people are starting to use them and explore with them in these various ways, then you can actually start to prove your location at a given point in space time kind of and say, hey, or especially space, I guess time is already done by the blockchain. And then once you've proven your location, that can be useful for various apps going for, for various apps.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 634.25,
+      "end": 646.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah. So we see proof of location is really like a whole horizontal infrastructure that will be a critical piece of infrastructure that many different applications or verticals can hook into. And it gets a little bit more granular in that we have two.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 648.93,
+      "end": 671.41,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "portions of proof of location. The first one is called static proof of location. So how do we come to consensus on things that don't move? And this is what I mean by that is like a geographic point of interest. Let's say city hall or this piece of real estate. And if any of those were being represented on the blockchain, they can claim a location and we can come to social consensus on, you know, are these things actually there? And that's where we're using token created registries.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 671.57,
+      "end": 671.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 671.81,
+      "end": 710.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "For really kind of to come to a social consensus, a kind of weaker proof of location on. okay someone made a smart contract with a location can we all try to come to consensus on this static point dynamic proof of location is now through space and time we have an entity moving around the city in different places and it wants to claim its location at different points throughout the day and that's where really foam is without a time synchronization protocol. And this is really the most fourth component because we're launching with the first three elements and this future dynamic proof of location is really kind of the most ambitious part of the project and the way to really come to consensus on moving points in a fraud-proof way.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 710.28,
+      "end": 727.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, cool. Yes, there's the static and dynamic, and the static will be used with the TCR, and that's like for all T, for all periods of time. City Hall is here, and eventually it might change in every like 50 or 200 or 500 years or whatever, but generally it's staying there for its dynamic, which is like your Uber car driving around.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 727.86,
+      "end": 728.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 728.66,
+      "end": 747.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, cool. So we'll come back to that in a sec, but let's go back to the very top one there with the cryptospatial coordinates. I know. I was reading some of the stuff on the website around. There's these really cool things on the internet where you're like, hey, so latitude and longitude are ways to know where you are in time, or sorry, where you are in space. And there's also these cool, like the three word thing that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 747.82,
+      "end": 750.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "says like, what three words? What",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 750.0,
+      "end": 750.24,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "three",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 750.24,
+      "end": 751.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "words?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 751.28,
+      "end": 756.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "And you say like Apple, banana, microphone, and then you know, oh, that's this little small square",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 756.54,
+      "end": 757.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on Earth.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 757.82,
+      "end": 764.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Tell me... about this new standard that you're building and why it's needed as compared to these other",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 764.1,
+      "end": 764.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "latitude",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 764.54,
+      "end": 765.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "longitude",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 765.0,
+      "end": 765.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so lot ofitude",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 765.94,
+      "end": 768.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "longitude is great and we're not getting rid of it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 768.14,
+      "end": 769.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah the idea is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 769.52,
+      "end": 779.22,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that um and it's the most known but if you want to go down to something like a three by three meter grid um the actual number of that latitude long um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 781.67,
+      "end": 793.79,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And so it's not human readable, it's not memorable. And even when it comes to implementing it into the EVM, the EVM has no float point and there's no way to standardize, like, have everyone's contract is actually at a different length of latitude long shoot, etc.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 795.31,
+      "end": 805.43,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And so, you know, just in general, people think location is a solved problem because we have postal addresses and GPS works so great telling us how to get places. But billions of people don't have postal addresses.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 805.71,
+      "end": 806.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 806.05,
+      "end": 827.95,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "location is a problem for them. And there's billions of more parcels of land in the middle of a desert or somewhere that also have no precise location. So this is an unsolved problem. And, you know, one way to solve it is something called a geo-hash. It's an open source standard someone proposed in 2009. It's not the same cryptographic hash function, but it's like a space-filling geometric curve. And that's a way to really crunch down a latitude and longitude.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 828.09,
+      "end": 828.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 828.59,
+      "end": 859.22,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "great. And it's something the cryptospatial coordinate uses. The problem is that geohash is an open standard and free. And as we know, prior to blockchain and new funding mechanisms, open free standards really didn't go anywhere. So this has just been in the public domain for almost 10 years. Well, what three words tries to solve the problem as well, although... where they assign three funky words to any three by three, although it's a proprietary centralized solution. So they're licensing this to Mercedes-Benz, train corporations, and they want to solve this world problem. But if they do, they also have world dominance as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 859.22,
+      "end": 859.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 859.32,
+      "end": 871.04,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "central licensed service. So when it comes to encoding location of the blockchain, latitude and longitude has technical issues, plus it's not very well to represent. And what three words is a centralized licensing service.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 871.14,
+      "end": 871.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 871.56,
+      "end": 875.3,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "what we did is taking this open source solution, the geo-hash, and simply",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 876.39,
+      "end": 876.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Connect",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 876.87,
+      "end": 882.13,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that to a smart contract so we allow any Ethereum address to make an immutable claim to any geohash they want",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 882.13,
+      "end": 882.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 882.61,
+      "end": 886.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "out of that a deterministic CSEC identifier comes out of that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 886.53,
+      "end": 886.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 886.93,
+      "end": 893.69,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so the CSE ultimately is derived from a blockchain address making a claim to a geohash and that geo hash ultimately comes from a latitude and longitude",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 893.69,
+      "end": 893.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 894.19,
+      "end": 905.19,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "but it's a problem of location and coding. It's like actually how do we encode this information? in a standard way. So the CSC is then a unique eight digit identifier tag",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 905.19,
+      "end": 905.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 905.81,
+      "end": 918.45,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "then an immutable way and it's verifiable on and off chain because as part of the proof of location game I could go to that location and see if the smart contract's there or I can also look at the blockchain and see what the location encoded in it as well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 918.45,
+      "end": 929.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. Okay so when you have something I guess at a high level how the geo hash thing does it like how big are the squares? you know",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 929.9,
+      "end": 930.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 930.58,
+      "end": 936.16,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so you we it's arbitrarily small but we've in our system set it at a limit of one square meter",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 936.16,
+      "end": 936.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "okay",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 936.56,
+      "end": 936.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 936.88,
+      "end": 937.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 937.16,
+      "end": 943.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "but it's um hierarchical as well so like let's say Brooklyn or then we're sitting here at the in the Navy Yard in Brooklyn",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 943.26,
+      "end": 943.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 943.7,
+      "end": 946.92,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "CSC of the new lab would be derogable that it's in Brooklyn",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 946.92,
+      "end": 947.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 947.48,
+      "end": 950.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the printer in the corner here may have a unique address as well",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 950.26,
+      "end": 951.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 951.44,
+      "end": 953.76,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it doesn't have to be one square meter it can be larger",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 953.76,
+      "end": 954.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 954.83,
+      "end": 957.41,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "But a geohash can go down to any arbitrary.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 957.65,
+      "end": 958.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, cool.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 958.45,
+      "end": 958.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 959.35,
+      "end": 970.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "and then this geohash thing, and then you're essentially taking it and you are, and you're essentially creating a new eight character representation of the geo hash.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 971.83,
+      "end": 977.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "and putting it on the blockchain and saying, and this is what everybody else will use as, this is what you hope everybody will use as a standard.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 977.81,
+      "end": 984.07,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah, so if you knew the CSC, you could go to our visualizer and type it in, and it would show you that smart contract.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 984.21,
+      "end": 984.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 984.81,
+      "end": 987.59,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a tool then also for the Block Explorer.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 987.77,
+      "end": 990.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. Okay. So I think that makes sense.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 990.47,
+      "end": 990.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And it's an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 990.97,
+      "end": 991.91,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "open free standard.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 992.13,
+      "end": 993.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 993.01,
+      "end": 1008.63,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "working with organizations like the OGC, open geospatial consortium. They set standards worldwide. We're starting a... distributed ledger technology working group and this is something definitely could be improved on we're open to suggestions but the idea is just to have an open shared standard",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 1008.63,
+      "end": 1009.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 1009.13,
+      "end": 1009.95,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "encode location",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 1009.95,
+      "end": 1010.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 1010.23,
+      "end": 1012.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "in the end you don't really care what standard it is you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 1012.41,
+      "end": 1014.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just want a standard you think your standard is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 1014.25,
+      "end": 1014.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "pretty good and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 1014.99,
+      "end": 1015.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "maybe",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 1015.17,
+      "end": 1018.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "it has issues and if there are issues let them know you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 1018.01,
+      "end": 1018.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "know",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 1019.68,
+      "end": 1020.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1020.54,
+      "end": 1034.4,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah, just not to, we can move on, but we'd look at projects like supply chain and a drone project in the blockchain, Ethereum space, and one has latitude, longitude, the other has street address, and now you have interoperable contracts that can't speak to each other about the space. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1034.4,
+      "end": 1034.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1034.58,
+      "end": 1041.38,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "when we really noticed there was room to introduce a standard. And it's about bringing location to blockchain, not blockchain to location.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1041.66,
+      "end": 1041.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Oh.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1043.46,
+      "end": 1044.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well, ultimately,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1045.58,
+      "end": 1046.72,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "one would surpass the other, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1046.72,
+      "end": 1047.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I mean,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1047.98,
+      "end": 1050.42,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "right now, just in blockchain, there is no location standards.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1050.68,
+      "end": 1050.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1050.74,
+      "end": 1053.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "first we'll bring them there, but eventually blockchain, as it eats the world,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1054.22,
+      "end": 1054.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "becomes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1054.62,
+      "end": 1055.2,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the standards.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1055.4,
+      "end": 1070.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yes, yes, yes, yes. Okay, cool. So, yeah, that makes sense. That's what you mean by we're bringing location to blockchain, and then now the blockchain will have the location standard, that eventually will be pushed onto location, i.e., all of the locations will be blockchainified to some extent.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1070.8,
+      "end": 1070.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1071.1,
+      "end": 1075.62,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "or the verticals that... take up locations like uber or a supply chain or an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1075.62,
+      "end": 1075.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "iot",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1075.9,
+      "end": 1076.24,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "device",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1076.24,
+      "end": 1076.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1076.48,
+      "end": 1087.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "okay cool um so that's the the crypto spatial coordinate standard and then from that there's this um this block explorer but really it's a geospatial explorer",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1087.54,
+      "end": 1087.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or whatever",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1087.98,
+      "end": 1092.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "so tell me more about that how does it use the the cryptospatial standard yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1092.72,
+      "end": 1093.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1093.26,
+      "end": 1099.43,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so the spatial index visualizer it's a full stack web app For Ethereum, it's a React app.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1099.99,
+      "end": 1099.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1099.99,
+      "end": 1173.04,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "really all the way on the front end, it's based on WebGL, Mapbox GL, as well as this tool called DeckGL, which is made by Uber's visualization team, which is the really awesome big data visualizer. And we've also, because it's a functional programming app, we've built PureScript Web3 library. Peerscript is this functional front-end programming language that compiles to JavaScript. So we have a pure script web through library, a pure script mapbox library, and a pure script deckGL library. We built all that. And so from this map in browser, you can deploy smart contracts spatially through Metamask or Uport so that in the simple example I want to deploy a CryptoKitty and give it a home. I can click on the map. It'll tell me it's latitude longitude. It'll deploy it, assign it at CSC. It'll do whatever CryptoCity call we had. our backend API, we have a restful API written in Haskell and Kubernetes clusters and whatever. So this is a big listening to the blockchain indexing events. And once your confirm event was confirmed, this API would feed back the front end and your Cryptokitty would appear on the map. And now you can apply this to any application. And the idea is that in browser, as a user, you would see events happening in the browser in almost real time from other blockchain users.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1173.38,
+      "end": 1173.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1173.56,
+      "end": 1177.96,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the front end can just like basically be fed from the API, everything happening. And it goes in this kind of loop.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1178.24,
+      "end": 1178.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah. Where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1178.62,
+      "end": 1198.87,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I can deploy it to the map. And once it's confirmed in the backend, it just shows up on the map. And that's completely, you know, no token or economics involved. It's a general purpose. So we have a developer portal and API so people could use this in their own applications. And yeah, I meant to say that the... indexer and the API is listening for contracts with CSEs.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1199.23,
+      "end": 1199.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1199.99,
+      "end": 1213.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And you could customize it to say only look for CSEs with this additional tag for a specific app, but this API and indexer is just listening to the blockchain for any contract that inherits the CSE and then feeds it to the front end and renders it where it should be.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1213.71,
+      "end": 1223.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. Cool. So I have a little crypto kitty, and I say, hey, I want this crypto kitty to live in my home. My home is a random latitude and longitude, which turns into a geohash, which turns into a CSC.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1224.23,
+      "end": 1224.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1224.59,
+      "end": 1251.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "then I say, hey, I'm going to put it on the blockchain connected to the CSC. And then when I do that, then I put it there and then this web app that you're talking about, the spatial index explorer is listening on all the different transactions. Like, do any of these inherit CSC? It says, ah, this one has inherited CSC. see great I'm going to show this on the explore and now my Crypto Kitty lives in my home and it updates on all the on anybody who's looking",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1251.99,
+      "end": 1253.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "anyone who's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1253.03,
+      "end": 1255.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "looking at the viewer will then see a new point has",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1255.25,
+      "end": 1256.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "been added and they can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1256.23,
+      "end": 1257.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "then click and explore what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1257.67,
+      "end": 1258.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it is yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1258.37,
+      "end": 1265.21,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it's also automated from the user side so you just click where you want it to be on the map and it assigns it all those geotagged features",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1265.21,
+      "end": 1265.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "okay",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1265.61,
+      "end": 1298.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "cool okay so I got that so now we have the ability to place things in space and then they show up in this with a ux on top of it essentially so then the final piece here is i guess getting to the the nitty-gritty for why one and when i think about a foam i thought the word that comes to top of my mind always like is the proof of location i was like okay what you know tell me why i guess what what is the need for proof of location that hasn't related to these first two concepts that we've talked",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1299.5,
+      "end": 1299.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1300.06,
+      "end": 1332.6,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so it's definitely one of the later things that we developed and it was born out of all the ideas we had about spatial blockchains and things in the real world. And it really just came down to most of the exciting ideas and applications we had that if there was no way to prevent fraud and really come to consensus in a shared and distributed way on if entities are where they say they were, none of these ideas are going to work. And you can see as the main example of Pokemon Go. which was relying on GPS, that there was no money at stake, but people went out of their way to live out their location and unlock Pokemon. So you can imagine...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1332.6,
+      "end": 1332.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "How would",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1332.9,
+      "end": 1333.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "they do that, by the way?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1334.18,
+      "end": 1352.62,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So this just highlights why the problem is so... Serious in that so GPS is extremely accurate for finding out where you are It's extremely trivial to lie about where you are to someone else So there's a plethora of spoofer apps in the app store for even a developer They need to test different locations for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1352.62,
+      "end": 1352.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "different",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1352.82,
+      "end": 1356.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "things so for me to drop a pin that I'm in China is very trivial for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1356.32,
+      "end": 1356.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "me and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1356.88,
+      "end": 1364.33,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so for me to run this script on my phone that has me walking around the city all day collecting Pokemon while I stay at my desk well Many of my friends did that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1364.49,
+      "end": 1365.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Further,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1365.83,
+      "end": 1381.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the Pokemon are generated based off open street map data. And so the users hacked the map and would add like volcanoes or rivers or lakes to New York City to generate Pokemon or Blastoise. And all the applications like Mapbox or Craigslist that use open street maps, they actually got those",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1381.67,
+      "end": 1382.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "things rendered.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1382.75,
+      "end": 1382.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1382.75,
+      "end": 1383.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1383.61,
+      "end": 1389.95,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "this has no tokens, no value. And the Pokemon players were like hacking the map as well as lying about their location on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1389.95,
+      "end": 1390.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "GPS.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1391.23,
+      "end": 1399.41,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "If you can imagine a scenario where there's an autonomous smart contract with a location parameter, and whether it's a video game or a high-stakes supply chain handoff,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1399.81,
+      "end": 1400.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1400.41,
+      "end": 1407.99,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it will execute autonomously based on the location input, and if you can't verify the origin of that location input, then it might as well not be valid.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1408.11,
+      "end": 1418.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, cool. That makes sense. So, and that's what I thought. how can you really hack something like GPS? But as you say, GPS, it's a really good for one way where you say, I want to know where I am. It says,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1418.23,
+      "end": 1418.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "here you are.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1419.31,
+      "end": 1422.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "But that's pretty different than just telling some other thing that wants your",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1422.61,
+      "end": 1422.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "location,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1423.39,
+      "end": 1424.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "hey, this is where I am. And you just give it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1424.91,
+      "end": 1425.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "some random numbers. So, yeah, GPS",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1425.79,
+      "end": 1432.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is completely passive, so it's not interactive. So you can't generate any sort of certificate or proof that that's a real GPS message.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1432.43,
+      "end": 1432.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1432.81,
+      "end": 1438.06,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you share it with someone else, they don't know if you made that message up or you actually got it from a... satellite at that time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1438.66,
+      "end": 1451.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Interesting. Yeah, I feel like there's kind of two parts to this proof of location. They're both the same, but it's like one of them is like where I am in as an agent operating within the system. And then there's also like. where the things are, like the volcanoes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1452.21,
+      "end": 1452.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 1452.47,
+      "end": 1464.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "so it's like you both, you need to prove both because you could either, like if you're trying to hack Pokemon Go, you could either hack it by saying, the thing that I want to be near me is near me. Or you can say, I am near the thing that I want to be.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 1464.61,
+      "end": 1464.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 1465.11,
+      "end": 1466.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "there are one of the same of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 1466.27,
+      "end": 1467.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "inverse announcers.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1467.65,
+      "end": 1508.48,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I think the way to refer to it is like secure localization and secure location verification. So localization is like, I'm a device, do I, can I reliably? figure out where I am vis-a-vis the network. And usually that's what they rely on GPS for. We want to have a system where they can rely on exclusively the rest of the network and not external things like GPS. So that's localization. And a user, once the dynamic proof of location and this radio aspect we haven't gotten into yet, they can localize themselves. There's no blockchain. There's no payment. You just pick up the signals and figure out where you are. So that's localization and we want to make that a secure process. location verification is then okay i know where i am can i prove it to other people in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1508.48,
+      "end": 1508.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a way that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1508.84,
+      "end": 1509.76,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "they can trust it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1509.76,
+      "end": 1525.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah yeah uh interesting so let's talk about yeah the actual how this actually get done and i know it's with these zone anchors and these things to kind of dive into i am trying to prove that i am here in the navy yard in brooklyn how would i prove that through foam",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1525.22,
+      "end": 1525.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1525.98,
+      "end": 1529.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so first uh the phone protocol would need to exist here",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 1529.32,
+      "end": 1530.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 1530.24,
+      "end": 1535.45,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a different uh Topic we can talk to about after is how to incentivize people to actually set up coverage.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 1535.67,
+      "end": 1535.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 1536.01,
+      "end": 1571.06,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "But there needs to be coverage and... Cool. Location coverage would happen over radio waves, so specifically low power, wide area like IoT radios. But on a high level, the system works the same as GPS in that you have at least four stations emitting highly accurate time signatures that are synchronized. And if you can pick up at least four of those signals, you can run location algorithms like trial iteration and figure out where you are relative to them. So with GPS, you need at least four overhead, one for X, Y, Z, and a fourth for a time variant. And that's how you can determine where you are.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 1571.38,
+      "end": 1571.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Cool.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 1571.68,
+      "end": 1577.78,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So our thing is essentially the same that you want to have what we call a zone with at least four anchors.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 1577.92,
+      "end": 1578.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 1579.34,
+      "end": 1611.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "This zone is running themselves a time synchronization protocol, so they are reliably in sync. So if you as a receiver can pick up at least four of their signals, you can then localize yourself vis-a-vis the zone. You could also maybe double back-check it with GPS, so that's a way to know if the zone is even accurate or not. And so that's just step one of, okay, you have a zone, it's running this time sync protocol. In our case, it's a Byzantine fault-tolerant time-sync protocol. And the zone is like just in sync. If it's in sync, you can determine your location.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 1611.63,
+      "end": 1612.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Localize",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 1612.07,
+      "end": 1612.59,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "yourself, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 1612.93,
+      "end": 1613.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 1613.27,
+      "end": 1632.21,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "But the question is then how do we prove it to other people? So in this, how it differs from GPS is the zone is interactive. So customers can actually send messages back to it where with GPS you can. And so here, once the customer picks up the signals, they send a response message with an associated fee. It could be in any token",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 1632.21,
+      "end": 1632.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "saying,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 1633.07,
+      "end": 1639.81,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "please include me in your log. And of course they would because there's money involved, but maybe it's a bribe or a lie.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 1640.29,
+      "end": 1640.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 1640.39,
+      "end": 1690.08,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 1690.36,
+      "end": 1697.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. So, yes, there are the, you essentially need to have these four different anchors as part of a zone.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 1697.32,
+      "end": 1697.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "At minimum,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 1697.94,
+      "end": 1709.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah. At minimum, yeah. And so I then connect to them through this Byzantine fault tolerant time sync protocol. Or Byzantine, essentially they're sinking on time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 1710.3,
+      "end": 1710.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "They're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 1710.56,
+      "end": 1711.12,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "sinking and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 1711.12,
+      "end": 1711.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 1711.42,
+      "end": 1712.38,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "can trust they're in sync.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 1712.52,
+      "end": 1713.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, exactly. Or you have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 1713.44,
+      "end": 1714.42,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "means of checking if.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 1714.63,
+      "end": 1715.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 1715.43,
+      "end": 1720.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah, yeah. You disincentive, likely you disincentivize them not to be in sync or whatever. So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 1722.33,
+      "end": 1744.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "as I'm there, and I'm part of these four different, they say, here I am, then I eventually show to them that, hey, I'm here, and that proves, and they want to essentially. they because money's involved they want to put me on their log and then that log eventually gets put back to the main chain",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 1744.5,
+      "end": 1745.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 1745.86,
+      "end": 1766.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "I guess that part of this is making sure that that foam exists here that's this kind of initial incentivization layer where you incentivize people to put a bunch of different anchors everywhere and as far as I understand they're incentivized through because eventually they're going to, if there are lots of people wanting to use that zone, then those people who want to use that zone will pay them",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 1766.71,
+      "end": 1767.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "tokens. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 1767.65,
+      "end": 1768.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the revenue model.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 1768.67,
+      "end": 1781.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, sweet. Yeah. So they say, ooh, this is a place that doesn't have very many anchors. A lot of people are going to need some more anchors here. I'm going to be an anchor. And then once I'm an anchor, then there's a bunch of Uber drivers here for some reason or whatever, and they are all going to pay me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 1782.17,
+      "end": 1783.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Definitely, yeah, but you skipped a step",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 1783.73,
+      "end": 1784.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in that there's going",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 1784.91,
+      "end": 1791.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to be zone anchors and there's going to be no customers. Right. So the question is how do we actually bootstrap the system and have coverage prior",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 1791.85,
+      "end": 1792.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 1792.65,
+      "end": 1793.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "customers being there?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 1793.81,
+      "end": 1793.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 1793.97,
+      "end": 1798.95,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So if you imagine if we set up zones tomorrow, there's not a fleet of smart contract Uber cars",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 1798.95,
+      "end": 1800.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "ready to pay. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 1800.51,
+      "end": 1803.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's why we have a block reward and mining rewards",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 1803.37,
+      "end": 1804.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in foam as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 1804.39,
+      "end": 1805.89,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "an incentive bootstrapping mechanism",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 1805.89,
+      "end": 1806.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 1806.91,
+      "end": 1815.23,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you know, can we set up these zones and run them? And because we're just simply following the protocol and broadcasting correctly, we are now eligible for new tokens.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 1815.35,
+      "end": 1815.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 1815.95,
+      "end": 1818.47,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so the only way to mine tokens is by setting up zones.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 1820.13,
+      "end": 1831.89,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And further, there's a component called signaling where people can stake tokens in a CSC on the spatial index. And the signal shows a demand for location services.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 1832.65,
+      "end": 1832.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 1832.93,
+      "end": 1837.23,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "block reward is spatially weighted. So it's distributed where there's a higher signal.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 1837.71,
+      "end": 1838.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 1838.31,
+      "end": 1842.63,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "pre-launch, people will signal where they're... going to set it up",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 1842.63,
+      "end": 1843.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 1843.37,
+      "end": 1859.87,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "they'll be boosting their own rewards so they're going to be wanting to test it and help set it up once this time sync proof location is running people can signal where there are no zones and even if there is no customers there if I set up a zone there I'm going to get a higher block reward than if I stayed where everyone else is in New York",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 1859.87,
+      "end": 1860.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 1860.75,
+      "end": 1870.86,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the signaling serves as a way to drive the coverage and drive the supply so that the token distribution is not just over time with a half-life, but it's actually distributed to different locations",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 1870.86,
+      "end": 1871.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "based on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 1871.44,
+      "end": 1872.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the signal and the demand.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 1873.08,
+      "end": 1874.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. Okay, sweet.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 1874.56,
+      "end": 1875.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 1875.06,
+      "end": 1878.44,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "kind of how we address the, like, how are there ever be a zone here in the first place.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 1878.66,
+      "end": 1879.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "If",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 1879.06,
+      "end": 1887.12,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "there's no one who's going to be paying them as a customer, maybe for a few years or more until this really matures, there is like a bootstrapping incentive mechanism.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 1887.52,
+      "end": 1888.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Cool. Okay. So.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 1890.45,
+      "end": 1928.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "So we are trying to get these zone anchors set up essentially around here. And in order to do so, what you do is you say, hey, if you place an anchor in the system, then that's how you get some of the initial block rewards. And you can get more block rewards at the beginning if certain people, as you say, it's not just if you think about the blockchain in X, Y space. Then you say, hey, I'm staking. I really want a bunch of, let's say I live somewhere where I want people to set up anchors. Then I personally would stake to that location. And then people would then come and say, oh, this will be, I will get higher block rewards as a result of people staking to this spot.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 1928.27,
+      "end": 1928.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 1928.47,
+      "end": 1928.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "correct?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 1929.21,
+      "end": 1933.63,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And people might signal even going back a bit during the static proof of location",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 1933.63,
+      "end": 1934.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "while we're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 1934.13,
+      "end": 1935.87,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "just curating static points of interest.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 1935.93,
+      "end": 1936.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 1936.33,
+      "end": 1942.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "might signal it because I want to say I need secure location service here because I want to make sure everyone voting actually went. to the building and checked it up.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 1943.17,
+      "end": 1943.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 1943.51,
+      "end": 1957.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So people who are curating points of interest may also want to signal because for them it's a security upgrade because now you know you can reduce civil attacks and actually guarantee the curators or even where they, in our case we call them cartographers, are actually in the area that they claim to be curating.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 1957.97,
+      "end": 1959.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. Okay. Interesting.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 1959.99,
+      "end": 1960.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 1960.13,
+      "end": 1964.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it's just like a general way to coordinate. people to build out the system themselves",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 1964.55,
+      "end": 1965.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like phone",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 1965.15,
+      "end": 1970.43,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "proof of location will have to be community driven decentralized and you know people contributing work in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 1970.43,
+      "end": 1970.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "their",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 1970.63,
+      "end": 1976.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "own manner so we need an incentive mechanism to help people build it out if we just built it ourselves would be recreating a centralized",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 1976.29,
+      "end": 1977.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "system oh",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 1977.53,
+      "end": 1999.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "god yeah I think that the in that it's interesting the the incentives that you're placing it's not just purely yeah they're incentives people the people are incentivized to place these anchors from a block reward, essentially a, what I think is like a staked curation market block reward perspective. And from a later on, once the customers were there, then they get rewards",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 1999.49,
+      "end": 2001.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "from being used to revenue. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 2002.03,
+      "end": 2002.03,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 2002.33,
+      "end": 2002.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 2003.17,
+      "end": 2003.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So someone may be able",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 2003.75,
+      "end": 2009.96,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to say, okay, time square. It's the, in our case, difficulty, mining difficulty is number of peers nearby",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 2009.96,
+      "end": 2010.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and let's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 2010.44,
+      "end": 2011.3,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "say, okay, Times Square.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 2011.5,
+      "end": 2012.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Exactly. I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 2012.04,
+      "end": 2014.96,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "not really getting a high block reward, but the revenue is great.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 2015.22,
+      "end": 2015.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 2015.76,
+      "end": 2032.64,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "But another guy might say, oh, across the river in New Jersey, there's no customers there, but there's people are signaling. And if I just simply relocated, it would actually be more profitable for me. And that's the kind of ultimate algorithm or function that we want where there's always a means for people to want to actually. expand the system.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 2032.88,
+      "end": 2033.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So even if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 2033.3,
+      "end": 2043.94,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I was some sort of civil actor or could buy up 10% of the foam supply, the most profitable thing I could do is not run all my zones in New York and put them in different places. And then I'm just helping spread the networks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 2044.14,
+      "end": 2069.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. And when you say for someone to... be in that location. So let's say I was in Times Square because I was one of the first people in Times Square and I was I got some of it. There was a lot of staking stuff there. I got some of the initial those block rewards and then some customers went there and I got a lot of the money that was being pushed to but then a bunch of other people came and so the difficulty was too high. So I'm like I'm going to New Jersey. How would I do I need to actually move to New Jersey or like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 2069.83,
+      "end": 2070.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 2070.25,
+      "end": 2071.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you wanted to run a zone anchor there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 2072.01,
+      "end": 2074.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay. And tell me why that's true. Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 2075.65,
+      "end": 2076.09,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Why?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 2077.05,
+      "end": 2085.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "How would I need to, why does your system require me to be in the location where I set up a zone anchor?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 2086.23,
+      "end": 2087.77,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Well, you don't as a human,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 2088.01,
+      "end": 2088.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but your zone",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 2088.43,
+      "end": 2089.07,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "anchor can't move.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 2089.35,
+      "end": 2090.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay, got it. So you can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 2090.03,
+      "end": 2095.95,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "also say, hey, I have made some revenue. I'm going to keep this guy running in New York, and personally I'll go set one up.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 2096.27,
+      "end": 2098.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, I got it. Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 2098.61,
+      "end": 2115.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "And then when I, let's say I go to New Jersey and set up the zone anchor, I'm there. I set up the new zone anchor. And the zone anchor, it's required to be in that, how do we, how does the world know that that zone anchor is there, I guess?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 2115.74,
+      "end": 2116.58,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah, good question.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 2117.9,
+      "end": 2118.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 2118.64,
+      "end": 2124.94,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "one, if I wanted to go set up a new zone, I don't need to set up all four anchors myself, but there had to at least be three waiting for me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 2125.06,
+      "end": 2125.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 2125.56,
+      "end": 2145.39,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "there's one component. Two. There's a confusion that many people have when we get into talking about this where they want to know how the system knows about absolute location. And the first answer is it doesn't. Like the time sync protocol helps nodes determine their own geometry. It's abstract, whether it's on Mars or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 2145.39,
+      "end": 2147.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 2147.09,
+      "end": 2148.97,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Earth. It just can tell you the distance",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 2148.97,
+      "end": 2149.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "between the nodes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 2150.23,
+      "end": 2193.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So it's relative in that case. So if I set up a zone in New Jersey and I claim that I'm... I claim I'm in New Jersey and I actually set up a zone in Alaska. Let's say I'm running the protocol properly so it looks like I'm well formed. So I'm getting block rewards. Well, one, I don't get any customers because no one can find me and they can't communicate with me because they have to be in proximity. And two, as soon as the rest of the zone anchors try to join my zone and no one can get in touch with me, now I'm like going to be slashed and I'm going to lose my stake. So there's like a very little like reward from like setting up a zone in a fake location. And then further out of like people like using these zones or then being durable or over time, we probably see as like a second layer consensus TCR on absolute positions or something like that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 2193.98,
+      "end": 2196.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. So if I am,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 2197.3,
+      "end": 2197.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 2197.62,
+      "end": 2204.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "think this gets to this idea of this, the time sync protocol. And so could you just explain that a little bit more deeply for me?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 2204.89,
+      "end": 2205.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Definitely.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 2205.53,
+      "end": 2213.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, how, I guess from the point of view is if I pretend to be in Alaska and I'm not there, how would the others know that I'm not there and then slash my stake?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 2213.69,
+      "end": 2268.78,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah. It's simultaneously very simple and complicated. So in the sense that, you know, the questions about time synchronization and location are like very intertwined. So questions about time and space, as we know. So how... location in real-time systems is determined today, in a standard sense, is over radio waves with synchronized clocks. So that's fundamentally, GPS relies on atomic clocks, with base stations, coordinating them all together. But there are plenty of other just wireless network systems that rely on clock synchronization. And through time of flight or the difference of time of flight of different nodes, if they have synchronized clocks, you can then determine... distance and if you have enough nodes you can point actually to where it is maybe with only three you know it's 100 miles to the left or to the right but with at least five you could pinpoint where it is so that's how time sync helps aiding location",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 2268.78,
+      "end": 2269.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 2269.08,
+      "end": 2269.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 2269.3,
+      "end": 2269.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 2269.46,
+      "end": 2272.36,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we're doing the exact same thing where we have a time sync protocol",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 2272.36,
+      "end": 2273.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 2273.06,
+      "end": 2279.76,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "all the clocks are in sync from the timestamps of the radio messages a receiver could determine their own location",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 2279.76,
+      "end": 2281.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 2281.0,
+      "end": 2320.21,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "want it to be Byzantine fault tolerant because there's no um central place where they're synchronizing and which most systems have. And by fault-toler, I mean, it can survive and self-stabilize if up to one-third of the nodes are faulty or a break. And through this, a fault-tolerant time synchronization protocol, any zone of nodes can determine its own geometry of the network without an external input like GPS. So just by simply running this protocol, the nodes in the protocol can determine where each other are relative to each other. And that's all I can do. It can't tell you if it's in London or if it's in New York. But that's like what the time sync is providing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 2320.49,
+      "end": 2320.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 2321.11,
+      "end": 2358.83,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And through then, you know, this is then a synchronous protocol. And all this kind of synchronous data is then stored in a state machine shared by the zone. And the shared state machine is then... you know, a different kind of consensus of basically partial synchronicity. And this is where we imagine something like tendermint consensus comes in where over radio you have this time sync protocol, but the zone then has to actually store that and log that data and vote on the shared state. And for that they can use like tendermint, which, you know, has instant finality, never forks, so you don't have a zone's data forking. And there, then they have this log building up over time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 2359.05,
+      "end": 2359.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Cool.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 338,
+      "start": 2359.57,
+      "end": 2364.1,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And that's also Byzantine fault tolerance. You have this like reliable radio",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 339,
+      "start": 2364.1,
+      "end": 2365.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "protocol",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 340,
+      "start": 2365.87,
+      "end": 2380.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and through those signals location can be determined and then you have this log protocol that's also stable and fault tolerant So now as location customers get the data they need to learn their location They send it into the zone and they ask hey can you put this in your basically tenderman blockchain",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 341,
+      "start": 2380.27,
+      "end": 2380.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 342,
+      "start": 2380.71,
+      "end": 2386.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "it. Okay, so we're gonna just to check do you have if possible which can we go to 23 more minutes?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 343,
+      "start": 2387.43,
+      "end": 2387.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 344,
+      "start": 2388.77,
+      "end": 2417.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "this episode is brought to you by shape shift. I.O the world's leading trustless digital asset exchange. Quickly swap between dozens of cryptocurrencies, including Bitcoin, Ether, Dash, Bitcoin Cash, Auger, Golem, and many more. And this is not your typical crypto exchange. You don't need to create an account or share your personal information and your funds are never stored on ShapeShift. This means that your hard-earned digital wealth is never up for grabs by hackers or other malicious actors.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 345,
+      "start": 2417.26,
+      "end": 2417.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "To",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 346,
+      "start": 2417.88,
+      "end": 2425.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "get started, visit Shapeshift.io. choose the tokens you'd like to swap, input your receiving address, and send your funds. It's that easy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 347,
+      "start": 2429.29,
+      "end": 2429.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 348,
+      "start": 2429.51,
+      "end": 2429.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we need",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 349,
+      "start": 2429.77,
+      "end": 2430.15,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to find out of fun.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 350,
+      "start": 2430.51,
+      "end": 2445.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, nice, great. So let's, because I think that this is, so, yeah, essentially usually people sync up on atomic clocks, but you guys won't be using atomic clocks, but you'll be using your, your time sync protocol in order to make sure people are synced up.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 351,
+      "start": 2446.69,
+      "end": 2447.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 352,
+      "start": 2447.03,
+      "end": 2454.81,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "zones could be using chip size atomic clocks. The customers, like now, like the GPS are synced in atomic clocks, but you as a receiver, just check.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 353,
+      "start": 2455.35,
+      "end": 2456.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got it. Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 354,
+      "start": 2456.67,
+      "end": 2461.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "it. So the anchors, so if I make an anchor, do I need to be using an atomic clock?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 355,
+      "start": 2461.67,
+      "end": 2468.05,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Ultimately, because the protocol's radio agnostic, we imagine different zones would have different tiers of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 356,
+      "start": 2468.05,
+      "end": 2469.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "precision.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 357,
+      "start": 2470.64,
+      "end": 2471.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Interesting. Okay,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 358,
+      "start": 2471.72,
+      "end": 2472.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "interesting. And different",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 359,
+      "start": 2472.32,
+      "end": 2474.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "tiers of, like, money spent on.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 360,
+      "start": 2474.56,
+      "end": 2474.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 361,
+      "start": 2475.34,
+      "end": 2475.6,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Because the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 362,
+      "start": 2475.6,
+      "end": 2475.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "protocol",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 363,
+      "start": 2475.92,
+      "end": 2477.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "works up to one clock tick.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 364,
+      "start": 2477.66,
+      "end": 2477.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay. So then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 365,
+      "start": 2477.96,
+      "end": 2481.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the question is, well, how accurate is that tick?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 366,
+      "start": 2481.96,
+      "end": 2482.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Interesting.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 367,
+      "start": 2482.5,
+      "end": 2482.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And like, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 368,
+      "start": 2483.02,
+      "end": 2485.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "millisecond versus nanosecond is like a massive difference.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 369,
+      "start": 2486.22,
+      "end": 2486.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 370,
+      "start": 2486.42,
+      "end": 2488.48,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you have like...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 371,
+      "start": 2488.44,
+      "end": 2488.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 372,
+      "start": 2489.08,
+      "end": 2491.48,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the more precise the clocks, the more accurate the whole protocol can do.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 373,
+      "start": 2491.6,
+      "end": 2499.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, got. So each zone has to be homogenous with respect to the kind of sync that it's using. Some might be using atomic, some might be using atomic, some",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 374,
+      "start": 2499.76,
+      "end": 2500.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "might be using",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 375,
+      "start": 2500.44,
+      "end": 2500.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "less than",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 376,
+      "start": 2500.76,
+      "end": 2501.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "atomic. Yeah, and like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 377,
+      "start": 2501.4,
+      "end": 2502.66,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the full vision of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 378,
+      "start": 2502.66,
+      "end": 2503.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what this could",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 379,
+      "start": 2503.6,
+      "end": 2504.06,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "be in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 380,
+      "start": 2504.06,
+      "end": 2504.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 381,
+      "start": 2504.5,
+      "end": 2513.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "oh, this is so important that actually we need specific middle of the ocean low satellite zones. But at the end of the day, everyone's still running the same message types, the same protocol.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 382,
+      "start": 2513.56,
+      "end": 2514.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It can be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 383,
+      "start": 2514.04,
+      "end": 2531.11,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "verifiers and then could be assigned. all different zones, the data type, they're still checking it the same. It's just that one zone might be have higher record data, one might have a lower, because, and even if they all have the same clocks, because of ones in South America and ones in North America, just like weather and time and how it affects crystals and like speed of atoms,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 384,
+      "start": 2531.39,
+      "end": 2531.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 385,
+      "start": 2531.55,
+      "end": 2532.93,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "when you get down to it, there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 386,
+      "start": 2532.93,
+      "end": 2534.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "no...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 387,
+      "start": 2535.25,
+      "end": 2536.61,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "No two zones will be the same.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 388,
+      "start": 2536.69,
+      "end": 2537.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes, yes. Even if they have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 389,
+      "start": 2537.83,
+      "end": 2538.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the same hardware.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 390,
+      "start": 2538.61,
+      "end": 2549.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yes, yes, yes, that makes sense. Okay, cool. So I think I get that, which is, so at a high level we have, you're making the, to just recap where we are now, there's the standards, the crypto, the CSC, the crypto",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 391,
+      "start": 2549.63,
+      "end": 2550.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "spatial coordinates.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 392,
+      "start": 2550.99,
+      "end": 2605.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Spatial coordinates, sorry. And then those allow you to, it's a standard for kind of like a latitude and logic, but for the blockchain. And then within that, you have this explorer that can explore based off of, that essentially is a, ux on top of that cc standard and then from that we also have this proof of location thing where it's like we need to prove location or else people hack it in the way that they've hacked stuff like Pokemon Go in the past and especially as we get things where Pokemon Go there was no real money at stake just like various weird things of reputation as more value gets placed into that we'll need to prove our location better and you guys have a system that uses nodes sorry anchors um essentially you're going to bootstrap the system um through cool incentivization schemes like staking and what have you to bootstrap a network of all these anchors around the world and they will have a and you will they will know where they are relative to each other because everybody will be synced through this time sync protocol",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 393,
+      "start": 2605.46,
+      "end": 2605.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "uh",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 394,
+      "start": 2605.94,
+      "end": 2606.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 395,
+      "start": 2606.26,
+      "end": 2607.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "moderately",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 396,
+      "start": 2607.26,
+      "end": 2636.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "okay nice That was a, I got a moderately good nod from Ryan, so I feel fine with that. Okay, so from that, let's talk, there's two final pieces I want to talk about today. One is this, the TCR side of things. So let's start with that. So you talked about within proof of location, there's dynamic proof of location, which is going to be later, but static proof of location, and you're saying that we're likely to use static proof of location with these TCRs at the beginning.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 397,
+      "start": 2636.95,
+      "end": 2638.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Is that right? That's what we'll be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 398,
+      "start": 2638.95,
+      "end": 2640.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "launching with, basically,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 399,
+      "start": 2642.11,
+      "end": 2654.01,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "in that it's this idea of can we take CSCs, cryptospatial coordinates, combine them with token curator registries as primitive. combine the standard with a primitive, I guess,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 400,
+      "start": 2654.39,
+      "end": 2654.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and come",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 401,
+      "start": 2654.75,
+      "end": 2657.45,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "out with a new way to think about points of interest.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 402,
+      "start": 2657.73,
+      "end": 2658.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 403,
+      "start": 2658.17,
+      "end": 2664.69,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "points of interest, maybe not everyone would be familiar with what it means, but it just means, like, literally, what are the interesting things on a map?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 404,
+      "start": 2664.99,
+      "end": 2665.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 405,
+      "start": 2665.43,
+      "end": 2703.08,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it actually comes down to modern proof of interest data. You know, this is like up to a billion dollar marketplaces, and, you know, Google has a large monopoly on those POI data. Foursquare, it's their number one business model, is selling POI data from their API. And, you know, there's millions of change sets a week to Open StreetMap, so they're also just open, you know, contributors to POI data. But we see that there are no, in the open way, like Open StreetMap, there's no real incentive to keep adding more points, and there's definitely no verification. You know, it's very fun to add points. It's not as fun to police the map, especially when there's no... You know, winnings to get.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 406,
+      "start": 2703.44,
+      "end": 2703.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 407,
+      "start": 2703.86,
+      "end": 2714.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we have this idea, like, can we actually build a consensus-driven map of the world that actually has incentives and is based on a new form of cartography where people actually can curate and vote on the data on the map?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 408,
+      "start": 2714.48,
+      "end": 2733.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. Okay. So in the way that this would work is with a TCR, aka a token curate registry, you would say for this, this CSC, for this area, would I claim, are the TCRs with respect to how, Is there one TCR for every what?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 409,
+      "start": 2733.94,
+      "end": 2734.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 410,
+      "start": 2734.46,
+      "end": 2757.52,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so we're interested in the difference between objective and subjective TCRs. And one of the thinking behind these lists is that if you don't have enough curators, it's really hard to maintain a quality list. And so when you think about subjective spatial lists, and I know in TCR discourse. Even when previous podcast with Mike Golden, you know, people use an example of like favorite sushi restaurants.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 411,
+      "start": 2757.76,
+      "end": 2758.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Like favorite",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 412,
+      "start": 2758.12,
+      "end": 2759.48,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "places, favorite locations. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 413,
+      "start": 2759.48,
+      "end": 2759.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 414,
+      "start": 2759.68,
+      "end": 2775.48,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is kind of intuitive to think about locations, but those are all very subjective. And so when it comes to objective data, we just want to know, like, you know, are all these places actually where they claim to be? And that's all. So we're launching with this one, you know, kind of master TCR based on objective data.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 415,
+      "start": 2775.66,
+      "end": 2775.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 416,
+      "start": 2776.68,
+      "end": 2802.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "In this case, the list itself is the map. So you're not looking at a list. You're actually looking at a visualization of points. And you can see a green point means it's on the list. A red point means it's currently challenged. A blue point is an application. And that's how I actually, and a user can then, you know, favorite points, tag them or interact with them. And it's also based on a ranking system. So Google ranks points based on how. popular they are. So at certain Zoom levels, you actually see,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 417,
+      "start": 2802.67,
+      "end": 2802.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 418,
+      "start": 2802.95,
+      "end": 2837.3,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the most popular businesses or points. So based on how much stake is left in the point can, like, influence that. And people could add points to it or withdraw in the future. And that's this dynamic aspect. But the idea is then to build in tools so people to build their own custom TCRs out of this. And maybe they build more and more objective ones that are, you know, just about cities, states and towns. And then people start to build ones based on like favorite parks, favorite restaurants and tools. potentially those have their own tokens and their own ways to launch them and create them. That's definitely something that we see a lot of potential to explore, but it's not the starting point.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 419,
+      "start": 2837.46,
+      "end": 2874.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah. So at the beginning, and this was a... Alex from Coin Fund had a good critical argument or good critical piece recently against TCRs and how A, there's only one live one today, which is the ad chain TCR. And B, within TCRs, there are, you can think of them as a variant on an Oracle. And when you have oracles, oracles work in theory because objectivity is one of the big three things that they have. It's objectiveness, it's publicly observable, and it's very cheap to observe it. like this point of interest data might check all three of those boxes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 420,
+      "start": 2875.0,
+      "end": 2889.84,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah, we definitely think so. And there probably won't be that many challengers to begin with because people will care about curating this high-quality list. But as we talked about earlier, as soon as a game like Pokemon comes in that references the map data, people will maybe start to add bogus points",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 421,
+      "start": 2889.84,
+      "end": 2890.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 422,
+      "start": 2890.46,
+      "end": 2891.66,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "curators would want to challenge it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 423,
+      "start": 2892.1,
+      "end": 2892.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 424,
+      "start": 2892.18,
+      "end": 2909.77,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "another aspect is... people who want to be really objective and help build out this consensus map of the world, something that's a point of truth. And, you know, I'm here in Dumbo, Brooklyn, and this new, you know, organic daily just opened. And it's not on Google Maps. I was trying to find out what hour that was open. I didn't even know who to call or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 425,
+      "start": 2909.77,
+      "end": 2910.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 426,
+      "start": 2910.27,
+      "end": 2912.03,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "were called even. I just knew it opened recently.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 427,
+      "start": 2912.21,
+      "end": 2912.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 428,
+      "start": 2912.51,
+      "end": 2941.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so there's a latency of things getting added to the map. So people can start to build this single source of truth and create a consensus driven. But even if it is objective and hits these points that match. or don't match Alex's critique rather. There's still, you know, a lot of problems with TCRs. There's only one live one. We don't know how they work to the fullest extent. Sybil attacks are extremely trivial. So we see this also as an experiment in a way to show why dynamic peripheral location would be needed to help support curating objective information.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 429,
+      "start": 2941.32,
+      "end": 2947.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. And so we didn't, just to make sure I understand this TCR, is there just one TCR for the whole map?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 430,
+      "start": 2947.58,
+      "end": 2947.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 431,
+      "start": 2948.46,
+      "end": 2948.84,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "for launch.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 432,
+      "start": 2949.12,
+      "end": 2949.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Great. Like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 433,
+      "start": 2949.74,
+      "end": 2952.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "mitosis or sub list can start to be born out of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 434,
+      "start": 2952.14,
+      "end": 2953.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that. And we're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 435,
+      "start": 2953.06,
+      "end": 2964.66,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 436,
+      "start": 2964.66,
+      "end": 2964.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 437,
+      "start": 2964.84,
+      "end": 2966.2,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's an area still under exploration.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 438,
+      "start": 2966.52,
+      "end": 3045.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yes. Okay, cool. So that makes sense that you have a... If I go and I look at your variant on the block explorer, the X, Y block explorer, I don't want to see a bunch of random volcanoes in New York City when I'm looking at that, and that they put on there from Pokemon Go. And so we instead have a TCR, which will hopefully be a good way for people to curate what is actually on that list. And as you say, the green things will be on it and the red things will be off it. And that will allow us at the initial time to say for static things, whether they are or not on this list. So that makes sense. Let's do this final piece here, which is this. I heard you talked about it recently in this one. You also chat about it in a podcast with Epicenter recently. How these, it sounds like for a given anchor set, essentially, given zone, you have. you're conceptualizing of it in kind of this tendermint way of things, but also in the plasma child chain version of things. So could we kind of unbox that for a second? And for me personally, I haven't done much research into either. And so don't know much about either. But we might be able to understand all three of them, both your system and those two systems, based off of your explanation of them in respect to each other.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 439,
+      "start": 3045.28,
+      "end": 3045.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 440,
+      "start": 3046.32,
+      "end": 3076.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 441,
+      "start": 3076.29,
+      "end": 3076.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or something",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 442,
+      "start": 3076.73,
+      "end": 3081.18,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "else. And that stake is what we call a service level agreement,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 443,
+      "start": 3081.46,
+      "end": 3082.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like an SLA.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 444,
+      "start": 3082.5,
+      "end": 3097.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 445,
+      "start": 3097.32,
+      "end": 3097.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 446,
+      "start": 3097.94,
+      "end": 3108.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "stake. So as I mentioned earlier, the actual time synchronization is a synchronous protocol, like by nature. And the way that they logging this is what we imagine to be a tenderment state machine.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 447,
+      "start": 3108.75,
+      "end": 3109.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 448,
+      "start": 3109.11,
+      "end": 3111.03,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's partially synchronous protocol.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 449,
+      "start": 3111.39,
+      "end": 3111.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 450,
+      "start": 3111.77,
+      "end": 3129.21,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "ultimately, the security would be derived then on these stakes that I referred to, which is on an asynchronous protocol, meaning like Ethereum proof of work or eventually proof of stake. And so foam proof of location as a whole relies on this synchronous, partially synchronous and asynchronous consensus.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 451,
+      "start": 3131.29,
+      "end": 3141.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "We're not exactly sure if it would be a plasma construction or a Tender Cosmos IBC construction interchained. But the idea is you have stake occurring on some master chain as a way to enter to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 452,
+      "start": 3141.55,
+      "end": 3141.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "become",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 453,
+      "start": 3141.83,
+      "end": 3145.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a validator in this subchain. And that subchain is the zone.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 454,
+      "start": 3145.57,
+      "end": 3146.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 455,
+      "start": 3146.05,
+      "end": 3150.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "then you're keeping that consensus log and then also broadcasting over radio.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 456,
+      "start": 3150.45,
+      "end": 3150.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 457,
+      "start": 3150.93,
+      "end": 3159.86,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And so this kind of like three stages where if I want to be a zone, I first stake on the master chain. It allows me then. to send out the correct messages I need.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 458,
+      "start": 3160.08,
+      "end": 3160.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And then once",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 459,
+      "start": 3160.4,
+      "end": 3173.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 460,
+      "start": 3173.54,
+      "end": 3199.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah. Okay, got it. So. Yeah, so essentially you have the zones, and the zones essentially make a stake to the root chain, any kind of smart contract platform, let's say Ethereum, and you say, hey, I'm going to be an awesome person, I'm going to make the zone here, and it's going to be up for these various times, and I'm going to have a good consensus or whatever. When I do that, that's happening, and then these verifiers go and they check, they can say, oh, man, no, you're totally wrong, you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 461,
+      "start": 3199.56,
+      "end": 3199.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 462,
+      "start": 3200.04,
+      "end": 3204.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "and then they can slash you or they can say, actually, you're right, therefore give this person block her words.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 463,
+      "start": 3205.42,
+      "end": 3205.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 464,
+      "start": 3205.68,
+      "end": 3218.28,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "then one step further, the actual users, location customers, they pay to get their data in the zone. So the verifiers can say, hey, the zone is well formed, but they have all this junk data in there. Don't put that on the root chain.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 465,
+      "start": 3218.56,
+      "end": 3235.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, got it. And so, and tell me, and dive a little bit deeper on what you mean by, you talked about. fully synchronous protocol, a semi and a kind of synchronous protocol being tenderment, and then an asynchronous protocol, how would you relate those three things?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 466,
+      "start": 3236.08,
+      "end": 3264.19,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah, I'm definitely not the best expert in consensus algorithms or rely on some of my consultants, but really there's this thing called the CAP theorem, which is like tradeoffs between consistency, availability, and partition tolerance. And so the main differentiation, the tradeoffs is like that Tenderman and Kaspur, at least the friendly finality gadget, they make different tradeoffs in this CAP theorem against consistency and availability. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 467,
+      "start": 3264.19,
+      "end": 3265.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 468,
+      "start": 3266.01,
+      "end": 3272.47,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the partially synchronous one, what that means is the voting aspect happens in a different kind of order,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 469,
+      "start": 3272.67,
+      "end": 3272.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 470,
+      "start": 3272.93,
+      "end": 3283.86,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "least the messages are always sent in order, so that's why it's partially synchronous. And the Tenderment tradeoff is in availability, so it'll never fork. but that means it might be off.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 471,
+      "start": 3285.4,
+      "end": 3302.21,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And so why, and it has instant finality or within like three seconds. But so why is that good for a zone? Well, that means the zone blockchain is really fast. It finalizes its data logs really quickly. And if it passes this one-third, you know, Byzantine fault. threshold,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 472,
+      "start": 3302.61,
+      "end": 3302.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 473,
+      "start": 3302.61,
+      "end": 3307.57,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "zone just turns off. So you don't have now a zone forking and producing two types of presence claims everywhere.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 474,
+      "start": 3307.93,
+      "end": 3307.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 475,
+      "start": 3308.35,
+      "end": 3314.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So that's why we were interested in tendermint for that and it would work really well as an IOT stack and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 476,
+      "start": 3314.37,
+      "end": 3316.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 477,
+      "start": 3316.07,
+      "end": 3320.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "very tested. So obviously we were looking to work closely with the tenderment team on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 478,
+      "start": 3320.53,
+      "end": 3320.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 479,
+      "start": 3320.63,
+      "end": 3356.01,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know building this out what do we mean by then asynchronous protocol like a Nakamoto consensus in that you know Bitcoin is running on the internet which is not in sync and there is no shared clocks Bitcoin itself has a timestamp way to keep track of some sort of consensus on time but otherwise you know blocks are being added or not asynchronously and it does fork like Ethereum could So you could be mining on the wrong chain for some time and then realize that, whoops, and then sync back in. So that's all asynchronous. And eventually, you know, even if there's forks, it eventually all figured out which is the right chain to be on.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 480,
+      "start": 3356.19,
+      "end": 3356.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 481,
+      "start": 3356.41,
+      "end": 3356.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 482,
+      "start": 3356.91,
+      "end": 3358.79,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And so that's like the difference, I think.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 483,
+      "start": 3359.01,
+      "end": 3361.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Cool. Yeah. So you have the semi-synchronous protocol.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 484,
+      "start": 3362.21,
+      "end": 3362.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Which is just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 485,
+      "start": 3362.69,
+      "end": 3364.45,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "basically keeping the log of the synchronism.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 486,
+      "start": 3364.65,
+      "end": 3370.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, okay. Oh, yeah, yeah, yeah, yep, yep, yep. Oh, yeah, that's funny. Yeah, so the sync one is going.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 487,
+      "start": 3370.45,
+      "end": 3371.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Over radio. Yeah, exactly. Each node,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 488,
+      "start": 3372.03,
+      "end": 3378.07,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "from their point of view, they're getting messages in order, the same order every time because the nodes, the anchors don't move, so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 489,
+      "start": 3378.07,
+      "end": 3378.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 490,
+      "start": 3378.47,
+      "end": 3381.03,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "they're synchronously logging the data they get.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 491,
+      "start": 3381.27,
+      "end": 3382.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It shouldn't change",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 492,
+      "start": 3382.71,
+      "end": 3384.75,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "after the first time because they don't move.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 493,
+      "start": 3385.04,
+      "end": 3385.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 494,
+      "start": 3385.72,
+      "end": 3413.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "and then the semi-synchronous one logs them all, and you want that to be fast. So you use a Tindermint-M style, as you're talking about this CAP theorem, where you just say, hey, things are going to go fast. And as you said, if there's an attack or something like that, it just goes down instead of forking, but that's in this trade-off space. And so you allow the speed there, which is great. And then finally, you eventually go back to the asynchronous protocol and then... validate things on the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 495,
+      "start": 3413.1,
+      "end": 3415.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "root chain or whatever. Post. The like marble root of like fair",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 496,
+      "start": 3415.82,
+      "end": 3417.94,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and so that's just like a header of like hey",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 497,
+      "start": 3417.94,
+      "end": 3418.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "my",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 498,
+      "start": 3418.38,
+      "end": 3421.78,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "presence claim I bought last year still exists on block.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 499,
+      "start": 3422.1,
+      "end": 3422.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 500,
+      "start": 3422.12,
+      "end": 3422.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "know",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 501,
+      "start": 3422.52,
+      "end": 3427.94,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "8,000 on the main Ethereum chain. It's immutable. It doesn't matter that the zones service level agreements over",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 502,
+      "start": 3427.94,
+      "end": 3428.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 503,
+      "start": 3428.44,
+      "end": 3429.22,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "trash the data.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 504,
+      "start": 3429.74,
+      "end": 3429.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "My",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 505,
+      "start": 3429.8,
+      "end": 3433.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "location's been proven and it's on this asynchronous immutable block.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 506,
+      "start": 3433.2,
+      "end": 3460.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yes. Great. Cool. Well, that was mostly, I got most of that, so I think that that was okay. Well, Ryan, the other note here is just, and we're not going to go into much of these, but there's the other things that they're doing, which are cool, are A, they have a functional programming stack. And as some of my listeners know, I'm into functional programming. It gives you a new mental model through which to view the world. And I think it's very powerful. So that's interesting. So if you're interested in functional programming plus blockchain crypto stuff.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 507,
+      "start": 3461.1,
+      "end": 3462.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Definitely check. We have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 508,
+      "start": 3462.06,
+      "end": 3472.82,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a number of libraries as well as the developer portal, developer.foam.com. That has more the foam-specific tools, but our GitHub has a general purpose, functional programming, Ethereum libraries as well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 509,
+      "start": 3473.04,
+      "end": 3503.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, so that's sweet. The other sweet thing that we didn't talk about was they're working with token foundry, which is out of consensus. And with them, they're working on a bunch. And we talked about it a bit, but like these ways through which we can do these new kinds of token sales where we don't actually just like give all the tokens to whoever, but rather you say, hey, you need to prove that you want to be a part of our network and be, so yeah, they're doing cool new token sale design by making participants actually participate in order to get part of it. Is that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 510,
+      "start": 3503.42,
+      "end": 3503.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 511,
+      "start": 3504.16,
+      "end": 3537.13,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "our sales structure has a proof of use function and we're not looking to distribute to speculators, but really need to have distribution of people to help build this protocol out and are not doing so. to expect necessarily profit but to help contribute work. So we've partnered with the Brooklyn Project as well, which is the initiative by consensus, as well as token foundry, a new token sell platform on basically consumer compliant tokens that'll be going straight to main net and really have this proof of use functionality where if you want to participate in secure an allocation, you have to basically show that you're going to help build out this decentralized network.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 512,
+      "start": 3537.84,
+      "end": 3564.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "That's sweet. So those are also cool things. And just as a reminder, we talked about the other stuff from above. Mainly the crypto, the standards, the cryptospatial coordinates, the U.X on top of those, and then the proof of location and the variance on it within that. TCR is for static, others were dynamic, which we didn't go too much into. And then finally, we talked a little bit about it. And Ryan helped me more understand how their system is similar to Tenderman style, semi-synchronous.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 513,
+      "start": 3566.22,
+      "end": 3570.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "consensus protocol. Yeah, so with that, Ryan, thank you again so much for being on the show.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 514,
+      "start": 3570.64,
+      "end": 3579.92,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah, thanks so much, Reese. And if anyone wants to reach out to the FOMSPACE Twitter or our website's FOMDOTSpace or join our telegram, we're happy to answer any questions or see you join the community.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 515,
+      "start": 3580.19,
+      "end": 3602.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Definitely, yeah. And with that, thank you everybody for listening. And if you want to, so definitely honestly check them out. Foam.d. space is the website address. And if you want to support me, you can go to patreon.com slash re-slimark. That's patreon.com slash r-h-y-s-l-I-N-D-M-A-R-K. And you can also go to stakedree.com slash reeslimbark as well. Okay, thank you, everybody. And goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 516,
+    "withheld": 5,
+    "published": 511
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

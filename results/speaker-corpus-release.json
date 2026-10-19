@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "corpus_sha256": "85749e43a31f61909581d079d07b9c0f4a1ce3d2c3ad9e095727fd93f2d2aa75",
+  "text_utf8_bytes": 22609936,
+  "corpus_jsonl_bytes": 65167948,
+  "records": 39692,
+  "protected_excerpts_byte_identical": 34575,
+  "anki_card_registry_byte_identical": true,
+  "frozen_training_files_unchanged": 7,
+  "speaker_recordings": 214,
+  "public_speaker_sidecar_bytes": 34210377,
+  "coverage": {
+    "inventoried_recordings": 216,
+    "statuses": {
+      "not_transcribed_instrumental_title": 1,
+      "processing_failed": 1,
+      "released_speaker_transcript": 214
+    },
+    "rss_audio_recordings": 140,
+    "youtube_only_recordings": 76,
+    "released_rhys_matches": 142
+  },
+  "notes": [
+    "Research corpus update only; existing models were not retrained.",
+    "Preservation compares all protected raw JSONL rows and all seven frozen training artifacts to the pre-update snapshot.",
+    "Automatic speech and speaker labels can be wrong."
+  ],
+  "validation": {
+    "unit_tests_passed": 136,
+    "browser_logic_tests_passed": 4,
+    "corpus_validator": "passed",
+    "sidecar_validator": {
+      "status": "passed",
+      "public_sidecars": 214,
+      "linked_corpus_excerpts": 5090
+    }
+  },
+  "corpus_size_chart_sha256": {
+    "corpus-bytes.png": "f7b610c965ede1e956ad07aa552e5f2285ec1d4a3a69bdaeb0ef26a57bb65e54",
+    "corpus-bytes.svg": "e1405c3d25c0787162ce7bb02c2d0c64e8b1dd351273f65194b3fc71c8618e42"
+  },
+  "compute_budget_snapshot": {
+    "authorization_usd": 200,
+    "conservative_committed_holds_usd": 148.0,
+    "provider_billing": "pending; holds are not final charges",
+    "includes": "training, evaluation, inference, speech, helper/setup failures and chart rendering"
+  }
+}

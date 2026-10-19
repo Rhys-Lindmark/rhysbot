@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "podcast-055f2df7724a92297083",
+  "title": "What Darwin Got Wrong",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=QNV0Y2hzLfw",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "QNV0Y2hzLfw",
+  "youtube_url": "https://www.youtube.com/watch?v=QNV0Y2hzLfw",
+  "audio_sha256": "7725c936be0c88676fc6438cf793f9448d6e69c3f2550f28169ac6f48424e9be",
+  "audio_duration_seconds": 36.989375,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 106,
+    "unknown_words": 0,
+    "unknown_words_fraction": 0.0,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 36.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Evolution itself has evolved over time the ideas of evolution. The idea is called this extended evolutionary synthesis. And this is what I'd say is like the most cutting edge version of evolutionary thought. We start with Darwin, 1860-ish. We have this selection of inherited variation, and he got selection right. The way we get complexity in the world is not through God, but is rather through this unknowing process that selects for increasingly adapted creatures. And so he got the selection part right, the survival of the fittest Malthusian competition. What he didn't know anything about was how variation works or how inheritance works.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 1,
+    "withheld": 0,
+    "published": 1
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

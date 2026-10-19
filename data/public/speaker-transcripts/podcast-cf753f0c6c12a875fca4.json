@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "id": "podcast-cf753f0c6c12a875fca4",
+  "title": "The Federal Reserve",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=OhG_GGUin0U",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "OhG_GGUin0U",
+  "youtube_url": "https://www.youtube.com/watch?v=OhG_GGUin0U",
+  "audio_sha256": "9b498cb55c39eba3ee021bfd1a457c093d32c01676f064c079edc5c107e9fd1c",
+  "audio_duration_seconds": 56.796,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 142,
+    "unknown_words": 3,
+    "unknown_words_fraction": 0.02112676056338028,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 5.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "You can't really run like a sophisticated capitalist economy without having some kind of central bank to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 5.88,
+      "end": 6.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "manage",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 6.9,
+      "end": 23.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "the currency. Okay. So we created the Federal Reserve in 1913 so we could have a national currency. The thing you and I call the dollar is a Federal Reserve note. Okay. So this bank, its basic primary job",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 23.48,
+      "end": 24.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 24.24,
+      "end": 30.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "to issue dollars and to issue them in a way. that we have a stable currency so that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 30.5,
+      "end": 31.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 31.3,
+      "end": 49.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "the money supply gets tight, the Fed creates more dollars out of thin air and increases the money supply. And then when there's too much money out there, which creates inflation, the Fed like sucks in the money, like kind of draining a pool, brings money out, cools it down. And that's the job of the Federal Reserve, in essence, at the most basic level.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 7,
+    "withheld": 0,
+    "published": 7
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

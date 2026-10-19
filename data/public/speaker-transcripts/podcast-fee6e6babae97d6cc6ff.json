@@ -1,0 +1,5454 @@
+{
+  "schema_version": 1,
+  "id": "podcast-fee6e6babae97d6cc6ff",
+  "title": "#38 Primavera De Filippi, “Blockchain and the Law”: Plantoids, Internet Law for Crypto, DAOStack",
+  "published_at": "2018-04-19T16:20:09Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/38-primavera-de-filippi-blockchain-and-the-law-plantoids-internet-law-for-crypto-daostack",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/432114777-the-rhys-show-38-primavera-de-filippi-blockchain-and-the-law-plantoids-internet-law-for-crypto-daostack.mp3",
+  "youtube_id": "lYZxuyU3XOw",
+  "youtube_url": "https://www.youtube.com/watch?v=lYZxuyU3XOw",
+  "audio_sha256": "0f6899de9e49ac4a9458a8c7ecf7bf68964d183429a1258b8d0c731f022535af",
+  "audio_duration_seconds": 3028.42775,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 7775,
+    "unknown_words": 297,
+    "unknown_words_fraction": 0.03819935691318328,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_1",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.66,
+      "end": 1.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Now",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 1.5,
+      "end": 5.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "entering the Bitcoin Podcast Network.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 17.46,
+      "end": 17.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 17.98,
+      "end": 24.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "episode is brought to you by Shapeshift.io, the easiest, fastest, and most secure way to swap your digital assets.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 25.2,
+      "end": 25.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 25.72,
+      "end": 30.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "run the risk of leaving your funds on centralized exchange. Visit Shapeshift.io to get started today.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 35.14,
+      "end": 35.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 35.66,
+      "end": 44.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "this episode is also sponsored by my patrons on Patreon. We got about 40 at about 700 bucks a month. And so I like to give different examples each episode for why they support.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 44.8,
+      "end": 45.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 45.24,
+      "end": 60.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "here's why Sam likes my work. He wrote this after reading one of my pieces on the interwebs. He said, the most profoundly insightful, important, and clearly explained vision for a sustainable peer-to-peer post-capitalist future enabled by blockchain is outlined by Reese's work.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 60.94,
+      "end": 61.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Woo.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 61.5,
+      "end": 99.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Thank you, Sam. That is the goal. So today's episode is with Prima Verde-Filippi, and she has a super awesome background. And the exciting thing that we talked about today is she just released a book. called Blockchain and the Law that she co-wrote with Aaron Wright from Consensus and Open Law. It's really a truly outstanding book about how blockchain technology affects regulation. And there's a couple key pieces that I just want to pull out, both takeaways from the episode and takeaways from the book. One is in the book and in the episode, they do such a good job of understanding the history of internet regulation because it was just, you know, it was 90s, early 90s, 2000s.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 100.13,
+      "end": 100.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "People",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 100.49,
+      "end": 123.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "had the same thoughts around the internet where it's like, oh man, this is this international, supernational kind of thing. How are we going to regulate it? So looking at what was done there and applying it to the blockchain is a lot of what they do. And they're really good at pulling out, and Primaver and Aaron are really good at pulling out pieces from the past, like, for example, Lawrence Lessig's pathetic dot theory that they can then apply to blockchain regulation.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 124.07,
+      "end": 124.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 124.43,
+      "end": 181.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "that's really cool. The other thing that we talk about is... coming from this perspective of the affordances of blockchain technology, and I'm using affordances in kind of like the Zaynep Tufeki term, where we say, hey, what's the technology allow us to do? And blockchain has various affordances, but, you know, there are things like transparency, the decentralized nature of it, which makes it kind of harder to regulate, the immutability, and also autonomous agents. And one exciting thing, and by autonomous agents, I mean like smart contracts that are required to execute. And one thing that we talk about, in the episode is one of Prima Vera's experiments and projects that she's done is this thing called the Plantoid, which is a fun name, and it is a physical cypherpunk-looking machine plant that Primavera started. And what it does is it, so it's a physical metal device that has a light in it, and it asks people for, you know, Bitcoin or Ethereum donations, and you give it to it because it's a beautiful art.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 182.03,
+      "end": 182.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 182.41,
+      "end": 279.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "once it gets enough of those donations, then it sends out kind of a request for proposal and artists propose new plantoids. And then essentially through a Dow-style voting mechanism, the funders vote on which designer should actually create the new plantoid. So it's this kind of, it's a physical plant that actually self-replicates itself, which is pretty cool. And the interesting thing, though, from like a law perspective is that if you're a regulator and you're like, oh, man, you know, and you win some lawsuit against a plantoid, it did something wrong, and you want to get the money inside the plantoid, you can't because it's in a smart contract. And so this is something that Prima Vera and I talk about, which are these, what I like to call, like, crypto international waters. And these are things that exist outside nation state control, or what they call in the book, these emancipated devices, devices that are free from kind of meat space from this traditional world and only exist in the crypto sphere. So, yeah, that's just a single example of kind of a bunch of the different affordances that we talk about that blockchain has that then affect regulation in various ways. And We cover a lot in this episode, but we definitely don't cover all that the book has to offer. I really did like the book, especially from kind of an intermediate advanced blockchain crypto enthusiast perspective. And there's a bunch of things that, a whole host of topics that we don't even cover in the episode that you should buy the book for. And these are things like... talking about blockchain neutrality, kind of like net neutrality, talking about algorithmic governance, where you govern it with algorithms, other pattern matches from the history in the past, like Lawrence Lessig's end-to-end theory,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 280.57,
+      "end": 310.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "things like systemic risk of not having clearinghouses and centralized places like that that are kind of insurance. property rights management, which is like digital rights management, but for IoT devices, there's a whole lot in the book that's really quite fascinating. And so I'd recommend it. Again, it's called blockchain and the law. And then one final note for this episode is we also talk about Dowstack, which is a governance platform, a Dow governance platform that Prima Vera is an advisor for. So we talk a little bit about her take on Dow Stack and governance. So with that, I hope you enjoy today's episode with Prima Vera de Felipe.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 320.75,
+      "end": 359.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello, everyone. My name is Reislin Mark, and you're listening to another episode of creating a humanist blockchain future. In this podcast, we take a systems thinking approach to doing good in the world, and so we have a couple different series that focus on different system scopes. And today we're focusing on series A macro systems. or we ask the question, where are we as humanity headed? And today, I'm very happy to introduce Prima Vera de Felipe to the show. Prima Vera is a permanent researcher at the National Center of Scientific Research in Paris, a faculty associate at the Berkman Client Center for Ine in Society at Harvard Law, an advisor to Dowstack, and the co-author of a recent book, Blockchain and the Law. Prima Vera, thanks for being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 360.65,
+      "end": 361.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Thank you, hi.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 361.61,
+      "end": 363.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, excited for you to be here. Also, you don't sleep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 365.85,
+      "end": 366.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Four things in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 366.79,
+      "end": 366.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 367.89,
+      "end": 376.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Too many, too many things in your, in your bio. So, let's start. We're going to primarily concentrate on your book today, which I just, it just came out last week.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 377.37,
+      "end": 377.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 377.77,
+      "end": 390.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "it's written by you and Aaron Wright. And I just finished it. So could you just kind of give a overview on, on the book, Blockchain and Law? What do you guys kind of talk about? What are your primary theses in the book?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 391.8,
+      "end": 392.2,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 393.08,
+      "end": 393.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 393.94,
+      "end": 403.36,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I mean, the book is really an attempt of actually explaining the interplay between blockchain and the law, the regulations. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 403.36,
+      "end": 404.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "basically,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 404.26,
+      "end": 429.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the underlying thesis is that we are moving one step further from the traditional code is law model that was identified by Lawrence Lessig, in the sense that... In the traditional code that we have today in traditional platform, online platform on the internet, there is always an operator. There is a centralized entity",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 429.32,
+      "end": 430.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 430.04,
+      "end": 435.2,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is controlling that code. And so it is true that the code is actually acting",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 435.2,
+      "end": 435.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 435.98,
+      "end": 436.44,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "law",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 436.44,
+      "end": 437.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 437.02,
+      "end": 441.7,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the sense that it is actually dictating what people can or cannot do on a particular platform.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 442.0,
+      "end": 442.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 442.56,
+      "end": 445.56,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "difference today with the blockchain is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 447.23,
+      "end": 447.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 447.73,
+      "end": 452.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "only the code actually has the effect of the law, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 452.67,
+      "end": 453.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 453.13,
+      "end": 460.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is no longer this centralized operator that actually control the code. So on the internet, it's quite easy to regulate code",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 460.55,
+      "end": 461.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 461.29,
+      "end": 487.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you can always regulate that particular operator, which is creating and administering this platform in order to then require specific technical arrangement so as to eventually indirectly regulate how people will interact on those platforms. Whereas when we move into the blockchain systems, then because of the disintermediation that this entails, you can create those",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 487.55,
+      "end": 488.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "new",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 488.57,
+      "end": 497.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "technical platforms, which also have the whole of the same functions as law, in the same way as code does, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 497.67,
+      "end": 498.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 498.19,
+      "end": 501.65,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "there is no longer this obvious intermediary",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 501.65,
+      "end": 502.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 502.15,
+      "end": 503.97,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you can actually regulate",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 503.97,
+      "end": 504.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 504.63,
+      "end": 508.4,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "order to dictate the way in which the code will look like.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 509.51,
+      "end": 509.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 511.57,
+      "end": 521.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "And that is difficult because you can traditionally regulate someone like ISPs or platforms or whatever, but with the new blockchain world, it's like, oh, man, if something bad happened,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 522.87,
+      "end": 541.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "the blockchain is on, you know, the Bitcoin blockchain is on tens of thousands of computers. It was one person who did it, but maybe it was a smart contract on Ethereum. And like someone kind of wrote it, but then someone else, it was triggered by some random like IoT event or whatever. So like who should be at fault for these things? that is a difficult question. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 541.24,
+      "end": 542.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "given",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 542.3,
+      "end": 554.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "that kind of centralization versus decentralization thing, you guys kind of bring up this concept in the book called Lex Cryptographica. Could you tell me more about what that means and how that informs the regulation environment?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 555.82,
+      "end": 588.0,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah. So, I mean, so Lex Cryptography is obviously inspired from Lex Mercatoria first, which was the law that was developed by the merchants. which was basically some custom and some specific norms that were developed in order to facilitate transactions between different merchants. And then with the internet, there was this new emergence of Lex Informatica, which is basically code is law.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 589.45,
+      "end": 589.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 589.73,
+      "end": 628.2,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the case of the centralized network, and in particular in the case of public blockchain, because this is pretty much the focus of the book, then we can see these new emergence of a new kind of rules and regulation, which is dictated by those cryptographic systems. And the interesting thing of Lex Cryptographica, which is pretty much the same with Lex Informatica, by the way. is that it has this dual age function. So on the one hand, you can use these technologies in order to actually create your own",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 628.2,
+      "end": 629.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "set",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 629.12,
+      "end": 633.16,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of norms and rules that a particular community will abide to.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 633.52,
+      "end": 633.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "At",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 633.88,
+      "end": 640.86,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the same time, you can also use it in order to achieve a particular regulatory objective. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 640.86,
+      "end": 641.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 641.36,
+      "end": 671.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is more in the sense of like regulatory technology. you can see how because of those systems that are disintermediated, decentralized and to some extent autonomous, on the one hand, we can develop models that actually are existing outside of the purview of the law, those kind of illegal systems. But at the same time, you can also implement the law through those systems and actually have the benefit of the self-executing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 673.42,
+      "end": 675.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "technology that provides the blockchain",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 675.26,
+      "end": 675.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 675.92,
+      "end": 679.54,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "order to actually make sure that the law will actually be enforced",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 679.54,
+      "end": 680.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 680.2,
+      "end": 696.92,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a particular manner. And so the whole discussion that we have within the book is for very different types of different sectors, for different verticals and so forth, to which extent is blockchain technology",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 696.92,
+      "end": 697.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "being",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 697.96,
+      "end": 699.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "used as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 699.02,
+      "end": 699.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 699.88,
+      "end": 712.03,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "way to escape? from regulation versus as a way to actually incorporate legal rules into those technological framework. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 712.03,
+      "end": 712.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 712.69,
+      "end": 713.97,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "quite clear how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 713.97,
+      "end": 714.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "pretty",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 714.67,
+      "end": 727.19,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "much it can go both ways and it is actually moving in both directions. And depending on what are the interests of the players. that are using this technology, they will use it for one particular application or for the author.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 727.61,
+      "end": 728.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 728.25,
+      "end": 734.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "I like that. There's a lot of delicious stuff in there. First, the thing that, and one thing that I really liked about the book was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 734.31,
+      "end": 735.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 735.77,
+      "end": 739.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "gave, and you were talking about, what did you call it Lex Merchant, something?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 742.03,
+      "end": 751.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Lex Mercatoria. That and then Lex Informatica, that compared to Lex Cryptographica. And those all, the book has this really great, and you guys, I think you did a great job of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 751.13,
+      "end": 751.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "going",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 751.93,
+      "end": 758.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "through history and saying, hey, here's what it was like to regulate things way back in the day or in Internet times. And here's how that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 758.59,
+      "end": 759.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "might",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 759.03,
+      "end": 760.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "pattern match into",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 760.19,
+      "end": 760.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 760.73,
+      "end": 792.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "of this new blockchain world. So I love that part of things. And then what you were talking about with the using the essentially the affordances of blockchain in order to, people can use it either to dodge existing regulation or escape them in various ways, or you can kind of use the blockchain itself. Would you say that this is your concept of code as law, where you say, hey, we're going to use the blockchain itself to perform regulatory actions? Is that correct? That's the term code as law that you're trying to use there?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 793.16,
+      "end": 798.66,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah, so, I mean, the distinction between Pod is law is when you actually use code.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 799.03,
+      "end": 799.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 799.37,
+      "end": 799.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "order",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 799.73,
+      "end": 801.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 802.19,
+      "end": 815.01,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "regulate, in order to implement specific affordance or constraints. But those are private. Those are actually designed by a particular platform",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 815.01,
+      "end": 815.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 815.59,
+      "end": 828.61,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "order to implement their own policies, as opposed to code as law, which is when you actually take existing legal rules and you try to bake them into a particular technological framework.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 829.02,
+      "end": 829.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 829.48,
+      "end": 831.38,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that the code actually represent",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 831.38,
+      "end": 831.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 831.98,
+      "end": 835.16,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "particular implementation of a legal rule.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 835.3,
+      "end": 835.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 835.78,
+      "end": 839.1,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "then, of course, there is all the question as to, is it actually possible",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 839.1,
+      "end": 839.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 839.96,
+      "end": 840.78,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "transpose",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 840.78,
+      "end": 841.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "legal",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 841.9,
+      "end": 861.2,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "rules which are written in natural language, which have a specific ambiguity and flexibility, and is it possible to transpose them into the strict language of formal code without actually changing? some of the functionalities are some of the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 861.2,
+      "end": 862.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 862.06,
+      "end": 864.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the flexibility of these of those rules",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 864.32,
+      "end": 873.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah yeah yeah how can you take a normal contract and turn it into a smart contract and is that possible and is that good and is that bad and things of that variety",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 873.5,
+      "end": 874.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 874.16,
+      "end": 874.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "so kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 874.74,
+      "end": 875.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "going",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 875.42,
+      "end": 878.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "back to that that point about history um how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 878.72,
+      "end": 880.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "i mean",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 880.12,
+      "end": 900.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "what i would love to to to kind of dive into for a sec is I think for a lot of people that exist in the blockchain land, especially because a lot of them are younger. I know I am only 26 years old. And so I don't really know what it was like when the internet was being regulated in the early 90s and late 90s and early 2000s or whatever. And we're seeing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 900.1,
+      "end": 900.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "other",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 900.74,
+      "end": 903.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "new kinds of regulation come up as we've seen the massive",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 903.42,
+      "end": 903.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Google",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 903.98,
+      "end": 918.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Amazon Facebook aggregators and antitrust laws and GDPR and things like that. Could you give us kind of a quick overview on, before we talk about how this kind of plays in with the blockchain land, could you give us kind of maybe",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 918.57,
+      "end": 919.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 919.45,
+      "end": 922.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "quick analysis or overview of how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 922.21,
+      "end": 922.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 922.93,
+      "end": 930.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "internet was regulated in its early kind of days to kind of couch us in some context for understanding that for blockchain?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 932.16,
+      "end": 932.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 932.76,
+      "end": 937.56,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I mean, if you look at the history of internal regulation, it's actually...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 937.79,
+      "end": 938.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 938.01,
+      "end": 940.99,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "can see very similar narrative in the sense that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 940.99,
+      "end": 941.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 941.77,
+      "end": 943.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the beginning there was this kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 943.25,
+      "end": 944.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "wonder",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 944.29,
+      "end": 948.77,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "as to like how are we actually going to regulate such a transnational network",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 948.77,
+      "end": 950.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 950.21,
+      "end": 955.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "which you know every individual state cannot really exert its own sovereignty over the world network",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 955.85,
+      "end": 956.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 956.79,
+      "end": 957.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 957.35,
+      "end": 958.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 958.03,
+      "end": 969.24,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and then there was those questions like are we moving into this kind of like anarchy or you know how do we actually establish hules into this cyberspace, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 970.95,
+      "end": 971.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 971.51,
+      "end": 978.97,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "then it became quite clear at some point that, well, it is true that it is a transnational network, but there are some nodes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 978.97,
+      "end": 979.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 979.63,
+      "end": 980.03,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 980.12,
+      "end": 981.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "quite",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 981.3,
+      "end": 1008.12,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "incidental to the way in which this network works. And this is on the one hand the ISPs. So you can obviously regulate the ISPs in order to get them to block traffic. get them to monitor and to analyze what is the communication that are going on into their network and so forth. At the same time, there is like the online service providers",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1008.12,
+      "end": 1009.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1009.68,
+      "end": 1020.22,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are creating those platforms and which are enabling people to interact with each other. And so the people interacting on those platforms obviously are subject to the rules of the platform.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1020.6,
+      "end": 1021.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1021.14,
+      "end": 1032.28,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "as long as we can identify those platform operators, and because those platform operators are incorporated into a particular physical territory, which is subject to the law",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1032.28,
+      "end": 1032.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1032.8,
+      "end": 1036.96,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a particular countries, then it is possible to regulate",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1036.96,
+      "end": 1038.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "those",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1038.62,
+      "end": 1039.12,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "actors",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1039.12,
+      "end": 1039.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1039.86,
+      "end": 1040.72,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "order to then regulate",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1040.72,
+      "end": 1041.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1041.58,
+      "end": 1061.86,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "way the platform will be built and therefore the way in which people can interact on those platforms. So essentially, the internet, which initially was seen as this powerful tool for individual emancipation and freedom of expression and so forth, over the years, as it has become",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1061.86,
+      "end": 1063.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "more",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1063.02,
+      "end": 1068.62,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "obvious, who are the main intermediaries and who are the choke points",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1068.62,
+      "end": 1069.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1069.18,
+      "end": 1088.44,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "this network, then it has become increasingly regulated. And today, I guess the internet has become actually quite a powerful tool of regulation, of surveillance and of control, but from governments which actually regulate private operators, but also by the private operators themselves.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1090.58,
+      "end": 1129.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, so because we had the intermediaries, we were able to, at the beginning it was confusing, likely. Well, yeah, where should we do this? If this is this global transnational network, what should we do? And then it was like, okay, lots of the traffic, traffic goes through ISPs. We can regulate them for some things. Traffic, especially as traffic went more and more on these big platforms, we can start to regulate them. And then the people who are operating on those platforms, we can start to regulate them, given the rules of those platforms and ISPs. And as you say now, it's also one where the, those affordances that were kind of, the governments have learned, and governments and people and whoever have learned how to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1129.32,
+      "end": 1130.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "use",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1130.0,
+      "end": 1134.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "it as a internet as a powerful tool for surveillance and things of that variety as well. So then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1134.24,
+      "end": 1134.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1134.9,
+      "end": 1137.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "we take that kind of mindset of like, okay, here's how things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1137.64,
+      "end": 1138.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "worked",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1138.48,
+      "end": 1139.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "in the traditional internet days.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1140.24,
+      "end": 1140.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Let's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1140.68,
+      "end": 1142.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of move into the blockchain land.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1143.23,
+      "end": 1143.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1143.55,
+      "end": 1148.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "you talked a little bit about the how it's difficult because of the decentralized nature of blockchains.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1149.57,
+      "end": 1150.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1150.27,
+      "end": 1151.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "how do you see",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1151.03,
+      "end": 1151.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1151.85,
+      "end": 1159.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "of this playing out in blockchain land? How will it be regulated? And how is it similar or different from internet times?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1161.21,
+      "end": 1163.03,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Well, so the difference is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1163.42,
+      "end": 1165.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "those",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1165.26,
+      "end": 1174.24,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "smart contract or those platforms do not actually require centralized operators. And therefore, this intermediary",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1174.24,
+      "end": 1174.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1174.98,
+      "end": 1192.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "no longer easy to identify, right? On the other hand, one should also not just jump to the conclusion that because there is no intermediary operator that is actually managing that particular network or that particular smart contract, then there is actually no",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1192.14,
+      "end": 1193.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "operator.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1193.42,
+      "end": 1195.4,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "There is no shock points, right? And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1195.4,
+      "end": 1196.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1196.56,
+      "end": 1199.6,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we look indeed at the different layers that...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1200.61,
+      "end": 1201.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1201.19,
+      "end": 1211.69,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "contributing to dictating the way or influencing the way a blockchain system can work. We can see that, well, first of all, the blockchain is actually operating on top of the internet.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1212.39,
+      "end": 1212.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1212.97,
+      "end": 1219.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so we cannot forget about the internet layer. And in the same way as the ISPs actually have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1219.37,
+      "end": 1220.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "quite",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1220.13,
+      "end": 1233.86,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a significant power in deciding which packet will go through whether to prioritize a particular type of... packets rather than another one, etc. with all the net neutrality debate and so far. We can quite easily imagine that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 1233.86,
+      "end": 1234.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 1234.44,
+      "end": 1252.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "ISP could actually intervene and in the same way as you have ISP that are actually blocking or slowing down traffic that is intended for peer-to-peer networks. they could as well do that potentially for a particular blockchain-based network. If they can actually do through",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 1252.27,
+      "end": 1252.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "deep",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 1252.87,
+      "end": 1270.72,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "packet inspection, they can actually identify that those packets are actually directed through this network. And then there is, of course, at the, so this is like the underlying basic infrastructure on which the blockchain operates. And then at the blockchain layer itself, there are actually a lot of actors",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1270.72,
+      "end": 1271.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1271.5,
+      "end": 1289.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "have a predominant role and which can actually have... an impact in the way in which those specific network can actually properly operate. So one is obviously we have all the miners and the mining pools, which are quite easy to identify",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1289.53,
+      "end": 1290.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1290.27,
+      "end": 1318.94,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "which are obviously responsible for building those blocks. And it's quite possible to imagine that a government might actually say to a particular mining pool, which is on their own territory, that some transactions should actually not be incorporated into a block. And therefore, we can actually reintroduce a form of censorship within these decentralized blockchain-based networks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1320.48,
+      "end": 1321.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "In",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1321.28,
+      "end": 1361.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the same way, we can actually have specific rules. towards the way in which the miner will collectively agree to incorporate or to interact with some transactions. So, for instance, even if it's not the government itself, if it happens that there are some decentralized applications, some smart contracts, which are actually regarded as being illegitimate or illicit, on the one hand, the government can say to the miners or to the mining pool that they should not process those transactions, but also coming from the community itself, from the miners, might also decide by their own",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 1361.27,
+      "end": 1361.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 1361.89,
+      "end": 1372.49,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "they actually would like to discriminate against those criminal decentralized applications and therefore not process those transactions into a block. And then even further, we can actually have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 1372.49,
+      "end": 1373.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 1373.03,
+      "end": 1374.63,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "market that actually intervene.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 1374.71,
+      "end": 1375.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 1375.29,
+      "end": 1376.47,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we can see, for instance,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 1376.95,
+      "end": 1377.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 1377.26,
+      "end": 1389.06,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "perhaps one particular blockchain-based network or one particular dab on top of this blockchain-based network or particular actors interacting on the network might actually",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 1389.06,
+      "end": 1390.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "come",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 1390.14,
+      "end": 1399.28,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "into agreement, you know, some off-chain agreement with some large mining pools in order to, for instance, speed up",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 1399.28,
+      "end": 1400.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 1400.4,
+      "end": 1406.92,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "inclusion of certain transactions at the expense of others. So we can see how we have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 1407.23,
+      "end": 1407.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "If",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 1407.57,
+      "end": 1412.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we go back to the former Lessig visions of like those four forces",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 1412.55,
+      "end": 1413.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 1413.31,
+      "end": 1435.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are potentially affecting the way in which an individual can behave, which is on the one hand we have the laws, obviously, and then we have the social norms, then we have markets, and then we have the architecture or the code. And those four forces, they also apply into the blockchain space, except that we need to look at the new",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 1435.55,
+      "end": 1436.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "actors.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 1437.07,
+      "end": 1472.42,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that are actually being affected by those forces. So it's no longer the centralized online operator, but it's the ISP, it's the miners, it's the validators, potentially it's like the exchanges, or like all those players that are actually acting as a chalk point to the network. And whether they will actually comply with the regulation depends obviously. on the extent to which a government can actually impose their own rules upon them. So the difference is, of course, that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 1472.42,
+      "end": 1473.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 1473.3,
+      "end": 1478.36,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is a larger amount of actors that somehow need to be coordinated",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 1478.36,
+      "end": 1479.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 1479.26,
+      "end": 1482.48,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "order for a regulation to actually become possible.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 1482.78,
+      "end": 1483.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 1483.46,
+      "end": 1487.94,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I can regulate the miners, but I also need to regulate",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 1487.94,
+      "end": 1488.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 1488.88,
+      "end": 1489.68,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the exchanges.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 1490.43,
+      "end": 1490.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "At",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 1490.73,
+      "end": 1499.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the same time, I need to make sure that the validators, which might not be minors, are also complying with the same regulations. And if there is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 1499.35,
+      "end": 1500.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 1500.25,
+      "end": 1508.18,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of those different actors that are actually not complying, then there is the risk of a fork. So in order to actually have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 1508.18,
+      "end": 1509.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 1509.12,
+      "end": 1510.36,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "regulation applies",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 1510.36,
+      "end": 1511.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 1511.42,
+      "end": 1514.42,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the whole blockchain network without actually triggering.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 1515.19,
+      "end": 1515.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 1515.53,
+      "end": 1525.45,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "actual forking of the network, then it's much more difficult than on the existing online platform on the internet because there is a variety of intermediary shock points",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 1525.45,
+      "end": 1526.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 1526.13,
+      "end": 1527.45,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "actually need to all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 1527.45,
+      "end": 1528.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 1528.13,
+      "end": 1529.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "regulated in a similar manner",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 1529.67,
+      "end": 1530.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 1530.41,
+      "end": 1532.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "order for the law to actually apply.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 1532.92,
+      "end": 1534.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah. So this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 1534.46,
+      "end": 1534.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "is the sake.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 1534.88,
+      "end": 1535.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's more complicated though.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 1538.67,
+      "end": 1544.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "theory that you're talking about was the, which is a funny name, the pathetic dot theory from Lawrence Lessig, where you can,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 1545.23,
+      "end": 1545.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 1545.51,
+      "end": 1551.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "you're trying to regulate something, you can regulate, and especially the internet or blockchain that's with laws, social norms, markets, or the actual architecture of the code.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 1552.05,
+      "end": 1552.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 1552.41,
+      "end": 1557.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "episode is brought to you by Shapeshift.io, the world's leading trustless digital asset exchange.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 1558.19,
+      "end": 1558.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Quickly",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 1558.65,
+      "end": 1574.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "swap between dozens of cryptocurrencies, including Bitcoin, Ether, Dash, Bitcoin Cash, Auger, Golem, and many more. And... This is not your typical crypto exchange. You don't need to create an account or share your personal information and your funds are never stored on ShapeShift.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 1575.07,
+      "end": 1575.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 1575.47,
+      "end": 1579.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "means that your hard-earned digital wealth is never up for grabs by hackers",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 1579.19,
+      "end": 1579.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 1579.65,
+      "end": 1580.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "other malicious actors.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 1581.03,
+      "end": 1581.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "To",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 1581.51,
+      "end": 1589.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "get started, visit Shapeshift.io, choose the tokens you'd like to swap, input your receiving address, and send your funds. It's that easy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 1592.79,
+      "end": 1594.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "And like you say there at the end, I think...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 1595.34,
+      "end": 1595.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "An",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 1595.56,
+      "end": 1614.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "important piece of this is this ability for people to exit the system through forking or what have you or by, you know, using blockchain-based financial incentives to create new systems where you say, hey, if you're a government that's trying to regulate all these various actors, the ISPs, the miners, the validators, the exchanges, then...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 1615.32,
+      "end": 1615.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "If",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 1615.7,
+      "end": 1617.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "you go too hard, then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 1617.4,
+      "end": 1617.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 1617.88,
+      "end": 1626.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "people might say, you know what, this is too much regulation. And we want to just create our, we want to fork and create our own new network. And for me, that feels, correct me from wrong, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 1626.94,
+      "end": 1627.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "does",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 1627.38,
+      "end": 1627.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "that feel,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 1628.48,
+      "end": 1628.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 1628.8,
+      "end": 1642.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "feels to me like it makes the job more difficult for regulators because they can't just regulate and then we don't have any other kind of options to go to in this blockchain-based reality. given forks and given blockchain-based financial incentives, it might be easier to kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 1642.7,
+      "end": 1643.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "run",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 1643.2,
+      "end": 1645.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "away and still escape from the regulation. Do you kind of agree with that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 1647.85,
+      "end": 1650.09,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah, I mean, I think it's, it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 1650.09,
+      "end": 1650.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yes,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 1651.83,
+      "end": 1656.11,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to some extent, but I think the main issue is not that you can just run away and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 1656.11,
+      "end": 1656.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "fork",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 1656.31,
+      "end": 1657.11,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is just that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 1657.31,
+      "end": 1658.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 1658.87,
+      "end": 1661.89,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "like, it's not running away and creating a new network. It's just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 1661.89,
+      "end": 1663.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 1663.57,
+      "end": 1667.59,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "regulation is actually trying to affect to change the way in which the network operates.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 1668.16,
+      "end": 1668.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 1668.54,
+      "end": 1669.74,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "unless you can actually",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 1669.74,
+      "end": 1672.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "cover and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 1672.68,
+      "end": 1673.34,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "influence",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 1673.34,
+      "end": 1674.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 1674.28,
+      "end": 1679.38,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the different stakeholders and actors of that network, then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 1679.38,
+      "end": 1680.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 1680.72,
+      "end": 1687.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "might actually, it is through the regulation that you create a fork, because you're actually changing the way in which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 1687.26,
+      "end": 1687.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 1687.94,
+      "end": 1691.36,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "network is operating, but some people might actually not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 1691.36,
+      "end": 1692.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "follow.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 1692.86,
+      "end": 1699.39,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And therefore, the fork is more about the people that actually do not want to abide by the additional rules that are being implemented.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 1700.39,
+      "end": 1711.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah. Yeah, and we'll see that. We've seen that already with when these internal communities will fork in various ways with Ethereum and Ethereum Classic or Bitcoin Cash. And then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 1711.67,
+      "end": 1712.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we'll... Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 1712.19,
+      "end": 1715.01,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "like that our example is a perfect example, right? So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 1715.01,
+      "end": 1716.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "regardless",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 1716.53,
+      "end": 1725.33,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of whether that was, I mean, that was a... self-governance solution in some way. It was not imposed by a third party regulatory authority, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 1725.33,
+      "end": 1725.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 1725.97,
+      "end": 1726.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "idea was that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 1726.73,
+      "end": 1727.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 1727.29,
+      "end": 1728.95,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "community somehow came to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 1728.95,
+      "end": 1729.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 1729.67,
+      "end": 1730.51,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "decision that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 1730.51,
+      "end": 1731.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 1731.65,
+      "end": 1735.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Ethereum protocol had to be changed in order to, in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 1735.85,
+      "end": 1736.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "order",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 1736.63,
+      "end": 1739.95,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to remediate from the harm that had been done through the Tao attack.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 1740.21,
+      "end": 1740.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 1740.81,
+      "end": 1745.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the people that actually did not agree with that regulatory solution,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 1745.49,
+      "end": 1746.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 1746.61,
+      "end": 1756.99,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "just... stayed with the old model, with the old protocol, and that was what the Ethereum Classic fork is. And now there is this similar question around the parity bug. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 1756.99,
+      "end": 1758.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 1758.09,
+      "end": 1763.81,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we going to recover the funds that are frozen within the Ethereum blockchain?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 1765.66,
+      "end": 1766.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 1766.28,
+      "end": 1770.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "what is the procedure that needs to be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 1770.02,
+      "end": 1771.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "followed",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 1771.08,
+      "end": 1773.28,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "in order for such a decision to be made?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 1774.81,
+      "end": 1775.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 1775.13,
+      "end": 1787.59,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is no, on the one hand, there is no external regulatory authority that will dictate this. At the same time, internally within the network, there is no formal or informal government structure",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 1787.59,
+      "end": 1788.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 1788.37,
+      "end": 1797.44,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "can actually lead to figure out what is the right process to follow in order to decide whether or not to modify the protocol.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 1797.58,
+      "end": 1797.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 1798.97,
+      "end": 1799.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 1799.59,
+      "end": 1815.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "it's, there's both nothing coming in from the outside and it is, and this is up for debate in various ways, but it's not like there's a clear step-by-step process that says, okay, something happened, here's the process that we'll go through in order to determine if, you know, the parody team could, should get their money back or what have you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 1817.43,
+      "end": 1822.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "So with that, we've talked a lot about this kind of global side of blockchain and how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 1822.41,
+      "end": 1822.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 1822.89,
+      "end": 1823.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "disintermediation",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 1823.91,
+      "end": 1824.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "makes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 1824.51,
+      "end": 1829.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "things kind of awkward and how like the transnational nature of it can make it awkward for who you regulate.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 1830.35,
+      "end": 1830.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Some",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 1830.79,
+      "end": 1865.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "of the other affordances of blockchain are like the transparent. And you go into, when I think about the book that you wrote, it is. It's essentially taking some of these affordances, the global nature, the fact that things are transparent when they're on the blockchain, that things must happen when they're on the blockchain, like with smart contracts, essentially taking those core axioms or concepts or affordances and then pushing them into different realms and saying, okay, when we take this transparency view, what happens when we put it in the financial market or what happens when we put it in organizations or whatever? So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 1865.01,
+      "end": 1865.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 1865.69,
+      "end": 1868.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "there other, I guess the question I want to ask is, Are there other",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 1868.65,
+      "end": 1870.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "affordances",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 1870.41,
+      "end": 1881.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "of blockchain besides transparency or the kind of fact that things must happen or the global nature that are in addition to those things that we need to think about?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 1884.53,
+      "end": 1885.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 338,
+      "start": 1885.69,
+      "end": 1890.31,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "mean, basically, that's actually, that's pretty much, I mean, the blockchain is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 339,
+      "start": 1890.31,
+      "end": 1890.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 340,
+      "start": 1890.87,
+      "end": 1896.07,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a centralized database and then, which has particular features such as transparency.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 341,
+      "start": 1899.14,
+      "end": 1906.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "almost immutability, incorruptibility and resiliency, right? And then you can build whatever you want on top of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 342,
+      "start": 1906.02,
+      "end": 1908.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "those. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 343,
+      "start": 1908.0,
+      "end": 1912.76,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you can create better auditability of system, you can create",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 344,
+      "start": 1912.76,
+      "end": 1914.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "smart",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 345,
+      "start": 1914.96,
+      "end": 1916.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "contracts that are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 346,
+      "start": 1916.02,
+      "end": 1916.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "self",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 347,
+      "start": 1916.64,
+      "end": 1931.33,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "-executing and that will always comply with the particular with the particular code, lines of code that have been embedded into it. So you have this guarantee of execution, which is also something quite important.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 348,
+      "start": 1933.15,
+      "end": 1939.69,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "In some way, you can kind of like categorize perhaps the different application that can be built on the blockchain with like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 349,
+      "start": 1939.69,
+      "end": 1940.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 350,
+      "start": 1940.21,
+      "end": 1949.01,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that is the basic financial applications, so cryptocurrency and so forth, which is basically taking advantage of this particular decentralized ledger",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 351,
+      "start": 1949.01,
+      "end": 1949.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 352,
+      "start": 1949.67,
+      "end": 1950.63,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a way to,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 353,
+      "start": 1950.81,
+      "end": 1951.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "uh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 354,
+      "start": 1952.24,
+      "end": 1953.62,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "update accounts",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 355,
+      "start": 1953.62,
+      "end": 1954.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 356,
+      "start": 1954.3,
+      "end": 1956.3,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a way that cannot be cheated",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 357,
+      "start": 1956.3,
+      "end": 1957.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "upon.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 358,
+      "start": 1957.4,
+      "end": 1964.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Then there is the second category, which is more about the registries. So it's using blockchain technologies as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 359,
+      "start": 1964.14,
+      "end": 1964.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 360,
+      "start": 1964.78,
+      "end": 1970.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "way to record information and basically to identify who has done what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 361,
+      "start": 1970.14,
+      "end": 1970.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 362,
+      "start": 1970.66,
+      "end": 1970.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 363,
+      "start": 1970.9,
+      "end": 1971.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 364,
+      "start": 1971.7,
+      "end": 1974.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a way that cannot actually be repudiated",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 365,
+      "start": 1974.9,
+      "end": 1975.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 366,
+      "start": 1975.56,
+      "end": 1976.6,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that cannot be manipulated.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 367,
+      "start": 1976.94,
+      "end": 1977.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 368,
+      "start": 1977.62,
+      "end": 1986.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "then the third part is obviously the more. complex and sophisticated system, which is like the smart contracts, which is creating actual applications which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 369,
+      "start": 1986.73,
+      "end": 1987.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 370,
+      "start": 1987.55,
+      "end": 1993.31,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "not controlled by anyone and therefore cannot be influenced or stopped, and that come with this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 371,
+      "start": 1993.31,
+      "end": 1994.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "guarantee",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 372,
+      "start": 1994.57,
+      "end": 1999.79,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "execution, that whatever has been codified into it will be executed in that way.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 373,
+      "start": 1999.91,
+      "end": 2000.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 374,
+      "start": 2000.59,
+      "end": 2009.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "those are like the three macro categories that we can come up with through by simply using these. decentralized ledger technology.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 375,
+      "start": 2009.66,
+      "end": 2024.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I like that. And I think that, and you said something also up there, which was like, hey, in addition to the transparency or the guaranteed execution piece, there's also that immutability and kind of resiliency piece where both things must happen and you can't go back in time on things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 376,
+      "start": 2025.74,
+      "end": 2026.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 377,
+      "start": 2026.18,
+      "end": 2030.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "so one thing that I'd love to talk about for a quick bit here is this idea.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 378,
+      "start": 2031.54,
+      "end": 2031.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "When",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 379,
+      "start": 2031.96,
+      "end": 2060.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "you think about, there's the financial side, there's the registry side, and then there's this. this smart contract things can't be controlled side. And you guys bring up, there's lots of issues when you start to say, oh, when there's guaranteed execution, that creates for some awkward scenarios for regulatory frameworks. Let's actually start on talking about that with this idea of this plantoid. So could you talk about what this plantoid is and how it's an example of this guaranteed execution?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 380,
+      "start": 2061.94,
+      "end": 2062.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 381,
+      "start": 2062.58,
+      "end": 2067.05,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so the plantoe is actually a way to illustrate. um a DAO",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 382,
+      "start": 2067.05,
+      "end": 2067.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 383,
+      "start": 2067.79,
+      "end": 2070.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so you have the smart contracts and then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 384,
+      "start": 2070.35,
+      "end": 2071.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "whenever",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 385,
+      "start": 2071.39,
+      "end": 2074.17,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a smart contract is designed a particular way as to be like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 386,
+      "start": 2074.17,
+      "end": 2074.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "fully",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 387,
+      "start": 2074.77,
+      "end": 2078.19,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "autonomous so that there is no one that can actually can control the smart contract",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 388,
+      "start": 2078.19,
+      "end": 2079.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 389,
+      "start": 2079.25,
+      "end": 2080.05,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 390,
+      "start": 2080.05,
+      "end": 2080.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 391,
+      "start": 2080.99,
+      "end": 2084.09,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is called somehow a decentralized autonomous organization of DAO",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 392,
+      "start": 2084.09,
+      "end": 2085.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 393,
+      "start": 2085.15,
+      "end": 2085.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 394,
+      "start": 2085.53,
+      "end": 2086.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 395,
+      "start": 2086.27,
+      "end": 2097.41,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I spent a lot of time trying to explain DAO's to various people including many lawyers and so forth. And it's really difficult. I mean, now people are more aware of this, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 396,
+      "start": 2097.41,
+      "end": 2098.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "back",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 397,
+      "start": 2098.11,
+      "end": 2106.19,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "in 2015, it was quite a novel concept. So the plantoid is kind of an artistic experiment",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 398,
+      "start": 2106.19,
+      "end": 2107.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 399,
+      "start": 2107.17,
+      "end": 2112.33,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "illustrate in the physical world, to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 400,
+      "start": 2112.33,
+      "end": 2112.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "illustrate",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 401,
+      "start": 2112.63,
+      "end": 2118.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the functioning of a Tao through a physical piece.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 402,
+      "start": 2120.57,
+      "end": 2123.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So the plantoid is a blockchain-based life",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 403,
+      "start": 2123.37,
+      "end": 2125.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "form, which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 404,
+      "start": 2125.07,
+      "end": 2146.49,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "means that it's a particular algorithmical entity, which is autonomous in the sense that it cannot be controlled by anyone. It is self-sufficient because it can collect all the resources that it needs for its own survival. And then, of course, like every other life farm, it is also capable of reproducing itself.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 405,
+      "start": 2148.43,
+      "end": 2148.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 406,
+      "start": 2148.79,
+      "end": 2166.19,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the way to ask is basically just like this metallic sculpture of a plant. So it's like an Android version of a plant, the plantide, that collects funds through cryptocurrencies. And then whenever it has collected sufficient amount of funds, it opened a call for bids",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 407,
+      "start": 2166.19,
+      "end": 2167.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 408,
+      "start": 2167.09,
+      "end": 2167.45,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 409,
+      "start": 2167.45,
+      "end": 2168.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 410,
+      "start": 2168.31,
+      "end": 2170.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "can submit propositions as to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 411,
+      "start": 2170.29,
+      "end": 2170.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 412,
+      "start": 2170.95,
+      "end": 2172.13,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "they envision to create",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 413,
+      "start": 2172.13,
+      "end": 2172.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 414,
+      "start": 2172.81,
+      "end": 2174.13,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "ex-version of the plantoid.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 415,
+      "start": 2174.54,
+      "end": 2175.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 416,
+      "start": 2175.04,
+      "end": 2178.94,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "then whoever has actually participated into the funding",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 417,
+      "start": 2178.94,
+      "end": 2180.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 418,
+      "start": 2180.0,
+      "end": 2185.0,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that plantoid that is reproducing itself, they have ability to vote",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 419,
+      "start": 2185.0,
+      "end": 2186.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 420,
+      "start": 2186.1,
+      "end": 2189.74,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the various propositions that have been submitted. And then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 421,
+      "start": 2189.9,
+      "end": 2191.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "once",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 422,
+      "start": 2191.24,
+      "end": 2200.24,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a particular proposition has been identified, then the plantoid will then use the funds that it has collected so far",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 423,
+      "start": 2200.24,
+      "end": 2200.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 424,
+      "start": 2200.88,
+      "end": 2209.42,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "order to hire. the author of that proposition, so a new artist essentially to create a replica of itself.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 425,
+      "start": 2211.13,
+      "end": 2219.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And the idea with this is really to just show how it is possible to actually use this concept of a DAO",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 426,
+      "start": 2219.35,
+      "end": 2220.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 427,
+      "start": 2220.19,
+      "end": 2231.11,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "order to, well in this case it's for an artistic creation, but just to actually coordinate people around the making of something.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 428,
+      "start": 2231.71,
+      "end": 2241.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I think it's so cool. And I actually didn't know until I Googled it earlier today that you were the, when I read the book, I was like, oh my God, this is cool, but you were actually the creator of it. Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 429,
+      "start": 2243.07,
+      "end": 2243.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, or you're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 430,
+      "start": 2243.69,
+      "end": 2262.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "at least in a lot of the pictures online. So, yeah, it's this crazy. It's like a little bot. And if you look online and go to, you know, if you just Google plantoid, you'll find it. And there's all these pictures, these beautiful pictures of this plant. And as you say, it's kind of. Awesome. And I think it's a, you did a smart thing by making a,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 431,
+      "start": 2262.72,
+      "end": 2262.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 432,
+      "start": 2262.9,
+      "end": 2282.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "physical representation. And then it makes easier to say, look, we have this physical representation. People pay it. And then it then, you know, solicits various. people, various projects, and various submissions, and then the voters vote on which ones it should do, and then the plantoid itself actually pays them. So it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 433,
+      "start": 2282.05,
+      "end": 2282.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 434,
+      "start": 2282.53,
+      "end": 2295.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "of weird. It's, I feel like it's one of the first times that we've been paid by robots to do stuff. But it is, and I think that there's another, when it's in this beautiful plantoid form,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 435,
+      "start": 2295.51,
+      "end": 2296.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 436,
+      "start": 2296.11,
+      "end": 2300.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of nice. It's like a nice little internet, cool cypherpunk kind of thing,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 437,
+      "start": 2301.11,
+      "end": 2301.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 438,
+      "start": 2301.77,
+      "end": 2313.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Could you kind of talk about how the plantoid is maybe an example of, like no one really wants to regulate the plantoid. It's like a beautiful little plant metal thing on the internet. Tell me how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 439,
+      "start": 2313.65,
+      "end": 2314.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 440,
+      "start": 2314.33,
+      "end": 2322.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "are thinking about how the underlying concepts behind the plantoid might be difficult in the future as governments try to regulate DAOs and DAO-like things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 441,
+      "start": 2324.23,
+      "end": 2324.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 442,
+      "start": 2324.79,
+      "end": 2335.62,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I mean, but it just goes back to the traditional issue around those autonomous system is that, there is a distinction between",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 443,
+      "start": 2335.62,
+      "end": 2336.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 444,
+      "start": 2336.76,
+      "end": 2337.54,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "legal world",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 445,
+      "start": 2337.54,
+      "end": 2338.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 446,
+      "start": 2338.32,
+      "end": 2339.1,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the crypto world.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 447,
+      "start": 2340.08,
+      "end": 2341.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 448,
+      "start": 2341.26,
+      "end": 2354.08,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "plantoid actually illustrate it nicely, but it's just a generic issue that we encounter in every case, which is, so for instance, property rights, they are defined by the laws",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 449,
+      "start": 2354.08,
+      "end": 2355.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 450,
+      "start": 2355.08,
+      "end": 2358.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "therefore they also can be taken away through the law.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 451,
+      "start": 2360.18,
+      "end": 2364.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the government can decide to seize the property of someone",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 452,
+      "start": 2364.02,
+      "end": 2365.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 453,
+      "start": 2365.56,
+      "end": 2369.74,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is considered that this property has been stolen or has been acquired illegitimately,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 454,
+      "start": 2370.06,
+      "end": 2371.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 455,
+      "start": 2371.7,
+      "end": 2374.84,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "means that the recognition of the property right",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 456,
+      "start": 2374.84,
+      "end": 2375.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 457,
+      "start": 2375.84,
+      "end": 2377.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "dependent on the legal system.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 458,
+      "start": 2378.42,
+      "end": 2379.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "When",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 459,
+      "start": 2379.14,
+      "end": 2387.4,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we move into the crypto world, we now have digital assets, and those assets are actually defined by the code.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 460,
+      "start": 2387.98,
+      "end": 2388.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 461,
+      "start": 2388.52,
+      "end": 2390.04,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "therefore they can only be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 462,
+      "start": 2390.49,
+      "end": 2391.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "transferred",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 463,
+      "start": 2391.81,
+      "end": 2393.77,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "or taken away through the code,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 464,
+      "start": 2393.91,
+      "end": 2394.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 465,
+      "start": 2394.51,
+      "end": 2395.11,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "means that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 466,
+      "start": 2395.11,
+      "end": 2395.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 467,
+      "start": 2395.81,
+      "end": 2399.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "some extent there is a discrepancy between ownership",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 468,
+      "start": 2399.85,
+      "end": 2400.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 469,
+      "start": 2400.79,
+      "end": 2401.65,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the legal sense",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 470,
+      "start": 2401.65,
+      "end": 2402.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 471,
+      "start": 2402.51,
+      "end": 2404.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "technical ownership of an asset.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 472,
+      "start": 2404.97,
+      "end": 2405.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 473,
+      "start": 2405.67,
+      "end": 2408.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "in the case of the plantoid, for instance,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 474,
+      "start": 2410.39,
+      "end": 2449.51,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it is the way the smart contract is designed, it is actually impossible to... take away the funds of the plantoid, even if there was a legal suit against the plantoid for whatever reason, and it was held that the plantoid have to pay some damages. And the plantoid, everybody knows that the plantoid has that particular funds into its account, but because the smart contract has not been codified to actually account for any external entity to actually decide to transfer those funds, except within that particular procedure",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 475,
+      "start": 2449.51,
+      "end": 2450.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 476,
+      "start": 2450.43,
+      "end": 2453.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "selecting a proposal and funding that proposal, then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 477,
+      "start": 2453.67,
+      "end": 2455.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 478,
+      "start": 2455.05,
+      "end": 2456.97,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "legal system does not really have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 479,
+      "start": 2456.97,
+      "end": 2457.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "much",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 480,
+      "start": 2457.75,
+      "end": 2465.95,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "power, even if legally we can say that the planetoid might not own those funds.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 481,
+      "start": 2466.13,
+      "end": 2466.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Technically,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 482,
+      "start": 2467.31,
+      "end": 2470.05,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "there is actually no way to take them away from the plantoid.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 483,
+      "start": 2470.75,
+      "end": 2471.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 484,
+      "start": 2471.15,
+      "end": 2475.17,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so the interesting thing, and this is a general problem, is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 485,
+      "start": 2475.17,
+      "end": 2476.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 486,
+      "start": 2476.24,
+      "end": 2479.72,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are actually entering into this concept of, like, crypto law",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 487,
+      "start": 2479.72,
+      "end": 2480.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 488,
+      "start": 2480.66,
+      "end": 2481.76,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "crypto property,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 489,
+      "start": 2483.64,
+      "end": 2483.92,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 490,
+      "start": 2483.92,
+      "end": 2484.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 491,
+      "start": 2484.92,
+      "end": 2487.6,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "traditional legal system has a hard time",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 492,
+      "start": 2487.6,
+      "end": 2488.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "actually",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 493,
+      "start": 2488.42,
+      "end": 2489.78,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "affecting or influencing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 494,
+      "start": 2489.78,
+      "end": 2492.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 495,
+      "start": 2492.2,
+      "end": 2495.58,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that happen within these Lex cryptographica framework.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 496,
+      "start": 2496.07,
+      "end": 2496.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 497,
+      "start": 2496.83,
+      "end": 2506.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "I think that that's a great example and very clearly said. It's like, look, oh, the plantoid accidentally did something wrong or whatever. It like hurt somebody in the real world or something or needed to have.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 498,
+      "start": 2507.59,
+      "end": 2507.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 499,
+      "start": 2508.19,
+      "end": 2539.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "it's like, hey, there are damages that it needs to pay. Well, it's like, hey, we can't make it pay. And as you say, you kind of have to work within like scriptagraphica and say, hey. we need to, if you wanted it to pay, you might need to, like, have it pay through the Dow voting style system, you know, or so it would be, it would be a very awkward kind of thing because, yeah, you can't, yeah, it is, smart contracts make for that kind of execution that, uh, yeah, it can only happen in one way and there's not,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 500,
+      "start": 2539.88,
+      "end": 2540.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 501,
+      "start": 2540.16,
+      "end": 2543.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "know, loose room around the edges for different things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 502,
+      "start": 2544.02,
+      "end": 2544.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 503,
+      "start": 2544.44,
+      "end": 2556.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "with that, I mean, so we'll talk more about the book at the very, very end, but it's, as you can see, there's a lot of different ways based off of those core underlying things that Prima Vera and I have talked about,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 504,
+      "start": 2556.5,
+      "end": 2556.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 505,
+      "start": 2556.76,
+      "end": 2568.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of pattern matches into a bunch of different worlds. And then when you think about how governments and other kind of big institutions want to actually work with it and regulate it, it makes it more complicated, but also,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 506,
+      "start": 2569.64,
+      "end": 2570.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "As",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 507,
+      "start": 2570.0,
+      "end": 2584.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Primavera said, there's lots of different kind of choke points and stakeholders that you can kind of work around and work with those four different pathetic dot theory things to kind of incentivize the system or regulate the system for good or what have you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 508,
+      "start": 2584.42,
+      "end": 2584.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 509,
+      "start": 2584.76,
+      "end": 2589.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "with that, we're going to transition into for just a couple minutes here",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 510,
+      "start": 2589.12,
+      "end": 2589.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "into",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 511,
+      "start": 2589.66,
+      "end": 2599.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "one of Primavera's other things, which is Dow Stack, which is a platform, essentially a platform to build Dow's. So Primavera, could you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 512,
+      "start": 2599.5,
+      "end": 2599.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "give",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 513,
+      "start": 2599.72,
+      "end": 2604.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "us kind of an overview on Dowstack, maybe why you're an advisor, and then we'll go from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 514,
+      "start": 2604.6,
+      "end": 2605.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 515,
+      "start": 2607.36,
+      "end": 2608.4,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah, sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 516,
+      "start": 2609.93,
+      "end": 2612.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So, I mean, Dowstack is a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 517,
+      "start": 2612.29,
+      "end": 2613.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "long",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 518,
+      "start": 2613.55,
+      "end": 2619.83,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "project, and it's an interaction of many, many different",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 519,
+      "start": 2619.83,
+      "end": 2622.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "experiments",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 520,
+      "start": 2623.78,
+      "end": 2631.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and attempts as actually creating, you know, an easy framework in order to help people build.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 521,
+      "start": 2632.85,
+      "end": 2635.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "without having to start from scratch all the time. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 522,
+      "start": 2635.85,
+      "end": 2637.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 523,
+      "start": 2637.05,
+      "end": 2646.81,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "usual analogy is a little bit like the WordPress for DAWS. So in the same way as today, we don't need to start and code",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 524,
+      "start": 2646.81,
+      "end": 2647.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "website",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 525,
+      "start": 2647.65,
+      "end": 2653.21,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "from scratch. We can just use platforms like WordPress in which we just have different modules and different templates",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 526,
+      "start": 2653.21,
+      "end": 2653.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 527,
+      "start": 2653.71,
+      "end": 2654.91,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we can just plug them together",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 528,
+      "start": 2654.91,
+      "end": 2655.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 529,
+      "start": 2655.63,
+      "end": 2668.83,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "order to actually have a website done very easily. by leveraging the benefits of this open ecosystem of different people providing different plugins and different templates for the platform.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 530,
+      "start": 2669.15,
+      "end": 2669.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 531,
+      "start": 2669.79,
+      "end": 2674.57,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the idea with DAWS stack is to do the same thing but for DAWS. So instead of going",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 532,
+      "start": 2674.6,
+      "end": 2675.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "into",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 533,
+      "start": 2675.84,
+      "end": 2690.66,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "like all the different layers and building a DAO from scratch, knowing that it's actually quite difficult and quite dangerous because the code needs to be very, very secure, then DaoStag just provides those basic building blocks",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 534,
+      "start": 2690.66,
+      "end": 2691.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 535,
+      "start": 2691.78,
+      "end": 2699.76,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "anyone can just plug into the framework and anyone can provide new modules",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 536,
+      "start": 2699.76,
+      "end": 2700.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 537,
+      "start": 2700.46,
+      "end": 2710.46,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "can be added into this open repository. And then eventually as time goes, then there is kind of like a legal with more and more pieces that are actually being provided.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 538,
+      "start": 2710.74,
+      "end": 2711.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 539,
+      "start": 2711.24,
+      "end": 2715.24,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "then people can just take those legal pieces and put them together and create their own DAO.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 540,
+      "start": 2715.58,
+      "end": 2739.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that will be an exciting new future as we get these. easier like, yeah, drag and drop kind of Dow platforms. And like you said, it'll be, it's nice when the ecosystem can use code or widgets or whatever that have been tested and that have been used in the past that you know, so you don't have to spin one up yourself, especially because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 541,
+      "start": 2739.28,
+      "end": 2739.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 542,
+      "start": 2739.8,
+      "end": 2746.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "don't want more things like the Dow in the future. Instead, you want to use something that is already shown to be secure or private or what have you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 543,
+      "start": 2747.44,
+      "end": 2747.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 544,
+      "start": 2747.92,
+      "end": 2754.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of, Thinking about Dowstack and how you overlap with it, how do you see",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 545,
+      "start": 2754.09,
+      "end": 2754.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "something",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 546,
+      "start": 2754.91,
+      "end": 2764.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "like blockchain-based governance evolving? You got Dowstack, you have Aragon, you have things like colony and what have you. Where do you see this ecosystem going in the next couple years?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 547,
+      "start": 2767.35,
+      "end": 2767.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 548,
+      "start": 2767.87,
+      "end": 2773.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "mean, I hope it's going in a direction in which we actually do identify a proper governance structure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 549,
+      "start": 2775.23,
+      "end": 2785.31,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I think it's quite great. Like up to a few years ago, there was very little discussion about blockchain-based governance as to like how do we actually design",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 550,
+      "start": 2785.31,
+      "end": 2785.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "new",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 551,
+      "start": 2785.95,
+      "end": 2792.21,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "governance systems. The way I see it is that today, if we look at most of the DAOs",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 552,
+      "start": 2792.21,
+      "end": 2794.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 553,
+      "start": 2794.11,
+      "end": 2802.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the blockchain-based network that have been developed so far, there is this strong tendency towards creating market-based governance structures.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 554,
+      "start": 2802.69,
+      "end": 2803.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 555,
+      "start": 2803.21,
+      "end": 2808.01,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "reason is because this is pretty much the one thing we know",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 556,
+      "start": 2808.01,
+      "end": 2808.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 557,
+      "start": 2808.73,
+      "end": 2815.11,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is decentralized and because you create a decentralized infrastructure we also want to plug on top of it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 558,
+      "start": 2815.11,
+      "end": 2815.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 559,
+      "start": 2815.65,
+      "end": 2817.07,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the centralized governance structure",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 560,
+      "start": 2817.07,
+      "end": 2817.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 561,
+      "start": 2817.71,
+      "end": 2821.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "because we know the market-based system then that's what we use",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 562,
+      "start": 2821.37,
+      "end": 2821.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 563,
+      "start": 2821.99,
+      "end": 2823.03,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the problem is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 564,
+      "start": 2823.03,
+      "end": 2824.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "oftentimes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 565,
+      "start": 2824.41,
+      "end": 2828.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "this actually goes against the ethos of decentralization because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 566,
+      "start": 2828.85,
+      "end": 2829.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 567,
+      "start": 2829.61,
+      "end": 2835.83,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "quite easy for a market that is actually not being protected to actually evolve into",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 568,
+      "start": 2835.83,
+      "end": 2836.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 569,
+      "start": 2836.61,
+      "end": 2838.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "oligal polyistic market in order to concentrate",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 570,
+      "start": 2838.73,
+      "end": 2839.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 571,
+      "start": 2839.51,
+      "end": 2853.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "like a few powerful actors that actually have a lot of power. And so my hope and my vision and this is what motivates me to work with Dowstack",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 572,
+      "start": 2853.02,
+      "end": 2853.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 573,
+      "start": 2853.86,
+      "end": 2859.84,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that we actually need to come up with alternative government structure which are also decentralized.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 574,
+      "start": 2860.54,
+      "end": 2860.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 575,
+      "start": 2860.84,
+      "end": 2882.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "which are not, at least not exclusively based on market-based dynamics, so that we can actually provide, well, something that does not look like a plutocracy, but maybe more like a meritocracy in which we actually maintain the decentralization",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 576,
+      "start": 2882.32,
+      "end": 2883.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 577,
+      "start": 2883.14,
+      "end": 2883.82,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the governments",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 578,
+      "start": 2883.82,
+      "end": 2886.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "without",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 579,
+      "start": 2886.12,
+      "end": 2886.7,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "actually",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 580,
+      "start": 2886.7,
+      "end": 2887.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 581,
+      "start": 2887.86,
+      "end": 2893.84,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "cost. and the usual manipulation that can happen into a market-based system.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 582,
+      "start": 2894.42,
+      "end": 2909.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Exciting. So looking to move away from market-based systems and towards more kind of merit-based systems. Well, with that, we're pretty much out of time, unfortunately, but Prima Vera, thanks again so much for coming on the show today.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 583,
+      "start": 2910.5,
+      "end": 2910.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "No,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 584,
+      "start": 2910.98,
+      "end": 2911.38,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are interesting.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 585,
+      "start": 2911.76,
+      "end": 2911.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 586,
+      "start": 2911.98,
+      "end": 2916.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "and I think, so they can look for your book. If you just Google blockchain and the law",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 587,
+      "start": 2916.98,
+      "end": 2917.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 588,
+      "start": 2917.52,
+      "end": 2931.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "the internet, it's on Amazon, you can get on Kindle, you can get on hardcover, whatever. If you go to Dowstack.io, I believe, you can check out Dowstack. And Primaver is also on Twitter at YA, what is it again?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 589,
+      "start": 2933.35,
+      "end": 2933.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "What is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 590,
+      "start": 2933.91,
+      "end": 2934.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "your Twitter?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 591,
+      "start": 2934.99,
+      "end": 2936.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "A-O-E-O.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 592,
+      "start": 2937.23,
+      "end": 2939.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "What is that from, by the way?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 593,
+      "start": 2941.45,
+      "end": 2942.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 594,
+      "start": 2942.25,
+      "end": 2942.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "know. Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 595,
+      "start": 2945.41,
+      "end": 2956.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "I hope it's not a bad reason. So you can find her on Twitter there. And I would say that for me personally, I've read a couple of a bunch of various blockchain books. And this blockchain, the law book honestly, was...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 596,
+      "start": 2957.5,
+      "end": 2957.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 597,
+      "start": 2957.62,
+      "end": 2967.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "mean, if you're thinking about, it's not just for lawyers. Like, I don't find myself in the kind of law space very often, but when you just think about law, it allows you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 598,
+      "start": 2967.2,
+      "end": 2967.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 599,
+      "start": 2967.82,
+      "end": 2999.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "unbox a lot of these kind of interesting, um, aspects of blockchains. And I think that, uh, Prima Bear and Aaron do a really good job of it. And so it's kind of more at the intermediate level, more at the kind of pattern matching from history and Lawrence Lessig kind of level. Um, so I would definitely recommend it to my listeners. Um, and one final note is if you want to support me, you can go to patreon.com slash resellandmark. That's patreon.com slash r, h, Y, S L-I-N-D-M-A-R-K. Um, or you can do so on stake tree.com slash. Eastlandmark as well. And with that, goodbye, everybody.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 600,
+    "withheld": 0,
+    "published": 600
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

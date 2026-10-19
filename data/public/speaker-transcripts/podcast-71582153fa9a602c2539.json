@@ -1,0 +1,2790 @@
+{
+  "schema_version": 1,
+  "id": "podcast-71582153fa9a602c2539",
+  "title": "Blockchain-Based Attention Economy #1: Overview",
+  "published_at": "2017-06-21T18:35:58Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/blockchain-based-attention-economy-1-overview",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/329367033-the-rhys-show-blockchain-based-attention-economy-1-overview.mp3",
+  "youtube_id": "HJb_rI1ugcU",
+  "youtube_url": "https://www.youtube.com/watch?v=HJb_rI1ugcU",
+  "audio_sha256": "d2e33f449eedefb3034b633b3fb84d7a9b74a624618b0e10509b7e39e6c3f24a",
+  "audio_duration_seconds": 943.386125,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 2652,
+    "unknown_words": 161,
+    "unknown_words_fraction": 0.06070889894419306,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.68,
+      "end": 1.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Rees",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 13.64,
+      "end": 39.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "-Lidmark, and I am working at the intersection of four things. The first is effective altruism, i.e. how can we do good in the world? The second is universal basic income, i.e., how should we allocate the scarce resource of capital? The third is the attention economy, i.e., how can we allocate the scarce resource of time? And the fourth is blockchain, which is a technology to leverage for those previous three things. And today, I want to talk about why I'm excited to work",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 39.36,
+      "end": 39.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 39.88,
+      "end": 41.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the attention economy, the third one.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 42.29,
+      "end": 42.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 42.83,
+      "end": 47.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "first off, talking about what is the attention economy. I think about it is just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 47.15,
+      "end": 47.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 47.89,
+      "end": 51.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "concept that human time, that the time that humans have in the world is scarce",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 51.83,
+      "end": 53.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 53.29,
+      "end": 64.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "how should we allocate that scarce resource. There's only 24 hours in a day, usually sleeping for eight of them. And so for those other 16, what was the incentive system",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 64.43,
+      "end": 64.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 64.93,
+      "end": 68.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "how that attention and where that attention is placed?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 69.82,
+      "end": 70.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 70.24,
+      "end": 71.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I want to talk about essentially",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 71.34,
+      "end": 72.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 72.88,
+      "end": 87.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "bunch of things today that I am excited to work on in the space. I'm not going to go deep on any of them, but I'm going to talk about them at a high level and to be continued essentially in future talks and podcasts. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 87.54,
+      "end": 88.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 88.62,
+      "end": 90.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "first one is this concept",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 90.84,
+      "end": 91.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 91.46,
+      "end": 92.42,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "scarce capital",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 92.42,
+      "end": 93.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "into",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 93.16,
+      "end": 94.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "scarce attention. And what that means",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 94.66,
+      "end": 95.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 96.12,
+      "end": 108.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "There's a concept pushed by people in the technological unemployment space, in the universal basic income space, and in, you know, someone like Albert Wenger at Union Square Ventures with his book, The World After Capital, where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 108.82,
+      "end": 109.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 109.58,
+      "end": 112.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "think we're going to experience a nonlinear jump",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 112.0,
+      "end": 112.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 112.68,
+      "end": 114.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a world.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 114.52,
+      "end": 114.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "up",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 114.52,
+      "end": 128.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "until now, which has been world where capital was scarce where factories and money and things of that, variety, were scarce. And we think that we're going to be transitioning as a result of something like automation into a world where attention or our time is scarce",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 128.48,
+      "end": 129.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 129.04,
+      "end": 138.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "capital is no longer scarce. And so this is an exciting transition because... we haven't experienced these jumps very often. You know, one of the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 138.68,
+      "end": 139.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "industrial",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 139.4,
+      "end": 147.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "revolution was one before that was like the agricultural revolution, which was food scarcity into land scarcity. So I think that there's going to be some really interesting work in the space",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 147.74,
+      "end": 149.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 149.1,
+      "end": 154.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we find this transition between a world where capital was scarce and a world where attention is scarce.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 154.74,
+      "end": 155.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 155.08,
+      "end": 157.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's one thing that I'm excited to work on. The second",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 157.56,
+      "end": 158.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "reason",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 158.42,
+      "end": 160.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "why I'm excited to work in the space is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 160.1,
+      "end": 161.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 162.04,
+      "end": 164.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Um, the attention economy is essentially",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 164.02,
+      "end": 164.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 164.64,
+      "end": 172.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "abstracted or a meta kind of solve, um, for all other projects that one could work on. What I mean by that is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 172.22,
+      "end": 172.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 172.6,
+      "end": 178.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, I was thinking about, ah, do I want to make something in the learning space, you know, some kind of Khan Academy on the blockchainer. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 178.56,
+      "end": 179.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 179.1,
+      "end": 180.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "thing, though, is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 180.02,
+      "end": 180.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 180.38,
+      "end": 194.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you start to think about Khan Academy on the blockchain or something of that variety, you start to then say, well, Should we just evaluate how people are spending their time generally? Not necessarily. How are people spending their time in a specific learning application? And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 194.28,
+      "end": 195.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 195.06,
+      "end": 195.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "like that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 195.84,
+      "end": 196.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 196.36,
+      "end": 208.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "attention economy essentially is the most abstracted version that says, hey, how do we actually spend our time? Whether it's learning, whether it's fun, whatever it may be on how do we spend our time in the world? I think that's a big question.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 210.14,
+      "end": 212.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The Third",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 212.06,
+      "end": 214.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "thing that I'm excited by with the space is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 214.34,
+      "end": 214.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 214.96,
+      "end": 216.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of defining and excited talk about is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 216.86,
+      "end": 218.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "previously",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 218.28,
+      "end": 224.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "thus far a lot of people in the space have kind of thought of the attention economy as the inputs and what I mean by that is kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 224.9,
+      "end": 225.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 225.24,
+      "end": 226.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what you're consuming",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 227.81,
+      "end": 230.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And people talk about things like Google and Facebook and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 230.93,
+      "end": 231.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "something",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 231.61,
+      "end": 234.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "like, you know, steam it and how we are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 234.73,
+      "end": 235.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "essentially,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 235.97,
+      "end": 248.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what do we consume on the internet? What are the incentives for how we consume and how do we get value for our time and attention? That's something that people talk about a lot, but something that people don't talk about too much in this space",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 248.59,
+      "end": 249.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 249.31,
+      "end": 251.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the output of our time. And what I mean by that is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 251.79,
+      "end": 252.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 252.33,
+      "end": 252.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of the,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 253.51,
+      "end": 253.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 253.77,
+      "end": 255.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, what are people creating with their time?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 256.54,
+      "end": 257.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "People",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 257.0,
+      "end": 268.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "in the attention come here kind of going in between there with the concept of curation and curating the infinite amount of content that's on the internet. But this concept of the output",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 268.04,
+      "end": 269.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 269.38,
+      "end": 272.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "your time and attention is something that people don't often talk about.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 272.9,
+      "end": 273.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 273.24,
+      "end": 285.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so I'm excited to dive deeper into stuff like the future of work, things on the blockchain like colony.io, and also things like conceptualizing, okay, if I'm going to be working on something.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 285.52,
+      "end": 285.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 285.86,
+      "end": 293.42,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "should I work on? And you can connect that to some of these like effective altruist cause selection principles around",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 293.42,
+      "end": 294.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "global",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 294.08,
+      "end": 299.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "priorities research or, you know, artificial intelligence and things of that variety. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 299.52,
+      "end": 300.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 300.04,
+      "end": 301.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "something that I'm excited by is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 301.02,
+      "end": 301.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thinking",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 301.9,
+      "end": 305.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "about not just the inputs, but also the outputs of our time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 305.98,
+      "end": 306.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "How",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 306.5,
+      "end": 309.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "do we consume? How do we curate and how do we create?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 310.64,
+      "end": 311.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 311.16,
+      "end": 313.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "third thing or the fourth thing that I'm excited by",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 313.22,
+      "end": 313.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 313.76,
+      "end": 320.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is this concept of a new language that we can incentivize through the blockchain. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 320.3,
+      "end": 321.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 321.28,
+      "end": 322.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "idea essentially is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 322.7,
+      "end": 324.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 324.84,
+      "end": 327.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "right now the blockchain is something that is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 328.3,
+      "end": 329.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 329.18,
+      "end": 364.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "provides new network effect incentives that allow for financial incentive at the beginning of a new network, and that allows you to essentially break down some of the bigger network effects of something like... Facebook where you say, hey, join my new, my new social network. And in the past, you would say, no, you have no one on your social network and there's no incentive for me to join at the beginning. I'll join later. But now you have an incentive to say, oh, I am going to join early because the token to access the utility value of the network will appreciate and value",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 364.1,
+      "end": 364.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 364.5,
+      "end": 368.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the beginning. And I, as an early adopter, am actually incentivized to appreciate it in value.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 370.1,
+      "end": 370.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 370.5,
+      "end": 378.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this concept of leveraging blockchain-based network effects to break aggregation theory and old-school network effects",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 378.59,
+      "end": 378.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 378.99,
+      "end": 389.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "something I'm excited by. People are talking about it a lot in the attention economy space around things like Google and Facebook and making new network graphs and open network graphs that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 389.07,
+      "end": 389.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 389.41,
+      "end": 391.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "break those old network",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 391.17,
+      "end": 391.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "effects.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 392.13,
+      "end": 401.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "However, something that people don't often talk about is other things in the real world that have big network effects and something like the English language has a massive network effect right",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 401.94,
+      "end": 402.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "now.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 403.14,
+      "end": 404.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And so I'm excited to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 404.46,
+      "end": 406.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 406.54,
+      "end": 414.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "use blockchain-based crypto-economics and incentive structures to incentivize",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 414.48,
+      "end": 414.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 414.96,
+      "end": 429.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "new language wherein, you know, people have done constructed languages for a while. People have tried things like Esperanto, but there's no, essentially, advantage to doing those things. And the reason why people try them was for good reason. I mean, it takes 100 hours to learn Esperanto versus like 1,500 hours",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 429.54,
+      "end": 430.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 430.0,
+      "end": 430.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "something like German",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 430.76,
+      "end": 431.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 431.36,
+      "end": 431.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Russian.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 433.38,
+      "end": 435.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And so, and right now we're in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 435.24,
+      "end": 435.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 436.18,
+      "end": 449.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we're in a globalized world without a truly fully global language and one that, also a language that was, whether it's Chinese or English or whatever, was created a long, long time ago. So when people have tried these constructed languages like Esperanto, they've generally failed.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 449.68,
+      "end": 450.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 450.0,
+      "end": 454.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "but we may be able to create and incentivize new language creation",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 454.3,
+      "end": 454.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 454.9,
+      "end": 456.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and really leverage uh",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 456.56,
+      "end": 456.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 456.98,
+      "end": 459.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "power of blockchain to get people into it and also leverage",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 459.54,
+      "end": 460.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 460.94,
+      "end": 465.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "really a digital first language that um really uses kind of the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 465.92,
+      "end": 466.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "maybe",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 466.48,
+      "end": 470.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the three-dimensional capacity of something like a computer to do visual thought",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 470.64,
+      "end": 472.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 472.22,
+      "end": 473.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "may do we may be able to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 473.64,
+      "end": 474.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 474.68,
+      "end": 477.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of something that people are talking a lot about in the AI world is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 477.24,
+      "end": 477.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 477.76,
+      "end": 478.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "can we get",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 478.4,
+      "end": 479.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 479.83,
+      "end": 483.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "AIs to have a metal layer on top of them that allows them to talk",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 483.75,
+      "end": 484.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 484.31,
+      "end": 489.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "humans about what they're doing because deep learning is very confusing. So maybe a new language",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 489.75,
+      "end": 490.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "would",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 490.45,
+      "end": 504.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "be able to kind of lessen that gap between something like AI's talking to us about their deep learning or us talking to AIs through something like Amazon Alexa Echo.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 505.21,
+      "end": 505.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 505.73,
+      "end": 514.41,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's the thing I'm excited by. And then the final point on it is something like Neurrelink Elon Musk's new venture is very related to this in terms of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 514.43,
+      "end": 515.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 515.63,
+      "end": 520.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, he's very excited by it as a way for us to have less lossy communication.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 521.53,
+      "end": 522.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 522.05,
+      "end": 524.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "at the highest level with all of this, it is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 524.61,
+      "end": 525.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 525.09,
+      "end": 526.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "concept within the attention economy that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 526.98,
+      "end": 527.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "our",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 527.26,
+      "end": 529.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "attention is scarce and so we should make sure that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 529.92,
+      "end": 530.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 530.48,
+      "end": 532.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "language of communication that we're using",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 532.3,
+      "end": 534.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 534.18,
+      "end": 537.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "essentially efficient as possible that you can learn it really quickly",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 537.38,
+      "end": 537.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 537.84,
+      "end": 541.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it's really good at communicating your ideas and i think that will have the power to do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 541.78,
+      "end": 542.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 542.32,
+      "end": 543.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "with the blockchain",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 543.76,
+      "end": 544.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 544.42,
+      "end": 545.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "i'm excited by that um in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 545.98,
+      "end": 547.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "related",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 547.62,
+      "end": 548.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "point to that this fifth point",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 548.7,
+      "end": 549.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 549.2,
+      "end": 552.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this concept of scaffolding i kind of talked about scaffolding there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 552.76,
+      "end": 553.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 553.76,
+      "end": 560.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "You right now takes a long time to scaffold someone like me, an older person, into a new language. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 560.82,
+      "end": 561.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 561.3,
+      "end": 567.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the future, we may be able to have a language that has an easier scaffold. And this concept of the scaffold is something I think is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 567.92,
+      "end": 568.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 568.52,
+      "end": 573.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "little bit missed right now in the attention economy space. People talk a lot about curation.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 574.42,
+      "end": 574.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 574.86,
+      "end": 577.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "think curation is only one part of it. Curation kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 577.82,
+      "end": 578.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "misses",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 578.22,
+      "end": 582.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the aspect of time. And so the scaffold says, hey,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 582.61,
+      "end": 582.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 582.99,
+      "end": 585.63,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a person for a given person who wants to, let's say I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 585.63,
+      "end": 586.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "now",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 586.33,
+      "end": 591.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "want to learn about blockchain. I am placed on my computer. I want to learn about blockchain and essentially",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 591.99,
+      "end": 592.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 592.55,
+      "end": 615.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "would be great if I was fed. in a perfect flow scenario, like in Guitar Hero or whatever, where it's exactly as challenging as it should be at any given time, where I was essentially scaffolded into learning about blockchain. And that's not what happened for me recently. You know, when I, you know, learning about blockchain, you've got to go on Twitter and you're going on Medium and you're reading, watching videos, and you're doing all these things, and you're Googling things, and you're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 615.29,
+      "end": 615.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "going",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 615.91,
+      "end": 624.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "on Reddit, and it's not a personalized scaffold, information scaffold for yourself. So I'm excited by...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 624.24,
+      "end": 624.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 624.42,
+      "end": 626.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "concept of increasing flow",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 626.04,
+      "end": 628.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "through",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 628.2,
+      "end": 634.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "scaffolds rather than just thinking about non-time delineations through curation markets.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 636.04,
+      "end": 636.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 636.6,
+      "end": 640.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "last thing, or the second last thing, I want to talk about the sixth thing, is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 640.24,
+      "end": 640.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 640.7,
+      "end": 641.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "concept of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 641.72,
+      "end": 643.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 643.02,
+      "end": 644.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "now people are talking a lot about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 644.34,
+      "end": 644.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 644.94,
+      "end": 652.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "attention economy with respect to text, but I'm excited about it with respect to... audio um and so i'm excited",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 652.74,
+      "end": 653.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 653.44,
+      "end": 656.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know if i'm ever listening to a podcast or doing whatever i'm going to listen to it at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 656.62,
+      "end": 657.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 657.16,
+      "end": 658.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "two times speed",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 658.06,
+      "end": 659.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 659.52,
+      "end": 660.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "right now",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 660.16,
+      "end": 660.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 660.7,
+      "end": 662.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "don't have a great way to essentially to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 662.4,
+      "end": 663.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 663.18,
+      "end": 665.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a takeaways or a tlDR",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 665.08,
+      "end": 665.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 665.68,
+      "end": 668.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "audio audio kind of by nature is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 668.76,
+      "end": 669.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 669.48,
+      "end": 670.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 670.02,
+      "end": 670.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "takes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 670.74,
+      "end": 674.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "up a given amount of time and you can add to exit to half the time that's pretty good",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 674.4,
+      "end": 674.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 674.96,
+      "end": 676.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "but i'm also excited by other ways to kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 676.68,
+      "end": 676.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 677.01,
+      "end": 686.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "curate audio and not just curate text. So essentially curation markets on audio, not just text. It's something I'm excited to do. And then this last thing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 686.79,
+      "end": 687.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 687.33,
+      "end": 688.85,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think is also crucial to this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 688.85,
+      "end": 689.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 689.65,
+      "end": 690.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this concept of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 691.21,
+      "end": 692.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 692.67,
+      "end": 693.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "one spends",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 693.74,
+      "end": 694.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "their",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 694.84,
+      "end": 695.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "time",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 695.48,
+      "end": 696.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "clearly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 697.2,
+      "end": 701.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "But you have two ways to you spend your time. One is with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 701.25,
+      "end": 701.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 701.93,
+      "end": 702.65,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "who are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 702.65,
+      "end": 703.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 703.47,
+      "end": 706.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "stuff that you naturally want to do with people who are similar to you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 706.33,
+      "end": 706.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "topics",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 706.93,
+      "end": 707.91,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you're interested in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 707.91,
+      "end": 708.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 708.43,
+      "end": 712.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of that variety and I call these minimum difference or min diff kind of scenarios",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 712.61,
+      "end": 713.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hey,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 713.19,
+      "end": 715.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I want to talk with people my block or I want to talk with people who are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 715.57,
+      "end": 716.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "doing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 716.03,
+      "end": 717.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "blockchain or in the attention economy or whatever",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 717.93,
+      "end": 720.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 720.19,
+      "end": 722.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "should also make sure that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 722.59,
+      "end": 723.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "us",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 723.27,
+      "end": 731.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "as a society are also trying to empathize with people that are very different than us, kind of a max diff people.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 732.5,
+      "end": 733.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 733.02,
+      "end": 748.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so in America, you have a classic problem here with something like Republicans and Democrats who don't often interact, and their attention is put on, you know, the classic filter bubble thing and confirmation biases, rather than saying, hey, I'm actively looking to...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 748.86,
+      "end": 749.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 749.28,
+      "end": 751.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "talk with people who are dissimilar to me",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 751.0,
+      "end": 751.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 751.42,
+      "end": 753.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "America to understand their perspectives. Or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 753.3,
+      "end": 753.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 753.74,
+      "end": 754.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "actively looking to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 754.62,
+      "end": 755.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "talk",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 755.18,
+      "end": 756.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "with people in rural Kenya",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 756.34,
+      "end": 756.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 756.88,
+      "end": 759.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I can empathize more so I can understand the leverage",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 759.38,
+      "end": 760.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 760.06,
+      "end": 763.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "providing them with the universal basic income. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 763.2,
+      "end": 763.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "those",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 763.88,
+      "end": 765.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kinds of questions of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 765.22,
+      "end": 766.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 766.38,
+      "end": 772.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "to incentivize our attention for kind of max difference people, I think is something",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 772.96,
+      "end": 773.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 773.5,
+      "end": 777.19,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I'm interested by as well. So those are kind of seven things that I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 777.19,
+      "end": 777.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "interested",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 777.71,
+      "end": 779.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "by the space. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 779.39,
+      "end": 780.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "also",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 780.35,
+      "end": 786.41,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "just interested to kind of dive into a lot of the blockchain based solutions that are currently happening from the space.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 786.59,
+      "end": 786.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 786.85,
+      "end": 787.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "these are things like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 787.75,
+      "end": 788.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "21",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 788.39,
+      "end": 807.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": ".co, steam it. brave and their basic attention token, user feeds.io and the related kind of curation markets by Simon de la Uruguay, Scenario with their AMP token, yours, which is kind of a medium based on the blockchain. And then also some stuff that's adjacent to this is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 807.86,
+      "end": 808.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "these",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 808.54,
+      "end": 837.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "new fake news, things that are trying to break fake news like the decentralized news network or hyperrelated, they're not necessarily on the blockchain, but still distributed Wiki Tribune, which was put out by Jimmy Wales, the creator of Wikipedia. And then finally, I'm excited to talk more about time well spent, which is a, again, not blockchain based, but I think it could have lots of blockchain overlap. And time well spent is the idea of How can we make sure that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 837.27,
+      "end": 837.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 837.67,
+      "end": 845.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "are not just being hooked and addicted to our phones, because that's what someone like Facebook is optimized for, is just our",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 845.53,
+      "end": 846.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "time",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 846.05,
+      "end": 852.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and attention, and how we make sure that we spend our time well. So I think the time well spent movement",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 852.09,
+      "end": 852.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 852.61,
+      "end": 853.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "something that I'm also excited by.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 855.44,
+      "end": 858.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So thank you so much for your time. Hope you enjoyed that kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 858.44,
+      "end": 858.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "high",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 858.92,
+      "end": 859.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "-level look at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 859.6,
+      "end": 860.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "some",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 860.16,
+      "end": 862.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of the work in the attention economy space.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 863.08,
+      "end": 863.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 863.32,
+      "end": 871.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I'm excited to do. And also, you know, if you're thinking about what the call to actions are for yourself, first off, you can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 871.96,
+      "end": 873.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "work",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 873.02,
+      "end": 890.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "in the attention economy space with any of these various companies that I talked about. You can also work at this kind of higher level in between the attention economy, actual companies that are being started. So there's like a Reddit that I just created, R-slash the attention economy, which you can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 890.32,
+      "end": 891.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "join",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 891.1,
+      "end": 892.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and start to contribute to.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 892.99,
+      "end": 893.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 893.39,
+      "end": 894.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "also you can always support me",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 894.43,
+      "end": 894.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 894.91,
+      "end": 897.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "my Patreon. I have a,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 897.47,
+      "end": 897.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'll",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 897.73,
+      "end": 898.05,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "be talking",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 898.05,
+      "end": 898.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "more",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 898.95,
+      "end": 909.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "about the attention economy, and those other three things I mentioned earlier. Effective altruism, universal basic income and the blockchain. And I have a self-imposed universal basic income",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 909.39,
+      "end": 909.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 909.89,
+      "end": 919.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of effective altruist cap. So the first thousand dollars goes to me, but after that, it kind of gets divided between me. and effective altruist organizations. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 919.82,
+      "end": 920.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thank",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 920.62,
+      "end": 925.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you so much again for your time and excited to dive deeper on other attention economy aspects going forward.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 925.88,
+      "end": 926.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Bye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 304,
+    "withheld": 0,
+    "published": 304
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

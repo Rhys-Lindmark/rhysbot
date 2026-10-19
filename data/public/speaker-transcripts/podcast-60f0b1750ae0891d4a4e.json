@@ -1,0 +1,1512 @@
+{
+  "schema_version": 1,
+  "id": "podcast-60f0b1750ae0891d4a4e",
+  "title": "#90 César Hidalgo: How To Understand Sociotechnical Systems",
+  "published_at": "2021-07-23T16:00:22Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/90-cesar-hidalgo-how-to-understand-sociotechnical-systems",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/1092856288-the-rhys-show-90-cesar-hidalgo-how-to-understand-sociotechnical-systems.mp3",
+  "youtube_id": "IYHOahD2NQw",
+  "youtube_url": "https://www.youtube.com/watch?v=IYHOahD2NQw",
+  "audio_sha256": "c083c34aabc06ddb2cb1e78122d97a8e90c29b8583a6ba3a2488ff811299b4e4",
+  "audio_duration_seconds": 3178.7363125,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 9814,
+    "unknown_words": 99,
+    "unknown_words_fraction": 0.010087629916445894,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 23.95,
+      "end": 24.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 24.49,
+      "end": 29.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everyone. My name is Reese Lindmark and you are listening to The Reese Show.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 30.17,
+      "end": 30.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "On",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 30.63,
+      "end": 34.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the show, we're trying to clarify what a good future looks like.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 35.63,
+      "end": 36.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 36.13,
+      "end": 38.85,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know we're all a bit sad about late stage capitalism",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 38.85,
+      "end": 39.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 40.02,
+      "end": 42.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we want to transition to something but we don't really know what's next.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 43.3,
+      "end": 43.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 43.82,
+      "end": 50.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "on the show, we interview experts about what is emerging, this beautiful future vision that we can all lean into.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 51.71,
+      "end": 52.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 52.15,
+      "end": 55.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "hope it gives you a sense of purpose and clarity about the future.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 56.04,
+      "end": 56.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "If",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 56.48,
+      "end": 76.35,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you like to show, you know, feel free to do something about it. You can leave us a five-star review. You can tell your friends. You can name your first child Reese. Whatever makes you happy. And if you really dig it, we have an online school called Root, where we help folks understand these root-level systems to find our route forward.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 77.12,
+      "end": 77.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 77.56,
+      "end": 87.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "have cohorts of world-class systems thinkers that run every couple of months. So if you're interested in that, check us out at root.co. That's r-o-o-o-t-e.com. Thanks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 88.0,
+      "end": 88.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 88.46,
+      "end": 106.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "listeners. Today I'm excited to chat with Cesar Hidalgo. Cesar is in a Chilean, Spanish-American scholar, an economic complexity, data visualization, and applied artificial intelligence. And he's written some great books that we'll chat about today, like why information grows in how humans judge machines. Cesar, thanks for being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 107.2,
+      "end": 107.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 107.48,
+      "end": 108.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's my pleasure to be here.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 109.11,
+      "end": 109.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 109.67,
+      "end": 128.97,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we're excited to dive in. And yes, I said I were chatting about this before the show, but there's kind of like three big things that we kind of want to dive into today. There's like, she said I was a great visual thinker and so I want to kind of like understand that because I would like to be a better one and a natural one, but I think you do a great job of it. And then also to dive into your books. But let's start with like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 128.99,
+      "end": 129.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 129.59,
+      "end": 147.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, that visual thinking side of things. As I was watching one of your like, talks last night. It was like you had shown, there's just so many amazing examples of this visual thinking that you do, whether it's graphing things in two and three dimensions or whether it is, you know, your project data wheel, I think, is that the name of it, where you,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 147.53,
+      "end": 147.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 148.22,
+      "end": 181.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, and then like the Journal of Economic Complexity. Like you just do this amazing job. Let me give one other example for our listeners, which I think was really cool. You gave this talk at Google with talks at Google for, you know, how humans judge machines. And at the end of the talk, you put up a picture on screen of all the pages of your book and you highlighted the different pages that you had covered in that talk. And you're like, hey, this is what we covered today. But there's also all this other stuff, you know. And it was just a cool way to kind of see the visual. So. Tell me a little bit more about how you think in visuals and how that ends up being portrayed to others.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 181.79,
+      "end": 299.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So in some way, my main concern is always to communicate. My fear is the fear of not being understood. And I tried to find that fear in different ways. I tried to find that fear, you know, by trying to be as simple as possible when I write. But also, I realize that, you know, writing has some inherent limitations. And the main limitation of writing is that writing is linear. When you speak, when you write, when you watch a movie, you cannot avoid having one thing come before the other. You know, there is this linear component to narratives. And that is great if you're able to linearize your thoughts properly. But in reality, that's a very difficult process because the way that our mind works, or at least the way that it feels, that it works, it's sometimes in parallel. Sometimes you get hit by an stimuli, and you start thinking about multiple possibilities. So I like to use visuals when I try to communicate things that have... that property that it's more something impartial than something linear, you know, when you want to look at multiple things at the same time and compare them. And I think that's what visuals are able to do well is to tap into this other mode of thinking in which, you know, you have comparisons from sizes to shapes to, you know, positions and so forth that are very... cumbersome to communicate in writing, you know, like writing is not bad at describing geometries or systems or networks and all of those things. And sometimes those diagrams, you know, that are able to show things simultaneously do that job much better. So I think both my writing and my use of visualization stem from the same fear is the fear of not being understood. But when it comes to writing, I try to make sure that I always say what I'm going to use before I use it. When it comes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 299.89,
+      "end": 305.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to visuals, I try to use it when I try to communicate something that involves that parallel type of thinking.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 305.91,
+      "end": 306.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 306.51,
+      "end": 344.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I love it. I think, and it's funny because, you know, for you and for me to some extent, like being in this field of, you know, complex systems and networks and stuff like that, those things are so much better to convey visually, you know, like a feedback loop or, you know, a network graph or whatever. It's like, hey, you could say every little bit of the feedback loop, but it's... It's kind of easier for the viewer to just check it out and be like, oh, okay, this is how it works. Here's like the loop here, here's the loop there, and they kind of like get it more intuitively. Is there something? So I think that it's funny because I think your work itself probably is kind of like it lends itself well to visualization. Do you think that there's a,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 345.42,
+      "end": 345.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 345.78,
+      "end": 349.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what in your mind makes something like a great data visualization?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 350.67,
+      "end": 351.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 351.03,
+      "end": 354.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think at the end, of course, it has to have a strong, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 355.19,
+      "end": 355.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "take",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 355.63,
+      "end": 375.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "-home message. Like, sometimes visualizations can be, you know, very simple, but the power that they have is the topic that they're representing, you know, or the aspect of the topic that they highlight. I think that's one part of it. The other part of it, which I think is really important, is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 375.29,
+      "end": 376.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 376.39,
+      "end": 413.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "has to be memorable too. And that's kind of challenging because a lot of the times the visualizations that are very memorable, they have to be a little bit more unique. And it's hard to be unique without introducing things that might be decorative or unnecessary. But, you know, sometimes you can have something as simple as a bar chart with a very, you know, powerful point that you're trying to make. But it's not memorable and might be forgotten. So I think like you want to hit both. You want to hit like a core important message. But you also want to try to create something that is memorable because at the end, that's that's what we're trying to create. We're not trying to just create impressions, but we're trying to create long-lasting impressions.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 414.79,
+      "end": 415.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 415.29,
+      "end": 440.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I love that. It's like, okay, if you give a talk or whatever and then people only get, you know, they're like, oh, that's kind of a cool visual and then it just leaves their mind immediately. It's like you didn't really do your job or whatever. And so it's like, I guess when you think about that fear, there's both the fear of communicating and being, like, of being understood. And there's this also bonus double fear, which would be like the fear of only being understood for a day instead of for the ideas to go into the mind forever or something.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 441.56,
+      "end": 441.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 441.92,
+      "end": 442.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "course.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 443.82,
+      "end": 462.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think there's a, yeah, this makes me think too, like for you, a lot of your work, it comes across, I mean, you know, there's, you know, you've worked at the Media Lab, you're now in Toulouse and your work goes in a lot of different directions in a very like interdisciplinary way. How do you think, what's like the through line in your mind that ties all of your work together?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 462.8,
+      "end": 463.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 463.16,
+      "end": 467.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there's a few, but to me basically the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 467.64,
+      "end": 469.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 469.52,
+      "end": 582.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that connects my work is to understand the geography of how knowledge is being produced and how knowledge diffuses and how that impacts society in numerous ways. So for instance, if you look at the work that I've done on economic complexity and relatedness, that it's all about, you know, how we can use administrative records such as, you know, custom data, like for imports and exports, or employment data for industries and occupations, or, you know, patent data or research paper data to understand the geography of knowledge and its dynamics. But if you look, for example, at the work that we did with Pantheon, you know, Pantheon.comptor is a website that basically helps visualize a dataset that looks at... cultural exports. It looks at the famous people produced by a country rather than the products that the country exports. And in that case, we had to, for example, create that data set using NLP and apply that on Wikipedia, to structure the data. Then we use that data to study the effect of, for instance, technologies in the creation of knowledge. We found very strong effects with the introduction of printing, radio, film, television. and how those technologies change the type of culture that is produced at a time period and remembered until today. We also use that data set to explore the role of languages and translations in the diffusion of knowledge and information across the world. And in that context, I think from that core, we start exploring different ideas. So, for instance, how human-judge machines start exploring also the ideas like, well, you know, as we develop knowledge and we create a more complex society in which the technology that we create, it starts to transcend the idea of just being a tool and starts becoming a member of teams. How do people react to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 582.37,
+      "end": 621.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "those and how we accept them into our groups? And that's a little bit like what the book explores by comparing how people judge machines compared to humans doing the same thing. So to me, that's kind of like the core. But at the same time, I'm never... I like exploring new stuff. I'm a person that is very open to experience. So if I find a new idea, if I find a new collaborator that I'm having fun talking about and working and there's something that we can do, I do believe on the journey itself too, not just on the destination. So I would deviate. And a lot of the things that sometimes I find have been more gratifying have come through those deviations.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 622.18,
+      "end": 622.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 623.16,
+      "end": 631.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's interesting. I think that, I mean, well, some of the work you've done in Geography of Knowledge was really cool just to like highlight one piece of that for the listeners. It was, you know, there's a,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 631.8,
+      "end": 632.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 632.04,
+      "end": 650.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "can look at how many people are cited in like a Wikipedia page, like how many Wikipedia pages there are for people. And before the printing press, there was like not very many. And then after the printing press was like, oh, wow, now like we as a society remember the people more. Is that kind of one of the takeaways that's like in that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 650.64,
+      "end": 650.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 651.1,
+      "end": 761.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So, for example, prior to printing, you find that most of the people that we have in, you know, a record like the Wikipedia, and we use a criterion in which we focus only on people that are present in many languages. To try to find people that have, like, a level of global fame, it's people involved in religious activities or, you know, people that basically went on political positions, whether it's a king or a marquee or, you know, some sort of... governor or person of power at the time. After printing, what is interesting is that not only the number of people that will remember jumps, meaning that kind of like our collective memory about doubles, you know, very quickly, but also the new people that we remember is people in different categories. So the introduction of printing was the... start of society remembering composers and artists and astronomers and mathematicians. And as printing develops, and you know, we go from printing books. to start into print journals, a process that takes a couple of hundred years to take place, actually. Then the sciences start to bloom and you start kind of like seeing, you know, sciences grow, you know, by dividing, you know, the natural philosophy sciences into, you know, physics, chemistry, biology, and so forth. And then all of a sudden you have the introduction of film and radio, and that completely shifts the arts. from the playwrights and the composers to the performers, to the actors, you know, to the musicians, to the singers. And it resonates very strongly with this idea from Marshall McLuhan, that the medium is the message, which is that as you develop new technologies to communicate things, there are certain messages that are better adapted to those mediums, and those are the ones that end up, you know, spreading further",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 761.86,
+      "end": 763.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and farther. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 763.38,
+      "end": 764.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "actors",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 764.4,
+      "end": 792.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "existed at the time of the Greeks, Actors existed, of course, at the time of Shakespeare, but famous actors only existed when there was a medium that was able to capture the performance, when there was a medium that was only able to capture the play. It was the playwright, the one that became famous. And that is really interesting because it tells us that, you know, these technologies are truly transformative. They shape our society. They really show that there are these breaks in our history that are the result of changes in communication technology.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 793.16,
+      "end": 793.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 793.72,
+      "end": 808.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I love that. To double click on that for a second, is there, what do you see? This is a very macro question, but good luck. From a medium is the message perspective, what do you see as the, what things are optimized for the internet?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 809.11,
+      "end": 809.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 809.55,
+      "end": 835.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "internet is weird because it's such a kind of like a multimedia. I know that sounds like a really 90s word, but it's true, you know, that you have audio, you have text and so forth. The web nevertheless has a lot of text, you know, like when you look at a medium like Twitter, Facebook and so forth, even though there is video, a lot of it is like little headlines and so forth. And in our data set, we start to see a few things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 837.25,
+      "end": 873.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 874.14,
+      "end": 874.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 874.56,
+      "end": 906.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a different type of politics that we're seeing across the world. You know, like I say that today we're in this sort of weird Twitterocracy, you know, because the fact that the politicians have, like, direct access to their audiences vis-a-vis, you know, 30 years ago when it had to be through interviews or, you know, or through a TV channel, you know, developed a politics that is much more untapped, much more aggressive in the United States. We basically saw that when Trump was... removed from Twitter, that was kind of like the real thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 906.71,
+      "end": 907.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Like Twitter was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 907.27,
+      "end": 967.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "even sometimes in a way, an action that seemed to be more decisive on changing the mood and the landscape than the impeachment attempts that didn't go through. So it's kind of weird. And we're seeing this pop up all over the world. So I do think we're kind of like in this weird space in which we have a technology that allows people to have direct instant fame. The fame is not mediated through, you know, like a work or through, you know, people other than you're writing about it. And that has generated kind of like a very strange, you know, dynamic on, you know, people that, you know, become famous by sharing opinions, sharing comparisons. People that also, you know, become famous because they're good at explaining, you know, difficult things and they provide a good service. So it's hard to, it's hard to judge when you have such a mixed bag. But I think definitely it's not the same as what we had, you know, 20, 30 years ago.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 968.49,
+      "end": 976.81,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Totally. Yeah, I think that the, I mean, it is funny. Yeah, it's multimedia. There's all these multimedia people on the information superhighway. It's crazy out there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 978.93,
+      "end": 1034.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "But I agree with a lot of what you're saying to which is the intermediation and the ability to speak directly to your audience is really crazy. It also makes me think, you know, something else that you talk about and why information grows is, this leveling up of networks as, you know, if we think about the various information processors in the world and whether it's our, you know, our bodies as an information processor and our minds as an information processor. And then we go up like from a person bite up to like a firm bite where you have all the things that we can keep in our head are not enough. And so we like get into these firms with lower transaction costs and higher trust in order to kind of. process information better. And then you can kind of zoom out and get another level to, oh, what about these network of firms or whatever? And so I think that that's something that I want to get your take on is like on the internet. Do you see any kind of like new institutional forms like that showing up? Or how do you think about that side of things?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 1036.58,
+      "end": 1037.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 1037.02,
+      "end": 1043.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "do see attempts and I'm interested on not only understanding them but participating in their creation because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 1044.24,
+      "end": 1044.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 1044.58,
+      "end": 1045.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think from the beginning,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 1047.02,
+      "end": 1154.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the internet has always had, you know, a component of a democratic utopia in some way. Like, I remember when I started to use the internet, like in 94, 95, a lot of the allure of the internet was like, this is a space that is, in some sense, outside of... the traditional establishment, you know, you can create your own server if you want, you can create your own email server if you want, you can create your newsletter to you. And it was an internet that was basically based on protocols. It was much more decentralized than the internet of today, you know. But as the internet developed commercially, you know, that platform, you know, that had been generated in some way got cleverly privatized by companies that dominated key applications, you know, search. you know, social, mail, maps, and so forth. And the internet transformed into an internet of, you know, of protocols into an internet of, you know, platforms or aggregators, you know, which are technically different, that now control a large amount of, of the traffic. So like, you know, Yeah, sure, there's a lot of websites on the Internet, but the big websites, the big, you know, platforms explain a lot of, you know, people's traffic. A lot of the thing goes there. And if you're not getting traffic through search or through social, you're not getting traffic. You know, it's kind of like a tough world out there now. So in that context, I think the Internet became a little more centralized and there's kind of like power on. on those platforms when it comes to like the decisions that they make about you know how they operate who gets to participate what forms of participation are allowed and so forth at the margin of that though there are still people that that i think have stuck to that utopia of the internet as a medium",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 1154.18,
+      "end": 1215.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "for democracy You know, during this semester of the Center for Collective Learning, I run a seminar series. I interviewed people like, you know, like I invited people to participate in the seminar, like Audrey Tang, who is the digital minister of Taiwan, the people from the five-star movement in Italy, that they have this platform Rousseau that they use, some people, you know, from Spain that have created the city of Madrid, which was a big participatory budgeting initiative, you know, hundreds of millions of euros, you know. And... And a little bit of what I see is that, you know, there are a lot of isolated efforts, you know, and their attempts to kind of like create these new institutions. On the one hand, I think we're a little bit underdeveloped when it comes to like the HCI of those institutions. I think a lot of the friction sometimes come from bad user interface and that's... something that in my group we tried to explore. You know, doing good user interface is very costly because you have to make a lot of decisions a priori that the users are posteriorly. They don't appreciate much because For them, the result is that it's easy. You know?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 1216.1,
+      "end": 1216.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's funny.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 1216.24,
+      "end": 1223.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So it feels that, you know, like it was easy to make, you know, but I always tell people like a BMW is easy to drive. It's not easy to build.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 1225.56,
+      "end": 1232.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So you have a little bit of that. I think there's a lot of kind of ideas. And unfortunately, when you kind of like go to the more official channels,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 1233.16,
+      "end": 1233.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 1233.96,
+      "end": 1268.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "lot of those efforts or the people that are sympathetic to those efforts, they think that they can create. those institutions of technologies by kind of like by decree or by agreeing on, you know, like some course values and ideas. And from there to an actual implementation that is engaging, useful, fair and so forth is such a long road, you know, that we need people working on that other side of like trying and erring and exploring and building. And there's few.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 1269.98,
+      "end": 1298.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But they're not zero, they're growing, and it's also something that I see that is very much alive among younger generations that are digital natives each time more and more, and that tend to believe that the internet is kind of not just another medium, but an integral part of society that should be, of course, part of the way that we make collective decisions, let's say democracy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 1299.67,
+      "end": 1330.13,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I love that. It's like, Yeah, if you have like some Gen Z kid who kind of grows up and they're like doing their thing, they're part of a Minecraft group where everybody kind of like co-builds things together and they're part of these Discord servers and they're like doing all these things that are very like and they're remixing on TikTok or whatever. And then they grow up and they're like, oh, now I get to vote and I get to give one bit of information every four years. They're like, is that, is that really how this works? So yeah, I think that they get disappointed by that. Let me ask you one other question on this and then we can switch topic, which is do you think that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 1330.95,
+      "end": 1331.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 1331.43,
+      "end": 1347.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "like I agree with your version here, which is okay, there's this like democratic utopia like bottom up you know, gov tech, civ tech thing, this great way to kind of process information better as a society, especially around this kind of like governmental side of things. The other side here is like.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 1348.13,
+      "end": 1348.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 1348.57,
+      "end": 1412.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of these new kind of institutions, and I'm not sure if institution is the right term for them, but, you know, something like a hashtag or a movement, whether it's Me Too or Black Lives Matter or something like MAGA or stop the steel, where people are kind of, they come in because there's lower friction, you can kind of like understand and get as part of these networks. And then you could, that like thing, that new kind of being, that new shared myth can kind of help propel folks forward. There's like that side of things. And there's also like, This other side of things like you're probably part of many, you're probably part of complexity Twitter or, you know, economic complexity Twitter or, you know, AI Twitter or whatever. And so that's kind of like a new kind of social, it's like a new group that didn't exist before. It's kind of like a network or something like that. And so I'm curious about these new kinds of like in the past we've had firms and nation states and markets and stuff. And I just think that there might be some like network native. kinds of institutions that will pop up that have that use lower transaction costs and higher trust with the kind of new medium does that makes sense do you have any thoughts on on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 1412.95,
+      "end": 1414.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the network first i",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 1414.59,
+      "end": 1418.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "do believe of course that there is like some sort of online geography that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 1418.37,
+      "end": 1419.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "doesn't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 1419.91,
+      "end": 1465.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "map like immediately to you know the the physical geography so we participate of of groups that are tightly needs in terms of relationships but can be quite distributed in terms of their physical location. But the technology that we have right now, I think, are great at some things, you know, like, of course, there is the ability to express yourself, but they're so bad at other things, like trying to aggregate those preferences, doing some minimal form of participation, you know, doing proper deliberation and debate, that... As those movements grow, the only way for them to survive is to find a very simplified",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 1465.61,
+      "end": 1467.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "topic",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 1467.21,
+      "end": 1496.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 1497.75,
+      "end": 1517.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "have this set of rules about the principles of animalism. And they soon discover that there's some animals that could learn to read and write, that other animals that could learn the alphabet and there are other animals, you know, like the sheep, that were really stupid. You know, so they had to start to dumb down those principles, and it ends up being",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 1517.91,
+      "end": 1519.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "two",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 1519.03,
+      "end": 1553.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "legs bad, four legs good. And, you know, what starts in the book, you know, with, you know, the speech of mayor, the pig that makes the big speech on chapter one and dies on chapter two, like it starts like this, you know, more nuanced, you know, of course, revolutionary idea, you know, then it gets dumbed down. as, you know, it needs to be spread, you know, within the animal farm society. And I think, of course, you know, Orwell, you know, was doing a satire of what he observed happened in reality. And I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 1553.41,
+      "end": 1554.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Twitter",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 1554.67,
+      "end": 1560.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "has changed the world, Facebook has changed the world, but that mechanism seems to be still in place.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 1561.54,
+      "end": 1561.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 1562.6,
+      "end": 1617.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's a, I totally agree with that. And I think on two points. One is, as you say, it's like we're so good at the like, everybody can, you know, express themselves and kind of yell about whatever they want to, but then how we actually aggregate that or, you know, like curate it is so bad. It's just like, we have this beautiful. It's like, it's like, obviously it's like a fire hose of information, but then you actually try to get that down and have it. be helpful for coordination or aggregating information, all these things. Like there's some beautiful things like Wikipedia that like do it in a really good way. But all things considered, I super agree that we're very, we're just at the beginning there. And we're only at the place right now where because of our tools, it kind of gets, you know, cut down into a very small space, you know, like, yeah, that doesn't have much nuance. So, well, curious about how that evolves over time. Let's chat about how humans judge machines now. And I think that the,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 1617.69,
+      "end": 1617.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 1617.93,
+      "end": 1624.13,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "mean, at a high level, tell us a little bit more about the main thesis of the book and then we'll kind of dive into a little bit more about it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 1624.57,
+      "end": 1624.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 1624.97,
+      "end": 1634.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "basically the book was motivated by the fact that a lot of people were, you know, talking about the effects of AI in society. And to me,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 1634.85,
+      "end": 1636.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 1636.3,
+      "end": 1691.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "felt like that conversation was incomplete because... a lot of those judgments that were being shared or communicated didn't have proper counterfactuals, you know? So, like, in reality, I am a big believer that things always have to be understood in some context, you know? They have to be understood in comparison to something. So people would say, well, you know, this machine is really harmful or, you know, this is bad to side, or is it unfair? But wait, wait, you know, those same tasks are now being executed by humans. How are the humans doing it? And if the human make the same mistakes, do we judge them equally? You know? And so because of that, I decided to create a small theme, you know, I did those experiments while I was at MIT. I had two postdocs that were social psychologists, and we created a list of a little bit over 80 experiments in which we had a scenario in which a machine or a human",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 1691.36,
+      "end": 1692.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "perform",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 1692.54,
+      "end": 1787.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the same action, and then we had people react to that scenario. And we use a clinical trial type of study design in which we randomly assign people to the machine condition or the human condition. So to give you like a super vanilla example, like imagine that there is an excavator that is digging up a site for a building, the site contains a grave, and the excavator digs it up. Well, there were 200 people that thought that that was the action of a machine, and there were a separate group of 200 people that thought that that was the action of a human. And those people are all independent. They're not deliberating. They're just like, you know, giving us the reactions. We look at those averages and we see, okay, did people find the action of the machine to be more harmful than when the same action was performed by a human? Or did they find it more morally incorrect? Do they feel more identified with the... human action, thinking that they would have done the same in the, you know, if they would have been in that situation. And we find, you know, differences, you know, across the board in many experiments, in some we don't find differences. And at the end of the book, what we do is we put all of the data from all of the experiments together to try to understand if, is it just like a preference for, you know, humans over machines or if there's something deeper going on. And we find that there's something much deeper going on, which is that people are judging... humans and machines through different moral philosophies. So we tend to judge humans with a moral philosophy that would be called more Kantian. Basically, it's more about your motivation, more about, you know, your intentions.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 1789.23,
+      "end": 1848.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And hence, you know, we tend to forgive humans in accidental scenarios. But we tend to judge... machines through a different moral philosophy that is utilitarian that is more consequentialist. So we only care about the outcome. We don't care, you know, about what the machine was trying to do or what it was designed to try to do. You know, it's only whether it fails or not. So, you know, we have this different moral philosophies and that helps explain a lot of the differences that we observe in a scenario. For instance, people are unforgiving of machines in scenarios that are clearly, you know, the fault of an exogenous factor. You know, we had scenarios where there was a tsunami that, you know, basically destroyed a town or, you know, a car that has to swerve to avoid a falling tree. So that are exogenous trigger. People still tend to be less forgiving to machines in accidental scenarios because they're judging it through a different moral philosophy that is consequentialist rather than Kantian.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 1849.22,
+      "end": 1849.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 1849.86,
+      "end": 1869.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I love that. I think that that is... That makes a lot sense. It's like, hey, it's like, oh, there's a human over there. Oh, they didn't really intend for that to happen. Like, they're a good, like, you know, they were just trying their best or whatever. And I can understand the mistake versus the machine. It's like, well, the machine messed up. You know, it's not like the machine was trying its best or whatever. Like, that's a weird, a weird frame to take. I guess it kind of like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 1870.72,
+      "end": 1870.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 1870.88,
+      "end": 1895.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you have an instinct of like? you know, you got this result, this, you know, normative result that was like, okay, humans, we judge each other based on this content intention thing, and we judge humans based off this utilitarian outcome thing. Do you think that that is, like, right? Or like, if you were to, like, if you were to, if you think about the outcomes of this, are you going to try to, like, if possible, like shift how we think and how we judge machines? Or if you could, how would you do that? What",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 1895.6,
+      "end": 1896.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "would you want the goal to be? Like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 1896.88,
+      "end": 1970.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that per se, those things are right or wrong, I think they can be used. rightly or wrongly. So let me give you some example. So in chapter 7 of the book, after having done all of the data analysis, I take the liberty to speculate a little bit and talk about implications. And one of the things that I talk about is, okay, so beyond humans and machines, we have organizations. Organizations are another type of structure that also makes decisions, execute actions, you know. But it's not like judging an individual when you're judging the Coca-Cola company or the U.S. government or the U.S. Army. You know, it's very different than judging an individual. Yet, you know, for instance, when it comes to government approval, government approval is basically a synonym of presidential approval in countries that have a presidentialist type of regime, you know. And that is sort of a little bit weird because in some way, you know, the organizations are so large. that a lot of the time the outcomes might be very different from the intentions of the leaders or the people involved. So to me, it seems that we tend to transport our",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 1970.89,
+      "end": 1972.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "intention",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 1972.85,
+      "end": 2077.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "-based form of moral judgment to organizations. When those organizations are more political and they have leaders to which we have a lot of responsibility, so my speculation that is that we judge something like, you know, the U.S. government using a similar judgment that we do for humans is like, no, this policy proposal is wrong because, you know, I don't trust Trump or because I don't trust Biden, you know? So basically, I'm interpreted from the perspective of the intentions that I associate to that person or to that party. I don't trust the conservatives. I don't trust the liberals. But when we're thinking about, you know, a company in the private sector where we don't know who the CEO is and everything, we tend to use a more utilitarian approach in part because it is easier to measure the quality of the product so hey like disney movies are really good man they do a fantastic job at you know animation storytelling you know like they are tight you know like apple makes you know great products and and whether you know is team cook the CEO or not like in some sense you don't see the product to be like it's because you know, like Microsoft doesn't do such a nice operative system because they're not trying to do it right now. It's like, you know, like the outcome at the end is hard and it's also more directly measurable for you as a consumer while, you know, measuring whether you're getting good government services or not, you know, it's a little bit more difficult, you know, and that's why we might be using these different modes, you know. So I go a little bit into that. So now the question is, should we be judging governments by their intentions or? or should we judge them by the outcomes? And I think that's a very deep question because intentions are much easier to fake",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 2077.66,
+      "end": 2139.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and communicate. You know, and outcomes require capacity. So sure, you can have someone that comes and says, you know, like, oh, yeah, I'm here for everybody that is poor and desperate, and it tries to touch all your sensibilities. But when push comes to shove and they have to do something about it, they don't have the capacity. And you can have someone that is more of a policy wonk that knows all of the constraints and how difficult is to do something. And it was like, well, you know, actually, we kind of just give you free everything for everyone. But maybe this is what we can do. And that person politically might have a lower chance of becoming elected or moving up, you know, the political ladder because, you know, they are going more into the technicalities instead of just trying to talk to people's intentions and so forth. And we might end up then with, you know, lower quality, you know, governments because the institutions get captured, but those that are able to touch our sensitivities. and not necessarily by those that are able to achieve the outcomes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 2140.54,
+      "end": 2163.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. Yeah, it's kind of a sad. It's like a classic government thing where it's like they're signaling blah, blah, blah, or they're saying blah, blah, they're making these pledges. And then in the end, it's like, well, what is actually happening? You know, and it is, especially with something like the internet where it's just like, you know, you can state directly to your people in kind of a populist way, oh, we're going to be amazing for all of you. And then, okay, what actually happens on the policy side? So it does seem like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 2164.23,
+      "end": 2164.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 2164.67,
+      "end": 2190.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "would be nicer if we judged folks based off of, you know, judged governments based on their outcomes. And this gets into things like prediction markets and stuff like that where you would be able to, they say and make pledges and then might get, you know, incentivize or disincentivized based on the, what, you know, either prediction market outcomes or things like that might be one okay way to do this. Do you think, you know, thinking about the,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 2190.51,
+      "end": 2191.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 2191.15,
+      "end": 2218.13,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, the moral side of things here. And it was cool that in your book you used like these hate moral foundations a lot in terms of, you know, how humans judge machines. Do you think, were there any big differences you saw in kind of, you know, there's like the care and harm-based side of things and some of the more individual side? And then there's these more kind of collectivist or, you know, group ones like, you know, sanctity or loyalty or authority. Were there any kind of big differences between those two that you saw in the data?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 2218.67,
+      "end": 2219.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 2221.39,
+      "end": 2225.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "That's an interesting question. On the one hand, we find",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 2225.31,
+      "end": 2226.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 2226.67,
+      "end": 2345.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "moral dilemmas that involve harm, people tend to immediately be very unforgiving towards machines. So when it comes to harm, machine bad, human good. When it comes to fairness, it's a little more complicated because when people look at a situation that it's unfair, and involves a human, they tend to judge that human very harshly, they consider those things to be very bad, you know, they consider those things to be very intentional, and in those cases, machines sometimes get a little bit of a break, a tiny little bit, but a little bit of a break. So let me give you an example, like we had one scenario in which there was a human or a machine that would write songs for artists, you know, they would kind of like write, you know, songs for singers. And later, you know, a journalist discovers that, you know, the algorithm or, you know, this songwriter had been plagiarizing, you know, songs from lesser known artists. In that case, you know, people, you know, basically see the machine is like, okay, this is like a machine learning case go bad. they tend to forgive it compared to the human that plagiarize. In that case, it's sort of like, hey, you know what you were doing, you know, it's bad. You know, while in the case of harm, you don't see the same. We also found, for example, in some loyalty examples, we find that people also tended to judge humans more harshly. We have a scenario that is borrowed from Heights's work in which there is a cleaner or a robot that uses a flag to clean a bathroom floor. You know, so that's sort of like a very complex type of moral transgression, you know. You have to understand that this flag from this country is bad to these people, you know, like if it's used that way and so forth. And in that case, you know, people judge, you know, the action",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 2345.48,
+      "end": 2428.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of the human as less morally correct, you know. But we did other scenarios that try to explore transgression that also touch upon, you know, patriotism and nationalism in some way. For instance, we had someone interrupting, you know, a national anthem on a sporting event, you know. In that case, you know, we find, you know, a very small effect, almost, you know, it doesn't matter. And then, for example, we had another one in which we had someone like playing the wrong national anthem, you know, for a country in an international sport event. In that case, There was no difference. Like people, you know, didn't see the action of the machine as worse than that of the human. And they were actually not very upset at it, you know. So, you know, there is a lot of variation to explore, I think, still. But definitely the different moral dimensions did affect the way that this judgments behave, you know. And in the case of harm, fairness, pretty consistent effect. in the case of loyalty, authority, purity, not so much. And also, it is much harder to construct the scenarios in which someone is betrayed by an algorithm. So, so, you know, like, so they're harder to, to make at least sound plausible. And I think that's part of one of the things that we struggle with.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 2429.33,
+      "end": 2429.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 2429.97,
+      "end": 2459.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's interesting. It just makes me think, too, of like the long-term view here where things like loyalty, authority, sanctity, kind of, were created within society and humans as a result of our kind of, you know, groupishness desires to create these both tribal groups and then city-states and these like larger entities where it's like, oh, it is good to be loyal. It is good to be to defer to authority in some ways. And I don't know. It makes me think about, you know, the long-term future here with machines and how.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 2460.52,
+      "end": 2461.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 2461.16,
+      "end": 2507.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it's harder to kind of loop them into those more complex scenarios and that like maybe as machines continue to do more and more I don't know that like yeah, that maybe some sense of the groupishness or the moral capital there will kind of start to diminish and will just become like utilitarians all the time. So I'm not sure about that. Well, one final question I have for you with How Human Judge Machines is, do you think that I noticed that you're giving away the PDF for free on the website, but you're also selling the book through MIT Press. And the book, by the way, it is this beautiful, these illustrations talking about, you know, the visual side of things. It's really, really cool there. How were you able to, like, you know, giving away a book for free as a PDF and also selling it usually doesn't work for the publisher? So how is MIT Press okay with that? Or why did",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 2507.9,
+      "end": 2508.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you choose to do that? I had to pay",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 2508.48,
+      "end": 2560.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the publisher the cost. of the first run. So, like, basically, I said, like, I want to do the book. Like, honestly, like, it was a bit complicated because I wanted to get the book out quickly because I had done a lot of experiments. I could write fast if I, you know, if I had the chance. And basically what I was telling them is like, look, I want to have this book done by the end of 2019, you know. And then, you know, I pay for the run because the only thing that I'm sort of getting from you guys is the, peer review service, like the book is peer review by anonymous peer reviews outside that I have to respond. So I'll respond to all of that and I do that. And unfortunately, you know, even though, you know, I talked with the publisher and stuff like that and that was kind of like the deal, the book was quite delayed in the time frame that I wanted, you know, I should have been out before COVID.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 2562.54,
+      "end": 2592.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But in any case, you know, the deal was, you know, they were interested in the book. It was approved through peer review. They made me an offer. I told them I want to also have it available online. And they said, no, we cannot do this because, you know, this costs money and, you know, we have to make the money. And I said, no, I understand. But then it's how much money, you know, and then they gave me a number and then I paid that. And then, you know, they had to kind of like agree to that. So that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 2592.21,
+      "end": 2592.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "was.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 2593.84,
+      "end": 2597.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "That's funny. Yeah, you're like, okay, it costs a certain amount of money. How much?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 2598.38,
+      "end": 2599.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Exactly. If",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 2599.46,
+      "end": 2602.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it comes from me or from someone else, like that is just,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 2602.14,
+      "end": 2602.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it can come",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 2602.64,
+      "end": 2616.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "to you. That's funny. That's cool that you, I mean, that is really putting your money where your mouth is. Was it like a desire to have it be open source or was it the speed that you wanted it? Or why would you pay money to, you know, give your book? for folks up to free",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 2616.06,
+      "end": 2616.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on the internet. I think there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 2616.8,
+      "end": 2725.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like a few things, you know, one is, of course, you know, like I do like making it accessible. And in particular, like to me, one of the things is that I grew up in Chile where, you know, books are expensive. They almost never get there. Some, you know, some books, you know, would simply just don't get there. So. It's a world that I grew up buying, you know, Matlab on the sidewalk, you know, as well as the video games and all of that stuff, you know. And, you know, so, so to me, you know, I always, when I think about what I'm doing, I think kind of like beyond the U.S. and European audience. And I think like, hey, maybe there is like an 18-year-old in Indonesia that likes these topics. might be interested, you know, because he saw like a talk of mine on YouTube or something. And if he wants to get the book, I don't want him to get like a pirate version. If he can get like the legit version and I can make that happen, you know, that's good. I want it also, you know, to see if by doing this, I could get the book to... spread more broadly, you know, and to reach a larger audience. At the same time, I think the book has been well received, but I don't think it has the impact that I expected has been a hard year to promote books, you know, because there's a lot of books out there, you know, there are no, you know, speaking events, everything is online. So... That has been complicated, but I think that the fact that people like what is out there, a lot of people are interested in, it means that little by little, you know, the word of mouth is going to hopefully make its job and the book, hopefully, is going to become a reference for people that say, hey, I want to know how. people judge humans and machines in this scenario, let's see if among these 80-something, I find one, you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 2725.97,
+      "end": 2733.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, that I can use, you know, as a story that I can put in my, in my journalistic article or that I can cite of my paper, etc.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 2733.83,
+      "end": 2764.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I like that. I think it's, well, hey, I think I commend you for doing it. I think it's a really cool idea and I haven't seen that many, you know, sometimes people will do a sliding scale if they sell it through like gum road or something, but this is. I think a pretty unique thing where it is going through a big publisher and you've kind of paid the publisher in order to have a PDF copy online. Yeah, so I think that's cool. As we get into wrap up mode here, Hey, let's talk about why information grows, a book that you wrote in 2013 or something like that. It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 2764.52,
+      "end": 2764.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "was probably",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 2764.98,
+      "end": 2766.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "on 2015, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 2766.22,
+      "end": 2791.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "2015, okay, sweet. It, yeah, I think it's a delightful book, and I especially enjoyed some of the talks around it. And I think that the, we've been chatting around it in the first part of our conversation here. But one thing just kind of in general that I want to ask you about is like, how do you think about? you know, information storage and information processing of, you know, like human and social systems or these informational systems.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 2792.36,
+      "end": 2792.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 2792.98,
+      "end": 2836.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in some of what the book, you know, tries to do is two things. On the one hand, it tries to like generalize the idea of computation and information by describing it at multiple scales and in multiple systems. You know, so like information is a very fundamental. physical property is found in thermodynamic systems, you know, is related to entropy, which is, you know, a thermodynamic state variable. And then it was, you know, years later, rediscovered, you know, in the theory of communication from Shannon and Nyquist, you know, and eventually, you know, we now understand that information is related to...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 2837.54,
+      "end": 2912.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the way in which we would, you know, encode something in physical order, whether it is, you know, little magnetic domains in a hard drive, whether it is, you know, the sound waves that we transmit as we speak across a room, you know, and there is sort of like this very fundamental physical quantity that we are producing. in great quantities in in society, you know, biology also produces a lot of it, like DNA in a way is, you know, is a molecule that is very rich in information and that to do so requires certain costs, you know, like you need to, in some way, spend energy and exude entropy to kind of like, you know, produce information. It's kind of like running a little bit like a refrigerator, you know, that you're running kind of like a little bit thermodynamics backwards, you know, to create order. to keep it organized, you know, and we do that all day, you know, inside our bodies, and we do it in our society as well. So one of the things that the book tried to do is to say, okay, look, this is how people think about information in, you know, when you're thinking about just like, you know, physics, like spin glasses and, you know, molecules and very simple things, you know, go a little bit, you know, through biology, but it moves quickly into society.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 2913.52,
+      "end": 2913.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 2913.86,
+      "end": 3017.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, and into the idea that a lot of our economy is based on creating these packets of information, but packets of information that are not just there to communicate meaning, but to communicate the practical uses of knowledge. So when we build a video camera, a projector, a telephone, a jacket, a pair of shoes, a dishwasher, you know, these are also... things that we create by going against, you know, thermodynamics, where kind of like locally reducing entropy, you know, to create those objects, you know, so it's, you know, a dishwasher is in some way like a molecule of DNA, you know, you know, thermodynamically speaking, you know, and by doing those things, we can communicate the practical uses of our knowledge, we can communicate the ability, you know, to do things that... seem like magic, to fly, you know, to communicate at long distances, you know, to travel really fast across space, you know, to, you know, produce vast amounts of food, all of those things. And the other thing that the book does, beyond connecting, you know, this idea across scales and systems, is to say, well, when we're at the human and particularly at the social scale, there are certain limitations that we need to consider. that involve the accumulation of the knowledge that we need to produce that information. And these limitations are there because knowledge is not like just one thing. It's not like a liquid that we can accumulate more of it. It's something that is extremely complex. It's very specific, you know, very unique, and it has a lot of like the specific parts, like a giant alphabet or a gigantic, you know, periodic table. And to accumulate all of those different pieces that we need to do something. We need to accumulate the knowledge in networks of people because simply individuals cannot",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 3017.63,
+      "end": 3059.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "learn enough. And then, you know, I use that as a point of departure to start to explain, well, how do we form networks and how large network can be and how that depends on transaction costs, trust and other things. You know, and the ability to create these large networks is key to be able to accumulate large volumes of knowledge and to then create. these complex things, you know, that few people can create and that can make your geography richer. You know, so then it goes from there to explain, you know, the differences in wealth as differences in this capacity to accumulate knowledge in social and professional networks. And that's what the book is about. It's about the geography of knowledge, but starting, you know, from the physics of information.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 3060.22,
+      "end": 3060.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 3060.7,
+      "end": 3073.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I love that. And it's a cool, you know, the connecting it across, you know, disciplines and scales is, it's a beautiful way to do it. And I think there's, I think there's a lot more interesting stuff to be, you know, I just, I just love that frame of thinking about,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 3073.54,
+      "end": 3074.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 3074.66,
+      "end": 3104.05,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, these networks of humans as ways to kind of process information better in order to create this knowledge that can't just be stored in the human brain. So I think, I think it's a fascinating, interesting stuff there. Maybe as the final question here, Cesar. Where would, so for, yeah, for listeners, definitely check out how humans judge machines or why information grows. And again, how human judged machines, just check out some of the visuals for it online. It's like, it's really cool what you were able to do there. Is there anything else that you kind of recommend to our listeners, either a place to find you on Twitter or anything like that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 3104.75,
+      "end": 3137.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "No, yeah, like, of course, I'm not that hard to find online, you know. But, yeah, I would say, you know, to visit the Center for Collective Learning. This is my new group that I started. It's a continuation of the collective learning group that I had at MIT, but now we're growing into a center and we're starting to explore new ideas. Some of them continue the work that we've done on economic complexity and geography of knowledge, but we're also interested on digital democracy, and that's, I think, where you're going to probably see a lot of things coming out later this year and during the next one.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 3138.52,
+      "end": 3138.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Beautiful.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 3139.14,
+      "end": 3152.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I mean, that sounds amazing. That's even just good for me to know. It's like if you're interested in collective learning more generally, either on the economic complexity side or on this kind of civic tech, gov tech, like networks of folks processing information, boom, check out Cesar's place.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 3153.66,
+      "end": 3153.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Thank you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 3154.08,
+      "end": 3157.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Beautiful. So thank you again, Cesar, and thank you listeners for coming by and goodbye, everybody.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 3158.58,
+      "end": 3158.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 162,
+    "withheld": 2,
+    "published": 160
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

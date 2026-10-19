@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "id": "podcast-38e4e544ff169ec8c308",
+  "title": "The importance of immigration",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=RBByXZ9PrJI",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "RBByXZ9PrJI",
+  "youtube_url": "https://www.youtube.com/watch?v=RBByXZ9PrJI",
+  "audio_sha256": "7e63824cb84f69513929e9d1795de0b167f90957be37d08f791e37d67c7bf0ee",
+  "audio_duration_seconds": 59.118,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 143,
+    "unknown_words": 5,
+    "unknown_words_fraction": 0.03496503496503497,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 1.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "The reason that I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 1.48,
+      "end": 2.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "immigration",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 2.92,
+      "end": 12.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "is important, not only is there a lot of personal ties to this myself, having seen it time and time again, but I genuinely just believe that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 12.62,
+      "end": 13.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 13.0,
+      "end": 35.42,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "order for a country to maintain its technological leadership and economic leadership, you need to welcome people, like some of the best people from all over the globe, right? In America... benefits from the gift of global talent, like more than anybody else in the world right now. And I think going back to like the beginning of this conversation, like I think if you don't protect it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 35.42,
+      "end": 36.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 36.2,
+      "end": 41.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "if you don't defend it and continue to encourage people to come here and stay here",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 41.16,
+      "end": 41.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 41.74,
+      "end": 42.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "build here,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 42.52,
+      "end": 43.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 44.04,
+      "end": 52.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "over time the like the, like the, the, the production of the country of the country ceases to exist, right?",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 11,
+    "withheld": 0,
+    "published": 11
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

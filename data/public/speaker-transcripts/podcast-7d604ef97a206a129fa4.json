@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "id": "podcast-7d604ef97a206a129fa4",
+  "title": "The secrets to building a great community",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=kOXXuLbHYR8",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "kOXXuLbHYR8",
+  "youtube_url": "https://www.youtube.com/watch?v=kOXXuLbHYR8",
+  "audio_sha256": "4b9c8aa7f0842f5fb6e84b4521571ec2e3c455c3ec3f06779c51950adf7fd3f0",
+  "audio_duration_seconds": 59.9539375,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 145,
+    "unknown_words": 6,
+    "unknown_words_fraction": 0.041379310344827586,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 0.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Great",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 0.54,
+      "end": 7.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "communities are a combination of shared purpose where the individuals participating have mutual influence on each",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 7.9,
+      "end": 9.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "other.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 9.18,
+      "end": 13.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "There's, that's one. Two is there's some sense of like shared identity",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 13.16,
+      "end": 14.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 14.28,
+      "end": 30.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "like a badge that you can wear to convey that you are a part of this group. And then the third, I think, important thing is like a sense of ritual, right? What is the repeated or regular, expected custom that you have? And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 30.16,
+      "end": 30.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 30.92,
+      "end": 44.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "combination of those three things, to me, is what makes like really great community stand the test of time, right? Shared purpose, a ritual of getting together, week on a regular cadence, a shared identity that you're all like part of this community.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 46.14,
+      "end": 46.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 46.64,
+      "end": 54.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "so anything like that. that I don't think community is just bringing a bunch of people together and like sticking them in a room,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 54.32,
+      "end": 54.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right?",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 11,
+    "withheld": 0,
+    "published": 11
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

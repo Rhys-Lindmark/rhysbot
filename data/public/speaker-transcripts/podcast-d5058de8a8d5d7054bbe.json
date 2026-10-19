@@ -1,0 +1,4041 @@
+{
+  "schema_version": 1,
+  "id": "podcast-d5058de8a8d5d7054bbe",
+  "title": "#45 Lawrence Lundy, Outlier Ventures: Convergence Theory and An Evolutionary Perspective on Capital",
+  "published_at": "2018-07-25T17:31:10Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/45-lawrence-lundy-outlier-ventures-convergence-theory-and-an-evolutionary-perspective-on-capital",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/476606586-the-rhys-show-45-lawrence-lundy-outlier-ventures-convergence-theory-and-an-evolutionary-perspective-on-capital.mp3",
+  "youtube_id": "mKR2KXlKh9g",
+  "youtube_url": "https://www.youtube.com/watch?v=mKR2KXlKh9g",
+  "audio_sha256": "1e7c2022cb145c24e9dfab74d0da9ff2f4f4faf69162c1e1aaf10829f3fe6c4b",
+  "audio_duration_seconds": 2568.80325,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 7099,
+    "unknown_words": 229,
+    "unknown_words_fraction": 0.03225806451612903,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.66,
+      "end": 1.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Now",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 1.52,
+      "end": 5.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "entering the Bitcoin Podcast Network.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 17.58,
+      "end": 25.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Today's episode is brought to you by KeepKee, the easy, safe, and simple way to protect your Bitcoin, ether, light coin, and many other digital assets.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 25.68,
+      "end": 26.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 26.12,
+      "end": 29.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "no time like the present to protect yourself from hackers, malware, and viruses.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 30.16,
+      "end": 30.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Visit",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 30.56,
+      "end": 37.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "KeepKee.com to order your secure hardware wallet today and use the code Humanist 10 for a limited time 10% discount.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 39.05,
+      "end": 39.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 39.49,
+      "end": 72.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "before I begin today's episode, a quick life update. I'm currently writing a book, which is exciting. It's about our exponential and fragile context and how crypto can help us smooth the transition through this digital revolution. So I'm not sure on the title yet, but I'll be posting updates through Medium and on Twitter. So check me out there and hoping to have it done by the end of this year. So I'll let you know also through the podcast when that happens. Cool. So let's get to today's episode. Okay, so today's episode is with Lawrence Lundy, who's a partner and head of research at Outlier Ventures.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 72.26,
+      "end": 72.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 72.62,
+      "end": 90.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "talk about a variety of things, and I just want to kind of pull out three big points. The first is we talk about there and his convergence thesis, which states that IoT, AI, and blockchain will converge on top of a data substrate. And I mostly agree with it, and just two pieces of that. The first is that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 90.64,
+      "end": 91.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "A,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 91.32,
+      "end": 116.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's good to remember that. This is all mediated by trust as a primitive. And so you both need to trust the cleanliness of the data through the IOT device. The AI essentially creates a trusted conclusion given a set of data. And then blockchain clearly provides these trustless environments for ledgers and computation. And so trust is the key thing throughout this, trust in the data substrate that exists. And the second piece here is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 116.49,
+      "end": 117.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 117.55,
+      "end": 119.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a reminder that as everything trusts each other,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 120.19,
+      "end": 120.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 120.57,
+      "end": 198.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "things begin to converge, as Lawrence says, and this is kind of a key piece of the future. And so, you know, when I say, hey, we're in kind of a fragile time, given massive converging exponential technological change, the second word there is converging. And converging means that as everything trusts everything else, things both go faster. and they start converge and co-evolve with each other in these interesting emergent ways. So it's tough to say essentially what the long-term result of a IoT, AI, and blockchain convergence is. So, yeah, that's just to say convergence is a likely part of our future, and it's mediated by trust, and it'll make things faster and co-evolving and emergent. So the second piece here is something that we talk about is... about the different kinds of venture capital allocation, and we place it in the form of competitive evolutionary technology. So I think that this is just an important and powerful framework to place on your mind where you say, hey, let's think about each of these different capital allocation mechanisms like VCs or ICOs or whatever as agents within a system, and they are agents that are competing and co-evolving with each other. And the question just to ask here is just to a... abstract the level of the system and B to ask, hey, how do they compete with each other? Who wins? Which context?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 198.51,
+      "end": 198.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Etc.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 198.95,
+      "end": 199.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So I think that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 199.41,
+      "end": 200.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "doing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 200.25,
+      "end": 211.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that kind of evolutionary biology mindset towards different kinds of non-biological agents like capital allocation mechanisms is a powerful framework. And then the third piece here, I want to say, is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 211.47,
+      "end": 212.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 212.43,
+      "end": 253.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "fun part at the end of this episode is Lawrence Knight to talk about like his life and like, you know, a little bit of like humans and crypto stuff. This is something that I want to do more of, which is say, hey, I talk a lot about systems, but not that much about people, but everyone is a person, and it's awesome, and everybody's chill, or most people are chill. Lawrence is chill. And so, you know, it's great because Lawrence talks about his political background, his AI background, and how that kind of brought him into crypto as a way to decentralize power. And it's just, it's fun to talk about those kinds of things and not to concentrate on the systems the entire time. And so I like that, and I hope to do more kinds of humans and crypto and humans stuff kind of in general in the future. Okay, so with that, I enjoy today's episode with Lawrence.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 261.89,
+      "end": 262.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 262.71,
+      "end": 294.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "everyone. My name is Reeslinmark, and you're listening to another episode of creating a humanist blockchain future. In this podcast, we take a systems-thinking approach to doing good in the world, and we have a couple different series that focus on different system scopes, and today we're focusing on series A macro systems, where we ask the question, where are we, as society, headed? And today, I'm very happy to introduce Lawrence Lundy to the show. Lawrence is a partner and the head of research at Outlier Ventures, which is a venture platform that invests in the intersection of blockchain, AI, and IOT. Lawrence, thanks for being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 295.32,
+      "end": 295.98,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Thanks for having me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 296.5,
+      "end": 298.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, excited to chat. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 298.68,
+      "end": 299.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 299.76,
+      "end": 320.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "guess, and there's a couple different strands that we're going to kind of pull on today. And the first one that I'd like to ask about is actually this... kind of this thesis or this idea that you produced recently coming out of the research that you've done about what you'd call like convergence. So could you kind of talk about what convergence is and how it relates to blockchain?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 321.96,
+      "end": 322.16,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 323.24,
+      "end": 323.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 323.48,
+      "end": 335.66,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the convergence thesis, as we spoke about before the podcast, not really a thesis more than kind of an idea, comes out of work.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 336.16,
+      "end": 336.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 336.54,
+      "end": 342.7,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "really has been sort of, I don't know, four or five years in the making, sort of percolating around, but really",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 342.7,
+      "end": 343.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "sort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 343.2,
+      "end": 346.06,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of coalesced and we came up with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 346.06,
+      "end": 346.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 346.72,
+      "end": 348.52,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "real concrete",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 348.52,
+      "end": 349.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thesis",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 349.84,
+      "end": 375.65,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "about two years ago, an outlier, which originally was called blockchain-enabled convergence. And that was a paper that we published kind of, yeah, I'd say two years ago or so, which we refined back at the beginning of this year. which we call the convergence ecosystem. And broadly speaking, it's our investment strategy and it's what we invest in our life ventures. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 375.65,
+      "end": 376.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 377.15,
+      "end": 381.49,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "very, very simple, actually. Really, it talks about the new data",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 381.49,
+      "end": 382.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "value",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 382.29,
+      "end": 395.6,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "chain. So if we think about all industries and data being considered an industry, it needs to be produced, distributed and then consumed. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 395.6,
+      "end": 396.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 396.08,
+      "end": 403.94,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "way in which we see sort of the emerging value chain around data is that data needs to be produced, and it's being produced in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 403.94,
+      "end": 404.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "large",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 404.62,
+      "end": 425.61,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "amounts driven predominantly by the Internet of Things, so-called IoT. And we see that at the sort of at the bottom, right? That's where the data enters the ecosystem. And then we see blockchains broadly, distributed ledges, another... new sort of decentralized innovations to be a new distribution layer",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 425.61,
+      "end": 427.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 427.07,
+      "end": 445.41,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "distribute, to secure, to manage, and to record a lot of the data that's been collected by the AOT. And once it's been collected, once it's been distributed, we see it going into sort of the highest level, and that's where the convergence with artificial intelligence comes in.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 445.59,
+      "end": 445.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 445.97,
+      "end": 447.45,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "very fluffy and woolly term.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 447.94,
+      "end": 448.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 448.18,
+      "end": 487.01,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know that it doesn't really mean much. But what we're really talking about is consumption and automation of data. In all its varied ways from automation, which can include smart contracts, but it can just include traditional sort of big data tooling. So really, convergence is this zone between IoT and blockchains, and then there's zone between blockchains and AI. But broadly, the macro trend is this new emerging data value chain that we want to invest and partner with startups and projects that are building and executing in there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 487.09,
+      "end": 487.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 487.61,
+      "end": 488.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it. Got it. Yeah. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 488.35,
+      "end": 488.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 488.8,
+      "end": 533.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's thinking about, you know, data as the new oil or something like that and how data flows to the systems. And you have both the creation of data, which is the production through IoT and various things like that. And then the distribution of that data through things like blockchains, other kinds of databases, and then you have the consumption of that data through AI and other kinds of machine learning platforms. So that makes sense. And I think an interesting thing with convergence that I think about is when I talk about, you know, the state of the world today and how we have kind of fragile for massive converging exponential technological change, the second word there, the second adjective, is converging. And there's this weird, you know, instinct that, you know, in some ways all the things start to collapse onto each other in a weird way where it's like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 533.3,
+      "end": 533.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 533.86,
+      "end": 547.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "things, because you have... because we want less friction, because we want more interoperability, then all of these things start to, yeah, kind of play in the same realms or to be able to connect with each other in various ways. Do you kind of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 548.18,
+      "end": 548.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 548.42,
+      "end": 558.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "guess, when you think about, you know, convergence, do you think about it in that way, or what are the things, how do you think about how things are going to converge over time, I guess?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 558.78,
+      "end": 559.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 559.42,
+      "end": 563.36,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "well, it comes from sort of the interdisciplinary thinking, really.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 563.82,
+      "end": 564.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 564.38,
+      "end": 571.66,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "comes from working with enterprises over the years and governments as well to some extent. But seeing that everybody",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 571.66,
+      "end": 572.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "had",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 572.3,
+      "end": 584.84,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a very siloed approach to how they thought about these. technologies. And so you would have a department that would look into, you know, blockchain or a department that would look into artificial intelligence and then there would be a report written",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 584.84,
+      "end": 585.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "by",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 585.58,
+      "end": 590.38,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "one business union or there would be, you know, a government commission set up to look into",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 590.38,
+      "end": 590.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 590.9,
+      "end": 596.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "specific technology. And there was always a thing, there was always a thought that...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 596.35,
+      "end": 596.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 596.65,
+      "end": 600.43,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are never going to capture the full scope of change by just looking at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 600.43,
+      "end": 600.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 600.89,
+      "end": 611.61,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of the technologies in isolation, and that there was a far bigger macro trends occurring. And that's data. That's kind of the nub of it. We think it's data, say, in any sort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 611.61,
+      "end": 612.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 612.35,
+      "end": 620.13,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "new discussion around new business models and new economic models, you really got to think about how data is being used. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 620.13,
+      "end": 620.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 620.87,
+      "end": 635.04,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "was... It was looking around and seeing that nobody seemed to have this interdisciplinary thinking. And that's not for want of trying, and there's plenty of wonderful academics and wonderful books and sort of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 635.04,
+      "end": 635.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 635.82,
+      "end": 655.45,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "out there that are trying to consider this in a sort of very holistic way. Benjamin Bratton springs to mind when thinking around this. It's just that institutions, both from corporate... as well as from startups, as well as from governments, are not incentivized to think in such broad",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 655.45,
+      "end": 656.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "terms",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 656.47,
+      "end": 657.83,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and such wide scope.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 657.85,
+      "end": 658.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 658.33,
+      "end": 661.79,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so you just see a lot less of that thinking going on. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 661.79,
+      "end": 662.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 662.49,
+      "end": 665.45,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is kind of what we wanted to do with convergence, which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 665.45,
+      "end": 666.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 666.39,
+      "end": 667.81,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "could have very easily come in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 667.81,
+      "end": 668.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 668.53,
+      "end": 672.87,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a model that's such we want to invest in new capital market infrastructure, right? And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 672.87,
+      "end": 673.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "lots",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 673.41,
+      "end": 680.69,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of, you know, decentralized tooling. We want to invest in that. But actually, What we saw is this big converging",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 680.69,
+      "end": 681.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "sort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 681.97,
+      "end": 684.75,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of trend, numerous technologies, but also",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 684.75,
+      "end": 686.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "sort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 686.25,
+      "end": 692.47,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of the broad trend for distribution and decentralization across political realm as well as the economic realm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 692.47,
+      "end": 693.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 693.17,
+      "end": 695.03,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the technological realm. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 695.03,
+      "end": 695.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 695.47,
+      "end": 699.03,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "wanted to sort of put a vision out there and say that this is our vision of our future.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 699.36,
+      "end": 699.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 699.62,
+      "end": 702.12,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is where we see things heading. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 702.12,
+      "end": 702.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 702.86,
+      "end": 711.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you kind of agree or you believe in this mission as well, then we want to work with you. So that's kind of our framing on why we wanted to put this out there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 712.16,
+      "end": 712.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 712.42,
+      "end": 737.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it, got it. Yeah, I think, and a funny thing that you just touched on there is that in some ways, convergence and decentralization are paradoxical with each other. But in fact, I think that if you kind of synthesize them, that they're actually, it's possible to say that something can be both converging, everything is converging around data and kind of the decentralization distribution allows for that convergence to occur. So when you think about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 737.53,
+      "end": 738.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "comparing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 738.71,
+      "end": 750.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "your thesis to kind of other people in the blockchain and crypto VC space, how do you think about it as compared to others? How is it similar to people? How is it different than others? Kind of compare and contrast those theses.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 752.49,
+      "end": 752.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 752.73,
+      "end": 753.65,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 753.65,
+      "end": 754.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 754.67,
+      "end": 755.81,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "first thing to say is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 755.81,
+      "end": 756.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 756.77,
+      "end": 765.71,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are right at the very beginning of this S-curve of this so-called blockchain industry. So we're right at the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 765.71,
+      "end": 766.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "very",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 766.41,
+      "end": 771.69,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "experimentation phase. And depending on the frame that you want to use, whether it's an S-curve or whether it's the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 771.69,
+      "end": 772.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Carlotta",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 772.51,
+      "end": 776.05,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Perez surge cycle, which I know placeholder",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 776.05,
+      "end": 776.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 776.59,
+      "end": 777.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to use,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 777.49,
+      "end": 778.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 779.02,
+      "end": 780.54,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think we're very much in the beginning.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 781.44,
+      "end": 781.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 781.98,
+      "end": 784.56,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "worth pre-seeing anything that follows by saying",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 784.56,
+      "end": 785.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 785.48,
+      "end": 790.42,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "don't know. And much of this is guesswork and his assumptions and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 790.42,
+      "end": 791.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 791.02,
+      "end": 796.54,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a vision of a future, but we don't really have enough data points to know. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 796.54,
+      "end": 798.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 798.4,
+      "end": 809.68,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that in mind, the one thing that makes or we're able to do in this quite nascent industry, a function of the fact of tokens which we may or may not get into",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 809.68,
+      "end": 810.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 810.58,
+      "end": 810.84,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 811.44,
+      "end": 811.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 811.92,
+      "end": 829.24,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "can have a thesis that is a long way off. We can have a 10-year view because in this industry as a venture capital firm or venture capital platform, you do not need to invest and see returns",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 829.24,
+      "end": 831.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "every",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 831.0,
+      "end": 839.54,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "year and you certainly don't have to guarantee 5x 10x to your investors and hold a project for 7, 10 years.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 839.54,
+      "end": 840.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "In",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 840.1,
+      "end": 843.86,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "fact, you can invest in a very, very ambitious project",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 843.86,
+      "end": 844.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 844.5,
+      "end": 855.58,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "might not see returns or might not see scalable market infrastructure for five to ten years out. But it means that we can take that bet because liquidity is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 856.3,
+      "end": 856.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 856.84,
+      "end": 863.64,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, can be one, two, three years out. So it means we can take different types of bets. Now, there are obviously tradeoffs with that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 864.18,
+      "end": 864.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 864.7,
+      "end": 870.72,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it means that this web, so-called Web3 stack or new. convergence ecosystem",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 870.72,
+      "end": 871.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "means",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 871.42,
+      "end": 874.56,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that as a capital provider, you can take different types",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 874.56,
+      "end": 875.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 875.02,
+      "end": 882.76,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "risks. And that means that the way in which our thesis is different is I think that it's longer term.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 883.75,
+      "end": 884.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 884.35,
+      "end": 886.81,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "sort of see maybe one confirmation out there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 886.81,
+      "end": 888.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "really",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 888.17,
+      "end": 893.07,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "making some incredible investments in tooling that's needed today,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 893.35,
+      "end": 893.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 893.59,
+      "end": 896.33,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "To build this infrastructure and it is needed",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 896.33,
+      "end": 896.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 896.85,
+      "end": 898.05,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it's really, really important.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 898.88,
+      "end": 899.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 899.36,
+      "end": 916.68,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you might see a placeholder thesis, which I think, you know, having spoken to Chris and Chris contributed very kindly to part of the convergence paper. And I think there's a lot of alignment in the way in which they're thinking around this sort of new Web 3",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 916.68,
+      "end": 917.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 917.26,
+      "end": 923.92,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "paradigm and how we are. I see a lot of crossover in the way they think about things, especially the importance of governance. And that's something that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 923.92,
+      "end": 924.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "would",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 924.82,
+      "end": 927.68,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "be good to touch on later because it's something very close to my heart.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 927.92,
+      "end": 928.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 928.86,
+      "end": 935.1,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I think there's a kind of a chasm between, in the way in which I see",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 935.1,
+      "end": 935.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "sort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 935.72,
+      "end": 942.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of venture capital or capital being deployed in this market at the moment. It's at a very near term",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 942.14,
+      "end": 943.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 943.0,
+      "end": 957.0,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we need to either invest in infrastructure to be able today or we want quick returns, which we can also get today and maybe not the last six months, but broadly speaking, the market is a new asset class for which.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 957.6,
+      "end": 957.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 957.82,
+      "end": 984.66,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, it's a pretty good way to make money if you're a hedge fund, versus a few of the longer term players and the value add players like ourselves. And I'd also put placeholder in that group and a few others, I think that I can afford to look further down the line. And that's good. That's healthy, right? You want different these, you want different timeframes, you want different skill sets, all sort of taking different bets because that's how this market will grow.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 984.88,
+      "end": 1004.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, yeah. I like that. That's a perspective that when people talk about bubbles in a negative sense, they're like, oh, it's a bubble. Bubbles are by nature bad. It's like, well, actually bubbles can create innovation and you actually want there to be lots of kind of stuff thrown on the wall. And then depending, some stuff will work and some stuff won't, especially when you're at the beginning of some kind of trajectory here.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1005.18,
+      "end": 1005.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1007.06,
+      "end": 1012.54,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "exactly. And there's a real uniqueness to this market, which is that...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1012.81,
+      "end": 1013.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1013.33,
+      "end": 1016.75,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "only are there different investors taking different risks. There are,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1016.93,
+      "end": 1017.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1017.47,
+      "end": 1024.33,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, retail investors or people that put money into token sales and token generation events or so-called ICOs",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1024.33,
+      "end": 1024.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1024.95,
+      "end": 1029.49,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are looking at very different features from projects. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1029.49,
+      "end": 1030.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "traditionally,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1031.75,
+      "end": 1049.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "maybe, and for good or for bad, and then necessarily talk about the specific issues of the project, but, you know, EOS... is very unlikely who have ever raised that much money from traditional sources or raise money at all, who knows. But EOS has raised a tremendous amount of money. You have...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1049.27,
+      "end": 1050.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We're going to get a lot of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1050.65,
+      "end": 1054.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "EOS people that are going to hate on us on Twitter. Watch out.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1054.21,
+      "end": 1054.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1054.43,
+      "end": 1054.61,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "no,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1054.93,
+      "end": 1056.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "no, no. That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1056.07,
+      "end": 1062.45,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the thing. I don't see it necessarily being a bad thing, but I think, I don't think anyone could disagree with the fact that there are lots of projects out there that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1062.45,
+      "end": 1062.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "would",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1062.93,
+      "end": 1072.41,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "not have traditionally either wanted or receive traditional... investment. Now, that's a really positive thing because you could argue, and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1072.41,
+      "end": 1072.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 1072.99,
+      "end": 1098.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think it's fair to say VCs or traditional investors overvalued certain attributes in projects. I would say they probably overvalue I wouldn't say the value team, but team is very, very critically important as a sort of traction, right, traditional metrics that you can measure, you know, user growth rates or, you know, business partnership signed. Whereas",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 1098.29,
+      "end": 1099.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 1099.11,
+      "end": 1109.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the sort of the token space, what's overvalued are technicals and what's really undervalued are sort of go-to-market, right? Relationship with regulators and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 1109.29,
+      "end": 1109.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1109.77,
+      "end": 1114.15,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "they looked at the value chain and understood exactly how they can add value and capture value?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1114.53,
+      "end": 1114.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1114.81,
+      "end": 1130.47,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's really undervalued. So what you see are projects that might have traditionally been overvalued in the sort of traditional investor space, that don't get too much funding. And you could say that's inefficient allocation of resource of capital",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1130.47,
+      "end": 1131.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "versus",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1131.03,
+      "end": 1134.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "this new market where there were lots of, you know, very technical projects that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1134.37,
+      "end": 1134.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "wouldn't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 1134.85,
+      "end": 1135.93,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "have previously got funded.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 1137.82,
+      "end": 1143.94,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "maybe not be able to get a clear sort of marketing strategy or a very clear customer acquisition strategy",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 1143.94,
+      "end": 1144.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 1144.36,
+      "end": 1145.54,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "have got lots of money now",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 1146.05,
+      "end": 1147.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "both",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 1147.23,
+      "end": 1150.89,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "in my view are inefficient allocation of capital but they might end up",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 1150.89,
+      "end": 1151.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 1151.29,
+      "end": 1153.87,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "very different projects getting funded and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 1153.87,
+      "end": 1154.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 1154.49,
+      "end": 1157.01,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know that's exciting because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 1157.01,
+      "end": 1157.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "who",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 1157.53,
+      "end": 1160.45,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "knows you've got projects like ripple going out and acquiring",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 1161.45,
+      "end": 1161.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "other",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 1161.93,
+      "end": 1175.03,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "businesses, even though, you know, who knows what XRPs uses in the system. But it might not matter because they have a fun where they can go and buy other technology or aqua hire people because they have so much money. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 1175.03,
+      "end": 1175.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 1175.51,
+      "end": 1198.13,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "have a really interesting new dynamic at play, which I think is healthy. And I broadly think that all experimentation is positive and sort of the somebody that... sort of wants to trust individuals. I think that we should give individuals as much responsibility and maybe not as much capital as they want, but certainly as much resource as possible",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 1198.13,
+      "end": 1198.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 1198.75,
+      "end": 1207.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 1208.11,
+      "end": 1237.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 1240.3,
+      "end": 1274.58,
+      "speaker_id": "speaker_3",
+      "speaker": "Guest Speaker 4",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 1274.97,
+      "end": 1275.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Its",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 1275.33,
+      "end": 1284.71,
+      "speaker_id": "speaker_3",
+      "speaker": "Guest Speaker 4",
+      "text": "large display lets you carefully view and approve every transaction. And if your keep key has ever lost or stolen, you can safely recover your device without compromising its private keys.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 1284.87,
+      "end": 1285.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 1285.35,
+      "end": 1289.21,
+      "speaker_id": "speaker_3",
+      "speaker": "Guest Speaker 4",
+      "text": "bottom line, you'll sleep easier knowing that your digital wealth is safe and secure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 1289.53,
+      "end": 1290.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Visit",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 1290.11,
+      "end": 1296.73,
+      "speaker_id": "speaker_3",
+      "speaker": "Guest Speaker 4",
+      "text": "keepkey.com to order yours today and use the code Humanist 10 for a limited time 10% discount.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 1300.36,
+      "end": 1308.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "by that. So let's stay on this kind of venture capital and capital as a system thing. And one thing that I find very interesting with Outlier is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 1308.6,
+      "end": 1308.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 1308.9,
+      "end": 1347.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "all don't have a traditional LP relationship. So, for example, when I had Gary Tan and Kim Mike Cutler on the show recently from Initialized Capital. And with them, we were talking about venture capital as a system and how it's sad sometimes. And a venture capitalist wants to fund something, but they also need to get, you know, 10x returns so that they can give that to their LPs and that you kind of have this incentive system, this kind of layered hierarchical incentive system that's all kind of like LPRI driven. your incentive system is this interesting new LLP relationship. So could you talk a little bit about what is that LLP relationship and what kind of incentives does it bring to your team?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 1349.22,
+      "end": 1356.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "An LLP is obviously not necessarily a new corporate structure, but it has certain trade-offs, which,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 1357.54,
+      "end": 1358.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 1359.3,
+      "end": 1360.66,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "everything in love to trade-offs. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 1360.66,
+      "end": 1361.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 1361.2,
+      "end": 1365.94,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it tends to mean is that an LLP, you can only invest",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 1365.94,
+      "end": 1366.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "your",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 1366.72,
+      "end": 1367.7,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "partner's money.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 1369.38,
+      "end": 1369.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 1369.68,
+      "end": 1370.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it's a structure that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 1370.9,
+      "end": 1372.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "tends",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 1372.18,
+      "end": 1376.66,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "not to be used in venture capital because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 1376.66,
+      "end": 1377.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 1377.38,
+      "end": 1387.74,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "can't go out and raise, raise sort of 300, 400, 500, million pounds from institutional investors like pension funds because each partner",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 1387.74,
+      "end": 1388.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 1388.44,
+      "end": 1388.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "contributing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 1388.88,
+      "end": 1390.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 1390.08,
+      "end": 1390.92,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the business.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 1391.18,
+      "end": 1391.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 1391.72,
+      "end": 1396.08,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "what you do have is you have, you know, the tradeoff is having less money.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 1396.42,
+      "end": 1396.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 1396.74,
+      "end": 1397.24,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "having",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 1397.24,
+      "end": 1397.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 1397.72,
+      "end": 1418.04,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "group of partners that are all aligned, all your own money. So you have a skin in the game. You therefore don't necessarily have capital holders which are demanding a certain return because to them it's an investment and a new asset class for which they want to see a return.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 1418.34,
+      "end": 1418.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 1418.58,
+      "end": 1422.8,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "means that we as partners are outlier ventures.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 1423.41,
+      "end": 1423.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "If",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 1423.89,
+      "end": 1441.21,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we're aligned with our mission, if we're aligned in our views, then we can invest in a project knowing that we're not going to see any return in 10 years, or which I think is equally exciting, we can make investments that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 1441.21,
+      "end": 1441.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 1441.99,
+      "end": 1445.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "may all know will not yield 5 to 10x.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 1445.73,
+      "end": 1446.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 1446.83,
+      "end": 1461.46,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "believe that the project or the protocol generally. has such great potential and so foundational to what is required for this new emerging data ecosystem, that we will",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 1461.46,
+      "end": 1462.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "contribute",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 1462.94,
+      "end": 1467.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "our time, our capital and our resource regardless. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 1467.14,
+      "end": 1468.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 1468.08,
+      "end": 1473.44,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think that opens up a whole new range of opportunities that have previously been ignored.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 1473.76,
+      "end": 1473.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 1473.76,
+      "end": 1484.3,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "personally, I think that's why this idea of blockchain for good is so prevalent and why sort of the Pineapple Fund is a good example. There are numerous others. I think that's why",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 1484.3,
+      "end": 1485.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 1485.4,
+      "end": 1489.96,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "can start investing in social philanthropy. You can start investing in,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 1489.96,
+      "end": 1490.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 1490.44,
+      "end": 1496.6,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, self-sovereign identity projects is another good example, right? Self-sovereign identity. Identity is such a fundamental",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 1496.6,
+      "end": 1498.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "human",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 1498.98,
+      "end": 1512.86,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "right, but also it's, to some extent, between the physical and the digital worlds, it's, it's, I would go out if I would say it's broken. And, identity, try and get a, if you're going to say to a normal",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 1512.89,
+      "end": 1514.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "investor,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 1515.21,
+      "end": 1517.07,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "what return are you going to get from investing in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 1517.07,
+      "end": 1517.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 1517.39,
+      "end": 1534.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "identity platform? Well, quite frankly, who knows? But we know that it's so important, it's so broken in the existing sort of nation state system that we want to contribute our time and our resource to helping.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 1534.8,
+      "end": 1535.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 1535.08,
+      "end": 1545.6,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "making that happen. So it kind of opens up new opportunities that might normally be seen as lucrative opportunities. And it also means when we are investing our",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 1545.6,
+      "end": 1546.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "resource,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 1547.66,
+      "end": 1550.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and by that, I mean capital generally, it means that we are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 1550.88,
+      "end": 1551.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 1552.38,
+      "end": 1560.42,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "when it's your own money, of course, you're obviously a lot more involved and you want to be more involved. So what's happened as a function is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 1560.42,
+      "end": 1561.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 1561.02,
+      "end": 1562.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "actually invest,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 1562.5,
+      "end": 1562.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 1562.8,
+      "end": 1562.92,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 1563.28,
+      "end": 1563.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 1563.64,
+      "end": 1568.36,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "reasonable amount of money, but in terms of capital as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 1568.36,
+      "end": 1569.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 1569.06,
+      "end": 1569.64,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "resource,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 1569.88,
+      "end": 1570.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "actually",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 1570.32,
+      "end": 1573.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it's our time that really we put more into.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 1573.64,
+      "end": 1574.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 1574.04,
+      "end": 1575.5,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we might find with a project that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 1575.54,
+      "end": 1576.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 1576.78,
+      "end": 1587.54,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "don't know, 90% of all our partners' times are spent in a specific project. So we've invested capital, but then, of course, you know, you might say you're a value-added investor and everybody does say we add value.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 1587.8,
+      "end": 1588.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 1588.28,
+      "end": 1607.41,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "no other better way of adding value than when it's your own money. and you truly believe in the project, then of course you are incentivised to give more of your time and more of your resource and more of your capacity. And that's what we find. We find we no longer constrained really by capital deployments. They're actually constrained by our own time. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 1607.41,
+      "end": 1608.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 1608.49,
+      "end": 1617.71,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "go. But then, of course, the tradeoff is, you know, there's not a 300 million fund. And it's probably, over time, less scalable.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 1618.13,
+      "end": 1618.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 1618.31,
+      "end": 1619.81,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so there's obviously ways in which you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 1619.81,
+      "end": 1620.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "can...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 1620.48,
+      "end": 1626.68,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think through ways of raising more money or other ways in which you could partner and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 1626.68,
+      "end": 1627.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "build",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 1627.16,
+      "end": 1635.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a larger ecosystem have a larger impact. But we think that the incentives that we have has enabled us to be part of some really tremendous projects.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 1636.58,
+      "end": 1637.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 1637.1,
+      "end": 1641.86,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of course, as we grow, there might be different tradeoffs that we make because everything's contextual, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 1642.08,
+      "end": 1642.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 1642.66,
+      "end": 1656.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "yeah, that's interesting. I think, as you say, there might be different kinds of capital structures that may make more sense in five or ten years. But as you say right now, especially when you're investing on such a long time scale that this kind of formation structure is relatively helpful.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 1657.06,
+      "end": 1657.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 1657.3,
+      "end": 1658.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "reminds me of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 1658.0,
+      "end": 1658.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 1658.46,
+      "end": 1675.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "couple things. A, it reminds me of kind of angel list syndicates or angel investor syndicates where you kind of get together with a bunch of people and say, hey, we're going to invest their money in these ways. It also kind of reminds me of someone like Joseph Lubin at consensus. where he just has, he's essentially a one-person LLP or whatever, and he",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 1675.13,
+      "end": 1675.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "can invest",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 1675.69,
+      "end": 1723.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in these kind of long-term time scales and just invest in lots of, you know, of infrastructure, metamask, truffle, and fear or whatever, knowing that, as you say, that ecosystem, and it's both... You can think of it either from a, and we've, we've chat about this a bit on the podcast before in past episodes, but you can either invest in something because just purely for good and invest in infrastructure for good. You can also invest in infrastructure because you know that... that kind of infrastructure is essentially necessary for the other parts of your ecosystem to work. So for you, you know, investing in an identity platform or for, you know, Joe Lubin investing in Uport or Truffle or what I have you, is necessary for the rest of the Ethereum ecosystem to kind of grow or for you the rest of the convergence ecosystem to kind of actually succeed. And so I think we'll see...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 1723.65,
+      "end": 1724.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Those",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 1724.09,
+      "end": 1741.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "kinds of, it's a new kind of invest. Previously, we only saw as kind of investing in kind of platforms where platforms would invest in, you know, different parts of their platform because then they would get the returns on that capital or whatever. And now we're seeing at kind of a deeper infrastructure level. So I think it's, I think it's good.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 1742.67,
+      "end": 1769.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Do you think, by the way, that it is, so when you think of, so you're thinking about stuff on a long-term time scale and you don't necessarily need. you can discuss with your partners in a more kind of person-to-person way about what kind of returns you expect from specific infrastructure. Do you think, are there, is part of that also connected to values or kind of like ideology at all? Tell me about that kind of more human piece.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 1771.7,
+      "end": 1772.3,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah, I think it,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 1772.48,
+      "end": 1772.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 1772.92,
+      "end": 1777.04,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think it has to be. I think every single individual",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 1777.04,
+      "end": 1778.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "broadly",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 1778.14,
+      "end": 1783.13,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is motivated by a, by different things. I think there are obviously some themes. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 1783.13,
+      "end": 1783.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 1783.69,
+      "end": 1786.33,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "any organisation, any structure, you'll find people that are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 1786.33,
+      "end": 1786.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 1786.79,
+      "end": 1790.15,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are motivated to different levels by different things. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 1790.15,
+      "end": 1790.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 1790.57,
+      "end": 1806.98,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think it's definitely true of outlier. Jamie, Burke and Aaron, the co-founders, definitely there's a motivation there beyond just, you know, it being a... asset class. And I think when they founded the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 1806.98,
+      "end": 1807.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "company",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 1807.62,
+      "end": 1816.4,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "four or so years ago, it wasn't a new asset class. It was really interesting technology that offered new,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 1816.48,
+      "end": 1817.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'd",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 1817.34,
+      "end": 1822.74,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "say, decentralizing potential. And of course, Bitcoin being the first and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 1822.74,
+      "end": 1823.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "arguably",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 1823.76,
+      "end": 1827.98,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "still the largest and maybe in the end, maybe the largest, who knows. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 338,
+      "start": 1827.98,
+      "end": 1828.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 339,
+      "start": 1828.54,
+      "end": 1852.54,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "saw a potential for quite a game-changing power. structure technology. And my own journey to this is actually through artificial intelligence, interestingly enough, as a previous sort of career, sort of a researcher in artificial intelligence. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 340,
+      "start": 1852.54,
+      "end": 1854.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 341,
+      "start": 1854.03,
+      "end": 1868.83,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "became very clear to me, and I guess this would have been four or five years ago now, it became very clear that the way in which the winner take all winner-take-all effects from data, or at least data network effects, and then the winner-take-all platforms that emerge from that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 342,
+      "start": 1868.83,
+      "end": 1869.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 343,
+      "start": 1869.83,
+      "end": 1878.87,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "very profound consequences for the consolidation of data, therefore, of markets and of profit and power. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 344,
+      "start": 1878.87,
+      "end": 1879.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 345,
+      "start": 1879.75,
+      "end": 1885.03,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "might sound abstract, but I think once I sort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 346,
+      "start": 1885.03,
+      "end": 1885.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 347,
+      "start": 1885.95,
+      "end": 1891.51,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "came to that conclusion mentally, I realized that it was important that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 348,
+      "start": 1891.51,
+      "end": 1892.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 349,
+      "start": 1892.03,
+      "end": 1909.75,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "technologies that we built and the tooling that we built took into account the market and the social impacts. And that is where blockchains come in for me. They're coming as a rebalancing technology or as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 350,
+      "start": 1909.75,
+      "end": 1910.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 351,
+      "start": 1910.15,
+      "end": 1914.45,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "tool to prevent, I'd say, the consolidation of power.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 352,
+      "start": 1915.15,
+      "end": 1915.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 353,
+      "start": 1915.67,
+      "end": 1925.15,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's why I've always had quite an abstract view on this space, again, for good and for bad, but I've always had a view that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 354,
+      "start": 1925.15,
+      "end": 1925.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 355,
+      "start": 1925.81,
+      "end": 1956.22,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "not a specific implementation of blockchain. It's not Bitcoin, it's not Ethereum. And that's not to say I don't love any of those technologies, but it's actually the broader characteristics of the technology, which can act as a balance to. And I'll use the word tyranny because I think that's ultimately what I drive at is tyranny's consolidation of power. And tyranny can be through government structures in sort of a nation state, but tyranny can also emerge from corporate structures and from corporations. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 356,
+      "start": 1956.22,
+      "end": 1957.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 357,
+      "start": 1957.12,
+      "end": 1978.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is a very explicit political motivation of mine. And I think within the organisation, people would articulate a similar-ish. viewpoint. And I think that whenever we're considering, we're debating new projects, new investments, new partnerships, and it's always with that lens. And that lens is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 358,
+      "start": 1978.81,
+      "end": 1979.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 359,
+      "start": 1979.17,
+      "end": 1982.63,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, we're not only going to consider projects that are going to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 360,
+      "start": 1982.63,
+      "end": 1983.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "offer",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 361,
+      "start": 1983.15,
+      "end": 2002.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the best return. We want to make sure that we're investing in infrastructure that is diverse, that is considering the implications on society, that has a very clear vision on what they want to achieve. And the importance of us of the mission is just as important as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 362,
+      "start": 2002.35,
+      "end": 2003.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 363,
+      "start": 2003.65,
+      "end": 2018.97,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is a good investment. And so, you know, we're attracted by projects like sovereign and like ocean. And that's another really good example. I won't run for our whole portfolio. But you'll see from all the investments we've made that there's a very clear social",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 364,
+      "start": 2018.97,
+      "end": 2021.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "characteristic",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 365,
+      "start": 2021.13,
+      "end": 2023.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "in the way in which we make our investments.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 366,
+      "start": 2023.49,
+      "end": 2023.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 367,
+      "start": 2024.09,
+      "end": 2025.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "yeah, that's interesting. I think that there's a,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 368,
+      "start": 2025.93,
+      "end": 2026.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 369,
+      "start": 2027.23,
+      "end": 2102.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I mean, if you can imagine a founder, like a blockchain founder coming to you and being like, hey, I want to make a lot of money by making this thing that's going to just like extract a bunch of rents. And you're like, oh, man, I don't know if that is really, and like you want to centralize power. And as you say, that would not be value aligned. So that would be a very clear, even if they're building great stuff. It's like, I'm not really sure if this should be, if this would be good for the world. I also think that it's interesting that. Different people come out, as you said, you came out from the kind of the AI lens and saying, okay, we have these massive aggregators like Google and Facebook, and if they have these data silos and they get control of those data silos and control over the how AI operates on that data, then they're going to have lots and lots of power. And that's probably not good for a society. I think that perspective is one that people often come into it from. And then the other one is from like a financial perspective, like after 2008, 2009, saying, oh man, we have a fragile financial system. how can we decentralize the power in that as well, and stop corruption and stop tyranny there. So I think so many people, everybody's different path down the rabbit hole, I feel like they often start, the people who stay, I guess, their path down the rabbit hole often are based in something like the decentralization of power rather than something just like speculation.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 370,
+      "start": 2103.22,
+      "end": 2105.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah. And so,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 371,
+      "start": 2105.76,
+      "end": 2111.22,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "yeah, just to add to that, again, it gives a little bit more context behind, I guess, my motivation",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 372,
+      "start": 2111.22,
+      "end": 2111.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 373,
+      "start": 2111.86,
+      "end": 2115.06,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "even before that, my background is political. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 374,
+      "start": 2115.06,
+      "end": 2115.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 375,
+      "start": 2115.52,
+      "end": 2128.84,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "strangely enough, I did, I studied the devolution of power from UK Parliament to Scotland, to the Scottish Parliament. And devolution of power is just one form of, well, devolution",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 376,
+      "start": 2128.84,
+      "end": 2129.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 377,
+      "start": 2129.46,
+      "end": 2135.11,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "one type of distribution. tool. And sure, it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 378,
+      "start": 2135.11,
+      "end": 2136.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "not, it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 379,
+      "start": 2136.25,
+      "end": 2153.87,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "not technical, it's not technology driven. But it's the same questions, right? And the same questions, whether it be just, you know, parliament and a separation of powers, you know, in the US or in the UK between the judiciary, the legislative,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 380,
+      "start": 2155.61,
+      "end": 2168.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and there is a separation of powers for a reason. And that's to limit the, well, the undue. power of the executive or the king or the monarchy. And we've built",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 381,
+      "start": 2168.32,
+      "end": 2169.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "infrastructure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 382,
+      "start": 2169.82,
+      "end": 2176.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "We have constitutional furniture that's built and two checks and balances to prevent",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 383,
+      "start": 2176.14,
+      "end": 2177.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 384,
+      "start": 2177.38,
+      "end": 2180.58,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "consolidation of power, especially around the executive",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 385,
+      "start": 2180.58,
+      "end": 2181.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "branch.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 386,
+      "start": 2182.22,
+      "end": 2184.52,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And we have, and nations have gone through this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 387,
+      "start": 2184.52,
+      "end": 2186.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for... For,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 388,
+      "start": 2186.7,
+      "end": 2198.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you know, well, generations have got, you know, people have gone through it for millennia, but nations have been through it for hundreds of years. And I don't think the questions are any different to what we're asking today. And what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 389,
+      "start": 2198.26,
+      "end": 2198.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 390,
+      "start": 2198.64,
+      "end": 2201.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "say when what goes on chain and what goes off chain",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 391,
+      "start": 2201.32,
+      "end": 2201.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 392,
+      "start": 2201.98,
+      "end": 2227.04,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you know, who decides the product roadmap update and how are improvement proposals? I've got it. All of these questions are the same questions. They're essentially saying, how are we preventing individuals from having undue influence or groups or cohorts of people, undue influence over a network? It is exactly the same question that we've struggled with for millennia, just we've read to...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 393,
+      "start": 2227.37,
+      "end": 2227.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 394,
+      "start": 2227.55,
+      "end": 2229.51,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a very technical focus now.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 395,
+      "start": 2229.89,
+      "end": 2255.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, I agree with that. And we have new blockchain has given us new affordances. Blockchain, IOT, and AI have all given us new affordances and new lenses through which we can answer that question. So I guess to kind of wrap up here, there are some projects that you've been excited by recently. You have here foam, you have interledger protocol. But one that I actually don't know very much about, which I would love to learn more about, is codious. Could you tell me about what is codious and why are you excited about it?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 396,
+      "start": 2258.58,
+      "end": 2259.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 397,
+      "start": 2259.34,
+      "end": 2264.5,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "maybe I don't necessarily need to back up, but rather saying that one of the most interesting areas of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 398,
+      "start": 2264.66,
+      "end": 2265.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 399,
+      "start": 2265.86,
+      "end": 2289.39,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of the most interesting areas of exploration for me is interoperability. I mean, it's something that we look at at an outlier along. We're always looking for projects that enable interoperability of, you know, code or data. And in the case of codeous, it's smart contracts or smart programs, really. And that's... That's pretty much the context of it. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 400,
+      "start": 2289.39,
+      "end": 2289.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "again,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 401,
+      "start": 2290.21,
+      "end": 2314.83,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the reason why I'm excited is because it's open source. And that's pretty critical to all of our investments. I think it's important that these are seen as projects. And any code that's built, any tooling that's built can be shared with the world and can be approved upon by anyone. That's pretty critical. But what I don't want to see in this new sort of stack, the web three stack that we're building is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 402,
+      "start": 2314.83,
+      "end": 2315.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 403,
+      "start": 2315.51,
+      "end": 2321.06,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "end up with the same. data silos that we want to tear down. So a lot of focus has been on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 404,
+      "start": 2321.06,
+      "end": 2321.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 405,
+      "start": 2321.8,
+      "end": 2326.94,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "sort of the blockchain layer and you sort of have your cosmos and polka dots and aeons",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 406,
+      "start": 2326.94,
+      "end": 2327.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 407,
+      "start": 2327.38,
+      "end": 2338.16,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are trying to enable, you know, blockchain to blockchain into operability and value transfer. And that's critical and we will need that infrastructure. And to me, there's been a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 408,
+      "start": 2338.16,
+      "end": 2339.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "neglect",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 409,
+      "start": 2339.0,
+      "end": 2341.5,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "on the sort of database into operability part.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 410,
+      "start": 2341.79,
+      "end": 2342.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 411,
+      "start": 2342.39,
+      "end": 2351.17,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's where higher networks, one of our latest investments out of Berlin, they're focusing on enabling databases to interoperate. And that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 412,
+      "start": 2351.17,
+      "end": 2351.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "going",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 413,
+      "start": 2351.65,
+      "end": 2352.83,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to be pretty critical.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 414,
+      "start": 2353.23,
+      "end": 2353.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And their",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 415,
+      "start": 2353.59,
+      "end": 2363.99,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "first application, that is orbit DB. But Codius is the logic layer, right? It's the smart contract layer. So let's say we enable databases to be interoperable and data to flow",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 416,
+      "start": 2363.99,
+      "end": 2364.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "more",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 417,
+      "start": 2364.45,
+      "end": 2380.95,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "easily across databases. We have... and lots of interoperability tooling for blockchains, and we could still end up with the same dynamic that we saw with Web 2, where the application layer ends up capturing the data and having outsized influence. And I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 418,
+      "start": 2380.95,
+      "end": 2381.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 419,
+      "start": 2381.55,
+      "end": 2387.21,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a risk that that would happen on smart contracts. And that's why I'm really excited what Codius are building, which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 420,
+      "start": 2387.21,
+      "end": 2387.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 421,
+      "start": 2387.73,
+      "end": 2399.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you know, interoperable logic, interoperable smart programs or smart contracts to enable the application layers to share. execution data. And I think that that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 422,
+      "start": 2399.85,
+      "end": 2400.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "going",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 423,
+      "start": 2400.33,
+      "end": 2408.31,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to be pretty critical component of tooling. And then obviously after that, you ask, well, you know, oracles, how do we make sure oracles are interoperable and decentralize? And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 424,
+      "start": 2408.31,
+      "end": 2408.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 425,
+      "start": 2408.71,
+      "end": 2413.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think that you basically, the whole theory is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 426,
+      "start": 2413.27,
+      "end": 2413.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 427,
+      "start": 2413.99,
+      "end": 2423.31,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it all, we need to avoid bottlenecks of outsized value capture. And at the moment, the risk is that that happens at the smart.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 428,
+      "start": 2427.63,
+      "end": 2428.03,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "smart,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 429,
+      "start": 2428.03,
+      "end": 2428.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "smart",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 430,
+      "start": 2428.43,
+      "end": 2432.99,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "programs. But I think that with Codius, that can really help open up,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 431,
+      "start": 2433.13,
+      "end": 2433.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "open",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 432,
+      "start": 2433.49,
+      "end": 2439.99,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "up that. And so that's what I'm really excited about. And just, it's, you know, really, really great technology, which is obviously one of the most important",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 433,
+      "start": 2439.99,
+      "end": 2440.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "elements",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 434,
+      "start": 2440.71,
+      "end": 2443.07,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to a lot of the projects there are out there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 435,
+      "start": 2443.21,
+      "end": 2488.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, that makes sense. Yeah, you can't, you can be excited by, and then as you're saying this, it's like, let's make interoperer protocols all the way down, you know, turn everything into a protocol, turn everything into a pseudo, you know, commodity of some variety, and as you say, how can we do that also at the smart contract layer? And then, as you say, you know, going deeper, what does it look like for oracles, etc. And then in addition to that, like, you can have that idea. But then you also clearly need to have the tech that backs up. How does that actually work? How does smart contract, you know, interoperability actually work there? So that sounds exciting. I will check it out more. So with that, Lawrence, thank you so much for your time. We're out of time right now. But thank you for coming on, chatting about both convergence, venture capital kind of incentive structures and also codious. Where will people be able to find you on Twitter?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 436,
+      "start": 2490.01,
+      "end": 2490.41,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 437,
+      "start": 2490.78,
+      "end": 2491.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Very",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 438,
+      "start": 2491.34,
+      "end": 2493.82,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "good question. I'm trying to use Twitter less.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 439,
+      "start": 2494.26,
+      "end": 2494.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh, nice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 440,
+      "start": 2495.34,
+      "end": 2519.78,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah, I know. I feel it's trying as much as possible to avoid using social media and try and get some thought time back. But anyway, I am always reachable at Lawrence Lundy on Twitter. And, you know, I'm trying to disengage a little bit, but do find me on there. Or you can contact me directly through the Outlaw Ventures website, outlaw ventures.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 441,
+      "start": 2520.48,
+      "end": 2520.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Boom.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 442,
+      "start": 2521.38,
+      "end": 2542.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Okay, great, either of those. And I agree with you that we should all probably tweet just a little bit less. So, and if you want to support me, by the way, listeners, you can go to patreon.com slash recentmark. That's patreon.com slash L-I-N-R-H-Y-S-L-I-N-D-M-A-R-K. Okay, great. Thank you so much, everybody, and goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 443,
+    "withheld": 3,
+    "published": 440
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

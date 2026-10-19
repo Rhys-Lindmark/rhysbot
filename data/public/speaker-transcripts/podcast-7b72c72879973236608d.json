@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "id": "podcast-7b72c72879973236608d",
+  "title": "RAISING VENTURE CAPITAL",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=-19KyxacUqM",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "-19KyxacUqM",
+  "youtube_url": "https://www.youtube.com/watch?v=-19KyxacUqM",
+  "audio_sha256": "448091e9e565b40f9b29dbbf6bc2dbf173dc6cea1ebbad162f8fbd63815584de",
+  "audio_duration_seconds": 54.1489375,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 171,
+    "unknown_words": 4,
+    "unknown_words_fraction": 0.023391812865497075,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 8.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "storytelling ability of a founder, I think is literally the number one best skill that any founder can have. And if you only look at one thing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 8.04,
+      "end": 8.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 8.56,
+      "end": 22.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "regards to betting on which founders are going to be successful at raising VC or not, I think storytelling ability would be the one that I would kind of bet on because, frankly, I think it moves in the needle so much, especially at the early stages where there's not really much to go on. Everyone knows that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 22.26,
+      "end": 23.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "teams",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 23.06,
+      "end": 33.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "change, you know, ideas change, you know, industry hype changes. There's so many factors that really go into it. But the one thing that people can rely on is people's ability to tell a story because that results in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 33.48,
+      "end": 34.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "getting",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 34.32,
+      "end": 41.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "other VCs to mark up your run in the future, hiring the best people, selling to new customers, things like that. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 41.08,
+      "end": 41.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 41.62,
+      "end": 46.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "a frustrating part of this world, but it is something that at least in today's environment is still really true.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 9,
+    "withheld": 0,
+    "published": 9
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

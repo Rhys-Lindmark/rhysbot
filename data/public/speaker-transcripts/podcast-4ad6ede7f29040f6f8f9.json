@@ -1,0 +1,5211 @@
+{
+  "schema_version": 1,
+  "id": "podcast-4ad6ede7f29040f6f8f9",
+  "title": "#4: Networkism in the Context of Human History",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=HKNmd5ftWF8",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "HKNmd5ftWF8",
+  "youtube_url": "https://www.youtube.com/watch?v=HKNmd5ftWF8",
+  "audio_sha256": "9775954ab8e112766e0b477354941788377aba6f09b9576f8d5c457a979f88e4",
+  "audio_duration_seconds": 4298.3155,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 11187,
+    "unknown_words": 269,
+    "unknown_words_fraction": 0.024045767408599268,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.66,
+      "end": 1.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 1.66,
+      "end": 5.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everybody. My name is Reese, and you are listening to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 5.07,
+      "end": 6.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "another",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 6.49,
+      "end": 9.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "lecture in the Root lecture series.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 10.07,
+      "end": 10.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Today,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 11.11,
+      "end": 19.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we are chatting about networkism in the context of human history, aka how the internet is changing society. So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 20.99,
+      "end": 34.63,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "as a reminder, this is part of Root, which is a... We primarily do this Root Fellowship, which is a community of world-class systems thinkers looking to understand and build the future. So please check us out at root.com if you haven't already.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 35.69,
+      "end": 37.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 37.25,
+      "end": 40.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "also want to just say hi to you, person on the internet.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 41.59,
+      "end": 42.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 42.03,
+      "end": 47.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 48.52,
+      "end": 48.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 48.96,
+      "end": 57.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "has nothing to do with the rest of the content, but I wanted to put it in here because it feels like it's me. Okay, so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 57.12,
+      "end": 58.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 58.77,
+      "end": 77.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "an overview, this is the second part of a series. So the first part, we had the thinking and systems, and now we're diving into networkism. And networkism, there are kind of two parts. There is the right now, networkism in the context of human history, and also the next video will be the kind of impacts of networkism.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 78.22,
+      "end": 78.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 78.7,
+      "end": 132.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "today we're going to chat about these six things. What is networkism? Why do we care? And then we'll chat about kind of the macro picture here, thinking about abundance and scarcity in the context of the agricultural revolution, the industrial revolution, the information revolution. And then we'll look at networkism as an ontology, which is a key. paradigm thing that we chat about last time, especially thinking about these generator functions. Then we'll start to really see the world as this networked human organism and what it means to see the world from that perspective. And finally, we'll talk about cultural evolution or how when tech evolves, so too do we. Okay, so to start, what is networkism? Well, networkism is the ontological shift catalyzed by computers and the internet in the generator functions of value and information. and the impact of those shifts on society.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 134.43,
+      "end": 138.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So there's a lot there. First, it's the ontological shift,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 139.1,
+      "end": 139.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 139.4,
+      "end": 155.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that means it's a change in what is happening in society. And what is happening, the change is catalyzed by computers in the internet, right? The internet is important. And that ontological shift has changed the generator functions of both value and information,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 155.72,
+      "end": 156.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 156.6,
+      "end": 159.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "information flows in society and what is valuable in society.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 160.98,
+      "end": 161.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 161.46,
+      "end": 164.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so it's that shift and also the impact of that shift on society.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 165.44,
+      "end": 165.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 165.92,
+      "end": 172.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's what we're looking at here. How technology is coming up and how that technology is changing society. And why is it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 172.54,
+      "end": 173.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "important?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 173.8,
+      "end": 174.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 176.66,
+      "end": 183.91,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you know, the internet is important. That's what I heard. So that's pretty much what I'm saying here, but I think there's a couple lenses on it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 184.73,
+      "end": 185.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 185.21,
+      "end": 289.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "first lens is, well, it is that internet and computers have already had a massive impact. And they're just getting started. And so here's these cool history of, you know, the timeline of internet stuff. In the 1970s is when we first got our internet protocols. Our first big ones is this TCP IP, which we'll talk about later. And then in 1975, Microsoft was founded. And their goal was, their mission was a computer on every desk and in every home. It's like, oh, that's obviously true now. Everybody's got computers, you know, 4 billion network smartphones. So it's kind of weird that that was their goal, but they succeeded. And then in 1994, with the internet, instead of just computers, Microsoft was all about computers, but Netscape started to think about the internet. And their goal was to link people and information over the internet and intranets. So that was when we had other things besides the internet. And yes, now, obviously this is true. People and information have been linked. And then Google. Their goal was to organize the world's information and to make it universally accessible and useful. Amazing goal. And again, a lot of that's happened. It's so easy. You know, the world's information is at our fingertips now. And finally, Facebook in 2004, their mission is to make the world more open and connected. And again, now that we think about, it's like, yeah, of course, everybody's, you know, two billion people are on Facebook. And another way to think about this, computer's just getting started piece is as all of this infrastructure was built. some stuff got started to get built on top of it, like the hashtag was invented in 2007. Or in 2013, Black Lives Matter as a hashtag started, it was invented. So, yeah, the computers are just getting started, and who knows what's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 289.39,
+      "end": 322.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "going to happen in 2020 and 2050 and so on and so forth. So we can think about this in kind of stages of like there was Web 1.0, the kind of text web, and then Web 2.0 is the visual and... Social web, and now we're in Web 3.0, which, what does that mean? So, yeah, it's going to be important. Another reason why networkism is important is this quote, which says, the real problem of humanity is the following. We have Paleolithic emotions, medieval institutions, and godlike technology.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 323.58,
+      "end": 324.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 324.54,
+      "end": 328.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so the internet is part of this godlike technology. It is us",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 329.69,
+      "end": 331.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "having",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 331.13,
+      "end": 346.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "much more powerful and interconnected... a much more powerful interconnected society. And the unfortunate piece is that that's going faster than these other pieces of medieval institutions and emotions. So we really need to hopefully use the internet to get wiser as well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 348.06,
+      "end": 348.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 348.24,
+      "end": 349.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 349.48,
+      "end": 351.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "like to think of the,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 351.24,
+      "end": 352.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 352.74,
+      "end": 359.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "networkism being important because it changes these generator functions of information and value. And whenever you change...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 359.63,
+      "end": 360.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "these",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 360.11,
+      "end": 380.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "underlying generator functions, then you're going to get lots of impacts on society. So, you know, if you change something at the high level, like, oh, how much a cup of tea costs, that doesn't really matter. But if you change, like, how money works or how information flows, that's going to have a big impact. And the Internet has that big impact. It's changing those primitives.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 380.73,
+      "end": 381.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 381.25,
+      "end": 413.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so the first one is from information. Information now, we can send information anywhere at zero marginal cost. I can take a piece of, or this video is now going to, it's going to go from my computer onto the internet and then be put wherever it needs to go in the world all for free. That's crazy. And what that means is we get a shift from a very small amount of information to a very large amount of information. And some of that information is bad and some of that information is good, but the bottom line is there's a lot more.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 414.11,
+      "end": 414.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 414.55,
+      "end": 418.63,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is also happening, though, on the value perspective, we've shifted where people make money.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 419.14,
+      "end": 419.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 419.68,
+      "end": 503.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "during the Industrial Revolution, yeah, people, the frontier was atoms and people were moving those atoms through factories to turn them into goods, to turn them into money. And now the information, the frontier is the bits frontier. It's taking this new world of bits, rearranging it in different ways and pushing that to people and then making money from that. So this is why we say that the internet or networkism has changed the... generator functions of both information. Now you can spread it wherever and value where people make money. And so as a way to see that the generator function of value has changed, you can see that tech companies have moved from importance to dominant. So as they say, when tech was scared of Microsoft, it was a pretty small company. In 1995, the world was scared of Windows and Intel, Wintel, but their market cap wasn't actually that large compared to the rest of, you know, the rest of these U.S. companies. Then in 2016, Google Amazon, GAFA, Google Amazon, Facebook, and Apple came along, and they are four of the top five biggest by market cap, with the other top five one being Windows. Yeah, so being Microsoft. So this is to say that, yeah, the generator function of value, so much value is being sucked by both created and sucked by these big tech companies.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 506.02,
+      "end": 506.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 506.52,
+      "end": 511.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "another thing here is that if you think about the you know, generator function of information.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 513.32,
+      "end": 544.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Changing that generator function changes lots of things. It changes newspapers, it changes politics, it changes companies, it changes culture. And we'll talk more about those, but it's not, but changing the key ideas that just because information moves differently and it's cheaper to move, that has lots of impacts on everything else. Yeah, institutions. turn from these centralized ones, these decentralized ones. You know, the NAACP is a quote-unquote centralized institution, while Black Lives Matter is a hashtag and a very decentralized institution. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 544.76,
+      "end": 545.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 545.95,
+      "end": 553.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "other way I like to think about this is that we have Nature 1.0, Nature 2.0, and Nature 3.0.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 554.37,
+      "end": 554.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 554.93,
+      "end": 571.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Nature 1.0 is Earth. You have Earth. which is our delightful substrate of society. It's, you know, Gaia, it's all the plants and animals. And then you have Nature 2.0, which is what networkism has created. It is this networked human organism.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 571.75,
+      "end": 572.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 572.25,
+      "end": 604.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what that means is we've transitioned to be, yeah, a full global species. And at the same time, so networkism is important because it has created Nature 2.0 and... Computers and networks are important because they've created Nature 3.0, which is this networked AI. And so you can think of our time going forward on Earth as trying to make Nature 1.0, Nature 2.0, and Nature 3.0 co-evolve with each other in a beautiful and sustainable way.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 605.38,
+      "end": 605.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 605.94,
+      "end": 633.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "our goal. So this is to say, why is network isn't important. A, it's already had a massive impact, but it's just getting started. B. It changes these generator functions of information and value, which has all these other impacts on society. And then C, it, yeah, informs these three meta organisms that need to sustainably co-evolve, nature 1.0, 2.0, and 3.0. So it's important. The internet is important.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 634.12,
+      "end": 634.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 634.68,
+      "end": 644.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of course, the hope for you all is that, yeah, understanding networkism will help you understand where society is going and also how to leverage and use technology in your own life.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 645.88,
+      "end": 646.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 646.96,
+      "end": 646.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 646.96,
+      "end": 648.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "let's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 648.04,
+      "end": 658.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "pause for a quick second to feel networkism in our own body. And I want to give a meta point here around why we're doing this and how to do this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 659.2,
+      "end": 659.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 659.72,
+      "end": 676.63,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "think the goal here is that these ideas, it's a lot of conceptualizing. And it's nice to take that mental space and to kind of put it into the body, just to feel how your body feels and to also start to create a narrative around it. So the hope in these times is that you as the listener",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 676.63,
+      "end": 677.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "might,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 677.95,
+      "end": 683.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you know, just sit, pause the video, sit for a second, feel what it feels like to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 683.6,
+      "end": 684.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 684.9,
+      "end": 686.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "these concepts",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 686.86,
+      "end": 687.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "go",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 687.54,
+      "end": 691.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "into your body. It's a somatic, kinesthetic understanding.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 691.5,
+      "end": 691.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 691.94,
+      "end": 695.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so I'll do it myself, and I'll tell you how I'm vocal processing through it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 695.4,
+      "end": 695.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 695.58,
+      "end": 702.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "if you want to do it yourself as well, that is encouraged. So what does networkism feel like in my body?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 714.83,
+      "end": 715.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 715.27,
+      "end": 718.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is both a challenge and an opportunity.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 721.17,
+      "end": 723.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "It could be a very exciting thing, but also a very sad thing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 723.95,
+      "end": 724.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 731.79,
+      "end": 738.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "also interactive time. So for yourself, ask, why are you interested in networkism? What brought you to this video?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 739.81,
+      "end": 744.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And then second, how do you see Earth, humanity, and AI co-evolving?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 744.57,
+      "end": 745.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "How",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 745.09,
+      "end": 748.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "do you see those three things being in relationship to each other?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 749.16,
+      "end": 749.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 749.64,
+      "end": 755.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "again, I'll pause if you'd like to pause the video or take a bit of time here, feel free to answer these questions.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 758.53,
+      "end": 759.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And welcome back.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 761.0,
+      "end": 778.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, so now let's actually dive into it and discuss this first big point, which is abundance and scarcity during the agricultural, industrial, and information revolutions. And again, this is taking this wide view, this mile wide, inch deep view on this, but I think it's pretty helpful.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 779.1,
+      "end": 779.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 779.58,
+      "end": 795.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "if you can go super, super wide and say, oh, let's do this timeline of humanity or of all of space time. This is a picture of like the Big Bang 14 billion years ago and all of the stuff that's going to happen in the future and humanity's insignificant and the universe is really big.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 796.4,
+      "end": 796.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 796.88,
+      "end": 805.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's true. And I also, if you're, if that's a little bit scary, I recommend this video called optimistic nihilism, which is about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 805.32,
+      "end": 806.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 806.86,
+      "end": 817.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah, the nihilism is true. The world, we don't matter. Your life doesn't matter. Humanity doesn't matter. Earth is very small and the universe is very, very, very, very big.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 818.35,
+      "end": 818.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 818.79,
+      "end": 833.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "our time here is very small and the amount of total time is really, really, really, really big. So it doesn't matter. And that's okay. The optimism piece says, that's okay. We can also try to make the most of our time as we can.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 834.22,
+      "end": 834.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 834.48,
+      "end": 835.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so I think we should do that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 836.89,
+      "end": 837.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 837.33,
+      "end": 840.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is kind of a scary concept though. So I do think...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 840.27,
+      "end": 840.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 840.79,
+      "end": 845.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "makes sense just to pause for a second and feel optimistic nihilism in your body.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 858.31,
+      "end": 858.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 858.83,
+      "end": 861.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "scary. Death is scary",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 861.33,
+      "end": 862.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 862.21,
+      "end": 863.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "insignificance is scary.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 867.64,
+      "end": 869.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And it's counter to everything",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 869.12,
+      "end": 869.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 869.76,
+      "end": 872.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I do with my life all the time, which is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 872.22,
+      "end": 873.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "trying",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 873.91,
+      "end": 874.13,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 874.13,
+      "end": 875.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 876.63,
+      "end": 877.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "important things or to,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 878.43,
+      "end": 879.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 879.11,
+      "end": 880.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "feel like it matters.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 881.34,
+      "end": 881.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 881.86,
+      "end": 883.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it also does. It feels cool to feel like it does.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 884.56,
+      "end": 885.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 886.25,
+      "end": 946.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "We're not going to do that wide of a perspective. Instead, let's just think about this timeline of humanity and zoom down into the agricultural revolution, industrial revolution, and information revolution. The agricultural revolution was in 10,000 BC. We started making food. In the 1800s, roughly, we started making goods and making stuff. And now, well, we can send information all around the world. So that's kind of roughly the transition here. Let's start with the agricultural revolution and understand what it did. So the agricultural revolution, again, 10,000 BC, it abstracted the process of food creation. And what that means is, yeah, we took food, or we took this process of food creation, we put it into these little squares, and we said, ah, now we can make food much more easily. And we did it with the little squares at the beginning, but then over time, we've done factory farming and things like that, industrial farming, and have done... amazing things and can make so much food these days. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 946.84,
+      "end": 948.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 948.02,
+      "end": 955.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it essentially has done, what farming has done for us is it has abstracted the process of food creation. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 955.14,
+      "end": 956.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 956.37,
+      "end": 999.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "abstraction, what it means is it just means that we have made a process for this thing that used to be kind of hard. So it used to be kind of hard to get food. You had like hunt it down or whatever. And then it was like, wait, let's just like, plant it all here. And we can take these inputs, sunlight and soil and water, and then put it through farms now, and boom, we get food. And we can just repeat that process over and over and over again, which is amazing. We've created this new process into it. Boom, we get a lot of food as a result. So that's cool. What it did for us in society was kind of cool, but kind of sad. We got this in this Malthusian trap, which is where we had more food.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1000.32,
+      "end": 1000.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1000.68,
+      "end": 1024.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1025.51,
+      "end": 1025.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1025.87,
+      "end": 1030.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's this. What happened with the industrial or with the agricultural revolution. And yeah, we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1030.59,
+      "end": 1031.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1031.71,
+      "end": 1039.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this abundance of food where we went from very low amounts of food to very high amounts of food. We made more food. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1039.53,
+      "end": 1040.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1041.28,
+      "end": 1066.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "key idea here is that, yeah, change the scarcity constraint from food to land. So before... Food was the scarce thing. There was not enough food. We needed more food. Oh, sweet. We made farms. We domesticated plants and animals. Now we have abundant food. What are the inputs necessary, though, for that food? Well, it's land. You need land to make it. And so land became the scarce thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1068.31,
+      "end": 1089.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And once you have land is a scarce thing, it means if you control land, then you have the power. And so see something like feudalism as an example of that where, yeah, if you are a, noble that has land, then you have power. So that was this first big shift was from food as the scarce thing to land now as the scarce thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1090.29,
+      "end": 1090.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1090.77,
+      "end": 1099.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then we got the industrial revolution, which said, oh, and before we talk about that, what does the agricultural revolution feel like in your body?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1107.46,
+      "end": 1108.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Mainly,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1108.44,
+      "end": 1110.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I feel excited that we made more food",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1110.62,
+      "end": 1111.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1111.82,
+      "end": 1113.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "made cities and things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1113.86,
+      "end": 1114.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "though",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1114.34,
+      "end": 1118.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I'm also sad about the Malthusian trap piece.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1120.46,
+      "end": 1138.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Interactive time. So again, why did more food not increase the standard of living? In theory, more food is good, but what happened there? And the second question is, how did landowners exert power given their control of a scarce resource? So, yeah, think about this. Think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1138.61,
+      "end": 1139.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "about...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1140.7,
+      "end": 1146.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "in human history how landowners have exerted power given their control over land.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1148.35,
+      "end": 1223.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, now let's chat about the industrial revolution. So the industrial revolution, roughly the beginning of the 1800s, and what it did is it abstracted the process of goods creation. So instead of food creation, now it's goods creation, the creation of stuff and factory lines like this. And what it did is it... gave us the ability to take raw metal and raw fiber and just raw materials and say, put that into the factory, pop it out on the other end, what do you get? Stuff, man, you get this microphone, you get this T-shirt, you get a bunch of amazing, you get a car. So that's what the Industrial Revolution did. It said, take these raw inputs, put some energy in there, and boom, get these goods as an output. And as an example of this, the Model T is a great example. In 1909, Ford produced around 11,000 Model T's at a cost of $23,000 per car. So this is before factory line processes. But then 15 years later, in 1925, they are producing 2 million Model T's for only $3,800 a car. And so they increased their production in 15 years, 16 years, by 2,000 times and also decreased the price by 6.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1223.89,
+      "end": 1224.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1225.46,
+      "end": 1225.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "crazy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1227.68,
+      "end": 1268.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, so there are lots of things that we did this to where we just made so much more of it and decreased the price of it a lot. That's what the Industrial Revolution did. And so, yeah, we have this loop here of you make more goods. Well, you get more, you make money from those goods, and then you put that money back into the system to make more stuff. And so this is capitalism, right? This is people with money making more money. and kind of sad. But yeah, we got this abundance of goods where you just went from not as much stuff. You know, you only had one t-shirt and like, keep that t-shirt good because you're going to have it for three years versus now it's just like goods everywhere. Yeah. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1268.89,
+      "end": 1270.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1270.61,
+      "end": 1307.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "way to think about this is that the agricultural revolution increased carrying capacity. It increased how many humans the earth could hold and we could create. by making more food, while the Industrial Revolution increased our standard of living. It actually made stuff better. You know, I have a lot of T-shirts instead of one. And you can see this with this graph where it's like, okay, we're going through time, going through time. Oh, at around 1800, boom, the world average income shoots up a bunch. Well, that's because we are not just making more people, but we are instead making stuff for all of those people. And so the amount of value in the world is increasing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1309.64,
+      "end": 1310.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So... Again,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1310.81,
+      "end": 1338.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what did this? The scarcity constraint here, it changed it from land to capital. By capital, I kind of mean money and kind of mean factories and things like that, the things that you need in order to produce stuff. And so, yeah, goods used to be scarce, but then, oh, you can make abundant goods with factories, and that meant that the scarcity constraints switched to capital and factories. If you controlled the factories and you controlled capital, well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1338.93,
+      "end": 1339.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1339.41,
+      "end": 1346.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "controlled the access to that good. And so, yeah, if you control capital, you have power, aka capitalism.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1348.22,
+      "end": 1354.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So that's what the Industrial Revolution was like. What does the Industrial Revolution feel like in your body?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1367.45,
+      "end": 1368.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Again,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1368.21,
+      "end": 1369.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I'm mostly a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1369.15,
+      "end": 1370.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "positive",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1370.39,
+      "end": 1372.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "guy here. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1372.03,
+      "end": 1373.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1373.23,
+      "end": 1375.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "me, it feels good. It's like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1375.23,
+      "end": 1376.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "stuff",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1376.07,
+      "end": 1379.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is cool. I'm glad that we have access to more stuff.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1381.75,
+      "end": 1383.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And also, the negatives are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1383.11,
+      "end": 1384.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "crazy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1384.89,
+      "end": 1387.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Slavery, colonialism, climate change, etc.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1389.53,
+      "end": 1389.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "But,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1392.38,
+      "end": 1393.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah, so my body's conflicted.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1395.92,
+      "end": 1401.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, interactive time. First question, how does an abundance of goods show up in today's society?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1403.32,
+      "end": 1407.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I especially, what I'm gesturing towards here is like consumerism, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1407.92,
+      "end": 1408.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1408.48,
+      "end": 1409.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of a sad thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1409.6,
+      "end": 1410.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Another",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1410.08,
+      "end": 1414.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "question here is how were World War I and World War II the result of the Industrial Revolution?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1417.59,
+      "end": 1432.81,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Food for thought. Okay, sweet. Let us move on to the information revolution, which is from the 1950s-ish through now. And what this did is it abstracted the process of information creation. Okay, so not goods, but information.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1434.51,
+      "end": 1435.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And... What",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1435.99,
+      "end": 1470.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "happened is twofold. One is we made these things called transistors, which are just these little things that can store an electric signal, either on or off. And what that allowed us to do was store information in binary and zeros and ones. And that was really powerful because then it allowed us to take all the information in the world and say, okay, let's try and put it into these electrical signals over here. And That was really powerful to make, that's how computers work. But then there's the, yeah, there's also the network side, which we're talking about. As a, first, though, an example of this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1470.98,
+      "end": 1472.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "information",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1472.34,
+      "end": 1472.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "revolution.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1473.72,
+      "end": 1474.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1474.18,
+      "end": 1509.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is an amazing picture from Bill Gates in the late 90s or early 90s. Who knows? It's definitely in the 90s. And he is sitting on top of a bunch of paper. you know, many, many, you know, tens or hundreds of feet tall that contain all this information that he's like, oh, and you can fit it in the CD. That's pretty crazy. So that's what transistors did, and that's what storing information and electricity did, is it said, oh, you can store so much more information. And then also we abstracted the process of sharing that information through the internet or the internet stack.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1510.62,
+      "end": 1511.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1511.06,
+      "end": 1511.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1511.64,
+      "end": 1512.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1512.7,
+      "end": 1546.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1546.21,
+      "end": 1547.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1548.12,
+      "end": 1577.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "allowed us to, yeah, it created this loop of, you know, information and attention where the more information that you have, the more attention you can kind of gain and then you use that to, you know, in a reinforcing pattern here. And so this is kind of the attention economy. And but the crucial thing here is that, yeah, we now have this abundance of information before this. Before computers and the internet, there was just less information out there. And now,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1579.08,
+      "end": 1649.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "there's so much information. And again, some of it is bad, some of it is good, but there's just a lot of it. And why is there a lot of it? Well, it's because we have abstracted the process of information, creation, and sharing. So, yeah, the information revolution, it changed the scarcity constraint from capital to attention, where information used to be scarce. And then, boom, now you can have abundant information. And what that means is if there's so much information, ah, so much information, well, then something like attention becomes the scarce thing. And when attention is the scarce thing, that's when you get stuff like, yeah, if you control attention, they should say attention, you have power. So Google, Amazon, Facebook, the attention economy, they're all about just sucking information towards you, and then they get so much power from that. or sucking attention towards them rather. And also see something like data is the new oil, where oil used to be very important and is obviously still important. It provides us lots of energy. And the thing that's really important now is capturing attention. And to do that, you need data. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1650.58,
+      "end": 1651.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1651.68,
+      "end": 1658.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what happened. And so these are three big steps here and these big scarcity abstraction switches.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1660.1,
+      "end": 1663.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, so what does the information revolution feel like in your",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 1663.68,
+      "end": 1665.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "body?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 1675.66,
+      "end": 1680.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Primarily, it feels overwhelming. There's a lot of information out there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 1682.26,
+      "end": 1684.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "It's also kind of cool. That Bill Gates image is kind of cool.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 1687.18,
+      "end": 1688.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "But yeah, overwhelming.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1689.82,
+      "end": 1695.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, interactive time. So why were both computers and the internet necessary for information abundance?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1696.48,
+      "end": 1696.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1697.14,
+      "end": 1697.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "one of them",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1697.56,
+      "end": 1698.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "made",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1699.66,
+      "end": 1700.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it easy to...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1700.83,
+      "end": 1701.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "store",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 1701.41,
+      "end": 1703.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "info and one of them made it easy to spread info.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 1705.39,
+      "end": 1724.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "The second one is, is attention the scarce resource? But isn't that just time? Maybe the scarce resource is wisdom or trust. This gets at an idea of right now, obviously attention is the scarce thing with stuff like the attention economy and people making so much money off of it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 1725.61,
+      "end": 1726.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 1726.13,
+      "end": 1729.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "maybe we should think of the scarce resource is something like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 1729.61,
+      "end": 1730.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "wisdom",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 1730.35,
+      "end": 1736.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "or trust. Like, it would be great if we had more trust or more wisdom in society. That would be cool. So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 1737.42,
+      "end": 1738.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 1738.2,
+      "end": 1740.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's an experimental thought.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 1743.06,
+      "end": 1787.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And point number four is networkism as ontology, the generator function for a self-organizing system. What this means is going back to that idea of generator functions and self-organizing systems from last time, we chatted about... this great Donella Meadows piece where she describes, her piece is called the 12 leverage points to intervene in a system. And she talks about these different, 12 different ways to intervene in a system. And way number four is the power to self-organize system structure. And she described it as you need to write marvelously clever rules for self-organization. So the idea here is that if you write new kinds of clever rules, you can,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 1788.2,
+      "end": 1788.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 1788.66,
+      "end": 1792.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "world will self-organize around those rules in a really interesting way.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 1792.62,
+      "end": 1792.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 1792.84,
+      "end": 1805.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "as two examples here, she says, for biological evolution, the raw material is DNA, one source of variety is spontaneous mutation, and the testing mechanism is something like punctuated Darwinian selection.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 1806.23,
+      "end": 1806.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 1806.81,
+      "end": 1816.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so for biology, you have a bunch of weird DNA stuff, you get random variety from spontaneous mutation, and then Darwinian selection says, what should we keep?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 1817.61,
+      "end": 1818.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 1818.13,
+      "end": 1853.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we can look at something like technology and say, okay, for technology, the raw material is accumulated science, the source of variety is human creativity, and the selection mechanism is whatever the market, governments, or foundations will fund, whatever meets human needs. So for technology, it's like you have all this science, all this information lying around, all this knowledge, and then the source of variety is human creativity, adding new kinds of... knowledge or ways to implement that knowledge, and the selection mechanism is whatever people will fund. So if you can make stuff that people will fund, then boom, that moves up in the system. So I think this perspective",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 1853.78,
+      "end": 1855.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "allows",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 1855.06,
+      "end": 1870.42,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "us to understand agricultural revolution, industrial revolution, and information revolution. So for the agricultural revolution, the raw input patterns were things like plants, animals, rocks, and the variety came from the natural world and also from human creativity.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 1871.14,
+      "end": 1871.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 1871.52,
+      "end": 1913.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the selection mechanism was max food output. So whatever would make the most food is whatever we started to optimize for. And so we had plants that we were looking to hang out with. We had animals. And from those, we domesticated them. And we also had rocks and made tools from that. And what that gives us is, you know, the new plane. of, okay, we have a bunch of plants and animals and rocks that we don't know what to do with. Well, we're going to try a bunch of different things with them, and whatever makes the most food is going to get selected for. And we just run that process over and over and over again, and that's why you get things like oxes and fields and plows and simple machines and stuff like that. Okay? So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 1913.6,
+      "end": 1915.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "let's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 1915.08,
+      "end": 1916.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "look at Industrial Revolution for this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 1917.48,
+      "end": 1917.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 1917.86,
+      "end": 1966.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "raw input patterns for that are... Again, something like raw materials, but also science now. And variety, again, comes from the natural world, like finding oil in the ground or whatever, and also human creativity. And the selection mechanism now is Max goods output. And what that means is, okay, we're humans now. We're looking for all this raw material out there. We have this new science that we're trying to apply. And let's see, what can create the most goods? That's how you get stuff like the loom or ways to create new kinds of iron smelting processes and stuff like that. And so it's stuff that would produce more goods or would give us more energy to produce more goods. And the whole industrial revolution is based around this self-organizing system.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 1967.09,
+      "end": 1967.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 1967.61,
+      "end": 1969.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "now for the information revolution,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 1970.19,
+      "end": 1970.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 1970.37,
+      "end": 2000.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "raw input patterns are something like information and apps. The variety is human creativity, and the selection mechanism is max attention capture. So again, we have information out there in bits forms. We have people trying to make apps, trying to make platforms, whatever, and having variety of human creativity there. And essentially, whatever bubbles to the top is whatever can capture the most attention. And so this is why you get something like Google or Facebook is because...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 2001.63,
+      "end": 2002.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 2002.11,
+      "end": 2020.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "all this information out there. Google tries a new app, aka their search page, and boom, it starts getting lots and lots of attention. And boom, that is what this self-organizing system is selecting for. Okay, so something like a Google or Facebook was inevitable given the rules of this self-organizing system.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 2021.4,
+      "end": 2021.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 2021.88,
+      "end": 2046.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think that you can think of this. It's just a helpful way to view how these self-organizing systems have changed. And, you know, moving from... you know, farmism or whatever you want to call the agrarian age, the industrial, the agricultural revolution, moving to factoryism and now to networkism, is these new rearranging of first the land, then other atoms and metals and stuff like that, and now bits.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 2049.45,
+      "end": 2076.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And as a reminder, this, you know, all behavior is the result of underlying feedback loops. And that's why we're talking about these self-organizing systems and these generator functions is because usually, When you talk about ontology in a system, you're talking about an actual thing. You're usually talking about a box or a rock, or you say, you're talking about what is true. You're saying, oh, my head is bald.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 2078.26,
+      "end": 2078.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "What",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 2078.86,
+      "end": 2123.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we're talking about here with these self-organizing systems is we're reminding ourselves that all behavior is the result of an underlying feedback loop. So, yeah, we could talk about the baldness. Or we could talk about something specific in networkism like Facebook, but in fact, it makes more sense to talk about the underlying generator function of that system or the underlying self-organizing system that produces that behavior that produces Facebook. So that's... what we mean by ontology. It's not just talking about the baldness of the head. It's talking about why the baldness occurred. We're not just talking about, you know, the ontological truth of Facebook being in the world. No, we're talking about the deeper ontological truth, which is this new self-organizing system.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 2126.34,
+      "end": 2152.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And as some of the behavior that we can see at the, you know, at the symptom level, yeah, I mean, the employment, the shift from, you know, agricultural revolution to industrial to information. is, yeah, the employment and agriculture has gone down a lot. We used to have a ton and ton of people in agriculture. And then as we started to move folks into, as that both became more efficient, as we started to move folks into",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 2152.7,
+      "end": 2154.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "factories",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 2154.42,
+      "end": 2163.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and the Industrial Revolution, the employment and agriculture went down a lot. And similarly, you can see this is another graph of different people and different.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 2164.62,
+      "end": 2165.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "types",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 2165.12,
+      "end": 2186.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of jobs, farming, blue collar, service, and white collar. And yeah, we used to have a ton of farming, and now we have a lot less. You know, white collar jobs have really increased. And so this is just kind of a symptom-level way to know that this underlying generator function has changed. Okay. So now, what does networkism as a self-organizing system feel like in your body?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 2188.92,
+      "end": 2189.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 2200.77,
+      "end": 2201.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 2201.39,
+      "end": 2201.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that it,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 2205.25,
+      "end": 2205.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 2205.83,
+      "end": 2207.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "there's just a tension between...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 2208.02,
+      "end": 2208.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "looking",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 2208.66,
+      "end": 2212.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "at the surface level and seeing something like Google or Facebook",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 2212.0,
+      "end": 2212.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 2212.82,
+      "end": 2213.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then looking deeper",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 2213.72,
+      "end": 2214.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 2214.72,
+      "end": 2216.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what these self-organizing systems are.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 2221.99,
+      "end": 2222.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 2222.63,
+      "end": 2223.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "there's tension in my",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 2223.71,
+      "end": 2224.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "body.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 2226.52,
+      "end": 2238.81,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Interactive time. What are the raw input patterns of networkism? What is the selection mechanism? So again, this is a quick pop quiz. What is selected for in networked systems?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 2239.7,
+      "end": 2240.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 2240.3,
+      "end": 2253.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then second here, this is for future times. How do protocols create new self-organizing systems? So how did TCPIP make a self-organizing system? How does",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 2253.8,
+      "end": 2255.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Google",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 2255.0,
+      "end": 2263.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "PageRank make a self-organizing system? We'll talk about this more in next episode as well, but this is just a preview or something to think about before then.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 2264.4,
+      "end": 2264.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 2265.28,
+      "end": 2272.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so now we're going to get maybe to the juiciest part, which is simply this idea of seeing like a networked human organism. And...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 2273.1,
+      "end": 2273.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 2273.3,
+      "end": 2292.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "idea here comes from this beautiful book called Seeing Like a State, which talks about what it's like to see as a state. And what it's like to see as a state is to see the world as grids and numbers and things you need to, imagine you're a big bureaucracy like the United States government. Well, you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 2292.84,
+      "end": 2293.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "can't,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 2294.1,
+      "end": 2312.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "complexity is sad for you. And so you really need to quantify things and measure them and make them legible to the... democracy into the bureaucracy. And instead of seeing like a state, we can instead start to see like this networked human organism. So what is it like to see like a networked human organism?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 2313.73,
+      "end": 2314.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 2314.77,
+      "end": 2331.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "as a reminder here, the networked human organism is this nature 2.0. We have our nature 1.0, Earth, hooray Earth. We have this nature 3.0 AI, which we will beautifully co-evolve with. And now we have this nature 2.0, this us, this networked human organism.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 2332.35,
+      "end": 2333.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 2333.42,
+      "end": 2362.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "does this self-organizing system want? What does this networked human organism want? Well, it wants the frontier. It wants juicy things. This is a great perspective from Paul Romer, who won the Nobel Prize in 2018 for these ideas. And he says, at the most basic level, the Nobel Prize in economics, by the way, He says, at the most basic level, an economy grows whenever people take resources and rearrange them in a way that makes them more valuable.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 2363.39,
+      "end": 2363.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 2363.87,
+      "end": 2380.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you can imagine, on the left side, you have a pile of dirt. It's not that valuable. It's not of use, really. But if you take that dirt and like smush it together and maybe heat it up and you get a cup, then that cup is very valuable. So you've rearranged the atoms to make them more valuable.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 2381.03,
+      "end": 2382.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 2382.82,
+      "end": 2392.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "idea from Paul Romer, is just a crucial way to think of this networked to human organism. It as rearranging atoms on Earth to make them more valuable for us.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 2394.15,
+      "end": 2394.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 2394.75,
+      "end": 2417.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I like to think of this networked human organism as a thing that uses knowledge to use energy to rearrange atoms. In other words, it's this Borg that tries to, yeah, take the information and the knowledge in the world, use that knowledge. to take the energy that we have coming in from the sun and other things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 2417.54,
+      "end": 2418.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 2418.56,
+      "end": 2426.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "use those to rearrange atoms to make the networked human organism thrive okay that's how it kind of works",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 2426.06,
+      "end": 2427.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 2427.43,
+      "end": 2430.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "can kind of think of it like an udaloup which is this easy",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 2431.25,
+      "end": 2432.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "framework",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 2432.63,
+      "end": 2479.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that pilots actually used it was developed in the Air Force, I think. If you're an upside-down pilot, ah, what should you do? You should observe and orient, do some sense making, ah, where am I? Oh, I'm upside down. And then you should decide and act. Oh, I should go right-side-up now. And then you, but it's a loop where you should say, oh, am I actually going right-side-up? Let's observe and orient again. You just keep on doing that until you get on upside-down. But all animals are doing this. Humans and... ants and everybody, you're sense-making in your environment, and then you're making choices. And then you see, oh, was that good for me or bad for me? Oh, I hit myself out. Bad, bad. Do something different. And so we're just continually in this process. So you can think of it as on one side, there's the knowledge and the sense-making piece,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 2480.82,
+      "end": 2526.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the observing and orienting. And on the other side, it's deciding and acting, using the energy that you have and to rearrange atoms towards some goal. which is usually to perpetuate the system, to continue to survive, or to make more humans or whatever. So this perspective of rearranging bits and atoms is crucial to this frontier idea that we've been talking about. Where in the industrial age, we were developing the atoms frontier. We are rearranging the atoms for the networked human organism to be happier, to produce more goods. And similarly, And when, you know, another input to that was science and frontier stuff. So it's like, okay, we need new knowledge to know how to rearrange the atoms better.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 2527.27,
+      "end": 2527.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 2527.75,
+      "end": 2537.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then when we got to the information age, it was like, okay, we're now rearranging bits to make it so that the networked human organism understands things better in theory.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 2538.61,
+      "end": 2539.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 2539.09,
+      "end": 2545.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's this idea of frontier rearrangement. And this idea that we talk about a lot is this bits versus atoms concept.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 2546.79,
+      "end": 2547.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Bits",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 2547.43,
+      "end": 2557.19,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "are information and they're a means to meet human needs, right? I can't eat a bit. I can't eat like electricity in my computer.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 2557.75,
+      "end": 2558.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 2558.39,
+      "end": 2570.19,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "can provide me information and knowledge, but it doesn't meet my need in and of itself. While atoms are physical and they can actually meet human needs like food or what have you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 2570.97,
+      "end": 2571.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 2571.61,
+      "end": 2574.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's this differentiation between bits and atoms and the frontier.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 2575.47,
+      "end": 2575.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 2575.97,
+      "end": 2638.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "now we can think, okay, what does this networked human organism want? Well, again, it wants knowledge and energy to rearrange atoms. And so, and towards what goal? Like, it's taking its knowledge to use energy to rearrange atoms, but why? Like, what is its actual goal? Well, the goal traditionally for the networked human organism has been making more humans. And this is actually going to level out soon. where the future goal hopefully will be just a sustainable and resilient human race. But you can see, you know, in the last 120 years, wow, we've had this massive increase in the number of humans. And you can see this networked human organism at work with something like the HABOR process, which makes fertilizer. And essentially what does is it takes nitrogen from the air. The air is like 78% nitrogen. And it turns it into nitrogen. It takes nitrogen from the air and then turns into a kind of nitrogen to put into the ground, ammonia. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 2638.38,
+      "end": 2639.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 2639.5,
+      "end": 2670.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "necessary because plants need that in order to survive. They love the delicious nitrogen. And then we need that nitrogen. We eat that nitrogen as humans and then it goes into our bodies. And the crazy thing with the Haber process, this chemical process, is it's responsible for 1 to 2% of the global energy output. So if all the energy used on Earth of the networked human organism, one to two percent is taking nitrogen from the air, turning it into fertilizer so that we can give it to plants so that we can eat those plants.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 2671.34,
+      "end": 2671.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 2671.78,
+      "end": 2683.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it's responsible, this Haber process is responsible for 50% of the nitrogen in humans. So of all the nitrogen that's in my body, 50% of it came from this process, this scientific process that we developed in 1960.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 2685.08,
+      "end": 2690.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And so, yeah, this is why they call it the detonator. of the population explosion",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 2690.55,
+      "end": 2691.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 2691.57,
+      "end": 2692.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we were moving up a bit",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 2692.89,
+      "end": 2693.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 2693.75,
+      "end": 2701.85,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "terms of the amount of humans that we had but then essentially right when the Haber process started we got a lot better at making food",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 2701.85,
+      "end": 2702.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 2702.89,
+      "end": 2704.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it allowed us to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 2704.61,
+      "end": 2705.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 2705.9,
+      "end": 2707.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "make more humans essentially",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 2707.74,
+      "end": 2708.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 2708.72,
+      "end": 2730.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so this is i think this is just a helpful way to think of the network to human organism and what it wants is it wants to find new an example of what it wants is to make more humans And a way to make more humans is to make this new scientific process that puts more nitrogen from the air into the ground, into the plants, into the humans to make more of us. Okay? So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 2730.03,
+      "end": 2731.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 2731.46,
+      "end": 2740.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the idea. A quick interactive time that I should say here is what are the downsides of the Haber process and have we closed the loops?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 2740.6,
+      "end": 2741.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 2741.08,
+      "end": 2746.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "if we're taking all this nitrogen, pumping a bunch of it into the ground, using 2% of the world's energy on this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 2747.79,
+      "end": 2748.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 2748.27,
+      "end": 2752.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "could be a negative. In fact, just as a sad",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 2752.21,
+      "end": 2753.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "downside",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 2753.51,
+      "end": 2763.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "right now, I'm recording this video a week or two after an explosion in Beirut, and that explosion was of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 2763.26,
+      "end": 2764.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "ammonium",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 2764.7,
+      "end": 2772.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "nitrate, which is a result of this habit process. It's fertilizer. So we have these big stores of fertilizer around the world.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 2773.84,
+      "end": 2774.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 2774.36,
+      "end": 2785.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's good because it allows us, it gives us the fertilizer to eat. But it's bad because they can explode either that one or one in Tianjin and kill hundreds of people. So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 2786.09,
+      "end": 2787.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 2787.71,
+      "end": 2793.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "those are what happens when humans find a process that they love and then don't really think about some of the downsides.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 2794.02,
+      "end": 2794.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 2795.32,
+      "end": 2830.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So I think it's helpful to think of there are three, if we think about knowledge and energy and atoms, let's talk about each of those in turn for a second here. And so energy, what have the humans done with energy? Well, humans have, we used to, first we could only use our own energy, which was sad, but then we started to use the energy of the animals around us, which was cool. We domesticated animals and had the ox plow the field instead of us. And then we found fossil fuels, which were kind of awesome, which was energy from the sun, put into the ground, hung out there for a while, and then eventually we used it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 2831.26,
+      "end": 2831.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 2831.62,
+      "end": 2846.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "now we're finding new kinds of energy, renewable energy, from the sun directly or the wind directly or water directly, and then also stuff like nuclear energy. So we're on this constant process of finding more energy because we need that energy in order to do all the things we want to do.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 2847.85,
+      "end": 2848.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 2848.33,
+      "end": 2859.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we rearrange atoms with that energy. You can think about atoms. We've talked a lot about rearranging them through factories to produce more goods, but there's also these amazing maps of transporting atoms.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 2860.41,
+      "end": 2860.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "In",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 2860.81,
+      "end": 2868.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the top left here, this was the rate of travel in 1800 for how far you could go in a certain amount of days or weeks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 2869.03,
+      "end": 2869.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 2869.43,
+      "end": 2880.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this is the United States. And you can see that it took, I know the text is kind of small here, but it says like five weeks to go, I don't know, 1,000 miles, 2,000 miles, not very far.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 2881.26,
+      "end": 2881.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 2881.68,
+      "end": 2930.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "was tough. We were not very good at transporting atoms at that time. And then later in 1830 and 1857, we got better, but this is still like many weeks to get to, it was still like six weeks to get to Colorado over here. And then finally in 1930, boom, now we have railroads. And railroads, instead of weeks, these lines are days. So it takes to get from New York. all the way over here, it only takes three days, which is crazy. It's super, super, super different than it taking many weeks, six weeks beforehand. And then finally, once we have rates of travel in 1930 by Airways, this one is by railroads on the left, but Airways is on the right, it's not just days, but we're just talking hours, people. You can fly places.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 338,
+      "start": 2931.41,
+      "end": 2931.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 339,
+      "start": 2931.85,
+      "end": 2952.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this is us transporting atoms and transporting ourselves. And again, from this perspective of this Borgie networked human organism, One thing that it wants to do is take atoms, push them through factories, and make stuff for everybody, like, you know, shirts. But another thing it wants to do is it wants to take all the humans and all the atoms on Earth and put them in different places to rearrange things around.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 340,
+      "start": 2952.89,
+      "end": 2953.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 341,
+      "start": 2953.33,
+      "end": 2954.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so we've gone a lot better at that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 342,
+      "start": 2955.25,
+      "end": 2955.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We've",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 343,
+      "start": 2955.69,
+      "end": 2981.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "also gone a lot better just shipping them. Not only humans, but especially, yeah, goods around the world. In 1968, we made this ISO standard for shipping containers. which are the beautiful shipping containers that we know and love today. And you can see this graph on the right from The Economist, which looks at the number, the amount of worldwide trade. And, you know, in 1968, when we standardized shipping containers,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 344,
+      "start": 2982.72,
+      "end": 3030.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then, wow, boom, we started to trade a lot more, whatever, 10x, something like that, from 2 billion to 20 trillion to 20 trillion. And you can see it just totally changes from 1965 to 1970. Port labor productivity went from 1.7 to 30. You could 30 tons per hour. The average ship size went up 2.5X. The number of loading ports went down a bunch because you just got like, you need just a really big place to deal with all these shipping containers. The insurance costs went down 7X. The value of goods in transit per ton. Yeah. So the cost, it went down. It went down. So we were able to ship cheaper things. So this is. a cool example of this abstraction process or a process of standardizing things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 345,
+      "start": 3030.7,
+      "end": 3032.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "before",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 346,
+      "start": 3032.22,
+      "end": 3056.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "shipping was he had to have all these fisher you know uh wharf's fishermen or not fishermen but um the wharf's men the people who hung out and unloaded everything and now we had these massive shipping containers which made this big standard around the world so that everybody could talk to each other more easily and ship a lot more and then we did and we got better at shipping atoms The networked human organism got a lot better at shipping atoms.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 347,
+      "start": 3058.21,
+      "end": 3068.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, so now let's talk about knowledge as the third piece. And, you know, knowledge is very connected to information, but it's different. This is, though, the thing that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 348,
+      "start": 3069.27,
+      "end": 3070.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 349,
+      "start": 3070.19,
+      "end": 3095.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "internet can do. You know, if we think about atoms and energy... The internet doesn't really help us with those very much. The internet doesn't move atoms around. It just doesn't. The internet doesn't give us new energy. It just doesn't. What it does do is it allows us to move information around, which can then lead to knowledge for us. And this has changed over time. If you think from a network team and organism perspective,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 350,
+      "start": 3096.06,
+      "end": 3096.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 351,
+      "start": 3096.5,
+      "end": 3110.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "like we've gotten better at shipping goods or like, you know, transporting ourselves across countries. So, too, have our information sharing. It's gotten a lot better as well. So, you know, at the beginning, we had spoken language and written language. Those were",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 352,
+      "start": 3110.91,
+      "end": 3112.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "crucial",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 353,
+      "start": 3112.17,
+      "end": 3167.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "pieces for us in order to share information with each other. And then in 1440 we made the printing press, which is beautiful. And we'll talk about this graph on the right in a second. There's a funny example, too, of the postage stamp, which was made in 1840. And that was actually a really crucial standardization and a thing that made less friction. Because beforehand, you had to bring your package to the person and you had to say, hey, do you want to pay me for this package? And then get the money on the receiving end. And so instead we had this nice standard just like, okay, no, postage stamps on everything. You can put them on, and then it was much easier to ship things. For the printing press, though, what the printing press allowed is beforehand, everything was handwritten, which is crazy. All the books were handwritten, and that meant that the Word of God, there was a monopoly on the Word of God. And the printing press, though, when it came around, it was like, okay, we can now print",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 354,
+      "start": 3167.08,
+      "end": 3168.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "books",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 355,
+      "start": 3168.78,
+      "end": 3182.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "with this press. and make a lot of the same book and give it to everybody and after we created it in 1440 it then wow the amount of printed books went up a lot you know there were essentially zero",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 356,
+      "start": 3182.96,
+      "end": 3184.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "before",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 357,
+      "start": 3184.62,
+      "end": 3259.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it and then you know by the 18th century there were a billion so a billion output per year so this is an example of humans doing this over time so we've always been better at you know creating and sharing information, but the internet really supercharges that. And so this is just to say that those three key pieces are always happening over time for this networked human organism. The networked human organism, it wants to, you know, take these, take energy in, and we're getting better and better at taking energy from the world. It wants to then... take that energy to move atoms around and to move ourselves and to feed us and things like that. And it wants to use knowledge or information sharing to get better at all of those things. And so we, you know, and to coordinate with each other. So that's what this human organism is doing. It's trying to do that. Generally for humans, thus far as been to make more humans, and then in the future, it will be to make a resilient human species or resilient networked human organism. So that's what it feels like. And that's what this thing feels like as it wakes up, is combining these things to, yeah, this thing is really waking up now because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 358,
+      "start": 3259.74,
+      "end": 3261.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "information",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 359,
+      "start": 3261.26,
+      "end": 3271.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "can now be spread in the system at zero marginal cost. Okay, so what does this awakened, networked human organism feel like in your body?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 360,
+      "start": 3288.75,
+      "end": 3289.35,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Partially,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 361,
+      "start": 3291.12,
+      "end": 3292.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it made me feel",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 362,
+      "start": 3292.1,
+      "end": 3293.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 363,
+      "start": 3293.22,
+      "end": 3293.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it was cute.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 364,
+      "start": 3294.89,
+      "end": 3295.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 365,
+      "start": 3295.37,
+      "end": 3297.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "there was this cute thing that was growing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 366,
+      "start": 3297.07,
+      "end": 3297.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "up.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 367,
+      "start": 3298.27,
+      "end": 3299.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Like I wanted to name it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 368,
+      "start": 3307.67,
+      "end": 3309.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, it's cool to think of it as a,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 369,
+      "start": 3309.39,
+      "end": 3309.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 370,
+      "start": 3309.91,
+      "end": 3310.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a Borg being",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 371,
+      "start": 3310.93,
+      "end": 3312.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 372,
+      "start": 3312.34,
+      "end": 3312.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 373,
+      "start": 3314.07,
+      "end": 3315.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "something",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 374,
+      "start": 3315.29,
+      "end": 3319.91,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's getting better at moving stuff within it to coordinate to make the thing itself",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 375,
+      "start": 3320.36,
+      "end": 3321.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "better.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 376,
+      "start": 3325.16,
+      "end": 3332.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, interactive time. What is your own body's udaloupe? Remember that oudaloups happen for every...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 377,
+      "start": 3332.56,
+      "end": 3333.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "buddy",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 378,
+      "start": 3333.08,
+      "end": 3346.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "they happen at the very you know with cats and ants and they happen at the very top level with you know networked human organism but it also works for you as a person how do you do sense making and then choice making and what does that loop look like for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 379,
+      "start": 3346.38,
+      "end": 3348.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 380,
+      "start": 3348.47,
+      "end": 3351.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "finally another question yeah what does this networked human organism want",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 381,
+      "start": 3351.55,
+      "end": 3352.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 382,
+      "start": 3352.45,
+      "end": 3354.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "do you think it desires what's its",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 383,
+      "start": 3354.11,
+      "end": 3355.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "goal",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 384,
+      "start": 3357.75,
+      "end": 3358.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "okay",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 385,
+      "start": 3358.29,
+      "end": 3359.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "finally",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 386,
+      "start": 3359.47,
+      "end": 3362.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we are to the last section here cultural evolution",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 387,
+      "start": 3363.73,
+      "end": 3364.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 388,
+      "start": 3364.21,
+      "end": 3368.13,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the idea is that as technology evolves, so too do we.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 389,
+      "start": 3371.15,
+      "end": 3380.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So cultural evolution is this brilliant idea from, there's a lot of people, just like any academic field who study this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 390,
+      "start": 3381.07,
+      "end": 3381.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 391,
+      "start": 3381.71,
+      "end": 3385.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "have mostly learned about it from The Secret of Our Success by Joseph Heinrich.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 392,
+      "start": 3386.56,
+      "end": 3387.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 393,
+      "start": 3387.26,
+      "end": 3389.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the idea behind cultural evolution",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 394,
+      "start": 3389.6,
+      "end": 3390.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 395,
+      "start": 3391.2,
+      "end": 3397.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah, as a reminder, technology changes society. but also society changes technology. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 396,
+      "start": 3398.03,
+      "end": 3399.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we've",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 397,
+      "start": 3399.27,
+      "end": 3400.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "talked a lot about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 398,
+      "start": 3400.23,
+      "end": 3401.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 399,
+      "start": 3401.35,
+      "end": 3407.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "technological piece here, but how is our, how is culture evolving? How is society evolving as well?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 400,
+      "start": 3409.5,
+      "end": 3411.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And so one way to think about this is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 401,
+      "start": 3411.6,
+      "end": 3412.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 402,
+      "start": 3412.82,
+      "end": 3417.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "lot of what we've been talking about is how is the real, which is how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 403,
+      "start": 3417.56,
+      "end": 3418.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 404,
+      "start": 3419.61,
+      "end": 3437.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this generator function of, oh, we have this. new bits frontier that we're trying to rearrange to help the networked organism wake up and to share information at zero marginal costs. Those are all kind of is statements about inevitable processes of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 405,
+      "start": 3437.95,
+      "end": 3440.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "reality.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 406,
+      "start": 3440.59,
+      "end": 3443.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And kind of what we're talking about with cultural evolution is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 407,
+      "start": 3443.87,
+      "end": 3445.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 408,
+      "start": 3445.2,
+      "end": 3452.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is the symbolic layer on top of that? What symbols do humans use to understand that reality?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 409,
+      "start": 3455.7,
+      "end": 3504.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Another way to think about this is back to this, you know, paradigm thing. We've been talking a lot about ontology. But what about, especially this ethics piece, you know, what kinds of ethics are we going to, how are the ethics going to respond to the ontology? And to some extent, how is the epistemology also going to respond to this ontology, aka, as networkism is happening, how do our ethics and epistemology need to change? How does what we believe is good? How we understand the world? How do those change? Okay, so the key idea in this book, Secrets of Our Success, is, or there's a lot of sweet ideas in it, but one of them is that the agricultural revolution and the industrial revolution created cities. They made it the case that it was, uh, that we could live in these cities and it incentivized living in cities.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 410,
+      "start": 3507.02,
+      "end": 3546.97,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "But the issue is that, or the issue, I don't know if issues the right term, cities require high trust of strangers. If you're in this city, wherever this is. This is, wow, you need a lot of, there's strangers walking around you all the time. You really need more trust. And so how do you create trust? There's a lot of ways, and you can create it with something like police. You can create it with something like money, where you know that you can pay money to people and that the money is trusted or that if someone does something bad to you, you can call the police or what have you. But another way to create trust is through moralizing gods. These moralizing big gods. And the idea",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 411,
+      "start": 3546.97,
+      "end": 3548.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 412,
+      "start": 3548.25,
+      "end": 3548.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 413,
+      "start": 3549.34,
+      "end": 3550.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yes,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 414,
+      "start": 3550.2,
+      "end": 3590.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "let's look at this little picture here. As societies grow bigger, so too do their gods. So you used to have these small, you know, tribal societies or what have you. You worship spirits that were connected to the land and nature. Wow. And they didn't really care about human behavior as much. It was just like, oh, rain is here. Hooray. versus these big moral, these moralizing big gods, which helped societies, you know, scale up to full-blown states, where now you have these big gods that say things like, ooh, if you're bad, then you'll go to hell. They were telling you what morals to have.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 415,
+      "start": 3591.22,
+      "end": 3591.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 416,
+      "start": 3591.86,
+      "end": 3595.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the idea from a cultural evolution perspective is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 417,
+      "start": 3595.73,
+      "end": 3596.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 418,
+      "start": 3596.89,
+      "end": 3614.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "parts of society, that were able to have these moralizing big gods, they were able to create more trust in their little society. So you have Zeus over here, some moralizing big god that said, if you're bad to your friends or your strangers, then God will punish you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 419,
+      "start": 3614.65,
+      "end": 3615.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 420,
+      "start": 3615.09,
+      "end": 3647.31,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what that meant is people were better. They were like, oh, okay, okay, I'll be good. And so they were good people or better people. And when you have a lot more trust and better people than that society, then expands and expands and expands. And if you have this other society over here that doesn't have a moralizing big god and where there's less trust between strangers and where people are less good because they're less scared of hell, well, then they might get out-competed by this one over here that's making more money and doing more knowledge and stuff like that. So that's the idea here is that you have this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 421,
+      "start": 3647.31,
+      "end": 3649.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "evolutionary",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 422,
+      "start": 3649.97,
+      "end": 3658.05,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "process where moralizing big gods were chosen for, were optimized for. in this evolutionary process.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 423,
+      "start": 3659.92,
+      "end": 3690.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And so, yeah, we've had, I think, the crucial question here, when we think about how culture changes, there's a lot of parts of culture that obviously are changing with the internet. You know, we have cat memes now. But a big question is, what happens to religion and what happens to gods and spirituality? We know that in the past we had these moralizing big gods. that outcom, who's, you know, societies that had them were able to outcompete others",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 424,
+      "start": 3690.32,
+      "end": 3691.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 425,
+      "start": 3691.62,
+      "end": 3703.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "they, you know, were able to create trust. And that happened within cities and the agricultural revolution, the industrial revolution. But now with the information revolution in this new networked to human organism,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 426,
+      "start": 3703.98,
+      "end": 3705.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 427,
+      "start": 3705.08,
+      "end": 3714.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of God is, quote, quote, correct, or is the most evolutionarily adapted to this new networked to human organism?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 428,
+      "start": 3715.37,
+      "end": 3715.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 429,
+      "start": 3715.89,
+      "end": 3716.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is an open question.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 430,
+      "start": 3718.75,
+      "end": 3719.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I like to think of this as,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 431,
+      "start": 3720.12,
+      "end": 3721.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "again,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 432,
+      "start": 3721.28,
+      "end": 3732.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "back to the symbolic versus the real. We have the real, which is networkism and also this emerging, so the networkism piece here is it's networkism and it is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 433,
+      "start": 3732.74,
+      "end": 3734.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 434,
+      "start": 3734.0,
+      "end": 3749.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "reality that we need to have here, which is. a ethic, a bentoism ethic of saying, now me is good, but also holistically future me and future us and now us are good as well. And we need to have this,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 435,
+      "start": 3749.57,
+      "end": 3750.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 436,
+      "start": 3750.31,
+      "end": 3781.01,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, bentoist idea both at the human level down here for individuals and all the way every scale up, communities should have this. And so too does the network to human organism need to have this. The organism itself should be like, I need to make sure that I continue living as a future us. And so, yeah, we need to have bentoism at all scales here. That's kind of what we need, given networkism. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 437,
+      "start": 3781.01,
+      "end": 3782.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 438,
+      "start": 3782.55,
+      "end": 3790.81,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "question is, yeah, what symbolic layer is going to actually be able to hold that container? What kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 439,
+      "start": 3790.81,
+      "end": 3792.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "spirituality",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 440,
+      "start": 3792.91,
+      "end": 3802.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "or clear, important path for humans will be able to Yeah, we'll feel right to people as this thing emerges.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 441,
+      "start": 3802.88,
+      "end": 3803.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 442,
+      "start": 3803.48,
+      "end": 3810.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is an open question. Okay. So what does the cultural evolution of gods for networkism",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 443,
+      "start": 3810.43,
+      "end": 3811.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "feel",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 444,
+      "start": 3811.33,
+      "end": 3812.41,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "like in your body?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 445,
+      "start": 3814.24,
+      "end": 3814.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hmm.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 446,
+      "start": 3825.5,
+      "end": 3827.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Part of me is worried that it's a cult",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 447,
+      "start": 3827.9,
+      "end": 3828.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 448,
+      "start": 3833.85,
+      "end": 3836.19,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that the new spirituality",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 449,
+      "start": 3836.19,
+      "end": 3837.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 450,
+      "start": 3838.36,
+      "end": 3839.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "new gods",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 451,
+      "start": 3839.54,
+      "end": 3840.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "need",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 452,
+      "start": 3840.82,
+      "end": 3844.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "to be coherently plural. They especially need to be plural.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 453,
+      "start": 3845.74,
+      "end": 3846.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "They",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 454,
+      "start": 3846.24,
+      "end": 3854.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "need to be meta with respect to themselves. We can't just do something where we say this is the one way and the only way. Instead, we need a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 455,
+      "start": 3854.76,
+      "end": 3856.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "process",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 456,
+      "start": 3856.32,
+      "end": 3858.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "for awakening that people follow.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 457,
+      "start": 3859.81,
+      "end": 3860.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 458,
+      "start": 3860.37,
+      "end": 3861.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "also creates community and connection",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 459,
+      "start": 3861.99,
+      "end": 3862.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 460,
+      "start": 3862.83,
+      "end": 3863.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "things like that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 461,
+      "start": 3864.95,
+      "end": 3865.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 462,
+      "start": 3865.41,
+      "end": 3868.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "other thing that I'm feeling in my body is just excitement. Excitement for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 463,
+      "start": 3868.93,
+      "end": 3870.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 464,
+      "start": 3870.47,
+      "end": 3897.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this looks like. Cool culture. Cool future culture. That's going to be cool. Okay. Interactive time. So we talked a little bit about how governments, markets and religions create trust. You know, governments can do it with something like police or laws. Markets can do it by creating, you know, money that allows people to trust and interactions with each other. And religions can do it with these high moralizing gods.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 465,
+      "start": 3899.5,
+      "end": 3899.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 466,
+      "start": 3899.98,
+      "end": 3901.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, but how can code create trust?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 467,
+      "start": 3902.42,
+      "end": 3902.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "When",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 468,
+      "start": 3902.9,
+      "end": 3903.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you do something on the internet,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 469,
+      "start": 3905.04,
+      "end": 3905.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "something",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 470,
+      "start": 3905.62,
+      "end": 3908.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "like Airbnb or Uber, what makes you trust",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 471,
+      "start": 3908.78,
+      "end": 3909.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 472,
+      "start": 3909.98,
+      "end": 3910.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "platform?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 473,
+      "start": 3912.66,
+      "end": 3913.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Second",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 474,
+      "start": 3913.3,
+      "end": 3913.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "question",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 475,
+      "start": 3913.72,
+      "end": 3915.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 476,
+      "start": 3915.56,
+      "end": 3921.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a creative question. It is, imagine your god of the networked human organism. What does it look like?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 477,
+      "start": 3923.32,
+      "end": 3923.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And especially",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 478,
+      "start": 3923.84,
+      "end": 3925.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 479,
+      "start": 3925.69,
+      "end": 3929.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of God do you think will outcompete the other gods",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 480,
+      "start": 3929.29,
+      "end": 3930.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 481,
+      "start": 3931.7,
+      "end": 3934.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "create a sustainable human civilization?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 482,
+      "start": 3937.55,
+      "end": 3938.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 483,
+      "start": 3938.59,
+      "end": 3939.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so we have now concluded.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 484,
+      "start": 3940.49,
+      "end": 3940.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "At",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 485,
+      "start": 3940.87,
+      "end": 3944.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the beginning, we chat about what is networkism and why do we care about it?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 486,
+      "start": 3944.9,
+      "end": 3945.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 487,
+      "start": 3945.4,
+      "end": 3949.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we chatted about abundance and scarcity and these dynamics of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 488,
+      "start": 3949.78,
+      "end": 3950.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 489,
+      "start": 3950.78,
+      "end": 3961.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "in the agriculture revolution, industrial revolution, information revolution, how we switched from, you know, food being scarce to land being scarce, to capital being scarce, and now to attention being scarce.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 490,
+      "start": 3962.16,
+      "end": 3962.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 491,
+      "start": 3962.68,
+      "end": 3966.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then we chat about networkism as ontology, that it is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 492,
+      "start": 3966.1,
+      "end": 3967.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 493,
+      "start": 3967.28,
+      "end": 3970.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "generator function for a self-organizing system.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 494,
+      "start": 3970.92,
+      "end": 3971.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 495,
+      "start": 3971.38,
+      "end": 3971.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we're now,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 496,
+      "start": 3973.54,
+      "end": 3979.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah, finding frontiers to consume the bits frontier. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 497,
+      "start": 3979.47,
+      "end": 3980.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 498,
+      "start": 3981.07,
+      "end": 4000.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "led us to thinking about, yeah, seeing as a networked human organism. What does it like to, like, see as this thing? Mmm, I'm delicious. Or I want to, I want to be a sustainable networked human organism. I'm going to use my information and knowledge to, you know, rearrange, to use energy from the world and rearrange atoms so that I can survive.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 499,
+      "start": 4001.67,
+      "end": 4002.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 500,
+      "start": 4002.15,
+      "end": 4003.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then finally we chat about cultural evolution",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 501,
+      "start": 4003.95,
+      "end": 4005.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 502,
+      "start": 4005.19,
+      "end": 4007.97,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "how a key part of cultural evolution is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 503,
+      "start": 4008.07,
+      "end": 4009.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "these",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 504,
+      "start": 4009.43,
+      "end": 4009.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "gods",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 505,
+      "start": 4009.99,
+      "end": 4010.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 506,
+      "start": 4010.65,
+      "end": 4010.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 507,
+      "start": 4011.34,
+      "end": 4012.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "those",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 508,
+      "start": 4012.56,
+      "end": 4016.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "evolved from our past. And it will be curious to see what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 509,
+      "start": 4016.48,
+      "end": 4017.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kinds",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 510,
+      "start": 4017.56,
+      "end": 4020.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of gods evolve in our networked future.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 511,
+      "start": 4022.58,
+      "end": 4026.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay. So to conclude, what will it feel like to integrate your learning?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 512,
+      "start": 4027.33,
+      "end": 4027.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 513,
+      "start": 4027.89,
+      "end": 4029.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "also, what should you watch out for?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 514,
+      "start": 4030.33,
+      "end": 4030.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 515,
+      "start": 4031.37,
+      "end": 4033.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "one thing is...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 516,
+      "start": 4033.81,
+      "end": 4034.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 517,
+      "start": 4034.55,
+      "end": 4038.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this deeper sense of time, both the deep, deep versions of time",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 518,
+      "start": 4038.43,
+      "end": 4039.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 519,
+      "start": 4040.08,
+      "end": 4051.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "your own insignificance, but also your own excitement with just trying to do your best. Excuse me. But also this deeper sense of time of thinking of us",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 520,
+      "start": 4051.28,
+      "end": 4052.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 521,
+      "start": 4052.56,
+      "end": 4059.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the agricultural revolution, industrial revolution, and now this transition into the information age.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 522,
+      "start": 4060.3,
+      "end": 4060.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 523,
+      "start": 4060.78,
+      "end": 4065.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you'll start to see that transition of ages more, you know, from food to factories to information.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 524,
+      "start": 4066.42,
+      "end": 4066.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 525,
+      "start": 4066.9,
+      "end": 4080.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "also nice because you'll start to see these abundance processes in daily life where you can look around and, you know, when you eat food, you can be like, wow, I'm getting this food from this long process of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 526,
+      "start": 4080.48,
+      "end": 4081.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 527,
+      "start": 4081.44,
+      "end": 4081.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "created",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 528,
+      "start": 4081.94,
+      "end": 4083.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 529,
+      "start": 4083.08,
+      "end": 4104.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "idea of domesticated plants and animals. And then we started to do things like the Haber process. And now we have these farming things that give us so much food. We have so much more food now. So you can kind of see that abundance when you eat food. And you can also see it with goods, the stuff that's around you, your t-shirt, your microphone, your computer, all the things. You're like, wow, there's a big",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 530,
+      "start": 4104.5,
+      "end": 4105.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "process",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 531,
+      "start": 4105.72,
+      "end": 4111.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "producing goods for us here. And finally, with information, you can start to see",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 532,
+      "start": 4111.0,
+      "end": 4112.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 533,
+      "start": 4112.54,
+      "end": 4115.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the information on your computer and on your phone as...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 534,
+      "start": 4116.85,
+      "end": 4117.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "part",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 535,
+      "start": 4117.31,
+      "end": 4122.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of this new massive influx of information that we now have.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 536,
+      "start": 4124.61,
+      "end": 4127.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And then fourth, you'll start to see the world as a networked human organism.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 537,
+      "start": 4128.09,
+      "end": 4128.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "In",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 538,
+      "start": 4128.61,
+      "end": 4133.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "addition to thinking about yourself and your community and stuff like that, you'll start to see things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 539,
+      "start": 4133.42,
+      "end": 4136.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as, yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 540,
+      "start": 4136.87,
+      "end": 4149.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "as you'll start to see these systems as desiring as like rearranging things to achieve a goal. And especially this networked human organism, it rearranging things to achieve its goal of. sustainability.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 541,
+      "start": 4152.2,
+      "end": 4153.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I also think it's important to say here",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 542,
+      "start": 4153.98,
+      "end": 4155.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 543,
+      "start": 4155.04,
+      "end": 4161.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "terms of integrating your learning, there is a mindset, once you start to see this information abundance",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 544,
+      "start": 4161.49,
+      "end": 4162.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 545,
+      "start": 4162.43,
+      "end": 4172.63,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you're like, oh my God, there's so much information now, the hope, the reminders that information is just information. It's zeros and ones. It's cat memes through your computer, whatever.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 546,
+      "start": 4173.17,
+      "end": 4173.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 547,
+      "start": 4173.65,
+      "end": 4210.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the hope and the opportunity for us here as a society is that we are transitioning. into this, not necessarily into the information age, but rather into the age of wisdom or the age of knowledge. That what we're hoping for is not just information abundance, but really taking that information and thinking, ah, the scarce thing here is now wisdom or knowledge. We need to help people gain that wisdom or knowledge. And that's what we want to be defined by. That's what we want this next century or millennium to be defined by is wisdom. and knowledge sharing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 548,
+      "start": 4212.69,
+      "end": 4216.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, another thing here, as I noticed, what's next after moralizing big gods?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 549,
+      "start": 4218.36,
+      "end": 4218.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 550,
+      "start": 4218.84,
+      "end": 4219.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "one's a tough one.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 551,
+      "start": 4221.79,
+      "end": 4231.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And we see a lot of proto examples of this, perhaps with Buddhism and maybe Burning Man or also a lot of things that I'm not into that are not those things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 552,
+      "start": 4233.8,
+      "end": 4234.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 553,
+      "start": 4234.28,
+      "end": 4235.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think this one's curious as well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 554,
+      "start": 4237.44,
+      "end": 4237.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'd",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 555,
+      "start": 4237.92,
+      "end": 4240.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "say a thing to watch out for here is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 556,
+      "start": 4240.62,
+      "end": 4241.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 557,
+      "start": 4242.48,
+      "end": 4243.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "like with any,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 558,
+      "start": 4243.81,
+      "end": 4244.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 559,
+      "start": 4244.69,
+      "end": 4247.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, scaled phenomena. It is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 560,
+      "start": 4247.62,
+      "end": 4248.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 561,
+      "start": 4248.93,
+      "end": 4263.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "do you see the world from this networked human organism perspective? How do you see the world from all these stages of time, these big revolutions, and how do you come back to the present and come back to helping out today?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 562,
+      "start": 4263.85,
+      "end": 4264.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 563,
+      "start": 4264.29,
+      "end": 4270.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think it is helpful to know the macro context, but then it's really helpful to say, okay, I know we're in this transition.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 564,
+      "start": 4271.04,
+      "end": 4271.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 565,
+      "start": 4271.48,
+      "end": 4276.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know that information is now abundant. How do I operationalize that today? and create more wise",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 566,
+      "start": 4276.93,
+      "end": 4277.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 567,
+      "start": 4282.47,
+      "end": 4286.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay. Thank you again for being here. I truly appreciate your time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 568,
+      "start": 4288.56,
+      "end": 4293.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And if you're excited by these concepts, please check out the Root Fellowship",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 569,
+      "start": 4293.8,
+      "end": 4294.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 570,
+      "start": 4294.84,
+      "end": 4296.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "check us out at root.co.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 571,
+      "start": 4296.64,
+      "end": 4297.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Thank",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 572,
+      "start": 4297.04,
+      "end": 4297.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you and goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 573,
+    "withheld": 3,
+    "published": 570
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

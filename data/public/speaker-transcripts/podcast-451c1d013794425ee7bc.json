@@ -1,0 +1,4653 @@
+{
+  "schema_version": 1,
+  "id": "podcast-451c1d013794425ee7bc",
+  "title": "#20, Taylor Monahan, MyEtherWallet: On Security, the Parity Exploit, Bounties, and Phishers",
+  "published_at": "2017-11-19T20:00:59Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/20-taylor-monahan-myetherwallet-on-security-the-parity-exploit-bounties-and-phishers",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/358089758-the-rhys-show-20-taylor-monahan-myetherwallet-on-security-the-parity-exploit-bounties-and-phishers.mp3",
+  "youtube_id": "D83WXLulfC8",
+  "youtube_url": "https://www.youtube.com/watch?v=D83WXLulfC8",
+  "audio_sha256": "576e7001929c7e80ea4c619e9c45baa1e15598592c84edc5ea4da969efc74139",
+  "audio_duration_seconds": 2319.1249375,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 6666,
+    "unknown_words": 272,
+    "unknown_words_fraction": 0.0408040804080408,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 12.9,
+      "end": 13.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 13.46,
+      "end": 20.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "episode is brought to you by Shapeshift.io, the easiest, fastest, and most secure way to swap your digital assets.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 20.66,
+      "end": 21.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 21.22,
+      "end": 26.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "run the risk of leaving your funds on centralized exchange. Visit Shapeshift.io to get started today.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 29.89,
+      "end": 30.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 30.43,
+      "end": 92.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everyone. I hope you enjoy this interview with Taylor Monahan from My Ether Wallet, where we talk about security, especially in the context of the recent parody exploit. The biggest three takeaways for me were, A, security is really hard. There's also lots of great ways to combat it, things like audits, things like bounties, things like using Metamask or hard wallets, etc. And then two, another takeaway for me here was this really interesting thing around my Ether wallet and how they're experimenting with business models around open source and kind of working in the blockchain commons. And they've been really successful with the donation-based business model where, you know, instead of charging people, essentially people and projects charge themselves for the value that my ether wallet has provided so for example zero x projects actively gave they call it a donation but i think donation is the wrong term it's either support or something like that where they're actively saying my ether wallet you're doing great things we're going to give you money for the value you've provided so hearing about that experimentation is interesting and then finally",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 92.09,
+      "end": 93.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 93.94,
+      "end": 117.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "deeper dive on fishing and scammers, I think is crucial for the community here, where we need to not only evaluate how we can kind of be safer from these fissures and scammers, but also we need to talk with the fishers and scammers themselves to understand why they're doing these things and to understand and make them aware of the ramifications they have on the community. So with that, hope you enjoyed the episode, and yeah, goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 122.84,
+      "end": 123.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 123.8,
+      "end": 151.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everybody. My name is Reeslin Mark, and you're listening to another episode of creating a humanist blockchain future. And in this podcast, we take a systems thinking approach to doing good in the world, and we have a couple different series that focus on different system scopes. And today we're focusing on Series C software systems, where we dive into how software and machines are being built today. And I'm very happy to introduce Taylor Monahan to the show. Taylor is a founder of my Ether Wallet, a client-side wallet. Taylor, thanks for being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 152.46,
+      "end": 155.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Thanks so much, Reese. Super, super excited to be here.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 155.42,
+      "end": 172.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, excited to chat. So before we kind of dive into wallets, which is kind of a hot subject within the blockchain and Ethereum community today, could you kind of give us an intro on my ether wallet specifically, and especially how it relates to stuff like Coinbase or kind of the other wallets in the space?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 173.42,
+      "end": 175.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, absolutely. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 175.02,
+      "end": 176.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "my",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 177.03,
+      "end": 189.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "ether wallet, you know, we call ourselves a client-side wallet. And that's not like a very friendly term to regular people, but essentially what it means is that you are in full control of like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 189.73,
+      "end": 190.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "one,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 191.05,
+      "end": 192.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like the interface you're using,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 193.71,
+      "end": 202.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the keys that you access via my ether wallet, and therefore your funds and the security of your funds and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 202.11,
+      "end": 202.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 202.69,
+      "end": 203.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of those good things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 203.71,
+      "end": 204.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 204.25,
+      "end": 213.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "when we look at Coinbase, You know, Coinbase has a set of systems and databases and accounts, and your account on Coinbase",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 213.42,
+      "end": 214.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 214.04,
+      "end": 218.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 218.44,
+      "end": 219.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "your",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 219.02,
+      "end": 224.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "coins for you. And when you want to like withdraw them to move to my ether wallet or you want to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 224.98,
+      "end": 225.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "buy",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 225.78,
+      "end": 227.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "or sell for USD,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 228.06,
+      "end": 229.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 229.28,
+      "end": 240.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "do that via their system. And without Coinbase, you wouldn't be able to do that. With my Ether Wallet, we actually just created this interface that interacts with the blockchain and it allows you to interact with the blockchain",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 240.32,
+      "end": 241.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "by",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 241.34,
+      "end": 245.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "clicking buttons and typing things into form fields",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 245.24,
+      "end": 245.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 245.76,
+      "end": 263.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that kind of stuff. So, you know, if we were to say disappear, no longer maintain it. You can actually download my Ether Wallet and run it on your own computer. You can run it offline. You could change the colors if you wanted. You could do pretty much anything and it would still work",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 263.44,
+      "end": 264.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 264.0,
+      "end": 267.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we don't have that sort of account system and databases and all of that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 267.88,
+      "end": 288.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. Yes, that makes sense. So it is, it's, you know, everything is controlled by you as a person, especially like the keys are controlled by, by if I have in my ether wallet, they're controlled by me. Tell me a little bit more about this interface that you're using. Like, could I create a certain UI or UX thing and like slap it on to my ether wallet? Or how does that work?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 289.24,
+      "end": 306.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So. You know, we've had people, usually fishers, but we've had more productive members of society do exactly that. So they'll take the source code of my ether wallet. Ubeek is a good example with their pyrus wallet. So they basically started with my ether wallet and essentially forked it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 306.88,
+      "end": 307.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 307.32,
+      "end": 321.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "create something that was compatible with their chain, had their branding, which was green. and had things that were really specific to their user base. And so that was really, really probably one of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 321.15,
+      "end": 321.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 321.93,
+      "end": 326.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "most remarkable things that happened pretty early on was,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 326.11,
+      "end": 326.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 326.59,
+      "end": 330.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, people were taking the stuff that we built and building on top of it or,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 330.43,
+      "end": 331.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 331.91,
+      "end": 335.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, kind of shifting it to a new blockchain",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 335.13,
+      "end": 336.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 336.07,
+      "end": 340.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to fit their users better or whatever it was. And that's awesome to see.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 340.39,
+      "end": 345.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "That's cool. Yeah. So to check Mither Wallis. Specifically for the Ethereum blockchain, I assume. Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 347.01,
+      "end": 348.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, but...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 348.39,
+      "end": 350.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 350.11,
+      "end": 366.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we actually... Obviously, when the 4C happened that created ETC, we started supporting ETC because our users basically demanded it. And since then, we've actually added support for Expans and Ubik",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 366.73,
+      "end": 367.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 368.21,
+      "end": 376.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think you can also connect to MusicCoin via my Ether Wallet if you have the node instructions. And then we have all the test nets as well. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 376.15,
+      "end": 377.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 377.11,
+      "end": 379.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of those blockchains that I just mentioned, Ethereum Classic,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 381.05,
+      "end": 382.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Ubi,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 382.85,
+      "end": 386.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "MusicCoin, and Expans, those are all like Ethereum-based blockchains, meaning that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 386.97,
+      "end": 387.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 387.87,
+      "end": 392.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "have the same functions and calls. So my Etherwallet just works with them. It's actually really, really incredible.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 393.21,
+      "end": 393.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 393.59,
+      "end": 486.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "cool. Yeah, you didn't have to do too much bonus work to do that. And I like what you said about the fork that Ubeek did, where they, with the Pyrus wallet, where these are kind of these new, I mean, like we've done a lot of forking at kind of the data layer thus far. We're like, you know, like Ethereum Classic or Bitcoin Cash or what have you. But I'm excited to see these got like UX forks where you say, hey, here's my ether wall as a thing. We're just going to fork the code base fork whatever and put our own kind of wrapper around the data layer. That seems like a very powerful thing going forward. Cool. So let's talk. So that's my ether wall at a high level. Let's dive deeper into kind of security within the space. And with the parity hack that happened recently, where a parody, which is another wallet in the space, They were, they, not really hacked, hacked is the wrong term. Well, it's tough to say what exactly the term is here, but 150 million to 300 million, depending on how you count of funds are essentially locked within a contract that was killed. And most of those funds are within Pocod and music commie, I believe, or maybe Iconmi. So that has happened. And so this is kind of brought up this, this is the most recent thing that's brought up these new, like, security talks in the space. And Taylor actually just had great Reddit post that dove into how you're thinking about security. So could you kind of just at a high level tell us like how you're thinking about security these days and especially in the light of this parody security kind of issue?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 487.61,
+      "end": 489.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah. So it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 489.33,
+      "end": 490.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 490.72,
+      "end": 498.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is the blockchain. Like this is cryptocurrency. This is sort of the world that we operate in. And it's taken me a long time to sort of realize.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 500.36,
+      "end": 501.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 501.32,
+      "end": 502.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "basically",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 502.14,
+      "end": 508.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "our security guys put it best. His name's Ryan and he said cryptocurrency is a global anomaly",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 508.12,
+      "end": 508.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 508.9,
+      "end": 510.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "he like dives into like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 510.18,
+      "end": 510.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "basically",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 510.98,
+      "end": 513.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "how there's no other industry and there's nothing else like this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 513.82,
+      "end": 515.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 515.02,
+      "end": 527.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "has like the amounts of the amount of hacks, the amount of compromises, the amount of issues, the amount of errors, whatever you want to call them, right? That lead to like this tremendous loss. And then he kind of talks about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 528.12,
+      "end": 528.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 528.48,
+      "end": 535.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that means for my ether wallet as a company with employees and our own internal security policies and basically scares the absolute,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 535.32,
+      "end": 535.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 535.66,
+      "end": 536.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, bejesus out of us.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 537.12,
+      "end": 538.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 538.26,
+      "end": 543.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we look at, you know, what happened with parity, it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 543.14,
+      "end": 544.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 544.16,
+      "end": 547.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "indication of how new spaces. It's like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 547.7,
+      "end": 548.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 548.16,
+      "end": 555.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "call for us all to be better. It's a call for us all to hold each other accountable for the quality of our code",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 555.42,
+      "end": 555.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 555.98,
+      "end": 563.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "for the things that we do and we don't do. It's a call for developers who use these contracts to store large amounts of money to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 563.76,
+      "end": 564.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 564.9,
+      "end": 570.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "wary of, you know, even if it's a trusted name, to still be wary of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 570.06,
+      "end": 570.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 570.56,
+      "end": 571.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "potentials for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 571.54,
+      "end": 572.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "locked",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 572.48,
+      "end": 576.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "funds, lost funds, whatever. And to, you know, in my opinion, one of the most",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 576.5,
+      "end": 577.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "helpful",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 577.58,
+      "end": 578.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 578.1,
+      "end": 578.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 578.8,
+      "end": 585.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "your average person can do is literally ask questions. Like, it's not attack, it's not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 585.04,
+      "end": 585.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "troll",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 585.58,
+      "end": 586.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "on Reddit, it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 586.54,
+      "end": 587.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "ask",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 587.16,
+      "end": 592.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "questions, you know, and get answers about whatever it is.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 592.74,
+      "end": 593.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 593.3,
+      "end": 595.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in the case of the parody multi-sig,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 596.04,
+      "end": 596.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 596.34,
+      "end": 597.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, what happened was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 597.3,
+      "end": 598.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "over",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 598.1,
+      "end": 599.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the summer we had a situation",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 599.82,
+      "end": 602.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 602.59,
+      "end": 603.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "resulted",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 603.57,
+      "end": 606.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 606.17,
+      "end": 607.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the white hat group, like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 607.87,
+      "end": 609.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "essentially",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 609.19,
+      "end": 610.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "stealing first",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 610.09,
+      "end": 610.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 610.73,
+      "end": 617.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "funds and then redistributing. And the issue with that contract, with that parity contract that caused that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 619.99,
+      "end": 620.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 620.41,
+      "end": 632.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "won't dive into it because it's a lot. But basically that issue was resolved, but there was a similar sort of issue that wasn't caught at the contract library level. And,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 632.4,
+      "end": 633.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 633.78,
+      "end": 640.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, essentially the story is, I don't know how much we believe. this guy, whatever, DevOps 199.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 641.18,
+      "end": 644.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "A now",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 644.26,
+      "end": 644.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "famous",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 644.76,
+      "end": 645.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "within the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 645.22,
+      "end": 645.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "space, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 646.8,
+      "end": 648.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I found this story to be,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 648.34,
+      "end": 648.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 648.62,
+      "end": 654.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "mean, it's like one of those, it's like no sleep on Reddit, right? Like it's like almost, it doesn't matter if it's true or not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 654.4,
+      "end": 654.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 654.88,
+      "end": 655.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "could be.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 656.9,
+      "end": 657.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 657.34,
+      "end": 663.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "regardless of whether a story is like factually accurate or not, the reality is that he's definitely not.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 664.7,
+      "end": 664.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 664.7,
+      "end": 682.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, a genius, right? He was definitely poking around. He was definitely throwing things and seeing where they stuck. And he was able to basically accidentally essentially suicide this contract, which all these other contracts relied upon, and now nobody can access their funds. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 682.64,
+      "end": 683.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 683.54,
+      "end": 684.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not supposed to happen.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 685.72,
+      "end": 686.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 686.36,
+      "end": 688.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it should have been caught.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 688.51,
+      "end": 688.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 688.95,
+      "end": 704.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "should have been caught, period. It should have been caught either by an audit, by the community, by Pocodot themselves, by anyone using that contract, should have at some point asked the question, what's going on, where are my funds actually, what's being relied upon? And I think one of the most interesting comments that I've seen",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 704.21,
+      "end": 704.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 704.77,
+      "end": 711.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the reality that the intentions of the existence of this contract that was eventually suicided",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 711.45,
+      "end": 712.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 712.31,
+      "end": 717.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "partially to reduce sort of the gas needed or the chain blow or whatever.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 718.33,
+      "end": 718.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 718.75,
+      "end": 719.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it should have been",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 719.51,
+      "end": 720.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "within",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 720.47,
+      "end": 722.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a contract itself,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 722.27,
+      "end": 724.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right? And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 724.31,
+      "end": 732.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it used to be, like the original audited foundation Galvwood multisig was, you know, every single contract had the same bit of code in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 732.25,
+      "end": 732.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 734.17,
+      "end": 734.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 734.61,
+      "end": 735.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, this,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 735.67,
+      "end": 736.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 736.15,
+      "end": 737.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "easy to say 2020 heights, but like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 737.85,
+      "end": 738.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 738.29,
+      "end": 739.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "wouldn't have happened",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 739.25,
+      "end": 740.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 740.33,
+      "end": 741.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that contract hadn't changed.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 742.09,
+      "end": 742.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It wouldn't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 742.63,
+      "end": 745.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "have happened if that code was like within",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 745.73,
+      "end": 746.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "every",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 746.31,
+      "end": 746.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "single contract.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 747.36,
+      "end": 747.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 747.66,
+      "end": 755.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "mean, it would have probably happened, but it probably would have been caught and the damage would have been less. And you would have had to lock each one individually.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 757.1,
+      "end": 757.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And then,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 757.98,
+      "end": 758.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 758.64,
+      "end": 758.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 761.32,
+      "end": 764.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like I hate to say this, but like it probably wouldn't happen if there was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 764.24,
+      "end": 764.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 764.74,
+      "end": 767.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "simply more people in this space asking hard questions.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 767.94,
+      "end": 768.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 768.36,
+      "end": 770.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it just were really, really new.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 770.62,
+      "end": 770.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 770.8,
+      "end": 772.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "industry is still pretty sparse.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 775.19,
+      "end": 775.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 775.61,
+      "end": 781.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, the sort of accountability that I'm seeing, you know, in their community on non-reddit is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 781.65,
+      "end": 784.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 784.4,
+      "end": 789.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you're, when people are trying to like hold people accountable, they do it in a way that's,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 789.62,
+      "end": 790.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 790.32,
+      "end": 793.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, either intentionally or unintentionally really, really trolly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 793.4,
+      "end": 793.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 793.98,
+      "end": 795.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "actually help anyone. Like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 796.18,
+      "end": 796.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 796.38,
+      "end": 801.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know that there's people that think that they're asking the hard questions or forcing people to be better or whatever. But,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 802.0,
+      "end": 802.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 802.34,
+      "end": 802.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, the.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 804.06,
+      "end": 805.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "The way that you approach",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 805.46,
+      "end": 806.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 806.65,
+      "end": 812.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "basically, if you're a dick online, people are going to dismiss you as a troll and you're not going to help anyone.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 813.29,
+      "end": 813.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 815.55,
+      "end": 818.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "It's one of those things that's like, we just have a long way to go.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 819.15,
+      "end": 819.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We'll see",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 819.45,
+      "end": 821.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "how we get there, but we have a long way to go.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 821.45,
+      "end": 884.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. And I think you're right to kind of note that, and then this is a whole podcast in and of itself, is like, how can we create a culture such that it allows for accountability and frankness and honesty and vulnerability, but doesn't make it so that when you're frank, you're actively being a troll, that you're actively angering people. It's like, hey, Can we make a reality in which you're allowed to, and you can push people and be critical, but it's not received and you're not pushing it as something in a troll-like manner, and we're definitely not there yet. So let's kind of take a step back, because you talked about auditing for a second there. And I guess, you know, auditing is one of the things that you can do in the space, whether it's, you know, through like Zeppelin or through like least authority or what have you. How do you think about auditing and is auditing the answer for like if I'm going to be any person who puts a contract, a smart contract online, you should pretty much audit. Or like, yeah, tell me a little bit more about how you think about auditing within this community.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 884.8,
+      "end": 885.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 885.24,
+      "end": 887.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there's definitely two different sort of types of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 887.9,
+      "end": 888.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 889.0,
+      "end": 892.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there's multiple types of audits, but I'm going to differentiate between two.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 892.58,
+      "end": 892.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 892.98,
+      "end": 894.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like the auditing of, um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 895.02,
+      "end": 895.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 895.34,
+      "end": 904.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a code base or an existence like my ether wallet, right? So when we talk about audits for my ether wallet, we talk about auditing the JavaScript code. We talk about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 904.28,
+      "end": 905.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "auditing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 905.26,
+      "end": 907.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "our own security policies. We talk about auditing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 907.6,
+      "end": 908.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "our",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 908.2,
+      "end": 919.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "infrastructure for vulnerabilities. We talk about things that could, you know, on every end. Like we talk about auditing the team's two factor and whether they use it or not,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 919.64,
+      "end": 919.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 920.51,
+      "end": 920.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 920.95,
+      "end": 921.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 921.39,
+      "end": 923.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there's smart contract auditing, which is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 923.21,
+      "end": 923.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 923.73,
+      "end": 925.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "completely sort of different scope",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 925.51,
+      "end": 926.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 926.01,
+      "end": 926.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the sense that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 926.77,
+      "end": 928.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 928.71,
+      "end": 931.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "auditing a contract that is going to live on the blockchain",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 931.21,
+      "end": 932.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "forever.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 934.35,
+      "end": 934.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 934.79,
+      "end": 943.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, the good thing about my ether wallet is that if there's like a, if there's an issue or we have a vulnerability or we have something that could hypothetically be used",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 943.37,
+      "end": 943.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 943.83,
+      "end": 944.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "some sort of attack,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 944.77,
+      "end": 945.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 945.49,
+      "end": 950.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "can change that. We can change that almost instantly. With a smart contract, you can't,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 951.2,
+      "end": 951.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 951.72,
+      "end": 959.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "If you have, you know, something go wrong, it's there forever. And, you know, that's,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 959.86,
+      "end": 960.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 960.48,
+      "end": 968.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just a different world. And so when we talk about audits, you know, a lot of times I think I come off as sort of dismissive of audits.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 969.52,
+      "end": 970.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 970.92,
+      "end": 975.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not. Like, I think that audits are great. And I think that everyone should just do an audit and it should just be a default thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 976.12,
+      "end": 976.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 976.98,
+      "end": 985.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Like if you're if you're launching a smart contract, yeah, just get it audited. Zappaloons great. There's a number of people have a list somewhere if anyone wants it, like, you know, of everyone that can audit smart contracts.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 986.38,
+      "end": 986.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 986.52,
+      "end": 991.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just need to do it. But that said,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 991.93,
+      "end": 992.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 992.27,
+      "end": 996.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "shouldn't be reliant on the results of an audit to inherently trust something",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 996.45,
+      "end": 997.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 997.07,
+      "end": 1000.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the types of attacks and the newness of solidity",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 1000.01,
+      "end": 1000.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 1000.75,
+      "end": 1006.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the newness of the blockchain, you know, for the most part, like the Dow is audited, I think, twice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 1006.85,
+      "end": 1007.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 1007.37,
+      "end": 1013.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, the Dow was audited twice. You know, some of the smartest researchers in the space, you know, saw",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 1013.37,
+      "end": 1014.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 1014.23,
+      "end": 1019.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "similar Dow attack vulnerability maybe thing a couple weeks before,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 1019.35,
+      "end": 1019.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 1019.83,
+      "end": 1036.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they didn't find this one. So relying on an audit, you know, having, say, an ICO or a project say, hey, we're audited, trust us. That kind of puts me on my heels. Like, that kind of turns me off a little bit because it shouldn't be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 1036.44,
+      "end": 1037.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 1037.66,
+      "end": 1040.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this inherently trustworthy thing. It should be a piece in a larger package.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 1040.98,
+      "end": 1050.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep. So could you talk about that larger, it sounds like that larger package has a, or yeah, could you just talk about what that larger package should look like in addition to auditing?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 1051.39,
+      "end": 1064.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, absolutely. So I think that audits are a great thing. I think that audits like auditing early is good. That's something that my ether wallet hasn't done. And I kind of wish that we had done an audit of version three earlier",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 1064.69,
+      "end": 1065.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "simply",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 1065.59,
+      "end": 1066.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "because it would have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 1066.55,
+      "end": 1067.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "probably",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 1067.19,
+      "end": 1071.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "given us some insights into how we structure the site or the choices we make at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 1071.39,
+      "end": 1072.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 1072.25,
+      "end": 1073.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "really high level",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 1073.21,
+      "end": 1074.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "rather",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 1074.39,
+      "end": 1083.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "than like little itty-bitty bugs that obviously wouldn't probably be in existence on version four. So audits are one thing. In terms of smart contracts and stuff,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 1085.46,
+      "end": 1087.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, I think one of the most important things is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 1087.8,
+      "end": 1089.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 1089.36,
+      "end": 1091.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "encourage and we incentivize developers to create,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 1091.98,
+      "end": 1092.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 1092.9,
+      "end": 1102.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, libraries or core components or reusable modules or reusable patterns or whatever. I know that Deppelin has taken some initiative on this. I believe",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 1103.2,
+      "end": 1105.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 1105.16,
+      "end": 1112.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a couple other people in this space that are working on this. Because at the end of the day, like I find it terrifically silly. that there's not like a standard",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 1112.98,
+      "end": 1114.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 1114.02,
+      "end": 1119.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "token contract. Like why audit 200 token contracts when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 1119.24,
+      "end": 1120.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 1120.26,
+      "end": 1123.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "can audit one and everyone can use that and then all these projects can save money?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 1124.92,
+      "end": 1125.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 1125.52,
+      "end": 1126.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, and we can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 1126.4,
+      "end": 1126.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 1126.98,
+      "end": 1128.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "can all sort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 1128.3,
+      "end": 1130.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of ensure",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 1131.15,
+      "end": 1132.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this one thing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 1132.19,
+      "end": 1132.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 1132.75,
+      "end": 1133.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "really great.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 1133.67,
+      "end": 1134.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 1135.13,
+      "end": 1168.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I like that. You asked that in your Reddit post where you said, hey, why audit everyone when everybody's going to do their contract anyways? Wouldn't be more productive and efficient to just have one contract audited that everyone uses. And I agree with that. And that was something that people also noted about the parity hack was like, hey, why didn't they just switch to the multisig that nosis is using for theirs or whatever? It's like, hey, can't we just all combine? In theory, it might be a little bit of an issue because it's more of like a centralized point of failure. or whatever, but I generally agree that it would be good to see some kind of common collaboration around that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 1169.53,
+      "end": 1186.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Right, exactly. And that's what I was going to say is that, you know, obviously there are risks to having everyone like say on the same multi-sig because, you know, in this case, this vulnerability only affected this like one segment of parody multisigs. Whereas if everyone was using the same one, it could have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 1186.21,
+      "end": 1186.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "been way",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 1186.49,
+      "end": 1188.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "worse. You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 1188.33,
+      "end": 1188.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 1188.95,
+      "end": 1189.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so at the same time,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 1189.99,
+      "end": 1190.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like... You know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 1190.82,
+      "end": 1200.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think that I am almost certain it's up in doing this. If it's not, I'm really sorry to whoever's actually doing this. But, you know, creating these sort of modules or patterns or reusable things that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 1201.08,
+      "end": 1202.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 1202.18,
+      "end": 1204.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, can kind of be combined or be whatever",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 1204.58,
+      "end": 1206.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 1206.19,
+      "end": 1223.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "create a smart contract or to set up a certain architecture or to have your contract be more modular or whatever it is, I think that that's... probably a more realistic approach than just saying everyone uses the same multi-sig or even everyone uses the same token contract.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 1224.03,
+      "end": 1225.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But, you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 1225.11,
+      "end": 1225.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, again, this is like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 1226.07,
+      "end": 1226.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 1226.45,
+      "end": 1227.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the newness of the space. It's the,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 1228.19,
+      "end": 1228.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 1228.67,
+      "end": 1230.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, it's the fact that we just don't have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 1230.77,
+      "end": 1231.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 1231.59,
+      "end": 1242.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "many people and that many devs and that many anyone in this space yet. And as we grow and expand, you know, the experiences of others will obviously contribute to a stronger ecosystem.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 1242.84,
+      "end": 1253.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah. I think consensus is the other big one that comes to my mind that has good smart contract best practices and good consensus diligence and like, you know, really pushed on that security front as well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 1255.08,
+      "end": 1255.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 1255.64,
+      "end": 1261.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "episode is brought to you by Shapeshift.io, the world's leading trustless digital asset exchange.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 1261.34,
+      "end": 1261.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Quickly",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 1261.9,
+      "end": 1269.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "swap between dozens of cryptocurrencies including Bitcoin, Ether, Dash, Bitcoin Cash, Auger, Golem, and many more.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 1269.51,
+      "end": 1269.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 1269.97,
+      "end": 1278.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this is not your typical crypto exchange. You don't need to create an account or share your personal information and your funds are never stored on ShapeShift.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 1278.29,
+      "end": 1278.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 1278.71,
+      "end": 1283.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "means that your hard-earned digital wealth is never up for grabs by hackers or other malicious actors.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 1284.25,
+      "end": 1284.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "To",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 1284.73,
+      "end": 1292.35,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "get started, visit Shapeshift.io, choose the tokens you'd like to swap, input your receiving address, and send your funds. It's that easy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 1296.24,
+      "end": 1296.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 1297.2,
+      "end": 1311.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the, another part of this that I'd like to get your take on is like bounties. How do you think about, um, you know, something like Gitcoin or what have you as a way to kind of push, uh, a way to incentivize and kind of put bounties on things. Are you pro bounties, anti-bounties?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 1312.56,
+      "end": 1314.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, I actually, um, was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 1314.72,
+      "end": 1315.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 1315.14,
+      "end": 1320.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the phone with, uh, Kevin from Gitcoin, like probably last week, I think. And it was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 1320.16,
+      "end": 1321.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 1321.28,
+      "end": 1332.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "really, really awesome call. I also was on the phone. with some guys from L4 the other day, and they're also thinking about bounties and how they can kind of help this space and stuff.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 1332.55,
+      "end": 1333.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 1333.15,
+      "end": 1333.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 1333.47,
+      "end": 1334.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 1334.53,
+      "end": 1346.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "love bounties. Like, do bounties on everything. Like, when we talk about aligning incentives, like, you know, that's the entire point of the blockchain, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 1348.11,
+      "end": 1348.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 1348.71,
+      "end": 1353.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so bounties are the natural way to get people to do the things that are good.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 1354.79,
+      "end": 1355.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 1355.35,
+      "end": 1365.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's like this is the whole thing. So Gitcoin really excites me. Getting sort of, you know, the things that we've talked about with others are getting more high level,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 1367.41,
+      "end": 1376.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "maybe tooling, maybe libraries, maybe whatever it is, bounties on these things that we need, setting up",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 1376.31,
+      "end": 1377.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 1377.05,
+      "end": 1384.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "dev grants or dev funds or something for audits for projects that can't afford it but need it. And giveeth, I don't know if you've ever",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 1384.77,
+      "end": 1385.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "talked to those guys.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 1386.21,
+      "end": 1390.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Oh my God. What they're building is incredible. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 1390.19,
+      "end": 1391.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 1391.51,
+      "end": 1392.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 1392.37,
+      "end": 1393.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 1394.04,
+      "end": 1394.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "these sort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 1394.68,
+      "end": 1395.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 1395.12,
+      "end": 1405.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "get coin and giveth and bounty programs and incentivizing developers and also people, regular people, to have more due diligence, to have more, you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 1405.44,
+      "end": 1406.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 1406.38,
+      "end": 1412.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "checks and balances and do audits and create features. Like I think that this is going to.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 1412.34,
+      "end": 1412.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 1412.7,
+      "end": 1413.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is what's going to kind of push us",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 1413.98,
+      "end": 1414.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 1414.66,
+      "end": 1419.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "grow the ecosystem. and maybe also get out of like the ICO mentality, which would be awesome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 338,
+      "start": 1420.9,
+      "end": 1456.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Nice. Move away from the ICO mentality and towards the future. So that makes, I guess one other part of this that I'd love to get your take on is the kind of scams and fishing and like hacking side where people, if you're in any kind of Slack channel, and this is, so, you know, when you're in any Slack channel, if you're in that Slack channel and they're doing some kind of thing related to ICOs or AirDrops or whatever, you're likely to get a ping from Slack. That is a hack or they say, hey, or is a fishing attempt where they say, hey, you got to do these things and I click on this my ether wallet link and it's just a hacker getting in there, a fish are getting in there trying to get money.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 339,
+      "start": 1458.1,
+      "end": 1458.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 340,
+      "start": 1458.5,
+      "end": 1472.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so people have, this has been serious enough such that people have like switched over to things like Rocket Chat and what have you that are more amenable to the kind of needs of the crypto community. How do you think about scams and fishing in this space?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 341,
+      "start": 1472.77,
+      "end": 1473.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "All right.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 342,
+      "start": 1473.51,
+      "end": 1476.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So the exact opposite reaction to how I feel about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 343,
+      "start": 1476.23,
+      "end": 1476.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Bouchy. Nice,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 344,
+      "start": 1477.15,
+      "end": 1477.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "nice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 345,
+      "start": 1478.29,
+      "end": 1483.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Like I just hate, I hate scams. I hate fishers. I hate,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 346,
+      "start": 1484.09,
+      "end": 1485.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 347,
+      "start": 1485.83,
+      "end": 1507.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "hate that people are getting taken by them. I hate that people are, like the scammers and stuff are benefiting from them. You know, again, when we talk about aligning incentives, like, you know, one of the things that makes cryptocurrency such a weird anomalous thing is that. A fish are taking a single string of characters can result in utter loss",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 348,
+      "start": 1507.25,
+      "end": 1507.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 349,
+      "start": 1507.99,
+      "end": 1510.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you can't recover or insure or,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 350,
+      "start": 1511.01,
+      "end": 1511.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 351,
+      "start": 1511.41,
+      "end": 1512.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, there's nothing you can do, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 352,
+      "start": 1512.91,
+      "end": 1513.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 353,
+      "start": 1513.43,
+      "end": 1515.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's just gone, poof. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 354,
+      "start": 1515.45,
+      "end": 1517.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 355,
+      "start": 1517.75,
+      "end": 1524.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "thing is, is that at the end of the day, switching from Slack to Rocket Chat to Riot to Matrix to whatever is the next hot thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 356,
+      "start": 1525.99,
+      "end": 1526.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 357,
+      "start": 1526.51,
+      "end": 1537.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "don't think it's inherently bad because, you know. You know, choosing an open source solution is good. Like, it's really, it's a good thing. But I don't think it's going to stop the fishers. Like, the fishers will just move. And so,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 358,
+      "start": 1538.52,
+      "end": 1540.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 359,
+      "start": 1540.12,
+      "end": 1549.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, this is a hard problem to solve. We've taken, like, a number of different, it's been a roller coaster. We've taken a number of different, like, let's go down this path and try to stop them. Let's go down this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 360,
+      "start": 1549.08,
+      "end": 1549.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "path.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 361,
+      "start": 1550.02,
+      "end": 1550.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 362,
+      "start": 1551.1,
+      "end": 1551.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 363,
+      "start": 1551.72,
+      "end": 1563.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "if you look at it from, like, a really, like, really, really bird's eye view, right? The fishers won't stop until it's not so financially beneficial for them to stop.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 364,
+      "start": 1564.55,
+      "end": 1565.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 365,
+      "start": 1565.15,
+      "end": 1567.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "now, they're sort of quote unquote overhead is the time it takes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 366,
+      "start": 1567.95,
+      "end": 1568.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 367,
+      "start": 1568.63,
+      "end": 1576.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "edit a script to spam the hell out of everyone, plus $10 for a domain and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 368,
+      "start": 1576.51,
+      "end": 1577.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "hosting",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 369,
+      "start": 1577.71,
+      "end": 1581.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and whatever. But those hosting and domain packages,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 370,
+      "start": 1581.13,
+      "end": 1581.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 371,
+      "start": 1581.53,
+      "end": 1582.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "pay for with Bitcoin",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 372,
+      "start": 1582.67,
+      "end": 1583.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 373,
+      "start": 1583.91,
+      "end": 1587.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they just stole from users. So there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 374,
+      "start": 1587.0,
+      "end": 1587.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 375,
+      "start": 1587.92,
+      "end": 1594.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like a technical aspect or, you know, like, oh, just buy all the my ether wallet domains",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 376,
+      "start": 1594.14,
+      "end": 1596.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or, oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 377,
+      "start": 1596.92,
+      "end": 1598.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just like do more education. Like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 378,
+      "start": 1598.44,
+      "end": 1599.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 379,
+      "start": 1599.32,
+      "end": 1601.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a big proponent of education, but I'm realizing that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 380,
+      "start": 1601.9,
+      "end": 1602.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 381,
+      "start": 1602.54,
+      "end": 1603.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "unable to reach",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 382,
+      "start": 1603.88,
+      "end": 1605.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "everyone.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 383,
+      "start": 1605.86,
+      "end": 1607.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And so the only way to,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 384,
+      "start": 1608.56,
+      "end": 1608.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 385,
+      "start": 1608.72,
+      "end": 1622.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "guess the only way for us like to stop the issue on my ether wallet is to remove the user's ability to. put their private keys on a website, which is sort of the path that we're aiming for right now. So essentially discouraging,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 386,
+      "start": 1623.09,
+      "end": 1623.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 387,
+      "start": 1623.77,
+      "end": 1627.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "probably one of my biggest regards actually is like even having it set up this way in the future",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 388,
+      "start": 1627.27,
+      "end": 1627.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 389,
+      "start": 1627.95,
+      "end": 1631.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in the past and hopefully, you know, reducing that in the future. But,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 390,
+      "start": 1631.17,
+      "end": 1631.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 391,
+      "start": 1631.65,
+      "end": 1633.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, using Metamask with my Ether wallet",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 392,
+      "start": 1633.55,
+      "end": 1634.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 393,
+      "start": 1634.73,
+      "end": 1636.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "easiest way to unlock your wallet.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 394,
+      "start": 1636.35,
+      "end": 1636.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Using",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 395,
+      "start": 1636.83,
+      "end": 1640.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "hardware wallet is the most secure and easy way to unlock your wallet.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 396,
+      "start": 1642.28,
+      "end": 1656.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 397,
+      "start": 1657.76,
+      "end": 1744.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So could I ask a question here because I so yeah, anti-fishers clearly and it's tough. I mean, because yeah, you guys are trying all these different ways to get around and educate and whatever. And as you say, a great way to do is to do Metamask or use a hardware wallet. So one thing that I like to push back on with these is like, so for me, myself, I was. I was personally, my, like, email was hacked. I didn't have, I had, like, a bad two-factor authentication on, and I, they, like, ported my SIM card, then used that in various ways. And so I, but I have almost, I have, like, very little money. And so they actually, after they hacked me, got into my Coinbase and whatever, they, like, sent an email from my email to myself, so that I would see it later. That said, like, ha-ha, you're poor, essentially. So I was kind of lucky or whatever, they didn't have money. But I think that there's a, whenever someone... does some kind of attempted stealing, whether it's, you know, cryptocurrency or whatever, or like for me, like my car, which is like a 1992 Honda Accord, was stolen twice in the last year. And each time it was stolen, I tried to ask myself, there's this desire to be angry and to kind of like blame others or whatever. But there's also like kind of a root cause thing, which is like, well, why was the person on the other end doing that? Why were they stealing the car? Why were they stealing trying to steal my cryptocurrency and get in there? Have you thought about, or like, what are your thoughts on that side? Like, have you tried, like, talking with fishers and kind of understanding them as people? You know, because that's what I want to do. And it might be kind of naive and optimistic, but that's my desire.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 398,
+      "start": 1745.94,
+      "end": 1748.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, so we have not talked to the fishers.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 399,
+      "start": 1749.64,
+      "end": 1750.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 400,
+      "start": 1750.04,
+      "end": 1754.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "definitely, like, I feel like I kind of know them at this point a little bit.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 401,
+      "start": 1754.26,
+      "end": 1754.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 402,
+      "start": 1754.68,
+      "end": 1756.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there's a couple of different groups, and it's weird because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 403,
+      "start": 1756.64,
+      "end": 1757.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 404,
+      "start": 1757.52,
+      "end": 1765.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "weirdly like. personal with them. Like I identify, like, their sort of personality traits or quirks or whatever it is.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 405,
+      "start": 1766.72,
+      "end": 1767.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 406,
+      "start": 1767.12,
+      "end": 1768.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, the thing is is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 407,
+      "start": 1768.54,
+      "end": 1771.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 408,
+      "start": 1771.45,
+      "end": 1781.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you look at, like, the motivations of people like Fishers, everyone sort of has different motivations. And same with, like, trolls online. It's not going to be, like, one sort of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 409,
+      "start": 1781.31,
+      "end": 1783.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 410,
+      "start": 1783.42,
+      "end": 1786.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "do you say this? Like, it's not one motivation and it's not black or white.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 411,
+      "start": 1787.12,
+      "end": 1787.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 412,
+      "start": 1787.52,
+      "end": 1787.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 413,
+      "start": 1788.06,
+      "end": 1788.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 414,
+      "start": 1788.44,
+      "end": 1790.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, some of the fishing groups that we've seen",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 415,
+      "start": 1790.12,
+      "end": 1790.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 416,
+      "start": 1790.78,
+      "end": 1805.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's almost like a job. Like they come out at the exact same time every day. They do the exact same thing. They put their heads down. They don't talk to people. And then some of the other ones like are a little bit more talkative and they'll like pop up in Slack channels and like make fun of people.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 417,
+      "start": 1806.28,
+      "end": 1807.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And, you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 418,
+      "start": 1807.62,
+      "end": 1810.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, when their site gets taken down, they'll put like a wrap YouTube video up.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 419,
+      "start": 1810.86,
+      "end": 1811.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 420,
+      "start": 1811.2,
+      "end": 1813.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's really interesting to see that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 421,
+      "start": 1815.41,
+      "end": 1815.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 422,
+      "start": 1815.81,
+      "end": 1817.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, the motivations",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 423,
+      "start": 1817.49,
+      "end": 1818.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 424,
+      "start": 1820.6,
+      "end": 1820.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 425,
+      "start": 1821.2,
+      "end": 1822.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the way that they operate",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 426,
+      "start": 1822.1,
+      "end": 1822.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 427,
+      "start": 1822.64,
+      "end": 1833.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "different, but the motivations are essentially the same. Like, they don't, they just want, they want money and they want, some of them want, like, more attention or less attention. Some of them want to watch the world burn more so or less so.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 428,
+      "start": 1834.49,
+      "end": 1834.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 429,
+      "start": 1834.75,
+      "end": 1835.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 430,
+      "start": 1835.93,
+      "end": 1837.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "really interesting to see",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 431,
+      "start": 1837.37,
+      "end": 1839.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 432,
+      "start": 1839.97,
+      "end": 1845.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "being like, oh, there's a scammer, oh, there's a fisher, it's a little bit, it's so much more of a gray area.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 433,
+      "start": 1845.92,
+      "end": 1846.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 434,
+      "start": 1846.34,
+      "end": 1853.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then, you know, in the same way when we look at the token sales in these projects, you know, a lot of people just call people like these outright scams.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 435,
+      "start": 1853.54,
+      "end": 1853.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 436,
+      "start": 1853.96,
+      "end": 1856.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think we see the same sort of spectrum where we see,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 437,
+      "start": 1857.02,
+      "end": 1857.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 438,
+      "start": 1857.86,
+      "end": 1863.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, these things that are 100% like scams. Like they are just solely operating to scam you and to get money",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 439,
+      "start": 1863.28,
+      "end": 1863.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 440,
+      "start": 1863.92,
+      "end": 1865.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to run away to some island somewhere.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 441,
+      "start": 1866.88,
+      "end": 1867.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 442,
+      "start": 1867.3,
+      "end": 1868.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "across the spectrum, we have,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 443,
+      "start": 1869.12,
+      "end": 1870.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 444,
+      "start": 1870.5,
+      "end": 1886.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, maybe really good team with like a really bad idea. or a really bad team with a really good idea, or, you know, good intentions, but just an absolute failure to produce that. And, you know, then up to like a good idea",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 445,
+      "start": 1886.91,
+      "end": 1887.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 446,
+      "start": 1887.49,
+      "end": 1897.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like an okay execution or plan or whatever. And so I think that over the next couple of years, as these projects, you know, develop out, it's going to be interesting to see which ones",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 447,
+      "start": 1897.17,
+      "end": 1897.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 448,
+      "start": 1897.87,
+      "end": 1903.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of make it through. whatever's coming, make it through probably like the bubble burst a little",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 449,
+      "start": 1903.95,
+      "end": 1904.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "bit.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 450,
+      "start": 1905.01,
+      "end": 1910.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And which projects like actually build useful features for the community and,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 451,
+      "start": 1910.85,
+      "end": 1911.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 452,
+      "start": 1911.33,
+      "end": 1912.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, maybe a successful product.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 453,
+      "start": 1913.65,
+      "end": 1914.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 454,
+      "start": 1914.25,
+      "end": 1920.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in... you know, actually give back to Ethereum. Like, that's going to be super, super interesting. And I'm guessing that it's not going to be the biggest names.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 455,
+      "start": 1921.12,
+      "end": 1921.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 456,
+      "start": 1921.26,
+      "end": 1923.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "guessing it's going to be the people that we don't even realize exist",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 457,
+      "start": 1923.82,
+      "end": 1924.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right now. That are just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 458,
+      "start": 1924.34,
+      "end": 1925.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "hard at work, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 459,
+      "start": 1926.78,
+      "end": 1994.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yes, and that, as you say, yeah, there's a gradient from the ICO perspective in how it can be easy now to say, like, oh, my God, the ICO craze. Like, anybody who's doing an ICU is bad. But in fact, as you're saying, there's a whole gradient of people who are, you know, doing various good and bad things within ICOs. And same with on the, you know, Fisher scammer side. even though clearly a lot more on the negative side. If you are, I just want to put a claim out there. If you're a fisher or scammer who wants to come on my show, you are welcome to come on. And we should talk about why you're doing what you're doing because it seems like it's bad for the community generally. Because an awesome future version of reality is one of which the fissures and scammers aren't actively trying to do things and the one that Taylor painted a picture of where the people themselves are using metamask or using hardware wallet. So it's kind of like a double-edged sword. and pincor movement to fix the scamming and fishing. So with that, let's kind of transition to a final thing here. And I think it's just fascinating. Could you tell us a little bit more, Taylor, about you guys just went through Boost VCs, their Tribe 10, and just thinking about how you guys make money. Could you tell me a little bit more about how you make money?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 460,
+      "start": 1995.32,
+      "end": 1996.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, absolutely. So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 461,
+      "start": 1997.12,
+      "end": 1997.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 462,
+      "start": 1997.4,
+      "end": 2002.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, early on, we were like so hardcore, like, free open source.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 463,
+      "start": 2002.83,
+      "end": 2003.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "free",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 464,
+      "start": 2003.17,
+      "end": 2027.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "open source software like for life. And so we were 100% donation based, meaning that the community would give us ETH. And then we would spend that ETH, except we didn't really spend it. We just like held it. And so a lot of like, if we have a maybe sort of a rougher month or the server costs are really high, it's like the early donations of ETH back when ETH was like $1 or $5.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 465,
+      "start": 2029.37,
+      "end": 2029.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 466,
+      "start": 2029.83,
+      "end": 2037.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, that price increase can pay for a lot of servers these days, which is really, really, really awesome. And then back in,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 467,
+      "start": 2037.43,
+      "end": 2037.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "see,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 468,
+      "start": 2038.01,
+      "end": 2046.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "back in February, the swap tab that we implemented, which does the Bitcoin to ETH swap, that brings in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 469,
+      "start": 2046.65,
+      "end": 2047.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 470,
+      "start": 2047.11,
+      "end": 2047.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "little bit of money",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 471,
+      "start": 2047.75,
+      "end": 2048.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 472,
+      "start": 2048.33,
+      "end": 2059.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you swap. And then we have affiliate links with Ledger and Trezor. And then we recently added the... how to or the flow for Coinbase to buy with US dollar.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 473,
+      "start": 2060.0,
+      "end": 2060.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 474,
+      "start": 2060.46,
+      "end": 2068.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "all of these little things are kind of a similar, how do you say? Like they all are revenue sharing sort of affiliate agreements,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 475,
+      "start": 2068.74,
+      "end": 2068.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 476,
+      "start": 2069.6,
+      "end": 2072.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And they are very like we,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 477,
+      "start": 2073.36,
+      "end": 2073.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 478,
+      "start": 2073.58,
+      "end": 2082.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "do pretty well, surprisingly well for them, right? Like I did not expect that that would be like a sustainable thing. It's long term it's definitely not sustainable, but.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 479,
+      "start": 2083.32,
+      "end": 2083.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 480,
+      "start": 2083.78,
+      "end": 2091.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "definitely enables us to continue building with some runway today. Moving forward, though, is super, super interesting because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 481,
+      "start": 2091.14,
+      "end": 2091.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 482,
+      "start": 2091.84,
+      "end": 2093.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we're seeing is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 483,
+      "start": 2093.04,
+      "end": 2094.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 484,
+      "start": 2094.92,
+      "end": 2099.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there are some useful tools that either my ether wallet could build to make people's lives easier",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 485,
+      "start": 2099.64,
+      "end": 2101.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 486,
+      "start": 2101.42,
+      "end": 2110.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like these smart contracts that have opportunities for monetization. And one thing that we've been working on.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 487,
+      "start": 2110.73,
+      "end": 2110.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 488,
+      "start": 2111.21,
+      "end": 2126.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I haven't been personally working on it, but it's called domain sale, and it's on my Etherwall right now on the TestNet, and then we're going to be doing main net soon. It's essentially a place that you can sell your E&S domain names, right? And what this does is that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 489,
+      "start": 2126.39,
+      "end": 2126.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 490,
+      "start": 2126.77,
+      "end": 2136.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, it'll link you up and set you up, and you can buy a domain or sell a domain and all of that. And then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 491,
+      "start": 2136.11,
+      "end": 2137.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 492,
+      "start": 2137.15,
+      "end": 2168.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "smart contract itself. will take a fee and distribute it to whoever you tell it to, which, you know, in our case could be my ether wallet. And so opportunities like this, where it's like this, this transaction type thing where the creators or the implementers or whoever, really, like literally whoever, can get a cut of it for providing or creating or whatever and encourage future development, that's... that's probably what I'm more excited about than say just like revenue sharing agreements.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 493,
+      "start": 2169.55,
+      "end": 2177.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Interesting. Yeah. So you're excited by these new smart contract things where you can use them for monetization by taking a fee or what have you. Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 494,
+      "start": 2178.09,
+      "end": 2180.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, exactly. And I especially like ones that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 495,
+      "start": 2180.87,
+      "end": 2181.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 496,
+      "start": 2181.21,
+      "end": 2189.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, I'm totally against just charging a regular transaction fee on transactions, right? Like I don't think that that's benefiting anyone. But if we provide",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 497,
+      "start": 2189.91,
+      "end": 2190.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 498,
+      "start": 2190.39,
+      "end": 2192.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "additional service that has some additional value,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 499,
+      "start": 2194.33,
+      "end": 2194.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 500,
+      "start": 2194.75,
+      "end": 2212.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, and people want to do that so that they can do something easier or faster or whatever it is. That I think people hopefully will be willing to pay a really, really small fee for, you know, to help us keep building what we want to build. you know, without banging for donations.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 501,
+      "start": 2213.2,
+      "end": 2268.42,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep, yep, yep, exactly. Well, that sounds cool. And I think that it is a funny, I mean, I think it's impressive that you guys were able to operate with donation-based, you know, a donation-based model. And is one, as you say, that was definitely helpful that you were getting those donations in something that appreciated, you know, 100x or what have you. But yeah, I think it's, I think that I'll be interested to see how you guys do this going forward. But if you are someone in the space, I do love the mind. mindset though. So if you're a person in the Ethereum space listening and you feel like my theater wallet is doing helpful things. I like to, and my ether wallet kind of exists in what I call like the commons in between a bunch of different projects. And if you, and I know like OX protocol, I think, you know, gave you guys like a $10,000 donation after their ICU or crowd sales. So like if you're in the space and think that my ether wallet is providing value, then I am a pro pro donation.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 502,
+      "start": 2269.36,
+      "end": 2269.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 503,
+      "start": 2270.18,
+      "end": 2270.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "me too.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 504,
+      "start": 2271.0,
+      "end": 2272.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Nice. Yeah. Clearly you are.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 505,
+      "start": 2274.1,
+      "end": 2274.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Nice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 506,
+      "start": 2275.24,
+      "end": 2279.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Well, with that, Taylor. Thank you so much for coming on and talking about both security and my ether wallet generally.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 507,
+      "start": 2280.56,
+      "end": 2280.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 508,
+      "start": 2281.38,
+      "end": 2285.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "awesome. Thank you so much for having me. This was an absolute blast to talk with you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 509,
+      "start": 2285.58,
+      "end": 2285.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 510,
+      "start": 2285.88,
+      "end": 2302.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it was fun. And thank you everybody for listening. And if you're interested also in supporting me within the Ethereum Commons or the general blockchain commons, you can go to patreon.com slash reslimmark. That's slash R-H-Y-S-L-I-N-D-M-A-R-K. Great. Thanks and goodbye, everybody.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 511,
+    "withheld": 2,
+    "published": 509
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

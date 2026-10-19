@@ -1,0 +1,3564 @@
+{
+  "schema_version": 1,
+  "id": "podcast-a3ba964d345ee478d618",
+  "title": "#10 Rob Reich, Stanford: Political Theory of Philanthropy + Stanford Center for Human-Compatible AI",
+  "published_at": "2019-05-08T15:54:20Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/10-rob-reich-stanford-political-theory-of-philanthropy-stanford-center-for-human-compatible-ai",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/617549064-the-rhys-show-10-rob-reich-stanford-political-theory-of-philanthropy-stanford-center-for-human-compatible-ai.mp3",
+  "youtube_id": "BNrIE7lopWA",
+  "youtube_url": "https://www.youtube.com/watch?v=BNrIE7lopWA",
+  "audio_sha256": "30a752788e926c6d11c1320d04f98f3c9451bfd789bc17d9c3b3b2dac01da721",
+  "audio_duration_seconds": 3125.3943125,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 9253,
+    "unknown_words": 335,
+    "unknown_words_fraction": 0.03620447422457582,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 10.77,
+      "end": 11.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 11.53,
+      "end": 38.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "everyone. My name is Reeslin Mark, and you're listening to Gray Mirror, a podcast from MIT Media Labs Digital Currency Initiative on Technology, and Ethics. And unlike something like Black Mirror, which just looks at the negative impacts of technology on society, we are Gray Mirror, so we look at the positive and negative impacts of technology on society. And please, if you have any feedback, reach out on Twitter. And if you like the show, give us a five-star rating on your favorite podcast app. We really do appreciate it. Thanks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 41.74,
+      "end": 42.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 42.16,
+      "end": 143.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "today I interview Rob Reish. Rob is a fascinating political science professor at Stanford, which had about three big things, his recent book Just Giving, why he stepped down from the board of Givewell, and the new AI Ethics Center at Stanford that he's co-leading. And so a couple quick notes here. The first is around his book Just Giving, which gives this political institutional view on philanthropy instead of the traditional individual moral view, something like effective altruism. Given this, it's kind of like this analysis of civil society and institutional co-evolution and less like the personal morality piece. I think it's a very crucial perspective. And we chat within that framework, we chat a lot about the kind of economic and institutional framings here, you know, private goods versus public goods. And we especially dive into club goods, which are these non-rivalrous but excludable goods. So something like a church. You can think of it as something that is not a public benefit corporation, not a private corporation, but a mutual benefit corporation. And so when we think about this world, Rob puts this correct perspective here, which says, hey, we want to create club goods that have positive externalities. And in fact, I think that that is a crucial way to imagine our future and our future civil society is one in which we're creating lots and lots of different club goods that have positive externalities that then, from the kind of system view, that emergent behavior, given those constraints of needing to have positive externalities, it all works out. What I mean by that is instead of trying to design things from a top-down way, you can design things from a bottom-up way through club goods, but those club goods have positive externalities. So that's the first note",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 143.14,
+      "end": 146.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "here. The second is we chat about effective altruism and Givewell.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 147.43,
+      "end": 147.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 147.91,
+      "end": 221.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "as Givewell moves more towards political work, Rob emphasized, hey, this could get kind of plutocratic, where, you know, the classic example, something like Bill Gates, flexing on the political system, that's going to happen more and more with effective altruism. And so the question here is, you know, how will effective altruist folks have this meta-conversation about plutocracy and civil society? So that's the second point. And then the third is on this new center of, you know, the human-centered artificial intelligence, this new Stanford AI Ethics Center, I think that Rob is making this very interesting point, a bet. And his bet is that you have a lot of brain drain right now from academia to companies, because companies have much more data and pay more money and everything's a win, essentially. But when those people start to realize that, in fact, what they're optimizing for is not necessarily money, but rather something like meaning. that then they started to say, you know, I don't want to just work on ads or making people click on more things than newsfeed. Instead, maybe I want to work on something that looks closer to, you know, that AI safety or, you know, fairness and accountability and transparency or whatever. And so I think that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 221.41,
+      "end": 221.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 221.89,
+      "end": 260.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "know, that's human-centered artificial intelligence center at Stanford is really making what I think is a smart bet, it's similar to the one that MIT is making and saying, hey, if you want to be a future AI person or technologist, you can instead work with lots of, cool ethicists and social scientists and philosophers in academia with these better incentives. And it's going to be better for you because even though you might not make as much money, you're going to have more learning, more meaning, more impact, and the correct incentive set around you. That's not necessarily company-based. So, yeah, I think that's a fascinating bet and one that I hope plays out, I guess. So with that, I hope you enjoyed today's episode with Rob.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 260.62,
+      "end": 260.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 267.15,
+      "end": 287.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "everybody, and welcome to Gray Mirror. Today, I'm really excited to view Rob Reish. And we're actually here in person, which is always fun. And so Rob is a professor of political science at Stanford University. He's the director of the Center for Ethics in Society and a faculty co-director at both, the Center on Philanthropy and Civil Society in Stanford's new center for human-centered artificial intelligence. That's a lot, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 287.21,
+      "end": 288.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 288.57,
+      "end": 293.13,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "juicy. And he also recently published a book on philanthropy called Just Giving. So Rob, thanks for being on the show.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 293.15,
+      "end": 293.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's really great",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 293.71,
+      "end": 294.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to be here. Thanks for having me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 294.83,
+      "end": 295.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 295.19,
+      "end": 304.97,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "I think it'll be fun. So there's kind of three big buckets that we'll chat about. One is the book, Jessica. giving and then we're also going to chat about effective altruism and give well and you just left that board recently so we'll",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 304.97,
+      "end": 305.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "discuss",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 305.19,
+      "end": 310.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "that and then finally we're going to chat about the new Stanford Center for you know AI Ethics Center",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 310.15,
+      "end": 311.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 311.09,
+      "end": 316.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "starting with just giving could you give us kind of an overview on what the thesis of the book is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 316.17,
+      "end": 316.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 316.91,
+      "end": 427.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the the basic idea is that to the extent that philosophers have written about philanthropy or charity it's been in a pretty exclusive Peter Singer moral philosophy mode, kind of moral guidance to individuals about what they're morally obligated or recommended to do, how much money they should give away to whom they should give it under what circumstances they should give it, and the kind of Singer effective altruism strain of this. If people are familiar with it, you know, recommend giving large quantities of money if you have it. The demand on you is quite high, morally speaking, and for a particular cause, namely trying to target desperately badly off people. And... I wanted to take a different philosophical approach, that of a political philosopher rather than a moral philosopher, because the starting point of my book is that the impulse of human beings to give money or time away for some other regarding altruistic purpose is universal. We can find evidence of it in every society. And what shapes the philanthropic impulse is the set of social norms and public policies in any society. So in the United States, we have a whole array of laws that give shape to our particular philanthropic or charitable sector, things that begin with private property, various forms of taxation, various liberties about what you can do with your private property, to more specific things like... declaring that a certain class of organizations shall be known as 501c3 public charities. Those organizations shall be eligible for tax-deductible giving. There should be a separate class of organizations we'll call private foundations or community foundations or donor advised funds. All of these are basically philanthropic corporate vehicles or forms that are just ordinary creatures of the law. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 427.73,
+      "end": 475.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they give shape to the sector. They stand in need of justification from a philosophical standpoint. And it includes for philanthropy some especially peculiar legal permissions, in my view, things like creating a charitable entity or philanthropic entity, say a private foundation or charitable trust that is legally designed to live in perpetuity. And that's meant to protect the donor's intent forever beyond the grave. seems on the surface kind of strange things, what would make those justifiable in a liberal democratic setting? So the point of view is to examine the full array of charitable and philanthropic practice from the standpoint of a democratic setting and to see what types of policies and social norms ought to be recommended.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 476.02,
+      "end": 476.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Yeah, I love it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 478.11,
+      "end": 478.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 478.35,
+      "end": 485.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "I think your crucial point there is this world of effective altruism is very powerful. It's a powerful mindset. It's like, hey, you should, you know, probably donate more and like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 485.29,
+      "end": 485.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "probably donate",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 485.81,
+      "end": 493.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "to more effective things. That makes sense. But then what they missed in great extent, I think you and I believe, is that this what I usually call like institutional co",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 493.71,
+      "end": 494.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "-evolution or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 494.71,
+      "end": 501.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "what you call this political theory of philanthropy. And it's like, that's important too. How should civil society co-evolve with the state?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 501.85,
+      "end": 502.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 502.33,
+      "end": 504.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "These, and I like what you call it, the creatures of the law.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 504.73,
+      "end": 505.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 505.03,
+      "end": 517.41,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "are these things where norms and things get in better. in society or norms get embedded into laws or just get embedded in society and those rise to level institutions. And before you note, you have these massive philanthropic foundations that have been around for a long time that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 517.41,
+      "end": 517.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 518.27,
+      "end": 518.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 518.93,
+      "end": 518.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 518.97,
+      "end": 519.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "can create the intent.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 520.11,
+      "end": 522.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Exactly. Let me try out a different thing. I mean, this is a bit of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 522.37,
+      "end": 522.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 522.51,
+      "end": 541.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "cartoon analogy or caricature. But I think it does capture something about effective altruists. And I want to declare right at the start, having served on the Board of Givewell, obviously I'm sympathetic to their point of view. lots of room in the world for more people who are oriented by an effective altruist framework.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 543.39,
+      "end": 603.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But there's something peculiar about the, I don't even call it an anti-politics, but it's an indifference to politics, or as you put it, the institutional co-evolution of social norms. That is sociologically peculiar and, you know, even more dramatically kind of irresponsible in a sort of way. And, you know, here's my character of an EA. Someone who thinks, like, if we can convince people to donate more of their time, more of their money, like possibly their kidney, to desperately needy people. It's like having a kind of util fire hose that you just like go out and find the desperately badly off folks and spray your utility on them. And you say, look, you're better off. You're better off. What's to complain about? This is an incredible orientation. We just like spray the world with utility and make people better. And if it's as simple as that, that would be great. But that interacts with politics and institutions.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 603.55,
+      "end": 603.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 603.99,
+      "end": 607.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you've got to understand what the interaction is, else you'll be missing a good part of the story.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 607.87,
+      "end": 608.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 608.21,
+      "end": 615.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "totally it. And I think in one note, and I agree with you that both you and I are very sympathetic to that of you. You know, I self-taxed myself 20% of my mouth or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 615.4,
+      "end": 615.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "my wealth or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 615.78,
+      "end": 622.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "whatever, or my income. I think that the, and you can see, and one other thing on Effective Also, it's only been 10-ish years depending",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 622.98,
+      "end": 623.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 623.28,
+      "end": 625.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "you count. So they're kind of, before it's like more earning to give and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 625.76,
+      "end": 626.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "now they're kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 626.34,
+      "end": 630.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "moving in this direction that we're chatting about, which I think is good. At least they're very good at updating.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 630.92,
+      "end": 631.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes, indeed.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 631.66,
+      "end": 631.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "That's true.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 632.52,
+      "end": 632.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 632.8,
+      "end": 638.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "I mean. kind of pulling away from effective altruism specifically in thinking more about this political theory of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 638.48,
+      "end": 638.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "philanthropy",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 638.9,
+      "end": 656.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "how i mean at a macro level how do you think i mean we have all these weird kind of um versions of of norms in laws and society in america today um how do you think in general in the future now or in the next you know 20 years how should philons or like civil society co-evolve with the state",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 657.33,
+      "end": 657.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 659.05,
+      "end": 686.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "That's a great question. And I think the right way to approach it is not to think that you can get a theory up and running of civil society on its own. I think you need to start from the landscape of a liberal democratic setting. Now, of course, you need to back up and defend. why it is that a liberal democratic setting relative to some alternative political regime is the right one. But, I mean, for this conversation, let's just assume that we all share some priors about a commitment to liberal democracy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 686.21,
+      "end": 686.85,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "I will accept.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 687.09,
+      "end": 687.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 687.43,
+      "end": 762.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 763.22,
+      "end": 763.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "even",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 763.64,
+      "end": 790.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "if it's outside the realm of the foundation, to be clear here, you know, the Chan Zuckerberg Initiative is not a foundation. It's an LLC. So that counts, in my view, is the kind of big philanthropy. But the basic idea is that big philanthropy is by definition the attempt of wealthy people to direct their private assets for some public influence. And in a democratic setting that amounts to an exercise of power. And anywhere in a democracy, power deserves scrutiny, not automatic gratitude.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 793.12,
+      "end": 804.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "What we have as an obligation as citizens is to scrutinize the power of philanthropists in order to be sure that that power supports democratic ideals rather than subverts them.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 805.37,
+      "end": 805.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 805.89,
+      "end": 826.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 826.95,
+      "end": 827.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "say, like, to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 827.23,
+      "end": 837.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "some extent, that's what we're chatting about here, which is like, hey, if you're a random person who made a good amount of money. Yes, you should be able to give a lot of it. But, I mean, you can't just like, you know, maybe you shouldn't get tax deductions",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 837.34,
+      "end": 837.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for everything",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 837.82,
+      "end": 855.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "because that might, you know, balance versus equality. And there's a lot of, for our listeners, we won't go too deep into it today, but there's a lot of cool analysis that Rob does in the book about, you know, which specific aspects of specific, you know, tax deductions or whatever lead to which outcomes. But I want to chat about one specific thing here, which is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 856.16,
+      "end": 857.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 857.14,
+      "end": 864.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "thinking about... An awkward piece here, in my opinion, is this idea of you got private goods and then public goods.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 864.71,
+      "end": 865.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And private",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 865.07,
+      "end": 867.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "goods are nice because it's just like, I buy the food, I eat the food.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 868.35,
+      "end": 868.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 868.69,
+      "end": 874.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "cool. The market does that. Public goods in some ways are simple to some extent where the state says, great national defense for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 874.61,
+      "end": 874.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "everybody.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 875.63,
+      "end": 878.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "And then you have this awkward new ground of club goods",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 878.25,
+      "end": 879.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 879.29,
+      "end": 882.19,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "there are these things that are non-rivolous, but they're excludable.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 882.33,
+      "end": 882.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 882.77,
+      "end": 889.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "so only people in the club can do them. And I think... The awkward piece here is that, like, for me, when I think about my own giving,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 889.89,
+      "end": 890.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Part",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 890.33,
+      "end": 895.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "of my own giving is wanting to give to things that eventually loop back around to me from a value perspective.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 895.91,
+      "end": 896.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So if I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 896.17,
+      "end": 898.65,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "give to my community, maybe my community gets better.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 899.13,
+      "end": 899.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 899.57,
+      "end": 901.35,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "a fun block party eventually that, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 901.51,
+      "end": 902.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 902.17,
+      "end": 908.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "So how do you think... In your book, you chat about like the incentives, the tax, you know, charitable tax deduction",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 908.49,
+      "end": 908.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 908.91,
+      "end": 914.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "subsidy. And I think that... In that you can do this analysis of how people give and receive value.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 914.39,
+      "end": 914.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 914.83,
+      "end": 919.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "how should we think about... you know, giving and receiving value to and from civil society.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 920.09,
+      "end": 920.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 920.61,
+      "end": 921.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "I don't, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 921.51,
+      "end": 921.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 922.01,
+      "end": 996.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Right. I mean, that's exactly the rich set of questions that I think a political theory of philanthropy has to address. So, I mean, I'll touch on a bunch of the stuff you said and, you know, love to hear your views about this, too. So I do think you've identified this intermediary class of goods, club goods, which are in certain respects other regarding because you're trying to do something in collect. in a collectivity with other people, but that aren't classic public goods. And they, as a consequence, bring about some benefit. And furthermore, I think there are certain types of club goods that even have positive externalities that redound to the benefit of everyone. So let's give a couple examples, not make this so abstract. One of the things which I was surprised to find out when I started researching this book was that the largest recipient of charitable dollars in the United States, if you look across the kind of different types of giving to health or education or the environment or whatever, the largest recipient is religion. And it's not the faith-based social services here, the Salvation Armies of the world or the mercy course of the world, but rather just, you know, the Sunday basket contribution or the support for the synagogue, the mosque.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 997.73,
+      "end": 999.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And... Those",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 999.35,
+      "end": 1017.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "seem to me to be a version of a club good. There are some ancillary benefits or externalities from church attendance. And we ask sociologists or political scientists where social capital is built. They often will point to congregational activities.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 1018.49,
+      "end": 1019.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 1019.09,
+      "end": 1037.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "for example, that's also true about joining. equinox or like you know a gym it's better for the polity that people are relatively healthy and that you know redounds to our collective benefit because we don't have to pay for the health care costs of people who are unhealthy",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 1037.3,
+      "end": 1038.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 1038.46,
+      "end": 1045.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "no one stops for a moment to think that the gym membership should be a charitable contribution because of these externalities",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 1045.9,
+      "end": 1046.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 1046.48,
+      "end": 1074.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's kind of what we do with church contributions and I mean, at a minimum, my analysis suggests that we can recognize and should recognize the positive externalities of, you know, giving to a church, but that we shouldn't provide tax incentives for those contributions. We might keep the church a tax-exempt organizational entity. but we don't need to give donors to the church tax deductions.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 1074.86,
+      "end": 1075.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 1075.44,
+      "end": 1076.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "there might be some middle ground there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 1076.8,
+      "end": 1135.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And I'll add one other reason for that. One relevant question, not a philosophical question, but an empirical question, is what effect on giving does a tax incentive have? And the basic starting point for an economist would be to say, well, the incentive had better be kicking out more money out of someone's back pocket than they would give without the incentive. Otherwise, you're just reducing tax revenue. for no effect in the world. And the kind of giving that is least sensitive to a tax deduction is religious giving, because many people internalize that as a moral norm. And almost no one is doing, let's be very clear, an effective altruist analysis of their congregation. Well, you know, that... that, you know, the Episcopalians across town are, like, unbelievable. And I better go hang out over there. Like, that's a non-starter as an analysis for even the most rigorous effective altruist, I would say.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 1135.13,
+      "end": 1135.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 1135.79,
+      "end": 1140.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So it's really hard to get up and running a rationale, in my view, for tax deductible giving to a church.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 1141.19,
+      "end": 1154.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Yeah, yeah, yeah, that's interesting. I think that there is, so a couple notes here. One is, as you say, the space of richly textured questions here, I think maybe, I would honestly say maybe 5% of your book is questions, which is interesting. I like that. I think that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 1154.79,
+      "end": 1155.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "good. And I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 1155.13,
+      "end": 1162.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "think, and as I were thinking generally about building a field of cryptocurrency and crypto ethics and stuff. And part of that is you set the ground",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 1162.79,
+      "end": 1163.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 1163.45,
+      "end": 1169.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "delicious new field, but then... the grounds upon which it is created, they emerge all these other questions.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 1169.88,
+      "end": 1170.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1170.58,
+      "end": 1173.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "you're interested in the political theory of philanthropy, there's lots of unanswered questions",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1173.62,
+      "end": 1174.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "here. Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1174.12,
+      "end": 1188.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "absolutely. I mean, I say in the beginning of the book, I think I will have been successful in this book if, at the very least you accept that there are powerful and important questions to be asked within this framework, this political theory framework, and you can reject every one of my substantive conclusions.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1188.86,
+      "end": 1189.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Totally.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1189.48,
+      "end": 1194.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But it will be good just to have way more work on this topic because there's so little of it right",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1194.86,
+      "end": 1195.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "now. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1195.62,
+      "end": 1203.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "exactly. Yeah, and I think, as you say, I think that the framing of club goods with positive externalities is likely the best framing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1203.06,
+      "end": 1203.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1204.04,
+      "end": 1206.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "you know, bottom-up community kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1206.0,
+      "end": 1206.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of stuff. I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1206.7,
+      "end": 1214.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "think that's probably correct. I think there's another awkward thing here with club goods as well, which is that you have, the internet is kind of full of club goods",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1214.16,
+      "end": 1214.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in the sense",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1214.72,
+      "end": 1217.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "that everything is non-rivalous",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1217.82,
+      "end": 1218.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1218.12,
+      "end": 1224.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "everything is bits. So you can, the marginal cost is zero. But you can exclude people by saying, no, this is software as a service,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1225.15,
+      "end": 1225.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you must play.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1226.49,
+      "end": 1235.19,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "I feel like there's an awkward thing there. We're talking about club goods that are both your church and your local community things and the big tech things. Is there any overlap there?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1235.27,
+      "end": 1235.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1235.73,
+      "end": 1245.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "yeah. So, I mean, you noted in the introduction that I'm part of this research effort at Stanford called the Digital Civil Society Lab. And these are the sorts of questions that we're asking there to try to understand exactly how,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1245.81,
+      "end": 1247.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1248.33,
+      "end": 1248.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "using...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1251.43,
+      "end": 1313.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Either the inherent capacities of digital technologies, whether or not you're within the corporate form of a for-profit or a nonprofit or something else, opens up a world of new possibilities that you didn't have before, or alternatively, whether or not something about the corporate form is really important to marry it on to this. And I'll just give you one example that comes to mind for me because I feel like this is a kind of easy one to see exactly what you had in mind. So take the set of norms around donation of art and artwork. The typical thing is it's actual physical thing. It's a unique piece of work. And, you know, someone possesses it as a form of property and then they donate it to a museum or they have it as private art and it's, you know, treated in whatever the way is private or a public thing it is. But then imagine you have digital photography. in which it's trivially easy to make multiple copies of something at exactly what you described at zero marginal cost.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1313.26,
+      "end": 1313.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1313.44,
+      "end": 1313.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "awkward.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1314.1,
+      "end": 1334.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Now, do you assign an IP right to it, even though you might decide to distribute it in multiple forms? And, you know, what I learned in this initial exploration of this is that if you go look at digital artwork, a digital photograph in a gallery that's for sale, When you purchase it, you get a certificate that says, this is a unique one-off piece of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1334.56,
+      "end": 1335.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "work. And then you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1335.12,
+      "end": 1347.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "ask questions like, you mean the photographer doesn't retain the digital copy, really? So the old analog norms have just been papered over onto digital art",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1347.14,
+      "end": 1347.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1347.64,
+      "end": 1351.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a way which has absolutely zero to do with the technological capacity.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1351.88,
+      "end": 1352.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1352.44,
+      "end": 1359.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we ought to be exploring what the technological capacities open up as a new set of possibilities. for precisely the reasons that you began with.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1359.38,
+      "end": 1363.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Yeah, yeah, I agree with. And there's some interesting things in the cryptocurrency. How much do you know about the cryptocurrency?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1363.52,
+      "end": 1366.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "A little bit. Not much. You know way more than I do. This world",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1366.12,
+      "end": 1368.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "has, there's a thing called a non-fungible token,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1368.56,
+      "end": 1368.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "which is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1368.8,
+      "end": 1374.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "money is generally fungible. They equal, my dollar equals your dollar. Bitcoins are usually fungible. My Bitcoin equals your",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1374.22,
+      "end": 1374.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Bitcoin,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1374.64,
+      "end": 1379.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "but these non-fungible tokens can represent their unique tokens.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1379.68,
+      "end": 1379.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1379.7,
+      "end": 1381.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "mine is not the same as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1381.1,
+      "end": 1381.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yours. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1381.62,
+      "end": 1384.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "these can rep, people are exploring representing art as these.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1384.3,
+      "end": 1385.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Ah, so you got it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1386.81,
+      "end": 1388.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "NFTs. So that's an exploration space that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1388.93,
+      "end": 1389.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "might happen.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1390.49,
+      "end": 1406.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "So maybe one or two other questions on just giving. So do you think that, so one thing I think is awkward, or well, I could see it as possibly awkward, is there's, so this effective altruist, so at the end of the book, What you do is you say, you talk about the role that philanthropic foundations can play.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1407.01,
+      "end": 1407.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You're like, hey,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1407.69,
+      "end": 1410.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "they could be good at, you know, discovering new things. And, like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1410.61,
+      "end": 1410.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1410.77,
+      "end": 1412.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "perhaps this, like, long-term intergenerational",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1412.93,
+      "end": 1413.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "justice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1414.31,
+      "end": 1426.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "And there's this word that you use their presentism, which I think is powerful. And I think there's an awkward thing here where you have... I think both you and I agree with, we both agree with a lot of things in the effect of altruism and disagreeing like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1426.56,
+      "end": 1426.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what to this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1427.06,
+      "end": 1429.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "We both agree with a lot of things like social justice activism but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1429.86,
+      "end": 1430.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "also disagree",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1430.36,
+      "end": 1442.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "with something. So I think this word of presentism and intergenerational justice, I think that this, my instinct is that these might be, like if you think about presentism compared like racism or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1442.16,
+      "end": 1443.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "sexism or whatever, like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1443.6,
+      "end": 1448.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "these as like maybe powerful, effective or like justice, like social justice versus intergenerational",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1448.0,
+      "end": 1448.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "justice. Yes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1449.22,
+      "end": 1455.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "There's something here about how effective altruism might be able to use these words in the same language that social justice activism use it, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1455.54,
+      "end": 1456.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's sketchy",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1456.64,
+      "end": 1457.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "territory.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1457.18,
+      "end": 1457.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1457.64,
+      "end": 1496.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "no, I think you're onto something. So just to make sure anyone who's listening understands this idea of presentism, at least as I use it in the book, the idea is that by design, not as a bug, but as a feature, the creation of democratic institutions, harness decision-making to short time horizons. typical mechanism is that there are elections. So that if you're someone in a public agency or an actual representative and you say to citizens or your constituents, look, we're going to spend a whole bunch of public money on an experimental project that we don't know if it will have any effect whatsoever, and it'll take 20 years for us to find out.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1497.43,
+      "end": 1497.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1497.87,
+      "end": 1504.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not a recipe for winning the next election. And that presentism is, I'd say, built in by design.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1506.43,
+      "end": 1547.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "From my point of view, the important project of a democratic society is that it has to be successful at solving social problems as conditions change over time. And there are various governmental mechanisms for social problem solving. Those have these presentist... biases built in and a democratic society should look for some extra-governmental mechanisms, especially those that will have these long-time horizons, and that's the justification I see for philanthropy. Now, you were asking about how this works with presentism and long-time horizons and justice and generational justice. So think about the evolution of Givewell, which I partly, you know, witnessed from the standpoint of the board.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1547.79,
+      "end": 1548.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "One",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1548.31,
+      "end": 1573.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of the longstanding critiques of give well or effective altruism in its early form was that it's an inherently conservative or short time horizon approach. Basically, here's a whole bunch of really rigorous analyses to show you if you make a contribution tomorrow, here is the predictable maximal impact you can have on human welfare next week, next month, next year. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1573.31,
+      "end": 1574.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1574.93,
+      "end": 1642.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "doesn't. allow you to think about innovation or creation of new entities. It's only analyzing what exists in the world, and that's the built-in conservatism. But then within Givewill, they recognized that this basic orientation to trying to maximize impact had nothing necessarily connected to short-time horizons. You could take a longer-time horizon view and just get up and running a kind of expected value approach to something that it's less confidence it'll happen. But if it were to happen, it would have these enormous benefits. And so that was initially the Open Philanthropy project created as a kind of experimental project within Givewell and then spun out altogether, and now that's up and running on its own. And I think Open Philanthropy takes a longer time horizon, but with the same sort of philosophical approach. How long should the time horizon be? I think that's a robust debate within the EA community or within a political theory of philanthropy. That's the project of the last two chapters of the book. And, you know, I think... The way that anyone who's an effective altruist should come to grapple with, grapple with this is to ask themselves whether or not the kinds of things that, you know, bubbled up a couple of years ago, the EA communities and Nick Bostrom and others would say that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1642.91,
+      "end": 1644.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 1644.33,
+      "end": 1654.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "long as we're counting out across generations and we ask ourselves about various existential threats to humanity such that future generations might not exist at all.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 1656.57,
+      "end": 1670.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Then... we should be giving all of our money in time to staving off existential threats to humanity such that and here was the line that you know stuck with me and should bother anybody current global poverty is nothing more than a rounding error",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 1670.3,
+      "end": 1670.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 1670.68,
+      "end": 1671.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that analysis",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1674.12,
+      "end": 1677.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay. Hard take. It's a hot take. I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1677.56,
+      "end": 1692.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think that's an internal tension within a particular type of effective altruist approach. What reasons do you have to care for future generations? Because even if you set the discount value for future generations at a very high rate, if you're extending out thousands of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1692.02,
+      "end": 1692.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "generations,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1693.38,
+      "end": 1700.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's still going to swamp the value of currently poor people. So good luck, EA, following that one.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1700.08,
+      "end": 1700.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1701.54,
+      "end": 1706.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "And I think that the nice, the hopeful, nice thing with all these is that there's definitely no right answer there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 1706.32,
+      "end": 1706.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You know, it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 1706.8,
+      "end": 1710.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "like it's impossible to say, well, how, yeah, an animal, you get all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 1710.7,
+      "end": 1711.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "into all these things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 1711.7,
+      "end": 1741.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "And there's no right answer. But it is good to be able to know both of those sides of it. So let's dive in a little bit more to Givewell. And as, as Rob said, I think, so Givewell, I kind of imagine it as it's one of these EA meta charities. They do, they kind of create a market for impact in their specific market for impact is in, you know, human, you know, global health and development. Right. And I think that what I'd like to chat about first is specifically around, so I know you've been on the board for a while, five plus years, and you just left recently, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 1742.14,
+      "end": 1742.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "last",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 1742.3,
+      "end": 1742.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "month.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 1744.1,
+      "end": 1747.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "And... You said that, you know, you left because, hey, you just think it's good to have some turnover.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 1747.74,
+      "end": 1748.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You're taking",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 1748.1,
+      "end": 1761.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "some of their commitments, but also that you're kind of thinking about the long term how their board should operate and how it should be professional. So tell me a little bit more about, you know, what you think about, you know, give well and how they're currently operating, how they could upgrade their operations or whatever.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 1762.02,
+      "end": 1762.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah. So.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 1764.01,
+      "end": 1764.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "What",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 1764.41,
+      "end": 1792.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you said at the start is correct. So there were sort of personal reasons for cycling off the board that have to do with some of their commitments I had, end of view about board membership itself, that no one should install themselves in a board for a very long period of time. And there were also some reasons specific to Givewell's orientation or attitude toward its own board that gave me some trouble and that I wrote about in this letter that's posted on Givewell's site. So we'll talk about that latter piece.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 1793.53,
+      "end": 1793.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 1793.95,
+      "end": 1813.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, I think that if you understand the life cycle of an ordinary nonprofit organization, Givewell is still run now 10 plus years later by one of its two original founders, and the founders sort of imprint the organizational culture in a way that's, when things go well, is very important and good to have. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 1813.89,
+      "end": 1816.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 1816.53,
+      "end": 1827.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "were some decisions made recently by the Givewell leadership. to shrink the size of the board from what, in my view, was already a relatively small board.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 1827.66,
+      "end": 1828.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Nine or seven people.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 1829.4,
+      "end": 1855.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And on the one hand, Givewell, over the course of 10 years, over the five years that I was on the board, had grown significantly. Had it had grown in its number of employees. And most importantly, it had grown in the amount of money it moved. So Givewell is moving these days more than $100 million a year. Now, that's not... Revenue to give well the organization, of course, that's revenue that it's responsible for moving to its recommended charities. $100 million is a significant amount of money",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 1855.46,
+      "end": 1855.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 1855.68,
+      "end": 1860.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a nonprofit organization. And to have what was essentially a kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 1860.52,
+      "end": 1862.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 1862.46,
+      "end": 1879.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "unserious board for an organization that's moving $100 million seemed to me the wrong approach. And when Givewell's leadership announced the decision to reduce the size of the board further, I had a bunch of internal conversations to register the reasons I had that I thought that was a bad idea.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 1881.4,
+      "end": 1895.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And the leadership argued back. I mean, another feature of an effective altruist is that as with philosophers, there's often overconfidence and, you know, hubris even. And we...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 1897.47,
+      "end": 1918.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, came to an impasse, basically. And I felt that the direction toward a smaller board was basically failing to take the board seriously. And as a consequence, I also wanted to register that as a complaint and then left for this constellation of reasons. Let me add one more thing here. I think that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 1918.89,
+      "end": 1919.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 1920.58,
+      "end": 1943.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "have a view now about what... in a healthy nonprofit organization, board membership can involve. So, I mean, just to register this and then to say how it works with Givewell in my experience, being on a board of a nonprofit, you were the formal, you know, trustees or governors of the organization, you have fiduciary responsibilities to the organization's well-being.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 1944.4,
+      "end": 1944.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 1944.68,
+      "end": 2043.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there's the formal role of evaluating and hiring or firing the executive director. No one on the board ever had any serious complaints in my time about Ellie or Holden, the people who run the place. And then you do due diligence with respect to accounting and the finance, and that was always seemed pretty good. In addition to those roles, though, you can serve as an ambassador to the external world. And, you know, one of the things which I always thought was peculiar of Givewell was that it didn't deploy the board, especially effectively, in external roles. And it kind of relied on what seemed to me serendipity for Peter Singer writing a New York Times Magazine article or a book that mentioned Givewell that sort of... you know, attract all this attention to the organization, but it wasn't ever stimulated or coordinated by the organization itself. Or to put it differently, for an organization devoted to effective altruism, it seemed to me woefully ineffective at communication about its own mission. And the board was just one potential lever for that, which it didn't use. And finally, most importantly, because... being a board member gives you this fiduciary responsibility to an organization. Board members can be, you know, kind of, to use the language of infective altruist, a bit of worldview diversification for the organization in a trusted sense. So they can bring different points of view that, of course, leadership isn't obligated to, to listen to necessarily, but should welcome, it seems to be hearing. And there were elements of that, but basically,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 2044.16,
+      "end": 2044.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 2044.4,
+      "end": 2080.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, put it in the harshest possible way, I thought that Givewell's orientation to the board was that it's a lamentable legal requirement. And if they can hustle their way through meeting the legal obligation to have board meetings, that was a preferable use of their time. Now, that overstates the way it actually was, but there were elements of that that made me think that basically... The time I was spending on it was not worth simply mere legal compliance. And in addition to with the shrinking of the board made me decide to leave.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 2080.35,
+      "end": 2080.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 2080.67,
+      "end": 2093.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "yeah, that makes sense. I think, well, a meta point here is that I think it's cool that you are able to, A, like, forgive. And this is, you know, um, The communities that have the ability to give each other frank feedback are long-term",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 2093.57,
+      "end": 2094.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "great.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 2094.19,
+      "end": 2098.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "And so I think it's cool that you're able to, yeah, you wrote the letter on their site. You said, hey, this is why I left. You know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 2098.45,
+      "end": 2098.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 2098.73,
+      "end": 2100.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "really cool. And they're like, yeah, let's post it transparently.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 2100.73,
+      "end": 2101.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's right. And then we can have this conversation.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 2102.29,
+      "end": 2102.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "It's like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 2103.19,
+      "end": 2104.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 2104.05,
+      "end": 2106.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "when these things get bottled up, it's like, ugh, that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 2106.53,
+      "end": 2106.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "not what you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 2106.95,
+      "end": 2107.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "want.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 2107.41,
+      "end": 2107.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Totally agree.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 2108.03,
+      "end": 2114.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "And I agree with many of your points. Think that worldview diversification is good. Think that effective altruists are under indexed on marketing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 2114.73,
+      "end": 2115.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and communications",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 2115.55,
+      "end": 2133.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "and, you know, should probably run some more Instagram. ads or something. Right. And so, yeah, I agree with all that. I think... So the other piece here, which is interesting about Givewell, is that in some ways they... As far as I can tell, kind of shifted more to your worldview in that most of their research was done in this specific global health",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 2133.07,
+      "end": 2134.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "existing,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 2134.39,
+      "end": 2139.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "you know, existing charities and existing, you know, programs and doing randomized control trials and whatever.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 2139.65,
+      "end": 2139.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 2139.79,
+      "end": 2142.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "now they're saying, oh, let's change our research. Let's get a bunch more researchers in here",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 2142.75,
+      "end": 2143.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 2143.19,
+      "end": 2144.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "do some of this more, perhaps, experimental",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 2144.61,
+      "end": 2145.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "political",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 2145.29,
+      "end": 2149.63,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "work. What are your thoughts about that and how that might be, you know, playing to the future of Givewell?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 2149.79,
+      "end": 2173.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah. Well, I'm super excited about that. I don't want to take any credit for that, but I think that's a really important direction in which to go. And it heralds a new era for, if not effective altruists, at least the people who are part of the Givewell community. And there will be a whole bunch of new attempts to show that you can give in a way that has a longer and more experimental approach, longer time-orizing approach.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 2174.73,
+      "end": 2175.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 2175.09,
+      "end": 2248.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "should say here, the way this interacts with the stuff I've written about in Just Giving is that insofar as these longer time horizon approaches and say the work of the Open Philanthropy project is just one way of thinking about this. It seems to me there's a surface tension that should be grappled with. which is that you're inviting what is effectively a plutocratic element into a democratic setting because there's a natural orientation or a necessary orientation to leverage philanthropic dollars to affect public policy. or global policy, whatever that amounts to. And in a democratic setting in which we have a firm commitment to political equality and where political equality is then further understood to imply, in my view, something like the equal opportunity of citizens to influence policy, plutocratic inputs into that setting stand in some surface tension with the basic commitment to political equality. And although I think there are ways to resolve that, I think there are inadequate efforts made by philanthropists, including the open philanthropy people, to be as transparent about that surface tension as they are about a whole bunch of other stuff that they do.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 2248.51,
+      "end": 2257.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Yeah, that makes sense. I think that it's a classic awkward thing where you're like, okay, we should allow, it doesn't make sense for individuals to support political candidates, probably,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 2257.37,
+      "end": 2257.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 2257.61,
+      "end": 2267.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "I really like someone. But maybe if like you and I get together and like maybe we make a group of like we support whatever. We should be able to get together, but then it's like, oh, if we are Walmart or some evil, then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 2267.28,
+      "end": 2267.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 2267.88,
+      "end": 2269.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "oh, well, they shouldn't be able to.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 2269.38,
+      "end": 2269.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Correct.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 2270.2,
+      "end": 2277.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "And this is similar with as more of these philanthropic organizations, and the classic example is probably like Bill Gates at the Gates Foundation with Charter Schools in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 2277.66,
+      "end": 2278.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "America. Where it's like, oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 2278.9,
+      "end": 2285.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "no, like he, you know, or this foundation. pushed these things in a plutocratic way, and that is in tension with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 2285.02,
+      "end": 2285.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "everybody",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 2285.82,
+      "end": 2289.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "having their equal voice, versus something like, if you just do give directly, it's just like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 2290.0,
+      "end": 2290.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "everybody here,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 2291.0,
+      "end": 2291.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "here's an air drop of money.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 2292.26,
+      "end": 2292.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 2292.68,
+      "end": 2294.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "That doesn't feel as effective.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 2295.04,
+      "end": 2295.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It is the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 2295.9,
+      "end": 2298.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "most anti-paternalist way in which to give.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 2298.98,
+      "end": 2299.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, yeah, yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 2299.5,
+      "end": 2302.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "yeah. You know, conditionless... cash for you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 2302.71,
+      "end": 2309.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Yes, exactly. Yeah, exactly. Sounds great. Okay, so let's transition to our final topic here in this new Stanford",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 2309.53,
+      "end": 2310.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "center",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 2310.33,
+      "end": 2312.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "for human-centered artificial intelligence",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 2312.37,
+      "end": 2312.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 2312.73,
+      "end": 2313.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "the high.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 2313.61,
+      "end": 2314.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "High, exactly. You have the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 2314.49,
+      "end": 2315.41,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "nice hyphen there, so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 2315.41,
+      "end": 2315.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you don't have to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 2315.97,
+      "end": 2316.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "do HC.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 2317.21,
+      "end": 2317.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Correct.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 2318.2,
+      "end": 2325.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "And this is a theme that we've talked about on the show of AI ethics more generally and both actual initiatives and AI ethics theater and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 2325.88,
+      "end": 2326.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "signaling.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 2326.5,
+      "end": 2332.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "And at MIT, we have our new center for computing with a bunch of social justice and ethics themes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 2332.1,
+      "end": 2332.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "A",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 2332.22,
+      "end": 2332.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "school for computing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 2332.98,
+      "end": 2335.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "School for computing, yes. I don't know the correct terminology. Yes,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 2335.76,
+      "end": 2336.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "it is a new school. It's a whole",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 2336.64,
+      "end": 2337.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "new big thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 2338.16,
+      "end": 2350.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "And so how do you see this new Stanford initiative? And you're a relatively big part of it as far as I understand. How do you see its role? What's its goal and how do you see its role within the rest of the ethics ecosystem?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 2351.39,
+      "end": 2426.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, all right, so I'll give you a couple takes on that. So first, the Institute is new and we had a big public launch two months ago, but we haven't yet begun what I would call the ordinary unsexy, you know, weekly activity of being a center. That will start, I think, in the fall. And the vision is really the vision of Fei-Fei Lee, the AI scientist who's the co-director of the place. And her vision, which I completely agree with, is the reason mainly for my involvement is the chance to contribute to that vision and work with her, is that the frontier of artificial intelligence should not be developed by AI scientists alone. and that the role of humanists and social scientists should not be only studying the downstream effects of AI in the wild once it's out in the world, but rather working together with the AI scientists, as it were, in the lab, in order that the various social and ethical and political concerns are grappled with by the very AI scientists who are the chiefly responsible for pushing the frontier.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 2427.42,
+      "end": 2427.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 2427.86,
+      "end": 2430.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that seems to me an appealing vision. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 2430.96,
+      "end": 2432.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'll",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 2432.32,
+      "end": 2470.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "add that there's a kind of particular bet that HAI is making that I hope will pan out, which involves less something to do with ethics than with computer scientists. So it's a familiar piece of knowledge for anyone who's... tracking AI, that there is just as much, if not more, basic research on AI done by people with CS degrees who work in industry. And it has to do with the superior data that exists in industry, often computing power. And of course, salaries are quite different between working university and working for a Google.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 2470.29,
+      "end": 2471.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "As we know, as we know.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 2472.45,
+      "end": 2552.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So there's been, you know, what I think is fair to call a brain drain of the top. CS talent or AI talent into industry. And so part of the bed of HAI is to say to people who are on the frontier of developing AI that if you want the possibility of hopefully we'll have something in the neighborhood of the same data capacities or, or. access and computing power. We'll try to figure that out. But what a university-based institute can do that a Google or an Amazon or a Facebook can't do is say, would you like to work in tandem with some of the world's best social scientists and humanists? Those people aren't very frequently hired into industry. And the bet is that H.A.I. will over the course of, you know, a bunch of years be able to lure people back from industry into academia, which we also think will be better for AI overall and its social influence because then even though there's, you know, lots of money and people are publishing in open, you know, journals, there's a, you know, commercial interest at some. point in the equation for whatever's going on over there, whereas that's not true within academia. All right, so that has to do with, you know, AI talent now. You were asking about ethics.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 2552.44,
+      "end": 2552.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Oh, can I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 2552.88,
+      "end": 2553.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "pause for a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 2553.46,
+      "end": 2566.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "second? Because I think that that is, that's a very crucial piece here, which is that there is... Yeah, I mean, it's a classic thing where these companies, the aggregators, they've made so much money. And as you say, they have so much more data so they can get all of the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 2566.25,
+      "end": 2566.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "AI",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 2566.87,
+      "end": 2568.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "excited people to them.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 2568.43,
+      "end": 2568.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 2568.77,
+      "end": 2574.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "this brain drain. And I agree with the bet that you're taking or the differentiated advantage",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 2574.23,
+      "end": 2574.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "here, which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 2574.67,
+      "end": 2578.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "is to say, hey. We might, we can't compete on that axis, you know?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 2578.54,
+      "end": 2578.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 2578.8,
+      "end": 2579.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Facebook has more data than",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 2579.64,
+      "end": 2579.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Stanford,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 2580.36,
+      "end": 2585.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "sorry. But what we can compete on is where the social scientists and ethicists are.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 2585.48,
+      "end": 2585.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Exactly. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 2585.84,
+      "end": 2590.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "if they're with us, you can either go and work with a bunch of other, like, computer nerds or whatever at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 2590.1,
+      "end": 2590.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Facebook,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 2590.68,
+      "end": 2593.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "or you can work in creating this beautiful, new, humanized, you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 2593.96,
+      "end": 2594.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 2594.42,
+      "end": 2601.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "version of technology because we have the best ethicist and social scientists. That makes sense to me. I would put money on that bet.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 2601.32,
+      "end": 2601.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 2602.28,
+      "end": 2614.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "So, so. That sounds makes sense. I guess within the greater, my question specifically was you can either ask or respond to the ethics ecosystem or specifically the AI ethics ecosystem. Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 2615.0,
+      "end": 2693.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah. Let's do a little bit of both. So part of what I think is interesting to me about bringing ethics into H-A-I or bringing ethics into AI more generally, not just at Stanford, is that there are indeed a bunch of pressing and urgent ethical dimensions of AI's development that deserve attention. But just seen from the standpoint of philosophy or, you know, political ethics, moral philosophy, it remains an open question to me whether or not AI ethics will come to be seen as a field of just applied ethics. In other words, there's no novel philosophical question or exploration to be done. But bringing ethical frameworks to this particular field is important. And so it's a kind of application of existing ethical knowledge and frameworks. Or will there be powerful new research frontiers from the standpoint of philosophy itself at this intersection? Now, my bet is that it's the latter. There are powerful new philosophical questions to be asked. But the test of that is whether or not philosophers... or ethicists will end up publishing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 2693.61,
+      "end": 2695.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "papers",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 2695.38,
+      "end": 2723.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in first-rate philosophical journals in order to show the philosophical community in this narrow sense, not the CS people, not the AI folks, not the social scientists, but just the group of, you know, the small academic community of philosophers, look at these urgent, important questions that are new that deserve more attention. So my hope is that that will pan out, but that remains still be seen. So when I talk about this,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 2723.82,
+      "end": 2724.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 2724.16,
+      "end": 2741.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is a feature of the Center for Ethics and Society that I currently direct. We have a bunch of postdoctoral fellows there. We selected two this year who will have a joint placement with H.A.I. and Ethics and Society. And we have two separate who are working with Josh Cohen, a first-rate political philosopher who now works at Apple.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 2743.71,
+      "end": 2763.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I describe the work of these people as doing interdisciplinary ethics rather than applied ethics. And I think that's an important distinction. And the basic point, I mean, I'm repeating myself here, I guess, is that interdisciplinary ethics is meant to suggest not a kind of unidirectional application of ethics to some other domain.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 2764.74,
+      "end": 2765.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 2765.08,
+      "end": 2768.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "which the smart people have arrived to come organize your thinking.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 2768.22,
+      "end": 2768.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 2769.92,
+      "end": 2782.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But rather, your philosophy will get better from its own, you know, terms in intellectual engagement with social science or science or computer science. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 2782.84,
+      "end": 2785.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "my",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 2785.06,
+      "end": 2796.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "bet is that that will indeed... come to play out and we'll see a bunch of interesting papers come out the next five years in first-rate philosophy journals that show that this is a really worthy area of inquiry.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 2796.7,
+      "end": 2804.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Yeah, yeah, that's fascinating. I think that there's a, um, the, as you say, it's a question of, can you just apply the existing frameworks to the tech or is there this new",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 338,
+      "start": 2804.38,
+      "end": 2805.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 339,
+      "start": 2805.04,
+      "end": 2820.31,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "that is this co-evolution between the philosophy and the tech? And I think it reminds me, I mean, I agree with your instinct there and think that, I mean, even the, the, tech, how tech changes the marginal cost of things to zero and that makes more things club goods. That's interesting and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 340,
+      "start": 2820.31,
+      "end": 2820.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 341,
+      "start": 2820.47,
+      "end": 2828.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "weird. And so I think that might be a sub-example of this. And I think as, and I'm coming from the media lab and an interdisciplinary, anti-disciplinary thing, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 342,
+      "start": 2829.29,
+      "end": 2829.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I am",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 343,
+      "start": 2829.53,
+      "end": 2830.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "predisposed to be like, yes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 344,
+      "start": 2831.67,
+      "end": 2832.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I agree.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 345,
+      "start": 2832.61,
+      "end": 2836.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "So let's ask, well, yeah, we're pretty much out of time, but let me ask one final question",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 346,
+      "start": 2836.15,
+      "end": 2836.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "here,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 347,
+      "start": 2836.49,
+      "end": 2839.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "which is, so you taught this tech ethics class",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 348,
+      "start": 2839.27,
+      "end": 2840.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this last trimester.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 349,
+      "start": 2841.67,
+      "end": 2844.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "And I'm going to teach a cryptocurrency ethics class",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 350,
+      "start": 2844.76,
+      "end": 2845.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with Joey",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 351,
+      "start": 2845.2,
+      "end": 2857.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "this upcoming semester. What are the macro questions or macro framings that you think any new tech ethics kind of class should have in what kind of things should students learn?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 352,
+      "start": 2858.18,
+      "end": 2858.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah. That kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 353,
+      "start": 2858.48,
+      "end": 2858.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "of thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 354,
+      "start": 2860.08,
+      "end": 2892.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "From a pedagogical point of view, I think the important point is that you... We aspired to show that there was a disciplinary integration by all of the faculty being present at all of the classes. It wasn't a kind of serial handoff to each other. And that the assignments that students got were coding assignments, policy memos, and philosophy papers. So you had to do all of it. And we were trying to show the overlap and engagement by always being present in all of the classes and engaging with each other.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 355,
+      "start": 2892.96,
+      "end": 2893.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 356,
+      "start": 2893.14,
+      "end": 2901.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's a kind of pedagogical standpoint. I think there's also speaking now as a philosopher bringing that disciplinary orientation to the class.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 357,
+      "start": 2903.2,
+      "end": 2903.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "My",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 358,
+      "start": 2903.86,
+      "end": 2906.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "challenge was to try to understand the...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 359,
+      "start": 2909.02,
+      "end": 2944.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "naive, unconsidered mindset of the 19 or 20-year-old CS major, and reciprocally then for my CS colleague to try to understand the naive, unconsidered mindset of the 19- or 20-year-old political science or philosophy major, and thereby to tailor our approach to meeting the students where they are. And having now done the class once, I will update next year that I teach this because I think I got some things right, and I got... some other things wrong. And I don't know who the students will be in your class.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 360,
+      "start": 2944.16,
+      "end": 2944.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Neither do I. Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 361,
+      "start": 2945.68,
+      "end": 2950.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But I think that'll be an interesting challenge is to try to figure out",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 362,
+      "start": 2950.5,
+      "end": 2951.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 363,
+      "start": 2951.88,
+      "end": 2954.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to engage. So I'll just give you one concrete example of this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 364,
+      "start": 2955.93,
+      "end": 2956.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "For",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 365,
+      "start": 2956.33,
+      "end": 2960.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a 19-year-old CS major at Stanford, my experience is that...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 366,
+      "start": 2962.25,
+      "end": 2962.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "They're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 367,
+      "start": 2962.89,
+      "end": 3002.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sort of naive utilitarians, by which I mean the basic premise of CS is to maximize or optimize a solution to a problem. So if someone gives you an objective function or a problem to solve, and your job is to solve it most efficiently. And if you ask people about how they're going to resolve value tradeoffs, Or under what circumstances in particular, for example, like when should a coder of an algorithm sacrifice predictive accuracy in the name of fairness or privacy or explainability?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 368,
+      "start": 3002.5,
+      "end": 3003.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 369,
+      "start": 3003.3,
+      "end": 3012.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "where that isn't just, well, you consult your preferences and install that into the, you know, the function.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 370,
+      "start": 3014.03,
+      "end": 3014.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 371,
+      "start": 3014.83,
+      "end": 3023.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, I've got to find a way to, as it were, inhabit the mental landscape of the CS person in order to engage philosophically.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 372,
+      "start": 3025.8,
+      "end": 3028.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And that'll take some time for me to get better at that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 373,
+      "start": 3028.5,
+      "end": 3028.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 374,
+      "start": 3028.84,
+      "end": 3039.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "yeah, that makes sense. So I think thank you for the tips and for anybody who's listening. I think those are good tips, which are trying to make it, you know, from a pedagogical perspective, naturally interdisciplinary and not just like, here's another guest speaker and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 375,
+      "start": 3039.56,
+      "end": 3040.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this person's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 376,
+      "start": 3040.0,
+      "end": 3067.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "going to be the tech person, this person's going to be the, you know, social, you know, science person. That seems powerful. And as you say, I mean, this is true for all things, but especially within this weird new interdisciplinary world. It's like... when you have your students who are coming from these different perspectives and habit their mind, be like, okay, if you're the CS person doing objective functions, well, actually it can be a lot messier and then kind of bringing you to that world and letting you agree with that world is tough. And vice versa from the social sciences. You're like, hey, but these computer scientists, you know, there's a lot of stuff here that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 377,
+      "start": 3067.17,
+      "end": 3067.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "really,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 378,
+      "start": 3067.57,
+      "end": 3089.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "you can't just reject it, you know, outright or whatever. Good. So that sounds fun. So I guess for our listeners, A, feel free to check out Rob's book, Just Giving. There's a lot of cool other stuff in there that we didn't chat about today. I guess if you're into, you know, ethics and AI stuff. Check out the Stanford Center at H-A-I. And Rob, where can people find you on, like, Twitter or website or whatever?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 379,
+      "start": 3090.0,
+      "end": 3090.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 380,
+      "start": 3090.22,
+      "end": 3098.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "on Twitter at Rob Briech and got a website and all the various centers of a website. I'm pretty easy to find as long as you don't confuse me with the former Labor Secretary.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 381,
+      "start": 3099.02,
+      "end": 3099.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Nice,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 382,
+      "start": 3099.26,
+      "end": 3101.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "exactly. And it's R-E-I-C",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 383,
+      "start": 3101.68,
+      "end": 3102.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "-H. And it's Rob,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 384,
+      "start": 3102.88,
+      "end": 3103.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "not Robert.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 385,
+      "start": 3103.46,
+      "end": 3104.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Exactly. That's how you know.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 386,
+      "start": 3105.02,
+      "end": 3106.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Good. Well, thank you again for being on the show today, Rob.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 387,
+      "start": 3106.9,
+      "end": 3107.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 388,
+      "start": 3107.0,
+      "end": 3108.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "was really right to be here. Thanks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 389,
+      "start": 3108.46,
+      "end": 3108.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 390,
+    "withheld": 2,
+    "published": 388
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

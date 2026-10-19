@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "id": "podcast-0d74897ea57938f2b8cc",
+  "title": "AI Doubling Earth's Brainpower?",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=vgg59BBvfjU",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "vgg59BBvfjU",
+  "youtube_url": "https://www.youtube.com/watch?v=vgg59BBvfjU",
+  "audio_sha256": "c08c9d056d00ce25f89426bd3e7048b9d786192395f96ca6410406cc37de9a2a",
+  "audio_duration_seconds": 40.4259375,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 143,
+    "unknown_words": 2,
+    "unknown_words_fraction": 0.013986013986013986,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 1.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "What is the best frame to understand",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 1.84,
+      "end": 2.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 2.56,
+      "end": 37.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "new intelligence explosion? The Industrial Revolution? It's like, no, the Industrial Revolution was actually about horsepower, while the intelligence revolution is actually about brain power. And so we can view it as this doubling of Earth's brain power. So we'll kind of look at the four implications of this doubling of a brain power. kind of looking at it last time that something like this happened, printing press. So we had the printing press that kickstarted the scientific revolution, the enlightenment, the industrial revolution, and the whole literacy revolution. And so that was kind of a waking up of all the human brains in the world. And so we're going to kind of apply some of the learnings from that over the last 500 years",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 37.06,
+      "end": 37.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 37.68,
+      "end": 40.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "perhaps learnings for AI in the next 50 years.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 5,
+    "withheld": 0,
+    "published": 5
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

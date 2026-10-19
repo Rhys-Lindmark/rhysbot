@@ -1,0 +1,2718 @@
+{
+  "schema_version": 1,
+  "id": "podcast-dc567de613f2f0d70e55",
+  "title": "#24 Arthur Breitman, tez0s: Functional Programming as a Mental Model + Human Governance Processes",
+  "published_at": "2017-12-15T22:46:59Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/24-arthur-breitman-tez0s-functional-programming-as-a-mental-model-human-governance-processes",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/370135673-the-rhys-show-24-arthur-breitman-tez0s-functional-programming-as-a-mental-model-human-governance-processes.mp3",
+  "youtube_id": "ttFyQAliLDQ",
+  "youtube_url": "https://www.youtube.com/watch?v=ttFyQAliLDQ",
+  "audio_sha256": "82ad2a8770516b42cc916e1fbc8945200ee4dbc12ae6ec48c8ceea9f234c7d02",
+  "audio_duration_seconds": 3166.7328125,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 9982,
+    "unknown_words": 143,
+    "unknown_words_fraction": 0.014325786415547987,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 11.95,
+      "end": 12.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 12.49,
+      "end": 19.35,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "episode is brought to you by Shapeshift.io, the easiest, fastest, and most secure way to swap your digital assets.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 19.65,
+      "end": 20.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 20.25,
+      "end": 25.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "run the risk of leaving your funds on centralized exchange. Visit Shapeshift.io to get started today.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 30.13,
+      "end": 116.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello, everyone. Today's interviews with Arthur Brightman from Tazos, and it's a fun interview, but it was kind of a difficult one because, you know, Tezos has raised, you know, $250 million in ICO, which is now worth at least $400 million. And, you know, they also are having these big kind of, these issues between Tezos and the Tezos Foundation, and they're like these three class action lawsuits being put it against them. And so it's kind of a touchy thing and a difficult thing when we actually dive in and talk about, you know, human governance because it's something that they're dealing with in a big way and is very difficult. So it's kind of fun to chat a big... these things, but this is kind of one of the first interviews that I've done that really pushes on some of these touchy subjects. And I hope you enjoyed the version of it that I did, but we kind of need to stay a little bit at a meta level for legal reasons and also because I wasn't, yeah, I'm not really sure how to push on these things. So that's the first note. The second note is, I mean, so we primarily talk about functional programming and then governance. And on the functional programming side, I was really interested to learn more about functional programming as a mental model. This was really fun talking about this with Arthur because although all these like random tasos things are happening with all this money and whatever in the class action lawsuits, Arthur's just a dude who's really excited in building this protocol and is nerd out about functional programming stuff. So it's really fun to do that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 117.57,
+      "end": 118.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 118.05,
+      "end": 118.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "chatted about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 118.55,
+      "end": 119.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 119.03,
+      "end": 120.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "couple interesting things. One is like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 120.25,
+      "end": 120.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 120.73,
+      "end": 121.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "idea of like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 121.53,
+      "end": 122.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "within",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 122.11,
+      "end": 122.97,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "functional programming",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 122.97,
+      "end": 123.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thinking",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 123.99,
+      "end": 132.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of things as from a type perspective, which essentially means do you take any random primitive and then you wrap it in an API that says, hey, here's how you interact with this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 133.1,
+      "end": 133.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 133.46,
+      "end": 172.97,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's both really helpful from the functional perspective where you can kind of imagine a given functional program as the amount of, or as the set of APIs that it has. But you can also think of this from the human perspective, and this is something like urn.com, where you say, hey, on urn.com, you could pay me $20 to have me respond to an email or whatever. So this API perspective is one that people people in the blockchain space use a lot, not only from the functional programming perspective, but also from the human-to-human perspective, where you're essentially defining your APIs that you can be interacted with with respect to the world. So that was interesting. And then the other thing that we talked about on the functional programming side that was pretty fascinating was around language and kind of mental models",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 172.97,
+      "end": 173.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "where...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 174.4,
+      "end": 212.65,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "thinking about, we talked about how nouns are like object-oriented programming and verbs are like functional programming, and then Arthur had this concept of adjectives being similar to this APL language. And so we were talking about that, and then we were also wondering, hey, but would it be the case that monkeys, how would they name their things? Would they name them in terms of bananas and jumping around or whatever? And so we got into some of these questions around how... kind of the language that we use informs the mental models that we use. So that was all fascinating stuff around functional programming, and I'm excited to go deeper on functional programming things with other projects like Maker and Foam, because I think it is a really powerful mental model.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 213.86,
+      "end": 214.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 214.26,
+      "end": 268.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then we also talked about governance, and this is another thing that is a theme of my work these days. doing an interview with Eric Voorhees around Bitcoin governance that will release soon, working with this kind of Ethereum Commons around decentralized governance. And Arthur and I today, we chatted about from the, like, technical side, this idea of co-evolving governance systems. And people talk a lot about these governance systems as, hey, you have like Bitcoin and Bitcoin Cash, and they're kind of... the fork allows for those two different kinds of governance to go forward and like forking it forking is a way to govern. But we also kind of talked a little bit about the meta level there where we say, hey, we should think about the co-evolution between, not just the co-evolution of two different forks, but also the co-evolution of governing systems themselves. So this is like forking as a governance system co-evolving with a self-amending ledger like TASOS as a governing system.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 268.81,
+      "end": 269.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 269.29,
+      "end": 359.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then we also talked about the human side of governance and Arthur is really arguing for governance as process, and specifically he also talked about making sure that governance is also decentralized. And he said the irony of the situation is not lost on me. I think he's implying that, you know, Tezos Foundation and the centralized point of failure over there has been difficult for Tezos. So that was one side. And then we also talked about transparency in governance. And I'm reminded of chatting with Luis from Aragon a couple podcasts ago where he said transparency is the first key step to governance. And we talked about then with... Arthur today talked about memes and signaling. And the key thing that Arthur brought up was that we just got to make sure we have costly signals, kind of similar to Taleb's skin in the game stuff, where we need to have costly signaling things when we're trying to do human governance here and trying to be transparent. So with that, definitely give it a listen if you're into the functional programming side or if you're into the governance side. And finally, before I begin, here are two quick things that I'm leading that you might be interested in. The first is I'm co-leading the ETH Denver Hackathon, which is the next in the series of ETH Global Hackathons. You know, we're really working with the ETH Waterloo team. We expect 500 hackers, awesome speakers like Joe Lubin, William O'Gaiyar, Linda Sia. We have these awesome workshops, both on the coding side, things like cryptoeconomic primitives, bonding and staking, etc. And then also some great non-coding workshops, which are emphasizing as well, things like governance, complex system dynamics. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 359.87,
+      "end": 360.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 360.27,
+      "end": 363.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you're interested, it's February 16th through 18th, and you can go",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 363.17,
+      "end": 363.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 363.77,
+      "end": 365.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "learn more at eithdenver.com.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 365.81,
+      "end": 366.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 366.21,
+      "end": 368.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then the second thing that I'm doing that you might be interested in is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 368.51,
+      "end": 369.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 369.21,
+      "end": 371.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "called the Ethereum Commons Co-op. And this is a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 371.83,
+      "end": 372.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "new",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 372.51,
+      "end": 391.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "project that I'm starting that essentially allows for more cross-project. co-evolution and it kind of facilitates that. And it also tells the story about this new future that we want to live in that internalizes externalities. So if you want to learn more about that, you can go to my Twitter. And with that, I hope you enjoy this episode with Arthur from Tezos.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 396.24,
+      "end": 426.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello, everyone. My name is Reeslinmark, and you're listening to another episode of Creating a Humanist Blockchain Future. And in this podcast, we take a systems thinking approach to doing good in the world. And so we have a couple different series that focus on different system scopes. And today we're focusing on Series C, software systems. And specifically, we'll be talking about functional programming. And to do that, I'm very happy to introduce Arthur Brightman to the show. Arthur is a co-founder of Tezos, a smart contract platform with a self-amending ledger and formal verification. Arthur, thanks for being on show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 427.21,
+      "end": 427.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Thanks",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 427.65,
+      "end": 428.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "for having me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 428.46,
+      "end": 438.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Excited to dive into functional programming. So before we dive into the Uber functional side, could you give us an overview of just like TASOS as a smart contract platform?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 439.02,
+      "end": 439.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 439.86,
+      "end": 460.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so TESOS is a smart contract platform. Like you said, so, you know, smart contracts are electronic agreements that leave on the blockchain. And the idea being that they can receive inputs from the blockchain or from external system that... and calculate based on those inputs because there are now they should be making certain transactions. And so TASOS in particular,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 462.64,
+      "end": 496.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is a self-amending smart contract platform, which means that it can change its own protocol. So if you have an idea of how to make it better, you can submit that to the network, and the network can just decide to adopt it. It's a procedure which traditionally now is done by hard forks. People on Twitter convince themselves that, yeah, we need to do this, and then maybe they do it, maybe they don't. And so it tries to bring a formalized governance model to that process. And the other aspect of TISOS, which might be of interest for functional programmers, is that TISOS is written entirely, you know, Camel, a functional programming language.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 496.64,
+      "end": 497.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Cool.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 498.27,
+      "end": 558.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, so a little bit more on, so at the high level, yeah, you have the self-amending ledger, so you can, it's like a different way to have a blockchain evolve over time instead of through forks. And then on the formal verification side, so let's kind of transition to that side for a bit. So Tezos has formal, is the goals to have formal verification, and that is based in functional programming. And functional programming is something that I personally, and this is the first podcast in this kind of series that I'm doing here around. thinking about functional programming as a mental model or kind of like a framework. And there's a bunch of different projects in the space that do this that use functional programming. Maker uses it and actually they're like white papers slash purple paper is written with the functional programming language. You have the like Archane co-op and like Vlad Zamfair's Ghosts, which are these new proof of stake implementations, which are heavily like informed by functional programming. You have foam. And of course today we're talking with TASA. So. Arthur, could you kind of give us a high-level overview on how you guys use functional programming specifically around formal verification?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 559.53,
+      "end": 560.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 560.55,
+      "end": 591.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So the first thing to note is that it's an example I like to give is that a blockchain itself is a form of functional programming. So there's not a single definition of what functional programming is. Some people will say that functional programming is having function as first class values. Some people include strong static typing. inside functional programming. Some people say it's about lazy evaluation. So there's many different definitions or, but one that is common is the lack of mutation. If you're not changing, if your variables are immutable,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 591.88,
+      "end": 591.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 591.96,
+      "end": 699.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, changing them, then this is functional programming. Now, if you have, but sometimes you want to have something that changed. So maybe, you know, if you're writing accounting software with functional programming and you have a value that changes over time, how do you present that change? And so one way this is done, typically is to, instead of actually going in your memory and erasing that bit of memory and writing something else, what you do is that we represent that as a linked list. So you represent that as a list of changes. And that's a way to represent mutation in an immutable way. And this is exactly what, and that approach is called a state monad. And this is exactly what the blockchain is doing in some sense. You know, we want to represent. the state of all the balances. So in Bitcoin, that might be the state of all the UTXOs. That's the unspent outputs. And you represent that not explicitly, but implicitly, as a series of chain operations. So in terms of how we use it, well, we implement the blockchain on it, I would say some of the benefits we get out of it is, well, we rely heavily on the typing system to enforce properties about or ledger, we rely heavily on a module system of a camel for encapsulation. So there's a general principle that we're trying to build the code in layers. And so you have very low layers that deal with networking, serialization, deseralization. And at each layer, we build upon abstraction and abstraction until we just call very general function on very general objects. And so we don't have the possibilities that you might have in other languages of shooting ourselves in a foot. You know, once you get something like an amount of TES tokens, that amount is not the same thing as an integer. It's its own type with its own function operating",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 699.43,
+      "end": 750.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "on it. And it's not something that, and the only way you can access it is through these functions. So it prevents, it prevents a lot of, it prevents a lot of bugs. You know, when the team initially worked on, Anatois ledger after about four months of development. And that initial team being Benjamin Canou, Gregor Henri, Pierre Chambardt. They worked on it for the first four months. They ran it. And after a couple, maybe half an hour of fixes, the thing was running. Which, you know, it's very hard to obtain this kind of results in other languages. Typically, you find that you have a lot more bugs. So the compiler is helping you catch a lot of bugs. you know, before they happen. And in fact, you know, if you were talking about formal verification, if you go further,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 753.57,
+      "end": 766.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the idea of proving programs is extending the types even further and trying to put all the properties that you want in your program in the types. So we don't quite do that, but we, you know, we push in this direction.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 766.88,
+      "end": 767.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 767.82,
+      "end": 822.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah, I guess that there's, you start to talk a lot about the, kind of the general side of things. I love the blockchain as functional programming itself, especially, yeah, the... you know, the values, and in functional programming land, I was watching this great video earlier today, we're like, hey, the word variable in functional programming land is not great. You know, we assume that's instead of value, an immutable value, instead of assuming that everything can be varied. And so like you say, and when you're trying to change an immutable value, instead of changing the value itself, you just... do a list of the kind of the actions that have been done to that value as a way to know how it's changed over time. So I really like that as a concept. And I want to dive into those layers that you talked about in a second, but just to double check, how much does, in my mind, the functional programming nature of TAS is kind of necessary for some of the formal verification that you guys are looking to do. Is that correct? Or could you talk a little bit more about the formal verifying site?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 823.07,
+      "end": 823.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 823.43,
+      "end": 859.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I wouldn't say it's necessary, but it is helpful. So in practice, you can formally verify anything. You could take a piece of C code, you could take a piece of assembly, and as long as you have a clear model of what the computer is supposed to do with it, then you can verify that it's doing the right thing. But it's not going to be the same amount of effort to verify that a piece of assembly is doing what you think is going to be doing, then to verify that a piece of functional programming is doing what... you want to be doing. So the language of proofs is one of mathematics. And so the closer your functions are to mathematical functions, the easier it is to make proofs about them.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 860.03,
+      "end": 860.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 860.43,
+      "end": 905.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the closer it is to like a weird machine with CPU and memory and all of this stuff, the closer is to that, the harder it is to make proofs. So, you know, we try to make it as easy as possible. And from a very practical standpoint, one of the most advanced proof assistants today is a cock proof assistant. In fact, okamel was developed to be the language in which cork would be written. So cork is written itself in okamele. And when you write a proof in cock, one of the nice thing you can do is you can write a proof that a certain program is possible. And then you can extract that program as a piece of a camel code. So one thing we can do is write some code, extract,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 908.9,
+      "end": 922.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "extract a chemical code and then use that code. So now we know it's proven. We can also prove existing code using something called CFML. So you can actually take existing email code and use COK to prove it. So there's a lot of interoperability",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 922.0,
+      "end": 922.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 922.94,
+      "end": 959.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "proof assistance that we have. Now, it's not something we've done on a large scale at this point. We've had some formal verification efforts around some smart contracts. But so far, we haven't. actually dive in and try to formally verify the TISA code. It's something that I would absolutely like to do as we go forward. It will give confidence into the reliability of the protocol. And I think in general, anything that's consensus critical or critical to the security of contracts should be verified.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 959.37,
+      "end": 992.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, got it. Yeah, I love the... My favorite metric for determining if that's true or not is dollars per line of code. So for something like a rocket ship or whatever, it's like, hey, if you have 10 lines of code and the rocket ship is worth $10 million, you know, that's a million dollars per line of code. And so with that as a context, things like ICOs, things like more intense security things, it's like, hey, you got to make sure this code is right to formally verify it. If your dollars per line of code is high, then using a formally verified system is correct.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 993.42,
+      "end": 993.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 994.14,
+      "end": 1002.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "yes. And you can actually compute that. You can actually directly compute that for a lot of cryptocurrencies like Bitcoin, and you'll see that the value per line of code is rather high.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 1002.54,
+      "end": 1005.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, exactly. It's like, oh, my God, the attack space is too large.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 1006.34,
+      "end": 1006.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 1006.42,
+      "end": 1008.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's even higher for smart contracts.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 1009.18,
+      "end": 1067.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, exactly, exactly. So I guess thinking about, so there's the TASO system, and I think that I do want to take a little bit of a step back and think about functional programming as kind of a mental model. And I don't, and this is, this is an unformed thought that I'm kind of exploring with Arthur here, but like, you know, there are various other mental models that you can use in the world, whether it's like the lean, iterative mental model to understand your customers or whether it's, you know, a mental model for like Bayesian reasoning to kind of help you understand and predict future events better. And I feel like there's some kind of functional programming. mental model here. So I guess, Arthur, does that, and let's go actually with a specific question here around these words that are used within this model. And so, you know, one that we used here was like using the terms values instead of variables to denote that they don't vary, that it's like an immutable, you know, value or whatever. Are there other kinds of language changes that you have as a result of the functional programming mindset?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 1069.1,
+      "end": 1069.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Ooh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 1069.78,
+      "end": 1075.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's a good question. Man, I don't know. Yeah, we talk more about values and variables.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 1077.17,
+      "end": 1078.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So I, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 1080.59,
+      "end": 1081.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I'm thinking of the Haskell community,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 1082.17,
+      "end": 1083.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "which is using,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 1083.81,
+      "end": 1112.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "which is, but I'm not a Haskell. You know, the thing is, you know, I'm not, I'm not an expert in functional programming. I sit around experts and I've seen experts and I admire them and I understand, you know, from an engineering point of views of value of having it. And so I'm an ardent, proponent, a defender of it. But yeah, so the Haskell community has borrowed a lot of language from category theory, for example. So they have all of these, and all these are different names that I don't pretend to understand.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 1113.74,
+      "end": 1114.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "What",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 1114.22,
+      "end": 1114.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 1114.38,
+      "end": 1114.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "category",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 1114.66,
+      "end": 1117.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "theory, by the way, just to go on that for a second?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 1118.0,
+      "end": 1118.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 1120.6,
+      "end": 1145.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's very abstract branch of mathematics developed by Grotendik, which talks about categories and then you have. arose between categories. And it's this very, very general branch that kind of talks about mathematical structure. It is fairly interesting. It does seem to map to a lot of computer science concept. There is some controversy about how useful it actually is to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 1145.38,
+      "end": 1145.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "understand",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 1145.82,
+      "end": 1149.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "computer science concept. But it is definitely something to...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 1149.88,
+      "end": 1150.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 1150.18,
+      "end": 1169.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "look into. There's a very good tutorial online, which is category theory for programmers. And so if, you know, if listeners are interested in learning a bit about that and they have a tendency to, and they're coming at it from the angle of programming, I recommend it. I thought it was interesting. I don't know how relevant it is. In terms of the mental models,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 1170.16,
+      "end": 1171.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 1171.4,
+      "end": 1183.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "way I like to think about it is that you have a value and then you just like keep passing that values who function and this, you know, and just just progressively changing it. It's almost like passing a hot potato where you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 1183.16,
+      "end": 1183.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "have the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 1183.48,
+      "end": 1201.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "thing that you transform it, pass it to something else, it's going to do something else with it, and so on, so forth. Instead of just like, I'm going to put my value here, and then I'm going to come back at a later time, and I'm going to change it. You just keep your value and then you just keep passing it through different things and then, you know, adding bits to it, removing bits to it until you have your results.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 1201.58,
+      "end": 1201.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 1201.94,
+      "end": 1229.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "like that as a metaphor for it as kind of a hot potato. You're passing the value along. Well, just to double check there, it feels so that that aligns with my understanding of functional programming in the sense that you just have a bunch of these different functions with, you know, direct inputs and outputs, and that's primarily what you're using. But it kind of doesn't agree with me in that, like, that value then starts to sound like a variable, you know, because it's being passed along and it's being changed or whatever. Is that, I feel like, is that a tension that I'm feeling? Or?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 1229.91,
+      "end": 1230.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 1230.35,
+      "end": 1236.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "mean, yeah, there is a tension, which is that I believe that our universe is fundamentally not functional.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 1238.29,
+      "end": 1286.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And there's something deep, I think there's something deep here about in physics, whenever you have a mutation of a variable, you know, even if it happens in a program, it's in terms of thermodynamics, it's a dissipative process, which means that you have to be putting out a little bit of heat. when you do that. Whereas when you do functional computation, in practice, you're not actually doing anything. You're not actually affecting the universe until you actually, like, print out the result or you actually have a side effect which is going to dissipate heat and change, you know, and change history. But like, you know, all of our machines, they are, they're largely, they are, they are, they largely use mutation. Now, it's slightly different if you start, you know, thinking into the sci-fi. Some people have sort of making,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 1289.01,
+      "end": 1304.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "reversible computing, so the circuits who actually consume even less energy because they're purely functional. You just, you know, puts your inputs in one place, and then it just cascades with the system. You get your output and you haven't actually changed anything. You've just rearranged the bits",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 1304.67,
+      "end": 1306.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 1306.15,
+      "end": 1321.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the system. But it's not a very, it's not a very natural model. I think that instinctively we tend to think in terms of meditation because in everyday lives it is what we do. You grab something, you put it in a cupboard and then take it back from the cupboard. So it's in one place, it places changes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 1323.71,
+      "end": 1332.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "People think in their daily lives in terms of mutation. But in terms of mathematics, I think it's a language that's closer to mathematics.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 1332.69,
+      "end": 1362.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah. I think that what you said there's the side effects version of things. And that's like kind of a key part of the functional programming mindset, which is just like you have the immutable values or whatever you have. essentially no side effects in the system so you can understand a given piece of code and say, hey, I'm looking at this functioner that's given part of the program, and I don't need to think about all the other things that may have happened before or after it. I can just understand this and this specific thing because I don't, I can kind of ignore side effects. So it's like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 1362.33,
+      "end": 1362.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that side",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 1362.73,
+      "end": 1374.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of things, there's the immutable values side of things. Could you talk a little bit more about types? Because I think that types and how types are used in functional programming is another surprisingly powerful part of the mindset.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 1376.7,
+      "end": 1416.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, so I mean, sometimes when you speak about types, people say, well, you know, like how many, you know, it doesn't seem like an error I would have, you know, why would it just confuse a string and an integer, you know, that doesn't sound like a very serious bug. But in practice, you do catch, you do catch a lot of bugs this way, but you have to use, you know, you can use types aggressively. It's not just between a string and an integer. So one thing that you can do, for example, in a camel is you have a module system. And this module lets you hide type. So for example, you can have a module for a quantity of token. Okay. And so inside of it, you're just going to implement it as an integer. But from the outside, it's going to be this type that's up. It's a quantity of token. I don't know",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 1416.06,
+      "end": 1416.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "anything",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 1416.98,
+      "end": 1483.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "about it. And so if you want to do anything with it, like add if you add it to another quantity or, you know, take it out of an account and put it in another account, then you have to go. then you have to go through that module. And that makes things, and that guarantees, that gives you the guarantee at compilation times that, hey, I'm not, there's no way for me to change those amounts or to do anything with them without calling. the functions in this one place. It gives you an invariant. And so that's very helpful if you want to prove properties about your program because you know that if you have to prove this property, you only have to look in one place. And the same goes with not having mutation. If you have mutation, if you depend on some big global state where many things can be changing, you can look locally at a function and not know what it does because it depends on this big global state, which could be anything. Whereas if you're not depending on this big global state, you can look locally at what a function does and says, yes, this is correct. I, because I know that, you know, for all inputs that it gets, it's going to get the right outputs, and I don't have to reason about this big global states. So type in some sense allow you to do the same thing, which is to really focus locally on what you're doing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 1483.83,
+      "end": 1484.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 1484.29,
+      "end": 1500.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I like that. So I'm pulling that out as kind of maybe a... Something that's part of this mental model is the ability to deeply concentrate on a given local state without needing to try to keep in the rest of the complex system in your mind. Would you kind of agree with that, that that might be one thing to pull out from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 1500.44,
+      "end": 1500.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this mindset?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 1502.88,
+      "end": 1502.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 1503.62,
+      "end": 1511.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "absolutely. It really allows you to make sure that local, to make sure that you only have to check local properties in order to. and shrugable correctness.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 1512.3,
+      "end": 1541.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. And I think, I mean, the one about the quantity of token versus integer one, I think is a really important point, which is that, hey, when you want to be adding to someone's account or whatever in the Tezos ledger or something, you can't just put an integer in there. You need to actually go through this wrapper around an integer, essentially, which is this quantity of token. type wrapper and it has its own specific APIs that you need to work through. And if you don't work through those APIs, then you can't interact with it. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 1541.76,
+      "end": 1542.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 1542.6,
+      "end": 1559.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "version of things, it's like an API-based wrapper around more like general types allows it. I guess, and do those types start to then layer on top of each other? And you talked about that a little bit before, like the layers that you have in the TASO system. Could you talk more about that layering in these wrappers on wrappers?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 1560.6,
+      "end": 1560.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 1561.14,
+      "end": 1607.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "for example, one thing we might have is, so there's such a thing as the representation of an amount that's how is that going to be, you know, if we have an amount of test tokens, how is that going to be serialized in JSON, how is it going to be serialized binary, how do we deserialize it? So there's something that is a representation of that. And then there's a higher level, which is, okay, now we're going to have a concept of an amount. But below that, it's going to use this low-level representation. And then on top of that, we might have the representation of an account. Now, an account has some tokens in it. But once we have the abstract representation of an account, we don't want to do anything with tokens anymore. We don't want to be adding to, you know, only the account is going to be able to add tokens or remove tokens. So at each layer, we keep restricting the API so that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 1607.37,
+      "end": 1609.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 1609.31,
+      "end": 1615.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of the, you know, so that each layer only has access to the, minimum amount of functionality that it needs.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 1616.12,
+      "end": 1616.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 1617.0,
+      "end": 1632.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I like that. At each layer, you restrict the API such that has the minimum. So you're essentially trying to decrease the amount of surface area or attack area or API calls at every given layer. Because if you have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 1632.14,
+      "end": 1632.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "more, that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 1632.66,
+      "end": 1664.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "means, yeah, like, why do you, why would you have more than you need? Okay, I like that. This episode is brought to you by Shapeshift.io, the world's leading trustless digital asset exchange. Quickly swap between dozens of cryptocurrencies, including Bitcoin, Ether, Dash, Bitcoin Cash, Auger, Golem, and many more. And this is not your typical crypto exchange. You don't need to create an account or share your personal information, and your funds are never stored on Shapeshift. This means that your hard-earned digital wealth is never up for grabs by hackers or other malicious actors.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 1664.98,
+      "end": 1665.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "To",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 1665.52,
+      "end": 1673.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "get started, visit Shapeshift.io, choose the tokens you'd like to swap. input your receiving address and send your funds. It's that easy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 1675.24,
+      "end": 1699.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So one thing that I just want to check on here is how do you, so another way to view, another way that I like to view these mental models is by comparing them to other mental models. And so I guess how do you, Arthur, see there's the functional programming mental model, but then there's kind of the object-oriented mental model that most of us programmers these days are used to. How do you kind of see those two mental models as different or similar?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 1702.32,
+      "end": 1704.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I mean,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 1705.34,
+      "end": 1721.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in the object model, you definitely, it's all about mutations because you're going to be calling this message or sending this messages to the object and it's going to change its internal states in response. A lot of the time you can,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1723.06,
+      "end": 1723.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1723.18,
+      "end": 1748.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "can, so O'Kamel has objects. We don't really make use of them because we try to keep the protocol as functional as possible. I may be saying something that's going to make people scream. I don't know, but I found that programming with modules in a camel is kind of similar to template programming in C++. You find a lot of, you find a lot of commonalities. And in fact, if you,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1750.05,
+      "end": 1750.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1750.29,
+      "end": 1754.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "module is essentially, the typical module is typically going to have one type.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1754.99,
+      "end": 1755.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1755.39,
+      "end": 1775.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is hidden and then a bunch of function on that type. And so if you, you could almost consider that like a package of, you could almost consider these methods, but then instead of the method, you know, um, modifying an existing object, you just call it in some value and it gives you another value when the other one is garbage collected. So, you know, it's, it's not that different conceptually. Um, there's no concept of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1775.77,
+      "end": 1775.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "uh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1777.44,
+      "end": 1788.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "inheritance for modules, but there is a concept of functors. So they're different from the hascal functions. The functors, you know, camel are, I have a module, I can parameterize it with an other module and create a third module",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1788.52,
+      "end": 1789.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "using",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1789.72,
+      "end": 1789.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1790.74,
+      "end": 1791.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1791.18,
+      "end": 1792.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "some interesting fields of equal question. I mean,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1795.16,
+      "end": 1811.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in object-oriented programming that I don't claim to have the answer to. I just find it fascinating to read about it. I don't know if you see the one about the circle and the ellipse and whether a circle is a kind of ellipse that has both of its axis the same size or an ellipse.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1813.51,
+      "end": 1821.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But if you say that, then you do some properties. So inheritance doesn't actually quite capture what you want in many",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1821.23,
+      "end": 1822.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "cases.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1823.39,
+      "end": 1823.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "In",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1824.06,
+      "end": 1825.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1825.22,
+      "end": 1826.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "end, I think it becomes more about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1826.84,
+      "end": 1828.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "empirics.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1830.4,
+      "end": 1843.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "In practice, what does object-oriented programming actually buy you? And I think the one thing that it does buy you is encapsulation. I think that's the most important thing that you're getting out of it. And that's something we make heavy use of with the modules.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1843.92,
+      "end": 1844.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1844.24,
+      "end": 1852.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it. So, yeah, object-oriented programming buys the encapsulation, but you're still using that in O'Camel, but with a thing called modules. Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1853.24,
+      "end": 1853.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1853.96,
+      "end": 1854.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1854.32,
+      "end": 1886.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Interesting. Yeah. Another way that I like to think about this difference, and this, I think it's kind of back to the, what you were saying earlier about side effects and how people conceive of the universe and, like, laws of thermodynamics, and, you know, thinking about object-oriented program, I mean... It says it in the name. It's like it's object-oriented, aka noun-oriented programming versus like functions, which are kind of verbs. Is there any power to that pattern match? Or what does that, does that have any?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1887.26,
+      "end": 1887.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1888.22,
+      "end": 1925.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "completely. There's a very interesting thing. So I used to be at, I spent some time at Morgan Stanley and they use the Q programming language. And the Q programming language is a version of K. and K is a successor itself of APL. So it's an array-oriented programming language. It's concatenative. It is very strange if you've never used APL or J or any of these languages. It's very unlike what many people have used. It is a lot of... So it is a bit of a write-only language, but it's a lot of fun. And in this language, they have a concept of adjectives, and they have really good adjectives. So one adjective is each.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1926.43,
+      "end": 1926.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1926.81,
+      "end": 1951.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "each is kind of like a map. So when you want a map a function to a list, You could think of map as an adverb, but you also could think of it as an adjective, which is how do you want, you know, you apply F but to each of these elements. So it modifies the verb, the function so that it works slightly differently. And they have each left, it's right. So, yeah, I think verbs, adjectives, and noun matches fairly well to this concept.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1951.71,
+      "end": 1955.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I like that. That's a great, yeah, so there's a very pro. Oh, see, I go.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1956.97,
+      "end": 1957.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1957.29,
+      "end": 1959.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "no, I mean, the question I have then is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1960.78,
+      "end": 1961.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1961.3,
+      "end": 1966.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it the case that the concepts of noun and verb and adverbs are important",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1966.54,
+      "end": 1967.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1967.36,
+      "end": 1983.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "therefore we find them both in human language and in programming? Or is it that we are limited when we program by our own human biases? And so we end up programming in a way that makes it possible for us to think about.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1983.72,
+      "end": 1984.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1984.28,
+      "end": 1993.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, it's like if you were designing a programming language for monkeys. maybe everything would have to be expressed in terms of, you know, jumping from a branch to branch and throwing fruits.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1993.68,
+      "end": 1994.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah. Because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1994.14,
+      "end": 2000.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's, you know, because that's what you're really good at. It's like, okay, so I throw the fruit from this place to that place. You know, I once wrote a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 2000.76,
+      "end": 2002.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "piece",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 2002.1,
+      "end": 2024.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of software with microservices. So it's a bunch of processes talking to each other. And I gave them human names because it made it easier for me to think about. You know, we're very good at thinking about, our brains are good at thinking about human interaction, people talking to each other and doing. and doing several things. And so maybe your programming language are just reflecting the ways of brand are built as opposed to there being a commonality.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 2025.18,
+      "end": 2112.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, I think that that's a fascinating question that in general is true, which is this, it's both connected to this tech society loop, which is how does the tech that we're building and how we think of it, how does that connect to the society and the things that we imagine and how does that connect back to the tech? What you're saying is a similar kind of micro version of that, which is like, hey, in our own minds, like the language that we use and how our brains are wired, how does that affect how we kind of perceive of things, then how does, you know, the language that we use there kind of affect back our minds? I feel like, and I love the version of an adjective there, and I just want to kind of spit it back to you, which is, yeah, that... of something like map where you take these given a bunch of given values and then change them. That's essentially kind of like an adjective where you say, hey, take this thing and add this kind of modifier to it or a descriptor of it that kind of gives more texture to it as a thing. So I think that that is powerful. And the other thing, I'm just kind of blabbing now, but the other thing that this makes me think of is in reading kind of MakerDAO's purple paper, one of the things they talk about at the top is how how powerful it is to be able to, through this type stuff that you're talking about, to link technical, like, programming level things with kind of financial system things, to say, hey, these technical terms, like, are essentially equal to these financial terms. So I think that that's just kind of a thing with functional programming in general, which is being able to link two kind of concepts from two different worlds and say, no, they're the same in this given set. Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 2113.82,
+      "end": 2114.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 2114.94,
+      "end": 2118.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I said something stupid. I said adjective, but I meant adverb because it modifies a verb. So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 2118.88,
+      "end": 2119.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "adjective modifies a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 2119.6,
+      "end": 2123.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "noun. Adverb modifies, okay, so it's an adverb. Sorry, but that's just a small correction.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 2123.88,
+      "end": 2131.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yes. Well, so let me double check on that. When you say that's an adverb, when you say map as an adverb, is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 2131.86,
+      "end": 2132.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 2132.5,
+      "end": 2147.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. Though I kind of see it as a, you have the noun in there, possibly, which is a, which are any of these like, values and then you're essentially, or I guess, could you tell me more about why it's an adverb, not an adjective?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 2148.59,
+      "end": 2173.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Because when you say Map F list, I think that Map modifies the function, I mean, I mean, you know, it's debatable, but I think that Map modifies the function more than the list. It's not saying applies a function to this thing, to this list. It's not quite a list because I'm using Map. It's like, apply to this list. this thing that's not quite a function because I transformed it. I transformed it from something that applies to one argument to something that applies to this list of arguments.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 2173.56,
+      "end": 2174.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep, yep, yep, yep, yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 2175.2,
+      "end": 2175.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 2175.32,
+      "end": 2179.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "maybe an adverb is like a function that takes a function in terms to you another function.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 2180.22,
+      "end": 2204.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep, yeah, exactly. Yeah, I feel like, yeah, so I think that we could go a lot deeper on this kind of, like, connecting words that we use in other mental models to words in functional programming and connecting them. But I'd like to ask one of the question kind of diverted away from this in just the functional programming land generally. How do you guys use, like, so you're using O'Camel. I guess why are you using O'Camel or how does it relate to some of these other functional programming languages?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 2208.07,
+      "end": 2250.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "using okamele um because i think okamel is a great i think a camel is a great language first of all it has really good performance so it's um it's a very nice trade-offs in terms of how pure the language can be versus how fast the compiled programs in uh in okama are so i think that's a that's a big advantage um it's also a very popular language in france and i think france has a great full of engineering talent and so i think that's a um That's a good match for writing something like a blockchain. The other big, one other big functional programming language is, of course, Haskell, which is more popular in the US. And so the claim, you know, and I'm not, I don't want to start language wars.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 2251.87,
+      "end": 2252.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 2252.31,
+      "end": 2272.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "claim of Camel programmers will make is that yes, Escal can be fast, but not if you write idiomatic Ascle, whereas if you write idiomatic or Camel, it will be faster. I have not evaluated those claims. I think both are great languages. But, you know, I learned myself in college, and I really like it as a language.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 2272.9,
+      "end": 2287.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. Yeah. And I think that that geo-specific saying, hey, it's a language that's used a lot in France, I think that that is a very valid point, which is just like, hey, wherever you're given, you know, community is, if there's a language there that a lot of people use, use it. You know, that makes a lot of sense.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 2287.7,
+      "end": 2287.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 2288.15,
+      "end": 2307.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, so I think I feel relatively good about functional programming. Thank you for exploring some of these concepts with me around the verbs and the nouns and, you know, entropy and those kinds of things. So with that, let's kind of take a step back and talk about another side of this and with TASOS around governance and specifically",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 2307.83,
+      "end": 2309.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "around...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 2309.08,
+      "end": 2322.42,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "You guys have your self-amending ledger from like a programmatic perspective, but then you also have the kind of human-to-human things, and we don't need to dive too deep into the kind of things that are happening between you guys and the Tases Foundation or whatever. But could you give",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 2322.42,
+      "end": 2322.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "me",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 2322.56,
+      "end": 2332.42,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "at a high level how you're kind of viewing governance, either at the programmatic level or at the high level? Yeah, tell me a little bit more about how you're thinking about that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 2333.18,
+      "end": 2333.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 2334.02,
+      "end": 2409.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "one of the first things is that, like, I'm glad that is that one of the views in the Tesos paper, which was very controversial at the time, is now accepted as obvious. And so I'm just, I'm just very, very glad that's a case. If you go back to 2014, there was this... There was this very prevailing view that Bitcoin was just mathematics. It was completely controlled by the rules of mathematics. Therefore, it was imperious to human politics and human affairs and all of that. And, you know, with the recent block size debate and the hard forks and, you know, Bitcoin Cash and Segway 2X and all of these things, you know, even the more hardcore proponents of Bitcoin understand that, yes, you know, it's not just mathematics. There's a human element because what's going to determine the branch. that wins is not, you know, it's not a law of mathematics that say, yes, this is going to be the winning ledger. It's going to, so, you know, in the best case scenario, you're going to say, well, the best branch from a technical standpoint will win and this is what matters. But more realistically, it's, you know, it's, it's, it's, it's, it's, it's, it's, it's, it's, it's, it's, it's, it's, it's, it's going to sway, uh, who's going to sway, uh, who's going to sway the collective understanding of what Bitcoin is, uh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 2410.45,
+      "end": 2410.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "uh, And,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 2410.98,
+      "end": 2414.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, you see that Bitcoin Cash call itself Bitcoin Cash early on, and then they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 2414.34,
+      "end": 2415.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 2415.34,
+      "end": 2427.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "backpedal by saying, well, Bitcoin Cash is Bitcoin. Because the minute you're not calling yourself Bitcoin, you basically admit it defeats in a fork. Because the branch that wins is a branch that is perceived to be the legitimate successor.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 2427.54,
+      "end": 2427.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 2428.08,
+      "end": 2428.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And so this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 2428.62,
+      "end": 2430.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is completely human. Yeah. Sorry.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 2430.54,
+      "end": 2437.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "All right. I was you say, do you, what was the thing that you wrote in that white paper in 2014 that has now taken as truth today?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 2438.54,
+      "end": 2439.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Also,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 2439.6,
+      "end": 2442.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the Tezos White, so the Tezos White Paper is more like a description of the, um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 2444.84,
+      "end": 2453.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "uh, of like the technical details of how Tezos can be implemented. The Tezos position paper made the case that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 2453.46,
+      "end": 2454.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 2454.74,
+      "end": 2462.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what really controlled a ledger was not just its rule, its internal rules, but also the politics around hard forks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 2463.26,
+      "end": 2463.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 2463.68,
+      "end": 2466.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "That it was, that, that hard work politics was very crucial.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 2468.52,
+      "end": 2478.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "or how is incorporated innovation. Like when they need to, when they face innovation, does a hard fork? Is innovation happening outside? And that was the, I think that was the big insight.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 2478.78,
+      "end": 2508.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it, got it. That makes sense. From a hard fork perspective, one thing that I'd like to maybe push back on is do you, I mean, there's this question within the blockchain community as is, are forks a, you know, a feature or a bug? And I think there's a lot of good arguments to say, hey, in fact, these blockchains should be forking a bunch and then create all these different kinds of organisms. I can just kind of go forth and co-evolve with each other. But with Tazos, you guys are maybe saying, hey, let's maybe not, you know, have these hard forks. What are your thoughts on that kind of pushback?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 2509.93,
+      "end": 2510.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 2510.11,
+      "end": 2511.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 2511.21,
+      "end": 2512.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 2513.22,
+      "end": 2516.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 2516.14,
+      "end": 2547.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "nothing wrong with a fork per se. The problem is that in most cases, people understand that it's not just going to be a competition, there's going to be a winning fork. So there's, there is some people will say, hey, you know, we have two versions and they can do two different things. But in, in practice, there is a lot of, there is a lot of overlap, which is why, you know, you're not going to see a lot of people saying it's great. Bitcoin and Bitcoin Cash can coexist. I mean, sure, you know, they can and they don't have to go at each other's throat. But in practice, they are trying to, um, to try to do the same use case. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 2547.44,
+      "end": 2548.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 2548.62,
+      "end": 2548.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 2549.28,
+      "end": 2549.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "No",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 2549.86,
+      "end": 2569.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "one really wants to hard fork. People want to just decide what's going to happen in the network. No one want to be the spindlechelle. When they do, they do that in the hope that they're going to be the main chain, the one that people actually use, the one that capture 90% of the interest.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 2571.63,
+      "end": 2572.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 2572.31,
+      "end": 2573.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 2573.21,
+      "end": 2590.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "problem is if it was just as easy as forking and then Maisa Bess Branch win, it wouldn't be a problem. But I don't think that the economics of it are such that the best branch is going to win in general. I think the branch that looks the most legitimate is the one that's going to win, not necessarily the best one.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 2590.97,
+      "end": 2591.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 2591.89,
+      "end": 2644.85,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah, then that goes back to like the human side around like the politics and things like that. I think that no matter what, there's an evolutionary perspective here, which is that, hey, we should both have hard forks as a way to evolve blockchains and we should have some kind of TASO-style self-amending ledger as a way to evolve blockchains and they will kind of co-evolve with each other, those two kinds of evolution systems and we'll see how, and different ones will be better for different use cases and whatever. I guess so. So we kind of talked about the kind of the more technical side there. What about, so when you think about like the human side, and this is something that I was talking with Eric Forge's about as well, which is like, how do you think about there's different stakeholders and there's different, and how should people kind of like signal that they're trying to do what's good in the world? Like how do you think about from the human side? How would you break down kind of how governance should happen at the kind of the human level?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 2647.38,
+      "end": 2647.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hmm.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 2651.21,
+      "end": 2651.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 2651.73,
+      "end": 2652.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a difficult question.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 2653.31,
+      "end": 2653.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 2654.17,
+      "end": 2654.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "governance.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 2655.73,
+      "end": 2656.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 2656.31,
+      "end": 2667.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "difficult. What I'm convinced is there need to be on-chain procedure for helping that. But I mean, governance as a, at a human level, is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 2667.35,
+      "end": 2668.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 2668.61,
+      "end": 2678.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "old as, is as time. In general, I think that what works well is generally process, process and institutions.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 2678.47,
+      "end": 2678.85,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 2680.44,
+      "end": 2712.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is what protects you. And so, you know, there's an example in the US and people sometimes say, well, you know, the constitution is not self-enforcing. But in some sense it is because there is, there would be a big stigma in trying to, like, blatantly and very overtly, going against it. So institutions can create shelling points that... where people are going to coordinate their activity based on this known, on this known chelling points. And I think this is how you, I think this is how you get peaceful governance.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 2713.92,
+      "end": 2726.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I like that. I mean, that's an interesting, in some ways your answer to that one. I was like, hey, so what's like on the human level, how should we like think of ourselves as human governors? And you're like, well, the best way to do it is through on-chain procedure, you know?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 2728.86,
+      "end": 2729.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 2729.22,
+      "end": 2744.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of course, decentralization is also a big one. I mean, you know, this is the one that everyone is pursuing in this space. There is this idea is that if we have decentralization, if we have many more nodes in the network, then, you know, we're not going to be a subject to the feeling of any single human being.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 2744.8,
+      "end": 2754.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, I think that that makes sense that there's a having decentralized, yeah, if you have a centralized point of trust or failure or whatever, then that can be kind of an issue as well. I guess do you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 2754.66,
+      "end": 2756.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "think... And,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 2756.42,
+      "end": 2760.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, the irony of the situation is not lost upon me, obviously. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 2760.1,
+      "end": 2761.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 2761.76,
+      "end": 2763.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "doing our best.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 2763.32,
+      "end": 2763.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 2763.88,
+      "end": 2767.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "exactly. And I really know nothing about it. So good luck with that. I want to ask one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 2767.48,
+      "end": 2768.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of the question on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 2768.04,
+      "end": 2769.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it, which is, is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 2769.6,
+      "end": 2769.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 2769.8,
+      "end": 2781.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a, so thinking about one thing that I think of in this space, and this kind of gets into, like, weirder zones here, but like, how can people in the world, when you're trying to govern and you're trying to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 2781.06,
+      "end": 2781.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "understand",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 2781.7,
+      "end": 2816.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "who should be, like, what is, like, Certain people have these certain arguments. Certain people have these other arguments. Certain, what are these people's goals? What are their intentions? And something that I'm personally trying to do is like trying to show to the world with like these weird like pledges to decentralize power slash these weird like decentralization memes. Trying to like show like, hey, here's why I'm in the game to do things. as a way for people to kind of like either trust me or not trust me or see how we're aligned or not aligned. How do you think about like what are the things that humans themselves can kind of signal to each other as we're kind of playing these governance games?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 2820.14,
+      "end": 2820.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 2820.56,
+      "end": 2838.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I mean, part of the idea in this blockchain is that instead of we should not have cheap signals, we should have costly signals. And so maybe you commit to something using a smart contract or maybe you place a performance balance. And so let's see. And we currently have a lot of, so I would say there's two kind of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 2838.05,
+      "end": 2839.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there's, let",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 2839.62,
+      "end": 2854.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "me refaes. You can do the signaling in different ways. If you do very cheap signaling, it doesn't mean anything because it's going to be exploited by bad actors. And so you're not going to, you know, you're not going to signal anything. You can have costly signaling that is costly for everyone. And that might be, you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 2854.26,
+      "end": 2854.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 2854.94,
+      "end": 2892.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it used to be that banks, for example, would have this big marble entrances and very, very expensive. And one of the reason they would do that is say, hey, we're not going to run away with the customer's money. We invested a lot in order to build this thing. We're not going anywhere. But that's a costly signal because in the end, you know, all of the work to put up this luxurious place is not very helpful. And then there are signals which are costly only if you, only if they're bad signals. So like, you know, putting a performance bomb. the cost of capital for that is much lower, transaction cost can be lower. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 2892.49,
+      "end": 2893.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 2893.51,
+      "end": 2895.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a much better way of signaling things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 2896.11,
+      "end": 2898.63,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that's interesting. I think that the...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 2899.15,
+      "end": 2899.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 2899.37,
+      "end": 2922.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "mean, your answer there is very much in line with, like, Taleb's skin in the game concept. Or it's like, hey, if you're going to show something to the world, you have to, if it goes well, if it goes well, if it goes poorly, you should be connected to it. If it goes poorly, you should be connected to if it goes poorly. And if you're just, like, randomly signaling stuff and you only get positive benefits from the stuff that goes well for you, that's bad. You know, so like making sure that the, I think, costly signals, that's a great way to think about it. So I guess my final",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 2922.59,
+      "end": 2922.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "question",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 2922.95,
+      "end": 2927.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "here, Arthur, is trying to connect. And this is one more difficult question, maybe.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 2929.27,
+      "end": 2955.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "How would you think about, so if we think about the human governance game from the functional programming perspective in terms of like types or in terms of, you know, values or what have you, how do you kind of, are there ways that you would bring in the functional programming mindset into like human style governance? And what would kind of those atoms be? What would those types be that you would kind of use when you pattern match the first into the second?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 2958.03,
+      "end": 2960.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I mean, the joke answer is don't expect people to change.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 2961.25,
+      "end": 2962.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Nice, immutable.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 2963.99,
+      "end": 2964.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 2964.47,
+      "end": 2968.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "no, let's see. How would you match one into the other?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 2974.41,
+      "end": 2974.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 2974.89,
+      "end": 2975.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a question. So when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 2975.59,
+      "end": 2977.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 2980.36,
+      "end": 2982.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "wondering, is the right part of the thing we's to think about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 2982.3,
+      "end": 2985.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "functional",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 2985.8,
+      "end": 2988.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "programming or parallel programming? Because parallel programming has",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 2988.3,
+      "end": 2989.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "multiple",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 2989.42,
+      "end": 3005.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "processes and. that intercommunicate with each other. Sometimes they can communicate. Sometimes they can be in conflict. So maybe that's a better framework to think about it. But it's not something I've given a lot of thoughts to. And so I don't think I'm, I don't think I'm, I don't think I'll have a good answer for that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 3006.22,
+      "end": 3008.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, well, I think that the, honestly, I do think that the.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 3009.21,
+      "end": 3009.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 3009.45,
+      "end": 3054.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "immutable version of things is one good version, which is not that people are immutable because clearly everybody can change, but as you said, it was a joke, joke answer. But I think that there's a understanding for a given value slash variable, how, a given kind of person within this human level governing system, what are the things that make them change? What are the things that don't make them change? I'm reminded actually, I'm connected to this like rationalist community, and there's a... concept called double flux where you're in a given conversation pattern with someone, you're actively trying to show to them your most, the thing that you could most be changed on, that you're less, that you're the least sure about and how you would change on it. So it's kind of this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 3054.61,
+      "end": 3055.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "way",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 3055.01,
+      "end": 3062.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "when you're debating with people to not debate, but to try to say, hey, here's a thing that you could change the most. Can you change that? So I think that there's something in that, honestly, to what you're saying.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 3064.24,
+      "end": 3064.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 3064.82,
+      "end": 3074.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's interesting. That is interesting. This type of thing is great. It does assume a lot of good faith on the part of the other",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 3074.58,
+      "end": 3075.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "part",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 3075.6,
+      "end": 3076.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of you having",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 3076.0,
+      "end": 3076.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 3076.72,
+      "end": 3085.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "conversation. Because a lot of conversations are not really, so this is great if you're actually trying to reach the truth. A lot of people are not necessarily interested in the truth and sometimes rationally.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 3086.02,
+      "end": 3087.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 3088.16,
+      "end": 3104.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think that the good faith thing is something that I personally can be bad about, which is like, assume everybody's doing it for the best. purposes. It's like, well, that's not always true. So in any case, Arthur, thank you so much for your time today. Thanks for both exploring functional programming and human governance and the combination between the two.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 3105.46,
+      "end": 3106.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Thank you very much.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 3106.5,
+      "end": 3106.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Have a good one.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 3107.06,
+      "end": 3117.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Great. Thanks, everybody. And if you want to support me, you can go to patreon.com slash Reese-L-E-L-I-N-D-M-A-R-K. Great. Thanks and goodbye, everybody.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 3139.23,
+      "end": 3141.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Purely focus on the auditory experience.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 3142.45,
+      "end": 3143.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Sounds good.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 3143.29,
+      "end": 3144.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, exactly. We can win.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 3146.5,
+      "end": 3147.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "One",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 3147.2,
+      "end": 3153.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "trick I learned is that if you whisper and then you raise a volume, you can get a trailer-like voice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 3153.72,
+      "end": 3154.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 3154.7,
+      "end": 3155.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's interesting. You know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 3156.36,
+      "end": 3156.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in a world.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 3163.28,
+      "end": 3166.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Oh, perfect. Okay, let's rock and roll.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 296,
+    "withheld": 0,
+    "published": 296
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

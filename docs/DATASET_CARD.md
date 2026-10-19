@@ -4,7 +4,7 @@ Personal model research based on Rhys Lindmark's public writing, original public
 
 ## What is released
 
-`data/public/corpus.jsonl` contains non-overlapping excerpts with original source URLs, dates where available, authorship labels, acquisition method, content hashes, privacy status, and split groups. `stats.json` is the authoritative count for the built release; source inventories are broader than acquired or approved content.
+`data/public/corpus.jsonl` contains screened excerpts with original source URLs, dates where available, authorship labels, acquisition method, content hashes, privacy status, and split groups. `stats.json` is the authoritative count for the built release; source inventories are broader than acquired or approved content.
 
 ### Collections and exact sizes
 
@@ -20,15 +20,15 @@ the released `text` fields in UTF-8; JSONL bytes count complete serialized rows,
 including provenance/keys/escaping and newline delimiters. `artifact_bytes`
 reports actual JSONL file sizes. Characters, words, bytes and tokens are distinct
 units; none is relabeled as another. The final corpus must stay below 64 MiB.
-The 2026-10-19 streaming refresh and validator passed: 38,812 excerpts from
-33,506 documents, 2,937,053 words, 17,273,127 UTF-8 text bytes and 55,688,301
-corpus JSONL bytes. These totals exclude original media. A fresh token count has
+The 2026-10-19 applied speaker-transcript release contains 39,692 excerpts from
+33,508 documents, 3,519,740 words, 22,609,936 UTF-8 text bytes and 65,167,948
+corpus JSONL bytes (below 67,108,864 bytes / 64 MiB). These totals exclude original media. A fresh token count has
 not been measured; the old model-input token count is not reused for this corpus.
 
 | Collection | Documents | Excerpts | Words | UTF-8 text bytes | Corpus JSONL bytes |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Writing | 217 | 811 | 247,566 | 1,540,009 | 2,399,536 |
-| Podcasts/YouTube | 213 | 4,237 | 1,445,806 | 7,630,399 | 11,835,636 |
+| Podcasts/YouTube | 215 | 5,117 | 2,028,493 | 12,967,208 | 21,315,283 |
 | HEE | 89 | 771 | 254,951 | 1,383,170 | 2,422,025 |
 | Anki (unique research text) | 20,923 | 20,923 | 710,053 | 4,657,692 | 28,572,914 |
 | X | 12,064 | 12,070 | 278,677 | 2,061,857 | 10,458,190 |
@@ -51,7 +51,17 @@ Every one of the 21,301 Anki text records has semantic reading evidence. The own
 
 X ingestion reads only `tweets.js` and active `note-tweet.js`. It excludes reposts, nearly empty posts, obvious sensitive material and detected unresolved truncation. Rhys's own public replies remain labeled as replies without their parent context and are excluded from default model adaptation. Long notes are used only when linked to an archived public post by ID or an unambiguous nearby-time/prefix match. Orphan notes, DMs, deleted-note files, media, contacts and account metadata are not ingested. Public visibility today is not independently rechecked for every historical post.
 
-Local HEE transcripts map to public YouTube videos. Podcast captions are public English manual/automatic captions. Three additional RSS recordings have local CPU Whisper transcripts, labeled automatic ASR and not verified against audio. These sources have transcription errors, including names and numbers, and unverified speakers. Podcast/YouTube sources remain marked as mixed or unverified speech. The owner identified all HEE narration as Rhys on 2026-10-19. HEE rows use `rhys_lindmark_narration_owner_confirmed` and explicit `speaker_attribution` with that basis, preserving the prior authorship label. This is owner confirmation, not acoustic diarization; quoted material may be other authors. Podcast interview speakers are not inferred from episode text. Acquired full Substack bodies are distinguished from short announcement posts. Rate-limited, paywalled, failed and unattempted bodies are gaps, never fabricated text. Some full essays live on other domains and are not equivalent to their Substack announcement.
+## Audio editions and speaker coverage
+
+Local HEE transcripts map to public YouTube videos. The owner identified all 89 HEE narrations as Rhys on 2026-10-19. HEE rows use `rhys_lindmark_narration_owner_confirmed` and explicit `speaker_attribution` with that basis, preserving the prior authorship label. This is owner confirmation, not acoustic diarization; quoted material may be other authors.
+
+The recording inventory contains 140 RSS recordings and 76 YouTube-only recordings, totaling 216. Released speaker sidecars cover 214: all 140 RSS recordings and 74 YouTube-only recordings. Canonical RSS audio text replaces the corresponding older RSS/YouTube editions using explicit aliases; YouTube-only audio replaces only its explicit video edition. Aliases identify corresponding episodes, not identical recordings or edits. One MetaBlockchain YouTube audio acquisition failed; its screened English captions remain available without a speaker sidecar. The remaining recording is title-labeled Solo Piano and explicitly excluded from speech processing to avoid invented speech; this disposition is not an audio audit. Thus the collection has 215 text documents (214 processed recordings plus retained MetaBlockchain captions), while the audio-processing inventory has 216 recordings. See [recording-level coverage](speaker-coverage.json).
+
+The processed recordings contain 113,830 timestamped turns: 113,008 published turn texts and 822 withheld by public privacy screening. There are 142 episodes with an upstream machine Rhys match and 72 anonymous/ambiguous episodes. The weighted upstream unknown-word fraction is 4.4318% across all 214 episodes; this measures unassigned words, not ASR accuracy, identity confidence or diarization error. Speaker labels are local to an episode. Other clusters remain anonymous; guest names are not inferred from titles or text. The 34,210,377-byte screened sidecars omit voiceprints, identity scores, raw word arrays, private paths and original media. Public screening can over-withhold ordinary speech or miss sensitive context.
+
+These are automatic ASR/diarization results, not a human audio audit. Names, numbers, wording and speaker matches can be wrong. A speaker can quote someone else; neither Rhys labels nor guest statements establish Rhys's beliefs. Corpus chunks preserve speaker/time labels and remain `mixed_or_unverified_speakers`. One pair of adjacent overlapping turns was stably reordered in a private copy by its existing timestamps, preserving every turn field; see the [timestamp-ordering note](speaker-transcripts.md#timestamp-ordering). No recording was retranscribed for that correction. The [speaker-transcript methods](speaker-transcripts.md) describe publication, deterministic chunk validation and limitations. An empty integration-gap summary covers accepted inputs only; the two inventory dispositions above remain explicit.
+
+Acquired full Substack bodies are distinguished from short announcement posts. Rate-limited, paywalled, failed and unattempted bodies are gaps, never fabricated text. Some full essays live on other domains and are not equivalent to their Substack announcement.
 
 ## Privacy process
 
@@ -70,7 +80,7 @@ The actual completed models retain the historical input from corpus release
 `1e20626c7b3b2b2bc3404fdb0b1fd39a93419b3d`, corpus SHA256
 `6da8afa85c1b9c8e4406823f643a8bdf80fecccac4bd58c28878ca950e6544d8`.
 `data/training/` and its manifest are unchanged by later collection labels or
-AI2026 enrichment. Those additions are research-corpus material, not evidence
+AI2026 enrichment or the 214-recording speaker refresh. Those additions are research-corpus material, not evidence
 that the existing checkpoints trained on them.
 
 Freeze a release Git commit for each experiment: adding data can merge groups and change their split in a future release. Test records and answers are public for reproducibility; do not tune on them.

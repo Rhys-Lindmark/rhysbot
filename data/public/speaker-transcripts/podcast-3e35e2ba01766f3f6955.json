@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "id": "podcast-3e35e2ba01766f3f6955",
+  "title": "The Evolution of Machine Learning",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=rzNYCpfrng8",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "rzNYCpfrng8",
+  "youtube_url": "https://www.youtube.com/watch?v=rzNYCpfrng8",
+  "audio_sha256": "cfe6d392878b1ffb27178d5c7d80b9b9c15e894a2e7cb83ada24328ccf1714a1",
+  "audio_duration_seconds": 54.775875,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 115,
+    "unknown_words": 4,
+    "unknown_words_fraction": 0.034782608695652174,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 20.42,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "We figured out all these constraints that are in the things that we are building. And then if you look at the modern things, we're all using hyperparameter optimizers. Think of what a hyperparameter optimizer is. It's a developmental program. Now, you don't specify the parameters anymore. You specify the program that makes the parameters, which is like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 20.42,
+      "end": 20.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "within",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 20.92,
+      "end": 27.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "that range, figure out the things and kind of like locally find a minimum that allows me to characterize that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 28.44,
+      "end": 29.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 29.0,
+      "end": 40.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "in that sense, we are massively moving things from pre-specification into developmental deconstraints.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 40.5,
+      "end": 42.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So out",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 42.3,
+      "end": 47.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "of that, you kind of get like a description of what's been going on that comes from that perspective.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 7,
+    "withheld": 0,
+    "published": 7
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

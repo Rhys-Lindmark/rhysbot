@@ -1,0 +1,2205 @@
+{
+  "schema_version": 1,
+  "id": "podcast-00ac924dab34f259e9ee",
+  "title": "#5: Blockchain Social Entrepreneurship with Vince Meens of Techruption",
+  "published_at": "2017-07-24T15:41:35Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/5-blockchain-social-entrepreneurship-with-vince-meens-of-techruption",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/334584544-the-rhys-show-5-blockchain-social-entrepreneurship-with-vince-meens-of-techruption.mp3",
+  "youtube_id": "h-fK4UNZnx4",
+  "youtube_url": "https://www.youtube.com/watch?v=h-fK4UNZnx4",
+  "audio_sha256": "406498b999d31b7b11cb537f94aeb072cdf3c0fff1dbf73ae2f20cc35d218018",
+  "audio_duration_seconds": 2127.9869375,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 6596,
+    "unknown_words": 162,
+    "unknown_words_fraction": 0.024560339599757428,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 14.0,
+      "end": 14.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 14.56,
+      "end": 48.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everybody. My name is Reislandmark and welcome to another edition of creating a humanist blockchain future, where we focus on the intersection of effective altruism, universal basic income, the attention economy and blockchain. And today in episode number five, we're going to focus on the overlap of two of those effective altruism and blockchain, namely blockchain for social good. And we're going to be interviewing Vince Means, who lives in the Netherlands and leads blockchain entrepreneurship at multiple incubators there. at Tech Corruption in Brightlands, which focus on blockchain for good projects like climate change. Vince, welcome to the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 49.11,
+      "end": 51.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Welcome. Yes, thanks for having me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 51.53,
+      "end": 67.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, thanks for being here. So let's kind of just start with a dive in, and I always like to start with why, essentially. And could you tell me a little bit about why you're working in the blockchain for social good space and specifically why tech corruption and brightlands?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 69.23,
+      "end": 158.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, I think maybe the first thing to start off with is this thing from philosophy called the Prisoner's Dilemma. I don't know if you're familiar with the concept. Yeah. So for the people that don't know it yet, it's basically if the two of us get the two of us get arrested and we get the opportunity to snitch on the other for our own benefit, we will screw over the other person basically. That's in our human nature. Instead of both shouting up and staying a bit longer in it, but then we're both out. And I think if you look at the world, how it works now, it's actually a reflection of this mechanism. Because all the transactions that we do are something where we can get away with things very easily. We easily screw over other things in the world. So if I buy this shirt and I'm not seeing the person in the sweatshop, I feel perfectly okay to buy the shirt because it's not tangible for me to... to feel responsible for it. And this is something, I think this is the major thing to get about the blockchain, is that every transaction that will happen will start having this string attached to it of its history, of the people that it impacted, and so on. So you will get this major shift of the, where I think a society for the first time we're going to break the prisoners dilemma, because we're going to see that the quick win for ourselves is not the good win for all of us. And that's what blockchain is going to facilitate. And that's why I got super excited once I heard about it to get involved into the space.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 158.89,
+      "end": 159.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 159.37,
+      "end": 165.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I love that. And I love... I think that a lot of people in the blockchain space think from that, what I call like a root cause perspective, which is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 166.05,
+      "end": 166.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "hey,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 166.91,
+      "end": 175.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you're essentially talking about game theory, and we talk about game theory a lot in the blockchain space, and hey, what are the game theoretical implications of X? You know, and you're saying,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 175.35,
+      "end": 175.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 175.65,
+      "end": 183.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the game theoretical implications of something like blockchain allows to re-align incentives in such a way that we don't have the prisoner's dilemma to such an extent or that we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 183.45,
+      "end": 183.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "don't have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 183.81,
+      "end": 185.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "something like a tragedy of the commons.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 185.73,
+      "end": 186.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So that makes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 186.39,
+      "end": 196.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "sense. And so could you tell us just a little bit more, just a bit of background on kind of, the work that you're doing kind of diving into the stuff that you're doing at tech corruption around blockchain for social good what are some of the projects that you're working on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 196.99,
+      "end": 198.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 198.42,
+      "end": 209.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so maybe one step back is this initiative called brightlands it has a slogan called the knowledge crossing borders and I think this is also very much in the yeah in the blockchain mindset so to say",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 209.96,
+      "end": 210.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 210.7,
+      "end": 242.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think we're moving in a time where no longer a single organization or a single industry can tackle the problems that we're facing we're moving into this this global connection world where problems become too difficult to tackle on your own. And that's essentially at Brightlands, we try to combine several industries like the materials industry, the food industry, the smart services industry and these things together to tackle global things. And within Brightlands, we have an initiative called Techruption that basically offers a playground for blockchain artificial intelligence and climate change.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 243.67,
+      "end": 243.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 243.91,
+      "end": 252.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this especially got my interest because I'm a tech guy at heart. So combining these things, the only thing missing still is VR, but then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 252.11,
+      "end": 252.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "my heart",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 252.67,
+      "end": 254.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "would beat really hard.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 255.27,
+      "end": 255.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 255.75,
+      "end": 271.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "thought it was a thought-provoking approach to tackle climate change through a blockchain mindset and not so much through a mindset where you say, hey, I'm going to put some solo panels on my roof. But really start looking at it, like how can we create them?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 271.81,
+      "end": 272.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 272.31,
+      "end": 315.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a data view of society that we can start incentivizing better behavior and that this better behavior might have way more impact than just this this more efficient device that I'm buying or these kind of things so I thought this was something I wanted to commit to So within the tech corruption, we basically bring together big corporates like banks or financial institutions like pension funds and so on, on the one hand. And we try to combine them with startups that basically enter into a market, have no clue about regulation or all kinds of things that are in place. And they just start challenging each other to start working on these blockchain use cases that are relevant for all of us.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 315.36,
+      "end": 315.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 315.88,
+      "end": 342.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they do this basically in a context where they don't think about proprietary stuff. They just experiment, they share knowledge, and they build something until you can test it in the market. And once it reaches that point, people say, like, okay, now we're going to continue this and build it as a startup ourselves, or we're going to include it in our business, for example. So we basically are literally this playground for the new world, like a mini garden of Eden to experiment.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 343.96,
+      "end": 344.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 344.44,
+      "end": 345.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "awesome. I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 345.2,
+      "end": 345.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "think that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 345.64,
+      "end": 360.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it reminds me of a couple things. First, this concept of... ideas that are too big to tackle on your own. And what blockchains can kind of enable here is this new collaborative mindset. And you saw it at these blockchain conferences at Consensus 2017.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 361.19,
+      "end": 361.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 361.33,
+      "end": 377.63,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "had NASDAQ and Citigroup and a blockchain group called Chain. The three of them worked together on this new kind of blockchain-based NASDAQ solution, which would have been in that when they were talking about, they were talking exactly what you said, which is like, hey, Back in the day, this would have been hard. Who owns the silo data?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 377.83,
+      "end": 378.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 378.31,
+      "end": 390.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "who gets the returns, whatever. But blockchain just says, hey. the data exists on the blockchain is kind of open for everybody, and maybe we can tokenize it to some extent so that the returns are divided in kind of like a platform cooperativism way or whatever. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 390.61,
+      "end": 390.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I think that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 390.91,
+      "end": 394.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that is a very strong thing that you're getting at, which is we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 394.49,
+      "end": 394.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "both",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 394.85,
+      "end": 407.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "need the cooperation in order to actually solve problems, and blockchain kind of enables that cooperation. So that's one thing that I like what you said. And the second thing is about this data view, you said there's a, with this new data view of society,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 407.75,
+      "end": 408.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "instead",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 408.27,
+      "end": 414.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of just getting new solar, you know, new solar panels, we can change the behavior to make more impact. And I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 414.87,
+      "end": 415.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "really like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 415.21,
+      "end": 436.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that perspective because it's a kind of, if you multiply, I think a lot of people underestimate, I just finished this book called Machine Platform Crowd, and a lot of people underestimate the power of the crowd. But if you can change the behavior that change the habits of a lot of people within the space, wow, then you can have a huge impact on things within the space. So I really like that as well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 437.03,
+      "end": 437.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 437.53,
+      "end": 437.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 437.85,
+      "end": 445.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think there's also like a lot of inefficiency in the world because we don't know what other people are doing that much. Like one thing,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 445.41,
+      "end": 445.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for example,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 445.81,
+      "end": 454.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "with energy is that. It's nice to have a solar panel on the roof, but if the main power plant for the centralized grid isn't aware of your",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 454.29,
+      "end": 455.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "production",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 455.41,
+      "end": 463.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "capacity, then it's not aligned. And I think with a lot of these things, we can really gain from having decentralized or centralized,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 464.71,
+      "end": 464.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "decentralized.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 467.53,
+      "end": 475.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "This universal means of seeing each other's data and having this standardized. It will trigger a lot of more.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 477.66,
+      "end": 478.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "optimization.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 478.86,
+      "end": 504.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Exactly, exactly. So could you talk a little bit more about one project that I'm excited by that you guys are working on is in kind of... Especially at the funding side, I've talked with some people in the space around, and we might talk about this later, about how people conceive of value for value exchange within the blockchain for social goods space. But one thing that's really exciting that's happening in the Netherlands is you have the government actually pushing for some of these climate change initiatives.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 504.61,
+      "end": 505.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So can you talk",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 505.03,
+      "end": 509.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "about some of the laws that they've made around like pension funds and the 20% and things of that variety?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 509.71,
+      "end": 510.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 511.12,
+      "end": 519.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like, basically, I think as a world, we went through peak oil. And I think we're also going now through peak capitalism, so to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 519.86,
+      "end": 520.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "say. And that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 520.92,
+      "end": 530.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "basically means that the whole... motives for organizations to exist, start shifting away from being purely for profit and start moving towards this B-Corp mindset",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 530.69,
+      "end": 531.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 531.17,
+      "end": 552.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "making impact. And one of these, like in the Netherlands, we kind of have a luxury pension environment. Like people are very, very strict and contributing to it. So we have very wealthy funds. And I think in like the pension funds together, like they all committed to to have 10% of of their,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 552.84,
+      "end": 553.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 553.7,
+      "end": 555.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "don't pin me on these numbers, I need to check it exactly,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 555.96,
+      "end": 557.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but somewhere",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 557.88,
+      "end": 565.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in that field of their total asset base to commit this to tackling climate change. And I think, yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 567.16,
+      "end": 575.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "if you look at the scale of what they're doing, like it's the size of two times a company like Apple, for example, basically now moving into this space and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 575.74,
+      "end": 576.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "having all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 576.14,
+      "end": 600.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the resources to coming up with real cool things. not so much in the traditional things of just putting up windmills, but really also looking into supporting really innovative startups and think with blockchain or AI solutions to tackle these things and not just with hardware. And I think this is something unprecedented, like the scale that they're doing this and the scale that they're actually opening up their international network and their whole,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 600.78,
+      "end": 601.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 601.94,
+      "end": 641.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 642.29,
+      "end": 645.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that's awesome. I love the optimism, hopefully.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 645.55,
+      "end": 645.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 645.73,
+      "end": 671.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it's cool to hear optimism, because I think a lot of people are pessimistic, you know, about what this space looks like going forward. And I think it's really cool. Also, I mean, with you, you're living, like, in America right now, I don't know of very many, there are a bunch of, I don't know of any big kind of institutional investors that are thinking in a similar way that. these pension funds are thinking there's some other projects out here like something like the founders pledge where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 671.38,
+      "end": 671.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 671.72,
+      "end": 682.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "like you know doing 2% funding to like charities after they have an exit there are also things like the giving pledge which is where the more like lots of billionaires have said once we die or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 682.24,
+      "end": 682.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "by the time",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 682.82,
+      "end": 685.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we die we're going to give either half or more than half",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 685.28,
+      "end": 685.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 685.72,
+      "end": 691.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that one's one where I kind of want to expedite that where it's like okay The time is now, you know.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 691.68,
+      "end": 692.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Let's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 692.16,
+      "end": 701.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "start funding these things. And I also, I really like what you said about, you know, our mindset, you're right in that we're seeing this big shift into these B corporations, founders",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 701.0,
+      "end": 701.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "pledge 1%,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 701.82,
+      "end": 715.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "those kinds of things. And I think that... It's something that I'm excited by, and Mark Zuckerberg was talking about this, and his Harvard commencement address was, hey, we need to move away from, you know, measuring, what you measure for, you optimize for, you know, and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 715.15,
+      "end": 716.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "measuring",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 716.09,
+      "end": 733.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "away from measuring GDP and money necessarily and towards measuring things like happiness, which we can talk about later as well, but I think that that is kind of what you're getting at, which is, hey, let's create people that are excited by working on solutions that don't necessarily just, you know, go back to themselves, but work for the greater good.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 733.9,
+      "end": 734.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 735.0,
+      "end": 742.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "exactly. And I think also this has to do with like a bit of an off topic startup, for example, here at campus,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 745.0,
+      "end": 747.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they build a desensal to detect your mood.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 748.58,
+      "end": 759.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Like, for example, if you're happy or stressed. And they're now doing an experiment where they basically track which people bring happiness and which people trigger stress.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 761.59,
+      "end": 814.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "It sounds a bit scary maybe, but it's very interesting because it creates trigger points for the people that are stressed to go into dialogue very quickly. But it also creates like a momentum for us as a group to start really being aware of the impact we have on others instead of just like, hey, I got grumpy out of bed. I'm going to walk grumpy to my desk. say grumpy the whole day. No, you're really thinking like, okay, I'm part of this group and I have an impact on it. And I need to be aware that whatever I bring to the table, it will reflect through seven layers of other people maybe during the day. And I need to become aware of this. And it's the same with how we consume. It's the same with what we watch, all these things. Like our impact is way bigger than we perceive. And I think that's becoming very tangible with these new tech things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 814.45,
+      "end": 818.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that's interesting. I want to dive into that for just a quick second",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 818.37,
+      "end": 818.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "more",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 818.87,
+      "end": 848.35,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "before we go back to some of the other stuff that you're doing at Tech Corruption. So what you're talking about there is very much in alignment with what we were talking about before about the data view of society, where we can kind of, once we have everybody who's hypernetworked with smartphones and an internet of things with 20 billion devices by 2020 or whatever, you have this. You can essentially take data slices of reality for any given point in time and things that people, a lot of people traditionally think you wouldn't be able to. track like, oh, emotions. Like, you know, it may be the data",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 848.35,
+      "end": 848.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 848.53,
+      "end": 873.81,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "will exist for like the financial system or whatever, but not for emotions. But what you're saying is, hey, we actually have this kind of data view of our, what emotional state are us and others are bringing to the table at any given time. I think that's a fascinating concept. Is there any worry that you have there as we kind of get into this quantification of all the things and the tracking of all the things? Have you seen the Black Mirror episode where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 873.81,
+      "end": 875.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they're rating people five",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 875.37,
+      "end": 875.91,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "stars?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 876.19,
+      "end": 876.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 877.05,
+      "end": 878.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So are you worried",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 878.37,
+      "end": 888.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "by this? Kind of like, hey, I come into a room and I immediately know, oh, man, other people feel colder about me because maybe I'm ugly or maybe the clothes I'm not wearing. You know, like, how do you think about that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 889.22,
+      "end": 889.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 889.8,
+      "end": 896.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think two things. One, in my perception, Blackmail isn't fully aware yet of the blockchain.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 896.8,
+      "end": 897.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "No, I know. I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 897.76,
+      "end": 904.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it was still a very centralized approach for this reputation system. I think also.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 905.91,
+      "end": 963.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "The fact to build blindly reputation and just, yeah, if you compare it to a key chain and just having one key with all the reputation, I think is a very bad way to approach this. I think every human should have like this virtual keychain where maybe a thousand different reputation compartments for different things can build up. I think this is very important to compartmentalize these things. The scary aspect, yeah, I think still living in the space where a centralized company like Google likes to build an advertising profile on all these things and so on. That's, of course, like, the bad side. But I think they will get challenged anyway by their competitive advantage of owning all this data and going to the public. So I think in the transition phase, some companies will try to benefit from it. But in the end, they will not be able to and they will become obsolete. So I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 963.72,
+      "end": 964.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "think... I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 964.19,
+      "end": 974.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think for the short term, yes, it's a bit scary. And yes, some data might get misused. But five to ten years from now, we'll look back on this period as a transition phase and it will all make sense.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 975.21,
+      "end": 982.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. And I think, and like you're saying, some of these things are also, there's kind of an inevitability to a lot of this in the sense that's like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 982.49,
+      "end": 982.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "hey,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 983.41,
+      "end": 986.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "whether it's you and I working on it. We're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 986.14,
+      "end": 986.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "going to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 986.58,
+      "end": 995.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "be, there's going to be an increasingly measured and datified, you know, world. And whether or not you are I are doing it, there are going to be reputation systems. You know, you have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 995.46,
+      "end": 995.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "China",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 995.7,
+      "end": 1000.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "making this, you know, big social reputation, social credit reputation system. So it's like, um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 1001.04,
+      "end": 1002.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's centralized as well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 1003.18,
+      "end": 1003.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 1003.44,
+      "end": 1003.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "something",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1003.64,
+      "end": 1037.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is going to be, if something is going to happen, then you can try to say, okay, I just want to be part of this wave and make it as good as possible for the people, um, because it's just going to be true. The other thing that, that reputation makes me think of is, is this concept of what our profiles look like in the future. And so, like, for a given profile, you have, like, in the classic, like, Uport example is, hey, I have a profile and has a given reputation score on it, and it's self-sovereign identity and things of that variety. But something, and then it would be connected to these various personas that you could",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1037.07,
+      "end": 1037.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1037.43,
+      "end": 1042.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of the, you know, here's my financial persona or my social persona. Something that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1042.07,
+      "end": 1042.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1042.29,
+      "end": 1055.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "interested by. I'm interested by two things in the space. The first is... imagining a series of smart contracts on a given person's profile where it says, hey, I am at any given point in time. If you want to pay me five bucks to do an interview of you, that's a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1055.83,
+      "end": 1056.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "smart contract",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1056.45,
+      "end": 1059.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that I do. Or if you want me to do an Uber, essentially, everybody",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1059.37,
+      "end": 1059.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right now",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1059.81,
+      "end": 1062.41,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "essentially has a meta smart contract on themselves for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1062.41,
+      "end": 1062.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Ubering or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1062.97,
+      "end": 1070.01,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "lifting or whatever. So I'm interested by the smart contracts as a, essentially the new definition of who you are is the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1070.01,
+      "end": 1070.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "series of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1070.43,
+      "end": 1109.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "smart contracts that you have. The second part is a, this question of, Can we track? And specifically, and I'd like to get your take on this one, within the social good space, we'll have like reputation. I think that a lot of people are conceiving of reputation as like, you know, reputation and business dealings. How are you doing, interacting with others? Is it good? And, but something that I'm interested by is like, not only your reputation in terms of like the actual interactions, but like also who are you trying to do good for? And should people have a reputation for like, hey, I'm a person who's actively doing good for the world? And it's, you know, we're tracking it in these ways. And you know that I'm a, I'm very far on the edge of like doing good for others while",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1109.51,
+      "end": 1109.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "someone",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1109.75,
+      "end": 1117.19,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "else, not necessarily this is better or worse, might be doing more good for themselves. How do you, What do you think about a reputation system that's kind of blocked like social good adjacent?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1117.79,
+      "end": 1118.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1118.73,
+      "end": 1208.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think it's very important. Like for me, the most ridiculous thing right now is had the resume for the job interview where basically we all create this perfect template of our perfect life and perfect behavior. Whereas it doesn't really say anything about this. I think in the future... if you want to work with someone, yeah, the biggest thing is going to be a verifiable, yeah, proof of who you are. And then I don't mean your address or your name or your picture. No, like, okay, you say you want to work for social good, but let's see in your behavior if you're not a hypercritic person trying to greenwash yourself, so to say. But if you're really consistent with it, if you really live it, and, you Like I work here a lot. In our region, we have some regions with heavy unemployment under young people. And I think the biggest thing I see there is this disconnection gap, like not having 100 people on a first name basis working that can introduce you somewhere. Like these kind of things become way more valuable than the skill you learn in a school. It's going to be about making it tangible that if I don't know you yet, that I can quickly see if you're at least similar to me instead of fully just seeing this advertised version of yourself in a resume. No, I want to see if you act like me, if you think like me and therefore we can work together.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1208.56,
+      "end": 1208.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1208.96,
+      "end": 1209.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that creates like a...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1210.17,
+      "end": 1210.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "A",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1210.51,
+      "end": 1230.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "trust point for people that are now not interacting with each other to easily start interacting with each other. And that's like also the slogan of blockchain in the end, the trust machine. It's building this common ground to feel comfortable to work with anyone and to tackle something together instead of staying individual. And that's something I really, really like.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1230.57,
+      "end": 1231.81,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Totally. We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1231.81,
+      "end": 1232.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1232.07,
+      "end": 1238.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "en route to the abstraction of trust and the abundance of trust and towards the... human organism or what have you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1238.64,
+      "end": 1238.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1239.74,
+      "end": 1242.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So could you, like coming back to tech eruption for a second",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1242.9,
+      "end": 1243.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1243.62,
+      "end": 1250.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "asking about the project that you guys are working on with carbon tax and kind of carbon emissions, could you talk a little bit",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1250.86,
+      "end": 1251.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "more",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1251.14,
+      "end": 1255.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "about, you know, the work that you guys are doing on that space and how you expect that to go forward?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1256.87,
+      "end": 1257.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1257.43,
+      "end": 1288.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think the... Yeah, the biggest thing is just getting like a good footprint of what a product really is. Like a product always has a story attached to it of where it came from, how it was transported and who handled it and so on. And if the blockchain becomes like this basic layer where I can see, okay, it was. plugged from the ground here then transport it on the ship then moved here I can make it very tangible to estimate the footprint of me consuming this here",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1288.05,
+      "end": 1288.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1288.71,
+      "end": 1298.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think that's the first step to do to have like these transport footprint taxes so to say on products instead of just having a cheap product",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1298.77,
+      "end": 1299.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1299.53,
+      "end": 1345.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "here we eat a lot of avocados for breakfast and for some reason since a couple of years. And I always find, I find it amazing that this thing basically crossed half the globe to be on the breakfast plate of someone for less than a euro. This is like the fact that you can get it there cheap doesn't mean that the price is not paid in different values, not paid in like the financial sense it might be cheap to get it there, but the footprint of this oil tank or the footprint of this airplane or these kind of things to get it there. It's not in the equation. And I think we should go towards more holistic ways of pricing things where we take these things way more into consideration than just the price of production.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1346.72,
+      "end": 1347.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1347.24,
+      "end": 1363.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is also something like I think we're going to move away for paying for the commodities. Like for example, if you have a car and now you pay for one gallon of fuel. But with blockchain, the computer of your car will get connected to to the gas station",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1363.98,
+      "end": 1364.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1364.72,
+      "end": 1367.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they share the same blockchain as a common ground to interact",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1367.38,
+      "end": 1368.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1368.14,
+      "end": 1381.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "instead of them paying for this gallon of fuel you will start paying for how you use that gallon of fuel and you will start for example paying if you drive polluting more for that gallon than then if you drive really eco-friendly",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1381.24,
+      "end": 1382.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1382.08,
+      "end": 1389.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think these kind of smart connections where the the business model shifts from just paying for a product and then having no responsibility to having",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1390.46,
+      "end": 1390.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "seeing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1390.98,
+      "end": 1397.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the impact of how you use it or where it comes from it will it will totally shift a lot of a lot of these things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1397.06,
+      "end": 1398.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1398.0,
+      "end": 1436.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "one other example i gave it before is um it's how yeah how energy production is so misaligned and we produce so much energy everywhere and people try to give it back to the grid but the power plants also overproduce and there's like this total mismatch I think of local energy production and local water production like we're also here working on on on decentralized water grids that create like a global water exchange for example on the blockchain and making making drinking water a universal basic right again for everyone instead of having these controlled water grids for example these kind of things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1436.72,
+      "end": 1441.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, and so that makes a lot of sense. I'd like to dive into some of that stuff in a second, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1441.8,
+      "end": 1442.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "could",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1442.22,
+      "end": 1444.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you talk a little bit more? Is there a specific,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1444.58,
+      "end": 1445.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1445.86,
+      "end": 1452.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "project that you guys are working on within, like, this, the carbon tax or kind of the transportation space? And could you give me some more specifics on that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1453.72,
+      "end": 1462.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, actually, there's one big project in the logistics industry with this, but it's still under",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1462.0,
+      "end": 1463.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "some non",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1463.6,
+      "end": 1464.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "-disclosure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1465.84,
+      "end": 1481.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, but it has to do primarily with really making it tangible what the whole journey is of everything and thereby including a tax on that instead of just paying for the product. And I think in the end, therefore, you will get a shift where...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1482.58,
+      "end": 1508.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, you will get a shift back to local. Now we live in this fully globalized society where we think something is cheap because we get it from far. But we will start shifting back that you will get tax to transport things over great distances because it will impact the environment a lot. And we will therefore have a revolution back to the local production, the local consumption. And yeah, I think local farmers will definitely get way better times.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1509.65,
+      "end": 1510.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1510.27,
+      "end": 1528.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and I think that's kind of a macro train within the blockchain space, which is kind of this bimodal distribution between if you're working in the space, you are working, you're kind of required to work in this hyper-decentralized, globalized way. You know, we're talking many time zones, thousands of miles away from each other because there's so much great stuff happening everywhere. So like, let's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1528.53,
+      "end": 1528.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "use the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1528.83,
+      "end": 1544.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "truly global crowd. And at the same time, it empowers some of these local trust communities and easier. You don't need centralized tracking things because you can track essentially more easily with the blockchain. So it enables hyperlocal as well. So kind of enables",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1544.5,
+      "end": 1544.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "both",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1544.88,
+      "end": 1549.42,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "sides of that by modal. And I'm not sure what's going to happen to the middle ground. You know, if you're like 500 miles",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1549.42,
+      "end": 1549.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "away",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1549.62,
+      "end": 1552.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "from me, do I care about you? I'm not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1552.24,
+      "end": 1552.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1552.74,
+      "end": 1553.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "We'll see.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1553.32,
+      "end": 1553.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1554.9,
+      "end": 1557.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Perhaps. Perhaps. Cool. So.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1557.96,
+      "end": 1558.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1558.32,
+      "end": 1606.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of in the last couple minutes here, I'd love to, we've kind of been on toying with a little bit of these macro concepts in addition to some of the stuff within tech corruption. But one thing that Vince and I want to talk about, instead of diving into one of those other concepts, is, you know, in this transition to this kind of macro, more abstract thing, Vince, I'd like to get your take on how we can track value within the blockchain for social goods space. This is something that a lot of people are thinking about because. You know, it's an easy, a smart contract is an easy way to do a direct one-to-one value-for-value transaction where you say, hey, I'm going to give you this thing and you're going to give me this thing's back and great. We value for value, it all good. But what happens if, let's say, Vince, you want to give me some money and then I'm actually providing you with no value. I'm providing someone else with value, let's say maybe some poor person or maybe",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 1606.21,
+      "end": 1606.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 1606.97,
+      "end": 1615.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the macro environment. How do you think about kind of tracking that value and also incentivizing it to be the case that you give me money for the greater good?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 1615.65,
+      "end": 1616.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 1617.02,
+      "end": 1636.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think this is actually a great example of where we started with the prisoners thing. Because now if I look at bank accounts, your bank account is hidden from me, mine is hidden from yours. And basically, if I transact something to you, there's no way for me to track things or see what happens and so on.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1636.51,
+      "end": 1636.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1636.91,
+      "end": 1742.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1742.78,
+      "end": 1743.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1743.32,
+      "end": 1755.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "other people will see, will see these things from me. And I think therefore in the future also things like war, like war comes out of the ability to separate people. I think in the future if...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1755.47,
+      "end": 1755.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "If",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1755.71,
+      "end": 1774.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I see how I'm connected to other countries, other regions, other things, it becomes way less acceptable to deal with these things. And I will feel even more empowered every time I see that I impacted some farm or somewhere to keep doing it, I think. It will be like a gamified. sense of purpose or something like that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 1775.06,
+      "end": 1775.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 1775.66,
+      "end": 1777.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's very in line with this interview",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 1777.3,
+      "end": 1777.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 1777.48,
+      "end": 1784.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "just gave a couple days ago about you said a gamified sense of purpose and we were talking about a quantified, if you think about Maslow's hierarchy of needs",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 1784.7,
+      "end": 1785.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and at the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 1785.3,
+      "end": 1791.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "very top you have self-actualization and kind of how do we quantify meaning and how do we quantify purpose?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 1791.54,
+      "end": 1791.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 1791.64,
+      "end": 1810.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "very aligned with what you're saying. The other thing that that makes me think of is, so you essentially what you're saying is you think that in order to track value for value in going forward in the future, that the primary first way that we're going to do that is by essentially choosing the people that we want to transact with based on their kind of social good reputation. Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 1811.13,
+      "end": 1869.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah. Yeah, I think... For example, in a neighborhood, maybe you have some people that are lonely. Maybe you have some people that cannot fix their own garden anymore or these kind of things. I think the people that picked us up, they are like invaluable to a community. So maybe these people should be able to live for free in that community because it will become very tangible what they contribute. And I think you will have a lot of these models where basically it will begin where a community basically crowd funds the existence of someone that contributes a lot. And it will gradually trickle down to people that do a bit less, but still contribute. And in the end, it will shift towards seeing that two, three layers of interaction will actually lead to a contribution that is also beneficial for yourself or something like this. It's a gradual process, but it will start with like the super doing good people in each neighborhood and being supported by their by their whole neighborhood. I think that's a very good place to start.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 1869.46,
+      "end": 1896.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I like that. There's a. It reminds me of there's this universal basic income implementation called resilience, which uses a similar concept where you essentially know based off this thing called a tax eam, so like a genetic version of a tax, should I operate with you? You can essentially, it makes transparent how, what kind of social good you're doing. And then when people are kind of self-taxing each other, people are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 1896.16,
+      "end": 1896.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "incentivized",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 1896.96,
+      "end": 1901.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "to go towards the people who are doing better because then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 1901.2,
+      "end": 1901.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's... kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 1901.48,
+      "end": 1902.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of provides more money back to the system.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 1903.38,
+      "end": 1903.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 1904.02,
+      "end": 1917.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. So I guess we're pretty much out of time for today, but I like the conversation. So is there one, in conclusion, is there one final thing that you'd like to say to the listener? It can be silly, self-promoting, off-topic, anything.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 1918.8,
+      "end": 1919.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "What's on your book? Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 1920.64,
+      "end": 1927.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think the most interesting thing for me is it's a bit on topic for blockchain, is that...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 1928.77,
+      "end": 1969.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "timeline wise you need to start thinking differently like now we're very much focused on doing something for earning our paycheck every month or these kind of things but with blockchain we we start building this this universal record of history together and even 10 15 years from now people will see the choices that I made or they will they will be able to to see what I contributed. And I think therefore we need to start thinking way more long term. Like if I looked at the past where we built pyramids or these things and we work for three generations to build a building, I think we're doing very little of those long term projects. But with the blockchain, we can really start thinking again like, okay,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 1971.08,
+      "end": 1979.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "let's do something for the generations to come by building now the groundwork for this. And this is something I think we should all embrace. That's, um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 1979.28,
+      "end": 1979.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 1979.86,
+      "end": 1988.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I like that. And I think that there's there's an embracing and an opportunity side there. And there's also a little bit of a fear side there where if you get a U-Port persona or some kind of self-sovere",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 1988.8,
+      "end": 1989.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "identity",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 1989.12,
+      "end": 1991.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "on the blockchain. Well, it pretty much starts tracking you then.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 1992.66,
+      "end": 1992.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 1992.88,
+      "end": 1997.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "whatever you do, although there may not be systems in place at the time that are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 1997.56,
+      "end": 1998.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "actively",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 1998.0,
+      "end": 1998.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "looking",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 1998.78,
+      "end": 1999.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 1999.08,
+      "end": 2007.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "your blockchain transactions in the future, they might. Yeah. But I like the other version of that, which is the empowering version, not so much",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 2007.36,
+      "end": 2009.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the viewer version. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 2009.22,
+      "end": 2083.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "for me, the other takeaways here are in kind of what we talked about today. So we talked about first, Vince is working in the space primarily from a game theoretical and tragedy of the commons or prisoner. There's Dilemma perspective, and he's really excited by this ability, and he's working specifically in this space where essentially it's a playground for people to collaborate, and blockchain really enables a lot of that collaboration, and specifically around some of these new kind of government-pushed initiatives within the Netherlands, so that essentially fund these collaborations to do good, because just making money is not necessarily the key aspect of the game these days, so the motivations for corporations to exist is kind of changing, and so that allows people like Vince to win. work more in the climate change space. And we also talked a little bit about some of these more macro concepts around this data view of society and this kind of reputation view of society and whether people will be able to tell whether you've been doing good or bad. And then we talked also a bit about some of the carbon tax work that Vince is doing and around, specifically around the ability for blockchains to track externalities, classic kind of provenance checking here, and we're able to now inject the externalities into the equation, which we weren't able to do before. So that's what we talked about.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 2085.21,
+      "end": 2088.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Vince, thank you so much for being on the show today. And I hope you're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 2088.87,
+      "end": 2089.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "doing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 2089.03,
+      "end": 2107.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "well out there. And thanks all for listening. If you want to check out Vince or any of the work he's doing, go to... tech eruption or Brightlands or Vince Means. You can find him on the internet by Googling. And if you want to support me on Patreon, go to patreon.com slash resamark. That's slash R-H-Y-S-L-I-N-D-M-A-R-K. Thanks so much, everybody, and bye.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 2108.55,
+      "end": 2108.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Thank",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 2108.95,
+      "end": 2109.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you. Bye-bye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 239,
+    "withheld": 2,
+    "published": 237
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

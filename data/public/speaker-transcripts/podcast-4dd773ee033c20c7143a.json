@@ -1,0 +1,2295 @@
+{
+  "schema_version": 1,
+  "id": "podcast-4dd773ee033c20c7143a",
+  "title": "#9 Tim Hwang, Harvard + MIT: The Politics and Theater of AI Ethics",
+  "published_at": "2019-04-19T21:36:07Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/9-tim-hwang-harvard-mit-the-politics-and-theater-of-ai-ethics",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/608559744-the-rhys-show-9-tim-hwang-harvard-mit-the-politics-and-theater-of-ai-ethics.mp3",
+  "youtube_id": "WShYL5nD0ow",
+  "youtube_url": "https://www.youtube.com/watch?v=WShYL5nD0ow",
+  "audio_sha256": "5d0026151f7a8fffca8f09feb0594a1b026eb46192071acf2711150e857a68ed",
+  "audio_duration_seconds": 1906.7298125,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 6977,
+    "unknown_words": 293,
+    "unknown_words_fraction": 0.04199512684534901,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 10.77,
+      "end": 11.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 11.53,
+      "end": 38.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everyone. My name is Reeslin Mark, and you're listening to Gray Mirror, a podcast from MIT Media Labs Digital Currency Initiative on Technology, and Ethics. And unlike something like Black Mirror, which just looks at the negative impacts of technology on society, we are Gray Mirror, so we look at the positive and negative impacts of technology on society. And please, if you have any feedback, reach out on Twitter. And if you like the show, give us a five-star rating on your favorite podcast app. We really do appreciate it. Thanks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 42.19,
+      "end": 42.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 42.95,
+      "end": 60.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so today I chat with Tim Huang. Tim is the executive director of the Ethics and Governance of AI Initiative at MIT and Harvard. And we mostly chat about AI ethics, but also chat a bit about the awesome foundation, which is this grant giving program that he created a while ago. And so I want to kind of highlight three big things here. The first is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 60.59,
+      "end": 61.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 61.65,
+      "end": 103.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "how companies, the state and civil society interact, especially around AI ethics. So if you think about, you have companies. Companies make... their money through profits. And then you have on the other side, there's states and they make their money through taxes. But then civil society is kind of this weird third space. It's like unions and universities and whatever. And it's less clear how they make their money, right? They kind of raise it in different ways. And it's more difficult for them to get capital. And that's especially crucial when you think about in the context of AI ethics here, these civil society social movements that come up, they're like, hey, you guys should care more about AI ethics. those then start to be, because those movements don't naturally have capital",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 103.56,
+      "end": 104.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "accessible",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 104.68,
+      "end": 139.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "to them, they kind of get co-opted by the companies. And so an example of this is something like Fat Star, this fairness, accountability, and transparency conference. And I'm not saying it's fully co-opted, but that is a conference of people who are chatting about these really important issues in AI ethics. But at the same time, it's sponsored by DeepMind and Google and Microsoft and Twitter and Spotify. And so there's this question here of, Hmm, if you have some kind of movement, some civil society movement, how is that movement getting capital? And then if it eventually starts getting capital from something like companies and their profits,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 139.96,
+      "end": 140.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "does",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 140.44,
+      "end": 174.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the movement, is it getting co-opted at all? And so the second piece here is on building a field. And the digital currency initiative is thinking a lot about this as we try to build the field of crypto and blockchain technology and also thinking about crypto ethics. And so I asked him about how he's helped to build the field of AI ethics. And... One interesting piece is that he said, hey, you know, something like this Fat Star Conference, it's been super successful at pulling over developers to tackle these hard problems. And that's essentially exactly what this guy, Thomas Coon, who wrote the structure of scientific revolution, said when he's like, hey, you need to create crisis in the initial,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 175.04,
+      "end": 175.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 175.62,
+      "end": 266.91,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, intellectual field. And then you need to kind of... gain intellectual mind share. And that's been really successful for Fat Star. They essentially said, hey, developers, AI bias is really hard. Isn't it really interesting? And then all like the intellectual academic researcher types come over there and say, ooh, this is interesting. So that is, it's cool that that theory has kind of played out in practice today. But this crisis is weird. This idea of crisis is interesting in how you create crisis. because you can try to create crisis in the initial field. And you can either create something like an academic crisis, like say like, oh, the theory is wrong or whatever. Or you can create a public crisis. And something in AI ethics, they've done this through this pro-publica story, which is this famous story that showed, you know, how this is about criminal justice system and recidivism rates and how the AI has kind of biased, you know, racial bias baked into it. And everyone knows that story. It's a very powerful meme that has spread. And so when you think about crises, you shouldn't just think of them from an academic sense, but you also think of them as like a public kind of meme sense. And I was thinking about this, like, what is this for crypto? What are the stories that everybody knows with cryptocurrency and how can we push something like crypto ethics with these stories? So I'm thinking about things like the blockchain bros article or, you know, the genie coefficient piece from Bologi from Coinbase or maybe it's something around the Dow hack or the parody hack or the Zcash bug. So, yeah, this is kind of a meta thought here's, What is the clear, quick, and grokable story that you can tell people to create crisis in a given field to pull people into a new field?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 267.27,
+      "end": 267.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 267.67,
+      "end": 269.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's kind of the second piece. And the third piece is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 269.48,
+      "end": 270.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 270.44,
+      "end": 286.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "quickly on the awesome foundation. And the awesome foundation is a grants program that Tim founded a while ago where, you know, 10 people donate 100 bucks a month to create a thousand dollar grant and then they give it to someone to do something awesome. That I, as I asked him about his learnings with this program and.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 287.36,
+      "end": 287.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "An",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 287.56,
+      "end": 340.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "idea that keeps coming up with people that run these grant programs is, hey, the money itself, although it matters, it doesn't matter that much. So, I mean, obviously, if you're giving money to the, you know, 750 million people in extreme poverty who make less than $2 a day, well, then the money matters a lot, you know, meeting those basic needs. But in the developed world, if you're giving money to folks here, the money is important, but it's in some ways less important than the social aspects here. The signaling, the commitment. those that the community building. So that's something to keep in mind as you think about giving money away and as you think about these grant programs is how much does the money matter versus how much is do the social aspects matter. Cool. So with that, I hope you enjoyed today's episode with Tim. As a quick note, some of the sound is a little bit choppy. The recording wasn't perfect, but you don't lose much of the content, though it might be a little bit choppy or annoying to listen to. Sorry about that. Okay. Enjoyed today's episode. Goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 347.4,
+      "end": 383.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello, everybody, and welcome. You're listening to Gray Mirror, a podcast from the MIT Media Lab on technology, society, and ethics. And today I'd like to welcome Tim Huang to the show. Tim, he does a lot of things in his background, but he currently directs the Harvard-MIT Ethics and Governance of AI Initiative, which is a $26 million fund for AI ethics. And he also, in the past, has done cool things. Like he was the director of public policy, the global public policy lead for AI and machine learning at Google. And we're also going to chat a little bit about this thing, awesome foundation, and then this weird new trade cooperative journal as well. So Tim, thanks for being here.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 383.2,
+      "end": 383.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 383.64,
+      "end": 384.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "thanks for having me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 384.32,
+      "end": 391.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And we're doing this live, in person, in the media lab, which is always fun. So, Tim, let's start, let's, we're going to bucket into like three big categories.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 392.12,
+      "end": 392.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 392.32,
+      "end": 395.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "The AI ethics category, the awesome foundation, and kind of the stuff at the end.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 396.1,
+      "end": 396.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 396.76,
+      "end": 398.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So let's start with AI ethics.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 398.3,
+      "end": 398.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 398.6,
+      "end": 402.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Could you give an overview on kind of the initiative that you're leading and the goals of that initiative?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 402.72,
+      "end": 474.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Sure, definitely. So the ethics and governance of AI initiative was started about two years ago now. And it's essentially a kind of wild coalition of various entities. So on one hand, you have a bunch of foundations. There's the Knight Foundation, the Omidyar Network, the Hewlett Foundation, and then the person of Reid Hoffman, the LinkedIn founder. And then on the other side, you have the MIT Media Lab and the Brooklyn Client Center, the Harvard-Burkman Client Center. And the goal is really kind of this hybrid project. On one hand, the initiative gives out grants. So we work with activists and researchers and various NGOs. The other piece is actually that it goes to fund researchers at those two institutions, the Media Lab and Berkin Klein, to kind of push ahead research on sort of the governance of these technologies. Now, you know, with the title like The Ethics and Governance of AI Initiative, the question is, wait, what do you guys actually do here? And we largely work, I would say, in three things. One of them is thinking about the ethics of this technology as far as it's implemented in the criminal justice system. Some thinking about how it influences the flow of information. That's kind of the second category. And the third one is something I'd call sort of international norms. So it's kind of a wide-ranging effort. It's a lot of hurting cats, but it's also a ton of fun.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 474.59,
+      "end": 475.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 475.03,
+      "end": 476.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a norms piece. I'm especially",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 476.37,
+      "end": 480.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "interested in diving in there. So more about what the goal of that norms piece is?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 480.63,
+      "end": 505.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Sure, definitely. So I think a lot of people like to say we're shaping norms. But the real question is shaping norms to what end? And I think the kind of bare facts of it. are that a lot of the research is being pushed ahead by a relatively small number of companies. How do you shove these companies around? And so I think we've landed on norms from a kind of pragmatic point of view, which is it seems to be the lever. that we can use in many different ways as a way of kind of shaping company behavior.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 505.5,
+      "end": 505.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 505.76,
+      "end": 506.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "can go into what I mean by that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 506.88,
+      "end": 507.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That makes a lot of sense.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 508.3,
+      "end": 512.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "You're saying, hey, we want to, let's say the end is make a better world. We don't have to define that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 512.88,
+      "end": 517.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm happy to talk about that, too. I mean, we've got to be concrete about that. And the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 517.4,
+      "end": 523.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "norms in order to shape that. And as they're saying, it's like, oh, we can go through the political means, but maybe that might not work as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 523.74,
+      "end": 523.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 524.34,
+      "end": 541.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So let's actually try to shape the norms of these people within these companies. Is it? Are you trying to, like, work with, like, the individuals in those companies directly and have them, like, folks like Google, be, when they all write their petition to say, like, hey, let's not do this kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 541.04,
+      "end": 541.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "bad thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 541.5,
+      "end": 545.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Is it that what you're talking about? Or what kind of, give some, like, specifics around norms.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 545.46,
+      "end": 545.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Definitely. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 545.62,
+      "end": 589.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think there's two kinds of norms that we try to chase after. One of them is maybe not a surprising one, right, which is public norms. which is what is the market of consumers that might buy AI products think about this technology? And I think that has kind of some of the regional aspects we're talking about, right? Which is we can think about shaping publics here in the US because we're based in the US. Or we can think about shaping publics and their kind of views and knowledge about the technology internationally as well. That's one round. The other route, I think, really depends on this really interesting historical progress in AI, which is that for a long time, it was essentially considered a total dead end. Do those researchers feel like they are ethical and unethical uses of their technology? Do they see it? That's where some of the maneuvering comes in. So I think there's like this kind of norm shaping through the labor market.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 589.45,
+      "end": 589.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Norm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 589.75,
+      "end": 605.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "shaping through the labor market. And I've done this a bit within the cryptocurrency world. It's like, and you're kind of being like, hey, people who are building the stuff, like be nice or whatever. And I guess there's kind of this, how do you... feels like you're trying to like incept ethics within these people to some extent.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 606.2,
+      "end": 608.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We were never here. Yeah, right.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 609.84,
+      "end": 615.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So there's this weird peer pressure vibe there. I don't know. What are you, do you feel any of that or am I doing it wrong?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 615.06,
+      "end": 615.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "No, I don't think so.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 616.16,
+      "end": 616.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 616.16,
+      "end": 617.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 617.99,
+      "end": 623.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of the groups that we're very excited by is the fairness, accountability, and transparency and machine learning movement.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 623.43,
+      "end": 623.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 624.05,
+      "end": 635.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And I think what's most intriguing there is the notion that you basically kind of translate. some of your ethical concerns into problems that the field finds extremely interesting.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 635.47,
+      "end": 655.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I mean, this loops into, and I want to ask you about this as well, so with the digital currency initiative, we're trying to build the field of blockchain cryptocurrency technology, and it's... It's difficult because it's interdisciplinary in various ways. And then it's part of it's like, okay, we want to bring in ethics as a piece to that. And as you say, as we're starting to think about it, there's this book called The Structure of Scientific Revolutions. How do you read that book?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 655.59,
+      "end": 656.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Classics, yeah. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 657.45,
+      "end": 678.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's a key part of it is saying, hey, if you're trying to build new fields, you're essentially trying to show crises in the existing field and then show it. Like, you're trying to pull mindshare into this new field. And that's exactly what you're talking about. You're like, hey, researchers, you know, fairness is hard. Like, come over here and work on these interesting fairness problems. And then as they start that, then they kind of go down the path of the gateway journey.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 678.8,
+      "end": 679.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 679.0,
+      "end": 681.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "right. Yeah. I mean, I think there is an interesting question on just like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 682.06,
+      "end": 682.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 682.48,
+      "end": 688.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "mean, I think what Kuhn... doesn't talk so much about it's like how much could you actually engineer this process, which I think is what we're debating.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 688.59,
+      "end": 689.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, right? Is it like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 689.45,
+      "end": 696.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we talk a lot about field building. Is it actually in practice possible to, you know, get all the stars to line up right for this to occur?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 696.25,
+      "end": 696.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 696.77,
+      "end": 714.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "yeah, yeah. And I think what's interesting is that frequently a lot of the theory doesn't actually reflect how it actually happens in practice. So like I was joking with someone recently, I was like, well, You know, maybe one of the greatest tips for creating a new academic field is we should just find two academics that really hate each other's guts and fund both of them to work on conflicting things. Because nothing generates more academia than two researchers that don't like each other.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 714.79,
+      "end": 714.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 715.07,
+      "end": 719.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And like, I think there's like a lot of kind of interesting real politic and somehow some of this happens.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 719.69,
+      "end": 722.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So as we think about, you know, building the field of blockchain and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 722.55,
+      "end": 722.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "crypto.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 723.11,
+      "end": 724.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Have you seen this pro publica story?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 724.67,
+      "end": 725.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, exactly. Right.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 725.17,
+      "end": 747.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Like that is just a stock thing that you have in every single. Like I think story, I think is very informative because it points to the idea that like, When people think about a technology, they don't really think about, mostly think about, like, a handful of cases that really capture or dramatize the problem. In cryptocurrency, right, which is a technology that is like famously hyped, right? There's the chances to kind of throw bricks in ways that kind of capture the public discussion",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 747.76,
+      "end": 748.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 748.16,
+      "end": 750.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in turn kind of motivate technical work.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 750.48,
+      "end": 750.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 750.98,
+      "end": 752.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And so I guess that's maybe one thought about that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 752.84,
+      "end": 753.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, no, no, I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 753.64,
+      "end": 759.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "agree that. That's interesting. So let's dive in specifically on the the pro public a story for a second.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 759.36,
+      "end": 759.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sure, yeah, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 759.92,
+      "end": 787.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "The AI. So it's in this big field of AI bias. And I guess could you, the thing I want to dive in on specifically is this piece that Joey had recently, Joe Ito, about AI as a mirror or AI as a crystal ball. And the mirror, the crystal ball one is like, oh, you know, X, Y, Z is more likely to go back to have a high recidivism rate. So like let's, you know, make sure that happens or whatever. Versus AI as a mirror.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 787.8,
+      "end": 839.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yes, that's right, right. Like, I think what's frequently confused about AI is. is the notion that it's like the AI and it does the thing, right? And I think we do have to think about like how much the different use cases are different purposes. Or if you really want to get elaborate about it, like the intents of the person who's deploying the system really actually influences the ethical considerations around the technology. I guess my little twist on maybe Joey's model is to basically say it's interesting to think about when we use it as a crystal ball, when we use it as a mirror, but it's almost intriguing to think about when we think. we're doing a crystal ball when we're actually doing a mirror or when we think we're doing a mirror but actually doing a crystal ball. Right. I think those are really intriguing cases. Right. The question of like how deep you need to go in changing the techniques of AI in order to do that, right? Like if I think like the question of like how far you need to go on some of this stuff in order to create like social change. It's very complicated. I guess so I'm kind of saying.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 840.56,
+      "end": 843.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So let's let me let's transition to another specific thing that you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 843.1,
+      "end": 843.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "guys just did,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 843.76,
+      "end": 849.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "which is You recently announced you are giving 750,000 bucks to six different people.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 849.52,
+      "end": 851.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, six different projects, yeah. To do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 851.02,
+      "end": 852.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "AI and new stuff.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 852.34,
+      "end": 852.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sure, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 852.76,
+      "end": 854.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And there are lots of cool, interesting projects there,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 854.74,
+      "end": 854.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but I actually",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 854.98,
+      "end": 856.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "wanted to push back on one of them.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 856.36,
+      "end": 856.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 857.0,
+      "end": 885.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "There's the Rochester Institute of Technology, and obviously I didn't go dive deep on what exactly it's doing, but it looks like it's trying to get humans to understand what is fake, what is not fake. And for me, whenever I see stuff like this, it's in order to like start to beat, I get worried about arms races here, where you have like, the humans trying to determine stuff and then the AI just gets better. So I guess tell me more about this project and how you feel about arms races for determining AI fakeness.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 885.86,
+      "end": 885.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 886.18,
+      "end": 888.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Because the counter argument is we're already in a cognitive",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 888.02,
+      "end": 888.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "arms race,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 888.72,
+      "end": 897.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "right? That like essentially like fakery is always attempting to improve. And in fact the reason that it's convincing fakery is that it has like... got around something we're already prepared for,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 898.24,
+      "end": 898.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "essentially.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 898.88,
+      "end": 920.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And so, yeah, so, I mean, do I believe that there will be new tools that need to emerge to find ways in which people are faking using machine learning? Sure. Yeah, totally. I think my main fear is that we focus too much on the technology, right? And I mean, that's almost a different critique, right? Is that, like... You know the question isn't necessarily like is the video look real the question is like why do people believe the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 920.61,
+      "end": 921.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "narrative right and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 921.53,
+      "end": 923.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "my worries if we're always chasing the technology. You'll always be behind.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 924.25,
+      "end": 928.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I agree. I think that is where a lot of people seem to be coming around these days",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 928.73,
+      "end": 929.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 929.09,
+      "end": 931.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you talk to like media forensics people,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 931.37,
+      "end": 931.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 931.53,
+      "end": 951.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So, like, even in the absence of AI, like, the people who are responsible for, right, they're like, what is this purporting to depict? But then actually a lot of the work is, like, is there corroborating evidence? Is there, like, someone else who is there? Like, those will still work in a world of AI fakes. And so, I don't know. I just think that, like, like, the discussion will have to be more nuanced, even though for sure, I think a technology does pose a threat, and in a number of cases has posed a threat in a number of cases already.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 951.99,
+      "end": 989.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, so let me, let me explore that for one quick second more, which is I feel like, uh, I mean, Your three categories that you outlined earlier, they both seem a little bit more tech-heavy in the sense. I think it would be interesting if more AI ethics funds came about that were purely focused on the human system side of things, where you concentrate entirely on how humans are responding to it. And maybe this is already part of, clearly it's already part of your thinking, but I guess... I feel like a lot of this stuff gets sucked. When you think about AI ethics, people get sucked towards the technology and put their concentration and effort there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 989.3,
+      "end": 989.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 989.76,
+      "end": 990.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 990.58,
+      "end": 990.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 990.64,
+      "end": 1033.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "mean, I'll say actually, I mean, I think it is a, it is a. sign of vulnerability in civil society that essentially the whole space has been dragged along as corporate messaging has changed, right? It's like no surprise that the academics that worked on big data became academics that worked on algorithms and then finally became academics that worked on AI, right? And it basically marks the fact that, you know, philanthropies and researchers have a hard time like controlling the terms of the debate. And in fact, they are dragged along every time a marketing department is like, we're going to talk about AI now. And so, so yeah, I mean, I think that that is part of the trouble, right, is like, yeah, we really should be talking about the human systems, right? But I think from the real politic of funding and research makes it actually very challenging to pull off in practice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 1034.56,
+      "end": 1035.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 1035.28,
+      "end": 1061.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so how are we gonna I mean recently on the show I had Glenn Weil who's interested in in funding civil society of some of these new economic mechanisms and civil society from whatever perspective like the classic Putnam perspective where it's like oh the third spaces are going away or whatever do in the picture that you just painted there was kind of sad What would you think, what are some solutions that you may have to create a more robust civil society?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 1061.65,
+      "end": 1061.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 1061.87,
+      "end": 1064.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I guess I don't necessarily see it as a sad picture.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 1064.37,
+      "end": 1064.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I mean,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 1065.01,
+      "end": 1094.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I guess I think a lot about like memetic irregular warfare, right? So I met a really smart activist who kind of articulated this strategy to me, where she was basically like, look, I don't care about AI at all. Like, just it's totally irrelevant. Oh, I do care about a number of other issues, though. And so what I do is essentially say, I'm going to take all the issues I'm really worried about, convert them into AI, right? And then, like, ride the hype wave to, like, public influence. And, you know, I think you could you could say that your bug is a feature,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 1094.6,
+      "end": 1094.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 1094.86,
+      "end": 1111.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Essentially that because the industry tends to focus on these single memes, that gives you, like, things that you can actually attack. Right? And I think that's really powerful. So I think in the like, again, like the pragmatic politics of it. Like I think there are some weird advantages, even though we're kind of like rhetorically moved as, as they move.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 1111.35,
+      "end": 1111.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. That",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1111.99,
+      "end": 1112.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "makes sense.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1112.49,
+      "end": 1116.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. I think, uh... Yeah, what's you called the memetic?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1116.82,
+      "end": 1117.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Regular warfare. Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1118.04,
+      "end": 1123.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in the sense that, right, you're kind of behind enemy lines here, right? Like, I'm just going to use AI or like whatever you want to say.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1123.38,
+      "end": 1124.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, exactly. And like, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1125.24,
+      "end": 1127.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "my real beef is like, I don't know, structural racism,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1128.28,
+      "end": 1128.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1128.56,
+      "end": 1131.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But like, if we have to talk in these terms to get the public to pay attention,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1131.38,
+      "end": 1132.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "then so be it. Yeah. Cool.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1133.2,
+      "end": 1146.19,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So let's kind of zoom out a bit for a second to the... Talking about the AI ethics space more generally, the explosion of various things, and especially recently the Google Ethics Board that was created and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1146.19,
+      "end": 1148.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "destroyed. They had a little bit of trouble",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1148.17,
+      "end": 1148.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1148.51,
+      "end": 1148.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1148.61,
+      "end": 1151.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "was a good way to say it, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1151.44,
+      "end": 1154.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So maybe a quick note about Google, which I think is actually pretty",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1154.88,
+      "end": 1155.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "interesting, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1156.16,
+      "end": 1199.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Is there any configuration of people that Google could have had on that board? And in my mind, the answer is no, right? Like, I think that, like, what this effort shows is that Google like just wants so hard to be loved, right? That it will try whatever, you know, believing over and over that, like, they will finally do the thing that changes public opinion. But, you know, again, I think, like, the background is corporate power and the fact that, like, there's not a lot of trust in these companies already. And I think by far, in some ways, I think one of the interesting things we're seeing is the distinction between the companies that still feel they can change the tide and the companies that have felt like... game's already over, we'll just be quiet and move along. And I think we will see more and more of that as we go, as I think companies learn their lesson pretty quickly about what does and doesn't work in the space.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1199.77,
+      "end": 1213.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, so what you're saying with that, the second point is that for someone like Facebook, maybe they didn't even try to create an ethics board. They already knew that if whatever ethics board they created, it was going to get shot down. And then the Google one, they were like, oh, maybe we can create this athletic sport. It's like, no, no, no.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1213.65,
+      "end": 1213.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1213.95,
+      "end": 1221.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's right. And I think for a lot of these efforts, it's sometimes easy to forget. what is what is external messaging may actually be more internal messaging",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1221.22,
+      "end": 1221.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with anything",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1221.7,
+      "end": 1229.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "else like why you create this board maybe more like intercompany intra-company competition more than it is like a mastermind PR effort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1229.8,
+      "end": 1230.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1230.8,
+      "end": 1254.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think that's one bracket right is to think about like that particular Google case and what it reveals I think more generally in the AI ethics space I think you know, there is a really interesting question about, like, will the companies adopt this meme but in a reductionist way? Which is, I think, a big, certainly a big point of debate among the fat star sort of community. But I think more generally is I think something we should be worried about, right? Like the notion of saying, like, well, yeah, you know, we work on fairness. We have researchers that work on fairness.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1255.12,
+      "end": 1263.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "It's ethics, AI ethics washing or AI ethics theater. Yeah, as these. teams start to do this internally, will civil society be able to keep the door open",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1263.87,
+      "end": 1264.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and make sure that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1264.59,
+      "end": 1265.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "they are held accountable?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1265.73,
+      "end": 1327.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "True. And I think intriguingly, the question of whether or not civil society can stay together, I think is also a really big interesting question, right? In the sense that I think a lot of people working on fairness or social justice in the technology have for a long time had this very tenuous alliance between two groups, right? One group I think is concerned about like the broad... structural change necessary to deal with like the big problem, right? And I think in some cases they are okay with making the argument that categorically the technology shouldn't actually be there. Just don't implement it, right? There's another group which has said basically that the primary problem with machine learning is that it is negligently deployed, right? Like that if you were only a little bit more sensitive to the way you put these systems together, they could do a lot of good for the world, right? And I would say like the history of the last... I don't know, 48 months, right, has basically been these two groups together throwing bricks at the companies, being like, you don't care about this issue at all. You should be caring about it more. But I think that what's intriguing is now that they've kind of won the first battle, which is that companies are like, we need ethics boards or like we're investing in fairness in AI. Now the question is what is what is this community demand,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1327.45,
+      "end": 1327.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1327.73,
+      "end": 1352.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Does it mean, does it say like, okay, we're going to collaborate with you and trying to make these systems incrementally better. Or will they say, no, we don't even want that. We still want you to go even further, right? We want you to have representative boards that help define whether or not you design and implement certain products, right? And I think that question of like whether or not the kind of more categorical folks or the more sort of incremental folks",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1352.07,
+      "end": 1352.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "will",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1352.79,
+      "end": 1356.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "be able to kind of keep together. Because they've been successful so far, but I think there's a very interesting question of strategy there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1357.01,
+      "end": 1359.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah. Evolution. revolution kind of thought.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1359.94,
+      "end": 1360.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's right,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1360.44,
+      "end": 1372.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "yeah. You could say, I mean, this is how a lot of movements evolve, right? Like, eventually you have one group that kind of like... is really punching as hard as they can. And the other group is able to kind of be the person at the table that's like, don't, they're crazy,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1372.52,
+      "end": 1373.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you know, we're happy to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1373.0,
+      "end": 1375.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "work and then like change happens as a result.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1375.42,
+      "end": 1375.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1375.66,
+      "end": 1378.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "maybe things are working exactly as they should be, but I think it's an interesting problem.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1378.88,
+      "end": 1383.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Totally, cool. So that's actually, that was all fun, but we're going to transition away from AI",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1383.68,
+      "end": 1385.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "ethics to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1385.02,
+      "end": 1386.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "chatting out the Awesome Foundation.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1386.58,
+      "end": 1386.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1386.7,
+      "end": 1394.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So the Awesome Foundation is a very simple idea. Basically, The notion is you get $10,000 a month, and then that forms a $1,000 grant, which goes to a project.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1394.4,
+      "end": 1394.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1394.76,
+      "end": 1417.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah. I mean, I think for me, I think it's an awesome possibility, like, I don't need this money. Like, do people in my community want it? It's also, yeah, and you can see it kind of trickled down into one of my favorite examples was this person. that won one of the grants, they put a, they took their thousand bucks, turned it into a hundred, ten dollar bills and just put those ten dollar bills and books in various random places with little nice notes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1417.43,
+      "end": 1418.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's great. I hadn't seen that one. That's awesome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1419.21,
+      "end": 1420.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And it's like abundance, he gets",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1420.33,
+      "end": 1420.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "abundance.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1421.59,
+      "end": 1442.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So do you have any, uh, well, let me ask this question actually, which is I think, I personally think that these kind of self-taxing, uh, so, so to fully reveal my hand here, I, I'm a, I, self-tax myself 20% of my post so I make 70,000 a year 18,000 goes to the government, $10,000 goes to various, any",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1442.46,
+      "end": 1442.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind of civil",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1442.94,
+      "end": 1443.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "society",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1443.52,
+      "end": 1444.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind of things, yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1445.16,
+      "end": 1478.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "charities, whatever. And so I think that this is actually, we're getting to the point where more, like, I can do this and feel totally cool and feel, and like it doesn't hurt me at all. It's like, um, But it also, and I think that there's, you have something like the awesome foundation, and you have a bunch of these like effective altruist movements, which are people who want to give their money for good in a similar way. What are your thoughts on like whether more people, whether like awesome foundation things should spread in a big way or like how important self-taxing is to the world? Yeah, any kind of exploratory brainstorm thoughts?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1478.69,
+      "end": 1486.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, sure. Right, like the bigger thing is that you have 10 people that are good communities attention on a project. And I guess I'm really interested in that, Rob.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1487.06,
+      "end": 1526.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "No, I mean, I think that's, and this lady Nadia Eggball who does these grants, she has a, came to a similar conclusion, which is just like, the money doesn't matter as much as like the mentorship or the connections that she gives and the fact that they now feel accountable. And then I'm also reminded of the pioneer, which is this new fund out of Silicon Valley, just like funds people. It's like $6,000. So it's like not very much money, but it's people really like being part of it because then they get the, the social implications of a needing to actually try really hard to make to get the money and then feeling the perfect community and things like that so yeah I think that is a the money as a signaling function rather than as the thing that actually provides the needs",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1526.82,
+      "end": 1527.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah that's right yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1527.82,
+      "end": 1551.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and I think a lot of people have found actually like in the early days I think the demographics have changed but in the early days actually a lot of people who did awesome foundation were essentially like frustrated philanthropists because like the structure of philanthropy was such that they're like, well, I work on these jobs where I give money to stuff that I don't really care about. And like there's all this bureaucracy. And so like the immediacy of being like, that's a super cool project. Here's an envelope of cash to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1551.76,
+      "end": 1551.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "go",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1551.88,
+      "end": 1573.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "work on it. I think was like a very powerful thing. And I think there's kind of interesting question of like, you know, what does that say about philanthropy as a whole? Right. Like, you know, I was talking to someone recently about like, oh, well, what if we just created foundations that were just like, had to spin down after a period of time. They were just like temporary in nature. And there's a result didn't like generate a lot of the like self-sustaining problems that you see in those types of institutions.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1573.41,
+      "end": 1573.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right. I mean,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1573.87,
+      "end": 1580.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "one thought experiment I've been really thinking about a lot is like if you had a legal mechanism like antitrust",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1580.07,
+      "end": 1580.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1580.63,
+      "end": 1595.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the nonprofit sector, can, should you use it ever? Right? Like the ethics of that are sort of interesting, right? Like, well, there's only certain things the Gates Foundation can take on because they have so much money. But on the other hand, would we be better off if there were two foundations with different interests that had half of the money?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1595.81,
+      "end": 1596.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1596.21,
+      "end": 1603.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think that's, that question is really interesting. And like, You know, how would you define a market for philanthropy? And, like, what were the terms under which you'd exercise this type of authority?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1603.88,
+      "end": 1604.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1604.5,
+      "end": 1619.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "With the AI fund, you had your, you, the six projects that you funded with these grants recently, you did a big call for proposals and a bunch of people applied to it. I think that the awesome foundation is similar in the sense, it's like, hey, like, let's, like, enable the crowd to do things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1619.38,
+      "end": 1619.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1619.38,
+      "end": 1627.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "people can apply. What do you have any, like, meta-learnings or big learnings about how, like, the best ways to enable the crowd or to work with the crowd?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1627.96,
+      "end": 1628.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1628.5,
+      "end": 1670.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I would say, I mean, generally I am still, I'm old-fashioned in that I'm a crowd optimist, but a little bit like kind of how the rhetoric around, you know, again, with all the problems, right, like Wikipedia has changed, where I think the initial view on it was like unstructured, everybody's just coming together to like form their own thing, has given way to an understanding like, wow, actually there's like a very elaborate bureaucracy that's behind this website. You know, I think the question is like, what's the minimum viable structure necessary in order to get good community behavior to occur? You don't want to go too heavy, you don't want to go too light. But I do, I do think that we have to move away from some of these early notions, right? Which are basically like, we just got to create free space and people will self-organize. Like, I don't think that that is not really the case.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 1670.71,
+      "end": 1671.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, yeah. Right. Provide some",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 1671.99,
+      "end": 1673.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "direction somewhere.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 1673.41,
+      "end": 1673.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 1673.59,
+      "end": 1674.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "right. Yeah. Yeah. Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1674.55,
+      "end": 1674.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1674.91,
+      "end": 1682.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I agree. I think, uh, there's especially interesting space there around some, like with memes, I think are interesting. Like Me Too or Black Lives Matter",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1682.18,
+      "end": 1682.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or Make America",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1682.82,
+      "end": 1695.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Great Again. And like how, and some of these memes are coming up in the crypto world and understanding how the kinds of structures they provide around these memes because they're like weirdly permissionless, but they also want to provide some structure. And so that balance has been strange.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1695.26,
+      "end": 1695.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1696.14,
+      "end": 1697.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "If we've got time, we've got a weird theory",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 1697.46,
+      "end": 1698.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "about this. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 1698.08,
+      "end": 1724.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the idea is back in the day, a lot of these open platforms actually force people to kind of go through the process of self-governance. And they didn't always work out, but you actually... learned like a bunch of rough and ready skills about like how do you get rid of a troll right like how do you moderate comments you know how do you like shut down threads or facilitate discussions And one argument you could make around the rise of things like Facebook and Twitter is that, you know, trust and safety teams at these companies essentially take on that task now. So we actually don't learn a lot of those self-governance skills.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 1725.34,
+      "end": 1735.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Learned how to self-governance. It was awesome. And then over time, the platforms that they were governing themselves on were like, oh, let's like institutionalize this and like let's make these teams. And then when they made those teams, like wasn't nearly",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 1735.36,
+      "end": 1736.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "accurate. Yeah. Right.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 1736.4,
+      "end": 1743.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And it actually works in the reverse. Even in a world where those platforms were doing an amazing job, right? Like, you know. the median user would actually not have these skills,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 1743.83,
+      "end": 1744.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right? So I think it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 1744.43,
+      "end": 1745.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sort of an interesting trade-off",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 1745.51,
+      "end": 1747.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in some ways. Yeah, yeah, yeah. To",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 1747.21,
+      "end": 1748.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "be clear, I have no empirical evidence for this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 1748.97,
+      "end": 1749.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This is just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 1749.33,
+      "end": 1751.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like, this is idle, like, dumb thought",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 1751.99,
+      "end": 1754.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "leadership, basically. So don't believe anything I just said. Idea that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 1754.59,
+      "end": 1755.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is not yet fully",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 1755.29,
+      "end": 1756.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "wrong. Right, exactly. That's fine.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 1757.29,
+      "end": 1759.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Good. So let's transition to the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 1759.09,
+      "end": 1760.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "final topic here and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 1760.03,
+      "end": 1767.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then some Q&A. So this trade. journal. It was funny because when I looked at it on the internet,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 1767.29,
+      "end": 1767.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I was like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 1767.81,
+      "end": 1769.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "there's this new trade cooperative journal.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 1769.71,
+      "end": 1770.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, yeah. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 1770.11,
+      "end": 1773.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I thought it was like a, maybe like a weird meme or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 1773.07,
+      "end": 1773.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like a vapor",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 1773.61,
+      "end": 1774.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "wave. I couldn't tell",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 1774.69,
+      "end": 1775.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what's about it. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 1775.97,
+      "end": 1777.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "tell us what this thing is.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 1777.93,
+      "end": 1778.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 1778.03,
+      "end": 1783.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's a really simple idea. One of my passions for a very long time has been collecting niche trade journals.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 1783.63,
+      "end": 1783.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 1784.47,
+      "end": 1821.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So the notion of the trade journal cooperative is it's a subscription service where once a quarter you pay $15. And I send you a trade journal from a randomly selected industry. But we're not random. I'd like do some research to figure it out. And so the first month was Elevator World, which is the trade journal for the vertical transportation industry. After that was American laundry news. And then fascinatingly, this most recent issue was American funeral director, which is mind bending because it's like, what do millennials do at funerals? And it's like an actual concern of the industry. So it's, yeah, it's actually been very eye-opening as a result. And so we've got this like little weird. subscription service operating.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 1821.86,
+      "end": 1826.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. When you think about the ones that you might produce in the future, or the ones you're going to ship.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 1826.9,
+      "end": 1827.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "How do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 1827.74,
+      "end": 1830.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you find them, I guess? And then one of those similar ones that you're interested in.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 1830.56,
+      "end": 1831.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, that's a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 1831.08,
+      "end": 1862.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "lot of research. I mean, I think one of them, which we're not going to do, but people should definitely look into, is the International Foundation for Arts Research, or IFAR. They are basically a non-profit that's responsible for tracking art theft and art forgery. And it is so good. Like, the journal is just like, You know, and it's most known in the art world for something they produce called Stolen Art Alert, which is a little index at the end of the magazine that lists all the prominent art that's been stolen in the last three months. And it's like some, if you liked Carmen San Diego as a kid, like, this is the journal",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 1862.72,
+      "end": 1863.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for you. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 1863.72,
+      "end": 1875.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "my master plan is ultimately I want to have enough subscribers that I can go to a convention center and be like, yo. sell me a season pass. You should be able to go on any given weekend to a convention center and just like see what's going on. That's where we're going.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 1875.99,
+      "end": 1878.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Could be potato world. Could be pasta. That's my grand",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 1878.37,
+      "end": 1880.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "vision once we see exponential growth on this thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 1880.85,
+      "end": 1880.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's all.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 1881.25,
+      "end": 1881.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I got it made.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 1882.15,
+      "end": 1886.65,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Nice. We will be excited for when that happens. Um, good. So I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 1886.65,
+      "end": 1887.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": ".org.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 1887.27,
+      "end": 1891.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So t-I-M-H-W-A-N-G dot org. And I'm also Tim Wong on Twitter.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 1893.23,
+      "end": 1894.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Well, thank you again so much for coming.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 1895.17,
+      "end": 1895.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Thanks",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 1895.35,
+      "end": 1897.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "for having me. Have a nice life.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 1897.55,
+      "end": 1897.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 249,
+    "withheld": 0,
+    "published": 249
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

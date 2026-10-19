@@ -1,0 +1,4806 @@
+{
+  "schema_version": 1,
+  "id": "podcast-ce9763894d272bba2799",
+  "title": "#6 Glen Weyl: Funding Civil Society with Liberal Radicalism",
+  "published_at": "2019-03-05T17:59:29Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/6-glen-weyl-funding-civil-society-with-liberal-radicalism",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/585391587-the-rhys-show-6-glen-weyl-funding-civil-society-with-liberal-radicalism.mp3",
+  "youtube_id": "QjTsols29Xo",
+  "youtube_url": "https://www.youtube.com/watch?v=QjTsols29Xo",
+  "audio_sha256": "6d9d22730a26d710b47e4cb6bbc9cc7a2873d34ddf6f0cf3bfaede36e43f7784",
+  "audio_duration_seconds": 1914.72325,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 5488,
+    "unknown_words": 283,
+    "unknown_words_fraction": 0.051567055393586005,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 10.77,
+      "end": 11.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 11.53,
+      "end": 38.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "everyone. My name is Reeslin Mark, and you're listening to Gray Mirror, a podcast from MIT Media Labs Digital Currency Initiative on Technology, and Ethics. And unlike something like Black Mirror, which just looks at the negative impacts of technology on society, we are Gray Mirror, so we look at the positive and negative impacts of technology on society. And please, if you have any feedback, reach out on Twitter. And if you like the show, give us a five-star rating on your favorite podcast app. We really do appreciate it. Thanks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 42.83,
+      "end": 43.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 43.27,
+      "end": 52.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "today I interview Glenn Weil, who is the author of Radical Markets. He's a principal researcher at Microsoft and a visiting scholar at Princeton University. And Glenn, I think, is relatively unique because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 52.75,
+      "end": 53.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 53.71,
+      "end": 150.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "think there are lots of folks who kind of understand exactly, or who I think understand what's happening in our macro systemic moment right now. But... Oftentimes those folks don't have good solutions to it. I think Glenn has a deeply solution-oriented mindset, and he's defining solutions that are multidimensional, emergent, used economic mechanisms, etc. It's cool. So I think I'm relatively bullish on Glenn's ideas. I think... to kind of explain them before we go into them, I think that the first key here is that he's really aware of the tech society loop where you think about how much tech has progressed in the last, you know, however many years, lots of tech innovation. And he says, like, look, we need social innovation. We need society to respond to that technology and hopefully to build a process such that society is better at keeping up with quicker tech innovation. So social innovation can happen quicker and quicker. So that's one piece. And given that tech society loop and social innovation, kind of social innovation that he's looking for is what he calls civil society, which is this idea that there's a third sector, you have government, you have corporations, and you have this third sector of like, you know, not government, not corporations, but universities and newspapers and nonprofits and those kind of bottom up emergent things, labor unions, whatever. And I think that this term civil society is actually pretty crucial. And it's cool to see Glenn kind of touch on some of the ideas that we've talked about before in the podcast, but with kind of more defined or more academic terms like civil society. We need more civil society now because, and I put in the terms of institutional co-evolution, where we have the internet, we have this explosion of new institutions",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 150.04,
+      "end": 157.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "like internet platforms, cool games on Facebook, whatever, and also meme-based movements, Black Lives Matter, Maga, whatever. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 157.46,
+      "end": 158.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 158.5,
+      "end": 211.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "those things start to happen, we actually want something like civil society in this time of kind of, macro institutional co-evolution and change, we want civil society, this third sector, to kind of out-compete and to start co-evolve for more institutional power here. So thinking about how this civil society is funded is a more difficult question. This is because governments have a very clear system here with taxation and corporations have a very clear system here with return on investment and profit. And I think that Glenn's way to fund civil societies through an economic mechanism called liberal radicalism, which is essentially a matching mechanism. It says, hey, if you give to something, then the public, then other, then a, it will be matched. Your giving will be matched at a relatively aggressive degree. So that idea, it's kind of an economically optimal matching mechanism. And,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 212.44,
+      "end": 212.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Glenn",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 212.78,
+      "end": 266.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "imagines this future, which is one that I agree with, in which, you know, as he says, corporations and government fade away, and you have these bottom-up organizations with entrepreneurial values that are working for the public good rather than for private profit. And that idea, this third sector is saying, hey, we have our tech society loop. We want to. We need more social innovation. That social innovation comes through civil society, this third sector, and that it's funded through this economic mechanism of liberal radicalism. That's a key idea. So for all of you listening to the episode and thinking in general, how do you think something like the third sector and something like civil society, how will it co-evolve with and possibly outcompete things like the state or corporations or other kinds of institutions? So that's, I can think, a key. the key overview here. And I want to just say two other quick things before we dive into the episode. The first is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 267.0,
+      "end": 268.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 268.02,
+      "end": 291.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "liberal radicalism can be weaponized. And this is something that Glenn and I talk about a bit, where if you already have someone that's an institution that's good at coordinating, i.e. if the government is already coordinating lots of actions, then it can essentially use liberal radicalism to get a bunch of money from the public. So we need to be wary about how we use liberal radicalism and using it in such a way that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 292.4,
+      "end": 292.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "As",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 292.84,
+      "end": 326.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "it is remixed, it is not weaponized by people we don't want to weaponize it. And this is similar to this concept of I just read Evolution of Cooperation by Axelrod, which gives this four-step process for creating bottom-up coordination within any environment. It's actually a pretty crucial thing. But The thing that Axelrod says is, hey, watch out. Cooperation can be good, but it can also be used for bad, and that's what we call collusion. So this is similar to, like, remixing is good, but a negative remix is weaponization. Similar to, hey, cooperation is good, woo, but the negative cooperation is collusion, and we don't necessarily want that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 326.84,
+      "end": 327.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 327.24,
+      "end": 351.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "I think that this is just a reminder that... things that seem universally good, like coordinating or funding the public good with liberal radicalism or whatever, they can be weaponized. And so the question for you, dear listener, is what can or cannot be weaponized? What is safe to scale? Or, in other words, given infinite remixes or implementations of a given idea, do all of them have positive externalities? Cool. And then the final piece here is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 352.6,
+      "end": 352.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Glenn",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 352.92,
+      "end": 377.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "uses the term, kind of like how he uses civil society as a new term. He uses syncretic ideas as this new term. And he uses it from a similar vein as I use like modernism, postmodernism, and metamodernism, where you take lots of different perspectives and then create coherence among them, a coherent pluralism perspective. And this is, I think, a crucial mindset for our current world. And for me, for you as a listener, I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 377.52,
+      "end": 378.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 378.5,
+      "end": 423.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "you go through the world, think about, are people using like metamodernist or syncretic ideas? And if so, in my opinion, they're likely, there's high correlation with those ideas and like being linked to positive progress for the world. So think about where are the syncratic ideas, where can you find them, and how can you search them out? So that's that one final note is the radical exchange event that Glenn is hosting is March 22nd through 24th in Detroit. I'll be going. I think it's going to be a great combination of syncretic. ideas and people there. And there's discounted tickets for all kinds of different folks. So if you go to Radical X change, that's radical and then the letter X and then change.com or dot org or whatever, you'll be able to find it. So with that, I hope you enjoy today's episode with Glenn.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 433.19,
+      "end": 436.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Hello, everybody. You're listening to Gray Mirror. Glenn, thanks for being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 437.9,
+      "end": 438.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "My pleasure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 438.74,
+      "end": 440.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Yeah, because I had to chat. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 440.54,
+      "end": 441.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Glenn",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 441.08,
+      "end": 445.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "and I actually chatted at MIT recently, but the recording was kind of messed up. So this is kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 445.32,
+      "end": 445.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of... for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 445.9,
+      "end": 452.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "our listeners, kind of a one-click deeper on some of the concepts that Glenn and I were chatting about. But before we go deeper, Glenn, could you kind of give us a high-level overview on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 452.98,
+      "end": 453.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 453.6,
+      "end": 458.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "you currently see a society and where, you know, what your goals are given how you see the world?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 459.63,
+      "end": 460.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 460.35,
+      "end": 461.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so I think we're seeing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 461.85,
+      "end": 462.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 462.99,
+      "end": 465.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "pretty disturbing division",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 465.29,
+      "end": 466.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "politically",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 466.55,
+      "end": 468.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in the world",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 468.03,
+      "end": 469.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 469.35,
+      "end": 472.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the rise of a variety of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 472.09,
+      "end": 472.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "sort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 472.79,
+      "end": 478.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of ethno-nationalist or, very strongly statist groups",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 478.18,
+      "end": 480.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 480.08,
+      "end": 483.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the US, in Europe, etc., in reaction to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 483.9,
+      "end": 484.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 484.6,
+      "end": 487.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "extreme inequality and concentration of power",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 487.8,
+      "end": 488.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "within",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 488.52,
+      "end": 491.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a variety of parts of society. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 491.22,
+      "end": 492.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 492.08,
+      "end": 496.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think that those movements are reacting against some very real problems we face, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 496.64,
+      "end": 497.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 497.26,
+      "end": 498.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "would replace",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 498.02,
+      "end": 498.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 498.78,
+      "end": 502.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "form of concentration of power with a not very different form of concentration of power.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 503.36,
+      "end": 503.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 503.74,
+      "end": 507.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think what people are really looking for, and the only thing that can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 507.9,
+      "end": 508.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "really",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 508.64,
+      "end": 511.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "help us escape our current dilemmas, is a way to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 511.8,
+      "end": 513.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "create",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 513.6,
+      "end": 517.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a more genuinely democratic and responsive society.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 518.16,
+      "end": 518.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 518.74,
+      "end": 522.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we're trying to develop technologies and social ideas to enable that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 524.05,
+      "end": 524.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Nice,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 524.73,
+      "end": 525.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "got it. Yeah, so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 525.37,
+      "end": 525.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "essentially",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 525.97,
+      "end": 543.97,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we're in a time where there's a reaction to our status quo, but that reaction would just replace the status quo with something that is equally negative, perhaps, like these kind of hypernationalist status things, and you're thinking about other kind of more experimental ways or whatever to create both social and technological innovation to replace that. That makes sense.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 544.15,
+      "end": 544.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 544.29,
+      "end": 544.43,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 544.43,
+      "end": 544.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 544.77,
+      "end": 550.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we chatted a couple days ago, you said something that I thought was very true about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 550.29,
+      "end": 551.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 551.53,
+      "end": 556.63,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "now is a time of kind of terrifying possibility. And I think that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 556.63,
+      "end": 557.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that... Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 557.99,
+      "end": 558.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 558.83,
+      "end": 562.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Thucydides.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 562.76,
+      "end": 567.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "He said, in a time of terrible possibilities, the terrible is possible and everything is terribly possible.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 568.11,
+      "end": 568.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 568.65,
+      "end": 570.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I think I really resonate with that in the sense that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 571.03,
+      "end": 571.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 571.27,
+      "end": 571.95,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I think of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 571.95,
+      "end": 572.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 572.83,
+      "end": 587.63,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "this macro perspective as abundant fragility. When you think about the world as it exists today from a hyper macro perspective, we're becoming more abundant, but we're also becoming more fragile. I think what you're saying, I really agree with that, especially from a micro personal perspective, where it's like, hey, for individuals as we move through the world now, it's kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 587.63,
+      "end": 588.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 588.03,
+      "end": 591.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it's both very terrifying for us and be like, oh, God, like there's so much",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 591.35,
+      "end": 591.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 591.77,
+      "end": 593.71,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of intense stuff that seems to be happening. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 593.71,
+      "end": 594.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 594.07,
+      "end": 596.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "also. Depending if we don't get too kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 596.73,
+      "end": 597.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "wrapped",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 597.19,
+      "end": 598.13,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "up in the terrifyingness, we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 598.13,
+      "end": 598.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 598.81,
+      "end": 602.79,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "have a lot of agency. So tell me, how do you think individuals should respond",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 602.79,
+      "end": 603.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "given",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 603.37,
+      "end": 605.69,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "this kind of weird paradox of terrifying agents?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 605.83,
+      "end": 612.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Well, different individuals respond differently and they should, and we need diversity within society. But I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 612.19,
+      "end": 614.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 614.41,
+      "end": 615.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "feel called",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 615.43,
+      "end": 616.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 616.57,
+      "end": 619.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "try to bridge some of the divides that we have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 619.01,
+      "end": 619.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 619.57,
+      "end": 622.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "develop new models of social organization",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 622.25,
+      "end": 623.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 623.07,
+      "end": 629.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "can provide us with new. imaginations of legitimacy that can help stabilize",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 629.23,
+      "end": 630.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 630.97,
+      "end": 633.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "going on and bridge some of these divides and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 633.15,
+      "end": 634.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "offer",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 634.95,
+      "end": 639.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "us new ways of living in greater respect to each other.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 639.13,
+      "end": 639.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 639.73,
+      "end": 645.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think that in that project, I desperately need collaboration from a whole range of people, artists,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 647.27,
+      "end": 651.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "entrepreneurs, activists, thinkers who share that goal",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 651.49,
+      "end": 652.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 652.19,
+      "end": 654.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sort of refounding our sense of legitimacy",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 654.82,
+      "end": 655.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 655.52,
+      "end": 659.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the same way that the modern welfare state did or the emergence of democracy did.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 660.32,
+      "end": 660.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 660.96,
+      "end": 662.3,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I think that's another interesting point where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 662.3,
+      "end": 662.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thinking",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 662.86,
+      "end": 663.24,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "about,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 663.44,
+      "end": 664.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 664.1,
+      "end": 675.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, as you say, the modern welfare state or the emergence of democracy. Those are both relatively new but also kind of relatively old kind of social innovations that were a response to. technology changing. And so I think that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 675.87,
+      "end": 676.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 676.23,
+      "end": 681.17,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, if we think of ourselves in this technology, society, society, change, society, change, technology,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 681.47,
+      "end": 681.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 681.47,
+      "end": 682.87,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think one of your key points here is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 682.87,
+      "end": 683.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "our",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 683.29,
+      "end": 693.41,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "social innovations haven't kept up with our technological innovations. I think, as you said in our last chat, you said, it's like evolving nuclear tech without evolving a nuclear non-proliferation treaty. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 693.41,
+      "end": 694.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "tell",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 694.23,
+      "end": 699.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "me about the kinds of social innovation that you're excited about pushing for here.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 699.57,
+      "end": 704.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Well, I think, you know, one of the fundamental things that you need for a decent society",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 704.57,
+      "end": 705.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 705.25,
+      "end": 713.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that almost every really successful society of the last, you know, well, maybe forever has had, is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 713.88,
+      "end": 714.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 714.4,
+      "end": 719.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "civil society, something, a third sector that is neither driven by the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 719.97,
+      "end": 720.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "need",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 720.83,
+      "end": 724.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "for profit that the capitalism is, nor",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 724.67,
+      "end": 725.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 725.45,
+      "end": 728.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it a single, constant, monolithic,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 731.27,
+      "end": 733.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "rigid state apparatus.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 734.7,
+      "end": 734.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 734.72,
+      "end": 735.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 736.11,
+      "end": 736.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 736.59,
+      "end": 737.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 737.27,
+      "end": 738.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of the work I've been doing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 738.39,
+      "end": 739.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 739.39,
+      "end": 740.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to enable the emergence of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 740.95,
+      "end": 741.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 741.87,
+      "end": 742.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sort of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 742.35,
+      "end": 743.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "truly",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 743.03,
+      "end": 746.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "flexible, adaptive, democratically accountable",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 746.03,
+      "end": 747.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "third",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 747.13,
+      "end": 747.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sector,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 748.37,
+      "end": 749.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 750.09,
+      "end": 753.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to ensure that it can flourish and compete",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 753.17,
+      "end": 754.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 754.23,
+      "end": 755.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "those other sources of power.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 755.83,
+      "end": 756.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 756.81,
+      "end": 767.34,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's interesting. I think that's a... And I think that that's a fascinating concept, which is that we had things like markets for a while. And we've also had things like the state and the nation state for a while. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 767.34,
+      "end": 767.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 767.82,
+      "end": 777.86,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "talking about this third sector. I mean, could you give an example of what this third sector could look like? Or is it just purely the co-evolving process between those two other sectors? Or how do you think about this third sector?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 777.9,
+      "end": 778.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 778.16,
+      "end": 781.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I mean, I think there's many historical examples. If you read Alexei de Tocqueville's account",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 781.84,
+      "end": 782.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 782.62,
+      "end": 790.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "American democracy, his emphasis is overwhelmingly on. these emergent community organizations",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 790.24,
+      "end": 790.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 790.86,
+      "end": 803.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "really made American democracy possible. And if you read accounts of what was strong about the period from the 1940s to the 1960s, there were many problems, huge racism, huge problems for women. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 803.2,
+      "end": 803.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 803.94,
+      "end": 805.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "strength, I think, was really",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 805.56,
+      "end": 806.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "unions,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 807.32,
+      "end": 816.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "universities, newspapers, these middle-sized organizations that were responsive, emergent, democratically accountable.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 816.83,
+      "end": 817.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 817.07,
+      "end": 818.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "competitive, and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 818.86,
+      "end": 821.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that sort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 821.54,
+      "end": 821.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 821.78,
+      "end": 822.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "both",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 822.22,
+      "end": 827.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "responded to new circumstances, but in a way that was accountable to the people that they benefited and served.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 827.84,
+      "end": 828.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 828.4,
+      "end": 829.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "those were all made possible",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 829.56,
+      "end": 830.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "by",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 830.34,
+      "end": 831.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "an interaction between",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 831.92,
+      "end": 832.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 833.92,
+      "end": 836.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "almost a competition between a state",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 836.24,
+      "end": 837.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 837.94,
+      "end": 839.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "market and the capitalism.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 839.68,
+      "end": 840.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 840.28,
+      "end": 844.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "those created these organizations that were then able to constrain both of them.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 844.4,
+      "end": 844.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 845.2,
+      "end": 846.4,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "yeah, that makes sense. I think that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 847.21,
+      "end": 847.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 847.73,
+      "end": 876.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "having that kind of tissue in between. It's cool to hear about these, these, that it has existed in the past in the form of, and I agree with you that some of these, the unions or things like newspapers or these kind of bottom-up local emergent things as I think the correct way to think about this. So specifically, I mean, you're trying to. to create one of these right now to some extent. Could you tell us more about this? So Glenn, for our listeners, he's written this book called Radical Markets, which says these like five different kinds of like essentially mechanism design that you can do to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 876.27,
+      "end": 876.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "more",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 876.91,
+      "end": 884.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "positively allocate public goods. I'm not sure if that's how you'd describe it. So there's that. Then there's also this radical exchange, which is a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 884.25,
+      "end": 884.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 884.77,
+      "end": 889.61,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of an event and a movement based around some of these ideas. So tell us more about what radical exchange is.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 890.38,
+      "end": 890.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 890.84,
+      "end": 907.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think that, you know, what we really realized is I, ideas are not enough. The ideas have to evolve. And in order to know whether the ideas work, they have to be tested. And in order to have people understand them, we need to learn how to communicate and we need to imagine them to see their flaws and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 907.09,
+      "end": 907.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 907.61,
+      "end": 908.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "these sorts of things. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 908.61,
+      "end": 909.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 909.29,
+      "end": 914.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a set of ideas is only the very first step. That needs to be combined with a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 914.93,
+      "end": 917.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "practice of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 917.11,
+      "end": 919.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "how we actually live and work together.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 920.03,
+      "end": 920.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 920.37,
+      "end": 922.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "allows us to continue generating these ideas",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 922.57,
+      "end": 923.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 923.11,
+      "end": 923.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to channel them",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 923.91,
+      "end": 924.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "into",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 924.57,
+      "end": 927.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "productive social change, partly embodied,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 927.93,
+      "end": 928.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "by",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 928.17,
+      "end": 932.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the way, though that practice of getting it out there is itself lived.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 933.01,
+      "end": 933.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 933.65,
+      "end": 941.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "radical exchanges in attempt to do that to bring together academics, entrepreneurs, artists, activists, to all interact",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 941.59,
+      "end": 943.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "both",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 943.45,
+      "end": 947.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "according to these types of principles, but also to help their broad understanding.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 949.48,
+      "end": 950.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "broader understanding and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 950.9,
+      "end": 953.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "social",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 953.12,
+      "end": 957.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "movements to implement these changes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 958.72,
+      "end": 959.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 959.12,
+      "end": 968.48,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it, yes, it's the implementation of the ideas and then kind of an iteration process between ideas and implementation and the back and forth there. Do you think something that you've been chatting about a bunch is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 968.48,
+      "end": 969.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 969.08,
+      "end": 989.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "kind of desire for diversity here and that you need a lot of diversity of thought and a lot of diversity of experience or whatever in order to kind of push this stuff forward? And you also just wrote something recently on your blog about kind of defining the values of... of the values and foundations of this radical exchange movement. And in that piece, you have like a bunch of different,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 989.52,
+      "end": 989.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 989.74,
+      "end": 994.64,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "wasn't like, we are honest or whatever. It's like all these different tensions of this and this and this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 994.72,
+      "end": 995.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "How",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 995.1,
+      "end": 1004.66,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "do you think about making something that's coherent given this kind of diverse perspectives or this kind of plural perspective that you seem to bring?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 1004.94,
+      "end": 1005.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 1005.52,
+      "end": 1006.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 1006.16,
+      "end": 1007.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 1007.67,
+      "end": 1013.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "power of new and fundamentally syncretic ideas like these these ideas combine",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 1013.01,
+      "end": 1014.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "aspects",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 1014.15,
+      "end": 1016.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of socialism and libertarianism and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 1016.53,
+      "end": 1017.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 1017.53,
+      "end": 1018.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "forth. And in fact, I think they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 1018.87,
+      "end": 1019.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "more",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 1019.67,
+      "end": 1034.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "fully deliver on the values of each side than this traditional positions do. So I think sometimes by, you know, going outside of the standard framework, you actually find that you're able to deliver on what both sides want",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 1034.29,
+      "end": 1034.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "more",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 1034.83,
+      "end": 1036.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "completely than either side can.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 1037.69,
+      "end": 1038.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 1038.33,
+      "end": 1041.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so I don't view this so much as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 1041.21,
+      "end": 1042.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "compromising",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 1042.89,
+      "end": 1052.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "between these different tensions, but rather seeing that each has an element of the truth, but that element of the truth can only be fully expressed",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 1052.45,
+      "end": 1053.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 1053.07,
+      "end": 1053.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "combined",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 1053.67,
+      "end": 1055.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 1055.37,
+      "end": 1056.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "insights from the other.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 1057.39,
+      "end": 1057.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 1057.79,
+      "end": 1058.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I think that makes sense. I guess",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 1058.73,
+      "end": 1059.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 1059.03,
+      "end": 1080.01,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "just want to ask kind of like, I guess personally, I know that for you, sometimes people see you and depending on where they have a positive view or a negative view of you, they might see you and be like, oh, there's Glenn. He's like a cryptocurrency person who's super into cryptocurrency, especially Ethereum. Or they might see you and be like, there's Glenn. He's an economist. He's like a market world person. How do you try to...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 1080.01,
+      "end": 1081.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well, you're just expressing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 1081.01,
+      "end": 1084.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what lefties might say. I'm just as frequently...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 1086.7,
+      "end": 1087.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 1087.18,
+      "end": 1092.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "opposite. So I get a lot of communism. I get a lot of, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 1094.85,
+      "end": 1094.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 1094.85,
+      "end": 1096.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "market",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 1096.35,
+      "end": 1099.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "design is totalitarian. I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 1099.41,
+      "end": 1099.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "get,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 1100.21,
+      "end": 1101.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I get all sorts of things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 1102.25,
+      "end": 1102.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And how do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 1102.53,
+      "end": 1108.31,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you personally kind of try to, I guess, like work through those or deal with those",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 1108.31,
+      "end": 1108.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 1108.89,
+      "end": 1109.09,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 1109.09,
+      "end": 1109.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are... Well, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 1109.77,
+      "end": 1113.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I like engaging with almost anyone who's willing to engage with me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 1113.69,
+      "end": 1114.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 1114.21,
+      "end": 1118.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I write, have written... In response to many of those things, very",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 1118.87,
+      "end": 1122.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "long",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 1122.17,
+      "end": 1131.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "pieces that are entitled, why I'm not a capitalist, why I'm not a nationalist, et cetera, which basically describe",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 1131.75,
+      "end": 1132.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "sort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 1133.14,
+      "end": 1135.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of my responses to those sets of worldviews.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 1136.06,
+      "end": 1159.76,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah, that makes sense. One final piece here on radical exchange and kind of how you're viewing the movement. We were chatting recently about... this concept of seeing like a state and how this is a book by James C. Scott where the state kind of views things as an optimization problem and it thinks in a top-down way and it kind of ignores some of like the underlying organic local like emergent behavior there. And then you were also thinking, okay, like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 1159.76,
+      "end": 1160.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 1160.14,
+      "end": 1167.48,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "there's something like Facebook which sees like a platform and it has its like optimization functions and needs to get ROI and it has attention capital or it has like the attention economy base behind it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 1167.68,
+      "end": 1168.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 1168.0,
+      "end": 1178.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "when we were chatting about what is your movement and you said it was. perhaps something like seeing like civil society, or I might say it's something like seeing like a multi-scale human organism.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 1178.5,
+      "end": 1179.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Tell",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 1179.06,
+      "end": 1187.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "me how you're thinking about how you think people and how you are kind of imagining people should view the world that lens.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 1187.26,
+      "end": 1195.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, I mean, James Scott says he sees like an anarchist. And I don't quite like that word mostly because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 1195.34,
+      "end": 1195.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 1195.92,
+      "end": 1199.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think it overstates how much we have a state right now.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 1201.22,
+      "end": 1201.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 1201.9,
+      "end": 1202.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "even",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 1202.58,
+      "end": 1204.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "saying you're an anarchist",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 1204.3,
+      "end": 1204.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 1204.7,
+      "end": 1211.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a little bit like saying you're an atheist. Like there is one notion of God that you don't believe in. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 1211.2,
+      "end": 1211.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 1211.94,
+      "end": 1212.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "me, like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 1213.27,
+      "end": 1214.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "any",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 1214.35,
+      "end": 1215.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "conception like that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 1215.53,
+      "end": 1216.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 1216.15,
+      "end": 1218.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to, is privileging",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 1218.89,
+      "end": 1219.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "sort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 1219.47,
+      "end": 1220.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 1220.21,
+      "end": 1221.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "viewpoint",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 1221.57,
+      "end": 1222.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "too much. Like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 1222.83,
+      "end": 1223.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 1223.35,
+      "end": 1227.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "actually, like the state is not really a thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 1227.99,
+      "end": 1228.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 1228.47,
+      "end": 1233.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, the U.S. government is some organization that's made up of all these different things, and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 1233.47,
+      "end": 1234.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "actually",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 1234.15,
+      "end": 1239.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "power is quite divided within it. And, you know, the Norwegian state",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 1239.4,
+      "end": 1240.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "rules",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 1240.52,
+      "end": 1246.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "over 5 million people, right? And people could easily move out there to another Scandinavian country. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 1246.36,
+      "end": 1246.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 1246.82,
+      "end": 1250.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "reality, we have all these different organizations that have different degrees of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 1250.68,
+      "end": 1252.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "power. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 1252.54,
+      "end": 1255.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what we need to do is recognize that in our formal institutions",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 1255.78,
+      "end": 1256.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "by",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 1256.72,
+      "end": 1266.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "actually allowing for allegiance to those variety of different organizations that make up our identity",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 1266.19,
+      "end": 1267.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 1267.03,
+      "end": 1268.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "recognizing those and empowering them",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 1268.97,
+      "end": 1269.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 1269.53,
+      "end": 1270.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that will actually create",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 1270.77,
+      "end": 1271.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 1271.33,
+      "end": 1274.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "balance. between the way we actually live",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 1274.47,
+      "end": 1274.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 1274.89,
+      "end": 1276.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the way we imagine ourselves.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 1276.27,
+      "end": 1276.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 1276.91,
+      "end": 1281.59,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and I also like what you said about, like, something like anarchy or, like, atheism is kind of just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 1281.59,
+      "end": 1282.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 1282.05,
+      "end": 1286.23,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "negative of, like, being not something. And that kind of doesn't have the right vibe to it either.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 1286.81,
+      "end": 1287.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 1287.29,
+      "end": 1288.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "let's transition now to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 1288.35,
+      "end": 1288.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 1288.91,
+      "end": 1292.77,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "final piece, or to a second piece here about liberal radicalism, which is this paper",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 1292.77,
+      "end": 1293.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 1293.39,
+      "end": 1308.62,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you and Zoe Herzig and Vitalik Boudron wrote, which is this great way to, a great allocation mechanism for public goods. just explain, without going too deep into the math, the kind of underlying principles behind liberal radicalism and what's trying to solve?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 1308.96,
+      "end": 1309.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 1310.0,
+      "end": 1312.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "absolutely. So liberal radicalism,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 1313.16,
+      "end": 1313.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 1313.34,
+      "end": 1315.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "can think of as an extension",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 1315.48,
+      "end": 1316.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 1316.38,
+      "end": 1318.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "matching funds, which are a familiar way",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 1318.88,
+      "end": 1319.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 1319.7,
+      "end": 1329.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "providing public goods. So, for example, if you contribute to NPR, or if you contribute to many other organizations, you often",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 1330.18,
+      "end": 1330.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "your",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 1330.48,
+      "end": 1332.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "contributions will be matched by",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 1332.36,
+      "end": 1332.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 1332.78,
+      "end": 1343.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "government or by some philanthropist or something like that. And that's a way, basically, of on the one hand, recognizing that people don't have an incentive to contribute as much as would be desirable",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 1343.42,
+      "end": 1344.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 1344.24,
+      "end": 1349.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "public goods that benefit many people, but on the other hand, allowing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 338,
+      "start": 1349.62,
+      "end": 1350.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 339,
+      "start": 1350.44,
+      "end": 1353.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "who might know the most about the value to express their opinions.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 340,
+      "start": 1355.33,
+      "end": 1358.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "One basic principle that I think most people would agree with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 341,
+      "start": 1358.87,
+      "end": 1359.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 342,
+      "start": 1359.37,
+      "end": 1362.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "matching funds is that you should match small contributions more,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 343,
+      "start": 1362.31,
+      "end": 1362.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 344,
+      "start": 1362.87,
+      "end": 1368.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you should match things that get multiple contributions more than things where there's like one person who's doing all the contributions.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 345,
+      "start": 1369.75,
+      "end": 1370.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 346,
+      "start": 1370.23,
+      "end": 1371.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "problem is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 347,
+      "start": 1371.15,
+      "end": 1373.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that exactly",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 348,
+      "start": 1373.71,
+      "end": 1381.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "how should you do that? So like in New York City, if you give up to $100 and there are a thousand other contributors, your contribution gets matched six for one.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 349,
+      "start": 1382.09,
+      "end": 1382.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 350,
+      "start": 1382.49,
+      "end": 1390.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "why six for one? Why just up to $100? These are pretty arbitrary distinctions. So the real",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 351,
+      "start": 1390.5,
+      "end": 1393.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "idea",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 352,
+      "start": 1393.44,
+      "end": 1396.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "here is to design a system",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 353,
+      "start": 1396.24,
+      "end": 1397.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 354,
+      "start": 1397.06,
+      "end": 1398.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is actually sort of optimally",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 355,
+      "start": 1398.76,
+      "end": 1399.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "giving",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 356,
+      "start": 1399.32,
+      "end": 1400.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "people an incentive",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 357,
+      "start": 1400.16,
+      "end": 1400.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 358,
+      "start": 1400.78,
+      "end": 1401.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "take into account",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 359,
+      "start": 1401.78,
+      "end": 1402.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 360,
+      "start": 1402.22,
+      "end": 1402.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "benefits",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 361,
+      "start": 1402.82,
+      "end": 1403.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 362,
+      "start": 1403.88,
+      "end": 1406.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "derived when they contribute for everybody else.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 363,
+      "start": 1406.88,
+      "end": 1407.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 364,
+      "start": 1407.62,
+      "end": 1411.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that is precisely what liberal radicalism does.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 365,
+      "start": 1411.83,
+      "end": 1413.79,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Great. Yeah, that makes sense. I think. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 366,
+      "start": 1413.79,
+      "end": 1414.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 367,
+      "start": 1414.55,
+      "end": 1436.19,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "super agree with you're just like, hey. If you have this matching program, you want this matching program to match small donations, it's not big, and you want to match lots of donations rather than just a couple, because if it's like it's a big donation from just me, it's like, oh, we probably shouldn't have the state match that or whatever. That's just like Reese's Pet Project. And then as you say, where you actually draw that line, this is where the economic mechanism comes into play. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 368,
+      "start": 1436.19,
+      "end": 1436.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 369,
+      "start": 1436.71,
+      "end": 1440.81,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think that there's, when you think about this, I think you and I are kind of aligned in the sense that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 370,
+      "start": 1440.81,
+      "end": 1441.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 371,
+      "start": 1441.25,
+      "end": 1449.76,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "can see this. matching mechanisms start to provide a lot of the public goods, or start to provide some public goods in kind of a crazy way",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 372,
+      "start": 1449.76,
+      "end": 1450.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 373,
+      "start": 1450.16,
+      "end": 1461.84,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you start to match things in this kind of economically optimal way. How do you think about, I guess, if you imagine the future, maybe it's five years from now, maybe it's 25 years from now, of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 374,
+      "start": 1461.84,
+      "end": 1462.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 375,
+      "start": 1462.52,
+      "end": 1467.34,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "using liberal radicalism to match public goods, what does that world kind of look like?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 376,
+      "start": 1467.8,
+      "end": 1468.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 377,
+      "start": 1468.36,
+      "end": 1480.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I imagine it's one where corporations and government sort of fade away. And instead, most of the things that we consume are provided by organizations that are built around the principle",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 378,
+      "start": 1480.2,
+      "end": 1481.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 379,
+      "start": 1481.0,
+      "end": 1487.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sort of providing some public good to the people who participate in them. And these",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 380,
+      "start": 1487.08,
+      "end": 1488.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "organizations",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 381,
+      "start": 1488.36,
+      "end": 1492.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "are sort of constantly evolving as society changes and as technology adapts.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 382,
+      "start": 1493.42,
+      "end": 1494.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 383,
+      "start": 1494.1,
+      "end": 1498.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they are democratically responsive to those who they deliver value to.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 384,
+      "start": 1498.7,
+      "end": 1499.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "while",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 385,
+      "start": 1499.18,
+      "end": 1500.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "at the same time emerging",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 386,
+      "start": 1500.98,
+      "end": 1501.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 387,
+      "start": 1501.82,
+      "end": 1503.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "an entrepreneurial organization would",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 388,
+      "start": 1503.72,
+      "end": 1505.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 389,
+      "start": 1505.1,
+      "end": 1507.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "response to changing social needs and values.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 390,
+      "start": 1508.74,
+      "end": 1509.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 391,
+      "start": 1509.22,
+      "end": 1513.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "everyone would be part of many of these. I would call this polypolitonism because rather than",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 392,
+      "start": 1513.76,
+      "end": 1514.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "being",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 393,
+      "start": 1514.26,
+      "end": 1518.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "part of just one government or something like that, you would be a citizen of all of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 394,
+      "start": 1518.1,
+      "end": 1518.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "these things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 395,
+      "start": 1519.12,
+      "end": 1523.6,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And what would you name if we have like the state or we have like corporations now?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 396,
+      "start": 1523.6,
+      "end": 1524.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "What",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 397,
+      "start": 1524.02,
+      "end": 1526.48,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "would you, what would be the name for one of these like emergent?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 398,
+      "start": 1526.68,
+      "end": 1526.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 399,
+      "start": 1526.9,
+      "end": 1530.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think the easiest name now would be civil society, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 400,
+      "start": 1530.06,
+      "end": 1530.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 401,
+      "start": 1530.38,
+      "end": 1534.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "don't think that really captures how powerful and diverse and pervasive it would be in this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 402,
+      "start": 1534.8,
+      "end": 1535.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "world. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 403,
+      "start": 1535.16,
+      "end": 1541.36,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and I would also want a name for like an individual, like there's the, I think a civil society could be a good macro name for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 404,
+      "start": 1541.36,
+      "end": 1541.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 405,
+      "start": 1541.62,
+      "end": 1548.16,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "but I'm thinking about like a specific name for one of these organizations. It's like a public good, an emergent bottom up public good providing organization.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 406,
+      "start": 1548.74,
+      "end": 1548.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 407,
+      "start": 1549.12,
+      "end": 1549.44,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I don't know",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 408,
+      "start": 1549.44,
+      "end": 1550.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the right name, but yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 409,
+      "start": 1551.08,
+      "end": 1551.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 410,
+      "start": 1551.24,
+      "end": 1552.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "know. I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 411,
+      "start": 1552.1,
+      "end": 1553.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "don't know. I don't know. Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 412,
+      "start": 1555.32,
+      "end": 1561.28,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And one thing that we're chatting about is like, we'll see what happens here. But part of the worry is that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 413,
+      "start": 1561.54,
+      "end": 1561.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 414,
+      "start": 1562.1,
+      "end": 1579.28,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "there's starting to be some experiments run with this, and there are some cool ones within the Ethereum ecosystem that are happening now. One thing that we've chat about is how people might try to weaponize or kind of, you know, leverage this mechanism. Tell us about, like, the existing state and why you might be worried about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 415,
+      "start": 1579.28,
+      "end": 1579.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "existing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 416,
+      "start": 1579.9,
+      "end": 1581.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "power structures leveraging this mechanism.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 417,
+      "start": 1581.66,
+      "end": 1582.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 418,
+      "start": 1582.28,
+      "end": 1582.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 419,
+      "start": 1582.76,
+      "end": 1586.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think, you know, one problem with this mechanism is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 420,
+      "start": 1586.54,
+      "end": 1587.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 421,
+      "start": 1587.22,
+      "end": 1593.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "actually kind of works too well. If you're already cooperating, it can really turbocharge that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 422,
+      "start": 1593.96,
+      "end": 1595.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 423,
+      "start": 1595.24,
+      "end": 1601.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "allow a group, if they can get sort of solidarity with each other, to extract a lot of resources from the rest of society.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 424,
+      "start": 1601.6,
+      "end": 1602.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 425,
+      "start": 1602.1,
+      "end": 1613.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that sort of coordination needs to be discouraged as much as possible if you're going to use the full force of this mechanism. And so that's an important. thing to sort of deal with.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 426,
+      "start": 1614.1,
+      "end": 1618.8,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah, is the things that are already coordinating, i.e., something like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 427,
+      "start": 1618.8,
+      "end": 1619.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "these",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 428,
+      "start": 1619.68,
+      "end": 1627.54,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "organizations that currently provide public goods, if they start to leverage this as well, they could get a lot of resources. Another piece here that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 429,
+      "start": 1627.54,
+      "end": 1627.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 430,
+      "start": 1627.94,
+      "end": 1629.7,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "briefly touched on in our last conversation was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 431,
+      "start": 1629.7,
+      "end": 1630.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thinking",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 432,
+      "start": 1630.36,
+      "end": 1652.58,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "about, because one of the issues here is the ability for folks to collude, i.e. if I create a bunch of sibbles myself, or if I tell a bunch of my friends to get into this thing, then in... do a lot of small donations, then maybe we can put a lot of small donations to something that didn't actually deserve it, but it was just because I put up a bunch of bots or I convinced a bunch of my friends. Tell me how you're thinking about solving this with like this web of trust idea.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 433,
+      "start": 1653.04,
+      "end": 1653.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Well, so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 434,
+      "start": 1653.6,
+      "end": 1654.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 435,
+      "start": 1654.72,
+      "end": 1660.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "notion, and this is much more complicated than we have time to go into here, I think, but the notion is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 436,
+      "start": 1660.98,
+      "end": 1661.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 437,
+      "start": 1661.68,
+      "end": 1666.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "need an identity system. Currently, often you'll have a credential from like the U.S. government or Facebook.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 438,
+      "start": 1667.35,
+      "end": 1667.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 439,
+      "start": 1667.77,
+      "end": 1671.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we'd like one that's more based on a social network that actually shows",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 440,
+      "start": 1671.11,
+      "end": 1671.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 441,
+      "start": 1671.69,
+      "end": 1675.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it was that you gain trust in someone via some series of introductions.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 442,
+      "start": 1677.77,
+      "end": 1678.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 443,
+      "start": 1678.29,
+      "end": 1685.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that trust might be quantitative. You might only give certain amount of trust to certain people because you're afraid they might abuse it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 444,
+      "start": 1685.29,
+      "end": 1685.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 445,
+      "start": 1685.81,
+      "end": 1686.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "if there's a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 446,
+      "start": 1686.37,
+      "end": 1686.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "clique",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 447,
+      "start": 1686.95,
+      "end": 1687.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 448,
+      "start": 1687.49,
+      "end": 1688.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "who",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 449,
+      "start": 1688.05,
+      "end": 1690.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you all trust through one person,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 450,
+      "start": 1690.23,
+      "end": 1690.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 451,
+      "start": 1690.79,
+      "end": 1692.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "will limit",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 452,
+      "start": 1692.13,
+      "end": 1692.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 453,
+      "start": 1692.71,
+      "end": 1699.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "total amount of trust that comes through. and you might only allocate an amount of resources to a group",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 454,
+      "start": 1699.91,
+      "end": 1700.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "sort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 455,
+      "start": 1700.57,
+      "end": 1703.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of in proportion to the amount of trust you can give to them in total.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 456,
+      "start": 1703.97,
+      "end": 1704.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 457,
+      "start": 1704.53,
+      "end": 1705.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so groups that come",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 458,
+      "start": 1705.71,
+      "end": 1706.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 459,
+      "start": 1706.17,
+      "end": 1708.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you via many different routes you can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 460,
+      "start": 1708.45,
+      "end": 1709.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "give",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 461,
+      "start": 1709.25,
+      "end": 1713.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "more total value to, but ones that are all sort of like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 462,
+      "start": 1713.03,
+      "end": 1713.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "attached",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 463,
+      "start": 1713.77,
+      "end": 1718.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to the same choke point and therefore quite insular to each other and have homogeneous interests,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 464,
+      "start": 1718.63,
+      "end": 1719.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 465,
+      "start": 1719.07,
+      "end": 1721.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "might not allow such",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 466,
+      "start": 1721.25,
+      "end": 1723.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "trust. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 467,
+      "start": 1723.85,
+      "end": 1726.77,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that makes sense. Yes, thinking from kind of the node graph theory-based",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 468,
+      "start": 1726.77,
+      "end": 1727.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "perspective.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 469,
+      "start": 1727.63,
+      "end": 1728.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "It reminds me of some",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 470,
+      "start": 1728.35,
+      "end": 1728.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 471,
+      "start": 1728.87,
+      "end": 1731.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "some experiments in the crypto space about like circles UBI.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 472,
+      "start": 1731.63,
+      "end": 1731.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 473,
+      "start": 1731.71,
+      "end": 1737.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "also kind of scarily reminds me of something like the Chinese social credit system, but we don't need to go",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 474,
+      "start": 1737.25,
+      "end": 1737.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "too",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 475,
+      "start": 1737.49,
+      "end": 1742.81,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "deep into that now. So as a final thing here, Glenn, let's chat about. So I know that you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 476,
+      "start": 1742.81,
+      "end": 1743.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 477,
+      "start": 1743.79,
+      "end": 1753.23,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I are kind of more into the blockchain and crypto world from a kind of social perspective, kind of a cultural perspective. And I think you just have this cool perspective on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 478,
+      "start": 1753.23,
+      "end": 1754.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the aspect",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 479,
+      "start": 1754.93,
+      "end": 1765.19,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of it and the fact that it wrangles with social institutions in the sense that like our existing world as it has existed or our existing tech world is mostly just advertising an e-commerce base, i.e. Google, Amazon, Facebook, whatever.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 480,
+      "start": 1766.21,
+      "end": 1766.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Tell",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 481,
+      "start": 1766.65,
+      "end": 1770.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "me more about what you see in the blockchain and crypto world and how it's starting to,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 482,
+      "start": 1770.25,
+      "end": 1770.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 483,
+      "start": 1770.69,
+      "end": 1774.01,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, interact with and really wrangle with like our social fabric.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 484,
+      "start": 1774.47,
+      "end": 1774.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 485,
+      "start": 1774.95,
+      "end": 1780.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think what's cool about the blockchain world is it's based on the notion that data structures embed power structures,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 486,
+      "start": 1781.0,
+      "end": 1782.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 487,
+      "start": 1782.28,
+      "end": 1787.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that by changing data structures, we may be able to change power structures. And we think the direction in which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 488,
+      "start": 1787.74,
+      "end": 1788.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 489,
+      "start": 1788.42,
+      "end": 1790.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "are trying to change data structures is not necessarily",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 490,
+      "start": 1790.92,
+      "end": 1791.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 491,
+      "start": 1791.56,
+      "end": 1795.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "correct or very well thought out one. But I think people are open to hearing that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 492,
+      "start": 1795.94,
+      "end": 1796.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 493,
+      "start": 1796.2,
+      "end": 1802.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to changing those data structures, maybe more towards something like the system I was describing that's more based on a social network",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 494,
+      "start": 1802.14,
+      "end": 1802.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "rather",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 495,
+      "start": 1802.64,
+      "end": 1804.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "than a single open public ledger",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 496,
+      "start": 1804.84,
+      "end": 1805.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 497,
+      "start": 1805.32,
+      "end": 1809.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "everybody being anonymous on that ledger, which I think is problematic.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 498,
+      "start": 1810.86,
+      "end": 1811.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 499,
+      "start": 1811.12,
+      "end": 1813.2,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "as you say, yeah, it's one of the first times where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 500,
+      "start": 1813.2,
+      "end": 1813.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 501,
+      "start": 1813.74,
+      "end": 1816.56,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are really deeply thinking, okay, if we change data structures",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 502,
+      "start": 1816.56,
+      "end": 1816.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 503,
+      "start": 1816.98,
+      "end": 1822.58,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we change the incentive systems, then we can change some of our social structures. And that's just a powerful kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 504,
+      "start": 1822.58,
+      "end": 1823.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "new",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 505,
+      "start": 1823.2,
+      "end": 1823.86,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "way of thinking. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 506,
+      "start": 1823.86,
+      "end": 1824.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 507,
+      "start": 1824.28,
+      "end": 1832.98,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that, if you want to learn more about some of these things that Glenn is talking about, the bottom-up emergent social behavior, if you want to be part of this diverse",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 508,
+      "start": 1832.98,
+      "end": 1833.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "group",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 509,
+      "start": 1833.56,
+      "end": 1837.7,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of movement, this diverse movement that's trying to change the world for good, you can check out,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 510,
+      "start": 1838.34,
+      "end": 1838.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 511,
+      "start": 1838.56,
+      "end": 1838.74,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "guess.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 512,
+      "start": 1839.12,
+      "end": 1840.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Radical exchange.org.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 513,
+      "start": 1840.76,
+      "end": 1841.94,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah. Thank you. Exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 514,
+      "start": 1842.3,
+      "end": 1843.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And for students,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 515,
+      "start": 1844.42,
+      "end": 1849.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "underrepresented minorities, people from less developed countries, and people from outside the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 516,
+      "start": 1849.04,
+      "end": 1849.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "30",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 517,
+      "start": 1849.8,
+      "end": 1855.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "largest cities in the U.S. and Canada, we have some free tickets to offer. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 518,
+      "start": 1855.24,
+      "end": 1856.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 519,
+      "start": 1856.7,
+      "end": 1857.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "available as well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 520,
+      "start": 1857.68,
+      "end": 1857.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 521,
+      "start": 1857.86,
+      "end": 1862.72,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think it's going to be, I'm going to the event. It really is, I think that Glenn has done a great job of bringing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 522,
+      "start": 1862.72,
+      "end": 1863.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 523,
+      "start": 1863.38,
+      "end": 1887.56,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "diverse set of really, Both the awesome folks in the technology world who are thinking about the tech ethics piece like Tristan Harris, but also some folks who are thinking about from a media perspective like Boots Riley. It really does seem, and some of this like bottom up in Detroit vibe. It feels like it's going to be really a really great event. So I honestly would recommend it to my listeners. And Glenn, one final question here. How can people, besides Radical Exchange, could people like find you on Twitter?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 524,
+      "start": 1888.61,
+      "end": 1888.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yep,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 525,
+      "start": 1889.15,
+      "end": 1889.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "at Glenn Weil.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 526,
+      "start": 1890.19,
+      "end": 1893.95,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Okay, sweet. Well, thank you so much, Glenn, for coming on the show.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 527,
+      "start": 1894.07,
+      "end": 1894.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Great. Thanks a lot, Reese.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 528,
+    "withheld": 0,
+    "published": 528
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

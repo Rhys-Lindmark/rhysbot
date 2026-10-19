@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "id": "podcast-9915fc89893a5ee79841",
+  "title": "The power of language models",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=rUn23be1ptc",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "rUn23be1ptc",
+  "youtube_url": "https://www.youtube.com/watch?v=rUn23be1ptc",
+  "audio_sha256": "7c4bd40fcee472c7ab4ddd5a395b00b434122c22991608dcf9d8b4552482db78",
+  "audio_duration_seconds": 60.000375,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 121,
+    "unknown_words": 5,
+    "unknown_words_fraction": 0.04132231404958678,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 0.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 0.26,
+      "end": 12.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "it's still the interaction between people that makes us think better. It feels now that language models, they have all that information. They have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 12.48,
+      "end": 13.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "millions",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 13.82,
+      "end": 18.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "of people talking with one another. They have all these moments",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 18.04,
+      "end": 19.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 19.38,
+      "end": 25.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "people also learn. But they have a sheer unlimited number of those. So...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 25.24,
+      "end": 25.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "In",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 25.52,
+      "end": 34.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "that sense, you can say the way you think, in large parts, you learn it by talking. But if the way you learn by talking,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 36.14,
+      "end": 48.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "and LLMs kind of have that talking experience, maybe those two learning experiences are somewhat similar, and maybe a lot of our thought patterns are embodied in the way we talk.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 49.1,
+      "end": 49.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "In",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 49.68,
+      "end": 54.85,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "which case, an LLM can use that to... compressed speech more efficiently.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 11,
+    "withheld": 0,
+    "published": 11
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

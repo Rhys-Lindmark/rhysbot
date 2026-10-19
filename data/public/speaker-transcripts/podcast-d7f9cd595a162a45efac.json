@@ -1,0 +1,3573 @@
+{
+  "schema_version": 1,
+  "id": "podcast-d7f9cd595a162a45efac",
+  "title": "#1 Tadge Dryja, Digital Currency Initiative: uTreeXO and Bootstrapping Bitcoin Upgrades",
+  "published_at": "2018-12-20T20:08:44Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/1-tadge-dryja-digital-currency-initiative-utreexo-and-bootstrapping-bitcoin-upgrades",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/547883298-the-rhys-show-1-tadge-dryja-digital-currency-initiative-utreexo-and-bootstrapping-bitcoin-upgrades.mp3",
+  "youtube_id": "9bwZjMI8c7Q",
+  "youtube_url": "https://www.youtube.com/watch?v=9bwZjMI8c7Q",
+  "audio_sha256": "6f87e2d1a16de4e1c071b20758c7d2f1e13018b28bc58251ed2fed992a986e34",
+  "audio_duration_seconds": 3952.0653125,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 12933,
+    "unknown_words": 332,
+    "unknown_words_fraction": 0.02567076471043068,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 11.54,
+      "end": 12.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 12.26,
+      "end": 107.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everybody. My name is Reislin Mark and you're listening to another episode of Gray Mirror, a new podcast from MIT Media Lab's Digital Currency Initiative on technology, society, and ethics, where we look at both the positive and negative impacts of technology. And so in today's episode, I interviewed Taz Deraisha about UtreXO. which is a way to scale UTXO-based blockchains like Bitcoin with this interesting construction called an accumulator, which allows you to store this small set of proofs about your UTXOs rather than the whole UTXO set. And as a heads up, the second half of the episode, we discuss the UtreXO design. In the first half, we kind of discuss Tash's background and the current options for scaling Bitcoin. And just another quick note, today's episode gets relatively technical at the end. And at a macro level, our future episodes on the show, most, some of them are going to be technical like today's, but a lot of them are going to be more tech-ethics focused. So today's is more about the tech side and less about the society and the ethical side. And then let me just do three quick notes. before we dive into the episode. The first is, for me personally, the most fascinating piece about this U-TRIXO thing is it's an example of what I would call applied research, where it's designed to be adopted on the Bitcoin network, and so it has a bootstrap mechanism in place to gain adoption with this bridge node thing. And so when you're doing research, and when Tash is doing this research, he's not just thinking how... can we create this interesting new construction? He's saying, how can we create this new thing? That would actually help people. And in order to help people, it needs to be adopted. So we need to think about the bootstrap mechanism. So for an internet example,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 108.11,
+      "end": 156.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "when... There's a design to transfer from the internet protocol version 4 to internet protocol version 6 standard. And that standard, the new standard IPV6, the version 6, was formalized in 1998, but it's taken so long that 20 years later in 2018, only 25% of network traffic goes over IP the version 6 today. So that's kind of an example of what it means to upgrade these internet-enabled networks. And similarly with something like Bitcoin, your options are a soft fork or hard fork it. But this is really difficult, right? So Segwit took two years to get in there. And so UtriXO uses this mechanism that doesn't require a soft fork. It uses this bridge node thing. So you can kind of transfer the people who are operating in the old network. You can transfer the kind of UTXOs into proofs for this kind of new network that works off of the U3XO. So.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 157.48,
+      "end": 157.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 157.78,
+      "end": 182.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this mechanism has been used before with this thing called compact blocks, but I think these things are really fascinated, these new bottom-up peer-to-peer upgrade mechanisms that use these networks of bridge nodes or ways to relay information in a peer-to-peer way or an incentivized way in order to bootstrap a upgrade to a network. And just as a note, this is a similar mindset when we're thinking about something like scaling Ethereum where you're saying, hey, should we upgrade something crappy like to EVM?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 184.48,
+      "end": 209.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "on Ethereum itself, or should we start with a new protocol like DFINITY or Kadan or whatever, that uses Ewasom. So that kind of mindset is similar here. It's like if you want to, it would be easy to some extent to add something like U3XO if you want to just create a new coin, but because you're trying to add it into the Bitcoin network in a non-soft or hard fork way, you have to think about these mechanisms and adoption mechanisms. So that's one interesting point.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 210.12,
+      "end": 210.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 210.44,
+      "end": 220.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "second is... Tage emphasizes this, that privacy, security, and decentralization are based off these kind of like Black Swan style events. And what I mean by that is, it is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 220.57,
+      "end": 221.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 221.65,
+      "end": 310.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you're thinking and you're trying to convince somebody, you know, to have more privacy or security, they're like, it's hard to convince them, especially if nothing bad has happened by not having that issue. And so convincing folks against a possible issue instead of like a very clear thing that's going to happen, that is hard. And so this is this question of, You know, can you make something that minimizes the chances of a negative event? And it depends on how big that negative event is. If it's a super negative event, then you want to make sure you can dodge it. And so when you're dealing with something like Bitcoin, these events include lots and lots of money. So you definitely want to make sure you have the security and privacy to kind of dodge those kind of larger events, even if none of them have happened thus far. So that's the second point. And then the third point is... Tash and I talked about this in a bit in the show, but he also wanted me to reemphasize it, and I super agree that this design, this U3XO design is, it's crowd and it's community-based. There's been a lot of work on accumulators since 2012. There's exciting research being done at Stanford right now by Benedict Buns and Dan Bonnet and a couple other folks. And so, and that one has various pros and cons compared to Tash's design and these other designs. And so... As Tadge is going through this, and he's collaborating with those folks, he's collaborating with people at MIT, he's learning about stuff by going to scaling Bitcoin and getting critiques and criticisms and feedback on his design. And so there's this whole process that kind of goes into eventually coding something up or writing a paper, but it's really this very kind of crowd-based system. And so I think that that is, it's cool. It's cool",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 310.23,
+      "end": 319.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "to see academia use this kind of standing on the shoulders of many giants kind of mindset. So with that, I hope you enjoy today's episode with Tash.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 326.07,
+      "end": 350.97,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello, everybody. My name is Rees-Lenmark, and welcome to another episode of Gray-Mir, a podcast from MIT Media Lab's Digital Currency Initiative on technology, society, and ethics. And today, I'm super excited to welcome Taz Dreisha to the show. Tash works as a research scientist. at the Digital Currency Initiative with me, so bias there. And he co-wrote the Lightning Network paper and does a variety of other cryptocurrency research. Tash, thanks for being out and shown. Welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 351.15,
+      "end": 351.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, thanks. This is fun.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 352.19,
+      "end": 376.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, excited to be here. And so as a quick note for our listeners, the stuff that we're going to dive into today is mostly around some of Tash's new research on this thing called U-TRIXO. Before we do that, we're going to take a step back and just ask Tash more generally about why. Tash, tell us, why are you interested in like blockchain and cryptocurrency technology and how do you see it possibly positively or negatively impacting society?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 377.77,
+      "end": 378.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 378.17,
+      "end": 449.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "guess. To be honest, a lot of it's inertia. I don't really think about this every day. I was very excited about it in 2011, started working on, you know, and at this point, mostly, you know, the way people do is, well, now I have a job working on it. And I don't really step back and think, what makes me excited about this? But if I have to step back and think about it, it is still really exciting, maybe for different reasons than when I started. At this point, a lot of the... the excitement is there are these really cool technical problems. And it's really fun to build these solutions to them where, okay, we're faced with, in Bitcoin, you're faced with some of the hardest problems of, okay, you're in a network where every node hates every other node and they're completely distrustful. And there's all these attacks and you're very resource constrained and it has to run on crummy computers. And yet you want to make this global payment system that can send transactions. So it's a tough sell. And you don't have the kind of resources you do with other problems. So you have to make really efficient decisions and really efficient software. So that's kind of a cool thing to work on. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 449.48,
+      "end": 451.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 451.22,
+      "end": 481.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "some of the motivation. Initially, a lot of it was... This was fairly recently after like the 2008-9 financial crisis. I hadn't been interested in finance, but I'd read a bunch during that period and sort of was pretty skeptical of these, you know, how this stuff worked. And saw Bitcoin. I was like, oh, this is really cool. This is sort of money that you don't need all this, these existing institutions. Also, it reminded me of things like Nutella, G&U.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 481.62,
+      "end": 482.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 482.68,
+      "end": 483.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "not Nutella",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 483.04,
+      "end": 484.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the food. No, not the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 484.34,
+      "end": 485.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "network from like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 485.38,
+      "end": 486.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "early,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 486.4,
+      "end": 497.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think it was the guy who made Winamp Justin Frankl or someone, and he made this thing called Nutella. And he was employed by AOL at the time, which was like had been bought by Time Warner.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 499.5,
+      "end": 511.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And Nutella was just before BitTorrent, but same idea where it was, you know, in practice it was going to be used to download MP3s. And that's probably what I first did when I downloaded it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 512.96,
+      "end": 528.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But Napster had been shut down and Nutella was this sort of decentralized mesh network kind of thing. It had very poor scalability. But I think it still exists in some form. And what I liked about is like, wait, how do you kill this? You know, it's decentralized. Cool.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 530.46,
+      "end": 570.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And then with BitTorrent, it's not quite as decentralized and that you're sort of relying on these tracking servers, which end up getting shut down and the search mechanism doesn't exist with BitTorrent. So BitTorin actually trades off some of that decentralization, whereas Natella didn't. But Natella had horrible scalability problems, which we see with Bitcoin as well. So when I first saw Bitcoin, it's like, wow, this is interesting. There's all these incentives. And... you know, how are you going to kill this? It's really decentralized, and I can see the motivation to keep it running. So I was really interested in it initially because of those ideas. As time's gone on, you know, yeah, everyone sort of ends up a little bit jaded. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 570.34,
+      "end": 570.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you see",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 570.74,
+      "end": 605.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like, oh, man, it's not actually a crypto utopia. You end up with like... Rich guy's getting richer because they were like, oh, I've got a couple million lying around. I'll buy a million dollars worth of Bitcoin. Oh, cool. Now it's 100 million worth. It's like, well, I bought 10 bucks worth of Bitcoin and now it's worth $1,000. Okay. So I'm not like it's going to change the world and make everyone happy. And I never really thought that. And seeing years of experience, like, no, yeah, no, that doesn't seem like that's what's going to happen. So, but it's still really cool from an engineering perspective.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 605.53,
+      "end": 624.05,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I think that's interesting. Well, a couple things that are interesting there. One is, I think re-evaluating your why over time is interesting and saying, taking a step back. I'm like, why am I interested in this stuff still? Because sometimes there might, there's likely to be a time in the future for both of us where we look at some of the work that we're doing now and say, you know what I'm not into it anymore, you know, I'm not into it anymore. Well, that's at the same time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 624.27,
+      "end": 624.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But it changed.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 624.93,
+      "end": 632.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Like maybe I'm into this aspect now. It's like, well, UtreXO, the thing I'm working in now. I think this will help more than maybe the things I was interested in five years",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 632.01,
+      "end": 632.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "ago. Totally,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 632.81,
+      "end": 665.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "totally. I think it's the surprising nature, though, of... of these decentralized, you know, Bitcoin and other decentralized like cryptocurrency networks is that they're weirdly anti-fragile, both in their incentive and monetary abilities to stay alive and to stay afloat and in their, it's such an intellectual gold mine for people who are into computer science, into economics, into complex systems, into law. And so it's like because of those things, even if you're not into it for the monetary side, you might be into it from an intellectual perspective and then maybe it's not intellectual for a point of time, it's like still surviving. So it's a weird, it's a weird system.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 665.84,
+      "end": 668.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Also, it is super sci-fi. Like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 668.5,
+      "end": 668.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 668.78,
+      "end": 694.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "hasn't been quite as crazy recently, but it's just, like, weird. And you end up, like, I don't know, meetings in Hong Kong, and there's, like, this consortium of, like, Chinese miners. And it's just like, this is weird. Like, I would have never gone to all these weird places and met all these weird people. And, like, you're at 20 Mission in San Francisco, and, like, the cops come in and drag some guy out. And you're like... I don't know what that was.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 694.93,
+      "end": 694.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 694.93,
+      "end": 709.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's, you know, I'm sort of a boring computer nerd and work on computers, but you get to see all this weird stuff. And so that's like kind of fun. It's like, you know, William Gibson, cyberpunk kind of like, yeah, this is kind of fun. Anyway.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 709.35,
+      "end": 709.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 709.45,
+      "end": 733.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "do you think, so it kind of taking that for a second, do you think kind of... If we think about our whys and why we're into it, thinking like from a more macro perspective now, do you think, how do you see, I mean, in general, it sounds like you're relatively measured and or skeptical about, like, you know, the crypto utopia or like its impact generally on the world. What do you see, though, in the next, you know, whether it's one year, whether it's 10 year, you can choose your time scope, how some of this stuff will, both the positive and or negative impacts.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 733.0,
+      "end": 733.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay. So.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 734.08,
+      "end": 744.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So I guess there's positive negative and then there's also the idea of, okay, what's the scale? How much impact is actually going to have? I think positive impacts are you could",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 744.2,
+      "end": 745.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "hopefully",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 745.82,
+      "end": 791.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "preserve a lot of privacy that seems to be getting rapidly eroded. And I use cash a lot and people started. At this point, it's sort of weird to go to restaurants and always pay with cash. But it's like, wait, this... You know, credit cards are convenient, but nobody ever sat down and really made the decision. Yeah, we're going to give all the data about everything we buy and do to these companies, and we're not even really sure who's got. I work on this full time. I don't know exactly how it works in terms of data. Does Visa itself get all the tracking information? Does the merchant, are there laws? Probably there's a bunch of laws about this. I don't know. It's not something that's very transparent. So I hope that privacy is certainly something. It seems like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 791.41,
+      "end": 792.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "getting",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 792.89,
+      "end": 807.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a lot of privacy isn't, doesn't seem like a revolutionary new idea. It's like, no, we're just sort of back to where it was 30 years ago when people carry around dollar bills and buy stuff. Nobody really knows the whole picture of what people are buying.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 807.42,
+      "end": 819.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And there's not a, the business model of the internet today is one of surveillance capitalism, which says, hey, it's really good if we learn more about you so that we can sell more ads to you or something of that variety. And this is kind of a counteract to that to some extent.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 819.28,
+      "end": 828.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, this isn't, this is, yeah, because the default seems to be because of all this technology, huge erosion of everyone's privacy without them really not noticing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 830.34,
+      "end": 839.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And so I don't think it's a, hey, we want to get to some, like, crypto world where no one knows anything. It's like, no, we're just trying to get back to where it was not very long ago.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 840.74,
+      "end": 841.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "What about on the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 841.52,
+      "end": 843.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "negative side? What do you think are some of the...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 843.24,
+      "end": 845.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So negative side, yeah, there's,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 845.78,
+      "end": 846.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I guess",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 846.38,
+      "end": 885.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "late 2018, a lot of people have probably lost a lot of money when they bought in when it was $15,000 or whatever yesterday or last year. And now it's lower. I'm not too worried about that because like, well, you know, this is a super volatile thing. And there's a lot of scams, a lot of ICOs kind of things. So that is, you know, kind of unfortunate. And it does impact the legit research as well because people probably are much more dismissive about this whole area now. But we've seen this a couple times, right? This happened in 2014. This happened before. So I'm not too worried about that aspect.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 885.51,
+      "end": 896.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think that's interesting because it's like the negative sides. It's something that like I think for you and I, we might not interact with that much because we weren't being sold these random like BitConnect style or whatever",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 896.55,
+      "end": 896.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "style.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 897.21,
+      "end": 901.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Like, you know, I see how it. And so we weren't. buying into them, or we just kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 901.27,
+      "end": 901.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "ignore them. Also, we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 901.73,
+      "end": 906.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know all about this stuff, so we're super quickly can be like, nah, come on, that's nonsense.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 906.41,
+      "end": 916.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Versus some people who are just like, essentially a variant on like predatory practices. We're just like, ooh, okay, we can claim these things to the world and then make a lot of money, and then the people, the bag holders or whatever",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 916.67,
+      "end": 917.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 917.19,
+      "end": 922.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "general populace. So, yeah, I agree. The technology gives us affordances to do bad things like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 922.79,
+      "end": 922.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 923.19,
+      "end": 975.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And then I guess you could. do crime kind of, it might. I think it's it doesn't yet. It's like the idea that, oh, this could help organized crime and evade capital controls and all these kinds of things. Yeah, I guess in theory, but like I don't really see, you know, there is some dark net markets. People are buying and selling drugs. It's not huge. And, you know, drug law. Like a lot of those things are like, eh, if people are buying weed, I don't really care. But, you know, there's bad things too. But it doesn't seem like that is the real. problem here a lot most of this is used for gambling most of it is small time people are like hey i there's all these rules about buying and selling stocks so if you don't have a ton of money you can't really day trade there's pattern day trader rules and stuff um they'll shut you down and this is a lot of times it's it's it's sort of like gambling um and so I don't have a huge moral issue with that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 975.9,
+      "end": 991.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And I think, yeah, and the other thing with the, a lot of these technologies that pop up, they pop up in places that are not in the realm or in the power of the status quo. And for something like these, you know, the Silk Road and these kind of dark net markets, it's like, hey, these are things that can exist outside of the realm of the status quo, outside of the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 991.76,
+      "end": 992.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "realm of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 992.06,
+      "end": 1014.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the law. And they just like, just like, bit torrenting those things back in the day and Kazah and Naps or whatever. And so they kind of start to pop up there. And then there's questions. There's, is the law morally justifiable or not morally justifiable? Something within the Ethereum ecosystem, there's a thing called spank chain. And it's a, it tries to help, you know, sex workers make more money with, and so it's like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 1014.96,
+      "end": 1014.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 1015.52,
+      "end": 1019.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that, I mean, because that's, I don't know, is it like actual prostitution or is it sort of, um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 1020.16,
+      "end": 1020.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that one's just,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 1020.9,
+      "end": 1021.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 1021.32,
+      "end": 1021.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that one's just like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 1022.04,
+      "end": 1048.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "yeah. And so pornography, like, so I, I don't know if people, like, I don't, I don't actually really know what people do with Bitcoin, right? I just sort of work on. But, uh, I have read a lot that, like, pornography, they have enormous problems with payments. And there was this, like, Operation Chokehold where people, sheriffs or some kind of government entity wanted and said, like, okay, visa mask or guard, stop providing payment services for pornographic sites. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 1048.32,
+      "end": 1049.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "whatever",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 1049.78,
+      "end": 1090.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "your views on pornography, but it's like, well, this stuff is legal, right? There's no law against it. And so you're sort of using this. weird thing where you're trying to kill them by cutting off their payment infrastructure. But it seems like, look, if you want to make it illegal, try to make it illegal. If people in certain communities say, like, no, we're not okay with this. All right, make a law. Now they can't do it anymore. But this is sort of this weird, okay, we're going around. We're not actually making law, but we're trying to talk to private companies, visa, a master card, whatever, and trying to cut them off this way. That feels... you know, like not a good thing. And so it feels like there should be ways to make payments that aren't just completely reliant on private entities. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 1090.39,
+      "end": 1091.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 1091.7,
+      "end": 1146.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "was what, you know, the government sort of printed cash and managed that for a long time. That's less relevant now that everything, all this commerce is happening on the internet. And you're not seeing the Federal Reserve, the Federal Reserve is not. implementing something like PayPal. They're not saying, hey, we've got this cash equivalent run by, you know, fed.gov or whatever, and sign up or you don't even have to sign up. It's just like, here's this coin. That would probably be wildly popular, but they're not doing it. Because, well, cash, it also seems at this point that if cash were like a new invention, governments would like not be okay with it at all. It's like, well, we don't know. People are going to buy drugs with it. People are going to like avoid taxes with it and like pay contractors to fix their roof and not pay taxes. Yep. People do that. And that's the cash economy. That's a big part of it. And. It seems like if that were a new thing, it would not. It has been grandfathered in.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 1146.62,
+      "end": 1146.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 1147.04,
+      "end": 1147.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 1147.66,
+      "end": 1148.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 1148.36,
+      "end": 1179.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, so, okay, so at a macro level, generally, your Y has changed over time, and you're generally, you don't believe in this macro crypto, you know, crazy utopia. But there are both positives and negatives that you see with the technology. Let's dive into, like, so on the show, just as I notice the listeners, sometimes, like in today's show, we're going to dive in into the technology relatively deeply. And so, yeah, Taj. Could you tell us just more about, I guess, before we talk about the U-tree-X-O itself and like accumulators more generally, could you tell us what is the problem that they're solving?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 1180.27,
+      "end": 1180.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 1181.21,
+      "end": 1247.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "yeah, so in general, scalability, right? So I mentioned Nutella, horrible scalability, that sort of crippling in Natala's case. They eventually tried to make these like master nodes. Bitcoin as well, the first comment that anyone ever wrote publicly. about Bitcoin was on this mailing list, and I forget the guy, Donald something. And he was like, sounds like a great idea, but I understand it, does not scale. And Satoshi replied, no, I think it'll scale. And Satoshi was very optimistic about this. I mean, it was his creation. It seems like he, he, she, it, whatever, never really commented this way. But looking through it, they did implement a block size cap a year or so after creating Bitcoin. And so it might have been that whoever created it eventually did sort of acknowledge like, huh, scalability is going to be a challenge with this. And it has been the entire time. And so there was this whole block size, debate, war, whatever, that seems to have died down because now there's sort of Bitcoin, the regular one, and now there's Bitcoin cash and stuff. But scalability is a big problem because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 1247.74,
+      "end": 1248.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 1248.98,
+      "end": 1312.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Bitcoin, every node has to validate every transaction. And there's ideas of how to maybe relax that, but... to really get this security in the default way it works is, I make a transaction, you have to verify it, even if it doesn't involve you, because you need to know the whole state of the system to make sure everything's okay. And so something like the Lightning Network, which I worked on a couple years ago, this is a way to sheet. It helps scalability by shielding some of that information from everyone, and that we can make a channel, we can update the balances in this channel without telling everyone else. So that segments it, so not everyone has to validate everything. UtriXO also works to that. So maybe you don't have to store everything, even though you do have to validate it. So there's all sorts of ways, schnor signatures, where, yeah, everyone still has to validate everything, but maybe we can compact. the things that need to be validated into smaller. So it's not as much work for everyone. So that's the big... issue with Bitcoin.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 1312.46,
+      "end": 1312.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, so if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 1312.84,
+      "end": 1314.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I think about any of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 1314.62,
+      "end": 1324.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "these systems. So if we think about something like, so there's a classic like number of transactions going through the network per second. When a lot of people say scalability, they're thinking about like that where it's like, oh, only",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 1324.86,
+      "end": 1326.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "10 transactions. That's a big part.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 1326.8,
+      "end": 1332.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And then the, but this sounds like it's different where it's like the size of the actual",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 1332.78,
+      "end": 1333.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "blockchain",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 1333.96,
+      "end": 1334.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "to some extent. You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 1334.76,
+      "end": 1335.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "know, the size of database.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 1336.24,
+      "end": 1338.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Well, yes, yes and no.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 1339.86,
+      "end": 1347.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "The number people throw around with Bitcoin, oh, it can only do seven transactions a second or only can do 10 or five or, you know, somewhere around there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 1349.24,
+      "end": 1359.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "That's not an inherent technological limit in that, yeah, you could increase the block size. You could just say, okay, we're going to go with 50 transactions a second.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 1361.02,
+      "end": 1361.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 1361.46,
+      "end": 1366.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there's, you know, and it's mainly this block size cap, which in Bitcoin now is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 1367.18,
+      "end": 1367.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 1367.58,
+      "end": 1386.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not even a, regular fixed number. Now it's still one megabyte for non-witness data, but now you've got this witness data. So it ends up being around two megabytes. But if you change that in any system, you can have way more transactions a second. The problem then becomes you can't keep up. You're going to need a data center to keep up if you have too many transactions per second.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 1388.43,
+      "end": 1388.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 1388.85,
+      "end": 1414.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "UtreXO or Lightning or Snore signatures. they do relax the requirements that could then potentially allow you to have more transactions per second. But those are sort of independent knobs where we say, okay, we're limiting it to 10 transactions a second so that everyone can keep up with the network on their regular laptops. And now we have reduced the requirements per transaction. So maybe now we can turn it up to 20 transactions a second.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 1416.63,
+      "end": 1422.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "That's how it would. So it does actually address that. not directly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 1422.46,
+      "end": 1422.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 1422.64,
+      "end": 1432.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "correct. So, yeah, there are two different knobs. It's the, essentially the block size knob of how many transactions per second could go through the network. And then there's these other knobs where you can kind of compact things or shield things or do whatever to say,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 1432.28,
+      "end": 1432.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "hey,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 1432.78,
+      "end": 1445.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "let's make it so that it is easier to keep up. Tell me more about when you're talking about keeping up. So let's say I have my little laptop at home. I'm trying to run like a Bitcoin Core full node or whatever. I'm trying my best to keep up. Why would it be hard to keep up?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 1445.8,
+      "end": 1468.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So if, so there's the... So there's keep up and catch up, I guess. There's the two different things. So when you first start, you need to catch up because you start with nothing. And you, you know, Bitcoin's been around almost 10 years now. And you start out with the 2009 Genesis block hash. And you connect to nodes and say, hey, what happened? You know, I just got here. Tell me what's happened for the last 10 years.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 1469.12,
+      "end": 1469.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 1469.48,
+      "end": 1478.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they tell you and they say, okay, well, the first block was this and the second block was this. And you build up the blockchain. validate every transaction that's ever happened. And that's about 200 gigabytes right now.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 1479.58,
+      "end": 1486.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Same in all, you know, Ethereum, all these other systems where you start with almost nothing and they have to sync up.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 1486.82,
+      "end": 1487.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "When you talk",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 1487.16,
+      "end": 1490.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "about validate, you mean like, what does that process look like?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 1490.22,
+      "end": 1493.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So. You know, there's these transactions that have inputs and outputs.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 1493.8,
+      "end": 1493.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 1493.82,
+      "end": 1497.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "say, okay, here's this transaction. It's spending these inputs",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 1497.12,
+      "end": 1497.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 1497.68,
+      "end": 1509.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "deleting them, creating these new outputs in my database. I verify the signature. I verify that the coins that are supposed to be moved in this transaction actually existed. So I verify all the rules of the system are being adhered to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 1509.46,
+      "end": 1509.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1509.96,
+      "end": 1512.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then modify my computer's database.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1514.28,
+      "end": 1536.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "This... takes quite a while. And this is a lot of downloading, a lot of CPU work, a lot of hard disk work. So there's catching up, and then there's keeping up. And keeping up is generally easier. So the keeping up is in Bitcoin every 10 minutes or so. It's random, but on average 10 minutes, a block comes out. And there's a couple thousand transactions that modify the ledger of who owns what.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1538.55,
+      "end": 1538.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1538.95,
+      "end": 1589.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "keeping up is actually not too bad in Bitcoin right now because if you have any laptop made in the last 10 years, you can keep up. Like, you know, every 10, even if it takes you, let's say, one minute to validate a block, well, the blocks only come out every 10 minutes. So yeah, so whatever it is, 12% of the time or something. You know, like every 9 minutes of the 10 minutes, you're just going to be sitting there waiting. That's not actually true because you... You validate the transactions as they come in the mipple. But anyway, you can think of it that way, you know, a blocks-only mode. However, if it takes you a minute to verify a block and they come out every 10 minutes, but let's say you're catching up, that's going to be, that's going to take forever because there's half a million blocks. So that means that if you're only going 10 times faster, that means to verify 10 years of history, we'll take you a year.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1589.83,
+      "end": 1590.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1590.15,
+      "end": 1602.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so now you're saying, okay, I want to run Bitcoin. I'm going to have the best security and run a full node. I plug it in. I'm going to have to wait a year before it's synced up to the network and I can actually start using it. That's, no one's, people just won't do that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1602.6,
+      "end": 1602.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1603.56,
+      "end": 1605.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And then, okay, although the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1606.16,
+      "end": 1607.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "history,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1607.98,
+      "end": 1613.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so actually syncing it, sinking up Bitcoin, catching up, the first couple of years goes by in a blink because no one was using",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1613.66,
+      "end": 1613.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it. Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1614.26,
+      "end": 1629.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So if you just have a percentage of, oh, I've validated all of 2009, 10, 11, 12, and 13. And that only took five minutes. Like, yeah. All of the work is in the last two or three years. So that percentage number doesn't, yeah, you can't just look at that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1630.71,
+      "end": 1632.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1632.3,
+      "end": 1702.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what the real issue is that people won't do it. At a certain point, if you start this software and it says, okay, this is going to take a month to catch up, people just throw up their hands and don't do it. And we've seen this in Bitcoin where people don't run full notes. And they say, ah, it's too slow, too much of a pain. In Ethereum, it's even a bigger issue, and it's very difficult to run a full note and catch up and keep up in Ethereum. And so you have things like, you know, providers like in Fuera, things like that. So those, and the other issue there is those tend to work okay. So in Bitcoin, there's SPV. In Ethereum, SPV is sort of the default. And generally it works. We know about security problems, but security's real hard, right? It only shows up after the fact when you've been hacked or your house has been broken into. If you're, you know, you can just not bother to lock your house up and most of the time it's fine. And someone will say, no, you really need to have locks and your windows and all this stuff. So it's hard to get people to care about the security unless there's a clear... look, this happened and someone lost money.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1702.6,
+      "end": 1707.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So, so, yeah, as you say, there's the, there's the catching up, and then there's the keeping up. And the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1707.98,
+      "end": 1708.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "catching",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1708.14,
+      "end": 1714.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "up is hard, especially as, as, as all these, as Bitcoin, all these cryptocurrencies go further. It's like they're going to be around for years and years, and so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1714.56,
+      "end": 1714.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they're going to be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1714.92,
+      "end": 1718.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "pretty big. I think you said, how many UTXOs are there?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1718.86,
+      "end": 1719.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1719.16,
+      "end": 1720.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "now there's about 50 million.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1720.5,
+      "end": 1721.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "50 million. There were",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1721.4,
+      "end": 1734.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "quite a month, there was 70-something million a year ago. So it's actually, so generally it goes up, right? There's more little coins at different places and it's more people use the system. But this year it's actually gone down subtly, which is kind of, it's good.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1734.92,
+      "end": 1736.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Consolidation of UTXO stuff. Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1736.64,
+      "end": 1744.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "It's good from a computer science perspective and that it's like, hey, it's less load on the network. It's maybe bad, and maybe there's fewer people using",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1744.73,
+      "end": 1745.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Bitcoin.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1745.65,
+      "end": 1749.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think in practice, what it was is big exchanges updating their",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1749.35,
+      "end": 1750.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "software. Where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1750.37,
+      "end": 1763.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "last year they had a lot of problems with their wallet software, where they were making lots of tiny little UTXOs like dust. And then this year, as fees went down, they said, okay, we're going to revamp our software, consolidate all our",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1763.11,
+      "end": 1763.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "ETSOs.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1764.25,
+      "end": 1783.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So, and so as you say, it's like, so there's catching up and then there's keeping up. And one of the big issues here is like, The keeping up is generally easier. Catching up can be hard. And as you say, and I guess the macro goal here is to make it so that the amount of people who can run full nodes is it's democratized or it's easy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1783.66,
+      "end": 1784.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1784.06,
+      "end": 1790.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so that anybody can run it so that it doesn't say, okay, the only people who are running Bitcoin full nodes are Amazon or whatever.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1790.86,
+      "end": 1792.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right. That would be better. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1792.46,
+      "end": 1799.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that, and then I guess I should mention mining because this is also important. It's weird. So you want, so the keeping up or whatever.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1800.53,
+      "end": 1800.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "In",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1800.95,
+      "end": 1839.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "some sense, if it takes you a minute to verify a block and you're keeping up, well, it takes an extra minute. Bitcoin anyway takes, you should wait half an hour or wait for a number of confirmations before you're really sure that you've received a payment. So in that sense, a minute or two of delay, no big deal. Where it really becomes critical is in mining. In mining, if it takes you a minute to verify a block. That's a minute that you can't mine, and you're just completely uncompetitive. So you really need to be able to see a block and then start immediately. So mining centralization is a problem then with large blocks. However, in practice,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1840.3,
+      "end": 1840.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1840.36,
+      "end": 1862.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "maybe not as important because generally mining at this point is run by fairly professional entities. It's not like people are mining on crummy laptops. And so if you've got a warehouse full of basics that costs millions of dollars, you can probably afford to have a couple, you know, rack-mount servers and deal with, and have good computer hardware to do this. So while it's,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1863.36,
+      "end": 1863.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1863.56,
+      "end": 1895.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is a concern that we want to make mining, you know, we want to make validation of blocks very quick so that mining can be more decentralized. In practice right now, it's not for other reasons. And so not as huge of a concern. But it, like, still is a goal. If miners can validate and run, you know, on very small amount of hardware, that'd be great. But in practice, more important right now is to get end users who are not necessarily mining to be able to run a full node and get all the security and privacy from a full node with minimal resources.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1896.11,
+      "end": 1896.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1896.35,
+      "end": 1908.97,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's interesting. And I think that there's, as you say, it's a macro goal that I think the builders of the technology should vector towards, which is... decentralization because on the other end you're going to have natural kind of aggregation and centralization",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1908.97,
+      "end": 1909.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1909.33,
+      "end": 1912.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "most things. And so it's like, you know, if you can push back against it, then that's like a good",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1912.43,
+      "end": 1913.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "ecosystem. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1913.27,
+      "end": 1914.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's hard because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1914.21,
+      "end": 1915.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1915.49,
+      "end": 1952.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "benefits of a more centralized system are very clearly apparent in that you can say, hey, it's faster, it's cheaper, it's easier to use, great, but it's more centralized. And it's like, well, what are you really losing there? And you're the loss only can become apparent after the fact where, hey, wait, my coins got confiscated. What the heck? It's like, well, you did something illegal. But it's not illegal where I live. It's legal there. It's like, well, that's where the miners are. And like, wait, you know, and so that kind of centralization where someone can confiscate coins. You know, it's an extreme example, but that can happen.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1953.94,
+      "end": 1973.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So it's like this. hard to convince people thing where, no, you really want decentral. And that's what we had with this block size debate for years, where people are saying, oh, this is crazy. Who needs to be able to run Bitcoin on a Raspberry Pi? And that is something of an extreme case. But if you really make it so you need a rack-mount server to run it, you're going to have very few users",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1973.49,
+      "end": 1973.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "who",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1973.87,
+      "end": 1974.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "can verify.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1974.57,
+      "end": 1974.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1974.73,
+      "end": 2015.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I'm reminded of like the concept. There's the concept of like whether your system, I guess, yeah, if you, you can either protect yourself against changes that will happen in the future where you say, okay, these macro change are going to happen. I'm going to protect my like institution against them. Or you say, hey, I assume that they're going to be kind of bad things will happen and that I will, as those bad things happen, I want my system to respond positively to them. And so I think there's kind of that mindset which is like, hey, assume there will be change or bad things or whatever, and how does the system respond given that? So in any case, let's... Thinking about, so there's, so if we think about the scalability issue, it's not necessarily the transactions per second one, it's this other knob, the ability to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 2015.29,
+      "end": 2016.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "validate.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 2016.55,
+      "end": 2018.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Transactions per second is a dependent variable.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 2018.51,
+      "end": 2019.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, you can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 2019.13,
+      "end": 2023.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "set it to whatever you want, given how quickly and how much resources those things take.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 2023.75,
+      "end": 2033.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, exactly. And so tell us about it before we dive into UtreXO, what are some of the other ways that people have tried to solve this getting up and keeping up kind of issue.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 2033.61,
+      "end": 2037.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Okay, so. So there's, I guess, SPV is one of the first. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 2037.39,
+      "end": 2038.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what does that stand for?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 2038.55,
+      "end": 2039.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Simplified payment verification.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 2039.93,
+      "end": 2040.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 2040.63,
+      "end": 2142.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Where the idea is, I don't keep a UTXO set. I don't keep, I don't know who owns what coins. I don't validate signatures. I just see a block and someone can tell me, look, you got a payment because it's in this block. And it puts a lot of trust in the miners because you're basically saying, well, it was mine, so it must be okay. Everyone else is verifying these things, including the miners. And I can very quickly and easily verify the proof of work. Proof of work is great because it costs almost nothing to verify enormous amounts of work. So you say, look, someone spent a million dollars verifying this, right? They put a million dollars worth of work on top of it. So it's fine, right? Of course it's fine. And the thing is in general, that does work. There's a lot of problems with it, though, because you're giving up a lot of the... You know, you're not validating it yourself. There's also privacy issues with most of the implementations with SVB. So that was an early one that was written in the Bitcoin white paper. And it's widely used today. But it's a lot of the people who work on Bitcoin core, like, we don't like SPV. Like it doesn't. People think it's a lot more secure than it is. And on the other side, you could argue there's never been an attack. Yeah, right. There's never, we have no evidence of any, you know, invalid blocks with valid proof of work that were used to deceive someone into accepting a payment using an SBV wallet. We've never seen this. It's an expensive attack to do. So that's what, you know, where you can say, look, it's fine. But the people working on are like, no, it's not. We know how to attack it. And so that's what we don't like it. So from there's SPV, there's, I guess the Lightning Network, which I co-authored and when working on, and that's,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 2142.49,
+      "end": 2168.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a scalability upgrade in that we can make many payments without putting them on the blockchain at all. And so a lot of these payments have, we still have security, we still have the verifiability, but a lot of these payments never show up on the blockchain. So they don't count to the 10 transactions a second. So that can make it a lot cheaper and a lot better scale. In Ethereum, there's a lot of ideas of sharding. So one thing I have seen a lot.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 2169.27,
+      "end": 2169.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 2169.79,
+      "end": 2178.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "proof of stake and scalability seem to get lumped together. And they're really different things. I don't think that...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 2178.97,
+      "end": 2179.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 2179.19,
+      "end": 2185.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there are some arguments, well, we're going to do this and this helps prove a stake, and this helps scalability. But in general,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 2187.38,
+      "end": 2201.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "proof of work as a thing scales amazingly well in that you can prove... unlimited amounts of work in constant time. So in the Bitcoin blockchain, it's what, 500,000 something headers.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 2203.36,
+      "end": 2223.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Verifying the entire proof of work for Bitcoin, it only takes 30 seconds on a decent computer. So no one's bothering to optimize it. But there are techniques. There's papers about how you can do it in milliseconds if you wanted to. But no one bothers to optimize because they're like, well, we could take this 30 second thing and make it into a millisecond thing, but like, 30 seconds. So proof of work scale is great.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 2225.52,
+      "end": 2227.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I don't think proof of stake directly gives you any",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 2227.84,
+      "end": 2228.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "scale. Yeah, it's a weird",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 2228.74,
+      "end": 2230.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "question about like consensus mechanism versus",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 2230.58,
+      "end": 2233.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "scalability. They've gotten lumped",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 2233.28,
+      "end": 2248.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "together in a lot of people. So a lot of people have said, I've heard this millions of times. Not millions of times. I've heard this many times. Proof of work doesn't scale. It's like, well, what do you mean? Like proof of work scales amazingly. Like, look at Bitcoin. It's gone from...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 2248.63,
+      "end": 2248.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "uh",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 2248.71,
+      "end": 2254.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know several million hashes per second to some number i don't know how to pronounce",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 2254.41,
+      "end": 2256.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "hashes per second i think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 2256.25,
+      "end": 2258.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "no more than i don't like it's some ridiculous",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 2258.45,
+      "end": 2259.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you know two to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 2259.21,
+      "end": 2259.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 2259.45,
+      "end": 2260.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 2260.25,
+      "end": 2268.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like two to the 74 hashes every block that's crazy um it's getting close to avogadro's number and the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 2269.89,
+      "end": 2270.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 2270.29,
+      "end": 2301.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it works, right? From the software, from the verifying perspective, yeah, no problem. So proof of work does scale. It's the other stuff that doesn't scale. And I think it's fairly independent of proof of work or proof of state. So in theory, there's the idea of sharding is that the sharding is generally from the database world where, okay, we have these different databases on different computers, and they don't keep track of everything, right? Any one computer doesn't know the whole state of the system, but together they all do. And that's a cool idea, but it's hard in practice to implement.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 2302.1,
+      "end": 2306.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. And I guess, yeah, there's a whole ecosystem of various random scaling solutions. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 2306.16,
+      "end": 2306.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I guess",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 2306.5,
+      "end": 2318.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the main one that I was interested to hear about was the SPV as an initial one that has, it's good. And it's good in various ways. But it's a similar attack perspective, as you said before, which is like, it hasn't been attacked, but there are attacks that one could do on it. And so let's be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 2318.76,
+      "end": 2319.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "worried.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 2319.18,
+      "end": 2334.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I would say in Bitcoin, it hasn't been attacked. There are. Other things that have... I know there are SPV issues with other smaller sort of more niche coins because in those cases, it's easy to deceive people. There's not that much work required.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 2334.76,
+      "end": 2334.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 2335.2,
+      "end": 2339.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "It's kind of like the 51% attack where it's like, oh, it's never happened in Bitcoin, but we've seen it happen in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 2339.18,
+      "end": 2340.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "other... Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 2340.9,
+      "end": 2431.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And SPV, there's other... Okay, so... SPV is also not a super well-defined term. Some people might say, oh, this is SPV. I know like Luke Dash Jr., he's like, no, there is no SPV. These are light note. He doesn't call it that. So, so like there's weird definition things. Many of the SPV like wallets will show unconfined transactions, which I think is a horrible idea, because if you're saying, if you're running an SPV wallet and you get a transaction over the wire that's not in a block, you have no idea about the validity of it. There's no way you can verify the signatures. You can't even tell if it's spending coins that have ever existed. So that can be a potentially good attack. I don't know that people have done it, but if I know you're running an SBB wallet on your phone and I'm buying a guitar from you, I found you on Craigslist, oh, cool guitar, okay, I'll send you like a tenth of a Bitcoin for it. And you see on your phone like, oh, appeared unconfirmed. And then you're like, yeah, he seems like a nice guy. Here you go. And I walk away. For SVV wall, it's unconfirmed means just nothing, right? Because I could just fabricate a transaction, somehow get it to your phone, and it'll just show up as unconfirmed, but it'll never confirm. Because everyone actually validating that transaction says, no, there's no signature here, or there's no, that UTXO is invalid. So those attacks, I don't know personally of that happening, but that is insecure to use. So you shouldn't. do that with SPV, but people do.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 2432.22,
+      "end": 2437.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah. Okay, so, so SPV has some various, both the, the privacy issues and some of these possible.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 2437.44,
+      "end": 2437.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 2438.34,
+      "end": 2466.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to mention privacy, many of them use Bloom filters, which is, was thought to be more secure than it actually is. You end up sort of leaking all of your addresses to the nodes that you connect to on the network, which is not good, because then they can sort of say, oh, all these 20 different addresses are all owned by the same entity. And so you lose a lot of privacy. There are ways to make that better that people are working on now. But in general, SVV is like, yeah, it works. There's ideas, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 2466.68,
+      "end": 2467.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 2468.43,
+      "end": 2468.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "can do better.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 2469.49,
+      "end": 2469.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 2469.71,
+      "end": 2471.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "let's talk about the doing better.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 2471.63,
+      "end": 2471.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Let's talk",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 2471.89,
+      "end": 2476.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "about U-Tree XO. So I guess tell us what is it. How does it work?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 2476.85,
+      "end": 2477.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 2477.37,
+      "end": 2482.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So it's an accumulator, which is something where you can, Merkle Tree is a pretty good,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 2483.82,
+      "end": 2484.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 2484.04,
+      "end": 2485.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "pretty similar to an accumulator.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 2486.06,
+      "end": 2486.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Maybe",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 2486.52,
+      "end": 2512.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it is an accumulator by certain definitions. It's a non-dynamic. You can't add or remove for it in the default sense. But the idea is you store a very small bit of information, which then people can prove much more information is sort of contained within. So if you're familiar with a Merkel tree, you generally store the Merkel root. And then there's all these little leaves of the tree that you don't store, but people who know about them can then prove that they are,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 2512.56,
+      "end": 2513.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 2513.26,
+      "end": 2526.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, part of this root. So they provide an inclusion proof. So you say, okay, I'm proving that leaf seven is in this tree. So I give you a proof that's like eight and 14 or whatever. And then you say, oh, yeah, I verified it. Yeah, it's in there. Cool.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 2528.6,
+      "end": 2567.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So Bitcoin uses Merkel trees really for SPV. That's the only reason you use Merkel trees in Bitcoin. So if you're running a full node, you never actually check. You could have just as easily hashed linearly all the transactions to get the block header. But so the idea of U3XO, the idea of an accumulator is instead of storing a UTXO set, so instead of storing a, what's now about a 4 gigabyte database of every unspent output, just have an accumulator for that. So you have some tiny little one kilobyte or one, you know, little thing. And then when people are spending coins, they provide proofs that their coins exist.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 2569.42,
+      "end": 2569.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 2569.82,
+      "end": 2592.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 2593.56,
+      "end": 2593.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 2593.94,
+      "end": 2595.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "idea",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 2595.44,
+      "end": 2597.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "has been around, but it's had some implementation issues.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 2599.26,
+      "end": 2599.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 2599.74,
+      "end": 2600.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "can make",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 2600.32,
+      "end": 2601.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 2602.09,
+      "end": 2635.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "RSA-based accumulators. There's a lot of interesting new research on that. Benedict Buns at Stanford has a new paper about that. Those seem really cool. There's some issues with trusted setup where you might need to make this accumulator, you might need to have a number that no one knows the factorization of, but someone did at some point and then forgot it. But they have to trust that they forgot it. So there's issues there. Hash-based accumulators, also, lattice-based accumulators, one of the big issues that is not immediately apparent",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 2635.38,
+      "end": 2636.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 2636.66,
+      "end": 2638.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you need to bootstrap this system.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 2638.98,
+      "end": 2639.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 2639.42,
+      "end": 2650.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "even though it might work and you have a pretty good idea of like, okay, all the wallets keep track of their proofs and all the nodes don't keep track of the whole UTXO set, they just modify their accumulator every block that comes in.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 2650.74,
+      "end": 2651.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 2651.18,
+      "end": 2684.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "issue is if you're the first person using this software, you can say, hey guys, I have... this new software, I completely deleted my UTXO set and replaced it with this little tiny accumulator thing. And my wallet now works this way and keeps proofs for all my UTXOs. Cool, let's go. And then you connect to people and they give you a block. And this block doesn't have any of the proofs that you want. And no one will give you those proofs because they have no idea what you're talking about. And so you're just stuck, right? So the first mover now is stuck because how do you, it seems like how do you convince everyone to upgrade at the same time? This almost feels like a hard fork.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 2686.18,
+      "end": 2686.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 2686.58,
+      "end": 2782.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "hard forks are hard. And so you could say, no, it's a hard fork. Or no, I'm just going to make my own coin. I'm going to make a accumulator coin. And it's going to have, you know. But if you want to get it to work on a system that is already existing, how do you transition? And the transition needs what we call a bridge node. A bridge node is a node that actually keeps proofs for everything. It has the full UTXO set and also has a full set of every possible proof. that could be required. So that when a transaction comes in from the existing network, the bridge node looks at the transaction says, ah, here's, I'm going to look through my set of proofs, attach proofs for every input to these transactions, and then send it over to the new nodes who consume these proofs and verify them. So that, in some cases, can be very costly to run a bridge node. In theory, you only need one of them to sort of link the old network and the new network. In practice, you want more than one because that's a single point of failure. You're not trusting the bridge node in that they can't really lie to you. You're verifying everything, but you are relying on them for availability in that if the bridge notes go down, you're stuck and you can't continue. You're going to have to either abandon your idea of this accumulator and go to the regular node type or find another bridge node or something. So the cost of running a bridge node is important. And with some of the other constructions, can be very high because these proofs need to get updated every block. With UtreeXO, it's a hash-based accumulator, running a bridge node is not a big deal. It's still kind of heavy, but you can run it on this laptop.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 2784.66,
+      "end": 2819.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Because it's sort of Merkel tree-based in that you've got this giant, it's actually a set of trees, so a forest of Merkel trees. And that's, you know, gigabytes of space. But what happens is when you modify the trees, you sort of are modifying all the proofs for everything without doing any extra work. If you keep the whole forest in memory or on disk, now all your proofs are able to be generated very quickly from that forest. So the idea is the bridge node keeps the whole tree in memory.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 2819.71,
+      "end": 2820.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "He",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 2820.15,
+      "end": 2841.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "might need like 16 gigs RAM. So it's a little costly, but within the range of a decent computer. And when a transaction comes in, it looks up, it has another database of UTXO to position in that tree, which actually is quite a big database. It looks it up, builds a proof, sticks the proof on to the input, and then forwards it to the nodes that want the proofs.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 2841.32,
+      "end": 2841.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 2841.56,
+      "end": 2841.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 2842.12,
+      "end": 2843.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So it's doable with this construction.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 2844.0,
+      "end": 2871.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So, so, so, so, so positive side. So let me make sure I understand this. So there is both. So at a high level, there are these things called accumulators, which say, hey, their thing, they're called accumulator because you can add stuff to them, just like with a, you know, with something where you're like, oh, I'm going to add things to this list. I'm going to add things to this, you know, this binary tree. And then you also have these inclusion proofs. So you say, hey, I'm also with something like a myrtle tree, say, hey, I can prove that I am a leaf of this tree by proving that to you. And so you, so that's, At a macro",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 2871.03,
+      "end": 2871.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "level,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 2871.35,
+      "end": 2872.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's what accumulator is.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 2872.37,
+      "end": 2873.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And delete. So in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 2873.55,
+      "end": 2886.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this case, you also need to be able to delete stuff. Because if I can prove that I have coins that I actually already spent last month, that could be a problem. So this accumulator is what's called dynamic and that you're able to delete as well as add.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 2886.65,
+      "end": 2889.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. Yeah, so it's add and delete",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 2889.69,
+      "end": 2892.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and delete. Add and prove,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 2892.59,
+      "end": 2892.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "verify.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 2892.81,
+      "end": 2893.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, cool.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 2894.02,
+      "end": 2924.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And so with this accumulator, the idea is that instead of holding all of the, you can instead, because you get the log of N deliciousness of binary search trees or binary trees and myrtle trees, you get to, instead of holding all of the UTXOs in the Gene's No, you can instead just hold the accumulator. And then when you hear proof, when you get proofs from other folks, you're like, oh, I can, I get this proof from someone and I can. can check that proof easily.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 2924.94,
+      "end": 2926.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Is that kind of relatively clear? Check the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 2926.2,
+      "end": 2931.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "proof. Checking the proof is very quick. And if someone gives you an invalid proof, you just drop the transaction.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 2932.0,
+      "end": 2932.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And I guess as you're saying",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 2932.74,
+      "end": 2933.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 2933.12,
+      "end": 2968.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Well, actually. You drop the proof. This is a sort of one of the implementation issues is what if there's a valid transaction and the... bridge node lies to you and gives you an invalid proof that doesn't necessarily mean the transaction's invalid the proof alone could be invalid so you you it's a little issue where it's like wait i don't know whereas in bitcoin right now if you get a transaction you can immediately determine this is valid or this is not and i drop it if it's not with with this bridge node and this accumulator you might have a transaction but you don't have a proof so that that's the sort of intermediate step which you can deal with but yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 2968.85,
+      "end": 2969.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 2969.27,
+      "end": 2977.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "i was actually going to bring that but it's like yeah the It does two things that you have to both check. You're checking the UTXO in the classic style where you say you're checking to make sure that they had.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 2977.27,
+      "end": 2978.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Check the signatures. Check the signatures.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 2979.07,
+      "end": 2982.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And you're also checking the proof. And so you can either or of those could be on or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 2982.93,
+      "end": 2984.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "off for true. You've got to, in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 2984.47,
+      "end": 2986.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "practice, you're going to check the proof first",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 2986.09,
+      "end": 2986.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 2986.63,
+      "end": 2987.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "validate the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 2987.07,
+      "end": 2987.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "rest.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 2988.57,
+      "end": 2991.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Because checking the proofs is... In this case, it's very quick.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 2991.73,
+      "end": 2992.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 2992.27,
+      "end": 3008.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So there's the macradiate the accumulator. And as you said, there's some cool research into these accumulators that has been done in the past. And one of the most recent ones is this RSA accumulator that was just released a couple days ago. And you and Benedict Bonds did, and you and him both at scaling Bitcoin this last year,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 3008.73,
+      "end": 3010.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just talked about that and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 3010.39,
+      "end": 3015.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "your UChairXO stuff. But an issue with a key mindset towards this is...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 3017.02,
+      "end": 3033.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you're thinking about how to bootstrap the system. And because, I mean, you know that there are, if you're trying to, it's one thing to try to add the, to build these natively into a new system versus upgrade an existing system to have this. So like, you know, try and get Segwit into Bitcoin's example this. Like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 3033.1,
+      "end": 3034.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's, that's a tough thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 3034.58,
+      "end": 3073.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Exactly. That's like two years or whatever. And so for you as a, as a. both researcher but also an implementer and kind of connected to the code, some essentially like, hey, how can we bootstrap the system? And you essentially need to have, as you say here, something like a bridge node is the thing that allows you to bootstrap the system because the bridge node, if, let's say that you are just having a, you're the only new one on this network, the bridge node gets to, has the history of all of the, I guess, it, it can feed you all the proofs that you need, which is moderately expensive, but you want a feeder of those proofs to people so that people can more easily bootstrap this thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 3073.76,
+      "end": 3074.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right, right.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 3074.62,
+      "end": 3092.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah. Without a bridge node, you could do it. You could say, look, we're starting over, we're making a new coin or hard forking or whatever, and now every wallet has to update their own, you know, keep proofs for their UTXOs, and we're not going to have a bridge note. I don't think that's super practical because... How are you going to get people to do that? But, yeah, like Segwit was a soft fork and it's hard.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 3094.43,
+      "end": 3120.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "This, what's nice is it's not a fork at all, right? So you can start running it. It's an analogy would be like an Electrum, where Electrum has this sort of client server model. There's an Electrum server. They do provide SPV proofs, which is, you know, something. But you are trusting the Electrum. server to some extent. With this bridge node, it's similar that you can have a server, the bridge node, and you connect to it, and it gives you proofs.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 3121.14,
+      "end": 3121.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 3121.58,
+      "end": 3139.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you don't need to modify Bitcoin Core. You don't need to have mining, change, anything like that. So that's nice. We can just have it on our own. Eventually, it might make sense to have some kind of software to improve this. So one of the things I mentioned was, and this was Peter Wool's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 3139.12,
+      "end": 3140.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "idea,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 3141.49,
+      "end": 3156.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to commit to the proofs within a block because that prevents, it doesn't prevent, but it helps mitigate the idea of, here's a transaction, but I give you a wrong proof. And now you're like, well, is the proofs wrong? I know that, but is the transaction still okay? Is there a valid proof for this?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 3158.37,
+      "end": 3158.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 3158.73,
+      "end": 3187.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "if you did soft fork something in, you could say, okay, the minor needs to include, like, the hash of all the valid proofs. So that we at least know there is one, and they can attach that set of valid proofs with the block or something. That would be a soft fork. That would help with some of these kind of, it's more a denial of service spam attack. It would help with that. But it still works without it. So I'm not worried about that. That might take years. Or maybe no one ever is interested enough, and so it never happens. It's okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 3188.05,
+      "end": 3199.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And that's what I think is interesting about this method is saying, hey, we can start it up. We'll run these bridge notes. The bridge nodes themselves, as you say, are relatively easy to run. It's like 10 gigabytes of storage or 12 gigabytes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 3199.03,
+      "end": 3199.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or whatever. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 3199.83,
+      "end": 3203.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you need to have all the proofs in RAM, so it's 16 gigabytes or whatever.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 3203.83,
+      "end": 3204.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You can put them",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 3204.25,
+      "end": 3205.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in disk. It would just be sloping.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 3206.23,
+      "end": 3208.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "It's just somewhere in the range of, yeah, some hard",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 3208.23,
+      "end": 3209.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "drive space. It's doable on a decent computer. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 3210.03,
+      "end": 3232.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "exactly. And so you can imagine. bootstrapping, it's an interesting, and I'll be curious to see whether or not the specifics of U3XO catch on. There's like that specific mechanism and that specific accumulator, and there's also a different mechanism which is how to... upgrade existing networks and hard fork and soft fork are the primary ways that people do that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 3232.36,
+      "end": 3232.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 3232.86,
+      "end": 3237.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this new bridge node mechanism might be an interesting way both with the accumulators but also",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 3237.92,
+      "end": 3238.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "other",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 3238.12,
+      "end": 3238.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "things sit to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 3238.78,
+      "end": 3239.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "new straps I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 3239.4,
+      "end": 3298.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "wouldn't say like this so it's not a fork but there are examples of this with sort of on the peer-to-peer level upgrades which have happened in bitcoin and other systems so compact blocks which is a couple of years ago the ideas instead of sending the whole block over, well, I already, I'll just remember all the transactions I've already sent you. And when I send you a block, I omit those transactions, because I know you know what they are. I just tell you the TXID or something. That saved a lot of network traffic. And that went in two years ago. I don't remember. But that wasn't a fork, right? That was just a peer-to-peer upgrade kind of thing. And... nodes would say, hey, I know about this compact block message. Do you? And if they both know it, they can use it. If one of them doesn't know it, then they just don't use it. So UtriXO can be something like that where you connect to nodes and say, hey, do you know about U3XO? Yeah, I know it. Okay, cool. I'll give you proofs. Or you don't. Okay, well, I won't send you these proofs. When you send me transactions, I might have to try to find somewhere else that gives me",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 3298.08,
+      "end": 3299.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the proofs for it. Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 3299.46,
+      "end": 3302.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. Interesting. Yeah. And it's kind of like a, yeah, so it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 3302.84,
+      "end": 3304.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "has a peer-to-peer level. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 3304.98,
+      "end": 3306.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there are example of that. And that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 3306.22,
+      "end": 3307.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 3307.24,
+      "end": 3318.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "good way to keep upgrading. Because hard forks are really hard, and there haven't really been intentional hard forks in Bitcoin. There have certainly been some. There was one like two months ago. And, or no,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 3320.88,
+      "end": 3323.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the hard fork was. The bug itself. Anyway.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 3325.6,
+      "end": 3348.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And softworks, there hasn't really been a softwork in Bitcoin for a long time. And it might be that as these systems get more widely used, it's harder to change them. So like, you know, the internet. IPV4 purposes IPV6. IPV6 is a hard fork. And it just hasn't, you know, I remember when I was a kid, they were talking about IPV6. And it's like, oh, like late 90s. They're like, yeah, it's going to.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 3349.44,
+      "end": 3349.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 3349.7,
+      "end": 3352.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, be what the new internet. And like, I still don't have it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 3353.7,
+      "end": 3354.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I've",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 3354.06,
+      "end": 3356.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "never had an internet connection that supports it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 3358.14,
+      "end": 3358.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 3358.64,
+      "end": 3371.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so as you say, upgrading these old systems is hard. And so, yeah, mechanisms for doing that, especially in a peer-to-peer-way, seem really interesting to me. So is there, I guess, in a, starting to get into pseudo-wrap-up mode. So if you think about, if we think about how this would directly, so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 3371.94,
+      "end": 3373.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "from...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 3373.87,
+      "end": 3394.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I know that you've done some like initial testing with this. How would this, if we think about like the quantitative changes to the network and you're like, okay, this is what it looked like before and this is what it looks like after UriXO. Like are we what, you know, what are the actual changes and like how, you know, how much, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 3394.49,
+      "end": 3422.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah. So initially it will not be widely used, right? Nothing is. So initially it's more the benefit for who. the person using it. So the person using it could say, so, and like a lot of these things, I kind of write it for myself as well. I have a full node that I run Bitcoin on, have my, you know, meager collection of UTXOs. And it's an old laptop that I found in the garbage in Japan. Anyway, because I figure then the, you know, NSA hasn't planted",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 3422.52,
+      "end": 3423.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "little chips in it or something.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 3424.98,
+      "end": 3437.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But it's kind of a crummy old laptop. And the main thing is it's got a spinning hard drive. And so I will... plug it in to sync up now and then, because I don't really leave it on, because I feel like, well, if it's on, then someone's going to,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 3437.49,
+      "end": 3438.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 3438.09,
+      "end": 3438.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 3439.03,
+      "end": 3440.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 3440.21,
+      "end": 3508.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "plug it in, and it takes a long time to sync back up. So it's catching up every week or so. And it's slow because of the hard drive. And so it's, it's, the CPU itself is only running at about 10 to 20% capacity. It's the, you're waiting on the hard drive to spin around and see. And I think with UtreXO, it would be, you know, 10 times faster. Right. Your CPU, you're still going to be limited by CPU verification. But if your CPU is only running at 10% capacity, now you've eliminated the I.O. bottleneck now because it can run at 100% capacity, and that becomes a new limiting factor. So that would be really cool. First, for people who are running on full nodes on hard drives, this could be a significant speed up. For people who are running on really nice new computers with fast SSDs and lots of RAM, it actually won't really help. If, you know, storage-wise, it could help. But already, there's already the ability to do pruning, which most people don't. I think there's not as much knowledge that this is a thing. You go into your Bitcoin.com, say pruning equals 500 or whatever. And like, oh, there goes all the data that it was taking up. And no loss of security. So it's cool. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 3508.66,
+      "end": 3510.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 3510.3,
+      "end": 3513.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "primarily right now helps. people with hard drives",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 3513.78,
+      "end": 3514.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 3514.48,
+      "end": 3543.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "at the cost of a little bit of extra download so so the proofs do take up space and when you're doing you know catching up it's gonna be an extra i know exactly the numbers depends on a lot of things but maybe 20% more data over the wire to uh provide all these extra proofs so that's a downside so if you have a really slow internet connection and a really fast computer, you should not use this. If you, on the other hand, have a pretty good internet connection and a kind of slow computer, this will help along.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 338,
+      "start": 3544.03,
+      "end": 3558.91,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "God, that's funny. Maybe my final question here, and then we'll be done, though, is there was, so just as some background here, Taj gave, like, an internal presentation to the DCI yesterday about this stuff, and there was a very funny moment where we were talking about...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 339,
+      "start": 3560.69,
+      "end": 3574.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "thinking about how much it costs to essentially catch up at the beginning and the ways that you can catch up and do you need to check through all the proofs like that might take a lot of time and instead you could do be really cheap and just like get it straight from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 340,
+      "start": 3574.47,
+      "end": 3575.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the bridge note or whatever",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 341,
+      "start": 3575.21,
+      "end": 3622.31,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "or you can but the idea is like oh maybe there's a way to each of these proofs is like 32 bytes or no sorry each of the thing that I'm getting at is there was a Oh, no, actually, I think you're talking about the actual hashing algorithm, whether you're using Shaw-256. Yeah, truncating the hash. Now, this, I think, is just a funny concept. That's why I want to end with it. It's this idea. So you, the idea here is that you might not need collision resistance, which for those in hashing world, like, you almost certainly don't want, if you give it two different things, you want the two, the hashes of six and the hash of, like, 20 or whatever to be totally different. But... in this specific instance, and this is a very implementation deep enough, but I think it's funny, tell me about why you might not need",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 342,
+      "start": 3622.31,
+      "end": 3622.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "commission resistance. Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 343,
+      "start": 3623.13,
+      "end": 3625.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's not that weird. So a lot of, um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 344,
+      "start": 3626.77,
+      "end": 3707.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so there's like in cryptography, we have the random oracle model. And there's all these assumptions because a lot of the things in cryptography. We actually don't know if they work. Right? There's no... So in math, you can have, like, proofs. Whereas in most science, you're like, I don't know. It seems like the sun rises and gravity exists. Like, that's cool. But we don't have, like, a proof, right? Whereas in math, we can have these axioms and we're like, yeah, no, we're sure. I mean, to what I said. So in cryptography on the other, we're not sure about anything. Like, do hash functions exist at all? I don't know. It seems like it. You know, like, so RSA is... So we have these assumptions. We're building off of the RSA assumption that you can't break this. So in hash functions, you have the random oracle model where it seems like if you have this hash function, it looks like the stuff that comes out is random, you can't make collisions, you can't find pre-images, okay, great. But there's different degrees of it. So pre-image resistance, where given the hash output, you can't figure out what the pre-image was. is a much weaker assumption than collision resistance. Collision resistance is you can't find two different inputs that'll give you the same hash output. And in all the hash functions that have been broken, like MD5 and last year, Shaw 1, they've found collisions. But there are, I don't know, any pre-image attacks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 345,
+      "start": 3707.67,
+      "end": 3707.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 346,
+      "start": 3708.37,
+      "end": 3715.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Where like even MD5, it's like, hey, here's this MD5, find a pre-imitch. You can't. So pre-image is generally a lot.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 347,
+      "start": 3716.26,
+      "end": 3716.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 348,
+      "start": 3716.7,
+      "end": 3758.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a weaker assumption, but if you're relying on it, your system is then stronger. So there's all sorts of signature seams where, oh, this is just relying on second preimage or something. So part of what I might argue in the UtreXO paper is, hey, if you construct it in a certain way, you're not relying on the collision resistance of the hash function. You're only relying on second preimage resistance, which is a much weaker assumption. And then you can either just say, cool, I'm now having a stronger security guarantee. Or you can say, well, I was okay with the existing security guarantee. So now I can sort of push it and reduce my hash size so that I'm back down to the same security I was before. But I have a smaller amount of data.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 349,
+      "start": 3760.19,
+      "end": 3760.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 350,
+      "start": 3760.55,
+      "end": 3761.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you could.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 351,
+      "start": 3761.43,
+      "end": 3762.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And that's a trade-off.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 352,
+      "start": 3762.43,
+      "end": 3762.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 353,
+      "start": 3762.61,
+      "end": 3763.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there's trade-offs there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 354,
+      "start": 3764.33,
+      "end": 3764.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 355,
+      "start": 3764.85,
+      "end": 3807.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And then there's things like we were saying where you could cheat. And you could say, well, now that the entire state of the system is in this tiny little accumulator, I can just download it. I don't even have to sync up. Well, you're not verifying if you do that. But that is. So a lot of people have talked in the context of this. A lot of people have said, yeah, UTXO commitments. You should put a commitment to the entire UTXO set in every block. And then you don't have to download the blockchain. That's... Still SPV security, though. So I'm hoping it's more like, no, we can have the resource, similar resource costs to SPV today, but with full node security, rather than, oh, now SPV security is even cheaper. It's true. So you get both. But I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 356,
+      "start": 3807.59,
+      "end": 3808.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "more",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 357,
+      "start": 3808.79,
+      "end": 3810.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "focused on like, no, you should put a full node.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 358,
+      "start": 3810.79,
+      "end": 3812.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 359,
+      "start": 3812.25,
+      "end": 3815.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "does make running an SPV security node much easier if you do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 360,
+      "start": 3815.95,
+      "end": 3816.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 361,
+      "start": 3816.51,
+      "end": 3816.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "yeah, yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 362,
+      "start": 3816.75,
+      "end": 3816.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 363,
+      "start": 3817.57,
+      "end": 3821.65,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Cool. Well, we're out of time for today, but so thank you for coming on, Tash, and thank",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 364,
+      "start": 3821.65,
+      "end": 3821.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for chatting",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 365,
+      "start": 3821.95,
+      "end": 3865.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "about both your Y and the impact on society and then more generally what the scaling issues might look like and how the difference between the dependent variable of the transactions per second scalability versus the validation things. And with U3XO has a subclass of... of the accumulators which are these inclusion proofs is the way to be cheaper instead of needing to take all the space and then there's all and then just as a note for people there is This stuff actually gets implemented in code. When you actually start implementing stuff in code, it's like there's so many small little corner cases and small little interesting implementation details. So definitely be on the lookout, I guess, for Tadj's paper as it,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 366,
+      "start": 3866.3,
+      "end": 3867.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when it comes out. I'll put the code up pretty",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 367,
+      "start": 3867.44,
+      "end": 3867.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "soon.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 368,
+      "start": 3867.76,
+      "end": 3868.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 369,
+      "start": 3868.0,
+      "end": 3877.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I'll put the code up. So I guess usually Tash at the end of an episode, I say, oh, where should people find you on Twitter? Though you're not really actively engaged with the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 370,
+      "start": 3877.04,
+      "end": 3877.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "crypto",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 371,
+      "start": 3877.3,
+      "end": 3878.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "-twitterati.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 372,
+      "start": 3878.3,
+      "end": 3878.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 373,
+      "start": 3878.46,
+      "end": 3884.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sometimes do the tweets, but yeah, I don't really like arguments. people on the internet which it generally devolves into",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 374,
+      "start": 3884.84,
+      "end": 3885.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 375,
+      "start": 3885.2,
+      "end": 3892.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "if you had a request for the listeners would it be like hey check out um uh you know check out you know",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 376,
+      "start": 3892.0,
+      "end": 3893.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this twitter's okay so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 377,
+      "start": 3893.2,
+      "end": 3894.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what's your what's your twitter hand",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 378,
+      "start": 3894.2,
+      "end": 3894.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "uh",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 379,
+      "start": 3894.4,
+      "end": 3895.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just t dry jay",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 380,
+      "start": 3895.66,
+      "end": 3897.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so that's t d r",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 381,
+      "start": 3897.0,
+      "end": 3897.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yj",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 382,
+      "start": 3897.64,
+      "end": 3897.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 383,
+      "start": 3897.8,
+      "end": 3898.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yja great",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 384,
+      "start": 3898.62,
+      "end": 3898.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 385,
+      "start": 3898.92,
+      "end": 3915.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "on github it's uh adiabat and i i will put the code up so the mit dcii repo um in github is where i'll put the code By the end of the year, I'm just going to clean the coat up. It's super embarrassing. And, you know, clean it up a little bit. Because a lot of the commits are like, oops.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 386,
+      "start": 3916.12,
+      "end": 3916.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 387,
+      "start": 3916.28,
+      "end": 3922.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "was backwards. And it was just me working on it, basically. So I would just, you know, every five seconds commits.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 388,
+      "start": 3922.76,
+      "end": 3923.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 389,
+      "start": 3923.16,
+      "end": 3925.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "going to clean that up a little bit so it's not as embarrassing and put it up publicly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 390,
+      "start": 3926.14,
+      "end": 3934.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Cool. That sounds great. Well, thank you, Tajgan, and thank you listeners for hanging out and listening to this deep dive on U3XO. And we'll see you next time. Goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 391,
+    "withheld": 1,
+    "published": 390
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

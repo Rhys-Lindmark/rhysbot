@@ -1,0 +1,4023 @@
+{
+  "schema_version": 1,
+  "id": "podcast-570c417a98f8234822a1",
+  "title": "#7 Venerable Tenzin Priyadarshi, The Daily Embodiment of Ethical Principles",
+  "published_at": "2019-03-12T18:18:42Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/7-venerable-tenzin-priyadarshi-the-daily-embodiment-of-ethical-principles",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/589021401-the-rhys-show-7-venerable-tenzin-priyadarshi-the-daily-embodiment-of-ethical-principles.mp3",
+  "youtube_id": "8b-aBlyW08w",
+  "youtube_url": "https://www.youtube.com/watch?v=8b-aBlyW08w",
+  "audio_sha256": "b75155571f4e8d968924a7f388990f7c7b372fc7e8fe84a224909299b03afe04",
+  "audio_duration_seconds": 2764.721625,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 8061,
+    "unknown_words": 284,
+    "unknown_words_fraction": 0.03523136087334078,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 10.77,
+      "end": 11.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 11.53,
+      "end": 38.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everyone. My name is Reeslinmark, and you're listening to Gray Mirror, a podcast from MIT Media Labs Digital Currency Initiative on Technology, and Ethics. And unlike something like Black Mirror, which just looks at the negative impacts of technology on society, we are Gray Mirror, so we look at the positive and negative impacts of technology on society. And please, if you have any feedback, reach out on Twitter. And if you like the show, give us a five-star rating on your favorite podcast app. We really do appreciate it. Thanks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 40.75,
+      "end": 41.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 41.51,
+      "end": 76.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so in today's episode, I interviewed Tenzin Priya Darshi, and he's a monk, which is cool, which is fun. Monks are fun. And he, or at least he's fun. And he's the founder and CEO of the Dalai Lama Center for Ethics and Transformative Valies at MIT, and also the director of the Ethics Initiative at the MIT Media Lab. And he's connected to lots of... Peace Prize winners. There are a lot of them, like six of them on his board, which is sweet. And in this episode, we chat a lot about ethics and Buddhism and more specifically tech ethics. And I just want to highlight kind of two quick things from the conversation. The first is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 76.11,
+      "end": 77.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 77.23,
+      "end": 120.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you, as we're thinking about ethics and for someone like Tenzin, he really concentrates on making sure that those ethics are applied in our actions. And... For me, the best way to do that is by concentrating on the words that you use around ethics. And so the two key words are the one that I often used in the past is manifest where you say, ooh, I have this ethical principle. How is it manifest in my day to day life? That's pretty good. And then the one that tends and uses a lot is embody. Where you say, okay, I have this ethical principle. How am I embodying that ethical principle in the day to day life? So for you, dear listener, think about this. Think about yourself, your ethics, your principles, and how you're actually embodying them or manifesting this. on your day to day life. Cool. So then this other piece that tends to and I chat about is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 121.27,
+      "end": 121.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 121.57,
+      "end": 149.91,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "mean, in this tech ethics realm, one of the big questions is, how much responsibility do developers have? Can they just put code out there and say, okay, sweet, it's free. And what happens if developers can't do that? If they are worried about putting code out there and it's like, oh, well, law's going to come down and get you for doing like bad things or whatever, there's a balance here. And I'm not sure exactly where we fall on this, but I think it's a crucial tension. So I want to kind of explore that for a quick second here. On one side, you have something",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 149.91,
+      "end": 150.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like... You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 150.99,
+      "end": 171.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, either permissionless innovation or unstoppable code are the two terms that I often see used here. Permissionless innovation is one that's like the classic, okay, how should you balance innovation versus regulation? If you have too much regulation, then people won't innovate. But another piece of this is like in the early internet times, the early internet pioneers loved this idea of letting a thousand hours bloom, really",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 171.57,
+      "end": 172.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "making",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 172.71,
+      "end": 174.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "sure there's no friction around",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 174.71,
+      "end": 176.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "creating",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 176.55,
+      "end": 196.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and distributing. internet stuff. And it was free from government regulation. That was awesome. That empowered the internet to be this awesome new ground where people could be incubated. So that's kind of the permissionless innovation. This other one is unstoppable code. This is one that's often using the cryptocurrency world.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 197.57,
+      "end": 201.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And this guy, Andreas Antonopoulos, gives this really cool perspective here where he says, hey,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 203.34,
+      "end": 256.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "if you have unstoppable code or rather if your goal, is to disobey unjust laws. One really good way to do that is by creating unstoppable code that when the lawyers or the police come to say, hey, you must shut this down, you say, I'm sorry, I can't, the code is unstoppable. I can't shut it down. And that's actually a really powerful way for coders to disobey unjust laws. It's by saying, oh, I can't do this rather than, oh, I just won't shut it down. So that's... That's this crucial perspective on unstoppable code. But on the other side here of unstoppable code or permissionless innovation is just responsibility, right? What happens if you make code that leads to bad outcomes? Who's responsible for them? And I think that, you know, developers have a lot of responsibility. If you can put an app out there that impacts 4 billion people with network smartphones out there, you have a lot of responsibility. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 256.56,
+      "end": 257.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so... This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 257.76,
+      "end": 280.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "concept of developers and technologists having fiduciary duty or fiduciary obligations, which means, you know, a trusted relationship like, you know, for example, if I'm buying a house, my real estate agent is my trusted fiduciary where they, I trust them to act in my best interests. In a similar way, we can think of developers and technologists as acting in our best interests for humanity here.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 281.28,
+      "end": 281.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So... I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 281.81,
+      "end": 293.01,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "don't know. This is a difficult tension and one that I'm still working through myself, but Tenzin and I give it a good amount of time in this episode. So I hope you enjoy this episode with Tenzin, and I'll see you next week. Goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 298.83,
+      "end": 303.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello, everybody. You're listening to Gray Mirror, Venerable Tenzin. Thanks for being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 303.37,
+      "end": 303.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 303.57,
+      "end": 304.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's a delay. Thank you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 304.65,
+      "end": 319.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, excited to chat here. And we're chatting in person in his office, which is nice, hanging out here. So I guess, Tenzin, could you just give us a high-level overview on, like, what you do, how you think about ethics, your background, just to get a little bit of texture for our listeners.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 320.78,
+      "end": 367.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Well, I think to simplify my background, I am a monk, a Buddhist monk, trained in Indo-Tibetan Buddhism. But I'm also somebody who has a secular studies background, so I did my studies in regular schools and colleges and universities. I've been at MIT for the past 20 years in various capacities. And about 10 years ago, I founded the Dalai Lama Center for Ethics at MIT. And about five years ago from Liguan the Media Lab and started the ethics initiative. And much of the work is around reimagining ethics in society. I was a bit tired of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 369.23,
+      "end": 387.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "traditional models around how ethics is taught and how effective it is in terms of people's ability to retain the lessons that they have learned in classrooms and otherwise. And more importantly, how do they actually apply it in their day-to-day behavior, decision-making and so on.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 389.33,
+      "end": 404.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And, you know, of course, my disposition is such overall is that I am interested in aspects of human suffering, human condition and how we can get out of it, how we can experience a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 404.79,
+      "end": 406.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "complete",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 406.21,
+      "end": 408.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sense of freedom and joy and happiness.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 410.22,
+      "end": 412.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's the aspirational state of thanks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 412.28,
+      "end": 425.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that's also, I think that's a great, it's funny because it's like, oh, could you give me your back? I'm a monk, you know, that's a, that's, and there's so much depth there, but at the same time, it's, you know, that's a good, like, TLDR, very quick",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 425.14,
+      "end": 425.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "summary. You know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 425.84,
+      "end": 450.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the funny thing is that a couple of years ago, I was, I was giving a series of talk in Asia, and people were trying to point out, what my discipline was. You know, and I was in robes, you know, visibly as a mug, speaking at these different gatherings. And people were like, well, you know, he's a physicist, well, he's a social theorist, well, he's a futurist. I said, you know, these are very confusing labels. I think just say that I'm a monk.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 450.86,
+      "end": 451.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Totally.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 451.82,
+      "end": 480.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Totally. Yeah, that kind of is easier, yeah. So let's, let's dive into, I mean, in this episode, we're going to talk a little bit about the intersection of tech ethics, a little bit about Buddhism, a little bit about, you know, some of the teaching stuff that you have. But, like, let's dive into that ethical piece at the beginning that you were chatting about there and reimagining ethics. So I guess let's start by saying, like, when you say right now, when you think about the state of ethics, you want people to both retain it better and to kind of apply it more. Tell me a little bit more about both of those aspects, retaining it and then applying it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 480.78,
+      "end": 542.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So the thing is that, you know, historically what we have taught of ethics is mostly around the issue of right and wrong. And the system has gradually been replaced by legal systems. But increasingly, we are also recognizing that what is legal may not be ethical. And when it comes to day-to-day decision making, just the fear of breaking illegal regulation or fear of punitive damage does not necessarily promote human flourishing. It does not necessarily promote the sense of how to be a good human, how to be a good citizen. And so my initial efforts were simply to expose individuals, especially in the business and financial communities and then people who are in the tech world. to these kinds of framings and questions, and how is it that they could think deeply and critically about their own decisions and how it impacts society at large?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 542.75,
+      "end": 556.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I love that. I think that, and actually we were going to chat about this later, but there's a Martin Luther King quote that says one not only has a legal, but a moral responsibility to obey just laws. Conversely, one has a moral responsibility to disobey unjust laws.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 557.35,
+      "end": 557.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And that's kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 557.87,
+      "end": 584.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of exactly what you're talking about. How would one... A, I think I agree with you that we've been living, and when we think about, like, ethics and morals, it's like, okay, so as I go through the world, if I abide by the laws, then that's probably good. But as you're saying, we might need to update that and say, no, deeply think from like a first principles perspective about this. When you think about disobeying an unjust law, what kinds of, you know, things would say, okay, I should disobey this unjust law?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 584.68,
+      "end": 587.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I mean, you know, so historically as you see in...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 587.4,
+      "end": 588.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Cases",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 588.06,
+      "end": 590.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of, for example, South Africa, the United States,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 592.49,
+      "end": 612.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "discrimination because of color, because of race. At some point, they were legal. Owning slaves were legal. So its legality of anything is accepted by norms of certain times, but it has to be challenged by individuals who believe that it is ultimately not of value",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 612.81,
+      "end": 613.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 613.45,
+      "end": 614.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "society.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 615.94,
+      "end": 626.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think any generation will encounter their own set of unjust laws. I think humans are prone to that. And that's why we need ethical framing. That allows us to do that better.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 627.48,
+      "end": 666.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So let's talk about that ethical framing perspective for a second. I would say that for me personally, I'm at the beginning of my journey with my ethical journey, but I felt personally... relatively, I think that the effective altruist perspective, which is a consequentialist kind of outcome-oriented perspective, has been relatively powerful. It says, hey, like, there's 70 billion land animals, you know, factory farm every year, like we should worry about that. There's, you know, still 750 million people in extreme poverty. Let's think about that. Also, maybe the long-term future. We should think about that. And so I guess, tell me what are your thoughts on something like the effective altruist community, either from an ethical perspective or, like, the community more generally. What are your thoughts on that framing?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 668.62,
+      "end": 669.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 670.88,
+      "end": 675.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "as a Buddhist, we deeply think about altruism.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 675.44,
+      "end": 676.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 676.54,
+      "end": 678.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And we critically think about altruism.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 679.13,
+      "end": 679.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 679.55,
+      "end": 684.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think effective altruism is a good movement in the sense that a lack of such movement",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 684.97,
+      "end": 686.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "will",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 686.21,
+      "end": 688.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "leave society in no better place.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 688.71,
+      "end": 689.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 689.23,
+      "end": 692.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the challenge is this. The challenge is around the idea that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 692.01,
+      "end": 693.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 693.03,
+      "end": 695.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "have a movement and you have embodiment of such movements.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 695.95,
+      "end": 696.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 698.09,
+      "end": 705.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "all sorts of arguments around the principles that drive the movement versus individuals who embody that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 706.75,
+      "end": 707.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 707.11,
+      "end": 712.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "one of the challenges that I see is that effective altruism cannot be practiced",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 712.61,
+      "end": 713.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "simply",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 713.93,
+      "end": 715.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "from a place of anger or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 715.67,
+      "end": 715.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 715.81,
+      "end": 725.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a place of rage or from a place of complete dissatisfaction. That effective altruism has to be rooted in elements of self-compassion and compassion towards others.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 727.0,
+      "end": 727.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "One",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 727.36,
+      "end": 729.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of the challenges that I find in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 729.3,
+      "end": 730.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "speaking",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 731.08,
+      "end": 733.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "about ethics is that I believe that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 734.12,
+      "end": 736.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 736.14,
+      "end": 740.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "much more difficult to be ethical. It becomes very easy to become self-righteous.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 742.14,
+      "end": 764.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And oftentimes, even individuals who think that they are being ethical are mostly employing arguments of self-righteousness. And then, you know, when we enter into self-righteousness mode of things, you sort of... inflate the tribal sense and tribal values of who's right and who's wrong and then you stick to it and then you're defending the argument dogmatically and so on.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 765.0,
+      "end": 765.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 765.42,
+      "end": 770.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I believe that the notion of altruism, of course, from a Buddhist perspective, is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 770.78,
+      "end": 771.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 771.76,
+      "end": 796.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "are some tangible goals to all. But there are also some aspirational goals. Meaning it's not that all aspects of altruism are going to become tangible in a short scale of time and space. But we have to hold that aspiration true. And we have to hold the aspiration as a mirror in terms of how much am I actually evolving rather than just being a spokesperson for movement. How much do I actually embody the movement?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 797.58,
+      "end": 834.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. Yeah, so it sounds like you're, so it sounds like in general, you think that the principles aren't bad that like A, just it's a line with you in terms of more people thinking about ethics in general, whether those ethics are good or bad. is a good thing. And then people thinking, and then the effect of altruist principles, you're relatively down with them, but some of the manifestations of them can be negative. And I think that what you're saying about, like, the ethicalness versus the self-righteousness is super true. And we're going to dive into that a second. And there's like the tribal nature, which is, I think that effective altruist can get into this as well. It's like, oh, I'm an effective altruist. I'm part of this movement. I'm doing what's best for the world. And you are the other.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 834.92,
+      "end": 835.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 835.56,
+      "end": 837.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "i think that that can be negative",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 837.02,
+      "end": 837.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 837.24,
+      "end": 840.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "because again it's an issue of that you know we all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 840.4,
+      "end": 841.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "effective",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 841.36,
+      "end": 844.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "altruism is not immune to becoming",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 844.74,
+      "end": 846.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 846.72,
+      "end": 853.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "isolated thinking in some ways and and not becoming another tribe you know in some",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 853.14,
+      "end": 853.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "ways",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 853.38,
+      "end": 867.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and so one of the things to to deeply reflect on is that how do i minimize tribalism many effective altruism for who and this is where the buddhists you know are challenging in some ways because they are saying that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 867.14,
+      "end": 868.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "no",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 868.32,
+      "end": 878.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sentient being should be excluded from my altruistic goals, should be excluded from my altruistic aims, whether I disagree with them, whether I dislike them, whether they don't look like me, they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 878.8,
+      "end": 879.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 879.24,
+      "end": 880.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "speak the same language,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 880.32,
+      "end": 880.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but they're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 880.58,
+      "end": 883.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "all objects of my altruistic intentions",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 883.18,
+      "end": 883.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 883.48,
+      "end": 928.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "altruistic framing. The second part of it is that there has to be some sense of discipline compassion. And that is something that I've been talking a lot about. also in the sense that oftentimes, you know, when you look at altruistic acts, most altruistic acts are accidental. It's a certain urge. When you go and interview an individual who's just engaged in an altruistic act, they would say things like I wasn't thinking about it. There was something urgent about it and something drove me to do that. So the thing is that we begin to believe that altruism is not rational because people are not planning on it. They're not thinking about it. Similarly with compassion and kindness aspects of things that our day-to-day manifestation of it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 928.97,
+      "end": 929.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 929.55,
+      "end": 950.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "often a function of our mood. When we feel slightly embedded towards somebody, we try to do that. And the example that I use often is that, you know, imagine, you know, you're walking on a Harvard Square and you see a homeless person. And it's, you know, it's a cold day, but you decide that you're going to grab a cup of coffee and...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 951.24,
+      "end": 951.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 951.72,
+      "end": 956.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "take it to this homeless person. And the homeless person basically takes the coffee, spills us out,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 956.42,
+      "end": 956.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 956.46,
+      "end": 959.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "says, go to hell. I wanted a chicken sandwich.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 960.38,
+      "end": 960.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Now,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 961.52,
+      "end": 964.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the issue becomes, how inclined would you be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 964.0,
+      "end": 965.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 965.46,
+      "end": 966.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "repeat that gesture?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 966.82,
+      "end": 967.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Totally.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 967.64,
+      "end": 967.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Right.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 968.04,
+      "end": 968.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 968.28,
+      "end": 974.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's where the discipline part comes in in terms of what I think should be the driving principle of effective operas.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 975.72,
+      "end": 1000.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "That's interesting. So that discipline piece, I think, is fascinating. And it goes to this this general concept of something that I wanted to touch on with you, which is this balance between so. So for example, let's say you go to this homeless person, you say, hey, here's this coffee, and they say, I don't want it. And then you're like, okay, I must be disciplined here. I must be compassionate. Here's another coffee. And they keep doing it. And I do it. And let's say I do it every 30 minutes for, you know, a year. Then it's like, oh, man, I don't know, Reese.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 1000.91,
+      "end": 1001.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's you. Maybe",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 1001.89,
+      "end": 1002.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they want.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 1004.69,
+      "end": 1011.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So this is where the Buddhist talk about skillful means, which is that it's not altruism on my terms.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 1012.29,
+      "end": 1012.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Truly",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 1012.81,
+      "end": 1016.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "understanding and gauging the need on the other",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 1016.23,
+      "end": 1017.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 1017.21,
+      "end": 1018.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then being able to respond to that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 1019.05,
+      "end": 1019.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1019.51,
+      "end": 1025.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "other part of it is agency that I may not be the best suitable agent to intervene in that scenario.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1025.43,
+      "end": 1025.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1025.69,
+      "end": 1027.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the question becomes do I find somebody else?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1027.75,
+      "end": 1028.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1028.23,
+      "end": 1040.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "do I want to really have the ego or the pride of I want to be the person who does the intervention. So these are sort of framing around discipline compassion as to who's the agency, where is it coming from,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1041.12,
+      "end": 1041.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what the intention",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1041.58,
+      "end": 1041.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "has.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1042.0,
+      "end": 1042.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1042.58,
+      "end": 1045.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and I agree with that. And I want to kind of go to one level of further meta,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1045.94,
+      "end": 1046.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "which is to say,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1047.44,
+      "end": 1053.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "how do you, so I think both in this, this world of some of these like ethical worlds where you're thinking about, oh, should I do this, should I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1053.88,
+      "end": 1054.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "do that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1054.32,
+      "end": 1063.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "What's the balance between ends and means? You get in these, there's a lot of, like, balances. And what we're talking about now is also a balance of, like, how much should you be patient and compassionate versus saying, like, you know what, maybe I should move",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1063.5,
+      "end": 1064.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1064.4,
+      "end": 1094.19,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what, my question is, how do you think about, how do you, or let me say one final thing, which is, I think that Buddhism also, from my brief foray into it, there's lots of these kind of, there's this question of no self, and there's this non-dualism and these kinds of things. So how do you think about just like, balance or tensions or dialectics or kind of dances or dualism in general like how do you when you have two ends of a spectrum how do you work through that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1094.19,
+      "end": 1094.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "well",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1094.49,
+      "end": 1142.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I mean much of our life and much of human condition is around maintaining the balance and maintaining that tension because we have natural propensity to move in either extremes that's why Buddha formulated his teaching as as the middle path that we have very difficult time being in the middle. And middle is not just, you know, means of two extremes. It's finding a more nuanced position or finding a more grounded position from which you can operate as a person, but where also a sense of growth happens. So it's not avoiding the extremes, it's understanding the extremes. And then recognizing where do I hold the tension. So it's the same issue that, you know, there are things that are of urgent nature. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1142.62,
+      "end": 1143.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1143.06,
+      "end": 1160.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "are things that do require certain amount of patients. And so as an individual, you have to make a choice. You have to make a decision which would cater to your sense of urgency. But even things that are urgent, you need to sort of deal with it patiently",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1160.2,
+      "end": 1161.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because, as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1161.94,
+      "end": 1177.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I said, change does not always happen on our terms. And when you're talking about systemic changes. So this is where the thing is that, you know, from Buddhist perspective, part of the discipline is that if you're not patient, so you're driven by a sense of urgency.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1178.11,
+      "end": 1178.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1178.23,
+      "end": 1198.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "believe that, you know, every individual from Buddhist perspective who's trying to make changes is driven by a sense of urgency. We don't want people to suffer more than they have to, longer than they have to. But at the same time, if I am not patient, the chances are that I... have more probability to be frustrated,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1198.49,
+      "end": 1198.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to have burnt",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1198.95,
+      "end": 1202.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "out syndromes, to get disillusioned",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1202.19,
+      "end": 1202.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1202.43,
+      "end": 1204.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "process itself. Those are the challenges.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1205.21,
+      "end": 1222.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, and I think, I mean, you're right to say, I think that's a specific example here of like the urgency versus the patients. I think, and what I would say is, or something I think can be difficult for people is, And I related to this perspective of there's modernism, which is like the world tells us what to do.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1222.56,
+      "end": 1223.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And then there's postmodernism, which is like nothing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1223.9,
+      "end": 1228.42,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is true. And then there's like meta modernism, which is like thinking about all the world saying, okay,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1229.04,
+      "end": 1229.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "let's,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1229.3,
+      "end": 1232.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of all these different perspectives, I'm going to choose one right now and hour. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1232.06,
+      "end": 1232.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how do you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1232.38,
+      "end": 1239.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "think about given this kind of framing of when you have these two poles and you're always dealing with two poles or whatever,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1239.9,
+      "end": 1240.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1240.38,
+      "end": 1247.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "do you create coherence? How do you think about creating coherence and a coherent like way to move forward given all these tensions and dialect.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1247.4,
+      "end": 1264.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "That's a great question. So I think one thing to understand is that coherence does not imply certitude. Coherence does not always imply stability. Coherence simply implies a greater understanding of the process and a greater understanding of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1264.32,
+      "end": 1265.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1265.3,
+      "end": 1276.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the trajectory, what the art is going to be. The dilemma is that we seek artificially a sense of stability that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1276.44,
+      "end": 1277.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "goes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1278.37,
+      "end": 1302.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "against the nature of the world. If we were able to have the resilient quality of embracing uncertainty, I think we'll be better off in that way. No, we can have momentary certitude of tanks. But, you know, the characteristic of this world is how they say... Fuka, volatile, uncertain,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1302.71,
+      "end": 1303.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "unlegious,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1303.41,
+      "end": 1303.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1304.01,
+      "end": 1304.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1304.45,
+      "end": 1314.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the characteristic of the world that we're living in. And so you have to train your mind to embrace those characteristics and say, how do I persevere through this?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1314.41,
+      "end": 1329.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, I agree with that. And I think that I especially agree with the idea that coherence does not necessarily mean you have 100% certainty. It's like, look, you're just, it's more if a clarity of your own, like, trajectory for the next period of time or something like that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1329.44,
+      "end": 1329.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and not just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1329.86,
+      "end": 1331.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "like an overall oh i know everything",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1331.26,
+      "end": 1331.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1331.76,
+      "end": 1375.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so let's let's kind of stay on this like buddhist train for just a quick second longer and then as before before tensen i got on we were chatting about meditation i just was proud of myself because i went on my first like three-day meditation retreat and tennan does it every weekend so it's um and i was asking him what his meditation practice and he says hey i kind of you know i need it for you know You said something like, or if I didn't do it, it would be an occupational hazard or something like that. So tell me about like why, and I'm also reminded of this guy who wrote Sapiens, you've all know, Harari, who said for him, he does lots of meditation as a way to, he thinks of it as like tech is like trying to understand him and he's trying to understand himself before tech can understand him. So tell me about how you think about meditation and why it's important for your daily life or everybody's daily life perhaps.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1375.4,
+      "end": 1388.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think, you know, I mean, there are different. reasons why people meditate. You know, I think in modern society or the world that we live in, awful times people meditate simply to maintain sanity.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1388.28,
+      "end": 1388.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1388.44,
+      "end": 1390.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1392.61,
+      "end": 1402.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "because of their day-to-day sort of overwhelming tendencies with technology, with relationships, with interactions",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1402.89,
+      "end": 1403.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1403.15,
+      "end": 1418.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so on. However, you know, if you're doing it for a period of time that I am doing it for. you sort of move away from this reactive sanity-seeking meditation framework.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1418.1,
+      "end": 1418.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You're looking",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1418.56,
+      "end": 1422.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "at meditation more in terms of gaining deeper sense of clarity,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1423.14,
+      "end": 1423.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "both",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1423.88,
+      "end": 1425.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "about yourself and about the world.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1425.74,
+      "end": 1426.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1426.12,
+      "end": 1442.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "an incremental process. And you're trying to sort of also engage in, by virtue of gaining clarity, into things like virtue cultivation, in terms of understanding which part of your behavioral disposition. should not be manifested more often",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1442.89,
+      "end": 1443.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1443.31,
+      "end": 1458.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "society. How do you regulate that? So it's an increasing sort of forte in self-awareness. At the same time, understanding deeper, sort of the nature of the world, the nature of reality, the nature of others.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1460.55,
+      "end": 1460.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1460.68,
+      "end": 1462.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "silence",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1462.24,
+      "end": 1472.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is a good thing. We fear that a lot. And oftentimes I have to remind people that, you know, We have forgotten to spend quality time with our own mind.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1473.11,
+      "end": 1473.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1473.55,
+      "end": 1477.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "always use a medium, internet, television, social",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1477.61,
+      "end": 1478.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "media.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1478.75,
+      "end": 1487.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "You know, we do things with our mind, but we never sort of just sit down with a mind and say, mind, you have been there for a long time. Let's get to know each other.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1487.89,
+      "end": 1488.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 1488.41,
+      "end": 1494.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Let's understand each other. And initially, meditation is simply that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 1494.65,
+      "end": 1509.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, I like that. I think that there's... I definitely agree with the initial piece of, for some people, just to maintain sanity. And I'm kind of, I'm luckily, like, very, like, pretty emotionally stable. And so, but I know for other people at this meditation retreat, they were experiencing deep kind of, like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 1510.26,
+      "end": 1510.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "emot.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 1510.66,
+      "end": 1540.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And, like, for me, I'm also not too, like, triggered by the world, wherever, you know, like, so. But I think for a lot of people, like, yeah, that first piece of just being like, whoa, what happens when there's, the world occurs, and then what is my reaction to that? And then, as you say, the second piece is that clarity piece, I think, And I'm reminded of, you got, especially starting with yourself first, I think is so powerful. And just being like how understanding your lens and how your mind works is crucial for then understanding how the world works. And then I also think that third piece about just silence being good.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1541.09,
+      "end": 1541.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1541.27,
+      "end": 1561.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "agree. It's like there's, I think it's. which is very helpful for people to do kind of categorically different things. And when you go and when you're meditating, it is so different than all the other things that you do in your life, which has noise around them, which have mediums that are not just purely your mind. And even just for doing something that's categorically different, just different for different sake is almost nice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1561.69,
+      "end": 1562.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes, yes, yes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1562.63,
+      "end": 1564.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And I think, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1566.2,
+      "end": 1569.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we need more experience of stillness.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1571.7,
+      "end": 1572.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Again,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 1572.32,
+      "end": 1584.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "stillness is not certain to you. but it's a form of stability that we're all lacking. And it does yield to a certain form of groundedness that I think is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 1584.18,
+      "end": 1585.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "good",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 1585.28,
+      "end": 1587.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "for our species.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 1587.46,
+      "end": 1618.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, nice. Yeah, I agree. I agree. Like an underlying foundation. So I would say I'm pretty bullish on meditation and I think that it's a very powerful thing. And like, in like, of i don't again i don't know that much about the different religions but like buddhism more generally the fact that it always takes this kind of multi you know this dynamic perspective on things um i think again that's a that's a that's a vast generalization but what are the my the question i'm getting to here is what are the negatives to to something like meditation or you know something like this this mindset um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 1618.67,
+      "end": 1619.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "well",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 1619.31,
+      "end": 1623.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so let me let me frame it this way i mean the first thing is to understand that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 1623.41,
+      "end": 1624.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 1624.29,
+      "end": 1624.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 1624.45,
+      "end": 1625.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "i",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 1626.35,
+      "end": 1635.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "would like to think when I'm studying Buddhist texts or looking at Buddhist practices, that there are certain things that are not about Buddhism per se. It's just about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 1635.28,
+      "end": 1636.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "factual",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 1636.56,
+      "end": 1637.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "aspects of life.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 1637.78,
+      "end": 1637.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Meaning,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 1638.36,
+      "end": 1639.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, so you take things like change",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 1639.96,
+      "end": 1641.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or impermanence",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 1641.0,
+      "end": 1646.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that is highlighted in Buddhist philosophy or Buddhist learning and how to deal with it as well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 1648.83,
+      "end": 1649.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 1649.21,
+      "end": 1655.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not a Buddhist concept. Meaning that just because you're not a Buddhist doesn't imply you don't experience change",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 1655.87,
+      "end": 1656.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or impermanence",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 1656.71,
+      "end": 1666.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "or death or anything of that. Meaning so these are factual aspects of our day-to-day experience. The Buddhists have tried to shed",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 1666.74,
+      "end": 1667.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "some",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 1667.34,
+      "end": 1680.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "insight on how to sort of work through it, how to cope with it, how to embrace it in some ways. I think that the negative aspects of meditation is, again, that you can go extreme in any",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 1680.65,
+      "end": 1681.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "direction.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 1682.25,
+      "end": 1685.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And, you know, Buddha himself was very...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 1689.61,
+      "end": 1690.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 1690.05,
+      "end": 1694.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "very, very deep thinker, but always reminded people of moderation",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 1694.39,
+      "end": 1695.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 1695.91,
+      "end": 1703.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "key to them. And my challenge, like yesterday, you know, we had this conversation with a rabbi friend of mine",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 1703.18,
+      "end": 1703.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 1703.68,
+      "end": 1715.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a colleague from one of the Zen monastery in Tokyo to talk about Shabbat and mindfulness. And it was one of those things where we started talking about the, you know, that everything takes a popular route",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 1715.64,
+      "end": 1716.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "some things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 1716.71,
+      "end": 1718.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And so you have this thing where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 1718.53,
+      "end": 1719.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "meditation has",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 1719.27,
+      "end": 1721.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "become, you know, part of the pop culture",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 1721.77,
+      "end": 1722.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "psychology.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 1723.39,
+      "end": 1730.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And the thing to ask is, you know, what is it actually contributing to? Is it useful in the wrong run?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 1730.53,
+      "end": 1730.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Is it good",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 1730.89,
+      "end": 1738.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in the long run? You know, so, so there, you know, intention is a key thing of why am I meditating?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 1739.19,
+      "end": 1739.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So knowing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 1739.57,
+      "end": 1739.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 1739.91,
+      "end": 1740.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 1740.47,
+      "end": 1745.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "useful. And then having... proper sort of, I think, guidance or guidelines around how to go about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 1745.92,
+      "end": 1746.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 1746.36,
+      "end": 1755.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of tremendous importance. Otherwise, chances are that we start encountering some of these negative aspects associated with meditated.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 1756.06,
+      "end": 1756.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 1756.56,
+      "end": 1764.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that makes sense. I think there's, A, I super agree on in a very classic response, you know, like, everything in moderation,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 1764.34,
+      "end": 1764.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "even moderation.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 1765.72,
+      "end": 1776.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And then I think that there's also, you know, the other piece of like, if you're, as something it's more popular just to make sure that you're that you are not doing the clickbait version of it but rather trying to to do it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 1776.8,
+      "end": 1777.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "making",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 1777.24,
+      "end": 1779.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "sure you you know you're you're self-aware of your intentions and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 1779.76,
+      "end": 1780.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are doing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 1780.0,
+      "end": 1799.01,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it's a good way so do you think i'd like to transition now to talking about like um technology and tech ethics and it's something that i think is interesting because there are many i don't know how many but a good amount of many monks in the world and and that think about and many people who think about ethics but only some have gone down this path that you've gone down of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 1799.01,
+      "end": 1799.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like thinking",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 1799.67,
+      "end": 1810.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "more deeply about tech and tech ethics. So could you just tell me more about what was your first like kind of, you know, catalyst for you jumping down the kind of tech ethics route and how you're thinking about it these days?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 1810.97,
+      "end": 1811.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 1811.25,
+      "end": 1823.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think the initial instigator was a simple recognition that there are certain forms of technology that are evolutionary in nature",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 1823.34,
+      "end": 1823.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and they are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 1823.98,
+      "end": 1836.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "going to simply become more and more part of the human fabric. In the sense that it was not going to be a choice anymore. You know, I grew up in a generation where we still thought of technology as a choice",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 1836.97,
+      "end": 1837.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 1837.89,
+      "end": 1844.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "were always this kind of sentiments that if someday technology falls in this area we can go back",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 1844.35,
+      "end": 1845.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in time",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 1845.69,
+      "end": 1851.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and sort of be in this utopia where technology is not going to be part of our life.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 1851.45,
+      "end": 1851.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 1851.89,
+      "end": 1855.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think increasingly we are recognizing that that is not true.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 1856.04,
+      "end": 1856.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 1856.48,
+      "end": 1857.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "at the same time,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 1859.1,
+      "end": 1870.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we should not simply blindly follow aspects of techno-optimism, which is that society would be just better off with more and more technology, meaning the question of meaningfulness or purposefulness",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 1870.74,
+      "end": 1871.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 1871.68,
+      "end": 1883.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "still crucial in this direction. And then, you know, just insights around what happens when technology or a platform doesn't do what it was designed to do.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 1883.94,
+      "end": 1884.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Are people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 1884.48,
+      "end": 1887.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "thinking of... you know, unintended consequences",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 1887.66,
+      "end": 1888.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 1888.56,
+      "end": 1890.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "even if people know of consequences, are they ignoring",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 1890.94,
+      "end": 1891.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 1891.98,
+      "end": 1896.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So a classic example for me has been social media",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 1896.02,
+      "end": 1896.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 1896.88,
+      "end": 1905.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "one of the platforms, which is that, you know, even six, seven years ago, I was raising the issue with colleagues",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 1905.08,
+      "end": 1905.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 1905.76,
+      "end": 1909.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, social media is not necessarily doing what they think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 1909.64,
+      "end": 1910.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it is doing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 1910.28,
+      "end": 1912.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in terms of bringing people together",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 1912.75,
+      "end": 1913.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and connecting,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 1913.53,
+      "end": 1924.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that it is actually increasing this tribal behavior. And people are simply seeking, you know, based on interest groups. But people do not have refined sense of interests.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 1924.77,
+      "end": 1924.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 1925.91,
+      "end": 1940.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And it's a different kind of validation and it will add to a different kind of propulsion in some ways in the world that we live in. And the second aspect of it was also looking at short and long-term behavioral changes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 1940.86,
+      "end": 1941.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that were happening",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 1941.56,
+      "end": 1944.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to us. So for example, things like patients.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 1946.88,
+      "end": 1966.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "You know, I grew up in a generation that was still used to postal services. You wrote a letter, you waited for two months and you got to respond and you were happy you got to respond. You drafted another letter and you sent it out and so on. Growing up in India we did not have voicemails. So you call, if you got the person, that's fine. If you didn't get them, that's fine. And you called again.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 1968.81,
+      "end": 1976.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "You know, 20 years fast forward, you're living in a world where if people don't get a response in 30 minutes, there are self-doubts that I've",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 1976.65,
+      "end": 1977.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "created, that did I send",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 1977.73,
+      "end": 1986.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "them the right message? Is the person pissed at me? You know, how do I get hold of them? And so you see that there are behavioral shifts",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 1986.15,
+      "end": 1987.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 1987.61,
+      "end": 1993.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "are happening in individuals, and you ask yourself what the macro of this is going to look like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 1993.71,
+      "end": 1994.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 1994.37,
+      "end": 2000.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "civic society. And then, you know, the challenge was that most people,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 2000.36,
+      "end": 2001.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "again,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 2002.08,
+      "end": 2008.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "confuse ethics and compliance. So, you know, people would say, oh, we have a team that deals with compliance",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 2008.34,
+      "end": 2008.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and we have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 2008.88,
+      "end": 2015.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a chief compliance officer. But the whole notion of compliance, again, going back to aspects of legality and ethics,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 2015.22,
+      "end": 2015.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 2015.66,
+      "end": 2027.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that... you know you design a product you deploy it and if something goes wrong with it the compliance officer or the team kicks in and then they try to solve the the matter but the damage is done",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 2027.16,
+      "end": 2028.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 2028.04,
+      "end": 2031.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "when you talk about emergent scalable technologies",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 2031.56,
+      "end": 2032.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the damage",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 2032.2,
+      "end": 2032.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "could be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 2032.68,
+      "end": 2033.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "too",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 2033.32,
+      "end": 2033.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "vast",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 2033.88,
+      "end": 2034.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "before",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 2034.48,
+      "end": 2035.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we even catch it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 2035.54,
+      "end": 2036.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 2036.74,
+      "end": 2042.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "one of the requests the urges or encouragement that that i was trying to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 2042.06,
+      "end": 2042.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "uh",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 2043.86,
+      "end": 2046.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "give to my colleagues in the tech world",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 2046.5,
+      "end": 2047.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 2047.06,
+      "end": 2051.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that why don't we begin to think of ethics itself as an optimization framework,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 2051.38,
+      "end": 2051.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "which is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 2051.68,
+      "end": 2056.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that let's not think of ethical implications after the product is deployed,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 2056.98,
+      "end": 2057.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but look",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 2057.24,
+      "end": 2060.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "at it in the design process of things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 2061.28,
+      "end": 2061.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 2061.32,
+      "end": 2068.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that perhaps ethics will be an ally that will actually help us design better products if we take those perspectives into consideration.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 2068.8,
+      "end": 2069.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 2069.48,
+      "end": 2111.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah, I like that. I think there's Yeah, there's a lot there. I think that the, I mean, and I agree with the ethics as an optimization framework thing. I actually think that there's, I don't think we need to dive too deep into this right now, but I think that the cryptocurrency world has that kind of baked into it in a weird way where they're trying to redesign all the things. And as part of that, they're also, they're kind of a response to Google, Amazon, Facebook, Web 2.0 stuff. So I'm like saying, okay, how can we make a world that? based off the incentives that we're setting up, it is likely to lead to more powerful ethical emergent outcomes. So that's, hopefully there's some of that there. And I think that, yes. And I want to actually dive in, though, to, there's this concept though, and this tension that I want to get your take on, which is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 2111.75,
+      "end": 2112.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 2112.77,
+      "end": 2122.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "are, as people and as technologists have, as you say, there's these scalable, if you can press a button that goes to 4 billion network smartphones worldwide.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 2124.14,
+      "end": 2151.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "How should individual technologists and developers start thinking about, on one side, they should be super responsible and held responsible for their actions. It's like the fiduciary obligation. And on the other side, there's like, okay, We love permissionless innovation. Like the internet itself was like, you know, built on this world, it could be very permissionless and whatever. And in the crypto world, there's like this concept of unstoppable code. So how do you think about the balance between the responsibility of things versus just like permissionless, let it be free?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 2151.99,
+      "end": 2157.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So that's the thing. That's a very good framing of your question. I don't believe that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 2157.41,
+      "end": 2159.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "permissionless",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 2159.15,
+      "end": 2198.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and being responsible are mutually exclusive. in the sense that you know you ask yourself who is it that you're seeking permission from and why is it that you're seeing permission from and if you're truly seeing permission with the sense that your product is actually going to create something better or interject something better and the life of civic population or or individuals it helps you deeply think about well what are the permissions that I'm seeking And it helps you deeply think about the sense of responsibility. So even beginning with an attitude of non-harming",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 2198.69,
+      "end": 2199.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 2199.51,
+      "end": 2213.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a useful attitude that, you know, am I working on something that is going to be harmful to a certain subset of the population? And is that a collateral that I'm willing to live with? You know, how do I rationalize it? How do I process that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 2215.94,
+      "end": 2221.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And then the second aspect of it is that, you know, am I... caught up in my own narrative",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 2221.34,
+      "end": 2222.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of how this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 2222.08,
+      "end": 2223.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "thing is going to be beneficial",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 2223.3,
+      "end": 2224.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 2224.46,
+      "end": 2229.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this is I think one of the challenges that we are seeing more and more is that people are not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 338,
+      "start": 2229.48,
+      "end": 2230.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "critical",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 339,
+      "start": 2230.56,
+      "end": 2232.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "enough of their own narratives",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 340,
+      "start": 2232.24,
+      "end": 2232.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and that we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 341,
+      "start": 2232.84,
+      "end": 2236.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "simply buy the story that we weave",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 342,
+      "start": 2236.26,
+      "end": 2236.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "mm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 343,
+      "start": 2236.5,
+      "end": 2237.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "-hmm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 344,
+      "start": 2237.58,
+      "end": 2238.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and I think that's detrimental",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 345,
+      "start": 2238.9,
+      "end": 2239.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 346,
+      "start": 2239.48,
+      "end": 2241.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "human growth and human progress",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 347,
+      "start": 2241.4,
+      "end": 2241.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 348,
+      "start": 2241.82,
+      "end": 2245.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah that makes sense I think there's yeah I think that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 349,
+      "start": 2245.14,
+      "end": 2246.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 350,
+      "start": 2246.04,
+      "end": 2257.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "can not well I I want to dive it on that for just a quick second longer. The fact that they're not mutually exclusive, I guess that the way that a lot of people might say it is something like, hey,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 351,
+      "start": 2259.16,
+      "end": 2265.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "technology is neutral or like, you know, I produce the things and it's used by people and I didn't control, have any control over that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 352,
+      "start": 2265.58,
+      "end": 2266.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right, right. You know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 353,
+      "start": 2266.4,
+      "end": 2269.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think that's a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 354,
+      "start": 2269.39,
+      "end": 2270.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "logical",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 355,
+      "start": 2270.85,
+      "end": 2271.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "fallacy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 356,
+      "start": 2271.79,
+      "end": 2271.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 357,
+      "start": 2271.89,
+      "end": 2273.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 358,
+      "start": 2273.45,
+      "end": 2286.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and this is a logical fallacy in the sense that, you know, There's a very interesting thing about human behavior, right? When you do something great and you get recognized or your tool gets recognized, everybody wants to jump up and say, it was me, it was me, I did it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 359,
+      "start": 2288.48,
+      "end": 2295.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "If something really goes wrong, we want to blame something else. We want to blame other agencies, algorithms, and so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 360,
+      "start": 2295.22,
+      "end": 2295.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "forth.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 361,
+      "start": 2296.15,
+      "end": 2324.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So there's something about, you know, taking credit versus staying away from blame that is, you know, baked into our psyche, and we need to become aware of that. The thing is that this is where I want to move away from the traditional discourse on ethics as supposed to ethics is optimization. The traditional discourse on ethics has been that scientific community or design community often thinks that ethics is... a hindrance.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 362,
+      "start": 2324.78,
+      "end": 2324.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 363,
+      "start": 2324.9,
+      "end": 2325.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "an obstacle",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 364,
+      "start": 2325.34,
+      "end": 2326.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 365,
+      "start": 2326.0,
+      "end": 2354.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "raise those kinds of questions to scientific development. Here, what I'm proposing that it is not. That in fact, raising those kinds of questions can precisely help us frame better experimentation and better design. Because you have to again ask yourself who is it truly beneficial for. If that is going to be your argument. Otherwise, you know, the world is filled with all sorts of crazy lunatics",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 366,
+      "start": 2354.33,
+      "end": 2354.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 367,
+      "start": 2354.75,
+      "end": 2356.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they don't need permission.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 368,
+      "start": 2357.13,
+      "end": 2357.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 369,
+      "start": 2357.89,
+      "end": 2363.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But again, this is the thing that, you know, permissionless should not be romanticized",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 370,
+      "start": 2363.81,
+      "end": 2364.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to the extent",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 371,
+      "start": 2364.47,
+      "end": 2365.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that we become irresponsible.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 372,
+      "start": 2365.95,
+      "end": 2382.19,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, exactly. Yeah. And I think that, and I wish you luck on your journey with saying ethics as optimization trying to bake that into the system and getting companies to believe that that is... Because when they're just focused on ROI and, you know, making money, it's like, oh, man.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 373,
+      "start": 2382.59,
+      "end": 2382.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 374,
+      "start": 2382.81,
+      "end": 2383.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "why",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 375,
+      "start": 2383.35,
+      "end": 2386.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I said it's a, it's a, it's a, it's a, it's a systems thinking challenge.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 376,
+      "start": 2386.35,
+      "end": 2386.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 377,
+      "start": 2387.35,
+      "end": 2396.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "You know, we have to, you know, because the thing is you look at the alternate. What is the alternate? Which is that, you know, you look at the most pressing issues",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 378,
+      "start": 2396.4,
+      "end": 2397.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 379,
+      "start": 2397.16,
+      "end": 2401.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "climate change. It's about survival of the planet. And we're polarized about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 380,
+      "start": 2401.08,
+      "end": 2401.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 381,
+      "start": 2401.74,
+      "end": 2405.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Why are we polarized about it? Because we don't really understand our return of investments.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 382,
+      "start": 2406.18,
+      "end": 2406.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 383,
+      "start": 2407.69,
+      "end": 2418.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "our priorities are set in a certain direction. So that's what, you know, in the absence of ethical framing, this is what happens, which is that people will have more polarized conversations",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 384,
+      "start": 2418.97,
+      "end": 2420.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 385,
+      "start": 2420.61,
+      "end": 2421.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the self-righteous groups.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 386,
+      "start": 2421.81,
+      "end": 2421.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 387,
+      "start": 2422.27,
+      "end": 2424.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Rather than trying to actually figure out what would actually work.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 388,
+      "start": 2424.83,
+      "end": 2455.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. Yeah, that makes sense. So let's kind of transition to our final piece here, which is thinking about teaching and how you teach these guys. And you've taught for a while, both here at MIT and also around the world, and trying to get people to kind of level up their ethical framework. Tell, I mean, how, so pretend that you're some random person in the world, whether it's me or some, one of my listeners, how, How do you think about teaching and getting people to kind of move along the path towards better ethical, towards a more ethical life, essentially?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 389,
+      "start": 2456.17,
+      "end": 2459.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So I steer away from the idea of teaching ethics.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 390,
+      "start": 2459.69,
+      "end": 2463.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Nice, okay, nice. You reject the question, that's fine. That's fine, yeah, that's okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 391,
+      "start": 2463.83,
+      "end": 2475.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "There are two reasons. I think, you know, teaching implies that, you know, that there is a very sort of straightforward model to kind of thing. So, you know, generally when we can teach ethical arguments,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 392,
+      "start": 2475.55,
+      "end": 2476.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we can teach",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 393,
+      "start": 2476.01,
+      "end": 2483.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "about history of ethics and sociology of ethics and so on but not necessarily how it primes decision-making. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 394,
+      "start": 2483.56,
+      "end": 2484.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 395,
+      "start": 2484.68,
+      "end": 2487.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "are certain subset of tools that you try to impart",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 396,
+      "start": 2487.9,
+      "end": 2488.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 397,
+      "start": 2488.32,
+      "end": 2519.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 398,
+      "start": 2520.53,
+      "end": 2521.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Rather",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 399,
+      "start": 2521.01,
+      "end": 2529.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "than giving them the tools that you need to even question your ethical framing. The other part of it is recognizing that we live in an increasingly complex environment.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 400,
+      "start": 2530.47,
+      "end": 2530.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 401,
+      "start": 2530.95,
+      "end": 2538.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "very difficult to come to absolute right of things. So you have to impart the understanding of value trade-offs.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 402,
+      "start": 2538.34,
+      "end": 2538.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 403,
+      "start": 2539.38,
+      "end": 2547.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "That people need to really understand that in complex decision-making, we have to, to the best of our ability, understand",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 404,
+      "start": 2547.4,
+      "end": 2549.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 405,
+      "start": 2549.18,
+      "end": 2555.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is the cost to me and what is the cost of civic society if I act out of this value versus that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 406,
+      "start": 2555.28,
+      "end": 2555.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "value.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 407,
+      "start": 2556.74,
+      "end": 2571.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So I think these are some of the tools that we start with in this process. But more importantly, One of the things that, of course, I'm trying to suggest is that if people have a certain ethical framing around their lives,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 408,
+      "start": 2573.21,
+      "end": 2587.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they will live a more fulfilled life. That there will be more proximity to this ever-evasive sense of happiness and joy and purpose, which I think is, again, something that defines our species in some regard.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 409,
+      "start": 2588.17,
+      "end": 2597.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I agree. I think that there's... Yeah, once you start to go down the path of ethical stuff, then you start to, it has positive emergent behavior around like your own happiness and meaning",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 410,
+      "start": 2597.78,
+      "end": 2598.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "making and things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 411,
+      "start": 2598.38,
+      "end": 2635.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "like that. And just to reflect a little bit of that. A, yeah, think about your own journey with ethics and say, hey, are the things that I believed, was I socialized into them, or how did I come to them, understanding that process, being aware of that, and then also being aware of like, okay, if I'm trying to be more ethical, what are the parts of me that are also doing the self-righteousness and being like, oh, now I'm a great ethical person, hey world, check me out. And then finally, yeah, as you're going through, knowing that whatever your current state of being is in this complex world, whatever your current values are, you're going to have to make trade-offs and being aware of how to think about those trade-offs.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 412,
+      "start": 2635.47,
+      "end": 2671.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And the other challenge is that, you know, we are all, especially in literate societies and educated societies, we're all very well familiar with the vocabulary. So it's not just about, you know, if you ask people in a room, are you a kind person? everybody raised that but the question is who are you kind to on what occasions so so there is a there is a fallacy that that is developed in ourselves you know with any discipline which is that you know just familiarity with the vocabulary does not imply that you're embody those qualities",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 413,
+      "start": 2671.78,
+      "end": 2673.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah totally totally so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 414,
+      "start": 2673.18,
+      "end": 2676.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's why i tried to steer away from like best practices",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 415,
+      "start": 2676.19,
+      "end": 2676.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 416,
+      "start": 2676.87,
+      "end": 2678.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "competency models",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 417,
+      "start": 2678.07,
+      "end": 2678.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "around",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 418,
+      "start": 2678.73,
+      "end": 2679.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "ethical framing of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 419,
+      "start": 2679.75,
+      "end": 2679.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 420,
+      "start": 2680.53,
+      "end": 2684.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "It really requires individuals to go through the change.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 421,
+      "start": 2684.71,
+      "end": 2708.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, totally. Both, and I'm reminded of your disciplined compassion phrase from earlier and making sure that, yeah, it's actually being manifested and embodied within ourselves. So with that, thank you so much for coming out. Usually when people end, when I end podcast, I tell them like, go check out their Twitter. But for you, do you have any next steps for any of my listeners if they want to either check out the site, you know, the ethical site?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 422,
+      "start": 2708.39,
+      "end": 2708.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 423,
+      "start": 2708.69,
+      "end": 2711.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I mean, my encouragement will be check yourself out.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 424,
+      "start": 2712.39,
+      "end": 2712.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Nice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 425,
+      "start": 2713.45,
+      "end": 2714.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Disconnect for a while",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 426,
+      "start": 2714.47,
+      "end": 2715.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and sit",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 427,
+      "start": 2715.23,
+      "end": 2718.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in silence and stillness, look at the water or sky and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 428,
+      "start": 2718.25,
+      "end": 2718.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 429,
+      "start": 2718.93,
+      "end": 2726.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "reflect a bit. But if people want more information, they can just Google Ethics Initiative at MIT Media Lab or the Dalai Lama Center. Thanks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 430,
+      "start": 2727.39,
+      "end": 2731.91,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Great sweet. Perfect. Well, again, thank you so much and thank you listeners for coming for listening today.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 431,
+      "start": 2732.41,
+      "end": 2733.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Perfect. Thank you so much.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 432,
+      "start": 2733.55,
+      "end": 2733.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Bye.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 433,
+      "start": 2750.1,
+      "end": 2750.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "It's quite a setup.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 434,
+      "start": 2751.93,
+      "end": 2752.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 435,
+      "start": 2752.15,
+      "end": 2754.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 436,
+      "start": 2754.41,
+      "end": 2760.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "saying that it looks like we're working relatively well? Do you mean that's quite a setup like it looks legit or not legit?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 437,
+      "start": 2760.53,
+      "end": 2760.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "No,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 438,
+      "start": 2760.73,
+      "end": 2761.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it looks very legit.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 439,
+      "start": 2761.43,
+      "end": 2762.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh, really? It looks",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 440,
+      "start": 2762.07,
+      "end": 2764.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "very light. It's also very streamlined.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 441,
+    "withheld": 1,
+    "published": 440
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

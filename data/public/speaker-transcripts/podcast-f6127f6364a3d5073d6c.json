@@ -1,0 +1,1872 @@
+{
+  "schema_version": 1,
+  "id": "podcast-f6127f6364a3d5073d6c",
+  "title": "#9: Rhodri Davies — How Blockchain Will Impact Charity",
+  "published_at": "2017-08-10T17:16:59Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/9-rhodri-davies-how-blockchain-will-impact-charity",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/337316470-the-rhys-show-9-rhodri-davies-how-blockchain-will-impact-charity.mp3",
+  "youtube_id": "MxDtxbYtma4",
+  "youtube_url": "https://www.youtube.com/watch?v=MxDtxbYtma4",
+  "audio_sha256": "f5761f2158565d132f87890c732e38d60f729247ce99b2aca151a4b9707f36c9",
+  "audio_duration_seconds": 1938.9388125,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 6355,
+    "unknown_words": 108,
+    "unknown_words_fraction": 0.016994492525570417,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 12.85,
+      "end": 13.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 13.41,
+      "end": 50.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everyone. My name is Reeslinmark and welcome to another edition of Creating a Humanist Blockchain Future, where we focus on the intersection of effective volaturism, universal basic income, the attention economy, and blockchain. And today, in episode number eight, we're going to look at the intersection of kind of... Effective Altruism and Blockchain, namely blockchain for social good and kind of the charity work that's happening in that space. And today we're going to talk with Rodry Davies, who is a, or Rodry Davies, rather, a program director of Giving Thought, a department of the Charities Aid Foundation that focuses on policy work within kind of the philanthropy and charity from a macro perspective. So, Roder, thanks for being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 51.4,
+      "end": 52.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello. Nice to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 52.7,
+      "end": 52.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "be here.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 53.18,
+      "end": 56.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Thanks for being here. And I'm going to call you instead of Rodry from now on, Rod.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 57.12,
+      "end": 57.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 57.5,
+      "end": 58.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "absolutely fine, yeah. Good",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 58.72,
+      "end": 58.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "stuff.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 59.34,
+      "end": 70.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So that's happening. So I always love to start with why, for people who are working in the space. And so could you tell me a little bit more about kind of why you're working at the intersection of charity and blockchain and kind of how you got here?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 71.32,
+      "end": 83.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, absolutely. I mean, as you say, kind of my day job is broader than that. And that it's kind of thinking about charity in the world of charities and philanthropy from a... you know, reasonably big picture perspective in terms of kind of what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 83.82,
+      "end": 84.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 84.26,
+      "end": 116.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the factors that have influenced it and what might be coming around the corner. And one thing I kind of got into about three years ago, something like that, was just thinking about Bitcoin specifically in cryptocurrency in a pretty naive way. I didn't really know anything about it. And then I went on that journey of kind of realizing that actually It wasn't just potentially new store of money. The sort of features in terms of the ledger technology were interesting and a whole load of other ways. And then slowly over the last few years, I've been kind of doing bits of work and reports and things, trying to think through",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 116.53,
+      "end": 117.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 117.57,
+      "end": 132.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "some of those applications and implications might be based on kind of what I know about the world of charities and philanthropy. Because I'm, you know, I'm not an expert on the technical side of it, but I feel like I know enough to kind of... apply my understanding of it to stuff I do know quite a lot about.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 133.14,
+      "end": 133.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 133.7,
+      "end": 160.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that makes sense. I think that that's a great, that's sort of these collaborations that we're seeing happen is they're like hard, kind of hardcore technologists who come in are like blockchains and a consensus algorithms and proof of stake. And then you have other people like yourself who are like, oh man, I've been in charities for a long time. Oh, and here's this great new technology. And I think that the collaboration between those two people is how essentially work is going to get done within the space. And could you talk a little bit more about kind of the why perspective, though, for you as a human? You know, like, why did you?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 160.83,
+      "end": 161.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, yeah. Why",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 161.09,
+      "end": 163.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "are you working in this kind of the charity sector, essentially?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 164.47,
+      "end": 195.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "In the charity sector? I suppose I kind of, I mean, I fell into it slightly. I started off trying to be an academic. So I was ended up, I was doing kind of philosophy and started doing a doctorate. quite niche area of sort of philosophy of maths, which I realised was interesting in its own right, but not really, didn't feel like it was going anywhere. And I kind of wanted to apply that sort of mindset, kind of analytic stuff, to more real world things. So I got into policy. And I sort of fell into philanthropy slightly by a series of happy accidents",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 195.88,
+      "end": 196.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 196.68,
+      "end": 199.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "really hadn't given it much thought, but then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 199.64,
+      "end": 200.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "quite",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 200.5,
+      "end": 229.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "quickly discovered that actually... It's a fascinating lens through which to look at a whole kind of range of other issues because it's easy to think that sort of, you know, charities are niche topic. But actually the idea of using kind of private means to affect public good in the world is pretty fundamental and touches on a whole load of kind of things to do with political theory, history, you know, visions of society and all that sort of stuff. So, you know, I haven't run out of interesting things to look into so far.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 230.03,
+      "end": 230.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 230.47,
+      "end": 240.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I like that. I think that there's a, yeah, the philosophy of math is interesting with not as many outcomes. And this has the same amount of interestingness, but with real outcomes. And I also like what you're saying.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 240.71,
+      "end": 240.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 241.29,
+      "end": 270.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "There's a more confusing... And I was actually just talking about this with this blockchain for social good charity called Alice SI and how for a classic company, there's kind of a more clear outcome metric, which is what is your growth rate? What is the dollar for dollar exchange? And in some ways, the charity sector and kind of the nonprofit value for other sectors is more confusing. And it's a more complicated system with multiple, with more actors, essentially. So I think that there's a lot of juicy stuff within that space. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 270.57,
+      "end": 270.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "could",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 270.95,
+      "end": 280.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you talk a little bit more about specific? specifically some of the work that you're doing at Charities Aid Foundation kind of diving in there and the work that you're doing with Given Thought and especially some of the projects that you're excited by these",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 280.84,
+      "end": 282.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "days.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 282.17,
+      "end": 299.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, so I mean, certainly, you know, the stuff we're probably most interested in for today is the kind of stuff that touches on tech and that's kind of, there's a strand of what we do at Giving Thought, which we call Future Doing Good. So a lot of the blockchain works kind of sat under that and is ongoing, but we've started trying to take the same.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 301.11,
+      "end": 314.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "idea of, you know, learning enough about a technology to understand its features and applying that to the sort of stuff that we do in other areas. So we've been doing an increasing amount of work on AI, which obviously overlaps with blockchain, but is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 314.33,
+      "end": 315.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 315.37,
+      "end": 349.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of broader as well and some of the stuff about, you know, the role that charities might have to play in. ameliorating the dangers of algorithmic bias and that kind of thing. We've also done stuff around other technologies like kind of augmented in virtual reality, which I think again, there's been a lot of focus in terms of how they could be used for fundraising, which is interesting. But I think there's quite a lot more to it than that in terms of both positive and negative consequences. So we're trying to kind of keep doggedly doing the same thing. for a bunch of different technologies at the moment.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 350.29,
+      "end": 372.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that's interesting. And that is, I feel like that's relatively similar to a lot of people who are working in the space where they're like, okay, I'm excited by the future. We're now a hyper-networked, you know, human organism, human classes, whatever you want to call it. I'm not going to build an app these days, but I'm going to be thinking about AI and VR slash AR and blockchain and kind of what does the intersection of those look like within my",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 372.16,
+      "end": 372.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "field.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 372.7,
+      "end": 385.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So that makes sense for what you're doing. I also think another part of that I find fascinating is, as you say, you have this part of what you're doing called Future Doing Good. And that's kind of a macro trend that I see in the space is, you know, Dubai has a museum of the future.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 386.54,
+      "end": 386.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 386.94,
+      "end": 411.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think that that makes a lot of sense. And I'm not sure what like history classes will look like in the future. because right now you have a history class and you're looking at things from a really long time ago and you're starting to see this trend, especially in kind of the tech space where things have the word future in them because that's what you want to be thinking about and how it kind of is affected in the future. So I think that that's interesting. Do you want to talk about, so on the blockchain side of things, how does it actually,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 411.99,
+      "end": 413.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 413.07,
+      "end": 426.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know very little about the charity work kind of world, how... What does this intersection look like these days in terms of the blockchain world, in terms of the charity world? How do you kind of see them collaborating through time?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 426.85,
+      "end": 441.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, I mean, I think it's important to start off by saying it's easy to probably, if you talk to the right people in the small kind of middle bit of the Venn diagram between the two worlds to get a sense that things are further progressed than they are. Because actually,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 441.29,
+      "end": 441.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 441.69,
+      "end": 445.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, most charities and probably, you know, non-profits in the state are.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 446.01,
+      "end": 446.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 446.45,
+      "end": 465.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, the vast majority of them are kind of quite small organizations with little infrastructure, you know, probably largely volunteer run. They don't have the time or skill set to be engaging with things like blockchain. To be honest, half of them probably don't have websites. And, you know, so there's a whole, you know, there's a whole kind of job to do there in terms of getting people up to speed. I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 465.95,
+      "end": 466.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 466.65,
+      "end": 472.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "thing that I've been trying to do is where possible just to make people in the charity world aware",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 472.13,
+      "end": 472.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 472.93,
+      "end": 478.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this stuff is happening. And not only that, it's kind of happening at a pace at the moment that feels like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 478.25,
+      "end": 478.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 478.97,
+      "end": 483.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "can't ignore it because if you do, the problem is it'll happen anyway. And then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 483.09,
+      "end": 483.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 483.77,
+      "end": 499.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "might find yourself on the wrong side of some of the unintended consequences. And you never had a chance to take advantage of any of the benefits. And that seems like a shame given I think there are really some potentially quite significant benefits for charities if they can make blockchain work for them.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 499.99,
+      "end": 500.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 500.7,
+      "end": 515.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I think that that is, in the speed of the space is true and is relatively aggressive. The favorite stat that I like for that is three years ago at Consensus, which is this big conference. There were three people, Deloitte had three people in blockchain, and now they have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 515.5,
+      "end": 515.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "800",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 515.88,
+      "end": 518.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "people in blockchain. It's like, that's a lot more people. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 518.88,
+      "end": 519.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 519.66,
+      "end": 537.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "talk about crypto years or whatever. And I think that there's a, the way that I like to think about is like people talk about the accelerating rate of change. And I like to, and that's the... That's one of the derivatives, but I like to go one derivative deeper and think about the jerk, so that it's actually the rate of change itself is accelerating. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 537.61,
+      "end": 538.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 538.11,
+      "end": 540.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "happening surprisingly quickly. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 540.11,
+      "end": 540.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "could",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 540.33,
+      "end": 557.85,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you tell me a little bit more about, so you're trying to bring, to try to kind of essentially educate some of the charities in the space and say, hey, this is how blockchain could be used? How do you actually do that? What are some specific projects? Do you like go up to them and have meetings or do you make research papers or how does that work?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 558.06,
+      "end": 558.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 558.76,
+      "end": 576.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so I do, I mean, kind of definitely do discussion papers and blogs which are kind of pitched at, you know, sort of interested, informed audience in the charity world. But also I think, you know, I've found there's quite an audience within the kind of broader tech sector and certainly the kind of tech for good sector in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 576.34,
+      "end": 577.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 577.3,
+      "end": 589.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, the thing is, I tend to find myself in situations where. I'm sitting in a room and if there's charity people in the room, I probably know more about blockchain than they do. And if I'm in a room with tech people, I probably know more about charity than they do.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 589.49,
+      "end": 589.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 589.81,
+      "end": 591.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "don't necessarily know more about,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 591.49,
+      "end": 591.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 591.93,
+      "end": 595.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, the charity than the charity people or tech than the tech people. But that's fine because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 595.85,
+      "end": 596.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "nobody",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 596.59,
+      "end": 622.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "else has managed to get themselves into this little space in the middle or not so many people. So I think, yeah, I'm trying to, you know, do papers to kind of get people thinking about this discussion and actually, you know, manage to get that into things like quite. mainstream sort of trade press over here, which, you know, for the charity sector, which wouldn't normally cover anything to do with blockchain. But then, you know, I've found in the couple of years since I've been doing this, it's gone from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 622.52,
+      "end": 623.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "virtually",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 623.74,
+      "end": 636.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "everyone within CAF itself thinking I was slightly nuts for talking about this stuff to late, you know, this September, October, I've got about five conferences I'm talking about blockchain, some of which are kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 636.24,
+      "end": 636.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 637.4,
+      "end": 647.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "blockchain conferences, but some of them are more traditional charity tech conferences. And so the people are starting to kind of see, see that this is a real thing, which is exciting.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 647.76,
+      "end": 662.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah. I like that where you've been working in this, and this is how I felt when I, like, found blockchain and took the blue pill was like, okay, I am talking about these things and the rest of the world thinks that I'm kind of crazy. And then you go and blockchain, you're like, oh, everybody here. You know, they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 662.4,
+      "end": 663.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "think in a similar way.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 663.94,
+      "end": 672.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And then kind of, polling and like you say, it can be easy for us who are working in this blockchain for social goods sector, be like, oh, man, there are tons of people. Nope, there's not too many.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 672.42,
+      "end": 672.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 673.22,
+      "end": 692.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and kind of spreading that is definitely helpful. So how do you personally see then when you're kind of giving people, when you're telling someone who's in the charity sector, hey, here are the best ways that it can kind of help you. What kind of unique value proposition do you tell them you're like, hey, blockchain is going to be kind of, you know, it's going to take work clearly to implement it, but it'll have these positive outcomes. How do you talk about those?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 693.31,
+      "end": 693.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 693.73,
+      "end": 764.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "mean, it tends to be a kind of range of things from the, I think, more immediate to the much longer term. Although I have to say maybe I've kind of got the time scales on some things wrong, Cajun. I mean, I think there's some low hanging fruit in terms of challenges that charities know and understand like kind of cross-border financial payments and kind of having a non-geographic version of currency could help a lot there, reducing costs through disintermediation. So, you know, nothing. I mean, That's not the stuff that necessarily excites me, but actually that's probably where you're going to see early adoption. But then kind of, you know, I've talked to people and taken it beyond that and said, look, you know, we're at the stage at the moment where there is a challenge in terms of just getting people to adopt the technology, partly because, you know, cryptocurrency adoption is very far from universal at the moment. And. whilst the barriers to kind of accessing crypto and blockchain definitely, I think, have come down in the last couple of years. It's still not that easy to just, you know, buy crypto and start experimenting with it. And I think for it to really take off in the charity sector, it needs to get to a point where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 764.03,
+      "end": 765.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 765.11,
+      "end": 773.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "who don't really care that its blockchain technology can still benefit from it. But then usually when I'm talking to people, I kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 773.05,
+      "end": 773.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "talk",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 773.57,
+      "end": 795.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to them about that pragmatic stuff until they... think, oh, that sounds interesting. And then I launch into the stuff about how you could kind of automate giving through the application of AI or kind of fully decentralized charity through using DAWS, which they think is really fun. But then they tend to sort of think that stuff, science fiction, even though I'm able to tell them that it's actually still happening now. So.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 796.14,
+      "end": 797.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I think that that is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 798.34,
+      "end": 798.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 798.62,
+      "end": 814.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "think that what you're saying is a good point, which is like, hey, here are the. clear positive outcomes, the cross-border payments, the kind of, hey, smart contracts will allow you to do some disintermediation or add some more efficiency into your culture or add border. Do people get interested by the transparency side of things?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 815.13,
+      "end": 815.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 815.59,
+      "end": 816.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a piece as well?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 816.73,
+      "end": 823.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, you're right. Actually, I totally forgot about that. But that's one of the big ones, I suppose, is the idea of having kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 823.61,
+      "end": 823.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 825.11,
+      "end": 827.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "transparent public ledges with non-fundable units on it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 827.87,
+      "end": 828.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "around",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 828.25,
+      "end": 829.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "donation transparency",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 829.51,
+      "end": 830.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 830.15,
+      "end": 838.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "actually pretty much all of the live projects that I can think of at the moment in this space have transparency as one of the key features",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 838.05,
+      "end": 838.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "even",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 838.41,
+      "end": 840.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "if they're doing other stuff as well",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 840.25,
+      "end": 841.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 841.71,
+      "end": 841.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 841.89,
+      "end": 842.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "going",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 842.61,
+      "end": 851.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "back to that thing because crypto usage isn't ubiquitous at the moment the challenge is you know you've got to come in and out to that system at some point and at the moment",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 852.41,
+      "end": 852.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Your",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 852.79,
+      "end": 867.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "ability to stay in the system is probably quite limited. So the value of the transparency isn't as big as it could be. But there's slightly, I keep telling people, I'm like, that is right, but there's got to be a kind of bootstrapping effect where you do it at a small scale so that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 867.03,
+      "end": 867.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 867.79,
+      "end": 871.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "adoption takes off, you're in a position to really make this stuff work.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 871.85,
+      "end": 946.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Totally, totally. Yeah, I think that that, and that gets into this kind of telling charities to act more like startups realm. And we're kind of seeing this kind of. you know, this good company or this good charity kind of convergence of the nonprofit and profit sector. And part of that is saying, hey, you know, we take some risks in the sector and maybe blockchain will be slower than we expect. And maybe your charity might not even exist in two years if you go into blockchain. But if it does, and it does work, then you'll have bigger upsides or whatever. Could you talk a little bit more? So kind of zooming away from the specific work you're doing with Giving Thun, Charity's Aid Foundation, and specifically kind of transitioning to the second part of this podcast where we talk more about some of the macro trends within the space and something that Rod and I wanted to talk about was exactly what you were saying there, which is this kind of second tier of systems here with the automating giving through AI and... Daos and I'm especially interested in the Tao side of things because you have a lot of like Olaf from Polychain Capital just gave this great white combinator interview and he was like yeah I mean if you think about the ecosystem of products and services that exist around companies. There are a lot. And right now, there are very few products and services that exist around Dow's,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 947.59,
+      "end": 947.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 947.71,
+      "end": 957.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "they're going to be a huge part of in the space. So could you talk a little bit more first about how this like AI, Dow, charity Dow is going to work and then we can kind of dive into the secondary things later?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 958.27,
+      "end": 958.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 958.83,
+      "end": 982.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I suppose it's that idea that I've kind of... when you talk to charities is about sort of disintermediation and decentralization. They get it in terms of, at least at first. They're like, oh, yeah, disintermediation of a lot of the kind of value chains that we find ourselves in. So, you know, I would have to use necessarily kind of banks and multiple different agencies to get money places. But then when you kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 982.89,
+      "end": 983.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 983.41,
+      "end": 995.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "explain to them that actually the fact that, you know, virtually any type of asset can be recorded. on a blockchain means that you can actually take all of the elements of traditional organizational structures and put them on there,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 995.37,
+      "end": 996.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 996.05,
+      "end": 1001.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that those structures themselves can be decentralized and that actually it allows for things like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1001.75,
+      "end": 1002.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1002.75,
+      "end": 1015.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, kind of logistics at a moment, that at the moment requires some degree of centralization to happen in a decentralized way and decision making as well to happen in a decentralized way and make the point that actually,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1015.55,
+      "end": 1015.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1015.81,
+      "end": 1015.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1016.43,
+      "end": 1016.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1016.91,
+      "end": 1024.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "might actually be an existential threat to the idea of charities, we know it at the moment, because if you're able to do the same social good",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1024.71,
+      "end": 1025.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1026.08,
+      "end": 1029.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "well, if not possibly better, through decentralized structures,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1031.46,
+      "end": 1071.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then, you know, why wouldn't you? And actually, you know, we see in a lot of sectors, particularly in something like the international development sector, the organisations there are already having a lot of kind of soul searching conversations about... the way in which they democratize what they do and they move away from a model of sort of, you know, Western organizations imposing views about what, you know, beneficiaries need on them. And actually, you know, though that's very much kind of goes with the grain of the idea of kind of decentralization of structures and using things like Dow's. So actually it could just speed that process way ahead of where it's at the moment.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1071.37,
+      "end": 1133.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. So. And that was something that I, and I'm glad you brought up, which is like, hey, you're telling them, hey, these DAOs might be a great way to do things going forward. And it's like, but also it might be, your charity itself might go away and turn into a DAO or what have you. Or you might become a advisor to the DAO or you might be, you might have a different kind of experience that. How do you think about? So I just read this great book called Machine Platform Crowd, St.Sachd those three macro trends. And the final macro trend is this crowd versus core concept. where you have the crowd of people where you have a bunch, and you can see it in blockchain these days where you have, you're like, hey, I'm going to make a new kind of ecosystem here and people get into it. And then your Slack channel before you know it has thousands of people in it who are all kind of working to further this community. So that's kind of the crowd at work. But then there's also the core side of things where you want to have, you know, your given set of actual, you know, contributing members or employees or what have you. How do you think about that crowd versus core dynamic within the charity sector? and especially with something like DAWS.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1134.63,
+      "end": 1135.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1135.35,
+      "end": 1146.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think the interesting thing about it is when I initially talked about to people about the idea of kind of decentralization of organizational structures, a lot of people said, oh, that's interesting and it might work in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1146.03,
+      "end": 1146.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1146.91,
+      "end": 1197.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "context of kind of specific cases and particularly around kind of delivery of services. I can see how that would work. But there was much more skepticism about saying what about kind of highly responsive reactive situations like kind of disaster response. You know, it's impractical then on the sort of logistical side. And similarly, what about things like campaigning or advocacy organizations rather than sort of service delivery ones? Surely then you still need some degree of centralisation for decision making. And actually, I agreed with them to start with. I thought, oh yeah, fair enough. Maybe it'll be limited. And the thing I found fascinating is that actually, over the last year or 18 months, the kind of development in thinking about DAWS, possibly as a result of the adoption of kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1197.19,
+      "end": 1198.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1198.93,
+      "end": 1213.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "tokening, kind of use of incentive tokens in various contexts, has moved forward. I actually think you could overcome those objections more easily, and then actually it is possible to come up with models for enabling",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1213.67,
+      "end": 1214.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1214.85,
+      "end": 1224.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to act. at scale without a centralised core, but still to kind of avoid those problems around decision making and kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1224.43,
+      "end": 1225.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "limitations",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1225.73,
+      "end": 1226.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "on logistics.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1227.23,
+      "end": 1227.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1227.75,
+      "end": 1232.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "at the end of the day, I think with charities, you know, the only reason people ever centralized in the first place was because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1232.79,
+      "end": 1234.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1234.35,
+      "end": 1255.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "problems they were trying to deal with got so big. You couldn't just do things person to person. And in order to keep it manageable, you had to empower a small number of those people to have elevated status. And that's why the idea of a charitable organization was born, but it's not because anybody said, oh, we really want this. We just had to do it at the time. And if we don't have to anymore, then why would we?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1256.09,
+      "end": 1273.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah. So that makes sense. And so could you talk more about then so that when I imagine something being disintermediated and we've talked about it, a lot of the venture capitalists have talked about it and have said things like, okay, you know, I'm a venture capitalist, but my main goal is to... kind of take myself out of business here and to turn me",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1273.4,
+      "end": 1273.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "into",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1273.72,
+      "end": 1315.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a DAO or to turn means to the ICOs being the main thing. And then a big question that people are asking themselves is, okay, if I'm Union Square Ventures and I am, you know, Fred Wilson, what does my, I had a bundle, a stack essentially that I was selling to people that was venture capital and that is being disintermediated and unbundled. And Fred Wilson, what will his job look like in the future as a venture capitalist, given that we have these new... kind of ICOs and things of that variety. Can you think about the charity bundle, what it has, and then when we have the unbundling, what do you think is going to, what things do you think like blockchains and AI won't be able to unbundle very well? What do you think charities? What will the humans do in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1315.22,
+      "end": 1315.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the future in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1315.76,
+      "end": 1316.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the centralized",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1316.14,
+      "end": 1316.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "way? Yeah, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1317.02,
+      "end": 1384.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "It's a good question. Because I think there's some of the stuff that forms a large part of the bulk of what charities do that will definitely go. I mean, definitely some of the kind of transactional stuff. I mean, you know, if the idea of kind of AI DAWS takes off, and particularly, you know, if you have that convergence of that with other technologies like kind of Internet of things and automated vehicles, you could see things like, you know, Dow controlled fleets of automated vehicles or kind of AI Dow factories and those sorts of things. And so. you know, a large international relief agency, there'd be no point anymore in owning a massive fleet of vehicles or having huge warehouses where it kept the goods for disaster relief. So it wouldn't necessarily need to do that stuff anymore. But I still think, at least in the medium term, yeah, there will be a role for the, you know, the people in those organizations. I think, you know, realistically, there'll still be a retained role around. If not decision making, then kind of coordination, because if you're trying to use campaigning or advocacy as a tool, you know, I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1384.58,
+      "end": 1385.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "whilst",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1385.96,
+      "end": 1393.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you could see a kind of decentralized version of something like 38 degrees or change.org, if it was fully decentralized with nobody",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1393.08,
+      "end": 1394.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1394.76,
+      "end": 1413.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of taking any of that stuff forward or coordinating it, then, you've got a thousand voices, but the dangerous, they're just all shouting in the wilderness and they're not really. you know, coming together. I think I think one of the other areas as well is, you know, there's probably realistically, for various reasons, going to be some role for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1413.76,
+      "end": 1414.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1414.98,
+      "end": 1425.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "or organisations within any of these structures having a kind of elevated status as oracles or kind of authorities, whether that's in terms of, you know, verifying the outcomes have actually been",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1425.9,
+      "end": 1427.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "delivered.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1428.24,
+      "end": 1442.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it might be or it might just be in terms of the kind of expertise to understand where the most pressing problems are. You know, some of those things could potentially be automated or taken away on the future, but I think that is a pretty long way off. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1442.96,
+      "end": 1443.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1443.56,
+      "end": 1460.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think, you know, charities and agencies will probably be a lot smaller in the future and their role might shift to one of kind of curation or kind of collaboration or convening. But there will still be a role for a core of those organizations, definitely.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1460.8,
+      "end": 1508.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I think that that is a good point. I do agree essentially that, at least at the beginning, the kind of coordination and curation role will be one that humans will initially do, especially because that's something that we haven't. that we don't necessarily have the frameworks to automate yet, because it's kind of new, this whole new world. You have a lot of people in the blockchain space who are working at this, oh, man, how do we coordinate between the crowd and the core, and how do we curate the information? Those are big questions that we're still thinking of, and so I think that we'll kind of see humans, it could be the case that we'll see humans work on those coordination questions first, especially ones that are in real life and in talking with others in your community or whatever, and then as we start to learn more about them, what that coordination actually looks like, maybe we'll be able to have, you know, AI DAWS do them, but we don't actually know it looks like, so who knows?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1509.14,
+      "end": 1509.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1510.12,
+      "end": 1527.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So the one final thing that I want to talk about here that you're interested in talking about, which I'm not exactly sure how it relates, but this concept of inequality within these new kind of AI DAOs. Could you tell me a little bit more about how you see inequality being represented here and what we should be worried about?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1528.6,
+      "end": 1528.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1529.1,
+      "end": 1532.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I suppose there's a couple of things. I mean, one of them is just that with,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1534.34,
+      "end": 1534.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "With",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1534.78,
+      "end": 1565.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "all this technology, particularly, I think, around AI and I think it's supposed to impact. One is the kind of impact of the AI as in terms of automation and kind of replacement of traditional jobs. You know, we're probably going to find ourselves in a situation where there's a much smaller workforce in the future. And those in the kind of retained roles, there will be kind of inherent inequality between those who still work and those who don't. and an even bigger inequality between the very small number of people who",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1565.86,
+      "end": 1566.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "own",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1566.52,
+      "end": 1587.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and understand the technology and everyone else. I think the interesting question in a way is, are Dow's the solution to that? Because, you know, do they potentially provide an infrastructure for allowing the development of the technology without the danger of that unbelievable concentration of power?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1587.53,
+      "end": 1587.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1587.93,
+      "end": 1592.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a small number of hands. So I think that's one thing. I suppose the other is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1592.63,
+      "end": 1593.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "maybe",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1593.35,
+      "end": 1605.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not quite so much related to Dow specifically, but if there is a role for AI in those, I've kind of, we've explored this at Giving Thought in a couple of contexts, and one of them is around",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1605.53,
+      "end": 1606.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1606.55,
+      "end": 1627.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "automation of decisions about giving, which I think will prove to be important because Whilst I think, you know, some people push back on the idea of automated giving or kind of AI determined giving because they think taking the human element out of it is never going to be feasible, there are going to be contexts in the future where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1627.61,
+      "end": 1628.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1628.31,
+      "end": 1643.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "are going to be vast numbers of extremely small value transactions happening at a very, very quick pace. And it will be totally impractical for people to determine where those go. So I'm thinking of things like machine-to-machine transactions in the internet things, for instance.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1644.54,
+      "end": 1644.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1644.86,
+      "end": 1679.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the danger there is the same one. I think that a lot of people are raising about AI in a lot of other contexts, which is, you know, what if these things end up being black boxes? How do we determine what the algorithms are in the first place? How do we determine that they're not having perverse consequences? And you could find that, you know, people with extremely good motivations who want to do good end up making things worse because, you know, they didn't realize that the algorithms they're employing, were having that impact. So I think, you know, there are kind of dangers when it comes to making inequality worse rather than solving it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1679.56,
+      "end": 1711.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, I think that that... Yeah, that's going to be a pushback. And we've started to see some of it within this space in terms of, yeah, if you have so many people who are making the technology, whether it's Uber or Airbnb or if you're someone who makes automated robots, like all that money goes to Silicon Valley or whatever. And you'll see, as you're saying, there's pushback both on the UBI side. There's also pushback on like something like platform cooperativism. And I also really like a concept that you talked about, one of your... podcast, which was this tax on the robots themselves. So that's kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1711.49,
+      "end": 1711.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1711.97,
+      "end": 1731.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "interesting question here. Hey, should we, if my job gets taken by a robot, should that robot still be taxed or what have you? I think that we're going to be experimenting with a lot of different things in the space to know how can we make it the case that there's not drastic inequality as we move to robots and a small subset of people owning those robots.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1731.93,
+      "end": 1732.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1732.33,
+      "end": 1742.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "to kind of conclude up here, do you have any final? What's on the top of your mind? kind of non-sequitur can be totally off topic, totally on topic. One final thing that you have to say.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1742.88,
+      "end": 1743.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1743.24,
+      "end": 1753.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think it's just that kind of plea to anybody who's working in blockchain or, you know, in the tech world or financial services or anything. Just think about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1753.74,
+      "end": 1755.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "looking",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1755.1,
+      "end": 1782.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "for use cases that are kind of relevant to the work of charities or kind of social good because not only is a lot of scope for doing it, but also I think you kind of learn stuff that would be valuable in all sorts of other contexts because i think we're at that stage in the technology and you know to people in charities i just say retain an open mind about you know this kind of stuff and don't be scared off by by kind of words like blockchain and a i and everything it isn't just science fiction you know it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1782.86,
+      "end": 1783.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1783.08,
+      "end": 1783.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1783.7,
+      "end": 1784.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Science",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 1784.24,
+      "end": 1787.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "fiction and reality are converging. The boost",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 1787.22,
+      "end": 1787.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "VC,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 1788.44,
+      "end": 1794.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "they have three different verticals. One of them is VR-A-R, one of them is blockchain, and the other one is just sci-fi, you know?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 1794.64,
+      "end": 1795.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1795.08,
+      "end": 1795.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1795.22,
+      "end": 1888.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you're watching a show like Black Mirror, it's like, oh, man, this is relatively similar to reality. Cool. So kind of to give a macro takeaways here of what we talked about, we talked about how Rod got into the sector from the charity perspective and kind of exists at kind of the intersection of some of the blockchain people and knows less than... them, but more about charities than they do. And then on the charity side knows less about charities, but more about blockchain than they do. And then we talked about this concept of the future doing good, where you kind of... project out into the future and think from a future perspective. We talked a little bit about the specific projects that he's doing around kind of essentially educating people within the space on both sides of that spectrum of how blockchain can be used for good or how charities can use blockchain for good. And then we talked a little bit about the, you know, how they respond. And so the big things are kind of the more pragmatic side where it's like, hey, cross-border payments, disintermediation or efficiency, and then kind of transparency. And then we talked a little bit more about something that is not as relevant today. but is likely to be surprisingly relevant, surprisingly quickly, which is the AI DAOs and the ability to disintermediate charities with something like a DAO, the overlap of how crowds and cores should interact within charity, and what that kind of unbundling looks like of the charities. And then finally at the end, we talked a little bit about inequality and making sure that as this automation happens, whatever it looks like, that we are both... have an equal-ish system and that the, that when AIs are doing kind of fast machine-to-machine transactions, that those are, that we are somehow",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1888.72,
+      "end": 1895.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know that they are aligned with what humanity wants. That is the goal. So, Rod, thank you so much again for your time today, and everybody",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1895.54,
+      "end": 1895.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I recommend.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1896.66,
+      "end": 1917.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, thanks for being on. I recommend, yeah, definitely going on to, I actually hyper recommend if you're into this blockchain for social goods space and specifically like tech. for good, I recommend Rod's podcast called Giving Thought. Also, if you want to support me on Patreon, you can go to patreon.com slash reslimmark, that's slash R-H-Y-S-L-I-N-D, M-A-R-K. Thanks, everybody, for your time, and goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1919.36,
+      "end": 1919.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Bye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 202,
+    "withheld": 0,
+    "published": 202
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

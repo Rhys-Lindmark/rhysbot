@@ -1,0 +1,4491 @@
+{
+  "schema_version": 1,
+  "id": "podcast-36ef7543c05227e53c18",
+  "title": "Creating a Humanist Blockchain Future #3: The Future of Work with Naveen Mishra of Crowdraising.co",
+  "published_at": "2017-07-20T16:27:08Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/creating-a-humanist-blockchain-future-3-naveen-mishra-with-crowdraisingco",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/334042820-the-rhys-show-creating-a-humanist-blockchain-future-3-naveen-mishra-with-crowdraisingco.mp3",
+  "youtube_id": "Ryx_IDlbP_c",
+  "youtube_url": "https://www.youtube.com/watch?v=Ryx_IDlbP_c",
+  "audio_sha256": "2649c721a0e99fd8be980f7d482f5f6415173240d0c4fedcc83cd9d268129754",
+  "audio_duration_seconds": 1973.60325,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 5947,
+    "unknown_words": 329,
+    "unknown_words_fraction": 0.05532201109803262,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 12.81,
+      "end": 13.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 13.37,
+      "end": 49.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everybody and welcome to another edition of Creating a Humanist Blockchain Future, where we explore the intersection of effective altruism, universal basic income, the attention economy, and blockchain. I'm your host, Reeslinmark, and today in episode three, we're going to explore a facet of the attention economy, namely the output of the attention economy or the future of work, where you kind of spend your time in order to create value for others. And today we're talking with Naveen Mishra, who is a co-founder of crowdraising.co, a blockchain-based platform for pledging time, not money. He also writes at naveen mishra.coe, thanks for being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 50.11,
+      "end": 50.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Good",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 50.55,
+      "end": 51.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "morning, Rhys. Thank you for having me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 52.13,
+      "end": 52.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm glad to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 52.39,
+      "end": 52.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "talk to you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 53.04,
+      "end": 67.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Thanks for being here. So let's get things started off and cut to the chase. And could you tell me a little bit about, I always like to kind of start with why. So I'd kind of love to hear why you're working in the future of workspace and specifically how crowdraising.co plays into that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 68.84,
+      "end": 98.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Sure. So I started out my career with tech and business consulting in regular, the consulting companies and the intermediary fashion. And there's a whole lot of... middleman effect inefficiency in that process. So I met my co-founder, Max, while we were both working on the future of work platforms, but in different ways. So we wanted to create a global, decentralal marketplace of skills where people can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 98.18,
+      "end": 99.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "contribute",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 99.2,
+      "end": 105.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "their effort and then get rewarded for it. And crowd raising is ultimately the result of that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 105.76,
+      "end": 107.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. So it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 107.22,
+      "end": 108.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 108.06,
+      "end": 115.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "For you, the why there is your desire to create a kind of a global efficient marketplace. Is that correct?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 115.74,
+      "end": 115.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 116.54,
+      "end": 122.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah. In one sentence, that's my why. I want to create a global, efficient marketplace of skills.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 122.62,
+      "end": 127.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Great. Got it. Interesting. Could you actually just tell me a little bit more of what you mean by skills there?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 129.71,
+      "end": 150.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So there are a couple of paradigms of how people earn or how people earn their livings. You could say jobs are one of those. You could say monetizing their skills is the basic unit of value in that network. So going back to Clayton Christensen and the jobs to be done framework, if there's a job that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 150.08,
+      "end": 151.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "somebody",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 151.16,
+      "end": 156.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "can specify in enough detail and there's somebody that can do that job, that's what I call skill.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 156.9,
+      "end": 157.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 157.24,
+      "end": 159.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "if there's a job to be done and there's a person",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 159.72,
+      "end": 160.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 160.48,
+      "end": 164.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "does that job, I want to be the platform that enables that with maximum efficiency.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 165.04,
+      "end": 175.42,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Awesome, awesome. That makes sense. And so crowdraising.co, you can kind of pledge time and pledge say, hey, I have these skills. I'd like to pledge these skills towards",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 175.42,
+      "end": 176.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this project.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 176.96,
+      "end": 189.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I love how you guys kind of started up crowdraising.co, and specifically in this new kind of blockchain-based world, the concept of an early adopter has kind of changed in the concept of... bootstrapping has kind of changed. So could you talk",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 189.75,
+      "end": 190.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a bit",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 190.01,
+      "end": 191.01,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "more about how you guys",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 191.01,
+      "end": 191.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "did",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 191.47,
+      "end": 194.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a meta campaign for crowd raising in order to create crowd racing?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 195.78,
+      "end": 211.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Absolutely. So we're great believers in eating our own dog food. So customer validation is something that we've learned the hard way in our previous endeavors. So what we decided to do was figure out that if there's demand for this, go out and reach people.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 212.08,
+      "end": 212.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 212.56,
+      "end": 216.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we decided to have the community build crowdraising.co as a platform.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 217.08,
+      "end": 217.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 217.42,
+      "end": 225.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "decided that the 1,000 hours for the initial no frills platform would be good for people who had the right skills, basically.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 225.44,
+      "end": 225.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 225.74,
+      "end": 229.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we went out and tried to raise 1,000 hours in 30 days",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 229.32,
+      "end": 230.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 230.58,
+      "end": 247.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "people pledging their time, basically. And we reached out to oral channels. We reached out to our networks, our boards. And voila, we raised 1,500 hours. So 150% of what we wanted to do. So that gave us a huge... that gives a huge",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 247.18,
+      "end": 248.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 249.62,
+      "end": 250.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "validation",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 250.22,
+      "end": 252.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah validation whatever",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 252.66,
+      "end": 257.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you want to say to just say oh their demand exists so we're not building something that nobody wants to use",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 257.94,
+      "end": 258.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 258.44,
+      "end": 259.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "already started",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 259.26,
+      "end": 260.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 260.04,
+      "end": 262.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a group of people who are early adopters",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 262.14,
+      "end": 262.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 262.6,
+      "end": 265.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this is the iCO before there was an icio kind of thing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 265.46,
+      "end": 270.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yep yep that makes sense and an icio not necessarily for uh tokens",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 270.34,
+      "end": 271.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but rather yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 271.66,
+      "end": 271.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 271.88,
+      "end": 272.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so if I was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 272.96,
+      "end": 280.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a person who was into the crowdraising.co, what were the incentives for me in order to contribute my time to create at this initial meta campaign?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 282.52,
+      "end": 297.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "In the initial meta campaign, the rewards were, first of all, it's just donating your time. Secondly, you have premier access to the platform. You get better access to the companies that want to raise on this platform, and you get to be one of the core founding teams",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 297.46,
+      "end": 298.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 298.4,
+      "end": 308.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this platform, kind of lead the direction of where it's going. So all the benefits of the early adopters and a kind of sneak peek into V2, V3, and everything like that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 308.2,
+      "end": 308.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 308.56,
+      "end": 319.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it, got it. Something that I'm wondering with this meta campaign, and you got 1,500 hours, something that a lot of people are talking about with ICOs, and they're talking about the distribution of who owns",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 319.82,
+      "end": 320.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 320.24,
+      "end": 321.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "ICO, and so you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 321.14,
+      "end": 321.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "got like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 321.4,
+      "end": 330.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "these huge whales. What was it like? The thing that's fascinating is... Time is everybody only has 24 hours in a day and really you're sleeping for eight",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 330.08,
+      "end": 332.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or whatever. And so it's tough to be a 10x",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 332.74,
+      "end": 334.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "or 100x while. Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 334.8,
+      "end": 335.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 335.46,
+      "end": 344.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is what does it look like? What did your distribution curve look like in terms of hours raised? Were there some people that were pledging 100 hours or were there some people that are pledging less than 10?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 344.68,
+      "end": 354.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So we thank you for bringing that up. So we took great responsibility not to have that happen. So we had pledge level so you just couldn't willy-nilly just put up hours.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 354.65,
+      "end": 354.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 354.83,
+      "end": 362.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "had pledge levels where for the first one hour that you kind of pledge, you had a basic review of the site. Tell us what technologies you're interested in. Tell us",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 362.51,
+      "end": 363.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "fill",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 363.13,
+      "end": 369.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "out a basic survey, that kind of thing. For five hours, if you do, there was a call. We actually spoke to people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 369.23,
+      "end": 369.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "who",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 369.83,
+      "end": 376.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "raised the time so that we know what they're into. They're real people. They're not just somebody just putting up numbers on a site.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 376.37,
+      "end": 376.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 376.77,
+      "end": 378.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we controlled the growth. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 378.51,
+      "end": 378.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 378.99,
+      "end": 382.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "average, for 1,500 hours, I think there were 300 people.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 384.33,
+      "end": 399.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "300 people, on average, that's five hours, but some people donated 40, some people donated one. So we also had, as an initial validation for startups that want to use this campaign, a 40-hour pledge, that if you want to raise a campaign, we will",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 399.39,
+      "end": 400.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "guide",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 400.01,
+      "end": 403.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you through the process, which is going to take some of your time and some of our time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 403.99,
+      "end": 404.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 404.29,
+      "end": 407.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "why we asked for 40 hours. That's one working week, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 407.53,
+      "end": 407.65,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 407.95,
+      "end": 408.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "5'8s.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 408.48,
+      "end": 408.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 408.72,
+      "end": 417.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's what we asked. And that's where the majority of ours came from. So it's a good distribution of people who want to work and good distribution of people who have the work for them to do.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 417.22,
+      "end": 417.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 418.06,
+      "end": 421.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Interesting. So thinking more about the...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 422.09,
+      "end": 422.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 422.33,
+      "end": 439.81,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, this token system here and thinking about how crowd raising thinks about, because there's lots of new future of work platforms and crowd raising, you guys have decided at the beginning not to kind of tokenify your system. Could you talk a little bit more about why you made that decision?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 441.09,
+      "end": 447.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Sure. As we spoke earlier, the token on our platform is time basically, an hour",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 447.17,
+      "end": 447.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 447.83,
+      "end": 462.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "whatever interval of time that you use to monetize your skill. If we tokenize right now, there's a whole lot of hype which comes with positive and negative repercussions of tokenizing a platform that doesn't really have a value yet.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 462.51,
+      "end": 462.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 463.23,
+      "end": 475.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So this was our way of injecting value into the platforms. You could analogize this to Vinnie Lingam and a civic platform where they said, this is the value. They gave a clear value definition of we will provide access",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 475.83,
+      "end": 476.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 476.53,
+      "end": 477.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "identity that you own.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 478.14,
+      "end": 478.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 478.5,
+      "end": 481.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "our value was we will provide you with work",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 481.32,
+      "end": 481.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 481.94,
+      "end": 486.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that hour that you pledge. Now that hour that you pledge, if you think about it, is just a token.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 486.64,
+      "end": 486.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 487.1,
+      "end": 487.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Right. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 487.42,
+      "end": 487.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 487.9,
+      "end": 490.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just getting the users into this tokenized mindset",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 490.74,
+      "end": 491.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 491.38,
+      "end": 499.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they can then think about reward and compensation in this tokenized way instead of saying, oh, I worked 40 hours. You got to pay me 40 hours and benefits and all that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 500.28,
+      "end": 500.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 500.58,
+      "end": 502.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "This is just a way to intro the tokenization.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 503.14,
+      "end": 503.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 503.42,
+      "end": 508.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So once we actually do launch that tokenization, it'll just be one layer of a. level of abstraction",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 508.64,
+      "end": 509.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 509.52,
+      "end": 510.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "top of the hours.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 510.78,
+      "end": 510.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 511.36,
+      "end": 511.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "interesting.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 511.48,
+      "end": 515.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "That's the goal behind not overwhelming users and getting them into the mindset",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 515.46,
+      "end": 516.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 516.26,
+      "end": 517.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "having them be comfortable with the tokenization.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 518.28,
+      "end": 538.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Totally. Yeah, I think that there is an easy thing to do in the blockchain space, which is like, Ooh, we all love, we are all deepened on this rabbit hole and we love the tokenization of anything and therefore everything should be tokenized. And the thing that we got to recognize more is like, hey, let's kind of scaffold people into this new system, get them",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 538.07,
+      "end": 538.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "using a platform",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 538.77,
+      "end": 544.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "with something that they understand better, which is time, and then to be able to later. tokenize that asset",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 544.23,
+      "end": 545.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 545.43,
+      "end": 547.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the future. Yeah, that's interesting. One",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 547.45,
+      "end": 547.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thing- The question",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 547.85,
+      "end": 555.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that we're trying to solve is so what, right? You can say we're a tokenized blockchain future or work platform, people come back with so what.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 555.63,
+      "end": 556.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep, yep, yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 557.17,
+      "end": 562.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So that's the question we're trying to answer. If we answer that first, the backend tech doesn't really make any difference.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 562.97,
+      "end": 574.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep, that makes sense. So, and how would you- I'm thinking about other platforms where you can kind of pledge your time. There are, there's a lot of ones where you can pledge your money or your dollars. And there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 574.79,
+      "end": 575.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are that many",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 575.47,
+      "end": 580.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "others where you can pledge your time. What are some of the other platforms that pledge time and how do you kind of relate to those?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 581.17,
+      "end": 581.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 581.57,
+      "end": 591.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "was this concept called time banks in the U.S. that came out of Germany. So there's somebody in Germany that's doing specifically time banks where the entire concept was to pledge time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 591.63,
+      "end": 591.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 592.61,
+      "end": 618.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But they were a legacy in the way that they were mostly volunteer-oriented. They were paid. They were centralized. They were paid after the work was done, that kind of thing. So there was no freedom and any motivation to join those time banks, right? There are blockchain-based platforms where there's token of value, which can be abstracted of eight-a-time. So what I mean by that is they might not say time, but they might say task.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 619.02,
+      "end": 619.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 619.34,
+      "end": 619.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 619.6,
+      "end": 619.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "going to spend",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 619.88,
+      "end": 645.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "time and you can get paid for it. So there's things like Colony.io. There's things like Aragon. There's things like district, right? These are the plumbing. So one of the things about the future of work is that the future hasn't been written yet. So we're writing the plumbing as we speak. So people are arriving at the same source of truth from multiple ways. So yeah, these are all the platforms that are kind of converging onto the space as we speak.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 645.42,
+      "end": 668.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Totally. Yeah, I think that that's interesting that, like you say, I mean, with anything in the future of workspace and this time for money kind of transaction, you can decide to say, hey, this is a time-based platform, which is kind of what crowd raising is, or you can say, hey, this is a token-based task. base platform, like something like calling it I.O. And really the tasks, as you say, abstract into time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 669.5,
+      "end": 669.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Everything in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 669.96,
+      "end": 705.65,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the end abstracts to time, even money abstracts to time. One question that I have for you is, I just want to get your take on my Patreon Reescoin system. So I have a system where I have essentially, you can... promote me on or you can support me on Patreon and then for every $10 a month that you give to support me per month, you get one Reese coin back and then you can spend 20 Reese coins for one hour of my time. And this is all kind of tracked in a just a Google spreadsheet essentially. What are your thoughts on that kind of exchanging time for money system with something like race coins? Yeah, what do you think about that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 706.58,
+      "end": 706.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 706.96,
+      "end": 718.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a great idea. My problem is I want a power. skilled people like yourself. Why should you have to do all the work of maintaining a Google sheet and coming up with coins and maintaining the legal framework and all of that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 718.95,
+      "end": 719.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Both",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 719.33,
+      "end": 728.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "on the same page, right? The issue is this. You have skills that you want to share, right? And you have to tokenize them in whatever way. You say it's Reese coin.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 729.17,
+      "end": 729.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Great.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 729.43,
+      "end": 737.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "That's a great idea. But what happened? So let's say it's a Reese coin for Reese, Nevin, coin for Nevin, Max coin for Max.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 737.23,
+      "end": 737.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 737.79,
+      "end": 738.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Jupiter coin for Jupiter.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 738.95,
+      "end": 739.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "What",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 739.37,
+      "end": 739.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "happens?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 740.72,
+      "end": 741.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 741.24,
+      "end": 742.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "year down the line when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 742.08,
+      "end": 742.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "every",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 742.8,
+      "end": 744.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "single person has their own coin.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 744.4,
+      "end": 744.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 744.7,
+      "end": 748.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So what that defaults to is either everybody has the same coin with different values,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 748.83,
+      "end": 750.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right? Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 750.35,
+      "end": 754.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Or there's this mess of systems where everybody's their own federated",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 754.97,
+      "end": 755.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 755.35,
+      "end": 756.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of currency issuer.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 756.73,
+      "end": 757.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yes. Yep. Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 758.23,
+      "end": 765.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Right. So if we're on the decentral, I am going to do everything decentralized. I don't care what kind of efficiency scale.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 766.31,
+      "end": 766.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 766.83,
+      "end": 767.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "don't care.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 767.8,
+      "end": 768.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 768.18,
+      "end": 770.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "great, then lets everybody have our own coins,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 770.4,
+      "end": 770.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 770.9,
+      "end": 791.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But what's going to happen? It's people don't care, people care about platforms, people care about work being done. If I was to say to you, Reese, we love what you're doing. We love to have you on the platform. You just do the work. We take care of all the accounting. Don't pay us. We're not central. Right? The ledger is distributed, so we can't control anything.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 791.77,
+      "end": 791.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 792.25,
+      "end": 795.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But it's just your platform. We're just the pipes for it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 796.03,
+      "end": 796.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Wouldn't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 796.41,
+      "end": 802.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that be great? So I think you're headed in the right direction. But my point is this, there's going to be 100 Reese's with 100 Rees coins",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 802.93,
+      "end": 803.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 803.85,
+      "end": 804.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "year down.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 804.65,
+      "end": 804.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 805.86,
+      "end": 807.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So that's what I'm thinking about.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 807.86,
+      "end": 847.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. And you want to be able to give them a way to tokenize their time or to allocate their time without needing to do what I did, which is create a weird Google spreadsheet. One final question before we transition to kind of the macro trends within the attention economy and future of work is, How do you think about, how are you guys thinking about making money? Because that's a big question within the space as well, which is, you know, there's kind of this pushback against rent-seeking institutions that try to take more money than they should or what have you or what we think it should. But the amount of money is really, it's tough to say. So how do you guys think about making money with respect to the company and how people view that as well?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 849.24,
+      "end": 855.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So initially we're not. We're just offering it as a kind of free platform to get people.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 855.94,
+      "end": 856.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "interested",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 856.38,
+      "end": 871.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in the idea, but the monetization structure is, given that there's a token, that should have value. Right? So if that one hour token is of any value to you, I should be able to say, because we did the work, you either pay me in token or you pay me fiat.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 872.73,
+      "end": 873.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 873.21,
+      "end": 875.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the most straightforward way is to say, because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 875.93,
+      "end": 876.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 876.69,
+      "end": 883.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "were able to work for X number of hours for this task or job or campaign, you give me...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 883.77,
+      "end": 884.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 884.29,
+      "end": 888.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "token and a monetization structure that's a percentage of what you earn",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 888.42,
+      "end": 889.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 889.42,
+      "end": 891.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "could be token as well that doesn't have to be fiat",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 891.7,
+      "end": 892.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah right",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 892.58,
+      "end": 896.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so that that's the ultimate goal is everything to be tokenized with ours or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 896.14,
+      "end": 896.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 896.68,
+      "end": 906.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "whatever token we come up with but for right now uh for corporate campaigns that so we where we want value transfer to happen from from those rent-seeking organizations",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 906.16,
+      "end": 906.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 906.5,
+      "end": 908.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "have all that rent to kind of give out",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 908.34,
+      "end": 908.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah we're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 908.88,
+      "end": 913.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "charging them the money so that we can let entrepreneurs work on the token itself.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 914.08,
+      "end": 925.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. That's interesting. Yeah, I think that that's a funny way to describe it, which is, hey, we have had these rent-seeking institutions, aka people that have lots of profit, and they have that rent to give out. So let us",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 925.82,
+      "end": 926.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "charge them",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 926.42,
+      "end": 927.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "for that in order to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 927.78,
+      "end": 928.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "transition. Exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 929.28,
+      "end": 941.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah. I like that. Okay, so let's kind of, or before we transition, is there anything else that you want to say about... crowd raising and kind of people being able to pledge time on the platform.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 943.17,
+      "end": 943.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "One",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 943.61,
+      "end": 944.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "thing I would say is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 944.61,
+      "end": 944.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 944.83,
+      "end": 952.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we're still in the user selection platform is think about the time commitment that you're giving to us because we are dead serious and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 952.45,
+      "end": 952.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 952.71,
+      "end": 954.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know that this platform is going to work.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 954.47,
+      "end": 954.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 954.91,
+      "end": 957.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think about your time commitment. Think about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 957.35,
+      "end": 958.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 958.25,
+      "end": 961.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you want to be compensated. Think about what kinds of platforms you need to work on.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 962.11,
+      "end": 962.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 962.55,
+      "end": 966.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "if you go to the crowd raising, there's a gene gun campaign going on right",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 966.79,
+      "end": 967.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "now. You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 967.71,
+      "end": 972.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and I may not be able to contribute to that campaign. Right? I would love to help make a gene gun.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 972.47,
+      "end": 972.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 973.61,
+      "end": 973.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 974.01,
+      "end": 975.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But I just don't have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 975.19,
+      "end": 975.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the biology.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 976.49,
+      "end": 977.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Does it make a,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 977.63,
+      "end": 979.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what is it? What is a gene gun by the way?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 980.94,
+      "end": 982.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So, CU Denver",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 982.44,
+      "end": 983.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "has",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 983.06,
+      "end": 985.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a BioWorks Lab called Inworks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 985.44,
+      "end": 985.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "A",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 985.6,
+      "end": 986.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "gene gun",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 986.22,
+      "end": 987.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 987.02,
+      "end": 991.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a pressurized device to inject artificial genes into microbes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 991.94,
+      "end": 992.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Great.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 992.32,
+      "end": 992.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 992.5,
+      "end": 993.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "They're creating",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 993.32,
+      "end": 994.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "new",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 994.78,
+      "end": 996.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "biology, basically.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 996.59,
+      "end": 996.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Great.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 997.13,
+      "end": 1001.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So for something like that, I can pledge time and say, hey, I could popularize your platform,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 1001.43,
+      "end": 1002.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but, you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 1002.31,
+      "end": 1005.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, it's not that much of value to them. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 1005.15,
+      "end": 1005.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I would",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 1005.73,
+      "end": 1011.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "say just think about your skills, think about the match, and then just go ahead and pledge, go to crowd raising that CEO.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 1011.69,
+      "end": 1021.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep, yep. That's fascinating. I think that that is a one thing that that gets at is. And on your platform, you have a lot of kind of, what I like are some of the, like, community-driven systems",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 1021.95,
+      "end": 1022.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 1022.51,
+      "end": 1047.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And something that's interesting within this blockchain-based space is so many of the early adopters right now are kind of tech and developer-focused and infrastructure tech-focused. And so if you're a person that's like, ooh, I'm really into, you know, district X or OX or any of these kind of platform or if I'm into Ethereum, you can then as a developer really be part of that system because you know you can actually pledge time and money into",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 1047.34,
+      "end": 1048.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "making",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 1048.22,
+      "end": 1048.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Ethereum",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 1048.64,
+      "end": 1048.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a better",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 1048.98,
+      "end": 1050.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "platform. And what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 1050.36,
+      "end": 1050.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you guys",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 1050.7,
+      "end": 1061.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "are doing is saying, hey, at the community level, you don't necessarily be aware of what you can pledge. And there are a lot of non-developers that might want to pledge hours to their community and they can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 1061.28,
+      "end": 1061.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "do that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 1061.87,
+      "end": 1062.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "through your platform.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 1063.63,
+      "end": 1066.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Exactly. So customer centricity is one of our biggest things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 1067.13,
+      "end": 1078.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, that makes sense. Okay, so let's kind of zoom out backwards, way from crowd raising in a way from your specific platform and talk more generally about the attention economy and the future of work. And one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 1078.21,
+      "end": 1078.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 1078.59,
+      "end": 1099.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that Nevin and I want to talk about was essentially how we think about incentives and how we think about scarcity within the system. So kind of, Nevin, could you get... give a little overview of how you're thinking about incentives generally within the future of work and specifically around this concept of how those incentives play in with scarcity.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 1100.81,
+      "end": 1108.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Exactly. So there was this great blog post by Tiago Forte who writes about productivity. It was called The Rise of the Full Stack Entrepreneur,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 1109.17,
+      "end": 1109.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the Full",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 1109.55,
+      "end": 1110.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Stack freelancer.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 1112.43,
+      "end": 1112.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 1112.99,
+      "end": 1116.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the issue is let's invert Maslow's Pyramid for a second.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 1117.07,
+      "end": 1117.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "For",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 1117.63,
+      "end": 1126.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the most part, for the people that crowd raising is going to affect or this economy is going to initially affect, they have all the basic structures of the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 1126.02,
+      "end": 1126.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "lower",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 1126.26,
+      "end": 1129.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "side of the pyramid, right? They're working on that self-factualization,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 1129.82,
+      "end": 1130.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "love",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 1130.08,
+      "end": 1130.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "part of that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 1130.64,
+      "end": 1131.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "pyramid.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 1131.28,
+      "end": 1131.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 1132.3,
+      "end": 1134.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Right? And that resource is scarce artificially.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 1135.96,
+      "end": 1136.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 1136.44,
+      "end": 1147.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "cannot point to a thing to say, okay, this gives me self-actualization. There's only 100 units of that. This is just... scarcity that we have created amongst ourselves.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 1147.57,
+      "end": 1147.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 1147.89,
+      "end": 1150.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So what happens when we exploitize or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 1150.95,
+      "end": 1151.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "make",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 1151.71,
+      "end": 1156.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "explicit this implicit knowledge that the scarcity is wrong or is not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 1156.95,
+      "end": 1157.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 1157.91,
+      "end": 1159.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "scarcity doesn't exist.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 1159.61,
+      "end": 1159.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 1159.75,
+      "end": 1161.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "What happens? Why should I work",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 1161.33,
+      "end": 1162.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 1162.09,
+      "end": 1162.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "if there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 1162.96,
+      "end": 1163.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "why",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 1163.98,
+      "end": 1165.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "should I do anything is my point. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 1165.58,
+      "end": 1166.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 1166.5,
+      "end": 1171.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "incentive for me to work goes away when I know that self actualization can be had in other ways,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 1171.26,
+      "end": 1171.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 1171.58,
+      "end": 1171.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep. Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 1173.93,
+      "end": 1177.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the future of work and the knowledge economy and the attention economy in this way",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 1177.77,
+      "end": 1178.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "helps",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 1178.51,
+      "end": 1179.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "us to define what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 1179.57,
+      "end": 1180.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "some",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 1180.43,
+      "end": 1186.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of the core tenants should be, not what they are, not what the tech should be focused on.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 1186.65,
+      "end": 1187.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 1187.11,
+      "end": 1190.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's where conversations like UBI come in. That's where conversations like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 1190.71,
+      "end": 1191.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Grantcoin,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 1191.73,
+      "end": 1192.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "some of the companies that you kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 1192.77,
+      "end": 1194.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 1194.21,
+      "end": 1194.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "advise",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 1194.25,
+      "end": 1194.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "come",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 1194.73,
+      "end": 1194.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 1195.11,
+      "end": 1195.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 1195.69,
+      "end": 1200.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "aligning human beings incentive to grow and just think of Star Trek.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 1201.29,
+      "end": 1201.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "What",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 1201.87,
+      "end": 1203.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "happens when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 1203.8,
+      "end": 1204.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 1204.7,
+      "end": 1206.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "When the basic needs are taken care of.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 1206.26,
+      "end": 1206.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 1207.43,
+      "end": 1208.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You're in Star Trek. Why do the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 1208.29,
+      "end": 1209.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "police officers work?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 1209.75,
+      "end": 1209.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 1210.55,
+      "end": 1210.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "yeah. Why?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 1212.12,
+      "end": 1212.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "For",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 1212.3,
+      "end": 1212.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "meaning,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 1213.04,
+      "end": 1213.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 1214.52,
+      "end": 1215.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Right, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 1215.0,
+      "end": 1216.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "meaning",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 1216.06,
+      "end": 1217.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is just as ethereal",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 1217.7,
+      "end": 1218.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as ethereal. Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 1218.78,
+      "end": 1218.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "totally,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 1219.12,
+      "end": 1220.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "totally, totally, totally. Or a crowd waste ticket.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 1220.76,
+      "end": 1221.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep, totally.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 1221.92,
+      "end": 1222.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So once",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 1222.38,
+      "end": 1223.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we, yeah, go ahead.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 1223.68,
+      "end": 1260.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Oh, yeah, so I super agree with this, and I like the, you know, when you flip the pyramid or. Or as you say, for us as a human species, and this is what, like, Albert Wenger talks about in World of Capital a lot, is, you know, back in the day, food was scarce, then agricultural revolution, so land was scarce, and then the Industrial Revolution, and so now capital is scarce, and now we might be getting to the place where it is where our basic need of, like, having money, and a lot of those bottom basic needs of, you know, shelter and food and all those are... like automatically essentially met by stuff like automation. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 1260.59,
+      "end": 1261.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what you're saying",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 1261.19,
+      "end": 1271.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is at the top of that self, when you get to the top of the pyramid and self-actualization, you're talking about what kind of tenets should we have at that highest",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 1271.39,
+      "end": 1272.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "level such",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 1272.45,
+      "end": 1275.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that we can kind of create the most meaning possible. Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 1276.17,
+      "end": 1276.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 1276.75,
+      "end": 1278.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So what do you think? And my point is what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 1278.95,
+      "end": 1281.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "gets measured, managed gets measured,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 1281.43,
+      "end": 1282.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right? That's my point. So if we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 1282.57,
+      "end": 1283.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "exploitize that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 1283.77,
+      "end": 1284.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 1284.25,
+      "end": 1290.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we know we're maximizing for one thing. And that thing could be as esoteric as meaning.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 1291.03,
+      "end": 1291.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 1291.33,
+      "end": 1296.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But because we have a token behind it, and we're maximizing the token, a side effect would be we're maximized meaning.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 338,
+      "start": 1297.19,
+      "end": 1323.63,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep, definitely, definitely. That is, I mean, and that's a question that I have a lot within the space and thinking about kind of externalities of something like blockchain and tokenizing everything is how do you think about, like if we make it the case that, you know, all the bottom needs are met and we are trying to self-actualize, then a lot of people will be, like you're saying, there'll be a lot of frameworks around how to self-actualize and there'll be tokenizations",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 339,
+      "start": 1323.63,
+      "end": 1324.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 340,
+      "start": 1324.59,
+      "end": 1339.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "okay, this part of self-actualization, I'm a 10 of, you know, 10 on, this part of self-actualization, I'm 8 of 10 on. How do you think about the kind of quantification of self-actualization and whether that's actually, do you think it's inevitable or is it a good thing or what are your thoughts on that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 341,
+      "start": 1341.77,
+      "end": 1343.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Ah, I don't know about good or bad.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 342,
+      "start": 1344.11,
+      "end": 1345.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm a Calvinist. Thoughts",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 343,
+      "start": 1345.57,
+      "end": 1360.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "don't have concrete actions, right? So actions are good or bad. So I think that I'm a determinist, so I think that there's the right answer to any question. So if you ask me, can we do it? Of course, yes. Right? The issue is how we cope with it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 344,
+      "start": 1361.19,
+      "end": 1363.31,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep, yep, yep. And so what?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 345,
+      "start": 1363.35,
+      "end": 1363.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 346,
+      "start": 1363.49,
+      "end": 1369.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is that a good thing? I don't know. Maybe that causes kindness to improve, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 347,
+      "start": 1369.15,
+      "end": 1369.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Maybe",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 348,
+      "start": 1369.55,
+      "end": 1374.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there's... Maybe there's a Twitter of kindness somewhere along the line powered by this token.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 349,
+      "start": 1374.97,
+      "end": 1376.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Which is not what it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 350,
+      "start": 1376.23,
+      "end": 1378.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "looks like today. No,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 351,
+      "start": 1378.61,
+      "end": 1382.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "because we're maximizing for some other thing, right? We're two levels away from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 352,
+      "start": 1382.47,
+      "end": 1383.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the effect",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 353,
+      "start": 1383.31,
+      "end": 1384.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that has on us.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 354,
+      "start": 1384.15,
+      "end": 1390.41,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yes, exactly. Yeah. People are still using Twitter in order to increase their own reputation in order to increase",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 355,
+      "start": 1390.41,
+      "end": 1392.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "their own basic needs and leverage or whatever. If I do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 356,
+      "start": 1392.99,
+      "end": 1394.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "with that reputation.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 357,
+      "start": 1394.83,
+      "end": 1395.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So if I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 358,
+      "start": 1395.35,
+      "end": 1396.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "directize that link.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 359,
+      "start": 1397.17,
+      "end": 1397.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 360,
+      "start": 1397.72,
+      "end": 1398.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 361,
+      "start": 1398.2,
+      "end": 1401.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "all that nassanus goes away, at least my thinking.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 362,
+      "start": 1401.56,
+      "end": 1415.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, so when you think about that in the future, what are your instincts for how that self-actualization will be measured? Have you thought much about how to measure meaning or how to measure self-actualization?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 363,
+      "start": 1417.28,
+      "end": 1417.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 364,
+      "start": 1417.74,
+      "end": 1433.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a lot of work being done at the effective altruism. A level of measuring impact by impact on the planet. So there could be knowledge systems where because there's some kind of a measure, you can measure how much knowledge you gave out and how much impact that had.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 365,
+      "start": 1433.2,
+      "end": 1434.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep. Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 366,
+      "start": 1434.26,
+      "end": 1446.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "That could be a level. So instead of saying I donated a million dollars to malaria campaigns, you could say, I created this vaccine or helped create this vaccine that killed malaria.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 367,
+      "start": 1446.56,
+      "end": 1447.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep. Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 368,
+      "start": 1447.48,
+      "end": 1447.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Boom.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 369,
+      "start": 1448.06,
+      "end": 1464.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep. Yep. Yep. I think the thing that's interesting about that is we will experience the effective altruist version of this for the good future, which is, hey, how can we make it the case that capital is not scarce for anybody and that everybody has a high quality of life? But at the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 370,
+      "start": 1464.38,
+      "end": 1464.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "point",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 371,
+      "start": 1464.72,
+      "end": 1483.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "in which the plus or minus for any given person's quality of life... is not that much different where you're like, hey, I can't really, there's no easy, effective, altruistic way for me to have a big impact on the world. Then that becomes a different question of, okay, well, what am I doing in this in this case?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 372,
+      "start": 1483.83,
+      "end": 1484.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 373,
+      "start": 1484.97,
+      "end": 1493.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And that's where an exchange idea comes in, right? So there's this great interview with Mark Hendrason and Reid Hoffman at Recode.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 374,
+      "start": 1493.89,
+      "end": 1494.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 375,
+      "start": 1494.33,
+      "end": 1498.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Where as soon as they come in. Kara Swisher asked them about Tristan Harris. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 376,
+      "start": 1498.84,
+      "end": 1499.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Tristan",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 377,
+      "start": 1499.56,
+      "end": 1505.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Harris talks about calming and removing social media from life. And Mark Andreessen just kills him.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 378,
+      "start": 1505.88,
+      "end": 1506.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 379,
+      "start": 1506.36,
+      "end": 1512.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "kills him, just like Mark Andresen does. So I think that's a great conversation. And they try to get into",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 380,
+      "start": 1512.4,
+      "end": 1512.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 381,
+      "start": 1512.96,
+      "end": 1514.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "conversation that you and I are trying to get into,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 382,
+      "start": 1514.6,
+      "end": 1516.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "which is for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 383,
+      "start": 1516.52,
+      "end": 1518.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the people that already have these needs met.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 384,
+      "start": 1518.96,
+      "end": 1519.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This is not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 385,
+      "start": 1519.54,
+      "end": 1523.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "going to look like that much of a difference. But for the people that don't have these needs met,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 386,
+      "start": 1523.52,
+      "end": 1523.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "where we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 387,
+      "start": 1523.74,
+      "end": 1526.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "jump to the point to say, okay, this allows you to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 388,
+      "start": 1526.73,
+      "end": 1528.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 389,
+      "start": 1528.27,
+      "end": 1529.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the bottom needs met,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 390,
+      "start": 1529.81,
+      "end": 1530.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 391,
+      "start": 1530.31,
+      "end": 1533.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "lets the entire planet think on one level, essentially.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 392,
+      "start": 1534.01,
+      "end": 1550.63,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep, yeah, exactly. So one final thing before we kind of conclude up here is how do you think, you know, if you're thinking about someone who is going to be... like working as a new age kind of full-stack freelancer in this new future",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 393,
+      "start": 1550.63,
+      "end": 1550.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 394,
+      "start": 1550.85,
+      "end": 1569.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "work economy, what would you recommend they do in terms of how much should they be on Fiverr, how much should they be on something like, you know, crowd raising or eth-lanser, how would you, if you were to recommend to a new-age freelancer, how they kind of monetize their time? How would you recommend that for them in the next five years?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 395,
+      "start": 1569.99,
+      "end": 1570.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 396,
+      "start": 1570.25,
+      "end": 1572.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I would just say improve your skills.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 397,
+      "start": 1573.15,
+      "end": 1573.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 398,
+      "start": 1573.63,
+      "end": 1582.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this great debate about a basic minimum wage, right? A third party entity can never get you the right number",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 399,
+      "start": 1582.26,
+      "end": 1583.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of whatever",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 400,
+      "start": 1583.54,
+      "end": 1590.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that is. Hours on crowd raising, ether on ethelance, whatever that is, right? So I would say",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 401,
+      "start": 1590.98,
+      "end": 1592.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "find",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 402,
+      "start": 1592.16,
+      "end": 1594.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the systems that help up that number.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 403,
+      "start": 1594.6,
+      "end": 1594.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 404,
+      "start": 1595.22,
+      "end": 1595.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 405,
+      "start": 1595.48,
+      "end": 1600.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Whatever that is. And then monetization, even if it's inefficient, will be better.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 406,
+      "start": 1600.82,
+      "end": 1601.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 407,
+      "start": 1601.5,
+      "end": 1601.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 408,
+      "start": 1601.6,
+      "end": 1602.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 409,
+      "start": 1602.05,
+      "end": 1610.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "monetizing 200 bucks an hour very inefficiently, I'm still making more than if I was monetizing 20 bucks very efficiently.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 410,
+      "start": 1610.49,
+      "end": 1611.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yes, yep, yep, yep,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 411,
+      "start": 1612.23,
+      "end": 1612.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that makes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 412,
+      "start": 1612.49,
+      "end": 1612.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "sense.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 413,
+      "start": 1612.87,
+      "end": 1620.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And that's a very stupid, like that's very controversial thing to say when people say, oh, what if my time isn't worth 200? Well, why isn't it?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 414,
+      "start": 1620.85,
+      "end": 1622.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 415,
+      "start": 1622.53,
+      "end": 1622.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right? Try",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 416,
+      "start": 1622.95,
+      "end": 1623.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 417,
+      "start": 1623.09,
+      "end": 1623.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "maximize the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 418,
+      "start": 1623.87,
+      "end": 1628.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "amount of dollars per hour that your time is worth, and then the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 419,
+      "start": 1628.33,
+      "end": 1629.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "money will come",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 420,
+      "start": 1629.17,
+      "end": 1630.31,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "in some form.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 421,
+      "start": 1631.32,
+      "end": 1635.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Exactly. And there's this great piece on, I forget on Slate, I think,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 422,
+      "start": 1636.02,
+      "end": 1637.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "about Rebel",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 423,
+      "start": 1637.14,
+      "end": 1641.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "64. It's a woodworking lumber shop",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 424,
+      "start": 1641.06,
+      "end": 1641.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 425,
+      "start": 1641.62,
+      "end": 1651.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Pennsylvania. People there are making six figures, close to seven figures, being a lumberjack and being a manager in a lumberjack factory.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 426,
+      "start": 1651.83,
+      "end": 1651.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 427,
+      "start": 1652.9,
+      "end": 1653.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Now,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 428,
+      "start": 1653.1,
+      "end": 1659.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we kind of laugh at that to say, oh, I don't want to be in construction or I don't want to be a lumberjack or that kind of thing. But they're making six figures.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 429,
+      "start": 1659.96,
+      "end": 1660.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 430,
+      "start": 1661.4,
+      "end": 1661.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 431,
+      "start": 1661.82,
+      "end": 1666.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "if I take the inefficiency out of that salary, imagine what they'll be doing more.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 432,
+      "start": 1666.16,
+      "end": 1666.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 433,
+      "start": 1666.62,
+      "end": 1666.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 434,
+      "start": 1666.9,
+      "end": 1666.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 435,
+      "start": 1667.98,
+      "end": 1673.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So think about it from more of a more of yourself as an asset and kind of how to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 436,
+      "start": 1673.52,
+      "end": 1674.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "up",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 437,
+      "start": 1674.24,
+      "end": 1675.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the value of that asset.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 438,
+      "start": 1675.64,
+      "end": 1676.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep. I like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 439,
+      "start": 1676.3,
+      "end": 1676.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 440,
+      "start": 1677.14,
+      "end": 1677.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 441,
+      "start": 1677.34,
+      "end": 1677.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 442,
+      "start": 1677.9,
+      "end": 1700.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "final thing that's say on that is for me, the other way that I conceptualize of my time is not just dollars per hour, but also I multiply it by two other things. I do dollars times love, aka how much I love. the thing, times how much value I am truly providing to the world, and that could be done in an effective altruity kind of like quality way.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 443,
+      "start": 1700.7,
+      "end": 1701.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right. So it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 444,
+      "start": 1701.42,
+      "end": 1717.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "like dollars times the amount of love for myself, times the amount of like impact that I'm really having on others, that over. hours means that hopefully you're optimized for yourself and you're optimized for value for others and you're optimized for your basic needs of money.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 445,
+      "start": 1718.29,
+      "end": 1718.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 446,
+      "start": 1718.87,
+      "end": 1724.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you said a very important thing in that. So two of those factors are self-generated. One is the market generated value,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 447,
+      "start": 1725.11,
+      "end": 1725.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 448,
+      "start": 1725.75,
+      "end": 1726.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So I can control",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 449,
+      "start": 1726.69,
+      "end": 1727.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 450,
+      "start": 1727.89,
+      "end": 1732.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "money, I can control the hours, I can control the love, but I can't control what the market values may ask.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 451,
+      "start": 1732.81,
+      "end": 1733.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 452,
+      "start": 1733.17,
+      "end": 1741.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "do you say impact, if we analogize you to a public company, that would be your stock price. The company can't really control it. We can nudge it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 453,
+      "start": 1741.72,
+      "end": 1742.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 454,
+      "start": 1742.14,
+      "end": 1743.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "nudge it around, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 455,
+      "start": 1743.26,
+      "end": 1743.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 456,
+      "start": 1743.78,
+      "end": 1745.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So you get good at nudging is my voice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 457,
+      "start": 1746.82,
+      "end": 1765.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Nice. I like that. Okay, so to kind of wrap up here, a question that I like to ask at the very end is, Nevin, what is one final thing you'd like to say to the listener, and it can be silly, it can be self-promoting, it can be an off-topic non-sequitur, anything. What's on the top of your mind right now?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 458,
+      "start": 1766.9,
+      "end": 1767.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 459,
+      "start": 1767.58,
+      "end": 1768.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just skin in the game. I've",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 460,
+      "start": 1768.78,
+      "end": 1768.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "been",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 461,
+      "start": 1768.9,
+      "end": 1771.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "reading Nasim Talib's work.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 462,
+      "start": 1771.32,
+      "end": 1771.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 463,
+      "start": 1772.35,
+      "end": 1778.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, so just having skin in the game. I would say I've seen a lot of people recently who don't have any skin in the game",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 464,
+      "start": 1778.37,
+      "end": 1778.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 465,
+      "start": 1778.89,
+      "end": 1781.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then just making noise essentially.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 466,
+      "start": 1781.21,
+      "end": 1781.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 467,
+      "start": 1781.61,
+      "end": 1784.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I just have a tiny bit of skin in the game and that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 468,
+      "start": 1784.07,
+      "end": 1785.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "improves",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 469,
+      "start": 1785.31,
+      "end": 1788.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "your arguments. It improves your work ethic. It improves everything. So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 470,
+      "start": 1790.33,
+      "end": 1791.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Nicholas Nasim Talib.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 471,
+      "start": 1791.72,
+      "end": 1791.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 472,
+      "start": 1791.96,
+      "end": 1793.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "open access, there you go.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 473,
+      "start": 1793.82,
+      "end": 1794.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Go",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 474,
+      "start": 1794.28,
+      "end": 1797.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to public resource.org if I can show for somebody else.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 475,
+      "start": 1797.58,
+      "end": 1815.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Nice, nice. I also like, I mean, the skin the game thing is something that I'm also constantly thinking about and just read anti-fragile as well. The main... And I'm not sure what the solve is here. But for me, I actively chose not to have skin in the game for lots of cryptocurrencies because I didn't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 476,
+      "start": 1815.62,
+      "end": 1815.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "want to be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 477,
+      "start": 1815.92,
+      "end": 1825.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "incentivized just for Ethereum or just for Bitcoin or whatever. And I really want to be incentivized for something like a long-term humanist coin, but that doesn't exist yet. So I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 478,
+      "start": 1825.84,
+      "end": 1827.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 479,
+      "start": 1827.22,
+      "end": 1831.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "have any skin in the game, though, is my issue. Is that your one recommendation? I have none of it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 480,
+      "start": 1832.22,
+      "end": 1832.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "No,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 481,
+      "start": 1832.8,
+      "end": 1836.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "but you're building your own system. Reescoin is you could say version 0",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 482,
+      "start": 1836.38,
+      "end": 1838.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": ".01. Yeah, yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 483,
+      "start": 1838.76,
+      "end": 1838.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 484,
+      "start": 1841.19,
+      "end": 1907.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "That could be argued. I would not argue that, but I wish that that was a good argument. Yeah, so, Levine, thanks so much for your time. We're going to, so for me, the takeaways are A, you have crowdraising.co, which is a system where people can pledge time, not money, and it's being used as with kind of early adopters who aren't necessarily developers, and it is being currently used in a non-tokenized way to kind of bring people into the system, but eventually it will be tokenized. And then we talked a little bit about the, Not necessarily crowd raising, but the kind of macro space more generally and that where we see it going in the next you know 25 plus years, which is, if you imagine the Maslow's hierarchy of needs, right now there's a tiny little thing at the top, which is self-actualization. Right now, we don't have good ways to measure or optimize for that, but we expect something like that to happen. And finally, we talked about, you know, for you as a person working within this space, it would be great for you to kind of... maximize your learning and your value that you can provide, and then the money will come later. If you have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 485,
+      "start": 1907.2,
+      "end": 1907.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the ability",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 486,
+      "start": 1907.72,
+      "end": 1920.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "to do that in a privilege or kind of way, then you should go for it and try to maximize the value that you provide, and then the money will come. Are there any final takeaways from you, Neveen, on this stuff?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 487,
+      "start": 1921.26,
+      "end": 1921.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "No,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 488,
+      "start": 1922.2,
+      "end": 1926.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "thank you for having me. And everybody, please go to crowd raising and then follow me on Twitter.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 489,
+      "start": 1926.26,
+      "end": 1952.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Exactly. So thank you so much, Neveen. Yeah, please go to crowdraising.com. And also, this is episode three of creating a humanist blockchain future. If you have any feedback or interview recommendations, or if you would like to support me on Patreon, you can go to... patreon.com slash Reese Lindmark, R-H-Y-S-L-I-N-D-M-A-R-K. And beyond that, Neveen, thanks again so much for your time. And we will see you all in the future.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 490,
+      "start": 1952.4,
+      "end": 1952.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I hope you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 491,
+      "start": 1952.68,
+      "end": 1954.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "guys have a good week. Bye.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 492,
+      "start": 1954.74,
+      "end": 1955.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Thank you.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 493,
+    "withheld": 0,
+    "published": 493
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

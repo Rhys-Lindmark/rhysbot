@@ -1,0 +1,5418 @@
+{
+  "schema_version": 1,
+  "id": "podcast-96384307b34a6fbee014",
+  "title": "#44 Ethan Zuckerman, MIT: Crypto Social Networks and The Co-Evolution of Information and Governance",
+  "published_at": "2018-07-18T17:56:34Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/44-ethan-zuckerman-mit-crypto-social-networks-the-co-evolution-of-info-and-governance",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/473451777-the-rhys-show-44-ethan-zuckerman-mit-crypto-social-networks-the-co-evolution-of-info-and-governance.mp3",
+  "youtube_id": "EZZLoY5WBSc",
+  "youtube_url": "https://www.youtube.com/watch?v=EZZLoY5WBSc",
+  "audio_sha256": "da0f13eb6b1f5bd4c6483eb1e0cadba354533cb0b2387f739ad0bbb68eb46a94",
+  "audio_duration_seconds": 3467.702875,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 10014,
+    "unknown_words": 335,
+    "unknown_words_fraction": 0.03345316556820451,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.66,
+      "end": 1.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Now",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 1.52,
+      "end": 5.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "entering the Bitcoin Podcast Network.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 17.58,
+      "end": 25.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Today's episode is brought to you by KeepKee, the easy, safe, and simple way to protect your Bitcoin, ether, light coin, and many other digital assets.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 25.66,
+      "end": 26.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 26.12,
+      "end": 29.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "no time like the present to protect yourself from hackers, malware, and viruses.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 30.16,
+      "end": 30.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Visit",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 30.56,
+      "end": 37.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "KeepKee.com to order your secure hardware wallet today and use the code Humanist 10 for a limited time 10% discount.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 39.05,
+      "end": 39.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 39.49,
+      "end": 65.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "before I begin today's episode, a quick life update. I'm currently writing a book, which is exciting. It's about our exponential and fragile context and how crypto can help us smooth the transition through this digital revolution. So I'm not sure on the title yet, but I'll be posting updates through Medium and on Twitter. So check me out there and hoping to have it done by the end of this year. So I'll let you know also through the podcast when that happens. Cool. So let's get to today's episode.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 69.86,
+      "end": 70.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 70.3,
+      "end": 81.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "today's episode is with Ethan Zuckerman from MIT's Center for Civic Media. And he's kind of like an academic trying to fix Facebook. It's not perfect, but it's not too far off. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 81.42,
+      "end": 82.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "bear",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 82.66,
+      "end": 89.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "with me for a bit. I'm going to give kind of a long intro, but it was a really interesting episode, so kind of bear with me. So four points. The first is...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 89.72,
+      "end": 90.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 90.24,
+      "end": 128.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 128.73,
+      "end": 129.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 129.13,
+      "end": 153.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then finally, no matter what, you have economies of scale and network effects, which make larger platforms more useful. And so no matter what, essentially, you have a recipe for consolidation. So even if we might want to be decentralized now, everything vectors towards centralization. I think those are all pretty legitimate critiques. But there are two things that I wish I would have pushed back on that I didn't. The first is on acquiring users, his first point there, and how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 153.63,
+      "end": 155.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 155.05,
+      "end": 212.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "reality it is true that is difficult to acquire users. But with blockchain-based financial incentives, we are actually able to beat these massive aggregators like Facebook. So this is like saying essentially at the beginning of a network, usually it was very hard to incentivize someone to join a social network at the beginning because it's not very good if there's only... 10 people on it, but now when that Ux value is lower, when that network value is low, you can financially incentivize people with tokens to be early adopters. So that has actually been a good strategy for blockchain networks to jumpstart their networks, and we'll see if that plays out in the future, but I think that's a little bit of a diminishment to his first point about challenging the challenge to acquire users. The second piece is that we talked about other ways that we can... fix social networks. And we talked about something like Parleo, which is this cool thing that is optimized for civil discourse and it was acquired by Quora. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 212.4,
+      "end": 213.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 213.38,
+      "end": 215.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "difficult thing with these intentional social networks is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 215.76,
+      "end": 216.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 216.8,
+      "end": 285.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "It's something we didn't talk about, but I wish we would have talked about is, you know, these other social networks like Facebook are just, they're really optimized for addiction, variable reward, for really plugging into your limbic system and for giving you dopamine and addicting you. And so trying to... for someone to try to be intentional with their social networks is admirable and we want that. But it's tough to be intentional when all these existing solutions are essentially cheating by hijacking your limbic system. So this all say, Ethan is relatively bearish on blockchain-based networks to, you know, take down big aggregators like Facebook and present a better version of a positive social network feature, which I agree with to some extent. And I think there's a lot of texture there as well. The second piece that we talk about is Lawrence Lessig's pathetic dot theory, which is also something that I talked about with Prima Verde-Philippi on a recent podcast. And this pathetic dot theory essentially says that, hey, if you're trying to regulate something or change systems, then you can do it from four different perspectives, either by changing norms, by messing with markets, by messing with actual architecture or code, and then also by changing law itself.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 287.36,
+      "end": 344.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And the interesting, two interesting pieces on this. The first is that it's always good to recognize that you can essentially think of something like the pathetic dot theory as a, something where people are trying to get to the same goals, but through different means, whether it's norms, markets, architecture, or law. So for example, with crypto, we're trying to mess with markets and code a bunch. But, and our goal is essentially to redistribute power or something like that. But there are other people that are also trying to redistribue power structures through something like norms by kind of changing the way people think about institutionalized power structures. And so it's just a good reminder for all of us in the crypto world to say, hey, what are our goals here? And although we're trying to change those by changing technical infrastructure and code and financial incentives with markets, there are other people that are trying to achieve those same goals. And we should co-evolve with them and be happy when they achieve them. So that's the first point. And the second point on this. pathetic dot theory is that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 344.54,
+      "end": 345.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 345.32,
+      "end": 408.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, right now I'm writing this book and I'm trying to understand these macro system loops and how, essentially, how does the world work from a hyper, hyper, hyper macro level? And is, this pathetic dot theory is one of these multifaceted co-evolving systems that tries to understand the world. And it's actually, it's relatively similar. The funny thing is that it's relatively similar to something like Marxist theory of, you know, base and superstructure where you say, hey, you have your base infrastructure, which is essentially equal to Lessig's architecture. You also have your social economic contract structure from Marxist theory, and that is essentially equal to the markets from the Lawrence Lessig's pathetic dot theory. And then you also have, in Marxist theory, this superstructure, which is kind of the ideology or the values that you're going for. And that's essentially equal to the norms within Lawrence Lessig's theory. So this is to say they kind of, I'm vocal processing out here and thinking out loud, but they kind of map onto each other in this way. I'm trying to synthesize these macro systemic frameworks. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 408.24,
+      "end": 409.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 409.16,
+      "end": 432.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "question I guess that I would ask my listeners is, and it's kind of an interesting, difficult question to ask is, What, how do these co-evolving systems work? And how do these co-evolving systems essentially propagate through time to determine our future? I think that's a tough question, but I think that's an important question for us to think about. And there are lots of different frameworks that people have presented in the past. And I think there could be a good synthesis of them. So the third piece here",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 432.79,
+      "end": 433.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 433.85,
+      "end": 513.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "talking about the incentives of academia. We talked about that for a bit. And the first exciting piece is that. You know, Ethan really has a shared outcomes perspective here, where he really, what he's trying to do, he's just producing proof of concepts, and then to show people, hey, this is a better world that we could live in, and then he doesn't actually care who builds a thing, whether it's him, whether it's Facebook, whether it's a startup. He just cares that, you know, social media is more in alignment with our reality. So I think that that's a cool perspective that he has. The difficult thing that we talk about is this metricus a sec. of success for him. I think this gets into, it's hard for someone in academia, but it's, I think, in general, hard, especially in his version of academia, that's not just directly related to producing research papers and high-quality journals. But I think that when you think about... Metrics of success more generally, we traditionally think of them from the company perspective, and that's kind of, you know, easy in some sense where you just say, hey, what are our KPIs, you know, whether it's ROI for investors, if I'm a venture capitalist, or whether it's making profit or monthly recurring revenue or whatever, those are kind of, we know those well. But as we transition to this in a world where we have single, double, triple, bottom line, just kind of indimensional ways that we can think about value and think about how we're producing value for the world. It's going to be more difficult for us to think about metrics of success. So you hear Ethan and I kind of wrestle with that in this episode.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 515.27,
+      "end": 515.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 515.67,
+      "end": 517.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then the fourth final piece here is that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 517.29,
+      "end": 517.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 517.99,
+      "end": 571.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, at the end of this episode we talk about how in initial America press and information, how that actually was a precursor to the nation state and governance here. And the statistic is that the USPS, the United States Postal Service, was actually 80% of US federal employees in 1830, which is pretty crazy. And the claim is that the press essentially came first while the parties came after. So a reader of a Hamilton newspaper, you were a reader first, and then a Hamilton Party supporter second. And today, you can just pattern match that directly into today and say, oh, great. Well, what you consume shapes your worldview, filter bubbles, et cetera. And you then, based off your red fleet or your blue feed, you'll then think a certain way. And so just thinking about how information determines our governance is a pretty fascinating question. And you can kind of abstract it a bit to say, hey,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 572.26,
+      "end": 572.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "A,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 572.92,
+      "end": 597.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we need coherent sensemaking to have effective governance. Essentially coherent sense making, how information flows within our system is a necessary precursor to effective governance. And the second piece here is that, and just an interesting question to think about is, if information kind of informs, is a precursor to informs the types of governance that we have, just like the press and form the nation state, then what kinds of governance in the future will form,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 597.68,
+      "end": 598.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "given",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 598.5,
+      "end": 628.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "our new system of... indimensional distributed trust and information. So that's just a question and open question to think about. So with that, I hope you enjoy the episode. One final piece. Think about technology and society. The folks at the Media Lab and Harvard's Berkman Client Center, like Ethan, are doing really, really good work here. So if you're interested in learning more about these kind of tech society topics, definitely check out MIT's Media Lab or Berkman Client Center, Harvard's Berkman Client Center to learn more. Okay. So with that, sorry for a long intro, but enjoy today's episode with Ethan. Goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 640.29,
+      "end": 640.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 640.77,
+      "end": 675.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "everyone. My name is Reese Lindmark and you're listening to another episode of creating a humanist blockchain future. In this podcast, we take a systems thinking approach to doing good in the world. We have a couple different series that focus on different systems scopes. And today we're focusing on series A macro systems where we ask the question, where are we as humanity headed? And today I'm very happy to introduce Ethan Zuckerman to the show. Ethan is the director of the MIT Center for Civic Media, a wide-ranging initiative that is exploring the intersection of communication, technology, and power. And he also invented the pop-up ad. So, Ethan, thanks for being on show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 676.53,
+      "end": 682.19,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Oh, happy to be with you, Reese. And apologies to everyone for the pop-up ad. That was a long, long time ago. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 682.19,
+      "end": 683.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm... Not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 683.06,
+      "end": 683.7,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "in the advertising.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 684.18,
+      "end": 687.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "You've ruined our lives, Ethan. You've started a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 687.28,
+      "end": 687.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "long",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 687.6,
+      "end": 689.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "series of surveillance capitalism.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 691.14,
+      "end": 691.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 691.54,
+      "end": 696.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "well, you won't talk too much about the pop-up at today. But we'd love to kind of start by",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 696.64,
+      "end": 697.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "diving",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 697.4,
+      "end": 702.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "into the Center for Civic Media. So could you just give us and me and our listeners an overview",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 702.22,
+      "end": 702.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 702.9,
+      "end": 706.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what is the Center for Civic Media and what are kind of your goals, your projects, that kind of thing?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 707.69,
+      "end": 708.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 708.61,
+      "end": 713.93,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So Center for Civic Media actually came about because friends at the Knight Foundation",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 713.93,
+      "end": 714.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "were",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 714.93,
+      "end": 718.45,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "really interested in trying to get the MIT Media Lab thinking about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 718.45,
+      "end": 719.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 719.25,
+      "end": 730.39,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "future of journalism and maybe the future of business models behind journalism. And so rather than just looking at the sort of narrow space of professional journalism, they coined the term civic media",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 730.39,
+      "end": 731.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 731.05,
+      "end": 748.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "refer to all the different things that people do in making media. and disseminating it as a way of trying to make social change. I joined about two years into the project, took it over, and found myself essentially saying, look, I think the future of journalism",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 748.55,
+      "end": 749.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "has",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 749.43,
+      "end": 753.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "everything to do with helping people figure out how to be powerful civic actors.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 753.89,
+      "end": 754.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 754.53,
+      "end": 785.91,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "my sense is that the main reason we have difficulty supporting journalism these days. is that journalism doesn't do a terrific job helping us figure out how to be effective citizens. And so my work has been trying to think about, what does it mean to be an effective citizen these days? It's probably not just voting and talking to your representative. It might be anything from leading an online campaign to get rid of advertising on Breitbart.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 786.33,
+      "end": 786.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 786.67,
+      "end": 798.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the way through to trying to build a blockchain-based participation in governance system. It's a much broader portfolio. It's a much broader toolkit than we used to have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 798.73,
+      "end": 799.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 799.67,
+      "end": 804.47,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "figure out how to be a civic actor. And I'm interested in how that toolkit's changing and how media",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 804.47,
+      "end": 805.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 805.27,
+      "end": 806.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "changing to accommodate the toolkit.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 806.96,
+      "end": 810.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Love it. I think that there's a lot to dive into there. I think,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 810.38,
+      "end": 810.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 810.6,
+      "end": 831.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "mean, as you say, I think a lot of people come at this from just purely the perspective of, hey, what's happening to journalism? I mean, like, how can we change that? And what you just said, hey, let's think more about how we as people can become more powerful, more effective citizens, and what is our toolkit and how is that toolkit changing in the age of the internet and digital media. So could you kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 831.04,
+      "end": 831.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "maybe",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 831.44,
+      "end": 832.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "talk a little bit about,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 832.62,
+      "end": 832.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 832.88,
+      "end": 842.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "mean, I'm thinking about the ways that. It allows us, empowers us to do, have co-creative experiences on the internet and do those kind of like new power style things, like creating online campaigns.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 842.12,
+      "end": 842.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Could",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 842.54,
+      "end": 843.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you talk a little bit more about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 843.44,
+      "end": 844.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "some",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 844.1,
+      "end": 847.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of these new kinds of toolkits that you're seeing emerge on the internet?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 848.72,
+      "end": 849.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 849.42,
+      "end": 852.66,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "The main thing that I try to work with with my students and other teams",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 852.66,
+      "end": 853.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 853.56,
+      "end": 864.44,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "this question of what's the theory of change? So generally the theory of change around civics and participation is let's elect good people into positions of power.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 864.9,
+      "end": 865.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 865.18,
+      "end": 868.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "then they will do good things and we will get the results that we're looking",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 868.32,
+      "end": 868.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 869.29,
+      "end": 873.43,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And that's probably not the most effective form of civics these",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 873.43,
+      "end": 873.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "days.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 874.31,
+      "end": 927.47,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "First of all, we have very, very low public trust in our institutions, and particularly our government institutions. A lot of people are finding that even if they are able to help elect the people that they're really excited about, those people actually have a lot of difficulty making change in practice. Right now law... Passing and enforcing law may not be the strongest lever for change, at least in the United States. But there's at least three other levers that people are having quite a bit of success with. One is the lever of norms. This is trying to change people's minds and people's behavior. So a way to think about this might be around equal marriage and gay rights in the United States before the Supreme Court announced a decision requiring... legal recognition of equal marriage, you had massive cultural shifts",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 927.47,
+      "end": 928.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 928.13,
+      "end": 939.13,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "how people felt about gay and lesbian relationships. Some of that came from Hollywood, some of it came from television shows, some of it came from just lots of people having gays and lesbians in their lives who they loved and cared about.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 939.47,
+      "end": 939.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 939.95,
+      "end": 943.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that change in norms preceded a change in laws.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 943.99,
+      "end": 944.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Two",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 944.47,
+      "end": 973.51,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "other levers that we spend a lot of time talking about. One is markets. Sometimes you can make massive changes. through trying to get people to adopt a new system because it makes financial sense. A great way to think about that in the U.S. right now might be solar energy, rooftop solar, which has become economically logical in many states. And so you now have this weird phenomenon where California is essentially carbon neutral. It actually produces an enormous amount of its",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 973.51,
+      "end": 975.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "power via",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 975.65,
+      "end": 988.64,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "solar, despite the fact that we haven't been able to pass laws. trying to figure out how to tackle the carbon economy. Instead, market mechanisms have really changed the game. And then the one that I suspect your listeners may be most interested in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 988.64,
+      "end": 989.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 989.26,
+      "end": 997.36,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "this idea that you can make change through code, through technology, through architecture. You know, here I'm using the language of Larry Lessig.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 997.42,
+      "end": 998.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm about it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 1001.45,
+      "end": 1004.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Larry and I joke about this. I refer to this as the inverted Lessig. I sort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 1004.85,
+      "end": 1005.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of take",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 1005.49,
+      "end": 1019.97,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Larry's idea that, you can regulate society through all these things. I see all of these as tools for social change. And Larry so far has blessed the idea. But making change through code, a great example of that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 1019.97,
+      "end": 1020.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "might",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 1020.83,
+      "end": 1051.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "be looking at something like Signal, where in the wake of the Snowden revelations, we actually didn't get a whole lot of legal change saying, let's protect privacy. But we've gotten these very, very strong and easy to use technical systems. that do a good job of giving us increased resistance to surveillance. So my message more than anything else is if you can't make change one way, don't back away from the process of making change. Think about what other levers you might have the chance to manipulate.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 1051.88,
+      "end": 1053.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yep, yep, I like that. I think that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 1053.48,
+      "end": 1054.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 1054.42,
+      "end": 1109.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "lot of people these days feel, yeah, as you said, the trust in institutions that all-time lows and people feel kind of sad about, or some people feel, many people feel sad about the state of reality, and they're like, what can I do? Everything feels really hard. And as you say, hey, there's lots of different ways to enact change, and we can kind of, and let's explore them. I think one thing that I would find interesting to get your take on is, so from this theory that Ethan and I are referencing here, this is what's called the path, pathetic dot theory and it was initially produced by Lawrence Lessig in 1998 and it's about how you can essentially enact change within through, through laws and through markets and through architecture and through norms. And something I think is interesting with blockchain and cryptocurrency is that in some ways, it kind of... collapses those two final pieces that you talked about there, the markets piece and the incentives piece, and then also maybe the code and the architecture piece.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 1110.94,
+      "end": 1124.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Because you can, cryptocurrency and blockchains kind of allow for new kinds of incentive mechanisms, and they also allow for new kinds of distributed code and architecture. Do you see a kind of convergence or collapsing of those two final pieces within the blockchain ecosystem?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 1125.96,
+      "end": 1126.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 1126.44,
+      "end": 1131.46,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I think what I would say is almost every chain strategy,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 1132.04,
+      "end": 1132.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "ends",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 1132.54,
+      "end": 1133.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "up involving all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 1133.32,
+      "end": 1134.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "four levers of it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 1135.13,
+      "end": 1142.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So let me just look at solar energy for a moment here. The reason we're having a rooftop solar revolution",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 1142.25,
+      "end": 1143.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 1143.47,
+      "end": 1153.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "first and foremost, solar technology has gotten much better. The panels are much higher efficiency. Second, we've gotten market mechanisms that mean that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 1153.29,
+      "end": 1154.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1154.29,
+      "end": 1182.65,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "can borrow against the future solar panels on your roof. You can basically use equipment financing, which is a really cheap way. of buying something rather than essentially putting, you know, $30,000 or $40,000 up. So there's all sorts of market revolutions that take place there. Third, there's legal structures that make solar possible. When I put a solar system on my house, it was in part because my state and the federal government both had really good tax breaks",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1182.65,
+      "end": 1183.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "associated",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1183.53,
+      "end": 1184.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "with installing solar.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1184.95,
+      "end": 1185.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1185.21,
+      "end": 1189.11,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "then the final one is that there's a norms-based piece of it. Solar advertises itself.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1189.61,
+      "end": 1189.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "When",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1189.97,
+      "end": 1197.75,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I drive around my small rural Western Massachusetts town, I'm discovering that about one out of three of my neighbors has solar on their",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1197.75,
+      "end": 1198.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "bonds. At",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1198.95,
+      "end": 1202.05,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a certain point, I found myself sort of thinking, geez, do I really want to be behind?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1202.13,
+      "end": 1202.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You got to keep up",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1202.77,
+      "end": 1203.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "with the Joneses.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1204.35,
+      "end": 1204.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1204.75,
+      "end": 1208.61,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "got it. Well, that's exactly right. And the Jones is put in a really nice solar system",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1208.61,
+      "end": 1210.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in the water",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1210.4,
+      "end": 1211.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "as well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1211.94,
+      "end": 1212.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1212.34,
+      "end": 1214.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "those four levers working together end up being more powerful.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1215.26,
+      "end": 1215.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1215.66,
+      "end": 1225.58,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "completely agree with you. Any of the sort of decentralization approaches inevitably combine at the very least code as a lever for change as well as markets.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1225.76,
+      "end": 1226.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1226.3,
+      "end": 1231.3,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think they're also going to need to incorporate norms, which is to say",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1231.3,
+      "end": 1232.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1232.24,
+      "end": 1234.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "may have to adopt systems",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1234.88,
+      "end": 1236.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1236.22,
+      "end": 1252.52,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are more confusing, that are less intuitively understandable. but they feel better about having control over or having distribution of control. And then in the long run, of course, and the blockchain space doesn't much like to talk about this, there are going to be laws that affect the space.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1252.62,
+      "end": 1254.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh, no. Trying",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1254.26,
+      "end": 1260.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to figure out how to have a legal structure that protects what's good about the blockchain as well as sort of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1260.14,
+      "end": 1260.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1260.56,
+      "end": 1262.42,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "about mitigating some of the downsides.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1262.62,
+      "end": 1263.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Those",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1263.08,
+      "end": 1269.69,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "probably need to come into place as well. So I don't think blockchain necessarily separates us from any of this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1269.89,
+      "end": 1270.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1270.33,
+      "end": 1275.71,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think a lot of people who are trying to propose change mechanisms through blockchain",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1275.71,
+      "end": 1276.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1276.63,
+      "end": 1279.89,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "basically putting code in market-based theories of change",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1279.89,
+      "end": 1280.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1280.41,
+      "end": 1284.39,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "probably do need to think more about laws and norms as part of that process.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1284.55,
+      "end": 1312.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, yeah, I totally agree. I think that there's a... From a law perspective, a lot of folks will come at it and say, hey, we're trying to disintermediate or, you know, decentralize the nation state and we don't need to play into the various laws that exist. And in fact, when you start looking at these laws, although some of them were created a long time ago and they've, but many of them have. the things that they do, like consumer protections, for example, with investing, makes some sense. And we shouldn't necessarily have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1312.87,
+      "end": 1313.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1313.33,
+      "end": 1332.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "same rigid law structure as we had before. You might need more kind of multidimensional laws in order to, you know, to map onto our more complex reality. But yeah, I totally agree with you that laws are going to need to be something that people take more into account, especially from a regulatory perspective. I think the norms one is actually very interesting. And it's something",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1332.61,
+      "end": 1333.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1333.62,
+      "end": 1363.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, the crypto world has some strange norms around it these days. This is something that I personally harp on a lot. I think you have, as you say, the blockchain space now, a lot of people got into it initially from either the market perspective or the code perspective, you know, coming from a 2008 financial crisis and being, you know, displeased with that or coming from a displeased with aggregators like, you know, Facebook or whatever and saying, hey, let's make a new decentralized internet. And they've kind of not taken as much into account, the norm perspective.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1365.06,
+      "end": 1365.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1365.5,
+      "end": 1369.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the other issues, you have people on crypto Twitter and there are various memes or whatever. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1369.62,
+      "end": 1370.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1370.2,
+      "end": 1371.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think we'll see",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1371.0,
+      "end": 1372.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1372.24,
+      "end": 1386.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "norms within the blockchain ecosystem. I hope that they continue to vector towards good instead of bad. Do you think so? So recently you wrote a piece for Wired called decentralized social networks sound great. Too bad they'll never work.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1388.09,
+      "end": 1388.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1388.21,
+      "end": 1401.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you kind of want to, you know, as we dive more into the blockchain side of some of the perspective that you have here, could you talk about that article and why you think something like Steam It or basic attention token or what have you might not be a good fit for our future?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1402.99,
+      "end": 1407.99,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Sure. So a couple of things on that. The first would be a reminder that authors never write their headlines",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1407.99,
+      "end": 1410.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1410.35,
+      "end": 1412.97,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Wired are often looking for something",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1412.97,
+      "end": 1413.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "provocative",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1413.55,
+      "end": 1415.39,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to collect on it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1416.47,
+      "end": 1416.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1416.69,
+      "end": 1422.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "second is that just to be super clear, this was kind of the summary of a report",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1422.85,
+      "end": 1423.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1423.79,
+      "end": 1437.13,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I wrote along with my colleagues, Nehan Nerula, who directs the digital currency initiative at the MIT Media Lab, and Chelsea Barabbas, who is a really thoughtful technology and society researcher",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1437.13,
+      "end": 1437.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "who",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1437.87,
+      "end": 1450.01,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "came out of my lab and now works for the MIT Media Lab. So the three of us are co-authors on it. And just to be... perfectly frank on this, those two women are far more knowledgeable about the blockchain than I am. I'm sort of the old man",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1450.01,
+      "end": 1451.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "being cracked into",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1451.63,
+      "end": 1452.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "this space, and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1452.53,
+      "end": 1453.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1453.21,
+      "end": 1455.05,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are the crypto experts on this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1455.87,
+      "end": 1456.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1456.55,
+      "end": 1458.65,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "did a year-long study",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1458.65,
+      "end": 1459.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1459.51,
+      "end": 1463.65,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the Knight Foundation around this idea of decentralized social networks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1463.71,
+      "end": 1464.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1464.25,
+      "end": 1465.41,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we did it in part",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1465.41,
+      "end": 1466.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 1466.43,
+      "end": 1485.87,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I was one of the technical guys behind one of the first social networks. well before not only Facebook and Twitter, but before LinkedIn, Friendster, MySpace. It was a company called Tripod, and it was a competitor to GeoCities back in the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 1485.87,
+      "end": 1487.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "day when social",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 1487.39,
+      "end": 1500.43,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "networking meant put up your own personal homepage. And one of the things that I found myself sort of looking at was realizing that in that business, we inadvertently took the decentralized web.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 1500.89,
+      "end": 1501.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1501.39,
+      "end": 1505.33,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "people put up web pages on their own servers all around the world",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1505.33,
+      "end": 1506.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1506.29,
+      "end": 1506.69,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "centralized",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1506.69,
+      "end": 1507.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1507.53,
+      "end": 1526.47,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And suddenly, for the first time in 1998, we had 15 million different users using our service, using a single cluster of servers in Western Massachusetts to host their web pages. And so on the one hand, what we did is we made publishing online loads simpler.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1526.55,
+      "end": 1527.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 1527.11,
+      "end": 1537.82,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "were many, many, many, many people. who would not have started their own websites, who wouldn't have gotten up their own web servers, who wouldn't have dropped the T1 into their houses, who were suddenly publishing her tripod.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 1538.38,
+      "end": 1538.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "At",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 1538.86,
+      "end": 1541.84,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the same time, we massively centralized",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 1541.84,
+      "end": 1542.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 1542.6,
+      "end": 1544.68,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "in many ways made much more fragile",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 1544.68,
+      "end": 1545.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 1545.28,
+      "end": 1546.06,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "web as it has",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 1546.06,
+      "end": 1546.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "developed.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 1547.36,
+      "end": 1554.24,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And so I was looking at that decision that we made in the late 1990s and realizing you can sort of draw a line through it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 1554.5,
+      "end": 1554.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 1554.98,
+      "end": 1555.74,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "been possible.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 1556.54,
+      "end": 1557.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 1557.06,
+      "end": 1577.89,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "run decentralized federated social networks for quite some time. But very, very few people do it. And we were curious, A, why have so few people adopted this so far? And B, whether things like IPFS, whether things like Steam It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 1577.89,
+      "end": 1578.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 1578.45,
+      "end": 1584.13,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "sort of distributed tokens, whether some of the innovations of cryptocurrency would change the dynamics.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 1584.87,
+      "end": 1585.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 1585.15,
+      "end": 1588.23,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the conclusion we came to was, yeah, probably",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 1588.23,
+      "end": 1590.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "not. Right",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 1590.05,
+      "end": 1593.51,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "now, the real issue for adoption",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 1593.51,
+      "end": 1594.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "beyond",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 1594.57,
+      "end": 1596.45,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "an initial 1% of users",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 1596.45,
+      "end": 1597.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 1597.27,
+      "end": 1601.69,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "about usability. It's about ease of use. And it's also about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 1601.69,
+      "end": 1602.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "who",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 1602.49,
+      "end": 1606.59,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "owns the relationships with your friends and who owns the relationship with your content.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 1607.09,
+      "end": 1607.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 1607.81,
+      "end": 1609.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "now, we're in a situation where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 1609.85,
+      "end": 1610.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 1610.65,
+      "end": 1612.69,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "pretty hard to leave Facebook.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 1613.11,
+      "end": 1613.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 1613.55,
+      "end": 1626.03,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "only is it fairly hard to sort of export your content and import it somewhere else and actually have it work, but it's nigh impossible to take that web of relationships from Facebook",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 1626.03,
+      "end": 1626.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 1626.89,
+      "end": 1627.49,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "put it somewhere",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 1627.49,
+      "end": 1629.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "else. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 1629.19,
+      "end": 1640.07,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I look at projects like Mastodon, which tactically are pretty well accomplished. I mean, Mastodon really has its act together, but has not made a meaningful dent in Twitter.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 1640.49,
+      "end": 1640.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 1640.81,
+      "end": 1658.15,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "my argument is that it's got much, much less to do with the technology. It has much more to do with the usability and the argument for the user. For most users, for whom decentralization is not a political decision, they have no good reason to use it right now.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 1658.51,
+      "end": 1678.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, yeah. Yeah, I think... That's very true. And even when you go on to something like Steam It's it's I mean, why would anybody want to go on to Steam it? You go there and it's just a bunch of crypto people. It's a crypto filter bubble environment, you know, and it's just a bunch of people talking about crypto. So I guess, so what would you say then? Because I think that some people think.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 1679.45,
+      "end": 1679.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "They're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 1679.75,
+      "end": 1685.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like sad about the state of our current social networks. And they're like, oh, man, maybe we can build something,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 1685.47,
+      "end": 1685.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 1685.75,
+      "end": 1695.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, with a blockchain-based distributed system, whether it's, you know, something like more like Maston or something more like Steam it or basic attention token. And then, and if you say, hey, that's not really going to work right now.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 1696.17,
+      "end": 1696.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Should",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 1696.57,
+      "end": 1700.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they, what should they, where should they go with their energy, I guess?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 1701.48,
+      "end": 1711.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Sure. So I think the first thing that I would say, and I say this to my engineering students all the time, and I should just explain, like, What I basically do for a living is break young",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 1711.85,
+      "end": 1714.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "engineer's hearts. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 1714.27,
+      "end": 1722.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I work at MIT. I have some of the brightest, most ambitious young engineers sort of show up in my office, and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 1722.27,
+      "end": 1722.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 1722.77,
+      "end": 1727.87,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "all want to say, here's how I'm going to change the world. And our first conversation explains why it's not going",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 1727.87,
+      "end": 1730.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to work. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 1730.0,
+      "end": 1733.24,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I'm basically a giant, continuous buzzkill.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 1734.76,
+      "end": 1740.76,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "But... Part of what I try to do with these students is get them to understand what problem it is that they're really trying to solve.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 1741.41,
+      "end": 1741.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 1741.89,
+      "end": 1746.69,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "now, I think blockchain is a classic, you know, hammer looking for a nail.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 1747.15,
+      "end": 1747.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 1747.33,
+      "end": 1749.13,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think everyone has decided that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 1749.17,
+      "end": 1750.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 1750.33,
+      "end": 1754.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is such a cool technology. And to be clear, it's an incredibly cool technology",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 1754.29,
+      "end": 1755.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 1755.31,
+      "end": 1764.21,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it's going to solve all sorts of problems with things like social networks. The problems with social networks are really much more this question of what are they good for?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 1764.82,
+      "end": 1765.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 1765.28,
+      "end": 1768.2,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "how our current ones not meeting our needs very",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 1768.2,
+      "end": 1769.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "well. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 1769.5,
+      "end": 1774.18,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "when you look at something like Facebook, for me the problem with Facebook is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 1774.18,
+      "end": 1774.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 1774.98,
+      "end": 1780.58,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a totally undifferentiated social network that's trying to solve every problem from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 1780.58,
+      "end": 1781.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 1781.36,
+      "end": 1784.52,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 1784.52,
+      "end": 1785.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 1785.28,
+      "end": 1797.15,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the way through to how do I have support communities around issues that I care about? to how do I get my news and information around the world? And those probably can't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 1797.15,
+      "end": 1797.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 1797.49,
+      "end": 1798.07,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "solved",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 1798.07,
+      "end": 1800.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "simultaneously. Probably",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 1800.17,
+      "end": 1808.65,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "need different tools to do those things. So let's imagine a social network that did one thing well. A",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 1808.65,
+      "end": 1809.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "friend",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 1809.57,
+      "end": 1814.47,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of mine, Wael Gonim, started a company called Parlio.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 1814.97,
+      "end": 1815.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 1815.21,
+      "end": 1833.11,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the goal behind this social network was to have... respectful civil conversations between people who don't agree with one another. And Yael built this coming out of the Revolution Tower Square. He was excited about how Facebook was used to mobilize people, but then he felt like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 1833.11,
+      "end": 1833.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "once",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 1833.75,
+      "end": 1853.83,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "people actually got to the hard work of saying, how should we govern Egypt? It didn't work very well anymore. And so he wanted to create a space around politeness and respect. And he did. He built a whole social network around this. It ended up being purchased by Parleo",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 1853.83,
+      "end": 1854.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 1854.55,
+      "end": 1880.52,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "has now turned into sort of informing the rest of their question answering businesses. But I loved this idea that he started a social network. Sorry, it was purchased by Quora. I'm getting my name's confused here. But I love that Parleo. had this whole different paradigm of what a social network could be. So the first thing that I would say is think about social networks that have very specific purposes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 1880.52,
+      "end": 1881.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 1881.28,
+      "end": 1884.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "then work towards building the environment",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 1884.02,
+      "end": 1884.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 1884.88,
+      "end": 1897.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "allows those simultaneous social networks to exist. And for me, that probably means a deep federation, deep integration, deep interoperability, as well as rights to export your friendless and your data.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 1897.74,
+      "end": 1898.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 1898.3,
+      "end": 1903.2,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "second thing I would say is understand that Social networks come about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 1903.2,
+      "end": 1903.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 1903.76,
+      "end": 1906.4,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "people have a very specific need.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 1906.62,
+      "end": 1907.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 1907.22,
+      "end": 1910.34,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "did some research late in the process of our study",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 1910.34,
+      "end": 1911.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 1911.1,
+      "end": 1912.72,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "how Mastodon was growing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 1912.72,
+      "end": 1913.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 1913.26,
+      "end": 1917.74,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "was able to find that one of the ways that Mastodon was growing a ton last year",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 1917.74,
+      "end": 1918.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 1918.62,
+      "end": 1923.8,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "in a very particular subculture in Japan, which was the Lollicom subculture.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 1924.27,
+      "end": 1924.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 1924.63,
+      "end": 1950.45,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 1950.93,
+      "end": 1951.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 1951.57,
+      "end": 1962.77,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you know, while this is emphatically not my thing, I actually think that's exactly what the centralized social network should be for. They should be for people saying, hey, we have a critical mass of people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 1962.77,
+      "end": 1963.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "who",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 1963.55,
+      "end": 1973.97,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "want to interact in this way. And so we're going to create our own community and our own resources for it to happen. But the only reason these folks got off of Twitter and onto Mastodon",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 1973.97,
+      "end": 1974.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 1974.55,
+      "end": 1977.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "they had content that couldn't be supported on that other social",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 1977.27,
+      "end": 1978.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "network. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 1978.5,
+      "end": 1982.34,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "right now, I'm not sure there's a great reason to be on Steam it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 1982.34,
+      "end": 1982.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "instead",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 1982.98,
+      "end": 1994.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of being on Reddit. I think if you hit a point where you simply can't do what you want to do anymore on Reddit, then will be a much more reasonable place for people to move to these other platforms.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 1994.48,
+      "end": 1994.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 1994.88,
+      "end": 1996.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yep. Yeah, I think there's a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 1996.66,
+      "end": 1997.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "lot",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 1997.34,
+      "end": 1999.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of truth there. And I think it's funny that you talk about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 1999.92,
+      "end": 2000.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 2000.44,
+      "end": 2010.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the enthusiastic, bright-minded developers and entrepreneurs that you just go, look, it's going to be tough. Changing the world is hard. And I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 2010.34,
+      "end": 2011.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 2011.46,
+      "end": 2054.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "example of Parlio versus Facebook and how Facebook is kind of bundled together a bunch of different jobs, essentially. I'm reminded of Zaynep Tufeky's affordances framework where certain... technology platforms give certain affordances for certain things and the affordances that Facebook gave during the Arab Spring in terms of congregating people, convening people, allowing them to protest and kind of a sense, like a essentially breaking a coordination problem, allowing them to all come to, uh, to centralize places. That was. Those powers that Facebook gave there were different. Facebook couldn't give the power that Parleyo was trying to give around governance and decision making and clarity and those things. So I think that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 2054.76,
+      "end": 2056.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "at a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 2056.44,
+      "end": 2061.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "root level, I think that at least the similarity between what you're talking about and what the blockchain world talks about is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 2061.98,
+      "end": 2062.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 2062.78,
+      "end": 2083.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we are designing these systems, we need to think about what the systems are designed for and what are there. key metrics, what are their main goals and how do we achieve them? And that's something like Facebook whose primary metric is just how much time are people spending on the platform, that that might not be, that might not work for other things. We need to think about different incentive sets for different goals.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 2088.25,
+      "end": 2101.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Cryptocurrency is vibrant and exciting, but it's not without a share of bad actors. Exchanges in personal accounts can get hacked, computers can be infected with malware. Left unprotected, your digital wealth is up for grabs. Don't let yourself be a victim.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 2102.0,
+      "end": 2102.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Keep",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 2102.48,
+      "end": 2132.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Key is a safest and simplest way to protect your Bitcoin, Ether, Litecoin, and other tokenized assets. This hardware wallet is a separate device that you control. Brought to you by the pioneering team at ShapeShift, Keep Keyworks with the wallet software on your computer to manage your private keys and transactions. Your device is pin protected, which provides protection if it falls into the wrong hands. Its large display lets you carefully view and approve every transaction. And if your keep key has ever lost or stolen, you can safely recover your device without compromising its private keys.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 2132.87,
+      "end": 2133.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "At",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 2133.29,
+      "end": 2137.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the bottom line, you'll sleep easier knowing that your digital wealth is safe and secure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 2137.57,
+      "end": 2138.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Visit",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 2138.11,
+      "end": 2144.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "keepkey.com to order yours today and use the code Humanist 10 for a limited time 10% discount.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 2148.29,
+      "end": 2148.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 2148.83,
+      "end": 2171.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this actually leads me to a question I wanted to ask earlier. I'm kind of taking a step back from specific kind of blockchain use cases and more towards the Center for Civic Media. What would you say you're at the Center for Civic Media? What would your primary metric for success be in terms of, yeah, yeah, if you were to say, hey, in five years, we've been successful, here's how we show it with a metric. What would that metric be?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 2172.76,
+      "end": 2174.36,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "That's such a fantastic question.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 2176.08,
+      "end": 2176.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 2176.48,
+      "end": 2180.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think for me, my metrics have everything to do with,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 2182.64,
+      "end": 2183.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "shifting",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 2183.12,
+      "end": 2186.66,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the language and the thoughts that people end up using.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 338,
+      "start": 2186.98,
+      "end": 2187.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 339,
+      "start": 2187.46,
+      "end": 2191.0,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "one of the things that I figured out years ago about moving to an academic institution",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 340,
+      "start": 2191.0,
+      "end": 2191.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 341,
+      "start": 2191.96,
+      "end": 2227.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that it's not the greatest place to start a business. It's not the greatest place to write software. But man, it's a great place and a great platform from which to put ideas out in the world. And having that ability to, first of all, sort of workshop ideas with super smart people. And then all the different ways in which academics can get ideas out into the world, including through building demonstration projects that don't necessarily have to make money, but can be provocations, is super helpful.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 342,
+      "start": 2227.53,
+      "end": 2228.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 343,
+      "start": 2228.09,
+      "end": 2231.81,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "just to give a concrete example of this, right? So we wrote this paper.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 344,
+      "start": 2232.32,
+      "end": 2232.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 345,
+      "start": 2232.62,
+      "end": 2234.92,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "essentially said, look, the reason that we're,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 346,
+      "start": 2235.18,
+      "end": 2235.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 347,
+      "start": 2235.54,
+      "end": 2238.74,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, reluctant to say something like Steam and is going to change the world",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 348,
+      "start": 2238.74,
+      "end": 2239.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 349,
+      "start": 2239.52,
+      "end": 2252.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a, people don't have terrific reasons for adopting it right now. B, the usability of all these crypto platforms really stinks compared to consumer social media out there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 350,
+      "start": 2252.93,
+      "end": 2253.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 351,
+      "start": 2253.57,
+      "end": 2261.96,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "see, the environment isn't right for this. What you would need for an environment for a platform like SteamIt to succeed",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 352,
+      "start": 2261.96,
+      "end": 2262.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 353,
+      "start": 2262.84,
+      "end": 2270.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "one where it's really easy, not only to move your content over there, but second, to integrate Steam it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 354,
+      "start": 2270.26,
+      "end": 2271.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "into",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 355,
+      "start": 2271.02,
+      "end": 2276.52,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the other media that people are consuming. So what you really need is a product",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 356,
+      "start": 2276.52,
+      "end": 2277.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 357,
+      "start": 2277.22,
+      "end": 2285.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "lets you read Facebook and Twitter and Mastodon and Reddit and Steam it and all the other things that you're on and sort of interact with all of them.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 358,
+      "start": 2285.35,
+      "end": 2285.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "without",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 359,
+      "start": 2285.75,
+      "end": 2295.69,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "switching between all these different and compatible clients. So we built something kind of for the fun of it called Gobo. And Gobo is a social network aggregator",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 360,
+      "start": 2295.69,
+      "end": 2296.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 361,
+      "start": 2296.45,
+      "end": 2298.19,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "adjustable filters. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 362,
+      "start": 2298.19,
+      "end": 2299.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 363,
+      "start": 2299.41,
+      "end": 2307.23,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Gobo, you're able to incorporate your Twitter feed, your Facebook feed, in the longer run, Mastodon, Steam at so on and so forth.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 364,
+      "start": 2307.61,
+      "end": 2308.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 365,
+      "start": 2308.07,
+      "end": 2332.15,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "then have sort of adjustable filters so you can say, hey, today I'm not really interested in politics. You know, give me less politics, give me more funny. Or today I'm actually really in the mood to explore. Give me less viral stuff and give me more underrepresented stuff. Or, you know what? I don't hear from enough women in my life. Let me silence the men for a while and let me hear mostly from the women.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 366,
+      "start": 2332.43,
+      "end": 2332.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 367,
+      "start": 2332.91,
+      "end": 2335.15,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's up at gobo.com.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 368,
+      "start": 2335.98,
+      "end": 2336.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 369,
+      "start": 2336.44,
+      "end": 2352.1,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "not a commercial startup. And we don't have any way to make money from it. It's a provocation. And it's out there so that when I sit down with Facebook, I can point to senior people at Facebook and say, look, your tools should work",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 370,
+      "start": 2352.1,
+      "end": 2352.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 371,
+      "start": 2353.12,
+      "end": 2359.3,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And if it doesn't work like this, at the very least, it should support the existence of tools like this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 372,
+      "start": 2359.42,
+      "end": 2359.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 373,
+      "start": 2359.82,
+      "end": 2361.36,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "then we have wonderful fights.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 374,
+      "start": 2362.86,
+      "end": 2363.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Open",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 375,
+      "start": 2363.38,
+      "end": 2363.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "APIs.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 376,
+      "start": 2364.97,
+      "end": 2365.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 377,
+      "start": 2365.83,
+      "end": 2368.05,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's right, exactly. And that's where you end up. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 378,
+      "start": 2368.05,
+      "end": 2368.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's cool,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 379,
+      "start": 2368.97,
+      "end": 2375.15,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "right? I mean, you're actually talking about issues at that point rather than just yelling at each other. But that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 380,
+      "start": 2375.15,
+      "end": 2375.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 381,
+      "start": 2375.77,
+      "end": 2377.11,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "way of working",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 382,
+      "start": 2377.11,
+      "end": 2378.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 383,
+      "start": 2378.03,
+      "end": 2389.65,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "works well in an academic context. You do the research, you publish the paper, you do some demonstrations, you advocate around it. And at the end of the day, I don't care much",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 384,
+      "start": 2389.65,
+      "end": 2390.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "whether",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 385,
+      "start": 2390.43,
+      "end": 2410.6,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "these ideas get pushed forward by me. or by someone else who takes the ideas and runs with them, or by Facebook. Everything that we do in my lab is open source. It ends up out there on GitHub, but if anyone wants to play with it, they can. The vast majority of publishing we do is under Creative Commons for the same reason. But my metrics of success are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 386,
+      "start": 2410.6,
+      "end": 2411.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 387,
+      "start": 2411.8,
+      "end": 2420.08,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "does the language and the conceptual vocabulary that I'm using, when does that get picked up and when does that sort of sway?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 388,
+      "start": 2420.78,
+      "end": 2421.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "these",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 389,
+      "start": 2421.12,
+      "end": 2426.82,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "larger debates. And I realize that sounds super abstract, but that's kind of how, um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 390,
+      "start": 2428.36,
+      "end": 2433.56,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "how you have influence when you're trying to shape a whole field and, and a whole way of people working on.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 391,
+      "start": 2433.66,
+      "end": 2433.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 392,
+      "start": 2434.14,
+      "end": 2441.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah. I think that makes sense. And I'll, I'll push back on it for a second. But first I want to say two cool things about what you talked about. One is about these meta social networks and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 393,
+      "start": 2441.7,
+      "end": 2442.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 394,
+      "start": 2442.14,
+      "end": 2442.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "could call them like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 395,
+      "start": 2443.31,
+      "end": 2443.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Some",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 396,
+      "start": 2443.63,
+      "end": 2457.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of them are like interoperability frameworks, like the ones that you're talking about. Some of them are kind of protocols for interacting that allow for different kind of UIs to be put on those different protocols. One that I love is red feed, blue feed. Do you know that one? Yeah, yeah, which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 397,
+      "start": 2457.67,
+      "end": 2457.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 398,
+      "start": 2457.99,
+      "end": 2462.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it shows you, hey, what are the most liberal people seeing on Facebook? And what are the most conservative people seeing on Facebook? And just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 399,
+      "start": 2462.99,
+      "end": 2463.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "purely",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 400,
+      "start": 2463.53,
+      "end": 2468.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "being able to see that as a thing is just, it's very helpful. And just like, wow, people have different feeds and this is what they look like.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 401,
+      "start": 2469.27,
+      "end": 2469.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 402,
+      "start": 2469.59,
+      "end": 2471.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "other thing that I thought that you said there, which is really great is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 403,
+      "start": 2472.44,
+      "end": 2472.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 404,
+      "start": 2472.64,
+      "end": 2493.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "don't really care. Your incentive set is different than the incentive set of a venture capitalist or a startup person who, and their incentive set is generally when they make something, they're trying to produce value for the world. And then they're trying to capture that value for themselves, generally speaking, and try to get ROI for their investors and their LPs or whatever. And for you, you're coming from more of a,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 405,
+      "start": 2493.78,
+      "end": 2494.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 406,
+      "start": 2494.18,
+      "end": 2501.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "call it a Creative Commons, a... hashtag open mindset, anti-rivalist mindset, which says, hey, you don't really care who actually",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 407,
+      "start": 2501.73,
+      "end": 2502.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "does",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 408,
+      "start": 2502.59,
+      "end": 2504.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this thing. You just know that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 409,
+      "start": 2504.11,
+      "end": 2504.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "based",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 410,
+      "start": 2504.63,
+      "end": 2524.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "off looking at reality today, our current social networks are not... in alignment with us. And if we can make ones that are in alignment with us, that'd be great. Whether you make it, whether a company makes it, whether Facebook makes it, you don't really care. You just care that it gets made. So I think that's a very powerful mindset. So, but I want to, so those are two positive things. I want to push back on the metric. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 411,
+      "start": 2524.12,
+      "end": 2524.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 412,
+      "start": 2524.64,
+      "end": 2536.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you, so I agree with your abstract metric. I think that that's a good one. If you were to try to quantify that, how would you try to like quantify that and show a graph of that going up into the right or whatever?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 413,
+      "start": 2537.68,
+      "end": 2538.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 414,
+      "start": 2538.42,
+      "end": 2540.54,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so the funny thing about that is we've actually",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 415,
+      "start": 2540.54,
+      "end": 2541.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "built the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 416,
+      "start": 2541.8,
+      "end": 2564.12,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "tools to quantify that. So, and not specifically for us, really for different social movements. So remember during the years of Occupy when people would sort of say, well, what is Occupy good for? And people would respond and say, well, we're finally talking about inequality, right? Inequality has become...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 417,
+      "start": 2564.98,
+      "end": 2565.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 418,
+      "start": 2565.4,
+      "end": 2572.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "language of how we talk about social change. One of the questions that I always had was, was that true? So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 419,
+      "start": 2572.25,
+      "end": 2572.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 420,
+      "start": 2572.49,
+      "end": 2578.61,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "would you answer a question like that? Well, one of the ways that you would answer a question like that is you would look at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 421,
+      "start": 2578.61,
+      "end": 2579.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 422,
+      "start": 2579.09,
+      "end": 2588.33,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "broad swath of media pre-occupied, and then you would look at a broad swath of media post-occupy, and you would try to figure out how much more often people were talking about inequality.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 423,
+      "start": 2590.62,
+      "end": 2591.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "To",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 424,
+      "start": 2591.04,
+      "end": 2596.84,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "do that, you need a tool that lets you sample or collect",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 425,
+      "start": 2596.84,
+      "end": 2597.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 426,
+      "start": 2597.72,
+      "end": 2601.4,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "lot of media over a long period of time and do quantitative analysis of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 427,
+      "start": 2601.4,
+      "end": 2602.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 428,
+      "start": 2602.35,
+      "end": 2614.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "about 10 years ago, we started building something called Media Cloud. I started building it over at the Harvard Klein, Berkman Klein Center. And now it's between Berkman Klein and Center Pacific Media.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 429,
+      "start": 2614.73,
+      "end": 2615.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 430,
+      "start": 2615.29,
+      "end": 2618.39,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "have many, many, many, many, many terabytes of data.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 431,
+      "start": 2618.93,
+      "end": 2619.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 432,
+      "start": 2619.63,
+      "end": 2629.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "they're all designed to let you ask questions like, how much more coverage did Trump get than Clinton during the 2016 elections?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 433,
+      "start": 2629.89,
+      "end": 2630.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 434,
+      "start": 2630.69,
+      "end": 2638.01,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "how has the Black Lives Matter movement changed how we talk about police violence?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 435,
+      "start": 2638.05,
+      "end": 2638.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 436,
+      "start": 2638.77,
+      "end": 2644.91,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I'll use that last one just as a concrete example. We did a study. This is now",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 437,
+      "start": 2644.91,
+      "end": 2645.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 438,
+      "start": 2645.97,
+      "end": 2650.07,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "review for a big communications journal. looking at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 439,
+      "start": 2650.07,
+      "end": 2651.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "deaths",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 440,
+      "start": 2651.17,
+      "end": 2652.97,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of unarmed people of color",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 441,
+      "start": 2652.97,
+      "end": 2653.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 442,
+      "start": 2653.75,
+      "end": 2659.41,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the hands of the police over the course of three years before and after Michael Brown's death.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 443,
+      "start": 2659.87,
+      "end": 2660.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 444,
+      "start": 2660.39,
+      "end": 2664.49,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it turns out that, you know, 12 months after Mike Brown is killed,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 445,
+      "start": 2664.93,
+      "end": 2665.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 446,
+      "start": 2665.79,
+      "end": 2671.43,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "average death of a person of color at the hands of the police and an unarmed person of color at the hands of the police",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 447,
+      "start": 2671.43,
+      "end": 2672.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "gets",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 448,
+      "start": 2672.25,
+      "end": 2674.39,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "about 11 times as much attention as it did before.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 449,
+      "start": 2675.12,
+      "end": 2675.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 450,
+      "start": 2675.68,
+      "end": 2681.64,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the way that we talk about those deaths is really different. Rather than talking about it as an isolated incident,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 451,
+      "start": 2683.3,
+      "end": 2716.18,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you're 10 times more likely, post-Michael Brown, to see a story that ties that death into other deaths of black civilians in the hands of the police. So by doing that sort of quantitative media analysis, we're able to say, wow, look at this. Whether it's Black Lives Matter, whether it's someone else, we changed. how we talk about police violence against people of color. And that change lasts for 18 months and we can watch it and we can watch it go away. So being able to quantify",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 452,
+      "start": 2716.18,
+      "end": 2717.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 453,
+      "start": 2717.28,
+      "end": 2719.04,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we talk about social problems",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 454,
+      "start": 2719.04,
+      "end": 2719.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 455,
+      "start": 2719.8,
+      "end": 2723.18,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a huge piece of getting towards norms-based theories",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 456,
+      "start": 2723.18,
+      "end": 2724.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of change. The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 457,
+      "start": 2724.56,
+      "end": 2727.74,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "whole idea behind a norm-based theory of change is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 458,
+      "start": 2727.74,
+      "end": 2728.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 459,
+      "start": 2728.34,
+      "end": 2730.52,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "want to change the concepts people are using.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 460,
+      "start": 2730.78,
+      "end": 2731.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 461,
+      "start": 2731.38,
+      "end": 2750.8,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "not that... It's illegal to shoot unarmed black people. That's been illegal for a long time in the United States. But we have norms that suggest that black people, particularly young black men, are dangerous. And because of those norms, because of those biases, they get killed at a much higher rate",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 462,
+      "start": 2750.8,
+      "end": 2751.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "by",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 463,
+      "start": 2751.18,
+      "end": 2759.78,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "police than young white men. And that's a norm that has to change. And the way that you change those norms is you have a dialogue about police violence.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 464,
+      "start": 2760.14,
+      "end": 2760.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 465,
+      "start": 2760.44,
+      "end": 2776.42,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so we're able to track what that dialogue looks like. We're able to track who the actors are in it. And we're able to give that information to social change organizations and say, how are you doing on this? Is this the way that you want to be working on this campaign? Is this working the way that you like? So I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 466,
+      "start": 2776.42,
+      "end": 2776.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "am",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 467,
+      "start": 2776.94,
+      "end": 2789.79,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "absolutely able. to look at how effective my work is. Most of the time I find out that it's not very effective. I'm not very successful at what I try to do. But at least I've got the tools in place to check",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 468,
+      "start": 2789.79,
+      "end": 2790.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it out.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 469,
+      "start": 2790.23,
+      "end": 2798.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, I like that. So you've dog-futed yourself by building something so that you can understand norms-based theories of change through quantifying social network data.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 470,
+      "start": 2798.55,
+      "end": 2798.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 471,
+      "start": 2798.71,
+      "end": 2800.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like that. I think that there's an interesting one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 472,
+      "start": 2800.67,
+      "end": 2801.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 473,
+      "start": 2801.23,
+      "end": 2834.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it would be cool if we looked at, which is... Within the crypto world, there was Holdel as a meme, HODL, aka hold your cryptocurrency, even when it's going down, don't sell it. And then there's this new one, especially within the Ethereum ecosystem called Biddle, aka Build, which is, hey, people. if we want to make this new great decentralized world, we can't just like hold on to our cryptocurrency. We actually have to build the infrastructure for this decentralized future. And so that has been a meme that has spread very quickly recently. And so I'd be interested to use MediaCloud to look at that. But we should, oh, sorry,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 474,
+      "start": 2835.26,
+      "end": 2836.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "go. Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 475,
+      "start": 2836.36,
+      "end": 2845.74,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and the good news is you can't, right? Because it's an open source system so you can build your own instance. But even beyond that, you can go to MediaCloud.org, sign up for an account. And at that point,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 476,
+      "start": 2846.07,
+      "end": 2846.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 477,
+      "start": 2846.43,
+      "end": 2862.01,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "can search for those tags and see how they're doing. But even beyond that, you might even want to broaden out a little bit and essentially say, when we think about cryptocurrency, when are we thinking about this as an investment? When are we thinking about this as an architecture",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 478,
+      "start": 2862.01,
+      "end": 2862.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 479,
+      "start": 2862.59,
+      "end": 2879.72,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "future services? Are we treating this as a penny stock? Are we treating this as an alternative currency? Are we treating this as an alternative financial system? You might end up with sort of different paradigms and trying to get a sense for over a period of time, how are those different narratives rising or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 480,
+      "start": 2879.72,
+      "end": 2879.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "falling?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 481,
+      "start": 2880.74,
+      "end": 2889.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "But that's exactly, the experiment you just described is exactly why we built this tool and now we spend an enormous amount of time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 482,
+      "start": 2889.58,
+      "end": 2889.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "trying",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 483,
+      "start": 2889.9,
+      "end": 2894.34,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to help social change organizations learn how to use it and answer those questions for themselves.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 484,
+      "start": 2894.72,
+      "end": 2899.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Cool. Well, if you're a listener, you should feel free to do that, or maybe I'll do it myself and look at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 485,
+      "start": 2899.98,
+      "end": 2900.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 486,
+      "start": 2900.66,
+      "end": 2902.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "people are viewing holdling versus biddling.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 487,
+      "start": 2903.46,
+      "end": 2903.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 488,
+      "start": 2903.94,
+      "end": 2937.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "going to transition, actually, in this final section, though, away from specifically Center for Civic Media stuff and within the blockchain world and kind of go to more of like a macro political take here. You, Ethan, recently gave a talk about... This history of relationship essentially between the parties and between political parties and the press. And those things are essentially the relationship between governance and kind of information. And there was a really crazy stat that you said, which is in 1835, 80% of federal jobs were in the United States Postal Service. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 489,
+      "start": 2937.68,
+      "end": 2938.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 490,
+      "start": 2938.14,
+      "end": 2942.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the talk, you said the words, the press came first and then the parties came after. And I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 491,
+      "start": 2942.97,
+      "end": 2943.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 492,
+      "start": 2943.57,
+      "end": 2945.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the blockchain ecosystem thinks more about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 493,
+      "start": 2945.95,
+      "end": 2946.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 494,
+      "start": 2946.57,
+      "end": 2956.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "governance should work and how governance should be connected to information, this idea that actually the information came first and then the parties were kind of built around that information, I think is kind of fascinating. So could you kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 495,
+      "start": 2956.63,
+      "end": 2957.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "say",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 496,
+      "start": 2957.13,
+      "end": 2957.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "more about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 497,
+      "start": 2957.81,
+      "end": 2958.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 498,
+      "start": 2958.95,
+      "end": 2962.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "history there and why you say the press came first and the parties came after?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 499,
+      "start": 2963.51,
+      "end": 2966.69,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Absolutely. And I'll try to give the very compact version of this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 500,
+      "start": 2966.85,
+      "end": 2969.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It was a long time. Yeah. Really",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 501,
+      "start": 2969.53,
+      "end": 2975.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "fun story. Basically, the way to think about this is that the founding fathers of the United States",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 502,
+      "start": 2975.73,
+      "end": 2976.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "had",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 503,
+      "start": 2976.41,
+      "end": 2992.15,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a really tough information problem. They wanted to build a self-governing nation, but that nation was huge by contemporary standards. And communication was terrible at that moment. And if you think about...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 504,
+      "start": 2992.14,
+      "end": 2992.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "being",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 505,
+      "start": 2992.72,
+      "end": 3006.42,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "in the late 1700s and needing to have a conversation that involved people in Boston and in Charleston, and having them talk meaningfully about, should we have a central bank?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 506,
+      "start": 3006.76,
+      "end": 3007.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "How",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 507,
+      "start": 3007.26,
+      "end": 3007.92,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "do you do that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 508,
+      "start": 3008.2,
+      "end": 3008.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 509,
+      "start": 3008.7,
+      "end": 3010.72,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the solution that they came up with was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 510,
+      "start": 3010.72,
+      "end": 3011.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 511,
+      "start": 3011.44,
+      "end": 3016.28,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "need to have a press, and to have a press, you need to have a post office.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 512,
+      "start": 3016.73,
+      "end": 3017.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 513,
+      "start": 3017.17,
+      "end": 3037.15,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the United States was really built around the post office as its most powerful federal institution. And certainly from the late 1700s through the mid-1800s, really before the Civil War, the post was our single biggest and most powerful institution.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 514,
+      "start": 3037.43,
+      "end": 3037.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 515,
+      "start": 3037.99,
+      "end": 3042.91,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think if I have the numbers right, it's 1830. It was 80% of the federal government worked for the post",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 516,
+      "start": 3042.91,
+      "end": 3043.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "office.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 517,
+      "start": 3043.21,
+      "end": 3044.51,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And the joke that I've made.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 518,
+      "start": 3044.89,
+      "end": 3045.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 519,
+      "start": 3045.31,
+      "end": 3049.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that the U.S. government was basically a postal service",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 520,
+      "start": 3049.29,
+      "end": 3050.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 521,
+      "start": 3050.01,
+      "end": 3053.31,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a very small bureaucracy and an itty-bitty tiny army",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 522,
+      "start": 3053.31,
+      "end": 3053.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "attached",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 523,
+      "start": 3053.71,
+      "end": 3067.97,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to it. That was who we were as a nation. And what it led to were some crazy policies. It turned out that the way to make this work was to make it shockingly cheap to send newspapers back and forth.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 524,
+      "start": 3068.05,
+      "end": 3068.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "They",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 525,
+      "start": 3068.53,
+      "end": 3089.63,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "were a tiny fraction of what's sending private letters cost. newspapers could exchange copies with each other freely. And what that meant was that the average newspaper was getting thousands of other newspapers per year for free. And they were then essentially cutting and pasting from them. So the news was all about sharing other people's news at that point.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 526,
+      "start": 3090.19,
+      "end": 3090.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "In",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 527,
+      "start": 3090.79,
+      "end": 3101.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that environment, newspapers became highly partisan. And in many ways, the political parties, as we know them, emerged out of newspapers rather than the way around.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 528,
+      "start": 3101.89,
+      "end": 3102.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "before",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 529,
+      "start": 3102.61,
+      "end": 3117.23,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you became a Hamilton supporter, you were reading Hamilton's New York newspaper. And you were a subscriber to it. And that was part of where your ideology and your belief system came. And that was where the political parties started emerging from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 530,
+      "start": 3117.23,
+      "end": 3117.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "them.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 531,
+      "start": 3117.73,
+      "end": 3123.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So if you look back in American history, these really strong protections of the press",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 532,
+      "start": 3123.85,
+      "end": 3124.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "combined",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 533,
+      "start": 3124.95,
+      "end": 3130.19,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "with this pretty innovative spending to create an architecture.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 534,
+      "start": 3130.86,
+      "end": 3131.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 535,
+      "start": 3131.26,
+      "end": 3150.84,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "allowed in support of these dialogues. This is one of our sort of proudest heritages and legacies, and it's one that very few geeks and hackers know anything about, which is really a shame because it's a pre-digital internet space, and it's literally what American democracy emerges from.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 536,
+      "start": 3150.9,
+      "end": 3151.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 537,
+      "start": 3151.42,
+      "end": 3152.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I love it. I think it's also...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 538,
+      "start": 3153.34,
+      "end": 3153.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 539,
+      "start": 3153.58,
+      "end": 3174.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "mean, it also, as you say, it kind of flips the script in some ways, rethink that the parties came first, and then those parties then push out their information to people and then create the infrastructure or whatever. And you're like, well, it's definitely a loop between those things, but often in some ways, the press came first. And I think it's especially important for us to think about that as we. enter this upcoming period of the digital information internet revolution and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 540,
+      "start": 3174.99,
+      "end": 3175.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 541,
+      "start": 3175.81,
+      "end": 3201.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that changes internet and how also things like blockchain and other kinds of social networks change the way we can do governance and the way that we can create social contracts and social groups with each other and organize. How do you see, if you kind of pattern match and kind of make history rhyme for a bit here, how do you see that... American history kind of pattern matching into our current and mapping into our current future of information and governance.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 542,
+      "start": 3202.75,
+      "end": 3203.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 543,
+      "start": 3203.47,
+      "end": 3204.47,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it's interesting. I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 544,
+      "start": 3204.47,
+      "end": 3206.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 545,
+      "start": 3206.97,
+      "end": 3208.07,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you could",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 546,
+      "start": 3208.23,
+      "end": 3209.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "make",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 547,
+      "start": 3209.57,
+      "end": 3218.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the case that the ability for people to find like-minded groups and to make common cause and to try to figure out how to work together",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 548,
+      "start": 3218.29,
+      "end": 3220.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 549,
+      "start": 3220.13,
+      "end": 3222.17,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "an internet age is a direct parallel.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 550,
+      "start": 3222.47,
+      "end": 3222.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 551,
+      "start": 3222.99,
+      "end": 3234.47,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "do think what's interesting is that With the crypto space, there seems to be a movement towards saying, let's get the currency ride and everything else falls into place.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 552,
+      "start": 3235.39,
+      "end": 3235.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 553,
+      "start": 3235.91,
+      "end": 3236.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I don't know that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 554,
+      "start": 3236.85,
+      "end": 3237.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "history",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 555,
+      "start": 3237.69,
+      "end": 3256.46,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "actually supports that all that neatly. Common currency is fairly late in the game as far as the emergence of the American nation. In fact, in many ways, this sort of chaotic situation where we've got all these competing currencies and how do you exchange them with one another? is very much a reminder",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 556,
+      "start": 3256.46,
+      "end": 3257.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 557,
+      "start": 3257.26,
+      "end": 3264.58,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "what the early American experiment looked like. I think more than anything, it's this question of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 558,
+      "start": 3264.58,
+      "end": 3265.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 559,
+      "start": 3265.4,
+      "end": 3269.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "do people find each other around a common set of ideas,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 560,
+      "start": 3270.2,
+      "end": 3270.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 561,
+      "start": 3270.76,
+      "end": 3276.0,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "then how do those ideas turn into self-governing spaces?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 562,
+      "start": 3276.43,
+      "end": 3277.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 563,
+      "start": 3277.11,
+      "end": 3288.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "this is a place where I think I'm worried about the corrosive effects of something like Facebook, we're not getting a great deal of opportunity to govern ourselves.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 564,
+      "start": 3288.35,
+      "end": 3288.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 565,
+      "start": 3288.91,
+      "end": 3291.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "look instead towards something like Reddit, which, you know, despite",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 566,
+      "start": 3291.73,
+      "end": 3292.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 567,
+      "start": 3292.61,
+      "end": 3296.75,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "community complaints, actually has an enormous amount of self-governance, has an enormous amount of power",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 568,
+      "start": 3296.75,
+      "end": 3297.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "within",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 569,
+      "start": 3297.63,
+      "end": 3299.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "those moderators. I look at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 570,
+      "start": 3299.53,
+      "end": 3300.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "someone",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 571,
+      "start": 3300.07,
+      "end": 3312.77,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "like my former student, Nathan Matthias, who has a project called Civil Servant, which is entirely designed to help Reddit moderators learn how to govern their communities better and more inclusively.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 572,
+      "start": 3313.18,
+      "end": 3313.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 573,
+      "start": 3313.46,
+      "end": 3317.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I find myself sort of wondering whether that's a place where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 574,
+      "start": 3317.14,
+      "end": 3318.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 575,
+      "start": 3318.06,
+      "end": 3323.44,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "could hope for new emergent ideas and behavior to come from,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 576,
+      "start": 3323.58,
+      "end": 3324.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 577,
+      "start": 3324.08,
+      "end": 3333.44,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "people getting together around common identities and common ideas, and then learning from how they govern and manage themselves to sort of think about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 578,
+      "start": 3333.44,
+      "end": 3335.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 579,
+      "start": 3335.08,
+      "end": 3339.43,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "future emergent communities end up forming.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 580,
+      "start": 3339.49,
+      "end": 3341.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah. Yeah, I think,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 581,
+      "start": 3342.76,
+      "end": 3343.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 582,
+      "start": 3343.64,
+      "end": 3387.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it'll be interesting to see how it plays out both from the Facebook perspective, from the blockchain crypto perspective. And I'm not sure. Yeah, I think at the high level, people should, understanding the history is always surprisingly helpful. That's what I've found. Well, we're pretty much out of time for today. But at a high level, so first off, Ethan, thank you so much for coming on the show for my listeners. I, if you're, for many of you who are interested, not just in blockchain and crypto from a, you know, like a ICO or speculative perspective, but from a how it will change society perspective, I'd highly recommend checking out, Ethan and the MIT Media Lab more generally in the Center for Civic Media and also the Berkman Klein Center at Harvard. Both of these places are... in my opinion, are the two places in the world that are doing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 583,
+      "start": 3387.19,
+      "end": 3387.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 584,
+      "start": 3387.77,
+      "end": 3394.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "most work around how tech changes society, and they're putting out lots of good stuff and thinking about it in a very serious way. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 585,
+      "start": 3394.39,
+      "end": 3394.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 586,
+      "start": 3394.91,
+      "end": 3398.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "my recommendation to the listener. Ethan, where can they find you on, like, Twitter, let's say?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 587,
+      "start": 3400.33,
+      "end": 3403.51,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Sure. I'm pretty easy to find. I'm Ethan Z on Twitter,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 588,
+      "start": 3403.65,
+      "end": 3404.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 589,
+      "start": 3404.33,
+      "end": 3418.4,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you can find a lot of my writing at Ethan Zuckerman.com. And yeah, hit me up on Twitter. I'm always happy to talk about this stuff, including the people who think that I'm entirely misguided about... My skepticism is around decentralized social",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 590,
+      "start": 3418.4,
+      "end": 3418.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "network.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 591,
+      "start": 3418.74,
+      "end": 3427.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yes, perfect, exactly. So if you're a steem it maximist, please yell at, yell at Ethan a lot. Ethan, thanks again so much. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 592,
+      "start": 3427.34,
+      "end": 3427.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 593,
+      "start": 3427.8,
+      "end": 3436.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "final note for my listeners, if you want to support me on Patreon, you can go to patreon.com slash Reese Lindmark. That's patreon.com slash L-I-N-D-M-A-R-K.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 594,
+      "start": 3437.14,
+      "end": 3437.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 595,
+      "start": 3437.44,
+      "end": 3438.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "thank you, everybody, and goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 596,
+    "withheld": 3,
+    "published": 593
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

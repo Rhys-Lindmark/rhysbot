@@ -1,0 +1,3825 @@
+{
+  "schema_version": 1,
+  "id": "podcast-2fc36ce9637c5670b461",
+  "title": "#3 Renee DiResta: Russia Disinformation Campaign and Our Weaponized Information Ecosystem",
+  "published_at": "2019-01-14T23:54:33Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/3-renee-derista-russias-disinformation-campaign-and-our-weaponized-information-ecosystem",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/559141452-the-rhys-show-3-renee-derista-russias-disinformation-campaign-and-our-weaponized-information-ecosystem.mp3",
+  "youtube_id": "jEKf0nh6GlY",
+  "youtube_url": "https://www.youtube.com/watch?v=jEKf0nh6GlY",
+  "audio_sha256": "fdb7b47a4795b097ce0ecdaaa2d9c08bdda4be6b98c049b0dbf163ae920e9572",
+  "audio_duration_seconds": 3358.0669375,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 10459,
+    "unknown_words": 240,
+    "unknown_words_fraction": 0.022946744430633905,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 11.54,
+      "end": 12.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 12.26,
+      "end": 26.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everybody. My name is Reislandmark and you're listening to another episode of Gray Mirror, a new podcast from MIT Media Lab's Digital Currency Initiative on technology, society, and ethics, where we look at both the positive and negative impacts of technology.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 27.9,
+      "end": 28.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Today",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 28.48,
+      "end": 63.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I interview René Derista about our digital information ecosystem. Renee is the director of research at a cybersecurity company called New Knowledge, the head of policy at the nonprofit data for democracy. And she's also a 2018 Mozilla Fellow, a Harvard-Burkman-Kline affiliate, a founding advisor for the Center for Humane Technology, and a frequent contributor to Rubin Farm. So she's got a great background and perfect to chat about digital information ecosystems. And we chat because she just released two exciting reports on a Russian disinformation campaign and then also this wide look on Ribbon Farm about our digital. information ecosystem. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 63.26,
+      "end": 64.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 64.54,
+      "end": 157.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "chat about those two primary things in the episode. And on the first point, I just want to say, I mean, this is a crazy thing. So it's a, um, this Russian disinformation campaign. They spent, Russia spent about 10 to 17 million on it, you know, 10.4 million tweets, Facebook posts reaching 126 million people is pretty big. Um, and the key thing when you're listening to it is to say, hey, We're in this new era of non-institutional and now distributed trust, where the trust is baked into the network. And so this Russian agency, they can build trust, and they do it primarily around identity, whether it's Texas or black or queer, whatever, whatever identities they're looking to build. And then they leverage that trust for whatever their ends are. And in their case, it's to kind of create polarization. And so that's what Renee and I chat about. And the key thing as you're listening is to think, and when you're thinking about the ecosystem in general, the digital information ecosystem is, A, where and how is trust being built? So for something like Uber, it's being built with like driver's ratings. And then later, how do you How does that company or that institution leverage that trust? So if Russia is leveraging it for polarization, someone like Uber is leveraging it kind of for profit, so more people take rides. And the other thing to think about here is one of the biggest attack factors for trust is your own identity. And so in general, if you can keep your identity small and realize when people are kind of leveraging in-group and out-group dynamics for your trust, that'll be kind of crucial for navigating the information ecosystem. So that's one thing we talked about is this Russian disinformation campaign. It's pretty interesting. Okay, so in the second half of the episode,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 158.45,
+      "end": 252.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we chat about kind of a more macro take on what's happening with our information ecosystem. And this is another really good conversation, and there's a lot in here. I just want to highlight kind of three things. The first is that to contextualize where Renee and I's conversation exists within the realm of kind of technological societal loops in the world, you should think about, okay, hey, what's happening based off of the internet, based off of Web 2.0, based off of Google and Facebook and these big aggregators. And when you think about that, Renee and I are chatting about essentially our sense-making and our information ecosystems. And how do we determine what is true and how do institutions leverage this new kinds of distributed trust for their own means and their own ends? And remember that that's different than when you think about Google and Amazon and Facebook. That's different than... the incentive structures and the affordances of these massive information aggregators. So that's stuff like surveillance capitalism and addiction capitalism and these new aggregator-based monopolies and antitrust. That's kind of two big buckets here. A, how are institutions and authoritarian regimes kind of leveraging this new information and distributed trust ecosystem? And second, what are kind of the natural kind of almost inevitable incentive structures of these new aggregators and how do they lead to things like surveillance capitalism? We don't really chat about the second one. We don't chat about that much about surveillance capitalism. We mostly chat about the first one, which is how institutions are leveraging distributed trust. So that's point number one. Point number two is, yeah, I mean, it's really interesting. Renee brings up how our information ecosystem relates to free",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 252.53,
+      "end": 308.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "speech. And she claims that liberal democratic societies have an asymmetric vulnerability to these kinds of attacks. And I agree. And it's because, you know, They say, hey, if we want to curate out the things that are bad, well, free speech society says, no, no, no, you can't curate anything out. We need free speech. And there's a thing to remember here. And as you're listening, is to say, hey, free speech is a heuristic. It's a good kind of virtue to have. It's a good, like, from a deontological perspective, it's a good thing. It's a good means to have. But it's not an end, you know. The end is, is... good outcomes. And so this is why you can't say fire in a crowded theater if a bunch of people die. And so similarly, we should be thinking about free speech on these platforms on the internet and say, hey, we might need to decrease free speech or think differently about free speech in order to get better outcomes for society. So that's the second point. And the third piece here",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 308.36,
+      "end": 309.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is... Really",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 309.41,
+      "end": 364.97,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "thinking about the responsibility borne by the tech platforms themselves versus the consumers. And Renee, and I kind of disagree on this, and I'm most, she's more of a pro, you know, kind of regulating the tech platforms, and I'm pro consumers and kind of media literacy. And so I think short term, I agree with Renee, that these platforms need to change, but long term, no matter what, We as individuals in society need to take a deep responsibility for, you know, media literacy to cope with our newly, highly weaponizable information environment. And so I think short-term platform regulation is good and long-term, we need everybody to have very deep and nuanced understandings of how trust is built so that when aggregator platforms try to leverage it in various ways, you are prepared against it. So with that, it's a cool episode and hope you enjoy today's episode with Renee.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 370.98,
+      "end": 375.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello, everybody. You're listening to Gray Mirror. Renee, thanks for being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 375.84,
+      "end": 376.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Thanks for having me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 377.0,
+      "end": 391.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, excited to dive in. So before we chat about some of your recent pieces, I want to ask a more macro general question, which is just how do you think about the positive and negative impacts of technology on society? Kind of very general, very abstract. How do you think about that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 393.61,
+      "end": 394.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I've been in tech.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 395.18,
+      "end": 395.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "My",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 395.62,
+      "end": 401.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "whole life, I learned to code when I was nine. You know, I've been on the internet on AOL when it started.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 401.66,
+      "end": 401.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 401.94,
+      "end": 414.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "really feel like I have, I don't remember a time in my adult life when I wasn't constantly connected to the internet. I love Twitter. I love the people I've met on Twitter. I think at the same time, though, a lot of, a lot",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 414.34,
+      "end": 414.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 415.08,
+      "end": 419.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's increasingly impossible to ignore that there have been significant negative impacts",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 419.38,
+      "end": 419.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 419.98,
+      "end": 450.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "have come about, particularly as the social ecosystem has expanded and become. It's gone from being about personal connections to being really the dominant information transmission ecosystem. It's where people get their news. It's where people find new things to connect with. It's increasingly political. So as we have this new ecosystem, I think that some of the things that it was designed for don't necessarily lend themselves to the best possible, to providing the best possible platform for connecting people, ironically.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 451.09,
+      "end": 451.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 451.67,
+      "end": 499.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah. I think that's great. I think that there's, as you say, the Twitter is so lovely. And as you say, it can be so lovely in loving the people you've met on Twitter and that's so great. And as you say, I think you're really good to call it something like the dominant information transmission ecosystem. You know, that really gets this idea that this is this new information medium and how does that, what are the negative impacts of that as well. So let's kind of dive into that. And you. Just like these last couple of weeks, you've released two very interesting articles about this or projects. One is this specific disinformation report that you wrote for new knowledge about the Internet Research Agency and some of these bots and Russian hacking stuff that was put into our information ecosystem. And then the other one is kind of a step back to the digital, this thing called the Digital Maginal Line, which is kind of a more macro take on our information infrastructure. So let's kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 499.0,
+      "end": 499.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "break",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 499.44,
+      "end": 506.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the podcast into those two pieces and start with the first one. So could you kind of just give an overview on what this information report was for our listeners?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 507.54,
+      "end": 508.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 508.66,
+      "end": 549.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So the Senate Intelligence Committee received a collection of documents from Facebook, Twitter, and Alphabet sometime late in 2017, maybe September, October, 2017. They requested these documents around the time that what we can call kind of the tech hearings started, the collection of congressional inquiries across committees, intelligence, judiciary, the Senate, the House, as the investigation into what happened, particularly with regard to election 2016, but also more broadly, what is the role of social media? companies in information transmission, a lot of inquiries about censorship, a lot of inquiries about ad buys, a lot of inquiries about privacy. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 549.87,
+      "end": 550.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 550.77,
+      "end": 560.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "cluster of inquiries related to the Russia investigation was run through the Intelligence Committee. They gathered a collection of documents, and then they were looking for outside experts to help them",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 560.87,
+      "end": 561.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "analyze",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 561.51,
+      "end": 571.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "these documents. It was about 400 gigs worth of stuff. It was presented in... kind of a myriad collection of formats. The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 571.37,
+      "end": 572.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "data wasn't perfectly clean?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 573.65,
+      "end": 574.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There were",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 574.09,
+      "end": 575.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "some PDFs in there, you know?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 576.99,
+      "end": 577.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 577.35,
+      "end": 584.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "were actually a hell of a lot of PDFs in there. And it was, it took, I mean, honestly, it took the team. I worked with seven",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 584.25,
+      "end": 585.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 585.31,
+      "end": 588.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think it took us about a month and a half to get it into",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 588.13,
+      "end": 588.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 588.95,
+      "end": 614.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "workable state in a, you know, in a proper database format so we could query with standardized dates. account names and it was it was not a small endeavor. So I think that that's one of the reasons why the Senate Intelligence Committee, to its credit, recognized that while they are experts in in the operation itself, looking at the technical forensics was not necessarily going to be their strong suit.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 614.9,
+      "end": 615.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 615.26,
+      "end": 645.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it. Yeah. And so it was something, it was this big 400 gigabyte thing that was given to the Senate Intelligence Committee. And then they outsource kind of some of the research work to you all at new knowledge and various folks to say, hey, can you kind of give us a report of this knowledge? And was this report that you made, there's like online you can find like a white paper and also kind of like a PowerPoint or slide deck presentation. Was that a report that then you gave to the Senate Intelligence Committee? Or is this kind of, was this after, is this, you know, distinct from that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 645.97,
+      "end": 646.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "No,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 646.53,
+      "end": 656.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I communicated with the committee throughout the investigation. And so the way that they structured this was they had us do one and then they had a... Graphica and Oxford were kind of a joint team",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 656.77,
+      "end": 657.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 657.47,
+      "end": 665.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "wrote up the other report. So they wanted to have two independent sets of experts looking at it. We were not to communicate with each other. You know, it was supposed to be,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 666.11,
+      "end": 666.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 666.41,
+      "end": 685.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "read their findings when they were put out publicly on the same day that ours were. So the goal of that, I think, was to ensure that there would be two distinct reports so that, you know, hopefully to get away from allegations of like bias or. quality or you know the usual things that any time you release a political report kind of uh",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 685.38,
+      "end": 685.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "come",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 685.96,
+      "end": 686.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "out of the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 686.28,
+      "end": 686.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "woodwork",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 686.94,
+      "end": 693.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "um so that was the uh so the the goal was to kind of quantitatively and qualitatively",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 693.52,
+      "end": 694.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "communicate",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 694.46,
+      "end": 696.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to the committee what was in the data set",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 696.22,
+      "end": 696.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 696.96,
+      "end": 717.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to look at how it synced up with um you know with with with what was known like with the kind of um public knowledge that came from like tech company executive statements and things like that. So what, you know, was this, what was what they said about what happened in accurate representation of what was in the data set was kind of a component of it?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 718.47,
+      "end": 718.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "To",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 718.89,
+      "end": 723.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what, you know, how could we potentially quantify like what groups had been impacted? And then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 723.21,
+      "end": 723.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "were",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 723.67,
+      "end": 731.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there questions for further research or further investigation by the committee or by, you know, there's other teams that are looking at this, the FBI and others",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 731.15,
+      "end": 731.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 731.79,
+      "end": 732.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "uh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 732.63,
+      "end": 733.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 733.01,
+      "end": 735.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, how did all of these pieces of information fit together?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 736.11,
+      "end": 736.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 736.43,
+      "end": 752.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it, got it. That makes sense. And just as a, I mean, it's a, the data set's pretty crazy. It's, you know, it's 10 million tweets, over 1,000 YouTube videos, you know, more than 100,000 Instagram posts reaching 20 million people and over 60,000 Facebook posts reaching 126 million people. So this is like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 753.11,
+      "end": 753.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 753.71,
+      "end": 764.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, a Russia disinformation campaign through this internet research agency. And it hit all of our digital lives in some way. So I guess could you tell us what are the big",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 764.21,
+      "end": 765.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "takeaways,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 766.05,
+      "end": 767.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I guess, from this report?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 768.56,
+      "end": 770.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So it is a massive amount of content.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 772.2,
+      "end": 772.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 772.6,
+      "end": 773.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 773.02,
+      "end": 774.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "not, it's not all. Give me just one sentence.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 774.28,
+      "end": 774.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "You're allowed. One sentence.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 776.91,
+      "end": 777.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 777.47,
+      "end": 860.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "well, it speaks to, so I don't even think it's all of the content because I think that it's time bounded. There were pages that were alluded to in Adrian Chen's report. I wrote this excellent article for. the New York Times Magazine, I believe it was maybe called the agency about the troll farm itself. And that was back in 2015. His article came out. And he has pages that are mentioned in there that actually weren't in this data set. So I think that this is kind of a time-bounded look over a two-year period, really, from 2015, January 2015, through to when the committee requested the data, which was in 2017, looking at a multi-year effort to develop relationships and form communities. with American citizens. So I think there's a lot of focus on election 2016, did it impact the election? You know, that's kind of the question that everyone wants answered. But the broader scope of it was much bigger than election 2016. And I think... You hear in the media it's been reported as, oh, they were sewing societal division. That's true. But what we were able to get as we looked at all of the organic posts. And one thing that we had that no one else had was, you know, the visual memes were out there. So you could see the images they put out, things that were kind of like, you know, breadcrumbs left across the internet. But we also had the copy that they wrote around those memes. So we could actually see in the Facebook posts, for example, what they were saying and how they were framing the visual that they put underneath.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 861.22,
+      "end": 861.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 861.58,
+      "end": 867.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it was actually. Yes, it was about sewing division, but it was much more about creating these, like, this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 867.27,
+      "end": 867.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 867.81,
+      "end": 887.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "-group dynamic. So across each and every one of their pages and accounts, so much of the focus was not on, like, um, sewing societal division where like the LGBT page was told, like, hey, you shouldn't like this, you know, this Jesus page that they were running. Instead, it was really about culture and pride and creating a very, um, kind of, uh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 892.28,
+      "end": 917.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "consolidated communities around particular cultures and particular types of pride. So there's LGBT. Some of it was ethnic or racial. Some of it was political. Some of it was regional. There was a page about Texas. So the idea was you would create these groups. You would reinforce camaraderie. You would have a ton of post saying like, we're so proud to be LGBT. We're so proud to be Confederates. You know, or confederate, you know, descendants of Confederates, I guess.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 917.98,
+      "end": 918.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 918.42,
+      "end": 919.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then there would be this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 920.03,
+      "end": 920.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Every",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 920.39,
+      "end": 942.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "now and then you would have a post that was political. And it would be framed in the text as as LGBT people, we believe, or as black people, we can't support Secretary Clinton. Or, you know, it was very much like we've done all of this work to build up this community. We're all in this in group. And as members of this in group, this is how we think about this other thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 943.11,
+      "end": 943.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Wow.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 943.83,
+      "end": 951.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that's interesting. I think it's, I really like you're reframing there in terms of, hey, it's not about necessarily like sowing hate into others. Instead, it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 951.69,
+      "end": 952.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 952.24,
+      "end": 968.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "building community, building relationships, building, you know, these tribes, these in-group dynamics, building the pride, building these, essentially these new ways of distributed trust. Where back in the day, it's like we got our trust from the centralized trusted institutions and now we can get our trust, quote unquote, from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 968.38,
+      "end": 968.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 968.86,
+      "end": 985.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "random Facebook group or something like that or a Twitter account that we like to follow. And then after you build that trust, then you can start to input the actual ideas that you want to kind of insept in the people with that trusted kind of. of substrate that you've created. Does that sound? Is that kind of, is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 986.23,
+      "end": 986.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 986.39,
+      "end": 987.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "way more eloquently than I just put it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 988.09,
+      "end": 988.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 989.05,
+      "end": 992.19,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Trusted substrate. And I think something that's interesting that you chat about here, though, is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 992.19,
+      "end": 993.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 993.33,
+      "end": 1002.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And I noticed this in the piece, there's a lot of everything so much is identity based and not very much is income based or class based. And I guess",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 1002.83,
+      "end": 1003.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 1003.69,
+      "end": 1012.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "would just like to hear your take on how you see identity playing a role here and why it was such a powerful way to create these groups and dynamics.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 1013.54,
+      "end": 1013.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 1013.98,
+      "end": 1047.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think it might just be an easier characteristic to segment on. I think also just. purely logistically speaking, on Facebook, you have targeting for certain types of demographic characteristics in a way that you don't. Like there's no Facebook ad targeting for, actually, you know, maybe there is for income brackets. I actually don't know. I've never tried myself. But there is most definitely, if you look at the targeting that they did use. They ran ads to drive people to the pages until the pages were of sufficient size, presumably that they got enough organic reach from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 1047.5,
+      "end": 1048.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 1048.18,
+      "end": 1050.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sharing out the content and organic joints.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 1050.16,
+      "end": 1050.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 1050.84,
+      "end": 1055.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the ads were targeted according to race, ethnicity, interest,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 1057.54,
+      "end": 1060.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "geography, gender, and age.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 1062.26,
+      "end": 1068.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So when you have that ability to segment by certain characteristics, you make pages that are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 1068.86,
+      "end": 1069.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 1069.42,
+      "end": 1073.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "correct content to be appealing to those targets.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 1073.1,
+      "end": 1073.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 1073.24,
+      "end": 1102.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "makes sense. I think it's a funny, it's a classic, as you say, it's just like whatever the technological affordances give you. If they give you, you know, identity-based or, you know, like racial-based things, well, then you use that. And as you say, I don't know if they have income-based stuff. But if they do, you might use it, but if they don't, well, then you can't use it. So then they can't use it to do their disinformation campaigns. So do you think, if we think about these campaigns and we think about who they were leveraged against. I mean, there's a couple interesting pieces here. One is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 1102.69,
+      "end": 1103.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 1103.81,
+      "end": 1140.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "found something I found interesting was that it sounded like in the report that you, that's online, there's a lot of focus on kind of like black and African-American audiences, and more so than some of these, like, right-leaning audiences. And for me, I found that surprising in terms of the traditional narrative is something that's like, hey, Russia changed the election. And how did they change the election? Well, they changed it by kind of incepting, you know, right-leaning, conservative folks with propaganda. But this, your report to some extent, correct me from what, says, hey, that is true to some extent, but there's also a lot of focus on, like, the black community. Is that, is that correct to say that? Or is that true?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 1141.74,
+      "end": 1180.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, that's mostly accurate. I would say there was, so the black community was really interesting, and we felt that it deserved a specific call out because they had 30 pages devoted to on Facebook and another couple dozen. I don't remember the exact number of the top of my head on Instagram devoted to just this one community. So there were other ethnic pages. There was a, and there was a, a couple Latino pages. There was a Native Americans page. So they had, you know, some awareness of other kind of minority groups that had traditionally had kind of grievances about their acceptance and into, you know, their experience in American society. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 1180.66,
+      "end": 1181.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 1181.14,
+      "end": 1188.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think with the, the black community pages were not only were there many of them, but they were extremely tightly integrated.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 1189.26,
+      "end": 1189.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 1189.82,
+      "end": 1280.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what I mean by that is, For a lot of the right-wing pages on Facebook, they were kind of standalone. So if you followed part of Texas, they weren't really aggressively trying to push you into their other right-wing pages. If you followed one of the black community targeted pages, they were constantly cross-promoting their content. So if you followed one of the more political pages targeting the black community like black-tivist. they would be referring in, they would be kind of cross-promoting memes from like their liberation theology pages. So it's important to note maybe, I don't think I said this, that the black community content was not monolithic at all. So each of the pages had its own sub-focus. So if you were interested in black culture, there was a page for you. If you were interested in... the Black Baptist experience. There was a page for you, Black Liberation Theology, this kind of Egyptology type content, or Nefertides Community was the name of it. So they had all of these different facets of the Black American experience so that whatever your particular flavor was, you would find one of their pages. And then they cross-linked them and cross-promoted them. And they also cross-linked and cross-promoted a whole lot of authentic black media. So it wasn't just grabbing a meme and resharing it. It was actually linking out to their content, just doing much more to create this kind of mirage of interconnectedness so that once you were in one of their page ecosystems, you would find all the rest of them.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1280.94,
+      "end": 1281.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1281.28,
+      "end": 1285.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "was much more integrated for that particular cluster of pages.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1285.46,
+      "end": 1300.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. Interesting. Yes. It's not necessarily that it was, and I don't know the exact data, and you might know it was whether it was. more like black communities were targeted compared to right-leaning communities. But as you said, the main difference is this like qualitative texture difference in terms of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1300.2,
+      "end": 1300.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1300.74,
+      "end": 1327.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "tight integration and the cross-posting with communities versus these kind of right-leaning ones, which were more standalone. Like the Texas, you know, Texas Succeed page was not as connected perhaps to some of the other right-leaning pages. Okay, that's interesting. Another piece on this, who is it targeted to thing? So how do I know? So I was around in 2020, 2015, 2016. For me, as someone who kind of exists more in the realm of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1327.02,
+      "end": 1327.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1327.54,
+      "end": 1331.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "weird kind of rationalist, effective altruist world or whatever,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1331.68,
+      "end": 1331.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1331.68,
+      "end": 1345.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "maybe, how much, what stuff, how do I know what stuff was targeted to me and how should I know what was fake or what was real within my own information kind of input over those years and even today?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1346.5,
+      "end": 1346.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1346.9,
+      "end": 1361.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "an interesting question. There were Senator Blumenthal brought up in one of the hearings what we called the right to know. So those of us who were kind of, you know, activists, I guess, or advocates on the outside saying like, hey, we really need to have some hearings, like the public needs to understand what happened",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1361.0,
+      "end": 1361.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "long",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1361.6,
+      "end": 1364.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "before this data investigation process happened, just saying like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1366.03,
+      "end": 1367.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "why, you know, Facebook is estimating 100.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1369.2,
+      "end": 1378.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "26, I think, million people engaged with this content, shouldn't those people have a right to know? So that was what led to that thing that they created where you could go and see if you had engaged",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1378.94,
+      "end": 1379.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1379.46,
+      "end": 1379.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "IRA",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1379.8,
+      "end": 1380.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "page.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1380.83,
+      "end": 1385.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "For me, it came up negative. For me, for me, it was blank. I think that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1385.83,
+      "end": 1386.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1387.47,
+      "end": 1392.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "didn't get the sense that there was anything targeting the kind of rationalist or other communities that you mentioned.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1393.03,
+      "end": 1394.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Totally. Nothing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1394.25,
+      "end": 1403.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that I've seen anyway. Definitely not on this. I know that in some of the 2018 finds, which of course were not included in this data set, but just things that researchers have found,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1403.24,
+      "end": 1404.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1404.04,
+      "end": 1405.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "did have some of the new age spirituality",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1405.9,
+      "end": 1407.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind of more,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1407.96,
+      "end": 1410.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, astral plane type.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1411.84,
+      "end": 1412.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Integral theorist.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1413.22,
+      "end": 1414.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1414.88,
+      "end": 1415.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1415.62,
+      "end": 1417.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in there. Those were not home runs.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1419.48,
+      "end": 1438.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I mean, I tried to get at that with like illustrations of like the long tail. For every, you know, their top 20 pages. really well actually. Like they built, um, they built sizable followings. I've seen other people kind of quantify that, um, in the context of, uh, of other media channels. So if you look at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1438.06,
+      "end": 1438.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1438.46,
+      "end": 1450.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "right wing pages, how did they compare just to other right wing page media lift on Facebook at that time? And they did perform reasonably well. Um, there was a whole long tail of just like, you know, throw it at the wall, see if it sticks. It didn't.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1451.0,
+      "end": 1451.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "They",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1451.42,
+      "end": 1458.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "actually evolved away. Like, they were pretty proactive about if it wasn't working, change it. There was one or two accounts where it went through like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1458.44,
+      "end": 1459.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "three",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1459.06,
+      "end": 1470.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "or four different topical, um, topical changes. And they did it like, In May each year, like there was one page that changed in May of each year. And I was like, oh, I guess that guy just, you know, didn't make his numbers or something.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1472.48,
+      "end": 1504.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "It's funny too, because as you said, you can, they're A, B testing at all. And they're like, okay, what's working? What's not working? Let's put all these tests in parallel and the ones that are working. Great. Let's keep on rocking with them. And it's interesting, as you say, I just, whenever you read something like this, you know that you're like, okay, my information ecosystem, how do I, how can I trust it? And how can I trust that I'm getting the right? information, how can I take responsibility for my information ecosystem? How do I know it's fake? What's not? So I definitely, I will personally check out the right to know thing. And that sounds like an interesting. I guess I hope it comes up fake. I don't really care either. I will see.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1505.74,
+      "end": 1514.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "A thing that I want to chat about one other specific thing on this report before we kind of zoom out to the other piece. So you talk a little bit about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1514.02,
+      "end": 1514.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1514.96,
+      "end": 1521.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "overlap between between the actual disinformation campaigns through stuff like Facebook and Twitter or whatever, versus",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1521.69,
+      "end": 1522.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1522.13,
+      "end": 1527.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of the overlap with traditional media and how they were sometimes in sync and non-sync. Could you talk a little bit more about that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1528.57,
+      "end": 1528.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1529.19,
+      "end": 1543.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so with traditional media, one thing that was really interesting to me when I first saw, even before this dataset, when I just saw some of the crowd-tangled datasets posts that Jonathan Albright and others found that were floating around, there was such a huge variance in the quality of the English.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1544.32,
+      "end": 1544.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1544.72,
+      "end": 1573.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so you would have these posts that, like, you know, they had trouble with definite articles and definite articles. The genitive case was all wonky, the possessives. And so that read as, but then there were also these posts that were like perfect, flawless English. And then there was kind of a third cluster that were like extremely like, I would call it like maybe like pedantic business English. Things like, it is quite clear to any observer that Hillary Clinton is a terrible person. Therefore, we must not vote for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1573.52,
+      "end": 1574.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1574.22,
+      "end": 1579.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Furthermore, you know, and it was just like, no, you know, it was funny because it was like no American talks like that, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1580.14,
+      "end": 1580.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Especially",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1580.3,
+      "end": 1581.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "not on the meme. Yeah, exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1582.32,
+      "end": 1604.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "We're not on a mean page. Exactly. So there's like an incongruity there with, with the language. But for the highly precise, flawless English that just nailed, you know, the right use of contractions and just read like an American. I started Googling those breezes actually and found that they had cribbed them mostly from news, from news sites.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1604.46,
+      "end": 1604.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1604.96,
+      "end": 1615.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we were going to particularly small local news, not really mainstream, not New York Times or Wapo or Fox or anything, but they would go to small local posts and they would grab them",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1615.72,
+      "end": 1616.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1616.6,
+      "end": 1625.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they would use that as the content over the meme. So it was just a crib. And they did that also oftentimes when there were, you know, it was,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1625.69,
+      "end": 1625.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1625.85,
+      "end": 1631.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think we've seen from the Mueller indictment and elsewhere that they would, one of their responsibilities was to go and to check,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1631.25,
+      "end": 1632.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1632.39,
+      "end": 1641.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "check the news every day and to decide what they were going to post about. So they did a lot of cribbing from media. And so part of that was to amplify stories",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1641.53,
+      "end": 1642.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1642.21,
+      "end": 1658.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "were mission aligned. So this is something that we actually have seen a lot more of in 2018 rather than creating their own content and risk these these tells with these like English gaps. they will actually just kind of grab repurpose and amplify stuff from real Americans.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1658.51,
+      "end": 1658.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1658.83,
+      "end": 1683.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "interesting. I think that there's also kind of a possibly negative or a positive, or a reinforcing and possibly negative feedback loop there, which is if you're a local news group who is trying to make money in the digital age, which is very hard, the things that might start to get amplified are the things that are the most, you know, classic, just most outrage focused or most aligned with one of these specific super niche groups because then they might, I guess.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1684.84,
+      "end": 1685.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1685.56,
+      "end": 1714.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know if there's actually a feedback loop between, I guess they're just copy pasting the headline though and then pulling it over into their memes. Okay, that's, huh, that's strange. I feel like maybe one final question on this, which is, is there a, so if we think about how much. I saw that from an output perspective, you know, 126 million people were affected, you know, through something like Facebook. How much money do you think was put into this by the people on the other end? The people on the other end are Russian, the Russian government? Who is this, the internet?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1715.3,
+      "end": 1715.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1717.33,
+      "end": 1722.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So it's actually, it's not an official entity of the Russian government. It's sort of a...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1722.89,
+      "end": 1723.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1723.11,
+      "end": 1741.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "guy who they call Putin's chef, who runs this thing, who I believe also runs what's known as FAN, the sort of federal news agency, or is, you know, kind of closely affiliated with it. There's a lot of these ties that are not official government, but have very close ties to Putin's team.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1742.75,
+      "end": 1743.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 1745.47,
+      "end": 1745.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 1745.57,
+      "end": 1746.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think with the...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 1747.42,
+      "end": 1747.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 1747.86,
+      "end": 1749.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, I think I just kind of lost the train of thought.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1749.56,
+      "end": 1750.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "How much? I was wondering how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1750.76,
+      "end": 1754.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "much money was put in to get",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1754.46,
+      "end": 1757.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the world. It's like how effective. Say",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1757.1,
+      "end": 1757.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it again?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1758.04,
+      "end": 1766.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Thank you. So there was a recent indictment by the Eastern District Court of Virginia that referred to what's called Project Locta,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1766.1,
+      "end": 1766.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 1766.36,
+      "end": 1767.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 1767.02,
+      "end": 1767.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "apparently",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 1767.66,
+      "end": 1782.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the working name for the interference in the U.S. And they found that the budget was, I believe, between $10 and $17 million, and they had increased it with their, you know, they were increasing for 2018. They considered",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 1782.97,
+      "end": 1783.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 1783.71,
+      "end": 1785.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they had done to date to be a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 1785.09,
+      "end": 1785.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "success,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 1785.87,
+      "end": 1788.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "presumably. And so they were upping their budget. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 1788.57,
+      "end": 1789.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 1789.07,
+      "end": 1792.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Eastern District indictment goes deep into the finances",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 1792.05,
+      "end": 1793.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 1793.87,
+      "end": 1811.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "also has really fascinating insights into like their morning stand up. The ways that they thought about, you know, the ways that they thought about segmenting U.S. audiences. It's really remarkable. They have things in there where they're saying, like, for African-American LGBT, make sure you don't use memes with white people in them, like you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 1811.37,
+      "end": 1812.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "black",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 1812.45,
+      "end": 1824.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "LGBT people. And so it's like the degree to which the, I guess, management is, is controlling. um the the tenor and the direction of the posts is interesting",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 1824.79,
+      "end": 1825.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 1825.27,
+      "end": 1829.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "definitely produce content aligned with the regime",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 1829.39,
+      "end": 1829.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "itself",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 1829.97,
+      "end": 1830.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 1830.63,
+      "end": 1831.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "uh",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 1831.21,
+      "end": 1842.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "syria was a huge topic of uh you know which was perplexing to me originally because i thought you know candidly not very many people not very many regular americans especially not ones who were hanging out on like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 1842.53,
+      "end": 1844.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "mean pages are are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 1844.44,
+      "end": 1860.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "super excited to, you know, super informed about Syria. But they would still stick the Syria content into all the pages and across all of the groups that they targeted. So this was again, it's very much an alignment with, with the Kremlin's kind of communication",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 1860.26,
+      "end": 1860.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "strategy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 1861.3,
+      "end": 1862.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And so it's, yeah, it's like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 1862.82,
+      "end": 1863.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 1863.6,
+      "end": 1882.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and it. You build the trust, you make that trust substrate layer, and then you push the things that both A, you think might create turmoil within the United States, and you push things that you want to push as Russia and as Putin, something like Syria. So I think, and as a macro kind of rap here, you put in,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 1882.2,
+      "end": 1882.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 1882.92,
+      "end": 1914.35,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the, from, you know, 2015 to 2016, you know. tens of millions, hundreds of millions of engagements and posts were created into our digital information ecosystem. And they had a, they were usually identity based. They created this trust infrastructure and then start to insert in some of these more polarizing hate speech things. And as you say, they are going to, they're likely to increase the amount of money towards this because it was successful. So let's, with that as kind of a wrap on this first section.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 1915.07,
+      "end": 1915.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Tell",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 1915.39,
+      "end": 1920.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "us about this other piece. There's this piece that you wrote for Ribbon Farm called the Digital Magno Line. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 1920.99,
+      "end": 1921.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 1921.51,
+      "end": 1931.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "think as we were talking about before we started recording, you kind of started this Russia investigation. And as you were starting it, you said, ooh, I need to write another piece as well. So could you kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 1931.17,
+      "end": 1931.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 1931.49,
+      "end": 1936.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of tie us into this connection between the two pieces and tell us what is in this other Digital Maginot Line piece?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 1937.84,
+      "end": 1938.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 1938.36,
+      "end": 1943.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So it was an essay I wrote because I was thinking a lot about what had happened.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 1943.76,
+      "end": 1944.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 1944.18,
+      "end": 1955.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "fact that increasingly became obvious that anyone could do this. You know, originally when we looked at 2016, we thought that there were a lot of like domestic ship posters, domestic kind of dirty",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 1955.26,
+      "end": 1955.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "tricks",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 1955.62,
+      "end": 1957.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and botanets and so on and so forth,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 1957.4,
+      "end": 1958.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "realized",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 1958.08,
+      "end": 1960.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that, you know, Russia was right in there along with them.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 1960.48,
+      "end": 1960.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "A",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 1960.66,
+      "end": 1966.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "lot of the accounts actually in the Twitter data set, some of the most virulent racist troll accounts in there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 1966.52,
+      "end": 1967.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "had",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 1967.12,
+      "end": 1973.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "gab profiles also. Like they were just right in there looking like, you know, like shit posting alt-right Americans. So the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 1973.77,
+      "end": 1974.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 1974.45,
+      "end": 1982.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that was And previously I should also maybe caveat that I had done past work with terrorists. So looking at ISIS propaganda online and how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 1982.28,
+      "end": 1982.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "ISIS",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 1982.88,
+      "end": 1998.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "used Twitter as a recruiting platform, looked at a lot of things related to conspiratorial communities online, how YouTube really acts as an amplifier for this type of content. So there was just this sense that the entire information ecosystem was broken and that we were in this like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 1998.28,
+      "end": 1998.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 1998.74,
+      "end": 2003.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of war all against all, you know? Just anybody, anybody could go and do it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 2004.83,
+      "end": 2005.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "We were,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 2005.65,
+      "end": 2006.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 2006.09,
+      "end": 2027.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, at the same time that we were finally beginning to talk about solutions, we were looking at like the tactics of 2016 like botnets. And so in California, where I am, we had some legislation introduced specifically to try to mandate bot disclosure. It was ineffectual and a little bit ridiculous in the sense that it required not the platforms to be responsible, but it required like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 2027.05,
+      "end": 2027.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 2027.43,
+      "end": 2034.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "creator of the bot to disclose. And I just remember thinking like, this is absolutely ludicrous. Like, you know, you're telling somebody who is like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 2034.54,
+      "end": 2035.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "inclined",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 2035.44,
+      "end": 2043.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to run a mass trolling operation like, no, no, no, you've got to register. You know, so it was just a sense that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 2043.47,
+      "end": 2044.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 2044.71,
+      "end": 2072.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "hadn't fully internalized like what we were up against. And we were still thinking about this very much as a individual, like, isolated attacks. when in reality this was just an information ecosystem where anyone could do this. And as I was doing the Russia investigation, of course, the Iran stuff broke. So the fact that there was, you know, the fire eye investigation, that there had been this very large Iranian propaganda and disinformation network targeting Americans as well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 2072.51,
+      "end": 2072.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 2072.91,
+      "end": 2074.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it kind of further reinforced it. And I wanted to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 2074.97,
+      "end": 2075.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "try",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 2075.53,
+      "end": 2075.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 2075.75,
+      "end": 2076.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "maybe",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 2076.41,
+      "end": 2083.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "shift the thinking a little bit. We're all wary of the war metaphor, right? I know that the...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 2083.05,
+      "end": 2083.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 2083.45,
+      "end": 2090.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, when you say information war, it sounds vaguely hysterical. And for a long time, I felt kind of like Chicken Little when I would say like, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 2092.33,
+      "end": 2092.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "something really",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 2092.85,
+      "end": 2093.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "wrong on the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 2093.51,
+      "end": 2094.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "internet, guys.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 2097.12,
+      "end": 2097.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 2097.56,
+      "end": 2099.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this stuff isn't good, you know, and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 2099.9,
+      "end": 2100.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 2100.52,
+      "end": 2106.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "don't think we're giving it the credence it deserves. And so that was an unfortunate thing to be very, very right about. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 2106.08,
+      "end": 2107.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 2107.02,
+      "end": 2107.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "felt like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 2107.82,
+      "end": 2108.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 2108.52,
+      "end": 2113.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "had to maybe shift the thinking. And, and. And, you know, the challenge here is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 2113.34,
+      "end": 2113.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 2113.96,
+      "end": 2139.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "people that we're kind of up against, so to speak, do think of it as an information war. Like, it's in their docs, you know? This is how Project Locta thinks of itself, right? It's kind of an ongoing information war against America. And there's no deterrence or anything. There's no, none of the mechanisms that we would normally have in place to say, like, we can't tolerate this. That just doesn't exist in information operations.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 2139.83,
+      "end": 2139.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 2140.05,
+      "end": 2143.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah, I think it's, and as you say, so there's this massive...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 2144.13,
+      "end": 2144.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 2144.89,
+      "end": 2185.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "as you're starting to dive into all of your, your various different kinds of research, you're saying, hey, and then the responses were too much at the tactical level. But really, as you're saying, it's our information infrastructure. It's our sense making systems. It's these kinds of things that are kind of drastically changing. Um, and, and the people who are actively trying to push, to push these systems are thinking of it like a war. So we should think of it, start to think of it like that and not just like some random shit posters on the internet. Um, and. As a part of this, the metaphor, and I actually didn't know this before reading your piece, this is Maginot Line, which was, which France put up after World War I as this thing in between France and Germany, as they thought it was going to be a really good defense if Germany tried to get into France and the future. But in fact, it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 2185.64,
+      "end": 2186.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "was...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 2186.22,
+      "end": 2200.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of an old school mindset in that it was, it didn't, clearly didn't stop Germany from invading France, and it didn't stop them because the tactics had changed in the future. So they didn't use the same trench warfare style things. They were able to go around this in a way",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 2200.9,
+      "end": 2201.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 2201.36,
+      "end": 2215.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the French hadn't anticipated before. So that's what we mean, that's what René means by this digital Magno line. It's like, hey, you can do these random small tactics, but you have to kind of zoom out to the macro infrastructure and the macro information ecosystem to actually make change.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 2215.57,
+      "end": 2216.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 2216.89,
+      "end": 2224.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that as kind of a high level piece, do you think, I think something that's super interesting here is thinking about who, or rather thinking about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 2224.51,
+      "end": 2225.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 2225.09,
+      "end": 2235.97,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we think about what this war, what the battlefield of this war is, I think you do a really good job of saying the war is not physical stuff, the wars are mine. So tell us more about where the war is taking place.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 2237.77,
+      "end": 2238.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 2238.17,
+      "end": 2326.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think it's the, you know, we've also. We've always talked about wars having, you know, strategic goals like regime change and things. And they do, in fact, have particular regimes that they want to see come to power. But they, rather than going about doing that in an old-fashioned way, they, with, you know, with tanks and invasions, they instead really just go for the minds of people. How do we shift the Overton window? The stuff that we talked about in the first half of the segment with, you know, how do you create these communities, make them receptive to propaganda, develop relationships. And then slide in the thing that you want to socialize. And so that's where it becomes, it's so insidious, people don't really see it happening. And so it, it's event, it's content presented to you by people who you think are like you. And so it's very insidious, but people are, their guard is not raised. They're not thinking about this as like, oh, I should be skeptical. They see it as information being transmitted from a community member. So it's a lot of what's happening is like the recasting of old school espionage tactics, old school propaganda tactics and just recognizing that the internet is now. It provides much more opportunity for velocity, for virality, for direct targeting. So this is now a very, very effective means of reaching citizens, whereas previously in the olden days, reaching citizens, you know, yeah, you could get your propaganda on the radio. Maybe you could get a couple articles in here and there. But this is just a way to, there are no gatekeepers so you can just reach people. extremely directly and that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 2326.87,
+      "end": 2327.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what's happening. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 2327.69,
+      "end": 2327.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "exactly. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 2327.95,
+      "end": 2328.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 2328.81,
+      "end": 2356.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "think it is, and the people, the weird thing, as you say, is that people don't even know that they're being reached, you know, because they're being talked to by people that they trust, that they think are like them. And then their minds are therefore changing based off of this. Yeah, what I like. It's like some weird kind of when we imagine it, it's only things that you could, only like the CIA or the whatever could do within, you know, like South America and they could like implant these people into the administration and then those people would eventually get trust and then change things over time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 2356.29,
+      "end": 2356.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 2356.45,
+      "end": 2359.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "now you can just do it through like Facebook ads now. So it's a different vibe.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 2360.19,
+      "end": 2360.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Another",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 2360.59,
+      "end": 2362.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "different vibe that you mentioned is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 2362.11,
+      "end": 2362.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 2362.57,
+      "end": 2363.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "difference between",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 2363.37,
+      "end": 2364.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 2364.21,
+      "end": 2382.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you know, the war is not, when we think about cyber war, we think of it as kind of like an infrastructure based war, where you say, hey, the war is about making sure our machines are safe. So could you talk more about that and the fight over like physical like cyber infrastructure versus this new like mines being the war?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 2383.93,
+      "end": 2384.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 2384.47,
+      "end": 2395.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this was informed in part by some of the stuff that I looked at in 2015 with the ISIS operation, basically that how do we deal with ISIS propaganda on the internet? It was the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 2396.03,
+      "end": 2397.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "idea",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 2397.99,
+      "end": 2398.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 2398.59,
+      "end": 2400.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 2400.14,
+      "end": 2447.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "weren't really organized, there was no whole of government strategy where someone was responsible for this. So there was kind of this scramble where we were sort of caught lying down. And it was interesting because from 2012 to 2015, there was actually a DARPA program called Social Media and Strategic Communications. And a lot of the research from it is open source, and you can go and Google it and see what they studied. But they actually studied like, can you do bot detection? Can you, you know, how, what happens when propaganda on the internet becomes a major? major source of influence, right? And so there was this recognition within DARPA that we needed to be paying attention to these things, presumably within some facets of the Defense Department. But none of that ever carried through to any kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 2447.78,
+      "end": 2448.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 2448.64,
+      "end": 2453.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "action. And at the time, funny enough in 2015, the DARPA program was shut down because there was this idea that like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 2453.8,
+      "end": 2454.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 2454.28,
+      "end": 2476.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 2476.98,
+      "end": 2478.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "support",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 2479.23,
+      "end": 2482.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "for doing nothing, really. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 2482.27,
+      "end": 2483.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 2483.03,
+      "end": 2503.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the time when we possibly had the best chance to, you know, or when we should have started thinking about this, we just weren't there. And so thinking about what, meanwhile, by contrast, we have extremely robust, both, you know, kind of articulated doctrines and entities within the government and the intelligence community that are specifically...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 2503.13,
+      "end": 2503.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 2503.37,
+      "end": 2504.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, tasked with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 2504.31,
+      "end": 2504.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "dealing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 2504.97,
+      "end": 2523.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "with infrastructure hacks and what we would more traditionally think of as cyber war. So influence operations, information operations, that's really just been sort of off to the side. It hasn't really been updated in any material way. And when we have the chance to start those updates in 2015, you know, the horse had kind of already left the barn by that point.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 2523.87,
+      "end": 2528.13,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. I think, and going more on this, this ISIS piece, I think it's interesting.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 2528.89,
+      "end": 2529.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 2529.13,
+      "end": 2552.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you're talking about like the civil and I come a lot from the cryptocurrency world. And so there's a bunch of libertarian types over there. And there's also, you know, I find myself moderately aligned with some of the things that like the free speech advocates and the intellectual dark web folks sometimes. And thinking about, you know, free speech on the internet and deep platforming and curation. You have a really good piece in, a really good section in this article about,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 2552.23,
+      "end": 2552.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 2552.81,
+      "end": 2555.85,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, liberal means and illiberal ends. So could you talk more about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 2555.85,
+      "end": 2556.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 2556.18,
+      "end": 2561.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "how you see free speech on the internet and how it kind of overlaps with these new information ecosystems?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 2563.2,
+      "end": 2583.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, sure. So I think nobody has, one of the real challenges here is that liberal democratic societies are disproportionately impacted by this because of that commitment, right? Because we are so reluctant to take anything down once it's gone up, because we are so focused on ensuring that this freedom of expression remains",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 2583.26,
+      "end": 2584.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "sacred.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 2585.11,
+      "end": 2594.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And that's very interesting because that is kind of an asymmetric vulnerability that we have, whereas if this were happening in the other direction, the authoritarian governments would just shut off the internet or they would just shut off the page.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 2595.21,
+      "end": 2595.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 338,
+      "start": 2595.53,
+      "end": 2698.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "censorship, right? That's, you know, so we can't really be, we can't really do this in return very effectively. So the challenge here is like, how do we think about moderation and how do we think about the fact that there are. bad actors who are actively working to ensure that their content winds up in front of the people who are most receptive to it. And that this is, this is, that the ecosystem is in fact designed to enable just that thing because that's how advertisers work. Because because the system is designed to ensure that advertisers can get their message in front of just the right people. So it's an interesting challenge. I think. One of the things that I look at and think about a lot is, can we, how do we quantify like signatures of inauthenticity? Because authenticity is actually, it's the idea that you have a right to know that the person or, you know, or entity that is speaking to you is what they claim to be. And that's like more of like a trust function almost. And so this is where platforms under their terms of service do have the capability to come in and say like we are going to check for authenticity. And according to our terms of service on Facebook, you have to be accurately representing yourself with your real name. And if you're not, your content comes down. You know, Twitter is a little more of kind of the Wild West with that sort of stuff. But there is at least now. more cognizance on Twitter that deliberate brigating to get a message amplified artificially is in fact a problem. It's not just a side effect. It's something that they actually have to reckon with. So we try to get at what are the signatures of inauthenticity and what does inauthentic distribution look like in particular",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 339,
+      "start": 2698.14,
+      "end": 2698.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 340,
+      "start": 2698.72,
+      "end": 2704.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that there is no risk of taking something down because of the content.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 341,
+      "start": 2704.71,
+      "end": 2705.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 342,
+      "start": 2705.01,
+      "end": 2733.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "nobody is saying like, oh gosh, I really don't like this conservative keyword or this liberal keyword. Instead, it's this cluster of accounts is simultaneous. There is evidence that it is working in coordination in a way that seems like a significant aberration. And so we will flag that encapsulate it and probably remove it. And so that's where I think we have that option. The other area where I think the platforms do bear more responsibility is the idea of curation.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 343,
+      "start": 2734.54,
+      "end": 2735.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 344,
+      "start": 2735.5,
+      "end": 2778.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "have never, you know, freedom of speech has never included this right to freedom of reach, so to speak, right? There's no right to artificial or free amplification. It's, you have, you know, you can say what you want. Speech has never included the privilege of like you being given a megaphone. So when we think about what platforms are curating, the idea is, you know, perhaps when we look at things like the recommendation engines, when we look at. things like the groups that Facebook suggests, maybe there should be a little bit more editorial oversight on behalf of the platform where they take different types of factors into account to decide what they're going to proactively recommend.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 345,
+      "start": 2779.21,
+      "end": 2779.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 346,
+      "start": 2779.79,
+      "end": 2783.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "if you were to have, you know, if you have a niche interest that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 347,
+      "start": 2783.49,
+      "end": 2784.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "perhaps",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 348,
+      "start": 2784.59,
+      "end": 2796.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is, you know, you know, let's use anti-vaxxers as an example, right? Nobody's advocating for anti-vaxxers to be wiped off Facebook. But maybe they get pulled out of the suggestions algorithm. Maybe you have to actually go and type in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 349,
+      "start": 2796.89,
+      "end": 2797.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "anti",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 350,
+      "start": 2797.63,
+      "end": 2816.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "-vax in order to find your content. So there's, I think, a lot of different ways that we think about how information is weighted, how information is surfaced. These algorithms are not neutral. They've never been neutral. So what should we be waiting for, I think, at this point, waiting in the We, E",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 351,
+      "start": 2816.48,
+      "end": 2817.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "-I-G-T sense.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 352,
+      "start": 2818.76,
+      "end": 2911.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, well, so there's a lot of juicy stuff there. I think, as you set the front, the Democratic societies have kind of an asymmetric weak point here, which is when we're like, hey, let all the free speech go wherever it wants to go. And that, as you say, like, that may have made sense in a world in which, you know, you have the freedom of speech, but not the freedom of reach. And it also may have made sense in a world in which you could, but we've also, freedom of speech is a good, kind of, it's a good way to say, like, from a deontological perspective or kind of a norms-based perspective, like, hey, freedom of speech is a good thing, but we should. in theory, take a bit of a consequentialist perspective and say, hey, what is the actual outcome? So, for example, you can't do say, you don't have free speech when you say fire in a crowded theater, and it kills a bunch of people. Then they say, well, that was on you, even though you can say whatever you want to say. But here, it, like, killed a bunch of people. So I think starting to push more towards that realm in the information ecosystem makes sense. And with these signatures of... authenticity. I think that that's interesting. And as you say, it's kind of a, instead of a political piece, it is instead kind of a meta-level network piece where you say, hey, these nodes are communicating in these ways. It's kind of from a metadata perspective, we think that this shows XYZ about their authenticity and that they're actually this coordinated attack or whatever. So I think that's interesting. And I think that the platforms, as you say, they've never been neutral. There are, they code in the algorithms for how things pull up on your feed and thinking more deeply about what we want to shape those feeds to look like seems good.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 353,
+      "start": 2912.22,
+      "end": 2919.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And trying to, if at all possible, organize around metrics like authenticity or whatever seems good. So I guess with the final",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 354,
+      "start": 2919.07,
+      "end": 2920.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "wrap",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 355,
+      "start": 2920.03,
+      "end": 2921.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "-up piece here as a final question,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 356,
+      "start": 2923.27,
+      "end": 2966.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So we have, you know, Russia spending tens of millions of dollars pushing information stuff into our ecosystem to polarize us. We have an information ecosystem these days where our sense making is drastically decreased in various ways with our new distributed trust. And we're in this new war period, this new information war period. What can, and I know that a lot of people like to focus on some of the platforms, they say, hey, what can the platforms do? What are they incentivized to do, whatever? What do you think for you as an individual, either what do you do you do or what do you recommend people do when they're confronted with this new information landscape? How should they try to make sure that their information inputs are as beautiful and clean and as,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 357,
+      "start": 2966.64,
+      "end": 2966.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 358,
+      "start": 2966.96,
+      "end": 2968.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, well-meaning towards the world as possible?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 359,
+      "start": 2970.73,
+      "end": 2971.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 360,
+      "start": 2971.15,
+      "end": 2982.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think it's really tough. I mean, one of the reasons I was excited that the Senate did have this report released publicly was that it would help people see what it looks like. you know, hoping that people go look at it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 361,
+      "start": 2983.23,
+      "end": 2983.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "In",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 362,
+      "start": 2983.67,
+      "end": 2990.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the sense of this looks like content I've seen before, right? That's the reaction you kind of want people to have where they realize that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 363,
+      "start": 2990.35,
+      "end": 2992.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 364,
+      "start": 2992.07,
+      "end": 2997.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "are trying to influence you, right? People are pushing out content designed to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 365,
+      "start": 2997.11,
+      "end": 2997.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "make",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 366,
+      "start": 2997.71,
+      "end": 2999.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you feel a certain way, get riled up,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 367,
+      "start": 2999.69,
+      "end": 3000.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "taking",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 368,
+      "start": 3000.15,
+      "end": 3009.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the extra second to search, you know, even Snopes or a fact check site to see if the more sensational political content is real. thinking about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 369,
+      "start": 3009.76,
+      "end": 3011.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 370,
+      "start": 3011.18,
+      "end": 3025.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is this? You know, I, there's a, it's interesting that there's such a high degree of trust in citizen journalism, right? This idea of like the fifth estate, the, the lowly blogger taking on the, you know, the, um, that versus the behemoths, the titans of, of industry and media",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 371,
+      "start": 3025.68,
+      "end": 3026.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 372,
+      "start": 3026.26,
+      "end": 3032.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "are totally untrustworthy as they, as they believe. And then when you look at what the internet research agency did, it created pages that looked like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 373,
+      "start": 3033.34,
+      "end": 3034.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 374,
+      "start": 3034.0,
+      "end": 3037.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "middling quality fifth estate kind of stuff. So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 375,
+      "start": 3037.67,
+      "end": 3037.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 376,
+      "start": 3037.93,
+      "end": 3044.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "hope that it does make people think a little bit more about what the hyper-partisan page that they've liked on Facebook is.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 377,
+      "start": 3045.05,
+      "end": 3045.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 378,
+      "start": 3045.53,
+      "end": 3049.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, you don't want to create cynicism where people believe that every single...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 379,
+      "start": 3051.8,
+      "end": 3052.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Every",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 380,
+      "start": 3052.2,
+      "end": 3061.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "single piece of content or every single person they engage with is not real. That's one of the main problems here. The goal of disinformation is not really, it's not to swing an election. It's to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 381,
+      "start": 3061.42,
+      "end": 3062.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "make",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 382,
+      "start": 3062.02,
+      "end": 3068.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "people lose faith in their ability to tell fact from fiction, to know what's real and what's not real in hopes that they just eventually give up",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 383,
+      "start": 3068.92,
+      "end": 3070.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 384,
+      "start": 3070.44,
+      "end": 3094.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of, you know, take their information from the one source that they personally have decided as credible, whether it is or isn't. So that's where we are. That's why I think it's so critical that really it's the platforms rather than individuals who are the first line of defense here. It's the platforms that have to be getting the information ecosystem more under control in terms of that authenticity so that people don't find themselves in the position of constantly having to be,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 385,
+      "start": 3094.42,
+      "end": 3094.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 386,
+      "start": 3094.84,
+      "end": 3098.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, looking for secret signs of Russian trolls on every single page they encounter.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 387,
+      "start": 3099.12,
+      "end": 3099.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 388,
+      "start": 3099.4,
+      "end": 3099.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think that's a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 389,
+      "start": 3099.96,
+      "end": 3100.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "bad",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 390,
+      "start": 3100.5,
+      "end": 3100.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "future.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 391,
+      "start": 3101.1,
+      "end": 3130.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think I might disagree. I mean, I think that... What would I say? I mean, I guess that in, I mean, it's as it's clearly both, that you both want the platforms to be actively and more consciously trying to. trying to make the feeds more delicious and beautiful. And I think that the, as you say, it's a bad world where you go onto the internet and you're worried about being gas-lided all the time. You don't know what's real, what's false here, what's a Russian troll, what's not. Who can I trust? So yeah, I do agree that that's a bad, a bad situation. And I guess",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 392,
+      "start": 3130.54,
+      "end": 3131.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 393,
+      "start": 3131.5,
+      "end": 3148.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "but I do like, I guess I like it when I, when people as individuals take deep responsibility for their own information inputs. I guess that would be the thing that I really like, and I would love for the platforms to be more aggressive about saying, hey, we are curating a bunch of news for lots of lots of people.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 394,
+      "start": 3150.55,
+      "end": 3151.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I totally get",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 395,
+      "start": 3151.67,
+      "end": 3192.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it. I totally get it. I don't mean that the, I know this is the question that I get a lot, which is like, particularly people who were like, well, if you think Facebook has screwed up for this long, why do you think it's going to get it right now? You know, and I'm very sympathetic. Like I understand this is a tough question. It's just the side that I've kind of come down on personally. And that's in part because I think that there's this idea that, you know, media literacy will save us all. One of the, you know, there's, there's, I'm not sure how I'll do, or I'm 37. I remember being taught that like Wikipedia is not a source, right? And yet now here is YouTube using Wikipedia as its source for, for verifying whether some crackpot conspiracy theory video is accurate or not, right? So.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 396,
+      "start": 3193.18,
+      "end": 3193.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 397,
+      "start": 3193.58,
+      "end": 3235.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sorry, my buzzer just went off there. So I think that's one of the interesting, like, evolutions in how we think about what is a good source on the internet. But really, another challenge is that a lot of the people who kind of fall victim to this stuff are older people. And so there's a, when we talk about media literacy, it's actually like, how do you reach people who are like a generation or two above? when the internet kind of, you know, didn't grow up as digital natives. I think that's an interesting question. And then the other challenge with media literacy is it actually does use this whole like, question everything kind of narrative, which, which is also funny enough, the exact language that conspiratorial communities use too, right? Question everything. The earth is flat. You know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 398,
+      "start": 3237.91,
+      "end": 3253.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so where is the, you know, where is the happy medium where we like increase the ability of people to be, to be cognizant of and to be a little bit more savvy when it comes to these types of things, while at the same time recognizing that this stuff looks real.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 399,
+      "start": 3254.13,
+      "end": 3254.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 400,
+      "start": 3254.53,
+      "end": 3271.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "mean, I've looked at 175,000 Russian memes at this point. You laugh at some of them. They're really good. They're funny. That's the thing. Everyone thinks it's like the shit content. It's not at all. It's actually, it's very well targeted. The meme page stuff was really funny. You know, I think that's where it's hard, right? It's, um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 401,
+      "start": 3272.32,
+      "end": 3272.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 402,
+      "start": 3272.6,
+      "end": 3277.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "don't look at that and think like, ha, ha, ha, Russian troll. Like, you just think, oh, yeah, I totally get that. Yeah, I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 403,
+      "start": 3277.28,
+      "end": 3277.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "agree.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 404,
+      "start": 3277.9,
+      "end": 3278.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "A",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 405,
+      "start": 3278.0,
+      "end": 3278.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "lot of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 406,
+      "start": 3278.74,
+      "end": 3291.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "good stuff. In general, I think that if our listeners are listening, they should trust Renee and not me, to be honest, about, hey, media literacy, good, but not fix everything. Let's make sure the platforms are held accountable for their information, their information curation mechanisms and systems.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 407,
+      "start": 3292.36,
+      "end": 3292.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 408,
+      "start": 3292.76,
+      "end": 3295.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "really like your example of Wikipedia as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 409,
+      "start": 3295.7,
+      "end": 3296.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "never",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 410,
+      "start": 3296.48,
+      "end": 3310.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "trust Wikipedia 10 years ago. Now it is used as the trusted voice on YouTube to... to say, no, the conspiracy theory is wrong. Here's what Wikipedia said. That's hilarious. That's a good back and forth. So, by the way, the listeners, if you want to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 411,
+      "start": 3310.08,
+      "end": 3310.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "check",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 412,
+      "start": 3310.62,
+      "end": 3322.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "out Renee, A, if you go to new knowledge.com.com to check out the disinformation report. You can also go to ribbonfarm.com or type in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 413,
+      "start": 3322.48,
+      "end": 3322.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 414,
+      "start": 3322.88,
+      "end": 3328.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "digital Maginot line to check out her other piece. And Renee, how can people find you on Twitter?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 415,
+      "start": 3331.0,
+      "end": 3331.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "My handles no",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 416,
+      "start": 3331.86,
+      "end": 3332.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "upside. That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 417,
+      "start": 3332.4,
+      "end": 3337.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what's at our future. So, Renee, thank you for being on the show. And thanks everybody for listening.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 418,
+      "start": 3338.3,
+      "end": 3339.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Thanks so much for having me.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 419,
+    "withheld": 1,
+    "published": 418
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "id": "podcast-57af6dc31c0b431b8d8f",
+  "title": "Finding Purpose in Your Work",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=DgXnHNhLEuk",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "DgXnHNhLEuk",
+  "youtube_url": "https://www.youtube.com/watch?v=DgXnHNhLEuk",
+  "audio_sha256": "645cd87744314d757d8c8c040e5d8addb3ed72c57af9d129147870605515f232",
+  "audio_duration_seconds": 59.9539375,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 140,
+    "unknown_words": 7,
+    "unknown_words_fraction": 0.05,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 0.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 0.26,
+      "end": 12.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "think having this larger mission than yourself. And I think when you see that, especially on a world stage where it's a very fast-growing company where something like Twitter is really on the world stage. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 12.02,
+      "end": 12.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 12.66,
+      "end": 15.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "helping democracy and you're helping,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 15.48,
+      "end": 15.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 15.86,
+      "end": 22.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "know, save somebody's life because, you know, these different things, we would celebrate those at our company all hands.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 22.42,
+      "end": 22.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 22.94,
+      "end": 27.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "I talked to our founders now. You can celebrate moments in your company even if it's not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 27.68,
+      "end": 28.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 28.2,
+      "end": 43.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "highest flying. fastest growth company. But doing that and seeing that the work you do each day, even in the weeds, is translating to something larger than yourself. But being able to see that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 43.38,
+      "end": 44.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 44.04,
+      "end": 46.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "helping in some tiny sliver",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 46.12,
+      "end": 46.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 46.86,
+      "end": 52.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "doing a larger, you know, painting into a larger picture. And I think that's really important.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 14,
+    "withheld": 0,
+    "published": 14
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

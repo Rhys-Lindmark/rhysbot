@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "id": "podcast-62a430370fbb444a1f1d",
+  "title": "How to Make Money While Closing The Gap",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=g-ZAZea203U",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "g-ZAZea203U",
+  "youtube_url": "https://www.youtube.com/watch?v=g-ZAZea203U",
+  "audio_sha256": "de9565e930d8d426aed2b9d9d4e5d43228baa9c927d3afd926f9fc0ea0de602d",
+  "audio_duration_seconds": 58.4910625,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 123,
+    "unknown_words": 4,
+    "unknown_words_fraction": 0.032520325203252036,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 18.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "So we honed in in 2011 on a very specific set of investment criteria. So we only invest in tech startups. And that is because we believe that tech is the only thing that gives you scale. And scale is what you need to solve",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 18.5,
+      "end": 19.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "big,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 19.8,
+      "end": 20.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "intractable",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 20.28,
+      "end": 21.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "social",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 21.2,
+      "end": 36.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "problems. So all of the tech startups we invest in. The core business has to close gaps of access or opportunity or outcome for low-income communities and or communities of color.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 37.06,
+      "end": 37.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 37.82,
+      "end": 38.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 38.2,
+      "end": 39.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 39.24,
+      "end": 55.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "not a Tom Shoe's model where you buy one, give one away. It's not after we're profitable, we're going to set up a foundation. It is inextricably linked to the business itself. The core business has to tackle these gaps.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 9,
+    "withheld": 0,
+    "published": 9
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

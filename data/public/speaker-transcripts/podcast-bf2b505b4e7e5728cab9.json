@@ -1,0 +1,1386 @@
+{
+  "schema_version": 1,
+  "id": "podcast-bf2b505b4e7e5728cab9",
+  "title": "#27 Vignesh Sundaresan, Lendroid: Margin Trading on 0x and Basic Income as a CryptoPledge",
+  "published_at": "2018-01-06T03:54:17Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/27-vignesh-sundaresan-lendroid-margin-trading-on-0x-and-basic-income-as-a-cryptopledge",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/379476815-the-rhys-show-27-vignesh-sundaresan-lendroid-margin-trading-on-0x-and-basic-income-as-a-cryptopledge.mp3",
+  "youtube_id": "hLh18sixtxo",
+  "youtube_url": "https://www.youtube.com/watch?v=hLh18sixtxo",
+  "audio_sha256": "14e4db86773f86f7fc16f46cc0d7439f2ca364d40c19412d9befb9ad4bd485fb",
+  "audio_duration_seconds": 2370.0,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 6724,
+    "unknown_words": 58,
+    "unknown_words_fraction": 0.008625817965496729,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 12.66,
+      "end": 13.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 13.56,
+      "end": 68.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everybody. Today's episode with Vignesh Sundarison from Lendroid, which is a decentralized margin trading platform built on top of Ethereum that uses Xerox protocol. And two exciting things about today's episode. The first is ZeroX and Lendroid are part of this big crew that's coming to this Heath Denver hackathon that I'm organizing. And so there's going to be X and Lendroid and Darmah and Set and Radar. And it's just going to be interesting to see how all those... projects align and what their workshops look like and then what kind of the new hackers that get introduced to this ecosystem, how they build on top of ZeroX and Lendroid and Darmine, those things. So I'm excited for that. And one quick note is, as you listen to today's episode and think about something like Lendroid in this ecosystem, just always think about risk. How does Lendroid allow people to move around risk within an ecosystem? So that's one thing that we talk about. And the second thing that we talk about is this project that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 69.28,
+      "end": 70.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Vignesh",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 70.04,
+      "end": 164.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "has where he gives basic income to what he calls local heroes. And I just want to highlight this as this new mindset that I think a lot more people in crypto should take and are taking, but we could take even more, which is, hey, we have enough. We live in a world of abundance. We don't need to, like, accumulate money in ourselves. We can let it flow through ourselves. And that mindset is one that Vignesh is definitely taking here with some of his experimentation where he gives us basic income to these various people around the world. And I just want to state that this kind of mindset is what What is this project that I'm working on called the crypto pledge, where you essentially say, hey, I pledge to, for however much money I'm making within crypto, I pledge to give some of that back to the ecosystem. We've seen some of this in small pieces, but I think we all as a collective group need to take this pledge together to say, hey, we're not just in it to win it. We're in it to win it for everybody. And the key thing here is that... winning it is a win-win because after about $45,000, you stop getting happier when you get more money. And so if you're optimizing for happiness, then at that point, you should start to give back. So with that kind of mindset, I'm really excited to see someone like Vignesh taking that head on and experimenting with his basic income that he's giving to people. So with that, please reach out if you're interested to chat more about Cryptopledge or if you're interested in East Denver, go to East Denver.com, that's etH denver.com and apply, and Vignesh will be there along with the whole Xerox ecosystem. So with that, enjoy today's episode with Vigness from Lendroid. Goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 167.09,
+      "end": 167.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 167.87,
+      "end": 198.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everybody. My name is Reeslinmark, and you're listening to another episode of creating a humanist blockchain future. And in this podcast, we take a systems thinking approach to doing good in the world, and we have a couple different series that focus on different systems scopes. And today we're especially focusing on Siri C software systems, where we ask the question, what systems are we implementing in code? And I'm very happy to introduce Vignesh Sundarison to the show. Vigneesh is the CEO of Lendroid, a decentralized margin trading protocol built on the OX protocol. Vignesh, thanks for being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 199.27,
+      "end": 199.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Thank",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 199.65,
+      "end": 200.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you so much for having me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 200.97,
+      "end": 216.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I'm excited to chat, and Vignesh and I actually met at DevCon. And so we talked about some of these things there, but we're going to go deeper today for our listeners. So could you start Fignesh with giving us kind of a high-level overview of Lindroid?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 216.25,
+      "end": 216.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 217.35,
+      "end": 219.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So Lendroid started as a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 219.61,
+      "end": 221.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "decentralized",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 221.05,
+      "end": 257.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "lending protocol. So the idea was to do decentralized lending between digital assets. So you put one of the digital assets as a collateral and you can borrow any other digital asset. That was the idea. But then what happened was as we made more partnerships in the industry, we found that that's a nice use case, which is to work with margin trading. So what we are doing is we are starting with margin trading on chain and moving and building this decent, like lending protocol around it so that we can build more applications on top of it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 257.42,
+      "end": 258.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 258.54,
+      "end": 268.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so, and for someone like me, I have essentially zero financial background, which is kind of sad, but also kind of nice, because then I can say questions like, so what is margin trading?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 268.84,
+      "end": 268.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 269.58,
+      "end": 322.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so I think this is a nice financial area to start with, because margin trading, for people who know trading, you, what you do is you take a position of a specific asset, which you believe is going to perform well. in the future so that you can profit out of your knowledge or assumptions right in the same way margin trading is basically you go out and take a loan and go and go on a leverage on your beliefs so if you have $100 in your pocket you can go buy $100 worth of shares that you believe will go up or then you can go and borrow $1,000 and say I want to be long $1,000 it's more risky But if it turns out to be right, you make more profit. So margin trading is basically leveraging your beliefs.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 322.52,
+      "end": 336.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. Cool. So yeah, you can, if I believe that's, you know, let's say some assets going to go up, or I guess I have a question here, what kind of assets can I bet on? Can I do this margin trading on?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 336.5,
+      "end": 336.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 336.98,
+      "end": 366.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "traditionally speaking, margin trading is available in all traditional exchanges too. for crypto or the digital assets one, it is available on a very few assets. But traditionally, you can go leverage on your apartment building. You can go leverage on commodities. You can go leverage on a foreign exchange, foreign currency, or Apple stocks or anything, right? So anything that has a price on it, someone will let you leverage on it. So some exchange.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 367.36,
+      "end": 367.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "On",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 367.44,
+      "end": 369.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "digital assets, we try to do that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 370.06,
+      "end": 370.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 370.42,
+      "end": 391.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it. Sweet. So I can say, let's say I think that the price of Bitcoin is going to go up. And so if I have a hundred bucks, I could buy $100 worth of Bitcoin. But what you're saying is that with margin trading, instead I would essentially leverage my $100 and I can turn it into, let's say, $1,000 or whatever and bet that on Bitcoin. Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 391.9,
+      "end": 395.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So you get $1,000 worth of exposure to Bitcoin.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 395.61,
+      "end": 415.01,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it, got it. Yeah, I like that term. A thousand dollars worth of exposure. And so what happens then who are the people that are taking up the risk? You know, if I say, I only have 100 bucks, but can I do a trillion dollars? Like, what is my multiplier that I can do? And who takes on that risk?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 415.55,
+      "end": 496.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Sure. So if you look at when I say, mention the word exposure, it just means that if you have $100, obviously you can only buy $100 with a Bitcoin. If you have $1,000 worth of exposure, that means that you don't actually get the utility of the asset itself. So you don't get to withdraw it and go use it in the real world, right? But it's locked up in an account that some other party who gives you this leverage controls. Traditionally, this will be a broker, this will be a exchange, this will be the clearinghouse, etc. So they will control your collateral and the positions you're holding. And on the other side, the people who are letting you hold this position are actually lenders. So you might go to, when you go on an exchange, all this concept is abstracted away from the end user. So he just gets the leverage. But on the other side, there are people who are lending these $1,000 for a fixed interest rate. You are taking that interest, which is all centrally coordinated by the exchanges. And with that $1,000, you are actually buying bitponds. right but that's still stored in the exchange so in a way these guys who are in the middle who are the exchange who are the who act as a central counterparty and they take care of the risk that's involved in the whole process",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 496.28,
+      "end": 496.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 496.9,
+      "end": 501.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it yes there's a central counterparty aka the lenders right that's the term that you used",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 501.06,
+      "end": 501.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "uh",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 501.5,
+      "end": 506.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in this case the lenders are not the central counterparty the the exchanges",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 506.36,
+      "end": 507.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the middle",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 507.2,
+      "end": 511.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is the central counterparty to the lenders and the margin traders.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 511.47,
+      "end": 541.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. Great. Cool, cool, cool. Yeah, so the exchanges in the middle. I'm a margin trader. I'm on one end. I have a hundred bucks that I want to leverage for $1,000 of exposure in Bitcoin. There's the... the middle person there. And then on the other side is the lender and the lender has the, they have the collateral and the positions. They actually are the ones that kind of have the $1,000 in Bitcoin. Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 542.0,
+      "end": 551.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So actually how it will work is the lenders actually give you the $1,000, right? And they charge your interest on that. So it will be in dollars, not in Bitcoin.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 551.4,
+      "end": 551.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 552.2,
+      "end": 557.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "What you do is with that $1,000, you can the exchange will allow you to buy bitcoins with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 557.28,
+      "end": 558.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that okay so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 558.9,
+      "end": 564.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the the the loan you owe is in dollars that's how you get a exposure in bitcoin",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 564.3,
+      "end": 564.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 564.98,
+      "end": 571.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it and i'm only allowed to get exposure in bitcoin i can't take that thousand bucks and spend it on like food or whatever",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 571.1,
+      "end": 572.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "exactly",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 572.1,
+      "end": 577.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so it's a lot within the exchange And you can only get exposures to things allowed by the central counterpart.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 578.16,
+      "end": 592.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay. So that makes sense. And how does one determine, I guess, two questions. One, how does one determine the like multiplier? I'm not sure if there's a name for that multiplier, but the multiplier in terms of I can take my hundred bucks and turn it into how much money.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 593.32,
+      "end": 593.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 593.84,
+      "end": 632.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this multiplier is like just called leverage in most situations. Usually that depends on the volatility and it's a as one of the major risk management parameters that's managed by the central counterparty. Now, if there is a huge volatility move in the price of the underlying asset, the lenders might not get repaid. So that's a huge risk. So to make sure that the lenders always get repaid, the central counterparty decides on this number in a way that they can manage the risk. So it's usually between, say, two times to five thousand times depending on which market you're dealing with.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 632.8,
+      "end": 633.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, wow.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 634.24,
+      "end": 642.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "If you go foreign exchange market, which is the traditional currency, US dollars versus a euro market, you'll get a 5,000 times leverage.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 642.95,
+      "end": 643.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Wow,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 643.71,
+      "end": 676.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's fascinating. Yeah, and it's the person who's taking the risk here primarily is that the central party in between. And what happens, let's say, so if I get this, I spend my 100 bucks and I get $1,000 worth of exposure to Bitcoin. through the lender, through the middle, counterparty, how then do I, what happens, like, at what point in time, like if Bitcoin goes down a bunch or like what happens if I want to, I guess, tell me about the risk profile here. What happens",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 676.78,
+      "end": 677.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 677.02,
+      "end": 677.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "things go down?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 678.08,
+      "end": 724.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So take the same example. If you have, if you had $100 worth of collateral that's deposited with the central party, now you have $1,000 worth of exposure. Now, Bitcoin falls down by 10% that's $100. all your collateral is wiped out. So the central counterparty will not wait for that long. Usually what they do is if your position drops by, say, 5% in this case, they will close out to your position. So they will come and intervene, close out to your position. But if it actually goes up, you can keep holding onto your position. So when you make a profit, your position keeps on being open when it comes down. there is intervention required and the central counterparty comes in. So usually it's very tight in this case.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 725.28,
+      "end": 731.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. And so once and specifically talking about Lendroid, I guess, does Lendroid,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 733.06,
+      "end": 737.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is this system that we've been talking about here? Does that same system exist on Lendroid?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 738.19,
+      "end": 738.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 738.75,
+      "end": 775.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "with Lendroid, the idea is that we are talking repeatedly about the central counterparty, right? So the idea is we are replacing this central counterparty with a smart contract. So instead of a central counterparty being a system, being a set of banks, being a set of clearing houses, what we are doing is we're putting a smart contract, which is trust independent, which can hold funds and which will, which has certain parameters that when achieved will trigger a margin call or something. So with that smart contract in the middle, there is a lot of efficiency improvements that we can achieve, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 775.69,
+      "end": 796.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep. Yep, so that smart contract, as you said there, in general, the centralized counterparty is the one who determines when the percentage goes down of the asset, then they say, okay, we're going to close out your position because you don't have enough collateral left. Now all of that logic will be done within a smart contract. Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 796.86,
+      "end": 797.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 797.26,
+      "end": 797.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "correct. That's correct.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 798.22,
+      "end": 816.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And can you create all kinds of different smart contracts with different parameters here that say, hey, if 50% of their collateral goals away or if, you know, 5%, you know, like, is it essentially a way to kind of create these centralized or to create these flexible smart contracts with different percentages there?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 816.94,
+      "end": 817.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 817.92,
+      "end": 864.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So when it comes to smart contract and specifically lend right to contract, how it works is, Because we are removing the human smartness of the central counterparty, the smart contract is not really smart in the sense that it does not have a AI or something that it can let it determine the leverage levels, right? So what would happen is the smart contract just performs like a template. So the lenders and the margin traders fix on these terms by negotiating off-chain. and then just fixing once they negotiated these terms of chain they can just represent the terms on chain and then go for the term of the loan or the leverage so the smart contract just provides them a template which they fill fill out",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 864.33,
+      "end": 864.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Great,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 864.95,
+      "end": 883.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that makes sense. And I'm reminded a little bit of maybe like Steamitz content token where you essentially can, yeah, off-chain, determine what the smart contract looks like, and you're like, sweet, do we agree on this? Okay, we do, boom, click go, and that smart contract essentially gets pushed, and then we are essentially doing our margin trading through that smart contract.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 884.05,
+      "end": 884.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 884.79,
+      "end": 886.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So tell me a little bit about, I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 886.57,
+      "end": 887.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "mean... One",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 887.97,
+      "end": 898.19,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "side of things here from Lendroid that we haven't talked about is this like Rangler position. Have we actually talked about it but haven't named it or tell me about this Rangler position?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 898.93,
+      "end": 990.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So sure. So Ranglers are, so how Lendroid, when it comes to dealing with the margin call works is because again the smart contract is not a central counterparty or a company which is looking at dispositions all the time. We have. we have moved these important computational job to off chain. So on chain, on Ethereum, which we are building on top of, is not very effective for recurring tasks and computation heavy tasks. And usually margin level monitoring to make sure that the margin levels of the margin traders are at the right position is a very, very computation intensive task. So what we did was, We moved this task away from the chain and put it off chain and said that, okay, now if you want to help us do this, you can be a wrangler. So these wranglers are have access to the data that's on the smart contract about all these margin traders and lenders. What they can do is on off chain using the market data, external market data. They can figure out if the margin levels are falling down. And if they find that the margin levels are falling down, they can intervene in the traditional world, the central counterparty will intervene. Here, the Wranglers are given that power. So they will intervene and say that, oh, we have to margin cause this specific account, right? So we've pushed that work to the Wranglers.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 990.83,
+      "end": 991.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 991.17,
+      "end": 1007.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it. Yeah, so in that, I mean, it sounds like that's going to be the incentivization structure as well in terms of the utility value of the token. Is that right? Where you incentivize these wranglers to do this wrangling work by giving them, by incentivizing them with your token. Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 1008.31,
+      "end": 1009.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Exactly correct. Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 1009.93,
+      "end": 1018.63,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So, so tell me a little bit more about that. What is the utility value of your token and how does that incentivize these wranglers?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 1019.15,
+      "end": 1019.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 1019.84,
+      "end": 1107.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So in terms of the Wranglers itself, they, these are not people who can, they have to be computationally heavy. So they spend a lot of resources in looking at these margin accounts and monitoring these margin accounts all the time. Usually in the central case, what happens is the central counterparty will charge a fee from both the lenders and the margin traders in order to monetize their operations to make sure that operations are profitable. In this case, for the Wranglers, who are helping this protocol stay healthy, they are not directly monetized, right? So this is where the token comes in. The token, which we call them LSTs, Lend right support tokens, is usually paid by both the lenders and margin traders who are enjoying the protocol to the Wranglers who are actually helping the protocol. And how this will be paid is based on a time variable. So loans are time based. So the loan is for two days and if there's a margin call, what happens is because the margin, the Rangler has been monitoring this account for a longer time, he gets paid a lot more, right? And if it's a shorter time, he gets paid a lot less. So it's proportional to the amount of time the Wrangler spends on it. And then what happens is there is also an auction when it comes to the liquidation part of the margin account itself. where the Rangler can participate and earn a bounty for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 1107.82,
+      "end": 1108.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that. Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 1108.82,
+      "end": 1145.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it. So, yeah, both when, I guess, and is there a, yeah, so when the margin trader and the lender get into this contract, they're essentially paying the... the Wrangler in LST in order to essentially watch the account and they're paying him or her in terms of how long that person has to watch the account. And then once there is an auction, or once the position gets lost and once the Wrangler says, hey, we need to close out this position, then there's an auction on the remaining assets that exist and the Wrangler can take part in that. Is that all correct?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 1145.4,
+      "end": 1146.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Exactly. Exactly. Yes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 1148.56,
+      "end": 1187.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Um, that makes it, does a Wrangler have, I guess one final thing on that auction question is like, so let's say, so back to our classic $100 a Bitcoin example, um, I do the $100 Bitcoin, but I get, um, uh, exposure to $1,000 worth of, or $100 and then $1,000 worth of Bitcoin with that, uh, $1,000 of exposure. Oh no, it goes down, um, some percentage and let's say it goes down to 950 or whatever. So my collateral has been chopped in half and then that. triggers the smart contract maybe and the Wrangler says, oh man, we need to intervene here. I have $50 worth of collateral left and then that will be auctioned off. Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 1187.94,
+      "end": 1223.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Exactly. So how it works is obviously there is $100 worth of collateral left, but the $50 will go to just pay the pay off the loan, right? The difference or the loss that was incurred. Now there is additional $50. That is what the auction goes for. So the Wranglers can fight and take as little as the collateral with them so that it's profitable for them to do this business. At the same time, because there is this competition, the margin trader might get back some part of the collateral, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 1224.56,
+      "end": 1224.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 1224.86,
+      "end": 1228.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "guess, yes. So what determines that auction? Like, how does that auction work?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 1228.57,
+      "end": 1228.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 1228.81,
+      "end": 1286.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the auction, the ideas, these are the interesting power of smart contracts and the open blockchain. So what we can do is we can have a small three-minute auction, and that's what we do. We have a small three-minute auction. Once one Wrangler identifies a falling position, a fallen margin account, he starts this process of auction. And then if there are a number of rangers, what they can do is they can bid for the same account. for different amounts of the remaining collateral. The guy who bids for the least collateral gets to keep the account. So what happens is this is profit. He will do that only if it is profitable for him and also economically viable for him. At the same time, because he is competing with others, there might be, say, $20 of collateral that's left in the account. That goes back to the margin trade.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 1287.5,
+      "end": 1288.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hmm,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 1288.48,
+      "end": 1353.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "okay, I think I get that. So, so you have the, so it started with 100, went up to 1,000. It went down in price of the, you know, my $1,000 exposure, the collateral went down to essentially, I guess, yeah, so the price of Bitcoin went down from 1,000, or my, the amount of exposure that I had started at 1,000, and then it, because of the price decreased to, let's say, 950, then. my, essentially, you check that amount that it went down against the amount of collateral that I had. You're like, oh, man, that's 50% of this 100 that I initially had. Then that auction goes off or you say, hey, we're going to auction off the remaining 50 and a bunch of Wranglers get in and determine who wants to get that account. And whoever essentially bids the least amount gets to keep that account. And are you saying that, like, let's say that one of the wranglers bids 20 and that's like the least amount, then 30 or then $30 would be given back to the margin trader?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 1353.58,
+      "end": 1354.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 1354.64,
+      "end": 1354.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 1354.88,
+      "end": 1402.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this is actually a little complicated and it gets even more complicated because the Wranglers need not bid for the whole account. They can bid for the part of an account so they can do just like half of the account and stuff. So it's a very, how do I say? It's a very. It's something that I would have to show you more than trying to explain. But the idea is that, yes, the Wranglers fight for the same account and the guy who's bidding for the least amount of collateral gets to win the account. Here, he's actually repaying the loans that the margin trader actually opened up, right? So for repaying the account, he gets to keep the positions that the margin trader had along with additional collateral. that would be his business, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 1403.79,
+      "end": 1404.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 1404.15,
+      "end": 1425.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "say, for example, I repay $1,000. I at least need $1,000 for it to be profitable. Now, the positions are only worth $9.50. So I get the positions, which is $9.50. Now, I obviously have to get $50 worth of collateral to even break-even. And after that, I can say, okay, I need only $20. Right. So that's the bidding part.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 1426.17,
+      "end": 1426.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Great,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 1427.01,
+      "end": 1427.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "great.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 1430.66,
+      "end": 1430.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Cool,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 1431.36,
+      "end": 1445.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that makes sense. So I guess the, you know, kind of taking a step back here and tell me about the, I kind of understand how the Lendroid system works. Now, how does Lendroid operate with the OX protocol?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 1445.96,
+      "end": 1452.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Sure. So there is this question. We might have to refer it to as zero X.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 1452.5,
+      "end": 1453.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Oh, yes, sorry. Let's do it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 1455.65,
+      "end": 1518.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Zero X protocol is actually brilliant. It is non-rent seeking, encouraging partnerships. And what they do is they allow atomic swaps of tokens. So if you have one token and then you want to move into another token, you can just use zero X to do that. And it is all decentralized. It is on chain and it is just easy. There is no friction. There is no, say, going through exchange or anything. It's just on chain and it's just easy. Now, for something like Lendroid, which is also on-chain, non-rent-seeking and decent lies, we want to allow our users to move from one token to another. Obviously, that's trading, right? So without being able to, if you actually borrowed some tokens, now with a borrowed capital, you would want to trade into other tokens. Now, for that part, we are not building our own order book because they'll be reinventing the whole wheel again. So we are just using zero-x. and allowing our users to do the trades as they wish using that protocol.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 1519.11,
+      "end": 1552.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Great, yep, got it. Yeah, and I think that that makes sense, and I think that something on your website that I think directly maps onto this is essentially where you say, hey, we create a... distributed pool of loan offers and this like global lending liquidity pool. So you're essentially saying, hey, people can lend either way, one way or the other way, to get essentially to create this liquidity pool. And then what OX does is they have this, you know, a shared liquidity pool of order books to essentially facilitate these, these swaps, these atomic swaps.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 1552.8,
+      "end": 1553.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 1553.68,
+      "end": 1554.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, that's correct.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 1554.44,
+      "end": 1566.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So there's two kinds of liquidity there. The liquidity with respect to kind of the lending pool and loan offers and then the liquidity with respect to kind of the atomic swaps and or order books.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 1566.46,
+      "end": 1566.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 1566.96,
+      "end": 1576.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay. So, and I guess does it, you know, on your website it says that you guys are allies with or have you with like ocean and radar relay. How do you overlap with those groups as well?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 1577.44,
+      "end": 1577.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 1577.88,
+      "end": 1626.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "as we said, we are allies meaning that. we are actually working with these companies. If you look at Ocean and Radar Relay, they are all new startups. They are not their own token. They are companies which are building and want to be the future decentralized exchanges. So these companies are actually working with zero X protocol in order to enable people to trade. And that's the first functionality of any exchange. Now, exchange functionality is not complete without having the margin trading part and the lending part. So that is where we come in. So we work with these reliers who are already working with zero X and we are adding the other two building blocks to enable margin trading. So that's how we are working with these companies.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 1627.23,
+      "end": 1634.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. So in Ocean and Radar Relay are just two different kinds of relays built on top of OX protocol. Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 1634.93,
+      "end": 1635.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 1635.37,
+      "end": 1635.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "correct, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 1636.23,
+      "end": 1657.35,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, cool. Yeah, so any kind of, and to check here, I guess, you know, are you guys directly working with OX protocol, or is there, zero X protocol rather, or are you as other peer-to-peer lending or rather peer-to-peer order book liquidity platforms show up? Are you interoperable with them?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 1657.97,
+      "end": 1658.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 1658.35,
+      "end": 1686.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "yeah, very much. So again, we would stay agnostic to the protocol that's underlying. Because with our smart contract, we just have this module which connects with 0x to allow the swaps. Now, we can always replace that module with a or have another module and have another decentralized exchange protocol. And we can have both for the same user also, right? So smart contracts. That's good.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 1686.27,
+      "end": 1686.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Cool.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 1686.87,
+      "end": 1695.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yes, that makes sense. And I guess one final question here before we kind of transition is, do you expect, so these current wranglers, aka what they're called today, is like centralized,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 1697.85,
+      "end": 1702.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what would you call them centralized, you know, mark, what would you call it, centralized counterparties?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 1703.21,
+      "end": 1704.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Centralized counterparties, yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 1704.65,
+      "end": 1716.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah, that are turning into these decentralized, incentivized wranglers. Do you expect the existing centralized counterparties to... start taking the role of these Wranglers?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 1717.23,
+      "end": 1790.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah. So if you look at a company like BitFenix, they've already started that process. In this scenario where we are moving into the decentralized world, actually it does not disturb the businesses of the exchanges. That's the interesting part here. So again, the parts where there is computation and people have to make a profit for it or enabling a UI or creating liquidity for all these things. These are all businesses that people can still make money out of. And that is what are exchanges. So what we are actually removing is only the custodian part, like where the funds are being held is now moved from a central wallet to the smart contract. And that's really like all these companies like Bitfinites or Polonics will be happy to do this where they still keep making the profit, but they don't have the responsibility of holding user funds. So these people are actually considering it. For example, BitFinex is launching this, already launched this project called EatPPPenix, which is a decentralized form of, it is starting to be a decentralized form. They're starting with a centralized architecture, but the idea is to move into a decentralized exchange.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 1790.96,
+      "end": 1801.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. But so you would expect these decentralized exchanges who are already doing this job, essentially. You expect them to become Wranglers in the future. Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1801.79,
+      "end": 1802.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1802.21,
+      "end": 1802.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "correct.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1802.83,
+      "end": 1802.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1802.93,
+      "end": 1809.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "many more other people also. It's open, it's permissionless. So anyone can be a Wrangler, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1809.91,
+      "end": 1832.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep. Yep. And essentially, yeah, you turn the, you turn wrangling into a market. The other thing that Vignesh and I want to talk about, which we actually talked about in DevCon was... like on the more philosophical side. So Vigness, could you talk about some of the like universal basic income things that you're doing and kind of the funding that you're doing there?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1832.96,
+      "end": 1833.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sure,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1833.4,
+      "end": 1945.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "yeah. So actually one of my other passions, which is prosperity, right? And I come from this part of the world, which is India. That's where I was originally born and raised. And I live in the city called Chennai, which is the southern part of India. Now, as I grew up, All I had in my life was inspirations. I had a lot of struggles actually to break even most of the times. I did not have a laptop until I was coding for three years and then I made my first app, sold it, and that's how I bought my first laptop. Now, the funny part is I used to actually borrow my friends' laptops all the time and it was a really hard time for me. So coming from India, It's really hard because you need a really great motivation to break that kind of a barrier, which is if you are, if you don't, you don't get a chance to be, even if I'm motivated, the reality around you might push you down. And that's why when I go back to China, I see so many bright minds, so many people that can be inspiring who are being held back and pulled down because of the practicality of the world. And that's why I think blockchain and there is this promise where people talk about universal basic income all the time. And I've seen, I do see something like that, very powerfully inspiring a lot of people in this world. And I completely don't agree with the idea of universal basic income where I don't think it's practically possible for us to give away money to everyone across the world. and usually when people talk about basic universal basic income we talk about specific geography and we don't actually talk about it universally right so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1945.85,
+      "end": 1946.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1946.93,
+      "end": 2005.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "me what what i want to do and what i'm trying to do already is to see if if creating heroes uh local heroes in specific parts of the world can be can actually inspire people around them to create a better better world right So if you look at Chennai, I know so many people who are struggling because there is no concept of, say, minimum wage or you can do a part-time and then also follow your passion kind of a deal in India. So when you actually go to a job, they actually make you work for six days or seven days a week. And you would have to work 12 hours every day and you'll get paid like $300. It's very hard. Because then where is the passion? You will be drained out of whatever you're doing. That's mundane work. But you're also drained",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 2005.59,
+      "end": 2006.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "out",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 2006.11,
+      "end": 2006.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of being",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 2007.3,
+      "end": 2008.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 2008.64,
+      "end": 2066.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "hero. Now, we can identify these people in this part of the world who could be inspiring and great. And give them, like not just say $400 a month to them. You free them up. to chase the passion. And that's what I'm doing. Actually, that's one of my initial, it's called an RM. And I'm starting to work on the details of it. Actually, what happened was after a month, I worked with Giveeth, another project, a beautiful project that's on the blockchain. So my plan is to do something where we do a nice blockchain-based system. where we can have reviewers and delegates who can identify these people locally and fund heroes in the specific regions. Not a lot, $400, $500 a month and we can create great things in this world.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 2067.14,
+      "end": 2067.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Wow.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 2067.78,
+      "end": 2084.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I like it. I think that, I mean, it's just a good reminder of kind of why a lot of people are in blockchain. And you're kind of, you know, we spent the first 25 minutes talking about Lendroid and, you know, trying to get it into my little brain about how it works. And there's all that kind of, you know, technical financial software stuff.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 2085.36,
+      "end": 2085.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 2085.68,
+      "end": 2176.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "really the end result goal is a lot of these things that you're talking about where you say, hey, you know, for someone like you growing up in Chennai, the amount of motivation need to break that barrier so high. And so when we think about like the, you know, the decentralization of power that's also related to this, you know, democratization of opportunity that we can say, hey, anybody has the possibility to succeed even if, you know, no matter where you're born around the world or whatever. And I like what you're doing and saying, I like the term local heroes and say, hey, how can we essentially. get a local community to kind of in a bottom-up way, determine who the heroes in their community are, and give them the ability to kind of be heroes and to have this kind of longer-term thinking or whatever. It also reminds me of... give directly, which is a nonprofit that is running a huge basic income study right now. 26,000 people are receiving basic income from anywhere from two years to 10 years. And as they haven't done, it's in this big randomized control trial with these four different groups, but they've done a little bit of qualitative, they've gotten a little bit of qualitative data from it thus far. And the initial qualitative data was essentially everybody can just do long-term thinking now. The moment that you start to give people a universal basic income, the moment that you start to say, hey, you don't have to just think about only tomorrow, you know, then you kind of allow them to think in this way that just helps everybody because it's long-term thinking is pro. So does that sound kind of aligned with what you're doing with Aram?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 2176.82,
+      "end": 2177.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 2177.38,
+      "end": 2242.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's very correct. My fear is that the universal basic income itself, where... few trials which have had in the past what i felt is that people because because of the kind of scarcity and poverty people are coming from uh receive it's not just the money they should receive but uh it should be uh directed at specific people who who can't be passionate who can be inspiring right because all else what happens is it creates a situation where people are saying oh i have four hundred dollars and let me let me just be like like lazy, right? So it creates the situation because they're still better off than the guy who's not getting that $400. He might go and rub that on someone in his face and say, oh, I have $400, you don't. So it's a very interesting balance. And that's why, instead of going for a blanket strategy, I wanted to go for more of a hero's strategy where the accountability is local, but the funding is global, right? That's more of the idea.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 2242.71,
+      "end": 2255.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Cool. Well, I love it. The accountability is local, but the funding is global. Those are the things that we can do in our new decentralized land, this kind of bimal distribution between local and global. With that, Vignesh, thank you so much for your time today.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 2256.89,
+      "end": 2257.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Thank",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 2257.17,
+      "end": 2278.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you. Thank you so much. Thank you so much for having me. One thing I wanted to add is that we are going into this space of life where we get to have more than one career. So I've been working on code for a very long time, working on technical stuff. and then i also get to do get to do something like arum and and probably i will get to do something else",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 2278.19,
+      "end": 2279.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "also",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 2279.21,
+      "end": 2305.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 2306.2,
+      "end": 2353.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Beautiful. Yeah, I like it. I think that there's a, you can either do it by making your first career, kind of a money-making career, and then your second career is once you have that ability to do long-term thinking, then you can kind of give back in a good way, or you can kind of combine them into one and do kind of social entrepreneurship impact investing in a given career where you're kind of doing both at the same time. Well, in any case, thank you so much again for being on the show. And by the way, listeners, if you are interested, you can support me on Patreon at patreon.com slash reese-Lenmark. That's slash R-H-Y-S-L-I-N-D-M-A-R-K. And if you want to learn more about Lendroid, just go to Lendroid.com. That's L-E-N-D-R-O-D-com. And, you know, check them out when they're at the Token Summit. Okay, great. Thanks so much. And bye.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 2353.79,
+      "end": 2354.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Thank",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 2354.19,
+      "end": 2354.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you. Bye-bye.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 2355.98,
+      "end": 2356.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 148,
+    "withheld": 1,
+    "published": 147
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

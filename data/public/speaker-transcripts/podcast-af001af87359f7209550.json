@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "id": "podcast-af001af87359f7209550",
+  "title": "Jennifer Pahlka on Recoding America: New Episode!",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=J-rjBIB3InQ",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "J-rjBIB3InQ",
+  "youtube_url": "https://www.youtube.com/watch?v=J-rjBIB3InQ",
+  "audio_sha256": "4e5f5d1ab967e40d308daa527406672fb378d1dfffb46af3e278aa9aa8963e52",
+  "audio_duration_seconds": 30.6039375,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 94,
+    "unknown_words": 3,
+    "unknown_words_fraction": 0.031914893617021274,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.18,
+      "end": 0.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 0.64,
+      "end": 10.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "you ever wondered why the government gets so little done? Well, today, we have a special episode with the expert Jennifer Polka that dives into that question of government ineffectiveness.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 10.92,
+      "end": 11.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 11.36,
+      "end": 21.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "we'll dive into her answer, which comes from her book called Recoding America, which is really one of the best policy books I've read in years, and helps us understand why government is failing and how to fix it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 21.71,
+      "end": 22.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "As",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 22.07,
+      "end": 26.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "always, let me know what you thought of the episode and stay until the end to hear her overrated and utterated. Thanks.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 6,
+    "withheld": 0,
+    "published": 6
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

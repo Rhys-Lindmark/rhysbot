@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "id": "podcast-ea1ffc6f7370714a7c8a",
+  "title": "Government Services in The US",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=FwPTugttwNA",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "FwPTugttwNA",
+  "youtube_url": "https://www.youtube.com/watch?v=FwPTugttwNA",
+  "audio_sha256": "84c9598b8c6485aa0c600b3eb2bceb3c85ecf15d46d627796fe61a68c93adeec",
+  "audio_duration_seconds": 48.622625,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 122,
+    "unknown_words": 3,
+    "unknown_words_fraction": 0.02459016393442623,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 11.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "And I do want to distinguish between deregulation and regulatory reform and simplification, because you can still have safeguards",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 11.28,
+      "end": 12.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 12.1,
+      "end": 18.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "place with less confusion and complexity. There are certainly regulations that need to come off of the books.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 19.14,
+      "end": 19.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'd",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 19.66,
+      "end": 21.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "like to do that in a way that actually...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 21.61,
+      "end": 22.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "honors",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 22.15,
+      "end": 43.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "the safeguards that they were put in for in the first place. But when we're talking about either administrative burden or regulatory burden, I would say the left would call it administrative burden, the right would call it regulatory burden, but they're kind of the same thing. What you're really talking about is with the same safeguards in place, how do we make this easier for everybody so that we can move faster?",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 7,
+    "withheld": 0,
+    "published": 7
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

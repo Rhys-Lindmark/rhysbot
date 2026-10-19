@@ -1,0 +1,1620 @@
+{
+  "schema_version": 1,
+  "id": "podcast-26759ed3d95a35de2dc8",
+  "title": "#1: How to Think in Systems",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=Sy82ilWHrao",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "Sy82ilWHrao",
+  "youtube_url": "https://www.youtube.com/watch?v=Sy82ilWHrao",
+  "audio_sha256": "e083a1338578e9c5b22c4f3b656d3df4a31889236b908c138030e0b77fd5758e",
+  "audio_duration_seconds": 2223.7983125,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 6447,
+    "unknown_words": 86,
+    "unknown_words_fraction": 0.013339537769505196,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 2.13,
+      "end": 2.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 3.29,
+      "end": 18.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "viewer. My name is Reese, and you are watching to one of the Root lectures. This one today is about how to think in systems. And as a reminder, these are part of Root, which is a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 18.18,
+      "end": 19.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "delightful",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 19.54,
+      "end": 43.31,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "program for ambitious frontier people to understand the future and build it. And Root has a fellowship called the Root Fellowship, which you are likely in right now. But if you're not, you should join it. It's amazing. It's a community of world-class systems thinkers looking to understand and build the future. So please check out root.co if you'd like to see similar content like this and to join a great community.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 43.81,
+      "end": 44.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 44.23,
+      "end": 62.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "today, we're going to talk about thinking and systems. And it's part of this macro overview of the course, which is... five parts, thinking in systems, networkism, coherent pluralism, bentoism, and abundance and generosity. But today is all about thinking in systems. And specifically, we're going to talk about how to think in systems. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 62.76,
+      "end": 63.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 64.15,
+      "end": 85.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "do we think in systems? Well, there are six parts of today's course. There's what is systems thinking? Why should you think in systems? A history of systems thinking. We'll look at a couple kinds of systems, these feedback loops and then agent-based systems. And then we'll look at emergence and multi-scale properties, which are quite cool. So this is this fun stuff. I'm excited to share it with you and excited for you to learn it. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 85.66,
+      "end": 86.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 86.96,
+      "end": 91.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "do want to say something before we start, though, because this is the first lecture in this series.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 93.83,
+      "end": 96.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "The hope of this series is to give you this new lens",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 96.43,
+      "end": 97.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 97.55,
+      "end": 101.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "society to understand the world in terms of systems and paradigms.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 102.16,
+      "end": 102.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 102.58,
+      "end": 107.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "to see something that's very powerful, but also very scary, which is that humanity",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 107.62,
+      "end": 108.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 109.01,
+      "end": 115.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "going through this huge evolution, an evolution that we may have never seen before and may never see again.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 116.08,
+      "end": 116.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 116.64,
+      "end": 121.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the hope is for this episode and this series to steward you through that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 121.7,
+      "end": 122.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 122.26,
+      "end": 130.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I just want to take one second and breathe into that for a second, this kind of scary but kind of awesome opportunity in front of us",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 130.51,
+      "end": 131.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 131.39,
+      "end": 134.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "steward and help. the next scale of humanity's evolution. So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 136.21,
+      "end": 136.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "hmm,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 140.12,
+      "end": 140.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "hmm.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 142.92,
+      "end": 162.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And whenever you need to breathe, feel free to breathe. That's okay. So talking about systems. Let's do it. What is systems thinking? So systems thinking is zooming out to see the world holistically as a web of foundational interconnections unfolding over time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 162.78,
+      "end": 163.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 163.44,
+      "end": 171.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a lot there. So let's dive into each piece. So the first part is this zooming out here. And zooming out",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 172.14,
+      "end": 173.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "means",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 173.26,
+      "end": 189.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that instead of focusing on the little details, you kind of go, and it really, it feels like this. And systems thinking as a note is going to be very kinesthetic, and that's okay. And we're going to use our bodies in this course because it's powerful. Our bodies are powerful. So systems thinking is zooming out.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 190.08,
+      "end": 190.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 190.54,
+      "end": 197.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then once you zoom out and you're like, Okay, now we can look at the whole system. We can see the world holistically. That means instead of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 197.81,
+      "end": 199.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "atomistically",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 199.55,
+      "end": 219.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "or analytically, all the little parts, instead you see the whole system, and you see these web of foundational interconnections. That means that instead of just looking at the parts of the system, you look at the edges in between everything, and you look at how things are interconnected, and especially you look at...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 220.27,
+      "end": 220.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 220.73,
+      "end": 232.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "interconnections that are happening at a foundational level. And then finally, systems thinking is very connected to time. You see how these interconnections unfold over time. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 233.22,
+      "end": 234.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 234.66,
+      "end": 248.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is what systems thinking is. It takes all these components. It's zooming out. It's seeing the holistic web of foundational interconnections and seeing how they work with each other over time. That's what we mean by systems thinking. And that's what you learn about today.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 249.63,
+      "end": 250.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 250.07,
+      "end": 264.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "before talking about that, let's talk about why should you think in systems? Well, I like to say it connects you to the actual substrate of society, to see the world as it is. And what I mean by that is there's a,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 267.06,
+      "end": 294.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "instead of seeing just the symptoms of things, we can use systems thinking to understand the root cause of things and how they're all connected to each other. And this is really how... society actually works and how the world and nature and all these things work is at this deep systemic level. And so instead of seeing the world at just like the top surface level, just above the iceberg, instead you can use systems thinking to really see the world as it truly is.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 295.65,
+      "end": 296.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 296.09,
+      "end": 299.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so that's the goal of systems thinking is to understand the root cause of things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 300.53,
+      "end": 300.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 300.97,
+      "end": 320.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we'll talk about this later. about how reality is a series of feedback loops, where we see the behavior on top, but actually when you look underneath, there are these feedback loops that are creating that behavior. So, excuse me. So that's why, is because it allows you to just see more clearly and see the world as it truly is.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 320.75,
+      "end": 321.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 321.27,
+      "end": 326.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "other piece here is that it's necessary for our networked and interconnected moment.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 326.8,
+      "end": 327.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "What",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 327.32,
+      "end": 339.41,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that means is, the world is now their 4 billion networked smartphones. and that all are connected to the internet, and we're massively interconnected as a earth society. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 339.41,
+      "end": 340.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 340.29,
+      "end": 353.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "need to think in systems in order to understand that moment, in order to understand us as humans now. So, you know, 200 years ago or 10,000 years ago, it maybe wasn't as necessary, but now it's critical for us.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 354.01,
+      "end": 354.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 354.53,
+      "end": 367.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so in the end, systems thinking really just allows you to understand the world and yourself as they truly are at this foundational level. So that's the promise here. And again, just to note this piece, why should you think in systems?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 368.38,
+      "end": 368.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 368.82,
+      "end": 384.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "to understand this waking up as a society, to understand, you know, what I call the root system. Yeah. So that's why you should be here and why you should be excited to be here. So a little bit of interactive time, which I want to add into these episodes,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 386.54,
+      "end": 401.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "ask yourself, why are you here? You know, and what do you already associate with systems thinking? So feel free to pause the video, take, you know, five seconds, 30 seconds to think about how you already think about systems thinking and why you're here watching this video.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 405.12,
+      "end": 405.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 405.82,
+      "end": 484.97,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "whether you paused or didn't pause, welcome back. And now let's talk about the history of systems thinking. Why did it come about? Well, there's kind of four big parts here. The first is it really started after World War II. So there were these cybernetics conferences, these Macy cybernetics conferences, and cybernetics is just another word for systems thinking, essentially. And these conferences were held after World War II, and their goal was to be super interdisciplinary and to look at these patterns across fields. And that's what's just, you know. the system's thinking you kind of look at this underlying root level. Oh, you're looking at biology. I'm looking at information theory. You're looking at chemistry. Oh, but there are these shared concepts underneath. Oh. So that's what it really started to pop up was this interdisciplinary cybernetics conferences. And at the same time, we stopped using this. you know, you're going to the second point here, we stopped using this old metaphor of the machine, of thinking of ourselves as a machine, of thinking of ourselves as a factory, of thinking of science as a machine. This was kind of a reductionist lens or an analytical lens, where it was looking at the world and reducing it to something that we could understand. And instead, we started to use biology as a metaphor, which has properties that are much more like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 485.81,
+      "end": 486.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 487.13,
+      "end": 503.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "instead of going from top down, we go from the bottom up and we start to say, ah, instead of reducing things, we kind of look at the subpieces and see how they emerge into bigger things. And even that little simple shift in metaphor was helpful for getting systems thinking off the ground in the late 1900s.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 503.79,
+      "end": 504.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 504.27,
+      "end": 507.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then computer modeling is this third big piece of systems thinking where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 508.18,
+      "end": 509.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "before",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 509.42,
+      "end": 531.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the way to do science was to do experiments. But... With the rise of the computer, we could start to do these models where we could look at all these little subparts of a system, and we could actually model them. We could say, ah, here's all these wolves, here's all these sheep, here's the wolves eating the sheep and the sheep reproducing, blah, blah, and we could actually model that and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 531.39,
+      "end": 533.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "understand",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 533.22,
+      "end": 614.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the behavior of those systems. And that was essentially impossible before because we did not have computers to do so. So modeling really helped us do these complex simulations. And then finally, as we noted before, systems thinking was pushed and is on the rise now because of these interconnected global networks. Now that we are a massive network, we have to think in systems in order to understand ourselves in the world. So that is the rough history of systems thinking. Now let's talk about these two... kinds of systems, these feedback loops, and then these agent-based systems. And let's start with feedback loops. So a feedback loop, there are two types of feedback loops. There's a balancing feedback loop and then a reinforcing feedback loop. And what a feedback loop does is it shows causality in two directions. And it'll be much easier to show this with an example. So this beautiful site, in case.me slash loopy, has these. And this is a balancing feedback loop. that I created recently. So it's balancing because one of these things is a plus and one of these is a minus. And what this is showing is, this is one that I made at the beginning of the COVID pandemic, where the amount of virus there is, you can see that if there's more virus here,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 616.59,
+      "end": 719.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it creates less or creates more attention on the virus. What that means is if, oh, so much virus, well, then that means social media and everybody will be talking about it more. But then more attention on the virus, in theory, creates less of the virus, where then we start caring about it more and we deal with it. And so you can see that system at play here where neither of these amounts are getting bigger and bigger and bigger. Instead, they're kind of staying constant and they're balancing each other. So let's watch it from the beginning again. So here it goes. So this plus, it made more attention on the virus, which created less amount of virus. Well, the less virus then created less attention. Well, that was. bad because now there's more virus. Ooh, more virus coming along. Oh, that means that there's more attention on it. And then you can kind of see how the loop continues. Another way to think of this is if this was a reinforcing feedback loop and more virus, it would be really scary if more attention on the virus created more virus. Like if the virus fed off of Twitter likes or something, that would be very, very dangerous. So this is an example of a balancing feedback loop where the two amounts balance each other, and instead of creating an exponential system, they instead balance each other. So on the other side, let's check out a reinforcing feedback loop. And this is one where it's a plus down here and a plus up here. And this one is in personal relationships. The idea is that hurt people, hurt people. And what I mean by that is if you have your own pain, you might be more... ready to lash out or be triggered against someone else. And so you can see that happening here where, ah, if you have this hurt person, well, that creates more hurt in the other person,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 719.94,
+      "end": 744.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "well, and then that person creates more hurt in the original person. And you can see these things spiral out of control sometimes, or one person gets angry, it makes the other person angry, but then their anger makes the first person angry. And then before long, people are yelling at each other. So that's a reinforcing feedback loop. It's when these things... when each thing makes the other bigger and bigger and bigger, and then they just go off the rails. So those are the two kinds of feedback loops. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 744.79,
+      "end": 745.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 746.68,
+      "end": 798.31,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you think about them, when people talk about them, they talk about the stocks of the feedback loops and the flows. And when they're talking about the stocks, they're talking about the amount that's in the circle versus the flow that's going between. So for example, you can imagine... If you're a person who doesn't have much hurt already, your stock of hurt is very low. Maybe if you're hurt by someone else, you might not push that out onto the other person as much. But if your stock is really high and you just get, boom, straw that breaks the camel's back, ah, that could be really intense. And the flow is like the outward movement from yourself to the other thing. So here is the hurt going from you to the other person. So that's how you just describe the two parts of the system are the stocks and the flows. And why are feedback loops helpful? Well, the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 798.34,
+      "end": 799.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "key",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 799.7,
+      "end": 817.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "idea here is that it allows you to see bidirectional causality. And instead of, you know, what I mean by this is instead of you hurt me, or it's like, oh, you were mean to me and that made me feel bad, you can kind of take a step back and say, wait a second, you hurt me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 817.75,
+      "end": 818.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "How",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 818.19,
+      "end": 844.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "did I hurt you? You know, or how were you hurt initially? And so it allows you to kind of, instead of just saying like, oh, it's just a bidirectional, you hurt me and now is bad on you. Instead it allows you say, ah, you hurt me and then, but maybe I hurt you at the beginning or you're, and so you can kind of create these systems where you understand how the causality works with each other to create either reinforcing or balancing feedback loops.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 845.31,
+      "end": 845.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "As",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 845.75,
+      "end": 882.31,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "an example of this, There's, you know, the show black mirror, which really only looks at one causality. It says, ah, we have tech, and that has changed society, and it has changed society for the worse. And that's an okay perspective. I love the show black mirror. But actually what's happening is there's this reinforcing feedback loop between technology and society, where technology changes society, and then society changes technology. So it's not just like, ah, we have this black mirror where we're just, we're... the black mirror makes society worse. No, no. Instead, society can actively shape technology, and then that technology will then shape us. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 882.31,
+      "end": 883.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 883.47,
+      "end": 952.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "an example of this bidirectional causality. The second piece here is that most behavior is the result of an underlying reinforcing feedback loop. So the way that I think about this is, let's actually use some specific examples here, because I think it will be most helpful. So this is... both at the micro level and at the personal level, at the, sorry, at the macro level and at the personal level, at the macro level, you know, there's this question of why do Facebook and YouTube try to addict you so much? Why do they have the auto players and the dopamine vibes? Well, it's because it's an arms race. It's because Facebook increases their own addiction, and then YouTube needs to as well to keep up, or else they're going to lose viewers to Facebook. And so... there's this feedback loop where Facebook makes it a little bit more addictive, and then they start getting more people over there. Oh, and then, but then YouTube has to be more addictive, and so they get more folks over here, but then Facebook has to get more addicted. And before long, it's just, we're addicted to our computers. And the reason why this is helpful is because when you think of this behavior is the result of the underlying reinforcing feedback loop,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 953.21,
+      "end": 954.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 954.01,
+      "end": 962.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is not the case that people at Facebook or YouTube decided in 2006 when they were getting created, hey, let's addict people a lot.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 963.64,
+      "end": 964.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 964.24,
+      "end": 970.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is not true. Instead, what happened is there was this underlying feedback loop of trying to battle for attention.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 972.05,
+      "end": 972.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Excuse me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 972.97,
+      "end": 983.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And that feedback loop then created this behavior of, it created this arms race and it created this reinforcing feedback loop, which made us more addicted.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 985.04,
+      "end": 1039.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "That's what we mean by the behavior is the result of this underlying feedback loop. You have this feedback loop and then boom, we see it as behavior at the symptom level, but actually there's this deeper thing that was true that made that top thing true. Or you can look from the personal level with something like a panic attack loop. So this is when someone has a panic attack and they feel, they start by maybe like feeling the anxiety in their body. And then when you feel in your body, your reaction to it is, oh, Why am I feeling that? Or, oh, I'm scared. I'm going to get another panic attack. But then that reaction of judgment or fear creates then more anxiety in the body. And then, oh, no, we're back to the first part. Oh, you back to more anxiety in the body. More judgment and more fear. And then boom, boom, boom. Reinforcing, reinforcing, reinforcing, really intense panic attack for someone. So that's this, you know, body anxiety is connected to mind anxiety thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 1040.21,
+      "end": 1040.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 1040.69,
+      "end": 1041.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so at a.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 1042.52,
+      "end": 1043.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 1043.04,
+      "end": 1060.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, a symptom level, you might be like, oh, I just have this panic attack. But actually what's happening are these reinforcing feedback loops happening deep within you that then lead to this overlying behavior. And if you look, pretty much all behavior is the result of these feedback loops.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 1061.46,
+      "end": 1062.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 1062.02,
+      "end": 1070.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that is why it's important. It's because things are based off of this. There's an important word here called generator function,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 1072.6,
+      "end": 1098.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "stands for the underlying feedback loop. And I want to give an example here. There's this idea that we're in fragile times with meta existential risk. This is an article I wrote. And the idea behind meta existential risk is that you see all these things. This is a this is a thing where it's like flat, flat, flat, flat, flat, oh, exponential curve, flat, flat, oh, exponential curve. Flat, flat, flat, oh, exponential curve. Flat, flat, flat, oh, exponential curve.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 1099.36,
+      "end": 1099.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Maybe",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 1099.84,
+      "end": 1146.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "there's some shared thing here. And all of these graphs, this top one, top left, is climate change. It's the amount of atmosphere, CO2 in our atmosphere. This one on the top right is the supercomputer flops. So this is AI and how much better we're getting at that. The bottom left is the genome, how cheap, or, yeah, how many genome base pairs we can sequence per dollar. That's getting a lot, a lot more. So that's kind of like biosecurity stuff. And then finally, this is nuclear warheads where you have not very many at the beginning. And then the blue is the U.S. and the red is Russia. And then we both start to make a lot, a lot of nukes. Luckily, they're down a bit. But again, it had this exponential curve. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 1146.83,
+      "end": 1148.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 1148.29,
+      "end": 1173.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "question between all these you can ask is, oh, we have this overlying behavior, which is a bunch of these exponential loops, which could be... good for society, but it could be really bad for society. And the question to ask yourself is, ah, what is the underlying generator function? What are the reinforcing feedback loops that have created this behavior? So, yeah, that's what you just ask? You ask, what is the generator function of this perceived behavior? So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 1173.88,
+      "end": 1175.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 1175.5,
+      "end": 1200.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "crucial. And in this example, it is, the generator function is competition, is like market competition roughly. It's a little bit different, different things, but Yeah, that's kind of the underlying generator function of this specific one. So that's to say that this is the second one. Most behavior is the result of an underlying reinforcing feedback loop, and that's why understanding feedback loops is helpful because it is the generator function for all of life. So you should understand them.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 1201.09,
+      "end": 1201.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 1201.43,
+      "end": 1213.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "third one here, I just want to note, I've been talking a lot about reinforcing feedback loops, but we should also think about balancing feedback loops. They create stability in life. And so if you think about something like climate change,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 1213.76,
+      "end": 1214.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 1214.96,
+      "end": 1238.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we're going to need some balancing feedback loops to integrate, you know, carbon back, or to integrate these greenhouse gases, to remove greenhouse gases from our world, to make it the case that we just don't take out all of our fish in the ocean or trees in the land. We need to close the loop. We need to create balancing feedback loops instead of just allowing these reinforcing ones to go exponential on us.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 1240.03,
+      "end": 1284.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, those are feedback loops. And a little bit of interactive time, please try out nkase.me slash loopy and try making one of these causal loop diagrams. They're very, very, very easy to make and they're fun. So try doing one with COVID cases or with climate change. You know, with COVID cases, it'll be, to give you a little bit of a hint, it's on one side you have COVID cases and on the other side you have, or, you know, more COVID cases. And what happens is, If you have some COVID over here, oh, it creates more COVID over here, which then creates more COVID over here. And then, oh, boy, before you know it, you have exponential curves of COVID. So, yeah, try it out. Please. I'll pause for a second and allow you to go to that site if you would like.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 1287.31,
+      "end": 1314.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay. So another interactive thing to do is within your own life to just... Check out these, to try to see bidirectional causality in your own life. So we often see stuff as X informs Y, but also don't forget that Y affects X. So as a specific example here, if I'm annoyed because my friend was late, then the way I think about this is, my friend was late, therefore I was annoyed.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 1315.63,
+      "end": 1316.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 1316.07,
+      "end": 1346.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you can ask yourself, hey, you can go back in the causality chain. You can say, well, why was my friend late? And then try to really understand that underland, the generator function of their lateness. Was it that they were taught to be late in childhood? That was mine. I was always taught, I was taught to be late. Or maybe it was something else for a reason why they were late. So trying to understand that more is part of this, but also trying to understand it, the other causality. Well, maybe my annoyance made them late. That feels weird because it's like, no, I was only annoyed because they were late.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 1347.49,
+      "end": 1347.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 1347.83,
+      "end": 1374.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "maybe I was annoyed the last time they were late, and then they don't want to hang out with me as much. And so they're late the next time. So you can kind of, this is what it feels like to think in feedback loops. And I do want to think about, I ask this question here is, what do these feedback loops feel like? I think it's good to kind of feel into your body, honestly, here. And to really, and I'm closing my eyes, obviously. And you can kind of, what it feels like is.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 1376.28,
+      "end": 1376.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 1376.78,
+      "end": 1377.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "have a,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 1379.79,
+      "end": 1380.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 1380.49,
+      "end": 1387.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "have the world as it exists. And when you start to think in feedback loops, you start to see",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 1387.49,
+      "end": 1388.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 1388.84,
+      "end": 1402.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "bidirectional causality. And you start to see how certain behavior changes other behavior and how they inform each other. You start to see these scary reinforcing feedback loops, these cycles. You start to also see these beautiful balancing ones.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 1403.46,
+      "end": 1403.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 1403.96,
+      "end": 1416.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you also start to look closer to the like, the root cause of some of these things, the generator functions that are creating this behavior that we perceive at the surface but is in fact caused by these underlying things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 1418.61,
+      "end": 1419.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 1419.77,
+      "end": 1420.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So that's what it feels like.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 1422.57,
+      "end": 1440.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay. So let's talk about agent-based systems. This is another way to think about systems. And the way to think about it is... Instead of these loops, what you get is, and you may have seen these graphs with COVID, there's this great one from melting asphalt, this guy, Kevin Simler, which shows",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 1440.69,
+      "end": 1442.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1442.61,
+      "end": 1449.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "agent-based system is one where you have a bunch of different agents, and they are interacting with each other based off of rules. And so in this one,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1451.03,
+      "end": 1504.85,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "they're interacting with each other based, these are like humans, each little squares a human, and they're interacting with each other based off of like transmission dynamics, COVID transition. transmission dynamics. And so you can see in a system like this, how the COVID spreads in this little graph. So that's what agent-based system is. It's kind of like looking from the top down at the network. It really looks, when people talk about networks, they're often thinking with agent-based systems. You know, this one on the left is a network of all the Twitter use during a given day. And this one on the right just shows a bunch of these little what you call nodes in the network are the little dots, the like little agents, and then the connections or the edges in the network are the other things. So, yeah, these are agent-based systems, are ones where you think, what are all the agents in the systems, what are their rules, how are they connected, and then how do they interact? So that is an agent-based system,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1504.99,
+      "end": 1505.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1505.83,
+      "end": 1506.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what do they feel like?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1507.55,
+      "end": 1507.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1508.07,
+      "end": 1511.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it often feels like looking from that kind of God perspective of...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1512.3,
+      "end": 1512.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "looking",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1512.98,
+      "end": 1535.41,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "down at a network of interactions, understanding the rules, and then seeing the kind of emergent behavior that results. So that is an agent-based system. Now let's talk about emergence and multi-scale phenomena. And emergence is when something is greater than the sum of its parts.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1536.23,
+      "end": 1536.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1536.85,
+      "end": 1538.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "as an example here,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1539.71,
+      "end": 1540.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1540.17,
+      "end": 1588.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "have on the right ants, ant colonies, they're amazing. You have these ants that look like they're actively being smart. They're working with each other to lift each other up and get up to this leaf or whatever. But actually, when you understand the ant, it has, it doesn't have, it's not smart. Ants are not smart. They have a bunch of these specific rules and like pheromones that they give to each other. But... This like getting up on top of this leaf is more like emergent behavior that comes from these simple rule sets. So that's that's the idea here. It says you have these simple rule sets, but then the sum of its parts like, whoa, this is crazy. These ants are doing something that I would never have expected from just like these four simple rules or whatever.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1591.86,
+      "end": 1592.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1592.34,
+      "end": 1628.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is important because we are transitioning in society into this networked human organism. Again, this Twitter thing of here's all the, here's those four billion networked smartphones all talking to each other. And you can think of ourselves now as this, you know, this human colossus that, you know, we're all this connected thing on Earth. And the question then is, if that's what's emerging, this networked human organism, well, what are the underlying rules of that networked human organism? And for example, Should we have 140 characters on Twitter or 280? That's a very simple one, but that leads to very different outcomes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1628.64,
+      "end": 1629.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1629.76,
+      "end": 1635.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the emergent level. So that's what we need to think about here is, and that's why it's important, is because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1635.44,
+      "end": 1636.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1637.14,
+      "end": 1646.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "are this connected human organism, and we need to understand how our rules that we set an individual level then lead to emergence at the macro level. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1646.04,
+      "end": 1647.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1648.0,
+      "end": 1714.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and it's very connected to this idea of multi-scale thinking. which is understanding behavior at the micro and the macro scales. So, for example, here's this great little graph from weight, but why? What he calls the emergence tower, where you have these subatomic particles at the bottom and then atoms and higher up to cells and then animals at the top here. And each one, you know, when you look at a bunch of atoms together, those things... When you look, then they turn into a molecule and you're like, whoa, how did the molecule come from these atoms? The sum is greater than the, or the hole is greater than the sum of its parts. That happens all the time. And when you keep on zooming out and out, something like an ant to an ant colony where it's like, oh, you have these ants. Okay, they have these rules. Whoa, you have this emergent thing, this ant colony, which is amazing and is greater than the sum of just the ants in the ant colony. So that's what we mean my multi-scale thing is being able to go from the hyper small perspective to the hyper large perspective and to see how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1714.71,
+      "end": 1716.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "behavior",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1716.47,
+      "end": 1718.35,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "changes at those different scales.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1719.01,
+      "end": 1719.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1719.57,
+      "end": 1836.42,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1836.62,
+      "end": 1915.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "hurt people, or you have, you know, yeah, specific reinforcing feedback loops at the x-axis. But then you can zoom up or down at the y-axis with multi-scale. I think that's just a helpful little visual. One other final fun example of multi-scale emergence is this thing called Conway's Game of Life. And again, there are these really basic rules that you don't really need to understand. But sometimes the things die because they're lonely. Sometimes they die if they're overpopulated. Sometimes they reproduce if there's the right amount around them. And sometimes they just hang out because they're good with their current community. So there are these four simple rules for this little game, these little black dots moving around on the screen. And what you can do with this is it creates this weird emergent behavior of this glider gun where you can make these two little things here. And what they'll do is they'll hit each other. And then they'll make this beautiful little glider thing, which seems to move across the grid space. But actually, all this is is just those four simple rules. And you can actually create a lot of cool behavior with this. I recommend checking it out. And again, it's this example of multi-scale dynamics where the small rule set leads to these larger things, larger emergence.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1916.78,
+      "end": 1918.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1918.81,
+      "end": 1936.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "multi-scale emergence feels like in conversation is you say things a lot like, let's zoom out a level, or, well, at that scale it looks like this, but at this scale, it looks like that. And you can also think, oh, Well, if we set these constraints or these rules, what emerges higher up? That's kind of what it feels like to talk about.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1938.47,
+      "end": 2010.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, so let's do some interactive stuff. How does our, the first interactive thing is how does our brain exhibit emergent behavior? What are the micro level rules and what is the macro level behavior? Let's actually do this one together for a second. So, and it feel for you to pause, but I'm about to go into it. The brain exhibits emergent behavior. because at the micro level, you have these neurons and these neurotransmitters that are just following these rule sets. But then the macro level behavior, what emerges is consciousness? You know, this theory of mind, this self? That's weird, right? So that's a good example of multi-scale emergence. You can also think about something like a flock of birds. What are the microscale rules and then what is the macro behavior that happens? How does the flock form? Check out this thing, R slash place. That is a beautiful exhibition of emergent behavior with humans on Reddit. Yeah, so feel free to go to those if you would like and take the time to explore that. Okay. As a final note here, what does it feel like? What does this multi-scale emergence feel like? Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 2011.71,
+      "end": 2013.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "hmm. Again,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 2013.39,
+      "end": 2014.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "feeling into the body just a bit.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 2016.34,
+      "end": 2017.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Multiscale emergence",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 2017.51,
+      "end": 2023.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is this ability",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 2023.51,
+      "end": 2026.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "to think at multiple levels and multiple scales",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 2026.95,
+      "end": 2027.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 2027.73,
+      "end": 2033.63,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "see these underlying rule sets or these constraints or incentives that are happening at the lower level",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 2033.63,
+      "end": 2034.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 2034.61,
+      "end": 2035.63,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then lead to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 2035.63,
+      "end": 2037.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "these really",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 2037.83,
+      "end": 2040.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "interesting behaviors at the higher level.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 2040.64,
+      "end": 2041.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 2041.32,
+      "end": 2044.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the thing that emerges feels weirder than the sum of its part.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 2045.57,
+      "end": 2046.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 2046.57,
+      "end": 2050.01,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So that's what multi-scale emergence feels like. Okay. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 2050.01,
+      "end": 2051.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "before",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 2051.56,
+      "end": 2104.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we conclude, I want to note to you as you start to try to think in systems, I want to say what it will feel like to integrate your learning into your life and also things to watch out for. So what it feels like to integrate systems thinking into your life is this active awareness of it. You'll start to build this active awareness where it's unconscious at the beginning and it becomes more and more conscious. And then back to unconscious. And the first key thing is this both sidesism, where you will be actively starting to see everything from multiple perspectives. You know, when you're in conversation with a friend or when you see some kind of behavior, you'll be like, oh, that's interesting that my knee felt like that. What made my knee feel like that? Oh, is my knee making that feeling? And you'll start to just see. things from multi-prospectives, a lot, this bidirectional causality. That's really good, and that's a beautiful first step.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 2105.78,
+      "end": 2106.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 2106.22,
+      "end": 2121.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "downside of it, what to watch out for is when you do that without saying which has more weight. So, for example, if I'm having a discussion with a friend and I was very angry at them, let's say I yelled at my friend, and then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 2121.62,
+      "end": 2122.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 2123.15,
+      "end": 2127.31,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "got maybe angry at me or sad, it would be wrong to say that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 2127.86,
+      "end": 2128.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 2128.3,
+      "end": 2139.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "both had the same, that it was just a feedback loop. Oh, well, it was your sadness that made me mad and my madness that made you sad. That might be true, but it's also worth saying, how much",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 2140.1,
+      "end": 2141.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "weight",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 2141.88,
+      "end": 2184.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "did my anger have on the situation? You shouldn't, not all flows are the same flow. Some of them, the pipes are really big. Some of them the pipes are less big. So when you get to mastery, you'll feel, You'll be able to see all the different parts of these systems, but then you'll also be able to give them weights, which is like, okay, 80% of it was me hurting you, though it is true that your hurts also hurt me back. So that's what it feels like. Okay, so that is the conclusion of today's episode. We talked about what is systems thinking. We talked about why you should think in systems. Give a quick history of systems thinking. Talked about feedback loops and agent-based systems. And then talked about this emergence and multi-scale thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 2186.55,
+      "end": 2219.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I hope it was helpful. The next video, we're going to talk about paradigms, what are paradigms, which are very connected to systems, but are different. And I'm excited to see you in that video. Hopefully it's linked below or something of that variety. And again, if you enjoyed this, thank you for watching. Please let me know if you have any feedback or questions. If you are not already in the Root Fellowship, join it. You know, it's great. It's this community of world-class systems thinkers looking to understand and build the future. So please check out root.com to explore. Okay, thank you and goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 174,
+    "withheld": 1,
+    "published": 173
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

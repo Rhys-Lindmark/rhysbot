@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "id": "podcast-53bf3d1326003d4931ee",
+  "title": "Is there anything out there?",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=wehBipG0C30",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "wehBipG0C30",
+  "youtube_url": "https://www.youtube.com/watch?v=wehBipG0C30",
+  "audio_sha256": "44a805f4ba740a5bbe6dddb641ba77a5801639645a83f6ebff3dfaa8f1f948c8",
+  "audio_duration_seconds": 59.814625,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 173,
+    "unknown_words": 5,
+    "unknown_words_fraction": 0.028901734104046242,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 26.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "What we are trying to do is not look at the past, the reports, trying to figure out, because they were anecdotal, the data was incomplete. What I've seen publicly is always fuzzy and unclear. Instead, the sky is not classified, so we will take our own data. And once we have several tens of these observatories in many locations, we will get all this of magnitude more data than was ever reported in the past, and it will be of high quality because...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 26.73,
+      "end": 27.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 27.15,
+      "end": 39.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "have full control over the instruments and we understand, we calibrate them. And then we use machine learning and artificial intelligence to analyze that data and figure out whether we are looking at a natural object like a bird",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 39.17,
+      "end": 39.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 39.95,
+      "end": 42.65,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "we are looking at a human-made object like a balloon",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 42.65,
+      "end": 43.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 43.85,
+      "end": 44.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "perhaps",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 44.49,
+      "end": 45.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 45.55,
+      "end": 52.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "extraterrestrial. That would be the main question. Is there anything out there? It's obviously a mixed bag. You have all kinds of objects, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 52.49,
+      "end": 53.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 53.11,
+      "end": 56.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "question is whether any of them could be extraterrestrial.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 11,
+    "withheld": 0,
+    "published": 11
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

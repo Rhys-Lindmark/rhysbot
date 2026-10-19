@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "id": "podcast-481741eee9337de803d9",
+  "title": "Enabling innovation in the world of venture capital",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=SDfvZcTZkpU",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "SDfvZcTZkpU",
+  "youtube_url": "https://www.youtube.com/watch?v=SDfvZcTZkpU",
+  "audio_sha256": "43e35e1bd73bf367273cd14ab4ffdac2d38d7ca10fea5e3f8e47d6fd8cf28536",
+  "audio_duration_seconds": 59.9539375,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 174,
+    "unknown_words": 6,
+    "unknown_words_fraction": 0.034482758620689655,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 14.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "A lot of the enabling infrastructure to start a venture fund, primarily driven by the work that Angelus is doing, is now far more accessible. So it's easier to start smaller funds. Specifically, Angelus has a product called rolling funds",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 14.86,
+      "end": 15.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 15.38,
+      "end": 23.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "you can get LPs to subscribe to your fund on a quarter by quarter basis. What traditionally used to happen",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 23.74,
+      "end": 24.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 24.28,
+      "end": 27.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "you needed to raise from LPs and have this big bang",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 27.76,
+      "end": 28.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "close.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 29.38,
+      "end": 36.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Event, it's much harder to do that if you don't have a track record. And the kind of cold start problem always was,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 36.28,
+      "end": 36.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 36.82,
+      "end": 45.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "LPs don't want to invest in you because you don't have a track record. And then how do you build a track record? If you don't have enough personal capital to angel invest, if you're not a scout",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 45.12,
+      "end": 45.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 45.72,
+      "end": 49.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "actually prove to LPs, right, that you actually do have good access",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 49.6,
+      "end": 50.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 50.36,
+      "end": 58.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "can be like a high performing investor. So rolling funds, I think to an extent actually solves that problem. It's really important enabling innovation.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 13,
+    "withheld": 0,
+    "published": 13
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

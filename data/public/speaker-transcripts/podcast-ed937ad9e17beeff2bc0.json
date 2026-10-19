@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "podcast-ed937ad9e17beeff2bc0",
+  "title": "Progress or inequality with Daron Acemoglu",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=6dX9LjB6F5A",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "6dX9LjB6F5A",
+  "youtube_url": "https://www.youtube.com/watch?v=6dX9LjB6F5A",
+  "audio_sha256": "eef734a8fdceae5212ce26e6c791a3415c931907f4e3011e6f422292bf0b1809",
+  "audio_duration_seconds": 28.723125,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 80,
+    "unknown_words": 1,
+    "unknown_words_fraction": 0.0125,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 0.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 0.32,
+      "end": 26.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you ever wondered why we've had so much technological progress recently, but the gains aren't widely distributed? Well, today, we have a very special episode with Daron Asimoglu that dives into that. It's a history of how different technologies have or have not, driven shared prosperity, and then applying those learnings to the gains from AI. As always, let me know what you think of Daron and stay on to the end to hear his overrated and underrated. Thanks.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 2,
+    "withheld": 0,
+    "published": 2
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

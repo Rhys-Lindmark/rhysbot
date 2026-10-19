@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "id": "podcast-226e9fb0f3643e60911c",
+  "title": "Taxing Robots",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=4hZFh8yXU6o",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "4hZFh8yXU6o",
+  "youtube_url": "https://www.youtube.com/watch?v=4hZFh8yXU6o",
+  "audio_sha256": "0a6940979893e14464ffd1b26d0085f73dfe22320314f08b2ccfe3610306d557",
+  "audio_duration_seconds": 59.791375,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 154,
+    "unknown_words": 7,
+    "unknown_words_fraction": 0.045454545454545456,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 10.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "We subsidize capital, meaning when you buy algorithms or machines to replace workers, and if you hire workers, we tax them. So leveling the playing field,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 11.3,
+      "end": 11.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "no,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 11.82,
+      "end": 20.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "I don't think we need to tax robots. If we just level the playing field, that will actually go quite a long way. And we don't think we should be taxing robots. We like automation as long as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 20.6,
+      "end": 21.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 21.32,
+      "end": 24.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "are other things that increase human productivity at the same time. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 24.56,
+      "end": 26.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "our vision",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 26.75,
+      "end": 28.81,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "is not to prevent automation.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 29.53,
+      "end": 29.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 29.79,
+      "end": 34.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "have a more balanced technology portfolio. And to contribute to that, there may be room for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 34.78,
+      "end": 36.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 36.12,
+      "end": 51.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "government to have competitions or NSF or NIH or Department of Defense-like programs which identify users of AI that are going to be more human complementary. Like, for example, in education, should we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 51.04,
+      "end": 51.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "put",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 51.66,
+      "end": 57.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "more AI in order to replace teachers or create more individualized teaching programs or empower nurses?",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 13,
+    "withheld": 0,
+    "published": 13
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

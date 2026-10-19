@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "podcast-c98d7970cd41c21a4f58",
+  "title": "An appreciation for awe",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=yXaX_QFhFsM",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "yXaX_QFhFsM",
+  "youtube_url": "https://www.youtube.com/watch?v=yXaX_QFhFsM",
+  "audio_sha256": "9b0f5516c8499a4b4a7cb4d997d716e18a4cfdc53d6e19a7b0e7beed2b37bc4d",
+  "audio_duration_seconds": 43.792875,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 152,
+    "unknown_words": 1,
+    "unknown_words_fraction": 0.006578947368421052,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.61,
+      "end": 0.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 0.97,
+      "end": 39.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "love this little scene from Patterns and Repeat, where Ada and Lock are driving through the city, and it feels unending. Ada says, I think I'm gaining an appreciation for awe. And this was inspired by a beautiful scene from Marcel the Shell, where Marcel's creator, Dean, takes Marcel out of the house and into see a suburb of L.A., and Marcel is just used to that one little house and says, wow, the world is so big. And then Dean is like, well, this isn't even that much of it. This is just part of a city. And actually, there's thousands of cities around the world. And Marcel goes, whoa. That really stuck with me. The sense of scale in the world. Marcel felt it. And I think AIs might feel it too. And so I hope I was able to capture a little bit of that feeling here.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 2,
+    "withheld": 0,
+    "published": 2
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

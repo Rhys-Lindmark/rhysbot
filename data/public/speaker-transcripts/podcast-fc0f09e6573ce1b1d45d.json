@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "podcast-fc0f09e6573ce1b1d45d",
+  "title": "Animal Liberation Now with Peter Singer",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=Db5sUuj982o",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "Db5sUuj982o",
+  "youtube_url": "https://www.youtube.com/watch?v=Db5sUuj982o",
+  "audio_sha256": "bb97e962c87cbc836f3e95859b96d5a868673bf587b3d8d72c08350467ffdc41",
+  "audio_duration_seconds": 58.7000625,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 213,
+    "unknown_words": 0,
+    "unknown_words_fraction": 0.0,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 58.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Today I chat with Peter Singer, who is one of the world's top philosophers, and he helped kickstart the animal rights movement and also effective altruism. And he wrote this great book called Animal Liberation in 1975, and he just updated it 50 years later, kind of a huge, massive update, not just a forward, but like rewriting two-thirds of the book. And so we chat about that today. We chat about kind of the state of the animal rights movement. And what that means is we chat about kind of four big topics. One is we talk a little bit about what it was like 50 years ago. And then we chat about, you know, why he updated the book, you know, and what has changed in 50 years. And, you know, both on the hyper-capitalism side and how we treat animals, which, you know, Peter goes in and talks about some of these really rough conditions. And then third, we chat about how to fix it, you know, and a big thing that Peter's excited by is, you know, cellular chicken, cellular dairy, and these kind of new science things that will get those cost curves down to kind of give people alternatives to meat that they still love.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 1,
+    "withheld": 0,
+    "published": 1
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

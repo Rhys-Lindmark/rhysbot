@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "id": "podcast-b266e11ad63dfcf61ac6",
+  "title": "Strong Operation. Strong Foundation.",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=aS0aaMWfrhQ",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "aS0aaMWfrhQ",
+  "youtube_url": "https://www.youtube.com/watch?v=aS0aaMWfrhQ",
+  "audio_sha256": "80adf4aedd21db4925a2a581212df32899d608e58972c05b6e45f680eca56ae9",
+  "audio_duration_seconds": 59.9539375,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 179,
+    "unknown_words": 4,
+    "unknown_words_fraction": 0.0223463687150838,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 10.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "You can muscle an idea off the ground, but if you can't get a repeatable motion down, whether it's the technology and supporting or the sales motion, you know, founder-led sales can be very effective",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 10.84,
+      "end": 11.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 11.68,
+      "end": 25.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "a point. And then you can hire like a couple of people, but if you can't get that repeatable motion and you can't build a truly, you know, enduring large company. And so I think that there is more recognition now that the importance of.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 27.27,
+      "end": 27.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 27.63,
+      "end": 40.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "making sure you have a strong operation and strong foundation. And so you are seeing more COOs, right? There weren't as many COOs, especially in the tech world. And the COO role, by the way, differs",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 40.07,
+      "end": 40.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 40.89,
+      "end": 44.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "company to company, right? And understand what needs to be done",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 44.71,
+      "end": 45.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 45.31,
+      "end": 54.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "then figure out who to hire. And that's also what you do as a CEO, because CEO, a lot of these things you're doing for the first time, but you need to learn enough about what it is to figure out what you need to hire for.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 9,
+    "withheld": 0,
+    "published": 9
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

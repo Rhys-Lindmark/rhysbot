@@ -1,0 +1,5130 @@
+{
+  "schema_version": 1,
+  "id": "podcast-29f2d4cf941ad5ff614a",
+  "title": "#15 Marshall Ganz, Harvard: The Power of Narrative and How Tech Has Changed Organizing",
+  "published_at": "2019-08-01T02:41:05Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/15-marshall-ganz-harvard-the-power-of-narrative-and-how-tech-has-changed-organizing",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/659357435-the-rhys-show-15-marshall-ganz-harvard-the-power-of-narrative-and-how-tech-has-changed-organizing.mp3",
+  "youtube_id": "Qiy44XpeOMc",
+  "youtube_url": "https://www.youtube.com/watch?v=Qiy44XpeOMc",
+  "audio_sha256": "d2f086260e50bc0be3c5c8f87a5b5b1154600dec627ed9922cf8b5d655d00453",
+  "audio_duration_seconds": 3143.3926875,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 8623,
+    "unknown_words": 379,
+    "unknown_words_fraction": 0.043952220804824305,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 10.77,
+      "end": 11.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 11.53,
+      "end": 38.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everyone. My name is Reeslinmark, and you're listening to Gray Mirror, a podcast from MIT Media Labs Digital Currency Initiative on Technology, and Ethics. And unlike something like Black Mirror, which just looks at the negative impacts of technology on society, we are Gray Mirror, so we look at the positive and negative impacts of technology on society. And please, if you have any feedback, reach out on Twitter. And if you like the show, give us a five-star rating on your favorite podcast app. We really do appreciate it. Thanks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 41.87,
+      "end": 42.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 42.31,
+      "end": 142.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "today I interview Marshall Gans, who's a Harvard professor, but he's actually most famous for leading political organizing with Obama in 2008, the United Farm Workers with Caesar Chavez and Dolors Huerta in the late 1900s, and a variety of other kind of organizing, political organizing things. So in today's episode, I mean... A, I really, really enjoyed how much Marshall emphasizes emotions and narrative as a part of building movements. And it's a part of just connecting to people more generally. And especially this is kind of a breath of fresh air coming from the more hyper-tech world. And even this podcast, which often comes less... you know, from the emotions and narrative side and more from the mental kind of system side. So that was really great. And another piece of that that's very aligned is that I asked, you know, Marshall has this framework of the story of self, the story of us, and the story of now. And so I ask Marshall to answer those questions about himself. And so that's just very nice to get deeper into his own background and to understand more of how he thinks about the world and why he is who he is today. And then finally, of course, we also chat about how tech has changed organizing more generally. And Marshall, again, kind of brings his kind of human perspective towards this and really emphasizes the significance of renationality to building collective capacity and how tech doesn't really enable that at all. And instead of enabling it, we're actually instrumentalized by it instead of being empowered by it. So it's kind of a sad take, but it's, you know, Part of maybe the fun take about it is we also explore crypto at the end as a form of maybe networked nonviolent protests. So this is to say, it's a really nice episode today with Marshall. I'll do a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 142.39,
+      "end": 151.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "longer reflection at the end of the episode if you want to listen to it there, but really enjoy today's episode and get to feel Marshall's warmth come through your ears. Okay, thanks and goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 154.67,
+      "end": 165.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello, everyone. You're listening to Gray Mear. And today, I'm super excited to interview Marshall Gans. And we're in person, which is always fun looking at each other on the desk. And so Marshall, thanks so much for being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 166.29,
+      "end": 167.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Oh, glad to be here.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 167.47,
+      "end": 190.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, excited to dive in. And I think... We're going to chat a lot about Marshall's kind of history and background with organizing, community organizing. But before we do that, you have this interesting concept of the story of self, the story of us, and the story of now. Could you kind of explain to our listeners like what those are and then what your answers for them would be in today, you know?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 190.71,
+      "end": 197.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Well, no, that's very well put. I mean, basically in teaching organizing, we teach it as a form of leadership.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 198.5,
+      "end": 198.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 198.98,
+      "end": 215.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's rooted in three questions posed by the first century Jerusalem scholar Rabbi Hillo, who when asked, how do I figure out what to do with my life? Responded with three questions, the first to ask yourself, if I am not for myself, who will be for me?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 215.9,
+      "end": 216.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 216.38,
+      "end": 220.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not meant to be selfish. It is meant to be self-regarding. Like if you presume",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 220.74,
+      "end": 221.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 222.96,
+      "end": 287.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "accept leadership with respect to others. You better be clear about your own values, what you bring to it once for. It's kind of a demand for self-awareness and self-appreciation, I think. Then the second question, though, is if I am for myself alone, or when I am for myself alone, what am I? Meaning to be a who, a human being, and out of what a thing, is to recognize our inherent relationality. I mean, Our capacity to realize our objectives is inextricably wrapped up the capacity of others to realize theirs. We are relational creatures. And finally, he says, ask yourself, if not now, when? Not advice to jump into moving traffic, but a caution against what Jane Adams called the snare of preparation. You know, just another year of strategic planning, we'll have the perfect plan. and then we'll act, and the world will totally conform to our expectations, which it never does. And so for me, leadership's about the interaction of these three elements of self, with others, with action, and how they hang together.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 288.06,
+      "end": 288.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 288.62,
+      "end": 291.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "fact their questions is also important, because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 291.06,
+      "end": 292.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 292.36,
+      "end": 294.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you think about what the domain of leadership is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 295.84,
+      "end": 297.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "rarely",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 297.38,
+      "end": 304.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "has it been people's experience that when everything is going really well in their organization, people say where's the leadership so we can thank",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 304.79,
+      "end": 305.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "them?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 305.89,
+      "end": 310.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Usually when people say who's in charge here, when do they say it?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 310.61,
+      "end": 311.65,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Bad things are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 311.65,
+      "end": 312.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "happening, uncertainty.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 313.63,
+      "end": 315.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "It's challenging. And so it's sort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 315.89,
+      "end": 317.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 317.26,
+      "end": 328.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "actually understand that accepting a role for leadership is not about some ideal state of control, but it's rather like dealing with the challenging and the unexpected and problematic.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 329.04,
+      "end": 329.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 329.68,
+      "end": 330.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 330.79,
+      "end": 331.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "In",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 331.21,
+      "end": 345.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "other words, if you have a good system set up, that's great. That doesn't take leadership. Leadership is adaptive and creative and able to deal with these kinds. That's the whole point. And so that's also pretty challenging because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 345.01,
+      "end": 346.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 346.63,
+      "end": 351.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "ask yourself, do I have the skills to deal with this new stuff? And that's a challenge to the hands.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 352.57,
+      "end": 353.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 353.09,
+      "end": 358.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I use my resources in new ways? And that's a strategic challenge, a challenge to the head.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 359.21,
+      "end": 359.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 359.69,
+      "end": 371.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then there's, where do I get the courage? Where do I get the hope? How do I inspire the hope and courage and others to take the risks that are often involved in dealing with serious challenges? And that's a challenge to the heart.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 371.83,
+      "end": 372.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 372.35,
+      "end": 379.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's thinking of leadership in a head, hands, heart kind of way. And so for me, the definition then is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 379.89,
+      "end": 381.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 381.13,
+      "end": 385.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I use is leadership is about accepting responsibility because there is a choice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 386.19,
+      "end": 386.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 386.69,
+      "end": 392.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "enabling others to achieve shared purpose. So this is not a diva model of leadership",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 392.65,
+      "end": 393.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "under",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 393.65,
+      "end": 404.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "conditions of uncertainty. So responsibility enabling others to achieve shared purpose under conditions of uncertainty. And so it's not, then it is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 404.99,
+      "end": 406.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "approaching",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 406.27,
+      "end": 423.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "leadership that way makes it more of a practice, you know, than a position. We're certainly... have all had experience with people who occupy positions of formal leadership, but turn out to be pretty awful leaders. Like every day, we get to experience that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 423.33,
+      "end": 423.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "On",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 423.87,
+      "end": 431.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the other hand, we meet people in workplaces and schools and neighborhoods who are exercising leadership in the way I'm describing it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 431.59,
+      "end": 432.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 432.41,
+      "end": 435.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the time. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 435.34,
+      "end": 436.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "understanding",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 436.8,
+      "end": 438.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it to be a practice, the other is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 438.78,
+      "end": 439.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 439.6,
+      "end": 441.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a lot more about learning than knowing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 441.9,
+      "end": 442.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 442.54,
+      "end": 447.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you can't know all the answers. Nobody can. The future is indeterminate. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 447.7,
+      "end": 448.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 448.78,
+      "end": 452.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's the capacity to ask questions that reveal",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 452.4,
+      "end": 453.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "answers,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 453.72,
+      "end": 458.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that reveal pathways that's really fundamental here. So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 458.22,
+      "end": 459.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 459.46,
+      "end": 468.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, narrative is one of the ways we've learned to access the emotional resources embedded in our values",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 468.72,
+      "end": 469.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 470.26,
+      "end": 477.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "learn how to... how to replace reacting in fear",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 477.42,
+      "end": 478.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 478.44,
+      "end": 494.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the unexpected or to the threatening, by turning it into a challenge to which we can respond. In other words, turning threats from which we must flee into challenges with which we can engage.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 494.68,
+      "end": 495.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 495.44,
+      "end": 504.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the elements there are about, on the one hand, sometimes being able to articulate the nature of a challenge",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 504.95,
+      "end": 506.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "profoundly",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 506.09,
+      "end": 509.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to people who are stuck in habit or business as usual.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 511.07,
+      "end": 541.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And that is an emotional piece of work. Or to develop the emotional capacity to respond with hope over fear, with solidarity or love over alienation, with a sense of self-worth as opposed to self-doubt. So there is an emotional agenda. necessary for the exercise of agency. And we think of agency primarily in cognitive terms, but without the emotional capacity, we're reactive. And so,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 541.9,
+      "end": 542.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 542.54,
+      "end": 557.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it also means understanding that values, the content of values is emotion. It's how we feel about things. It's like St. Augustine said, it's one thing to know the good, another, to love it, loving it is what enables action upon it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 557.8,
+      "end": 558.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 558.14,
+      "end": 567.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so emotion, motivation, movement, that's the whole other side. We can work on the cognitive side to answer the question, how do I do it?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 567.6,
+      "end": 567.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 567.82,
+      "end": 579.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to answer the question, why do I care? Why should anybody care? We've got to work on the emotional side. It's accepting that there is such a thing as a language of emotion, just as there is a language of cognition.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 579.64,
+      "end": 580.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 580.1,
+      "end": 588.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "tend to dismiss emotion and treat it as something gets in the way. that our humanity gets in the way because we are emotional and cognitive creatures. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 588.72,
+      "end": 592.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 593.08,
+      "end": 598.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like Pascal said that the heart has reason of which reason does not know. And we all know",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 598.14,
+      "end": 599.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "emotional",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 599.46,
+      "end": 610.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "language. Music speaks a language of emotion without words. Worship, theater, poetry, prayer, song. And so the domain of narrative is in that domain.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 611.4,
+      "end": 611.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Dealing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 611.96,
+      "end": 615.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "with challenges. and emotional in content.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 616.76,
+      "end": 616.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 616.86,
+      "end": 618.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 618.16,
+      "end": 626.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "core elements then of narrative are a plot, a character, and a moral. What happens in a plot is someone's going along",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 626.46,
+      "end": 627.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 627.36,
+      "end": 629.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "their way somewhere, and then something crazy happens.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 630.54,
+      "end": 631.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 631.04,
+      "end": 637.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "at that point is when we pay attention because, oh, well, and then we get curious.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 637.92,
+      "end": 638.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 638.42,
+      "end": 641.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then we sort of have to ask ourselves, why is that so provocative?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 642.54,
+      "end": 642.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 642.98,
+      "end": 647.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, why is it boring up to that point? I think the reflection is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 647.7,
+      "end": 649.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "having",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 649.14,
+      "end": 659.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to cope with the unexpected, the unpredictable, the uncertain, is a core dimension of human consciousness. And, you know, if you sort of think about,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 659.92,
+      "end": 660.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 660.32,
+      "end": 676.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, how many times a day do unexpected things happen to you, little things, you know, and then marriages break up and people get thrown out of school as jobs, we lose loved ones for whom we care, that we... we, by definition, can't be prepared for. So this need to figure out how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 676.84,
+      "end": 678.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 679.05,
+      "end": 693.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "deal with those with uncertainty, with surprise, in a constructive way that enables agency, as opposed to a reactive way that's rooted in fear. That's kind of what the subject of narrative is, because that's what happens.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 694.03,
+      "end": 694.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 694.69,
+      "end": 701.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "because we can identify with the protagonist, through, we now understand through mirror neurons, we can observe the action and experience it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 702.28,
+      "end": 702.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 702.6,
+      "end": 706.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "moral we take away from a story is not so much",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 706.38,
+      "end": 707.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 707.56,
+      "end": 712.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "proposition, my case makes waste, but rather the actual experience",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 712.02,
+      "end": 715.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of the fear,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 716.13,
+      "end": 719.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "where the hope come from, where the courage. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 719.27,
+      "end": 720.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 720.17,
+      "end": 723.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "becomes a moral taught not so much to the head as to the heart.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 724.01,
+      "end": 724.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 724.57,
+      "end": 726.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so it is a way of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 726.72,
+      "end": 727.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 727.06,
+      "end": 728.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "equipping ourselves with the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 728.54,
+      "end": 729.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "emotional",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 729.94,
+      "end": 733.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "capacity to exercise agency and to enable others to do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 733.52,
+      "end": 734.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 735.28,
+      "end": 761.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 761.94,
+      "end": 763.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 763.36,
+      "end": 765.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the capacity to be choiceful human beings.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 766.44,
+      "end": 766.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 766.92,
+      "end": 785.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so if you say, here's a set of rules, follow these, forget it. You tell stories, and the stories teach the heart. And those become resources for them when they have to confront challenges. Now, what we do in public narrative, and this has been a long way to get around to this, what we do in public narrative is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 786.46,
+      "end": 787.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "work",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 787.36,
+      "end": 790.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "with people to discover within their own lives",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 790.22,
+      "end": 791.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "their",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 791.2,
+      "end": 791.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "moments",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 791.74,
+      "end": 792.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 792.86,
+      "end": 809.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they learn to care, their moments in when they found hope, so that this can become what Charles Taylor calls the articulation of moral sources, because those are inexperiences. And sometimes they're hurtful and sometimes they're hopeful, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 809.93,
+      "end": 811.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "by",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 811.35,
+      "end": 822.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "learning to... articulate those moments because moment is the core unit of narrative. It's making the past present or the distant immediate. By",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 822.59,
+      "end": 824.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "accessing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 824.62,
+      "end": 834.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "those experiences and sharing them with others, we enable others to get us. Not our resumes, not our, but what's moving us? Why we care?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 834.86,
+      "end": 835.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 835.42,
+      "end": 862.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's the story of self. A story of us is using narrative to bring a live value shared. by the community whom we hope to engage. And the story of now is taking the present moment and turning it into a narrative moment by articulating the urgent need for action, sources of hope for that action, and choices we need to make now. And one of the best illustrations of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 862.76,
+      "end": 863.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 863.81,
+      "end": 869.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "difference between narrative and not narrative was Democratic Convention in 2016.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 870.84,
+      "end": 871.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "If",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 871.22,
+      "end": 874.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you listen to Michelle Obama, she speaks all in narrative moments.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 875.86,
+      "end": 876.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 876.42,
+      "end": 893.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 894.9,
+      "end": 895.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hillary",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 895.46,
+      "end": 897.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "could never tell a single story.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 897.8,
+      "end": 898.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 898.36,
+      "end": 927.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so we don't. We don't know. And the problem in public life is if you don't take authorship of your own story, others will. That's what happened to John Kerry. That's what happened to Hillary. And in small ways, it happens all over the place all the time. So my argument is that we need to actually step up and own and author our stories. And just the last comment, the first time I taught this class, somebody said, oh, this is about how to package ourselves.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 928.31,
+      "end": 928.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 928.61,
+      "end": 936.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a woman from India said, no, this is not about how to apply a gloss from the outside, it's how to bring out the glow from the inside.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 936.95,
+      "end": 937.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 937.41,
+      "end": 951.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think it is empowering authenticity with the skill and the craft to take what we know implicitly, which is storytelling, make it explicit so we can bring intentionality, purpose, and skill, and teach others as well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 951.53,
+      "end": 969.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah. I like a lot of what you said there. I think a lot of it's very powerful. I think just to reflect some of it, I think, yeah, I mean, obviously in our current society, for me, I'll just speak for myself. In 2018, my New Year's resolution was to be more physical, emotional, spiritual,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 969.93,
+      "end": 970.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 970.23,
+      "end": 971.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "super mental. You know, it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 971.37,
+      "end": 971.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like my",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 971.69,
+      "end": 977.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "mental is where I'm at. And she's like, oh, God, I'm over-indexed on that. And so, like, making sure they have the other side is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 977.29,
+      "end": 977.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "super crucial. Of course,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 978.03,
+      "end": 980.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you are. All those other things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 980.34,
+      "end": 980.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 980.5,
+      "end": 981.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "am trying my best.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 982.04,
+      "end": 982.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "No,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 982.84,
+      "end": 987.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "but it's there in you because it's in all of us. And so it's more a question of learning the language.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 987.42,
+      "end": 988.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. Exactly,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 988.55,
+      "end": 988.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 989.07,
+      "end": 989.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 989.75,
+      "end": 997.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So I think that that's crucial. And I think that there's a, I think, a meta note here, I think it's fun as you talk about things, you're like highlighting, oh, as Pascal said this, as this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 997.45,
+      "end": 998.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "rabbi, I said that, that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 998.43,
+      "end": 1008.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "just kind of a fun thing. I think that there's, I mean, this big, the final piece at the end of, of it's not a gloss from the outside in, it's, you know, a shine from the inside",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1008.29,
+      "end": 1010.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "out, you glow from the inside out. I think that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1010.33,
+      "end": 1026.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "beautiful. And I think that there's, I guess my, maybe my, highest, or what should I or my listeners do in order to be able to tell their story of self or to be able to speak emotionally and with stories with moments in a better way? Like, is there a book that we can read?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1027.32,
+      "end": 1028.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Come to a workshop.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1029.56,
+      "end": 1030.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "No,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1030.54,
+      "end": 1066.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "or we're doing a class online this fall on public narrative. We've been doing an organizing class online for several years now. But we use Zoom, and so people are present, they see each other. We build an online learning community. We build relationships. I mean, in the organizing class, we had 150 people from 25 countries and a teaching team from all over the place. Because everybody meets together, and then they meet in sections. They get coaching from a TF. They learn to coach each other. So the challenge with it is you can read a book about it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1067.12,
+      "end": 1067.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1067.56,
+      "end": 1071.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you can read a book about riding a bicycle, and what do you know?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1073.09,
+      "end": 1073.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1073.53,
+      "end": 1082.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "much when it comes to riding a bicycle. So the pedagogy we use is what we describe as explain the theoretical dimension",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1083.07,
+      "end": 1084.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "model,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1084.91,
+      "end": 1086.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "see how it works, and then do it,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1087.51,
+      "end": 1087.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1087.67,
+      "end": 1088.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then debrief.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1089.31,
+      "end": 1089.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1089.75,
+      "end": 1109.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's sort of get on the bike, and you're going to fall. It's the only way you can learn to keep your balance. And so then the question is what kind of scaffolding helps? And we've done some stuff for the Resistance School here where we put together a whole set of modules on coaching and how to coach public narrative because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1109.05,
+      "end": 1110.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1110.39,
+      "end": 1118.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "teach the coaching along with the telling. Because it's hard to do this without an interlocutor.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1118.59,
+      "end": 1119.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1119.15,
+      "end": 1122.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "reason being that there's a Yiddish riddle who discovered water.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1123.74,
+      "end": 1124.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1124.08,
+      "end": 1128.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the answer is, I don't know, but it wasn't a fish. It's supposed to be funny.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1128.88,
+      "end": 1129.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1129.36,
+      "end": 1142.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the point is, we're all fish in the water of our own stories. So someone asking us the questions, someone curious and probing, because you're genuinely interested, boy, that's a powerful way of learning.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 1143.16,
+      "end": 1143.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 1143.76,
+      "end": 1151.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it gets us across the emotional barriers to taking the risks involved in this kind of learning. So, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 1154.01,
+      "end": 1157.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, you can read a book about it, and you can watch a video about it, but,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 1158.03,
+      "end": 1158.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1158.67,
+      "end": 1159.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1159.09,
+      "end": 1159.85,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Doing it, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1160.03,
+      "end": 1160.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Doing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1160.23,
+      "end": 1162.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it, and the way we teach it is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1162.37,
+      "end": 1163.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1163.72,
+      "end": 1166.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "always have coaching small groups.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 1167.15,
+      "end": 1167.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 1167.59,
+      "end": 1168.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "out of every",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 1169.03,
+      "end": 1170.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "workshop",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 1170.55,
+      "end": 1173.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "comes people who can coach. So it's a cascade model.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 1174.43,
+      "end": 1174.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 1174.95,
+      "end": 1208.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's what has enabled us to be... I was in Greece and in Jordan last week, and in Jordan. boy, this has taken root there. Because they have their own storytelling tradition, the Hakkawati. But, you know, it's grounding it in people's experience. And so now a lot of people have learned how to do this in a very distinct culture. In Greece, we met a guy who was trying to teach public narrative, who works for the government and adult development. And, you know, we had never met.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 1208.72,
+      "end": 1209.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 1209.2,
+      "end": 1212.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we spent about three hours on how to make it experiential.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 1215.18,
+      "end": 1215.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 1215.54,
+      "end": 1215.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 1216.13,
+      "end": 1217.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 1217.31,
+      "end": 1217.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it works.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 1218.13,
+      "end": 1221.97,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, and I think, so, so, A, I'll put a link to the, the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 1221.97,
+      "end": 1223.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "online class and the show notes,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 1223.49,
+      "end": 1243.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and B, I guess Googling public narrative is the other way, and then I guess I want to, also the water piece, there's that also that good, I haven't heard that Yiddish parable or riddle before, but there's the David Foster Wallace one as well, which is like, that we're, yeah, we're, from a paradigm perspective, the water that we live in,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 1243.97,
+      "end": 1244.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the fish",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 1244.27,
+      "end": 1245.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "says to the other fish, what is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 1245.73,
+      "end": 1247.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "water? What is water? No, no, exactly. Yeah, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 1248.11,
+      "end": 1253.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "No, and that's why the coaching thing. That's why it's an inherently relational and interdependent kind of thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 1253.81,
+      "end": 1256.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. I also like, by the way, that it's a cascade bottle in that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 1257.11,
+      "end": 1257.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 1257.45,
+      "end": 1262.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a nice thing with these bottom-up things is that, like, by nature, they kind of repeat themselves in this weird viral way.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 1262.51,
+      "end": 1262.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 1262.79,
+      "end": 1266.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I guess for you, what is your story of self and us and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 1266.73,
+      "end": 1267.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "now?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 1267.95,
+      "end": 1268.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "How much time you got?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 1268.83,
+      "end": 1269.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 1269.99,
+      "end": 1271.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "No, I mean...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 1271.11,
+      "end": 1272.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You've 12",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 1272.13,
+      "end": 1272.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "seconds",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 1272.55,
+      "end": 1273.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "reached you know.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 1273.37,
+      "end": 1288.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 1288.45,
+      "end": 1290.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 1290.01,
+      "end": 1326.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 1326.69,
+      "end": 1327.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 1327.37,
+      "end": 1335.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 1335.1,
+      "end": 1335.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "were",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 1335.58,
+      "end": 1339.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "all gone. And so these realities of both",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 1339.08,
+      "end": 1339.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 1339.8,
+      "end": 1340.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sort of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 1340.39,
+      "end": 1341.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "meaning",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 1341.55,
+      "end": 1343.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of narrative, but also kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 1343.69,
+      "end": 1344.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "insights",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 1344.49,
+      "end": 1344.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 1344.99,
+      "end": 1345.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 1346.45,
+      "end": 1354.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "meaning of inside, outside, and, you know, sort of the dark side of life as well as the joyful side. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 1354.65,
+      "end": 1355.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 1355.97,
+      "end": 1356.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 1356.19,
+      "end": 1357.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "finished",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 1357.36,
+      "end": 1382.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "high school, I just wanted to come. as far away from Bakersfield, this was in Bakersfield Caliphate, this was an oil and agriculture town. John Steinbeck made it infamous in Graves of Wrath. And I came to school here as an undergrad, and here got involved in civil rights work, which was just beginning then. And so then volunteered for the Mississippi Summer Project in 1964. And that's really where I discovered what would be a calling that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 1385.06,
+      "end": 1385.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "First",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 1385.5,
+      "end": 1412.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 1414.93,
+      "end": 1415.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 1415.37,
+      "end": 1433.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, I'd never had the experience of growing up to someone twice my age who would stand up, offer me his chair, call me, Mr. Introduce himself with his first name, not look me in the eye because he was black and I was white, and that was thousands of times across the South every day. So the combination of this kind of cultural and political and economic kind of marginalization",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 1433.21,
+      "end": 1434.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "helped",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 1434.53,
+      "end": 1452.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "me understand that this problem did not get solved without and how to enable people to build power from their own resources. became the heart of the matter. And in Montgomery, in the bus boycott, they discovered, the community discovered that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 1452.64,
+      "end": 1453.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 1453.38,
+      "end": 1456.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "all had a resource they didn't realize was a resource, which was their feet.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 1457.38,
+      "end": 1457.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 1457.82,
+      "end": 1473.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "if they used their feet to walk to work instead of getting on the bus, they would turn individual dependency on the bus company into the bus company's dependency on a collective community. The transformation then of individual resource to collective power was really, really interesting to me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 1475.1,
+      "end": 1491.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Civil Rights Movement was lived within the Christian narrative, the biblical narrative, the American narrative. I mean, that's where the energy and the courage and the solidarity all came from, like going to church, like the mass meetings. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 1491.04,
+      "end": 1492.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 1492.26,
+      "end": 1494.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I left and went to work with a farmer who's in California",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 1494.82,
+      "end": 1496.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 1496.88,
+      "end": 1497.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the next 16 years,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 1498.24,
+      "end": 1499.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "here",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 1499.2,
+      "end": 1501.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we were in another community in which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 1501.4,
+      "end": 1503.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 1503.06,
+      "end": 1504.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "was all about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 1504.35,
+      "end": 1504.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 1504.77,
+      "end": 1529.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "was a religious narrative. It was also a cultural narrative. It was about, you know, Mexico and all... Again, there were all these narrative sources that were really critical for solidarity and courage and all the rest. And, you know, I left the farmer because I did in 10 years, another 10 years of union, initial electoral work, most in California. And that's when I came back here for my 25th reunion",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 1529.16,
+      "end": 1530.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 1530.32,
+      "end": 1532.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "figured out to come back and finish my senior year.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 1533.44,
+      "end": 1533.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 1533.88,
+      "end": 1535.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "graduated close 64-92,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 1536.42,
+      "end": 1537.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 1537.32,
+      "end": 1549.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then did a PhD in sociology, and got to work on strategy, again, realizing that motivation is a critical piece. So when I started teaching here at the Kennedy School, I wanted to focus with intentionality",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 1549.98,
+      "end": 1551.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 1551.13,
+      "end": 1571.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the motivational side. Because when I was at the farm workers, we would always have a story, a strategy, and a structure. And so... The story was the why, the strategy was the how, and the structure was how do we organize ourselves, organize ourselves to do it. So then I dove into this narrative stuff, trying to figure out",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 1571.17,
+      "end": 1572.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 1572.5,
+      "end": 1575.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to teach it. And that led to the,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 1575.85,
+      "end": 1576.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 1576.09,
+      "end": 1580.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "was a combination of things where this public narrative stuff came together, which was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 1580.71,
+      "end": 1581.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 1581.91,
+      "end": 1594.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "project we were doing with Sierra Club, where we experimented with it, a commitment I made to teach a course on it here. and the Obama campaign, they all sort of came around the same time. And that's really how I learned about that stuff.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 1595.22,
+      "end": 1595.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 1595.86,
+      "end": 1600.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "putting it in a broader context of organizing. Because for me,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 1602.05,
+      "end": 1605.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "narrative is one piece of the three-legged stool I just described.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 1606.43,
+      "end": 1607.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 1607.09,
+      "end": 1626.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "expecting narrative in itself to change the world misses the significance of economic power and political power, which are critical. to actually trying to make structural change. So it has a critical role in a broader process of organizing and social change.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 1626.56,
+      "end": 1651.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. Yeah. Yeah, it's cool. It's funny how everybody just like, you have your path. You know, you were socialized as a kid in these various ways, and then you kind of learned, you know, based, you know, for you growing up in Germany and these different stories and then how that just kind of... led from one thing to another and before you know it, like you're like, oh, I guess I'm a person and expert in, you know, organizing who likes to teach about, you know, storytelling and narrative.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 1651.84,
+      "end": 1652.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 1652.32,
+      "end": 1658.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I, the part that appealed to me the most in organizing was always the leadership development work. It was always working with people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 1658.94,
+      "end": 1660.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "sort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 1660.46,
+      "end": 1694.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of, I found that I could develop my own sense of agency by developing the agency of others. Because I was working in communities that were not my communities. I was the outsider. You know, and so figuring out how to make that productive turned out like, well, you focus on development. And so, in a sense, that's what I do now with students. It's not that different. But, you know, when people sort of say, oh, I've got a 30-year plan, said, what do you, you know, life makes a mockery of that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 1695.32,
+      "end": 1695.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 1695.76,
+      "end": 1699.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, it's sort of, what do I feel called to do now?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 1699.74,
+      "end": 1700.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 1700.22,
+      "end": 1705.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think is how this does, because this was never a plan. I never thought I'd be teaching here. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 1705.72,
+      "end": 1706.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 1707.68,
+      "end": 1710.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not just random either. It's choices that we make",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 1710.8,
+      "end": 1711.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 1711.6,
+      "end": 1719.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "are informed about what we care about. And the more we listen to that, to listen to our hearts, I think the better the choices are.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 1719.87,
+      "end": 1720.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 1720.65,
+      "end": 1729.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I think it's always good to loop back the heart into the decision-making process. So I think... For me, I want to kind of transition, thank you for sharing your",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 1729.39,
+      "end": 1730.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "story.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 1730.35,
+      "end": 1734.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And I think I, to transition a little bit into more of perhaps the mental side to some",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 1734.45,
+      "end": 1734.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "extent",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 1734.85,
+      "end": 1736.81,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is thinking about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 1736.81,
+      "end": 1738.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 1738.23,
+      "end": 1746.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "how organizing has changed over, as you said earlier, you both. organized with the, what was the name of the Mississippi?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 1746.55,
+      "end": 1746.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well, the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 1746.73,
+      "end": 1747.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Civil Rights Movement.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 1747.71,
+      "end": 1747.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 1747.87,
+      "end": 1748.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the Mississippi Summer Project.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 1749.29,
+      "end": 1749.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Mississippi",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 1749.37,
+      "end": 1752.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Summer Project. And then you were for 16 years with the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 1752.03,
+      "end": 1753.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "farm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 1753.51,
+      "end": 1755.97,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "workers with Dolores Huerta and C.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 1756.57,
+      "end": 1756.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Chavez.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 1757.37,
+      "end": 1782.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And then, as you said, with Obama, the Obama campaign in 2008. So over that time period, lots of, like, the world around us, the technological world has changed, whether it was microwaves or phones or the internet. Tell me how over time, what some of the biggest changes that you've seen and how those changes have kind of affected the organizing that has happened.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 1782.34,
+      "end": 1785.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Well, that's a great question. I mean, I think that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 1788.68,
+      "end": 1789.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 1789.92,
+      "end": 1791.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just to step back for a moment, I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 1791.34,
+      "end": 1792.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 1792.72,
+      "end": 1794.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the U.S. in particular,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 1796.11,
+      "end": 1801.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we're sort of beset with a set of electoral institutions that are profoundly anti-democratic.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 1801.92,
+      "end": 1802.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 1802.24,
+      "end": 1822.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they were designed that way. And so it's been very difficult for change to emerge from within those institutions. Social movements going all the way back to the American Revolution itself, but certainly the temperance movement, the abolition movement, so forth, have been a critical mechanism of change in this country because we couldn't do it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 1822.52,
+      "end": 1823.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 1823.44,
+      "end": 1851.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "way. And we used to have, but we don't have constituency parties like they do in Canada or in other parts of the world. So movements have had a particular significance. And, you know, movements are kind of about what I was describing. I mean, they have a strong cultural and emotional content. They're also purposeful. They're intentional. They're strategic. They're sometimes raggedy. There are organizations involved in them. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 1851.68,
+      "end": 1852.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 1852.96,
+      "end": 1853.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just sort of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 1853.7,
+      "end": 1854.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "saying",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 1854.58,
+      "end": 1855.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that as context because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 1855.86,
+      "end": 1856.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 338,
+      "start": 1857.88,
+      "end": 1884.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "organizing politically, it used to be that politics was distinguishable from the marketplace in that it was about engaging people with each other. In other words, not selling a product to a customer, not providing a service to a client, although sometimes that was a part of the political process. But essentially, it was about bringing people to engage with one another, and De Tocqueville described it so well when he says that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 339,
+      "start": 1884.62,
+      "end": 1885.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 340,
+      "start": 1885.16,
+      "end": 1902.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, to be drawn out of our individual narrow self-interest into what he called you know, enlightened self-interest was really understanding where the common interest lies. And you don't get that from a book, you get that with engaging with other people from whom you learn.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 341,
+      "start": 1902.98,
+      "end": 1903.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 342,
+      "start": 1903.54,
+      "end": 1908.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "same thing with the kind of affective bonds that develop when you work with other people.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 343,
+      "start": 1909.11,
+      "end": 1909.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 344,
+      "start": 1909.67,
+      "end": 1914.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "enables solidarity. And the fact that you, if you're working with other people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 345,
+      "start": 1914.77,
+      "end": 1916.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 346,
+      "start": 1916.46,
+      "end": 1924.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's under your own steam, you have to learn to govern yourselves, which is a sort of fundamental democratic practice. Now, so organizing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 347,
+      "start": 1924.01,
+      "end": 1925.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "has",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 348,
+      "start": 1926.12,
+      "end": 1987.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "always been about that, in a sense, about building relationships, about then bringing people together around shared narratives, around a shared strategy, around a shared structure, and resulting in forms of strategic action that take place. Now, you know, it used to be that you had to do all that, well, you know, when the telephone came along, there was a big revolution. Because, you know, before, well, really, when leaflets came along, when the Bible came, there was a big revolution. So, you know, we've been through these technological changes before. And they're always heralded as being the beginning of a radical new era that history will never be the same. And... that there are always forces for good. Well, you know, it's a lot more complicated than that, because even though the technologies change, as human beings, we change very little.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 349,
+      "start": 1988.17,
+      "end": 1988.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 350,
+      "start": 1988.79,
+      "end": 1992.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "mean, I don't mean we don't grow and learn, we certainly do.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 351,
+      "start": 1992.67,
+      "end": 1992.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 352,
+      "start": 1992.91,
+      "end": 2020.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sort of the core elements about what makes us tick, the significance of relationality, the importance of hope. the significance of fear, the need for accountability. These things don't go away. I mean, you go read the story of King David, and you're going to discover a story of power leading to excess, leading to destruction. It's been around for a long time. Or read David Goliath. You're going to get a great lesson in strategy. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 353,
+      "start": 2020.24,
+      "end": 2021.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "my",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 354,
+      "start": 2021.44,
+      "end": 2026.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "point is that there is change and there is continuity, and there's also variation.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 355,
+      "start": 2026.94,
+      "end": 2027.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 356,
+      "start": 2027.38,
+      "end": 2038.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, one of the real joys I've had recently is Well, like working in the Middle East, in the Arab world, or working with folks in China or in Japan,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 357,
+      "start": 2038.79,
+      "end": 2039.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "out",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 358,
+      "start": 2039.73,
+      "end": 2053.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of this same framework. And so I didn't expect that this framework would travel like that. The fall course I teach here on Public Narrative, we have 140 students from 40 countries. And so you begin to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 359,
+      "start": 2053.89,
+      "end": 2055.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "get",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 360,
+      "start": 2055.01,
+      "end": 2057.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that there are human continuities.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 361,
+      "start": 2058.03,
+      "end": 2058.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 362,
+      "start": 2058.37,
+      "end": 2060.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "human questions, like the Hillel questions,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 363,
+      "start": 2062.27,
+      "end": 2076.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that we grapple with. So then how do we address those? How do we deal with them? Well, it used to be that we had to go talk to each other. Then we could call each other. Well, it's okay. It's not quite so good.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 364,
+      "start": 2078.73,
+      "end": 2079.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 365,
+      "start": 2079.21,
+      "end": 2080.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 366,
+      "start": 2080.39,
+      "end": 2083.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "could sort of signal to each other.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 367,
+      "start": 2083.82,
+      "end": 2084.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Now,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 368,
+      "start": 2084.76,
+      "end": 2090.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what's happening over this time is that the form of communication is becoming less and less and less relationally embedded.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 369,
+      "start": 2091.63,
+      "end": 2092.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 370,
+      "start": 2092.15,
+      "end": 2095.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so, you know, it's not too surprising that social media is kind of a crazy thing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 371,
+      "start": 2095.67,
+      "end": 2096.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 372,
+      "start": 2096.55,
+      "end": 2105.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's not two people communicating with all the empathetic dimensions that both inhibit and facilitate communication when two people are talking like we are.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 373,
+      "start": 2106.05,
+      "end": 2106.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 374,
+      "start": 2106.57,
+      "end": 2112.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "reducing a human being to a symbol, which is a word or a brand, and then throwing at each other.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 375,
+      "start": 2113.68,
+      "end": 2168.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "both the bridges and the constraints that are there in normal communication aren't. And we get some pretty destructive stuff. The other thing is that we're then tempted to try to find shortcuts. Like, well, we don't really need to have a meeting. Let's just find out everybody can just log on and say what they think. And then we'll just aggregate everybody's views and then we'll have a solution. It's all an algorithm. except that nobody participated in the process of learning. Nobody decided to own that. And so we confuse aggregation of individual input with the creation of collective capacity. And they're qualitatively different. And collective capacity is what's needed for a democracy to work or for a community to work. So, yeah, there's been all kinds of changes, but also...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 376,
+      "start": 2169.68,
+      "end": 2170.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "In",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 377,
+      "start": 2170.2,
+      "end": 2180.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "some ways, they've been destructive. They pose new challenges. I mean, one reason I find it interesting to be connected to the Media Lab is to experience this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 378,
+      "start": 2180.65,
+      "end": 2181.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "stuff",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 379,
+      "start": 2181.87,
+      "end": 2183.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and then figure out",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 380,
+      "start": 2183.85,
+      "end": 2184.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 381,
+      "start": 2185.88,
+      "end": 2194.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so how do you engage all this in the service of agency and of humanity, as opposed to being",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 382,
+      "start": 2194.76,
+      "end": 2197.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "instrumentalized",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 383,
+      "start": 2197.81,
+      "end": 2198.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "by it?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 384,
+      "start": 2199.21,
+      "end": 2199.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 385,
+      "start": 2199.51,
+      "end": 2219.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the fact of the whole shift to neoliberal economics, you know, going back to the 60s and 70s, just as overlap with that to sort of radically individualize everything and hold up the market as the core model for human interaction. And markets do not build collective capacity, and they sure have nothing to do with equality.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 386,
+      "start": 2221.35,
+      "end": 2221.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sid",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 387,
+      "start": 2221.87,
+      "end": 2241.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Verba, who taught government here for many years, just to say that liberal democracy is a... It's a gamble whether equality of voice can balance inequality in resources. And government is the main mechanism through which equality of voice can be expressed.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 388,
+      "start": 2242.33,
+      "end": 2243.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 389,
+      "start": 2243.13,
+      "end": 2249.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "markets are not about equality, they're about allocation of resources based on resources. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 390,
+      "start": 2249.25,
+      "end": 2250.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 391,
+      "start": 2250.41,
+      "end": 2256.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sort of assault on government these last 40 years and the undermining of democratic practice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 392,
+      "start": 2257.0,
+      "end": 2257.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 393,
+      "start": 2257.5,
+      "end": 2261.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the illusion, oh, that can just be substituted with Facebook or something.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 394,
+      "start": 2261.58,
+      "end": 2262.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 395,
+      "start": 2262.14,
+      "end": 2267.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think that's a real challenge. And I think that's what creates the conditions for Trump because,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 396,
+      "start": 2268.6,
+      "end": 2268.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 397,
+      "start": 2268.8,
+      "end": 2310.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Carl Polanyi wrote this in 1941, trying to understand where fascism came from in Europe. His conclusion was that after World War I, the radical open marketness, it was like, he says, when price captures value, a market works. but when value is not captureable in price, like a life, like education, like faith, and you try to reduce it to price, then you commodify everything and you savage it and you create the context for a pathological response to the need to belong and connect and find meaning. And so, you know, I sort of, the interaction of the technology with the market stuff",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 398,
+      "start": 2310.97,
+      "end": 2311.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "has",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 399,
+      "start": 2311.93,
+      "end": 2318.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "really presented us with some enormous challenges. You know, for me, the positive thing is that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 400,
+      "start": 2320.75,
+      "end": 2321.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 401,
+      "start": 2321.57,
+      "end": 2328.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, in the work I do in our distance learning class, for example, the typical people in that are maybe 30-some.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 402,
+      "start": 2328.89,
+      "end": 2329.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 403,
+      "start": 2329.41,
+      "end": 2333.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they're rooted in different cultures, but they're trying to reclaim the human",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 404,
+      "start": 2333.66,
+      "end": 2335.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 405,
+      "start": 2335.26,
+      "end": 2340.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "their countries in the system. And I think that's where we are here. We've got to reclaim our humanity.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 406,
+      "start": 2341.16,
+      "end": 2341.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 407,
+      "start": 2341.76,
+      "end": 2351.42,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I think, as you, I mean, there's a lot of juicy things in there. And I think that there's, I think, I mean, I just want to highlight a couple from the end. A, the agency and humanity versus being instrumentalized by it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 408,
+      "start": 2351.6,
+      "end": 2351.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Like, ooh.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 409,
+      "start": 2352.34,
+      "end": 2358.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And then another version of that kind of is taking things that are traditionally not, where the price and the value aren't the same",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 410,
+      "start": 2358.58,
+      "end": 2359.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and then trying to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 411,
+      "start": 2359.26,
+      "end": 2361.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "price them and it just commodifies them. And that's sad.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 412,
+      "start": 2362.0,
+      "end": 2362.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 413,
+      "start": 2362.14,
+      "end": 2363.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is so important.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 414,
+      "start": 2363.2,
+      "end": 2363.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 415,
+      "start": 2363.72,
+      "end": 2364.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "both of those are key.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 416,
+      "start": 2365.08,
+      "end": 2365.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 417,
+      "start": 2365.8,
+      "end": 2366.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that the.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 418,
+      "start": 2367.78,
+      "end": 2375.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "This interesting piece here about you were describing something kind of like slackivism where you're just like, oh, as long as we just aggregate all of the input,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 419,
+      "start": 2375.34,
+      "end": 2375.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's pretty",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 420,
+      "start": 2375.72,
+      "end": 2376.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "much equal to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 421,
+      "start": 2376.5,
+      "end": 2376.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "collective",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 422,
+      "start": 2376.88,
+      "end": 2381.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "capacity. It's like, no, no, no, no, those are different. And I'm reminded of in Zane Up Tufecki's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 423,
+      "start": 2381.96,
+      "end": 2382.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "book,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 424,
+      "start": 2382.66,
+      "end": 2391.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Twitter and Teagast, where it's like the difference between your ability to signal, like, get people in the same place for a little bit of time or just like, you know, everybody posts like on Facebook or whatever.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 425,
+      "start": 2391.94,
+      "end": 2392.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 426,
+      "start": 2392.34,
+      "end": 2401.31,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "versus the long-term capacity building and governance building that you get. Those are two very different things, and the Internet only enabled the first one without really enabling the second one.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 427,
+      "start": 2401.33,
+      "end": 2401.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 428,
+      "start": 2401.89,
+      "end": 2408.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "because of how it's been used. In other words, I think that I love this distance learning class as I teach.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 429,
+      "start": 2408.77,
+      "end": 2409.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 430,
+      "start": 2409.05,
+      "end": 2411.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "starting this one in public narrative.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 431,
+      "start": 2411.93,
+      "end": 2412.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 432,
+      "start": 2412.41,
+      "end": 2419.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we can do things. There is no way we could have done. We started an Arabic version this year out of Amman",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 433,
+      "start": 2419.79,
+      "end": 2421.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 434,
+      "start": 2421.57,
+      "end": 2424.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "organizing distance learning, all in Arabic.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 435,
+      "start": 2425.57,
+      "end": 2426.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 436,
+      "start": 2426.11,
+      "end": 2440.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "were 38 spots and 400 applications. And they wound up admitting people from 11 countries who then formed connections or relationships with each other. There's no other way they could do it. So to me,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 437,
+      "start": 2442.65,
+      "end": 2472.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we are so gifted at developing new ways to enhance our power, you know, like this technology. But... when it comes to the moral and political capacity to use it, we're behind the curve. And, you know, it's amazing we didn't blow ourselves up with it. So my concern is how to develop the moral and political capacity, not to stop the tech, but to use them in a way that enhances our humanity rather than diminishing it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 438,
+      "start": 2472.93,
+      "end": 2473.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 439,
+      "start": 2473.27,
+      "end": 2475.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think that's kind of where we're at right",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 440,
+      "start": 2475.77,
+      "end": 2476.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "now. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 441,
+      "start": 2476.47,
+      "end": 2483.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I agree. I think that's what we need. I think maybe my final kind of question here is we wrap. And just, so I'm going to ask a question about cryptocurrency and blockchain stuff.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 442,
+      "start": 2484.27,
+      "end": 2484.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 443,
+      "start": 2484.71,
+      "end": 2485.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Just for our users, for our",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 444,
+      "start": 2485.99,
+      "end": 2486.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "listeners,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 445,
+      "start": 2486.43,
+      "end": 2492.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "to be clear, Marshall is not an expert in this or, you know, has very, very little. But I want to kind of claim something",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 446,
+      "start": 2492.79,
+      "end": 2493.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and then see what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 447,
+      "start": 2493.95,
+      "end": 2495.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you think about it. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 448,
+      "start": 2495.33,
+      "end": 2495.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 449,
+      "start": 2495.99,
+      "end": 2507.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "macro vibe kind of is that. So in something like what you're saying or in Zaneap's book, Twitter and tear gas, that you have capacity, so you have signaling versus capacities.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 450,
+      "start": 2507.84,
+      "end": 2508.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 451,
+      "start": 2508.24,
+      "end": 2519.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the signaling ability to come together for a quick bit or whatever versus the long-term capacity building, movement building. And that the internet really was able to really catalyze this ability to, before it was hard to get a bunch of people to.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 452,
+      "start": 2520.04,
+      "end": 2520.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's right.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 453,
+      "start": 2520.6,
+      "end": 2523.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Oh, man, we can just make a Facebook event and boom. Before long a ton of people into here square.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 454,
+      "start": 2523.98,
+      "end": 2524.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Radically",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 455,
+      "start": 2524.38,
+      "end": 2525.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "reduced the cost.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 456,
+      "start": 2525.42,
+      "end": 2525.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Exactly,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 457,
+      "start": 2526.12,
+      "end": 2526.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "exactly. The friction is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 458,
+      "start": 2526.78,
+      "end": 2581.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so much slower. So that is interesting, but it was kind of fragile because it didn't have the long-term capacity and governance building. And my claim is that you could see something like cryptocurrency and blockchain technology as the thing that kind of enables is kind of like the technology to enable that long-term capacity and governance building because it has kind of money baked into it. So as an example here, it's like... So as the internet was to information as blockchain and crypto is to value and money. And so if you think about value and money and you think about something like Bitcoin, it was just like a... paper was put on the internet in 2009 and then a bunch of people started to get into it and more and more people started to get into it and then that thing had to kind of learn how to govern itself um because there was money involved and also because there was money involved it allowed that thing to perpetuate itself instead of kind of falling back into the system in a fragile way um so you're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 459,
+      "start": 2583.85,
+      "end": 2584.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "hot what's your",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 460,
+      "start": 2584.47,
+      "end": 2586.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thought on that let me let me",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 461,
+      "start": 2586.11,
+      "end": 2606.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just say that I have never thought of it that way. I think it's fascinating. No, no, really. It's very interesting because, no, I think the cool thing about these kinds of conversations is, oh, that's really good. I would never thought of that. I guess, but my initial question",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 462,
+      "start": 2606.81,
+      "end": 2607.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 463,
+      "start": 2607.21,
+      "end": 2609.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you're still stuck in economic value.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 464,
+      "start": 2609.51,
+      "end": 2610.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 465,
+      "start": 2610.82,
+      "end": 2616.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "economic value is economic value. And the values that are under assault here",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 466,
+      "start": 2616.46,
+      "end": 2617.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 467,
+      "start": 2617.04,
+      "end": 2617.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not economic",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 468,
+      "start": 2617.82,
+      "end": 2618.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "values.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 469,
+      "start": 2620.24,
+      "end": 2623.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "They're humanity, their moral values,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 470,
+      "start": 2624.1,
+      "end": 2625.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "their education,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 471,
+      "start": 2626.06,
+      "end": 2632.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "health, all of this. So I guess the question is, how can our capacity",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 472,
+      "start": 2632.1,
+      "end": 2633.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 473,
+      "start": 2633.08,
+      "end": 2635.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "assert those values be strengthened?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 474,
+      "start": 2635.76,
+      "end": 2636.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep, yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 475,
+      "start": 2637.22,
+      "end": 2637.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 476,
+      "start": 2637.58,
+      "end": 2643.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "think that that's a great question and a great pushback. And you can see that also within the cryptocurrency world, it's just like because it's all money-based,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 477,
+      "start": 2643.86,
+      "end": 2644.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like most",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 478,
+      "start": 2644.26,
+      "end": 2646.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of what's happening is speculation and scams and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 479,
+      "start": 2646.36,
+      "end": 2647.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all this is kind of rampant",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 480,
+      "start": 2647.12,
+      "end": 2658.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and whatever. I think that there's a hope is that... for someone like me and for a lot of people in the like I have enough at this point like my economic value",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 481,
+      "start": 2658.26,
+      "end": 2658.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 482,
+      "start": 2658.92,
+      "end": 2663.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "self-tax myself 20% of my wealth it's like give that because I have enough",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 483,
+      "start": 2663.36,
+      "end": 2663.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 484,
+      "start": 2663.9,
+      "end": 2678.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "essentially the economic value for me is done you can kind of imagine the blockchain crypto world's like abstracting the concept of economic values such that more and more people can get it, such that, then more people are allowed to focus on the kind of moral piece. That's the hope of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 485,
+      "start": 2678.76,
+      "end": 2679.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I don't know.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 486,
+      "start": 2679.7,
+      "end": 2685.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "No, and I guess my hope is that we are able to focus on the political and moral",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 487,
+      "start": 2685.12,
+      "end": 2686.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "enough",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 488,
+      "start": 2686.02,
+      "end": 2688.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to enable that sort of thing to happen.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 489,
+      "start": 2688.54,
+      "end": 2688.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 490,
+      "start": 2688.96,
+      "end": 2689.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 491,
+      "start": 2689.46,
+      "end": 2691.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "You know, because things are pretty tough right now.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 492,
+      "start": 2692.0,
+      "end": 2692.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 493,
+      "start": 2692.94,
+      "end": 2694.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And so, you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 494,
+      "start": 2694.72,
+      "end": 2695.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 495,
+      "start": 2695.58,
+      "end": 2706.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think there's a... It's a big difference between hope and optimism. You know, optimism like, hey, everything's going to be good. Hope is much more realistic. It was Maimonides who defined hope as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 496,
+      "start": 2706.84,
+      "end": 2707.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "belief",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 497,
+      "start": 2707.92,
+      "end": 2738.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in the plausibility of the possible, as opposed to the necessity of the probable. In other words, to be a realist is to recognize that we live in a world where it is always probable. Goliath will win. But sometimes David does. That we... It was improbable. We elect a black man president of this country, and we did. There's this sense of possibility as opposed to probability. And I think we live in a world where both are operative. For me, that's a source of hope",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 498,
+      "start": 2738.3,
+      "end": 2739.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "without",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 499,
+      "start": 2739.36,
+      "end": 2742.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "necessarily being optimistic. And I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 500,
+      "start": 2743.28,
+      "end": 2744.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 501,
+      "start": 2744.48,
+      "end": 2745.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the place we need to be.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 502,
+      "start": 2747.23,
+      "end": 2747.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 503,
+      "start": 2747.67,
+      "end": 2753.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, we did this project with David Kong and the biotech hackers thing. That's been really fascinating.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 504,
+      "start": 2753.93,
+      "end": 2754.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 505,
+      "start": 2754.33,
+      "end": 2763.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that was an exercise that first it was going to be an aggregation around a common interest, but it turned into an actual process of determining their shared purpose.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 506,
+      "start": 2763.83,
+      "end": 2764.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 507,
+      "start": 2764.23,
+      "end": 2764.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just so different.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 508,
+      "start": 2765.07,
+      "end": 2780.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah. Yeah, I agree. I think, so I guess with that, this is to say, we'll see what happens with blockchain and crypto over time. We're out of time. So, Marshall, what, for people on the listeners. How should they learn more about you or any call to actions for them?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 509,
+      "start": 2781.39,
+      "end": 2781.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 510,
+      "start": 2781.91,
+      "end": 2808.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they can certainly come to our website. We have a network leading change network that couples the efforts of people all over the world with this kind of approach. And then we have our distance learning classes. And there's people we work with all over the place who are doing this sort of work. Through the network, it's a lot easier to kind of find them. So we'd encourage people to, yeah, to, you know, engage with us.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 511,
+      "start": 2808.84,
+      "end": 2810.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, tap into that network. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 512,
+      "start": 2810.8,
+      "end": 2812.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and spread, you know, just share this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 513,
+      "start": 2812.74,
+      "end": 2812.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 514,
+      "start": 2813.18,
+      "end": 2816.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Learners become teachers. That's kind of how this thing goes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 515,
+      "start": 2816.34,
+      "end": 2816.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 516,
+      "start": 2816.6,
+      "end": 2825.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "totally. Yeah, and I guess one other thing that I'd say to my listeners is if you're doing too much of the mental, really, you know, check back in with your emotional and your story of self",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 517,
+      "start": 2825.54,
+      "end": 2825.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 518,
+      "start": 2825.98,
+      "end": 2826.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the narrative. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 519,
+      "start": 2826.72,
+      "end": 2828.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's the other piece. Amen. Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 520,
+      "start": 2828.16,
+      "end": 2830.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "with that, thank you so much for coming on today, Marshall.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 521,
+      "start": 2830.44,
+      "end": 2831.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Thanks for this. This was really fun.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 522,
+      "start": 2831.54,
+      "end": 2831.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's fun.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 523,
+      "start": 2832.08,
+      "end": 2832.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 524,
+      "start": 2832.46,
+      "end": 2832.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Thanks a lot.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 525,
+      "start": 2841.77,
+      "end": 2842.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Is it,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 526,
+      "start": 2842.27,
+      "end": 2843.91,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "do I say, is it Gans?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 527,
+      "start": 2844.09,
+      "end": 2845.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Marshall Gans? I'm sweet,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 528,
+      "start": 2845.23,
+      "end": 2845.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "just wanted to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 529,
+      "start": 2845.71,
+      "end": 2846.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "make sure. That's right.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 530,
+      "start": 2847.13,
+      "end": 2847.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Cool, you're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 531,
+      "start": 2847.83,
+      "end": 2848.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "ready to rock?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 532,
+      "start": 2848.69,
+      "end": 2849.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Reese, exactly,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 533,
+      "start": 2849.69,
+      "end": 2850.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thank you. It's very H",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 534,
+      "start": 2850.57,
+      "end": 2851.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "-Y-S.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 535,
+      "start": 2851.49,
+      "end": 2851.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 536,
+      "start": 2851.63,
+      "end": 2852.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of a weird style.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 537,
+      "start": 2852.45,
+      "end": 2852.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "No,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 538,
+      "start": 2853.37,
+      "end": 2856.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I mean, I see that name. What is it, Welsh?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 539,
+      "start": 2856.49,
+      "end": 2856.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's Welsh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 540,
+      "start": 2857.13,
+      "end": 2857.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "nice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 541,
+      "start": 2857.49,
+      "end": 2857.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 542,
+      "start": 2858.19,
+      "end": 2859.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it seemed like it would be Welsh.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 543,
+      "start": 2859.63,
+      "end": 2859.81,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 544,
+      "start": 2860.51,
+      "end": 2860.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And my",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 545,
+      "start": 2860.79,
+      "end": 2862.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 546,
+      "start": 2862.87,
+      "end": 2863.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 547,
+      "start": 2863.41,
+      "end": 2865.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "hundred and a degree rotational symmetry from each",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 548,
+      "start": 2865.59,
+      "end": 2866.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "other. No,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 549,
+      "start": 2866.21,
+      "end": 2871.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "no, that's cool. No, that's interesting. Do you know what its meaning is in Welsh?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 550,
+      "start": 2871.15,
+      "end": 2871.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 551,
+      "start": 2871.35,
+      "end": 2872.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "means king.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 552,
+      "start": 2873.17,
+      "end": 2873.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 553,
+      "start": 2873.35,
+      "end": 2873.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's pretty good.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 554,
+      "start": 2874.11,
+      "end": 2874.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 555,
+      "start": 2874.33,
+      "end": 2874.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "bad.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 556,
+      "start": 2874.93,
+      "end": 2876.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's not bad. I think. I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 557,
+      "start": 2891.24,
+      "end": 2923.01,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "had a note here is that this kind of podcast, it really feels nice to me. And I think I might do more of these in the future, where I really dive into the human side, understand people's story of self, story of us, story of now. That's nice. It feels good instead of kind of my hyper-mental systemic view. It's nice to be connected to the emotional human piece more often. So I think it's likely that I do more interviews like this one. And one thing to note here is that, you know, for the story of self, story of us, story of now, there's kind of two funny things with this. One is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 558,
+      "start": 2923.83,
+      "end": 2924.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 559,
+      "start": 2924.19,
+      "end": 2985.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "mean, I think it's very powerful what Marshall talks about in terms of, you know, giving people agency, giving people hope instead of just reacting out of fear. I think that mindset, that primitive being like, when change happens, how do we give people agency and hope instead of fear? I think that's a crucial mindset to have. And the other piece here is, I think this is, you know, he talks about the articulation of moral sources as, you know, when one is telling their story and you say, oh, here's when this happened to me, here's this happened to me, and having moments as the core unit. I think that's another crucial idea, which is until of telling story, until talking about systems as a way to convince people, things, whatever, instead using something like moments as a core unit of the narrative that you're shaping. So I think that those are just two kind of underlying primitives that I'll hopefully take with me as I think about storytelling going forward. And I'll try my own story of stealth, story of us, story of now at the end of this. Before I do, I just want to talk a little bit about the tech side for a second. One is...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 560,
+      "start": 2985.65,
+      "end": 2986.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 561,
+      "start": 2986.15,
+      "end": 3084.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I mean, as Marshall notes, people are taking shortcuts with tech in terms of organizing where they will, you know, just survey folks instead of, you know, holding a meeting or whatever. And he says that, you know, this conflates aggregation of individual input with the creation of collective capacity. And I think that's super true. And I think that it's, you know, from the perspective, as I noted in the show, you can. A, you can map that into the two fecky signal versus capacity framework where you say, hey, you know, when people are just signaling to each other, that is fragile versus this building of collective capacity that allows for anti-fragility and resilience and our current. forms of tech don't do as much of that, or we're not using them for that as much. It reminds me, it feels just like a better is worse thing where we're like, oh, this is actually better, sweet. We can just aggregate individual input. And they're like, it actually turns out it was worse because we're not actually creating the collective capacity that we used to. So that's, I think, a crucial point with the tech. And then this other one is, you know, as Marshall notes, I try to push the crypto idea as networked nonviolent protest. And he says, hey, he kind of pushes back and says, we're still stuck in these. You know, that is from the perspective of economics and economic values. And the values that are under assault are not economic. So how do we strengthen those? And it feels like crypto is kind of not even addressing that question. And, ooh, I mean, I don't really know the answer to this question. I know I'm reading about it. There's a great book by Albert Hirschman, which I just finished called The Passions and Interests, which is kind of a philosophical... curated synthesis on why markets",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 562,
+      "start": 3084.82,
+      "end": 3097.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "rose to prominence as kind of the argument for why markets were good for society thinking about Adam Smith and Toakville and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 563,
+      "start": 3099.65,
+      "end": 3143.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a variety of other philosophers, so I can't remember their names right now. That idea, in this idea that having commerce allows people to follow our interests while mitigating our passions and vices, that's a macro claim back then. And so, yeah, I don't know, that feels very related, this overlap of... political and economic stuff and the conflation of those two things. It feels that feels like a juicy space to explore. And really, I do think that there is, if we want to get people to be unstuck from economic values, giving them abundance allows them to say, oh, I have enough with economics. Now I can focus more on, you know, these other values or whatever. So, yeah, that's my initial take, but I think it's a very good question from Marshall.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 564,
+    "withheld": 7,
+    "published": 557
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

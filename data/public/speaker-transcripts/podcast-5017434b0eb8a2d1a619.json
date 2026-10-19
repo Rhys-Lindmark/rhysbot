@@ -1,0 +1,1854 @@
+{
+  "schema_version": 1,
+  "id": "podcast-5017434b0eb8a2d1a619",
+  "title": "#23 Nadav Hollander, Dharma Protocol: The 0x Financial Stack + How YC Helps Crypto Startups",
+  "published_at": "2017-11-30T00:34:59Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/23-nadav-hollander-dharma-protocol-the-0x-financial-stack-how-yc-helps-crypto-startups",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/362746991-the-rhys-show-23-nadav-hollander-dharma-protocol-the-0x-financial-stack-how-yc-helps-crypto-startups.mp3",
+  "youtube_id": "qJPoxvDrhm8",
+  "youtube_url": "https://www.youtube.com/watch?v=qJPoxvDrhm8",
+  "audio_sha256": "fcf1c19297a11cd906c306aa8d0a504a9b6fd888e5a1dfb8c76bf6d7e08bd912",
+  "audio_duration_seconds": 3311.0511875,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 9760,
+    "unknown_words": 127,
+    "unknown_words_fraction": 0.013012295081967213,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 13.14,
+      "end": 13.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 13.64,
+      "end": 20.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "episode is brought to you by Shapeshift.io, the easiest, fastest, and most secure way to swap your digital assets.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 20.86,
+      "end": 21.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 21.42,
+      "end": 26.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "run the risk of leaving your funds on centralized exchange. Visit Shapeshift.io to get started today.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 30.45,
+      "end": 57.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello, everyone. Today's interview is with Nadav Hollander from Dharma Protocol, which is a lending platform, decentralized lending platform built on the zero-x project. And it's funny because today... is the day when Bitcoin hit $10,000 for the first time, and that's exciting, but it's also that is a result of a leading indicator of some of these awesome new projects that are coming out like Dharma Protocol. So for me, the big takeaways from this interview were",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 57.67,
+      "end": 59.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "first... The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 59.51,
+      "end": 126.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Xerox project stack is fascinating, and this is actually part of the first interview in a series of interviews that I'm doing on the X project stack. And this is, on the stack side, there are other Ethereum stacks that are coming out. There's this, there's one on the kind of governance side with where you have Ethereum as the underlying layer, Aragon on top for governance, District OX on top of that for decentralized marketplaces, and then on top of that. different kinds of marketplaces like something like Decentraland, which is selling VR space, essentially. So that's like another example of a stack. And we have this other stack that's being built now, the decentralized finance stack that's being built with the ZeroX project. And so, you know, you have something like the X project, which allows for trustless exchange and liquidity through atomic swaps. That just means it's protocol to like swap any asset for any other asset essentially and the Dharma protocol uses zero x4 atomic swaps to essentially create this lending protocol that then other people can build on top of later um so this is a fascinating new stack that's coming out and I do want to push back maybe a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 126.92,
+      "end": 127.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "bit",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 127.78,
+      "end": 174.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "against the word stack here though um Because in Kastack leads to like the fat protocol thesis, which says that, you know, the protocols of this new blockchain internet will accrue so much value. And I'm actually all sharing an interview with Jake Brookman from Coin Fund about fat protocols and whether they should be taken as a monolith good thing. But because I think that the stack version of things kind of shows a version of reality where you have. things at the top and things at the bottom and it's kind of this like linear progression but really it's just a bunch of interoperable APIs and so yeah I think I think that there's a little bit of pushback there but Dharma Protocol is a great example of it because it it uses the zero X protocol for one part of its mechanism for one part of its of its protocol",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 175.11,
+      "end": 175.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 175.51,
+      "end": 275.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then it clearly uses ETH below that, Ethereum, and then but it's ready, and above it, it's essentially a decentralized protocol that allows for any kinds of new applications to be built on top of it. So it is kind of an example of this new kind of protocol stack where Dharma could be a new kind of fat protocol that does gain a lot of transaction volume through it, but it's not necessarily at the bottom of the stack. That's one side of things is the Xerox project stack. And then the other thing that I'm thinking about here is I've been doing these interviews on software systems. But really, these software systems are things that really just map the real world. And so this example is like, I'm doing a lot more like economic and financial systems, which I know very little about. And so it's fascinating to see and kind of deport the current financial world. into software kind of by breaking it down, bucketing it, or what in Dove calls, atomizing these kind of financial systems into code and then creating a protocol around it. But what that means is that it can be kind of tough to dive into these things because the financial world is confusing and it's difficult. So I like to think of this as kind of a white paper deep dive. where we're kind of giving an overview of the white paper and kind of diving into how it works. And the thing to know before, you know, listening to Nadav and I go into it is I want to give a quick high-level overview of what... Dharma protocol is, it's a lending protocol, right? So people, and they're kind of, you can imagine, two roles in that process. There are people who want money, who are the borrowers, who are the debtors, give me money, give me money. And then on the other side, you have people who are looking to lend it out, who are the lenders,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 275.89,
+      "end": 328.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "who are the creditors. And you can imagine it is a simple protocol like that where you just have borrowers on one side and lenders on the other side. But Dharma uses this concept called Keepers, which is this concept by Ryan Surr from Polychain Capital, which are essentially people that help a protocol run smoothly. Because you can imagine with that just that two-way peer-to-peer protocol that you might get a little bit of weird things where, okay, who's a good borrower, who's a good lender, blah, blah, blah. What this allows for, and it's also a map from the real world, is it allows for kind of two new of these keepers to exist. One of them on the borrower side is called an underwriter, and those people are the ones that kind of source the debt and determine the rules. So you've got a bunch of people that want to borrow money, and an underwriter, someone who says, okay, you got all these people who want to borrow money, okay, these people are good, here's the rules of the debt, blah, blah, blah, they kind of set the rules of the engagement with the borrower.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 329.42,
+      "end": 329.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 329.74,
+      "end": 363.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the other side, you have these relayers, who I like to think of as kind of aggregation or curation machines, and they're kind of facing the people who are actually doing the lending, and they're saying, hey, a person who wants to do some lending. I got some awesome debt for you. It's been, here's the borrower for it, here's the underwriter for it. They kind of aggregate and curate which kinds of underwriters and which kind of debt they want to show to their lenders and they produce it to them. So that's kind of a high level overview of the protocol and the Dav and I will kind of dive into it more deeply as well. The third, so that's the,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 363.39,
+      "end": 364.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 364.32,
+      "end": 373.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the, interesting part with this podcast interview, which is not necessarily similar to my other ones, is that's really kind of a white paper overview on this way to think about it. The third thing, though, that we talk about here is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 373.71,
+      "end": 374.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "talk",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 374.61,
+      "end": 462.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "about what it's like for Dharma to go through Y Combinator as a blockchain company and why they're not doing this token sale, which I think is pretty awesome. And they're essentially allowing for these like, you know, tokenized systems that are trying out things with governance and medium exchange. Those experiments are happening and they might you know, strap into them later. But right now they're doing this thing that I actually love, what I call like a reverse leap of faith, where they're essentially saying, hey, we're going to create this awesome utility for the world, which is this new lending protocol. And at the beginning, though, we don't have a business model, you know, and Adolf says that. He says, we don't have a business model right now. And we're not going to be rent seeking. There's going to be no fees. But. the leap of faith that he's making, which I think is a very reasonable one, is, hey, if we give the world so much value by making this new lending protocol, then later on, we as a company can make money, or the world will give us value in return, or will give us opportunity later. So it's kind of, instead of asking for money up front and doing the rent scene, it's kind of flipping that equation and allowing the world to say, hey, you've provided us with so much value. We're going to... That's going to loop background. So it's kind of like this karmic version of reality. Okay, so that's kind of a long overview, but I think it's a good framing for us to kind of dive in both to its interview today with the Dov, but also into these interviews in general with these financial kind of systems in general. And with that, thanks and enjoy the interview.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 466.97,
+      "end": 504.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello, fabulous listener. My name is Reese Lindmark, and you're listening to another episode of creating a humanist blockchain future. And in this podcast, we take a systems thinking approach to creating a better future. So we kind of have a couple different series that focus on different systems scopes. And today we're going to focus on Series C software systems, where we focus on crypto economics, AI alignment, things like that. And we're asking the question, what software systems are built in code? And I'm very happy to introduce Nadav Hollander today, who's the co-founder of Dharma Protocol, a way to administer. debt agreements as tradable cryptographic tokens. Nadav, thanks to being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 504.66,
+      "end": 506.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Thanks so much, Reese. It's good to be here.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 506.28,
+      "end": 521.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, excited to dive in. And what I love about kind of the blockchain and crypto space is not only we're essentially... creating the financial system in software systems. So it's this great kind of combination of software systems and like understanding how money works.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 522.71,
+      "end": 523.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So, and it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 523.71,
+      "end": 532.05,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "good for me because I'm kind of completely ignorant of the financial system. So could you kind of give me a high level overview of the Dharma protocol before we kind of dive in deeper?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 532.63,
+      "end": 544.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Sure. Yeah. So I guess like it's, it's probably easiest to explain Dharma by kind of first of all explaining the impetus for it and kind of the reason why. I think it's valuable to build this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 545.74,
+      "end": 588.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And basically that is that like in the world of blockchains, like we have this like massive growing class of tokens, which all kind of have equity-like characteristics to them. And what I mean by equity-like is that they don't necessarily give you governance rights per se or dividends or any of the things that traditionally come with equity. But they do have equity-like risk profiles where if you invest in a ICO, you're probably judging the company that is associated with that ICO in the same way that you would judge like Tesla with respect to their Tesla stock or something like that. So these tokens have equity-like properties to them. But what kind of led me to start thinking about this problem is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 588.89,
+      "end": 589.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 589.59,
+      "end": 684.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you look at the real world financial system, so to speak, equity is a much, much smaller asset class than the debt. Whereas equity... represents something like $73 trillion of global value, debt something like $213 trillion, something around those lines. And so if you buy this notion that tokens are useful for representing value for X, Y, Z different reasons, and we can dive into those more deeply if we want to actually break down the first principles here. But if you buy the idea that tokens are really good at kind of frictionously expressing value in a way that can easily be transported across borders, programmed, etc., then it's kind of a natural next step to start porting the world of loans, bonds, and just debt instruments in general into cryptographic tokens. And so essentially what Dharma is, is we're trying to create the standard universal mechanism by which one actually issues a debt agreement as a cryptographic token, how one underwrites that debt token. So actually, how one is able to determine what the likelihood is that that debt will be repaid. And then finally, a mechanism for actually administering that debt. So that means actually making repayments, being able to track those repayments, et cetera. And we're trying to do that in the most generic way possible so that anything from a consumer loan to a margin lending system to a sovereign bond can be represented by tokens.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 685.0,
+      "end": 685.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 685.34,
+      "end": 709.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it. Cool. Yeah, so essentially money breaks into two big things, or rather the tokenization of money breaks into two big things, equity and debt. Equity's been done in a big way already, and debt hasn't. And so you're trying to address the debt profile within crypto and specifically to make a very kind of abstracted protocol that allows any kind of debt in issuance to exist in crypto. Is that all right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 709.81,
+      "end": 710.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "That's correct, yes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 711.23,
+      "end": 724.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Cool. So I guess before we dive into the protocol itself, are there other things? So there's equity and then there's debt. Is there any other big bucket that we're missing here where there's like, oh, we should make a protocol for that too?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 724.93,
+      "end": 776.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yes, absolutely. The far and beyond biggest asset class in the world is derivatives, which is just like a very broad category. of assets that are just constructed. Derivatives is like honestly the best word to describe it, even though it's kind of like a word that has no meaning, because it's such a broad category. It's pretty much just any sort of asset that is constructed from other constituent assets under some sort of logic. And that asset class is so incredibly large that we literally don't even entirely know exactly how big it is. So there's actually some interesting protocols that are working on that right now. Particularly a friend of mine, Antonio, is working on D-Y-D-X, which I think is a really interesting protocol for creating options and short sales. So anyhow, we can dive a little bit deeper into that if you'd like.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 776.38,
+      "end": 783.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "But I just wanted to know if there were any other bigger buckets. And like you said, there's a huge one, which is derivatives, but you're focused on debt here.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 784.24,
+      "end": 785.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So thinking",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 785.26,
+      "end": 804.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "about the Darmor Protocol then, so you have... You're issuing debt. Could you kind of break down for me how, and especially from like an actor perspective, you have someone who's issuing the debt, someone who's getting the debt, someone who kind of does, I guess, the underwriting. So could you break down the system here?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 805.12,
+      "end": 920.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Definitely. Yeah, yeah. So I guess like the way I define it in the white paper is that there's kind of two classes of actors that are involved in maintaining the protocol. One class is what I would call agents, which is kind of like a broad term for just like anybody who's actually a consumer of the protocol. And so those are generally just people who are either taking on some sort of debt, so like a borrower. or somebody who is actually like capitalizing some sort of debt. So like a creditor or an investor. And so like if we we can, throughout this whole conversation, we can use like lending club as a the canonical example, even though I personally don't think it's the most interesting example. But it's a good way of explaining how these sorts of things would work. So in the lending club example, like, The person who goes through Lending Club to take out a loan would just be the debtor in this arrangement. And then the person that actually scrolls through loans on Lending Club's website and actually invests in them would be the creditor. Now, the second category of people who are kind of involved in the maintenance of the protocol would be what I call keepers. And this is not my own term, mind you. This is a term that was coined by Rheinser from PaulyChain Capital. And it generally refers to just like utility players that in some way provide value for compensatory fees to a network. And in the case of Dharma Protocol, that falls into two different buckets. The first is underwriters, and I'll go more deeply into what that means in a second. And then the second are relayers. So the first of those categories, the underwriters, pretty much do exactly what it sounds like. In the traditional financial system, underwriting refers to the idea of essentially like taking some sort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 920.4,
+      "end": 955.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of package of debt and attesting to the fact that you think this package of debt has a X percent chance of actually being repaid as according to the terms that are outlined in it. And functionally speaking, that's pretty much what an underwriter does in Dharma Protocol. So to kind of crystallize this example, let's go with that lending club sort of example. Let's just say that you, Reese, have some sort of novel thesis on how to, say, give loans to Zcash miners.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 955.41,
+      "end": 955.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I do,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 956.13,
+      "end": 956.35,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "actually.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 956.77,
+      "end": 957.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 957.41,
+      "end": 984.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there we go. Perfect, my first customer. So let's just say you have some sort of novel idea on how to give loans to people who need to build these GPU mining rigs and what have you. Actually, I'm not even sure if Zcash is a GPU mining operation. Anyhow, whatever. We don't need to get into the specifics there. But you need to mine something and you need some upfront capital to actually build your mining rig.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 986.0,
+      "end": 1080.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And so what essentially your role would be in something like Dharma is that you would go ahead and set up a website that looked a lot like a lending club, looked a lot like a soapy, look like any other online alt lender. And everything that involves your interactions with a borrower throughout the lifecycle of their loan would be pretty much exactly the same as it would be in the traditional financial system. The only difference is that instead of you going out and knocking on a bunch of investors' doors in order to actually raise... the debt capital that is necessary for you to start making loans, you would instead act as an underwriter and Dharma protocol. And when a borrower came to your door, you would essentially cryptographically sign a statement saying, I believe borrower X has a Y percent chance of defaulting on a loan of Z, and I'm going to do whatever is in my power to make sure that they actually pay back according to X, Y, Z fee schedule. And then you take that signed little bundle, and you're going to give that off to a relayer, which I'll explain what that does in a second. But ostensibly, once that loan actually gets funded, you're going to get a fee for that. And so the idea is that, at least in the underwriter bucket, becoming an underwriter in Dharma Protocol is basically a means of capitalizing some sort of online lending business in a sort of mechanism that I would argue is a lot more frictionless than actually going through like the traditional route of knocking on fixed income investors doors and so on and so forth.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 1080.58,
+      "end": 1101.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. So wait, so let's pause for a second there to make sure I understand this. So yeah, you have... So there's a kind of a high-level meta bucket of agents versus keepers. The agents are kind of the users of the protocol, aka people who are looking for money, aka debtors, and then people who are... actively giving people money or renting out their money, whatever, creditors.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 1102.34,
+      "end": 1102.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 1102.52,
+      "end": 1119.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And then you have the keepers who are traditionally, the keepers are people who have been, they essentially help the protocol function. And you can imagine the keepers in kind of the centralized version as the centralized intermediary, whether it's lending club or whoever. Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 1120.76,
+      "end": 1200.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Sure. Yeah. I mean, I think the one thing that I would clarify is that in Dharma Protocol, it's not necessarily these underwriters will most likely usually be centralized entities. We could walk through a thought experiment of what it would look like to have like a underwriter that was like say like a decentralized network or it was a, you know, a Dow. It's not really fashionable to say Dow's anymore, but that was a Dow or something, but it gets a bit more complex. And it's easier to kind of think about it in terms of just individual centralized entities. But what Dharma is is a protocol that governs their interactions with kind of all the other constituents in the network. And kind of atomizes the actual components of the lending process. Because like usually think about it, like what a lending club does is that like a certain aspect of their core competency is actually originating and underwriting loans. But a large aspect of their core competency is actually like. attracting investors. And that usually involves not just, you know, creating a nice retail investment platform that people can kind of scroll through and have like a nice interface to interact with and so on and so forth. Like it actually usually involves getting something like 80% of their volume from from institutional investors. And so there's a huge kind of like capital markets operation that most of the online lenders have to build out.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 1201.03,
+      "end": 1202.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Interesting. So could I,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 1203.11,
+      "end": 1214.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "let me dive in on that for a second. So would someone like Lending Club, would they be an underwriter on your platform in the future? Like would that be a possible future you could see?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 1214.54,
+      "end": 1219.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "It's definitely possible, right? I think it's like it's possible versus likely. Like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 1219.34,
+      "end": 1220.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 1220.54,
+      "end": 1221.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "theoretically possible.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 1221.86,
+      "end": 1221.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 1222.16,
+      "end": 1303.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think that a lot of the current online lending companies are are a lot more low tech than most people would realize. And they're kind of like window dressing on the existing financial system. And so I think they're less likely candidates to want to do this in the short term. But if I could outline the basic like, like if you were to build a new lending club on some sort of niche lending market, the pros that I would say, or rather the advantages of building on top of Dharma would be that, A, you don't necessarily have to sort out the actual... ways in which your loans get funded yourself. All you need to focus on is actually originating and servicing debt and just making sure you get good borrowers and you're actually making sure that they're paying back by whatever mechanisms. And then the second benefit is that when people actually invest in your loans, via the relaying mechanism, which I can talk about in a second, those investors will have a cryptographic token that represents their ownership in that debt, or rather their rights to future cash flows in that loan. And I would argue that's kind of the biggest deal here, because that's, that's what's powerful about about something like Domar Protocol is that there's, we kind of create this open universal standard for what a debt asset looks like as a tokenized primitive.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 1303.33,
+      "end": 1303.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Great.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 1304.13,
+      "end": 1308.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And we can kind of get into that in a second, but there's a lot of interesting things when you start going down that line.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 1308.07,
+      "end": 1336.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, got it. So, yeah, and I like what you're saying about the atomizing of the APIs there. I think that's just a great way to think about crypto in general in blockchain protocols is, you know, as someone like biology from Earn.com, formerly 21.co says, you know, these are all about kind of like pseudo, like paid API keys. And what you're saying, is, yeah, this is just a way to kind of atomize to say, hey, these are all the little nooks and crannies of the system, and here's how they interoperate with each other. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 1336.52,
+      "end": 1337.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "given that- Yeah, I think that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 1337.28,
+      "end": 1338.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a great metaphor. Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 1339.0,
+      "end": 1340.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Let's kind of, well, you said it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 1341.72,
+      "end": 1342.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 1342.96,
+      "end": 1344.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I was referring to the API keys.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 1344.6,
+      "end": 1345.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh, got it, got it, got it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 1347.56,
+      "end": 1347.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 1347.92,
+      "end": 1385.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "now let's think about, so I pretty much have the idea about these underwriters. They're the people who essentially are sourcing the borrowers who are sourcing the debtors. And as you say, they're like smart contractor, they're kind of like at the atoms in their thing are, hey, there's this borrower X with Y amount, doing Y amount of dollars that has a X or a Z% chance of paying back their loan or whatever. So that's them. Now let's kind of go over to the other side here of the relays and the other side of that core value proposition for a new, for someone new who'd come on this platform. So tell me a little bit more about the relays and specifically the tokenized debt here.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 1386.3,
+      "end": 1386.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 1387.88,
+      "end": 1390.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So what a realtor is, and I think really the best",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 1390.9,
+      "end": 1393.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "analogy",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 1393.06,
+      "end": 1400.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that I can use to define what a relayer is, it's kind of like a kayak for loans. Where I'm sure, have you used kayak",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 1400.86,
+      "end": 1401.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "before",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 1401.18,
+      "end": 1401.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the book of flight?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 1401.98,
+      "end": 1402.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 1402.88,
+      "end": 1403.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 1403.62,
+      "end": 1501.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And so what Kayak does is that like anytime you search for a certain flight on kayak or an hotel or what have you, it basically aggregates results from a bunch of different vendors who are selling flights or selling hotels or selling vacation packages, et cetera. And essentially, what a real area is is that they kind of aggregate different like different debt orders that have been attested to by underwriters. from a variety of different sources, and then they provide a sort of retail investment platform that lets people actually fill those debt orders and lets people actually invest in those different debts. And the mechanism by which this happens is entirely based off of on-chain atomic swaps, meaning that essentially you don't have to send your money to a relayer and have them hold it on your behalf. at any point in time in order to actually invest in different in different debts. So it's not like for instance if you were to go to a you know like lending club.com and you're going to try to invest in a loan there. You would have to like basically like bank transfer them a certain amount of money and then you're going to have a balance on their website. That's well and good within the world of normal finance where you can reverse bank transactions if people are being fraudulent and so on and so forth. But in the world of crypto, that's problematic. And I can go more into why that's an issue, but that's kind of the impetus for why we have or why people are trying to build decentralized exchanges. And so the great thing about the way the relaying mechanism works is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 1501.12,
+      "end": 1503.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we've",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 1503.3,
+      "end": 1546.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "largely based the system off of the way that zero X protocol works for those listeners out there who are aware of who know how that works. And in fact, we actually leverage zero X for one of the steps in the process. And essentially, like, I as a relier am going to list certain orders that underwriters have forwarded over to me. So let's just say I have like a, I have three different lending club like underwriters. One is in China, one is in South America, and one is in Europe. And I am in California, and I've built a, relay that is specifically catered to English-speaking investors.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 1547.77,
+      "end": 1548.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 1548.29,
+      "end": 1602.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "going to essentially take the debt orders that these different underwriters have attested to. I'm going to list them on my website publicly. And any time that an investor wants to actually fill one of those debt orders, they're going to take the little bundle of data that I have posted on on my website, and they're going to submit it to a smart contract. And in one transaction, they're going to have a debt token representing their ownership of that debt, and the borrower on the other side is going to actually end up getting that principle. And all the sort of terms associated with the debt are going to be immutably encoded on chain in a way that anybody in the future, be they a person or a smart contract or any other automata, will be able to actually determine, like, these are the terms of the debt. This is how much has actually been paid back. This is and all that stuff is like transparently auditable on chain",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 1602.44,
+      "end": 1604.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 1604.04,
+      "end": 1607.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's kind of the function of the relayer in in gory details",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 1608.22,
+      "end": 1663.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Cool. Yeah, nice. So, yeah, they are. I like the kayak for loans. They're an aggregator. They essentially, their input is a bunch of these different underwriters based off of whatever their, like, specific theme of their site is or whatever. They get all these underwriters as inputs with their specific like borrower attestations or whatever, and then they, you know, provide them to the creditors. And they say, hey, here's the whole list of things. And you can go and then the creditor. once they actually are like, oh, sweet, I want to lend this money to this person. When they click that button, that all just happens automatically through a smart contract. The money gets transferred and the creditor gets transferred to the debtor, aka the borrower. And then the creditor gets a actual token that says, hey, this is, that essentially links their debt or the debt that they just provided to an actual token. Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 1663.93,
+      "end": 1664.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 1664.49,
+      "end": 1723.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "correct. And I think the one mechanism that I probably haven't elaborated on until now, that's important to understand, is that when an underwriter makes an attestation to a certain debt order and that debt order actually gets filled on the other end, all of that is like immutably recorded on chain in a manner where you can essentially look at an underwriter's previous performance and be able to empirically judge. how well their predictions have kind of matched up with reality. And what that means is that the market should ostensibly gravitate towards rewarding those sorts of underwriters that have done a very good job of sourcing and originating and servicing loans in a manner that was in line with the predictions that they made. And conversely, it should punish those sorts of underwriters that are doing not as good of a job as that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 1723.86,
+      "end": 1724.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 1724.84,
+      "end": 1730.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And so that's kind of the core, like, underlying incentive mechanism that makes the system feasible.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 1731.2,
+      "end": 1753.42,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. So tell me a little bit more about when I hear about the relays. they're just kind of, they're kind of curators in a way. Why couldn't, you know, the creditors just go straight to the underwriters? Why couldn't they just be like, oh, here's a bunch of people that are underwriting things. I, as a creditor, I'm going to go to these underwriters that I trust or whatever. Why do they need to go through the relays?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 1754.02,
+      "end": 1755.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Right, right. So theoretically,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 1758.02,
+      "end": 1799.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "mind you, there's nothing that prevents a underwriter from being a relayer at the same time. And if anything, I think that... the first partners that we're going to be onboarding to the protocol, mind you, this is an open protocol, anybody can build on top of it, but the ones that we're in talks with right now are going to be acting as both relairs and underwriters at the same time. And so that kind of fits into the canonical lending club example. But the reason why we've kind of atomized these two different concerns in the lending process is that It's a very different set of skills and competencies to actually originate an underwrite debt versus being able to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 1799.23,
+      "end": 1800.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "essentially",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 1800.49,
+      "end": 1856.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like sell like crypto tokens to people in a manner that is compliant and in a manner that it's just creating a retail investment platform is like a very different side of the brain than then actually issuing or rather underwriting and originating debt. And so the hope is that, like, reallers will be able to focus more of their resources towards building these sort of compliant crowdfunding platforms for this actual debt. And underwriters, if you're just some person in ex-country who has a really interesting idea on how to originate an underwrite debt for Y market that God knows we haven't even thought of yet. then you can very easily build that online lending business without actually having to worry about the ways by which you're going to... fund those loans.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 1857.21,
+      "end": 1877.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, cool. Yeah, I like that as a, yeah, they could be the same thing, but they're very different kind of profiles and concerns that each of them have. Is it, is it, I kind of talked about relairs as a, as like kind of curators. Is that an okay frame on them? Or are they more like people who find people to give them money?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 1877.97,
+      "end": 1878.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 1878.69,
+      "end": 1929.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, I think to some degree there's a little bit of a curation aspect to it. This kind of gets into, into a different aspect of the protocol, which is that there's, this isn't a fully trustless system. And I think I really like to emphasize that a lot because there's, I don't want to be in any way underhanded about it. Like, if you are investing in a debt asset that has been attested to by a certain underwriter, you are effectively trusting that that underwriter is not being fraudulent. Because while you can, you know, while you can empirically kind of judge the performance of the debts that they've attested to in the past, there's a lot of pretty trivial attacks that an anonymous underwriter who was just like a faceless public key on the internet could execute on the protocol. And I think that this is analogous to like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 1929.74,
+      "end": 1931.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 1931.48,
+      "end": 1969.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "fact that you would never invest into an ICO that's just like a public key on a website. Like you would always want to know what the actual company is doing, who the founders are. You'd want to see some sort of positive signals as to their credibility. And I would put underwriters into a similar bucket as that. We're essentially like... You are in the same sense that an ICO or a company that is doing an ICO is facilitating some sort of crowdfunding event. Underwriters are facilitating some sort of crowdfunding event and they have to be trusted entities. Now this whole kind of this whole aside that I've gone on here is a roundabout way of basically explaining that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 1969.96,
+      "end": 1970.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 1970.86,
+      "end": 1982.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "reliers in a sense have somewhat of a curation aspect to them insofar as If a relator is just accepting debt orders from anyone in the world who is just, you know, sending them like a debt order from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 1982.78,
+      "end": 1983.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like some",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 1983.06,
+      "end": 2001.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sort of faceless public key, then they are really exposing their investors to a high risk of fraudulent activity. And so good relators should ostensibly do some sort of curation or some sort of sifting of the people who come into the top of the funnel.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 2002.87,
+      "end": 2003.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 2003.37,
+      "end": 2031.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "episode is brought to you by Shapeshift.io. the world's leading, trustless digital asset exchange. Quickly swap between dozens of cryptocurrencies, including Bitcoin, Ether, Dash, Bitcoin Cash, Auger, Golem, and many more. And this is not your typical crypto exchange. You don't need to create an account or share your personal information, and your funds are never stored on ShapeShift. This means that your hard-earned digital wealth is never up for grabs by hackers or other malicious actors.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 2031.87,
+      "end": 2032.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "To",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 2032.47,
+      "end": 2040.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "get started, visit Shapeshift.io. choose the tokens you'd like to swap, input your receiving address, and send your funds. It's that easy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 2042.97,
+      "end": 2072.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So let's kind of transition a bit. So I think, I mean, I think I understand the protocol relatively well in terms of those four different pieces. My instinct, though, is that, you know, we need to kind of incentivize these underwriters and these relays in order for them to be good keepers in this system. But I know that you're not actually doing a token sale or an ICO, so could you kind of... talk more about that and also talk a little bit about how you then incentivize these underwriters and relayers to be on your protocol.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 2073.3,
+      "end": 2077.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Sure, yeah. So I think I'll actually do that in the reverse order.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 2077.32,
+      "end": 2077.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'll",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 2077.5,
+      "end": 2167.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "explain why you as an underwriter or relayer would want to build some sort of company on top of the time of the protocol. And the simple answer is that you do earn fees. Like you set your own fees and you earn them on a per debt basis. And so the incentive mechanism of the whole protocol is that essentially if you are an underwriter and you are sourcing and originating debts in a really consistent manner and the ways in which the actual debts were paid off has fallen in line with the way that you've predicted. then the market is more likely to gravitate towards you and choose to fund your loans in the future, and therefore you'll get more fees in the future and you'll be able to charge more fees. And the same applies vice versa. And on the relayer angle, it's a similar sort of dynamic where essentially if you are facilitating the investments, people's or rather creditors' investments in really good packages of debt, then you're going to get more volume. But none of this, as you pointed out, involves having some sort of native protocol token because to be like totally kind of brash about it, there's just really no need for one. Because we do have ether and we have a means of actually compensating these people with cryptographic tokens already.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 2167.84,
+      "end": 2168.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 2168.4,
+      "end": 2178.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so the, with respect to why we chose not to, include some sort of protocol token into the mechanisms design.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 2178.55,
+      "end": 2179.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Look,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 2179.83,
+      "end": 2211.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I would like to start by saying that I am actually pretty bullish about token sales, and I do think that they're honestly like kind of a revolutionary development in the way that capital is allocated. But my personal opinion is that the ecosystem is just very immature right now, and that we really don't know exactly... what sort of tokens make sense and what don't. And so, for instance, in something like Dharma, ostensibly, we could do a medium of exchange token, so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 2211.83,
+      "end": 2212.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to speak.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 2212.81,
+      "end": 2256.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So the idea would be that, like, in order to pay fees to relays or underwriters, you have to use Dharma coin or what have you. And, you know, I think Vitalik has a great blog post about this, which I think is really interesting. Like, we really don't know how to value these medium of exchange tokens yet. And we really don't know if they make a lot of sense at all because at the end of the day, you can't really force anybody to hold your token. Like if I was required to use like 12 different tokens in order to complete some sort of like on-chain transaction, like the future is much more likely to look like something where I basically use something like token abstraction and 0x to... to never even have to actually hold the actual tokens. And I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 2256.95,
+      "end": 2257.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 2257.15,
+      "end": 2274.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "quickly buy into them before I use a certain contract and then sell them immediately afterwards. And what that means is that it's just not super loosely clear right now that these tokens will, A, accrue value if the network grows. And B,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 2276.39,
+      "end": 2282.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "whether they're actually adding any sort of value to the network or if they're just pretty much just adding a point of friction.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 2283.94,
+      "end": 2315.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And I think that personally, like, there's been a little bit of a sort of like a people got a bit starry-eyed with the ICO phenomenon. And everybody has kind of been trying to like wedge tokens in their protocol in whichever way is possible when in a lot of cases it doesn't necessarily make sense. And there's a great analogy that a friend of mine told me once, which is that if you do an ICO, you're kind of in a sense like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 2315.28,
+      "end": 2316.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "starting",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 2316.3,
+      "end": 2320.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a nation with a constitution and a native currency in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 2320.56,
+      "end": 2322.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 2322.66,
+      "end": 2343.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "if it's not totally lucid whether or not that currency needs to exist or whether the rules of that constitution are logical, then as your nation grows, so to speak, or as more people start to use your protocol, it can cause a lot of problems. And the approach that we're taking instead is saying that, like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 2344.38,
+      "end": 2344.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 2344.5,
+      "end": 2395.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know what, maybe we will or maybe we won't have a protocol token in the future. We're not entirely sure. But instead of kind of like, you know, declaring some sort of constitution when we're like, you know, a few developers in a house who are just thinking about these ideas, instead we're going to actually try to build the community first. We're going to try to build the product first. We're going to try to get people to actually use the protocol. And then we're going to see, you know, in a year or in two years, whether something like, say, a governance token makes sense, or whether something like, who knows, maybe even some sort of medium of exchange token. I don't know. The point is that all the models that we have to value and leverage tokens in order to kind of incentivize good behavior and protocols are super immature right now, and we're taking a bit more of a cautious approach of... building product first and then adding tokens later.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 2395.91,
+      "end": 2434.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, I like it. I think it's good on you guys that you're not, you could easily do probably a $30 million ICO and you're choosing not to. So that seems like a good thing. And yeah, like you're saying, what is your vector of learning? And right now your vector of learning is, you know, at your customers, at your product, you know, iterating towards product market fit. And then over time, you can start to other people are doing the vectors of learning around medium of exchange tokens and governance. models with tokenized governance models. And as they pursue those vectors, you can kind of, you might, you know, loop into them in a year or two or ten years or whatever. But right now it just doesn't make sense. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 2434.17,
+      "end": 2435.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I agree with that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 2435.29,
+      "end": 2448.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Let me check one other thing, though, is it, so from a fee perspective, both the reliers and the underwriters can choose their fees. And I assume that then your platform, like how do you guys make money just through fees as well?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 2449.3,
+      "end": 2449.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "No,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 2449.98,
+      "end": 2491.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "no. So it's actually definitely worth clarifying that. Like we are not making any money right now. This is an open non-rent seeking protocol. Even if we decided to come in and say that of every transaction we're going to get X percent, like anybody could go out and fork the protocol and build it in a manner where it was free afterwards. So the short-term answer to how we capture value is, I don't know. The longer-term answer is that we have a lot of interesting ideas about either A, ways that we can become... kind of value-added service providers to the network, or be, as I mentioned before, if something like adding a protocol token makes sense at some point in the future, then it's something we're certainly willing to explore.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 2491.54,
+      "end": 2530.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Cool. Cool. Yeah, interesting. I think that the, that's this beautiful world that we live in now, and I'm reminded of... the work that Liam Horn is doing in Waterloo around these new generalizable state channels, which was where Vitalik, you know, gave money to them through a donation. And that's like, it's kind of nice in this new world where we can say, hey, you're just making an awesome new utility for the world. And you hope that over time you're going to have various ways to make money, whether as a service provider or through tokenization or whatever. But no matter what, you're committed to being a non-rent seeking protocol and just a utility for, for all the lenders in the world that want to lend and all the debtors that want to borrow.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 2531.88,
+      "end": 2535.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Exactly. Look, I think if I could sum that up in one sentence",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 2535.04,
+      "end": 2535.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 2536.9,
+      "end": 2537.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's that like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 2537.58,
+      "end": 2539.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "building",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 2539.18,
+      "end": 2549.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a utility for the general community to use and then making a leap of faith that at some point in the future, there is going to be a more lucid way of capturing value from that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 2549.34,
+      "end": 2549.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 2549.74,
+      "end": 2566.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "don't think it's much smaller of a leap of faith or rather much bigger than a leap of faith than saying like, our protocol uses this token and it's going to accrue value if more people start to use the protocol. Like I think those are pretty on pretty equal levels of, of, of, leap of faithness.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 2567.15,
+      "end": 2567.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 2567.77,
+      "end": 2568.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "exactly. Nice,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 2568.47,
+      "end": 2568.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "nice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 2568.71,
+      "end": 2570.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "On scientific term.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 2571.49,
+      "end": 2587.35,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So one thing that we haven't talked about that I'd like to understand a little bit more is how you guys use the OX protocol, or the zero X protocol, as I should call it. And, you know, thinking about, yeah, so I guess start with telling me how you use the zero X protocol. You said you'd use it with the relays?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 2588.33,
+      "end": 2685.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "That's correct. So essentially, the... The actual process of issuing one of these debt tokens essentially involves like two steps. The first step is that a debt token kind of gets minted out of thin air, and that debt token has like all sorts of associated parameters of it, which actually determine the way that that debt is going to be repaid and under what conditions. And when it gets minted, it essentially just falls into the debtor's lap, so rather the borrower's lap. So it's a bit of a backwards thing to think of in the first step where the person who is borrowing the money essentially gets a token that says whoever owns this token will be owed X, like whatever, whatever the actual repayment in terms of the debt are. And then what immediately happens after that in the second phase is that, an atomic swap occurs where the debt token itself is swapped for the principal of the loan from the creditor. And that atomic swap is something that's extremely well suited for the way that zero X protocol works. Where literally like zero x is this very very modular unopenuated system where if you give it any sort of like data packet representing a zero rex order, like it's just going to fill it irrespective of the mechanics of whatever is using it. And for us, that worked really well because we needed some sort of atomic swapping functionality. And we would have been building this sort of stuff out ourselves otherwise.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 2687.21,
+      "end": 2708.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And essentially, like it's, I imagine that down the line, that decision to build on top of zero X is going to make more sense. As their protocol evolves, as more people start building on top of it, and I'm sure there are ways that I'm not even thinking of right now in which we'll be able to collaborate with other reliers in the space because we're building on top of it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 2708.73,
+      "end": 2708.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 2708.97,
+      "end": 2711.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it, yeah. Yeah, it's always nice to be part of a network effect.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 2712.79,
+      "end": 2712.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 2713.53,
+      "end": 2720.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Is there, so you're saying that, yeah, the, you're doing an atomic swap between the debtor and the creditor, those two agents, is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 2721.05,
+      "end": 2721.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 2721.45,
+      "end": 2721.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "correct.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 2721.85,
+      "end": 2722.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay, sweet.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 2722.29,
+      "end": 2749.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, so the underwriters and the relays essentially do all of the keeping, aka they do the matching between the debtor and the creditor. And then once it happens, and it's like, okay, sweet, the debtor and the creditor do a swap where the creditor essentially gets the token that says, I paid this person, or I rented out, or I gave this much debt to this person, and then the debtor actually gets the coins, the like money or ETH that they want.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 2749.62,
+      "end": 2751.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Correct. Okay. Interesting.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 2751.8,
+      "end": 2779.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And I guess one final, one other question on the OX protocol is, you know, I just talked with Fignesh from Lendroid, and his protocol is built on Xerox as well. And it sounds like his, his is a decentralized margin trading platform. And it sounds like his, protocol might be an example of something that could be built on your protocol in the future? Does that sound kind of correct?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 2780.14,
+      "end": 2815.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "That's exactly correct. I mean, the way that we've designed on our protocol is to make it as generic as possible. So that ostensibly like anything from a platform for crowdfunding municipal bonds to something along the lines of a decentralized margin lending network could be built on top of. on top of Dharma Protocol. Cool. And so specifically with respect to margin lending, that's a bit of a longer conversation as to how that would work on top of Dharma, but it's all outlined in our white paper if you're interested in the gory details.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 2815.64,
+      "end": 2838.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Cool. Yeah, interesting. Yeah. So, and we'll see over time, I'll be fascinated to see there's kind of this balance in the space of should you make something that is directly closer to like the consumer kind of application side, or should you make something that is more abstracted, that then other people can build things on top of, which then people can build off of in the future to be more consumer facing. So I'll",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 2838.56,
+      "end": 2839.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "be interested to see how you guys",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 2839.58,
+      "end": 2841.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "in Lendroid kind of work together going to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 2841.48,
+      "end": 2842.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "evolve",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 2842.04,
+      "end": 2842.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "going forward.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 2843.18,
+      "end": 2878.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, it's an interesting question. I think the analogy that I like to use is that like, Vitalik talks about this a lot and a lot of the sort of overviews that he gives of Ethereum's history that Ethereum was kind of the answer to this trend where people would build these sorts of bespoke... blockchains that had like XYZ features that were desirable. Like for instance, like there would be a blockchain with a token crowdfunding mechanism built in or a blockchain where you could create your own assets and so on and so forth. And it was what was really revolutionary about Ethereum is that they built this kind of generalizable",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 2878.9,
+      "end": 2881.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "blockchain",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 2881.44,
+      "end": 2911.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that had a toward complete language on top of it that let people build any applications on top of it. And I think that's kind of the analogous approach that we want to take where We see debt as being this, in a sense, a platform where you can use it to, like, you can use something, or not debt rather. We see Dharma as being kind of a platform where you can build different lending applications on top of it, and that we've created the tools to make that as easy as possible and as flexible as possible.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 2911.96,
+      "end": 2912.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yep,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 2912.68,
+      "end": 2918.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yep, exactly, exactly. So as Bitcoin was to Ethereum, Lendroid is to Dharma.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 2919.74,
+      "end": 2920.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 2920.14,
+      "end": 2921.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "well, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 2922.3,
+      "end": 2922.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Not exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 2923.24,
+      "end": 2923.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I don't want",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 2923.54,
+      "end": 2927.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to pick fights. I've read Lender's white paper and I think it's great.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 2928.0,
+      "end": 2928.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 2928.4,
+      "end": 2932.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that wasn't even a fight to pick. That was just, yeah, different levels of the abstraction tree.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 2932.76,
+      "end": 2932.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 2933.3,
+      "end": 2933.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sure,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 2933.48,
+      "end": 2933.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 2934.36,
+      "end": 2962.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So I guess the final question here is, so you guys went through Y Combinator this last batch over the summer. Tell me a little bit about what that was like to go through Y Combinator, especially as a blockchain crypto company and whether there's any, I mean, something. that are interesting about the space are like in some ways blockchain and crypto are all about like the decentralization of like where you can be a startup and maybe it shouldn't doesn't all need to be in Silicon Valley and so I guess talk a little bit more about what it was like for your experience going through YC.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 2963.25,
+      "end": 2963.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 2964.65,
+      "end": 2977.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So first of all like I think there's a little bit of not a disdain for for things like YC but a little bit of kind of like a contempt. for just like the traditional routes by which startups have been funded",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 2977.99,
+      "end": 2979.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 2979.01,
+      "end": 3007.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Silicon Valley in the crypto community. And I think it's a little bit misplaced. I mean, especially with something like Y Combinator, like you can look at the crypto bets that Y Combinator has made in the past have for the most part panned out to be pretty big players in the space. So for instance, obviously the biggest example is Coinbase. From there, you know, protocol labs came out of Y Combinator, Blockstack came out of Y Combinator, et cetera. shift payments. There's a whole list of them. And...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 3007.33,
+      "end": 3008.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Dharma Protocol.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 3008.47,
+      "end": 3017.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, Dharma Protocol. Yeah, it is way too early to start saying things like that as if it's an obvious success. But the...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 3017.93,
+      "end": 3018.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 3018.27,
+      "end": 3093.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "guess the point that I'm trying to say is that it's like, first of all, it's not... It's not like... There's a little bit of a perception, I think, whether spoken or not, in the crypto community that... like Y Combinator and all of these sort of like vanguard venture capitalists are like this the sort of ossified institutions that don't understand crypto and I don't think that's entirely true. Now another thing that I think is was really beneficial to me like about going through the YC is that in the crypto community there's like a huge lack of focus on user experience and the actual product that you're building and people who will be using it and whether or not it's useful to them. The modus operandi of the industry so far has been like, we have this really interesting technology and then people come along with all these projects saying, look at what I can use this technology for in this market or that market or what have you. And very little examination of whether or not that's actually solving a problem for a user. of any sort. And so what I think is great about Y Combinator is that they have this almost religious sense of focus on users and building products that people want,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 3093.99,
+      "end": 3094.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "building things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 3094.57,
+      "end": 3120.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that people want. And so I came into YC with this very much falling into the bucket of somebody who had. some sort of interesting idea for something that blockchain tech could be used for. Namely at the time I said, you know, I was trying to build a decentralized peer-to-peer lending system, like a decentralized lending club. And what was great about YC is that they really kind of forced me to actually really dig down as deep as possible in figuring out like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 3120.38,
+      "end": 3121.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 3121.16,
+      "end": 3200.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is the problem that is being solved there. Who is that person that is having a problem solved by that? And to actually build products and prototypes and get them in users hands as soon as possible and try to learn from them whether or not what I was building made sense. And that's kind of exactly what I did. So I basically ended up deploying the network as it stood then to TestNet, building a bunch of developer tools, building a bunch of user prototypes. We did a partnership with Metamask where you could kind of borrow. some TestNet-Eath via their Chrome extension, all sorts of little kind of one-off experiments and just learning and just kind of seeing how people used it and seeing what things made sense and what didn't make sense. And I personally in hindsight, I look at that as a positive experience because I kind of got to come out of Y Combinator. And basically take a look at the protocol from kind of first principles and say like, okay, if I were to redesign this from scratch, like what would I do differently? And that's kind of the what has led us to build this sort of generalized debt infrastructure. And so I think that it's like what's great about something like Y Combinator and these kind of tried and true methods of building companies is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 3201.12,
+      "end": 3201.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 3201.62,
+      "end": 3219.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is a perspective that is very massively missing in the cryptocurrency community and that is right now like the cryptocurrency community is very much enabled to have this sort of perspective because of the token sale phenomenon because people can just go out and raise tons of money with you know just just an idea functionally speaking",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 3219.16,
+      "end": 3221.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 3221.04,
+      "end": 3241.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think at the end of the day like the like there's a reason why the YCs of the world like stick to these sorts of philosophies. And I think those lessons haven't necessarily been learned in the crypto community entirely yet. And so I think that their perspective is extremely useful for that sort of approach.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 3242.22,
+      "end": 3246.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Boom. Yeah. Build something that people want. Make some of the people love. Concentrate on your customers.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 3247.66,
+      "end": 3248.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 3248.14,
+      "end": 3248.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "correct.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 3248.56,
+      "end": 3258.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I agree. It's great. So thank you so much for your time today, Nadav for diving into your protocol and how it all works and excited to hear what you guys are doing going forward.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 3259.25,
+      "end": 3259.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Awesome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 3259.93,
+      "end": 3276.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Thank you so much, Reese. And to any of the listeners out there that are interested in learning more, I'd encourage you to check out the Dharma wipe paper. And more importantly, come hang out on our chat channel. Feel free to ask me any questions or, you know. criticize me or what I'm happy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 3276.92,
+      "end": 3278.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm happy to hear your feedback.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 3279.18,
+      "end": 3279.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Great.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 3280.02,
+      "end": 3280.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Thank you so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 3280.34,
+      "end": 3291.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "much, Nadav. And if anybody else, and for those of you who are listening, you can support me on patreon.com slash Reese Lindmark. That's slash R-H-Y-S-L-I-N-D-M-A-R-K. Great. Thanks so much, everybody, and goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 200,
+    "withheld": 0,
+    "published": 200
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

@@ -1,0 +1,2232 @@
+{
+  "schema_version": 1,
+  "id": "podcast-695c7d2f34c6c1ad512a",
+  "title": "#6: Simon de la Rouviere — Curation Markets",
+  "published_at": "2017-07-28T17:22:40Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/6-simon-de-la-rouviere-on-curation-markets",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/335255923-the-rhys-show-6-simon-de-la-rouviere-on-curation-markets.mp3",
+  "youtube_id": "pGAmhLMeEi0",
+  "youtube_url": "https://www.youtube.com/watch?v=pGAmhLMeEi0",
+  "audio_sha256": "3c2c97828137920153330b9e4f482e98e49f0fdaa7718560ab703ec6e642f3ee",
+  "audio_duration_seconds": 1989.38125,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 5997,
+    "unknown_words": 141,
+    "unknown_words_fraction": 0.02351175587793897,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 1.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sweet.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 13.74,
+      "end": 14.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello everybody",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 14.36,
+      "end": 14.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 14.86,
+      "end": 20.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "welcome to another edition of creating a humanist blockchain future. My name is Rees-onmark and in this podcast",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 20.62,
+      "end": 21.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 21.14,
+      "end": 30.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "explore the intersection of four different things, effective altruism, universal basic income, the attention economy, and blockchain. And today in episode number six, we're going to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 30.04,
+      "end": 31.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "dive",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 31.0,
+      "end": 45.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "deeper into the attention economy with Simon de la Rivier. who is a lead of consensus Ujo music. He also explores the attention economy and distributed economic coordination through something he calls curation markets. So Simon, thanks for being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 46.45,
+      "end": 46.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Awesome,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 47.43,
+      "end": 47.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "glad to be here.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 48.39,
+      "end": 50.05,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, as I say your last name correctly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 51.13,
+      "end": 66.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "That's good, that's good. It's like, it's an old French surname, but people don't speak French in South Africa anymore. So like people don't usually do the French style pronunciation, but you know. I forget people. It's saying it over the hour they won.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 67.18,
+      "end": 80.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So I have failed is what I hear, but that's okay. So, Simon, I'd love to kind of dive in and understand I love to start with why within the space. So could you just tell us why you're working on the attention economy and then kind of how that led to curation markets?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 81.87,
+      "end": 82.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 82.27,
+      "end": 163.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "guess it came from a few different angles and it's all sort of converged quite... unintentionally actually but it started off in different ways one was the during my master's degree in 2012 2013 I did the masters in social informatics which is the study of people and technology and how they relate together And my topic was on information overload. And so I studied a lot about how people deal with information overload on social media and different online platforms. And it led into things and to questions about like how do we design communication platforms? Like what's a difference between IRC channel and a forum and like feed-based networks and like how do people interact and discuss? Like what happens to people? And so like I've always been interested from sort of a more academic side. how people interact with these services. And then from the other side, I got interested in blockchains back in 2011. And then also in 2013, while I was starting my master's, you know, Bitcoin didn't die. And it was just like, this, this experiment is going to remain here. It's going to be a lot bigger than we thought it would be. And so I checked back in. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 163.72,
+      "end": 164.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 164.68,
+      "end": 170.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that point in time, there was something that happened that was quite fascinating and it was dogecoin came",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 170.69,
+      "end": 173.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "uh dogecoin",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 173.15,
+      "end": 176.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "came around and which is so fascinated by it because it was a cryptocurrency that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 176.89,
+      "end": 177.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 177.99,
+      "end": 180.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "became successful not because it had any",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 180.03,
+      "end": 181.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "technical",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 181.21,
+      "end": 186.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "advances but rather it just it was just a representation of the community and that network effect",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 186.77,
+      "end": 187.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 187.55,
+      "end": 220.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it just blew my mind that suddenly we could have the possibility of there being currencies and coins or tokens or assets representing network effects and so over time I started thinking about it more and more first starting off with the prospect of can we do this for people like you know create a coin around a person and that became like how do we do that does it look like a traditional equity structure or is it different and then came back into like the attention economy thing about like having a token represents a person's time",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 220.21,
+      "end": 221.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 221.17,
+      "end": 226.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then over time these two sides became came together eventually and that's how curation markets came about was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 226.61,
+      "end": 227.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 227.47,
+      "end": 241.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know you have this concept of how they were design coordination systems online and like how do we tokenize networks of network effects and so like the two came together and that was where creation market started",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 241.49,
+      "end": 242.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 242.11,
+      "end": 270.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah that makes sense so you were essentially trying to you were interested first from an academic perspective and then as you dove in from the academic perspective you're like wow a lot of stuff is happening in reality today. Yeah, I think that fascinating too. I think that Dogecoin is also one that when I tell my friends outside the space about what's happening in blockchain, and I tell them, hey, there's Dogecoin, it has a $200 million market cap, and it's just a meme, you know, that that is very surprising for them. And I also use that. I love that as an example of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 270.66,
+      "end": 271.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 271.12,
+      "end": 279.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, essentially the memetic quality or just the pure scarce quality of a given concept versus something that has utility value like Filecoin or what have you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 279.36,
+      "end": 279.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "How",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 279.74,
+      "end": 279.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "do you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 279.98,
+      "end": 280.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "think about,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 280.79,
+      "end": 286.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "those things that just pure like dogecoin just purely has scarce value purely has memetic value or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 286.47,
+      "end": 287.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "whatever how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 287.43,
+      "end": 291.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "do you foresee especially thinking in the long term with something like dogecoin",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 291.17,
+      "end": 291.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 291.61,
+      "end": 294.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know if you think in like five years or whatever do you see it still you know",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 294.67,
+      "end": 295.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "existing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 295.65,
+      "end": 296.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "as a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 296.51,
+      "end": 297.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 297.03,
+      "end": 303.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a coin or things i'm worried about things that are just purely art for art value and whether they're still keep their value over time what do you thoughts on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 303.93,
+      "end": 304.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 305.07,
+      "end": 353.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's that's fascinating a question When you look at something like Bitcoin or Ethereum or, say, upcoming Filecoin, it's these things, I have a direct utility in the functioning of the software, right? And so they have a lot of use case or value derived from that utility. But a lot of the value also derives from people using the token as sort of affiliation with that network or idea or ideologies. Like Bitcoin has this sort of more sort of flare of like, strong ideologies and like you know freedom and like you know we create the system without other control you know that kind of ethos and Ethereum sort of more like we have this world computer that we're all working on together and like you know it's sort of this memes attached to this coins it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 353.74,
+      "end": 354.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 354.44,
+      "end": 359.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know past just utility value and so something like Dogecoin is interesting because it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 359.9,
+      "end": 361.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it adding",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 361.99,
+      "end": 365.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a coin to a meme right it has some interesting things that I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 367.56,
+      "end": 372.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "changes its behavior overall, right? One thing is it's a it's a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 372.32,
+      "end": 373.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 373.32,
+      "end": 395.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a feedback loop for both, right? Which means that Doge as a meme would have probably haven't had will not have survived as long if there wasn't a cryptocurrency attached to it, right? And the cryptocurrency would not be around if the Doge the meme wasn't still around, right? So it's sort of this sort of feedback loop where one, they help each other survive.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 397.07,
+      "end": 397.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 397.61,
+      "end": 402.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the thing about meme currencies with things like Dogecoin or like potcoin is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 402.25,
+      "end": 403.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "these",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 403.27,
+      "end": 405.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they will they will likely",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 405.64,
+      "end": 407.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "survive",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 407.58,
+      "end": 419.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "as long as they're relevant, right? So it's not necessary that these things need to exist on the scale of like nation state fiat where it's like expected to last hundreds of years or like hopefully hundreds of years.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 420.97,
+      "end": 421.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 421.41,
+      "end": 433.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "merely to represent the network effect at a certain point in time. But they do benefit each other, meaning they have longer residual effect. Like new memes come about because the cryptocurrency",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 433.15,
+      "end": 434.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "fed",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 434.69,
+      "end": 437.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the meme and the meme feds the cryptocurrency, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 439.55,
+      "end": 439.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 440.13,
+      "end": 441.31,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think that the...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 441.66,
+      "end": 442.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 442.08,
+      "end": 471.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "right in saying that if the cryptocurrency doesn't have any real world equivalent, if it doesn't have a large subreddit, then it's not going to be worth money. So kind of using that as a jump-off point, I want to dive into some of these. So curation markets, I'd love to, we were just talking about it as a kind of design pattern before the show. So could you tell us a little bit more about curation markets as a design pattern and then also give us a little bit into... who's working on this design pattern, either, kind of some of the stuff that's happening in the district OX side.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 472.7,
+      "end": 549.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah. So as a design pattern, it has two core features. One of them is that you're using a token to signal things that this community should care about. And that can take many forms. It could be like you either stake a token towards something or it's literally being voted by the community. or it's like you have to burn the token in different ways. So it's all about just using this skin in the game thing that you acquired and like putting it forth as an intention towards something. Like we should do this or like let's build that or you know, we should care about that or this. That's the one core thing and that doesn't, that can be done with any token right now. It's more sort of it can be done with ether token. It can be done with the different tokens that exist already in the Ethereum ecosystem to use tokens in that way to signal that these are your stakeholders. What do they think? But then there is another subset of that which goes more into how these sort of curation markets spawn and how they are created. And that touches the sort of concept of continuous token issuance, which is part of the curation market setup, which is saying, we want these kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 550.45,
+      "end": 550.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "sort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 550.91,
+      "end": 653.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of coordination systems using curation markets to exist without there necessarily being one entity or institution having to go and mint these and then give them out for various means either selling them which runs the risks of being classified as securities or issuing them but then doing a bad job of doing it's like them keeping say 80% and not creating a proper network effect so the continuous token issuance part is about saying how do we how do we spawn like thousands or potentially millions of these interest networks to coordinate around these specific problems and things, but do it from a perspective that we regard to be a fair issuance, right? So Bitcoin and Ethereum, like these things are issued by saying, we think that the miners who do a job of securing the ledger are the recipients who are rewarded with this and thus we feel it's a fair issuance and fair representation of the network and as you can see now that's that if it's not done well then you get political issues and issues like what's happening in bitcoin and now even again in ethereum where people are worried the miners will get too strong hold on the network So that continuous token each transport is one of the more design patterns involved with it, which is there's essentially an algorithm that defines the cost of the token, you pay with ether, you get a token, and the cost increases based on how much is in supply. So that's like the basic model of that. And like people can leave if they want to and then take eth with them. So it's sort of this community would then shrink and grow and shrink as relevant the meme is or the topic is in this. curation market.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 655.39,
+      "end": 707.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So that's a core thing and that's the sort of two core patterns but and I think one can experiment at different levels of that. Some of the things I want to do is experiment just with the curation portion, not necessarily the issuance portion. And I want to experiment with the issuance portion together. So there are different people experimenting with this design pattern in different ways because a lot of it's also about like how do we make sure that we get the value out of it, which is people coordinating, so curating to coordinate. So one of the examples is Luke Duncan with the, as part of the district OX network, is put forth this proposal where you call it the Hive Commons, which is about how do we figure out a way in which we can direct funds for development of various things, right? And so using curation markets, you basically,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 708.52,
+      "end": 709.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 709.38,
+      "end": 722.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, put your money where your mouth is by saying i think this is important project to work on this is important project to work on and what's interesting about the incentive model he designed is that um the project's success um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 722.92,
+      "end": 723.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 723.94,
+      "end": 740.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "dependent on how it's like if people buy tokens the reserve of of ether available to be used by the project grows but if the project is not doing their job the reserve is shrinking so there's sort of this you know, Mexican standoff between the funders and the founders, which is like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 741.37,
+      "end": 742.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we'll",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 742.01,
+      "end": 756.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "work with you, but you need to work with us, and we are both in control of this reserve. So you sort of hold hands from a basic stander, probably not the right way to say, but, you know, both are aligned to work together in making it work.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 758.58,
+      "end": 798.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Real fast on this project, because I think it's a great project. I think it just shows kind of the emergent Ethereum stack that we're seeing here, which is really fascinating. You have Ethereum as the base layer. Then you have Aragon, one step up for governance. And then you have one step up from that. You have District OX, first of these peer-to-peer marketplaces with something like Heathlands as the first one. And then you have one step above that. They have this great, and I think they're doing a great job of kind of coordinating the crowd here, where they have their GitHub issues. and they say, hey, anybody who wants to create a GitHub issue, you essentially can propose projects on there, and then the top five projects got essentially their backing. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 798.08,
+      "end": 798.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 798.54,
+      "end": 799.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Hive Commons one was one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 799.82,
+      "end": 800.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that he",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 800.5,
+      "end": 810.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "proposed, got backing. And it's like, wow. So it's using so many strange parts of the stack. It's using both the stack itself and concepts in curation markets on top of District OX. So I think it's fascinating.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 812.02,
+      "end": 828.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "It's fascinating to watch because that what District OX is doing, that is a basic. curation markets where the people that are interested at are using their tokens to swarm around things that are relevant for that specific network of people. So that's exactly the kind of thing I want to see more of.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 828.89,
+      "end": 858.85,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I like taking exactly what you said there, which is the essentially a curation model, like there's the, whether it was a status one or whether it's this current, whether it's a district or actually a lot of these people have community engagement platforms where they say, hey, if you do something for us and if you get enough likes in our Slack channel, then we will essentially give you tokens. And I think that that's... correct me if I'm wrong, we're pretty in line with your kind of continuous token issuance model where you are kind of issuing tokens over time, people that are kind of doing work in the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 858.85,
+      "end": 860.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "system. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 861.09,
+      "end": 890.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so, you know, that process, that process currently existing in these early, like these, these projects that exist and then early stages are just, you know, giving away tokens to other people. building projects or like one to build projects in that space like Decentralands another example where the team are saying you know if you have a proposal for something cool to exist in Decentraland we'll we'll give you some of these early contributor tokens and that model is very sort of that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 890.32,
+      "end": 891.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 891.3,
+      "end": 898.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that that system there I really really love that because one you're incentivizing network effect you get people involved and like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 898.98,
+      "end": 899.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 899.88,
+      "end": 944.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in a way that sort of natural way to get involved is something that I want to see exist, but not necessarily where it's the teams that are giving away the tokens to people, but sort of we all agree that anyone can enter at any point in time by knowing how they can contribute value to this ecosystem. But it might mean that with the creation market model that there's the one of the proposals of it is just like there's this algorithm that defines it and you have to have Eve to buy the token, that it doesn't, it might end up being too generic. It might mean that it's underfitting for all the potentials of this use cases. And so maybe it's sort of, it becomes more flexible in the future where it's sort of, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 946.01,
+      "end": 953.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "new tokens are issued by a vote of all the previous token holders as an example. So it's sort of a way to spiral or grow this thing more naturally.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 954.28,
+      "end": 982.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Interesting. Yeah, I think that's a huge question within this space, within the blockchain space, generally is how abstract it should you be? And there's a desire to really work at the protocol level to just say, here's how things will generally work, and you crowd, you do your thing, you know, you build on top of it. But like you're saying, there can be underfitting problems as well. So I'd love to talk about the other side of curation markets, or what I see is the other side, which is we've talked a little bit about the coordinating work side, and there's some fascinating work happening there where, you know, these people have comments are building on top of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 982.26,
+      "end": 982.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 982.62,
+      "end": 990.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "district OX net. work in a way to kind of beat the tragedies of the Commons by using a curation market. I'd also like to talk about what we call like the input side, which is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 990.83,
+      "end": 991.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "consume,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 992.29,
+      "end": 1007.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the consumption of information. And you have a bunch of great early adopters here, which are, which is our slash meme economy and the whole dank meme side of things. So could you talk a little bit more about how you see curation markets and this kind of meme economy kind of overlap with each other?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 1008.71,
+      "end": 1044.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "That was very fascinating. I discovered it. a while after the published sort of the first curation market ideas. So I think it was right after DevCon 2, after discussion with Mache Opinski, that the ideas finally came together. And I published an article called Hashtag Markets on exactly the same day that the R-Meme economy subreddit was created. So there's sort of this weird zeit-guise that was happening at the same time. you know the whole thing was always about like okay well dogecoin was a proto example of a meme market because it's literally a meme plus a currency",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 1044.16,
+      "end": 1045.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 1045.85,
+      "end": 1123.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 1123.17,
+      "end": 1124.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 1124.73,
+      "end": 1128.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so that that is fascinating i think that combination of things um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 1129.88,
+      "end": 1130.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 1130.32,
+      "end": 1141.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I never expected it to form like that because like initially my the curation market is called meme markets but people misinterpreted to only mean internet memes and so I changed it the name to curation markets which is the more broader",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 1141.94,
+      "end": 1145.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "term But specifically",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 1145.59,
+      "end": 1157.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "doing the stuff for memes itself is still also and I want to see more of more of that and there is this market there and so one of the things is like has been thinking towards implementing curation markets exactly for for that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 1158.19,
+      "end": 1158.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 1158.57,
+      "end": 1161.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "how that will look and practice is still uncertain to me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 1161.73,
+      "end": 1170.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Totally. I think it is from my, when I put on my lean startup hat and think from my early adopter perspective. I think it's this incredible opportunity where you have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 1170.07,
+      "end": 1170.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 1170.61,
+      "end": 1197.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the R-slash meme economy, they're already doing so much. A, it's grown so quickly. You know, you made a post a couple months ago and only had 200,000 subscribers. Now it has 250,000 subscribers. And they're already kind of monetizing it in weird ways like Dogecoin or R-Apepe, but they're also monetizing it through this. They have a group of the top admins in R-Sash-Meem economy. Make a internet magazine called Mem. insider and actually have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 1197.7,
+      "end": 1198.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 1198.06,
+      "end": 1202.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "making hundreds of dollars a month through Patreon through their meme Insider magazine. It's like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 1202.86,
+      "end": 1203.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 1203.38,
+      "end": 1204.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "crazy and like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 1204.08,
+      "end": 1204.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 1204.52,
+      "end": 1215.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the moment that there is a system that's easy for them to use or easiest for them to use for them to start to monetize their memes more than just karma on Reddit. They're already starting to do it and it's gonna explode. And the other thing that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 1215.26,
+      "end": 1216.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 1216.0,
+      "end": 1217.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of selling yourself short as well is that you have a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 1217.88,
+      "end": 1218.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1218.4,
+      "end": 1225.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "curation markets consumption ideas also being used. It's one of the first three district OX proposals. So there's ETH Lance",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1225.0,
+      "end": 1225.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1225.41,
+      "end": 1228.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And then a meme factory is one of the second",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1228.23,
+      "end": 1228.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1228.43,
+      "end": 1229.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that they're going to create. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1229.43,
+      "end": 1230.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1230.07,
+      "end": 1234.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "seeing a lot of kind of curation market things being built on top of District OX right now, which is sweet.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1235.93,
+      "end": 1237.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So, yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1238.15,
+      "end": 1244.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "let's kind of transition outwards away from curation markets and into kind of the macro attention economy",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1244.37,
+      "end": 1244.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1244.83,
+      "end": 1250.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the second part of the podcast. And Simon and I were talking before the show and thinking about what we want to talk about here. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1250.64,
+      "end": 1251.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "essentially",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1251.3,
+      "end": 1259.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we want to talk about this kind of macro transition that's happening kind of in humanity in theory, which is the attention economy becoming",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1259.02,
+      "end": 1259.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1259.58,
+      "end": 1264.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "much, much bigger side of things as we transition from world where capital is scarce to time is scarce.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1264.86,
+      "end": 1264.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1264.86,
+      "end": 1267.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Simon could just tell us a little bit more about how you kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1267.3,
+      "end": 1267.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1267.86,
+      "end": 1273.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1273.2,
+      "end": 1273.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1273.72,
+      "end": 1277.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what are these other ways that you see the attention economy kind of playing out as we go",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1277.04,
+      "end": 1279.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "forward yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1279.2,
+      "end": 1279.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1279.78,
+      "end": 1280.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "i",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1280.78,
+      "end": 1285.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "i i think to in general you could say that's true that we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1285.02,
+      "end": 1286.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "capital",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1286.3,
+      "end": 1294.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is coming less cares and the more important things are becoming our intention and there are various trends towards this like one is just like um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1294.74,
+      "end": 1295.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1295.72,
+      "end": 1402.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know in general you know, jobs are disappearing away from the menial ones to more like knowledge work jobs. But also the other trend that I see is like a lot of the things that we do in society more and more these days is we all become cultural contributors because that's the thing that's left to do. And it's fun to do, right? Because a lot of the barriers have been reduced for people to become creative and becoming cultural contributors. And when I say cultural contributors, I mean things, I mean things like, you know, I took a photo on Instagram and I posted it on my Instagram feed to tweeting, right? Or, you know, editing one sentence in a Wikipedia page. Like, there's this massive long tale of contributors to the cultural commons that... suddenly sprung up that wasn't there before. We've all become amateur photographers. We've all now become amateur curators of music. We've all become sort of more and more a part of this sort of collective commons of creation and curation. And also had this idea that it would be possible to, you know, take that value that you're producing and you earning it instead of it. sucking up into these corporations. So, you know, it's not Facebook earning from your Facebook like, but you earning from the value you generate from you taking that photo. And so designing systems to make sure something like that happens. And it's likely that what will happen if this, if something like that works is you know let's say the value capture by all the people funneling into instagram to an advertising model is worth 10 billion dollars i'm not sure exactly what it is but you know let's just say that's it probably instagram is probably worth more than that but let's say it's that then the value created from being able to give that money back to people it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1402.18,
+      "end": 1419.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "will probably you can have the same product but the amount of value being generated will probably be much more like you know maybe orders of magnitudes more value just because if you think back about fitness functions the the value is fitting better towards that which is being produced",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1419.14,
+      "end": 1420.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1420.68,
+      "end": 1424.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in a broader sense like the way the stuff fits in is I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1424.32,
+      "end": 1425.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1425.52,
+      "end": 1426.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we lose more and more jobs",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1426.92,
+      "end": 1428.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1428.1,
+      "end": 1433.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and on the other trend paying more attention to things that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1433.56,
+      "end": 1434.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1434.58,
+      "end": 1461.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "looking at our phone or stuff like that that marrying these two things to say like you know, your time that you're spending doing a menial job is not valuable to society. But I would rather say your value is much better if you take a good photo on Instagram. So, you know, the systems that, the economic systems that we have should probably move towards rewarding those things that society thinks are valuable. And in the past, it's in a industrial era,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1462.67,
+      "end": 1504.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it was more, you could more say like only your time was directly attributable to the value you generated. which is, you know, you had only so many hours of labor a day, and thus you received so much funds. And that's, we, in that scenario, we could have also said, we all felt more equitable because it was more easier to deduce if you were a valuable contributor to society or not. And so there are various, like, things changing all at once at this stage that I think would lead to a world where the attention economy becomes substantially more of an economy, but it's not sucked up back into these, like, three or four big companies, but rather sort of disseminated to more and more people.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1504.61,
+      "end": 1525.91,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "That's the hope. That's the goal. I also think that that gets at, like you're saying, the value layer on top of things, kind of will more directly show how much value things are actually generating. And the classic example here is Reddit, and if there is coins associated with Reddit or subreddits or whatever, that you can imagine this huge ecosystem of tokens kind of interacting with each other in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1525.91,
+      "end": 1526.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a way that we don't.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1527.72,
+      "end": 1536.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "That's a very good that's also a very good example. Let's say Reddit's value is now a certain few billion, right? If they tokenize each subreddit",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1536.16,
+      "end": 1537.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1537.12,
+      "end": 1542.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the collective value produced by Reddit will be substantially more, substantially substantially more.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1543.11,
+      "end": 1543.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1543.83,
+      "end": 1556.13,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "exactly, exactly. So I want to talk about one other side of this coin, which is, and we, for there, we talked about a little bit more on the, like, coin. We talked a little bit about the kind of curation side of things. I also, something that I think is just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1556.13,
+      "end": 1556.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "classic.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1557.09,
+      "end": 1563.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And I also think that people don't think about this enough when you think about this new nonlinear transition to the knowledge age. People talk about the knowledge age a lot as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1563.55,
+      "end": 1564.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the... kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1564.69,
+      "end": 1568.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of the consumption side of things, where does our attention go and that thing? But I think that there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1568.73,
+      "end": 1569.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1569.11,
+      "end": 1575.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "they're missing out on is exactly what you talked about at the end, which is just like decentralized nature of coordination. And so right now we have these kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1575.89,
+      "end": 1576.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "big,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1576.83,
+      "end": 1583.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we have, you know, the government, we have a, you know, a national government, and then we have a state government and a city government or whatever. But there aren't that many,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1584.13,
+      "end": 1584.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "those",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1584.41,
+      "end": 1584.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "are like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1584.69,
+      "end": 1585.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1585.09,
+      "end": 1589.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of clearly demarcated layers and there are only like three of them or whatever. How do you think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1589.61,
+      "end": 1590.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "about...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1590.39,
+      "end": 1594.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of how many layers of coordination there will exist in the future and like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1594.25,
+      "end": 1594.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1594.75,
+      "end": 1595.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "people will kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1595.67,
+      "end": 1596.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1596.29,
+      "end": 1598.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "layers they'll be part of and how many layers they'll be part",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1598.47,
+      "end": 1600.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of. Damn,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1600.57,
+      "end": 1602.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's a good question. Because like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1602.95,
+      "end": 1603.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1603.47,
+      "end": 1655.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of the original things that led me down this path was, you know, when I first saw Dogecoin and thought, the first extrapolation that I did is why can't we do this for people, right? Why couldn't we create memes around people? Because one will create agency empowerment for the people. But it will also give the people power an agency to affect the world. So one example that I had in the original blog post I wrote about this was if we, if there's a corrupt president, we can sell the futures or derivatives of this president to make sure they stop being a nuisance on society. We don't have to wait four years for them to be voted out. And so when we have more direct stake. We are more directly stakeholders in many things. We can affect the world more easily, but then it also allows more things to exist. And so that was like the initial starting point. And then I started thinking about,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1656.23,
+      "end": 1656.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1656.75,
+      "end": 1663.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, there are substantially many layers that could exist. You know, one of the original ones was, what if I could, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1666.37,
+      "end": 1669.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "one of original thought experiments I did was just, I'm walking into my local",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1669.91,
+      "end": 1671.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "shop",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 1671.43,
+      "end": 1674.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and I buy bread and I walk out. right",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 1674.09,
+      "end": 1676.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "my me",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 1676.37,
+      "end": 1677.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "walking into that store",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 1677.81,
+      "end": 1678.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1678.69,
+      "end": 1683.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "helping that store thrive and succeed right so if i walk in and out",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1683.37,
+      "end": 1684.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1684.13,
+      "end": 1710.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that amount to just buying some of the stores tokens right automatically some a i buys it for me or like i visit the city of Berlin, me being there helps Berlin thrive as a thing. And then when I leave, then, you know, this AI or bot would then eventually sell the Berlin tokens at some point in the future when I'm not there affecting Berlin anymore. Right. So like that was some of the original thought experiments. And then I became",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1710.54,
+      "end": 1712.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "additionally",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1712.44,
+      "end": 1719.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "some some other ones where it's just, well, at the end of the day, it just comes down to any, any meme really, right? Because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1719.34,
+      "end": 1720.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 1720.3,
+      "end": 1736.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "as a person is an I'm a meme. A city is a meme. The local corner store is a meme. All of these things have an effect on the world. And so anything that is an idea that has an effect on the world could have an associated tokenized value to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 1736.28,
+      "end": 1741.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it. But in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 1741.16,
+      "end": 1746.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "theory, that's how far it could go in the extreme. But the more the deeper questions I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 1746.92,
+      "end": 1747.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "around",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 1747.96,
+      "end": 1774.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "us comes from, you know, to what extent is their value being provided by going more and more granular? Like are we, is it like how granular world it become and where it will be useful? So like, would it be useful to tokenize a, you know, one candy bar that you just bought me eat? Like it seems pointless that we go that deep down. But if we've historically seen the way the web's developed,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 1776.12,
+      "end": 1776.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 1776.48,
+      "end": 1779.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think we should, we should not necessarily like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 1779.84,
+      "end": 1781.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 1781.28,
+      "end": 1806.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that that won't happen based on the fact that things like we've invented something like an instagram like right which is like this extremely low bandwidth thing just like a double tap and it sends across the world where previously you know the way the web came forth was like it's supposed to be about documents it's like a large piece of document and then it's sort of like can we start explaining more and more with like lower bandwidth less concrete things and then tweets and like there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 1807.4,
+      "end": 1807.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 1807.84,
+      "end": 1825.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "granular can go might become extremely, extremely little, like to the extent that you tokenized, the strangest and weirdest things that, you know, you have these micro-organizations that exist for 10 seconds or like, you know, that kind of extrapolations, like how deep and far does it go?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 1826.98,
+      "end": 1827.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 1827.42,
+      "end": 1853.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it all comes down to does any of this provide systemic benefit? So it's uncertain. And I think the thing that you also have to realize is a lot of what the web did, was automated this information sharing. So a like, there's no way I would have written a letter and just put a thumbs up in it and send it to someone. It's you would have wasted all that lettered space to do that. But instead,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 1855.7,
+      "end": 1877.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it might not be humans that care about it, but rather machines coordinating for their own benefit or for the benefit of humans. Maybe it makes sense to trade at the such extreme granular level, but we won't ever see any of it, just like we don't see any of the likes flowing around in the cyberspace, information superhighway, whatever you want to call",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 1877.04,
+      "end": 1878.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it. I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 1878.98,
+      "end": 1884.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "haven't heard the term information superhighway in a long time, so I think the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 1884.34,
+      "end": 1886.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "internet changed the best. I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 1886.92,
+      "end": 1890.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just love the image that invokes. This is like sort of vapor wave. Like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 1890.72,
+      "end": 1892.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like, I'm...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 1892.27,
+      "end": 1894.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I'm on my hoverboard going through the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 1894.51,
+      "end": 1895.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "information. Exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 1896.23,
+      "end": 1896.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I agree.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 1896.91,
+      "end": 1899.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I super agree. Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 1900.25,
+      "end": 1905.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's all the time that we have for today, unfortunately. But to give some takeaways about what we talked about today, first we talked about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 1905.89,
+      "end": 1906.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 1906.27,
+      "end": 1911.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Simon got interested in this. initially from an academic perspective and looking at different ways that people can consume information",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 1911.18,
+      "end": 1911.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 1911.66,
+      "end": 1914.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the internet. And then he got in essentially once",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 1914.48,
+      "end": 1914.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 1914.94,
+      "end": 1919.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "was kind of this multi, I kind of think of it like the time around calculus where you have all these different",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 1919.22,
+      "end": 1919.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 1919.8,
+      "end": 1934.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "popping up in R slash meem economy was popping up, you know, Machia and you and Meher, we're all thinking about these attention economy things. And a big thing that we talked about was the memetic value of something versus the utility value of something. We then talked about some curation markets and how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 1934.3,
+      "end": 1934.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 1934.94,
+      "end": 1938.31,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is being built on this curation market. design pattern, a bunch of things happening",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 1938.31,
+      "end": 1938.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 1938.81,
+      "end": 1962.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "district OX, and a lot of things also happening within R-Sash meme economy. And then finally we talked about in this last section, a little bit about the future of the attention economy kind of value chain, and then also what these levels of coordination look like and how detailed and granular things will get both from a human perspective and also from an AI perspective. So with that, Simon, thank you so much for your time and hope you're doing well, and we'll see you later.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 1963.98,
+      "end": 1965.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Thanks, I really appreciate it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 1965.64,
+      "end": 1969.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Great, thanks. And check out Simon's stuff and work with him on curation markets. That's the other goal.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 1970.16,
+      "end": 1970.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Please.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 1970.84,
+      "end": 1971.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Bye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 242,
+    "withheld": 2,
+    "published": 240
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

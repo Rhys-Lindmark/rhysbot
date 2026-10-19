@@ -1,0 +1,432 @@
+{
+  "schema_version": 1,
+  "id": "podcast-f23c422af898dc919b12",
+  "title": "Web3 & Civic Abundance at the Graph Day 2022",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=QO7L7nryoA4",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "QO7L7nryoA4",
+  "youtube_url": "https://www.youtube.com/watch?v=QO7L7nryoA4",
+  "audio_sha256": "27a5fe27f8a5fec6d9a76f45000911249d25bd0da7e592d7d42c799b3980d081",
+  "audio_duration_seconds": 926.6851875,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 2903,
+    "unknown_words": 15,
+    "unknown_words_fraction": 0.005167068549776094,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_1",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 22.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Please welcome Reese Lindmark, founder of Roots. And before he goes on stage, I want to give some context. Reese helped found Heath Denver. Who was there this winter, by the way? Yes, I was, you know, the other winter we went through. Reese is going to be giving us a presentation on Web 3 in Civic Abundance. Now let's give the stage to Reese, everyone. Give him a round of applause.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 25.34,
+      "end": 26.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Thank you. Thanks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 29.27,
+      "end": 61.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay. What up, everybody. What up? What up? Can you hear me, okay? Yeah, okay. I can stand wherever I want to stand. I'm going to stand right here. It's good to see all of you. Great to see you in person. Today I am chatting about Web 3 in civic abundance. So just get a raise of hands. Who is here during Yeniv's talk this morning? Okay, most folks. Yeah, so today we're going to be chatting about Geo, the application there and some of the work that Root is doing with them and then kind of by ourselves as well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 63.54,
+      "end": 86.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "This is the current situation in society where we have this meme where we all think, oh, man, society would be amazing if just ETH gas fees were a little bit lower. But then we have the reality, which is, I'm not sure which of you are at the Civic Center, Bart Station, or things like that, which is San Francisco and many cities around the world have a lot of difficult problems. And that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 86.52,
+      "end": 87.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 87.48,
+      "end": 197.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 197.16,
+      "end": 206.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "their learning goals wasn't happening. So we have this kind of issue where we're measuring our Twitter likes and social media instead of the things that are really important for our cities.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 208.49,
+      "end": 246.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "So to solve that, I want to talk first about the work that we're doing at the graph and geo. And as a note here, this is an ecosystem that is being co-built by everybody. So software is eating the world, and Web3 is... going to eat cities in a positive way. And so there's great people like Oak and Cabin and Praxis' and Bologi's book on the network state. We're all kind of meming with each other on Twitter, and then now it's going to come into the real world in a kind of a serious way. And so I want to share the work that we're doing with Geo and kind of give you a little bit more on the app that they're building and some of the policy work that we did with it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 247.61,
+      "end": 248.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 248.01,
+      "end": 314.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "as you can see here, this is the geo-i-pad app, and this is one of the goals of San Francisco, which is public safety. And public safety in San Francisco, as you can see on the top line here, it's a much debated topic. People are like, oh, my God, everything's so bad, or, oh, it's so fine, or, oh, should we put more people in jail or not? There's a lot of debate here, and it's just polarized kind of Twitter debate. But what we can do instead is have something like a Web3 for Wikipedia. And that is what the graph is building with geo. And so this is a page that we made, and you can see the text up top, and you can also see some of these crucial data points up here. which is, on the left, is the property crime per $100,000 or 100,000 people of population. And San Francisco is pretty bad. You know, it's like 5,000 crimes per 100K people. But for violent crime, San Francisco is actually pretty good. So about 560 per 100,000 people. And so these are the kinds of information that people will be able to put into these new Web3 Wikipedia's in order to help people coordinate around some of these shared goals.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 315.42,
+      "end": 315.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 315.82,
+      "end": 339.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "you can imagine other parts of that dashboard up there at the top, violent crime per 100K, county jail population, 911 call response rate. And then you can also think about the goals for those crucial metrics. So something like getting the murders down to one per 100,000 people instead of these higher numbers, you know, like for violent crime, it's 560.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 340.81,
+      "end": 341.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 341.25,
+      "end": 403.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "as you're starting to work on these goals like county jail population or violent crime or what have you You can say what are the underlying problems that are making these goals that are stopping us from these goals and some of these problems and all of these have links and database stuff, and please, you know, debate us on this, but income inequality, poverty, stuff like that. And then there are, of course, solutions to those problems. This is like raising the dropout age is a pretty good one. Eliminating blighted housing is something that both people on the left and the right seem to agree on. Implementing some, like, restorative justice techniques that are really powerful here. And so there's a lot of solutions that we can use as a community in order to solve these problems. And then finally, I want to say a little bit about this final piece here, which is claim. which is someone like the district attorney, Chesa Bhutan, I never know how to say his name. There's a big debate right now of whether he increased crime in San Francisco. And so this can be a place for folks to have like a slightly measured debate about that. And of course there's outstanding questions like how does drug use increase crime and things like that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 403.82,
+      "end": 404.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 404.18,
+      "end": 432.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "this is a first look at Geo, the app, and it is a way, again, I think thinking of it as a Web3 for Wikipedia, or a Web3 native Wikipedia that helps cities and others folks coordinate is the way to view it. You can also see on the left here, you can publish your changes, and so I've been doing a lot of changes, you know, in the last couple days, and you can also vote. And so when you vote on these things, the folks come around, and then there's a reputation weighted voting system to kind of get these into the public knowledge graph.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 434.17,
+      "end": 447.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "how to think about a new kind of coordination and information infrastructure that will help, that is in a Web3 kind of native way, that will help cities thrive. And I want to say something about this, which is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 448.95,
+      "end": 450.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 450.23,
+      "end": 480.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "is just now starting to be some of the Web3 visions. I think for folks in 2009, it was like this anti-state thing, anti-government, you know, the... bank bailout at that time. And then in 2015, we were making Ethereum. And then, from then on, we've done a lot of financial engineering and defy and what have you. And just now, we're starting to get into Web3, kind of pushing into the real world in a powerful and positive way.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 481.91,
+      "end": 482.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "In",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 482.09,
+      "end": 484.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "addition, I want to talk a little bit about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 484.13,
+      "end": 485.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "root",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 485.29,
+      "end": 496.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "and civic abundance work more generally. And... Again, this is part of a great civic tech ecosystem, folks like effective government, California, digital public infrastructure work. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 496.56,
+      "end": 497.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "again,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 497.88,
+      "end": 527.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "to remind people of these two crucial ideas, the government is us, and what gets measured gets managed. And so we have, you know, Bologi talking about, what if your community newspaper was re-centered around a community dashboard? And then some folks said, hey, this is happening. This is a community dashboard and a small city in Kansas that actually is organizing around some of the key metrics for their city. And so what we decide to do is make that dashboard for San Francisco. And here it is.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 531.15,
+      "end": 531.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 531.55,
+      "end": 637.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "we go. So this is civic dash.org, and you can go. It's a live website right now. And as you can see here, it's this community-driven platform for proposing and evaluating solutions to realize civic abundance. Oh, there it is. It's still there. The screen turned off, by the way. So you can see these themes at the bottom, abundant housing, quality education, public safety, similar themes as in the geo app. And then at the bottom are scrolling some of these crucial metrics. like the median housing sale price and the rental vacancy rate and these really crucial things that show the city whether it's operating well, just like you want for like a company or something like that. And as you can see here, and by the way, this is all new and built in the last kind of couple months. If you want to connect with this around us, in the top left corner, there's a Discord, join our Discord. Check us out here. But let's look at this first one, this median housing sale price. And this is actually a really bad graph. It's a really good graph if you own a house, but it's a really bad graph if you want abundant housing. A rising housing costs at this extreme rate is a sign of super constrained supply. And so there is artificially constrained supply within the ecosystem, within housing in most major cities in the United States and around the world. And that is a graph that we actually want to be flat. Instead, and so that's a crucial metric that we can look at that says, oh, this is not something that we want and we can set goals around trying to make it so that graph instead of having yearly growth of multiple percent instead is kind of flat. Another kind of graph that you can look at is something like rental vacancy rate. And this is a kind of counterintuitive one, but you actually want a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 637.69,
+      "end": 659.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "higher vacancy rate for these cities. Economists agree roughly 8% is what you want, because that's a sign that there's enough abundance in the ecosystem, so that there's a little bit of slack. And so the rental vacancy rate here, you can see in San Francisco, it's like 3%, 3.5%, which is a sign there's just not enough housing and not enough rental options as well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 660.47,
+      "end": 660.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 660.99,
+      "end": 670.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "so for these crucial metrics like rental vacancy rate, and is it still going? My, let's see here. Keep going, buddy. Oh, there it goes, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 673.62,
+      "end": 731.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "for rental vacancy rate, we can then start to think about these solutions in the bottom right-hand corner here. And these are solutions for abundant housing. And we want people to be able to, instead of just voting once every four years, we want people to be able to collaborate around some of these crucial goals and these crucial metrics. And so this is actually a prediction market, currently live on manifold markets. And the question is, hey, are San Francisco's existing initiatives enough to bring abundant housing in five years? years. And you can see the folks right now agree, yeah, 29%. Not really going to happen. And if you want to, you can go and click on the button and say, oh, let's go over to Manifold Markets and like add your prediction there. And for folks who aren't aware of prediction markets, this is a great way to do kind of policy-based predictions. If people wear a few Tarky and things like that, this is a way that us as a society, instead of just optimizing around Twitter engagement, we can optimize around the policies that will actually move the metrics that are most important for our cities.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 732.61,
+      "end": 795.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "So, this is the idea behind civic abundance. And again, it's just kind of another frame on this idea for how can we use technology to make our cities much, much better. If you want to, you can go, for this one again, you can join us in the Discord or, you know, it's open source software, so you can check us out with the docs or on GitHub, and then you can log in or sign up as well in order to kind of get personalized recommendations and stuff. So, For both of these applications, really encourage you all to, for the geo application, you can, the one with the graph, if you're around for Graph Hack this weekend, Go to edge and node.com slash geo and start to download it and push back against our kind of claims there and start adding to that public database for how to coordinate infrastructure for San Francisco. And then for Civic Dash, if you are looking for a way to actually understand what's happening in your city, go to civic dash.org and check it out. And then feel free to also contribute to us around some of these prediction market questions and the most crucial metrics for our city.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 798.12,
+      "end": 798.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 798.56,
+      "end": 799.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 800.14,
+      "end": 808.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "is the idea behind those two applications. It comes from this crucial question of how can we help cities thrive, and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 808.51,
+      "end": 809.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "especially",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 809.87,
+      "end": 813.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "how can we help cities thrive with the new technology that we're all building.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 814.76,
+      "end": 863.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "A reminder for all of us in the audience is that we are the government. A lot of us here are in the tech world, and for roughly 20 years, what a lot of us have done is just kind of ignored the government and said, oh, that's those people over there, and they're doing a bad job. But I really encourage everybody to say, no, the government is us. We all need to be part of this optimistic solar punk future and not just build it within this little Web3 niche, but build it in this like more general way that benefits everybody. And then finally, what I want to tell you folks is that what gets measured gets managed. And so whatever, when you're out there in the world, thinking about how your city is doing, thinking about how your town is doing, think about how your company is doing, Think very crucially about your metrics and try to find good information inputs in order to make sure you're optimizing those metrics every day.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 865.02,
+      "end": 865.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "As",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 865.42,
+      "end": 890.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "a note, if you want to chat with the Civic Dash team, I don't code anymore, and the team did an amazing job of developing this. So Finn and Andre and Brendan, feel free to reach out to them or find them in the audience after this. We're actively looking for feedback from folks, and they'd love to chat with you about their design decisions, how they built it, and those kinds of things. So definitely reach out to us. And again, we're trying to push for the future where...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 891.15,
+      "end": 891.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "A",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 891.35,
+      "end": 922.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "society where not just eath gas fees are lower and we're using beautiful L2s, but where society as a whole can coordinate around this infrastructure. If you have any questions about this, reach out to me on Twitter. Go to either the graph or go to edge node.com slash geo to use that new application there. Also go to civic dash.org. We're hiring a full-time engineer for this. So feel free to reach out to us for that. Or if you want to go to root.co and check out our Web3 in society and other initiatives. We're all years. So thank you so much. and let's build a better solar punk future for everybody.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 42,
+    "withheld": 1,
+    "published": 41
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

@@ -1,0 +1,2934 @@
+{
+  "schema_version": 1,
+  "id": "podcast-144462b8e232f96313e8",
+  "title": "Colorado Bitcoin Society June Talk: Universal Basic Income on the Blockchain",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=ESXwN9pYUH0",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "ESXwN9pYUH0",
+  "youtube_url": "https://www.youtube.com/watch?v=ESXwN9pYUH0",
+  "audio_sha256": "e8772e200d12c20421f097deaa30bfa791c4e10d89cdb5d98d756791b73cf9ae",
+  "audio_duration_seconds": 1910.352125,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 5553,
+    "unknown_words": 226,
+    "unknown_words_fraction": 0.04069872141184945,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 2.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Timer. First off, I want",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 2.68,
+      "end": 2.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 2.94,
+      "end": 4.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "thank everybody for being",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 4.6,
+      "end": 6.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "here. Something",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 6.12,
+      "end": 24.42,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "that's interesting about the blockchain community. I was just at three conferences in New York, and so many people in the community started with Y, with this new decentralized, distributed, kind of ground-up community thing. So I think it's awesome that you all are here supporting this. Also thank you, Caleb, and Bitcoin.com for supporting us and giving us free drinks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 28.25,
+      "end": 41.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "So, a bit on me before I talk about universal basic income. My name is Reese Lindmark. I went through TechStars Boulder in 2015 and do some tech stars pure mentorship. And also just recently",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 41.59,
+      "end": 42.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "went",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 42.57,
+      "end": 45.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "to an advisory role at my company in order to work more",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 45.33,
+      "end": 45.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 45.93,
+      "end": 60.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "blockchain for social good kind of things. I work in between blockchain and universal basic income and effective altruism and like the attention economy. So that's kind of where I live in the world. And I kind of advise and work with various startups and companies and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 60.58,
+      "end": 61.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "communities open",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 61.08,
+      "end": 67.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "the space, like Grant Coin and some other ones. So that's me, and now let's talk about Universal Basic Income. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 67.84,
+      "end": 68.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 68.58,
+      "end": 69.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "first question is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 69.86,
+      "end": 70.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "okay,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 79.4,
+      "end": 83.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "great. So the first question is, why do we need it? Why are people like Elon Musk and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 83.74,
+      "end": 84.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Mark",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 84.46,
+      "end": 93.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Zuckerberg just last week or two weeks ago talked about this at his commencement address? advocating for something like a universal basic income. And the reason is because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 93.59,
+      "end": 94.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 94.31,
+      "end": 118.31,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "like to look at the past, to understand the future. This is a graph from 1850 through now of different jobs in America. So in 1850, 50% of people were employed in farming. But then Industrial Revolution, Agricultural Revolution, those things made the case that a lot of those jobs went over and turned into blue-collar and white-collar jobs. That happened the last 150 years and we expect to see something similar with that. but with blue and white collar jobs",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 118.31,
+      "end": 118.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 118.75,
+      "end": 134.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "a result of technological and essentially. So that is one way to understand it. Looking to the future, this is a graph where on the left side, these are professions. On the right side, this is the number of millions of workers in America that work for that thing. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 134.73,
+      "end": 135.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the black",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 135.77,
+      "end": 140.41,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "bar is the percentage of those people that will be automated in two decades. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 140.41,
+      "end": 142.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "retail",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 142.35,
+      "end": 148.41,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "salespersons, 4.5 million people are 90% automated. self-driving trucks is another classic example up",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 148.41,
+      "end": 148.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "here,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 149.19,
+      "end": 166.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "like it to be automated in the next two decades. So that is looking a little bit to the future, but why is it different this time? Because technology has always occurred. We have always made new things to make it better and more efficient for us to work. And so I think about it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 166.15,
+      "end": 166.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 166.71,
+      "end": 168.31,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "kind of four different perspectives. One",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 168.31,
+      "end": 168.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 168.75,
+      "end": 189.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "the convergence of AI and automation plus blockchain. Two, is the speed at which it's happening this time. Three is the alternatives to blue and white collar jobs. And four is this new non-linear jump to abundance going forward. So what that looks like, essentially let's talk about convergence first. And convergence of creative destruction externalities. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 189.04,
+      "end": 189.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 189.58,
+      "end": 207.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "creative destruction externality is essentially when technology gets better and when you have the agricultural revolution, the industrial revolution, all those farming jobs. that creates job loss. So that's kind of like an externality job loss, similar to climate change, but from a job loss perspective. So we can look at this kind of system level view",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 207.24,
+      "end": 208.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 208.22,
+      "end": 213.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "these externalities through this thing called loopy, which we're just going to exit this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 213.78,
+      "end": 214.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "from.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 216.12,
+      "end": 216.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 216.52,
+      "end": 218.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 218.52,
+      "end": 219.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "is a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 219.62,
+      "end": 221.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "system",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 221.36,
+      "end": 241.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "level view of these convergence of AI and automation. and disintegration of blockchain. So AI and automation essentially is going to, there's a positive feedback loop here between profit and automating things that leads to blue-collar job loss, which leads to political unrest. You have a similar thing in yellow here with blockchain",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 241.96,
+      "end": 242.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 242.5,
+      "end": 247.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "white-collar jobs. Blockchain is all about disintermediating the middlemen. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 247.32,
+      "end": 248.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 248.06,
+      "end": 270.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "see that here and then there'll be a little bit, we see this education loop happening as well, which is blue-collar jobs. being educated into white collar jobs. That's one final part of this. So let's kind of click play to see this happen. As the AI starts to happen, it creates blue collar job loss. And as blue collar job loss happens, it kind of turns into political arrest. Those people start to get educated into white collar jobs",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 270.09,
+      "end": 270.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 270.69,
+      "end": 279.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "that's happening as well. you have in the near future we'll have blockchain happening as well with white collar job loss. And these loops are happening, these loops are happening, and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 279.8,
+      "end": 280.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "both",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 280.28,
+      "end": 281.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "of these are kind of converging",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 281.56,
+      "end": 281.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 281.94,
+      "end": 284.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "the next couple decades onto things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 284.44,
+      "end": 286.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like more",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 286.2,
+      "end": 297.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "political unrest and job loss within society. So that is one part of this is the convergence. The next part is how fast it's going to happen, which a lot of people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 297.47,
+      "end": 298.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 298.07,
+      "end": 300.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "quite understand. I was at three conferences last week,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 301.33,
+      "end": 301.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and Naval",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 301.83,
+      "end": 316.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Ravacan had a great thing about history often repeats itself, but history doesn't repeat itself, but it often rhymes. I think this is going to be the primary difference in this situation where agricultural revolution... was slower than the Industrial Revolution is going to be slower than",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 316.87,
+      "end": 317.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 317.27,
+      "end": 323.85,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "blockchain and AI revolutions. So the speed of which is going to happen is going to be intense. And then finally the job alternative perspective",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 323.85,
+      "end": 324.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 324.39,
+      "end": 326.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "one where back in the day we can take farming jobs",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 326.53,
+      "end": 326.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 326.93,
+      "end": 343.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "turn them into white, into blue collar or white collar jobs. But as you go from blue collar to white collar to white collar, after white collar, jobs start to get automated and what happens next. And then the final concept here is of abundance. And this is one This guy Albert Langer from Union for Ventures talks about the world after capital",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 343.79,
+      "end": 344.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 344.41,
+      "end": 344.81,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 344.81,
+      "end": 345.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 345.47,
+      "end": 356.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "scarce resource for the past couple decades has been capital essentially of money and factories and things of that variety. But he thinks that we're going to have a nonlinear jump essentially into a world where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 356.25,
+      "end": 357.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "capital",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 357.09,
+      "end": 359.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "is no longer scarce, where the basic need",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 359.07,
+      "end": 359.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 359.51,
+      "end": 366.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "food way back in the day was scarce. And then it was land that was scarce. And then it was capital that was scarce. But now we're going to live in a world of abundance",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 366.33,
+      "end": 366.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "created",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 366.83,
+      "end": 367.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "by automation",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 367.53,
+      "end": 368.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 368.15,
+      "end": 371.01,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "we can kind of actually fund something like universal base.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 371.67,
+      "end": 372.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 372.23,
+      "end": 373.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "then the one final thought here",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 373.49,
+      "end": 373.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 373.97,
+      "end": 381.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "around the great decoupling, which is essentially a way to think about income inequality over the last couple years. And so what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 381.93,
+      "end": 382.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 382.21,
+      "end": 383.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "great decoupling means is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 383.83,
+      "end": 384.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 385.39,
+      "end": 399.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "These are four economic indicators over the past kind of 50 years. You could see up through 1980 they kind of stay coupled together are related to each other. But after this point, these two productivity and real GDP per capita",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 399.0,
+      "end": 399.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 399.46,
+      "end": 411.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 411.76,
+      "end": 412.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 412.02,
+      "end": 413.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "decoupling, great decoupling",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 413.48,
+      "end": 413.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 413.96,
+      "end": 417.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "another thing that we're still now. So this is all to say that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 417.21,
+      "end": 418.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 418.13,
+      "end": 418.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 418.47,
+      "end": 419.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "living",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 419.17,
+      "end": 430.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "in a world that is a little bit more fragile in these next two decades. If anybody's read, Talib, he has this great book called Anti-Fragile. Who! To leave. And he, Anti-Fragile, is a concept similar to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 430.78,
+      "end": 431.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "resilience,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 431.86,
+      "end": 435.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "where when change happens, you're actually better as a result of it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 435.76,
+      "end": 436.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 436.2,
+      "end": 437.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "we're not really optimized for that right",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 437.76,
+      "end": 437.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "now.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 438.34,
+      "end": 445.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "We're optimized to get there, not as smoothly as possible, but as quickly as possible. I love this quote from Wait But Why slash Elon Musk",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 445.34,
+      "end": 446.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 446.22,
+      "end": 446.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "says...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 446.68,
+      "end": 447.24,
+      "speaker_id": "speaker_3",
+      "speaker": "Guest Speaker 4",
+      "text": "It's actually Tim",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 447.24,
+      "end": 447.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Urban.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 447.85,
+      "end": 459.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "It's true, his name is Tim Urban. But the unfortunate thing is that the human colossus, the human organism, the human network that we are now, isn't optimized to maximize the chances of a safe transition",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 459.67,
+      "end": 460.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 460.27,
+      "end": 466.13,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "the best possible planet four, for the most possible humans. It's optimized to build planet four",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 466.13,
+      "end": 466.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 466.71,
+      "end": 474.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "any way as possible, as quickly as possible. So, that is the world that we're going to encounter the next 20 years. And it might be a little bit intense. Enter",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 474.69,
+      "end": 475.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "basic",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 475.55,
+      "end": 480.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "income. which is not an end-all answer, but is a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 480.03,
+      "end": 480.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "good",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 480.59,
+      "end": 500.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "result that a lot of people are thinking about. So these are first some non-block chain implementations of universal based income. These are pilot projects that are happening around the world. There are eight pilot programs happening right now. White Combinator is doing one in Oakland for $2,000 a month. This effective altruist organizing called Give Directly",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 500.79,
+      "end": 501.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 501.17,
+      "end": 521.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "doing one in rural Kenya for $30 a month because it costs less there. And then there are other things like, Patreon, a Patreon universal basic income community, which I'm part of where you take income through Patreon, which is like a subscription Kickstarter, and then because I'm aware of diminishing returns on happiness with money, I essentially cap my own income",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 521.23,
+      "end": 521.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 521.79,
+      "end": 532.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "give that money to these other universal basic income things. So these are some of the non-block chain universal basic income things that are happening today. And we also have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 532.55,
+      "end": 533.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "some",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 533.33,
+      "end": 534.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "blockchain projects.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 535.6,
+      "end": 546.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "I was talking with my friend about this recently and she was like, well, why would you even do this on blockchain? And it's so aligned. The word just like universal is aligned with this new globalized, decentralized world where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 546.66,
+      "end": 547.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 547.08,
+      "end": 559.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "shouldn't necessarily be connected to a nation state. So it's a global and decentralized UDI without the artificial borders of states. That's the concept going forward. We'll look at three different ones, grant coin, do you need to earn resilience. And as we look at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 559.9,
+      "end": 560.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "them...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 560.44,
+      "end": 570.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Two things to note. One is you have to have a verifiable unique identity, i.e. I can't be like, give me a UBI. Also give me a UBI, pretending to be two different addresses.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 572.72,
+      "end": 573.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 573.62,
+      "end": 576.1,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "everyone. Unfortunately, the rest of my talk was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 576.1,
+      "end": 576.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 576.24,
+      "end": 576.52,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "recorded",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 576.52,
+      "end": 576.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "correctly,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 577.46,
+      "end": 578.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so I'll give",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 578.02,
+      "end": 578.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 578.14,
+      "end": 579.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "rest of it here, and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 579.26,
+      "end": 579.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 579.34,
+      "end": 580.0,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we'll go back",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 580.0,
+      "end": 580.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 580.46,
+      "end": 580.66,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "listen",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 580.66,
+      "end": 580.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 580.92,
+      "end": 581.08,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Q",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 581.08,
+      "end": 583.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "&A portion at the end. So... Going",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 583.78,
+      "end": 584.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "where I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 584.02,
+      "end": 584.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "left",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 584.24,
+      "end": 584.6,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "off,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 584.92,
+      "end": 585.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we were talking about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 585.34,
+      "end": 585.56,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "two",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 585.56,
+      "end": 586.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "different ways",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 586.16,
+      "end": 591.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of where the money can come from. The first is what's called helicopter money, where you can kind of imagine",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 591.9,
+      "end": 593.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "creating",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 593.3,
+      "end": 638.72,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "new money, injecting new money into the system, and then flying a helicopter around or a digital cryptocurrency blockchain-based helicopter, and giving that money to anyone who says, I want some money. So that's way one, which is helicopter money, and that's the way that grant coin and do need tear work. And the second way is through self-imposed taxation, where you essentially, As people in the system, you create a tax on yourself to give money back to the system to increase the healthiness and resiliency of the system. So those are the two ways that money can come from. And let's dive into Grantcoin, which uses the helicopter money system. So Grantcoin, anyone can sign up and ask for helicopter money. And right now you have 2,700 people from about 100 different countries who have signed up. And they use a system called Akata",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 638.72,
+      "end": 639.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 639.62,
+      "end": 729.48,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "their unique identity. they have a quarterly distribution of $3.71, which doesn't seem like much in America, but remember that in rural Kenya, it's only $90 a quarter to have universal basic income out there. So it's not that close, but it's also not that far away, especially for people in developing countries to have a UBI. Right now it has a $25,000 market cap, which comes from a couple different things. First, it comes from speculators purchasing grant coin on exchanges for someone that says, hey, I want to do good, and I think that the price might increase. They might purchase something like grant coin and create essentially demand for the supply that exists. The other way that it has a market cap is through donations to the Grant Coin Foundation, and in the Grant Coin Foundation, they spend about 80% of their donations. buying back grant coin from the people that they've given it to. And they do that to sustain a price floor so that it kind of goes up and to the right just a little bit. And they make sure that that happens by spending 80% of their donations on demand side grant coin. So it's not tax-based, but donation-based. And right now it is on a peer coin fork, but it's moving to Ripple and Ethereum soon. as part of this bigger transition where Grant Coin is a proof of concept for this new Monacoin, which will be a more kind of wide-reaching and bigger vision UBI coin in the future. So that is Grant Coin, a version of helicopter money where anyone can sign up and get a quarterly distribution of Grant Coin.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 730.06,
+      "end": 730.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 730.58,
+      "end": 741.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "second version of helicopter money is called Duny Terre and their G1 coin. And this recently had a production release in France in March, and they have about 150 members thus far.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 741.67,
+      "end": 741.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "They",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 741.91,
+      "end": 801.76,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "verify their unique identity through something called the web of trust, where you start with a small group of people, and then that small group of people is in the web of trust. If you want to get in, you have to be certified by people in the web of trust. So right now they have about 200 people on the wait list who are essentially waiting for five certifications or verifications that those people are unique and should be part of the web of trust. It's built on a blockchain that distributes the mining among the members in an equal way so that you don't have kind of whale miners. And they do a daily distribution that is not, the money of their G1 money is not accepted. It's not currently on exchanges. but it is accepted in restaurants in France currently, so you can pay for food with G1. You can also vacation at this spot in Belgium within spend G1 coin there. And there's also kind of an eBay-style marketplace where you can buy and sell goods and spend your G-1 coin instead of traditional fiat currency in that marketplace.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 802.46,
+      "end": 802.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 802.88,
+      "end": 849.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that is how Jeannie Terre works. It is another helicopter system where you get into it through the web of trust. And right now, you can't exchange it for Fiat, but you can use it for goods and services. The third system that I want to talk about is called resilience. And resilience uses a tax-based, not helicopter money-based. And so what that means is it uses a value-added tax that is chosen by the producer. What I mean by that is a value-added tax is where... Let's say you're a company that makes furniture, you get some lumber, you take that lumber and turn it into some furniture, and not in America, but a lot of other Western countries and developed countries, you will get a tax for essentially adding value to the lumber. You took the lumber and turned into furniture, and you get taxed when you sell your furniture. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 849.26,
+      "end": 850.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 850.28,
+      "end": 884.51,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "now, that value-added tax is chosen by the government, but with something like resilience, that value-added tax is chosen by the producer. And so you can imagine... going to, the consumer has this option of two different producers, one of whom has a 15% tax on themselves and one of whom has a 5% tax on themselves. And you can imagine it like buying organic foods where you say, hmm, even though it's more expensive to go to the person who self-taxes themselves, 15%, I'm going to choose them because I think it's important to give money back to the system. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 884.51,
+      "end": 885.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 885.67,
+      "end": 914.47,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the way that resilience works is through this. the value add tax, the VAT, chosen by the producers. And right now, there's a proof of concept live on Ethereum where you can kind of hook any of your transactions into the resilient system, and a 2% transaction tax will be added to your transactions, and they go not to the full system, but rather just to the creator right now. To this guy, Johann, as the proof of concept, where money goes directly to him right now.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 915.24,
+      "end": 915.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 915.6,
+      "end": 951.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is just the initial proof of concept though, and later he hopes to implement a swarm redistribution, which is where the money instead of just going to him, it goes back to all the people essentially that you've interacted with, that you've bought and sold goods with and people that you've transacted with in the network. And later, expecting something like a tax eam, which is kind of like a genetic tax code where you can imagine people who are self-taxing themselves. are kind of those taxes are kind of mating in these interesting ways, and it's kind of an organic tax system rather than the centralized tax system that we have today.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 951.76,
+      "end": 952.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 952.34,
+      "end": 1052.84,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that is resilience, and given those three systems, now let's think about what the future actually looks like. So the future, again, we're transitioning from scarce capital to scarce time, and in this initial transition period, I'd expect more non-nation state... tax-based redistribution schemes, whether it's something like resilience or whether it's something like, you know, my Patreon, where people are actively self-taxing themselves. And the real question with this is how can we incentivize wealthier people to contribute for someone that has, you know, a bunch of houses or has, you know, tens of millions of dollars? How can we incentivize them to say, hey, you should self-tax yourself and redistribute that money back to the system? So that's during this initial transition period. And then later, I would expect something like the helicopter money system, this universal distribution where people are getting lots and lots, where people are getting coins that are injected into the system. And when we see something like that, I would expect something that's called demurage to occur. And what that is is it's a, imagine it like the water cycle where you send money out to everybody. and then the money kind of, if you don't spend it, it kind of evaporates back into the system. And so this is a way for instead of money to have compounding returns, like a win more situation where if you have money, you'll get more money. Instead, if you have lots of money and aren't spending it, then that money essentially goes back into the system. So that's the other thing to anticipate. And then the third thing that we... predict is something called circles, which was presented by Martin Coppulman from Nosis. And circles, the way that it works is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1052.84,
+      "end": 1053.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1053.62,
+      "end": 1129.61,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "can imagine, so it takes as a truth that from a game theoretical perspective, the financial incentives to create new coins mean that it could be the case that Lots of people have their own personal coins. Getting in at the beginning of a coin is great, and so there's going to be more and more cryptocurrencies, and at the most extreme, you can imagine a cryptocurrency for every person. So, for example, even on my Patreon, you get a Reese coin if you contribute to my Patreon, if you're a patron. So you can imagine a Reese coin and a U-coin and what have you. And the way that circles works is if everybody has a bunch of coins, then those people can essentially... transact in a one-to-one way and can agree that their coin equals everybody else's coin and if that's true then that's kind of a version of a universal basic income implemented through personal coins so that's something to expect in the future as well but the real question in the future is even if we have something like a universal basic income where do people get meaning people are so used to getting meaning from the job loop and from contributing at work and if there's technological unemployment and automation where will people who don't work every day but have an income where will they derive meaning from their life so that will be a big key question going forward",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1129.65,
+      "end": 1130.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1130.23,
+      "end": 1165.6,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "finally i want to ask the question of what can you do um what is the call to action here i think two things is There are two ways to contribute. First is supporting monetarily, something like Give Directly's Basic Income Study, supporting someone like myself on Patreon, or giving money to someone like the Grant Coin Foundation. Those are all ways to support new universal basic income. And then secondarily, you can, if you don't want to monetarily support, you can support by purely discussing it and making it more in the ether of the blockchain space. And so what I mean by that is first,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1166.09,
+      "end": 1166.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1166.53,
+      "end": 1210.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "can be more aware of your diminishing returns on money with respect to happiness. If you're making 45,000 bucks a year, additional money after that doesn't do that much for your happiness. And you have a huge opportunity to self-tax yourself and give that money for large global leverage that can increase happiness worldwide. So that's the first thing is the connection between money and happiness. And the second thing is to be aware for us in the technological space. to be aware of our creative destruction externalities, to say, hey, we're creating automation, we're creating AI, we're creating, you know, blockchain-based disintermediation, and that's good in the long term, but in the short term, there's going to be a lot of job loss, and we need to be aware of that part of the system as well. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1210.14,
+      "end": 1211.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "those",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1211.02,
+      "end": 1223.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are two ways that you can support, and with that I'll give it back to my old self at the meetup and let him talk and answer some questions. Great, thanks so much. Bye.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1264.86,
+      "end": 1269.02,
+      "speaker_id": "speaker_4",
+      "speaker": "Guest Speaker 5",
+      "text": "You're saying about, let's incentivize rich people to invest in this thing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1269.02,
+      "end": 1269.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "by",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1269.54,
+      "end": 1270.64,
+      "speaker_id": "speaker_4",
+      "speaker": "Guest Speaker 5",
+      "text": "showing them how much",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1270.64,
+      "end": 1273.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "money",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1273.58,
+      "end": 1278.1,
+      "speaker_id": "speaker_4",
+      "speaker": "Guest Speaker 5",
+      "text": "gives you diminishing returns on happiness. That seems kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1278.1,
+      "end": 1279.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1279.1,
+      "end": 1281.56,
+      "speaker_id": "speaker_4",
+      "speaker": "Guest Speaker 5",
+      "text": "hard. What's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1281.56,
+      "end": 1281.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1281.78,
+      "end": 1282.98,
+      "speaker_id": "speaker_4",
+      "speaker": "Guest Speaker 5",
+      "text": "plan for that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1283.16,
+      "end": 1283.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Yeah. Question.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1284.32,
+      "end": 1284.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Acid",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1284.74,
+      "end": 1285.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in the water.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1291.9,
+      "end": 1298.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "So that's a great question. The question is how can you incentivize wealthier people, really anybody, to self-tax themselves",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1298.88,
+      "end": 1299.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for good?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1299.84,
+      "end": 1302.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "So there's a couple different things that are happening in the space right now.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1302.96,
+      "end": 1303.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1303.24,
+      "end": 1308.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "first is, if you know, site 21.co, they are doing the first stage of this, which is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1308.94,
+      "end": 1309.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "making",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1309.6,
+      "end": 1314.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "it more transparent when someone donates money. So you can imagine it's like a college, if you donate a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1314.22,
+      "end": 1314.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "ton",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 1314.68,
+      "end": 1338.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "of money to a thing, you get your name on the building. That's awesome. 21.co on their 21.co profiles, you can see when you pay that person money, whether it's going to themselves or to a nonprofit. So that's step one of all of this is the kind of transparency piece. And then step two of this is actually making something like a long-term coin or a do-good coin or something of that variety",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 1338.21,
+      "end": 1338.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 1338.85,
+      "end": 1345.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "you could then, when you do good, you would get back the coin in return. And then that coin, would have some kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 1345.99,
+      "end": 1346.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1346.41,
+      "end": 1361.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "it would probably have no utility value, but it might be like a rare Cephe or a Doge point or whatever. And that is a, hey, I have a lot of do good coins, so if I was maybe good, or maybe I'd purchase it. So those are the two things that I expect happen in this space. Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1365.01,
+      "end": 1387.69,
+      "speaker_id": "speaker_5",
+      "speaker": "Guest Speaker 6",
+      "text": "Thank you for your talk. I've coming here. That's really cool. My name is Rodney. And I work in marginalized communities a lot. And incentivizing behavior is one of the things that I really look at, not necessarily incentivizing rich people to give, but incentivizing poor people's work. How do you expect universal basic income to incentivize that behavior, you know, giving quality work to people?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1389.95,
+      "end": 1391.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Another great question. Boom.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1392.55,
+      "end": 1393.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "High-five. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1393.37,
+      "end": 1394.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the question is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1395.19,
+      "end": 1395.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 1398.1,
+      "end": 1398.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Libertarian meetup.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 1403.26,
+      "end": 1405.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes, this is a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 1405.02,
+      "end": 1408.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "great question, and this is one that a lot of people in UBI are thinking about, is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 1408.5,
+      "end": 1409.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "worries",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 1409.62,
+      "end": 1415.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "around if you give people money. How much does it change them from thinking from a scarce mindset to like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 1415.26,
+      "end": 1415.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 1415.66,
+      "end": 1419.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "abundant mindset where they're going to actually go up there and do things or will they just become lazy kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 1419.96,
+      "end": 1420.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thing?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 1420.84,
+      "end": 1440.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "So I don't have, there's not great data on this, to be honest, and actually on the Give Directly website. That's why, I mean, this pilot project that they have is going to be really intense. $30 million. They're going to give universal basic income to one community for 10 years, universal basic income to another community for two years on monthly cycles, universal basic income to a third community",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 1440.08,
+      "end": 1440.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 1440.52,
+      "end": 1460.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "two years up front, where the two years is all up front, a lump sum, and then one community that doesn't get universal basic income. And they're going to do randomized control trials, which is very high up on the hard, hierarchy of evidence, in order to prove, essentially, try to determine. how this has effects on people. So I don't have an answer for you right now. I think it's very connected to the meaning",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 1460.49,
+      "end": 1461.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "piece",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 1461.09,
+      "end": 1468.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "that we asked before. But I'm really excited for this, give directly written my control tile to give us some data on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 1468.43,
+      "end": 1468.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 1478.07,
+      "end": 1479.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Put your mouth right next to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 1479.13,
+      "end": 1479.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the other.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 1479.77,
+      "end": 1480.03,
+      "speaker_id": "speaker_6",
+      "speaker": "Guest Speaker 7",
+      "text": "Hello.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 1482.63,
+      "end": 1491.32,
+      "speaker_id": "speaker_6",
+      "speaker": "Guest Speaker 7",
+      "text": "So first of all, I want to thank you for putting your accent on the line and in all honest criticism I just want to cut to one. Chuck Point real quick.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 1492.38,
+      "end": 1492.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Why",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 1492.48,
+      "end": 1508.89,
+      "speaker_id": "speaker_6",
+      "speaker": "Guest Speaker 7",
+      "text": "the hell are people in Africa worth 167th, what you want to pay someone in your first world? I've lived in a lot of places, and I'll tell you for a fact that people of Ethiopia could take that $2,000 and do a shitload more. that somebody in Chicago getting two genes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 1509.15,
+      "end": 1509.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And if you think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 1509.77,
+      "end": 1519.75,
+      "speaker_id": "speaker_6",
+      "speaker": "Guest Speaker 7",
+      "text": "about the revolution of cryptocurrency, this is a major opportunity for finance. This is a major opportunity for marginalized communities, third world countries, and I don't think that aligns with what you're saying.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 1520.23,
+      "end": 1522.57,
+      "speaker_id": "speaker_5",
+      "speaker": "Guest Speaker 6",
+      "text": "Wow, that's huge. You have a point of it?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 1523.11,
+      "end": 1538.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Yeah. So, the question is, why should you give money? So for me, my universal basic income on out of Patreon size is a thousand bucks a month, which is more than... the $30 a month that you can give to give directly for a rural Kenyan. So why would you ever choose me",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 1538.89,
+      "end": 1539.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 1539.41,
+      "end": 1564.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "the $1,000 a month? And that's a great question. And that's essentially what effective altruism is, is a combination of saying, hey, know that we exist in this world economy where there are different purchasing power parodies essentially between nations. And so really think about the money that you're going to give. And if you could give it to me, why not give that $30 a month instead? to someone in rural Kenya because it's going to have a much bigger impact. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 1564.3,
+      "end": 1564.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 1564.76,
+      "end": 1571.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "full in on what you're saying. I almost fully agree. It's a complicated system, but yes, I pretty much will agree. I will say a second thing about it as well, which is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 1571.8,
+      "end": 1572.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 1572.14,
+      "end": 1577.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "financial inclusion piece. I mean, some people like Coinbase and a ton of people in this space",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 1577.16,
+      "end": 1577.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 1577.52,
+      "end": 1591.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "so, so excited to... serve the 2.5 billion unbanked people. And so as we start to push forward and as their smartphone and then wallet adoption, hopefully we'll be able to see that you would be included in these universal basic income systems.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 1594.78,
+      "end": 1595.94,
+      "speaker_id": "speaker_7",
+      "speaker": "Guest Speaker 8",
+      "text": "Hi Rees, thank",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 1595.94,
+      "end": 1596.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 1596.98,
+      "end": 1597.08,
+      "speaker_id": "speaker_7",
+      "speaker": "Guest Speaker 8",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 1597.08,
+      "end": 1598.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 1598.49,
+      "end": 1602.53,
+      "speaker_id": "speaker_7",
+      "speaker": "Guest Speaker 8",
+      "text": "really don't know much about you basic income, but if you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 1602.53,
+      "end": 1604.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "say",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 1604.73,
+      "end": 1608.1,
+      "speaker_id": "speaker_7",
+      "speaker": "Guest Speaker 8",
+      "text": "you give a community, uniformly the same amount",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 1608.1,
+      "end": 1608.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of money.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 1609.2,
+      "end": 1613.28,
+      "speaker_id": "speaker_7",
+      "speaker": "Guest Speaker 8",
+      "text": "You know, how does that affect on inflation? It's prices just go up",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 1613.28,
+      "end": 1613.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 1613.76,
+      "end": 1621.54,
+      "speaker_id": "speaker_7",
+      "speaker": "Guest Speaker 8",
+      "text": "everybody stays in the same, you know? Right? That's why I ran from San Francisco and everybody gets in everything like that. Yes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 1623.9,
+      "end": 1635.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "That's a great question. The question is, isn't universal basic income incredibly inflationary? When you give everybody a ton of money, doesn't that just make it so that what you could buy with $8 is now instead $20?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 1636.54,
+      "end": 1636.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 1636.84,
+      "end": 1640.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "that's generally true. The thing that a lot of people in the space talk about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 1640.54,
+      "end": 1640.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 1640.98,
+      "end": 1643.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "how technology is incredibly deflation.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 1643.54,
+      "end": 1644.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 1644.0,
+      "end": 1651.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "as we're experiencing this kind of exponential growth, then we are also going to experience some",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 1651.32,
+      "end": 1652.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 1652.12,
+      "end": 1655.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "big deflation from the technological progress that we have here.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 1656.28,
+      "end": 1656.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 1656.76,
+      "end": 1664.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "that is the initial answers to those questions. And the other thing that I'll say to be honest is there's a great article about this guy Scott Sandins, but I have not read yet. that talks,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 1665.17,
+      "end": 1665.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 1665.31,
+      "end": 1670.05,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "a 25-minute article that talks exactly about this. And so I don't know that much, but I know that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 1670.05,
+      "end": 1670.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 1670.53,
+      "end": 1680.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "guy, Albert Wenger, his primary thing is saying, hey, technology, yes, it will be moderately inflationary, but technology is incredibly deflationary, and those two things are about outside. Thank",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 1680.99,
+      "end": 1683.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 1686.4,
+      "end": 1694.8,
+      "speaker_id": "speaker_7",
+      "speaker": "Guest Speaker 8",
+      "text": "This is a great, great thing. The question I had is, thanks on the previous comments, and the Bitcoin Eagle to start working in a game theoretical",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 1696.0,
+      "end": 1696.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 1696.34,
+      "end": 1713.84,
+      "speaker_id": "speaker_7",
+      "speaker": "Guest Speaker 8",
+      "text": "are incentivized to be selfish, right? Why will that change, why isn't the pitch, do selfish things, do the same transaction much more efficiently without the nation state, right? And that's the efficiency rather than, oh, blockchain is going to give some",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 1714.0,
+      "end": 1715.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "buy",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 1715.0,
+      "end": 1716.64,
+      "speaker_id": "speaker_7",
+      "speaker": "Guest Speaker 8",
+      "text": "in the sky dream on our UBI,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 1716.96,
+      "end": 1717.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "tell",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 1717.92,
+      "end": 1722.48,
+      "speaker_id": "speaker_7",
+      "speaker": "Guest Speaker 8",
+      "text": "me that my contribution, you go to that world, Kenya, whoever it is, with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 1722.48,
+      "end": 1723.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "minimal",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 1723.24,
+      "end": 1728.39,
+      "speaker_id": "speaker_7",
+      "speaker": "Guest Speaker 8",
+      "text": "fees, in lightning to speed. Why is that not the pitch? Why is the purchasing pitch?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 1728.75,
+      "end": 1728.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 1731.17,
+      "end": 1732.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So the question",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 1732.69,
+      "end": 1733.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "here is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 1733.77,
+      "end": 1734.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "why is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 1734.15,
+      "end": 1739.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "it the case that I'm up here on stage not saying Bitcoin for life or saying like Bitcoin is great at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 1739.55,
+      "end": 1740.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "doing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 1740.35,
+      "end": 1745.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "lots of things and bringing financial inclusion to those 2.5 billion people? And the reason why I'm not saying that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 1745.59,
+      "end": 1746.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 1746.24,
+      "end": 1754.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "because a lot of people are already saying that. So effective altruism, seriously, but this is, so effective altruisms or effective altruists think from a perspective of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 1754.5,
+      "end": 1754.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 1754.98,
+      "end": 1777.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "they rate causes that you should work on, they first think about the scale of the problem. Then they think about the amount that that problem is currently not addressed by the rest of the ecosystem. And then they look at, for a given piece of work that you do in that system, how much will it actually affect the system? So, to say, for something like this, I super agree with you that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 1777.79,
+      "end": 1778.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Bitcoin,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 1778.99,
+      "end": 1783.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "and I'm very pro Bitcoin and blockchain, holding, and I'm really excited for all the work that's happening in the space.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 1784.95,
+      "end": 1785.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And... I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 1785.52,
+      "end": 1792.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "think that right now we're not talking enough about the creative destruction externalities of the work that we're doing. And I think that the,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 1793.18,
+      "end": 1794.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 1794.6,
+      "end": 1799.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "that Bitcoin and blockchain would be uniquely suited to, in this un-a-nation-state world.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 1800.92,
+      "end": 1802.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Any more questions?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 1803.36,
+      "end": 1805.78,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah, I wanted to highly recommend a podcast",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 1805.78,
+      "end": 1806.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 1806.54,
+      "end": 1808.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Sam Harris did with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 1808.02,
+      "end": 1811.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "William McCaskill, episode 44 for St.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 1811.8,
+      "end": 1811.98,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Harrison.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 1812.94,
+      "end": 1813.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "They get into a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 1813.94,
+      "end": 1814.66,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "really deep,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 1815.36,
+      "end": 1817.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thoughtful discussion. And you basically see",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 1817.74,
+      "end": 1818.38,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "this kid",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 1818.38,
+      "end": 1819.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "convince",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 1819.34,
+      "end": 1819.56,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 1819.56,
+      "end": 1822.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "very intelligent man about all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 1822.48,
+      "end": 1822.86,
+      "speaker_id": "speaker_4",
+      "speaker": "Guest Speaker 5",
+      "text": "the goods",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 1822.86,
+      "end": 1823.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 1823.08,
+      "end": 1824.1,
+      "speaker_id": "speaker_4",
+      "speaker": "Guest Speaker 5",
+      "text": "perfect altruism",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 1824.1,
+      "end": 1824.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 1824.44,
+      "end": 1825.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 1825.1,
+      "end": 1825.26,
+      "speaker_id": "speaker_4",
+      "speaker": "Guest Speaker 5",
+      "text": "course",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 1825.26,
+      "end": 1831.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of two hours. It's very compelling for either of them. Sam Harris School in Newcastle, it took a record.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 1833.74,
+      "end": 1834.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Any final question?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 1838.33,
+      "end": 1854.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So, thank you for coming out. Going back to the value added tax, would that be the consumer pays that tax? Would the prices vary between somebody who pays, say, a 5% tax between a 10% tax? Or would it be only the business owner who pays that tax? Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 1855.86,
+      "end": 1863.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "so the question is about the value added tax and who pays that tax. So the person who technically pays it in this resilience system",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 1863.76,
+      "end": 1864.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "would",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 1864.44,
+      "end": 1873.97,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "be the producer. However, as we know, if the producer has a higher tax on them, that money is just going to be transferred long to the consumer. So I would expect it to be the case that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 1873.97,
+      "end": 1874.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 1874.67,
+      "end": 1879.81,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "I'm a company that's like, hey, I'm really into universal basic income or whatever, that I put a 20% tax on myself",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 1879.81,
+      "end": 1880.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 1880.25,
+      "end": 1883.05,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "that my product is going to cost 20% more",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 1883.05,
+      "end": 1883.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "than",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 1883.51,
+      "end": 1891.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "the competitor who wants a 0% tax. So technically it's on the producer, but really likely to be the case that that cost is then pushed down to the consumer.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 1893.45,
+      "end": 1894.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "And other",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 1894.27,
+      "end": 1898.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "questions? Thank you.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 320,
+    "withheld": 1,
+    "published": 319
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

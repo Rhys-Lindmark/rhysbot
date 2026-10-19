@@ -1,0 +1,1737 @@
+{
+  "schema_version": 1,
+  "id": "podcast-d9806e75e9d856a4b8d8",
+  "title": "#8 Kate Darling, MIT: A Systemic View on Regulation and Gender Roles in Tech",
+  "published_at": "2019-03-28T21:42:43Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/8-kate-darling-mit-a-systemic-view-on-regulation-and-gender-roles-in-tech",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/597532935-the-rhys-show-8-kate-darling-mit-a-systemic-view-on-regulation-and-gender-roles-in-tech.mp3",
+  "youtube_id": "3LP-XDSugN0",
+  "youtube_url": "https://www.youtube.com/watch?v=3LP-XDSugN0",
+  "audio_sha256": "61377c5e6d8c1fa3099afb181031bf64bd6831f3520978d78e417c4dfdd59da0",
+  "audio_duration_seconds": 1952.05225,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 5659,
+    "unknown_words": 122,
+    "unknown_words_fraction": 0.02155857925428521,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 10.77,
+      "end": 11.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 11.53,
+      "end": 38.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everyone. My name is Reeslin Mark, and you're listening to Gray Mirror, a podcast from MIT Media Labs Digital Currency Initiative on Technology, and Ethics. And unlike something like Black Mirror, which just looks at the negative impacts of technology on society, we are Gray Mirror, so we look at the positive and negative impacts of technology on society. And please, if you have any feedback, reach out on Twitter. And if you like the show, give us a five-star rating on your favorite podcast app. We really do appreciate it. Thanks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 41.03,
+      "end": 41.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 41.45,
+      "end": 80.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 85.88,
+      "end": 89.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello everybody. You're listening to Gray Meir. Kate, thanks for being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 89.54,
+      "end": 90.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Thanks for having me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 90.5,
+      "end": 126.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, excited to chat and we're here in person and our new, my new office. And so it's a fun in-person interview, which is always good. So we're going to talk about two main things here. The first is how tech and law, like, interact in society. And second is about gender and privilege and intersectionality and power. So let's start on the first piece here. And the first is, I know, Kate, you've done some, well, I guess before diving deeper into the law piece. Could you just tell me how you understand our current kind of macro context and like the goals given our macro context?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 127.53,
+      "end": 127.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 127.97,
+      "end": 129.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a really big question.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 130.01,
+      "end": 130.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "It's big, it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 130.29,
+      "end": 131.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "tough. That's a macro question? Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 132.59,
+      "end": 133.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it's tough, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 134.01,
+      "end": 134.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 135.81,
+      "end": 136.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you mean my goals?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 137.29,
+      "end": 156.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I'm talking about like how do you see, when you think about the world in a big, in like a. macro, like the global context with whether it's Trump things or whether it's, you know, capitalism or how do you kind of see all the different pieces of the world interacting these days? And how do you think we should move forward given the current state status quo?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 156.92,
+      "end": 162.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Oh my gosh, if anyone knew the answer to how we should move forward. But I can tell you, like, from my perspective,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 162.74,
+      "end": 163.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I feel",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 163.8,
+      "end": 201.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like, so my main interest is in how systems shape human behavior. And so. I studied law, I did some law and economics, and now I do technology and technology ethics. And I think what I've realized is that Larry Lessig was very prescient. He wrote the book, what is it, Coda's Law? Yeah, is his big book, where he talked about the four factors that can influence society and have a huge effect on society, which are laws, norms. markets and architecture, I think, are the four.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 202.57,
+      "end": 250.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And I've found that to be true, if you look at how my interests have evolved over time, they look very different from each other, but actually I'm really interested in, you know, those four things and how they can shape human behavior. And so sometimes lawyers look at the world through the eyes of, oh, how can we regulate and change things that way. Technologists look at the world through, you know, code and how can we build things and shape things that way. And so my favorite thing is to look through all these different lenses and figure out, you know, what does that mean? And it's, of course, much more complicated to view the world that way. There's probably even many, many more lenses to view the world through. So I don't really know",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 250.36,
+      "end": 251.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "where,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 253.52,
+      "end": 256.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like what to focus on right now because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 257.32,
+      "end": 259.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 259.12,
+      "end": 261.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, things have gotten really dark lately.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 262.0,
+      "end": 264.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Not just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 264.19,
+      "end": 290.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in the U.S., so it's a little bit, I feel like a lot of us are floundering and trying to figure out what is the best path forward. Is it politics? Is it, you know, building things to help? Is it, I don't know. We're just all trying to figure out what to do. And I don't know what the path is. I think the goal is a better world.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 292.29,
+      "end": 292.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "For",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 292.73,
+      "end": 293.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "who on what timeline?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 294.21,
+      "end": 294.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 294.55,
+      "end": 295.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "do we define",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 295.17,
+      "end": 295.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that? Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 296.45,
+      "end": 298.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "yeah. Hitler had a certain definition",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 298.13,
+      "end": 298.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 298.55,
+      "end": 300.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what a better world is that I don't agree with.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 301.42,
+      "end": 301.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Although",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 301.72,
+      "end": 303.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "he was an animal rights activist. Did you know that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 303.76,
+      "end": 304.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh, that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 304.16,
+      "end": 304.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "interesting.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 304.84,
+      "end": 305.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah. I did",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 305.26,
+      "end": 305.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "not know that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 305.92,
+      "end": 306.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Like he",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 306.04,
+      "end": 312.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "was like a vegetarian and like the Nazis passed comprehensive animal rights legislation.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 312.36,
+      "end": 312.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 312.66,
+      "end": 313.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "fascinating.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 313.4,
+      "end": 313.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 314.46,
+      "end": 374.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 374.02,
+      "end": 374.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "no",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 374.68,
+      "end": 378.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you're right and you know stephen pinker who gets",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 378.55,
+      "end": 380.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Criticized by many. It has this,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 380.69,
+      "end": 413.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, theory about how we're always pessimistic. But when you look at where we are, if you look at the history of how humans have evolved, we're, you know, better and happier and, like, safer than we've ever been, which, you know, is kind of a one-sided view. But certainly there is something to that argument. I, you know, I am just, like, very focused. kind of on my lifetime and in particular the lifetime of my child. I just had a kid 15",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 413.74,
+      "end": 414.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "months",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 414.04,
+      "end": 428.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "ago. And so I think I'm maybe a little bit hyper-focused on the now and making things better now and seeing things that I'm not happy with right now rather than looking at, oh, you know, we... We eradicated polio, cool.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 429.17,
+      "end": 430.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, totally.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 431.57,
+      "end": 496.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 497.28,
+      "end": 507.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Oh, gosh, I don't know what the sub buckets would be. There are certainly many sub buckets. I think when I think about the influence that law has on the world, it's,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 509.96,
+      "end": 510.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 512.23,
+      "end": 517.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I have such. mixed feelings about regulation because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 517.69,
+      "end": 519.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 519.63,
+      "end": 542.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you look at the internet, you know, if law hadn't been so far behind technology that like we could hardly catch up, then the internet wouldn't exist in the form that it does today. But at the same time, you know, now we have all these problems with like... privacy law being way behind, you know, current technology and, you know, people actually getting harmed as a result. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 542.67,
+      "end": 544.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 544.24,
+      "end": 559.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "law is such a... It's not enough to just create technology and regulate it afterwards because the whole architecture piece of it sets defaults and really, you know, sets things in motion in a way that you can't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 560.27,
+      "end": 561.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "stop",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 561.27,
+      "end": 565.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "or, you know, change with just regulation. But...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 565.42,
+      "end": 565.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 565.86,
+      "end": 568.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "find that if we regulate too early,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 568.38,
+      "end": 569.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 570.84,
+      "end": 593.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "amazing technology doesn't come about. So a friend of mine, Ryan Kahlo, got screamed at, rightfully so, I believe, but he got screamed at at an AI ethics conference for saying that we should wait to regulate facial recognition technology. And his reasoning was because he has seen so many times.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 595.7,
+      "end": 596.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "regulation",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 596.22,
+      "end": 659.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "reacting to a specific technology like that, but then passing really bad regulation that's either too narrow or too broad. And once it's passed, you can't bring up the issue again when then the gate recognition technology comes around because the legislators are, you know, fatigued from like having to deal with this issue. And then you wind up just needing to deal with this shitty legislation that you had already passed. And, well, he got, he got criticized because facial recognition technology does have some specific attributes and is disadvantaging specific communities right now and really harming them. And so there is a reason. And he actually, he took back his statement and he listened and he changed it. He changed his mind on that, which I thought was really commendable. But his point about needing to be careful about regulation is very, very true. I mean, anyone who's dealt with. policymakers. I mean, half of the laws we have are just based on, you know, either lobbyists or superstition.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 660.37,
+      "end": 660.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Nice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 661.69,
+      "end": 742.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "You have your choice of one of those two things. I don't know. I think you're correct in saying that one of the huge tensions here, and honestly, one of the huge tensions is should you, like, as you say, the internet, early internet folks are so excited that they were able, and you chat about this with your recent Media Lab talk with Douglas Rushkoff, or it's like, hey, it's the early internet folks really didn't want the government in there, you know? And then they got permissionless innovation. That was cool. But then that enabled Google, Amazon, Facebook, all the aggregators and platforms in that side of thing. So it's kind of like having this balance of not too wide, not too narrow, not too soon, not too late. Very difficult. Do you think also another piece here, which I think is interesting, is someone like Lawrence Lessig, you know, was working on the, you know, intellectual property laws and trying to, you know, push things like the Creative Commons and whatever against the evil lobbyists of, you know, the big, you know, record labels, which, yeah, yeah. And so I think that, and then over time, like, I think I just need to work more on corruption and I need to work more on kind of how money changes politics. Do you think... You know, how do you think about working directly on, like, legal issues versus kind of abstracting one level on working on, like, the, how money affects politics and law more generally?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 743.11,
+      "end": 758.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Well, I think, like, the progression from, his progression from working on copyright legislation to working on money in government makes so much sense because, you know, he... He worked on copyright issues for, I don't know, what, 10 years, 20 years? How long did he?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 758.9,
+      "end": 760.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "A long time. And he",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 760.16,
+      "end": 761.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "started a whole movement. Like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 761.96,
+      "end": 762.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "he",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 762.12,
+      "end": 766.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "had believers. I was one of his biggest fans. I mean, still him. He's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 766.3,
+      "end": 766.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "great.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 767.36,
+      "end": 775.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And, you know, started all this, started Creative Commons, started all these, like, really, really powerful tools. And yet we got nowhere",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 775.98,
+      "end": 776.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 776.38,
+      "end": 776.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "copyright",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 776.84,
+      "end": 777.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "legislation.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 778.74,
+      "end": 812.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And... So he realized that the only way to really change things is going straight to the roots. I think it's actually what he says, going to the roots of the problem, and the root of the problem is government corruption in this case, and probably in a lot of other cases, too. So I think, you know, he's... I love him because he's bold enough to, you know, see the problem and, like, go for it, whereas other academics are like, whoa, I need to stay in my lane and do my thing and, like, work in my name in this field. And, you know, he's bold enough to do things like run for president",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 812.8,
+      "end": 813.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 813.46,
+      "end": 817.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like, get ridiculed by everyone, but in order to make a point.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 819.12,
+      "end": 819.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 821.06,
+      "end": 885.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I don't know, we need people working on all fronts, though. That's the thing. And the... I think what would be helpful for better regulation is to have people from different disciplines working together, which is something that we're still very bad at. Like, the world has started talking about how important interdisciplinarity is, but I can tell you from the world of academia. Everyone is like, yeah, we need more interdisciplinary, but there are no structures in place that really support that. Or very few. The Media Lab is a great place that does support it. There are some other institutions. But for the most part, to have a good career in academia, you can't be too interdisciplinary. And I think that is hugely harmful to things like, you know, passing good legislation in a world where... We have now AI and robotics seeping into all these different areas of people's lives. And the regulators know nothing about the technology. The technologists know nothing about, you know, human behavior or ethics. And everyone sees that there's a problem, but we haven't found a solution yet.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 885.93,
+      "end": 943.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep. Yep. You're definitely preaching to the choir, both to my listeners and to another media lab, like, oh, yes, more interdisciplinary stuff. I also think going to the root of the problem is, like, You could either think of it, yeah, as going to the root or like, I often say it's like going to the like the paradigm level from like a Donella Mello systems perspective, or it's like if you change the paradigm, then that can change how laws get implemented. It can change how, you know, incentives get structured or whatever. So that's the other hope. But it's so much more difficult to change those things that are even more abstract and more kind of ingrained within us. So in any case. So let's kind of transition over to chatting about, like, gender and privilege and those kinds of things in tech. I think that the... So we were chatting after a recent... this Douglas Rushkoff event where you had this talk with him about his recent book, and we were just chatting about, like, essentially similar things we're chatting about today, which is, what should we do in the world? And I think that one thing that...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 944.06,
+      "end": 944.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 944.52,
+      "end": 963.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "just always difficult for me to remind myself of as a rich, white, straight American male is how one's identity affects those kinds of decisions. So could you tell me a little bit more about how, when you think about like doing good things in the world, how your own identity affects the decisions that you make?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 963.58,
+      "end": 964.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 964.62,
+      "end": 970.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So I didn't think much about this before the election, but after the election happened,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 972.26,
+      "end": 972.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 972.62,
+      "end": 1016.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "had kind of a crisis, a personal crisis. I was like, what am I doing with my life? You know, I originally went to law school because I wanted to make a difference in the world. And am I doing that now? I work on, you know, human-robot interaction because I'm really passionate about it. So I have like a really fun life and I love it. But am I, is that really important? given the political climate and all of these fires that I see everywhere that, you know, I want to be helpful in putting out, but I don't know how. And I was talking to a friend of mine who's a law professor, and I told her, hey, I'm thinking of leaving academia and like going to work for a nonprofit or doing something because I have to do something. And she was like, but you are doing something. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 1016.57,
+      "end": 1017.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 1017.85,
+      "end": 1033.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "problem is that women always do this. They leave. the tech field they leave academia they leave industry and they go and work for a nonprofit where they are nothing where they're you know volunteers and we need we need people doing that of course but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 1033.08,
+      "end": 1034.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 1034.02,
+      "end": 1041.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "also need women to stay where they are and to represent and to try to change from within and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 1042.06,
+      "end": 1042.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 1042.5,
+      "end": 1057.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know the whole change from within thing is a little bit problematic and a lot of people tell themselves that they're changing from within and I'm still trying to figure out whether I'm doing the right thing by staying on my current career path and I've been trying to figure out how to,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 1058.2,
+      "end": 1059.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 1059.7,
+      "end": 1080.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, work on some of the issues that I see in different ways from the position that I'm in and I'm still trying to figure that out. But I ultimately decided, okay, you know, maybe she has a point that. I can do more from the stronger position that I'm in right now than I could if I just left and started with something else.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 1080.13,
+      "end": 1119.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, so I'm hearing kind of two different things there. One is the ability, a classic question is should one change by like either influencing the influencers or like working inside the given system? Or should they work by like trying to exit that system and trying to, you know, to leave it and to influence and to work with, to not work with like the influencers or whatever. That's one side. And then the other piece is just like, yeah, how one's, how your identity plays into that. I guess, but you didn't talk too much about that. Do you see your own? Do you see, like, yourself as like, oh, I need to be a role model for women in tech? Is that, like, a way that you, like, identify?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 1120.2,
+      "end": 1127.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "It's a new, so I, I think I've had trouble coming to terms with the fact that I actually",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 1127.3,
+      "end": 1128.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "am,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 1129.13,
+      "end": 1155.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like, somewhat visible now, because I still feel, like, an insignificant person and have imposter syndrome, like everyone else in Cambridge. But I'm starting to see that, you know, no matter, no matter where you are, actually, there are. owes people that you can elevate or try to be a role model for or try to help in some way. And so I was just at an event, which was four days of speakers, and I was the only woman. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 1155.11,
+      "end": 1155.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 1156.15,
+      "end": 1157.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, yeah. I know.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 1159.25,
+      "end": 1166.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "That's crazy. Sometimes you'd be like, oh, okay, this panel has got five dudes on it. Like, what's going on here? But like a four-day event with home.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 1166.17,
+      "end": 1167.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 1167.05,
+      "end": 1167.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 1167.35,
+      "end": 1167.91,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a cryptocusing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 1167.91,
+      "end": 1168.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I don't know if they changed",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 1168.97,
+      "end": 1173.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it last minute because I wasn't there for the four days. But when I saw the lineup, I was the only woman.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 1174.85,
+      "end": 1174.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 1174.85,
+      "end": 1186.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so I do, I have started being more conscious of the fact that I can represent and maybe that does make somewhat of a difference. I also am.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 1188.94,
+      "end": 1204.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "trying to you know wear whatever I want on stage and just you know be to be an imperfect person who is passionate and you know not afraid to be up there with all the dudes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 1205.66,
+      "end": 1220.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "hope I don't know. I know it would have helped me. Like when I was a kid, I was really into science fiction and I really like programming and it never occurred to me to go into STEM. It just never occurred to me because they didn't have any role models.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 1220.84,
+      "end": 1239.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. Yeah. Yeah, I think that there are, oh, this stuff is when I watch. So, so we are all socialized into our various contexts, and I as a dude was socialized into my context. And it was, I mean, when I was in high school, I would use, like, gay as a derogatory term. You know, I'd like, oh, that gay, and I remember",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 1239.72,
+      "end": 1241.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "being",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 1241.08,
+      "end": 1262.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "like, oh, God, like in college, I finally got woke to that. And I was like, oh, Jesus. And the, another version of that I've, a good way that I found to, like, remind myself of how I was socialized is actually by. watching some old movies. So I was watching the one with Robin Williams and Matt Damon and people. It's a nice movie in Boston.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 1263.14,
+      "end": 1264.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Oh, Goodwill Hunting.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1264.84,
+      "end": 1321.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Goodwill Hunting, which in theory is a beautiful movie and it's about therapy and we all love therapy. But I was watching it and like the woman character in it was just like she was essentially just like a random sexualized person in the corner and it was like And what women see when they watch that movie versus what I see, which is like, you can do anything and you're going to go to MIT and you're going to do all. It's like totally different. And I was just disgusted essentially. And so I think for me personally, that's been a good reminders watching the old movies as a way to think about the ways that different people are socialized in childhood. Do you think, so something that you're chatting about is how you can be a good role model in various ways. And something that I think about is how can I be, I don't want to call it like an anti-role model, but like how should a dude like me or a rich person like me or a white dude like me or whatever",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1321.22,
+      "end": 1322.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "actively",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1323.26,
+      "end": 1328.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "push for more space for non-people like me, you know, like decentralized",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1328.34,
+      "end": 1331.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "power away for myself? Well, but like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1331.04,
+      "end": 1356.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that applies to all of us. Like I think that, you know, I as a, you know, privileged white woman of means. can also be thinking about, you know, how can I seed power or listen to, you know, women of color or, you know, people who, who, you know, I have been socialized to, you know, treat a certain way or think about in a certain way. So I think we're all constantly on that learning journey.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1358.08,
+      "end": 1358.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1359.36,
+      "end": 1362.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, I think one of the important things is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1362.36,
+      "end": 1363.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1364.28,
+      "end": 1387.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "understand that, um, the gender roles that we've, you know, grown up kind of internalizing are a disservice to men as well. It's not just about men, you know, having all the power and giving some to women. I mean, to some extent that's true because we tend to value, you know, male work, for example. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1387.83,
+      "end": 1389.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1389.01,
+      "end": 1412.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1414.07,
+      "end": 1414.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1414.55,
+      "end": 1427.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "yeah, thinking, I think it's good for all of us to think about what's my privilege. who's less privileged and how can I listen to what they need and make space for them and,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1427.56,
+      "end": 1429.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1429.28,
+      "end": 1430.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "elevate them in some way.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1430.6,
+      "end": 1441.98,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I think, and I definitely agree with the listening and the elevation piece and that side. And I super agree with the reminding oneself that it's a disservice. It's a system in that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1441.98,
+      "end": 1442.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1442.64,
+      "end": 1486.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "system. It's like, I mean, my kind of funny example of this is I've probably had. It was, I guess it was a couple years ago before a wedding that I went to. I was with a bunch of my female friends, and we all got pedicures before a wedding. And it was so nice. It was like pedicures should be for everybody, you know? And I believe that, and I think that they're incredible. And I think that those, that is a small kind of stupid, funny example of this, but there are many ways in which... men are not allowed to or are pushed into various boxes are not allowed to express their femininity or their those kinds of things and so reminding oneself that those are yeah that that's a two-way system and that they're negatives for you you is I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1486.55,
+      "end": 1486.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1486.69,
+      "end": 1544.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there was this New York Times piece I think was New York Times years ago about you know how a lot of jobs are being lost to you know automation, globalization, and there are a lot of, you know, men who are out of work in America. Well, the thing is, there are jobs. There are jobs, for instance, in the healthcare sector where jobs are skyrocketing, but, and some of these jobs don't require, you know, a lot of education, and you could retrain people to do them, but they're traditionally seen as women's work. And so they're... first of all, not valued, they don't pay as much, but also the men who don't have jobs don't see themselves doing that type of work, because we as a society don't value it. And so it's really like doing everyone a disservice to, you know, not value work that is traditionally seen as female.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1545.73,
+      "end": 1548.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And so now we have, you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1548.07,
+      "end": 1549.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "know, Not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1549.89,
+      "end": 1554.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "enough jobs in this area and too many jobs in this area It's just a nightmare",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1554.19,
+      "end": 1554.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1554.49,
+      "end": 1559.35,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the men who are like oh I could get a job But I don't want that job because it's more of a female It's more of a feminine",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1559.35,
+      "end": 1560.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "job or whatever",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1560.17,
+      "end": 1570.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "It's like that's yeah Yeah, that that's rough Do you think so maybe to kind of conclude I think this is a question honestly for that works with both is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1572.13,
+      "end": 1620.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "A thing that I'm constantly battling with is what I would call like coherent pluralism, which is the idea that... So at the top, we were talking about the macro situation, there's all the fires, and we can take multiple different perspectives, and it's like, oh boy, which perspective should we take at any given time? It's hard to, like, actually have a coherent vision given all the craziness that's going down. And then similarly, I think with identity, this can also be an issue where it's like, okay, I am... not privileged on all these aspects, or rather I am privileged on all these aspects, there might be some aspects that I'm not privileged on. How should I, you know, create coherence around, you know, the kinds of identities that I should, you know, prioritize or whatever? So the macro question is, how do you think about creating coherence given lots of options?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1620.49,
+      "end": 1620.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1621.01,
+      "end": 1646.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1646.25,
+      "end": 1647.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1647.37,
+      "end": 1672.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just made me understand that, there are people's life experiences that I don't understand, can't understand, and thus can't be judgy about. Like, I need to listen to people and need to try and be more empathic and not make assumptions about other people's experiences. And that's helped me. So, you know, I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1673.03,
+      "end": 1674.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "started",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1674.73,
+      "end": 1714.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "on Instagram, I started following, um, more people who are in the space of criticizing white feminism, for example, and just following a bunch of people who, you know, I think I can learn a lot from. And but even just, I'm noticing more things myself like. walking around Boston in the winter with a stroller. You realize that people don't shovel in front of their houses the way that they should. And you realize, holy shit, if I were in a wheelchair, this would be, I wouldn't be able to live in this city. Like how? And so just trying to,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1714.9,
+      "end": 1715.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "trying",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1715.2,
+      "end": 1718.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to, you know, be empathic and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1718.48,
+      "end": 1719.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1722.14,
+      "end": 1725.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "be aware that there are other people out there with different experiences.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1727.71,
+      "end": 1728.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "helps me yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1728.81,
+      "end": 1729.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1729.27,
+      "end": 1739.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1739.69,
+      "end": 1740.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1741.02,
+      "end": 1780.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1781.29,
+      "end": 1781.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1782.51,
+      "end": 1785.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "coherence given that I'm trying to be so multi-perspective all the time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1785.57,
+      "end": 1789.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, and I don't have a good answer to that. If you have an answer, I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1789.93,
+      "end": 1792.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "don't.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1793.05,
+      "end": 1796.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Do I have a good answer to that? How does one create coherence?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1799.52,
+      "end": 1803.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I don't know. I think that my answer might be connected to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1804.14,
+      "end": 1806.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1806.28,
+      "end": 1845.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "connecting in with your, I guess here's my answer. My answer would be feeling happy to commit to things for given periods of time and then later readjusting. So it's like a thing where you say, hey, I'm going to empathize with this set of people and then give it all that. I'm going to try to take some actions in my life. And then I know that I didn't get all the perspectives or I didn't do all my good things. But in three months, I'm going to work really hard for three months or whatever. And then three months later, I will come up out of my rabbit hole and say, okay, where am I at now? And then re-repluralize or re-emopathize. And then... choose. So I think of it as kind of like a through-time coherence than pluralism dynamic. I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1845.08,
+      "end": 1845.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1845.88,
+      "end": 1852.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I like that. It's I think a lot of it is being okay with not being able to be coherent",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1852.14,
+      "end": 1853.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because you're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1853.46,
+      "end": 1860.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just not you're not you can I remember being in college and taking all these like animal philosophy classes and being like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1860.56,
+      "end": 1862.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "vegetarianism",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1862.38,
+      "end": 1887.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and veganism. are, you know, the right path, but they're not completely philosophically consistent. So, like, how can I, I can't commit to them because they're not, like, they fray at the edges if you, if you, like, drill down philosophically. And it took me a while to realize, no, wait, like, you can still try to do something, even if you're not doing a perfect job of being... you know, morally consistent.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1887.66,
+      "end": 1917.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, totally, totally. And that's like, I like the idea of being a flexitarian or reducetarian. It's like, generally eat less meat, you know, and then you don't need to be perfect, you know, it's not a perfect thing. So, okay, so with that, thank you for your time today. As a note for our listeners, A, Kate talks about this stuff, but also is actually very an expert, one of the leading experts in robot. Ethics or, you know, how human-r-robot interaction. So check her out for those things as well. And I guess, Kate, is there anything? How can people find you on Twitter?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1918.1,
+      "end": 1921.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "My Twitter handle is GROK-G-R-O-K underscore.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1921.82,
+      "end": 1925.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Nice, nice, nice. That's an interesting handle.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1925.36,
+      "end": 1925.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes, there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1925.98,
+      "end": 1927.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a long story behind that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1927.5,
+      "end": 1929.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "underscore. We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1929.28,
+      "end": 1931.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "won't go too deep now. So thank you again for talking about the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1931.76,
+      "end": 1931.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "show.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1932.06,
+      "end": 1932.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Thank you so much.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1932.94,
+      "end": 1933.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Sweet. Goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 187,
+    "withheld": 7,
+    "published": 180
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

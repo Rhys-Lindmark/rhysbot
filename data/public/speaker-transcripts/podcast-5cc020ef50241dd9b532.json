@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "podcast-5cc020ef50241dd9b532",
+  "title": "Already living in AR?",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=IJ5VsMgknrA",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "IJ5VsMgknrA",
+  "youtube_url": "https://www.youtube.com/watch?v=IJ5VsMgknrA",
+  "audio_sha256": "63caf702718b8adac42d47024042422a6dd535994556ad6ae1cbee0c24e54e6c",
+  "audio_duration_seconds": 48.4368125,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 121,
+    "unknown_words": 2,
+    "unknown_words_fraction": 0.01652892561983471,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 0.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 0.32,
+      "end": 31.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Apple just came out with their new AR headset, the Apple Vision. But have you ever wondered how our current reality is actually an augmented reality? Well, today we have a very special episode with Barbara Tversky that dives into just that. How we construct our reality. It's all about spatial cognition. We live in this 3D world. We take that world and compress it with language. And then we output those conceptual relations. back into the built reality by building maps and lines and shared concepts.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 32.24,
+      "end": 32.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 32.72,
+      "end": 42.13,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah, our current reality is already this augmented reality. As always, let me know what you think of the episode and stay until the end to hear her overrated and underrated. Thanks.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 4,
+    "withheld": 0,
+    "published": 4
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

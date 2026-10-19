@@ -1,26 +1,26 @@
 {
   "release_date": "2026-10-19",
   "status": "partial_reviewed_release",
-  "records": 38829,
-  "unique_documents": 33506,
-  "words": 2941866,
-  "characters": 17263252,
+  "records": 39692,
+  "unique_documents": 33508,
+  "words": 3519740,
+  "characters": 22329795,
   "tokens": null,
   "token_count_note": "Research speaker corpus refreshed; no new token measurement. Historical model training input is unchanged.",
   "by_source": {
     "anki": 20923,
     "hee_transcript": 771,
     "linked_writing": 46,
-    "podcast_transcript": 64,
+    "podcast_transcript": 3982,
+    "youtube_transcript": 1135,
     "substack": 765,
-    "x": 12070,
-    "youtube_transcript": 4190
+    "x": 12070
   },
   "retained_anki_cards_before_text_deduplication": 20980,
   "by_split": {
-    "test": 2129,
-    "train": 34872,
-    "validation": 1828
+    "test": 2322,
+    "train": 35528,
+    "validation": 1842
   },
   "source_processing": {
     "anki": {
@@ -142,8 +142,8 @@
     "sensitive_raw_inputs_uploaded": false
   },
   "schema_version": 2,
-  "text_utf8_bytes": 17311114,
-  "corpus_jsonl_bytes": 55764105,
+  "text_utf8_bytes": 22609936,
+  "corpus_jsonl_bytes": 65167948,
   "byte_measurement_note": "UTF-8 text fields only versus complete serialized corpus rows including metadata and newline delimiters; no media.",
   "collection_metrics": {
     "anki": {
@@ -168,11 +168,11 @@
       "documents": 217
     },
     "podcasts_youtube": {
-      "excerpts": 4254,
-      "words": 1450619,
-      "text_utf8_bytes": 7668386,
-      "corpus_jsonl_bytes": 11911440,
-      "documents": 213
+      "excerpts": 5117,
+      "words": 2028493,
+      "text_utf8_bytes": 12967208,
+      "corpus_jsonl_bytes": 21315283,
+      "documents": 215
     },
     "x": {
       "excerpts": 12070,
@@ -205,11 +205,18 @@
       "documents": 6
     },
     "podcast_transcript": {
-      "excerpts": 64,
-      "words": 20817,
-      "text_utf8_bytes": 123840,
-      "corpus_jsonl_bytes": 231160,
-      "documents": 4
+      "excerpts": 3982,
+      "words": 1565601,
+      "text_utf8_bytes": 9997369,
+      "corpus_jsonl_bytes": 16692090,
+      "documents": 140
+    },
+    "youtube_transcript": {
+      "excerpts": 1135,
+      "words": 462892,
+      "text_utf8_bytes": 2969839,
+      "corpus_jsonl_bytes": 4623193,
+      "documents": 75
     },
     "substack": {
       "excerpts": 765,
@@ -224,28 +231,21 @@
       "text_utf8_bytes": 2061857,
       "corpus_jsonl_bytes": 10458190,
       "documents": 12064
-    },
-    "youtube_transcript": {
-      "excerpts": 4190,
-      "words": 1429802,
-      "text_utf8_bytes": 7544546,
-      "corpus_jsonl_bytes": 11680280,
-      "documents": 209
     }
   },
   "by_collection": {
     "anki": 20923,
     "hee": 771,
     "writing": 811,
-    "podcasts_youtube": 4254,
+    "podcasts_youtube": 5117,
     "x": 12070
   },
   "artifact_bytes": {
-    "corpus.jsonl": 55764105,
-    "train.jsonl": 50305331,
-    "validation.jsonl": 2435323,
-    "test.jsonl": 3023451,
-    "sources.jsonl": 20319977,
+    "corpus.jsonl": 65167948,
+    "train.jsonl": 58306201,
+    "validation.jsonl": 2620247,
+    "test.jsonl": 4241500,
+    "sources.jsonl": 21186832,
     "anki-cards.jsonl": 29655094
   },
   "frozen_model_training_input": {
@@ -254,14 +254,14 @@
     "note": "Unchanged historical data/training bytes; enriched research corpus was not used to train existing checkpoints."
   },
   "speaker_transcript_integration": {
-    "episodes_processed": 1,
-    "rss_audio_episodes": 1,
-    "youtube_audio_episodes": 0,
-    "episodes_with_rhys_match": 1,
-    "episodes_anonymous_or_ambiguous": 0,
-    "screened_turn_count": 659,
-    "unknown_words_fraction": 0.04214080280105039,
-    "unknown_words_fraction_episodes_measured": 1,
+    "episodes_processed": 214,
+    "rss_audio_episodes": 140,
+    "youtube_audio_episodes": 74,
+    "episodes_with_rhys_match": 142,
+    "episodes_anonymous_or_ambiguous": 72,
+    "screened_turn_count": 113830,
+    "unknown_words_fraction": 0.04431806829582805,
+    "unknown_words_fraction_episodes_measured": 214,
     "provenance_notes": [
       "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
       "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
@@ -270,24 +270,28 @@
       "Public privacy screening omits flagged turn text and can miss sensitive context.",
       "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
     ],
-    "processed_episodes": 1,
-    "matched_old_corpus_episodes": 1,
-    "episodes_with_youtube_alias": 1,
-    "public_sidecar_bytes": 188271,
+    "processed_episodes": 214,
+    "matched_old_corpus_episodes": 212,
+    "episodes_with_youtube_alias": 213,
+    "public_sidecar_bytes": 34210377,
     "replaced_excerpts_by_source": {
-      "youtube_transcript": 15
+      "podcast_transcript": 64,
+      "youtube_transcript": 4163
     },
     "turns": {
-      "total": 659,
-      "published": 643,
-      "withheld": 16
+      "total": 113830,
+      "published": 113008,
+      "withheld": 822
     },
     "gaps_aggregate": {},
     "exact_new_excerpt_duplicates_removed": 0,
     "canonical_scope": "Only screened processed episodes replace explicit RSS/YouTube aliases; other videos/audio remain.",
     "recordings_assumed_identical": false,
     "frozen_training_changed": false,
-    "applied": true
+    "applied": true,
+    "output_excerpts": 39692,
+    "output_corpus_jsonl_bytes": 65167948,
+    "output_text_utf8_bytes": 22609936
   },
   "source_processing_note": "Historical acquisition/screening inventories are retained. Current canonical excerpts/documents are source_metrics; replacement is speaker_transcript_integration."
 }

@@ -1,0 +1,1278 @@
+{
+  "schema_version": 1,
+  "id": "podcast-2e937721da193e8b54ce",
+  "title": "#13 Kirk Dameron + ConsenSys: Fireside Chat at Denver Startup Week",
+  "published_at": "2017-10-10T19:08:21Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/13-kirk-dameron-consensys-fireside-chat-at-denver-startup-week",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/346289627-the-rhys-show-13-kirk-dameron-consensys-fireside-chat-at-denver-startup-week.mp3",
+  "youtube_id": "o8QuF4bu4ig",
+  "youtube_url": "https://www.youtube.com/watch?v=o8QuF4bu4ig",
+  "audio_sha256": "03d1d52e29737cd1c6fbf889b88a1e5a7341f32a32fadead6b0c765e1d94b346",
+  "audio_duration_seconds": 1088.6530625,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 3253,
+    "unknown_words": 74,
+    "unknown_words_fraction": 0.022748232400860744,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 0.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 12.45,
+      "end": 24.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "starting to talk with Stephanie Kirk today. And Kirk is a member of Consensus who builds on the Ethereum blockchain, especially at the application there. So let's welcome, Kirk.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 31.8,
+      "end": 33.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Cool. Is that, can you hear him?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 33.76,
+      "end": 38.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, me. Test, test. I can probably talk about it. Am I coming through it? Mark?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 38.59,
+      "end": 38.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "No.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 42.23,
+      "end": 42.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Closer.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 44.19,
+      "end": 49.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So, yeah, I worked for a company called Consensus Form in 2014.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 50.88,
+      "end": 55.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "about 20 people, 2040 people in 2015,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 58.28,
+      "end": 62.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "60 by middle of the year in 2016,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 64.32,
+      "end": 65.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "about 100, when I joined 10 months ago,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 68.24,
+      "end": 70.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we're going very fast in the space. We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 70.28,
+      "end": 71.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 71.44,
+      "end": 76.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "work kind of throughout the space. We started out with an emphasis of Joe Lubin, our founder, to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 76.74,
+      "end": 78.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "build",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 78.2,
+      "end": 102.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "applications with this merging of the protocol network. So the theory is a protocol to come back and talk about it. Perhaps we just want to be able to go there. But on top of that, you can build applications, applications take advantage in the future, five years out, ten years out. When Gramal March and many of you use these applications, you won't even necessarily know that we can centralize applications to you on the world.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 104.36,
+      "end": 104.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 104.84,
+      "end": 112.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the reality is, I think will allow you to do many of the things that you do today through Trust in intermediaries",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 112.62,
+      "end": 113.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "literally",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 113.66,
+      "end": 156.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "without that interleague. We'll be a cleaner without a new company taking 25% to 35% of every driver's pay. We'll be able to do banking without banking fees being here so high. We're going to be a lot of people. We're going to be a lot of people and be without taking whatever their fees. So our focus was to build and work on that application layer. We found out that we needed certain infrastructures, so we also provided infrastructure to help these networks run, and that was not the best use of time for the various developers. There's been a lot of time spinning up network nodes and getting all of that going. So one of our infrastructure plays as he flew up, we were in the networked today, that we had nodes that run with protocol that they could provide",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 156.28,
+      "end": 158.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "previously",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 158.22,
+      "end": 163.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "compete in building transactions today, we're now averaging. on the ability of transactions in that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 163.74,
+      "end": 165.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 165.37,
+      "end": 215.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "our photo infrastructure as well. The application on the application there I'll just tell you three or four of our most interesting ones are Uport for identity, reputation-based applications. And Mimask, for those of you who are new to this space, MitaMask is actually a Chrome extension you can put on your Chrome browser today and begin to interact with the Ethereum space without having to worry about all this crypto. economic early people need a lot to do it. We trade tokens and working with shape shift and so on and all that very, very, very, very important. So we have a number of those. We style ourselves as a software venture production studio. So we essentially incubate startups. We have about 25 to 30 in the year months of time. Some of those spin out of the government and companies so far we've spun out of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 215.2,
+      "end": 216.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "three",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 216.44,
+      "end": 233.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that are very popular right now. And one of them is Nosis, one of the same or intending. Block apps, which there's a lot of permission to change in space, enterprise, and since we are spin-outs, one of our first place, we're in the fall of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 233.49,
+      "end": 233.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 233.51,
+      "end": 234.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "2006.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 234.49,
+      "end": 234.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 234.99,
+      "end": 236.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's kind of an intervention at a high level.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 237.17,
+      "end": 237.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "In most",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 237.39,
+      "end": 239.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "places, we also work in client protocol there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 240.92,
+      "end": 241.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 241.78,
+      "end": 253.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so I didn't know. Let's dive into some of those for seconds. So yeah, as you said, you're part of, consensus was formed right at the beginning of the Ethereum network. And so consensus the company itself needs to start helping build",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 253.3,
+      "end": 253.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 253.8,
+      "end": 262.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "underlying protocol that, allow that technical infrastructure like in Bureau. And then now you're going a lot more also at the application layer with things like prediction markets and nosis",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 262.64,
+      "end": 263.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 263.28,
+      "end": 271.81,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of that right. Could you tell me a little more about So, you know, from a, you guys have various different things that you're doing in the space these days. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 271.81,
+      "end": 272.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 272.35,
+      "end": 298.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "like to think of it as kind of like a spectrum of engagement with the community. You have like, first like just the peer community engagement piece with things like meetups and what have you. And then as people start to come in, you have things like Consensus Academy, the ways to kind of educate the developers in the space. And then after they've been, you know, join the community, we're educated, and then can start and spin up somebody's folks. Can you talk a little bit more about how you see that progression from people learning about Ethereum",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 298.17,
+      "end": 298.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 298.65,
+      "end": 301.85,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then actually going in and start to build apps on the platform?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 302.55,
+      "end": 302.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 304.69,
+      "end": 304.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 304.81,
+      "end": 380.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "when I was at you, when I was in here, I had in May, I said that we had three functions, basically, infrastructure, basically, his venture production, studio applications, and then we had further year, professional services and consulting. Actually, if I answer the question about the census today, I would say we have two warn. One of it was in the Census Academy, so we have a major education on at this point. At the time, we've been to an education for the last year, mostly through our professional services online, now we've stuck to a major, a major educator space. Then you'll see a little pre-course content. There'll be lots of stuff coming out. We rolled out first class, which is going to be for developers, which are We don't want to draw a conclusion because this academy is only for developers. We all now have a contest going for EPA's. We're going to compete with the schools, but we're going for lawyers right around the quarter. So we have a lot of education. But our first class, I think we announced I believe in late May or early June, took the application, we got 500, get 500 applications. We got 1,300 around the row for many countries. We accepted 130. We intended originally to accept just 50. And we're paying for that education for these people in a lot of countries. So this is not all people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 380.3,
+      "end": 381.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 381.52,
+      "end": 402.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the people in this audience who have great opportunities. It's a lot of people in countries that don't have those kinds of opportunities. And our first class is just about to graduate. We'll have to take a ceremony and actually they're flying in for the week. All of the people who have hit the high marks in are making. It just turned out to be a lot of margin of participating. We're actually flying in for a week and goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 404.49,
+      "end": 422.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And so they are training as developers and many of those will be seen job offers to work in the census. Many will say hey, I don't know for the consensus. There's this other nice opportunity in space. Obviously as developers, all of these were handed people who already were developers but not blockchain sector developers.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 423.63,
+      "end": 424.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 424.17,
+      "end": 459.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so they're getting a lot of education and we do believe there's just a huge market, a huge opportunity of those space for developers in this space. And that is one of our key focus series, but not only. And then, the finance said, the five-year-old instance, and census capital, the fourth, the fifth one, we really just announced about two and a half weeks ago that you could move in and see if we announced a consensus capital. Their styling that as two main functions and the other things are not yet announced. But one is a $50 million venture capital fund, which simply allows us to invest in ventures that don't come in.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 460.93,
+      "end": 464.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "directly but they can come in something to stay in an educational token terms",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 464.37,
+      "end": 465.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 465.13,
+      "end": 467.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in the other words we offer token services",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 467.03,
+      "end": 468.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "very",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 468.31,
+      "end": 475.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "professional token services where you want to stay on the right side of the law not under the US-based company we're going to be here for a long time which we do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 475.67,
+      "end": 476.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 476.59,
+      "end": 481.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "don't want to run on the wrong side of the law you might be interested in us consulted",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 481.07,
+      "end": 482.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 482.21,
+      "end": 483.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "actually have so much new that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 483.53,
+      "end": 484.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "interest",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 484.98,
+      "end": 492.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in our token services offering that we're actually going to push up for a day so we sort of something. Those sort of private interest.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 493.31,
+      "end": 493.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 494.01,
+      "end": 505.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So, and I think that one way that I like to conceptualize with that is, like, anything that touches the Ethereum ecosystem, that consensus wants to help and empower people within that, whether it's the community side, the education side, whether it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 505.25,
+      "end": 505.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 505.79,
+      "end": 515.91,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Ethereum Enterprise Alliance and working with various companies, or whether it is, you know, actually funding given spokes or things with the financial capital perspective, so that makes sense. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 515.91,
+      "end": 516.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 516.41,
+      "end": 522.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you think, So I want to talk a little bit about one thing that you noted there was part of the decentralization of this space is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 522.92,
+      "end": 523.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 523.52,
+      "end": 536.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, you had 1,300 applications from all over the world. Talk to me a little bit about the, you know, how consensus as a company runs and how that kind of plays into this decentralization theme.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 537.56,
+      "end": 538.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "He",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 538.04,
+      "end": 549.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "was quite committed and it remains quite committed. We actually had a town hall meeting. It's one at 630 AM. with people all over the world from Dubai to Australia. And I had a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 549.97,
+      "end": 551.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "730",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 551.55,
+      "end": 598.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "meeting that was a town hall meeting that we had this morning. And Joe remains committed to the idea that he was leaving once a built a company that has a lot of these decentralization aspects, much like the protocol of the technology and support. Having said that, we live in a very latency world, and the legacy world isn't ready for that level of decentralization. But we do buy in a model where there are the managers in our company and we're brought a very, very flat organization. You can't really grow as fast as we do, so you get it, there's no question those people say that. If they have authority, those six or eight people decided to hire them, those things come up. But we really do have a very commercial kind of atmosphere. I don't manage it around. And nobody manages me. I'm giving a lot of freedom. It's about how I spend my time. For most of us,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 598.49,
+      "end": 599.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's way",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 599.31,
+      "end": 610.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "too much on our plate. I've dropped a project this week. There's many many things come on. So we work in a very, very decentralized way. We want this entity you can call a set of hub",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 610.57,
+      "end": 611.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 611.33,
+      "end": 613.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "spokes. We can say the hub.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 613.49,
+      "end": 613.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 613.91,
+      "end": 628.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "formed of different circles. They form up to provide services to the spokes. The spokes tend to be the venture entities that might go out. We have a lot of you are here from starting. So these 25, 30, any given time, entities that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 628.73,
+      "end": 630.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are essentially",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 630.97,
+      "end": 659.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "would be companies. One or two of them have one developer. Our largest one, which is even very closely going out of the market during the day, is probably going to be very good price for us. Those can be spokes. Here's the important incentive model. All of those folks own equity in the hub. The hub owns equity in every single one of the spokes. That means a lot of concern. One of the things it means is that I could be working on spoke",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 659.01,
+      "end": 660.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Q. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 660.88,
+      "end": 669.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it might be quite helpful for me to really help Spoke B and Spoke B is in trouble. And Spoke B need to help. Because remember Spoke B",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 669.32,
+      "end": 670.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "has",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 670.32,
+      "end": 688.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "significant equity looked at HUB. And if you know the startup game, many many startups will be unsuccessful. It might be that Spoke B happens to be the slogan that is the next Google in space. And the fact that the HUB wants a chunk of the Spoke B. And I spoke here, which might go down there. It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 688.04,
+      "end": 688.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "reality.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 688.56,
+      "end": 691.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "No one's the startups work, right? Everybody knows this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 692.64,
+      "end": 693.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 693.06,
+      "end": 706.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in that case, it might be the best thing I ever did to help make sure that we become very successful. So we think we have a semi-competable model. Joe's committed to the idea of things being very decentralized, but that is very hard.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 707.78,
+      "end": 708.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Even",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 708.28,
+      "end": 741.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "down to the level of roles and titles. We need to be taught strongly that we all have roles and not much entitles. But when I walk into Eric's office, And Eric doesn't know who I am and he wants to know what I do. He really isn't interested in any single games that work with how we work decentralized. Well, I play six roles and I kind of change what I want to do. No, it works if I just give him a title. So that was our old model. To be honest, we're finding the legacy world can't quite deal with it. So we're probably going to have a few more titles. I've never printed a business card in any title. If you'll meet me up on LinkedIn, you won't find my title in any edition.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 742.73,
+      "end": 743.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 743.09,
+      "end": 746.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "use a different title in journal. But it's really more about my role. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 747.43,
+      "end": 755.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think that that, I have Google of your title on LinkedIn, and you were, only two things showed up on Google, you and some weird journey website. So, another",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 755.37,
+      "end": 755.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 756.71,
+      "end": 757.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "My name must be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 757.67,
+      "end": 758.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "come",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 758.61,
+      "end": 759.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "out of a German dictionary.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 759.71,
+      "end": 768.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yes, yes, yes, exactly. It means with RF at the end. Any case, so as we kind of wrap up here, Kirk, I love to chat a little bit about,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 768.99,
+      "end": 769.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 769.75,
+      "end": 772.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so one thing that we were going to chat about with Piper as well here I think that you'll be able",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 772.59,
+      "end": 773.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to speak to is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 773.65,
+      "end": 794.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the is the kind of scaling side of Ethereum as well and what some of the, because that's a big question within the space right now is that lots of people are working on, arthritis and plasma and then both at the midpoint side and lightning channels and on the Ethereum side. How are you thinking about, how is consensus thinking about scaling where you pretty expect that to see it going in the future.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 794.82,
+      "end": 795.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 795.12,
+      "end": 796.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "very much taking the protocol, not scaling",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 796.64,
+      "end": 797.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 797.16,
+      "end": 798.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "protocol, not stealing the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 798.28,
+      "end": 798.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "process.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 799.66,
+      "end": 818.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "It's a big question. This is a complex network. If it doesn't be a new, I'm sorry if this gets a little technical. Let's just say that what the protocol does is really, really amazing. But both the Bitcoin protocol and the Ethereum protocol as written, and in their instantiation and their nascent phase, where they are right now, is not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 818.0,
+      "end": 819.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a... is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 819.84,
+      "end": 837.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not capable of super high performance. The Visa network, in terms of the number of transactions going to be run in a second. It's here, 56,000. The number of transactions are going to be done in the second one on the Ethereum network is really, really quite little. It's a small fraction of that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 839.57,
+      "end": 840.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 840.13,
+      "end": 877.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "are, the good news is that the Ethereum system has attracted a very large money dollars. There's different ways we look at how many people come in, how they can't develop tools, how many read down book tools, or new versions, page versions of those tools come out. But it looks like somewhere on 25,000 is now conservative for the number of developers in the Ethereum blockchain spaces. These are currently pointed out that theory was one of these blockchain spaces. And the good news is there's 25 to 35,000 developers, and many of those developers, probably as many as 500 but 1,000 are working on new techniques for scaling than that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 877.74,
+      "end": 878.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 878.3,
+      "end": 918.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "at recent, correctly points out that there's a number of options, Plasma being run of them. The Ethereum Foundation itself is looking at moving the consensus formation out of the future. That's how do you want your disparate? peer-to-peer network decentralized nodes come to agreement every other time. That's an amazing thing we have all the talk on that. In the Bitcoin network that's 1.70 minutes, they come to agreement on the block. In the 3rd network right now, they have 11.5 seconds. In the protocol drives, they get 14 and a half seconds. They come to a agreement. But both of those two networks, which are two largest, use an incredible amount of electrical power",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 918.49,
+      "end": 919.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 919.15,
+      "end": 934.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "these diverse nodes in order to stay with the breadth of be secure. having large numbers of computers trying to solve hard cryptographic problems to assure that who wins every 15 seconds is a truly random outcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 934.16,
+      "end": 934.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 934.8,
+      "end": 959.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a hard thing to do and it uses lot of electricity. Ethereum has been committed from the beginning to move from proof of work algorithm. That's what you do to solve cryptic puzzles. To move to a proof stake algorithm. That's where you say, I'm a good behavior. I'm a good guy. I'm a new network. I'm a good guy. And if I exhibiting him this bad behavior, which is all defined, you can take all my resources that staked me and said that I was going to be able",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 959.7,
+      "end": 960.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to do. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 960.78,
+      "end": 966.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so it uses a different mechanism to get to the same thing, a decentralized network. The Green on the logs period.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 967.14,
+      "end": 967.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 967.58,
+      "end": 987.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the Ethereum Foundation has a fairly multi-step, multi-year process of raising the performance of the Ethereum. Having said that, even when it goes up by a factor of 10 or 900 or 3,000, it really isn't where we probably need to go. So there are other networks, and actually other things that will run a lot of Ethereum",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 987.55,
+      "end": 988.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 988.61,
+      "end": 998.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "can take that up to maybe a million transactions per site. And there's good papers on the proxy in San Francisco Theory. We did a good job for one of those just a week ago.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 999.82,
+      "end": 1000.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "In",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1000.22,
+      "end": 1011.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that case, I give a model for those who are not technical, that will just say, you can think about it, and you could say the Ethereum network is just say, I'm pulling this out of my ear, say, say, can only run a low number of transactions per cent.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1012.78,
+      "end": 1013.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "10",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1013.16,
+      "end": 1038.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": ",000. A thousand. Doesn't happen. You could think of the Ethereum network as a base protocol that works everywhere, and these other networks could solve lots of transactions. You buy your $3 cup of coffee and Starbucks or your local room, a house, or your beer. It gets solved and resolved on the seven-hour. But if there's any issue over ownership, it gets removed to the next network in which we handle the local transactions. In this case, the Ethereum is NAPRTHAO",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1038.96,
+      "end": 1039.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1039.7,
+      "end": 1043.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "resolve those kinds of contributions for a contract resolution or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1043.46,
+      "end": 1045.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "contract",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1045.24,
+      "end": 1053.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "transaction resolution. So the point is there's lots of approaches, lots of developers, and I have no doubt in all these two scale, we can talk about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1053.04,
+      "end": 1053.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1053.74,
+      "end": 1058.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Ethereum and the enterprise of money. It's a lot of good companies are now putting Pretty serious resources.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1059.12,
+      "end": 1059.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1059.88,
+      "end": 1065.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah. Cool. Well, with that, I think we gotta go to the next person, but Kirk, thank you so much for talking about.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 136,
+    "withheld": 0,
+    "published": 136
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

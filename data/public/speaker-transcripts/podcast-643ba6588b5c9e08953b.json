@@ -1,0 +1,4221 @@
+{
+  "schema_version": 1,
+  "id": "podcast-643ba6588b5c9e08953b",
+  "title": "#29 Erik Voorhees, Shapeshift: Bitcoin Governance and Constraints to Solve It",
+  "published_at": "2018-01-08T22:32:42Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/29-erik-voorhees-shapeshift-bitcoin-governance-and-constraints-to-solve-it",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/380752886-the-rhys-show-29-erik-voorhees-shapeshift-bitcoin-governance-and-constraints-to-solve-it.mp3",
+  "youtube_id": "PaTaFY1sLv8",
+  "youtube_url": "https://www.youtube.com/watch?v=PaTaFY1sLv8",
+  "audio_sha256": "ff83ef15d99eac00dce48f9b51e5fc500af857ef9a6046c2bbd44faf5a190070",
+  "audio_duration_seconds": 2965.5,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 8413,
+    "unknown_words": 233,
+    "unknown_words_fraction": 0.027695233567098538,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 12.69,
+      "end": 13.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 13.57,
+      "end": 87.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everyone. Today's episode is with Eric Voorhees from Shapeshift. And we talk about governance primarily and in the context of Bitcoin and Bitcoin Cash. And the tough thing with all of this is that... you know, you have just a very polarized environment where you have the BTCR slash BTC community, the R slash Bitcoin community, they're polarized, their censorship happening. And with any kind of governance thing, you need to be doing your sense making in a really good way, your information inputs before you make your decisions. So we talk a lot about that. Thinking about, and Eric and I kind of go through some of these different options, thinking about how to solve these governance problems. We talk about kind of four different things. The first is just emphasizing that, yeah, you really need to do this sense making first. And what that means is that if you're a person trying to do governance, you should be curious first. You should be an empathetic, compassionate, patient listener, even if they aren't. You should seek first to understand, then to be understood. So really kind of push yourself to be a person who... actively is curious about the other side and actively is curious about what they have to say. And eventually, they'll come back around and they'll be curious about what you have to say. So that's the first point. The second point",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 87.53,
+      "end": 88.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 88.37,
+      "end": 152.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "around this shared outcome idea. And Eric and I were talking about how it's kind of sad because, you know, he's really aligned with a lot of these people in the Bitcoin and Bitcoin cash communities, but because they all want to kind of replace crypto or replace fiat with crypto. But, you know, that... part of the conversation doesn't even happen. So when you're doing this, when you're trying to do the sense making, when you're being curious about the other person, ask them, well, what are your goals? Okay, so it seems like we might be misaligned, you know, you're more into Bitcoin or not more into Bitcoin cash or whatever, but to check, are we both aligned around like crypto replacing Fiat or like, so being able to kind of go up those meta levels and wise and asking five whys for people, then you can find the goal alignment around things. And the whole idea here is, You're trying to take these two, lots of things have two sides of a coin, and you're trying to take those, that polarization or that dichotomy and turn it into like a synthesis or a dialectic or a tension or a dance or a balance. So take the polarization and turn it into kind of go one level up",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 152.06,
+      "end": 152.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 152.8,
+      "end": 158.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "find where you can find alignment with that abundant win-win mindset rather than the scarcity trade-offs, win-lose mindset.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 158.86,
+      "end": 159.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 159.34,
+      "end": 188.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then the third thing that we chat about is... Yeah, around how to kind of signal that one could be trusted in this. And this gets into the concept of making a profit. And a lot of people talk to Eric and say like, oh, man, you're bad because you're running a company. You're trying to make profit. And that's why you're doing what you're doing. And I think that that in of itself is not a good mindset, but also the mindset of just trying to optimize for profit. It's not great either. And this gets into my ideas around the crypto pledge and how you should.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 188.59,
+      "end": 188.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Try",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 188.91,
+      "end": 265.19,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "to have this non-accumulation mindset because it, you know, there's this funny thing where it's like trying to maximize the value you give to the world is awesome. You should do that. Give value to the world. Give value to the world. But remember two things. A, that as you're giving that value to the world, when you're getting money in return, you could become rich and you can get more rich by selling to more rich people. So you could say, oh, man, I made so much money, but actually you were just selling a bunch of yachts or whatever. And then second, the thing to remember is that at $45,000 per year after that point, money has diminishing returns with respect to happiness. So if what you're optimizing for is happiness, then, yeah, try to maximize your value to the world. But then as you allow it to, you know, that money to flow into you as you're giving value to the world, instead of allowing that money to accumulate on you, instead allow it to flow through you. So yeah, that's this concept of the crypto pledge. So I might, I agree with Eric that trying to make a profit isn't bad. In fact, it's pretty good to try to produce lots of value for the world. But you should also be aware of how rich people can pay for your value for support people and how you should allow money to flow through you rather than accumulate on you, especially if you're optimizing for happiness and not something else. I don't know what else you'd be optimizing for. Then the final fourth piece that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 265.19,
+      "end": 265.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Eric",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 265.95,
+      "end": 309.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and I talk about is around kind of going back to these pieces above where it's like, hey, if you're trying to be curious, if you're trying to be empathetic, How do our current mediums in our current language, how do they fit and control and change our thoughts and our ability to do those things? And so right now, Do we think that we have like a Twitter optimized for curiosity? Probably not. And a good example of this is like, you know, recently Twitter went from 140 characters to 280. And I actually thought that that was a good thing because it allowed for a little bit more when people get in debates on Twitter, they can say a little bit more and say, hey, I hear you. Thank you for your comment. Adding those kinds of rappers around your stuff allows it for just it to not be like total just debate. So.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 310.0,
+      "end": 310.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 310.42,
+      "end": 372.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of part of this big macro idea around these new protocols for language. And we can imagine giving ourselves boxes that force the curiosity, that force the empathy. And you can imagine them kind of like madlibs, kind of like a madlib for nonviolent communication or whatever. You know, violent communication is to the physical world. Nonviolent communication is to the digital world and to the attention economy. So there's that side of things like the protocols themselves that I'm excited for people to start developing around what madlibs and what boxes. people can put stuff in. And then in addition to that kind of deeper protocol layer, there's the layer kind of above it, which is this like hashtag meme emoji layer, which is the layer of, hey, what kinds of things can we put in those boxes? And when you think about that, you're like, okay, what would be the best, you know, hashtags and memes to kind of spread through the ecosystem? So I think... having at those two layers, it would be really helpful as we develop these new kind of social protocols on the internet is to say, hey, what are we trying to optimize this for? And if we're trying to optimize for something like empathy or curiosity, then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 372.52,
+      "end": 373.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 373.42,
+      "end": 386.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "can we make it so that the structure and the medium of the environment is optimized for that? And how can we make it so that the words that are being used are optimized for that are optimized for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 388.28,
+      "end": 401.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "because you can get a bunch more early adopters to get into your system. Unlike Esperanto, Esperanto wasn't able to do this, but with blockchain-based incentives, early adopter incentives, you can get more people into your system and create a language that is more optimized for more good for the world.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 403.1,
+      "end": 403.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Finally,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 403.72,
+      "end": 470.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you can imagine this same system instead of in the written form, in the vocal form, where you make a one-to-one protocol, kind of like pen pals for the internet, where people are connecting with people from the other side, optimizing for empathy, and then in those conversations, they're safe, curious conversations. So this is all to say that. this governance thing is tough, especially because the sense-making side of things is really difficult. And right now we're in a situation where essentially the internet optimizes us for polarization and nonsense sense-making. And we're built around this accumulation mindset where people are confused around why other people are operating and are you just operating for profit. And our language is from the 1600s. So I think if we change all of those things, we'll be able to do better sense-making, which will give us better governance. One final note is a company that Eric is an advisor of, Keepke, and that they just, ShapeShift just acquired, is going to be at East Denver. And they just added ERC 20 to their hardware wallet, and they're going to have a bunch of awesome bounties at East Denver, which is February 16th through 18th. So definitely hope to see you there. Okay, everybody, goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 471.34,
+      "end": 471.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 471.8,
+      "end": 473.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "enjoyed this episode with Eric Forgeys.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 480.43,
+      "end": 519.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello, listener friend. My name is Reese Lindmark, and you're listening to another episode of Creating a Humanist Blockchain Future. And in this podcast, we take a systems thinking approach to doing good in the world. And we kind of have a couple different series that focus on different systems. And today we're focusing on series A, macro systems. And these are kind of humanity level systems where we look at trends in our macro philosophical technological future, where we ask the question, where are we as humanity headed? And specifically today we're going to talk about Bitcoin Dynamics with Eric Voorhees. And Eric is the founder and CEO of Shapeshift, a digital asset exchange that has, and he's been deep into cryptocurrencies. fear since 2011. Eric, thanks for being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 519.99,
+      "end": 520.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Thank you for having me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 521.47,
+      "end": 531.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, excited to chat. So before we chat about Bitcoin Dynamics, could you give us a high level overview on your work with ShapeShift and also interactions with like salt and keep key?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 532.85,
+      "end": 537.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah. So as you mentioned, I've been down the Bitcoin rabbit hole since 2011",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 537.53,
+      "end": 538.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 538.71,
+      "end": 544.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "been involved with a number of projects from BitInstant to Satoshi Dice, but for the last three and a half years,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 545.03,
+      "end": 545.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 545.69,
+      "end": 550.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "been running ShapeShift. And ShapeShift is essentially a way to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 550.81,
+      "end": 551.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "turn",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 551.83,
+      "end": 557.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "one digital asset into another as quickly and easily and securely as possible.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 557.39,
+      "end": 557.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 557.95,
+      "end": 580.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that was kind of a small little project a few years ago when Bitcoin was 98% of the market. But now that there are thousands of these assets, a couple dozen of them with values over a billion dollars, shapefifts become, I think, fairly central to the ecosystem. And so we've been growing very quickly. We recently acquired KeepKee, which is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 580.66,
+      "end": 581.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 581.46,
+      "end": 594.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of the three hardware wallet companies. So KeepKee allows you to hold crypto assets like Bitcoin on a USB device, so offline. And it's a very easy and secure way to hold crypto.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 594.46,
+      "end": 595.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 595.08,
+      "end": 599.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then I'm also on the board of salts, which is a lending platform",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 599.68,
+      "end": 600.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 600.8,
+      "end": 601.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 601.96,
+      "end": 602.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 602.4,
+      "end": 605.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "loan their crypto assets like Bitcoin and get fiat",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 605.42,
+      "end": 606.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 606.34,
+      "end": 608.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "their bank for the duration of the loan.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 608.68,
+      "end": 609.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 609.12,
+      "end": 618.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what that means is that they can get cash without having to suffer a tax event by selling their assets and they don't have to worry about missing the upside of the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 618.14,
+      "end": 619.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "crypto.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 619.8,
+      "end": 622.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So Salt will launch within a couple months and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 622.78,
+      "end": 623.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "those",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 623.88,
+      "end": 626.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "are sort of what I'm involved in right now.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 626.44,
+      "end": 648.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Cool. Exciting. And I love what you say there about, you know, when you started shape-shift and when you guys created shape shift a couple years ago, Bitcoin was 98% of the market, and it was like, whoa, what's happening here, especially for like, you? It's like, isn't Eric supposed to be a Bitcoin maximalist? And it's like, wait, wait a second, they're all complementary to each other. We can have lots of different tokens here and make this new cryptocurrency world.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 648.81,
+      "end": 649.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 649.55,
+      "end": 681.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that kind of as a backdrop, let's dive into... the most recent news on the Bitcoin side. And especially just for both you, Eric, and for our listeners to know, this is, for me personally, as Reese, I know not that much about Bitcoin and the dynamics, both the personal dynamics and the game theory dynamics. So I think it'll be hopefully today we're going to be coming at it from a first principles perspective and hoping to get some unity or clarity around the situation. So I guess with that as a backdrop,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 682.27,
+      "end": 682.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 683.73,
+      "end": 697.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you know, Eric, could you tell me a little bit about, you know, first the past. Um, I want to talk about the future in a bit, but first the past around kind of, uh, you know, Bitcoin and Bitcoin cash and why Bitcoin cash was created a couple months ago.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 698.69,
+      "end": 699.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 699.45,
+      "end": 709.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So this is a, uh, a deep trail through the dark woods of crypto here. But, um, Bitcoin for a long time has had a scaling challenge.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 710.5,
+      "end": 711.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 711.0,
+      "end": 718.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what I mean by that is that the network as it exists currently can only process roughly three transactions a second.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 719.4,
+      "end": 719.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 719.9,
+      "end": 723.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what happens if four people per second want to use it?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 723.64,
+      "end": 724.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 724.14,
+      "end": 731.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the answer is that they all cannot. And three transactions per second is pitifully small for a global financial foundation.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 733.27,
+      "end": 733.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 733.77,
+      "end": 740.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the good news is there's a number of ways that this can be addressed. The bad news is people disagree on how to do it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 740.54,
+      "end": 740.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 740.96,
+      "end": 742.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the real bad news is that people have,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 743.12,
+      "end": 743.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 743.52,
+      "end": 745.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "whatever reason of social psychology,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 747.5,
+      "end": 750.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "turned into essentially warring religious factions",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 750.98,
+      "end": 752.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 752.4,
+      "end": 764.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the question of how to address the scale. So it's gotten really bad, and it is really, you know, Bitcoin's biggest obstacle at this point. Bigger than the scaling problem itself is this problem in the community of people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 764.68,
+      "end": 765.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 765.52,
+      "end": 779.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "vilifying each other because they disagree on these stupid technical points. And so, you know, long story short, this issue has gotten worse and worse, and multiple factions have all kind of splintered out of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 779.73,
+      "end": 780.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 780.43,
+      "end": 781.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "used to be a very cohesive",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 781.67,
+      "end": 782.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "community",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 782.55,
+      "end": 792.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "with a lot of camaraderie and friendship. And it got so bad that a contingent forked off of Bitcoin back in the beginning of August,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 793.03,
+      "end": 793.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 793.85,
+      "end": 795.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they said, you know, enough is enough.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 795.97,
+      "end": 796.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 796.43,
+      "end": 802.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "status quo is not working, something needs to change, and so we are going to change it. So they changed the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 802.59,
+      "end": 803.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 803.59,
+      "end": 808.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "called the block size in Bitcoin's code, and since that is an incompatible",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 808.97,
+      "end": 809.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "rule",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 809.95,
+      "end": 812.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "change, the network forked. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 812.45,
+      "end": 813.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 813.35,
+      "end": 817.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think this happened on August 1st of this year. So on July 31st, there was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 817.89,
+      "end": 818.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 818.71,
+      "end": 822.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Bitcoin, and then the next day there were two. They split apart.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 822.62,
+      "end": 823.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 823.06,
+      "end": 831.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then you had a bunch of people using one side and a bunch of people using the other. And basically, if you had Bitcoin the day before, you now had one Bitcoin on each of these different versions.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 832.22,
+      "end": 832.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 832.74,
+      "end": 836.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the status quo chain is just still called Bitcoin.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 836.6,
+      "end": 836.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 836.84,
+      "end": 848.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "forked version that had the change of rule is called Bitcoin Cash. And Bitcoin Cash is very similar to Bitcoin, except that it has eight megabyte blocks instead of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 848.4,
+      "end": 849.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 849.18,
+      "end": 851.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "megabyte blocks, which means that it can handle.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 852.03,
+      "end": 852.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 852.33,
+      "end": 852.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, eight",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 852.87,
+      "end": 853.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "times",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 853.81,
+      "end": 855.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "more transactions per second.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 856.93,
+      "end": 857.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 857.61,
+      "end": 860.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's really the difference. So now",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 860.19,
+      "end": 861.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 861.33,
+      "end": 867.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "warring tribes have their own, their own cryptocurrencies, which makes them even more prone to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 867.87,
+      "end": 868.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 868.91,
+      "end": 874.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "bicker and argue. And there's, you know, even though Bitcoin cash is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 874.67,
+      "end": 875.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 875.21,
+      "end": 880.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, a tenth of the value and community size of Bitcoin,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 882.42,
+      "end": 891.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that minority believes that it is carrying on the quote unquote true vision of bitcoin and that it will someday overcome bitcoin in the marketplace",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 891.14,
+      "end": 892.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 892.28,
+      "end": 894.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so that's kind of the current situation",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 894.64,
+      "end": 895.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah. That's a big mess.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 896.56,
+      "end": 933.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "But I think that's a great overview into it, both saying it all starts scaling. And it's funny, as you say, because there's good news, which is like, we can scale. And the bad news is how intense people get. And I know for me personally, that was something that I personally felt while, you know, when I was first getting into cryptocurrency, it was like, I didn't know really the difference between, you know, Bitcoin and Ethereum and all these different coins. And for me, I felt that from the Bitcoin community, unfortunately, at the... beginning was this kind of toxic kind of ad hominem environment and I was like I don't know if I want to really be part of this so so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 933.23,
+      "end": 933.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 933.79,
+      "end": 940.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "maybe turning away some of at least one random young mind in the space and maybe other bright young minds in the space too",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 940.83,
+      "end": 942.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 942.01,
+      "end": 947.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think the the culture of Bitcoin became really monotheistic",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 947.79,
+      "end": 949.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 949.07,
+      "end": 958.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "rejected any suggestions or ideas outside of a very narrow view set. And that view set is basically",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 958.54,
+      "end": 959.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 959.38,
+      "end": 967.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "way Bitcoin currently works is how it should be. And any change that is done requires years of planning and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 967.28,
+      "end": 968.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "specifically",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 968.32,
+      "end": 969.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "requires",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 969.08,
+      "end": 970.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 970.1,
+      "end": 975.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "endorsement of the core developers, which you can think of as kind of the priesthood of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 975.44,
+      "end": 976.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 976.42,
+      "end": 977.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "original Bitcoin.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 977.58,
+      "end": 978.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 978.14,
+      "end": 992.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "if the core developers... don't like something, it's not going to happen in Bitcoin. And if they don't like it, a whole mob of people are going to go around yelling that anyone who suggests that thing is an enemy of Bitcoin.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 993.66,
+      "end": 994.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 994.14,
+      "end": 996.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you can imagine that that really drives a lot of people away.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 997.46,
+      "end": 997.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 997.94,
+      "end": 1006.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "drives people to other coins. It drives them to go try their own thing. And sadly, it probably drives some people just away from cryptocurrency. entirely.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1008.09,
+      "end": 1023.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "The, you know, the Ethereum community is not at all like this. The Ethereum community is still very open, very welcoming, very eager to try new ideas. And, you know, if I'm going to play devil's advocate here for a second, it is, there is a reasonable argument that Bitcoin should",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1023.88,
+      "end": 1025.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1025.02,
+      "end": 1047.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "extremely monotheistic, that it shouldn't try to do anything strange, that it is sort of the original coin. If it changes any rules, that should be done extremely carefully and only after all the people that really know it best have endorsed that. And what that means is that Bitcoin is going to move very slowly, if at all.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1049.69,
+      "end": 1050.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1050.13,
+      "end": 1060.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "maybe that's what it should do. Maybe it should be slow moving. And other coins can try out the more experimental stuff. And really, we're not going to know what the right answer was until we have the hindsight of several years.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1060.85,
+      "end": 1076.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. Well, I think that that's a good point that, and I can agree with you, that a coin moving more slowly with its scaling or other upgrades can make sense. But hopefully there would be the ability to do that without some of the toxicity. So I guess",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1076.27,
+      "end": 1076.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "let's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1076.91,
+      "end": 1105.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "talk about something that was fascinating in this space was just recently, you plus some other kind of leaders in the Bitcoin community said there was going to be... this thing called Segwit 2X. And you guys actually said, no, we're not going to push forward the Segwit 2X thing. Could you, I guess, tell me a little bit more about what is Segwit 2X and then, you know, what, why did you just, what was, why did you guys say no to this and what was that like?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1106.25,
+      "end": 1106.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1107.35,
+      "end": 1107.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1108.37,
+      "end": 1108.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1108.49,
+      "end": 1118.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, go back in time a little bit and you get to, you know, I'm oversimplifying it here, but two camps. one of which wanted to scale Bitcoin by increasing the block size",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1118.23,
+      "end": 1119.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1119.05,
+      "end": 1120.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "one megabyte to something higher.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1120.81,
+      "end": 1121.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1121.33,
+      "end": 1130.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "another camp that said, no, we should not increase the block size or at least not anytime soon. And instead, we should do this thing called Segwit, segregated witness, which is a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1130.51,
+      "end": 1131.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "cool",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1131.35,
+      "end": 1134.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "technological trick that basically changes how the transaction is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1134.26,
+      "end": 1135.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "built",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1135.5,
+      "end": 1139.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and thus allows more transactions to fit in the same",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1139.46,
+      "end": 1140.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "size",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1140.44,
+      "end": 1143.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of block. Or that's a reasonable analogy. It's not perfect.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1144.66,
+      "end": 1145.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1145.06,
+      "end": 1150.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you have these two ideas, like one side wanting to do bigger blocks, one side wanting to do Segwit. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1150.45,
+      "end": 1151.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1151.63,
+      "end": 1171.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "lot of us in the business community saw both these things and were like, hey, guys, both of these are good ideas. Segwit is great because it improves the protocol, it makes it more efficient and it solves a bunch of bugs. Bigger blocks are also great, as long as they're not too big. A modest increase in the block size will really help with short and medium-term scale. So why the hell don't we just do both of them?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1173.29,
+      "end": 1173.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1173.29,
+      "end": 1191.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "guess, treasonous and heretical to say it, but to most of the people in the business community, this was like the obvious thing to do, especially because by doing both, you could actually get both camps or, you know, a large portion of both camps to agree to the whole thing. So you can see it as a compromise, but I didn't because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1191.53,
+      "end": 1192.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1192.69,
+      "end": 1209.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a compromise, you're actually getting like something worse than either side. In this case, I thought Bitcoin would be better than either side on its own. So a number of people got together, and the number was fairly large. It was several dozen of the leading crypto companies",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1209.93,
+      "end": 1210.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1210.99,
+      "end": 1213.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "almost all of the large Bitcoin miners",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1213.83,
+      "end": 1215.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1215.07,
+      "end": 1229.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "basically came together and said, okay, we all agree that we will advocate for both a modestly larger block. That's the two part of Segwit 2x and Segwit. That's the Segwit part of Segwit 2X. So do both of them.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1231.57,
+      "end": 1232.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1232.83,
+      "end": 1246.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I felt, really broke the standstill that had been going on for over a year. And immediately after that agreement, the miners started signaling for it, which activated Segwit. So Segwit was activated on the Bitcoin network",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1246.77,
+      "end": 1248.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1248.31,
+      "end": 1251.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "before the Bitcoin Cash fork, or just after, maybe.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1253.31,
+      "end": 1253.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1253.95,
+      "end": 1272.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that happened. And then there was a period of a few months before the, larger block size would be implemented. So essentially, even though this was a combination of activating Segwit and activating a larger block, Segwit came first and a larger block was going to come later.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1274.19,
+      "end": 1274.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1274.75,
+      "end": 1279.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "problem was that after Segwit was activated, all the people that didn't want larger blocks",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1279.83,
+      "end": 1280.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1280.77,
+      "end": 1281.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "went into a frenzy",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1281.91,
+      "end": 1283.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1283.25,
+      "end": 1309.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "started vilifying the whole initiative. Essentially, they already had Segwit, which they had been hoping for, and they didn't want the big blocks in the first place. So then it put everyone kind of in an awkward place where those of us who wanted to do this, you know, compromise were vilified because we were, people said it was a corporate takeover and all this ridiculous propaganda.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1311.14,
+      "end": 1311.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1311.7,
+      "end": 1326.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so ultimately, the conflict just got so full of vile and nonsense that, you know, any company that tried to speak out justify why it was in favor of this was boycotted and vilified and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1326.39,
+      "end": 1327.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1327.37,
+      "end": 1331.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just got really bad and ultimately you know rightly or wrongly the market",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1331.81,
+      "end": 1332.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "did",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1332.77,
+      "end": 1335.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not want to go ahead with the larger block",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1335.27,
+      "end": 1336.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1336.55,
+      "end": 1340.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "roughly two weeks before it was intended to activate",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1340.51,
+      "end": 1341.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1341.39,
+      "end": 1343.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "number of us basically came together and said",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1343.27,
+      "end": 1344.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "okay",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1344.33,
+      "end": 1346.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this is too contentious at this point",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 1346.73,
+      "end": 1348.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 1348.03,
+      "end": 1351.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this If this upgrade happens and it splits the network, there could be a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 1351.59,
+      "end": 1352.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "protracted",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 1352.87,
+      "end": 1375.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "battle between sides here, and we don't want that to happen. So we're just going to call it off. And, of course, calling it off meant only that the larger block was called off because Segwit had already activated. So that's where things stand. Segwit is activated. All the people that wanted Segwit to activate kind of came out ahead. The people that wanted larger blocks",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1375.62,
+      "end": 1376.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "didn't.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1376.9,
+      "end": 1384.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And those people are largely the ones who have instead gone over to Bitcoin Cash. So that's kind of the lay of the land.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1384.52,
+      "end": 1413.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that makes sense. And when I read your guys' decision to say, hey, we're not going to do this. I mean, I'm just going to do a quote here. I personally found like it was kind of beautiful. You said, you know, although we strongly believe in the need for larger block size, there's something we believe in that is even more important. keeping the community together. Unfortunately, it is clear that we have not built sufficient consensus for a clean block size upgrade at this time. You know, it just seems like you're being reasonable. So I don't know if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1413.48,
+      "end": 1414.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's crazy,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1414.86,
+      "end": 1414.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1414.96,
+      "end": 1417.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's really",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 1417.34,
+      "end": 1420.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "difficult when you're trying to negotiate or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 1420.23,
+      "end": 1421.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "convince",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 1421.63,
+      "end": 1441.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a mob. There are dynamics among especially anonymous people that do not have significant stakes in something. that change how a debate rolls out. It becomes very cheap, very inexpensive to throw mud and very expensive to defend it or to defend yourselves from it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 1442.22,
+      "end": 1442.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 1442.76,
+      "end": 1443.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in that environment,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 1445.65,
+      "end": 1450.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "who knows what the support of the larger block truly was when the agreement was done.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 1451.55,
+      "end": 1452.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 1452.15,
+      "end": 1466.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "because of the propaganda and because of how the mob was treating everyone, and there is so much noise happening. Plus, you had all the legitimate concerns from people who, for intellectually honest reasons, didn't want a larger block",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 1466.67,
+      "end": 1468.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thrown",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 1468.15,
+      "end": 1469.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "into that whole mob.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 1469.94,
+      "end": 1470.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 1470.5,
+      "end": 1472.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "really got to a situation where it was untenable.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 1473.08,
+      "end": 1473.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 1473.64,
+      "end": 1488.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think I learned a lot of lessons about how groups of people that are this large work and how difficult it is to describe like an initiative when you... when you have that many stakeholders.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 1488.99,
+      "end": 1532.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah. I feel like, and one thing that you said there about anonymity and, like, inexpensive to throw mud, but expensive to defend, it feels like some of this Talib stuff around skin in the game, where you have to, you want to have the upside be the same as the downside. And for these people, if you're anonymous, you're less likely to have skin in the game. And so I feel like, I don't know, I want to make some of these kind of like meta rules that say, hey, if you want to participate in this, then you agree to these. meta rules. And I guess let's use that as kind of a frame to talk. What we're talking about here in general is governance, how to govern these things. And, you know, whether it's that thing that I just talked about or whether it is who determines, you know, that group of people that got together, is that the New York agreement. Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 1533.03,
+      "end": 1533.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Correct. Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 1533.89,
+      "end": 1557.63,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So that the New York agreement is just like, yeah, some group of people that got together to chat about this. And this is a big question, which is like, hey, who? who all should be in there to chat. And there's no right or wrong answers to that. And so I guess, Eric, I mean, what I think is like, I mean, how are you thinking about governance within Bitcoin and what kind of governance structure would you like it to have going forward?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 1559.05,
+      "end": 1563.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think Bitcoin's governance is very clear at this point.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 1565.21,
+      "end": 1570.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Whatever the... core developers want is what the mob rallies around.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 1571.43,
+      "end": 1571.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 1571.99,
+      "end": 1584.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's not necessarily a judgment call. I think it's really worrisome from a decentralization perspective. But that's how things have played out. So every other stakeholder from the miners to the business community to the users that disagree with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 1584.65,
+      "end": 1585.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 1585.55,
+      "end": 1599.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "core developers, all those groups who are all legitimate participants in the system as well, have been systematically exiled or vilified away from the discussions and a decision-making. And when they try to help",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 1599.65,
+      "end": 1600.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "break",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 1600.61,
+      "end": 1613.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "an impasse, that turns into them being vilified. So at this point, Bitcoin's governance is what a couple dozen core developers want it to be. They are in charge.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 1614.28,
+      "end": 1616.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And we'll",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 1616.32,
+      "end": 1620.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "see how that plays out. I don't think anyone else cares enough at this point to even try to.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 1623.12,
+      "end": 1623.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 1623.56,
+      "end": 1633.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "even try to refute that or protested at this point. The people are very weary of the whole situation. And so now it's really on those core developers. Like, they're in charge.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 1634.74,
+      "end": 1635.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We'll",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 1635.22,
+      "end": 1640.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "see how they build it, how they scale it, how they bring various parties together",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 1640.9,
+      "end": 1642.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 1642.08,
+      "end": 1645.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the ecosystem because no one else at this point,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 1645.52,
+      "end": 1646.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 1646.1,
+      "end": 1648.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think, wants to even try anymore.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 1648.44,
+      "end": 1669.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Wow. Yeah, everybody's. uh, people are exhausted. So I guess pretend though that the core developers were like, hey, we actually want to create a new governance structure or whatever that includes all these other stakeholders. What would you like, I guess what would your optimal, um, governance structure be?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 1671.3,
+      "end": 1674.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I don't know. I don't know how to design an optimal",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 1674.16,
+      "end": 1675.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "governance",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 1675.28,
+      "end": 1675.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "structure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 1676.02,
+      "end": 1677.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, it's a super tough question.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 1677.64,
+      "end": 1677.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 1678.56,
+      "end": 1679.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Uh, And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 1679.86,
+      "end": 1683.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I don't know that one should be. I mean, part of, part of decentralization is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 1683.92,
+      "end": 1685.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 1685.56,
+      "end": 1688.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "lack of formal governance structure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 1690.35,
+      "end": 1695.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So even if I knew or even if I thought I knew what the correct one was, I don't know that I would",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 1695.69,
+      "end": 1697.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "propose it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 1698.27,
+      "end": 1729.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Interesting. Interesting. So actually, Eric, I want to talk about... What would, so you've been talking about the core developers and how they kind of can control the mob or whatever, if you were to kind of play devil's advocate with yourself or if you imagine that one of those core developers or some like leader of the mob was on the call right now, what would they, what would they be saying and what would this be, would this be able to be a good conversation or what would their perspective be towards this?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 1731.64,
+      "end": 1734.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Well, To be clear, I don't think that they control the mob.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 1735.56,
+      "end": 1735.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 1735.72,
+      "end": 1736.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think the mob has",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 1736.8,
+      "end": 1737.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thus",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 1737.76,
+      "end": 1739.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "far rallied around them.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 1741.08,
+      "end": 1741.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "To",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 1741.58,
+      "end": 1742.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the extent that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 1742.44,
+      "end": 1743.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 1743.73,
+      "end": 1756.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "who disagree with them just start leaving and working on other projects, I'm kind of curious what the mob will do because the mob won't have any villains and will then start perhaps looking internally.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 1756.77,
+      "end": 1757.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 1757.27,
+      "end": 1758.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I'm really curious about that. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 1758.93,
+      "end": 1759.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 1759.65,
+      "end": 1760.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think each...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 1760.51,
+      "end": 1760.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 1760.75,
+      "end": 1768.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, each member of course is going to have a little bit different opinion on this. Some of them I respect very much, and I respect their opinions. Some of them, I think, are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 1768.39,
+      "end": 1769.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "really",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 1769.69,
+      "end": 1772.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "short-sighted and unhelpful to the discourse.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 1774.71,
+      "end": 1775.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 1775.19,
+      "end": 1782.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think that they are largely glad that the Segwit 2X project failed,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 1782.53,
+      "end": 1783.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "even",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 1783.19,
+      "end": 1786.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "though now they have Segwit, which is what they had wanted for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 1786.16,
+      "end": 1787.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "over",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 1787.24,
+      "end": 1787.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a year.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 1788.64,
+      "end": 1788.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 1788.88,
+      "end": 1791.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "don't know if they recognized that that was due to the New York agreement.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 1794.08,
+      "end": 1798.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So it's hard to say. You might need to chat with them.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 1799.72,
+      "end": 1800.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 1800.34,
+      "end": 1803.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I feel like in like you're saying, they are not a monolith.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 1804.6,
+      "end": 1862.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And so yeah, different parts of the core developer crew have different opinions on this. So I guess another question that I'd love to ask here is, so I come from a kind of a startup background, especially doing like coaching and things around communication and culture and empathy and what have you. There's this great book called Developmentally Driven Organizations, which looks at organizations that are about kind of learning and honesty and things like that. And they use a metric in that book that says, you know, on matters of importance, like let's say the scaling debate, how often are members of your team from 1 through 10, how often are they frank and vulnerable when they like speak to each other, aka how like honest are they? And then also 1 to 10, how like curious and empathetic are they in listening to the other people? Do you feel like, I guess, if you could give numbers for those, you know, how frank and honest are people from the speaking perspective, and then how kind of curious and empathetic are people from the listening perspective?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 1864.64,
+      "end": 1866.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "The curious and empathetic",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 1866.78,
+      "end": 1868.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "throughout",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 1868.02,
+      "end": 1870.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the community on all sides of this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 1870.96,
+      "end": 1873.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is close",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 1873.44,
+      "end": 1874.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to non-existent.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 1875.24,
+      "end": 1875.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 1875.76,
+      "end": 1877.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that is a result of the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 1877.91,
+      "end": 1879.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "poison",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 1879.29,
+      "end": 1889.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and toxic... nature of the community, how it's developed over the last few years. So three years ago, people were very curious and people could have reasonable debates and they would disagree and they would,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 1890.23,
+      "end": 1890.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 1890.35,
+      "end": 1891.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, there was a certain",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 1891.43,
+      "end": 1893.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "academic",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 1893.17,
+      "end": 1894.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "air to it or philosophical",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 1894.59,
+      "end": 1895.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 1895.87,
+      "end": 1900.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "people were genuinely curious and they largely felt that they were on the same side.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 1902.56,
+      "end": 1904.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "It was, you know, crypto versus",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 1904.82,
+      "end": 1906.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 1906.22,
+      "end": 1918.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "status quo of the banking industry. So all these people felt. that they were allies and that they were all friends. And in that environment, people feel that they can be more vulnerable and they don't have to put up defenses and they certainly",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 1918.16,
+      "end": 1919.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 1919.02,
+      "end": 1922.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "go around insulting each other and trying to vilify each other.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 1924.62,
+      "end": 1925.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Something",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 1925.18,
+      "end": 1931.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that changed that, I think, is the moderation policies of some of the Bitcoin forums.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 1935.05,
+      "end": 1944.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Certain viewpoints stopped being permitted to be discussed and eventually those were simply deleted or censored or removed from those forums.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 1944.89,
+      "end": 1945.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 1945.51,
+      "end": 1954.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "drove a really strong wedge between the different groups that had formerly been on the same team. And they literally formed other",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 1954.91,
+      "end": 1955.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "social",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 1955.79,
+      "end": 1956.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "media",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 1956.21,
+      "end": 1957.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "sites,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 1957.79,
+      "end": 1962.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, especially on Reddit, where they would then talk. And now you had two groups on different",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 1962.25,
+      "end": 1963.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "subreddits,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 1963.53,
+      "end": 1963.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 1963.75,
+      "end": 1964.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 1964.93,
+      "end": 1968.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Groupthink in those local communities.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 1968.95,
+      "end": 1969.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 1969.47,
+      "end": 1972.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that sets people up very much for an adversarial relationship.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 1972.73,
+      "end": 1973.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Now",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 1973.27,
+      "end": 1980.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it was very easy to, you know, get to the top post of a certain Reddit by just shaming the other side. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 1980.57,
+      "end": 1982.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 1982.13,
+      "end": 1987.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what people spend a lot of time doing. So the listening and empathy fell towards zero.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 1988.07,
+      "end": 2012.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. So, and as you say that, both the listening and empathy towards zero and if you're trying to be frank and vulnerable and honest, a key part of that is being able to actually speak your voice. And if your voice is being censored, then that means it's not being heard. And to double check here, yeah, you're talking about R slash Bitcoin as the more sensory one and R slash BTC as the new one. Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 2013.27,
+      "end": 2020.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yes. And to overgeneralize again, our, Our Bitcoin, the original Bitcoin Reddit,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 2022.24,
+      "end": 2022.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is very much",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 2022.88,
+      "end": 2024.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "pro",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 2024.26,
+      "end": 2042.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "core developers at this point. And our BTC is full of all the people who have been exiled from the former. So the way that this would happen is someone reversed a couple years back and someone would say, you know, I think blocks should be increased for this reason.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 2043.36,
+      "end": 2043.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Someone",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 2043.88,
+      "end": 2044.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "else would say,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 2045.04,
+      "end": 2045.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "A",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 2045.72,
+      "end": 2056.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "different size block is an alt coin, therefore not allowed on the Bitcoin subreddit, therefore due to our moderation policy, that post will be removed.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 2056.6,
+      "end": 2057.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 2057.18,
+      "end": 2059.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you could imagine how that would enrage someone.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 2060.03,
+      "end": 2060.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 2060.61,
+      "end": 2066.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it just got completely ridiculous. And so, you know, for a while, I tried to keep the community together and, like, point out",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 2066.93,
+      "end": 2067.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 2067.87,
+      "end": 2070.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "some of these moderation policies were really,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 2070.65,
+      "end": 2071.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "really",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 2071.15,
+      "end": 2071.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "harmful.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 2071.93,
+      "end": 2072.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 2072.51,
+      "end": 2075.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I was pretty powerless to. to prevent that phenomenon.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 2076.05,
+      "end": 2076.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Mm-hmm.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 338,
+      "start": 2076.84,
+      "end": 2128.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that's tough. I mean, because it comes from a place of maybe truth there, which is, hey, this is an R-slash Bitcoin subreddit. We, you know, we don't want to be talking about Ethereum here. Please take that to R-slash-E theorem if you want to talk about Ethereum, but it was clearly being used for more aggressive censorship things. I feel like, you know, I think about this great, there's this book, Seven Habits of Highly Effective People, and one of them is just like seek first to understand and then to be, and then later to be understood. And I feel like, yeah, I guess if you're listening to this and you're on either side of this debate, whether it's the BTC side, the Bitcoin cash side, core developers, R slash Bitcoin, whatever, if you can move your own personal needle to be a little bit more towards the seek first to understand, the be curious first side of things. I feel like that'll just be helpful for the community, right? Do you agree with that, Eric?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 339,
+      "start": 2130.04,
+      "end": 2132.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, and we're just way past that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 340,
+      "start": 2132.6,
+      "end": 2133.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "being an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 341,
+      "start": 2133.44,
+      "end": 2134.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "effective point.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 342,
+      "start": 2136.32,
+      "end": 2136.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 343,
+      "start": 2136.78,
+      "end": 2150.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, saying that kind of thing is like telling a Catholic to, you know, be empathetic and understanding of a Protestant. And, you know, before you even finish the sentence, they will have hung the person for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 344,
+      "start": 2150.62,
+      "end": 2151.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "their",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 345,
+      "start": 2151.88,
+      "end": 2152.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sins. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 346,
+      "start": 2152.7,
+      "end": 2154.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 347,
+      "start": 2154.52,
+      "end": 2161.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think it's just an unstoppable mob at this point. And the real arbiter of all this stuff, the real way the governance works in this technology.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 348,
+      "start": 2162.46,
+      "end": 2162.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 349,
+      "start": 2162.7,
+      "end": 2177.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the market. So if the market likes these other spin-off coins, people will start using them more, and they may gain dominance on the original Bitcoin. If Bitcoin cannot figure out how to scale, it will lose its first mover advantage and be replaced by others.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 350,
+      "start": 2179.74,
+      "end": 2185.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Ultimately, all the argumentation and opinions of any individual person do not matter too much,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 351,
+      "start": 2185.5,
+      "end": 2186.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 352,
+      "start": 2186.2,
+      "end": 2196.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the market will settle it. But that happens over a long term. That's five or ten years. And meanwhile, people spend all their time bickering with each other.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 353,
+      "start": 2196.83,
+      "end": 2197.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 354,
+      "start": 2197.25,
+      "end": 2256.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "let's stay on that in a second about more on the market side here. I do want to just just. Say another version of this just for me looking at this are you know the the the BTC community versus the Bitcoin community and it feels like some of this like negative hyper polarized stuff that has also happened within America around Republicans and Democrats and and it feels I don't know and I'm reminded of this great site called high from the other side which is a way to essentially engage in these kind of longer form conversations with someone from the other side, to see them as a human, to understand where they're coming from. And so, yeah, I don't know. I just, sometimes I get a little bit sad when I think, hey, at a very macro level, this is happening. And even in this thing that I'm participating in, you know, cryptocurrency generally, that this kind of polarization can happen and people can start to become, you know, non-emphetic, non-curious kind of aggressive, aggressive people. So, I don't know. Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 355,
+      "start": 2257.78,
+      "end": 2263.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, it's, I mean, it happens when civility breaks down. So I think among people who",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 356,
+      "start": 2263.42,
+      "end": 2264.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "respect",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 357,
+      "start": 2264.72,
+      "end": 2281.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "themselves and respect others, there's a certain level of civility and decorum in discourse, even that it is appropriate and required even when you disagree. And perhaps especially when you disagree. And a lot of people do not have that, especially when they're anonymous online.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 358,
+      "start": 2283.99,
+      "end": 2289.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And perhaps the majority of people don't. So whenever a community gets large enough, it has enough of these people that just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 359,
+      "start": 2289.79,
+      "end": 2291.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they don't.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 360,
+      "start": 2291.89,
+      "end": 2306.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Maybe they weren't brought up to appreciate that kind of civility. Maybe they have no idea what that even means. But they get into the conversation and just very quickly, then you get polarization in these communities splitting apart. All of them hating each other.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 361,
+      "start": 2307.23,
+      "end": 2307.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 362,
+      "start": 2308.27,
+      "end": 2352.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think, and that civility and discourse point, I think, is actually a really powerful one. And it was something that I personally was thinking about recently, especially on Twitter, and how that civility and discourse. it requires more words. And Twitter forces 140 or 280 or whatever. And I was trying to talk with, I have this kind of weird, like, I have these weird, like, pledges to decentralize power. And one of them is about, like, gender and having more gender, you know, equality, especially within, uh, within the cryptocurrency land. And, um, and I was going back and forth to this lady on Twitter about it, um, because she was like, hey, shouldn't we just think of people as people or whatever? And. I wanted to say, hey, thanks so much for your thoughts. You know, like, we'd love to chat about this, but by the time I had said those kind of civility things, I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 363,
+      "start": 2352.47,
+      "end": 2353.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "wasn't able",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 364,
+      "start": 2353.03,
+      "end": 2355.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "to, I was already at like 135 or whatever.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 365,
+      "start": 2355.83,
+      "end": 2374.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, it's a great point. Twitter is an amazing tool, and I love it, but I think you're totally right that when you're restricted to that much, there's no time to politely frame something. There's no space for it. And Twitter is certainly even one of the mediums where the Bitcoin community has just torn each other apart.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 366,
+      "start": 2375.29,
+      "end": 2375.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 367,
+      "start": 2376.47,
+      "end": 2380.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Well, so the people who are against 280, I'm probably pro-280.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 368,
+      "start": 2381.91,
+      "end": 2411.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So, well, with that, let's move to the kind of the side here of... Bitcoin Cash, and there was this great article recently by Ryan Selkees or Ryan Selkis around, and recently over, I guess it was last weekend or a couple weekends ago, this thing where Bitcoin Cash was above the price of Ethereum for a bit. You know, Eric, tell me about kind of some of the game theory here and how it might be the case that something like Bitcoin Cash could end up overtaking something like Bitcoin.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 369,
+      "start": 2412.53,
+      "end": 2413.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 370,
+      "start": 2413.3,
+      "end": 2423.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So Bitcoin Cash absolutely could overtake Bitcoin. I don't think it will, but it is certainly a possibility. And again, it'll come down over the long term to the market.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 371,
+      "start": 2425.21,
+      "end": 2431.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But Bitcoin's value or anything's value comes down to its utility. So how useful is that thing?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 372,
+      "start": 2432.27,
+      "end": 2432.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 373,
+      "start": 2432.83,
+      "end": 2441.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there's a reason that Bitcoin took off because it was really useful to move money across distances at very low cost without anyone being able to censor or stop that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 374,
+      "start": 2443.27,
+      "end": 2443.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 375,
+      "start": 2443.55,
+      "end": 2447.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "was immensely useful, and the world has been discovering it increasingly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 376,
+      "start": 2449.7,
+      "end": 2450.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 377,
+      "start": 2450.18,
+      "end": 2451.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "has gotten so congested",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 378,
+      "start": 2451.48,
+      "end": 2452.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "due",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 379,
+      "start": 2452.2,
+      "end": 2454.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to the scaling issue that the fees have gone up",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 380,
+      "start": 2454.76,
+      "end": 2456.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "dramatically,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 381,
+      "start": 2456.62,
+      "end": 2458.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, several orders of magnitude.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 382,
+      "start": 2459.0,
+      "end": 2459.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "A",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 383,
+      "start": 2459.48,
+      "end": 2472.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "year ago, I was getting really worried about the fees because they were like 30 cents on average per transaction. They're now in the like $3 to $5 range per transaction, and I think within six months there'll be more on average than a...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 384,
+      "start": 2472.44,
+      "end": 2473.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "than",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 385,
+      "start": 2473.02,
+      "end": 2473.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a bank wire.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 386,
+      "start": 2475.2,
+      "end": 2479.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Because if four people went into the transactions and there's only space for three,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 387,
+      "start": 2480.62,
+      "end": 2481.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 388,
+      "start": 2481.98,
+      "end": 2497.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "bidding to get into it goes exponential. It doesn't increase linearly with use. It increases exponentially with use. So basically, Bitcoin's usefulness for a larger and larger portion of payments",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 389,
+      "start": 2497.02,
+      "end": 2498.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 390,
+      "start": 2498.16,
+      "end": 2498.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "falling.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 391,
+      "start": 2498.98,
+      "end": 2499.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 392,
+      "start": 2499.62,
+      "end": 2509.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "never... useful to use now for coffee. It's never even useful to send $10. And often, even $20 or $50 transactions",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 393,
+      "start": 2509.02,
+      "end": 2509.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "could",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 394,
+      "start": 2509.96,
+      "end": 2516.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "have a fee that's larger than the transaction size. Now, it's still incredibly useful if you're trying to send $1,000 or $10,000.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 395,
+      "start": 2517.5,
+      "end": 2517.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 396,
+      "start": 2517.92,
+      "end": 2521.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "mean, there's no better way in the universe to send a million dollars to China than Bitcoin.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 397,
+      "start": 2522.94,
+      "end": 2524.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 398,
+      "start": 2524.66,
+      "end": 2537.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "fees rise, you get a smaller and smaller subset of use cases. So, as that happens, competitors that still have cheap transactions such as Bitcoin Cash or Lycoin or Ethereum or Dash,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 399,
+      "start": 2538.13,
+      "end": 2539.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "these",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 400,
+      "start": 2539.59,
+      "end": 2543.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "might start eking out market share in those transactions that are no longer",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 401,
+      "start": 2543.93,
+      "end": 2544.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "useful",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 402,
+      "start": 2544.95,
+      "end": 2547.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "for Bitcoin. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 403,
+      "start": 2547.12,
+      "end": 2548.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 404,
+      "start": 2548.3,
+      "end": 2552.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "extent of that effect is what will determine which asset becomes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 405,
+      "start": 2552.32,
+      "end": 2553.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 406,
+      "start": 2553.1,
+      "end": 2553.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "dominant one.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 407,
+      "start": 2554.2,
+      "end": 2554.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 408,
+      "start": 2554.88,
+      "end": 2569.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "if another, let's say, Lightcoin. Because it's so cheap to use still and it has more throughput currently than Bitcoin, let's say it starts getting used for millions of transactions around the world. And it starts getting used so often by people that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 409,
+      "start": 2569.72,
+      "end": 2570.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 410,
+      "start": 2570.68,
+      "end": 2583.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "now starts becoming more valuable than Bitcoin. Then Bitcoin starts losing its store value property. So not only has it fallen in its ability to do payments, it also is losing market share and price to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 411,
+      "start": 2583.5,
+      "end": 2585.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 412,
+      "start": 2585.14,
+      "end": 2585.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "competitor.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 413,
+      "start": 2586.06,
+      "end": 2586.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 414,
+      "start": 2586.6,
+      "end": 2590.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you play that scenario out, and you can see that something could totally overtake Bitcoin.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 415,
+      "start": 2591.86,
+      "end": 2592.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Again,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 416,
+      "start": 2592.68,
+      "end": 2604.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I don't think that'll happen, but as these scaling issues go unresolved, the risk that it happens increases. And Bitcoin Cash is just the latest manifestation of this phenomenon.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 417,
+      "start": 2605.78,
+      "end": 2606.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 418,
+      "start": 2606.74,
+      "end": 2619.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I like that. Essentially that utility, right now there's lots of speculative value. But underlying all that is the utility value, and eventually the store of value slash speculative piece will follow the utility value. So if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 419,
+      "start": 2619.6,
+      "end": 2620.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Bitcoin Cash",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 420,
+      "start": 2620.16,
+      "end": 2628.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "becomes more utility-e, then yeah, then it very well should be the case that it becomes the one that more people are invested in.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 421,
+      "start": 2628.96,
+      "end": 2630.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 422,
+      "start": 2630.38,
+      "end": 2672.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "guess to wrap up here, the final thing that's on my mind is I think that I wouldn't be surprised if some people that were listening to this were like, you know, coming back to kind of this like the people side of things and the governance and the trust or whatever. Some of the people might be listening to this and listening to you talk and being like, oh, there's Eric Vore. He's talking about things. He can't be trusted or whatever. How do you like... What would you try to say to people to say, hey, look, people, here are my, you know, here are my goals, here are my long-term goals. Here's why, you know, you can trust someone like me, you know, like, why, what would you try to say to people to say, like, hey, I'm just trying to be a reasonable person here?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 423,
+      "start": 2673.75,
+      "end": 2674.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Two",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 424,
+      "start": 2674.15,
+      "end": 2675.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "things. One is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 425,
+      "start": 2675.35,
+      "end": 2676.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 426,
+      "start": 2677.33,
+      "end": 2693.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "shouldn't need to trust me or shouldn't trust me. Listen to my arguments and judge them on their own merit. from a rational or emotional perspective. Regardless of who I am or what my intentions are, you can listen to the words I'm saying and judge for yourself whether they make sense or not.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 427,
+      "start": 2694.87,
+      "end": 2695.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 428,
+      "start": 2695.31,
+      "end": 2695.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 429,
+      "start": 2695.67,
+      "end": 2696.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 430,
+      "start": 2696.87,
+      "end": 2699.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "practice people should carry out on anyone that they're listening to.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 431,
+      "start": 2700.79,
+      "end": 2701.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 432,
+      "start": 2701.23,
+      "end": 2708.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "two, I mean, I've been trying to build Bitcoin since most of the world had no idea what it was and was still laughing at it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 433,
+      "start": 2710.03,
+      "end": 2710.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "My",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 434,
+      "start": 2710.47,
+      "end": 2719.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "goal in all this is to... replace the global fiat financial system with one based on crypto. And hopefully that means based on Bitcoin.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 435,
+      "start": 2721.64,
+      "end": 2722.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 436,
+      "start": 2722.24,
+      "end": 2732.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "my goal. So that's what I'm looking at. I don't care whether the block is one megabyte or two megabytes or eight megabytes. I care whether the entire global financial system actually changes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 437,
+      "start": 2732.98,
+      "end": 2733.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 438,
+      "start": 2733.58,
+      "end": 2741.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's kind of what has gotten lost in this debate. All these people who were allies in that original mission have now become focused on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 439,
+      "start": 2742.29,
+      "end": 2742.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hating",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 440,
+      "start": 2742.79,
+      "end": 2745.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "people that agree with them on 99% of things, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 441,
+      "start": 2745.19,
+      "end": 2746.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 442,
+      "start": 2746.19,
+      "end": 2754.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the specific path on which they want to scale Bitcoin means that they should be ostracized and vilified and exiled from the community.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 443,
+      "start": 2756.67,
+      "end": 2757.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 444,
+      "start": 2757.15,
+      "end": 2761.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "don't believe that's the case, and I will always keep working to build Bitcoin into something better.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 445,
+      "start": 2762.23,
+      "end": 2763.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Boom. I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 446,
+      "start": 2763.11,
+      "end": 2805.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "like that, and it reminds me of this kind of conversational tactic that you can use where you say, when you're talking with someone and when you're disagreeing, you check and you say, well, what is your goal here and what is my goal? And you can kind of... come to the point where you find alignment around something. And for you, almost certainly you have so much alignment with these other people in the Bitcoin land around trying to make a new system and replace global fiat and to give us the exit possibility from a global fiat system. And you're very, very aligned with them. And you're more aligned with them than with 99% of other people in the world. And so kind of starting from that shared place, I think, is helpful. And then you're kind of just... dealing with some of those sub points down below.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 447,
+      "start": 2806.09,
+      "end": 2823.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, except that in reality, if someone thinks I'm an enemy and wants to prove it, all they do is they say, well, he runs a business. Businesses are trying to make profit. Therefore, what he really cares about is profit, or maybe he's only working for his investors, so you really can't trust anything he says because profit.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 448,
+      "start": 2825.47,
+      "end": 2825.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 449,
+      "start": 2825.87,
+      "end": 2830.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like, how do you argue with that? I mean, I am trying to make profit. I'm a profit-seeking capitalist, absolutely.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 450,
+      "start": 2831.92,
+      "end": 2832.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 451,
+      "start": 2832.28,
+      "end": 2843.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that is not mutually exclusive with the desire to make Bitcoin huge. But someone looking to vilify can really easily just always, you know, point to some stupid",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 452,
+      "start": 2843.32,
+      "end": 2847.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "incentives that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 453,
+      "start": 2847.01,
+      "end": 2851.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they imagine that person might have that overweighs the one that is obvious.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 454,
+      "start": 2851.21,
+      "end": 2851.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 455,
+      "start": 2852.07,
+      "end": 2882.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I think that's interesting that, yeah, as you say, you have, you have the goal of, you know, Bitcoin replacing global fiat currencies and you have the goal of, you know, trying to make money as a capitalist, both from your own crypto holding perspective and from like your own company perspective. And, yeah, I think that. It's okay for people to be in companies. It's okay for people to try to make profit and provide value to the world. And it should be highly encouraged for people to be transparent around what those incentives mean.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 456,
+      "start": 2882.94,
+      "end": 2883.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah. Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 457,
+      "start": 2884.38,
+      "end": 2915.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And Bitcoin was set up to work with the other incentives that people have. It is meant to be a financial system for profit-seeking individuals. It is not meant to be some like communal thing that only, hippies who have foregone all desire for material goods can use. Bitcoin is the most radical capitalist tool that has ever been invented. And so there's a certain degree of irony in dismissing the people involved because they are also running a company.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 458,
+      "start": 2916.34,
+      "end": 2916.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 459,
+      "start": 2917.12,
+      "end": 2936.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "with that, Eric, thank you so much for your time today. And I guess for anyone who's listening to this, if you're part of the quote-unquote other side here, I would love to have you on the show and to chat and to try to be reasonable about these things. That's the macro goal here. So yeah, Eric, thanks again so much for your time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 460,
+      "start": 2936.85,
+      "end": 2937.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 461,
+      "start": 2937.59,
+      "end": 2938.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "thanks a lot. It's been fun.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 462,
+      "start": 2938.81,
+      "end": 2948.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Cool. And if you want to support me on Patreon, you can go to patreon.com slash Reese Lindmark. That's slash R-H-Y-S-L-I-N-D-M-A-R-K. Goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 463,
+    "withheld": 0,
+    "published": 463
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

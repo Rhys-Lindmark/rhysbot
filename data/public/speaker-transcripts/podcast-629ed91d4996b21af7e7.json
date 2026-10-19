@@ -1,0 +1,5004 @@
+{
+  "schema_version": 1,
+  "id": "podcast-629ed91d4996b21af7e7",
+  "title": "#40 Yaneer Bar-Yam, New England Complex Systems Institute: Ashby's Law and Designing for Resiliency",
+  "published_at": "2018-05-22T00:18:47Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/40-yaneer-bar-yam-new-england-complex-systems-institute-ashbys-law-and-designing-for-resiliency",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/447340335-the-rhys-show-40-yaneer-bar-yam-new-england-complex-systems-institute-ashbys-law-and-designing-for-resiliency.mp3",
+  "youtube_id": "Bo-24GqkDjk",
+  "youtube_url": "https://www.youtube.com/watch?v=Bo-24GqkDjk",
+  "audio_sha256": "cd0ec6c99dd5ca6209e3f05c797fea8fdb950f14ccfb3fae58000e42fe7279af",
+  "audio_duration_seconds": 2923.702875,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 6866,
+    "unknown_words": 282,
+    "unknown_words_fraction": 0.041071948732886686,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_1",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.66,
+      "end": 1.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Now",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 1.52,
+      "end": 5.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "entering the Bitcoin Podcast Network.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 17.58,
+      "end": 25.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Today's episode is brought to you by KeepKee, the easy, safe, and simple way to protect your Bitcoin, ether, light coin, and many other digital assets.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 25.68,
+      "end": 26.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 26.12,
+      "end": 29.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "no time like the present to protect yourself from hackers, malware, and viruses.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 30.16,
+      "end": 30.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Visit",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 30.56,
+      "end": 37.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "KeepKee.com to order your secure hardware wallet today and use the code Humanist 10 for a limited time 10% discount.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 37.66,
+      "end": 38.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 38.16,
+      "end": 46.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "this episode is also sponsored by my patrons on Patreon. We got about 40 at about 700 bucks a month. And so I like to give different examples each episode for why they support.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 48.35,
+      "end": 48.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 48.83,
+      "end": 57.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "here's what Craig says. He says, I'm a big fan of your podcast and especially like how you categorize each interview into the context of a specific type of system.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 57.93,
+      "end": 58.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I've",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 58.45,
+      "end": 68.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "noticed that proper market education about the technology and projects driving decentralized systems is still lacking and I want to contribute to your efforts because I believe you're helping to change that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 68.33,
+      "end": 68.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Woo,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 69.15,
+      "end": 156.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "thank you, Craig. So today's episode is with Yaneer Bariam. He's a complexity scientist and the founding president of the New England Complex Systems Institute. And this is one of the first podcasts that I can remember where I essentially, and it's the start of a trend, where... I ask people who are systems experts first and then kind of apply that lens to where the world is headed and to crypto and blockchain and those kinds of things. So, yeah, we talk about how to think in systems, how he's thinking about that in the current environment, and then a bit about crypto as well. And kind of two interesting things pop to the top for me here. The first is we chat about Ashby's Law, which says that a, essentially if you want to be a... If you want to live as a system, then you need to match your environmental complexity. So you can imagine an environment being super complex. And if there's a super complex environment, then you as a system or an individual or whatever needs to kind of match that complexity in order to survive. And that's actually, I think, a really good way to think about what's currently happening in society. One way, the one that I often talk about is massive converging exponential technological change. aka speed or exponentiality. The other version though is just like complexity or it's like we're just going to get beaten by the complexity of the system. So we talk about Ashby's Law and we also apply it to crypto.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 157.82,
+      "end": 158.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 158.12,
+      "end": 250.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "you can think about the current regulation these days with the SEC and various places around the world and kind of the how we test and does it apply and do things change as security over time. And really what we're going to need is we're going to need the regulation system to match the complexity of crypto. So it's not going to be some kind of top-down governmental. you know, this blah, blah, blah thing, it's going to be, hey, there's going to be some organic, indimensional kind of regulatory, self-imposed regulatory set, and that will be what actually regulates crypto. So, and that's essentially should be true as per Ashby's law. So we talk about that. And this also kind of links into, I'm currently in Buenos Aires right now for Heath Buenos Aires. Woohoo. And That also just makes me think of like how tech does this in general around regulation. For example, Uber is down here and then, but the government didn't want it to happen and the taxi lobby was really strong. And so the taxi lobby then got, after about six months, the taxi lobby got the government to ban the use of credit cards with Uber. And then Uber just was like, oh, we'll just add a... pay and cash function. And they did that. And then people kept using Uber. So yeah, these are these kind of things where, you know, tech and its speed and its complexity is essentially can be faster than regulatory environments. And those are examples of Ashby's law. The other thing we chat about is essentially how to make robustness within a system. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 250.82,
+      "end": 251.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 251.48,
+      "end": 267.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "things that we talk about are, A, making sure that you have diversity within the system. And this is something I've talked about on the show before, but haven't harped on too much recently. But it's like, hey, it's pretty clear that you want kind of gender and socioeconomic and all these different kinds of diversity.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 268.65,
+      "end": 269.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 269.05,
+      "end": 292.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "only because like we want to make people happier and like generally giving them power and money is you know helps it with happiness but also because um from like a system's perspective that's how you get anti-fragility um if you had a bunch of wreaths in the world or a bunch of anybody's and everybody was that same person then that would not be a good system um and so you kind of want that decentralization or that diversity um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 292.96,
+      "end": 293.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 293.3,
+      "end": 392.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "you chat about that. We chat about another version of robustness, which is that, but applied to global and local scales, where you both want lots of local diversity, but also people thinking at the global level. And I've talked about this a bit. I like to call it bimodalism, where you kind of have a bimodal distribution of where people are spending their energy, their governance energy. And then finally, we talk a little bit, again, about scale and how if you want, and a lot of systems thinking comes down to scale and kind of multi-scale things. thinking and this, when you think about it, you're like, hey, we want a bunch of different individuals to be different. You're like, that makes sense. Yeah, you want that robustness. But then if you think from the group level, well, then you say, well, we might actually want some groups to be similar to other groups. We might want groups that are all the same. And we might want groups that also have a diverse set of individuals. So you might want homogeneity and heterogeneity. at the group level. And with that, then you're like, oh, well, if you want homogeneity from the group perspective, how would you achieve that from the individual level if you want everybody to be different? And that's just, that's what he calls paradoxically both. That's just like how systems thinking works. It's different at different scales. And finally, the organization that Yaneer runs, the New England Complex Systems Institute, they're having an event, their annual event. July 22nd through 27th in Boston. And it's going to be a great event if you're looking to get deeper into systems thinking. Folks from MIT and Harvard will be there. And there are lots of interesting talks, things like blockchain networks and information flow, things like how nations",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 392.37,
+      "end": 395.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "learn, knowledge diffusion, and society and the economy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 395.89,
+      "end": 396.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 396.37,
+      "end": 399.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "can go to NECSI.edu to learn more.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 466.2,
+      "end": 469.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Do you want to just do a little test, like say your name or something?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 469.94,
+      "end": 470.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hi.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 470.74,
+      "end": 471.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Nice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 471.54,
+      "end": 472.3,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Testing. One, two, three.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 472.62,
+      "end": 512.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, we're going to turn a bit. Good. Okay. Beautiful. Let's rock and roll. Okay. Hello, everyone. My name is Reese Lindmark, and you're listening to another episode of Creating a Humanist Blockchain Future. And in this podcast, we take a systems thinking approach to doing good in the world. And today we're going to focus on a specific system scope, series A macro systems, where we ask the question, where are we as humanity headed? And I'm very happy to introduce Professor Yaneer Bariam today. He's a complexity scientist and the founding president at the New England Complex Systems Institute. So, Yaneer, thanks for being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 513.01,
+      "end": 513.51,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Pleasure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 513.87,
+      "end": 538.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Excited to dive in. Because for me, I've done all of my systems learning from the internet from Google. And today we have an actual expert in the room to talk about it. So, Yaneer, I guess let's just stay at that framework level for a bit. Could you kind of give me and our listeners kind of an understanding of the frameworks that you use to kind of view complex system dynamics?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 538.41,
+      "end": 546.89,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Sure. So the real starting point, the reason why complex systems matters in some sense,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 547.5,
+      "end": 548.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 548.38,
+      "end": 555.12,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "not any particular mathematical tool, but really the fact that traditional calculus and statistics",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 555.12,
+      "end": 556.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 556.28,
+      "end": 585.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are used for understanding scientific and many other phenomena in the world are limited by their underlying assumptions. So calculus assumes smoothness, statistics assumes independence, and they are actually not true, right? useful approximations that have been extremely powerful in advancing our ability to understand the world and to make technological progress and all of those things. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 585.9,
+      "end": 587.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "ultimately",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 587.2,
+      "end": 589.62,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "their use limits",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 589.62,
+      "end": 590.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 590.62,
+      "end": 592.12,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "kinds of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 592.12,
+      "end": 593.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "problems",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 593.18,
+      "end": 600.82,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that we can analyze and questions that we can answer about the world. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 600.82,
+      "end": 602.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "complex",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 602.36,
+      "end": 604.16,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "system science extends",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 604.88,
+      "end": 605.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "our",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 605.38,
+      "end": 613.44,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "ability to understand many things by using a variety of mathematical frameworks that go beyond that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 613.7,
+      "end": 614.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 614.04,
+      "end": 653.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "it. Yeah, so it's really coming from a perspective of... And I'm reading a systems theory of life or something right now. And yeah, it gives a similar perspective that you're giving, which is, hey, we've gone from mechanistic kind of Newtonian-based frames of viewing the world. And then we've kind of, as we've expanded and gone further deeper and deeper, we've said, oh, man, Newtonian physics didn't quite work out in these various ways. And like, we need to think about, you know, quantum physics and those kind of things. It sounds like you're saying a similar thing. but from the calculus perspective, which assumes, what did you say? It assumes the smoothness. And then the statistics, do you say it assumes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 653.92,
+      "end": 655.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "independence? Great.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 655.94,
+      "end": 661.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Tell me more about what you mean by calculus assuming smoothness. I have an instinct, but I'm not quite sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 662.04,
+      "end": 671.61,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Well, probably the best way to talk about this is to introduce the context where... both calculus and statistics failed.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 671.77,
+      "end": 672.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Great, perfect.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 673.59,
+      "end": 677.81,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And in physics, it really failed with the study of phase transitions.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 678.65,
+      "end": 679.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 679.37,
+      "end": 693.11,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "boiling of water or magnetic phase transitions both have phenomena that if you make calculus and statistics assumptions, you get the wrong answer. And you make, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 693.43,
+      "end": 695.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 694.92,
+      "end": 699.1,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "empirical observation of a paradox where you have a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 699.1,
+      "end": 700.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "theory",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 700.24,
+      "end": 709.0,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that gives you one answer and the experiment gives you a different answer. It's a really good motivation for trying to understand what the problem is.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 709.84,
+      "end": 710.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 710.44,
+      "end": 712.36,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the way to understand",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 712.36,
+      "end": 713.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 713.92,
+      "end": 720.1,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "failure of calculus, you would think is simple in phase transitions that there is a discontinuity",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 720.1,
+      "end": 720.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 720.98,
+      "end": 723.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you go through a boiling point, the density",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 723.26,
+      "end": 725.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "shifts. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 725.5,
+      "end": 727.34,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "where you really see it is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 727.34,
+      "end": 728.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 728.08,
+      "end": 734.33,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you go to high pressure and temperature, the boiling point discontinuity disappears.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 735.25,
+      "end": 735.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 735.89,
+      "end": 751.94,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "above a certain pressure and temperature, it's kind of hard to tell a difference between superheated steam and superheated water. and because it's sort of atoms that are either rolling or bouncing, but it's not that difference because they're squeezed together.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 752.22,
+      "end": 753.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, interesting.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 753.5,
+      "end": 759.48,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And it turns out that the behavior of the discontinuity can be calculated exactly from a theory",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 759.48,
+      "end": 760.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 760.2,
+      "end": 764.2,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "was developed by Landau, and it's a power law with an exponent of a half.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 764.34,
+      "end": 764.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 765.12,
+      "end": 765.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "interesting. The only",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 765.46,
+      "end": 767.96,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "problem is the experiment gives you about a third.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 770.51,
+      "end": 771.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Now,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 771.59,
+      "end": 776.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "what turns out that what the problem is, and this was figured out by",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 776.35,
+      "end": 777.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Ken",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 777.25,
+      "end": 780.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Wilson in 1970, the problem is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 780.27,
+      "end": 780.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 780.89,
+      "end": 782.33,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "material is not smooth.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 782.89,
+      "end": 783.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 783.39,
+      "end": 786.59,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "has fluctuations from water-like to vapor-like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 786.59,
+      "end": 787.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 787.21,
+      "end": 788.15,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "all scales.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 788.81,
+      "end": 789.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 789.61,
+      "end": 793.59,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so there is a failure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 794.46,
+      "end": 794.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 794.94,
+      "end": 807.18,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "turns out not even of really the smoothness, but of the variables that you're using to describe the system. You can't use an average density to describe the system. So averaging fails, which is the assumption",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 807.18,
+      "end": 808.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 808.44,
+      "end": 817.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "statistics. And it happens in a context where you have this discontinuity of the transition where calculus seems like it works, but doesn't.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 818.81,
+      "end": 819.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 819.61,
+      "end": 824.87,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so the solution turns out to think about the problems in terms of scale.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 825.95,
+      "end": 826.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 826.75,
+      "end": 830.99,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that turns out to be a challenging",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 830.99,
+      "end": 832.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 832.15,
+      "end": 842.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "fairly abstract and mathematically demanding thing to do. But when you do it, you actually get the right answer. But the really key insights",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 842.37,
+      "end": 843.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 843.43,
+      "end": 848.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "more than... the mathematics it's about understanding that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 848.88,
+      "end": 849.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 849.64,
+      "end": 849.78,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 849.78,
+      "end": 851.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 851.03,
+      "end": 854.83,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think correctly about the problem you actually get the variables wrong",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 854.83,
+      "end": 856.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 856.75,
+      "end": 861.77,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you get the variables wrong you haven't described the system and so now",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 861.77,
+      "end": 862.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 862.91,
+      "end": 878.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "real challenge in talking about complex systems is realizing that you could have all kinds of quote emergent behaviors with different variables that you need to put into the problem and because you didn't put them into the problem statistics and calculus methods",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 878.85,
+      "end": 879.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "don't work",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 879.89,
+      "end": 880.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "well",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 880.07,
+      "end": 880.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 880.91,
+      "end": 911.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "fascinating i think that there's a or do we're going to say more yeah the uh those phase transitions and when things get really kind of tight and packed, they look kind of similar to each other. And then when you're talking about scale, I like that as, I like the term, I forget who said this, but that sometimes quantity can have a quality in and of itself where you're like, oh, man, just the pure fact that's big or whatever gives you a, you need to use a different set of assumptions. Interesting. So the thing that I find interesting to some of this system dynamic stuff is that there is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 912.33,
+      "end": 912.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 912.67,
+      "end": 934.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "all based in this kind of mathematical and often kind of, you know, physical reality and modeling kind of our physical world. But then people also use it to talk about kind of how we as humans, kind of like social systems as well. How much do these kind of methods apply to social systems? How much do you think about that side of things as well?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 934.67,
+      "end": 935.23,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 935.23,
+      "end": 936.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 936.37,
+      "end": 938.95,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are, first of all, multiple ways that that holds.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 941.84,
+      "end": 942.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Part",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 942.36,
+      "end": 942.82,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 942.82,
+      "end": 944.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "opportunity",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 944.44,
+      "end": 955.34,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's available is to use the same kinds of ideas in the mathematical treatment of phase transitions in understanding particular social challenges.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 955.72,
+      "end": 956.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 956.36,
+      "end": 960.72,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that has to do with the sort of the large scale issues.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 961.14,
+      "end": 961.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 961.78,
+      "end": 971.58,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we've used this to think about, you know, the financial crisis, which was a large scale phenomenon or the Arab Spring. But you could also use it to... study",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 971.61,
+      "end": 972.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "other",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 972.91,
+      "end": 974.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "problems like ethnic violence",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 974.73,
+      "end": 979.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and problems",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 980.36,
+      "end": 992.82,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "like how to understand the failure of the healthcare system to deliver on its promises. As you get more involved in sort of the, let's call it the details.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 993.77,
+      "end": 994.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 994.41,
+      "end": 1010.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "nature of the tool that you use changes. And what we use is something as a basic framework, is something called the complexity profile, which characterizes the information you need to describe the system as a function of scale.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1012.23,
+      "end": 1012.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1012.79,
+      "end": 1019.71,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the largest scale part is the part that, you know, sort of those are the global events and global crises.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1020.45,
+      "end": 1021.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1021.01,
+      "end": 1046.5,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "didn't mention pandemics, which is another area that we've studied. So you want to study the big things, things that policy is going to affect at the large scale. That's a tool you want to use. But if you want to study sort of organizations and how people are organized to do things, it turns out that... There is a fundamental principle that is really important, and that's called Ashby's Law of Requisite Variety.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1046.8,
+      "end": 1047.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1047.4,
+      "end": 1048.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Ashby's Law says",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1048.9,
+      "end": 1049.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1049.76,
+      "end": 1071.7,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a system has to match the complexity of its environment in order to self-regulate, or you can think about it as survive. So whether it's a biological organism faced with the challenges of its existence, or whether it's a social system. the complexity of the system has to match the complexity of the environment.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1074.12,
+      "end": 1108.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that makes sense. I feel like that is... Exactly. When I think about most of my work today, it's like, oh man, we exist in a world where the environment is becoming much more complex and where you have 4 billion network smartphones and the cost to distribute, learn, create, distribute value is close to zero. And so that means that we as humans kind of need to match our social system to be similar to it to do essentially one of these phase shifts to make sure it matches. the technological system that we are creating. How does that resonate with you?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1109.02,
+      "end": 1109.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1109.14,
+      "end": 1110.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1110.3,
+      "end": 1117.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "agree with everything except the last words, which are the technological system. And it's not that I disagree with it. It's, it is.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1117.96,
+      "end": 1118.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1118.12,
+      "end": 1119.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "allowed to disagree if you want.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1119.34,
+      "end": 1119.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1119.96,
+      "end": 1136.57,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "but it is the, of course, the social system, which is technologically enabled, that is the real challenge. And in some sense, it's kind of funny because we are the system, but we have to be adapt ourselves to the system because we are both the system and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1136.57,
+      "end": 1137.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1137.83,
+      "end": 1139.17,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "have to respond to the system.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1139.51,
+      "end": 1139.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1140.51,
+      "end": 1144.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So, and that's, you know, true whether we're talking about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1144.35,
+      "end": 1145.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "companies",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1145.91,
+      "end": 1151.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that are competing, and it's true we're talking about governance structures that are trying to cope with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1151.55,
+      "end": 1152.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1152.51,
+      "end": 1154.13,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "environment that they're in.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1155.01,
+      "end": 1155.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1155.63,
+      "end": 1164.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "more generally, it's true about every... type of social organization, including the sort of elementary social organization, which is the individual.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1166.45,
+      "end": 1166.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1166.55,
+      "end": 1170.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this transition",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1170.19,
+      "end": 1171.95,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that you're talking about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1171.95,
+      "end": 1173.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1173.47,
+      "end": 1174.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "be characterized",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1174.37,
+      "end": 1175.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "by",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1175.71,
+      "end": 1179.17,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the fact that the organizations have undergone a change.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1181.99,
+      "end": 1182.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Take",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1182.65,
+      "end": 1188.19,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a look, I don't know if you've seen this, there's a paper called Complexity Rising. that I wrote.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1190.79,
+      "end": 1208.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And it describes how with increasing environmental complexity, the traditional organizational structure, which was the dominant structure for a couple of thousand years, at least, which is a hierarchy, fails",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1208.25,
+      "end": 1209.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1209.29,
+      "end": 1212.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of the inadequacy of the central control",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1212.25,
+      "end": 1213.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1213.25,
+      "end": 1216.47,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "achieve a complexity which is larger than that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1216.82,
+      "end": 1217.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1217.16,
+      "end": 1219.1,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the collective scale of an individual.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1219.88,
+      "end": 1220.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Once",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1220.72,
+      "end": 1226.38,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that happens, you need some form of distributed organizational structure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1226.84,
+      "end": 1227.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1227.68,
+      "end": 1229.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "what it really means is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1229.88,
+      "end": 1230.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1230.74,
+      "end": 1232.38,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "cannot as individuals",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1233.66,
+      "end": 1235.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "regulate",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1235.54,
+      "end": 1243.5,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "collective behaviors, but ultimately we cannot as individuals respond to the complexity of the environment in which we're located.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1244.52,
+      "end": 1245.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1245.36,
+      "end": 1262.63,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so itself consistently, requires us, if you will, to become collectives. So for me, the real societal transformation, if you will, is not the technology per se, but it's the social transformation",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1262.63,
+      "end": 1263.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1263.59,
+      "end": 1263.81,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1263.81,
+      "end": 1266.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "requiring",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1266.29,
+      "end": 1267.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1267.55,
+      "end": 1269.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "resulting",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 1269.07,
+      "end": 1272.43,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "from the fact that we're working together in collectives.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 1272.51,
+      "end": 1274.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that makes sense. And I think...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 1275.48,
+      "end": 1275.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 1276.26,
+      "end": 1338.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "I mean, on that concept, it sounds like you're talking about something similar to the transition, kind of like a, what is the, there's reinventing organizations and the transition to teal and spiral dynamics and a transition to like a new kinds of bottom-up infrastructure and also this balance over time between individual and collective. And it seems like what you're saying here is that we need to start seeing ourselves, yeah, as... If you're an individual operating within the system, that is not really going to work, but you need to start operating as a collective. Does that, are you saying something like, I've heard people talk about things where it's like, hey, we're all going to get, there's this book called Swarm Wise, which is about like, hey, let's all get together as a group of between. five and 500 people or whatever solve this problem and then kind of disperse back into the ecosystem and then solve another problem. Is that, that's kind of what I imagine when you talk about these new kind of collectives coming and forming, or does it have to be as, that one is kind of like a spontaneous version, but I guess it could exist in both.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1338.98,
+      "end": 1339.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1339.46,
+      "end": 1351.58,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "one of the challenging aspects of the distributed nature of distributed organizations is that unlike hierarchies, the structure is not universal,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1353.18,
+      "end": 1372.36,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "which means that I can't tell you what the distributed organizational structure looks like, because which organizational structure you choose depends on the environmental challenge that it's solving. And fundamentally that means",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1372.36,
+      "end": 1375.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that... we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1375.01,
+      "end": 1380.09,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "need to discover in some sense. I mean, it's going to be created emergently,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1380.61,
+      "end": 1380.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 1381.53,
+      "end": 1395.87,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "The structure that is the right structure, if you will. But along the way, we may face all kinds of challenges because we are suffering from the complexity at the same time as we're creating it. And that's quite apparent.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 1396.55,
+      "end": 1397.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 1397.07,
+      "end": 1408.93,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "apparent institutionally. with the failures of public good organizations and so on. But it's also, you know, in governance structures. And it's also apparent in the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 1408.93,
+      "end": 1410.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "severe",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 1410.35,
+      "end": 1416.39,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "stresses that individuals are facing in society today, whether it's dealing with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 1416.39,
+      "end": 1417.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "their",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 1417.89,
+      "end": 1419.41,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "personal environment or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 1419.41,
+      "end": 1419.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "whether",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 1419.57,
+      "end": 1421.63,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it's dealing with their professional environment.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 1421.83,
+      "end": 1422.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 1422.57,
+      "end": 1424.19,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "all very challenging. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 1424.19,
+      "end": 1424.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 1425.64,
+      "end": 1431.7,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "intellectually, you might say, it's satisfying in that we're facing this challenge at all scales,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 1432.28,
+      "end": 1433.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "which if you remember",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 1433.06,
+      "end": 1441.72,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "was exactly the point about phase transitions and physics, because from the individual all the way up to the global scale, we're facing the same challenge.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 1444.11,
+      "end": 1444.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 1444.75,
+      "end": 1445.43,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "resolution",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 1445.43,
+      "end": 1446.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 1446.85,
+      "end": 1449.91,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to figure out how people who are different",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 1449.98,
+      "end": 1451.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 1451.8,
+      "end": 1452.52,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "groups...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 1453.81,
+      "end": 1454.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "again,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 1455.19,
+      "end": 1459.15,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "groups all the way up to the global scale can actually work together,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 1460.93,
+      "end": 1463.19,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "respecting and appreciating the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 1463.19,
+      "end": 1465.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "diverse",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 1465.35,
+      "end": 1471.33,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "contributions that we all bring and having the appropriate roles being played.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 1471.53,
+      "end": 1472.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 1472.17,
+      "end": 1478.69,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that kind of discovery is the real challenge, as I see it, that we're facing in society today.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 1479.27,
+      "end": 1479.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 1480.17,
+      "end": 1491.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "I think there's a lot of good juiciness in there. I know for me personally, it is a fun intellectual thing where you get to have lots of complexity at all the levels. And so there's lots of delicious learning to be had everywhere.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 1493.69,
+      "end": 1546.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "But we also want to make sure it works out. So I also think that the stresses on the individual are very true. When I talk about some of these things and when people around me talk about these things where they say, hey, climate change is going to be intense. There are, you know, biosecurity, nuclear security, you know, artificial intelligence alignment, you know, different people talk about, you know, the self-termination as a possible externality of our actions these days. And that makes people feel in their gut like, oh, God, you know, like, what is going to happen there? And I think the key thing for everybody to know is like, look, there's a lot of stuff happening in the world and what you... the most powerful way to start is you there's a lot of self-work to do first in order to then have a be kind of a good what we call like a sovereign individual or something in the while being unified with this new global organism",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 1546.7,
+      "end": 1548.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 1548.14,
+      "end": 1551.56,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "appreciate you mentioned the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 1551.56,
+      "end": 1552.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "importance",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 1552.84,
+      "end": 1556.44,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of values in this context and really",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 1556.44,
+      "end": 1558.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 1559.01,
+      "end": 1568.44,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the positive side this new collective depends on the health of its individual members and therefore",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 1568.44,
+      "end": 1569.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 1569.48,
+      "end": 1591.31,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "hope and can strive for also that individual will be protected, shielded and supported by the system. And at the same time, we are still trying to emerge from the objectification of industrial machine concepts of society that really",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 1591.31,
+      "end": 1594.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "didn't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 1594.13,
+      "end": 1609.71,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "treat people well. And trying to find the right ways that those will manifest in the new context is not an easy challenge. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 1609.71,
+      "end": 1611.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "dealing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 1611.03,
+      "end": 1622.15,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "with the vulnerabilities of the system, which is really core. to, you know, let's say climate change, but everything else that is the,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 1622.49,
+      "end": 1623.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 1623.49,
+      "end": 1628.31,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "potential crisis. The reason it arises is because of the interdependence.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 1630.03,
+      "end": 1636.05,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "We are globally interdependent. We become this global",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 1636.05,
+      "end": 1638.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "organism. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 1638.57,
+      "end": 1642.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "now we have to face the fact that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 1642.29,
+      "end": 1644.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we... Each",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 1644.11,
+      "end": 1646.41,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of us depends upon everything else in the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 1646.41,
+      "end": 1646.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "system",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 1646.73,
+      "end": 1647.09,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 1647.09,
+      "end": 1648.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "therefore",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 1648.01,
+      "end": 1651.51,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "if things go bad it goes bad in many ways.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 1653.47,
+      "end": 1655.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 1655.27,
+      "end": 1655.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 1655.67,
+      "end": 1656.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 1656.53,
+      "end": 1660.15,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "tendency or a desire and even a justification",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 1660.15,
+      "end": 1662.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 1662.01,
+      "end": 1664.83,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "locality or localization, you know, having",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 1664.83,
+      "end": 1665.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "local",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 1665.85,
+      "end": 1668.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "autonomy which creates...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 1669.55,
+      "end": 1670.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 1670.05,
+      "end": 1683.57,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "does two things. It allows the diversity, which is actually increasing, of local values and their manifestations and behavioral choices and so on to be realized.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 1684.47,
+      "end": 1685.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 1685.17,
+      "end": 1698.66,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "also supports more robustness of the system, but we cannot avoid the global interdependence. And so we also have to find the ways that we can... in some sense, get together",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 1698.66,
+      "end": 1699.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 1699.6,
+      "end": 1702.7,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "cope with our global issues.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 1703.18,
+      "end": 1703.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 1703.98,
+      "end": 1705.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "cryptocurrency",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 1708.87,
+      "end": 1728.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "is vibrant and exciting, but it's not without a share of bad actors. Exchanges in personal accounts can get hacked, computers can be infected with malware. Left unprotected, your digital wealth is up for grabs. Don't let yourself be a victim. Keep he is a safest and simplest way to protect your Bitcoin, Ether, Lightcoin, and other tokenized assets.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 1728.77,
+      "end": 1729.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 1729.09,
+      "end": 1753.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "hardware wallet is a separate device that you control. Brought to you by the pioneering team at ShapeShift, Keep Keyworks with the wallet software on your computer to manage your private keys and transactions. Your device is pen-protected, which provides protection if it falls into the wrong hands. Its large display lets you carefully view and approve every transaction. And if your keep keys ever lost or stolen, you can safely recover your device without compromising its private keys.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 1753.47,
+      "end": 1753.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 1753.71,
+      "end": 1757.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "bottom line, you'll sleep easier knowing that your digital wealth is safe and secure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 1757.97,
+      "end": 1758.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Visit",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 1758.45,
+      "end": 1765.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "keepkey.com to order yours today and use the code Humanist 10 for a limited time 10% discount.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 1768.45,
+      "end": 1769.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 1769.64,
+      "end": 1824.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "I think about that as like kind of a bimodal distribution where you say you want to have lots of local stuff happening and you also, you can't just only do the local stuff. You also need to think on the global level. I think what you're saying here too with the diversity piece, Scott Page wrote a book recently about how diversity, I haven't actually read it, but how diversity is helpful to make essentially anti-fragile systems where you say, hey, you need, it's kind of obvious the moment you think about it, you're like, Look, it's not like we want diversity of power and different people having different amounts of power because, like, to make them feel good. It's like, well, that's part of it. But part of it is like, hey, it's very helpful for the macro human organism to make sure that we have pretty different viewpoints coming at different things. And not just like essentially a bunch of, you know, classic rich white Western dudes doing it again or whatever. That could be an issue from a macro systemic perspective.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 1825.12,
+      "end": 1825.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 1825.38,
+      "end": 1829.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think that it's very difficult in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 1829.34,
+      "end": 1830.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 1830.52,
+      "end": 1838.24,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "value system that emphasizes individuality and individual differences to understand that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 1838.24,
+      "end": 1839.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 1839.14,
+      "end": 1841.22,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is a multi-scale phenomenon.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 1841.96,
+      "end": 1842.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 1842.2,
+      "end": 1848.0,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "when you do it at the multi-scale level, it may be that parts of the system will have conformity",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 1848.0,
+      "end": 1848.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 1848.36,
+      "end": 1858.6,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "uniformity as part of their values, not just individual differences. And so it's kind of this paradoxically both, again, you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 1858.6,
+      "end": 1858.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "know, the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 1858.86,
+      "end": 1864.1,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "complex systems is, again, intellectually delightful in showing us that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 1864.1,
+      "end": 1865.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "paradoxes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 1865.94,
+      "end": 1875.18,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and seemingly logical contradictions are actually not. logically contradicting each other. There's no contradiction through the coexistence",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 1875.18,
+      "end": 1875.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 1875.96,
+      "end": 1877.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "things. And so we have to,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 1878.08,
+      "end": 1878.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 1878.86,
+      "end": 1880.04,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, understand that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 1880.04,
+      "end": 1881.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there's,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 1881.46,
+      "end": 1888.8,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it's a different statement to say that individuals should be different and to say that we could also allow for groups to be different.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 1889.06,
+      "end": 1889.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 1889.88,
+      "end": 1892.66,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And somehow we have to do and enable both.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 1892.78,
+      "end": 1962.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I think that's powerful. I think the way that I think about that is within this Ethereum Commons thing that I'm started. It's purely just a meme and uses the meme as an institutional vehicle or organizational technology and using memes is kind of weird because they're like, well, they have to be kind of permissionless or whatever. And so in one part was like, does the meme have, does it have values behind it? And one of the values was decentralization. And that meme of decentralization is both true, especially within the blockchain crypto world, but is also by saying that the values are decentralized, it's kind of a weird self-referential thing that says, hey, what this is a value, but also if you want to have a different version, we don't want homogeneity. So like it's this weird, this paradox as well. And thinking from this paradox perspective, I think that there is, the powerful way that I think about this is when people talk in terms of binaries or paradoxes or contradictions or whatever, you say actually these things are like a gradient and you can then have synthesis. among these two ends and to kind of go up to that third level. And then usually the synthesis perspective is a very powerful one.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 1963.33,
+      "end": 1963.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 1963.83,
+      "end": 1965.57,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "but synthesis again is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 1966.09,
+      "end": 1967.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 1967.28,
+      "end": 1969.76,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, you still have to face the contradiction.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 1970.28,
+      "end": 1972.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, because it constrains.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 1972.34,
+      "end": 1973.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 1973.02,
+      "end": 1976.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 1976.0,
+      "end": 1989.17,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "where understanding the nature of the interplay between... independence and autonomy and all of those things are related to dependence and collective behaviors and so on and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 1989.17,
+      "end": 1990.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 1990.78,
+      "end": 1996.36,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is where traditional ideological approaches fail",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 1996.36,
+      "end": 1997.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 1997.68,
+      "end": 2000.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "they are proponents",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 2000.02,
+      "end": 2001.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 2001.24,
+      "end": 2006.92,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are not recognizing the rich interplay between these issues",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 2006.92,
+      "end": 2007.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 2007.56,
+      "end": 2023.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I agree. So let's kind of transition to, I think what a lot of people think of, when they think of, like, classic, and we haven't talked about too much right now, is, like, when I think of classic systems thinking, or like, you know, Doniella Meadows thinking in systems.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 2023.82,
+      "end": 2023.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 2023.94,
+      "end": 2025.46,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "when you mentioned, let me just say,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 2025.62,
+      "end": 2026.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you mentioned",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 2026.08,
+      "end": 2029.1,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "system dynamics. System dynamics is a specific",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 2029.1,
+      "end": 2030.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "mathematical",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 2030.74,
+      "end": 2033.78,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and conceptual approach. So.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 2035.56,
+      "end": 2036.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 2036.4,
+      "end": 2039.5,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it's, I mean, you can, the terminology",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 2039.5,
+      "end": 2040.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 2040.08,
+      "end": 2041.94,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "way it's used technically. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 2041.94,
+      "end": 2042.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 2042.78,
+      "end": 2056.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "different from, for example, agent-based modeling or network modeling or fractals, you know, or scaling behaviors or many other sort of specific mathematical representations.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 2056.88,
+      "end": 2057.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 2058.56,
+      "end": 2064.89,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "That are all sort of within the... framework of how do we advance our thinking beyond",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 2064.89,
+      "end": 2065.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 2065.39,
+      "end": 2066.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "traditional ones.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 2066.41,
+      "end": 2098.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Interesting. Yep. So that makes sense, and I definitely did not know that clearly. I just kind of group it all in one bucket, but that's false, obviously. Is there, when I do think, though, about, so some of these, like, you know, reinforcing and balancing systems and kind of, you know, stocks and flows, I kind of think about that on one end and then something like agent-based modeling. perhaps not necessarily on two ends of a spectrum, but those is kind of two primary ways to view the world from a system's perspective.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 2099.39,
+      "end": 2099.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Would",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 338,
+      "start": 2099.87,
+      "end": 2106.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "you agree with that, or would you, I mean, you have a lot more texture around these fractal-based modeling, or the mathematical approaches, like complex dynamics?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 339,
+      "start": 2106.91,
+      "end": 2107.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 340,
+      "start": 2107.43,
+      "end": 2116.89,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I think I just mostly gave the answer. In other words, the system dynamics modeling is what one would call an aggregate modeling approach,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 341,
+      "start": 2117.09,
+      "end": 2117.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "whereas",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 342,
+      "start": 2117.37,
+      "end": 2119.21,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the agent-based modeling is a,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 343,
+      "start": 2119.53,
+      "end": 2119.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 344,
+      "start": 2119.83,
+      "end": 2120.03,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 345,
+      "start": 2120.48,
+      "end": 2121.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "bottom",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 346,
+      "start": 2121.02,
+      "end": 2123.84,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "-up approach, but that's only a first,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 347,
+      "start": 2125.65,
+      "end": 2125.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 348,
+      "start": 2125.67,
+      "end": 2130.99,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, statement about it. Each of them is much richer and it's a nature. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 349,
+      "start": 2130.99,
+      "end": 2132.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 350,
+      "start": 2132.42,
+      "end": 2133.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 351,
+      "start": 2133.29,
+      "end": 2136.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "better",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 352,
+      "start": 2137.45,
+      "end": 2139.93,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "way to think about it is that they are tools",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 353,
+      "start": 2139.93,
+      "end": 2141.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 354,
+      "start": 2141.33,
+      "end": 2146.05,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a toolbox that is now much richer that calculus and statistics.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 355,
+      "start": 2148.23,
+      "end": 2149.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And... My",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 356,
+      "start": 2149.37,
+      "end": 2159.13,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "approach tends to be agnostic about which tool to use. Instead, I see the challenge as being identified what the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 357,
+      "start": 2159.13,
+      "end": 2160.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "mathematical",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 358,
+      "start": 2160.17,
+      "end": 2161.33,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "representation",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 359,
+      "start": 2161.33,
+      "end": 2162.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 360,
+      "start": 2162.55,
+      "end": 2171.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that we need in order to capture the essential behavioral attributes of the system. And using that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 361,
+      "start": 2171.29,
+      "end": 2173.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "approach... is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 362,
+      "start": 2173.04,
+      "end": 2178.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "an approach that's geared at answering questions rather than sort of saying I have a tool what can I do with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 363,
+      "start": 2178.9,
+      "end": 2179.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 364,
+      "start": 2179.18,
+      "end": 2192.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, that makes sense. Where I think that's kind of like a poll-based system. So you're saying, hey, what is... look at the world, look at the context, given this question, which tool should I use to answer that question?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 365,
+      "start": 2192.41,
+      "end": 2202.77,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Any real problem that you face ultimately is like building a building, so you're not going to be able to build a building with one tool. It just doesn't work that way.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 366,
+      "start": 2203.01,
+      "end": 2203.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 367,
+      "start": 2203.79,
+      "end": 2204.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah, unfortunately.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 368,
+      "start": 2206.69,
+      "end": 2245.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "So thinking about kind of applying these, we've talked about this a bit already, but how do you see, when you come from your, like, you know, the, We're just going to call it a system's perspective, including all of these different tool sets. You know, and I've, you know, we were talking beforehand about the kind of increasing rate of change and things, you know, whiplash and acceleration and jerk and how this might create a world in which there's more kind of fragility in the system. Is that where you see us as humanity headed? Or where do you, when you kind of put on your hat for like, ooh, what's going to happen? What emerges from that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 369,
+      "start": 2245.54,
+      "end": 2246.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 370,
+      "start": 2248.25,
+      "end": 2255.61,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the positive statement is already surprising, which is that somehow we are creating",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 371,
+      "start": 2256.09,
+      "end": 2257.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "contexts",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 372,
+      "start": 2257.71,
+      "end": 2264.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and organizations that are more complex than individuals. But you might think that that's trivial because, hey, you bring a bunch of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 373,
+      "start": 2264.27,
+      "end": 2265.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "organisms",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 374,
+      "start": 2265.39,
+      "end": 2285.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "together, surely the collective is more complex than the individuals, but that's actually not true. Right? I mean... If you look at the Earth as an object orbiting the sun, it's not more complex than the pieces that are on it. And if you look at a flock of sheep or an insect colony, there's really",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 375,
+      "start": 2285.73,
+      "end": 2288.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "no... It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 376,
+      "start": 2288.89,
+      "end": 2293.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "doesn't work that way that they create something more... But people are doing it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 377,
+      "start": 2294.43,
+      "end": 2294.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 378,
+      "start": 2294.93,
+      "end": 2298.89,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "in some sense, because people are doing it, you already have to say we're successful.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 379,
+      "start": 2299.93,
+      "end": 2300.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 380,
+      "start": 2300.11,
+      "end": 2305.77,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "if we're successful, then the model that one should use is a model of a complex organism.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 381,
+      "start": 2306.99,
+      "end": 2307.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 382,
+      "start": 2307.67,
+      "end": 2308.13,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 383,
+      "start": 2308.59,
+      "end": 2309.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 384,
+      "start": 2309.33,
+      "end": 2310.13,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "some sense,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 385,
+      "start": 2311.75,
+      "end": 2313.81,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "like at the collective scale, like a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 386,
+      "start": 2313.81,
+      "end": 2315.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "global",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 387,
+      "start": 2315.03,
+      "end": 2317.41,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "civilization, is like an animal",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 388,
+      "start": 2317.57,
+      "end": 2319.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 389,
+      "start": 2319.45,
+      "end": 2327.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we are cells of, and the fact that that's happening is a statement of success. Now, of course,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 390,
+      "start": 2328.06,
+      "end": 2328.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 391,
+      "start": 2329.24,
+      "end": 2330.0,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "organisms die.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 392,
+      "start": 2331.52,
+      "end": 2331.54,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 393,
+      "start": 2331.54,
+      "end": 2333.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 394,
+      "start": 2333.26,
+      "end": 2334.18,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is a strong",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 395,
+      "start": 2334.24,
+      "end": 2336.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "likelihood,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 396,
+      "start": 2336.6,
+      "end": 2338.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I would say, even",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 397,
+      "start": 2338.14,
+      "end": 2339.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "great",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 398,
+      "start": 2341.15,
+      "end": 2343.95,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "likelihood that if we've gotten this far, we will",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 399,
+      "start": 2343.95,
+      "end": 2345.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "go",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 400,
+      "start": 2345.05,
+      "end": 2348.63,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "through this transition. And on the other end of it, we will have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 401,
+      "start": 2348.63,
+      "end": 2350.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 402,
+      "start": 2350.09,
+      "end": 2350.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "more,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 403,
+      "start": 2352.56,
+      "end": 2354.58,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "let's call it, peaceful, if you will,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 404,
+      "start": 2356.66,
+      "end": 2357.8,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a more...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 405,
+      "start": 2360.37,
+      "end": 2367.23,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "fit behavior between the individual and the collective. And in that context,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 406,
+      "start": 2369.07,
+      "end": 2391.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "perhaps it will be easily apparent that we've in fact coalesced into this. global organism, I would guess so, even though our ability to understand what's going on is going to be limited by the fact that our complexity is not as great as the complexity or the whole hour as individuals complexity.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 407,
+      "start": 2392.85,
+      "end": 2393.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 408,
+      "start": 2393.35,
+      "end": 2397.15,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that I think is the model, and I think that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 409,
+      "start": 2397.15,
+      "end": 2398.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 410,
+      "start": 2398.75,
+      "end": 2409.17,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "would be optimistic, but at the same time, you know, the transition And all of its challenges is something that we have to engage with by definition.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 411,
+      "start": 2409.41,
+      "end": 2409.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 412,
+      "start": 2410.17,
+      "end": 2412.11,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "We are it. We are the transition.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 413,
+      "start": 2412.33,
+      "end": 2422.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah. It's kind of one of my friends was relating it to like a forced move in chess where it's like, look. We got to do it. It's happened. Yeah, we got to do it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 414,
+      "start": 2422.95,
+      "end": 2423.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 415,
+      "start": 2423.85,
+      "end": 2427.51,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "You might think that another choice might be better, but you don't have that choice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 416,
+      "start": 2427.69,
+      "end": 2451.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, exactly. Okay, cool. So that's so general optimism. That's good. I like optimism in the world. Do you think, so now kind of. putting on that same hat and applying it to blockchain and crypto. And I know that it's not most of your day job or anything. But what do you, when you kind of put your systems hat on and look at what's happening within these blockchain and crypto financial systems, what do you, what is weird or what do you see?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 417,
+      "start": 2452.66,
+      "end": 2452.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 418,
+      "start": 2452.9,
+      "end": 2454.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "first",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 419,
+      "start": 2454.16,
+      "end": 2455.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of all, I would say that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 420,
+      "start": 2456.36,
+      "end": 2456.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 421,
+      "start": 2456.76,
+      "end": 2466.46,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "appreciate, and I think it's important that they are realizing some of the sort of basic concepts of complex systems, right? They're distributed",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 422,
+      "start": 2466.46,
+      "end": 2468.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 423,
+      "start": 2468.74,
+      "end": 2470.58,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 424,
+      "start": 2470.9,
+      "end": 2472.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 425,
+      "start": 2472.3,
+      "end": 2473.96,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "important part of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 426,
+      "start": 2473.96,
+      "end": 2474.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thinking",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 427,
+      "start": 2474.94,
+      "end": 2475.46,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 428,
+      "start": 2475.46,
+      "end": 2476.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 429,
+      "start": 2476.52,
+      "end": 2478.22,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we need or what we might",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 430,
+      "start": 2478.51,
+      "end": 2479.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "benefit",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 431,
+      "start": 2479.93,
+      "end": 2485.19,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "from in enabling technologies, which is what we're talking about.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 432,
+      "start": 2486.7,
+      "end": 2487.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "At",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 433,
+      "start": 2487.7,
+      "end": 2488.6,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the same time,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 434,
+      "start": 2490.58,
+      "end": 2495.58,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I think that understanding the ways in which collective behaviors happen",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 435,
+      "start": 2495.58,
+      "end": 2496.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 436,
+      "start": 2497.23,
+      "end": 2502.83,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "important and is not always appreciated in a technologically",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 437,
+      "start": 2502.83,
+      "end": 2505.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "driven discussion.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 438,
+      "start": 2507.5,
+      "end": 2520.17,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Collective behaviors are neither good nor bad. They are collective. and whether they are better or worse than something else is subject to discussion. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 439,
+      "start": 2520.17,
+      "end": 2522.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "let",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 440,
+      "start": 2522.53,
+      "end": 2530.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "me take a small example. It's not small, it's a big example, and talk about the issue of Bitcoin and currencies",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 441,
+      "start": 2530.55,
+      "end": 2530.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 442,
+      "start": 2530.91,
+      "end": 2531.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "how that works.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 443,
+      "start": 2534.41,
+      "end": 2535.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 444,
+      "start": 2535.15,
+      "end": 2536.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "dissociation",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 445,
+      "start": 2536.29,
+      "end": 2537.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 446,
+      "start": 2537.01,
+      "end": 2538.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "currency from...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 447,
+      "start": 2539.31,
+      "end": 2539.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 448,
+      "start": 2539.77,
+      "end": 2541.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "regulatory mechanism,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 449,
+      "start": 2541.71,
+      "end": 2542.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "which seems",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 450,
+      "start": 2542.23,
+      "end": 2546.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "like a good thing, also makes it non-adaptive.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 451,
+      "start": 2548.41,
+      "end": 2549.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 452,
+      "start": 2549.09,
+      "end": 2553.47,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we have a recent paper where we talk about the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 453,
+      "start": 2553.47,
+      "end": 2555.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "limitation",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 454,
+      "start": 2555.01,
+      "end": 2559.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of Federal Reserve Bank regulation of currency,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 455,
+      "start": 2559.43,
+      "end": 2560.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "pointing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 456,
+      "start": 2560.19,
+      "end": 2566.11,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to the fact that we actually need two-dimensional regulation rather than one-dimensional regulation in order to make",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 457,
+      "start": 2566.11,
+      "end": 2567.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "economic",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 458,
+      "start": 2567.25,
+      "end": 2568.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "regulation work.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 459,
+      "start": 2568.96,
+      "end": 2569.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 460,
+      "start": 2569.24,
+      "end": 2577.04,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "in this context, you're basically going to a zero-dimensional regulation system. And so I would argue that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 461,
+      "start": 2577.04,
+      "end": 2578.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 462,
+      "start": 2578.06,
+      "end": 2592.36,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "do really need to understand the relationship between the complexity of the system and the challenge that it's facing, whether it's technological or otherwise. And the other side of the technology is, again, we have this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 463,
+      "start": 2592.36,
+      "end": 2593.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "love",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 464,
+      "start": 2595.98,
+      "end": 2596.76,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of technology",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 465,
+      "start": 2596.76,
+      "end": 2597.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that is...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 466,
+      "start": 2599.82,
+      "end": 2600.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 467,
+      "start": 2600.18,
+      "end": 2602.56,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, almost a rapture,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 468,
+      "start": 2602.94,
+      "end": 2602.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 469,
+      "start": 2603.78,
+      "end": 2604.04,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "We, hey,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 470,
+      "start": 2604.22,
+      "end": 2604.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 471,
+      "start": 2604.48,
+      "end": 2616.92,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "do this stuff. And that's true whether you're talking about biotechnology or about, you know, new crypto opportunities.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 472,
+      "start": 2618.06,
+      "end": 2618.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 473,
+      "start": 2618.82,
+      "end": 2620.24,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "ultimately the system",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 474,
+      "start": 2620.33,
+      "end": 2622.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 475,
+      "start": 2623.05,
+      "end": 2623.45,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "human.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 476,
+      "start": 2624.01,
+      "end": 2624.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 477,
+      "start": 2624.77,
+      "end": 2627.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is a combined human technological system.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 478,
+      "start": 2630.15,
+      "end": 2630.99,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 479,
+      "start": 2630.99,
+      "end": 2631.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 480,
+      "start": 2631.83,
+      "end": 2633.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "often don't appreciate",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 481,
+      "start": 2633.29,
+      "end": 2634.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 482,
+      "start": 2634.87,
+      "end": 2638.57,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it is the combination of the two. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 483,
+      "start": 2638.57,
+      "end": 2639.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "whether",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 484,
+      "start": 2639.85,
+      "end": 2644.83,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "or not a particular technology is going to be the right framework",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 485,
+      "start": 2644.86,
+      "end": 2645.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 486,
+      "start": 2645.88,
+      "end": 2649.56,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "going to depend upon how it successfully",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 487,
+      "start": 2650.17,
+      "end": 2651.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "either",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 488,
+      "start": 2651.51,
+      "end": 2655.07,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "enables, facilitates, or becomes part of. It's like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 489,
+      "start": 2655.23,
+      "end": 2655.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 490,
+      "start": 2655.81,
+      "end": 2661.13,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, you have... We can talk about the importance of your bones because of their",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 491,
+      "start": 2661.13,
+      "end": 2664.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "unique physical",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 492,
+      "start": 2664.22,
+      "end": 2673.54,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "properties. But if you connected the bones to each other without cartilage and joints and the appropriate interfaces to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 493,
+      "start": 2673.54,
+      "end": 2674.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "muscles,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 494,
+      "start": 2675.9,
+      "end": 2677.48,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you wouldn't be able to do very much.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 495,
+      "start": 2677.74,
+      "end": 2678.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 496,
+      "start": 2678.4,
+      "end": 2681.18,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we really need to understand how...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 497,
+      "start": 2682.96,
+      "end": 2687.08,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "sociotechnological systems work and and so my focus",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 498,
+      "start": 2687.08,
+      "end": 2688.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "tends",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 499,
+      "start": 2688.32,
+      "end": 2692.38,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to be more on the human transformation side",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 500,
+      "start": 2692.38,
+      "end": 2693.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 501,
+      "start": 2693.32,
+      "end": 2698.12,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "again I can't think about that without reference to the technology",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 502,
+      "start": 2698.12,
+      "end": 2698.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 503,
+      "start": 2698.9,
+      "end": 2699.58,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "similarly",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 504,
+      "start": 2699.58,
+      "end": 2700.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 505,
+      "start": 2700.9,
+      "end": 2703.7,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "technology should be understood in relation",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 506,
+      "start": 2703.7,
+      "end": 2704.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 507,
+      "start": 2705.17,
+      "end": 2705.71,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the human",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 508,
+      "start": 2705.71,
+      "end": 2706.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 509,
+      "start": 2707.6,
+      "end": 2708.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "The human",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 510,
+      "start": 2708.12,
+      "end": 2708.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "element.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 511,
+      "start": 2708.86,
+      "end": 2709.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, I think, um.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 512,
+      "start": 2710.44,
+      "end": 2710.58,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 513,
+      "start": 2712.62,
+      "end": 2721.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "I'm a huge fan of this stuff. The tech, have technology informed society, have society informed technology. Uh, what'd you call it sociotechnical? It's sociotechnological systems. Um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 514,
+      "start": 2722.26,
+      "end": 2722.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 515,
+      "start": 2722.96,
+      "end": 2748.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "feel like on that first point, the regulation, um, um, You could either claim that it is a zero-dimensional system, though I think you might be able to claim. I think that this would be my longer-term claim that we will transition into a period of self, some kind of organic bottom-up self-regulation, which is like an indimensional regulatory system. That would be my hope for what happens.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 516,
+      "start": 2748.56,
+      "end": 2761.72,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Maybe. Interesting. But remember that each system has to have its right regulatory structures. So N, where N is very large, may also not be the right answer if it may be part of the answer.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 517,
+      "start": 2762.81,
+      "end": 2763.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 518,
+      "start": 2763.29,
+      "end": 2768.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "and I agree, I guess, from the perspective of the law that you referenced earlier,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 519,
+      "start": 2769.13,
+      "end": 2769.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Ashby's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 520,
+      "start": 2769.97,
+      "end": 2787.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "law, where the environment, the regulatory environment needs to match the complex, like right now, and you can kind of see this, like, the regulatory environment around cryptocurrencies is not really matching the complexity of cryptocurrencies. And so it's like, oh, God, how can we make something that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 521,
+      "start": 2787.43,
+      "end": 2787.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 522,
+      "start": 2787.93,
+      "end": 2790.57,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "not sure I understand. It is cryptocurrency.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 523,
+      "start": 2792.14,
+      "end": 2792.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 524,
+      "start": 2792.72,
+      "end": 2799.12,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is not self-regulating or regulative in relation to its social use.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 525,
+      "start": 2799.64,
+      "end": 2800.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 526,
+      "start": 2801.02,
+      "end": 2801.96,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "That's what I'm saying.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 527,
+      "start": 2802.08,
+      "end": 2802.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 528,
+      "start": 2802.3,
+      "end": 2802.98,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "thinking about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 529,
+      "start": 2802.98,
+      "end": 2804.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 530,
+      "start": 2804.06,
+      "end": 2807.62,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "regulatory environment in this context. I'm thinking about it the other way.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 531,
+      "start": 2807.72,
+      "end": 2808.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep. Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 532,
+      "start": 2808.96,
+      "end": 2813.08,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "So, but I understand what you're saying. But it is a challenge.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 533,
+      "start": 2813.9,
+      "end": 2814.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 534,
+      "start": 2814.22,
+      "end": 2820.4,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "am quite sure that we will identify the right technological pieces.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 535,
+      "start": 2820.54,
+      "end": 2821.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yes. Yes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 536,
+      "start": 2821.6,
+      "end": 2822.66,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "That will make this possible.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 537,
+      "start": 2823.0,
+      "end": 2843.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yes. Cool. Well, with that, we're pretty much out of time, but thank you again for the conversation, I guess. What is your, so people, A, if you're interested in systems of any type, whether they're complex system dynamics or agent-based modeling systems or whatever, you can go to, I think it's New England Complex Science Institute.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 538,
+      "start": 2843.74,
+      "end": 2844.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Systems",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 539,
+      "start": 2844.0,
+      "end": 2844.34,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Institute.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 540,
+      "start": 2844.42,
+      "end": 2848.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Oh, systems institute. It's, is it N-E-C-S-I.O?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 541,
+      "start": 2848.98,
+      "end": 2849.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "E-D-U.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 542,
+      "start": 2849.65,
+      "end": 2852.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, great. And then what's your Twitter handle?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 543,
+      "start": 2853.21,
+      "end": 2858.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "It's just my name. So it's at Yanir Bariam, written as one word.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 544,
+      "start": 2858.77,
+      "end": 2859.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Great.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 545,
+      "start": 2859.41,
+      "end": 2875.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "And I'll post it on my Twitter and stuff as well in the medium post. But yeah, so thank you. And I guess there's also the summer classes that you guys do and all kinds of stuff. So definitely check it out if you're interested in systems. So thank you again for coming on today, Janir.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 546,
+      "start": 2875.19,
+      "end": 2875.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "My pleasure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 547,
+      "start": 2876.16,
+      "end": 2876.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Great.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 548,
+      "start": 2877.52,
+      "end": 2892.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "And by the way, listeners, if you want to support me, you can support me at patreon.com slash reslinmark. That's patreon.com slash r-h-y-s-l-I-N-D-M-A-R-K. And you can also go to staketree.com slash reslinmark if you want to stake-eath. Okay, goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 549,
+      "start": 2894.61,
+      "end": 2895.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Wait.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 550,
+    "withheld": 0,
+    "published": 550
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

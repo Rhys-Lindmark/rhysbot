@@ -1,0 +1,2727 @@
+{
+  "schema_version": 1,
+  "id": "podcast-dd782c2937061a423dfd",
+  "title": "#22 Julie Penner, Techstars: Building Teams with a Process-Leader Loop and Vulnerability-Based Trust",
+  "published_at": "2017-11-24T22:59:17Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/22-julie-penner-techstars-building-teams-w-the-processleader-loop-and-vulnerability-based-trust",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/360508631-the-rhys-show-22-julie-penner-techstars-building-teams-w-the-processleader-loop-and-vulnerability-based-trust.mp3",
+  "youtube_id": "XgEZwpeV6Fg",
+  "youtube_url": "https://www.youtube.com/watch?v=XgEZwpeV6Fg",
+  "audio_sha256": "7530ee4696b3335788d5eefb6e650eda5e4ec7e7da3734973283d5d75a2adb15",
+  "audio_duration_seconds": 2477.6620625,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 7326,
+    "unknown_words": 157,
+    "unknown_words_fraction": 0.021430521430521432,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 13.01,
+      "end": 13.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 13.53,
+      "end": 20.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "episode is brought to you by Shapeshift.io, the easiest, fastest, and most secure way to swap your digital assets.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 20.73,
+      "end": 21.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 21.29,
+      "end": 26.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "run the risk of leaving your funds on centralized exchange. Visit Shapeshift.io to get started today.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 30.26,
+      "end": 108.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello, everybody. Today's episode is an interview with Julie Penner, a director at TechStars Boulder, and I actually went through TechStars Boulder in 2015 with a music education company Edify. And Julian and I, we talk a lot about human systems. It's the first real interview that I have on human systems, which are like mental models, lean, things like that. And for those of you who have listened to the show before, I've done a lot of concentration on blockchain. But blockchain and the software systems there and the macro philosophical future systems there, they're all systems. And so is what Julie and I talk about today, which are these kind of human systems. And there are kind of two key points that we talk about. The first is... is Julie talks about this loop between processes and leaders, where you make processes and those processes kind of determine what the leaders are doing, and then the leaders create new processes. And I think that this loop that she talks about is very, very similar to this tech society loop that I kind of harp on, where tech influences society, influences tech, and goes back and forth. And the thing I actually loved with what Julie said about this process to leader loop is that it builds trust. And this is something that's not often talked about, but how lean and iteration and those kinds of things, it's not just a way to prioritize risk. It actually actively builds trust within your organization. So that was fascinating. And the other thing we talked about today is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 108.66,
+      "end": 109.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "around",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 109.72,
+      "end": 159.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the specific kind of trust, this vulnerability-based trust. And this is something that is this kind of tension, especially within the blockchain community, around what's more important? Vulnerability-based trust or trustlessness. I actually did this poll on Twitter recently, and it was about 70-30 towards trustlessness. There were only seven votes, but I think that there is this emphasis on tech and this emphasis on trustlessness. But I'm also very convinced by what Julie says today around you've got to build your company from the inside out, and you've got to start with this vulnerability-based trust. And you can even expand that to society. You can say, hey, it's great that we all in society are pushing this trustlessness infrastructure. But... We also have to build it from the inside out and start creating these really great relationships with the people around us based in vulnerability-based trusts. So with that, hope you enjoy the episode.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 168.63,
+      "end": 207.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello, everyone. My name is Reese Lindmark, and you're listening to another episode of Creating a Humanist Blockchain Future. And in this podcast, we take a systems thinking approach to doing good in the world. And so there are a couple different series that focus on different system scopes. And today we're focusing on series B, human systems. So this is where we talk about lean and agile and mental models and communication. And we're essentially asking the question, how can you work, live, and communicate more effectively? And I'm very happy to introduce Julie Pinner to the show today. Julie is the director at TechStars Boulder, which is actually a program that I went through. is reading 100 books this year. So Julie, thanks for being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 208.08,
+      "end": 209.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Thanks, Rhys. Thanks for having me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 209.66,
+      "end": 210.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I'm really excited to chat.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 212.44,
+      "end": 233.79,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So, and Julie and I've been going back and forth with various book recommendations, and we just thought it made sense to kind of hop on the show. And I think that, you know, to start off, before we dive into some of these specific things and specific frameworks that Julie's thinking about, first, Julie, kind of... Why are you reading 100 books this year? What made you do that and kind of what books are you looking to read?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 234.61,
+      "end": 235.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 235.05,
+      "end": 272.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "was thinking about the why here for me because I don't think I have a clear moment when it came to me other than I was experiencing a lot of people that I respected in the business community and the entrepreneurial community who have read very deeply and widely. And I felt very behind, right? Like, wow, I haven't read a lot of these books that people reference. I thought, well, I wonder if there's a way to catch up. And then in typical, my strength finder profile is input. All right, that was a book I read this year. But in typical input style, I wanted the more the merrier. So I set kind of an audacious goal. And 100 seemed like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 272.82,
+      "end": 273.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 273.44,
+      "end": 280.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "don't know, an audacious number. Like 100 seems kind of lofty. So if I missed that goal and I read",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 280.62,
+      "end": 281.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "80,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 281.7,
+      "end": 291.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then I'll have had an incredible year. And it seems like I can't miss. So I guess that's how I came up with. I wish there was a better story to it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 291.37,
+      "end": 291.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 291.91,
+      "end": 325.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "actually, that's very aligned with why I read a book a week, so only 52 books a year. But it's a very similar vibe where it's like, hey, you kind of look at a lot of these people that you respect in the world. You're like, wow. they're reading a lot. And I'm kind of, you know, and you kind of want to be there with them so that you have this great lattice of mental models and frameworks to kind of approach the world and address the world. So I think it's a similar kind of reasoning. How do you, though, Julie, how do you bucket the books that you're reading and the learning that you're doing? I love thinking about this bucket level. So how do you kind of bucket them and like categorize them?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 326.26,
+      "end": 326.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 327.0,
+      "end": 360.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I would say that there are, There's some thinking that I've been doing around Lean and teams and leadership, and those were clear buckets for me at the beginning of the year because I felt like those were topics. I wanted to read a lot about leadership. I wanted to read more about teams. I wanted to read more about Lean. And so I made those choices very... very cognizantly. But there was also a lot of books that ended up on the list that I didn't think I was going to read or didn't easily fit in one of those lists because somebody recommended it, somebody that I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 360.15,
+      "end": 360.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "really",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 360.69,
+      "end": 374.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "respect said you should read this book. And I've found over the year that a lot, not all of those recommendations have been really worthwhile. So some of them that don't fit cleanly in that bucket or any of those buckets. And that's okay. They've been,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 375.13,
+      "end": 375.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 375.41,
+      "end": 389.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think you need a lot of variety. I am. pretty strictly nonfiction. And I've also gotten a lot of upside out of learning how to read a lot of books. It's a skill, I think. And it's one that I'll carry forward, even after the year ends.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 390.1,
+      "end": 390.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 390.64,
+      "end": 407.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that makes sense. I feel like I've had a similar trajectory where you have these initial buckets in your mind that get you going. And then as you dive deeper with those, they kind of expand into the sub buckets. And other people are recommending things to you that you're like, this isn't quite a team book or a leadership book, but I want to read it anyway. So I'm going to do it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 409.39,
+      "end": 436.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So thinking about, so kind of diving then into, so you're reading all these books and we're at a high level we're thinking here and the work that Julie does essentially helping kind of startup founders, you know, make great businesses and make great teams to make great businesses. So Julie and I were talking before the show a little bit about a little bit about this triangle that she's thinking about, that kind of she is a way to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 436.29,
+      "end": 436.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "group.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 437.44,
+      "end": 442.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "create great teams. So Julie, could you talk more about this triangle? That's your, you're envisioning.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 443.38,
+      "end": 450.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, I think one of the things that we have seen are in my reading, and I've seen it play out in the programs with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 450.97,
+      "end": 451.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "startups,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 452.51,
+      "end": 452.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 452.51,
+      "end": 453.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 453.73,
+      "end": 462.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "need a couple of ingredients or the teams that move really quickly or the ones that you love working with or you see that are successful. They have a couple of things in common.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 463.15,
+      "end": 463.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "One",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 463.59,
+      "end": 468.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is they adapt. adopt some of the process, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 468.74,
+      "end": 468.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 468.74,
+      "end": 487.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "lean, whatever level makes sense for them for the size of company they are, they put some process in place. They put in retros. They put in standups. They put in some strategy. And they get smarter about how to do that. And it grows, it becomes part of their foundation and it grows with them as they grow their business. So that was one thing. But how,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 488.28,
+      "end": 488.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 488.36,
+      "end": 503.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "why did they choose to do that is another level deeper, I think. And started getting into, you know, leadership. And, you know, if the leader doesn't buy into lean, it's not going to work. So it seems like an important",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 503.18,
+      "end": 504.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "part",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 504.12,
+      "end": 505.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of the puzzle to understand.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 507.46,
+      "end": 509.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And then it got more interesting as I started",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 509.6,
+      "end": 510.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 510.16,
+      "end": 520.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of reading about leaders and collaborative leaders and then leaders who are secure or not secure, like if they're anxious or they're avoidant,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 520.98,
+      "end": 521.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 522.54,
+      "end": 537.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "kinds of leaders, how does that impact their ability? to create a safe space for their company to have a ton of creativity and to have their teams flourish and make the best decisions, right? And so how does that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 537.2,
+      "end": 537.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 537.66,
+      "end": 540.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "relate back to lean, right? Where the team",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 540.0,
+      "end": 540.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 540.56,
+      "end": 541.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "really adopting",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 541.84,
+      "end": 542.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 542.64,
+      "end": 554.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "best way to work together. They all seem very interconnected. And when one, like figuring out a piece of making one better made the other two pieces better as well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 555.58,
+      "end": 555.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 555.96,
+      "end": 560.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just an idea that I keep thinking about, right? Like how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 560.52,
+      "end": 561.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "lean,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 562.32,
+      "end": 566.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the process builds trust, but leaders also build trust",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 566.0,
+      "end": 566.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and trust",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 566.74,
+      "end": 567.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "help",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 567.18,
+      "end": 567.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "teams",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 567.92,
+      "end": 569.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "flourish,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 569.48,
+      "end": 569.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 570.1,
+      "end": 573.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So what are the things that can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 573.34,
+      "end": 574.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "help",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 575.08,
+      "end": 578.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "bring lean to companies, but also?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 579.05,
+      "end": 579.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 579.77,
+      "end": 582.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "create better leaders because they can both make better teams.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 582.45,
+      "end": 605.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. So is it, when you think about that triangle, one side of it is kind of the process level, you know, lean level, prioritization, minimization of risk kind of stuff. And then the other side is kind of the human level, the leader level, the secure leader level. Is the third part of that triangle kind of the output there, which is the high performing team? Or how do you, is that, is that the correct triangle that you're talking about?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 606.04,
+      "end": 606.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 606.74,
+      "end": 638.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, I'm not sure I know. I feel like it's an idea that I'm still playing with. Like I feel like I can tell stories. I'm in the level of thinking that I'm at, I can tell stories about why one works or what it looks like when it's right or when it's going poorly. But I can't tell you more about how the model works like ins and outs. What I know, like, great companies have this. cycle",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 638.14,
+      "end": 639.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "figured",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 639.24,
+      "end": 643.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "out. Just like in Lean, we do plan do check adjust, right? They have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 643.4,
+      "end": 644.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "great",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 644.1,
+      "end": 662.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "teams who are operating and are great learning organizations have figured out that plan to check adjust cycle. I think teams that are healthy and learning organizations and where people are thriving, right, which is sort of different. Like lean doesn't suppose,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 663.06,
+      "end": 663.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "doesn't,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 663.98,
+      "end": 672.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "uh, you know, assume that the people who are in the company are thriving and developing as part of being in that company.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 672.36,
+      "end": 672.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 672.78,
+      "end": 674.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think it could, but it feels like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 674.48,
+      "end": 674.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 674.9,
+      "end": 678.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "next level of lean. And I think that's what I'm talking about, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 678.66,
+      "end": 678.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 678.98,
+      "end": 749.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it, got it. Yeah, and I think I like to kind of, what I'm hearing you saying is kind of mapping that onto the process level and then the human level, kind of. That you can have the process level without the human level, and you could have the human level without the process level, but there's a nice system loop between them where if you have the good processes, it's likely to make good trust, and if you have the good trust at the human level, that's likely to make better processes. Yeah, so I hear what you're saying there for sure. And I think the other thing that I liked hearing what you said, and this is kind of a thing, as one dives deeper into these various mental model books and learns about the various best practices and as we stand on the shoulder of giants, You can kind of hear in other people's words the kind of frameworks that they're using. So there are kind of two that you use there that I just want to point out. The first is you're talking about secure or insecure leaders, and I'm reminded of the secure and insecure attachment. And then you briefly mentioned, hey, within insecure attachment, there are anxious insecure attaches, and then there are avoidant insecure attaches. Is that – were you referencing that kind of attachment? mechanism there? Is that what you were talking about?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 749.26,
+      "end": 797.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, yeah, I'm referencing, you know, very, a little hesitantly because it's not my primary field by any stretch. But yeah, I think attachment style does matter when you look at leaders and what, how they primarily relate to people in their, their closest circle. We've seen it play out at the founder level many times. And being, aware of your attachment style as a founder and then addressing you know then I can be aware of my fat co-founder's attachment style or styles and then I can be aware of how those interactions are affecting my company from the inside out how are they affecting our team how are they affecting our like I like you said our process right that kind of awareness um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 797.11,
+      "end": 798.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 798.51,
+      "end": 808.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know of attachment myself I think can be very very powerful And something that honestly, most, you know, most founders that we talk to when they come into the program have never",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 808.64,
+      "end": 809.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thought",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 809.74,
+      "end": 810.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "about.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 810.24,
+      "end": 810.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yep,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 811.0,
+      "end": 846.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yep, exactly. Yeah, there's, and we're going to dive into a little bit deeper on that. And second, this kind of... trust and emotions and those kind of things. But before we do that, I want to, I want to actually take a step back and talk about, you mentioned there this plan due check cycle. And I think that's part of these kind of mental models in general, which is there's a bunch of these different, like, iterative mental models. There's the plan, do check one, there's the build, measure, learn cycle from lean. For you, Julie, which kinds of cycles and kind of iterative cycles and systems are you, do you think about in addition to plan, do check, or build, measure, learn?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 847.66,
+      "end": 864.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Oh, you know, the one that came up to my, I'm sure there are others, but the one that popped right into my brain was the weekly. or like the temporal cycle, like the daily, weekly, monthly, quarterly annual. Because they're just, I think about it in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 864.89,
+      "end": 866.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 866.17,
+      "end": 893.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "company perspective, right, that consistency that can be a level of security that you add to your team by doing a daily stand-up, a weekly retro, a monthly planning, a quarterly offsite, right? And I can rely upon that and how that builds security for me. as an employee, right? So I think about those kind of cadences. And then just on like a human level in our lives, right? We have things like holidays that mark",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 893.04,
+      "end": 893.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "years.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 894.2,
+      "end": 899.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And we, you know, we close in open days. We closed open weeks with ceremony. And I think that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 899.92,
+      "end": 900.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 900.82,
+      "end": 906.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you said what kind of other iteration or other cycles, I think about those a lot.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 906.96,
+      "end": 907.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 907.48,
+      "end": 909.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think they're so human to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 909.16,
+      "end": 910.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "have.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 911.66,
+      "end": 920.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the repeatability, even if it's slightly different this time, that there is some percentage of what's going to happen next be predictable.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 920.16,
+      "end": 920.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 920.94,
+      "end": 924.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Right. And actually, I'll take it one step further, which is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 924.98,
+      "end": 927.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 927.29,
+      "end": 933.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a highly uncertain ecosystem or environment, like a startup, right, where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 933.85,
+      "end": 936.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "unpredictability",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 936.98,
+      "end": 940.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is a threat the same way a physical threat.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 940.7,
+      "end": 941.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Would",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 941.14,
+      "end": 941.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 941.42,
+      "end": 941.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 942.0,
+      "end": 952.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So they've done this research right that that threats to your emotional and psychological well-being are you feel them in the same way in your body as physical threats right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 952.12,
+      "end": 952.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 952.26,
+      "end": 957.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "why I'm chasing you right? So think about the amount of unpredictability in a startup",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 958.41,
+      "end": 958.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 959.37,
+      "end": 981.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And you really can't control what's going to happen in the company. And that's a ton of stress emotionally, physically, psychologically on your body. But the process, the lean process of having a predictable schedule of check-ins, retro's, planning, checkouts, whatever it is, right, I think adds to your security in a company.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 981.77,
+      "end": 982.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 982.33,
+      "end": 993.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you can't control the outcome, but you can control the process. And that's how you get. That's how you feel safe in a wildly erratic situation. So I don't know if I answered your question about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 993.0,
+      "end": 994.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "loops.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 994.36,
+      "end": 1086.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "You did. I think that, I mean, so two quick things. One on the note that you just said there, which is you can't control the outcome, but you can control the process, that's one of my favorite things to do when you're in a time of stress, which is to say, hey, what can you, to bucket things into those two buckets, what can you control and what can't you control? And then once you do that, just like, oh, I can't control. all of these things that I was worrying about, don't worry about them, you know? So really concentrate on that process. So I think you did answer my question. What I'm hearing is, and we've kind of talked about three different system level loops thus far. The first is kind of the systems thinking between the human level and the process level or between like lean stuff and kind of communication, emotional things. Then we talked about kind of these iteration cycles with plan, do check, build, measure, learn. And then what you just answered with there was the kind of like time-based cadence and consistency. consistency cycles where you're just saying, hey, you know, you got to do something. What do you do every day? What do you do every week? You know, what do you do every quarter? That kind of stuff. So yes, I think you answered my question as I, there was no right answer and you gave some kind of a system. So I check it off the box is correct. Let's go, let's kind of transition away from kind of the systems thinking, which I do love doing. But going deeper into what you were talking about with, you're talking about insecure and secure attachment and how a lot of founders come in not thinking about that side of things. And Julie and I actually wanted to talk about this book called, in everyone culture. And Julie, I think it's had, it's definitely had a huge",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 1086.15,
+      "end": 1095.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "impact on my life. And it sounds like it's had a big impact on kind of your life and your mental model. So Julie, could you kind of give us an overview of what that book is about and why I was so impactful for you?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1096.39,
+      "end": 1117.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, I'll do my best. And I'm curious, I'm curious for yours too, because it's been a few months since I've read it. It was funny, right when I was reading the book, I was giving a talk on a talk called Doing More the Right Things Faster. It's adapted from Zach Nees, who's our VB of Education. And it's a great talk about getting more of the right things done.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1118.39,
+      "end": 1119.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1119.95,
+      "end": 1126.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sort of touch on this leadership and teams level at the end and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1126.07,
+      "end": 1126.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1126.99,
+      "end": 1132.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "deliberately developmental culture, which I'll come back to. And one of the questions that I got was,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1132.77,
+      "end": 1132.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1132.97,
+      "end": 1138.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there any companies that are able to do this? Right? This is sort of like, yeah, that sounds great, but nobody actually does all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1138.99,
+      "end": 1139.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1139.49,
+      "end": 1140.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "right? This feels like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1141.15,
+      "end": 1142.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "some",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1142.23,
+      "end": 1144.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "pie in the sky, unobtainable.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1146.46,
+      "end": 1146.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1146.86,
+      "end": 1150.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you give me an example of a company that can actually pull this off, right? Sort of the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1150.52,
+      "end": 1152.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "tone. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1152.77,
+      "end": 1160.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I didn't have a, I said I have a couple of examples of companies that you wouldn't necessarily know because they're small. They've been through my program. They're still startups.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1161.67,
+      "end": 1162.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1162.19,
+      "end": 1172.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I didn't have a great answer at the time. But in reading in everyone culture, it talks about three companies that deliberately develop",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1172.69,
+      "end": 1173.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "both",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1173.97,
+      "end": 1179.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "at a personal and a professional level, everyone in their company. And...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1179.66,
+      "end": 1180.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1180.0,
+      "end": 1185.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "way I see that is it doesn't matter who you are or what you're working on.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1186.98,
+      "end": 1189.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And it doesn't matter who the founder is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1189.86,
+      "end": 1190.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1190.82,
+      "end": 1215.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what their background and what things they are working on. Where you come in is where they're going to start working on the personal and professional path for you. And by doing that, there's a synonymous. There's an equality here, which is the way to grow my company is to grow my people.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1216.01,
+      "end": 1216.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1216.53,
+      "end": 1228.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that was the core belief that really stood out to me that was similar to all three of these companies. That's not what you hear most companies saying. That's not how you hear most companies talk about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1228.09,
+      "end": 1229.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1229.89,
+      "end": 1247.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "They talk about extraction or they talk about a tour of duty or they talk about or it's nothing, right? It's completely. They're completely unaware of how their resource that is their human resource. But for these companies, and it gives a lot of very vibrant examples,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1250.09,
+      "end": 1251.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the way forward",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1251.15,
+      "end": 1252.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1252.03,
+      "end": 1260.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "them as a company is through their people. By growing their people, they grow their company. And I was like, oh, my God, this is the best explanation I have for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1260.97,
+      "end": 1263.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1263.45,
+      "end": 1272.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "an intentional founder and... with a founding team around her or him would want to build if they could build",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1272.9,
+      "end": 1273.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1273.52,
+      "end": 1275.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "company that everybody would want to work",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1275.0,
+      "end": 1275.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "at.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1275.92,
+      "end": 1308.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Or that every, or where maybe not everybody would want to do that work, but that if you were there, you could have a fulfilling, meaningful job where you grew and became a better person because of the work you're doing and because of the people that you're around. And those are the kinds of companies I want to build. I want to help founders build. those companies. And so this was like, it felt, you know, not a keystone exactly, but it felt like unlocking a piece of, at least the words to talk about it. And a lot of very specific examples about how to do it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1308.44,
+      "end": 1403.85,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah. I do, like you say, there's the kind of the big level about. The feelings and the vibe. And then in that book, they do give all these specific examples, which are great. The book, one of the three companies that they cover in the book is Bridgewater, which is this really big, I think it would be called a hedge fund, I'm pretty sure. And in that culture, they have some really intense things that are like... Anybody can essentially be as honest with anybody else in the company as they want, where they say, hey, I think you did a really bad job or whatever. Then you can say that to the founder, you know, and he actually kind of encourages it in some ways. I think about the, when I think about the way to grow the companies to grow your people piece, in the book they talk about... Kind of the key concept there being frankness, essentially. Like how frank are you within your company? You know, from like 1 to 10, how frank are you on matters of importance? And if you're like a 3, that means there's all the stuff that you should be saying but aren't. And that's for them what they kind of emphasize. It's like think about all those times where you're not saying things, all these processes that aren't changing, all these kind of feedback that's not happening, all the growth that's not happening. And if you don't have all that... happening, then yeah, of course you might think that by focusing on the people and focusing on learning, focusing on growth, that you're actually not, it's not connected to business outcomes. But in fact, when you think from the business outcomes perspective, a key input to that is all the feedback and all the growth or whatever. So I think it's from this kind of compounding returns perspective is how I think about it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1404.09,
+      "end": 1404.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1404.55,
+      "end": 1417.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think you're square on, right? And we've seen other authors that are tackling this. this idea of frankness, right? The one that comes to mind the most is radical candor. You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1417.84,
+      "end": 1418.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1418.64,
+      "end": 1422.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "she talks about, I think it's Kim Scott, talks about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1422.06,
+      "end": 1423.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1423.04,
+      "end": 1427.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "importance of having candor. And, you know, she calls,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1429.16,
+      "end": 1449.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I'll talk about this second, the thing that blew me away about the organizations in in everyone culture and I think it's really important to know is that it's not people are frank but it's it's for the right reasons right it's so that I I will be honest with you about the thing that I think you can do better because I want you to be better",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1449.5,
+      "end": 1450.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1450.62,
+      "end": 1453.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's the piece that if you and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1453.45,
+      "end": 1454.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'll",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1454.95,
+      "end": 1456.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "use another author um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1456.29,
+      "end": 1458.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "oh",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1458.33,
+      "end": 1459.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1459.11,
+      "end": 1460.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1460.97,
+      "end": 1463.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "gonna plank on his name see I need the books in front of me",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1463.51,
+      "end": 1463.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1463.75,
+      "end": 1465.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "all good which which book are you talking about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1465.36,
+      "end": 1470.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Parker Palmer. He talks about if you really",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1470.14,
+      "end": 1471.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "love",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1471.42,
+      "end": 1471.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "someone",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1471.98,
+      "end": 1473.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1473.45,
+      "end": 1489.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you really care about them, you'll tell them the thing that they need to hear, even if they might be mad at you for saying it, right? Like you're willing to take on whatever the consequences of their reaction might be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1489.09,
+      "end": 1490.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1490.37,
+      "end": 1492.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you love them enough to make them better.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1493.27,
+      "end": 1493.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1493.93,
+      "end": 1552.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think that this theme, and I actually just wrote an article about this, this theme of... This frankness theme, you're definitely right that it shows up in radical candor. The other one that shows up within is five dysfunctions of a team. And the kind of bottom level is you need to have kind of this vulnerability-based trust. And vulnerability is kind of another version of frankness. But lots of people think of frankness as like being frank with others about their bad stuff. And vulnerability is kind of being vulnerable with others about your own bad stuff. And so kind of building up that vulnerability-based trust. to then have conflict, to then disagree and commit on things is kind of the crucial three underlying parts of five dysfunctions of a team. So I think that they're all kind of circling around the same subject of, yeah, you've got to be frank with people. And if you're not frank with people, then there's all the stuff that you're hiding. And people then later learn about it. And it's all sad.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1553.85,
+      "end": 1554.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1554.15,
+      "end": 1581.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "complete, those are some great books. I think that we're, have been really helpful to me around better conversations. And, and I think, you know, and now that I'm thinking about, there has been a bucket that I kind of unintentionally chose of books this year that were about conversations, right? I can think of other books that I read like, never split the difference or crucial conversations.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1583.99,
+      "end": 1585.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Or there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1585.0,
+      "end": 1594.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "have been a couple of those that some of them just have. What I wanted was to ask better questions. Really, that was the goal of reading those books. Like, I,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1596.16,
+      "end": 1610.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "part of frankness, like, I think you can be frank, but in a way that asks a Socratic question. I love the Socratic style. I think it, I've been influenced by people who have taught me a lot through the Socratic style.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1613.93,
+      "end": 1614.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1614.33,
+      "end": 1617.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just such a more inviting way to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1617.3,
+      "end": 1618.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "coach",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 1618.92,
+      "end": 1621.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and to help others grow, in my opinion.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 1621.92,
+      "end": 1639.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep, yeah. And that's all kind of part of this like implementation side here. You say, okay, your goal is to be frank with people. How can you, being frank is scary, you know, conflicting with people is scary. How do you do it in such a way that, that is respectful to the other person and all those kinds of things?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 1640.53,
+      "end": 1641.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 1641.07,
+      "end": 1669.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "episode is brought to you by Shapeshift.io, the world's leading, trustless digital asset exchange. Quickly swap between dozens of cryptocurrencies, including Bitcoin, Ether, Dash, Bitcoin Cash, Auger, Golem, and many more. And this is not your typical crypto exchange. You don't need to create an account or share your personal information, and your funds are never stored on Shapeshift. This means that your hard-earned digital wealth is never up for grabs by hackers or other malicious actors.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1669.87,
+      "end": 1670.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "To",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1670.15,
+      "end": 1677.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "get started, visit shapeshift.io, choose the tokens you'd like to swap, input your receiving address, and send your funds. It's that easy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1682.39,
+      "end": 1700.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So, Julie, if, you know, for founders that are listening to this right now, how would you recommend, you know, for them, if they're like, okay, I want to have a more kind of frank, honest culture, what are some things that you would recommend them do to kind of check in or to kind of implement within their company to make sure that they have that kind of atmosphere?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1701.91,
+      "end": 1702.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1702.65,
+      "end": 1714.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "um. Um, so I, I like starting small. And I don't think you have to boil the ocean from the very beginning, because I think you're right. If you're not, if you're not used to that kind of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1714.69,
+      "end": 1715.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 1715.83,
+      "end": 1735.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that frankness, that it can be like, oh, I can't flip the switch and go all frank all the time. Um, you know, my relationship just blow up. And I think there's some, I feel that risk. Um, there are, there are two things that I think help. and that you won't be familiar because you've been through the program. One is a red, yellow, green check-in.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 1736.14,
+      "end": 1736.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 1736.52,
+      "end": 1742.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we try to do it daily, and we try to do one for home and one for work. So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 1742.6,
+      "end": 1743.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 1743.0,
+      "end": 1764.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, red is I'm here, but I'm not here, or there's something going on in my life that is totally taking my attention. Green is, I'm all good, I'm completely here. You know, green means go. I'm good. Yellow is somewhere in the middle, right? And you can really choose any color you want in there if you want lime green or you want orange or whatever. But we'll do a check-in around, kind of around the heart at the very beginning of the day or with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 1764.93,
+      "end": 1765.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 1765.39,
+      "end": 1769.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "people you work most closely with. And you do one for home and one for work",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 1769.15,
+      "end": 1770.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 1770.05,
+      "end": 1778.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that you know if my business partner, if his two-year-old infant kept him up all night and he got three hours of sleep, I know",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 1778.03,
+      "end": 1778.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 1778.67,
+      "end": 1779.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "he checks in,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 1779.85,
+      "end": 1780.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 1780.11,
+      "end": 1785.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, orange. because he didn't sleep at all, like, it's not about me and I have more context.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 1785.79,
+      "end": 1786.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It builds",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 1786.01,
+      "end": 1791.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "some trust. It's, you know, to use Bray Brown's language, it's a marble in the trust jar,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 1792.11,
+      "end": 1793.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right? It's just, and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 1793.49,
+      "end": 1811.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you add that context to that person each time. So that's like a little thing to do. And the great thing about a check-in is that you can reveal as much or as little. as you'd like. And so whatever you feel like the safety bar is, and I feel like as you gain trust over time with your team, you can share more.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 1812.22,
+      "end": 1814.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "One quick other note on that before",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 1814.12,
+      "end": 1857.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 1857.18,
+      "end": 1860.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah couldn't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 1860.46,
+      "end": 1865.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "agree more that like the secure leader is one that's willing to lead from a lead",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 1865.04,
+      "end": 1868.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "uh when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 1868.18,
+      "end": 1871.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it comes to vulnerability they're willing to lead they're willing to be the first one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 1871.54,
+      "end": 1872.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah yeah Cool.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 1873.25,
+      "end": 1875.31,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, so what's your second one that founders can do?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 1875.63,
+      "end": 1886.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "The other one that I also think you'll be obviously familiar in anybody who's been around much lean is a retro. We retro all the time. I retro today.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 1888.25,
+      "end": 1888.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 1888.81,
+      "end": 1924.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's another way to just clear the air and get out all the best ideas and to build trust as a team that you're doing the right things and people. you're seen, heard, and understood, right? Like, all of the plan do check adjust things that you get out of doing a retro where you learn from your mistakes and all those things, that's true. I appreciate that. That's a very logical way to appreciate what a retro can do for your company. But there is a trust-building factor here that's more emotional. And I think,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 1925.97,
+      "end": 1926.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 1926.37,
+      "end": 1929.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, I don't hear the lean culture talking about how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 1931.44,
+      "end": 1939.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that process builds trust, which then creates greater collaborative teams, like better collaboration. But I think it's true.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 1940.2,
+      "end": 1967.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, I like that. Yeah, because in the retro, a classic way to see is like, hey, we did this A-B test and, you know, this quantitative A-B test, and this one performed 20% better than this one, so we're going to put the red button on instead of the green button. But there's all these other parts of the retro, which are just like, hey, we as a company are allowed to look at our mistakes. We as a company are allowed to kind of iterate over time. I think that is kind of a crucial part of it as well. That, as you say, is not as much to emphasize, but it's definitely part of that process.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 1968.42,
+      "end": 1974.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, or like if I'm the quiet person on the team, I know I will have a place where I'm heard.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 1974.58,
+      "end": 1974.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 1975.78,
+      "end": 1979.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Right? Ah, trust marble in the trust jar. Right? And those add up over time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 1979.96,
+      "end": 2020.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep. Yeah. Cool. Well, I like both of those. Okay, so to kind of, to get into, we're going to concentrate on this one final topic as we get into wrap up mode here. And this topic is around, you know, we've been talking a lot about these kind of candor and frankness within the context of a company and a business and within co-founders and within your whole team. But, you know, Julie and I were also talking about what this looks like, not just professionally, but also kind of personally and with, like, relationships more generally. So, Julie, do you want to talk about what's on your mind from, like, the just more general relationship-wise and, like, cross-applying between professional and personal?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 2020.84,
+      "end": 2021.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 2021.56,
+      "end": 2027.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think it relates back to a little bit about what we were saying, about frankness. And...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 2028.06,
+      "end": 2028.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 2028.3,
+      "end": 2035.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, when you're starting a company, especially you and your co-founders, are in a relationship with each other, right? You're in this long-term",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 2035.5,
+      "end": 2036.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "commitment",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 2036.64,
+      "end": 2039.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to each other and to a greater purpose,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 2040.02,
+      "end": 2040.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 2040.74,
+      "end": 2043.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to make this thing happen. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 2043.9,
+      "end": 2045.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 2045.95,
+      "end": 2096.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 2096.58,
+      "end": 2097.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 2097.18,
+      "end": 2102.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you, by you through you. And if you're doing that with another person, that's a really special relationship. So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 2102.62,
+      "end": 2105.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um, You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 2105.08,
+      "end": 2114.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, I've seen enough co-founder relationships that didn't work out in the end, and they're always so hard",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 2114.02,
+      "end": 2116.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 2116.46,
+      "end": 2120.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I want as many tools as I could possibly have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 2120.78,
+      "end": 2123.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to help",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 2124.34,
+      "end": 2140.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "those relationships when I see them. Because I have the opportunity to work with founders when they're at the very beginning of their companies, and sometimes you can help. then build better relationships for the future. Sometimes you can't, but you can certainly, I will continue to try as long as I'm doing this work.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 2140.99,
+      "end": 2170.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Nice. Yeah, and like you say, it's nice to be able to take things from the kind of... classic personal world and say, hey, well, actually there's this book on marriage and it, you know, recommends that you do this. And like, it's going to be super effective within a co-founder relationship likely. And I know for me personally, within my startup that went through Tech Stars Boulder, some things that were really helpful for us were, you know, nonviolent communication and the five love languages. And those were things that are traditionally seen in kind of the relationship perspective. It's like, no, no,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 2170.81,
+      "end": 2171.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "those were",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 2171.05,
+      "end": 2179.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "super helpful for us. And then the nice thing, too, is that when you enter a, you know, a romantic relationship or whatever, you've done all this kind of reading for your",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 2179.03,
+      "end": 2179.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "professional work.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 2180.29,
+      "end": 2183.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. And you're like, oh my God, this stuff is great over here too.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 2184.19,
+      "end": 2193.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, like, you know, right? David Cohn is one of the founders of text cars and he teaches a thing about fundraising, but he's really teaching is reflective listening, right? And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 2193.89,
+      "end": 2194.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 2194.15,
+      "end": 2207.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like therapists teach. teach people how to do this, but here you are learning how to do it with investors, right? And then it is very applicable. I can think of, you know, half dozen books that are like that. And you mentioned two great ones",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 2207.89,
+      "end": 2209.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 2209.31,
+      "end": 2227.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "are, like, that's the benefit, right? By making yourself better in this sense for your team and for your company, you're doing work on yourself. And you're, you know, when you walk out the door and you work and you go home or to the rest of your life. you know, you're still that person who's done that work, to your point. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 2227.66,
+      "end": 2228.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 2229.29,
+      "end": 2235.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think when we talk about, so one of the things that we're most passionate about, I think that has changed for us in the last",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 2235.33,
+      "end": 2237.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "year,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 2238.55,
+      "end": 2245.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and it's taken us really six months to get the words around, the right words to describe is building companies from the inside out.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 2246.45,
+      "end": 2246.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 2246.85,
+      "end": 2250.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this is what we mean, right? Like, if you're going to do the work on yourself,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 2250.47,
+      "end": 2251.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 2251.07,
+      "end": 2258.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "going to have an impact. on who you are as a found, your work, and that your work will have an impact on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 2258.55,
+      "end": 2259.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "your",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 2259.33,
+      "end": 2260.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "founding team,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 2260.55,
+      "end": 2261.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 2261.33,
+      "end": 2267.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that founding team will have an impact on your company, which will have an impact then hopefully on your community.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 2268.03,
+      "end": 2268.13,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 2269.21,
+      "end": 2277.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Right. But it all goes back to the beginning, which is doing the work on yourself. And I think as an investor that... That absolutely gets me up in the morning.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 2277.97,
+      "end": 2278.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 2278.11,
+      "end": 2288.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "want to, I'm excited to work on at the business level with companies and help them build their businesses, but I'm just as excited to work with founders on who they are for this reason.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 2288.83,
+      "end": 2289.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Boom.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 2289.97,
+      "end": 2326.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Well, with that, thank you so much for being on the show, Julie. I feel like we could have talked all day about lean stuff, but I think that it gets more weight than stuff like we talked about on the people, emotional communication human side. And so, yeah, building companies from the inside out seems like the way to do things. By the way, if you're a company, I know that Techstar's Boulder, they are actually, their deadline is over. But if you want to get these learnings from Julie going forward in the future, both these learnings and the learnings that she's had from mentoring hundreds of companies do this stuff, I totally recommend it. The program.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 2328.4,
+      "end": 2328.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 2328.86,
+      "end": 2338.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Reese, I have to ask since I, since I have you, what's been an amazing book that you've read recently? You read one a week. What's the last one that really stands out to you?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 2338.4,
+      "end": 2383.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Well, yeah, I mean, so for me, it's actually a book that you recommended called, you and Zach Nees recommended called Spiral Dynamics. And Spiral Dynamics is a book about, is a book similar to this other book called Reinventing Organizations. And Spiral Dynamics was written in like 1995, I think, or 1997. And it's... essentially conceptualizing of humanity over time and how we think about ourselves and what kind of our value sets are at a given point in time and what kind of how we make decisions and things like that. And so by essentially looking at humanity over the course of time, we can see kind of how we're changing in a macro sense. And the key thing for me, especially as I work more in the blockchain realm, is...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 2383.92,
+      "end": 2384.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 2384.36,
+      "end": 2426.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 2427.13,
+      "end": 2427.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Very",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 2427.49,
+      "end": 2429.41,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "cool. I love, um, it's a great book.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 2429.85,
+      "end": 2430.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 2430.51,
+      "end": 2434.35,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it's a funny book. It uses terms like Spiral Wizard.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 2436.23,
+      "end": 2439.01,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "That is my goal to be a Spiral Wizard. Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 2440.55,
+      "end": 2442.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Well, Julie, thanks so much again for being on the show. Thanks",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 2442.69,
+      "end": 2443.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for having me, Reese.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 2443.77,
+      "end": 2458.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And if anybody would like to support the show, you can go to and or listen to other episodes. You can go to patreon.com slash Rees-L-H-M-M-A-R-K. Thanks so much, everybody, and goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 297,
+    "withheld": 3,
+    "published": 294
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

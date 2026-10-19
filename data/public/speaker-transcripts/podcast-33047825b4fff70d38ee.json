@@ -1,0 +1,3789 @@
+{
+  "schema_version": 1,
+  "id": "podcast-33047825b4fff70d38ee",
+  "title": "#47 Richard Burton, Balance: Wallet Standards, ETH Ecosystem Fails, and Escaping Scarcity",
+  "published_at": "2018-08-10T17:06:30Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/47-richard-burton-balance-wallet-standards-eth-ecosystem-fails-and-escaping-scarcity",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/483786336-the-rhys-show-47-richard-burton-balance-wallet-standards-eth-ecosystem-fails-and-escaping-scarcity.mp3",
+  "youtube_id": "SLzc1BHpQZw",
+  "youtube_url": "https://www.youtube.com/watch?v=SLzc1BHpQZw",
+  "audio_sha256": "95522f07fc3c42a76a868fd6be15026399328466acba97a044c6d17685d0c684",
+  "audio_duration_seconds": 2789.8775625,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 9293,
+    "unknown_words": 245,
+    "unknown_words_fraction": 0.026363929839664263,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_1",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.66,
+      "end": 1.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Now",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 1.52,
+      "end": 5.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "entering the Bitcoin Podcast Network.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 17.6,
+      "end": 25.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Today's episode is brought to you by KeepKee, the easy, safe, and simple way to protect your Bitcoin, ether, light coin, and many other digital assets.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 25.74,
+      "end": 26.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 26.12,
+      "end": 29.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "no time like the present to protect yourself from hackers, malware, and viruses.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 30.16,
+      "end": 30.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Visit",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 30.56,
+      "end": 48.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "keepkey.com to order your secure hardware wallet today and use the code Humanist 10 for a limited time 10% discount. And I also have a Patreon in on that people. pay me money, you know, for food or cheese or saltines or whatever. But you know what? I don't want your filthy nation state fiat.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 49.07,
+      "end": 49.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 49.47,
+      "end": 59.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "would, however, take your five-star reviews, though. So if you like the show, please rate it on iTunes or Google Play or whatever. I really would appreciate it. Okay, thank you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 61.16,
+      "end": 61.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 61.56,
+      "end": 120.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "in today's episode, I chat with Richard Burton, the CEO of Balance. We chat about three primary things. The first is chatting about... the wallet that they're building and get his founder's perspective on the crypto wallets ecosystem, how they're looking to differentiate through their U.X and the financial ecosystem, kind of tailoring it for... Dharma, D-Y-D-X, etc. We also chat a little bit about the Wallet Connect standard that they're helping with. And then we move on to the smart contract ecosystem. And we mostly just hate on things. You know, we hate on ES for a bit. We talk about some eth minimalism and why the ETH ecosystem is bad at capital allocation. And at a high level, we chat about how one can actually signal to noise on smart contract. protocols more generally. And the key point here that Richard makes is that you can't make a judgment unless you're curious first and get texture first. And then our final third point here is we chat about the scarcity mindset. And it's something that Richard and I have both gone through to some limited extent. And we chat about how we and crypto can help. So with that, enjoy today's episode.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 126.56,
+      "end": 161.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello everyone. My name is Rees-Lenmark, and you're listening to another episode of creating a humanist blockchain future. In this podcast, we take a systems-thinking approach to doing good in the world. We have a couple different series to focus on different system scopes. And today we're focusing on Series A macro systems where we ask the question, where are we as humanity headed? And we're also going to chat a little bit about the technology system, series C, where we ask the question, how is our digital world built? And to talk about both those things, I'm very happy to introduce Richard Burton to the show. Richard is the CEO and the co-founder of balance, a cryptocurrency wallet. And he also spent short amounts of time at Stripe and Ethereum. So Richard, thanks for being on show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 161.76,
+      "end": 162.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 162.16,
+      "end": 162.86,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "thanks so much for having me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 163.61,
+      "end": 179.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Excide to chat. So let's start Richard with Balance on the balance side of things. We're going to expand and scope kind of overtime in the course of this episode. But starting with Balance, what is Balance? It's another cryptocurrency wallet. Why do we need another cryptocurrency wallet? Tell us about balance.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 180.13,
+      "end": 180.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 180.75,
+      "end": 189.69,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "sure. Yeah, we started a balance initially as a side project to build personal finance tools. And it was built on an API called Plaid.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 190.1,
+      "end": 190.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 190.32,
+      "end": 195.92,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we worked on that for a year. And then the data that planned was being fed got changed a fair bit",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 195.92,
+      "end": 196.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 196.46,
+      "end": 205.94,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "kind of shifted beneath us and the product really wasn't working very well. And so we then Ethereum kind of went crazy and we got sucked back down the rabbit hole",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 205.94,
+      "end": 206.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 206.68,
+      "end": 231.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "kind of came out thinking that there would be some room for some different products to work with some of these new protocols coming out. We tried building several different things over the last year. and have now settled down on a focus on a really great wallet experience for Ethereum, ELC20 tokens, and Bitcoin will be the next protocol we support. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 231.67,
+      "end": 231.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 231.87,
+      "end": 235.09,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that what separates us from many of the different wallet projects out there is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 235.09,
+      "end": 235.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "our",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 235.83,
+      "end": 240.61,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "kind of focus on the user experience and interacting with DAPS.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 240.86,
+      "end": 241.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 241.18,
+      "end": 244.14,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "something that's led us to some really interesting places. And I think we've got some",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 244.14,
+      "end": 245.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "unique",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 245.0,
+      "end": 251.72,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "ideas about how interactions with distributed applications should work. And also about how to present data and information to people that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 251.72,
+      "end": 252.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 252.26,
+      "end": 255.56,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "ways that I think are slightly more palatable than some of the other options out there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 256.89,
+      "end": 257.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 257.25,
+      "end": 267.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "like that. I like, I mean, so two pieces there. We'll talk a little bit more about the UX side of things as a differentiator when we talk about the Wallet Connect kind of protocol project that you're working on.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 267.97,
+      "end": 268.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 268.21,
+      "end": 297.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "before that, I want to ask you just for me as a person, and on the show we've talked some about kind of lean processes and looking at markets and determining risk and determining where customer pain is and what the kind of stuff that you like to work on is. Tell me more about your process that you went through you and your team when you're like, okay. we know we want to enter into this kind of crypto-etherium ecosystem and you kind of started experimenting with different things. What was that experimentation process like and how did you end up with choosing to do a wallet?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 297.89,
+      "end": 298.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 298.77,
+      "end": 307.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Initially we had this kind of tool that showed you all of your money and so we thought kind of adding support for lots of exchanges to this tool that sits in your max menu bar would be really cool.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 307.86,
+      "end": 308.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 308.24,
+      "end": 315.66,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it was kind of good and like people liked it. But but then we kind of realized, well, actually you shouldn't really be keeping any money on exchanges. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 315.66,
+      "end": 316.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "building",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 316.3,
+      "end": 319.5,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a tool that helps people see all of their money on the exchanges",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 319.5,
+      "end": 320.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 320.16,
+      "end": 335.74,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "like a bad idea. And also encourages, it was really a tool that ended up for being kind of part-time speculators. And I myself, I'm not a speculator. So I didn't really have any empathy for that kind of customer. And so I've got to say that in kind of February March this year, we really hadn't found product market fit.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 335.97,
+      "end": 336.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 336.19,
+      "end": 340.11,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the company, quite frankly, wasn't functioning well. And so we went from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 340.11,
+      "end": 340.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "being",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 340.83,
+      "end": 363.74,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "like a distributed team to having, you know, all of us in one place. We went from writing Mac and iOS apps in Swift to doing everything in React. We went from closed source to open source. We went from not talking to customers to kind of sharing screenshots before we'd even made a product on Twitter all the time. And really the company has now turned around and it feels like rather than the wind in our faces,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 364.1,
+      "end": 364.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 364.2,
+      "end": 381.76,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "feels like the winds at our back and that we're making things that people seem to like using. And so it has been like a year of when we began the year, like last year, we began kind of set out saying we know that design is needed in the space. And now I think we have a really clear picture of what products we want to design and what we want to ship.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 382.36,
+      "end": 382.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 382.9,
+      "end": 430.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "I love that. I think so there's kind of two pieces there. One is the kind of founder market fit, which is saying, hey, we want to, A, be in kind of the cryptocurrency world. And B, we want to be working on something where like design, where we have to optimize for design. And if you're working on, it's like it makes sense that like you as a founder wouldn't want to just build like like. deep infrastructure for protocols or whatever. So different people have, and if you're a person who's getting into the cryptocurrency world, listening to this, you've got to check your founder market fit first before you check product market fit. And then after you do that, then you start to check your product market fit as you're talking about here. It's like, look, and I think the crypto world has this traditional issue with like, nah, we're just going to build the dope stuff and then like people will want it because it should be true. And it's like, no, no, no. And you switch around and saying, let's talk to our customers as quickly as possible.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 430.84,
+      "end": 431.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "What",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 431.2,
+      "end": 434.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "are their pain points? How can we prototype? type things with them and then kind of start to go from there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 435.27,
+      "end": 435.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 435.65,
+      "end": 441.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "think that that process is one that everybody essentially needs to go through as they're starting to build something.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 442.05,
+      "end": 446.61,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah. And in terms of founder market fit, I think I'm just fortunate because I stumbled across Ethereum",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 446.61,
+      "end": 447.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 447.19,
+      "end": 460.11,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "2014 and actually did some design for the group of people that became the kind of foundation and before even the token sale for Ethereum. And so, you know, I'd been thinking about what is Ethereum useful for on and off?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 460.61,
+      "end": 460.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 460.87,
+      "end": 465.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the kind of better part of four years now. And now I have a set of answers that I'm happy with. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 465.27,
+      "end": 465.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 465.77,
+      "end": 469.93,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "designing products around that that we want to ship to millions and ideally eventually billions of people.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 470.43,
+      "end": 470.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 470.99,
+      "end": 475.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that's cool. So, talking more about this, the U.X side that you talked about earlier,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 477.19,
+      "end": 492.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "that is connected in my mind to this kind of, as we go deeper and as we kind of create protocols or standards for all the things, then, and as lots of the data exists in kind of an open-sourcy kind of way, then the thing that people will be able to differentiate on is the U.S. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 492.71,
+      "end": 493.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 493.31,
+      "end": 498.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "addition to you guys concentrating on the U.X, you're also concentrating on building out some of these standards. So could you talk about this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 498.67,
+      "end": 499.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "new",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 499.23,
+      "end": 502.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Wallet Connect standard? I really, I know very little about it, so kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 502.8,
+      "end": 503.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 503.0,
+      "end": 505.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "bringing me from a high level and tell me what it is.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 505.26,
+      "end": 549.32,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah, sure. So for people who may not be familiar with how you interact with distributed applications on Ethereum, today the most popular tool for doing that is a wonderful project called Metamask, which is a Chrome extension or a browser extension that also works with several other browsers. And so if you, say, for example, wish to interact with a DAP or a distributed application and record some part of that information to the Ethereum blockchain, you kind of click a button on this DAP, and then the Chrome extension will pop up and you will confirm the transaction in Metamask. And so this is how people participate in ICOs or they buy crypto kitties or they kind of play games or any of these things that they need to install this Chrome extension to make things work.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 549.54,
+      "end": 549.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 549.82,
+      "end": 553.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "this is really what got us from zero to one. This is like the first step towards a kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 553.88,
+      "end": 554.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "world",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 554.56,
+      "end": 573.6,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "where you're not only interacting with the internet, but you're interacting with a kind of open economic protocol as well. And this Chrome extension or browser extension kind of ties it all together. But we found, you know, talking to relatively new users that this is a pretty confusing experience because many people aren't even conscious that you can download something called a Chrome extension.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 574.0,
+      "end": 574.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 574.24,
+      "end": 578.34,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "then the idea of putting money into it and then using that to interact with Web3",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 578.34,
+      "end": 578.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 578.92,
+      "end": 583.86,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "kind of linking that to the Ethereum blockchain, like just in general, there's like a lot of mental models to leap",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 583.86,
+      "end": 585.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "through. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 585.68,
+      "end": 588.08,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "something that people are more familiar with are kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 588.08,
+      "end": 588.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "doing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 588.64,
+      "end": 607.06,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a transaction with their online bank and then confirming it on their phone. And so one of our, one of the engineers at Balance, Pedro, who's now focused on this entirely as its own project, he came up with this idea of Wallet Connect. And Wallet Connect is relatively simple on the surface. It's recreating",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 607.06,
+      "end": 607.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 607.76,
+      "end": 632.52,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 632.78,
+      "end": 633.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 633.06,
+      "end": 635.92,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "people use things like WhatsApp and WeChat",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 635.92,
+      "end": 636.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 636.6,
+      "end": 639.7,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "log into web-based applications using their phone.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 639.98,
+      "end": 640.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 640.5,
+      "end": 652.39,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we felt that this would be a really great model for how people could interact with distributed applications as well. And so Wallet Connect, you can think of it almost like Bluetooth, where we want",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 652.39,
+      "end": 653.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "every",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 653.11,
+      "end": 688.93,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "distributed application to work with kind of every crypto-based wallet. And the user experience is where you kind of go to the web-based app. select wallet connect on your phone, scan a QR code, and then any time you want to make a transaction or do some kind of financial or kind of blockchain-based interaction with Ethereum, you're confirming it on your phone rather than confirming it on a Chrome extension. And we found that this user experience is something that people are a lot more comfortable with, and we decided to break it out into its own kind of non-profit, its own standard. And we've reached agreements with several wallet providers and several of the biggest apps.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 689.26,
+      "end": 689.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 689.46,
+      "end": 693.52,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "integrate this as well as getting a grant from the Ethereum Foundation, which has been really amazing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 694.37,
+      "end": 696.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. Yeah, so it's a...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 696.91,
+      "end": 697.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 697.19,
+      "end": 702.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "first, I love the thing that you said about even getting a Chrome extension is like step one, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 703.35,
+      "end": 703.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 703.49,
+      "end": 750.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "that can be tough. And then as you go deeper, I mean, it is funny also this like the flow that you talked about of going to web. WhatsApp.com, scanning a QR code with your phone and then using, you know, WhatsApp through your phone or whatever. It sounds like a funny, it's a funny thing for me coming from, you know, the United States. But as you say, it's like in China, so many people have done this. And is it, and as you've done through some of your user testing or whatever, you've also found that once people get used to the flow, it's good. So the standard, tell me more about the standard in terms of, from kind of a technical perspective, it sounds like it's essentially a standard kind of API for connecting any wallet, the kind of APIs that a wallet might want to do with any kind of blockchain, like any cryptocurrency, is that, is that right? Those are the two sides of that equation?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 750.43,
+      "end": 750.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 750.91,
+      "end": 759.77,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so the main focus is on passing Ethereum transactions backwards and forwards in an encrypted way between the DAP on the web and on your desktop",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 759.77,
+      "end": 760.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 760.37,
+      "end": 760.81,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "your phone.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 761.07,
+      "end": 761.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 761.89,
+      "end": 763.31,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "going to expand in several ways to kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 763.31,
+      "end": 763.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 763.73,
+      "end": 768.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "basically provide a set of open source tools for developers of distributed applications",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 768.25,
+      "end": 768.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 768.87,
+      "end": 772.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "integrate with any kind of protocol that wants to support the standard,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 772.95,
+      "end": 773.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "any",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 773.37,
+      "end": 786.71,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "wallet, and then... and really just help DAP developers stop repeating the work they're already doing to integrate with everything. And then eventually there will be kind of mobile to mobile APIs as well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 786.89,
+      "end": 787.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 787.31,
+      "end": 792.81,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "people who are doing iPhone apps but don't want to have to recreate all the wallet infrastructure, they can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 792.81,
+      "end": 793.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "simply",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 793.75,
+      "end": 807.31,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "kind of search for the phone and see what other wallets the person has installed and then kind of pass transactions backwards and forwards between those. So it's really a set of tools to make developers' lives a lot easier and customers' lives a lot easier",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 807.31,
+      "end": 808.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 808.27,
+      "end": 826.77,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "just massively improve the user experience, which begins with kind of a QR code login running on the Ethereum blockchain, but I'm running on a server, but linking to the Ethereum blockchain, but loads more things are coming down the pipeline. And Pedro, the leader of that project, is doing a really fantastic job. We're really impressed with how he's going about it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 827.13,
+      "end": 827.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Nice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 828.03,
+      "end": 837.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "That's good. And so if I understand correctly, it is rather a standard for connecting the kind of the web-based app to your phone app. Is that right? That's the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 837.21,
+      "end": 838.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "primary piece right.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 838.75,
+      "end": 838.97,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 839.29,
+      "end": 842.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "To begin with and just later, you're the first key. Exactly right.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 842.91,
+      "end": 848.11,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah. And people can use it now actually by, we have a test flight open for the balance app. And if you go to our",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 848.11,
+      "end": 848.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Twitter",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 848.59,
+      "end": 852.65,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "handle, you can see details of how to try that out. It's just balance underscore I.O",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 852.65,
+      "end": 853.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 853.27,
+      "end": 855.11,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Twitter and we've got it all listed there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 855.67,
+      "end": 856.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Cool.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 856.38,
+      "end": 871.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Interesting. Yeah. I think that the, it's also beautiful to see the people like the Ethereum Foundation fund this kind of stuff because like, look, this is just a standard. And like to make a standard, it's, you're not going to make money off a standard or it's harder to make money off a standard. And so we should have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 871.78,
+      "end": 872.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 872.32,
+      "end": 873.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "foundations funding this kind of stuff.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 873.98,
+      "end": 874.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I agree.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 874.5,
+      "end": 896.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And we were going to call it Balance Connect for about one afternoon. And then we realized, look, there's nothing hard about this. We don't want it to be a kind of a profit center for balance or something we try and shoehorn into a lot. of apps. What we wanted was for it to enable a bunch of interactions and for it to be more like Bluetooth, where people kind of have a set of expectations every time they see that Bluetooth icon.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 897.31,
+      "end": 897.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 898.09,
+      "end": 900.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Does anybody own Bluetooth? Do you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 900.17,
+      "end": 900.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "know?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 900.67,
+      "end": 914.75,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I believe that it's a conglomerate. I mean, it's just, it's become like an industry body, like a nonprofit in Switzerland that a bunch of people are on the technical steering committee of. So it's become one of these standards, I think. Yeah. As far as I've been looking into the history of it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 915.12,
+      "end": 915.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 915.62,
+      "end": 919.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "there's no like Bluetooth ink or whatever. Or there doesn't, yeah, it doesn't. It's not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 919.44,
+      "end": 920.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like that. There's a body",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 920.4,
+      "end": 943.44,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "to which I believe a lot of industry participants pay into to make this thing work. And that's exactly how we hope wallet connect will play out where as it becomes a more and more important piece of infrastructure for not just Ethereum, but several other protocols. And in, you know, thousands of DAPs and ideally dozens of wallets. There should be a really interesting kind of collaborative effort around user experience.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 943.72,
+      "end": 944.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 944.14,
+      "end": 968.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah. And so kind of going more specifically to you all in balance, thinking about the competitive landscape right now of wallets, Coinbase just acquired, or Coinbase just acquired cipher browser recently. And was I think Binance just acquired trust wallet? How do you, does that do these things worry you? Or do you see your own future kind of in the space?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 969.39,
+      "end": 969.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 970.05,
+      "end": 1036.41,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I mean, first of all, I'm unemployable, so an acquisition isn't an option for me. I've just never succeeded as an employee, and I don't know whether I can, to be honest. And so unfortunately, that's just not really an option for us. And so it doesn't phase me at all, or is it something that I would focus on? And so given that either the company is going to die or survive, here's how I hope that we survive. And that is by focusing on financial services on top of Ethereum and other protocols. I think that I don't want balance to really focus on being a generalist DAP browser. right now because I think that the quality of DAPs is incredibly low and the utility of them, nearly all of them, is incredibly low. I personally do not open a single DAP browser on my phone on a regular basis. I've not met anyone else who does, apart from if they're really curious to try things. Every time I open these things, it's to opt in to try out other pieces of software. It's never because I actually am getting any utility from it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1036.97,
+      "end": 1037.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1037.17,
+      "end": 1087.34,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so I've been thinking really carefully, and so we as a team, about what distributed applications actually make sense, given that we have slow, trustworthy computing. That's very expensive and very kind of unstoppable. That is a kind of computer that we've never had before. And the kind of applications that make sense to me are things like debt, exchange, insurance, and a couple of other financial applications. And basically the kind of core functions of banking. are usually all about slowness, correctness, trust, and precision and finance. And those are the kinds of things where transaction fees of a few dollars don't matter at all. And so we actually view balanced less as a kind of wallet provider among the kind of throng of hundreds of wallets and actually trying to build out open source banking infrastructure at the user interface level.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1087.71,
+      "end": 1088.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1088.23,
+      "end": 1115.05,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so we want to tie together protocols like Dharma for lending, Bloom for credit scoring, Nexus Mutual for insuring and one protocol for staking and earning interest, as well as DYDX for margins, and bring all of that together into a fantastic user interface where people can basically do all of their banking through a protocol. But it looks essentially the same to them. And it just happens to be running on some of this new open economic infrastructure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1115.49,
+      "end": 1115.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1116.12,
+      "end": 1146.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I like that. I think, and as you say, it makes sense to say what, you know, what does slow trustworthy computing? What do those constraints allow you to optimize for? And something like these financial primitives seem like a great answer there. So it's also great to see those financial primitives are some of the things. There's kind of two things that have traction within the kind of, within the Ethereum transaction ecosystem. And one of those is like zero X and things built on top of zero X, like DYDX. And Dharma and then the other thing is the kind of CryptoKitty side, aka FOMO 3D. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1146.62,
+      "end": 1147.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1147.54,
+      "end": 1149.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "good. You have to kind of choose one.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1149.7,
+      "end": 1149.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1150.78,
+      "end": 1185.15,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1185.74,
+      "end": 1186.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1186.52,
+      "end": 1199.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "exactly. That's something I think that people don't get in general about the crypto ecosystem is that it's not like we want, you know, Bitcoin or Ether, whatever, to be the only money that exists in the world. No, we just want to make a market for money itself. And it's not like we want to take",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1199.14,
+      "end": 1200.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1200.04,
+      "end": 1211.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "banks and make them move away. No, we just want to make a market for banking itself. And then, yeah, if they outcompete us in that market, fine. If they out compete us, however, by being centralized, trusted institutions that are rent-seeking that. So we're not okay with that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1214.18,
+      "end": 1243.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Cryptocurrency is vibrant and exciting. but it's not without a share of bad actors. Exchanges in personal accounts can be hacked, computers can be infected with malware. Left unprotected, your digital wealth is up for grabs. Don't let yourself be a victim. Keep Keyes a safest and simplest way to protect your Bitcoin, Ether, Lightcoin, and other tokenized assets. This hardware wallet is a separate device that you control. Brought to you by the pioneering team at ShapeShift, Keep Keyworks with the wallet software on your computer to manage your private keys and transactions.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1244.32,
+      "end": 1244.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Your",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1244.66,
+      "end": 1258.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "device is pen protected, which provides protection if it falls into the wrong hands. Its large display lets you carefully view and approve every transaction. And if your keep key has ever lost or stolen, you can safely recover your device without compromising its private keys.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1258.72,
+      "end": 1259.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1259.16,
+      "end": 1263.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "bottom line, you'll sleep easier knowing that your digital wealth is safe and secure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1263.32,
+      "end": 1263.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Visit",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1263.92,
+      "end": 1270.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "keepkey.com to order yours today and use the code Humanist 10 for a limited time 10% discount.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1274.78,
+      "end": 1275.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1275.22,
+      "end": 1275.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind of taking",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1275.86,
+      "end": 1303.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "that, kind of zooming out with that in mind, let's talk about kind of smart contract platforms more generally and in the kind of battle that's happening there. And I think you're kind of a well-known outspoken critic of someone like Eos who raised, you know, three or four billion. I think they have an additional billion or whatever from Peter Thiel and Peter Thiel. So tell me, how do you think about the, and to be clear to our listeners, this is a company, a single company that has raised in a Citry and ICO.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1305.01,
+      "end": 1318.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "between, yeah, three to four billion dollars, it has gone into their coffers, and right now they don't really have that much to show for it, but maybe they're, they are building something. So, like, how do you think about the kind of ethics and morality there of raising that much money and then,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1319.27,
+      "end": 1319.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1319.91,
+      "end": 1321.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "then trying to push that out to the ecosystem?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1322.42,
+      "end": 1322.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1322.98,
+      "end": 1323.96,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I mean, it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1323.96,
+      "end": 1324.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1324.72,
+      "end": 1346.97,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "really disappointing because I actually think that technically doing a distributed proof of stake protocol that kind of... tries to slide the dial between decentralization, scalability and security in an interesting way is a great experiment. And I'd love to see that happen with somewhere between kind of $50 to $100 million a capital.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1347.15,
+      "end": 1347.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1347.61,
+      "end": 1351.91,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I think that's a very difficult thing to pull off. And I think it could be done with that sum of money.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1352.65,
+      "end": 1353.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1353.13,
+      "end": 1357.17,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the way in which EOS has been begun and continued to operate",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1357.17,
+      "end": 1357.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1357.89,
+      "end": 1384.18,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "just absolutely terrible. And it's... Sad to me because it's really obvious to all insiders and we all laugh, but it's really not obvious to new people to the space who are just really upset that they missed out on Ethereum and are looking for that next huge gain. I'd like to remind everyone that Bitcoin raised nothing to get their protocol off the ground. Ethereum raised $16 million, which promptly dropped to $8 because Bitcoin halved in value, and they got to a V1 with that capital. And so...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1384.28,
+      "end": 1384.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1384.92,
+      "end": 1408.82,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "not true that you need lots of capital to deploy software. If that was true, then we'd have a lot more great software in the world. It's usually about assembling a great team of people, getting them extremely focused, and creating a great culture around your project and engaging well with the community. And then EOS is the opposite of that. They've got absolutely terrible people who only need a cursory Google to find out about some of their check had passed.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1409.24,
+      "end": 1409.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "They've",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1409.64,
+      "end": 1445.06,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "got a distributed team who are really unfocused who are writing this thing in an archaic language. They've got a founder who's clearly experienced extreme bullying at school and has several mental health issues. And then they've just got very kind of very strange dark culture and have admitted on podcasts that they run all the runny as revenue through the Caymans and that their legal agreements say that they have no obligation to continue to work on the EOS software whatsoever because they're scared of what is exactly happening right now, which is the SEC is coming down on them like a ton of bricks. And I just think that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1445.32,
+      "end": 1445.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1445.88,
+      "end": 1469.48,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, that is not the kind of right. set of ingredients for the experiment that EOS wishes to run, which is what would it look like to do a kind of Amazon speed, distributed data center that has some kind of voting control on the people running the data centers? Actually, that's a fascinating experiment, but it does not need billions of dollars of capital and absolutely incompetent generals at the helm of those war chests.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 1469.7,
+      "end": 1470.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 1470.0,
+      "end": 1473.66,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I think it will fail miserably and will be one of the kind of pets.com of our industry.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 1474.3,
+      "end": 1516.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, wow. So that's pretty brutal, all things considered. And I must say, I mean, my instinct is to agree with most of it. I do agree with you also to say to you're not arguing with them. I think you do a good job of saying, hey, I'm not arguing with you all about your, about your goal level, you know, the goal of creating, you know, using delegated proof of stake to create this kind of me instead of government grade censorship, platform great censorship, that that could make a lot of sense, you know, and I'm happy to support a project for that, whatever, you know. Like, you know, maybe you need 50 million, maybe you need 100, maybe at the extreme case, you might need 250 million or whatever, but probably not 3 billion or whatever. And so you don't disagree at the goal level and it's just at the execution level. What are they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 1516.08,
+      "end": 1517.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "doing? Yeah, because I'm not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1517.46,
+      "end": 1528.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "smart enough to kind of understand the computer science or the deep technical kind of nuances of all of these things. Nor can I kind of judge the engineering or...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1528.09,
+      "end": 1528.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "any",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1528.45,
+      "end": 1549.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of that, but I can absolutely judge the way the people conduct themselves both publicly and privately. And I can judge the way in which they engage the community. I can judge their horrendous website, their lack of a voting interface, the terrible wallets, and just about everything else that's readily available for anyone with any level of experience to see. And yeah, I just find it all lacking.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1550.15,
+      "end": 1554.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, that makes sense. So let me, so let's, let's, uh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1555.0,
+      "end": 1555.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1555.26,
+      "end": 1566.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "I think there's two places to go with this. Let's actually go to this direction for a second. So are there other smart contract platforms besides ETH that you're like, ooh, this feels good, you know, something like DFINITY or what have you?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 1567.06,
+      "end": 1567.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 1567.64,
+      "end": 1570.48,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I mean, I've been very open that having met the teams behind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 1570.48,
+      "end": 1571.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "DFINITY",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 1571.8,
+      "end": 1590.2,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and Cosmos, I'm excited to see them run those experiments. I think in both cases, each team has a very different culture and a different way of doing things. I don't hold any of their tokens, but we may well kind of build on those platforms. So, you know, just to disclose any bias there. But, you know, I've met the kind of leaders of those projects and the top technical talent. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 1590.2,
+      "end": 1591.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 1591.06,
+      "end": 1621.84,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "just strike me as true missionaries doing things for the right reasons. And they've raised, you know, considerable sums of capital, but absolutely not in the billions. And they're going after it and they're incredibly focused. So, you know, I mean, everyone has a lot to prove if they're going to challenge Eath in different ways. And we actually can't even know for half a decade whether any of those platforms is a success or not. But we can say that the kind of ingredients of those projects are much more encouraging to me than anything else I've seen. And there's certainly the EOS.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 1622.22,
+      "end": 1635.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that makes sense. Is there a, so kind of abstracting away from EOS for a second and thinking about, so let's pretend that there's a new, a new smart contract platform that's showing up and you're like okay this is a new smart contract platform",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 1635.87,
+      "end": 1636.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 1636.71,
+      "end": 1644.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "they good are they bad you're trying to do signal to noise within the ecosystem um how do you do signal to noise on them or how do you determine if it's like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 1644.85,
+      "end": 1645.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 1645.27,
+      "end": 1646.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "it's a good project um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 1646.75,
+      "end": 1647.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 1647.13,
+      "end": 1648.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "especially from kind of the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 1648.29,
+      "end": 1649.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 1649.19,
+      "end": 1650.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "you know from a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 1651.18,
+      "end": 1651.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 1651.92,
+      "end": 1670.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "let's ignore for a second, actually, the technical question. So let's say, okay, Vitalik and, and it's just Satoshi and all the homies. They say, this is good. This seems like it could work. And let's also ignore from like maybe the execution perspective where you're like, oh, they actually, and they also seem to be executing on this really well. From the,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 1670.58,
+      "end": 1670.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 1670.98,
+      "end": 1675.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of like the moral ethical perspective, I guess is what I'm trying to get at here. Like, how would",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 1675.74,
+      "end": 1675.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 1676.1,
+      "end": 1678.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "how would you decide whether they were? quote unquote good.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 1679.7,
+      "end": 1680.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 1680.3,
+      "end": 1683.52,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I mean, a couple of ways that I assess people is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 1684.06,
+      "end": 1684.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "first",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 1684.46,
+      "end": 1700.24,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of all, I really try and watch every single talk they've given because I get so much signal from their body language, the way they speak, the way in which they present what they're doing, the kind of hopes and dreams and the way they describe it, and also whether they've been on any podcast, I listen to those.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 1700.4,
+      "end": 1700.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 1700.84,
+      "end": 1714.86,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "then if they're kind of active on Twitter, I'll just read every tweet they've written, and then also every single tweet that they like. which can be quite a mission, but I find really helps me load a lot of their thinking into my brain. And then I'll just scour the web for everything they've written online, whether it's blogs or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 1714.86,
+      "end": 1715.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "forum",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 1715.78,
+      "end": 1717.22,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "posts or everything like that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 1717.92,
+      "end": 1718.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 1718.36,
+      "end": 1734.1,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "this helps me build up a very strong picture of who they are. I mean, people leave prolific kind of open source software people, which is also just like a prerequisite. They generally leave an enormous digital footprint, and it's just your job to kind of go retrace those steps and like figure that out.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 1736.24,
+      "end": 1736.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 1736.7,
+      "end": 1765.45,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "then I guess you are looking for that founder market fit a little bit. I mean, when it comes to Dom, the leader of DFINITY and Jayquan, the leader of Cosmos, they've been interested in how to do not just smart contracts, but actually computation on a blockchain. For the better part of kind of four to five years, they've been posting about this. This isn't like they jumped in on the ICO bandwagon last year. This has been like... a problem they've been noodling on for better part of half a decade.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 1765.67,
+      "end": 1765.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 1765.87,
+      "end": 1766.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "has Dan Larimer,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 1767.11,
+      "end": 1767.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "arguably, you know?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 1768.31,
+      "end": 1768.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 1768.93,
+      "end": 1796.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "absolutely, absolutely. But there we kind of go to the way in which he interacts with the community, which is hyper-aggressive. the amount of money he's raised, the people he's associated with, the fact he's running it through the Caymans, that he's hiding all of his operations in the US. I mean, again, it's not to say that just the length of time in the industry is enough, but if you're trying to assess founder market fit, I think that I begin there and then start to look at the kind of execution and what they have and have not done and what they're promising.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 1797.35,
+      "end": 1797.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 1798.03,
+      "end": 1823.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "I like that. I think I think the thing that I most agree with there. Well, so at a high level, the thing that we're dealing with here is a very difficult question, which is in this world of like where we want to be, you know, pluralistic, where we want to say, hey, ETH is really good. And something like DFINITY could also be good or cosmos could also be good. But at some point in time, you have to say, well, some things, there are lots of different things and lots of different perspectives and lots of different stuff. But some of them we must make value judgments about how do you do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 1823.53,
+      "end": 1823.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that? How",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 1823.91,
+      "end": 1824.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "do you have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 1824.19,
+      "end": 1824.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "coherent",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 1824.65,
+      "end": 1825.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "pluralism?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 1825.37,
+      "end": 1825.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 1825.67,
+      "end": 1836.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "very hard. I think that you're the first thing that you said is just the super key, which is like, hey, if you have instincts one way or the other way, the first thing that you do, like you say, is just to get lots of texture, to kind of be curious first, to read",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 1836.99,
+      "end": 1837.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "up a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 1837.23,
+      "end": 1846.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "bunch of stuff, to get all the information. And only from then can you actually decide how to do things. But if you don't start by getting lots and lots of texture, then you're failing, even if you're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 1846.77,
+      "end": 1847.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "later down",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 1847.79,
+      "end": 1849.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of value",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 1849.15,
+      "end": 1849.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "judgments are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 1849.65,
+      "end": 1849.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "good.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 1850.15,
+      "end": 1850.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I've",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 1850.55,
+      "end": 1866.8,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "always done this because, you know, whether it's a company or a protocol, it always reflects the people who made it. I mean, you know, you look at Apple's products that reflects the culture of that company where they obsess over these objects. And that occurs. You know, I remember when I was getting ready for my interview to stroke,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 1867.08,
+      "end": 1867.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 1867.36,
+      "end": 1907.72,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "just read everything that every single one of their employees have written online and watched all the videos of Patrick and John. And it was just absolutely clear that they were on an absolute, you know, an incredible war path to show people how financial technology should be packaged and displayed to businesses. And now it's very clear to the world that they're doing that, but it was crystal clear to me kind of in 2012. that that was the mission they were on. And so I think the same is true for all of these projects in crypto, where it's easy to assess whether people jumped on the bandwagon or they have finally, they've been working on this problem for a while, and then this blockchain-related technology allows them to solve it. So it's kind of a very different",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 1907.72,
+      "end": 1908.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "flow,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 1909.04,
+      "end": 1909.54,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I would guess.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 1909.84,
+      "end": 1912.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep, yep, that makes sense. So thinking about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 1912.74,
+      "end": 1913.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "something",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 1913.84,
+      "end": 1944.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "like Ethereum, I think, I mean, you and I are both probably pretty bullish on Ethereum all things considered. And you can kind of think about the future and say like, wow, I mean, the Ethereum community and that whole situation there, it's like the amount of good devs that they have building on top of it and also the amount of good devs building on the protocol. It's like, it's pretty crazy. What in your mind, though, are you like, ooh, here are the things that Ethereum is not doing well, whether it's at the protocol level or at the foundation level or at the general ecosystem level. What are you kind of either worried about or don't like about the community?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 1945.18,
+      "end": 1945.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 1946.14,
+      "end": 1950.68,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so yeah, happy to focus on the natives. I think it's terrible at capital allocation. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 1950.68,
+      "end": 1952.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 1952.6,
+      "end": 2047.24,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "foundation itself massively underpays developers. All of the grants programs are run by people who are well-intentioned but kind of too scared to actually deploy capital quickly and kind of with any level of risk. I mean, just absolutely everyone encouraged us to apply for their various grant programs and then, you know, kind of promptly gave us excuses or rejections or delays as to why they wouldn't support, you know, an open source wallet developer building entirely on Ethereum. And so there's a really, there's an irony to a project that's trying to unseat the gatekeepers, but then locks up a ton of this capital behind a bunch of gatekeepers who are incapable of deploying it. and are not willing to send it not just to my project, but to any project out there. And so I think that a protocol like decred where capital allocation is built into the system, absolutely in the long term could do much better by just paying developers. It's not that we want to be rich or we want millions of dollars or anything like that. It's just we want enough money to kind of continue focusing on the project. And we're in a much better place than many other engineers I know who are basically broke having worked on these things. And so I think it's sad to see us create hundreds of billions of dollars of internet money and then let so few of it, so little of it out into meaningful, useful infrastructure projects. So that's one way in which the Ethereum ecosystem could really suffer, I think, in the near future, because a lot of money is flowing into other places and it's being run by people who are a lot quicker and a lot faster. It's a serious issue.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 2047.6,
+      "end": 2053.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah. I think that that is pretty powerful and pretty true. I think that there's a...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 2053.9,
+      "end": 2054.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 2054.18,
+      "end": 2063.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "a couple different ways to think about that. The first is that we have these kind of grant programs, something like the Ethereum Community Fund. I think it's so awesome. It's a bunch of these different projects.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 2063.34,
+      "end": 2063.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's a great blog",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 2063.88,
+      "end": 2064.28,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "post.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 2064.44,
+      "end": 2065.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But then if you've talked to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 2065.46,
+      "end": 2068.0,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "anyone who's actually tried to interact with these things, it's terrible.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 2068.24,
+      "end": 2096.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah. They have, it's a great thing in that you have a bunch of different people from the ecosystem all recognizing, oh, we have enough money. Let's, you know, let's pool it together and then fund infrastructure together. And it's difficult because then you have all these different people trying to, A, was created not. the long ago be. It was, you have a bunch of different stakeholders there and it's tough than to fund things with all these different stakeholders. And as you say, I think there's a difference in, I think the Ethereum community has a kind of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 2096.55,
+      "end": 2096.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 2096.69,
+      "end": 2097.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "mean, if you,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 2097.53,
+      "end": 2097.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 2097.75,
+      "end": 2106.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "you watch the Edcon video where, you know, Vitalik and Aya and crew, where they danced with the honey badgers on stage and did the snake, whatever. Like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 2106.75,
+      "end": 2106.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 2106.93,
+      "end": 2107.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 2107.31,
+      "end": 2107.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 2107.61,
+      "end": 2114.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "like to have our weirdness and our inclusivity and stuff. And as a result of that, we're kind of missing. maybe some of the mercenary mindset",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 2114.11,
+      "end": 2114.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 2114.65,
+      "end": 2120.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "people like Defendity might have more of or they're just going to be like, no, boom, we need to have an awesome quick capital allocation system",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 2120.53,
+      "end": 2121.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 2121.07,
+      "end": 2122.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "funds the most efficient things and go, go.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 2123.19,
+      "end": 2123.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 2123.49,
+      "end": 2125.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "think that ETH might have kind of a culture issue there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 2125.75,
+      "end": 2133.23,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Well, it's, yeah, because it's all okay for them because they've been holding ETH since it was 33 cents, which is, you know, a bucket I'm in as well. But like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 2133.74,
+      "end": 2134.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 2134.18,
+      "end": 2145.22,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's actually one of Ethereum's strengths, is that although it is bad at capital allocation, because it started with such a low network value and then rose so enormously, you know, I think it was like 3,000 X at peak.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 2146.38,
+      "end": 2146.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 2146.82,
+      "end": 2210.42,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "essentially gave 100,000 nerds at least a million dollars. And I think that's pretty amazing. I don't think there's ever been something like that in history. But the flip side of that is that usually when you create that much capital, it's from people who actually have learned to interact with other people or deploy capital. And so we've just handed billions and billions of dollars to a bunch of crypto nerds. And I think that's really cool. And we're seeing lots of wild, wonderful things come out. But we're also seeing them struggling to deal with kind of operations and management and how to actually allocate funds correctly. And they have no appreciation, I think, for just how difficult it is to generate a return in the real. world. And again, this is not to say that I'm down on Ethereum as all. I think it's a wonderful ecosystem. But if you ask me to focus on the negatives, you know, for projects that don't wish to shill a shit coin and do some crappy token sale, and I'm also struggling to kind of reason with the venture capital community and their kind of extremely mercenary mindset. And there's several projects I know that I like that. I have to say that it's slim pickings for ways to kind of raise capital.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 2210.74,
+      "end": 2211.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 2211.14,
+      "end": 2220.18,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think that's a serious concern. And certainly, makes us more interested in working on other things where we can raise a sensible amount of money, move forward and get things done.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 2220.36,
+      "end": 2220.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 2221.1,
+      "end": 2234.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "that makes sense. Yeah, I like the imagining, like, you know, imagining the person in middle school or high school who was like the Uber nerd in your class and he or she is just like ends up just like with a bunch of money and they like don't know what to do with it versus",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 2234.88,
+      "end": 2235.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 2235.24,
+      "end": 2242.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "person in your like, you know, middle or high school that was like, you know, super aggressive type A. It was really good at organizing people, you know, was the class",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 2242.9,
+      "end": 2243.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "president",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 2243.26,
+      "end": 2246.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "or whatever. Like it's really good. That's like, oh, who's going to win between those two?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 2246.76,
+      "end": 2257.52,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Oh, yeah. I mean, it's classic. I mean, I remember coming back in 2004. and raving about Ethereum to everyone I thought I was nuts. And no one ever ignored me. And now, you know, those same people are kind of messaging me for token tips. So it's hilarious.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 2258.86,
+      "end": 2266.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "So is there, so thinking about kind of zooming way back here then and thinking about just how, how technology changes as our kind of our final question here.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 2267.7,
+      "end": 2268.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 2268.06,
+      "end": 2270.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "know, from more of like a philosophical perspective,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 2271.94,
+      "end": 2275.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "and you can kind of go, you can go wherever you want with this, talking about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 2275.54,
+      "end": 2276.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "either",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 2276.1,
+      "end": 2287.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "why for you, your deep why for why you're in here, or in general, the current ways that you're thinking about how tech changes society and what we need these days. Give me your hot philosophical take.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 2288.53,
+      "end": 2289.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 2290.15,
+      "end": 2292.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I can definitely speak to myself personally that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 2295.01,
+      "end": 2309.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I spent much of the last 10 years looking for something I really wanted to do and was drawn to the kind of startup world for quite some time and then had the pleasure of seeing a true startup at work. You know, I was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 2309.37,
+      "end": 2310.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 2310.03,
+      "end": 2313.09,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "kind of wandered through stripe when they were kind of around 25 people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 2313.09,
+      "end": 2314.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 2314.01,
+      "end": 2319.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it was growing, you know, precipitously every week. And then there I saw what happens when you have true product market fit",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 2319.73,
+      "end": 2320.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 2320.41,
+      "end": 2322.87,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "kind of got addicted to that and also kind of built up this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 2323.53,
+      "end": 2323.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "mental",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 2323.99,
+      "end": 2337.75,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "model of what an alien founder and an amazing team of Jedi can actually get done. And the second time I saw that was Ethereum and I kind of helped out there for a bit. But it was struggled because I've been invested in a whole bunch of really risky things and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 2337.75,
+      "end": 2338.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "went",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 2338.35,
+      "end": 2342.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 2342.37,
+      "end": 2342.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 2342.83,
+      "end": 2346.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that was when I started to experience what it's actually like to be poor. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 2346.37,
+      "end": 2346.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 2346.77,
+      "end": 2348.21,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is so stressful.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 2348.47,
+      "end": 2349.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I didn't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 2349.01,
+      "end": 2363.31,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "realize how stressful it was. until Vitalik sent me the eth I was owed for the work I'd done for the project back in the day. And I went, I think, from being in debt to the banks to kind of almost being in debt to the protocol, Ethereum. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 2363.31,
+      "end": 2364.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "having,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 2364.55,
+      "end": 2367.31,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I feel lucky to have had this experience of like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 2367.31,
+      "end": 2368.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "true",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 2368.41,
+      "end": 2380.95,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "financial stress, like real pain where it was like, it was eating away at my mental cycles and I didn't really realize until I was out of it. And this is something that really speaks to me now is just,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 2381.39,
+      "end": 2381.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 2381.77,
+      "end": 2404.83,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "number of people, if you look at the data of just the number of people who have huge amounts of debt, I think that in a century we'll look back on this period and think, why did we live like this? I mean, we look back a century ago and we say, isn't it awful that slaves were common? And now I think, well, actually, at least slaves had zero. You know, many people exist today and all their hopes and dreams get crushed by the fact that they've got to pay off",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 2404.83,
+      "end": 2405.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "some",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 2405.45,
+      "end": 2406.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "kind of database.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 2407.82,
+      "end": 2431.08,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Now, I don't know of any specific way in which you can change that, but I do know that more competition in markets leads to better services for people. And I believe there hasn't been serious competition for money or serious competition for debt. in the last kind of 30 years, really, because the number of people that can start banks or the number of people that can issue financial services",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 2431.08,
+      "end": 2431.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 338,
+      "start": 2431.78,
+      "end": 2432.74,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "extremely small.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 339,
+      "start": 2432.82,
+      "end": 2433.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 340,
+      "start": 2433.3,
+      "end": 2446.68,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that just got flipped in its head in the last kind of year or so, and with the work of Bitcoin 10 years ago, where anyone can fire up a financial service. And right now, those financial services like Dharma and X, and Nexus Mutual and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 341,
+      "start": 2446.68,
+      "end": 2447.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Bloom",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 342,
+      "start": 2447.34,
+      "end": 2448.98,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "and DYDX, they're all kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 343,
+      "start": 2448.98,
+      "end": 2449.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 344,
+      "start": 2449.39,
+      "end": 2454.07,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "esoteric smart contracts running in the corner of Ethereum on this little distributed computing network",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 345,
+      "start": 2454.07,
+      "end": 2454.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 346,
+      "start": 2454.95,
+      "end": 2474.95,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are very slow and hard to use and expensive. But if you notice, that's what technology is always good at changing, is making things fast, easier to use and cheap. And when we have financial services that are fast, easy to use, cheap and unstoppable delivered through global satellite internet to Android phones that no government regulator can touch or kind of interfere with,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 347,
+      "start": 2475.13,
+      "end": 2475.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 348,
+      "start": 2475.55,
+      "end": 2477.77,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think we have a very, very interesting world where...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 349,
+      "start": 2477.79,
+      "end": 2478.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 350,
+      "start": 2478.03,
+      "end": 2481.85,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "will be a kind of rich array of financial services that people can access",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 351,
+      "start": 2481.85,
+      "end": 2482.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 352,
+      "start": 2482.37,
+      "end": 2500.91,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "are developed by programmers who are ethical. And there will be ways in which you can sort out the scams from the truly wonderful projects. And eventually we'll have things like a mortgage protocol and a student debt protocol and a system that's designed to actually allocate capital for food correctly. And like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 353,
+      "start": 2500.91,
+      "end": 2501.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 354,
+      "start": 2501.29,
+      "end": 2504.67,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of these things will, I think, exist in some form of another.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 355,
+      "start": 2505.15,
+      "end": 2505.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 356,
+      "start": 2505.45,
+      "end": 2509.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "course, you'll have large centralizers like Coinbase hoovering up a lot of the capital and talent",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 357,
+      "start": 2509.55,
+      "end": 2510.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 358,
+      "start": 2510.27,
+      "end": 2513.43,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you're essentially becoming the Facebook of the interchain. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 359,
+      "start": 2513.43,
+      "end": 2514.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 360,
+      "start": 2514.27,
+      "end": 2519.05,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I'm excited about is to see serious competition for the creation of money and debt",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 361,
+      "start": 2519.05,
+      "end": 2519.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 362,
+      "start": 2519.55,
+      "end": 2521.65,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that fewer people experience what I did.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 363,
+      "start": 2522.01,
+      "end": 2522.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 364,
+      "start": 2522.53,
+      "end": 2531.11,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 365,
+      "start": 2531.11,
+      "end": 2531.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 366,
+      "start": 2531.93,
+      "end": 2533.23,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "cash. And I just thought,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 367,
+      "start": 2533.56,
+      "end": 2533.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 368,
+      "start": 2533.98,
+      "end": 2551.77,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is fantastic. I mean, I really can do whatever I want for the next six months and I've got a great buffer. And I believe that if more people had just a little bit of buffer, they would be a lot more relaxed and actually think a lot more clearly. And I think that... to me sounds like a humanist blockchain future. And also, it's not sci-fi. I think it's happening right now.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 369,
+      "start": 2552.15,
+      "end": 2562.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Boom. Yeah, I agree with so many things you said there. So for me personally, I've had an experience like that myself as well. It was at the end of last year, essentially, I was running.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 370,
+      "start": 2563.79,
+      "end": 2564.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 371,
+      "start": 2564.11,
+      "end": 2583.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "running out of money, you know, and as I was running out of money and I had, you know, I never went into debt. I had, you know, three months, two months, one month of runway left. And at that time, as you say, it just, it creates this, this feeling of scarcity within you where, like, all the things become scarce. My relationships worsened, my, my mental health worsened, my physical",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 372,
+      "start": 2583.89,
+      "end": 2584.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "health worsened,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 373,
+      "start": 2584.55,
+      "end": 2592.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "everything worsened. And all of this, this scarcity mindset, there's this really good book called scarcity. And people have done studies with people on this. And yeah, you can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 374,
+      "start": 2592.93,
+      "end": 2593.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just see,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 375,
+      "start": 2594.1,
+      "end": 2605.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "man, the scarcity mindset is really, really brutal. And we can quote unquote blame people for like making bad decisions in a scarcity mindset. It's like, no, no, no, no, wait a second. You know, like they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 376,
+      "start": 2605.16,
+      "end": 2605.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "had",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 377,
+      "start": 2605.38,
+      "end": 2609.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "this kind of this veil on top of them that made it almost impossible to do so.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 378,
+      "start": 2609.78,
+      "end": 2610.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 379,
+      "start": 2610.26,
+      "end": 2611.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "I think that the.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 380,
+      "start": 2611.59,
+      "end": 2611.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 381,
+      "start": 2611.77,
+      "end": 2622.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "other piece here is, and something that I'm excited to see is, is I think that, like you're saying, there's both being able to create markets for money itself and be able to kind of do debt in new ways and make it so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 382,
+      "start": 2622.53,
+      "end": 2623.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 383,
+      "start": 2623.66,
+      "end": 2627.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "we have like more fair systems or what have you. I also think that there's just a piece here. It's like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 384,
+      "start": 2627.46,
+      "end": 2628.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 385,
+      "start": 2628.16,
+      "end": 2640.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "people, um, as we can create magic internet money, um, we can distribute that money. And knowing that we all have abundance now. And so, um, my example here is like you have about 750 million people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 386,
+      "start": 2640.26,
+      "end": 2640.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "who",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 387,
+      "start": 2640.7,
+      "end": 2650.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "are living in extreme poverty. And those people, um, uh, recently I just gave 360 bucks, uh, to support someone's year of universal basic income, uh, or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 388,
+      "start": 2650.74,
+      "end": 2651.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "basic income.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 389,
+      "start": 2651.48,
+      "end": 2655.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. And it was, it was 360 bucks. just so cheap and it was like it took nothing away from me",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 390,
+      "start": 2655.29,
+      "end": 2655.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 391,
+      "start": 2655.87,
+      "end": 2657.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "what did it do it did all the things that you're talking about which is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 392,
+      "start": 2657.89,
+      "end": 2658.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "helped",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 393,
+      "start": 2658.41,
+      "end": 2663.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "them have a long-term mindset which we want all humans to have and release them from their scarcity trap you know it's like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 394,
+      "start": 2663.73,
+      "end": 2664.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 395,
+      "start": 2664.23,
+      "end": 2665.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "i think that yeah it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 396,
+      "start": 2665.55,
+      "end": 2666.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 397,
+      "start": 2666.35,
+      "end": 2669.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "transition from scarcity to abundance is where we're at so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 398,
+      "start": 2669.97,
+      "end": 2670.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with that's quite",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 399,
+      "start": 2670.59,
+      "end": 2676.98,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a concrete example on that for balance we want to start offering student loans on Dharma to people doing programming courses.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 400,
+      "start": 2677.28,
+      "end": 2677.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 401,
+      "start": 2677.62,
+      "end": 2677.62,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 402,
+      "start": 2677.62,
+      "end": 2678.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 403,
+      "start": 2678.02,
+      "end": 2684.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "people who are learning about open source code using open source tools and getting an open source loan running on an open source protocol",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 404,
+      "start": 2684.26,
+      "end": 2684.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 405,
+      "start": 2684.92,
+      "end": 2707.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "likely to never want to interact with the closed source financial system again. So, you know, this isn't sci-fi stuff. This is happening now and we're going to do our best to bring it into the future as quickly, bring it to the present as quickly as possible. And, uh, And so I think that we can all dream about how things might play out in the decades to come. But it's also important to stay grounded into what you can do this week and in the next couple of months.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 406,
+      "start": 2707.75,
+      "end": 2717.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, exactly. Yep, I agree. One of my old mentors called that startup vertigo, where you think about the awesome future that you want to build and then get brought back down to reality. So with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 407,
+      "start": 2717.17,
+      "end": 2717.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 408,
+      "start": 2717.97,
+      "end": 2719.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Richard, how can people find you on Twitter?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 409,
+      "start": 2720.43,
+      "end": 2720.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 410,
+      "start": 2721.33,
+      "end": 2727.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 411,
+      "start": 2727.73,
+      "end": 2727.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 412,
+      "start": 2728.03,
+      "end": 2731.33,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And if you'd like to try out all our products, you go to the website, balance.io.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 413,
+      "start": 2731.73,
+      "end": 2759.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Oh, yeah. So if you're a person who's either looking to build on top of this open source system, go to balance.io or ping, Richard, or if you're someone who's looking to try out some of these new, a new cryptocurrency wallet, then try out balance. So with that, thank you so much, Richard, for coming on the show. And if you want to support me, listeners, by the way, on Patreon, you can go to patreon.com slash reese. That's patreon.com slash r-h-y-s-l-I-N-D-M-A-R-K. Okay, great. Thanks, everybody, and goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 414,
+      "start": 2760.14,
+      "end": 2760.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Cheers.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 415,
+    "withheld": 5,
+    "published": 410
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

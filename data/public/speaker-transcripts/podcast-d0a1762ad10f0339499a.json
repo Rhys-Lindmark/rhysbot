@@ -1,0 +1,2583 @@
+{
+  "schema_version": 1,
+  "id": "podcast-d0a1762ad10f0339499a",
+  "title": "#6: The Direct Impacts of Networkism",
+  "published_at": null,
+  "source_url": "https://www.youtube.com/watch?v=dJDH8BIYkaM",
+  "audio_source_kind": "youtube_audio",
+  "rss_feed_url": null,
+  "rss_enclosure_url": null,
+  "youtube_id": "dJDH8BIYkaM",
+  "youtube_url": "https://www.youtube.com/watch?v=dJDH8BIYkaM",
+  "audio_sha256": "28684efcae695146c826fb7314d3ea0e0bb03d0f9bf6a028950a18eb994182c6",
+  "audio_duration_seconds": 2713.9250625,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 7577,
+    "unknown_words": 129,
+    "unknown_words_fraction": 0.01702520786590999,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.43,
+      "end": 1.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 2.92,
+      "end": 24.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So today we are going to chat about the direct impacts of networkism. But first, a reminder, this is brought to you by Root. Root is a delightful school that has a Root fellowship, which is a community of world-class systems thinkers looking to understand and build the future. If you'd like to learn more, check out root.co.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 27.16,
+      "end": 27.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Also",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 27.68,
+      "end": 30.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a reminder, hello everybody on the internet. I hope you're doing well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 32.2,
+      "end": 32.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 32.74,
+      "end": 35.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "wish the best for you and the people you love.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 37.32,
+      "end": 37.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 38.24,
+      "end": 57.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so we're chatting about networkism, and we're in section two of the whole course. And within section two, we're at video three, video C, which is the direct impacts of networkism. Last time we chat about the mechanisms, and next time we'll chat about institutional impacts, but today we'll chat about direct impacts.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 59.32,
+      "end": 59.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 59.86,
+      "end": 62.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we'll mostly, we'll mostly chat about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 63.29,
+      "end": 63.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 63.73,
+      "end": 82.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, first, why are we learning about this? And then the impacts of information abundance, too much information, and then also the impacts of permissionlessness, the fact that there's protocols with low friction. Okay, so why are we learning about this? Well, primarily it's because it's a pattern that we can slot things into.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 82.93,
+      "end": 83.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "When",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 83.39,
+      "end": 96.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we think about the impacts of the internet, we can say, ah, that is information abundance. That's the underlying issue here. Or, ah, that is permissionless protocols. This is super low friction, and that is both good and bad.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 98.78,
+      "end": 99.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 99.22,
+      "end": 118.19,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "let's start with information abundance. As a reminder, there's a lot of information out there now, and some of it's bad, and some of it's good. So you remember that the information revolution, sorry, the industrial revolution gave us stuff, right? Increase the GDP of everybody in the world. It provided me with t-shirts and all kinds of things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 119.07,
+      "end": 119.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "While",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 119.51,
+      "end": 131.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the information revolution gives us information. And so there's... Lots more information now. And the hope, the long-term hope, is that we can turn that information into knowledge and wisdom.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 133.74,
+      "end": 197.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Cool. So let's dive into the information abundance piece and all the sub-impacts there. The first is that, yeah, when there's a lot of information, you're just, that's not going through trusted third parties, you're going to get a lot of fake news and you're going to be in a post-truth world. So on the left side here, we have this, you know, the printing press, 1440. And how many books got printed? Wow, a lot of books. And you can look at, you know, if you go to fake news on Wikipedia, there's a lot of fake news with the original printing of books. People, there was a trusted third party, aka the Catholic Church, that had the Word of God. But then you got all kinds of crazy people. posting stuff, creating books about all kinds of crazy things. Some of them may be good, like Luther and the Protestant Reformation, and some of them may be bad, where it's just scams. And so too with the internet. We have a lot of good information out there. It's amazing. And a lot of bad information out there, anti-vax, conspiracies, etc.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 199.16,
+      "end": 207.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "The second point here is that information abundance helps us shine a spotlight on things. So when there's more information, that just means we'll be able to see more stuff.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 209.34,
+      "end": 221.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "As an example of this, let's use the recent George Floyd killing in the protests. So this basketball player, Kareem Abdul-Jabbar, has a great line about racism in America.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 222.48,
+      "end": 223.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 223.04,
+      "end": 250.65,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "he says, African-Americans have been living in a burning building for many years, choking on the smoke as the flames burn closer and closer. Racism in America is like dust in the air. It seems invisible, even if you're choking on it, until you let the sun in. Then you see it's everywhere. As long as we keep shining that light, we have a chance of cleaning it wherever it lands. But we have to stay vigilant because it is still always in the air.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 252.32,
+      "end": 262.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So that's the idea here is that you have something like racism in society, which is it always, I mean people have, yeah, it always exists essentially, at least for now. And we'll always have stereotypes and those kind of things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 263.5,
+      "end": 263.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 263.78,
+      "end": 271.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you can't, sometimes you can't see it, but then whoa, once you see it, you're like, oh, God, the dust is in the air, and you can really see it once the light is there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 272.78,
+      "end": 273.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 273.22,
+      "end": 354.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "as an example of this, you have, with these, yeah, with these police killings, they have shone, they have shined light on this dust. So in 1991 with Rodney King, Rodney King was a man who was beaten in Los Angeles, and he... Someone at the time, video recorders were just starting to become a thing, and someone got that video recording, saw it, and then posted it to, you know, a local news station who then shared it, and that then got everybody angry, very angry because this beating was, it is a very sad, it's a very sad and sad thing. And similarly, with George Floyd, you have a bunch of people taking smartphone video of his killing. As a result, that can then spread and shed light on these really bad things that may have been happening in the shadows, or were definitely happening in the shadows in the past, but we weren't able to see. And similarly, with protests, you know, this is a thread of, you know, this is right here, this was taken a long time ago, but this is 346, that's the number that they were on of protest videos of police brutality in protests. And so, yeah, when everybody has a smartphone, the brutality gets... you know, bad things get alight. And good things too.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 356.13,
+      "end": 398.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, so C, the third idea here is aggregation theory. That's a key impact of information abundance. So the idea here, and this is from this guy, Ben Thompson, from Stratetri, is that you have, essentially the internet allows you to connect to any consumer in the world all for zero marginal cost. If I am Facebook and I want to meet some new person, if I want to get a new customer over there in Bangladesh, well, they just go to Facebook.com and boom, they are now my customer. They are now on Facebook. They're now my user. That idea that anybody can access",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 398.24,
+      "end": 399.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 399.72,
+      "end": 403.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "thing on the internet, all for zero marginal cost, that means that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 403.76,
+      "end": 404.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 404.76,
+      "end": 430.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "things that win, they start to win big. because they can just acquire more and more people at zero marginal cost. So Netflix here, as an example, you start to be Netflix, you start to create some great content, you start to aggregate all of this cool, or you start to get all these great content on the back end, and then anybody in the world can just access it by going to Netflix.com.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 431.22,
+      "end": 431.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 431.72,
+      "end": 435.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so this idea of aggregation theory, it really switched where...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 437.0,
+      "end": 437.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 437.56,
+      "end": 445.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "were, where businesses were able to, essentially where their leverage points were, where in the past, something like a newspaper, they had to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 445.24,
+      "end": 446.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "really",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 446.34,
+      "end": 453.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "focus on their distribution. Because distribution for them was crucial. If you're New York Times, you have to have all these",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 453.82,
+      "end": 455.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "trucks",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 455.26,
+      "end": 473.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and stuff to send the newspaper everywhere. But then, Something like Facebook comes long and it just says, oh, nope, that costs zero now. And because that costs zero, we're just going to aggregate all the people to our good website and then it's going to be difficult for you New York Times to survive.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 474.14,
+      "end": 474.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 474.62,
+      "end": 503.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's the idea behind aggregation theory. It aggregates demand or aggregates the consumers. And then once you aggregate all the consumers, then all the suppliers, all the media organizations, anybody else on the back end kind of has to play by your rules. So for Netflix, that's why you have companies being like, oh, Netflix will do, well, we just want to be on your platform, you know, movie studios and things like that, because that's the way that they access consumers. And if they don't get on Netflix, well, the consumers won't even see it at all.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 504.97,
+      "end": 505.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "A",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 505.15,
+      "end": 513.19,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "key part of aggregation theory is that it has a reinforcing feedback loop, which is why we get really big organizations like Facebook with 2 billion users.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 513.93,
+      "end": 514.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "If",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 514.33,
+      "end": 531.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you have really good user experience, People will come to your website. People want to come to Facebook because it is amazing. Let's go to Facebook and see all your friends. That gives you all this attention. And then that attention, everybody being on Facebook means that all the suppliers, all the companies, all the media organizations need to go to Facebook.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 532.48,
+      "end": 532.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 532.92,
+      "end": 564.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then all the suppliers being there makes the experience better. It both gives Facebook data and all the suppliers are there. And so if you want to learn about a company or whatever you go to Facebook. So this is... this reinforcing feedback loop, that the user experience leads to more attention, which leads to more suppliers needing to be there, which leads to the company being able to make their user experience better and better, leading to more attention. So that is aggregation theory. And aggregation theory leads to these natural monopolies,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 564.39,
+      "end": 565.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 565.37,
+      "end": 614.42,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "where you have this underlying feedback loop that's really powerful. And then you get these huge, yeah, aggregators or platforms or monopolies. And you can see this with this graph that we showed earlier of how important internet companies are. So the graph on the left is, you know, in 1995, you know, Windows and Intel were kind of important. You know, they were in the top 20 top market cap companies in the world. But then in 2016, on the right, these orange ones, that's GAFA, Google, Amazon, Facebook, and Apple, oh boy, they're really important. They're four of the top five are those, are these aggregators. So, yeah, you have these huge natural monopolies. And the kind of sad thing here, or not sad, it's just a truth, is that we may have seen",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 614.42,
+      "end": 615.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "these",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 615.58,
+      "end": 648.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "monopolies may just stay. Just like at the beginning of when cars were created, we're just starting to be created, you can see this new American car companies in the 20th century. Wow, in the 1900s, 1910s, 1920s, lots of people were making. Cars, there were all kinds of car companies happening. Lots of experimentation. There was a new self-organizing system. And then essentially Ford won, right? They created Model T's. People loved Model T's that gave Ford more money, which allowed them to make their processes even more",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 648.69,
+      "end": 650.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "efficient",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 650.81,
+      "end": 658.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and, yeah, more cost efficient, which allowed them produce more Model T's and then more people bought them in just a reinforcing cycle.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 658.99,
+      "end": 659.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 659.53,
+      "end": 670.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so similarly with Internet, aggregators, we may just have these, you know, it's not like anybody's trying to build the next Facebook. That's kind of hard because the natural monopoly is so strong there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 673.3,
+      "end": 729.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "This leads to the fourth point, point D here, that there's this paradox on the internet of niches in the long tail. And what I mean by this is the long tail is this yellow part here where you have, that means, so there's two sides here. First is Reddit on the left is the green. That is these big winners. That's all these aggregators. It's something like Reddit. And you have these massive big aggregators. But then you also have this long tail of all the things that are built on top of Facebook or all of these subredits. This is a picture of a bunch of random personal finance subreddits. There are so many subrettes. I think there's like a million subredates, 300,000. So, yeah, you have this weird paradox on the internet where you both have these huge aggregators, these big winners. and you have this really, really long tail of all the other random stuff on the internet because it's so cheap to do things on the internet still.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 730.05,
+      "end": 730.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 730.65,
+      "end": 737.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's kind of the paradox, is that zero marginal cost leads to both big winners, but also",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 737.17,
+      "end": 738.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 738.21,
+      "end": 741.65,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "thousand flowers blooming in this long tail of stuff.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 743.48,
+      "end": 744.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "As",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 744.08,
+      "end": 753.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "an example of this, you know networked influencers are part of this long tail so you have the traditional media versus networked influencers and with something like covid here's a good example",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 753.57,
+      "end": 754.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 754.83,
+      "end": 755.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you know the media",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 756.08,
+      "end": 757.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "had",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 757.38,
+      "end": 767.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "didn't do the best job at the beginning with covid and they had some reflective pieces said oh what went wrong with the media's coronavirus coverage can we do better",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 767.96,
+      "end": 769.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 769.44,
+      "end": 770.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this picture here of all these different",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 770.82,
+      "end": 771.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "coronavirus",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 773.39,
+      "end": 779.05,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "people in February and March saying like, yeah, COVID's not a big thing. And that was an issue",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 779.05,
+      "end": 779.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 780.61,
+      "end": 788.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah, that was an issue. But with the long tail and with lots of both good info and bad info, well, you had these,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 788.89,
+      "end": 789.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 789.45,
+      "end": 813.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, people with COVID who were actually really... They were on the good info side. They were warning people in January, February, March, hey, everybody, I think we should probably be worried about this. It's in China now, but it could be coming to us soon. And so, yeah, I think this is an example of the long tail and the ability for the long tail to have good info within",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 813.87,
+      "end": 814.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 815.67,
+      "end": 852.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay. So to conclude, information abundance leads to both, you know, some bad info, you know, fake news and post-truth stuff, some good info. you know, shining a spotlight. It leads to these aggregation theory, you know, aggregating all the consumers. And then also this paradox of big winners while also having this long tail and small niches. So yeah, the TLDR is that there's lots of info, both good and bad. Aggregators are organized that fire hose of info and prioritize it for you. And then niches kind of ignore the fire hose and just talk to you directly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 853.69,
+      "end": 855.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 855.76,
+      "end": 858.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what does information abundance feel like in your body? Hmm.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 878.12,
+      "end": 878.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 889.34,
+      "end": 890.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this is maybe just me, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 891.67,
+      "end": 892.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "long",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 892.87,
+      "end": 893.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "-term optimistic",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 893.83,
+      "end": 895.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 899.39,
+      "end": 900.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "my",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 900.35,
+      "end": 903.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "body and my mind have this sense that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 903.73,
+      "end": 904.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "although",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 904.79,
+      "end": 907.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we have these crazy new protocols",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 907.17,
+      "end": 908.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 908.05,
+      "end": 911.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "create good and bad things, although they're these big winners and a lot of these small niches,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 913.2,
+      "end": 913.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 913.78,
+      "end": 922.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it's cool, that we'll be able to work through that over time, really... push for good information, start to work with these big aggregators to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 922.64,
+      "end": 923.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "make",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 923.88,
+      "end": 924.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "them",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 924.18,
+      "end": 925.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "better",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 925.28,
+      "end": 928.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "for society. And also,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 928.99,
+      "end": 930.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 930.83,
+      "end": 936.18,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "allow for this beautiful niche, all these beautiful niches to continue to form.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 938.96,
+      "end": 946.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, interactive time. So the first question is, A, how can you personally leverage the idea of a niche?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 947.06,
+      "end": 947.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 947.54,
+      "end": 961.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is this idea of a personal monopoly. How can you exist on the internet, form a niche, and then bring people into your niche? The second question is, if consumers like the user experience of aggregators, should we break them up?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 962.16,
+      "end": 962.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 962.64,
+      "end": 970.62,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, this is like, and these are issues with that people are having from a legal perspective around aggregators and, you know, big tech",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 970.62,
+      "end": 971.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 971.86,
+      "end": 973.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "well, if everybody likes it,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 974.39,
+      "end": 974.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 974.61,
+      "end": 984.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, if the... consumer surplus, if the aggregators aren't actually taking away consumer surplus, if they're still like doing a pretty good job and consumers love them, is it actually an issue?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 987.39,
+      "end": 990.41,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay. So now let's chat about the impacts of permissionlessness.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 992.52,
+      "end": 1023.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And the idea here is that protocols and decentralization create these permissionless networks and unstoppable code. And so what that means is that you have these protocols that are created like TCPIP and then those create anybody can start engaging with them. And so you get these decentralized networks and that's cool. But it means that they're permissionless and it means that it's kind of unstoppable. This code, it's going to fly around the internet no matter what you say. Like the government can't get in there. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 1023.61,
+      "end": 1024.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 1026.33,
+      "end": 1033.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "key idea here is with something like a protocol, TCPIP, it sends these packets in an unopinionated way.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 1033.59,
+      "end": 1034.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "What",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 1034.05,
+      "end": 1055.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that means is you have this protocol, TCPIP, it just is going to take the bits, the zeros and ones, it's going to put them in its little box, its packet, and it's going to say, well, where do you want me to send them? Oh, great, I'm going to send them over there. Great, it goes over there. It doesn't look inside and determine, is this child pornography, or is this something bad? It just sends them no matter what.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 1057.84,
+      "end": 1096.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And because anybody can implement the protocol, it leads to decentralization. So this picture on the left is a bunch of... routers all around the world and in the internet. There's so many, it's like, who would you even, if you want to stop the child pornography, where do you stop it? You know, can you stop it at this server? Well, no, there's so many servers out there. And similarly here, on the right, this is Bitcoin. Because anybody can run a Bitcoin server or Bitcoin Node. We have tens of thousands of Bitcoin nodes all around the world. So it's tough for government to come and say, ah, you need to shut down, you know, node. Well, it's like, well, cool, there's going to be 10,000 others. So, Try your best.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 1097.67,
+      "end": 1122.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So that is how this decentralization is created. And one way to think about this is that this permissionlessness both happens at the code level, where the TCPI sends the packets in an unopinionated way, and it also happens at the norms level. And this happened in the beginning of the internet with a declaration of the independence of cyberspace by this guy, John Perry Barlow.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 1123.44,
+      "end": 1124.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 1124.0,
+      "end": 1167.91,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this was happening at the beginning of the internet in 1996, and he wrote, er. Governments of the industrial world, you weary giants of flesh and steel. I come from cyberspace, the new home of mind. On behalf of the future, I ask you of the past to leave us alone. You are not welcome among us. You have no sovereignty where we gather. Governments derive their just powers from the consent of the governed. You have neither solicited nor received ours. We did not invite you. You do not know us, nor do you know our world. Cyberspace does not lie within your borders. We will create a civilization of the mine in cyberspace. May it be more humane and fair than the world your governments have made before.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 1169.69,
+      "end": 1182.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Whoa. So our boy John here, he's saying, hey governments, don't try to get up in here. Let us send whatever we want on the internet. Let us create this new, in his mind, beautiful society",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 1182.2,
+      "end": 1183.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1183.38,
+      "end": 1187.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is away from your world. You don't have sovereignty here. You just get out.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1189.1,
+      "end": 1212.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And this is an example of, in addition to the like TCPIP being an unopinionated protocol, that was part of the norms of the early internet where they were saying like, hey, governments, don't get up in here. We don't want you here. We want to do things. our way and you can't don't be in here allow us to do things in a permissionless way essentially",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1212.46,
+      "end": 1213.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1214.21,
+      "end": 1216.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so some of the problems though with unstoppable code is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1216.95,
+      "end": 1218.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "i mean",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1218.2,
+      "end": 1222.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you get a lot of stuff um first is you get illegal activity",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1222.38,
+      "end": 1223.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1223.32,
+      "end": 1243.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you have this picture from the last video of usenet communities well actually all these ones on the right here are quote, quote, legit ones. You know, there's, you know, France and the Netherlands and Denmark and whatever, Italy. That's all the communities on the right. But on the left, these are all part of alt, which is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1243.92,
+      "end": 1245.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "essentially",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1245.38,
+      "end": 1248.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "means illegal. So all these are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1248.48,
+      "end": 1250.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1250.12,
+      "end": 1276.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and drugs and things like that. And it's because they weren't allowed on the main side. So they created this alt community. And then that alt community. Essentially, eventually, I think it took up 80, right here, it looks like it's taking up, you know, 60% or something. I think it was like 80% of all use in that activity was in alt. And so you get this, yeah, legal activity. The code's unstoppable. Well, what's permissionless? Well, send whatever you want on the internet. And that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1276.44,
+      "end": 1277.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1277.62,
+      "end": 1281.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you know, it's especially clear with something like Bitcoin, where with information,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1281.84,
+      "end": 1282.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1282.6,
+      "end": 1312.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of allow people to send whatever they want. You know, it's like, yeah, send it here, send it there, whatever. It's not going to be that hurtful, except with something like, you know, child pornography is where it. people start to say, okay, we cannot send that over the internet. But with Bitcoin, it's like, well, you can't, you shouldn't be able to send anybody money. You shouldn't be able to send a terrorist money over the internet. Or for an example here, on the Silk Road, you shouldn't be able to send people money to buy illegal drugs. That was the idea, whether you agree or disagree. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1312.25,
+      "end": 1313.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1313.29,
+      "end": 1332.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "crucial concept here is that this unstoppable code, it allows us to disobey. just or unjust laws. It allows us to disobey the laws. And the question is, are they just or are they unjust? For something like the Silk Road, some people think that it should exist, that anybody should be able to do whatever drugs they want",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1332.28,
+      "end": 1333.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1333.73,
+      "end": 1348.65,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it's only hurting themselves or whatever. And similarly, you know, there are these countries on the right that were laws where you can't be homosexual. And so for some folks on the right, in order to do things like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1349.3,
+      "end": 1349.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "If",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1349.7,
+      "end": 1370.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you want to give or receive, if you want to chat with people on the internet, if you're a gay person in one of these countries, it would be more difficult to go through normal things, but maybe you could go through the internet. It's permissionless. And so that's amazing. You can actually chat with people who you want to chat with and go around those unjust laws.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1370.7,
+      "end": 1371.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1371.24,
+      "end": 1378.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah, just the code allows you to go around the laws. That's the idea. And whether the laws are just or unjust, eh, that's up for debate.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1380.08,
+      "end": 1380.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1380.52,
+      "end": 1385.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so the second idea here is that permissionlessness decreases friction in feedback loops.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1387.49,
+      "end": 1409.65,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1410.09,
+      "end": 1410.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1410.67,
+      "end": 1423.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, this feedback loop for Facebook was just hypercharged. They were able to go from, you know, 10 users to 100 users, to 1,000 users, to a million users, to a billion users pretty quickly because these feedback loops",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1423.69,
+      "end": 1424.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "were",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1424.77,
+      "end": 1474.91,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "low friction. You know, aggregation theory is based off the idea that someone like Facebook has a zero marginal cost of getting new customers and getting new... Or getting new users and getting new advertisers. And because of that, wow, they can just grow super, super big, super, super quickly. So that's both a positive and a negative. Similarly, on the right, there's this hurt people, hurt people dynamic. Where on the internet, wow, I mean, if you outrage, you know, if I'm outraged at you, you're outraged at me, we go back and forth, back and forth, back and forth, and that is, and there's no friction. in the loop there to say, let's like just take a breath maybe for a second. Imagine if you were trying to have an angry internet debate over a letter, that would be harder because you'd have to send it to them, you have to wait three weeks, they'd send it to you, etc.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1477.07,
+      "end": 1587.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And this is very connected to the idea of free reach versus free speech. So we know, and these are, that there's so many free speech debates on the internet these days, the idea is that within normal free speech, we know it's illegal. Most free speech is legal. Hooray, it's amazing. But it's illegal if you yell fire in a crowded theater. Why? Because it creates physical harm. So if I just go into a crowded theater, I yell fire and 10 people die. Well, I should, my free speech is not protected there because I hurt people. And similarly, on the internet, well, it gets kind of confusing. If you send Bitcoin, BTC, to a terrorist, is that okay? Or if you encourage racism or like, are mean to someone on the internet, is that okay? Or is that how the connection to physical harm is more difficult to tell when it's on the internet because it's the world of bits versus a world of atoms. And so that's what people mean by free speech versus free reach is, yes, you should be able to say whatever you want on the internet. But maybe you shouldn't, it shouldn't be able to spread all over the place. Maybe. you shouldn't get that free reach. You know, if you, if I say something like, I hate all the Jews or something like that, which I don't, then maybe that shouldn't just spread everywhere. That's probably not great. And so this free reach is adding these frictions into the system. It's saying, eh, let's not spread stuff like that or let's make it harder to find the stuff that's maybe worse for people. So, That's the idea of free reach for his free speech. It kind of takes this graph of, you know, good info and bad info being equal and says, you know what, let's just make it so the good info is easier to find and the bad info is harder to find. So let's add a little bit of friction back",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1587.14,
+      "end": 1587.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "into the system.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1589.87,
+      "end": 1592.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So, yeah, platforms do inserts friction. This is from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1592.27,
+      "end": 1594.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "early",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1594.05,
+      "end": 1606.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "August in 2020, where Twitter just added... these little bit of friction to these Twitter pages where they say, ah, this is Russian state affiliated media. And they said it on these Twitter pages",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1606.51,
+      "end": 1607.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1607.53,
+      "end": 1612.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of warn people, hey, maybe when you look at this, add a little bit of friction there. That's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1612.53,
+      "end": 1613.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "probably,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1614.19,
+      "end": 1625.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I mean, and again, this is up for debate, whether this is good or bad. Do they say this for all countries, you know, for all affiliated media? Oh, boy. I don't think so. So that's why it's sketchy, but there is...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1626.15,
+      "end": 1626.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1626.15,
+      "end": 1640.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, the friction, adding friction is a thing that is good that we should generally be in favor of because you need to add some friction to these things in order for stuff not to go crazy. Another way to add friction is to put humans in the loop. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1640.33,
+      "end": 1641.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1641.95,
+      "end": 1660.63,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "idea here is something like, and this image is from this piece by the verge about these Facebook content moderators. So Facebook was having issues with anybody can post anything on Facebook. And then you get a lot of, pornography and guns and you know people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1660.63,
+      "end": 1661.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "uh",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1661.65,
+      "end": 1690.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you know more uh i want to i say right wing here but people who are uh saying bad being rape people who are more being more god this is going to get me hurt on the internet sorry people who are saying bad things about other people on the internet trying to create physical harm And then you have all these content moderators. You have Facebook with massive scale, 2 billion people. Oh boy, you have these content moderators who then as humans start to moderate this content.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1690.78,
+      "end": 1691.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1691.22,
+      "end": 1705.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "issue is that scale is massive. I think they had 40,000 moderators when I last checked. I wouldn't be surprised if it was more like 100,000 now. So you have to have all these moderators just looking at all this information. And the content is really intense. So a lot of these moderators",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1705.74,
+      "end": 1706.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "get",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1706.98,
+      "end": 1725.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "stuff like PTSD. from this because they're watching guns and violence and pornography and hate speech all day and they're trying to determine oh is this good or bad this should i you know censor this or not so putting a human in the loop can be really powerful but it also has has downsides",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1726.81,
+      "end": 1727.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1727.87,
+      "end": 1739.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "leads to a question of like where is this moderation okay you know what really counts as censorship and there's this great graph from stertetri from ben thompson that says you know what If you are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1739.48,
+      "end": 1740.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "user",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1740.92,
+      "end": 1843.31,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "-facing versus if you're infrastructure versus if you just provide access. So if you provide access, that's like the TCP-IP layer. The idea is that the TCP-IP layer, you should be able to send anything. Even if it's, and I don't know, TCP-IP, I don't think has any, even any rules around child pornography or whatever. But once you get to, once you get further up something like user-facing around Facebook, then maybe you should, have some more discretion there and to start to say, okay, we're a platform. We want to restrict speech or censor some stuff that we don't think is actually good for people. And that's, so you have discretion and responsibility on the left versus legality being the decision. So if something is illegal, then you should really. Maybe you should take it down. So something like child pornography, even if it's at a deep low level for something like there's a thing called Cloudflare, which determines how to do IP stuff on the internet and prevents these denial of service attacks, whatever. It's a deep level infrastructure thing. Cloud fare should generally send whatever they want over the internet, even if it's someone like hate speeching on somebody else. But maybe Cloudflare shouldn't do something that is child... pornographic, you know, is child pornography. That is probably not good. So if you're deep down in the stack, if it's illegal, stop it, but if it's anything else, eh, kind of out of flow. If you're higher up in the stack, maybe if, you know, if you're Facebook, well, you're mostly thinking then about, it's, you've got to use your own discretion. Should you really share all those, like, things that are, should you really amplify, you know, really hate speechy stuff? Maybe not. So this is just a helpful framework for this that allows the protocols",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1843.31,
+      "end": 1849.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "to still exist and to send stuff permissionously while at the higher level taking more discretion around what should get sent.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1850.82,
+      "end": 1851.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Another",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1851.34,
+      "end": 1853.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "key concept here with humans in the loop is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1853.36,
+      "end": 1854.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1854.3,
+      "end": 1921.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "think of computers as a mirror, not a crystal ball. So this often comes up with something like artificial intelligence where you look at some data, you say, oh, this person is poor. Let's say you look at a bunch of data, you're trying to determine whether to let someone out for bail or whether to put someone in jail or whatever. And you look at the poor person and you say, oh, this person is poor. Well, poverty is correlated with, you know, if we let them out of jail, they have a higher risk of doing something bad. So let's just keep the poor people in jail. That's not great. You don't want that. You want to instead use the computers and the modeling to say, ah, Wow, it looks like poverty is really connected to crime rates and to recidivism rates. Let's think more about this and let us use that as a crystal ball to really start to get to the root level here and to start to help poverty more so that we have less crime, or so that we have less high recidivism rates, less high people when they get released from jail earlier committing more crimes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1922.53,
+      "end": 1922.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1923.51,
+      "end": 1950.85,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "That's the idea behind humans in the loop. And you can also think of it for networks too, where you just want, if a computer, if the network is telling you things that are, if the network is telling you to like, you know, use hate speech or what have you, maybe evaluate why the network is telling you that and to say, oh, what was the, what were the human inputs to this network? So, yeah, humans in the loop can be very powerful as a way to reduce friction.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1952.94,
+      "end": 1953.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Another",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1953.42,
+      "end": 1961.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "thing that's very connected to the humans in the loop piece is, yeah, that these racism and stuff can get embedded in code. Just like we had",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1962.25,
+      "end": 1963.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "racism",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1963.63,
+      "end": 1981.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "embedded in laws with stuff like redlining, so too can racism be embedded in code where you have, yeah, with something like the poverty example. Or if you say, ah, African-American folks are more likely to have higher recidivism rates. Okay, let's keep them in jail for longer or whatever. It's like, that doesn't feel great.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1982.81,
+      "end": 1983.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1983.33,
+      "end": 1987.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that is that. Let's now chat about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1987.33,
+      "end": 1988.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1988.51,
+      "end": 1990.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "idea that debates. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1990.17,
+      "end": 1991.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1992.32,
+      "end": 1998.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you think about the internet and we had these permissionless protocols that are sending stuff wherever, and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1998.94,
+      "end": 2000.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 2000.08,
+      "end": 2012.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "want to think you want to sometimes add friction to those things, the other question is kind of where does the information naturally get sucked towards? Okay. What attracts attention?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 2013.16,
+      "end": 2013.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 2013.6,
+      "end": 2027.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the idea is that these debates attract attention, these internet debates. So the idea here is that, and I thought of this because of these free speech debates, everybody on the internet is always talking about free speech and no censorship, this, blah, blah, blah. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 2027.1,
+      "end": 2028.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 2028.42,
+      "end": 2044.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "way to imagine this is that it's, yeah, it's this black hole that just sucks people towards it and sucks the attention towards it. There's this great article called it by a Vingateh Rau called the Internet of Beefs. And the idea is that on the internet, attention is the prime",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 2044.44,
+      "end": 2046.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "value.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 2046.36,
+      "end": 2067.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "If you're trying to get more and more attention to yourself, you're trying to get more followers. And so on social media, what you'll have is this internet of beefs where people are angry at each other. That's what beef means. It's like, I have a beef with you. I don't like you. And people are incentivized to have those debates. So you have a person over here, some influencer, versus some person over here, some other influencer. They're incentivized to be angry at each other",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 2067.98,
+      "end": 2069.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 2069.02,
+      "end": 2076.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then that provides them with more people will then you know, get attracted to them. And then all of the people beneath them",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 2076.99,
+      "end": 2077.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 2077.97,
+      "end": 2086.85,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "also kind of, they're hating on the other side, and they're also like venerating their leader, their influencer leader. And so that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 2086.88,
+      "end": 2088.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 2088.4,
+      "end": 2100.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is, you'll see that on the internet a lot, is people debating with each other and then the people beneath them who want to get more attention, like talking up to their leaders. So that happens on the internet all the time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 2102.42,
+      "end": 2104.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it's very different than",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 2104.02,
+      "end": 2105.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 2105.18,
+      "end": 2111.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "other information that doesn't attract people. So this is an example of information that doesn't attract people, even though it's very important.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 2112.3,
+      "end": 2112.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 2112.7,
+      "end": 2147.97,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 2148.93,
+      "end": 2149.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 2149.33,
+      "end": 2163.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so the world can be much better. You know, if we decrease the per capita. in, you know, all the world to a place like the European Union, then we'll have a lot less deaths. It'll go from 5.5 million to just 550,000.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 2164.18,
+      "end": 2164.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 2164.58,
+      "end": 2175.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this idea, hey, the world's much better. Things are so much better in the past. The world today is still bad. It's awful. And it can be much better. We can do a lot better. Let's go, people. Those three ideas,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 2176.4,
+      "end": 2176.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 2176.86,
+      "end": 2178.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "don't create",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 2178.1,
+      "end": 2180.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "attention",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 2180.32,
+      "end": 2276.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "around them. They're just like, oh, here's a truth. Here's a thing we should. keep in mind and like try to get better at. But they don't create debate. They don't, they don't bring people towards it. You know, it's just like, oh, here's a truth. And this is why things like this are not shared that much. You don't have people like congregating around things like this. You have people congregating around internet debates. So I like to think of it as these debates being anti-fragile. So something like this is not anti-fragile. It is just like, here's the truth. And then if you ask a little bit more about it, it's like, oh, yeah, this is mostly true, blah, blah, versus these other debates, which are antifragile. Anti-fragile means that for every, you know, it's like a hydrahead. For every little thing you chop off, you get more about it. So, you know, for something like the free speech debates, you can ask, oh, is XYZ censorship? Is this D platforming? Is this a restriction of free speech? There's so many different sub... arguments and everything and people can argue XYZ and you can argue about language and there's so many just branches of these things that just it sucks all the information towards it and everybody's incentivized to suck the information towards it because if you're in that loop more people are liking your stuff you're an influencer blah blah and so that's an issue uh i call this an anti-fragile attractor which means that it is a thing that when you hit it more, when change happens to it, when you chop off more hydra heads, when you ask questions about free speech, it just creates more and more and more. And then that thing brings more and more people to it and it just attracts like a gravity well, just attracts more and more people towards it. So this is just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 2276.09,
+      "end": 2290.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a crucial way to see things on the internet. It's like, okay, what debate is happening? What are the incentives of the people in this debate? And why aren't they just saying something like, hey, here's the TLDR. Let's agree to disagree.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 2292.99,
+      "end": 2309.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "The other thing that sucks information towards it is, you know, the other way the attention economy works is that Google Amazon, Facebook, and Apple, especially Google Amazon and Facebook, they want your time and your data. And this is what they call the attention economy, which is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 2309.82,
+      "end": 2310.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 2310.9,
+      "end": 2362.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the economy of the internet. And the idea is that there's this arms race for attention. If you're YouTube, you want more and more time. And so what you'll do is you'll maybe addict your people and say, hey, don't forget to let's do an autoplay thing. Let's just keep you on our site. And then Facebook. It's like, oh, God, too many people are going over to YouTube. Let's make an auto play on our website too. And before you know it, Netflix has an auto play. YouTube has an auto play. TikTok has everybody has auto plays because they're battling with each other for attention. And then you just feel addicted to the internet. And this is because advertising money comes from time on site multiplied by data. about your user, aka if I'm a person who's on the website, if I spend a lot of time on there and you know a lot about me, then you can send me a lot of ads that are personalized to me that you can make a lot of money on.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 2362.68,
+      "end": 2363.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 2363.08,
+      "end": 2374.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so that's why companies maximize time and data. They try to keep you on the site as long as possible, and they try to get more data about you to keep you there because they know you better and to sell more advertisements because they know you better.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 2375.62,
+      "end": 2376.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 2376.02,
+      "end": 2384.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that is sad and that's what we get. this book called The Age of Surveillance Capitalism by Shoshana Zuboff, which deeply goes into this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 2384.69,
+      "end": 2385.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "problem",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 2385.73,
+      "end": 2401.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "and issue with society. Okay. So that's what permissionless needs. Permissionlessness leads to. Illegal activity, less friction generally, which can be good or bad. You might need humans in the loop. These",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 2401.41,
+      "end": 2402.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "debates",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 2402.75,
+      "end": 2404.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that are just attracting people towards it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 2404.87,
+      "end": 2405.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 2405.41,
+      "end": 2411.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then... this Google Amazon Facebook folks who are attracted to your time and your data as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 2411.1,
+      "end": 2411.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 2413.74,
+      "end": 2416.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay, what does permissionlessness feel like in your body?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 2420.26,
+      "end": 2420.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hmm,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 2429.82,
+      "end": 2429.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "hmm,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 2448.72,
+      "end": 2449.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a bit tiring.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 2454.76,
+      "end": 2457.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "It also makes me think of just the friction piece",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 2457.36,
+      "end": 2460.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 2460.89,
+      "end": 2466.05,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "much of these, decreasing the friction around things is really, really, really good.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 2466.43,
+      "end": 2466.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 2466.95,
+      "end": 2469.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "amazing that we can send information around the world for free.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 2470.63,
+      "end": 2471.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 2471.23,
+      "end": 2474.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we do need to... Add friction to stuff.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 2482.3,
+      "end": 2496.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Interactive time. What was the last internet black hole that you went down? Was it worth your time? You know, what personal needs did it meet? And how much of it was you being sucked towards some kind of internet debate? And how much of it was the,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 2496.28,
+      "end": 2497.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 2497.12,
+      "end": 2501.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, the attention economy or the platform addicting you without you realizing it?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 2503.1,
+      "end": 2503.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Second",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 2503.48,
+      "end": 2508.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "question, how do you think platforms are overreaching with their nudges?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 2508.96,
+      "end": 2509.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "How",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 2509.42,
+      "end": 2514.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "should they prioritize content on their platforms? What is a page rank for knowledge?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 2516.11,
+      "end": 2530.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yes, the idea here is, man, if everybody has autoplays now, or everybody now uses the feed because it's very dopamine for us, it's like a slot machine. Well, is there a better way to prioritize content on platforms?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 2531.46,
+      "end": 2532.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "How",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 2532.02,
+      "end": 2537.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "would we create these new protocols or platforms actually optimize for knowledge and wisdom?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 2540.7,
+      "end": 2541.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 2541.68,
+      "end": 2546.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So that is today's episode. We learned about information abundance and permissionlessness",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 2547.42,
+      "end": 2548.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 2548.8,
+      "end": 2553.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what it will feel like to integrate your learning and things to watch out for. Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 2555.29,
+      "end": 2572.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "A, you'll start to think about, poof, the information abundance piece. There's just a lot of info. You'll see the good info. You'll see the bad info. And you'll start to see some of the bad info as kind of inevitable. You're like, okay, whatever. But you'll also be really aware of your own sense-making processes and try to search for more good info.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 2574.48,
+      "end": 2586.64,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "The other crucial thing here is that, wow, the internet is just bigger than you think. You know, you have these big winners, which are really, really big. Facebook doesn't just have 100,000 users. They have 2 billion users, like a fourth of the world population.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 2587.46,
+      "end": 2587.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 2587.82,
+      "end": 2596.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so you have these massive, massive winners and... These small niches, you have so many of them. It's amazing. You can find anything on the internet, I hear.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 2599.05,
+      "end": 2608.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "The other thing you'll start to do with permissionlessness is just really start to think in terms of friction. Where are the platforms adding friction? Where can you add friction in your own life to interact with the internet better?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 2610.63,
+      "end": 2610.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 2610.93,
+      "end": 2615.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, how do we add go from the world of bits into the world of atoms? How can we add humans to loop?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 2616.97,
+      "end": 2617.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You'll",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 2617.33,
+      "end": 2635.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "also start to see these attractors, whether it is... Yeah, just as you're engaging with the internet and thinking about what you're being sucked towards or what other people are being sucked towards. And you're like, eh, is that how connected is that? This is connected to point number five here, which is differentiating bits from atoms where you're like, okay, is that internet debate? Is that mostly just self-referential?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 2636.79,
+      "end": 2637.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 2637.19,
+      "end": 2645.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is it actually connected to some human needs in reality? If so, awesome. Keep having it. If not, well, maybe don't keep having circular debates.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 2647.08,
+      "end": 2651.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And a thing to watch out for here is... As all of this stuff is happening,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 2652.81,
+      "end": 2658.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it can feel like, wow, you have this information abundance, you have these, you know, permissionless protocols.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 2659.77,
+      "end": 2667.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "It kind of feels inevitable. But remember, you can see yourself as an agent with free will that things are changeable,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 2668.45,
+      "end": 2669.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that... We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 2669.73,
+      "end": 2687.81,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "can prioritize good info over bad. We can create, you know, we can start to regulate these platforms in good ways. We can find amazing small niches and start to maybe get rid of the bad ones or whatever. You know, we can add friction where we should. We can, you know, develop an attraction to lovely attractors. And we can,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 2688.5,
+      "end": 2689.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 2689.16,
+      "end": 2694.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, start to think about, you know, the world of bits and really connect it to our own needs and the world of atoms.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 2696.98,
+      "end": 2697.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 2697.42,
+      "end": 2700.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that is today's episode. Thank you so much for watching. Hope you're well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 2702.63,
+      "end": 2709.01,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And if you like this or want to learn more, check out the Root Fellowship, which is a community of world-class systems thinkers.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 2709.65,
+      "end": 2710.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Check",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 2710.09,
+      "end": 2712.05,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "us out at root.co. Thanks and goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 281,
+    "withheld": 3,
+    "published": 278
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

@@ -1,0 +1,5661 @@
+{
+  "schema_version": 1,
+  "id": "podcast-3d82be5bed8e6d503c7a",
+  "title": "#32 Harrison Hines, ConsenSys Token Foundry: Tokens in 2018 and Whitepaper Tips",
+  "published_at": "2018-01-20T03:47:20Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/32-harrison-hines-consensys-token-foundry-tokens-in-2018-and-whitepaper-tips",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/386320043-the-rhys-show-32-harrison-hines-consensys-token-foundry-tokens-in-2018-and-whitepaper-tips.mp3",
+  "youtube_id": "FBkwcObtybw",
+  "youtube_url": "https://www.youtube.com/watch?v=FBkwcObtybw",
+  "audio_sha256": "710d3cc2fe20a5cf5e7ecfe04d115cba9a1ef1664eb7c8e2f352cd384f282c2a",
+  "audio_duration_seconds": 1872.0,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 4423,
+    "unknown_words": 357,
+    "unknown_words_fraction": 0.08071444720777753,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": null,
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 12.78,
+      "end": 13.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 13.68,
+      "end": 23.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "everyone. In today's episode, I interview Harrison Hines from Consensus' Token Foundry. Consensus... Zizzizzizzizz, zizz, zizz, zizz.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 24.96,
+      "end": 37.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "And it's a good episode. We chat about both where the token market's going in 2018, and because Harrison's read so many white papers, thousands of white papers, we chat about tips for writing them. With that, enjoy today's episode with Harrison.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 42.0,
+      "end": 42.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 42.44,
+      "end": 71.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "everyone. My name is Reeslinmark, and you're listening to another episode of creating a humanist blockchain future. In this podcast, we take a systems thinking approach to doing good in the world, and we have a couple different series that focus on different system scopes, and today we're focusing on Siri C software systems, where we ask the question, what kind of systems are we building in code? And today, I'm very happy to introduce Harrison Hines to the show. Harrison is the head of token foundry, an initiative within consensus to help projects launch token sales. Harrison, thanks for being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 73.04,
+      "end": 73.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "No",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 73.4,
+      "end": 74.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "problem. Thanks for having me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 74.92,
+      "end": 82.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Yeah, excited to dive in. So I guess before we go deep dive, could you give us kind of like a high-level overview about token foundry?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 84.48,
+      "end": 84.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 86.46,
+      "end": 90.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So token foundry is building a platform to support",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 90.96,
+      "end": 92.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 92.46,
+      "end": 95.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "token ecosystem. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 95.32,
+      "end": 96.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "our",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 96.34,
+      "end": 103.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "goal is to help projects create. launch and manage sound utility tokens.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 104.24,
+      "end": 104.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 104.9,
+      "end": 110.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "focusing a lot on the token design itself, but also a large focus on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 110.34,
+      "end": 111.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 111.1,
+      "end": 113.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "actual way these tokens are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 113.38,
+      "end": 113.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "being",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 113.62,
+      "end": 115.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sold and making sure that the structures",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 115.74,
+      "end": 117.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 117.26,
+      "end": 118.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the sales are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 118.2,
+      "end": 118.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "very",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 118.98,
+      "end": 120.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "safe and fair",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 120.38,
+      "end": 121.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 121.3,
+      "end": 124.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "regulatory and legally sound.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 125.24,
+      "end": 126.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 126.08,
+      "end": 137.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "it. So pretty much anything for anybody that's doing, a token sale both on the crypto economic side and on the legal side and on the financial side, making sure that everything is essentially",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 137.39,
+      "end": 138.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 138.21,
+      "end": 140.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "best practice as possible. Is that kind of right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 141.29,
+      "end": 147.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, and I think, you know, part of it is for the issuers of the tokens, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 147.31,
+      "end": 148.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "also",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 148.35,
+      "end": 151.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "for contributors to these projects.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 152.39,
+      "end": 152.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 152.95,
+      "end": 154.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, the goal is sort of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 154.31,
+      "end": 155.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "two",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 155.05,
+      "end": 156.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "-sided to...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 156.5,
+      "end": 156.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "help",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 156.94,
+      "end": 161.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the issuers do things the right way and set them up for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 161.48,
+      "end": 162.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 162.24,
+      "end": 165.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of long-term success and then also",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 165.94,
+      "end": 166.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "help",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 166.86,
+      "end": 168.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "bring more transparency and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 168.86,
+      "end": 170.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 170.28,
+      "end": 174.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "best practices and standards to these tokens and token sales",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 174.48,
+      "end": 175.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 175.4,
+      "end": 182.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "help better protect contributors and hopefully attract more contributors to the ecosystem.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 182.28,
+      "end": 182.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 182.7,
+      "end": 183.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "it. Yeah, so I guess",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 183.86,
+      "end": 184.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 184.28,
+      "end": 192.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "kind of leads into maybe, you know, the reason and the why for token foundry right now, how do you kind of see the ecosystem generally right now",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 192.87,
+      "end": 193.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 193.41,
+      "end": 194.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "what is kind of needed",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 194.55,
+      "end": 195.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 195.13,
+      "end": 198.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "how does token foundry kind of hoping to solve some of those issues?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 200.51,
+      "end": 202.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Sure. So I'd say",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 203.01,
+      "end": 205.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "my",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 205.09,
+      "end": 206.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "background sort of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 206.39,
+      "end": 208.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "helped lead",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 208.95,
+      "end": 211.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "me to this previously.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 213.37,
+      "end": 214.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 214.05,
+      "end": 220.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "was... very early and helped build an equity crowdfunding platform called Seed and Beth.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 221.16,
+      "end": 222.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 222.78,
+      "end": 225.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I lived through the whole Jobs Act and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 225.38,
+      "end": 226.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "equity",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 226.12,
+      "end": 232.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "crowdfunding becoming a thing. And I realized the importance. There was a lot of platforms and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 232.5,
+      "end": 234.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 234.2,
+      "end": 239.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like different players who popped up early in the space. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 239.26,
+      "end": 240.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 240.0,
+      "end": 242.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "all them were necessarily doing things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 242.57,
+      "end": 243.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 243.05,
+      "end": 245.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "right way or, you know, kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 245.77,
+      "end": 246.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 246.45,
+      "end": 251.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "best way. So last year when token sales first were",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 251.33,
+      "end": 252.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 252.67,
+      "end": 259.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of coming into existence or becoming a real thing, I quickly realized that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 259.11,
+      "end": 260.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 260.67,
+      "end": 260.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 260.95,
+      "end": 261.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "going",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 261.67,
+      "end": 263.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to need to be some sort of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 263.83,
+      "end": 265.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "improvement",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 265.97,
+      "end": 266.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 266.67,
+      "end": 268.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "standards",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 268.23,
+      "end": 273.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "or best practices that were implemented. because as we've seen over the past",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 273.48,
+      "end": 274.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "several",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 274.36,
+      "end": 275.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "months or most of this year",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 275.82,
+      "end": 276.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 276.72,
+      "end": 280.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "kind of been the wild west and the current way that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 280.16,
+      "end": 280.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "token",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 280.76,
+      "end": 281.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sales are being",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 281.96,
+      "end": 283.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "done",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 283.02,
+      "end": 286.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is you know not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 286.36,
+      "end": 287.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "ideal",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 287.16,
+      "end": 288.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and there's a lot of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 288.32,
+      "end": 289.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 289.44,
+      "end": 293.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that are wrong about the current structures in terms of just like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 293.12,
+      "end": 294.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "uh",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 294.85,
+      "end": 301.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "contributors not really having any protection and these projects really not having any repercussions if they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 301.49,
+      "end": 302.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 302.29,
+      "end": 310.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "deliver on what they promise in their white paper or what they essentially are raising all this money for. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 310.65,
+      "end": 311.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 311.95,
+      "end": 314.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it became very clear to me that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 314.11,
+      "end": 315.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 315.09,
+      "end": 318.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "would need to be some sort of structure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 319.4,
+      "end": 319.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 319.74,
+      "end": 326.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "maturity brought to the industry and the whole token ecosystem. So I thought",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 326.06,
+      "end": 327.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 327.24,
+      "end": 330.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "was a real opportunity to lead that initiative",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 330.46,
+      "end": 331.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 331.08,
+      "end": 332.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "try to become the standard.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 333.78,
+      "end": 334.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 334.26,
+      "end": 340.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "could you talk a little bit more about what you see that standard looking like? How do you protect the contributors? How do you kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 340.82,
+      "end": 341.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 341.32,
+      "end": 346.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "help the issuers, you know, abide by these best practices? What are those best practices kind of and standards look like?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 348.2,
+      "end": 348.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 348.72,
+      "end": 354.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's constantly evolving just because the space is moving so quickly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 354.92,
+      "end": 355.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 355.96,
+      "end": 356.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I'd say",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 356.48,
+      "end": 357.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "part",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 357.18,
+      "end": 357.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 357.62,
+      "end": 360.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and what guided",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 360.84,
+      "end": 361.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "our thinking",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 361.46,
+      "end": 362.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "maybe",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 362.42,
+      "end": 366.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a few months ago has maybe changed a little bit recently. There have been",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 366.88,
+      "end": 368.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "some fairly",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 368.68,
+      "end": 372.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "strong comments by the SEC chairman",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 372.04,
+      "end": 372.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 372.98,
+      "end": 373.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "terms of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 373.78,
+      "end": 375.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "tokens",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 375.74,
+      "end": 378.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and token sales specifically. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 378.76,
+      "end": 380.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 380.86,
+      "end": 382.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we, right now we are kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 382.92,
+      "end": 385.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of doing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 385.6,
+      "end": 390.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a reset and trying to come up with a better sales structure standard.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 390.92,
+      "end": 391.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 391.7,
+      "end": 400.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what's leading that new structure is really trying to alleviate some of the concerns that we feel regulators are most,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 400.46,
+      "end": 402.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 402.42,
+      "end": 405.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "feel our most problematic about the way things are being done now.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 406.28,
+      "end": 406.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 406.62,
+      "end": 417.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "at the very top of that list is just protecting unsophisticated and sort of retail contributors to these token sales",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 417.4,
+      "end": 418.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 418.04,
+      "end": 427.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "token projects. So that's a bit of like a multifaceted problem and there's many ways",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 427.7,
+      "end": 428.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 428.48,
+      "end": 430.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "solve it. But things like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 430.78,
+      "end": 431.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "trying",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 431.8,
+      "end": 438.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to move away from some of these like ridiculous pre-sell structures or getting rid of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 438.03,
+      "end": 438.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "pre",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 438.73,
+      "end": 445.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "-sales completely, potentially is one thing. Building in some sort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 445.03,
+      "end": 445.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 445.93,
+      "end": 447.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 447.17,
+      "end": 449.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "protection",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 449.59,
+      "end": 453.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "against those proceeds post-token sale,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 453.83,
+      "end": 454.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 454.27,
+      "end": 468.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I mentioned in the beginning, to ensure that if the project doesn't deliver, or maybe you could milestone out the proceeds based on certain time unlock or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 468.72,
+      "end": 469.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 469.64,
+      "end": 472.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "actual milestone driven",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 472.28,
+      "end": 473.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "schedule",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 473.76,
+      "end": 474.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "based on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 474.54,
+      "end": 475.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "platform",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 475.44,
+      "end": 478.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "going live or a certain number of users being signed up.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 478.64,
+      "end": 479.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Thank",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 479.3,
+      "end": 479.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you very much.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 480.72,
+      "end": 482.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So those",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 482.52,
+      "end": 490.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "are certain ways you could do it. You could also implement some of the other things that they don't necessarily love",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 490.56,
+      "end": 491.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 491.28,
+      "end": 508.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "now are the fact that maybe most of the tokens are being bought by speculators. So you could solve that in a few ways, like maybe put in contribution maximums or, you know, make the contributor to the token sale kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 508.05,
+      "end": 508.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 508.63,
+      "end": 509.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "prove",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 509.17,
+      "end": 510.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 510.19,
+      "end": 512.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "some way that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 512.85,
+      "end": 513.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 513.29,
+      "end": 518.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "actually are purchasing this token for its utility, not just to speculate.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 519.77,
+      "end": 520.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "One",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 520.45,
+      "end": 527.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "other big problem is we feel that the trading of these tokens pre-platform launch is problematic. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 527.8,
+      "end": 528.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "easy",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 528.72,
+      "end": 538.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "things like making the tokens non-transferable until some event, like the platform going live, is an easy way to alleviate that concern. And other little things like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 538.62,
+      "end": 539.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "actually",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 539.64,
+      "end": 542.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "having like a minimum thresholds for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 542.18,
+      "end": 543.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 543.88,
+      "end": 545.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sale being considered a success.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 545.84,
+      "end": 546.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 546.48,
+      "end": 549.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this way, if you launch a token sale and let's say you only raise,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 549.48,
+      "end": 549.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 549.98,
+      "end": 558.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, a few hundred thousand, which is, and the project's trying to raise, let's say, 15 million, that those people who",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 558.76,
+      "end": 559.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "committed",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 559.7,
+      "end": 563.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the few hundred thousand don't just get left kind of in the dust",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 563.94,
+      "end": 564.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 564.8,
+      "end": 579.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you set some sort of just minimum threshold, so everyone knows, like, okay, if you don't raise, let's say, a minimum of three million, then the sale is considered a failure and everyone gets refunded, or at least you give them sort of the option.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 580.41,
+      "end": 580.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 580.67,
+      "end": 582.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "have a refund of some sort. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 582.48,
+      "end": 583.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 583.84,
+      "end": 588.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "still working on a few ideas and kind of prioritizing what we feel is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 588.86,
+      "end": 589.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "most",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 589.76,
+      "end": 594.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "critical to solve. But yeah, those are some of the things we're kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 594.1,
+      "end": 595.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "implementing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 595.12,
+      "end": 599.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "into the sales we start doing again in Q1.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 599.44,
+      "end": 599.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 599.74,
+      "end": 601.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "it. Yeah. I think that...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 601.26,
+      "end": 601.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 601.26,
+      "end": 601.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "mean, and as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 601.9,
+      "end": 602.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you say, there are a lot of different",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 602.88,
+      "end": 607.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "perspectives that you're coming out from. One is like the classic SEC perspective and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 607.5,
+      "end": 607.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 607.64,
+      "end": 607.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "much",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 607.88,
+      "end": 610.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they've been kind of pushing some statements",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 610.0,
+      "end": 617.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "these days that are more like, hey, let's get a little bit more transparent. Let's get a little bit more reasonable here. And then second, all these kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 617.24,
+      "end": 618.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of if-then statements",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 618.92,
+      "end": 630.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "of this, hey. If there's actual impact, then, you know, then, and if the actual, if the protocol itself goes live, then the people who are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 630.33,
+      "end": 630.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "making",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 630.57,
+      "end": 630.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 630.75,
+      "end": 631.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "can actually get",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 631.31,
+      "end": 643.41,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "some of that money. I feel like a lot of those things are powerful. And you start to see some of that, like, self-imposed. I'm reminded of, like, the block stack token sale, where I think they have these kind of milestones that are set up for themselves that give them that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 644.19,
+      "end": 644.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 644.55,
+      "end": 653.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "also reminds me, I really like the other if-then there that you said is, hey, If there's a, if the platform's not live, then you can't trade it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 653.61,
+      "end": 654.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 654.09,
+      "end": 670.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "so having that as another good if-then statement makes sense. This stuff also reminds me a lot of, especially like the minimum threshold side of thing, reminds me of the true bit and vitalic interactive coin offerings article. Have you read that one, by the way, and did it inform your thinking here?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 672.48,
+      "end": 672.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 672.96,
+      "end": 676.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "didn't. I read it back when it came out, but,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 678.93,
+      "end": 679.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 679.37,
+      "end": 679.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "read",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 679.65,
+      "end": 680.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 680.55,
+      "end": 680.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "many",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 680.77,
+      "end": 681.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "papers. I'd be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 681.91,
+      "end": 683.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "lying if I said I remember",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 683.75,
+      "end": 684.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the full",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 684.91,
+      "end": 685.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "details,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 685.53,
+      "end": 685.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 685.65,
+      "end": 688.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I understand on a high level what they were trying to do.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 688.71,
+      "end": 688.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 688.97,
+      "end": 711.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "it sounds very similar, honestly, to what you guys are trying to do here, where it's like, hey, and there specifically is talking about this kind of back and forth between... the people who are the contributors and the issuers and this kind of back and forth and making an actual dialogue there instead of this kind of one-time, one-off experience. So I think that's powerful. Is there anything else on your mind as you think about kind of the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 711.88,
+      "end": 712.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "token",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 712.8,
+      "end": 725.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "sale and ICO space? If you were thinking like a year from now or six months from now, what would you want to see as kind of a mature, good ecosystem here? What would that need to...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 725.73,
+      "end": 726.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "What",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 726.15,
+      "end": 727.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "would that need to look like for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 727.11,
+      "end": 728.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 728.62,
+      "end": 731.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Sure. It's a good question. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 731.58,
+      "end": 732.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 732.4,
+      "end": 733.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think live daps",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 733.9,
+      "end": 734.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "would",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 734.52,
+      "end": 737.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "definitely be a good",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 737.86,
+      "end": 739.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 739.18,
+      "end": 741.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "for the ecosystem and seeing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 741.88,
+      "end": 742.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "maybe",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 742.66,
+      "end": 743.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "how that impact",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 743.82,
+      "end": 745.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 745.94,
+      "end": 747.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "factors like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 747.36,
+      "end": 748.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 748.28,
+      "end": 748.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "don't know, the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 748.84,
+      "end": 749.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "token",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 749.74,
+      "end": 755.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "itself, how much it's used, the adoption of some of those daps.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 756.25,
+      "end": 757.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "A",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 757.23,
+      "end": 762.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "lot of interesting things I think that we'll see happen as some of these bigger ones go live",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 762.31,
+      "end": 762.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 762.89,
+      "end": 765.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the next few months. So that'll be exciting.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 767.17,
+      "end": 767.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 767.85,
+      "end": 771.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "other thing I think in six to 12 months that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 771.21,
+      "end": 772.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "going",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 772.81,
+      "end": 777.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to be interesting to see how it plays out is the security token space.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 779.19,
+      "end": 779.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 779.87,
+      "end": 785.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "definitely think security tokens will become a thing and maybe eventually",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 786.33,
+      "end": 786.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 786.69,
+      "end": 791.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the much larger piece of the pie in terms of tokens",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 791.05,
+      "end": 791.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 791.75,
+      "end": 792.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's all set and done.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 793.53,
+      "end": 794.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 794.13,
+      "end": 795.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think a lot of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 795.01,
+      "end": 795.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 795.43,
+      "end": 808.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "tokens that, or projects that are issuing utility tokens right now, probably should just be issuing security tokens, but everyone's just trying to come up with a clever way",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 808.21,
+      "end": 808.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 808.89,
+      "end": 809.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "say that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 809.83,
+      "end": 810.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 810.11,
+      "end": 813.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, they have a utility token so they could skate regulation and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 813.65,
+      "end": 814.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "take",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 814.21,
+      "end": 815.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "advantage of token mania.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 816.11,
+      "end": 816.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 816.29,
+      "end": 822.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "markets definitely changed very drastically, I'd say very quickly. So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 822.23,
+      "end": 823.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 823.15,
+      "end": 826.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, whereas three months ago it might have been a lot easier to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 826.63,
+      "end": 827.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 827.33,
+      "end": 829.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "have a decent white paper and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 829.39,
+      "end": 829.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 829.95,
+      "end": 833.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "decent team and get away with raising several million dollars.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 833.55,
+      "end": 834.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 834.15,
+      "end": 836.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think the number of projects who,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 836.85,
+      "end": 837.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 837.21,
+      "end": 841.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, are able to have a successful token sale and raise money is going down",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 841.83,
+      "end": 842.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "substantially.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 844.06,
+      "end": 850.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "which is good, it means the market's getting smarter. But so then when you kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 850.3,
+      "end": 851.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 852.67,
+      "end": 853.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "when things come",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 853.73,
+      "end": 854.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "back",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 854.55,
+      "end": 862.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to normal, which maybe it's not there yet, but it seems like we're heading in a direction that's at least more normal.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 863.79,
+      "end": 864.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 864.43,
+      "end": 865.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think like the,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 867.02,
+      "end": 867.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 867.34,
+      "end": 869.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 869.42,
+      "end": 869.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "trying to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 869.78,
+      "end": 870.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "get",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 870.66,
+      "end": 874.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "creative and clever to come up with a utility token,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 874.45,
+      "end": 874.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 874.71,
+      "end": 875.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "draw to do that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 875.87,
+      "end": 876.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 876.81,
+      "end": 882.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, people are much smarter about like understanding really",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 882.49,
+      "end": 883.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 883.23,
+      "end": 888.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "utility behind these tokens and how it operates within their network or their",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 888.09,
+      "end": 889.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "DAP",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 889.01,
+      "end": 891.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "or however and can really kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 891.77,
+      "end": 892.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "understand",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 892.77,
+      "end": 896.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "better if it's necessary or not or kind of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 896.03,
+      "end": 896.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 896.59,
+      "end": 904.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, if what they're building actually is super valuable or unique. you know, then I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 904.51,
+      "end": 905.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 905.31,
+      "end": 912.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "might start to see more projects opt to just go the security token route. The problem with the security token route right now is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 912.41,
+      "end": 914.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "A,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 915.2,
+      "end": 926.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you kind of have to work within current legislation and from equity crowdfunding, I could tell you that the reason I don't think that space has really taken off",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 926.98,
+      "end": 928.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 928.12,
+      "end": 940.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "because the regulatory framework isn't... very friendly to issuers. It's burdensome. You kind of have to limit it to accredited investors. Everyone has to accredit themselves. Like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 940.51,
+      "end": 941.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 941.13,
+      "end": 944.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you want to do bigger fundraisers, like regulation A plus, you have to like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 944.65,
+      "end": 945.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "audit",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 945.41,
+      "end": 952.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "all your financials. There's reporting requirements and it costs a lot of money and there's a lot of time, which is not that efficient.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 952.75,
+      "end": 952.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 952.97,
+      "end": 956.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "for the security token space to really take off,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 956.69,
+      "end": 957.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 957.03,
+      "end": 961.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "do think you could potentially work within the current regulatory framework.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 961.47,
+      "end": 961.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 961.81,
+      "end": 967.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "maybe they come up with some sort of new regulation T for token or something",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 967.59,
+      "end": 969.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that would",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 969.03,
+      "end": 974.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "be really cool and would allow security tokens to really have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 974.19,
+      "end": 977.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 977.05,
+      "end": 985.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "impact and like a place within this ecosystem. But the other problem is the secondary liquidity because exchanges won't...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 985.82,
+      "end": 986.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 986.08,
+      "end": 988.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "crypto exchanges won't pick up security tokens",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 988.38,
+      "end": 989.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 989.38,
+      "end": 1000.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "can't trade securities unless you're regulated. And decentralized exchanges just don't have the volume and the liquidity yet. So the problem with security tokens is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 1000.4,
+      "end": 1000.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 1000.84,
+      "end": 1001.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, they're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 1001.82,
+      "end": 1002.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 338,
+      "start": 1002.8,
+      "end": 1003.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "freely tradable",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 339,
+      "start": 1003.8,
+      "end": 1005.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 340,
+      "start": 1006.36,
+      "end": 1021.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just a regulatory standpoint. So if these exchanges like T0 or Templum or there's probably going to be half a dozen or a dozen that pop up in 2018. But if some of those can actually launch",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 341,
+      "start": 1021.89,
+      "end": 1022.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 342,
+      "start": 1022.45,
+      "end": 1027.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "prove that you could trade these security tokens in a pretty easy way",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 343,
+      "start": 1027.53,
+      "end": 1028.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 344,
+      "start": 1028.33,
+      "end": 1030.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like, you know, like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 345,
+      "start": 1030.57,
+      "end": 1031.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "good",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 346,
+      "start": 1031.53,
+      "end": 1033.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "environment in terms of liquidity",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 347,
+      "start": 1033.53,
+      "end": 1035.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and like user",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 348,
+      "start": 1035.33,
+      "end": 1036.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "experience and stuff like that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 349,
+      "start": 1036.69,
+      "end": 1037.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 350,
+      "start": 1037.19,
+      "end": 1044.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I do see that that industry would quickly take hold and take off. So that's what I'd like to see happen in the next six to 12 months.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 351,
+      "start": 1044.87,
+      "end": 1059.91,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Yeah, that makes sense. And I feel like on the security token side, there's this co-evolution thing happening between the government and the SEC and then the people who are working at issuers themselves and things like T0 on the exchange side. So I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 352,
+      "start": 1059.91,
+      "end": 1060.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "guess...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 353,
+      "start": 1060.35,
+      "end": 1074.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Going deeper on the tokens there and the non-security tokens, you read a lot of white papers, you look at a lot of projects who are looking to, you know, be part of consensus or be part of get into token foundry or what have you. Could you give",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 354,
+      "start": 1074.61,
+      "end": 1075.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 355,
+      "start": 1075.13,
+      "end": 1088.81,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "of like a high level, like what do you, what are some of the biggest errors that you see in, you know, white papers these days as, you know, as a way to help these budding entrepreneurs who are trying to work in the blockchain ecosystem?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 356,
+      "start": 1091.73,
+      "end": 1092.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 357,
+      "start": 1092.51,
+      "end": 1095.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think the biggest problem with white papers is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 358,
+      "start": 1095.26,
+      "end": 1097.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they're like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 359,
+      "start": 1097.22,
+      "end": 1098.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "very inefficient.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 360,
+      "start": 1100.32,
+      "end": 1101.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 361,
+      "start": 1101.1,
+      "end": 1103.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "mean, I just think there's a way better way to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 362,
+      "start": 1103.8,
+      "end": 1106.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "get",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 363,
+      "start": 1106.61,
+      "end": 1110.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "information to people who are interested in your project",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 364,
+      "start": 1110.78,
+      "end": 1112.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "besides",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 365,
+      "start": 1112.18,
+      "end": 1112.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 366,
+      "start": 1112.7,
+      "end": 1113.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 367,
+      "start": 1113.38,
+      "end": 1116.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "30 or 40 page paper that describes everything.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 368,
+      "start": 1117.38,
+      "end": 1118.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 369,
+      "start": 1118.16,
+      "end": 1118.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they're,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 370,
+      "start": 1119.32,
+      "end": 1119.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 371,
+      "start": 1119.8,
+      "end": 1134.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "mean, writing a very, good and easy to digest technical white paper is very hard. But then just actually for some of these projects that might be doing something extremely cool, being able to distill what you're doing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 372,
+      "start": 1134.04,
+      "end": 1134.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "down",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 373,
+      "start": 1134.88,
+      "end": 1136.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "into layman terms",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 374,
+      "start": 1136.58,
+      "end": 1137.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 375,
+      "start": 1137.3,
+      "end": 1139.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "someone can very quickly grasp",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 376,
+      "start": 1139.54,
+      "end": 1140.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 377,
+      "start": 1140.5,
+      "end": 1144.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it is that you're doing or why it's unique or why it's cool and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 378,
+      "start": 1144.58,
+      "end": 1145.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 379,
+      "start": 1145.46,
+      "end": 1152.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the protocol actually is and what the token actually... does or how it fits within that system and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 380,
+      "start": 1152.12,
+      "end": 1152.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 381,
+      "start": 1152.8,
+      "end": 1157.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of just being able to quickly just be like, ah, okay, like I understand all of this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 382,
+      "start": 1158.6,
+      "end": 1159.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 383,
+      "start": 1159.16,
+      "end": 1161.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "rarely go through a white paper and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 384,
+      "start": 1161.92,
+      "end": 1162.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "get",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 385,
+      "start": 1162.46,
+      "end": 1164.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a good understanding of all of that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 386,
+      "start": 1165.14,
+      "end": 1165.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 387,
+      "start": 1165.7,
+      "end": 1176.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think in general, just like how we present information and organize it for these projects, maybe a white paper isn't necessarily the best approach.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 388,
+      "start": 1178.81,
+      "end": 1179.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 389,
+      "start": 1179.17,
+      "end": 1179.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "you have, by",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 390,
+      "start": 1179.71,
+      "end": 1179.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the way,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 391,
+      "start": 1180.03,
+      "end": 1184.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "a quick question on that. Something that I always kind of recommend to people when I read their white papers is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 392,
+      "start": 1184.27,
+      "end": 1185.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "add",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 393,
+      "start": 1185.17,
+      "end": 1191.13,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "more visuals or add more, and I think this might be my own bias in projecting out into the world, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 394,
+      "start": 1191.13,
+      "end": 1191.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 395,
+      "start": 1191.7,
+      "end": 1205.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "having visuals and having kind of like the system design or whatever, it's like people can type in in words what's happening. But it's like once I see a visual for how like the crypto economic system works, I'm like, oh, that's so beautiful. Do you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 396,
+      "start": 1205.4,
+      "end": 1205.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 397,
+      "start": 1205.62,
+      "end": 1208.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "that bias as well? Or do you agree with me there?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 398,
+      "start": 1209.23,
+      "end": 1218.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, so that's actually part of the new platform we're hoping to launch. And, well, hopefully February 1,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 399,
+      "start": 1219.53,
+      "end": 1219.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "part",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 400,
+      "start": 1219.97,
+      "end": 1229.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of the focus. besides just new sales structures, is better ways to present information about projects",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 401,
+      "start": 1229.05,
+      "end": 1229.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 402,
+      "start": 1229.59,
+      "end": 1230.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "people who are interested.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 403,
+      "start": 1230.79,
+      "end": 1231.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 404,
+      "start": 1231.33,
+      "end": 1243.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you might have a few different people who are interested in learning about the project. It could be a user. It could be just someone like in the industry is very technical. It could just be someone who might be interested in, you know, purchasing your token.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 405,
+      "start": 1244.59,
+      "end": 1245.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 406,
+      "start": 1245.19,
+      "end": 1250.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "yes, I agree that like maybe there's a technical white paper that's just... very",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 407,
+      "start": 1250.55,
+      "end": 1251.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 408,
+      "start": 1251.77,
+      "end": 1257.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, traditional blockchain crypto type white paper that's just all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 409,
+      "start": 1257.17,
+      "end": 1258.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 410,
+      "start": 1258.09,
+      "end": 1259.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just words and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 411,
+      "start": 1259.49,
+      "end": 1260.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "nothing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 412,
+      "start": 1260.25,
+      "end": 1261.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "fancy",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 413,
+      "start": 1261.05,
+      "end": 1262.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 414,
+      "start": 1262.85,
+      "end": 1265.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "right. But then, like, have some sort of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 415,
+      "start": 1266.02,
+      "end": 1267.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "more",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 416,
+      "start": 1267.08,
+      "end": 1267.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 417,
+      "start": 1267.76,
+      "end": 1268.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "pitch",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 418,
+      "start": 1268.8,
+      "end": 1271.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "deck or, you know, presentation deck type",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 419,
+      "start": 1271.46,
+      "end": 1272.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "document",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 420,
+      "start": 1272.22,
+      "end": 1280.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "or overview document. That is more visual. And for someone who just wants to be like, okay, I want to learn about this project.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 421,
+      "start": 1280.49,
+      "end": 1280.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "give",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 422,
+      "start": 1280.91,
+      "end": 1287.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "me a two-page sort of executive summary or overview presentation of like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 423,
+      "start": 1287.23,
+      "end": 1287.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 424,
+      "start": 1287.79,
+      "end": 1288.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it actually is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 425,
+      "start": 1288.83,
+      "end": 1290.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 426,
+      "start": 1290.79,
+      "end": 1291.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it does and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 427,
+      "start": 1291.89,
+      "end": 1292.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 428,
+      "start": 1292.61,
+      "end": 1293.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "could be very visual,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 429,
+      "start": 1294.81,
+      "end": 1295.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "hopefully",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 430,
+      "start": 1295.99,
+      "end": 1299.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "majority visual. So yeah, it's just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 431,
+      "start": 1299.37,
+      "end": 1300.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "maybe",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 432,
+      "start": 1300.17,
+      "end": 1304.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I don't want to read your whole white paper. I just want to read that to even understand if I want to spend time reading",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 433,
+      "start": 1304.57,
+      "end": 1304.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "your white",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 434,
+      "start": 1304.89,
+      "end": 1305.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "paper.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 435,
+      "start": 1305.39,
+      "end": 1305.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 436,
+      "start": 1305.81,
+      "end": 1308.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we are thinking through like how to best structure like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 437,
+      "start": 1308.94,
+      "end": 1309.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Maybe",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 438,
+      "start": 1309.36,
+      "end": 1315.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there's just a short paper about the, like a project overview. Maybe there's one specifically about the protocol and the token.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 439,
+      "start": 1316.06,
+      "end": 1316.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Maybe",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 440,
+      "start": 1316.44,
+      "end": 1324.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there's one specifically about the token sale itself. And just break it down into, you know, digestible, like, bite-size,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 441,
+      "start": 1325.56,
+      "end": 1326.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like pieces",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 442,
+      "start": 1326.78,
+      "end": 1327.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of information.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 443,
+      "start": 1327.8,
+      "end": 1329.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Yep, yeah, I like that. And I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 444,
+      "start": 1329.14,
+      "end": 1330.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "think... Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 445,
+      "start": 1330.46,
+      "end": 1343.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "kind of bucketing the different parts of that white papers right now. There's essentially no white paper standard or what have you. On kind of the token side of this, how do you think about, and when you're reading either white papers or whatever the team send along to you,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 446,
+      "start": 1343.7,
+      "end": 1344.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 447,
+      "start": 1344.14,
+      "end": 1354.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "you conceptualize of utility value? And when you're looking at tokens, how do you say, like, hey, this token is really well used for its utility value? What makes you really feel like that's true?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 448,
+      "start": 1358.05,
+      "end": 1358.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 449,
+      "start": 1358.53,
+      "end": 1359.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "kind of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 450,
+      "start": 1359.11,
+      "end": 1360.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'd",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 451,
+      "start": 1360.01,
+      "end": 1360.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "say,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 452,
+      "start": 1362.02,
+      "end": 1365.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "gut because you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 453,
+      "start": 1365.99,
+      "end": 1368.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "don't none of these besides",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 454,
+      "start": 1368.31,
+      "end": 1369.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 455,
+      "start": 1369.45,
+      "end": 1372.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like bitcoin and ether",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 456,
+      "start": 1372.73,
+      "end": 1373.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "none",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 457,
+      "start": 1373.91,
+      "end": 1374.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of these other like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 458,
+      "start": 1374.95,
+      "end": 1375.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "sort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 459,
+      "start": 1375.65,
+      "end": 1377.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of new token models",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 460,
+      "start": 1377.45,
+      "end": 1378.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 461,
+      "start": 1378.01,
+      "end": 1379.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "actually been tested in a while",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 462,
+      "start": 1379.47,
+      "end": 1380.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "even",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 463,
+      "start": 1380.17,
+      "end": 1382.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "if you think something is really great like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 464,
+      "start": 1382.47,
+      "end": 1384.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 465,
+      "start": 1384.61,
+      "end": 1388.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "actually know and I mean as an entrepreneur and someone who works in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 466,
+      "start": 1388.81,
+      "end": 1390.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like tech",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 467,
+      "start": 1392.33,
+      "end": 1396.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "your assumptions are usually wrong. And like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 468,
+      "start": 1396.93,
+      "end": 1397.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 469,
+      "start": 1397.65,
+      "end": 1404.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "data always ends up guiding your ultimate product or thinking or kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 470,
+      "start": 1404.05,
+      "end": 1404.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 471,
+      "start": 1404.45,
+      "end": 1408.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "assumption. So until we really have some good data",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 472,
+      "start": 1408.27,
+      "end": 1409.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on whether like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 473,
+      "start": 1409.99,
+      "end": 1412.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "token curated registry works",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 474,
+      "start": 1412.59,
+      "end": 1413.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 475,
+      "start": 1413.57,
+      "end": 1419.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, prediction markets or, you know, something like the Nosis token model, which, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 476,
+      "start": 1419.66,
+      "end": 1419.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 477,
+      "start": 1419.94,
+      "end": 1422.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a high level when I think through it, it sounds",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 478,
+      "start": 1422.68,
+      "end": 1423.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "very",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 479,
+      "start": 1423.22,
+      "end": 1423.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "good",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 480,
+      "start": 1423.6,
+      "end": 1424.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 481,
+      "start": 1424.04,
+      "end": 1427.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I like it. But like, how does that actually translate into,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 482,
+      "start": 1427.58,
+      "end": 1428.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 483,
+      "start": 1429.18,
+      "end": 1429.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "usage and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 484,
+      "start": 1429.72,
+      "end": 1430.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 485,
+      "start": 1430.32,
+      "end": 1430.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 486,
+      "start": 1430.56,
+      "end": 1431.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 487,
+      "start": 1431.2,
+      "end": 1431.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 488,
+      "start": 1431.52,
+      "end": 1432.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 489,
+      "start": 1432.14,
+      "end": 1435.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "those economics and the incentive system within their platform,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 490,
+      "start": 1437.58,
+      "end": 1438.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "how does it all play out?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 491,
+      "start": 1439.36,
+      "end": 1440.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 492,
+      "start": 1440.0,
+      "end": 1442.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I do think, like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 493,
+      "start": 1445.25,
+      "end": 1447.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "part of what I look for is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 494,
+      "start": 1447.33,
+      "end": 1447.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 495,
+      "start": 1447.85,
+      "end": 1449.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, a token that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 496,
+      "start": 1450.61,
+      "end": 1451.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "actually",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 497,
+      "start": 1451.29,
+      "end": 1455.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "has a need or is necessary, I think is pretty important.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 498,
+      "start": 1456.71,
+      "end": 1457.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Where,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 499,
+      "start": 1457.97,
+      "end": 1458.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 500,
+      "start": 1459.85,
+      "end": 1460.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 501,
+      "start": 1460.03,
+      "end": 1460.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 502,
+      "start": 1460.77,
+      "end": 1463.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "used for couldn't be easily replaced with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 503,
+      "start": 1464.03,
+      "end": 1465.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 504,
+      "start": 1465.73,
+      "end": 1470.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Bitcoin or Ether and not really have much of a negative impact on the system or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 505,
+      "start": 1470.75,
+      "end": 1472.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 506,
+      "start": 1472.13,
+      "end": 1475.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "players within the system in terms of incentives.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 507,
+      "start": 1477.61,
+      "end": 1478.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 508,
+      "start": 1478.15,
+      "end": 1481.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Definitely like things that are more on the simple side.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 509,
+      "start": 1483.57,
+      "end": 1487.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Sometimes people try to make their token do everything, but I think just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 510,
+      "start": 1487.59,
+      "end": 1488.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "focusing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 511,
+      "start": 1488.71,
+      "end": 1494.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "on one critical area of your platform and having it function in that capacity could",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 512,
+      "start": 1494.88,
+      "end": 1495.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "end",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 513,
+      "start": 1495.96,
+      "end": 1496.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "up being",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 514,
+      "start": 1496.58,
+      "end": 1498.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "better.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 515,
+      "start": 1499.4,
+      "end": 1499.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 516,
+      "start": 1500.06,
+      "end": 1500.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 517,
+      "start": 1500.26,
+      "end": 1500.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 518,
+      "start": 1500.48,
+      "end": 1501.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 519,
+      "start": 1501.61,
+      "end": 1504.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think the token like sort of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 520,
+      "start": 1505.41,
+      "end": 1506.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "design",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 521,
+      "start": 1506.67,
+      "end": 1510.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "or like crypto economics. is that side of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 522,
+      "start": 1510.47,
+      "end": 1510.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 523,
+      "start": 1510.97,
+      "end": 1512.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "ecosystem is maturing a bit,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 524,
+      "start": 1512.97,
+      "end": 1514.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but it's maturing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 525,
+      "start": 1514.87,
+      "end": 1520.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "without actually seeing if any of the initial good concepts people have thought",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 526,
+      "start": 1520.43,
+      "end": 1520.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "up",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 527,
+      "start": 1520.93,
+      "end": 1522.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "even worked. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 528,
+      "start": 1522.11,
+      "end": 1523.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 529,
+      "start": 1523.71,
+      "end": 1524.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I'm interested",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 530,
+      "start": 1524.35,
+      "end": 1525.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 531,
+      "start": 1526.17,
+      "end": 1532.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "going back to what I'd like to see over the next six to 12 months, part of these gaps are going live or protocols going",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 532,
+      "start": 1532.29,
+      "end": 1533.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "live. One",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 533,
+      "start": 1533.77,
+      "end": 1537.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "thing I'm very interested to see is actually how those tokens",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 534,
+      "start": 1538.99,
+      "end": 1539.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 535,
+      "start": 1539.47,
+      "end": 1545.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "those models people have come up with play out because I'm sure there are going to be a few fatal mistakes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 536,
+      "start": 1545.01,
+      "end": 1545.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 537,
+      "start": 1545.87,
+      "end": 1547.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "are uncovered along the way.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 538,
+      "start": 1548.09,
+      "end": 1548.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 539,
+      "start": 1549.11,
+      "end": 1570.13,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "definitely. Yeah, there's, yeah, and yeah, whether it's the token period registries or as you said, you know, the nois, two token model, it's like, hey, when those things go live or anything goes live, it's like, well, we'll see what happens when this is actually a real incentive game out there in the world. And can people break it? And what does that look like on the test net when people are testing it? And what does it look like when it's live? And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 540,
+      "start": 1570.13,
+      "end": 1570.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 541,
+      "start": 1570.75,
+      "end": 1574.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "I'm excited to see those crypto economics actually live in the world.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 542,
+      "start": 1575.07,
+      "end": 1575.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 543,
+      "start": 1575.59,
+      "end": 1578.63,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "both for the ups and the downs from that. The downs from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 544,
+      "start": 1578.63,
+      "end": 1579.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "purely",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 545,
+      "start": 1579.03,
+      "end": 1584.35,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "from a Sean Freud kind of perspective. Any case, my final question here is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 546,
+      "start": 1584.35,
+      "end": 1585.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 547,
+      "start": 1585.15,
+      "end": 1592.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "do you think about? So, you know, why Combinator has this like requests for startups thing where they say, hey.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 548,
+      "start": 1593.35,
+      "end": 1593.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Here",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 549,
+      "start": 1593.75,
+      "end": 1612.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "are the kind of startups that we're looking for. Clearly you can apply with anything you want, but here's some things that we're thinking about and we'd love to see. Is there anything like that for you these days, but it wouldn't be called like a request for startups. It'd be like a request for a protocol or a request for a utility. Are there things that you kind of want to see in the ecosystem?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 550,
+      "start": 1615.2,
+      "end": 1615.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Definitely.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 551,
+      "start": 1618.0,
+      "end": 1621.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "There's definitely things we discuss internally or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 552,
+      "start": 1621.94,
+      "end": 1624.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just. think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 553,
+      "start": 1624.43,
+      "end": 1627.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in terms of what type of projects",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 554,
+      "start": 1627.28,
+      "end": 1628.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 555,
+      "start": 1628.24,
+      "end": 1631.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "want to bring on board or work with.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 556,
+      "start": 1633.79,
+      "end": 1634.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 557,
+      "start": 1634.41,
+      "end": 1634.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 558,
+      "start": 1634.73,
+      "end": 1635.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "send",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 559,
+      "start": 1635.19,
+      "end": 1636.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "out a request, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 560,
+      "start": 1636.27,
+      "end": 1636.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 561,
+      "start": 1636.93,
+      "end": 1644.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "definitely guides our thinking and sort of the projects we speak with or actively go out and try to engage",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 562,
+      "start": 1644.77,
+      "end": 1647.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with because, you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 563,
+      "start": 1647.41,
+      "end": 1651.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, there's a ton of inbound request you'll always get, but,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 564,
+      "start": 1651.19,
+      "end": 1651.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 565,
+      "start": 1651.65,
+      "end": 1652.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, some of the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 566,
+      "start": 1652.57,
+      "end": 1653.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "better",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 567,
+      "start": 1653.19,
+      "end": 1653.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "projects",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 568,
+      "start": 1654.92,
+      "end": 1655.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 569,
+      "start": 1655.36,
+      "end": 1658.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "ones where you are just doing research and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 570,
+      "start": 1658.85,
+      "end": 1659.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 571,
+      "start": 1659.85,
+      "end": 1663.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "having a finger on the pulse of new projects coming up and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 572,
+      "start": 1663.73,
+      "end": 1664.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 573,
+      "start": 1664.67,
+      "end": 1670.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know what you're looking for it becomes easier especially if you talk to enough people in the space to know",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 574,
+      "start": 1670.65,
+      "end": 1671.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "who",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 575,
+      "start": 1671.45,
+      "end": 1674.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "might be working on something interesting in that sort of realm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 576,
+      "start": 1674.61,
+      "end": 1676.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 577,
+      "start": 1676.87,
+      "end": 1678.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "also in the position we're in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 578,
+      "start": 1678.77,
+      "end": 1679.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 579,
+      "start": 1679.35,
+      "end": 1683.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know we also have somewhat of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 580,
+      "start": 1683.28,
+      "end": 1684.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 581,
+      "start": 1685.8,
+      "end": 1686.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 582,
+      "start": 1686.2,
+      "end": 1695.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a responsibility, but are conscious of what the market wants. Because, you know, if you're working with projects and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 583,
+      "start": 1695.42,
+      "end": 1696.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 584,
+      "start": 1696.34,
+      "end": 1698.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this platform, you're sort of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 585,
+      "start": 1698.24,
+      "end": 1699.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "growing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 586,
+      "start": 1699.36,
+      "end": 1708.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "an ecosystem and community of contributors to these projects. If you're putting out projects or working with projects and putting them on the platform,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 587,
+      "start": 1708.9,
+      "end": 1709.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 588,
+      "start": 1709.96,
+      "end": 1727.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "these contributors are looking for token sales. And what you're putting up is not really what... they're looking for not what the market likes right now, then that's not really an effective model. So, yeah, just in general, you know, I think right now there's much,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 589,
+      "start": 1728.29,
+      "end": 1729.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 590,
+      "start": 1729.37,
+      "end": 1738.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there's much more interest still in, like, infrastructure and protocol layer project. You know, I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 591,
+      "start": 1738.43,
+      "end": 1739.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 592,
+      "start": 1739.15,
+      "end": 1740.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "understand that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 593,
+      "start": 1740.23,
+      "end": 1741.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 594,
+      "start": 1741.13,
+      "end": 1742.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "still building the track.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 595,
+      "start": 1742.84,
+      "end": 1743.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 596,
+      "start": 1743.3,
+      "end": 1746.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "for any of these gaps to even work",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 597,
+      "start": 1746.16,
+      "end": 1746.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 598,
+      "start": 1746.94,
+      "end": 1753.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "top of an Ethereum, or they're going to need some of these scaling solutions to actually work",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 599,
+      "start": 1753.96,
+      "end": 1754.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 600,
+      "start": 1754.82,
+      "end": 1755.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "launch. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 601,
+      "start": 1755.9,
+      "end": 1756.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 602,
+      "start": 1756.6,
+      "end": 1759.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think there are probably many other just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 603,
+      "start": 1759.62,
+      "end": 1761.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "foundational",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 604,
+      "start": 1761.3,
+      "end": 1763.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "layer or just scaling",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 605,
+      "start": 1763.3,
+      "end": 1764.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "type",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 606,
+      "start": 1764.72,
+      "end": 1769.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "solutions or more infrastructure layer.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 607,
+      "start": 1771.8,
+      "end": 1773.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "protocols that are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 608,
+      "start": 1775.46,
+      "end": 1778.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "out there. So those are ones I look for.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 609,
+      "start": 1779.67,
+      "end": 1780.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 610,
+      "start": 1780.17,
+      "end": 1785.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "yeah, if there's a cool DAP or something, we will definitely still consider it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 611,
+      "start": 1785.61,
+      "end": 1817.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Yep, that makes sense. So there are specific, you know, protocols and utilities that you're thinking about, and that you guys talk about internally. And in general, a lot of things that you're interested in these days are... stuff at the infrastructure layer, at the protocol layer, as, you know, still building that rail out there, although we want to live in this beautiful new future. It's like, hey, in order to do that, we still got to work on a lot of these kind of infrastructure projects to make that happen. Cool. Well, Harrison, thank you so much again for your time today. Yeah, it was fun chatting and going into token sales with you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 612,
+      "start": 1818.58,
+      "end": 1818.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 613,
+      "start": 1819.96,
+      "end": 1823.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "thanks for having me. It was great chatting with you, and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 614,
+      "start": 1823.64,
+      "end": 1825.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "look",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 615,
+      "start": 1825.66,
+      "end": 1826.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "forward to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 616,
+      "start": 1827.02,
+      "end": 1827.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Keeping",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 617,
+      "start": 1827.46,
+      "end": 1828.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "up to date on your show.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 618,
+      "start": 1828.48,
+      "end": 1829.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "Nice. Sweet.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 619,
+      "start": 1829.94,
+      "end": 1830.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 620,
+      "start": 1830.62,
+      "end": 1836.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "everybody, thank you for listening. If you want to, you can go to token foundry.io to kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 621,
+      "start": 1836.02,
+      "end": 1836.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 622,
+      "start": 1836.8,
+      "end": 1853.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "to learn more about token foundry and or hit up some people at consensus to learn more about token foundry. And if you want to support me, you can go to patreon.com slash R-H-Y-S-L-I-N-D-M-A-R-K. Okay, thank you, everybody, and goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 623,
+    "withheld": 0,
+    "published": 623
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

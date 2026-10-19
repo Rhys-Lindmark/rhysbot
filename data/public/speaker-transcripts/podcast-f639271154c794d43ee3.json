@@ -1,0 +1,2079 @@
+{
+  "schema_version": 1,
+  "id": "podcast-f639271154c794d43ee3",
+  "title": "#30 Jake Brukhman, CoinFund: Fat Protocols, CryptoKitties, and Governance as Social Choice Theory",
+  "published_at": "2018-01-10T19:53:13Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/30-jake-brukhman-coinfund-fat-protocols-cryptokitties-and-governance-as-social-choice-theory",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/381665264-the-rhys-show-30-jake-brukhman-coinfund-fat-protocols-cryptokitties-and-governance-as-social-choice-theory.mp3",
+  "youtube_id": "RIDv88ia6xU",
+  "youtube_url": "https://www.youtube.com/watch?v=RIDv88ia6xU",
+  "audio_sha256": "f0dbc4d15afa628efcdc09013d21fa928da42af2c6905c5462fe90ab7fdbc0ae",
+  "audio_duration_seconds": 1768.5,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 4988,
+    "unknown_words": 112,
+    "unknown_words_fraction": 0.022453889334402566,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_1",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 12.59,
+      "end": 13.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 13.55,
+      "end": 110.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "everybody. Today's episode is with Jake Bruchman from Coin Fund, and we talk about... you know, Jake's pushback on the Fat Protocol thesis and how there are other ways to kind of diversify your crypto assets and to add different diversification dimensions to what you're doing and not just say, ooh, all these awesome applications are being built on top of Ethereum, but therefore I should buy Ethereum. It's a little bit more complicated than that. So we talk about that. And then we also talk about governance and how Jake is currently thinking about governance. And specifically, he... argues for more crypto entrepreneurs to be thinking about the research that's been done in the space. And one that we talk about that's really interesting around voting choice theory is this thing called Arrows Impossibility theorem, which states, hey, if you believe these two things, the first one's just like, hey, if everybody prefers X over Y, then the group as a whole should prefer X over Y. So if everybody wants Coke over Pepsi, then the group should prefer Coke over Pepsi. You should vote for that. If you want that and if you want this other one that says, hey, if everybody, if the preference orders between X and Rot, why remain unchanged? So let's say you have an ordered list of Coke and Pepsi and Sprite and whatever. If everybody, even if you're moving around the Sprite and the Mr. Pib and whatever, those different kinds of sodas, but your order between Coke and Pepsi remains unchanged. If everybody still has Coke above Pepsi, then you should, then the group's ordering should remain unchanged. And so even if you have those two simple things, those two simple requests essentially are like constraints, the only thing that can solve both of those is a dictatorship. And that has been mathematically",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 110.73,
+      "end": 186.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Guest Speaker 1",
+      "text": "proven. So we talk a little bit about that and about voting choice theory in general. One final note before you listen to today's episode with Jake is, I just wanted to read a little bit on why some of my patrons support me on Patreon. And one note on that is that it's cool that they are supporting me because... by supporting me, they don't need to support me. They're actively choosing to pay me even though it's not requires. They're actively saying, I have enough. I'm going to pay Reese. And then I'm also doing that. I have enough. And I allow that to flow back to the system through their crypto pledge stuff. So everybody's saying, I have enough. Let's continue to support each other and allow that money to flow back to the system. And I just wanted to read something from one of my patrons, Charlie, who said he's interested and he supported because he's been feeling more drawn into the crypto and blockchain sphere. investing a bit and just curious on what's happening. And so he says, hey, Reese, I value the intense, detailed perspectives you're giving a lot on interconnected subjects. I specifically value the strong voice you're bringing that focuses on the bigger picture value of blockchain technology, especially when so many people are losing sight of this in the dreams of making money. You're huge, clear, and humble. So thank you so much for that, Charlie. And if anybody else wants to support me at Patreon, you should do so. So with that, enjoy today's episode with Jake.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 191.44,
+      "end": 191.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 192.26,
+      "end": 221.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "everyone. My name is Reese Lindmark, and you're listening to another episode of creating a humanist blockchain future. In this podcast, we take a systems thinking approach to creating a better future. So we have a couple different systems series that focus on different systems scopes. And today we're going to focus on Series C software systems where you ask the question. What software systems are built in code? And specifically, we'll be talking about the intersection of venture capital and blockchain and around fat protocols of blockchain investment thesis. And to chat about that, I'm very happy to introduce Jake Bruchman to the show.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 221.46,
+      "end": 221.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Jake",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 221.58,
+      "end": 225.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "is a co-founder of Coin Fund, a blockchain research company and private investment",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 225.32,
+      "end": 226.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "vehicle focused",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 226.06,
+      "end": 226.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "on the blockchain",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 226.5,
+      "end": 226.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "space.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 227.08,
+      "end": 227.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Jake, thanks for being on the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 227.86,
+      "end": 229.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "show and welcome. Hi,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 229.23,
+      "end": 230.33,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Rhys, thank you for having me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 230.55,
+      "end": 239.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, excited chat. And just as a note here, Jake and I will be ready for this interview because we recorded this before, but I just forgot to click the record button. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 239.21,
+      "end": 240.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Jake,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 240.39,
+      "end": 244.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "thank you for coming on again. It was a great interview the last one, but lost to time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 245.55,
+      "end": 247.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Let's see if we can recreate it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 247.85,
+      "end": 257.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Exactly, exactly. So first, before talking about kind of the macro kind of the C-C side, could you talk a little bit about coin fund and give us an intro to coin fund?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 257.87,
+      "end": 258.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 258.69,
+      "end": 274.77,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so very simply, Coin Fund is one of the few crypto, excuse me, one of the early crypto funds. We've been investing in the space since July of 2015. And we also work as an advisory team to companies of various stages and verticals who are exploring",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 274.77,
+      "end": 275.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "blockchain",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 275.89,
+      "end": 283.37,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "technology and in particular building cryptoeconomic business models based on blockchain networks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 284.06,
+      "end": 285.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Cool. Yeah, exactly. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 285.52,
+      "end": 286.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "crypto",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 286.12,
+      "end": 296.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "economic business models based off the blockchain. And I like what you said there where used to be able to say, well, we are one of the few of these funds, but now you used to have to say, well, we're one of the early ones of these funds. Okay, so kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 296.68,
+      "end": 297.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "talking",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 297.3,
+      "end": 308.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "more about the, on the theoretical side here, and specifically this fat protocol thesis, could you kind of give us a high level explanation on what is the fat protocol thesis and what's kind of your pushback against it?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 309.34,
+      "end": 309.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 309.8,
+      "end": 330.75,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so in general, the idea of fat protocols is that, you know, we can now monetize very low-level kind of technological protocols, protocols that live lower in the functionality stack or the network stack of the Internet. And, you know, if you look back to the early 90s,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 331.37,
+      "end": 332.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 332.67,
+      "end": 350.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the author of the Fat Protocol thesis, Joe Monegro kind of looks back on TCPIP and makes a... makes a note that TCPIP is now a ubiquitous protocol. It's used everywhere online. It's used in your phone. It's used in all kinds of devices. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 350.35,
+      "end": 351.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 351.17,
+      "end": 365.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "way that people have made money off of this protocol is, in fact, not through the protocol itself, but by building applications on top. So it used to be that the protocol layer was thin, and then the application layer was fat.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 367.66,
+      "end": 398.38,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "The observation that Joel makes is that when you look at blockchain protocols, you have these decentralized networks that have tokens. And it seems that because the tokens are tradable on exchanges and people buy them and sell them for money, it seems that this creates a monetization model for the protocol itself. Now the thesis, I think the VAT protocols thesis was really important in kind of... educating investors about the correct way",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 398.38,
+      "end": 399.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 399.36,
+      "end": 425.98,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "investing in, you know, in blockchain networks. And basically it showed that when you invest into the private equity of the company that creates a decentralized network, well, that's not necessarily the best exposure to the value that you create. But I think, you know, my, an article that I wrote recently, which is called Fed Protocols are not an investment thesis. Talks about how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 425.98,
+      "end": 427.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "investors",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 427.76,
+      "end": 447.64,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "sort of took that a little bit too far, and they said, well, now we're only going to invest in some of the lowest levels of the technology stack. And we think that that's going to get us better returns long term. And we think that's going to get us better diversification. I happen to think that it's a much more nuanced",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 447.64,
+      "end": 449.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "sort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 450.19,
+      "end": 452.41,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of situation. And that's what we're here to talk about.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 452.53,
+      "end": 479.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that makes sense. Yeah, the fat protocol is saying that a lot of value kind of accrues to that protocol while something like DCPI was very thin, so valued in the crew there. And what you're saying is, yeah, that was a good way to conceptualize it at the beginning, but there are other kind of value ways to, where value can kind of accrue within that stack. So I guess one that we want to talk about was maybe Auger as an example here. How might Auger kind of reframe our thinking around this fat protocol thesis?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 479.8,
+      "end": 480.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 480.64,
+      "end": 491.6,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so I think the first step is to recognize that, you know, the concept of a protocol is a very general concept. It's, you know, really just a set of standards and communications and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 491.6,
+      "end": 492.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "– sorry,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 493.16,
+      "end": 520.36,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "communication formats that, you know, two computers basically used to communicate in a standard way on a network. And you can look at very low-level protocols as doing that, but you can also, in some sense, look at – the smart contracts that make up decentralized applications is doing that also because anyone can come in and use that set of rules to do other things. And so Auger is a great example. On the one hand, Auger is an application",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 520.42,
+      "end": 521.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 521.92,
+      "end": 537.51,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "implements a prediction market system where someone can come in, create a prediction market, other people can trade in. predictions about the future and then a third set of people can come in and resolve those markets in a decentralized way",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 537.51,
+      "end": 538.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 538.67,
+      "end": 575.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "get to an answer when that time comes. But then from another point of view, Auger can be seen also as a protocol because this is a set of smart contracts to live on Ethereum. Any third party can come in and read their data. It could also build visualizations of that data on top, or even use those prediction markets in other applications. So in a way, Auger is the protocol itself. And so the question becomes, is it better to invest in the digital asset of Auger? Or is it better to invest in the protocol",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 575.02,
+      "end": 576.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 576.56,
+      "end": 580.98,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "under Pins Auger, which in this case would be Ethereum as represented by",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 580.98,
+      "end": 582.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Ether.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 583.53,
+      "end": 590.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "And, well, the answer is, first, we have to understand what we mean by better. And I think, like, when people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 590.55,
+      "end": 591.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 591.49,
+      "end": 591.79,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 591.99,
+      "end": 593.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "proffer",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 593.41,
+      "end": 597.19,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the fat protocol thesis, they try to say, like, oh, we want to invest lower",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 597.19,
+      "end": 598.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 598.47,
+      "end": 602.51,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the stack because those protocols are going to be more diversified and give us better returns.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 602.77,
+      "end": 603.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 603.17,
+      "end": 606.43,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "we can ask ourselves, like, is that true of auger?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 606.81,
+      "end": 607.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 607.21,
+      "end": 614.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "what happens is that if you start to analyze, like, what should be the fundamental evaluation? of the auger's rep token,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 615.89,
+      "end": 624.31,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you end up having, you know, one kind of model for that, which is based on, you know, originally it was based on the throughput",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 624.31,
+      "end": 626.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 626.29,
+      "end": 646.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the, on the auger platform, then kind of the rules now have changed in 2017, and now it's more based on the open interest in the platform. But in any case, that's a very different model than... the relationship that Auger has with Ethereum. And basically, what Ethereum receives is all of the transactions that people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 646.88,
+      "end": 649.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "participate",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 649.14,
+      "end": 652.7,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "in as they're using Auger. And so one is a function",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 652.7,
+      "end": 653.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 653.7,
+      "end": 657.2,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "let's say, turnover or value in the Auger system, and the other",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 657.2,
+      "end": 658.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 658.0,
+      "end": 665.38,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "a function of Auger's utilization of Ethereum. And those are very, very different functions. And therefore,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 666.48,
+      "end": 666.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 666.92,
+      "end": 669.08,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "seems like it could be the case that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 669.08,
+      "end": 669.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 669.62,
+      "end": 672.96,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "get the bigger upside of auger you really need to hold rep tokens",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 672.96,
+      "end": 673.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yep",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 673.56,
+      "end": 681.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "yep that makes sense and that you can't just look directly at auger and be like oh auger's built on eth therefore buy more eth uh",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 681.36,
+      "end": 681.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it can",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 681.7,
+      "end": 691.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "be the case oh well it's a much more textured thing you got to look at you know the turnover and value there versus the utilization of it and maybe and it's tough to say and it might be totally kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 691.26,
+      "end": 691.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 691.95,
+      "end": 698.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "protocol or like application dependent in terms of where when you should invest in the lower level when you should invest in the higher level. So I guess",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 698.89,
+      "end": 699.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 699.43,
+      "end": 706.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "that kind of with that pushback as as kind of heard here, what would then you when you think about that in the new kinds of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 706.85,
+      "end": 707.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 707.23,
+      "end": 718.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "know things that you're investing in and we talked a little bit about kind of these B to C apps messaging monetizing attention? You know, what are your heuristics for investing these days that might not be directly related to a fat protocol thesis?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 719.42,
+      "end": 719.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 720.0,
+      "end": 722.36,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "well, I think that if you make that observation",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 722.36,
+      "end": 723.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 723.4,
+      "end": 738.74,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "the way that value flows across that stack is actually quite buried, then what I think people want to do is actually create a diversification dimension across that functionality stack. So that means like, you know, you want to invest in a few,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 739.0,
+      "end": 740.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 740.12,
+      "end": 776.41,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, really compelling protocols that you think might, you know, might become utilized. But you also want to invest somewhere in the middle and you also want to invest at the top. And I think of the top as things that are close to consumers, like consumer proximate applications like KIC, like you now, you see a bunch of companies these days from traditional consumer tech. coming into the space and building products. And these are the companies that have real user bases that are numbered in tens of millions or even hundreds of millions of users. And I think short to medium term, it's going to be really, really interesting to put",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 776.41,
+      "end": 778.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "those",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 778.74,
+      "end": 805.35,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "users in front of blockchain technology and to see if they could get a measure of adoption. And if so, I think the short to medium term really looks much better for... those kinds of things, those kinds of consumer proximate applications, versus, you know, these low-level protocols. And one very, very interesting app that came out just a week ago",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 805.35,
+      "end": 806.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 806.37,
+      "end": 807.55,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "called CryptoKitties.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 807.73,
+      "end": 808.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 808.99,
+      "end": 809.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 809.09,
+      "end": 810.23,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "going to ask you about that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 811.35,
+      "end": 811.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 812.23,
+      "end": 817.29,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so we're in this week where Crypto Twitter is going nuts over CryptoKitties.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 817.8,
+      "end": 818.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 818.1,
+      "end": 841.24,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's because this is a great example of a consumer proximate application with a wonderful user experience that mainstream users can understand. And it's just, those kitties are just cute enough that they might push those mainstream users over the edge and get them into Metamask and get them to be using Ether. And that's really a huge value proposition to me over protocols.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 841.86,
+      "end": 842.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 842.48,
+      "end": 866.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "that makes sense. So I bet, but let's let's dive in for a second there. Let me push back on CryptoKitties. I love CryptoKitties, but let me, and I think it's funny that you're bringing them up because I was going to ask you about them. Do you, so CryptoKitties, they're these, they're essentially these little kitties that exist on the internet that are connected to a specific, essentially token, a specific like kitty kind of token, and you can then breed them together to create new kitties. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 866.44,
+      "end": 866.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 866.9,
+      "end": 882.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "guess my question would be like, yeah, this is a consumer proximate application, but like what actual value is CryptoKitties providing? And like would, you know, for you guys at Coin Fund, are you looking to invest in these kind of like memes or things like that? Or where's the value there?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 883.16,
+      "end": 883.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 883.8,
+      "end": 927.87,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's a great question. I think the answer is twofold. So there's obviously like a product value there. Cryptokitties are basically scarce digital collectible items. These are no different than Pogs. cabbage patch kits, beanie babies, you know, signed baseball cards and baseballs and things like that. And these are markets that have existed for hundreds of years in our societies, and they're actually quite large markets. The only thing that CryptoKitties does is put those markets into sort of a digital domain, which is not something that we are terribly used to. But the scarcity remains the same as any... of these other markets. Now on the back end, this is actually",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 927.87,
+      "end": 929.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 929.03,
+      "end": 950.61,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "very interesting topic because a crypto kitty is implemented as a transferable but non-fungible digital asset, right? So two crypto-kitties don't necessarily cost the same amount. And so this is just an example, unlike a cryptocurrency, of a digital asset that's non-fungible, and we haven't really seen that many of them.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 950.93,
+      "end": 951.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 951.57,
+      "end": 953.39,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "what's going to be really interesting to see,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 954.05,
+      "end": 954.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 954.57,
+      "end": 955.01,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 955.01,
+      "end": 957.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 957.89,
+      "end": 980.19,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "is looked at by regulators, and if they would say, look, here's an example of a digital asset that's very clearly just property. It's not a security. It doesn't necessarily make you money on the back of third-party work or something like that. So I think Cryptokitties are a great candidate for that kind of guidance.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 980.5,
+      "end": 983.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that makes sense. And I super agree with that there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 983.46,
+      "end": 983.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 983.96,
+      "end": 1000.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "lot of time people think about either the utility value of the token versus, you know, oh, is the token a security or whatever? But there's actually this third thing, which is this collectible, scarce, memetic value, which we haven't really experienced on the internet yet because digital scarcity wasn't much of a thing or was only centralized, but now",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1000.86,
+      "end": 1001.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1001.24,
+      "end": 1022.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "can kind of create decentralized digital scarcity and non-fungible digital scarcity, which empowers things like CryptoKitties. Okay, so kind of, so thinking about CryptoKitties and the, do you think of CryptoKitties, I agree that CryptoKitties is similar to kind of Kick and Ken or Unown Props in terms of its consumer proximate, you know, nature. But I feel like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1022.4,
+      "end": 1023.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1023.26,
+      "end": 1035.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "a difference in that like Kick and Ken and You Now and Props have like these like complex crypto economic systems that underpin them. Are those the kind of things that you're looking more into investing in, or is it other things like CryptoKitties?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1036.1,
+      "end": 1036.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1036.54,
+      "end": 1037.62,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I think, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1038.84,
+      "end": 1039.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1039.42,
+      "end": 1049.88,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "don't look at those things exclusively. Like I said, I think investors should be diversifying into protocols and into such applications and other types of applications as well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1050.84,
+      "end": 1051.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1051.42,
+      "end": 1060.28,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I think that diversification is really important because it's really hard to predict what area of the space is going",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1060.28,
+      "end": 1061.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1061.43,
+      "end": 1062.79,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "kind of be adopted first.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1062.89,
+      "end": 1063.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1063.47,
+      "end": 1081.45,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "happen to think that... consumer proximate applications are more likely to be adopted first. But it's quite possible that some large institution adopts an exchange protocol at some point. And how can we really know? So the answer to me is that you have to diversify",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1081.58,
+      "end": 1082.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1082.78,
+      "end": 1085.82,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "you diversify across the functionality stack.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1085.94,
+      "end": 1092.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that makes sense. So I guess could you bucket for me what you see as those different diversification dimensions?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1094.22,
+      "end": 1094.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1094.66,
+      "end": 1120.78,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I mean, like for me, it's kind of thesis-driven. So I have, you know, I'm a huge fan of decentralized social media. I think decentralized social media will provide models for media that are much more equitable and efficient and unbiased than what we have in the big centralized companies today. You know, another thesis is around decentralized exchange. I think it's now clear that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1120.81,
+      "end": 1122.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "tokens",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1122.05,
+      "end": 1153.77,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "have... proliferated and they're kind of here to stay. And so you need infrastructure for people to be able to get liquidity in those tokens and to exchange them among one another. And then, you know, another interesting theme is like applications that we really haven't seen before in the form that they are, like prediction markets like organosis, a few other things. And another huge area is that blockchain is great at disrupting various kinds of of marketplaces, right? So this is anything from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1153.77,
+      "end": 1154.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Amazon",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1154.87,
+      "end": 1169.73,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "style buyer-seller markets to Craigslist, to ride sharing, to food delivery. And there's just a multitude of different categories that are focused on the marketplace use case using blockchain technology as well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1169.96,
+      "end": 1170.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1170.3,
+      "end": 1191.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "it. Yeah. So, yeah, yours is kind of thesis-driven. And I guess would you also include in those, a lot of those were kind of maybe, what I would argue, a little bit further up the stack. In addition to those, there's also just like investing in, you know, protocols like Ethereum, Deferium, Definity, Tases, etc. Would that be another bucket that you have?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1192.35,
+      "end": 1192.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1193.09,
+      "end": 1204.79,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "so if you want to go a little bit lower the stack, then things like stablecoins, I think are sort of like lower infrastructure projects. I think that's going to be super important because, you know, projects today tend to conflate",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1204.79,
+      "end": 1206.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "their",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1206.07,
+      "end": 1227.6,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "platform's transaction currency with their platform's kind of digital equity, right? And so that's where you have sort of the generic transaction token along with its counter argument that... you know, when it has a very high velocity, if it's only being used to reallocate resources in that system, and it has that high velocity, its price is likely to go to zero.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1227.8,
+      "end": 1228.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1228.04,
+      "end": 1236.0,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "that's because there's a very poor separation between, you know, the transactional side there and the side that kind of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1236.0,
+      "end": 1236.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1236.3,
+      "end": 1237.66,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, the token that kind of earns",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1237.66,
+      "end": 1239.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1239.75,
+      "end": 1245.21,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "little bit of the cut of the platform. And when systems separate those two, I think...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1246.09,
+      "end": 1246.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1246.49,
+      "end": 1274.13,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think it's going to be very interesting. And what I see is a bunch of platforms that have, you know, one transactional staple coin like makers die, for example, you know, and then another almost crypto equity that entitles investors to some of those returns. So that's another example of a lower one. And then great point, you know, underpinning all of these things are smart contract platforms like Ethereum. I think there's a going to be in 2018 a...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1274.71,
+      "end": 1275.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Huge",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1275.19,
+      "end": 1276.03,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "race to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1276.03,
+      "end": 1277.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "try",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1277.53,
+      "end": 1278.17,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "various",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1278.24,
+      "end": 1280.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "scalability",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1280.38,
+      "end": 1288.68,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "approaches, and whether that comes in the form of state channels, whether that comes in the form of new networks with different consensus algorithms.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1289.02,
+      "end": 1289.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1289.5,
+      "end": 1309.98,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "might come in the form of Casper. It might come in the form of plasma and many, many different other approaches that people are working on. And I think it's important to be diversified across... different networks that provide kind of platforms where smart contract tech is built",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1309.98,
+      "end": 1310.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1310.52,
+      "end": 1337.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah that makes sense and it's and it's good to diversify across to different kind of scalability approaches, whether they're state channels or new platforms entirely, new consensus algorithms, what have you. So I guess kind of maybe transitioning away from this a bit, something that's been hot on people's minds recently is the question of decentralized governance. How are you and how is Coin Fund thinking about decentralized governance of the platforms up and down the stack here?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1338.02,
+      "end": 1338.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1338.86,
+      "end": 1344.23,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I mean, I think the... we as a space have finally recognized after a few years",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1344.23,
+      "end": 1345.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1345.45,
+      "end": 1353.81,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "governance of decentralized open public networks is kind of like one of the core issues and also a very, very difficult issue to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1353.81,
+      "end": 1354.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "wrap",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1354.31,
+      "end": 1357.97,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "your mind around. You know, we see that starting, you know, very actively.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1358.39,
+      "end": 1358.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1358.97,
+      "end": 1400.25,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "think some of the early guys were like, you know, Joel Dietz and Arthur Brightman working on Tezos, like, pre-DOW, right? And those were some of the few guys that are thinking about governance. And then really when the Dow hack happened in the subsequent Ethereum fork, that really brought governance into sort of the spotlight. And now you see many, many examples of platforms that are working on governance. You know, you have Tezos and DFINITY are platforms that have protocol-level governance systems built in. You have projects like Aragon, you know, which are just totally dedicated to. to decentralize governance systems and then, you know, many other ones. So I happen to think that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1400.54,
+      "end": 1401.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1401.3,
+      "end": 1403.82,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, we're definitely going to be able to get to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1403.82,
+      "end": 1406.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "fairly",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1406.14,
+      "end": 1446.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "straightforward implementations of these systems, but to make them work really well is going to be a huge challenge. Now, in fact, there's something like 200 years of academic research on, it's called the theory of social choice, theory of voting. It has some very, very interesting mathematical results around how do you design governance systems that accurately and fairly and equitably take into account all of the preferences of the voters and then reflect them in sort of the overall preference of the society. And it turns out to be a really hard problem with a lot of trade-offs between fairness and...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1447.53,
+      "end": 1447.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1447.93,
+      "end": 1458.93,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, the ability of a system to be consistent. So I encourage anyone who's working on governance to check out some of the resources on that. I've tweeted about it and happy to send some references as well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1459.01,
+      "end": 1466.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I'll link them in the podcast notes. And the funny thing with that is actually my freshman year of college, I took a class called Mathematics of Democracy, which was all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1466.61,
+      "end": 1466.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1466.93,
+      "end": 1484.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "voting theory and those kind of things. And I loved it, but it is actually applicable to my life these days, which is kind of nice. And like you're saying, there are a bunch of kind of interesting mathematical... proofs that you can show about the trade-offs that exist within governance that we will start to get closer and closer to those mathematical proofs as we move from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1484.88,
+      "end": 1485.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1485.44,
+      "end": 1493.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "of wet kind of real-life governance towards more kind of smart contractee-style governance. So we'll definitely see those implemented over time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1493.66,
+      "end": 1498.26,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Yeah, just I wanted to just call out like a really quick result there because I think it's just fascinating.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1498.44,
+      "end": 1498.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1498.7,
+      "end": 1500.9,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "There's something there's something called Eros theorem,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1501.14,
+      "end": 1501.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1501.5,
+      "end": 1549.28,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "basically says, you know, like how does governance work? Governance is a kind of study of the set of these things called social choice functions. And social choice functions are just the way that you take like all of your voters preferences and how do you like compute them to get like a single preference for the society. And so the whole theory revolves around the study of this of these like social choice functions. The first thing that mathematicians do when they have a large class of functions is they say, let's put some reasonable restrictions on this set so we could reason about the functions kind of within our subset. And it turns out, so Eros theorem says that when you impose two very reasonable sounding assumptions onto your set of these functions,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1549.7,
+      "end": 1550.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 1550.22,
+      "end": 1553.98,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "your system collapses into a dictatorship.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 1555.79,
+      "end": 1564.65,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Meaning there is going to be like one person whose preferences are going to be imposed on everybody else. And you can show that mathematically, which is kind of crazy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 1564.83,
+      "end": 1579.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I love that theorem. And I think in the two reasonable ones are like, hey, wouldn't you want it to be? It's things where like if you're talking with someone at a dinner party, you're like, Wouldn't you want it to be true that if someone voted this way and they changed their vote that it could affect the outcome or something like that, you know? And it was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 1579.53,
+      "end": 1579.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like, oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1579.91,
+      "end": 1584.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "yes, he was reasonable. And then you say two of those things. And then you're like, oh, that's a dictatorship. I was like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1584.51,
+      "end": 1584.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1587.37,
+      "end": 1592.53,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Exactly. Exactly. So it's a fascinating topic. And I think like, you know, blockchain folks,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1592.83,
+      "end": 1593.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1593.95,
+      "end": 1602.51,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, in this area and in other areas, I think they also sometimes need to go back and see some of the classical literature on this stuff because it's very useful.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1602.75,
+      "end": 1630.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yes, yes, yeah, we should stand on the shoulders of giants. So I guess to kind of conclude here, we talked about the Fat Protocol thesis and how it's often true, but not always true, and you need to get texture around where values being accrued. We talked a little bit about the B2C apps and consumer facing ones, especially crypto kitties, buy your crypto kitties now while they're hot. And then we talked a little bit about governance as well and social choice theory. Is there anything else that's on your top of your mind before we kind of wrap up here?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 1633.16,
+      "end": 1633.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 1634.74,
+      "end": 1639.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "I think it's going to be a really interesting 2018. We're about to see",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 1639.02,
+      "end": 1641.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "basically",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 1641.24,
+      "end": 1647.82,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "Bitcoin futures on some of the traditional markets. There's been a huge amount of momentum",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 1647.82,
+      "end": 1648.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 1648.84,
+      "end": 1649.44,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 1649.44,
+      "end": 1651.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "traditional",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 1651.38,
+      "end": 1668.08,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "investors researching and looking at the space. And I think we're going to open 2018 with the notion that crypto assets are... you know, really a new asset class now with some serious money from Wall Street and beyond kind of flowing into it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 1668.16,
+      "end": 1668.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 1668.68,
+      "end": 1673.02,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "it's going to be a really interesting year, and I think scalability is going to be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 1673.02,
+      "end": 1674.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 1674.12,
+      "end": 1675.54,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of the core issues here.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 1676.46,
+      "end": 1677.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 1677.02,
+      "end": 1680.04,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "know, just going back to CryptoKitties for a second.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 1680.2,
+      "end": 1680.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 1680.98,
+      "end": 1711.01,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "These guys are, they were over 20% of the total Ethereum transactions just in the last. in the last 24 hours or so. And what that says to me is that, you know, if they keep growing and kind of going viral, you know, Ethereum might have some issues around scalability. And so these are the kinds of real applications that bring some of the technological challenges to the top. And that's going to be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 1711.01,
+      "end": 1711.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 1711.83,
+      "end": 1717.27,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "of our job next year is to scale the space not only financially, but also technologically.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 1717.55,
+      "end": 1728.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "Definitely. And I would say not even like capital is not scarce. You know, it's like we need to scale it. Yeah, technologically. Super Greek. Cool. Well, Jake, thank you so much for your time and for Beyond's show.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 1729.76,
+      "end": 1730.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "All",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 1730.16,
+      "end": 1733.66,
+      "speaker_id": "speaker_2",
+      "speaker": "Guest Speaker 3",
+      "text": "right. Thank you for having me, Reese. My pleasure and speak soon.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 1733.8,
+      "end": 1734.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 1734.52,
+      "end": 1750.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Rhys Lindmark",
+      "text": "And for those of you who are listening, you can support me on patreon.com slash Reese-L-Mark. That's slash R-H-Y-S-L-I-N-D. And I am happy to say that today's show was recorded. So it will be out there for the people. Great. Thanks so much, everybody. And goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 225,
+    "withheld": 0,
+    "published": 225
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

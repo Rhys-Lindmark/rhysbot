@@ -1,0 +1,3609 @@
+{
+  "schema_version": 1,
+  "id": "podcast-4c788f2d9c2cd00019ed",
+  "title": "#25 Trent McConaghy, Ocean Protocol: Cryptoeconomic Primitives + Future Plan for Humanity",
+  "published_at": "2017-12-18T19:41:46Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/25-trent-mcconaghy-ocean-protocol-cryptoeconomic-primitives-humanitys-future-plan",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/371322980-the-rhys-show-25-trent-mcconaghy-ocean-protocol-cryptoeconomic-primitives-humanitys-future-plan.mp3",
+  "youtube_id": "OLSle6HFOZU",
+  "youtube_url": "https://www.youtube.com/watch?v=OLSle6HFOZU",
+  "audio_sha256": "7ce519f6fdffc4d3d67acc6b38d00c49e60785232f83ece68611f3df84afae08",
+  "audio_duration_seconds": 5112.0,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 16745,
+    "unknown_words": 201,
+    "unknown_words_fraction": 0.012003583159151985,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 11.95,
+      "end": 12.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 12.49,
+      "end": 19.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "episode is brought to you by Shapeshift.io, the easiest, fastest, and most secure way to swap your digital assets.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 19.71,
+      "end": 20.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 20.23,
+      "end": 25.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "run the risk of leaving your funds on centralized exchange. Visit Shapeshift.io to get started today.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 30.32,
+      "end": 67.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello, everybody. In today's episode, we interviewed Trent McConaughey from Ocean Protocol and Big ChainDB. And just as a quick note, today's episode is a little bit longer than normal. It's an hour and a 15 minute interview. And this is kind of a... thing that I'm going to do more of in 2018, which are these longer interviews and kind of a bimol system where more like 20-minute interviews and also more like two-hour interviews. So it's an experiment with that. In today's interview, it's kind of broken into two parts. The first is all about crypto economic primitives, and the second is all about kind of societal stuff. And so if you want to, societal stuff. So if you feel free to listen to either or if you want to. Okay, so with that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 68.26,
+      "end": 68.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 68.7,
+      "end": 126.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "a couple things, like an overview of what Trent and I talked about. We talk a lot about cryptoeconomic primitives today. And Ocean Protocol uses two of them. They use curation markets and token curated registries. And they use the curation markets essentially as a way to signal towards good data where you say, hey, I think this data is going to be awesome. So I'm going to stake towards it. And then when a bunch of people use that data, you essentially get more rewards because you staked to it and you get more money for staking earlier. So it uses curation markets. And it also... uses token curated registries, and it uses those because they create log rewards on on datasets. And what I mean by that is they don't want too much centralization. And so if you have a bunch of people getting stuff from a single data set, then that'd be pretty centralized. But the reward function is... it goes through a log function so it says hey if you get a bunch of this stuff we're actually going to push through log function so you get a the log of that rather than the like big number so instead of like 100 it'll be like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 126.76,
+      "end": 127.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "10",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 127.28,
+      "end": 135.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "um so because of that they also need to have a token curated registry on um the agents in the system where you say hey um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 135.54,
+      "end": 136.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 136.36,
+      "end": 142.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "can't be Reese 1 and also Reese 12 you essentially have a white list for there's different agents that are acting there so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 142.26,
+      "end": 142.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 143.44,
+      "end": 187.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "That is how they use it. And a couple notes on it. First, I always like to ask myself, should you be using a curation market or should you be using a token curated registry? And in this example, it's perfect because it's like, well, what would happen if they flipped? Could you have a... token curated registry or a TCR for the data, and could you have a curation market for the agents in the system? And I think you could here. You can imagine a TCR that says, hey, this is an awesome data list, and people want to get in on that awesome data list. And you can also imagine a curation market for the actors in the space and the agents and saying, hey, these people have various stakes toward them to show that they're good actors or whatever. That's possible. Whenever you're thinking about this, and in a general I trust Ocean protocol for whatever they did, think about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 187.96,
+      "end": 188.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "essentially",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 188.58,
+      "end": 200.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "are you trying to make a binary or a gradient? You know, something like a TCR is really good at making a binary, whether you're in the list or you're out, and something like a curation market's much better at a gradient where you're just signaling. And that's the other key thing here is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 200.7,
+      "end": 200.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "are",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 200.98,
+      "end": 219.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you trying to make sets of things or lists of things? If so, then use a TCR. Or are you just trying to kind of signal to things? If you're trying to signal, then probably use curation markets. So that's one side of things is what happens when you flip the two. And always when you're doing this yourself, ask yourself TCR curation market. How should, which one should I use? And the second thing that I want to say here is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 219.8,
+      "end": 220.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 220.74,
+      "end": 255.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of doing some weird abstraction of these crypto economic systems. So Ocean Protocol has its proof of X layer. And they're essentially proving that you are proof of like giving people data. And then they also have the data of reputation layer where you're, You have the curation markets around for which data is good. And then they also have the agent reputation layer, which is the token curator registries around that. And I think that those three buckets actually kind of hold in many different crypto economic systems where you have your proof of X layer, which is like your utility value layer where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 255.9,
+      "end": 256.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "your...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 256.49,
+      "end": 272.91,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "trading some scarce resource for capital for tokens in the system. And then you have your, these kind of reputation layers there, the data reputation layer, and then also essentially the subjects of the system and what data you're looking at. And then the agent reputation layer, which are like the objects that are operating on that system. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 272.91,
+      "end": 274.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 274.23,
+      "end": 276.81,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "think that's an okay abstraction to use here, or another way to think about it is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 276.81,
+      "end": 277.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 277.27,
+      "end": 283.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "have the proof of X where you're essentially proving that you've done something in the past while the curation side",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 283.21,
+      "end": 283.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 283.97,
+      "end": 289.0,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is showing that you think about the future. So this is where you use all these crypto economic primitives, whether",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 289.0,
+      "end": 289.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 289.46,
+      "end": 295.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "TCRs, curation markets, prediction markets, whatever, where you're saying, hey, I think I'm going to stake some stuff now",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 295.3,
+      "end": 296.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 296.04,
+      "end": 299.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think in the future something will happen and I'll get more money back as a result.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 300.54,
+      "end": 300.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 300.98,
+      "end": 303.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "other final way to think about this abstracted way is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 303.94,
+      "end": 305.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 305.04,
+      "end": 305.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 305.9,
+      "end": 306.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 306.28,
+      "end": 317.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, that there's not only curating based off of objects where you're saying, I think this is good or I think that's good, but there's also curation as a result of kind of reputations. So people that have done good things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 317.84,
+      "end": 318.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "get",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 318.38,
+      "end": 321.6,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "reputation as objects going forward. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 321.6,
+      "end": 322.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 322.62,
+      "end": 328.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think that that abstraction is a fine way to think about these crypto economic systems in general. And then the final thing I want to say here is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 328.97,
+      "end": 329.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 329.35,
+      "end": 346.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "talked today about a lot about staking here, and this is just a big thing that people are talking about in the space these days, both with proof of stake algorithms at the protocol level, but also at the application layer, because staking essentially allows you to decrease your token velocity, which increased its value. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 346.77,
+      "end": 347.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 347.21,
+      "end": 350.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "are thinking a lot about staking these days, and that's part of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 350.73,
+      "end": 351.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 351.11,
+      "end": 354.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of emerging buckets for how to use your tokens.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 354.27,
+      "end": 354.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "There's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 354.71,
+      "end": 366.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the proof of X-side, or you get the tokens for doing the utility. There's the staking side. There's also the governance side. And then finally, the medium of exchange side. And then the other thing I want to highlight here is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 366.04,
+      "end": 366.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 366.98,
+      "end": 381.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this log rewards function that Trent was talking about. So this, I think, is actually really powerful. He was talking about in the context of data providers and not trying to make too much centralization. So if you are really, really... good and you do all your stuff and you should get a ton of money for whatever actually get the log of that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 382.02,
+      "end": 382.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 382.34,
+      "end": 396.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "think this is actually pretty similar from like a societal perspective, the things I'm trying to do around these memes and pledges and commitments to decentralized power. So, you know, for me, after $45,000 and you don't get happier when you get more money, I give 50% of the money that I make back to the system",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 396.66,
+      "end": 397.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 397.6,
+      "end": 399.5,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "essentially giving it to charities or whatever.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 399.94,
+      "end": 400.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 400.22,
+      "end": 408.51,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think that... That's one way to think about. I'm essentially doing, like, demurge on myself, kind of like water cycle evaporation, where I'm evaporating the money that I get back to the system",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 408.51,
+      "end": 409.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "instead",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 409.05,
+      "end": 411.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of like our current capitalist systems where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 411.61,
+      "end": 412.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 412.09,
+      "end": 435.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "money is essentially money compounds instead of getting demurged. But I think that a log reward function is another really good similar way to say this where you say, hey, people should get a good amount of money at the beginning, but then as... that keeps increasing. They probably don't need all the massive amount of money or whatever. So giving log reward functions, I think is another powerful way to think about this. And the third thing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 435.66,
+      "end": 436.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 436.54,
+      "end": 442.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that later when we talk, in the second half of the episode, we talk a lot about tokenizing the enterprise and tokenizing the enterprise",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 442.48,
+      "end": 443.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 443.18,
+      "end": 444.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this really great concept where you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 444.48,
+      "end": 444.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "essentially",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 444.98,
+      "end": 448.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "take a company, you confer all the equity in that company to tokens, and then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 448.82,
+      "end": 449.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 449.31,
+      "end": 472.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "backfill those tokens for engagement. So if you're really engaged Facebook user, you get a lot of Facebook tokens, and then you essentially give those tokens utility with things like distributed governance. And I think that this could be really awesome in the future because it could provide transparency and aligned incentives. But we're just at the beginning of seeing some of these experiments. We're like kick and Ken, props and you now, numerai and numerare. And I really hope that those initial experiments show",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 472.47,
+      "end": 473.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 473.05,
+      "end": 498.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "we can create transparency and aligned incentives around these things. Because if so, then we might see SoundCloud tokenize themselves. And then we get to things that could be really good for society, like Twitter and Facebook tokenizing themselves. So that's one side of things. The other side is we talked about this map idea that Trent has, which is essentially a series of steps that we need to take as society in order to kind of self-actualize as a whole society. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 498.43,
+      "end": 498.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 498.91,
+      "end": 501.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is a great idea, and you can imagine those steps as like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 501.59,
+      "end": 502.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "places",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 502.47,
+      "end": 505.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "where money can be put to solve a given problem for a given impact.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 505.95,
+      "end": 506.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 506.43,
+      "end": 516.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's super, super lined with the stuff I'm doing around co-evolving the phase shift to crypto capitalism by founding the Ethereum Commons co-op, which is some of the other work that I do. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 516.61,
+      "end": 517.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 518.11,
+      "end": 538.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "key concept on both them is essentially this kind of self-tithing, demurge thing, and then sending that money and pointing that money at various buckets. what Trent thinks of as the map, and as nodes in that map, you can also think of as buckets, or as like, Giveth calls them these decentralized autonomous communities, or in Stake Tree, it's an individual like pages or whatever.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 539.11,
+      "end": 539.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 539.47,
+      "end": 563.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I just, I'm really excited to, I'm starting to MVP these buckets with on Stake Tree. I'm excited to then federate with, you know, Giveth on this, and really start to see, hey, can we create these awesome buckets that a lot of people can point their money towards, the thing gets maximized for impact in terms of this big. map that we're trying to build. So with that, thank you so much for listening and enjoy the interview today with Trent.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 565.24,
+      "end": 598.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And finally, before I begin, here are two quick things that I'm leading that you might be interested in. The first is I'm co-leading the ETH Denver Hackathon. which is the next in the series of ETH Global Hackathons. You know, we're really working with the ETH Waterloo team. We expect 500 hackers, awesome speakers like Joe Lubin, William O'Gaiar, Linda Sia. We have these awesome workshops, both on the coding side, things like cryptoeconomic primitives, bonding and staking, et cetera, and then also some great non-coding workshops, which are emphasizing as well, things like governance, complex system dynamics. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 598.49,
+      "end": 598.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 598.97,
+      "end": 601.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you're interested, it's February 16th through 18th, and you can go",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 601.89,
+      "end": 602.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 602.45,
+      "end": 604.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "learn more at ETH Denver.com.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 604.61,
+      "end": 604.89,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 604.89,
+      "end": 607.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then the second thing that I'm doing that you might be interested in is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 607.21,
+      "end": 607.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 607.91,
+      "end": 610.53,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "called the Ethereum Commons Co-op. And this is a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 610.53,
+      "end": 611.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "new",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 611.21,
+      "end": 626.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "project that I'm starting that essentially allows for more cross-project co-evolution and it kind of facilitates that. And it also tells the story about this new future that we want to live in that internalizes externalities. So if you want to learn more about that, you can go to my Twitter.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 630.08,
+      "end": 674.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello, everyone. My name is Reeslin Mark, and you're listening to another episode of Creating a Humanist Blockchain Future. And in this podcast, we take a systems thinking approach to doing good in the world where we have a couple different series that focus on different system scopes. And today we're kind of focusing on two different of these scopes. One is the series A macro systems where we'll be thinking about humanity and where we're headed, you know, the philosophical technological future. And then second, we're going to also talk about... software systems and, you know, crypto economics and kind of what machine systems exist in code. And to talk about both these things, I'm very happy to introduce Trent McConnor hey to the show. Trent works at the intersection of AI plus blockchain and is the CTO of Big ChainDB and Ocean Protocol. Trent, thanks for being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 676.0,
+      "end": 677.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Hi there, thanks. It's a pleasure to be here.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 677.8,
+      "end": 692.85,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I'm excited to chat. So I guess let's actually start more on the software system side. You know, Trent, could you guys just give us an overall view on the things that you're doing all around data with both Ocean and Big ChainDB?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 694.38,
+      "end": 694.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 695.46,
+      "end": 695.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 695.46,
+      "end": 697.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'll",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 697.68,
+      "end": 712.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "start with Big ChainDB and then lead it into Ocean. Big ChainDB has been out for about a couple of years now, actually, and it's a blockchain database. And what that means is it has characteristics of a database where you have querying and...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 713.83,
+      "end": 744.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not only like querying type language and so on, but also fast querying, and then bringing in blockchain characteristics of decentralized immutable and assets, you know, creating assets, issuing assets. And so it's sort of a way to combine the benefits of both of those. So it's meant to be complementary in the stack, the decentralized stack, to things like file systems like Filecoin and processing component like Ethereum. Just like in the traditional lamp stack or other compute stacks, we see that there's a decentralized stack for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 744.35,
+      "end": 745.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 745.03,
+      "end": 753.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "decentralized stack, and Big ChainDB plays a role there. So that's Big ChainDB. And then with Ocean,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 755.47,
+      "end": 773.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it is higher in the stack where at the end of the day, what it's trying to do is be a substrate for data. So to make it really easy to build data marketplaces on top, whether they're centralized or decentralized. So it has an incentive mechanism to have a high",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 773.73,
+      "end": 775.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "quality",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 775.05,
+      "end": 845.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "supply of data. So it's all about maximizing the supply of high quality data. And that's not only for price data within a data marketplace framework, but also the data commons. So basically people who are submitting data and referring data can actually get compensated for it. sort of resolving this classic question of data wants to be free. It also wants to be expensive. So there's kind of a new answer to that. And so it's really this data substrate to help power data marketplaces in a data commons. And in fact, it does generalize to a more general service layer as well. But talking about data is really good focus. And it's really tuned towards AI applications. These, you know, AIs themselves for classification and for regression especially. are insatiable in their demand for data. You know, you improve the amount of data by 10x or 100x, and you can reduce the error from 20% to 5% to 1% and more. So it can make all the difference between an invisible AI product and a feasible one, or a feasible one and a feasible one and a feasible one. So that's really, you know, Big Cheney B and Ocean database for the decentralized stack and Ocean Protocol substrate for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 845.0,
+      "end": 846.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "data",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 846.18,
+      "end": 848.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "marketplaces and a global data commons.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 849.21,
+      "end": 849.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Great.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 850.21,
+      "end": 880.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So I think there's a lot to dive in there. I think that's a really good overview. I guess, so staying on the big chain DB side for just a quick second, you're saying, yeah, so I can see how it's complementary to something like Ethereum where you say, hey, you're using Ethereum for smart contracts kind of computation. And then, you know, saying though that it's like complementary to something like Filecoin, I kind of hear it as something maybe similar. I guess Filecoin is purely just a storage of blobs while this is maybe the actual database. Is that right? Is that kind of the distinction?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 880.46,
+      "end": 880.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's correct.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 880.92,
+      "end": 903.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, like that's correct. Like for Amazon web services, for example, which is, you know, the centralized, as centralized cloud, you've got Amazon S3 for storing blobs and Amazon DynamoDB or say MongoDB or something for structured data, right? So the blobs, you know, you reference it via a URL or the hash in a sense. And with the structured data, you typically find it via queries, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 905.37,
+      "end": 920.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "some sort of structured query language like classic SQL for structured query language or the no SQL type queries too that you find in Mongo and the like right so Big ChainDB is like a decentralized Mongo and in fact we wrap MongoDB itself so it's a very apt comparison",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 920.74,
+      "end": 921.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Cool.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 921.58,
+      "end": 934.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So I guess one of the thing to check there is I'm imagining, and I don't know too much about these, but there are things like these, you know, parallel processing server clusters, things like Hadoop. And feel free to correct",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 934.08,
+      "end": 934.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "me as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 934.36,
+      "end": 953.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I'm wrong here. But how does something like, why, so let's say I'm in here, I'm coding my smart contract application on Ethereum and I'm like, okay, I'm using file coin to store some like images that I'm using, you know, why would I use, I guess, big chain DB over something like MongoDB over something. something like Hadoop to store my actual, to have my database.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 954.65,
+      "end": 987.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, so overall, the question is, where do you want to have the sovereignty of the data, right? Do you want your users to control it, but maybe have it stored in a decentralized way, or do you want it to be sitting on, you know, some centralized company like Amazon or some other service provider, right? And the answer is the same reason you're using Ethereum rather than EC2 or the same reason using Filecoin. instead of S3, right? It's because you get these different benefits for decentralization. The main one, when it comes to sort of personal use, is about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 987.42,
+      "end": 989.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "regaining",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 989.66,
+      "end": 1055.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the sovereignty of your own personal data, right? Yet still being able to use that personal data within the context of various web services, social networks, etc., right? There are other uses, too. So overall, when you think about it, let's say for your application, you're going to store the data, things like, let's say you've got a music service, right? Maybe the songs themselves and the images for albums might be stored in, say, Filecoin. And the business logic e-stuff would be in Ethereum. But then the lists of the metadata, the IP rights licensing all of this, the massive libraries of, you know, hundreds of millions of songs, that's all in Big ChainDB. And in the case of big chain, it is, you know, designed to be very efficient. And so you can store a lot more data on big chain than Ethereum, which is, you know, not really designed for massive amounts of storage, right? And it doesn't really have any querying out of the box, whereas that's the whole point of big chain. It's the difference between, you know, wallet database and processing, right? Like, these are different pieces of the stack, right? It's very simple that way.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 1055.66,
+      "end": 1093.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Cool. Yes, that makes sense. So, and as you say, yeah, the key thing for why you'd want to use is, Instead of using something like Mongo, you can instead have the users regain sovereignty over their data, but still use it within these applications. So that makes sense. I guess then kind of transitioning over to Ocean, first, oh, yeah, so it sounds like... you know, ocean is, and you use this word substrate, and I'd like to dive into that word for a bit more, because I think it's a very powerful word, but not as many people use it. Is substrate similar to protocol, or it's like this protocol for these new data marketplaces, kind of a substrate for these new data marketplaces, or how do you use the term substrate there?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1094.58,
+      "end": 1094.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1095.44,
+      "end": 1134.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so ocean is a protocol, but protocol isn't that the script sort of as well, right, because sort of every new building block in this emerging decentralized stack is a protocol, right? Just like if you say it's SaaS, well, SaaS doesn't tell you that much, right? Because, you know, you have these different building blocks, right? Or library and traditional compute stacks. So it is a protocol in that, you know, there's a clearly defined set of behaviors expected from it, you know, how the computers talk to each other and so on. But then beyond, it's a substrate in the sense of, well, things build on top of it. But maybe I'll start with an analogy. So I assume you've bought airline tickets online, yeah?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1134.37,
+      "end": 1134.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Mm-hmm.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1135.95,
+      "end": 1138.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And, you know, you might use, say, kayak, or maybe Hitmunk",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1138.97,
+      "end": 1141.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or some aggregator. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1142.05,
+      "end": 1206.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "or it could be, you know, maybe you go to American Airlines or something too. So, but if you ever go to kayak, you know, you do a search for, say, flying to Berlin, because everyone wants to come to Berlin, of course. And, you know, you'll get a bunch of results. And then let's say you go to Hitmunk, and you'll get very similar results. You know, the same flights, maybe slightly different orders. And, you know, why is that? And the answer is that they're all actually accessing the same database below, right? And it's a database called Sabre slash Amadeus that's been around for a couple decades, actually. And so that database was initially started in the late 80s, actually, by one airline, and then it kind of grew in usage and kind of took over the industry. But now, basically, we have this common data substrate for airline data. So any one of these aggregators, they just plug into this database, whether it's Expedia, Travelocity, Kayak, whatever. or even the individual airlines, right? And, you know, the price offers are there, et cetera, et cetera. And then we actually see a lot of innovation on the U.X level and other ways of bundling things, et cetera, right? So that's sort of, and that's been really great, right? It's very good for the consumer. We have all this variety of UX, et cetera.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1208.41,
+      "end": 1208.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Compare",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1208.85,
+      "end": 1269.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that to the world of data where, you know, that's where you want to buy data. You can go to various data marketplaces right now. They're mostly centralized. But they only have a small amount of data that's limited in scope, et cetera. You know, like you go to Bloomberg for your feed related to the stocks and stuff. And, you know, other places you might have to go to buy weather data and stuff, right? But what if there was some universal saber for data itself, right? Not just airline flights that are available, but... a huge broad swath of data, right? And that data isn't residing there, it's basically the listings. Just like the flights themselves don't reside on Sabre, it's the pointers to buying the flights that connect you through, right? So Ocean is basically about maintaining the listings of all the different data that is available pointing to where the data might be stored, whether it's centralized or decentralized or even behind a firewall. And it's basically this giving this vast supply of data that then centralized and decentralized marketplaces can be selling on top, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1269.91,
+      "end": 1270.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1270.79,
+      "end": 1270.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1270.91,
+      "end": 1279.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And of course, the commons too. So once again, sorry, but yeah, it's really, really important to balance the for sale data with the comments data. So anyway, go ahead.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1279.75,
+      "end": 1279.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1280.11,
+      "end": 1293.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so let's, let's dive into that in a second. I guess I want to check in on this, this term substrate. That makes sense that it's kind of. kind of, and I guess just to more differentiate between substrate and protocol, that substrate is kind of this,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1293.91,
+      "end": 1294.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1294.81,
+      "end": 1298.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "guess it's, I guess are there things that aren't data substrates?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1299.25,
+      "end": 1299.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1299.73,
+      "end": 1300.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "there another example of a substrate?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1302.01,
+      "end": 1310.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Well, you know, to me, I mean, substrate isn't maybe a very technical term, but it kind of gives this idea that there's something a bit more meaty there rather than...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1311.79,
+      "end": 1312.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1312.71,
+      "end": 1314.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "but honestly, it's just another word, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1315.93,
+      "end": 1338.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Protocols, you know, they can be thinner or fatter, right? So maybe substrate is just another word for a fat protocol, right? But another way to think about it, too, though, is that sometimes we call Ocean a data economy, right? Because it's a collection of marketplaces, you know, it's got this overall incentive for where these different marketplaces can hook in for data and for other resources, too, like compute, et cetera, but really focusing on the data to start.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1340.17,
+      "end": 1340.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1340.77,
+      "end": 1347.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, rather than just a single marketplace, which, of course, can't be an economy on its own, right? You really need to have this collection of them.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1348.27,
+      "end": 1368.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Together, yeah, that makes sense. And I think, yeah, I just wanted to dive in on that word substrate because I think it's a powerful one. I think you're right. It's maybe just similar to something like a fat protocol. Okay, so you have, you know, I guess one other question here is before going deeper into ocean is do you ocean and big chain DB, do they interact with each other?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1369.56,
+      "end": 1369.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1370.34,
+      "end": 1415.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so overall, it's one company, of course, that is building right now in Bikini B, GmbH out of Germany. And actually for Ocean, we are partnering with a company out of Singapore called Decks, and they have traditionally been a centralized data exchange. And they found issues with the centralized part. Things like people looking to sell data were hesitant to give up control over the data to a centralized marketplace. So Dex saw the writing in the wall that they wanted to go towards being a... a decentralized marketplace. So we join forces with them and are rolling out, you know, not just this sort of raw substrate, but one of the things we're building together is actually a reference marketplace design. So that way other people can come along and copy and paste it and that, you know, 100 or 10,000 marketplace flowers bloom.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1416.91,
+      "end": 1417.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1417.39,
+      "end": 1417.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it sounds",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1417.69,
+      "end": 1418.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like an ERC,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1419.73,
+      "end": 1422.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "an ERC standard but for data marketplaces. Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1424.16,
+      "end": 1503.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "A little bit, yeah, but it's a lot more about the implementation and stuff too, right? So it's, you know, ERC is a very simple protocol with just a few, you know, functions that you have to implement. Whereas here, it's sort of like, you know, there's a front-end U.X with an API and so on. And from the API perspective of marketplace for the price stuff, and then one level below, the API for the ocean network itself is much more just about proving that you've made the data available. and then a curation on that. And this is via curation market. So those are really kind of the two core building blocks. Once again, it's a proof. Generally, proof of making data available, but there will be other proofs and then curation. So you could call the Eosha network. a proofed curation market, if you will, or a curated proofs market, whatever you want. And it's kind of interesting, right, because it combines this idea of proof of work, you know, or proof of something like making data available, but generally something work-e with curation market, which is very stake-e, right? So it's kind of a novel design of combining these proofs kind of attached to the hip, but what it gives you is this... you know, various nice signal of, you know, relative qualities of data, right? So rather than Ocean deciding that this data set is high quality and this one isn't, we leverage curation markets where people can put their money where their most is of what they think is high quality and not.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1503.48,
+      "end": 1526.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Awesome. So, yeah, so let's... Let's dive into crypto economic permitives in curation markets and token curated registries, which is one of my favorite topics personally. So yeah, so let's talk. So I guess tell me what is a curation market and how does Ocean protocol use a curation market for data?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1527.89,
+      "end": 1528.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1529.03,
+      "end": 1535.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So overall, a curation market is means to get sort of reputation system on data.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1537.06,
+      "end": 1537.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1537.46,
+      "end": 1550.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a way that has economic interests aligned. And you can use this reputation system then as a means to, you know, signals for people to choose whether or not to download or even buy a dataset, right? So that's one way of it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1551.16,
+      "end": 1551.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Another",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1551.56,
+      "end": 1591.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "way is you can think of it like a lightweight ICO of every single dataset, right? So if I put a data set on there and I stake on it, say it's good, you know, that I'm vouching for it, and then others can start to invest in it too. and as others invest in it, then the price of the data set goes up. So that's a couple ways of thinking about it, right? You know, our reputation market with teeth based on tokens or ICOing. And another one is basically putting your money where your mouth is in terms of just betting on it. And what Ocean is trying to do is maximize the supply of curated data, and that's a proxy for high quality data because, you know, we don't decide that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1593.01,
+      "end": 1605.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "The very, very, you know, we had a lot of design iterations, you know, towards the token design and the token design that we have right now, and it's not cast in stone, you know, we're giving ourselves the flexibility to change this,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1606.98,
+      "end": 1608.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is where it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1608.68,
+      "end": 1610.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1610.3,
+      "end": 1612.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "get tokens if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1612.45,
+      "end": 1613.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1613.39,
+      "end": 1616.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "have served up a data set that you have bet on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1616.17,
+      "end": 1617.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1617.23,
+      "end": 1621.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "asked. And you get, the more you have bet on that data set,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1622.23,
+      "end": 1622.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1622.65,
+      "end": 1651.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "more tokens you get. And there's a sliding price. So if you're early in betting on this, then the price is lower than if you're late on betting it. And that's a key thing in book curation markets, right? There's this sort of function of, you know, if I was the first person to bet or I published the data myself in the first place, then to get that first fraction of tokens, it might cost me. like of tokens in that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1651.92,
+      "end": 1653.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "dataset,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1653.88,
+      "end": 1687.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "call it Dataset X. So let's say you want to get 500 tokens of Dataset X. Then maybe I have to spend five ocean tokens. But to get the next 500, I might have to spend 10 ocean tokens. To get to the next 500, I might have to spend 15. And by doing this, it's rewarding the people who are making the data available in the first place. And then it's rewarding the early adopters. And so that's the mechanic. Now, so that's kind of step one, right? I submit the data. I have to stake on it to say that, you know, I have the copyrights on it as well. And then others can come in and stay on it too. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1687.92,
+      "end": 1688.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1688.86,
+      "end": 1774.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "thing is, if we want to get rewards from that, there's two mechanisms. One of them is actually serving up the data, and then it's the mining rewards. And the second way is if many, many people follow me and I want to pull out, maybe because I'm no longer, you know, interested in the value of the dataset or I just want to cash out. then I can convert my tokens for that data set back to Ocean tokens, right? So they really are sort of derivatives in the classical sense. And that's standard, you know, how it's standard approach to token markets or curation markets. The difference with Ocean is that the curation markets function is bound to this workproof, right? So when you are serving up the data set, making it available, your block reward, your expected block reward is proportional to the amount you have staked in the data set, right? So that's really a key distinction, right? And what this does is by doing this, it actually binds together various possible stakeholders in the ecosystem. You've got, you know, the miners are the keepers in one side, the people just running the nodes. You've got people serving up data, and you've got people who are, you know, publishing the data or referring the data, and how it binds them all together is saying you kind of have to do all of the above, right? You have to stake on the data, curation market style. which means you've either published it or you have, you know, bet on it in a referral sense. And you also have to serve it up when you're asked. And you actually, if you don't serve it up when you're asked, then, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1776.11,
+      "end": 1783.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "well, actually, you're not, you know, if you're not saying you're making it available, then you're fine. If you say you're making it available and you don't serve it up, then you would lose stake, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1783.87,
+      "end": 1784.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1784.19,
+      "end": 1793.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's kind of the new thing, basically, is, yeah, this work function tied to curation markets. And it kind of gives curation markets more teeth, right? So we're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1793.19,
+      "end": 1793.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "pretty excited",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1793.53,
+      "end": 1793.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "with that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1794.09,
+      "end": 1820.19,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, so let's, let me try to break that down and see if I've gotten it correctly. So, yeah, so at a high level, I mean, I do like a lot of your different explanations of curation markets, whether it's a lightweight ICO on each dataset or the putting your money where your mouth is and betting on it. And the goal here, as you say, is this kind of, for you guys, you're essentially doing mechanism design with curation markets in order to maximize the supply of curated data, which is a proxy for high quality data.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1822.51,
+      "end": 1878.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you know, thinking about this curation market, so it's like, okay, let's say, so I'm Reese, I have some awesome data. I'm telling you, Trent, this data is great. I put it there and I say, I'm pretty sure this data is going to be awesome. And so I'm going to stake some of my, some tokens to this data and say, hey, there's awesome data. I'm going to stake, you know, 10 ocean tokens or whatever to this data. And then as, then once, when other people kind of see this data and they're like, oh, my God, this data's awesome. Like if one of our friends sees it, then he or she also can stake tokens. to that data set, they'll get, for them, it'll be less, because they're less in on the early adopter curve, it'll cost more for them to stake to that data set. And then once someone actually accesses that data, then I as the person who both produced it and then the other person who is in on it, we get kind of rewards based off of our, essentially, where we were at in that initial like curation market curve. Is that kind of correct?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1879.51,
+      "end": 1879.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1880.11,
+      "end": 1921.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's very close. And good job in actually capturing all that. And the key thing is your expected rewards, you get expected rewards based on how much you've staked. And given if you, you have to be serving it up when asked, right? And when I say expected rewards, it's in a very similar to vein to Bitcoin. So taking a bit, a step back to how Bitcoin works, right? You know, Bitcoin, it has an objective function, which is to maximize the security of the Bitcoin network, right? And it defines security as, you know, making it really hard to unroll the list of transactions that are on its log, right? And then it says, okay, and make it, it says sort of, and a proxy for that is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1921.97,
+      "end": 1923.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1923.85,
+      "end": 1937.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "degree of security is how much electricity is going into it, assuming everyone has the same modern ASICs, right? So in a sense, what it comes down to is in Bitcoin, people maximizing... the electrons in the network, right? And this is why we're seeing more and more power usage.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1938.95,
+      "end": 1987.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But interestingly, you know, at every given block reward interval, say, every 10 minutes, it doesn't say, okay, well, you're going to get your bitcoins proportional to how much you spent, like how much electricity you put in, right? You know, maybe I ran my laptop and I get in, you know, 100,000th of the block reward because I put in a tiny amount, no, I have one 100,000 chance or whatever of getting the Bitcoin and it's a much lower probability than that, but it's just to give a feel. Instead, you know, it's a roll the dice and the dice gets rolled and there's only one winner and that winner gets all of a block reward, right? However, the expected value of Bitcoin is for me to get, you know, that one one thousandth or ten thousandth of the reward, right? And with Bitcoin, it's interesting, right? You get the same expected value, it's just very high variance,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1987.78,
+      "end": 1987.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1988.28,
+      "end": 2087.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But then you have the pools that emerge on top, the mining pools, that essentially reduce the variance. So if I do want to get block reward for just running my laptop, I join a mining pool and let that laptop run overnight and maybe over time it makes some money, right? And because you have this variance reduction mechanism in the pool, but that's emerged on top. Similar with ocean. So with ocean, you know, it's trying to maximize... the supply of created data, that's the subjective function. And how that is manifested is, once again, serving up data that you've staked on. And then my probability of getting the reward is proportional to how much I have staked, basically. So every time I serve up data, it rolls the dice. compares it to the difficulty and then decides whether or not I got data. And the difficulty in the case of Bitcoin is basically the total hash rate. The difficulty in the case of Ocean is basically the total amount staked times the servings up over the last time interval, say one week, two weeks. So it's very, very similar to Bitcoin. And this is actually like, you know, It's a big testament to Bitcoin as we've been going through the design of the ocean protocol. And I'm sure every single person who's been designing sort of tokenized protocols has seen this. Bitcoin has so many very sneaky design choices that you don't realize at first. But when you're trying to address your own challenges, if you keep going back to Bitcoin, it's like, wow, they solved that, right? Because Bitcoin could have said, okay, we're going to compute and give everything up proportionally, right? They didn't. Instead... it was just on this expected value and the markets emerge on top, right? And that, of course, reduces attack vectors. It reduces complexity. You know, it's only",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 2087.47,
+      "end": 2101.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "one winner instead of N winners, all this, right? So... really, really big gains. And so we're taking a lot of these lessons from Bitcoin here. And not just Bitcoin. We're looking all around and taking whatever lessons we can, right? You know, curation markets from Simon and the token curated registries from Mike and so on, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 2102.07,
+      "end": 2108.27,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. So, yeah, so I guess one thing that I, so that all makes sense. And I do like the analogy to Bitcoin and yay, Satoshi.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 2109.47,
+      "end": 2109.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Great.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 2111.59,
+      "end": 2111.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "One...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 2111.95,
+      "end": 2112.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Team",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 2112.13,
+      "end": 2112.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Satoshi.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 2112.77,
+      "end": 2136.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, exactly, exactly. One question I have is, so I guess... When someone tries to access this piece of data that I've provided there, and that I've essentially staked to in this curation market, is there a, are they like paying some of these ocean tokens to access the data and then that's the money that I'm getting? Or like, where are these tokens coming from that I am getting from providing this data?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 2137.59,
+      "end": 2137.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 2138.13,
+      "end": 2161.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so that's a great question, right? And overall, remember, we weren't trying to, you know, just create a decentralized data marketplace, right? That was some of the initial aiming, you know, in the spring of 2017. But as we went along, we saw, you know, we really want to incentivize for a global data commons, right, where people can download data without having to pay, right? And it's like, okay, well, how do we do that? You know, how do we crack that egg, right? How do we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 2161.93,
+      "end": 2163.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "get",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 2163.59,
+      "end": 2164.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "people to serve up data?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 2166.5,
+      "end": 2174.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and maybe even compensate the people, the creators of the data, yet make it free for people to download it, right? And it's actually a classic problem, right? Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 2174.18,
+      "end": 2175.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "wait, so pause for a second there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 2175.74,
+      "end": 2176.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, exactly. It's like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 2176.56,
+      "end": 2177.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you can't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 2177.02,
+      "end": 2179.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "both have free data and pay the people.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 2180.0,
+      "end": 2180.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 2180.7,
+      "end": 2227.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 2228.15,
+      "end": 2228.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Want",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 2228.31,
+      "end": 2229.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to take a stab at it? Want to guess?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 2230.79,
+      "end": 2234.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "The answer is you create it out of nowhere?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 2235.67,
+      "end": 2237.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "That's exactly it, magic internet money, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 2238.05,
+      "end": 2238.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 2238.43,
+      "end": 2248.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And this is the, you know, so if you think about it, right, with blockchains, right, that's sort of the first main use case, so it call it blockchain 0.0 is it with sort of value, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 2248.11,
+      "end": 2248.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 2248.51,
+      "end": 2262.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And then sort of blockchain 1.0 was about things like immutability and provenance and that, right? And that's where like Big Chain 2B itself really shines, right? It's so good at stuff like that. You know, whether it's providence of data or provenance of car parts or providence of financial audit trails, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 2262.97,
+      "end": 2263.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 2263.41,
+      "end": 2265.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "blockchain 2.0 is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 2265.11,
+      "end": 2266.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a much",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 2266.75,
+      "end": 2271.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "broader, bigger idea. And, you know, I kick myself for not seeing this sooner. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 2271.41,
+      "end": 2272.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 2272.57,
+      "end": 2277.47,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "kind of this superpower. And the superpower of blockchain is that you can get people to do stuff.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 2277.77,
+      "end": 2278.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 2278.73,
+      "end": 2291.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "How? You give them tokens. Where do the tokens come from? You print them, right? But the thing is, this is actually no different than the general idea of money, right? Like money is just a shared belief about the value of that token, right? So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 2291.79,
+      "end": 2293.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 2293.33,
+      "end": 2303.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the case of this classic paradox of information wants to be free and information wants to be expensive, well, when people are serving up data and betting on its future popularity,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 2303.89,
+      "end": 2304.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 2304.51,
+      "end": 2306.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they are getting",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 2307.97,
+      "end": 2308.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "compensated for it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 2308.95,
+      "end": 2309.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "by",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 2309.55,
+      "end": 2314.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "magic internet money, right? By printing according to this mining schedule.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 2315.19,
+      "end": 2315.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 2315.53,
+      "end": 2320.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And, you know, the option mining schedule, it follows a curve, much like Bitcoin, just with a longer half-life because, you know, data...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 2321.03,
+      "end": 2321.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 2321.25,
+      "end": 2322.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "takes longer to unlock data, basically. That's right.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 2323.17,
+      "end": 2325.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "So, so, let me, let me pause for a second here, though, because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 2325.69,
+      "end": 2326.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 2326.03,
+      "end": 2357.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "might want to push back into this. So I, and this is what I say to a lot of people when they're asking me about, you know, various cryptocurrencies. I'm like, well, there's the scare slash collectible slash memetic value. And then there's also the, you know, utility value, you know, Ethereum can be used to, you know, run smart contract code or whatever. But it sounds like so in this ecosystem, something like Ocean, the token there, the Ocean coin or whatever, is that, that thing is being printed. as magic internet money, but then if I have a bunch of these ocean tokens, where then, who would then want them later?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 2358.18,
+      "end": 2358.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 2359.12,
+      "end": 2372.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so this is where the marketplace is sitting on top, right? This is the first part. So marketplaces of data back and forth, they can be using the ocean tokens themselves, as well as, and this is where the generalization of ocean really matters.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 2373.21,
+      "end": 2373.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 2373.65,
+      "end": 2380.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I described so far where ocean is the substrate where there's a proof coming in, which is proof of making data available, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 2380.17,
+      "end": 2380.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 2381.07,
+      "end": 2382.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But, you know, if you think about the world",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 2382.63,
+      "end": 2383.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 2383.41,
+      "end": 2383.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "data,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 2384.35,
+      "end": 2384.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you've",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 2384.63,
+      "end": 2483.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "got data coming in in a stream or otherwise, then you often have to do some pre-processing and conditioning in various ways. And then you're probably going to store it, persist it for a while, and then it's going to get consumed. And, you know, there's various architectures for this. The whole world of big data is all about this, right? And, you know, maybe some of this stuff has to be private, maybe not, right? You know, with things like homeover, encryption, et cetera, right? You can have privacy on the data itself, privacy in the compute. And so with each of these things, there are standard ways to do this in the big data world with things like Apache Spark or Apache Flink and so on, right? Or, you know, as a consumer, you might be used to playing with things like Zapier or if this than that, right? We can connect one or eight to the next to the next. And, you know, with Zapier or if this than that, you don't, you know, you're paying for these different services, but all you have to do is pay Xavier, right? And they pay for the services under the hood. So you pay's apier, and then they worry about paying off the cost one level below, right? And it's similar in the conception of ocean. So in ocean, basically, you've got the ocean token to pay for these various services, whether it's buying data itself via the data marketplaces, or it's buying compute and passing off to these various centralized or decentralized compute services. And same thing with data cleaning or any of the rest, right, some of the privacy preserving stuff. So that's kind of a more generalized conception of it. But at the summary of this, then, you know, Ocean is a curated proofs network. You know, first and foremost, it's a proof of computation, proofs of storage, proofs of space time, style storage,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 2483.7,
+      "end": 2496.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "et cetera, right? And with each of those, to your question, Ocean tokens are the means of paying for that in a sort of like one place to fit it all, right? So, you know, you can view Ocean as an Apache Spark. for the decentralized world.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 2497.67,
+      "end": 2506.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I think that makes sense. So it's, and I guess that, you know, if the more direct version of my question, there was like, what is the utility value of, are they called ocean? What are they called the coins?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 2507.15,
+      "end": 2507.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Ocean tokens, yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 2508.03,
+      "end": 2521.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Ocean tokens, sweet, yep. Yeah, that it is a, it sounds like it's a medium of exchange token for this full data ecosystem, both for buying data, buying computer, buying data cleaning. Is that, is that kind of a simplified way to? to talk about the utility value?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 2522.08,
+      "end": 2522.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's part",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 2522.24,
+      "end": 2538.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of it, but it's not just a medium of exchange because basically when people are staking on the data sets themselves on the future popularity, then it is basically storing those tokens as this sort of lock-in of value into the network, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 2538.48,
+      "end": 2538.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 2538.88,
+      "end": 2556.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that is also sort of a proxy of the overall value of the network. So overall... You know, there's a few different factors at play here. I should mention some of my colleagues actually went through Chris Bernanke's model and actually developed a whole model around, you know, the value of these tokens. And the numbers came out",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 2556.85,
+      "end": 2558.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "very",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 2558.57,
+      "end": 2572.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "cool, and we actually reviewed with Chris and stuff too. And, you know, it was just very nice to see, right? Sort of, you know, some of that value, if you will, right, is the velocity of the tokens times the average transaction value and stuff, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 2575.39,
+      "end": 2575.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "With",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 2575.91,
+      "end": 2581.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Ocean, you can't apply this sort of modeling technique to do it and arrive at interesting numbers, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 2581.52,
+      "end": 2623.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Cool. Yeah. So, and I think you're right there to say that it is both a medium exchange token and it's a more traditional, or I don't know, more traditional. The other big thing that people are doing in the space these days is these like bonding slash staking tokens, whether it's staking for governance or staking to kind of hold the network, something like proof of stake, or something like bonding and live peer. So it's, and you're doing it in a kind of curated market way, so kind of adding an additional layer on top of that. So I guess one final note before you transition over to token curated registry. here is that when Trent and I were talking about this kind of curve of I get in first, Trink gets in second, someone else gets in third, that's called a bonding curve within curated creation markets. It's like determining what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 2623.82,
+      "end": 2623.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 2623.98,
+      "end": 2649.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "bonding curve looks like. So just want to put those words out there. Okay, so now let's, so I get the concept that you're essentially, you're using this new crypto economic primitive curation markets in order to essentially do some kind of staking on data as a way to kind of show, hey, this is the sweet. this data to the world. So how do you use token curated registries, which is essentially a decentralized way to make a list what's on that registry?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 2650.44,
+      "end": 2670.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, so overall, you know, the very, very hard devotion is, you know, this proofing times the curation market staking, right? And then kind of everything else around is kind of ancillary to address various attack vectors and other issues, right? So one of the issues is for the actors in this ecosystem. There's quite a few places where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 2670.08,
+      "end": 2671.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 2671.86,
+      "end": 2675.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there are, you know, potential attack vectors. And one of them is we want to have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 2675.76,
+      "end": 2677.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "some",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 2677.22,
+      "end": 2681.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sort of proxy on identity, some sort of way to keep one person,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 2682.8,
+      "end": 2683.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 2683.86,
+      "end": 2693.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know who one person is, roughly speaking. But we don't need to, we don't want to, if we can't avoid it, we want to avoid things like KYC or anything like that, right? Because it is a, you know, a public network, right? And so,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 2695.0,
+      "end": 2695.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 2695.18,
+      "end": 2723.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the reason we want this is, When we're doing things like block rewards, you know, a disaster scenario in our case, how we see things, we don't want one data set to be so massively powerful that, you know, it's getting downloaded 10,000 times a day, and then everyone just bets on that because it's the obvious win, right? So instead, we don't give a reward proportional to the amount of downloads directly. It's actually the log of the downloads. Same thing for the stake. We don't give a reward proportional to the stake itself. We give a reward proportion to the log of the state.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 2725.02,
+      "end": 2799.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "This is actually a very common tactic in the world of AI where you actually use a log rather than the direct value because it focuses on the orders of magnitude rather than the actual values. And that in turn gives a lot more diversity. So in a sense, it stretches out the distribution to be much fatter tails. So instead of just one or a handful of datasets being sort of curated on, you're going to have hundreds, thousands, tens of thousands of datasets being curated on. And the other thing that's related, that's sort of on the download side. And then when the log on the staking side, what this does is it removes sort of inordinate gains to the token wheels, right? So if they really want to leverage all the token holdings, they're actually going to have to bet on a lot more data sets, right? So, but by doing that, you know, then you need to actually have decent identity, right? Because otherwise they're just going to game the system and still not a perfect solution. But if you say, okay, have this token curated registry for each actor where, you know, to get in, they're basically, you know, they can only get in once. If you seed with a good set, et cetera, then they can only get in once rather than 10 times or 100 times or whatever, right, and play different games.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 2799.56,
+      "end": 2799.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 2799.92,
+      "end": 2813.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's kind of the motivation. There's a few other attack factors too. where you want to have a decent proxian identity. And this is sort of a nice way of doing it where it's not forcing some sort of other mandated identity, right, like government mandated, etc.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 2814.01,
+      "end": 2814.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Got",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 2814.37,
+      "end": 2853.84,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it. Yeah, I think that in token-curied registries can be seen as just a way in general. Token-curied registries and, like, other reputation systems and claim systems are all on kind of, or attestation systems, are on kind of, they're all solving a similar problem, which is like, hey, here's someone in the network. How do we know what their reputation is, or how do we know that it's a single person and not multiple people? So I think, so it sounds like, yeah, you're using a TCR or token curated registry to say, hey, if I'm Reese and I'm trying to. like dodge the log side of the gains and make a bunch of different Reeses that it might be difficult for me to do that because there's a token curated registry which says, hey,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 2855.38,
+      "end": 2864.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this Rees 12 over here looks kind of similar to Rees 1 and we should not allow him into the registry of whitelisted data providers. Is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 2864.6,
+      "end": 2889.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Exactly, exactly. Yeah, and, you know, we were asking ourselves, too, you know, should we have just a white list of, you know, they're either malicious or they're not, or do we want to have reputation and stuff? And, you know, we looked at a variety of reputation systems and one or two. But, you know, one question we continually ask ourselves is, what's the simplest thing that could possibly work, right? And, you know, so we were looking at, you know, for example, what if we had nothing but, say, a TCR, a registry on just the data and don't even have it for identity or anything?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 2890.25,
+      "end": 2890.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 2890.61,
+      "end": 2980.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then, you know, we have this list of questions we're trying to ask like how well does it handle price data and referrals and spam prevention? How well does it do for the free data, the commons data, you know, and other questions, you know, is there greater marginal benefit to the owners of the tokens versus people who are just hodling, right? And so as we are exploring various designs of, you know, TCR, you know, for identity, should we have nothing? Should we have TCR? Should we have a heavier identity system from anything from, say, civic style or Uport style up to like KYC from banks up to, say, like a Stony E residency, right? and then reputation systems on top, whether it's like a star rating system or something. And then same thing with the data, right, and where you can have everything from, okay, this is just not spam versus yes it is with a TCR or something to a reputation system in the form of a curation market or a more standard one like with stars or something else and et cetera, et cetera. So we explored many combinations of these and against these checklists of, you know, how well is it solving this problem, this problem, this problem. So seven or eight key questions and another checklist of another hundred questions, including a whole bunch of attack vectors, right? And the design that we came up with actually addresses the questions very well with sort of the simplest thing that could possibly work, right? And that's why we ended up at just this level of TCR, the registry. for the actors and just the level of the curation market for the data. Not heavier, not lighter, just that level.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 2980.86,
+      "end": 2989.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Just right. That makes sense. So I guess maybe kind of transitioning into the second kind of half of this episode here.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 2990.31,
+      "end": 2990.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "This",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 2990.91,
+      "end": 3004.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "episode is brought to you by Shapeshift.io, the world's leading, trustless digital asset exchange. Quickly swap between dozens of cryptocurrencies, including Bitcoin, Ether, Dash, Bitcoin Cash, Auger, Golem, and many more.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 3004.78,
+      "end": 3005.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 3005.24,
+      "end": 3019.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this is not your typical crypto exchange. You don't need to create an account or share your personal information and your funds are never stored on ShapeShift. This means that your hard-earned digital wealth is never up for grabs by hackers or other malicious actors.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 3019.5,
+      "end": 3020.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "To",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 3020.02,
+      "end": 3027.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "get started, visit Shapeshift.io, choose the tokens you'd like to swap, input your receiving address, and send your funds. It's that easy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 3032.24,
+      "end": 3095.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "You know, there's Big ChainDB and there's Ocean Protocol, which is this, you know, underlying data substrate, and it allows for that underlying data substrate by being a protocol for these data marketplaces. And there are these various incentive games, both curation markets, for staking around the quality of data and kind of bonding to it. And then also... TCRs to make sure you're doing kind of reputation identity well. That all kind of makes sense. But like one question that I have is, and the macro goal here is to make it the case that, or one of the macro goals, and correct me from wrong, is, you know, you have these, you know, we're in this data siloed world where Google and Amazon and Facebook have these massive data silos and they're in these arms races to get more and more data and to kind of control it all themselves and it's difficult for other people to get into the ecosystem or whatever. How, like, would it ever be the case in the future that, you know, how can we get someone like Google or Facebook, you know, getting their data onto these data marketplaces? Is that, like, a goal of your guys is? And how does this relate to some of your concepts with things like tokenizing the enterprise?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 3097.43,
+      "end": 3102.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, so I would say, yeah, actually, that's a great question, the tokenized part too. I'll get to that in a bit. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 3102.11,
+      "end": 3102.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "overall,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 3103.33,
+      "end": 3104.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, the data silos thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 3106.31,
+      "end": 3111.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is exactly why we're doing this, right? And perhaps I will elaborate because it's really, really important.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 3111.65,
+      "end": 3111.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 3112.41,
+      "end": 3185.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So, and I'd like to give a story that actually had happened about just a month ago, this reporter from National Geographic, Rachel Bale, she was writing a story in Google Docs. She's a wildlife crime reporter. And when she was writing the story, she was just typing, typing, typing, writing the story. And then suddenly her Google Docs froze, and she had a pop-up. from Google and said, hey, you violated terms of service, we're locking you, we're freezing you out. And she's like, what is going on? So she tweeted about it. And a bunch of other people replied to her saying, hey, you know, me too. This happened to me too, me too. And, you know, so a bunch of people are like, what's going on? What's going on? A day later, Google gave a press release saying, hey, story about that, we had a glitch in our system. We, you know, we pushed some code where it was... falsely locking people out of the system because it had a false classification on violating terms of service. So basically, Google was running a classifier or is running a classifier on whether you're typing something that might violate the terms of service, which apparently relates to, well, they didn't say it, but it's crime of some form and stuff, right? And wildlife crime apparently is wasn't okay, but that was the glitch. So Rachel got back in. And then, you know, and kind of the hubbub died down briefly. But if you think about it,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 3185.82,
+      "end": 3187.55,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's super",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 3187.55,
+      "end": 3188.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "scary. Google",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 3188.57,
+      "end": 3190.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "did",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 3190.13,
+      "end": 3294.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not stop scanning your documents ready to shut you out in a heartbeat in an instant. They just fix their glitch on cutting out reports of wildlife crime. But if I'm, you know, writing a high school essay on LKETA, then I could get shut out. Or think about democracy, right? Part of the main point of having a democratic society is... where you can write to book concerns of your leaders of your government and publish on it. Publish on medium, publish in newspapers, etc., publish on blogs, other blogs, and also use digital tools of the world to organize a group of people to protest and about the government's actions, etc. But imagine you start writing about this and Google's algorithms automatically detect you, and suddenly you are cut out, right? You don't only lose your own digital sovereignty. it's actually a risk to democracy and freedom itself, right? And to me, like, this is so scary and, you know, makes me frankly angry, right? And it's not just Google, right? You know, the Snowden revelations of five years ago, when those happened, you know, Google apparently had been giving data to the government since 2012, but Microsoft had been doing it since 2007. And it's not just those too. It's, you know, Facebook and Amazon and so on, right? So all of these guys, they have these giant data silos, they control our digital lives. They have discovered that thanks to AI actually, you know, they can actually, they know how to take all these giant data silos and mine that data very well and make money by selling more ads, more ads, more ads, and this sort of this data file wheel effect. And so they are totally incentivized to keep these silos and keep everyone else out, right? So they say they're AI companies, but really that's a head fake. They're really data companies, and they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 3294.7,
+      "end": 3317.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "are going to fight and fight and fight to keep those silos, because that's where they make their money from. And this is dangerous to society, as I've described. Now, in Ocean, what drives us is, you know, we're not trying to attack this head on. That is, you know, naive. But instead, we've asked ourselves the question, how do we get momentum in this? And the answer is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 3317.48,
+      "end": 3318.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 3318.5,
+      "end": 3320.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, these companies that have both large data sets,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 3322.54,
+      "end": 3322.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 3322.86,
+      "end": 3343.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "AI algorithms are super rare. It's really just a handful, you know, Google, Facebook, etc. of the world. Most large enterprises have tons of data, and they don't have the ability to extract value from it with AI. Why? Because all the AI researchers that they're trying to hire are off doing their own startups because they think that they can get more money that way. You know, I did AI for 20 years. I get this. These aren't, you know, I talked to my friends about this. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 3343.06,
+      "end": 3344.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 3344.56,
+      "end": 3441.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the flip side, you've got these AI startups that they're trying to start up. But they're actually struggling in many cases because in order to get value from their AI models, they need reams and reams of data, right? So to them, the more data they can get, the better. And they're just willing to like, you know, if they could have a thousand X more data, they'll take it. Their models will just swallow it, right? So what we're doing is we're working with the folks that have tons of data sets. These are the large enterprises as well as NGOs throughout the world. You know, we're working with X-Rise, which is actually in turn working with hundreds of NGOs throughout Africa, et cetera, for datasets, to gather datasets, et cetera. And on the flip side, the demand side is about the AI researchers and really like engaging with that community, you know, that I've known since the late 90s because I've been doing AI for a long time, and really connecting those, right? So connecting the data halves with the AI halves. And that's kind of the first cut and getting strong that way in ocean. And then what we see is that over time, people are going to get used to this idea that they have a lot more control and sovereignty over their data. And it gives them a whole lot more tools for new ways to rethink social networks, etc. Right? You know, it's really, really hard to... You know, there's 2 billion people using Facebook. Is it monthly now? And, you know, that's a very, very strong network. And, you know, Facebook has done an incredible job, right? And I'm not sure many people in Facebook itself, I'm sure, aren't very happy about the extreme power that they have, right? But there are means to get at it, to address this for society. And that is, you know, to get strong in sort of a parallel",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 3441.91,
+      "end": 3451.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "universe that isn't dependent on trying to take a... take down Facebook and then one and then basically having the substrate for various people to help um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 3451.43,
+      "end": 3452.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "basically",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 3452.43,
+      "end": 3463.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "address Facebook either the direct competitors to Facebook um that do data better or um towards your initial hint the token that is the enterprise part right and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 3463.01,
+      "end": 3464.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "maybe we can talk about that but i'll pause there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 3464.67,
+      "end": 3507.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah nice yeah exactly okay sweet so um yeah the question that i asked was too too to wide reaching so yeah um that makes so i guess so i guess One thing to double check here, I agree that the, I mean, whenever there's centralization of power, it just has, seems to often have negative ramifications from a, both what the people do at that power perspective, from like, you know, fragility perspective in terms of what happens to it, from a, from a privacy perspective. How much are you guys also thinking about, like, You know, how much in your mind is the kind of artificial general intelligence like AGI, making sure that there's a friendly AGI. Is that in your guys' mind as well? Or is that kind of a further down the road thing?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 3508.51,
+      "end": 3544.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So overall, you know, spending time in the world of AI, I know that well. And, you know, the folks at Singularity Net, Ben, their friend, I help advise them and so on, right, helped them with their token design and stuff. They, too, are using curation markets, which is cool. So, you know. And Simon's happy with that. So overall, you know, AGI I think about, you know, in the next few years, it's not really an issue. Farther along, certainly, I'm, you know, I see that the technology will probably come sooner than people think, and we should be worried. I don't have a tenure to protect, so, or a reputation, sorry,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 3545.8,
+      "end": 3546.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 3546.33,
+      "end": 3546.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 3546.83,
+      "end": 3596.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "100-year-old institution that fires me if I say something that affects their long-term, so I don't care, and I'm saying I am worried about that. I think there's more near-term things that I'm even more worried about, like AI DAOs. They're incredibly interesting, this idea that you can have, you know, think like a Dow running on Ethereum, running around, running around, but it actually has its own AI decision-making abilities. and it could be generating art and you know our crypto kitties these days I guess and you know making millions perhaps because it can do it all automatically and sell more sell more sell more sell more and but it doesn't have to be something some mundane either it could be for example you know mining code from GitHub and or generating its own code which I did for several years generating its own code and doing you know whatever gives it value right it could be very open-ended and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 3597.07,
+      "end": 3597.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 3597.43,
+      "end": 3623.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I'm very worried with that because overall, we might find ourselves giving more and more of our resources to AIs simply for convenience. You know, handing, you know, instead of self-driving cars, it could be self-driving, self-owning cars. So this could be a whole network of all the cars that there, that sort of like Nature 2.0, where they're self-driving, self-owning. And same thing with, you know, trucks and the power grid and even the utilities around us, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 3626.45,
+      "end": 3667.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So there's a positive and negative way to frame it. The negative way is, oh man, you know, as humans, we give all of our power to these machines, these, you know, DAOs that are, you know, with AI decision-making abilities. And that could mean we kind of like accidentally fully give up control. The positive way of thinking about it is that, you know, there's nature 1.0 with the soil and the trees and the wind and the earth and the fire and all this. And it's sort of this cradle for humanity. But why can't we extend that cradle for humanity? with silicon and steel, right? With these self-driving cars, etc., towards sort of a new age of abundance, right? And the answer will probably lie somewhere in between, as it usually does, right? But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 3667.88,
+      "end": 3669.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 3669.63,
+      "end": 3678.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "do need to talk about AI doubt as more broadly in society, right? It's as, you know, powerful as the bomb or as CRISPR. It's just there isn't a lot of awareness yet, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 3678.75,
+      "end": 3726.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep. Yeah, I think that... Yeah, AI DAWS are, yeah, it's essentially just any kind of objective function with capital and kind of like voting power behind it that just kind of goes and does whatever its objective function wants to do. And we've got to make sure those objective functions are well-designed ones. I guess one thing to check in, like, so... You know, you're talking about creating this kind of parallel universe and, you know, creating this big, you know, community of the AI researchers and the data people and what have you. Is there a, you know, are you using some of these concepts around like, have you heard of like spiral dynamics or teal, which are these like bottom up organic ways to kind of build movements? Are you kind of pulling from those things? Or have you heard about those concepts?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 3727.52,
+      "end": 3732.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "A little bit. Maybe not as much as we could be. You know, there's a lot of concepts in various ways. You know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 3736.26,
+      "end": 3742.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "because I spend a lot of time in the world of evolution and competition, we think about that a lot, you know, bottom-up emergent complexity.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 3742.58,
+      "end": 3742.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah. Where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 3742.92,
+      "end": 3833.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you might have a very simple rule set or a few rule sets, but then you have very complex dynamics that emerge on top, right? And so, and we see that with Bitcoin, right? It's got a very simple objective function. Just maximize the hash rate. And you think about the crazy ecosystem that has emerged on top, right? Or from the AI world, things like a simple cellular automata, where you just have a very, very simple real function, but you can have very complicated patterns or chaotic systems, right? You know, even a chaotic system of one variable, you know, just very, very simple function can have really, really complex dynamics. So we think about those. And, you know, there's many fields that we try to draw on, right, and look at, obviously there's a lot from economics. And I think you mentioned mechanism design already. And it's interesting if you drill down for mechanism design, you know, one drill down is that one framing is if you assume that people are telling the truth, sort of the shelling point of truth, all this, then that sort of proves a bunch of other stuff. And you can drill down a bit more, and it ends up actually where you're at objective functions, right? And that's sort of the link to, you know, thinking of this stuff as designing evolutionary algorithms, right? So when we're designing the tokenized ecosystems, you know, because I've designed so many evolutionary algorithms in my career, for various things, you know, does creative circuit design, function, evolution, all this, then I think about it this way. And then it's like, okay, you know, there's an objective function you try to minimize or maximize. You've got some constraints. You've got, you know, in the case of, you know, there's this parallel between evolution algorithms and tokens in general, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 3834.36,
+      "end": 3866.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "You've got the block rewards that happen, you know, every 10 minutes in Bitcoin. In the case of evolutionary algorithms, you've got a generational update. And then the key thing is you've got these agents running around in both cases that you can't really control. You know, in the case of evolution algorithms, they're individuals. They mutate, they cross over, they do whatever. And all you can do is evaluate them. You know, every generation is like, did you do well? Great. You get to live. If you didn't, you die, right? Or maybe you, you know, and you let them live and have babies and change some more, right? And in token design, it's similar. You know, these agents, they run around, agents as in people doing mining, et cetera.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 3867.61,
+      "end": 3892.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "If they do well, then, you know, on average, they get more tokens, you know, rewards. And sometimes also, if they act badly, they get their stakes lashed, right? So there's such similar, similar phenomenon in many, many ways that you can leverage the ideas from evolutionary algorithm design for token design. And, you know, it continually surprises me how many insights that we're getting that way.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 3892.88,
+      "end": 3893.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Nice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 3893.7,
+      "end": 3901.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And I think it'll continue. And I look forward to even strengthening the link between that and sort of the higher level theories of mechanism design.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 3901.54,
+      "end": 3994.31,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it. Got it. Yeah, I haven't personally made that connection yet between... mechanism design and then like drilling down deeper layers there. But I definitely love the both, I mean, evolutionary algorithm are great and generative kind of complex systems is a great field as well. So I guess kind of transitioning to the something that we want to talk about, which is this tokenizing the enterprise. And I guess let's actually, yeah, let's let's take a bit on tokenizing the enterprise because for me, this is kind of the optimal future reality where you have something. like the Facebook's in the Google. Like right now you have Facebook, which where you have these misaligned incentives where, you know, Facebook just wants to addict you for more and more time and, you know, the people who are using it and are, and the advertiser just want to. put things that are clickable because they're trying to maximize their clicks and their eventual like ROI and what have you. And I feel like the people who are on the other side of the users, they want to, it would be nice if there was more like meditation apps or whatever through Facebook or if, you know, it wasn't so much outrage or filter bubbles that were pushed into my Facebook feed. So when I imagine the future, it's like this awesome future where Facebook is kind of a platform co-op where it is both the ownership is, you know, decentralized and distributed and the governance is distributed and decentralized. And you have a bunch of different U.S. X layers that can be put on top of this underlying data substrate. That's kind of this future, awesome, maybe world of tokenizing the enterprise. Do you see, I guess, where do you see kind of ocean protocol fitting into that? Or how do you see tokenizing the enterprise thing starting to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 3994.31,
+      "end": 3997.85,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "happen, either with Ocean Protocol or in the blockchain space more generally?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 3998.53,
+      "end": 4059.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 4062.27,
+      "end": 4064.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "by visa because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 4064.03,
+      "end": 4065.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "their",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 4065.63,
+      "end": 4094.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "interests are not aligned without a visa, right? So the founder, D. Hawk, he actually talks about this and wished that they had found a way to incorporate that. So interests misaligned. And of course, we're on the blockchain space. So... We realize that, you know, blockchains are a really great tool to align interests. And how do you align interests? Well, you get everyone to be holding tokens, and then everyone is incentivized for the value of the tokens to rise. That's a simple mechanism, right? The challenge is, you know, you want to get the tokens into the hands of the various stakeholders.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 4095.01,
+      "end": 4095.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 4095.53,
+      "end": 4118.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "for the case of Facebook, what does this look like? You know, how do you take Facebook from its sort of centralized approach right now to sort of this glorious, decentralized future? And the key idea is you want the existing shareholders to own tokens, and you want the community, the users, to hold tokens. How? One Vassil recipe is you take all the existing shares and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 4118.87,
+      "end": 4120.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 4120.01,
+      "end": 4121.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "convert them to tokens",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 4121.05,
+      "end": 4121.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 4121.85,
+      "end": 4126.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "then living on a blockchain. And at the same time, you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 4126.14,
+      "end": 4128.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "print",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 338,
+      "start": 4128.38,
+      "end": 4139.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "another 200% more tokens and distribute those to all the users based on their usage of Facebook over the last lifetime of Facebook, right, about 15 years. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 339,
+      "start": 4139.52,
+      "end": 4140.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 340,
+      "start": 4140.56,
+      "end": 4141.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "now you have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 341,
+      "start": 4141.34,
+      "end": 4143.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 342,
+      "start": 4143.2,
+      "end": 4149.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "whole bunch of tokens spread throughout, you know, the existing shareholders and the new users. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 343,
+      "start": 4149.08,
+      "end": 4150.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 344,
+      "start": 4150.4,
+      "end": 4188.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "pretty good argument can be made that now because Facebook's no longer having misaligned incentives, you know, everyone is pointing in the same direction to raise the value of the tokens, then the overall value of the Facebook token could go up in comparison to simply if it was held by shareholders before, because, you know, the interests of the shareholders are now aligned with the interests of the users, right? And so if it goes up by at least 2x, then it pays for itself, right? If it goes up by 10x, then everyone's really happy, right? It goes down a bit, so be it, it's an experiment. So this to me is the ideal way. Now, to your question of how my ocean relate to this, or big chain,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 345,
+      "start": 4190.82,
+      "end": 4288.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I keep prerequisite to doing this. If you're going to have sort of Facebook as sort of, you know, ultimately it could be just tokens like that, like sort of, sorry, as the first cut, just tokens replacing shares. But really you want to have utility value, right? So you kind of want to turn all the different Facebook services into VAT protocols, if you will, right? But to do that, then you need to have. the compute and the data tokenize itself, right? So a prerequisite to all of this is to sort of APIIs every sort of internal service and then decentralized. And so where Ocean and Big Chain play in is basically playing key roles in case of Ocean, it's on tokenizing the data. And in Big Chain, it's on the database is below for just decentralized, whether it's that data is made available via ocean or otherwise, it's just actually this sort of, you know, lower in the stack of storing the structured metadata, right? So that's how they play a role. And you might think, oh, this is a big stretch, this is a big stretch, right? And the thing is we're already seeing signs of this. So with medium-sized companies. So a small to medium-sized company that did it was Numeri, and they've been going down this path. where they started out centralized and bit by bit by bit, they're going more and more decentralized. In this case, they're a crypto-style hedge fund. Initially, they were just a hedge fund that had a crowd of data scientists, you know, 10,000 data scientists making predictions with models, and then they would get paid out, and numerai would be the middleman and all of it. But then the challenge there was if I'm a data scientist's day and your data scientist B, you are, you might not... tell me about numerali because if I'm really good and you're not as good then why would you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 346,
+      "start": 4288.73,
+      "end": 4344.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "tell me because I might take more earnings than you and you know it's a zero-sum game But if we all have Numeri tokens, Numerare, to be precise, then you'll tell me because if I join and actually help do a better job from prediction, everyone wins, right? So Numeri did that, and they went through a series of steps to decentralize more and more and more. And, you know, that's a very great example. KIC is another one, you know, a messaging service that has been going through a process of tokenization as well. If you're a large company, you don't need to tokenize the whole thing at once, right? Amazon famously converted themselves into basically a series, they API-Is themselves, right? So within Amazon, they're all APIs. So what they could do is with even just a single one of their services that they run even internally, they could try a tokenized version. And then see if that works. And if that works, they do it to another service, and then another and then another. And then, you know, give it one year or five years. And suddenly they're fully decentralized, right? And that could be very cool because what's happened is you have melted these",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 347,
+      "start": 4344.29,
+      "end": 4345.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "giant",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 348,
+      "start": 4345.51,
+      "end": 4353.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "companies, these sort of octopus. or Octopi, into the community, right? So, you know, melting the enterprise into the community. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 349,
+      "start": 4353.15,
+      "end": 4354.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 350,
+      "start": 4354.73,
+      "end": 4386.35,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "see it as a really exciting outcome just like you. And sort of a very quick thing, there's this classic innovators dilemma challenge of, you know, if you're a big enterprise, how do you react to changes from, you know, bottom-up people, right? And if you don't react quickly enough, then you're Kodak, losing out to deal cameras and you just die. And the classic solution is simply to create a spinoff. fund that a bit and then as it gets big to a billion dollar business are bigger then you buy it back but here's another solution that actually goes to the heart of the problem directly right and to me that's very exciting you know sort of a new solution to innovator's dilemma i'll",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 351,
+      "start": 4386.35,
+      "end": 4387.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "stop there yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 352,
+      "start": 4387.11,
+      "end": 4389.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "yeah yeah no i mean i think that the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 353,
+      "start": 4389.03,
+      "end": 4390.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 354,
+      "start": 4390.62,
+      "end": 4430.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I was going to reference the Amazon business units as well, and, yeah, the API Icing. I think that the key thing that we'll see here is, you know, something like Numeri, it's, you know, by using Numerary, they were able to align those incentives. And hopefully we'll be able to see with KIC or with props in you now or whatever that these... companies have said, oh, man, this is interesting. Various stakeholders within our kind of business model haven't been aligned. And if they are aligned, then there's more value for everyone. And so that's got to be the key kind of hypothesis that we need to prove to these bigger companies and say, hey, this is actually better for everyone if you align incentives. And hopefully we'll be able to do that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 355,
+      "start": 4430.86,
+      "end": 4431.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And I also",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 356,
+      "start": 4431.46,
+      "end": 4431.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "agree with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 357,
+      "start": 4431.76,
+      "end": 4432.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you that, yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 358,
+      "start": 4432.7,
+      "end": 4475.95,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "as you APIIs, then those APIs turn into various things that the blockchain world has been building like Ocean, like big chain. Okay, so, and kind of to wrap up here, let's talk about this final kind of article that you wrote recently in some of these things that you've been talking about around this essentially a kind of a staged map that thinks about like Maslow's hierarchy of needs and this goal for us as a society right now where there's these converging exponential trends and we're trying to. transition to this world of abundance that you talked about and the Nature 2.0 with all the silicon around us. So could you kind of describe what, you know, how you think about that in terms of this like map and especially what would be the first, some of the first things to do on this map?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 359,
+      "start": 4476.89,
+      "end": 4518.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Sure. So, so thank you for, yeah, you're interested in this. I find it fun. And maybe for the audience, a first cut way to sort of approach this is, you know, what's the biggest idea you could possibly dream, right? and not just sort of you as your idea, but like for humanity. You know, what's the grandest goal we could go for humanity as a civilization, right? Or set of goals, right? Because, you know, maybe everyone has their own goals, just like your own goals in life, right? So for each person, what might that be, right? And there's some things we know we don't want. There's some things we know we do want. There's things in the near term, there's things in the medium term, and the longer term. And overall, it's a journey, right? You know, civilization's a journey, not a destination. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 360,
+      "start": 4518.64,
+      "end": 4519.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 361,
+      "start": 4520.28,
+      "end": 4570.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and, you know, some of these longer-term things to me are things like, you know, not being stuck on one planet or even two, but actually exploring the cosmos. And, you know, not only exploring it, but why not reshaping it, right, towards these, you know, long-term futures of things like distant spheres and stuff, right? And, you know, this is exciting possible futures that are, you know... a long ways out, but why not think about them and then ask yourselves, okay, if these are the long-term futures, what are the steps to get there, right? And why not map these out, right? Step one to step two to step three and so on, right? And it's interesting, there hasn't been a lot of explicit discussion about this explicit mapping. Instead, it's in the heads of a lot of, you know, super nerds or technologists. You know, myself and friends that sat down, you know, drawing out maps over beers and stuff like this for fun for many years, actually. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 362,
+      "start": 4570.79,
+      "end": 4571.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 363,
+      "start": 4571.23,
+      "end": 4626.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "other sort of, you know, lots of initiatives around society and stuff in various ways, right? Things like you've got the X Prize or the Gates Foundation or the UN. UN has its 17 goals to sort of like make a better civilization, right? Or the X Prize, there are various prices that they think will help drive civilization together, you know, together one more step, you know, initially from, you know, getting into space cheaply twice in a row to the Lunar X Prize to AI prizes and so on. And the Gates Foundation for things like, you know, curing malaria or... you know, toilets that don't use water, et cetera. And these are all really great, wonderful, wonderful goals, right? But every single one of those goals is sort of like just one step out, right? It's not two steps, it's not three steps. And, you know, many people talk about two steps or three steps and dream about them and write about them. But it's hard to, like, what if we can link, you know, if we do step one and then step, it will unlock the ability to do step two and then step three. Or maybe we need to do step one and two and three, and then we can do step four, right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 364,
+      "start": 4627.13,
+      "end": 4627.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 365,
+      "start": 4627.83,
+      "end": 4647.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "and there's lots of examples in various things, right? For example, okay, if we want to get to Mars, well, we need to have, you know, get not just get to Mars, but get to Mars where we can actually create a civilization. Well, then we need to have really cheap rockets into space. Well, how do we get really cheap rockets in space? We need to have reusable rockets. Okay, great. And then also, you know, what about when we're on Mars, you know, what are the things we need?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 366,
+      "start": 4649.39,
+      "end": 4649.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 367,
+      "start": 4649.75,
+      "end": 4652.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "if we want, you know, towards this idea of abundance and so on.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 368,
+      "start": 4653.96,
+      "end": 4654.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 369,
+      "start": 4654.24,
+      "end": 4680.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this risk of AI taking all the jobs, right? There's this worry that AI takes all the jobs before we figure out, you know, new jobs. And it's not only a worry, I think it's a very big risk, right? You know, three million jobs in America will be lost to trucking alone when trucking goes autonomous. And there's already autonomous trucks in production, right, that are driving on the roads. So, and that will not just take the trucking jobs. It will also decimate middle America with the motels and hotels and 7-11s and so on, right? So...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 370,
+      "start": 4680.62,
+      "end": 4681.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "One",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 371,
+      "start": 4681.18,
+      "end": 4768.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "solution to that, for example, is UBI, universal basic income. And of course, there's an ASEA on that, that's fine. There's actually been a lot of experiments in the data on that. It's very promising, right? You know, blockchain actually solves the distribution problem of UBI, right? And there's, you know, various related efforts out there that help for that, but a simple way to think of what it is. Imagine there's a UBI chain running, running, running. You sign up for it, prove that your own identity. And then anytime new money flows into the chain, you get your cut. You know, everyone gets an equal cut. So, you know, at the time goes on, more and more people sign up. So you solved the distribution problem, but what about the supply problem, right? How do you solve that? How do you get money into that? And there's various ideas to that. But if you manage to crack UBI, then you actually de-risk the problem of AI taking all the jobs. And, you know, if AI takes jobs, even with a, you know, 10% of jobs very aggressively. then we could be having, you know, seeing revolts, Littite-style revolutions and stuff, right? So it's really important to try to address these. But then, you know, going farther out, I'll just give one more final examples of this. So right now we're seeing, you know, early VR, right? And we're seeing early AR too. But, you know, the VR isn't quite there yet. It's expensive. It hasn't quite hit mainstream. There's lots of good attempts. It's still probably got two or three years worth of Moore's Law, you know, of this improvements in performance of the chips, you know, that sort of battery... power versus the screen resolution, et cetera, before we get something that's really good. And the form factors need to get solved. And only once we get that really good",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 372,
+      "start": 4768.97,
+      "end": 4864.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "for VR, can we do a good job in AR because that has much more severe power constraints. So sort of VR will lead to AR. And then once we have AR, then we can start to like the first cut AR, which might be just simple overlays, like very lightweight head-up display type things on our glasses or contact lenses. But then beyond that, you know, what about AR that's fully repainting reality? And, you know, that's a possibility. It just will take that much more compute power, et cetera, right? And getting the form factor right, et cetera. And then you can keep going to things beyond that. So these are all different steps. And all these things interrelate everything from solving malaria to AI and UBI and going to Mars and all these. There's a lot of technologies that are general-purpose technology that help each of these, like AI, blockchain and these, right? But they're also risks. So anyway, overall, Imagine if this, you know, I described a cluster of these things with sort of linkages, a few linkages between, but imagine if there was a map out there that just was out there that people could see and not only see, they could actually contribute to it and they could propose their own ideas and maybe it has, you know, 30 nodes initially with a few steps in between as sort of this day of civilization, not unlike you play in the video game civilization as a technology tree, but here's a thing, imagine that you can add to it. You can suggest whatever you want and add to it and curate it. The key thing is, imagine if you can have a Bitcoin address or an Ethereum address or whatever attached to each of these nodes that people propose. And so if you like an idea, you can actually fund it. You can put $100 or $100 million into any given node. And once it crosses some sort of threshold,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 373,
+      "start": 4864.96,
+      "end": 4879.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "something sparks, right? Maybe there becomes an X prize for it, where say a $10 million XPRIs to solve a particular goal X, right? Of like, you know, solving VR with certain latency or solving, you know, malaria in some better way.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 374,
+      "start": 4880.48,
+      "end": 4880.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 375,
+      "start": 4880.9,
+      "end": 4892.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like we've seen with, you know, things like Gates Foundation and XPRIZE, but generalized to things, you know, not just one step ahead, but two steps ahead, three steps ahead, and curated by the crowd itself, right? And so basically, you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 376,
+      "start": 4892.18,
+      "end": 4893.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there's... billions",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 377,
+      "start": 4893.44,
+      "end": 4898.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of dollars that the blockchain ecosystem has generated in value. So rather than",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 378,
+      "start": 4898.3,
+      "end": 4899.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "those",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 379,
+      "start": 4899.9,
+      "end": 4921.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "billions of dollars to, you know, doing ads a little bit better, which is actually cool still, but why not, you know, civilization level stuff, right? And, you know, amazingly, you know, we can see where things like, you know, a file system for the planet or a database for the planet or a data substrate for the planet, all of these things actually do fit in, right? So even when trying to select different crypto projects that are ICOing and whatnot, right,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 380,
+      "start": 4922.2,
+      "end": 4922.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 381,
+      "start": 4922.6,
+      "end": 4947.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 382,
+      "start": 4947.94,
+      "end": 4948.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 383,
+      "start": 4948.38,
+      "end": 4968.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not just for barely getting by as individuals. to the self-actualization of individuals, not just that, but for society itself, right? What does it mean for society itself to self-actualize to be like Ben Franklin? And I see that this map is potentially a way to start getting there, right? So once again, it's a civilization dig",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 384,
+      "start": 4968.65,
+      "end": 4969.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 385,
+      "start": 4969.95,
+      "end": 4988.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "crypto addresses attached to fund these ideas. And that is, you know, the ideas come from the crowd. The money comes to the crowd. It's all curated by the crowd. And it basically gives us all a context towards the sort of society level stuff that we're building, not just for the next one year, but the next five years, 10 years, 10,000 years.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 386,
+      "start": 4989.27,
+      "end": 5038.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I love it in time. It's pretty hilarious how aligned that is with some of this other commons work that I'm doing these days around. Essentially, and it's all about this leveraging the crowd and some of this generative complexity things that we're talking about where it's like, hey, we are essentially creating these various bounties slash Patreon slash stake trees around these given goals and impact outcomes. and the map itself is curated by the crowd and the amount of money that's being put towards things is curated by the crowd. And then, yeah, one thing that I would say is that... one, with it from the DAG mindset and a DAG is a distributed acrylic or acyclic graph rather. And it's like a from this to that, then that, then whatever. I think my instinct, and I'll share this in a bit",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 387,
+      "start": 5038.02,
+      "end": 5038.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 388,
+      "start": 5038.52,
+      "end": 5055.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is that there is a, is that some of these systems and some of these essentially nodes in that map that you're talking about need to be. co-evolved at the same time in a simultaneous fashion. And that's kind of necessary for the system itself to go forward.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 389,
+      "start": 5056.17,
+      "end": 5056.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "With",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 390,
+      "start": 5056.61,
+      "end": 5070.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that, I think it's time for us to end today. So Trent, thank you so much for coming on, both talking about what you guys are doing at Ocean and Big Chain, how that relates to tokenizing enterprise, and then also how it might relate to the map.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 391,
+      "start": 5071.24,
+      "end": 5071.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "My",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 392,
+      "start": 5071.68,
+      "end": 5072.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "pleasure. Thank you for having them.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 393,
+      "start": 5072.88,
+      "end": 5073.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 394,
+      "start": 5073.14,
+      "end": 5093.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "was great. And for those of you who are listening, if you want to support me, you can go to patreon.com slash Reese Lindmark. That's patreon.com slash R-H-Y-S-L-I-N-D-M-A-R-K. Also, I'd love feedback on this one because this was an hour and 15 minutes. And usually we do like 30 or 45. So we'd love your feedback there. Thanks so much, everybody, and goodbye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 395,
+    "withheld": 3,
+    "published": 392
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

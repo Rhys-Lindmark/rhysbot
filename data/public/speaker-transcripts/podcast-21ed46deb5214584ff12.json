@@ -1,0 +1,1602 @@
+{
+  "schema_version": 1,
+  "id": "podcast-21ed46deb5214584ff12",
+  "title": "Creating a Humanist Blockchain Future #4: The Attention Economy with Ryan X Charles of Yours.org",
+  "published_at": "2017-07-21T04:40:31Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/creating-a-humanist-blockchain-future-4-the-attention-economy-with-ryan-x-charles-of-yoursorg",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/334132362-the-rhys-show-creating-a-humanist-blockchain-future-4-the-attention-economy-with-ryan-x-charles-of-yoursorg.mp3",
+  "youtube_id": "89gzX266PWw",
+  "youtube_url": "https://www.youtube.com/watch?v=89gzX266PWw",
+  "audio_sha256": "ed9d7b275fc946f75ad35c12100682ef2c82231ba6a97c34e52ee234550725cc",
+  "audio_duration_seconds": 2099.226125,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 6668,
+    "unknown_words": 82,
+    "unknown_words_fraction": 0.01229754049190162,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 1.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 13.39,
+      "end": 42.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everybody. My name is Reese Lindmark and welcome to another edition of creating a humanist blockchain future. where we explore the intersection of effective altruism, universal basic income, the attention economy, and blockchain. Today, in episode number four, we're going to explore the attention economy with Ryan X-Charles, who was the first and only cryptocurrency hire at Reddit, and is now a co-founder of yours.org, a blockchain-based content platform that uses light coin to implement a medium with a paywall. Ryan, thanks for being on the show and welcome.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 42.99,
+      "end": 43.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Thank",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 43.33,
+      "end": 45.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you very much, Rhys. I'm very happy to be here. Thanks for having me on.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 45.81,
+      "end": 84.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Exciting. And one thing that Ryan and I talked about before we kind of dive into yours is we want this to be kind of a step deeper, essentially, into the attention economy space and something like yours. Because there's lots of, Ryan's on a lot of podcasts around how yours kind of operates within the space and how it looks from a blockchain perspective. But we'd like to kind of take a step deeper today. So we'll see if we're able to achieve that for you guys. And if not, are bad, but we tried our best. So, Ryan, first, I'd like to, I was like to start with why. So I'd love to know from you, kind of, why are you working in the attention economy and why, you know, working on something like yours specifically?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 85.7,
+      "end": 90.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, so I have sort of two answers to that. So I come at this from the point of view of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 90.36,
+      "end": 91.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "being",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 91.1,
+      "end": 119.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "someone that was very interested in Bitcoin for a lot of different reasons. So I discovered Bitcoin in 2011. And I thought it was just absolutely mind-blowing technology that had so much potential and could really change the world. So one of my sort of trains of thought was just trying to figure out a way to make Bitcoin reach a mainstream audience. So I did things like this is kind of technical, but I deliberately decided to focus on JavaScript applications because JavaScript is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 119.76,
+      "end": 120.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 120.4,
+      "end": 123.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "language of the internet and you can write consumer apps in JavaScript.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 123.67,
+      "end": 123.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 123.91,
+      "end": 140.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I really decided to shape my whole career around creating mainstream consumer apps on Bitcoin. The other direction I come at this is I had this opportunity to join Reddit as a cryptocurrency engineer.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 140.9,
+      "end": 141.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 141.3,
+      "end": 150.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I've been a long-time user of Reddit, and I thought, you know, this is potentially the coolest opportunity of my life to, you know, bring cryptocurrency to Reddit. I mean, just imagine the cool things we could do.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 150.96,
+      "end": 151.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 151.36,
+      "end": 160.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's a whole other story. I'll skip it unless you want me to go into details, but basically it didn't work out at Reddit. But I just couldn't let go of the ideas that we talked about. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 160.96,
+      "end": 161.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 161.54,
+      "end": 185.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "talked with a lot of people, users of Reddit, and people that aren't users of Reddit, but who like the ideas about involving, you know, putting cryptocurrency into a platform like Reddit. So eventually I decided to just start my own company around this idea and we're going to do something involving cryptocurrency and social media. And it's kind of open-ended. It was like at first we didn't have a clear idea",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 185.68,
+      "end": 186.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 186.54,
+      "end": 191.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that meant, but we just saw so many different ideas that it was more a matter of...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 191.43,
+      "end": 191.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 191.75,
+      "end": 213.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is the best idea or the right idea to pursue within this giant space of possibilities? So over a long period of time, we built a lot of technology and talked with a lot of people and ended up building yours.org, which is like medium with a paywall. It's a very simple idea. All it is is users can write an article with embedded video and audio and things of that sort.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 213.69,
+      "end": 213.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 213.99,
+      "end": 256.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they can put a paywall in their article and they can charge however much they want to charge, but you can charge really small amounts of money, say 10 cents or even less, say, five cents. And it's so simple, but actually this didn't really exist before. There's never been a simple, you know, blogging service where you could simply just charge a small amount of money. And there's a lot of reasons we think about why that is, but basically we think Bitcoin, well, maybe not Bitcoin specifically, but let's say blockchain technology. makes it possible for us to do this for the first time. So that's sort of how I come at this from both the technical view of liking Bitcoin and this sort of social view of seeing the potential of combining that technology with social media.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 256.88,
+      "end": 257.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 257.96,
+      "end": 313.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I love that. And then some quick thoughts on the top of my brain from that. First, on the JavaScript side, I advise this company called Rodan, which makes a JavaScript framework for creating VR and AR apps. And they had the exact same mindset that you have, which is, hey, there's this new technology, but we are at the innovators and the early adopter level right now. And we're like, how can we bring this more into the mainstream? And so they're making a JavaScript-based thing. And that reminds me of yours, and it also reminds me of yours in the sense that, like, making something just so simple. A lot of the successful groups in this space, like 21.co, yours reminds me a lot of 21.com. And that 21.com is a very simple concept. It's just like, hey, if I want to message you, Ryan, I can't just spam your inbox. I have to pay you or pay you with the possibility of if you respond, then I have to pay you a dollar or whatever. And I feel like yours is similar to 21.coe in that sense, but instead of paying for asks, you're essentially paying for consumption. Is that an accurate analogy there?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 314.28,
+      "end": 341.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Absolutely. Absolutely. I mean, 21.co is, they are more philosophically aligned with what we're doing than I think just about any other project. It's actually one of the ideas we thought of, and for various reasons, we did a different product. But it's the same idea, which is the thought of putting social, sorry, the thought of putting micro payments inside of a social app, it's very open-ended what you could do with it. There are a lot of different possibilities. And 21.co is one of them, and ours is a different one.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 341.72,
+      "end": 342.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 342.25,
+      "end": 380.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Totally. And that's another thing I love about yours is that there's a lot of work within the blockchain space around thinking. Thinking is fun. Thinking is a great thing, but actually getting out there and doing things. And yours, you guys just went into Alpha recently. And I'd love to know a little bit more about from you. And even you kind of dog food fed yourself by the actual alpha post was on yours written by you. And when I scrolled through and tried to read it, it said, oh, you have to pay 15 cents to read the rest of it. So could you kind of talk to me a little bit more about the alpha release, how it's been going thus far, if you know how many people have like clicked the spend 15 cents on your button, that kind of thing?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 381.28,
+      "end": 406.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Sure, sure. Yeah, so from the dog-fooding point of view, I mean, we're big believers that we're really trying to solve this problem, and it's really best if we do use our own product. So we certainly intend to continue putting content that we create as a company on the platform, because we can see where all the problems are. There are a lot of bugs that we're aware of that we're fixing, and so it really helps us make the best product that we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 406.2,
+      "end": 407.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "can't.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 408.28,
+      "end": 423.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Let's see. So with respect to how the alpha is going, So we took actually a very long time to build this. We're still pretty early in this sort of history of this technology. It's pretty hard to build apps like this.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 423.85,
+      "end": 424.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 424.09,
+      "end": 441.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it took a long time. So we're incredibly happy that we got to the point where we were able to launch our alpha. I mean, it's a huge deal for us. We're celebrating that we launched. There are still a lot of bugs, as I was saying, a minute ago, though. So it's so technically hard to fit all the pieces together that there are just a whole bunch of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 441.85,
+      "end": 442.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "edge",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 442.29,
+      "end": 442.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "cases",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 442.81,
+      "end": 443.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 443.21,
+      "end": 448.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "everything about how this works, that we just have to fix and make it work well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 448.85,
+      "end": 449.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 449.37,
+      "end": 477.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "with that being said, I'm actually very encouraged that people like it well enough to use it at this early stage in spite of all the bugs. So we have something like several people posting content per day. We have several payments per day. So it's good at an alpha level. And I'm very optimistic that as basically as we fix the bugs, talk with our users, figure out what are the biggest pain points and fix all that stuff, I think we have a pretty bright future.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 477.59,
+      "end": 477.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 478.13,
+      "end": 497.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I like it. And just looking at some of the yours feed right now on yours.org, it's funny, and the one that I'm most excited by, and maybe we can talk about this a little bit more later, is these new kind of, and you've talked about... Because you've created a paywall, it creates a new kind of content form, essentially. The kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 497.56,
+      "end": 498.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 498.32,
+      "end": 539.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "technology informs the kind of content that is created. And like you said, you can kind of take a for a given article. You say, hey, this is going to be really exciting. Oh, but you have to pay to see the rest of it. That kind of... content, I think, will exist on yours in a really cool way. And I really like this one on your site right now, which says, give away of Bitcoin worth $1 to 10 people who break the code. And so that one, it might be some kind of interesting mystery. It might be some kind of interesting thing where you kind of, it just reminds me of these new kinds of like storytelling or kind of ways to use and utilize yours in this new world. So I'm excited by some of the headlines that have seen on the feed thus far.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 540.26,
+      "end": 540.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 541.34,
+      "end": 545.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think, you know, one way I think about it is I've described it as a new art form for the Internet.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 545.94,
+      "end": 546.28,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep, exactly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 546.58,
+      "end": 567.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And we've picked one particular way to put payments into social. You can imagine others. But it does inform the way you create the content. So if you know that you can put a paywall inside your content, you'll shape it differently. I mean, you'll do something new that you wouldn't have otherwise done now that you can have this option of putting a paywall in there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 567.7,
+      "end": 568.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yep,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 568.6,
+      "end": 574.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "exactly. I love that. Did you see, by the way, the SB Nation piece 17,776?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 575.01,
+      "end": 575.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 575.37,
+      "end": 575.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "don't think so.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 576.25,
+      "end": 576.39,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'll",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 576.39,
+      "end": 623.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "send it to you afterwards. It's a great piece on new internet-informed storytelling pieces. And so that's kind of a, that's one that is just purely based on the internet, and I'm excited to see versions of that with yours later. But back to yours. A question that I have for you is, who do you think of, I remember you guys in the past, we're thinking of different kinds of early adopters for your system, for yours. How do you think about early adopters and who is it? Who is it very important for? Because there's some people who are just trying to blog whatever on Medium. And then you have some people who are on the really extreme end of the spectrum who are making money off of like, you know, maybe YouTube or whatever. Who do you think is going to be in that nice middle ground where they say, hey, I actually want to make 10 cents per post or per paywall? So can you tell me more about how you think about early adopters?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 623.5,
+      "end": 624.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 624.42,
+      "end": 674.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So one way to think about early adopters is, you know, we sort of naturally get people interested in cryptocurrency. So a lot of the people simply are people already involved in cryptocurrency in one way or another. So those people already have thought of an idea like this or something. And so they immediately get it a little bit more easily than other people. But the real audience we're going for are all those people out there that... want to be a content creator or a curator, and the tools that they have at their disposal for various reasons aren't appropriate for them. So you could imagine someone that's developed a following on social media, and maybe they're a journalist, and all they want to do is write an article and put a paywall in it. We're an option for those people. People that are trying to...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 676.34,
+      "end": 685.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "transition from, you know, maybe, you know, the world is changing a lot right now. So a lot of the jobs that people have are quickly becoming obsolete.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 685.4,
+      "end": 685.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 686.16,
+      "end": 690.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "You know, it's kind of a tangential subject, but I'll mention one example, which is people who drive cars.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 691.16,
+      "end": 691.22,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 691.68,
+      "end": 700.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "There are, you know, there's a lot of work being done on self-driving cars. So if your job is to drive people around, that job might not last, who knows how long.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 700.83,
+      "end": 701.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 701.15,
+      "end": 737.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "these same people, actually, many of them, are people that want to create content for a living. And by creating a new option for them, a way that they can earn money that's different than their job driving car, but that they enjoy more and that is more aligned with what they actually want to do with their life, those are the real people we're going for. It's all those people out there that are looking for a new way to make their way in life and we'll help them. And we're going to help those people, you know, monetize their craft, their art, or their journalism, or whatever it is. Those are the real target audience we're going for.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 737.66,
+      "end": 821.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that makes sense. And I agree that the interesting thing about something like yours and about things in the attention economy generally is exactly what you're talking about, which is the future of work, where you have... The classic old job loop may be going away to some extent or the versions that are blue collar jobs or, you know, clearly like agricultural jobs. And so when those people kind of start to transition out, what... kinds of work are they going to be doing and specifically in this new system where you have like the crowd, a crowd of people on the internet that are doing freelancing on Fiverr or that are doing stuff on Heathlance or that are possibly working on, you know, yours. How do they monetize their time? So I think that that's actually quite aligned. So yeah, you're thinking, and I agree with the cryptocurrency point as well, which is that for a lot of people in the cryptocurrency space these days, the early adopters are fellow cryptocurrency people. You know, if you look on Steam it, there's a lot of cryptocurrency talk, you know, because those are the people that are interested in that, and they're like, oh, I want to find other people who would like to talk. Yeah, so cryptocurrency people. So have you found any initial early adopters who are, like, super aligned with you, who, like, see the same vision and who want to? And I guess a secondary question on that, which is... You know, a classic way that you can kind of incentivize these networks for something like yours is through using a token and by the early adopters get in on the token at the beginning. You guys don't have a token. Could you talk more about that and why that is?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 822.33,
+      "end": 822.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 823.05,
+      "end": 830.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sure. So two points of the early adopters. So we have a number of people that have actually been with us for a really, really long time.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 830.79,
+      "end": 831.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 831.21,
+      "end": 837.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "genesis of this project goes back almost two years, arguably even back further than that when I worked at Reddit.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 837.99,
+      "end": 838.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 838.31,
+      "end": 851.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "these people have believed in the idea really strongly and have watched us struggle to actually build this thing over a long period of time, and they're still around and they like it, and they've posted some content on the app.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 851.79,
+      "end": 852.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 852.05,
+      "end": 858.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we do have that type of user that really believes in what we're doing and really likes it, and they're cheering us on. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 858.99,
+      "end": 859.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "those are great",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 859.81,
+      "end": 868.63,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "users for us to have as a company and a project. The token thing is an interesting question. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 868.63,
+      "end": 869.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 869.51,
+      "end": 883.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we first started working on this almost two years ago, there were basically two directions we could have gone in. We could have used an existing cryptocurrency like Bitcoin, which we started with Bitcoin, or we could make a new coin.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 883.39,
+      "end": 883.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "For",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 883.95,
+      "end": 886.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a lot of reasons, we decided to use Bitcoin",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 886.57,
+      "end": 887.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 887.37,
+      "end": 904.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the infrastructure around Bitcoin not just technical, but things like the exchanges, the wallets. All that stuff was much, much, much more mature on Bitcoin than anything else. So there were a lot of reasons why Bitcoin was better. It was much easier for our users to sort of get in and out",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 904.03,
+      "end": 904.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 904.63,
+      "end": 914.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Bitcoin. And there didn't seem to be a compelling reason to make a new coin. It just seemed like it would be harder for our users. So we decided to go that route of using Bitcoin.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 915.46,
+      "end": 915.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Now,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 915.88,
+      "end": 929.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there's more of that story, of course. We ended up switching from Bitcoin to Likecoin. I'll leave that aside for the moment. But we did consider making a token. We sort of revisited this idea over time. Like maybe we could just make our own new token.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 929.48,
+      "end": 929.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 930.84,
+      "end": 935.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But we remain convinced that actually from the user's point of view,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 935.48,
+      "end": 935.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the bigger",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 935.98,
+      "end": 939.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the coin is that we use on the platform, the better it is for them.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 940.08,
+      "end": 940.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 940.52,
+      "end": 949.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there doesn't seem to be a strong reason for us to make a new one. The best reason and the reason why I think most of these tokens exist are for fund raising.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 949.65,
+      "end": 949.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 950.35,
+      "end": 966.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, there's kind of a sort of an ICO, you know, we're living through some type of... hype or something where there are tons of these new tokens that people are creating. Now, I'm sure some of them are totally good and will last and be around and whatnot.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 966.26,
+      "end": 967.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And have utility value, yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 968.3,
+      "end": 981.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But some of them won't. And so our philosophy is, you know, why we just didn't, we didn't see a compelling reason to use one. And it felt very, like there are other ways we can raise money. And of course, we're a business, we can earn money as well.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 981.18,
+      "end": 981.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 981.9,
+      "end": 987.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So we just didn't need to make one. So that's not the direction we went down and we're not planning on going down that route.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 989.4,
+      "end": 992.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "at this time. I mean, we're going to stick with like coin for the foreseeable future.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 992.94,
+      "end": 1040.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Definitely. And I think it's actually connected to your point about, and it reminds me of, I talked with Neveen, who's the one of the co-founders of this thing called crowdraising.com. And right now they don't have any tokens in their platform. It's essentially one where you can pledge time, not money. And because it's a similar reason. It's like if you are, if you're way deep in on the cryptocurrency land, then maybe it makes sense to do an ICO. Maybe it makes sense to tokenize things. What's the utility value? the token, etc. But if you're just trying to kind of show how blockchain can, you know, incentivize or can create micro transactions and to bring that out to the general populace, well, those are people who aren't going to be able to participate in ICOs. And instead, you know, the cost to get into the platform is much, much less. And something like like Bitcoin, they can just go into Coinbase, you know, and that's easy. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 1040.34,
+      "end": 1040.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that's nice.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 1041.4,
+      "end": 1041.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Okay.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 1041.86,
+      "end": 1042.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 1042.3,
+      "end": 1073.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "final question on yours before we transition to kind of the macro abstract perspective here is tell me a little bit more about your business model and specifically around the, you've talked about having a 20% take on transactions, which is actually not that high of a transaction rate. But then over time, there's this new kind of... platform cooperatives is a mindset within blockchains where you say, hey, all the money doesn't need to go to me, you know, it can go more to the users. If someone takes an Uber ride, that money shouldn't all go to San Francisco or whatever.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 1075.56,
+      "end": 1095.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "That's... concept is an interesting one, similar to kind of what I have on Patreon, where I am like capping my income and giving it to other people's universal basic incomes or whatever. But how do you, how do you have people talked about like the trust aspect there where you're like, ha ha, we told you were going to decrease the transaction fee from 20% to 10%, but now we're not and I own an island on Cuba or whatever.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 1096.03,
+      "end": 1096.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 1097.21,
+      "end": 1136.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's a good question. Well, so on the business model, so the theory was always, you know, There are a lot of different ways we could imagine earning money from this, but we think this absolute simplest one is just, we just take a percentage of the payments on the platform. So we have to fund our business. You know, it's a real business. And so we ended up arriving at this figure of 20% through sort of a few different ways. For one thing, it's lower than traditional competitors like YouTube or Amazon. other places where they have some type of platform where you can post content. They often take larger amounts like 30 or 40%.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 1136.75,
+      "end": 1137.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 1137.33,
+      "end": 1169.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "20% was sort of on the low end of those figures. It makes us out-compete those traditional players. But the other thing is it's like, well, why wouldn't it be much, much lower? logically, you could imagine the business could maybe survive on 1% or something like that. Well, we couldn't survive on 1% today because the payments, there just aren't enough payments. So the theory was, well, as we scale as a business, we can just lower it. So, you know, one way to think about it is if we grow in size by 10 times",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 1169.75,
+      "end": 1170.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 1170.79,
+      "end": 1171.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we cut the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 1171.65,
+      "end": 1172.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "amount",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 1172.79,
+      "end": 1197.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that we take in half, Well, the business is still earning five times more money. I mean, that's pretty good success for us as a business. So we can easily have outstanding success as a business. while constantly lowering those payments over time. No one has actually asked me the trust aspect of that yet. There is definitely some trust there. I mean, you know, you could imagine we just don't lower it or something. I don't think what would happen in that scenario is we would just have competitors",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 1197.91,
+      "end": 1198.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 1198.69,
+      "end": 1233.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the reality is you can lower it. So somebody would make a competitor and they would just make us a cheaper version of it. So I think competition would end up forcing us to lower it anyway. I think we're trustworthy. We're not interested in scamming people. I mean, we're trying to make a platform that works for our users. We want our users to earn as much money as possible. So, you know, there is a trust aspect, but we'll leave it up to our users to decide whether to use our platform or to use somebody else's on a basis of whether we hold that philosophy or not.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 1233.92,
+      "end": 1264.65,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, totally. And I think that that... that's starting with Y version of things, where if you guys, like you're saying, especially in this blockchain-based reality where it's easier to break network effects than it once was because of the financial incentive of tokens, if you're a company that's still taking 20%, and you guys are kind of being mean or whatever and you get a bad rating within the blockchain industry, people are going to be like, no, this isn't good. And it'll be easier to break your network effect, you know, if we think like 10 years from now than it was to break Facebook's network effect because people are able to.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 1267.12,
+      "end": 1282.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "people are able to incentivize the early creation of networks and because there's such a start with why kind of distributed decentralized platform cooperativism mentality within the blockchain land that'd be I'd be optimistic going forward do you agree with all that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 1282.06,
+      "end": 1282.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 1282.48,
+      "end": 1284.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sure totally I mean",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 1284.04,
+      "end": 1285.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "nice",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 1285.46,
+      "end": 1294.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "so any final thoughts or questions on yours before we kind of transition to a more macro attention economy",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 1294.71,
+      "end": 1295.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "No,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1295.75,
+      "end": 1298.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think I'm interested in talking about this other stuff.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1298.67,
+      "end": 1322.19,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, cool. So now we're going to transition to part two of the podcast where we talk a little bit, not necessarily about yours, but more in an abstract general sense about the attention economy and how we kind of see it changing over the coming years. So what I'd love to talk about actually first and foremost is how, Ryan, you think about, there's this concept of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1323.88,
+      "end": 1388.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of empathy in these kind of filter bubbles. And something like Facebook has they, because they're incentivized to... have you more with more time on the platform. They'll give you more things that you like, which is both clickbait and as things that you already believe in. And so it's tough to kind of break out of those filter bubbles and to get a red feed and a blue feed. There's projects that are trying to do this. This one called like High from the other side, which connects essentially liberals and Republicans, Democrats and Republicans in America to talk with each other to try to just like not demonize the other essentially. And so one thing that I'm interested by in the space is the ability for new kind of blockchain-based projects to kind of, you know, change the existing paradigm with filter bubbles and things like Facebook and to kind of incentivize empathy with people who are not necessarily similar to you. So kind of how do you think about that and specifically on yours? How do you think about kind of building a platform where the content that people are consuming is both aligned with them and sometimes it's not aligned with them?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1388.87,
+      "end": 1389.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1389.61,
+      "end": 1425.75,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sure. So Facebook, you know, Facebook's business model is primarily based on advertising. And this really shapes the way that Facebook as a product works. I think that advertising, you know, I mean, I think it has ups and downs. So, I mean, I think in many ways Facebook is working well. But in many ways it isn't, I think it could work a lot better. The incentives of ads are basically, if you want to earn money as a content creator based on ads, you write an article or create a video or whatever. And you put an ad on it or beside it or whatever. And the incentives of this are that you want people to just look at your content",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1425.75,
+      "end": 1426.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1426.47,
+      "end": 1446.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that they look at the ad. And then they get paid based on looks. And looking at it is kind of disconnected from the quality or the substance or the meaningfulness of the content. So the incentives are to just get people to click on things and look at them. And Facebook has really designed around this a lot. I mean, Facebook has a lot of...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1446.27,
+      "end": 1446.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "They",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1446.57,
+      "end": 1464.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "put a lot of work into getting users to engage on the platform and look at things and click on things, but this isn't necessarily good for you. I mean, you're not necessarily winning anything. You're just kind of addicted to looking around and clicking on things. So there are ups and downs, and our approach is completely different.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1465.71,
+      "end": 1466.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1466.19,
+      "end": 1470.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think that, you know, so we'll address these issues the following way.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1470.62,
+      "end": 1471.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1471.32,
+      "end": 1486.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think that by putting micropayments in the platform and using this in innovative ways, we can have completely different models for how all this stuff works. So we can empower, for instance, imagine someone is a scientist",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1486.28,
+      "end": 1487.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1487.12,
+      "end": 1489.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "they curate a feed of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1489.1,
+      "end": 1490.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "good,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1490.56,
+      "end": 1491.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "accurate information.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1491.63,
+      "end": 1492.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "If",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1492.01,
+      "end": 1518.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we design the sort of the payments correctly so that when you're making a payment or receiving a payment or a payment is being divided amongst other people, if we do this correctly, and there are a lot of unknowns here, we have a bunch of ideas about how to do this, so hopefully we'll do it right. But the incentives can be completely different from ads. So we believe we are able to incentivize true information, that we're able to incentivize substantive information.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1518.63,
+      "end": 1519.13,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1519.13,
+      "end": 1541.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "able to incentivize an article that's well researched. So that's what we're shooting for. And so we're not using advertising. We're using all these other mechanisms based on micropayments to really try and improve the quality of content on the internet and get people paid for creating high quality content.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1541.81,
+      "end": 1542.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1543.05,
+      "end": 1543.35,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1543.35,
+      "end": 1544.29,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1544.29,
+      "end": 1591.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "makes sense. And whenever we talk about incentives, which is probably the With respect to the rest of the world, how often blockchain people talk about incentives is like many orders of magnitude higher. I think that you're right in saying that if we can change the incentive model, then we can change. And even as you're saying, like, both creating the incentive model, you will have hypotheses for what's going to happen. But there's also going to be kind of emergent behavior for like, oh, wow, this is interesting. I wouldn't have expected our platform to be used like this, but that may happen. How do you think, yeah, so I think that makes sense. And I think that the... There are some platforms that are working specifically on the fake news side of things. There's one called Civil, which is a block. Have you heard of Civil, a blockchain-based news agency essentially?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1592.06,
+      "end": 1592.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I've heard of it. I've not.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1593.12,
+      "end": 1593.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah, they're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1593.76,
+      "end": 1625.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "doing like a fact checking as a service, which is a way to essentially incentivize kind of in a auger or Nosis way to say, hey, let's get facts into the system here. Yeah, I think another thing I think about with respect to this is, you know, in kind of negative behavior that can create itself online is with things like trolls on the internet. And I don't know if trolls are necessarily bad, but could you talk a little bit more about, you've talked about kind of a comment system that you guys are thinking about. Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1625.24,
+      "end": 1625.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1625.46,
+      "end": 1628.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "could be, that could kind of disincentivize trolling, essentially.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1629.44,
+      "end": 1629.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1629.98,
+      "end": 1696.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So that's a great sort of question that frames sort of a particular problem that we think we can, if not solve, we can at least make it a little bit better than it is. So there's a, there's, I think it's fair to say there is a problem of trolling on the internet. Trolling is where it's free for people to say whatever they want to say on social media. So this happens on Twitter a lot, happens on Reddit a lot. where someone is just going to be perpetually negative to you about something. For some reason, they don't like you, and so they just start replying to everything you say with something negative. It can be lightly negative, or in some cases it can be extremely negative. And so you could block them. You know, Twitter has a block feature, but sometimes these people make new accounts, and they just keep trolling you. And it's incredibly irritating. And I've experienced this firsthand on a number of different occasions for various reasons. I get involved in something that turns out to be controversial, at least with respect to some audience. And so I get trolled, and it's really annoying. So one way to address this is, so we have a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1697.16,
+      "end": 1698.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "look",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1698.24,
+      "end": 1741.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "at YouTube as an example. So YouTube has a commenting system. And YouTube videos sometimes are trolled. So somebody creates a video that for some reason is, controversial and so they get some people on there just saying something really negative. YouTube has two options for its comments for the authors or the creators. Either the comments are free, in which case you can post a comment, or the comments are infinitely expensive, which is you can't post any comment at all. But wouldn't it be interesting if the creator could simply set a price for posting a comment on the article? Imagine they charge 10 cents, something pretty low, but something not zero either. I mean, you got to actually pay 10 cents to post a comment.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1742.12,
+      "end": 1742.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1742.48,
+      "end": 1778.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "only going to get people that really actually want to comment on something. If the trolls have to pay you 10 cents to be able to troll you, they're less likely to troll you. And also, if they do troll you, at least you get 10 cents on it. So we think that model, giving the power for the creator to set a price for comments. has the potential to make that significantly better. If you're someone that for whatever reason is trolled a lot, you could charge more, charge $1 or $10, right? And that way, you know, the barrier is much higher for those trolls to troll you.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1778.96,
+      "end": 1784.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. That reminds me of, did you see the April Fool's from this year, the R-slash place?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1786.09,
+      "end": 1786.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1787.35,
+      "end": 1789.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I saw R slash place. I'm not sure I saw the April Fool. Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1790.11,
+      "end": 1790.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it was on April",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1790.71,
+      "end": 1844.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Fool's technically. So R slash place is a is a end by end. I think it was like maybe 10,000 by 10,000 grid of pixels and different, you could every 20 minutes, you got, you recharged your ability to change a pixel on this R slash place. And the thing that was interesting with it is just like you're saying, there is a, if there's a scarcity with respect to something like comments where it's 10, 10 cents per comments, if there's a cost, was similar in R slash place where there was a scarcity with respect to the amount of pixels that you could change. And what they found was more people came together over good things, essentially, rather than trolling. Essentially, it was hard to get troll communities together. It was much more difficult to troll, and it was a lot easier for people to come together over like a shared purpose. And so I think that we might see similar things of that variety when you have scarce resources, whether it's like coin or time with R-Sash place.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1845.26,
+      "end": 1845.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1846.28,
+      "end": 1857.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "absolutely, absolutely. It's a different, it's a different, completely different product and sort of example. But yeah, I mean, they're clearly, we can do better on the internet with respect to getting people to collaborate productively.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1858.1,
+      "end": 1858.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1858.84,
+      "end": 1877.4,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. That is the goal. Cool. Well, that was a fun conversation about ways to incentivize better content on the internet. Before we fully conclude and talk about some takeaways, what is one final thing that you would like to say to the listener? It can be silly, self-promoting, completely on, off-topic non-sequitur, anything.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1878.36,
+      "end": 1878.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1879.06,
+      "end": 1910.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sure. I mean, so please visit us at yours.org and try our app. Right now we are aware of the bugs. So if you try it out, you'll see that there are bugs. Please just let us know either on the platform or self or you can join our Slack channel and contact us directly, you know, what your experience is like and what's important for you that we can fix. That's the top thing we can do right now is work with our users to figure out the most important. you know, problems or features that we can add to make the platform better.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1910.93,
+      "end": 1911.31,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Boom.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1911.61,
+      "end": 2013.77,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "That sounds great. And one thing, the kind of early adopter that I personally am most excited by for yours is the storytelling version. So if you're a storyteller out there that is selling your books for free on Kindle, instead try some new kinds of short form content on yours that has a 15 cent paywall or maybe a $2 paywall midway through whatever you'd like. Cool. That sounds great. So yeah, for me, the takeaway is kind of a conclusion here are... You have something like yours. You guys are, you're working on it because you want to actually create a consumer application within the cryptocurrency land. And this one is... in Alpha is live, doesn't require more complicated things like buying into an ICO. You can use it with Coinbase and LightCoin. And your early adopters right now are people who are primarily cryptocurrency facing and really anybody who is in this kind of, who wants to experiment with some of these new forms of content. You have people who have been with you for a while who want to see this new version of monetization on the internet. So you're all in on that. And then we talked a little bit about the exploring the macro attention economy and specifically this way of... incentives and disincentives for bad content on the internet and the way to kind of how can we think about trolls and how can we make them pay for their time and then also how do we think about filter bubbles and primarily we think about it as hey they're going to be this full new we're in a world that's not advertising base but instead is micro transaction base then that's a different incentive system and we will see new emergent behaviors react to that but they might not be the current self-fulfilling prophecy filter bubble ones. So that's what I see as our conversation. Do you have any",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 2013.77,
+      "end": 2014.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "other final thoughts on that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 2015.49,
+      "end": 2052.49,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Well, I think I'm very optimistic about the application of this new technology to solving these problems. I mean, I think that we're seeing a bunch of innovative products that people are making. Yours is one of them. And there are a bunch of others. And it's very exciting that I think that we're in the midst of a sort of revolution with respect to... the end-user products that are being created that are going to solve many of these problems, if not all of them, and we're going to have a better internet shortly here. Year over year, I mean, things are getting better, so I'm very excited about all that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 2052.62,
+      "end": 2080.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I super, super agree. And hopefully our attention on the internet will be better used in the future, and it'll be awesome. Well, thank you so much for your time, Ryan. And if you guys want to go, you can go to yours.org to check out Ryan's work, Ryan X-Charles' work, as it were. And if you want to support me, you can go to patreon.com slash Rieslandmark, that's slash R-H-Y-S, L-I-N-D, M-A-R-K. Thanks so much for your time, and hope you have a good week, people. Bye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 172,
+    "withheld": 0,
+    "published": 172
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

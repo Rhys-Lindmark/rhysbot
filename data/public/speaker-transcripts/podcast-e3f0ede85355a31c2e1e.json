@@ -1,0 +1,4446 @@
+{
+  "schema_version": 1,
+  "id": "podcast-e3f0ede85355a31c2e1e",
+  "title": "Nadia Eghbal, Protocol Labs: Why Give Away Money and How to Fund Digital Infrastructure",
+  "published_at": "2019-01-07T16:22:26Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/nadia-eghbal-protocol-labs-why-give-away-money-and-how-to-fund-digital-infrastructure",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/555396513-the-rhys-show-nadia-eghbal-protocol-labs-why-give-away-money-and-how-to-fund-digital-infrastructure.mp3",
+  "youtube_id": "qZH58KKP3sg",
+  "youtube_url": "https://www.youtube.com/watch?v=qZH58KKP3sg",
+  "audio_sha256": "dcc5eb1850943fe8b4f3ff15259ce5b6721fb15cfedb08d60399548756f8c78c",
+  "audio_duration_seconds": 2248.071875,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 7604,
+    "unknown_words": 254,
+    "unknown_words_fraction": 0.03340347185691741,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 11.54,
+      "end": 12.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 12.26,
+      "end": 26.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everybody. My name is Reislin Mark and you're listening to another episode of Gray Mirror, a new podcast from MIT Media Lab's Digital Currency Initiative on technology, society, and ethics, where we look at both the positive and negative impacts of technology.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 27.0,
+      "end": 27.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 27.52,
+      "end": 53.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "in today's episode, I interview Nadia Eggball, who works in research at Protocol Labs, and we chat about two big things. First, why she gives grants to people on the internet. which I just think is so awesome. It's an abundant mindset. It's so crucial to our future. Woo-hoo, go Nadia. And then second, specifically about her work, thinking about the economics of open source, how we fund digital infrastructure. So both of them are really exciting. And you'll hear my passion and Nadia's passion about them in today's episode. Enjoy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 58.36,
+      "end": 63.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello, everybody. And welcome to another episode of Gray Mear. I'm very excited to welcome Nadia Eggball to the show.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 63.96,
+      "end": 64.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Thanks for having me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 65.24,
+      "end": 65.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 65.82,
+      "end": 86.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "excited to dive in. And these two buckets, I think that there's the research and, you know, the grant research and the open source economic research. And then there's also the kind of the abundant mindset and giving grants to people on the internet side. So let's actually start with that. And so just at a high level, could you explain kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 86.24,
+      "end": 86.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "your,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 86.96,
+      "end": 91.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "some of these grants that you've given through this like helium grants program and kind of your mindset behind it?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 92.11,
+      "end": 92.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 92.83,
+      "end": 97.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, it kind of just started as a fun experiment on the internet as most things start.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 98.31,
+      "end": 98.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 98.73,
+      "end": 109.05,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it was just sort of like, well, I had had this experience right out of college where I'd gotten this grant from a foundation to basically just like pursue a project of my own choosing. And that was like a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 109.05,
+      "end": 109.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "larger",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 109.61,
+      "end": 112.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sized grant. I was like $36,000.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 113.05,
+      "end": 113.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 113.49,
+      "end": 123.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's just a really impactful experience for me coming right out of college to basically be told like we believe in you and you should just kind of run with whatever you're thinking about. And so,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 123.52,
+      "end": 123.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 124.48,
+      "end": 126.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I guess this was maybe last year I was thinking,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 126.68,
+      "end": 127.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it'd be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 127.38,
+      "end": 143.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "really nice to be able to, like, give that to someone else and didn't really want to go through any sort of red tape around foundations or giving or anything like that. And I was just sort of like, why can't I just transfer some of my money to someone else out there on the internet? And so I announced this sort of project to just, I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 143.54,
+      "end": 144.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "was",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 144.06,
+      "end": 146.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "giving out three different $5,000 grants.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 147.86,
+      "end": 148.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And... you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 148.48,
+      "end": 163.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, anyone could apply for it if you're working on a project you're excited about and can't stop thinking about. I naively thought that, you know, maybe I would get like, I don't know, like 100 applications or something for the course of a month, but of course I got like a zillion more. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 163.36,
+      "end": 164.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 164.22,
+      "end": 171.9,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "was a really cool experience. I think I went through like 2,000 applications of people, selected three grantees and had so much fun doing it, but I figured I would just kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 171.9,
+      "end": 172.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 172.36,
+      "end": 185.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "keep going with it. And so this year I did it as, $1,000 grants given out once every three months, and anyone else on the internet can also help sponsor",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 185.26,
+      "end": 186.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "their",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 186.1,
+      "end": 190.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "own grant. So collectively we've given out, I think, like 25 grants at this point.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 192.14,
+      "end": 199.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And yeah, I guess the idea was just sort of like, what does it mean to give someone no strings attached capital? And maybe that speaks to sort of like that abundant mindset of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 200.17,
+      "end": 200.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 200.75,
+      "end": 204.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what's sort of like the extreme edge of abundant or no strings attached?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 206.7,
+      "end": 206.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 207.1,
+      "end": 207.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you're like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 208.25,
+      "end": 208.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 208.47,
+      "end": 211.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just sort of just like funding interesting people and good ideas.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 212.11,
+      "end": 212.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 212.57,
+      "end": 213.67,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that's interesting. I think that there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 213.67,
+      "end": 214.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "also",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 214.17,
+      "end": 216.97,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "two, two things that come to my mind immediately here. The first is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 216.97,
+      "end": 217.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 217.95,
+      "end": 246.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "experienced it yourself, which is, hey, oh, you got this relatively no strings attached grant. And then after experiencing it yourself, you're like, oh, my God, I'd love to like pass this on to someone else. And I think this is this mindset of like, where the abundance kind of begets more abundance. Another example is like my friend, they're staying for free in this other person's house. And because they're staying for free in this person's house, they have more money, and then they're like giving that money to people. And so it's like, there's just kind of weird loop where like the abundance brings more abundance. And then like you're saying, I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 246.88,
+      "end": 247.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 247.46,
+      "end": 249.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "no strings attached part is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 249.14,
+      "end": 249.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "very",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 249.94,
+      "end": 267.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "interesting where it is. I think the classic example of this is the direct giving things, like give directly, where you essentially put the cash transfer systems or you essentially directly transfer cash from usually someone in a developing country to someone in a developed country like rural Kenya is where most of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 267.7,
+      "end": 268.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Give",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 268.08,
+      "end": 275.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Directly works, and you essentially just give them money and you say, hey, I don't actually know whether you need medicine or food or whatever, so like here's the money, do it with what you will.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 276.36,
+      "end": 276.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "How",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 276.76,
+      "end": 277.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "has that been",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 277.58,
+      "end": 278.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 278.16,
+      "end": 284.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "for you with these grants? Could you tell me a little bit more about the kinds of people that you funded and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 284.11,
+      "end": 285.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 285.27,
+      "end": 287.47,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the like no strings attached allowed them to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 287.47,
+      "end": 288.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "do?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 288.77,
+      "end": 289.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 291.01,
+      "end": 297.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "The just figuring out a decision-making framework for myself was a lot harder than I thought it would be. I kind of told myself, you know, when you see it, you see it and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 297.91,
+      "end": 298.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 298.51,
+      "end": 304.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sure like, you know, I'll just like feel who the right people are. But there are so many awesome people that apply that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 304.27,
+      "end": 305.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "getting",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 305.35,
+      "end": 307.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "down to the finance was actually really difficult.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 308.33,
+      "end": 308.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 308.75,
+      "end": 310.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "was generally looking for people that are,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 310.92,
+      "end": 311.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 311.72,
+      "end": 316.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "guess, maybe a way of putting it is they're sort of like undervalued right now, if that makes sense, where",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 316.46,
+      "end": 317.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 317.32,
+      "end": 323.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "show some high degree of self-motivation or interest or excitement on a topic. They're sort of like obsessed with something,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 325.17,
+      "end": 327.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "which I guess like some people might just call like passion or something",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 327.43,
+      "end": 327.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 327.81,
+      "end": 327.81,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 327.95,
+      "end": 328.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 328.37,
+      "end": 332.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just want something where there was a high degree of intrinsic motivation to like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 332.75,
+      "end": 333.19,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 333.37,
+      "end": 336.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "go deep on something. And if they had a project that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 336.99,
+      "end": 337.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 337.47,
+      "end": 342.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "felt. wasn't the kind of thing that people that they could normally get funding from elsewhere.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 344.1,
+      "end": 344.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 344.56,
+      "end": 345.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so, yeah, that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 345.3,
+      "end": 346.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 346.37,
+      "end": 350.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of narrowed down the pool quite a bit. And so the kinds of things that would fund, or things like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 350.89,
+      "end": 352.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "someone",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 352.07,
+      "end": 356.83,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is working on a writing project, and this is actually",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 356.83,
+      "end": 357.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "one",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 357.47,
+      "end": 361.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of my favorite ones, is like she just like had a child and needed childcare.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 363.12,
+      "end": 363.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 363.4,
+      "end": 371.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it was just like not the kind of thing that someone would fund directly, but it's sort of like a, I guess like an extra resources capital kind of thing that like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 371.78,
+      "end": 372.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 372.4,
+      "end": 379.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you had a lot of money, you would just, you know, hire someone for childcare so you can focus on finishing your thesis or whatever, but like you can't otherwise do.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 381.48,
+      "end": 386.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "There are people who are doing like, there's one way we funded this last round who did",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 386.96,
+      "end": 388.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 388.16,
+      "end": 390.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a circus strongwoman training act,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 390.66,
+      "end": 391.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 391.04,
+      "end": 392.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is also like the kind of thing that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 392.79,
+      "end": 393.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 393.35,
+      "end": 407.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's not like she has this huge following or anything, but she's just, like, really obsessed with the idea of creating, like, a strong woman circus act, which, like, doesn't really exist right now. So, yeah, just sort of, like, there's kind of a wide range of, like, odd",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 407.37,
+      "end": 408.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 408.95,
+      "end": 414.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "interesting projects. Yeah, a lot of them were kind of more research-oriented. So people that wanted to, needed",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 414.53,
+      "end": 415.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "funding",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 415.65,
+      "end": 421.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "for, like, doing some sort of, like, strange experiment research-wise that they might not be able to justify to a more traditional.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 423.51,
+      "end": 425.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "grant funder. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 426.07,
+      "end": 427.63,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it reminds me of the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 427.63,
+      "end": 429.33,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Tyler",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 429.33,
+      "end": 443.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Cohen has this emergent ventures thing, which sounds, it sounds like a similar mindset where it's like, hey, these are places where traditional grant programs wouldn't fund you. So like, hey, crazy people or slash really passionate people or really obsessed people or whatever you want to call it,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 443.39,
+      "end": 443.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 443.71,
+      "end": 453.54,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, come here and we like we might give you money for your things that wouldn't, that. traditional grant systems wouldn't give you. So I think that's a good way to kind of narrow down the population. And I guess",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 453.54,
+      "end": 454.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 454.08,
+      "end": 457.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "coming back to like for you personally after doing this was it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 458.26,
+      "end": 458.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 458.66,
+      "end": 467.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "guess, yeah, did you feel? Did you feel like your mindset changed at all around like your relationship with money? And because you're essentially just,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 467.57,
+      "end": 467.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 467.91,
+      "end": 476.01,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "not that many people just give money away. You know, like maybe when you're older, like the society tells us to accumulate wealth and to,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 476.37,
+      "end": 476.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 477.13,
+      "end": 493.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 495.16,
+      "end": 504.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Definitely changed my relationship to money in a couple different directions. One being that, I mean, I feel like it's, I definitely like double down on my belief that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 504.48,
+      "end": 505.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 505.14,
+      "end": 511.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "should be doing, more people should just be doing more things like this. And I guess going back to that abundant mindset, like I only put in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 511.92,
+      "end": 512.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 512.92,
+      "end": 521.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "actually a small amount of this funding, like random people on the internet and friends and things like that, like, have reached out and like sponsored other grants.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 522.5,
+      "end": 522.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 522.84,
+      "end": 524.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I, yeah, I love the idea that just sort",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 524.46,
+      "end": 525.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "of like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 525.62,
+      "end": 526.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 527.64,
+      "end": 528.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "love",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 528.68,
+      "end": 531.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the idea of just like more individuals giving these sort of like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 532.08,
+      "end": 532.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 533.22,
+      "end": 539.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "medium-sized microgrants to other people around the world. And that's the sort of thing that I just kind of want to like unlock more of because,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 539.32,
+      "end": 540.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 540.16,
+      "end": 548.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I mean, like you said, I think like, Only usually like very wealthy people might be involved in the idea of patronage usually. And then you have stuff like Kickstarter that's,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 549.14,
+      "end": 550.0,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 550.0,
+      "end": 555.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "guess more like crowdfunded projects, but sort of like direct one-to-one transfers of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 555.32,
+      "end": 556.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "something",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 556.18,
+      "end": 561.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in the like thousand to multi-dollar range between people is like incredibly impactful. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 561.16,
+      "end": 561.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 561.7,
+      "end": 565.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just seems like why would more people just not like casually do that? If like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 565.32,
+      "end": 566.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 566.18,
+      "end": 575.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "some people who are not like extremely wealthy but like comfortable, you know, giving someone a thousand dollars to do something that, you know, would really change their trajectory",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 575.56,
+      "end": 576.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 576.18,
+      "end": 577.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not a crazy idea. And I would just love to see like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 577.92,
+      "end": 578.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "more",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 578.66,
+      "end": 580.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "people doing that. And that's very different from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 580.82,
+      "end": 581.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 581.56,
+      "end": 583.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "we traditionally think about philanthropy. And I think like for people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 583.7,
+      "end": 584.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 584.72,
+      "end": 584.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 584.72,
+      "end": 585.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 585.36,
+      "end": 589.1,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "guess sort of like young people in my sort of range, like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 589.1,
+      "end": 589.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "we",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 589.98,
+      "end": 591.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think about giving back or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 591.84,
+      "end": 593.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "giving",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 593.2,
+      "end": 595.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to charity as like I need to find a nonprofit to donate to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 595.72,
+      "end": 596.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or something like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 596.2,
+      "end": 596.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 596.7,
+      "end": 596.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 596.86,
+      "end": 598.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I would just like really like people to sort of like expand their.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 599.06,
+      "end": 599.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "their",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 599.26,
+      "end": 603.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "idea of like what can I actually do with my capital it doesn't always just have to be like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 603.14,
+      "end": 604.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "donating",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 604.06,
+      "end": 607.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to some feel good cause which is also like I also do that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 607.4,
+      "end": 608.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 608.2,
+      "end": 609.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "but you can get like really creative with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 609.64,
+      "end": 610.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 610.32,
+      "end": 613.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "how you how you leverage your capital so I feel like that's like one aspect in which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 613.52,
+      "end": 613.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 613.96,
+      "end": 617.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it just sort of like strengthen my belief in individual philanthropy",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 617.18,
+      "end": 618.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 618.38,
+      "end": 622.32,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "but on the other end like it also helped me realize that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 622.32,
+      "end": 623.74,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 623.74,
+      "end": 630.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "capital is kind of just one part of the equation. And I think I purposely wanted this to be very, very broad and very like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 630.39,
+      "end": 630.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "no",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 630.95,
+      "end": 632.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "strings attached in the sense that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 632.39,
+      "end": 633.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 633.85,
+      "end": 638.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just wanted to see like what the edge looked like of like super, super open and unfiltered giving.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 639.75,
+      "end": 640.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 640.15,
+      "end": 646.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "in the past couple of years, I think I've come to realize that like, and it sounds like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 646.08,
+      "end": 646.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 646.72,
+      "end": 649.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "first time I heard someone say this, I thought it was kind of ridiculous. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 649.04,
+      "end": 649.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "now",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 649.58,
+      "end": 651.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think I believe it more that like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 651.36,
+      "end": 652.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "money",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 652.2,
+      "end": 654.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is actually kind of everywhere and capital is really abundant. But like.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 654.97,
+      "end": 655.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "part",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 655.11,
+      "end": 666.57,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that's very rare is connections and getting your foot in the door and getting introduced to the right people, ending up in kind of like the right circles. And so something that I feel like I didn't get so much from healing grants is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 666.57,
+      "end": 667.85,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 667.85,
+      "end": 670.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "wanted it to be, you know, here's the money and like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 670.11,
+      "end": 670.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "go",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 670.65,
+      "end": 675.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "off and do your thing. Like, you know, you don't owe me anything. But I actually found that like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 675.39,
+      "end": 676.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 676.6,
+      "end": 677.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "would be,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 677.32,
+      "end": 677.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 677.92,
+      "end": 701.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think. more beneficial to spend more time with those grantees or just sort of like follow their trajectories more. And I think that's something that Tyler is doing with immersion Avengers, which I think is cool. Um, of just, yeah, like you, it's, it's not just giving someone a check and then walking away. It's like you should be kind of investing a little bit more in their story. And, um, yeah. And, and I think like that is an aspect of philanthropy that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 701.16,
+      "end": 702.04,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "isn't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 702.04,
+      "end": 705.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "as discussed or appreciated is it's not just about the capital. It's about like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 705.84,
+      "end": 706.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 706.58,
+      "end": 709.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "side of it. And so that's something that I feel like I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 709.54,
+      "end": 710.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "am",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 710.42,
+      "end": 713.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not getting as much from Healing Grants and that I would like to explore more.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 713.18,
+      "end": 714.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that's interesting. I think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 714.14,
+      "end": 714.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "when",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 714.94,
+      "end": 720.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "there's a bunch of juicy stuff there. The first, I mean, the first is, as you say, I think we have this mindset. And you talked about like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 720.56,
+      "end": 721.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 721.46,
+      "end": 730.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "in, you know, let's say. people in America who are pretty well off, let's call them just like a random developer or like a random person at Wall Street or whatever. It's like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 730.07,
+      "end": 730.67,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 730.67,
+      "end": 741.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "them to, you don't need to be in the top top. You don't need to be a billionaire in order to give. You know, it's like you can just, if you're making whatever, you know, like six figures a year, then you can definitely give some of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 741.29,
+      "end": 741.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "your money",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 741.53,
+      "end": 742.89,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "to people. And I think that people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 742.89,
+      "end": 743.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "don't,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 743.77,
+      "end": 747.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "they don't, it doesn't like quite click for them that they, that it's actually possible to do that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 748.17,
+      "end": 748.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 748.49,
+      "end": 758.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then the other thing that you said was, yeah, when they give, it's like, okay, if I decide. I am going to give, where can I give? And there's the traditional nonprofit thing. But as you say, it's like, no, you can just give to random people,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 759.88,
+      "end": 771.34,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "whether it's your friends or whether it's people on the internet or whatever. Like, I think that kind of, and this reminds me of one of my mentors talked about how his giving process is just so fun, like for you to look through all these,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 771.42,
+      "end": 771.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 771.76,
+      "end": 778.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "these different applications and to decide what to give to. It's just like, it's a fun, it's a fun thing to do. So I think that's, I super agree with that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 779.26,
+      "end": 779.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 779.44,
+      "end": 780.48,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "then this final piece of,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 781.15,
+      "end": 781.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 781.51,
+      "end": 783.55,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "much does the capital matter versus the connections?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 785.05,
+      "end": 785.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 220,
+      "start": 785.17,
+      "end": 785.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 221,
+      "start": 786.03,
+      "end": 787.03,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it's kind of weird when people",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 222,
+      "start": 787.03,
+      "end": 787.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "tell",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 223,
+      "start": 787.95,
+      "end": 793.13,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "us, hey, you know, capital is abundance. You know, that phrase seems",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 224,
+      "start": 793.13,
+      "end": 795.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 225,
+      "start": 795.01,
+      "end": 799.45,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of not very not true in many ways in terms of, oh, so much of America has debt and so much",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 226,
+      "start": 799.45,
+      "end": 799.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 227,
+      "start": 799.93,
+      "end": 803.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "of our, you know, national debt, you know, China owns so much of America or whatever. Like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 228,
+      "start": 803.15,
+      "end": 803.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 229,
+      "start": 803.63,
+      "end": 806.83,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "still so much need in the world. But especially for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 230,
+      "start": 806.83,
+      "end": 808.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "kind of... our",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 231,
+      "start": 808.53,
+      "end": 817.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "edge of where the future is not evenly distributed, but like an our edge, it's like it does feel like it's kind of abundant. And then as you give it to people, you can like say, hey, here's a thousand bucks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 232,
+      "start": 818.15,
+      "end": 818.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 233,
+      "start": 818.35,
+      "end": 820.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "what they actually need is those connections. I think that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 234,
+      "start": 820.11,
+      "end": 820.79,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "the",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 235,
+      "start": 820.79,
+      "end": 822.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "maybe the only differentiation I'd make is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 236,
+      "start": 822.59,
+      "end": 823.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 237,
+      "start": 823.15,
+      "end": 832.85,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you're giving to someone to support like deep basic needs, like with the Give Directly program for folks in like rural Kenya or Uganda, then the money matters a lot a lot and the connections that might not matter as much.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 238,
+      "start": 833.01,
+      "end": 833.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 239,
+      "start": 833.25,
+      "end": 839.09,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "for some of the folks that you're giving to, kind of the ecosystem of support is what matters. Is that, is that right?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 240,
+      "start": 840.16,
+      "end": 840.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 241,
+      "start": 840.72,
+      "end": 841.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I definitely think that's right.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 242,
+      "start": 841.74,
+      "end": 842.26,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 243,
+      "start": 842.26,
+      "end": 843.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "did",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 244,
+      "start": 843.1,
+      "end": 843.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 245,
+      "start": 844.2,
+      "end": 844.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 246,
+      "start": 844.56,
+      "end": 848.99,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "guess, One question I have is, did you feel like, I guess do you miss the money?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 247,
+      "start": 852.53,
+      "end": 860.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "No, and I think it's to that point that you just made about like, it's actually just really fun. Like, I don't know. I mean, it sounds a little bit cliche, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 248,
+      "start": 860.7,
+      "end": 861.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 249,
+      "start": 861.84,
+      "end": 867.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "don't think I would have just like, I don't think I would have gotten as much excitement or satisfaction. I was just buying myself something with that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 250,
+      "start": 867.7,
+      "end": 869.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "money. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 251,
+      "start": 869.22,
+      "end": 870.74,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I actually do see it as an investment,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 252,
+      "start": 871.34,
+      "end": 871.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 253,
+      "start": 871.84,
+      "end": 873.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "a financial investment in, I guess, like.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 254,
+      "start": 873.77,
+      "end": 874.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 255,
+      "start": 874.11,
+      "end": 876.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I see personal returns from, but it's sort of like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 256,
+      "start": 876.55,
+      "end": 877.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "an",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 257,
+      "start": 877.35,
+      "end": 878.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "investment into like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 258,
+      "start": 878.41,
+      "end": 879.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "our",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 259,
+      "start": 879.47,
+      "end": 885.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like public infrastructure or society or something like that where it's sort of like you're putting something down for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 260,
+      "start": 885.25,
+      "end": 885.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "hopefully",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 261,
+      "start": 885.99,
+      "end": 892.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this kind of returns back to the world somewhere, which I think is kind of a nice way to think about plantabria. So for me, it doesn't feel like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 262,
+      "start": 893.0,
+      "end": 893.96,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 263,
+      "start": 893.96,
+      "end": 897.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I could have spent this on buying myself something fun. It's more of.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 264,
+      "start": 897.97,
+      "end": 898.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 265,
+      "start": 898.25,
+      "end": 902.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just think of as like a different part of, I guess, my portfolio or where I spend money.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 266,
+      "start": 902.25,
+      "end": 911.61,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I think, well, and that's, there's this cool, um, uh, video from Kyrgyzstadt or however you say that, um, called egoistic altruism. Have you ever seen that video, by the way?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 267,
+      "start": 913.11,
+      "end": 913.45,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "That's up.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 268,
+      "start": 913.61,
+      "end": 928.13,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "It's a strange, it's a video about when you're giving, thinking about this return on investment, when most people think, okay, I have my money, I want to give to the world, and then my ROI will definitely be in dollars back to me eventually. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 269,
+      "start": 928.13,
+      "end": 928.61,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 270,
+      "start": 928.61,
+      "end": 935.36,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "actually, as you say, all these other ways to get ROI in the world that aren't as easily measurable, which is like, If you give money to people, then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 271,
+      "start": 935.36,
+      "end": 936.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "they're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 272,
+      "start": 936.14,
+      "end": 941.3,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "contributing more to their communities. And then those communities are stronger. And then you're part of that community as well. And so maybe, like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 273,
+      "start": 941.5,
+      "end": 941.64,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 274,
+      "start": 941.64,
+      "end": 945.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "know, it will eventually come back to you. And this is kind of the idea in egoistic altruism is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 275,
+      "start": 945.68,
+      "end": 946.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 276,
+      "start": 946.3,
+      "end": 962.93,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you bring other people up to your level. then they will be trying to go for the same goals as you. Like, let's say I want to solve cancer or whatever. It's like if I make more people that also want to solve cancer and don't need to think about and can think about those long-term goals rather than like their basic needs, then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 277,
+      "start": 962.93,
+      "end": 963.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "my",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 278,
+      "start": 963.65,
+      "end": 966.97,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "goal, which is to solve cancer, a really impactful way to do that is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 279,
+      "start": 966.97,
+      "end": 967.35,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "by...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 280,
+      "start": 967.31,
+      "end": 972.71,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "letting other people try to solve that problem too. And so I think there's a lot in this bucket. It's kind of weird to think about, but it's from",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 281,
+      "start": 972.71,
+      "end": 973.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 282,
+      "start": 973.37,
+      "end": 974.23,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "weird mindset of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 283,
+      "start": 974.23,
+      "end": 974.97,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "giving",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 284,
+      "start": 974.97,
+      "end": 982.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "to people. And then eventually the money kind of comes back around. You get your return on investment, but it's not in the traditional like dollars back in your bank account way, which is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 285,
+      "start": 982.43,
+      "end": 982.91,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 286,
+      "start": 982.91,
+      "end": 985.37,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "kind of, it's hard to think about like that. So I've",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 287,
+      "start": 985.37,
+      "end": 986.27,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "moving",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 288,
+      "start": 986.27,
+      "end": 992.75,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "from your mindset a bit away into like the friend mindset, did you feel like something that I've, so I've given.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 289,
+      "start": 993.44,
+      "end": 993.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 290,
+      "start": 993.84,
+      "end": 999.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "as much money as you, but I've given various amounts of money to random people on the internet and or to various nonprofit things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 291,
+      "start": 999.02,
+      "end": 999.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 292,
+      "start": 999.42,
+      "end": 1002.66,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "think that self-taxing is an important thing that our society should do.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 293,
+      "start": 1003.18,
+      "end": 1003.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Do",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 294,
+      "start": 1003.42,
+      "end": 1008.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you think that, but something that's been awkward is when I tell my friends, like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 295,
+      "start": 1008.88,
+      "end": 1009.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "right",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 296,
+      "start": 1009.56,
+      "end": 1037.97,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "now in society, you're allowed to tell your friends, hey, I'm a vegetarian because I'm doing good for the environment. And it doesn't feel as moralizing, perhaps. But if you say, hey, friends, like, I'm giving away my money to people. And like, you can too. There's kind of this weird vibe to it of like, oh, are you trying to get, are you better than me? You're trying to give away. You're giving away money and I'm not a whatever. What has been your experience as you've talked, have you talked about this with your friends? What has been your experience in terms of their response to your giving?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 297,
+      "start": 1039.06,
+      "end": 1039.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 298,
+      "start": 1039.38,
+      "end": 1041.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "really glad you brought up this question because, yeah, I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 299,
+      "start": 1041.9,
+      "end": 1043.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "totally",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 300,
+      "start": 1043.14,
+      "end": 1052.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "have had a similar experience. I don't exactly know how to talk about it or what the takeaway is. But I think it comes down to this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 301,
+      "start": 1052.46,
+      "end": 1053.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "thing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 302,
+      "start": 1053.54,
+      "end": 1061.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "about like, well, the only people that usually just are like blatantly give away their money is usually like super, super wealthy people. And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 303,
+      "start": 1061.26,
+      "end": 1062.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 304,
+      "start": 1062.12,
+      "end": 1064.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "but then like obviously the amounts I'm doing are not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 305,
+      "start": 1064.24,
+      "end": 1064.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 306,
+      "start": 1064.82,
+      "end": 1066.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "evocative of someone who is super super",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 307,
+      "start": 1066.6,
+      "end": 1067.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "wealthy. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 308,
+      "start": 1067.92,
+      "end": 1079.25,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so and so you're and because it's not really like a common thing to do for someone in I guess like my socioeconomic class. It's, yeah, it just, like, I think other people don't necessarily know what to do with it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 309,
+      "start": 1080.38,
+      "end": 1080.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 310,
+      "start": 1080.86,
+      "end": 1085.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I mean, for the most part, it's been, like, really, really positive. And there hasn't been anything directly negative except that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 311,
+      "start": 1085.8,
+      "end": 1087.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 312,
+      "start": 1087.36,
+      "end": 1087.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I mean,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 313,
+      "start": 1087.68,
+      "end": 1088.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I've",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 314,
+      "start": 1088.26,
+      "end": 1094.18,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "just gotten, I guess, a lot of solicitations from people who think I, like, must have",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 315,
+      "start": 1094.18,
+      "end": 1094.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 316,
+      "start": 1094.72,
+      "end": 1095.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "lot more money than I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 317,
+      "start": 1095.82,
+      "end": 1096.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "do to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 318,
+      "start": 1096.24,
+      "end": 1116.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "do something as just, like, giving thousands of dollars away to strangers, which I don't at all. And so that's sort of an awkward thing to navigate. And then, yeah, there's, I can, yeah, I sort of just, like, sense that awkwardness a little bit in conversation sometimes with people. And, yeah, I'm not sure how to talk about it except to continually, like, reemphasize that I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 319,
+      "start": 1116.45,
+      "end": 1117.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "not, like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 320,
+      "start": 1118.82,
+      "end": 1127.0,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I'm not super wealthy. And it's just sort of like an experiment that I like doing. But even that, I feel like is almost like an apology or justification, which I don't feel like I should have to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 321,
+      "start": 1127.0,
+      "end": 1129.11,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "do. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 322,
+      "start": 1129.15,
+      "end": 1129.29,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "it's like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 323,
+      "start": 1129.39,
+      "end": 1130.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "why should you apologize for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 324,
+      "start": 1130.47,
+      "end": 1132.73,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "giving money to people? Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 325,
+      "start": 1132.85,
+      "end": 1133.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's just kind of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 326,
+      "start": 1133.29,
+      "end": 1133.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 327,
+      "start": 1133.41,
+      "end": 1137.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "strange thing. And it's, and like, I mean, it's funny that like with other,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 328,
+      "start": 1138.73,
+      "end": 1139.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 329,
+      "start": 1139.09,
+      "end": 1142.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "funny that it's just like a really awkward thing to talk. It shouldn't be because it's like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 330,
+      "start": 1142.13,
+      "end": 1143.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you're",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 331,
+      "start": 1143.05,
+      "end": 1151.85,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "doing interesting things for other people and enabling them. And like that's kind of, it's like a fun project that to talk about. But like it's made me want to be more private about it just because,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 332,
+      "start": 1152.29,
+      "end": 1153.23,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 333,
+      "start": 1153.31,
+      "end": 1157.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I don't, I don't know. I don't really want to send like weird signals in any direction.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 334,
+      "start": 1157.49,
+      "end": 1157.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 335,
+      "start": 1158.01,
+      "end": 1158.43,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think it's.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 336,
+      "start": 1158.92,
+      "end": 1159.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 337,
+      "start": 1159.18,
+      "end": 1169.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I think that at a base level, even if you weren't giving away money, just purely talking about money, people find that a little bit awkward, you know, and then you're like, oh, like, how much do you make me or how much money is in your bank account? Like, people don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 338,
+      "start": 1169.82,
+      "end": 1170.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "answer",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 339,
+      "start": 1170.52,
+      "end": 1171.46,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "those questions",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 340,
+      "start": 1171.46,
+      "end": 1172.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 341,
+      "start": 1172.92,
+      "end": 1181.06,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": null,
+      "privacy_status": "withheld_automated_screen"
+    },
+    {
+      "index": 342,
+      "start": 1181.06,
+      "end": 1181.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like...",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 343,
+      "start": 1181.66,
+      "end": 1184.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "act and like kind of hyper aggressive with the transparency there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 344,
+      "start": 1185.1,
+      "end": 1185.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 345,
+      "start": 1185.34,
+      "end": 1191.08,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "think that's worked out okay. You kind of can push through the awkwardness by just being hyper, hyper transparent.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 346,
+      "start": 1191.86,
+      "end": 1192.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 347,
+      "start": 1192.3,
+      "end": 1194.94,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "think that an awkward piece in a difference maybe between you and I is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 348,
+      "start": 1194.94,
+      "end": 1195.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 349,
+      "start": 1195.42,
+      "end": 1200.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "me, kind of I'm a low level think that it would be good if everybody did it. And so I'm like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 350,
+      "start": 1200.44,
+      "end": 1201.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "pseudo",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 351,
+      "start": 1201.12,
+      "end": 1210.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "trying to peer pressure everybody into doing it. Well, for you, it sounds like it's more of just like an experiment that you're into and that you found fun. Is that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 352,
+      "start": 1210.16,
+      "end": 1210.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "accurate?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 353,
+      "start": 1211.77,
+      "end": 1216.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I definitely do want more people to do, which I think is where I'm trying to like navigate the weirdness of it. In",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 354,
+      "start": 1216.89,
+      "end": 1217.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "my",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 355,
+      "start": 1217.65,
+      "end": 1225.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "mind, when I started doing it, it was like, hey, like, I'm just kind of a random person who's doing this thing. Like, you too can also do it. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 356,
+      "start": 1225.31,
+      "end": 1225.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 357,
+      "start": 1225.95,
+      "end": 1239.17,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think instead it's kind of in some ways being taken as like, oh, you're capable of doing this, but I'm not. And yeah, I really want to get over that hump to say like, this is actually something I think should be normalized. It's not that I'm doing something exceptional. It's that like.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 358,
+      "start": 1239.47,
+      "end": 1239.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 359,
+      "start": 1239.71,
+      "end": 1240.93,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "would just like more people to be doing",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 360,
+      "start": 1240.93,
+      "end": 1241.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 361,
+      "start": 1241.11,
+      "end": 1250.11,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, exactly. It's not like you're trying to be like, look, I'm so special. It's just like, look, I feel like most of us could probably do this. Yeah, one other piece here, which I think is fascinating is",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 362,
+      "start": 1250.11,
+      "end": 1250.75,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 363,
+      "start": 1250.75,
+      "end": 1263.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "this whole, there's a balance between, thinking about virtue signaling and thinking about, okay, if we're out there in the world, it's like, hey, I'm a person who does good things, am I allowed to talk about those good things? And there's like, on one side, it's like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 364,
+      "start": 1263.25,
+      "end": 1263.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 365,
+      "start": 1263.87,
+      "end": 1282.74,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "are people who are hyper aggressive in terms of they're not actually doing that good of things, but they, like, talk about the things that they're doing and make it seem like they're super virtuous. But on the other end, it's like if you are doing virtuous things that are super impactful, then those should be shared. And so like, how do you think about this like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 366,
+      "start": 1282.74,
+      "end": 1283.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 367,
+      "start": 1283.62,
+      "end": 1291.32,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "virtue signaling in general and like this balance between like sharing that you've had impact? Yeah. Any thoughts on virtue signaling?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 368,
+      "start": 1293.13,
+      "end": 1293.45,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 369,
+      "start": 1295.45,
+      "end": 1309.98,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think it's useful when it incentivizes other people to do. something similar, which is, I think, like, one of the things I've most enjoyed is not just giving grants, but also seeing other people pitch in grants has been, like, to me, that's almost like the more impactful part of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 370,
+      "start": 1309.98,
+      "end": 1310.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 371,
+      "start": 1310.5,
+      "end": 1318.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you can encourage other people to kind of, like, match your purchasing thing. That's, that's a good thing. But then on the other hand, yeah, I'm just like a very,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 372,
+      "start": 1318.35,
+      "end": 1318.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 373,
+      "start": 1318.81,
+      "end": 1328.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think probably like overly private person about, like, my personal life and circumstances and things like that. So, like, I don't really want to, yeah, it's just sort of a tradeoff of, like, how much do you,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 374,
+      "start": 1329.02,
+      "end": 1329.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 375,
+      "start": 1329.58,
+      "end": 1335.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "at what point does it stop being beneficial and actually and just sort of be net negative on my life? I try to sort of like think of it as an equation of",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 376,
+      "start": 1335.94,
+      "end": 1336.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "there",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 377,
+      "start": 1336.44,
+      "end": 1337.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "are definitely advantages, but um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 378,
+      "start": 1338.96,
+      "end": 1339.32,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 379,
+      "start": 1339.32,
+      "end": 1343.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "at what point does it become like unbearable for me versus like I'm just kind of a little bit uncomfortable.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 380,
+      "start": 1343.52,
+      "end": 1348.78,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep, yeah, yeah, exactly. Okay, well, interesting. Well, so I hope that this conversation for our listeners was a way to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 381,
+      "start": 1348.78,
+      "end": 1349.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "say,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 382,
+      "start": 1349.68,
+      "end": 1399.19,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "hey, here are two people that exist on the internet who are actively giving away some of their money. And they don't have necessarily that much, but we clearly have a lot in the big scheme of things. And you too can either give money to random people on the internet or give money to nonprofits or whatever. And you can choose whether you signal it to others. Okay, so let's transition to funding public infrastructure. And the funny thing about this is Nottie and I have actually been dealing with some audio issues for our calls. So this is a perfect time to chat about this stuff. So, and the question that you have here is how do we design a sustainable internet? You had this great report with the 4. Foundation two and a half years ago, roads and bridges. So could you kind of explain the ideas and the theses in roads and bridges and then also talk about how things have changed in the last two and a half years?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 383,
+      "start": 1399.75,
+      "end": 1399.97,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yes.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 384,
+      "start": 1401.47,
+      "end": 1413.21,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So initially I think I didn't, I kind of came at it from a very specific head sound kind of perspective, which was talking to maintainers of open source projects and realizing that like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 385,
+      "start": 1414.15,
+      "end": 1414.51,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "open",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 386,
+      "start": 1414.51,
+      "end": 1421.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "source was not really as well supported as we thought it was going to be. And the way it kind of came into that was just, I was looking for things in tech that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 387,
+      "start": 1421.03,
+      "end": 1422.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "didn't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 388,
+      "start": 1422.93,
+      "end": 1430.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "fall into the venture capital funding bucket, but we're still providing a lot of value to society. Because I felt like there had to be some sort of like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 389,
+      "start": 1430.51,
+      "end": 1431.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "overlap",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 390,
+      "start": 1431.47,
+      "end": 1449.2,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "there. But I felt like among my friends in working in startups and working venture capital, like the assumption was that if anything is valuable on technology, like you should be able to find venture funding for it. And there's an assumption that, any sort of like valuable tech contribution has some sort of potential for a high value return.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 391,
+      "start": 1449.72,
+      "end": 1450.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 392,
+      "start": 1450.2,
+      "end": 1456.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so that's how I didn't, I wasn't expecting to find or to land on open source at that point. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 393,
+      "start": 1456.58,
+      "end": 1457.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 394,
+      "start": 1457.54,
+      "end": 1482.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "kind of like, yeah, came into that whole section of the internet as sort of like, oh, there are all these open source projects that basically all the software that we're using and even from, I guess like. proprietary companies. So if you think about like Facebook or Google or Amazon or whomever, like all of them are in turn relying upon this sort of like complex web of different open source projects that are coupled together and that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 395,
+      "start": 1482.94,
+      "end": 1483.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "all",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 396,
+      "start": 1483.86,
+      "end": 1485.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "companies are building on top of.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 397,
+      "start": 1485.8,
+      "end": 1486.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 398,
+      "start": 1486.2,
+      "end": 1503.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so I was thinking of this sort of as a version of like digital infrastructure that is supporting all of us and all of our activities on the internet the same way we have like an electric grid or any other sort of like roads or bridges or things like that. in our physical world that are supporting our ability to get around and communicate with each",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 399,
+      "start": 1503.82,
+      "end": 1504.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "other.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 400,
+      "start": 1505.42,
+      "end": 1514.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And so, yeah, the report that I did with the Ford Foundation in 2016 was called Rosenbridges and was just trying to draw this parallel between saying",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 401,
+      "start": 1514.28,
+      "end": 1516.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 402,
+      "start": 1516.45,
+      "end": 1519.19,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "stuff isn't like hobbyist type work anymore.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 403,
+      "start": 1520.49,
+      "end": 1520.57,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 404,
+      "start": 1520.57,
+      "end": 1541.41,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think people just don't really like see or talk about open source that much. Software developers are kind of just like pulling this stuff into their code and not really thinking about where it all comes from. Like why do you have all these libraries that are immediately available to you? Where do your programming languages come from? Like who is actually creating and maintaining all of this stuff that we're using that makes it very easy for developers to build new things on top of it that they can then monetize?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 405,
+      "start": 1543.36,
+      "end": 1543.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 406,
+      "start": 1543.72,
+      "end": 1577.33,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "yeah, it was basically just trying to like shine a light on that and make a point that this is sort of an area that we're not really discussing, specifically with regard to open source developers and the fact that like, I mean, this stuff is either not at all funded or not very well funded. And then like regardless of funding, it's just like a really difficult, thankless kind of job. No one really like sees the stuff that they're doing and no one really appreciates it. But then like more broadly, I think the goal or purpose is to point out that we do have this idea of like digital infrastructure. And I think that's not just open source code, but it's a lot of other things",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 407,
+      "start": 1577.33,
+      "end": 1579.01,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 408,
+      "start": 1579.01,
+      "end": 1590.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the internet is enabling and that if we think about sort of like we have this sort of like, internet side of our lives or our world, that is a parallel to our physical world,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 409,
+      "start": 1592.56,
+      "end": 1602.04,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like, where, yeah, where is all that infrastructure? Like, what sort of sorts of things do we need to be supporting to ensure that we're able to communicate with each other and create all the things that we want to create on the internet?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 410,
+      "start": 1603.04,
+      "end": 1603.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 411,
+      "start": 1603.4,
+      "end": 1607.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "yeah, the response has been over the past couple years, like, way",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 412,
+      "start": 1607.46,
+      "end": 1608.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "better",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 413,
+      "start": 1608.86,
+      "end": 1616.02,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "than I could have hoped. I really was just sort of trying to, like, document. the conversations I had been having with open source developers at the time and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 414,
+      "start": 1616.02,
+      "end": 1617.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "had",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 415,
+      "start": 1617.54,
+      "end": 1622.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not really expected that I'd get the response that I did. So that was really great. And I do think that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 416,
+      "start": 1622.52,
+      "end": 1623.54,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "at",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 417,
+      "start": 1623.54,
+      "end": 1626.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this stage, I don't, the most, I guess,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 418,
+      "start": 1627.36,
+      "end": 1627.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 419,
+      "start": 1627.7,
+      "end": 1660.99,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "way that I feel the impact the most is that I don't have to really explain the problem that much anymore to people in the software industry. And they'll often come to me first being like, well, you know, open source is not that well supported or like, you know, sustainability really matters in open service. And that's the part I think where I feel happiest is just sort of like. having it be an issue that people will talk about and like every solution for each open source project is just different. I don't think there's just like one blanket answer to like all the world of problems, but the fact that it's sort of like a top of mind problem and something that people are thinking and talking about is really important to me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 420,
+      "start": 1661.49,
+      "end": 1753.12,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that's cool. I think and An interesting thing that I learned in the piece is that in 2010, only 40% of software projects of whatever, like 1,300 surveyed, said that the products that they're building for customers were built on open source. So in 2010, it was only 40%, but then in 2015, it had doubled to 80%. And so it's like, woo, you know, a lot of people are building stuff with open source as a part of their stack to some extent. And I think that, as you say, it's become more... clear in these last couple years with various like the open or the open SSL hack and whatever. And most recently there's been in the crypto world, there's this node package manager that was this a new, someone who is not maintaining a certain module, copay dash dash. He wasn't really maintaining it because he doesn't get paid. And then this other person says, hey, I'll maintain it. And the person was like, oh, yeah, sweet, you can maintain it. And then that person added an injection that would like send Bitcoin. from people's wallets to folks. And that was a big, could have been, luckily, nothing that bad happened from it. But I think that was a great example of, like, what the open source maintainer lifestyle is like, which is like, look, I was excited by this back in the day. I wasn't paid for it. Now I don't do it anymore. And I haven't done it for a couple years. And this random person said they wanted to help. And so, yeah, of course I gave him the thing. And then it turns out, because everything is so complex and interconnected, that person could then use an injection that would then send Bitcoin to them. So like, what do you think about that hack and like, and especially thinking about like funding stuff within the crypto ecosystem or how the crypto ecosystem changes this, this open",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 421,
+      "start": 1753.12,
+      "end": 1754.14,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "source economic and mindset?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 422,
+      "start": 1755.17,
+      "end": 1765.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, it's, um, the, the recent surf event stream, um, that module was really interesting that I think it just highlighted just how complicated the whole problem is, whereas I feel like with,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 423,
+      "start": 1765.39,
+      "end": 1766.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "um,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 424,
+      "start": 1766.53,
+      "end": 1791.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "heartbleed, it was very, I think in that case it was more the open SSL hack. It was like a much, or vulnerability. It was much more clearly a case of like this is a really critical and underfunded kind of project. And I found this story with Dominic Tar to be interesting because it wasn't just really about money. It was also about the fact that, I mean, he maintains like hundreds of models. And this is I think something more particular to the NPM ecosystem. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 425,
+      "start": 1791.06,
+      "end": 1791.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 426,
+      "start": 1791.98,
+      "end": 1818.12,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "wasn't just that. he wasn't getting paid to maintain that particular module. And he himself was like, you know, this isn't even like my best work. This is just sort of one of many things that I maintain. But it's that his attention has just spread over so many different smaller projects. Like a maintainer's attention is just like really, really finite. And I think the fact that he handed over to someone else was he followed best practices exactly here, which is like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 427,
+      "start": 1818.56,
+      "end": 1818.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 428,
+      "start": 1818.9,
+      "end": 1825.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "wasn't that he was lazy or that he just like didn't care or something like that, but it was more that like this is a thing like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 429,
+      "start": 1825.42,
+      "end": 1826.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "in",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 430,
+      "start": 1826.08,
+      "end": 1842.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "open source as considered to be a best practice is if someone asks to help you out, you should just be like trusting strangers. Like he followed the protocol exactly. And in fact, like this often happens with projects and it turns out to be just fine, which is why they recommend doing it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 431,
+      "start": 1843.66,
+      "end": 1844.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "The",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 432,
+      "start": 1844.14,
+      "end": 1844.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "fact that.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 433,
+      "start": 1845.02,
+      "end": 1845.5,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 434,
+      "start": 1845.5,
+      "end": 1854.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "is considered to be a best practice is really what the problem is to me. And he wrote Domna Gross, this really great statement about the whole situation where he said something like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 435,
+      "start": 1855.35,
+      "end": 1856.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "he,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 436,
+      "start": 1857.13,
+      "end": 1895.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "One time he was like working as a dishwasher and he made the mistake of being too competent. He got promoted. But the pay rise was only like 50 cents an hour or something of that and he came with all these responsibilities. And he was saying like that is basically what it's like to be an open source maintainer where you, you know, you write something maybe for yourself or because you kind of want to share it out. And it becomes really, really popular. And the only thing you get back in exchange for it being really popular is just like more work to do. And there's no incentive to actually like continue doing that work. What else do you get from it once the project becomes popular? And so it's this really interesting sort of phenomenon where I think normally when we think about consumer demand rising,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 437,
+      "start": 1896.6,
+      "end": 1898.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the incentive to produce should increase.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 438,
+      "start": 1899.32,
+      "end": 1899.72,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 439,
+      "start": 1899.72,
+      "end": 1911.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "should like want to meet that consumer demand. But instead what you see with not just open source maintenance, but I think it's true for like content production in general, like do you see some sort of like the producer seems some sort of like benefit for a while? And then at some point.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 440,
+      "start": 1912.33,
+      "end": 1912.65,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "even",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 441,
+      "start": 1912.65,
+      "end": 1918.15,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "as consumer demand is increasing for the thing that you made, then your desire to keep producing it just like tanks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 442,
+      "start": 1918.95,
+      "end": 1919.93,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And that's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 443,
+      "start": 1919.93,
+      "end": 1926.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "basically exactly what happened. So, yeah, I think, like, in particular with this story, it just showed that it was really complicated and that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 444,
+      "start": 1927.33,
+      "end": 1927.53,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 445,
+      "start": 1927.95,
+      "end": 1953.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "he was following best practices. Money could have helped in a broader sense for him, but not for that one particular project because it was so small. And then it really underscores just sort of like open source at scale doesn't look like open source from... the good old days of like, you know, early free software or something like that like you can't just hand the stuff off to a stranger because sometimes strangers on the internet when you're dealing with like millions of people like are not always going to do nice things.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 446,
+      "start": 1953.82,
+      "end": 1954.18,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 447,
+      "start": 1954.36,
+      "end": 1957.68,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And I think in the, and as you say, once you as the.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 448,
+      "start": 1959.42,
+      "end": 2040.01,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "the magnitude of the impact of these decisions gets larger. It's like if it was only sending, you know, and receiving information off the internet, that's one thing. But once you add in money as a component here, then that gets very sketchy because then you're like, and I'm thinking about like formal verification, you think about when you want to formally verify things is when you have high dollars per lines of code. So this is something like, you know, rocket chips have a high, there's not that much code, but rocket chips are super expensive. And so you should probably formally verify it or something like, you know, in cryptocurrency world, lots of money going. going across it. So if possible, if you can formally verify it, that's great. And I think within this, as more things get injected with the crypto web of value and the network of value, the downside of mistakes within the open source ecosystem or mistakes or vulnerabilities or whatever will go up. So I guess one final question to wrap up here and then we'll be done is, do you... You know, connecting back to crypto in another way, I know you did a recent post and some research on a lot of different crypto grant programs, like, you know, the Zcash Foundation grant program and I think Dash and maybe Monaro. How are you thinking about grant program, and you work for protocol labs and they have file coin or whatever? How are you thinking about, you know, the crypto grant ecosystem in general and how it relates to your work with roads and bridges?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 449,
+      "start": 2041.71,
+      "end": 2046.37,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think crypto is useful, sort of as like one of these, I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 450,
+      "start": 2046.37,
+      "end": 2047.37,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "don't",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 451,
+      "start": 2047.37,
+      "end": 2058.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "actually know what they're called, but like an ink dye test kind of thing where like you inject ink and then you kind of like see where it kind of like travels around on the system or something like that. Because there is money attached to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 452,
+      "start": 2058.43,
+      "end": 2059.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 453,
+      "start": 2060.04,
+      "end": 2062.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "version of open source technology in a way that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 454,
+      "start": 2062.68,
+      "end": 2063.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "with",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 455,
+      "start": 2063.82,
+      "end": 2074.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "the rest of open source technology, maybe it's just not as obvious. I think it will like sort of like force a lot of interesting issues and I guess like reflections on",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 456,
+      "start": 2074.44,
+      "end": 2075.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 457,
+      "start": 2075.52,
+      "end": 2077.38,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what does the entire open source ecosystem look",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 458,
+      "start": 2077.38,
+      "end": 2078.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 459,
+      "start": 2078.5,
+      "end": 2078.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 460,
+      "start": 2078.84,
+      "end": 2080.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "grant",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 461,
+      "start": 2080.1,
+      "end": 2082.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "programs in crypto projects are like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 462,
+      "start": 2082.86,
+      "end": 2083.88,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "not",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 463,
+      "start": 2083.88,
+      "end": 2100.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "necessarily replicable for a lot of open source projects because a lot of them just like, I mean, crypto has like the luxury of being able to fund a lot of things and just has its like flood of capital, which. like doesn't necessarily translate back to the rest of open source ecosystem, but you can kind of look at it as a sort of like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 464,
+      "start": 2100.03,
+      "end": 2100.99,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 465,
+      "start": 2100.99,
+      "end": 2119.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "snapshot into the future or something like that to say, well, if an open source project did have an abundance of money, like how would they spend it or what would those patterns look like? And so I kind of see it as a sort of like separate thing you can kind of put under the microscope and use to understand some of the more like theoretical unanswered questions in the rest of open source.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 466,
+      "start": 2120.77,
+      "end": 2121.09,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 467,
+      "start": 2121.09,
+      "end": 2121.87,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "won't.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 468,
+      "start": 2122.13,
+      "end": 2122.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "try",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 469,
+      "start": 2122.59,
+      "end": 2124.91,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "to project into the future of like how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 470,
+      "start": 2124.91,
+      "end": 2126.05,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "how",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 471,
+      "start": 2126.82,
+      "end": 2129.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "much those two worlds are actually going to overlap or converge.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 472,
+      "start": 2131.1,
+      "end": 2131.66,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 473,
+      "start": 2131.66,
+      "end": 2131.96,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "think",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 474,
+      "start": 2131.96,
+      "end": 2132.84,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 475,
+      "start": 2132.84,
+      "end": 2135.06,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "would be great if crypto could be",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 476,
+      "start": 2135.06,
+      "end": 2136.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "this",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 477,
+      "start": 2136.26,
+      "end": 2144.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sort of like business model for a lot of open source projects, but I not necessarily, I think to some extent it's all just going to be kind of different.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 478,
+      "start": 2146.22,
+      "end": 2146.78,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 479,
+      "start": 2146.78,
+      "end": 2162.53,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think it's, at least for now, the useful part is that it's something that we can watch and learn from and just try to like understand like where are, where is all that ink traveling around the system and, um, and yeah, what are all these different patterns of behavior that we can observe and, and maybe draw some learnings from.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 480,
+      "start": 2162.86,
+      "end": 2163.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 481,
+      "start": 2163.32,
+      "end": 2209.24,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I like that. I think, yeah, the patterns of ink, it's like, now that everything has bug bounties on it, essentially with money behind them, well, then the people will find the vulnerabilities. And then, as you say also, it's like, if we start to do these weird worlds, it's like if we hypercapitalize some of these weird open source projects, what happens? I don't know. We're going to find out. It hasn't been done before, so we'll see what goes down. So with that, Nadia, thank you again for being on the show today and both chatting about the... how we can, you know, self-tax ourselves and give money back to the system and how, you know, open source, you know, internet infrastructure, the economics of that and in the business models there. And by the way, if you want to give, you can give to open source. You can connect one to two by giving to open source. One final question for you, just where should people find you like on Twitter?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 482,
+      "start": 2210.64,
+      "end": 2216.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Twitter handles Nyafia, so at N-A-Y-A-F-I-A.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 483,
+      "start": 2217.31,
+      "end": 2220.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Boom, perfect. And anything else do you want to say before you wrap?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 484,
+      "start": 2221.13,
+      "end": 2221.43,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "No,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 485,
+      "start": 2221.57,
+      "end": 2222.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "this is great. Thanks for talking with me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 486,
+      "start": 2222.99,
+      "end": 2228.15,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, excited to have you on. And thank you all for listening, and we'll see you next time on Gray Mirror. Goodbye, everybody.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 487,
+      "start": 2228.93,
+      "end": 2229.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Bye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 488,
+    "withheld": 2,
+    "published": 486
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}

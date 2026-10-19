@@ -1,0 +1,2034 @@
+{
+  "schema_version": 1,
+  "id": "podcast-f07088cc2d73effc4b48",
+  "title": "#15 Jordan Leigh: Listen to This Devcon3 Primer on Your Flight to Cancun (S1 Ep2)",
+  "published_at": "2017-10-30T22:02:39Z",
+  "source_url": "https://soundcloud.com/the-rhys-show/15-jordan-leigh-listen-to-this-devcon3-primer-on-your-flight-to-cancun-s1-ep2",
+  "audio_source_kind": "rss_audio",
+  "rss_feed_url": "https://feeds.soundcloud.com/users/soundcloud:users:46689666/sounds.rss",
+  "rss_enclosure_url": "https://feeds.soundcloud.com/stream/349340297-the-rhys-show-15-jordan-leigh-listen-to-this-devcon3-primer-on-your-flight-to-cancun-s1-ep2.mp3",
+  "youtube_id": "IlWVmHAe2J0",
+  "youtube_url": "https://www.youtube.com/watch?v=IlWVmHAe2J0",
+  "audio_sha256": "92650fc96735f9add50cf75e8158ca535e57bd50a74d40e522a6c4be1c8f8e64",
+  "audio_duration_seconds": 1856.8098125,
+  "pins": {
+    "asr": [
+      "Systran/faster-distil-whisper-large-v3",
+      "c3058b475261292e64a0412df1d2681c06260fab"
+    ],
+    "diarization": [
+      "nvidia/Nemotron-3-Diarization",
+      "f667ed73aee57d40cc39428eb768b4fd87a0a29e"
+    ],
+    "voice": [
+      "microsoft/wavlm-base-plus-sv",
+      "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e"
+    ]
+  },
+  "collection": "podcasts_youtube",
+  "word_alignment": {
+    "words": 5802,
+    "unknown_words": 133,
+    "unknown_words_fraction": 0.022923129955187867,
+    "basis": "upstream_word_diarization_alignment_not_human_audit"
+  },
+  "rhys_speaker_id": "speaker_0",
+  "identity_basis": "upstream_authoritative_speaker_id_not_inferred_from_text",
+  "turns": [
+    {
+      "index": 0,
+      "start": 0.4,
+      "end": 1.24,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 1,
+      "start": 1.84,
+      "end": 16.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Today we talk with Jordan Lee around the zeitgeist surrounding kind of DevCon 3, the differences for how crazy different things were just a year ago at DevCon 2, and we even cover some tips for asking questions at the conference. So enjoy and hope to see you at DevCon 3.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 2,
+      "start": 29.96,
+      "end": 30.38,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Hello,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 3,
+      "start": 30.74,
+      "end": 65.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "everyone. My name is Reeslin Mark, and you're listening to another episode of Creating a Humanist Blockchain Future. And in this podcast, we take a systems thinking approach to doing good in the world. And so we have a couple different series that focus on different system scopes. And today's series is series C on software systems, where we dive into code and ask the question, how are the machine systems structured? And today, I'm excited to talk with Jordan Lee about DevCon3. And Jordan is a software engineer at ConsenSys, who also does these really, really clear Ethereum educational videos through his web channel, Decipher Media. Jordan, welcome, and thanks for being on the show.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 4,
+      "start": 66.67,
+      "end": 67.79,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Cool. Thanks for having me on, Reese.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 5,
+      "start": 68.47,
+      "end": 103.49,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, so... I was just excited to do this podcast because, you know, kind of think about DevCon 3 as like a primer. And, you know, something that someone could listen to on the plane to get excited to kind of get ready for DevCon 3, and especially for someone like me who hasn't really been to DevCon before. And I think for a lot of people in the ecosystem these days, you know, given 2017 and the rise of the ICO and what have you, I think there's going to be a lot of new people coming into the atmosphere here. So let's kind of start at a high level. And Jordan, could you kind of give us a... the context of like, where is Ethereum at right now, especially kind of leading into DevCon 3?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 6,
+      "start": 104.86,
+      "end": 105.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 7,
+      "start": 105.38,
+      "end": 106.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "sure. I'll do my best.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 8,
+      "start": 107.32,
+      "end": 107.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 9,
+      "start": 107.54,
+      "end": 107.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "there's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 10,
+      "start": 107.72,
+      "end": 108.36,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "a lot of context.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 11,
+      "start": 108.92,
+      "end": 118.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "If we rewind a year ago, I guess, DevCon 2 in Shanghai, China, the price of ether was around $10, I think. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 12,
+      "start": 118.44,
+      "end": 119.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "as",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 13,
+      "start": 119.42,
+      "end": 199.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "far as I know, like, Auger was probably the only company that had done an ICO at the time, and they had raised a couple million dollars, I think $5 million or something like that. And if you fast forward to now, going to DevCon 3, the price of ether is $300 and there's been, you know, multiple billions of dollars raised in ICO projects. So the order of magnitude at which the Ethereum project is at, not only in terms of the money involved, but just the kind of like zeitgeist impact of it is just an order of magnitude higher. I mean, I'm going to be really interested in kind of how that dichotomy manifests itself at the actual tech conference. Because DevCon is a tech conference. It's a conference about technology. And there's kind of two competing forces in Ethereum right now. There's the underlying technology, which is a bunch of nerds building computer software. And then there's this kind of like marketing wing that's evangelizing the technology and the social impact it will make and getting normal people excited about it. And people hearing about, you know, these crazy numbers and ICOs and how those things will kind of manifest itself at a tech conference is going to be really interesting to say. So I'm just curious to, like, get the kind of high-level vibe of the conference.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 14,
+      "start": 199.41,
+      "end": 257.38,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, I love that. I think that, I mean, I think you're right to say that. The order of magnitude, as you said, and for me, not being around in 2016, it was like, wow, you know, like only, you know, $5 million through Auger. The price of ether is $10. And yeah, billions of dollars in here. The zeitgeist, as you said, is totally different. And what you're saying around the conference, I think is interesting because, you know, I went to Consensus, the one put on my coin desk earlier this year in May, and that had a similar vibe where you had the, like, crypto anarchist, Bitcoin Maximilist people, and then the banks kind of coming in. And, like, you have a similar kind of two-ed. system here, but within Ethereum where you have the developers and the developer conference and then kind of the social impact kind of marketing people. Yeah, so I do think that that'll be interesting. How do you see, thinking more about the difference between DevCon 2 and DevCon 3, you know, what do you see as kind of in terms of either the talks themselves that are happening or kind of other ways that it's kind of similar or different this year compared to last year?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 15,
+      "start": 258.36,
+      "end": 258.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 16,
+      "start": 259.6,
+      "end": 281.7,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "so DevCon 2, I think. people thought it was exciting that a lot of things got announced. People were talking about their projects and what they were working on, and it seemed like all this cool momentum was happening in the space. And now it's a year later. And I'm really curious to see what progress has actually been made on those kind of promises that were laid out a year ago. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 17,
+      "start": 281.7,
+      "end": 283.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 18,
+      "start": 283.09,
+      "end": 297.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I mean, that I think is going to be really interesting because because there's been so much money and so many people getting really rich over the last year, like, Is the development momentum actually keeping up? Or is it just gotten completely derailed by all this hysteria and money being thrown around?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 19,
+      "start": 298.0,
+      "end": 298.4,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 20,
+      "start": 298.4,
+      "end": 309.54,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think it'll be somewhat, like if you compare the delta of what people were talking about last year to what they're talking about now, if it's not very pronounced, I think that would be a reason for concern. So,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 21,
+      "start": 309.64,
+      "end": 310.7,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 22,
+      "start": 310.7,
+      "end": 314.72,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "mean, I'm really looking for progress in a lot of the projects, and we'll see.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 23,
+      "start": 315.24,
+      "end": 323.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, and by projects, are you talking about... specific things that the Ethereum Foundation is doing? Are you talking about the like more DAP, you know, general DAP ecosystem?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 24,
+      "start": 325.4,
+      "end": 354.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Well, yeah, I would think the entire ecosystem, I guess, to an extent. It's kind of hard though because a lot of the DAPs are a little early for what they're promising because there's just so many core... kind of infrastructural components missing from Ethereum or underdeveloped from Ethereum. So it's really hard to make these large scale applications that everyone's been promising. So I think what's really important is to see the progress on these low-level infrastructure projects",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 25,
+      "start": 354.69,
+      "end": 356.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "so",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 26,
+      "start": 356.69,
+      "end": 361.11,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that you can assess if what people are promising at the application level are even possible.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 27,
+      "start": 361.75,
+      "end": 401.39,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "That makes sense. And a lot of this reminds me of a recent post by Albert Wenger around Ethereum and Bitcoin. And for him, he's like, hey, the bull case for Ethereum is if you have some, if in the next year we have some actual Ethereum projects that launch and get traction. and if progress is made on Ethereum scaling. It's kind of this combination of like, if we are doing scaling and some of these projects launched, then that would be really, really powerful. We haven't talked too much about that scaling piece right now. I feel like that's the thing that's on everybody's mind with plasma and Raiden and things like that. And Casper, obviously, how do you think about where Ethereum's at with scaling these days?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 28,
+      "start": 402.11,
+      "end": 402.59,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 29,
+      "start": 402.59,
+      "end": 442.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I'm actually, obviously scaling is... you know, kind of the big thing that will decide whether or not Ethereum ultimately succeeds or fails. So it's obviously really important. But I don't think it's as imminent a concern as a lot of people make it out today. I mean, Ethereum right now, you could run a 10-terabyte hard drive, which you could buy for maybe a couple hundred dollars, if that. And you could run the Ethereum blockchain with its current network statistics for the next five years, you know, pretty easily. So I don't... I think just adding more hardware to scale Ethereum nodes for a short-term solution is pretty viable.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 30,
+      "start": 442.21,
+      "end": 442.87,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 31,
+      "start": 442.87,
+      "end": 450.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I don't think that needing to come up with some sort of innovative scaling solution is something that's like a pressing concern. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 32,
+      "start": 450.43,
+      "end": 451.47,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 33,
+      "start": 452.13,
+      "end": 474.64,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "obviously it can't continue its current network growth without any software scaling solution. It's obviously going to need some major software scaling solution. I think that the best people at the Ethereum Foundation are currently working on that now. And this has been being worked on since the inception of Ethereum. I mean, Ethereum was originally envisioned to have a proof of stake consensus mechanism. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 34,
+      "start": 474.64,
+      "end": 475.82,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "that",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 35,
+      "start": 475.82,
+      "end": 493.03,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "was conceived at the very beginning. So this is a multi-year project in the works. So, yeah, the Casper Protocol has had a lot of work on it over the past year. I haven't been following it super, super closely. But I think that it'll be very interesting to see what gets talked about at DevCon",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 36,
+      "start": 493.03,
+      "end": 493.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 37,
+      "start": 493.69,
+      "end": 497.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what gets kind of announced in terms of timelines for implementation.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 38,
+      "start": 498.03,
+      "end": 498.25,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 39,
+      "start": 498.25,
+      "end": 564.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "think that's interesting because, yeah, we have, there's so many, in DevCon, I mean, talking about the hype around DevCon, I know most, not in most, but a lot of people that I know are going to DevCon, even without tickets, you know, just to go there and network and just talk with people. And everybody's planning on all these announcements at DevCon. And I think that one thing that I didn't think about is, like, those announcements hold true for the ecosystem, but they also hold true for the Ethereum Foundation itself, where they say, hey. Here's a big update on Casper or whatever. I think that, like you're saying, we'll both see some of those big updates and then see what those commitments look like. So kind of transitioning over a bit here, I feel like we've gotten a good idea for where we're at with respect to DevCon 3. So thinking about the tech conference itself, there's one side of it, which is going to the talks and trying to listen to the coding and things of that variety. And we're going to dive into that later. How are you thinking also just about Things that you're excited to talk with people about at the bar or, you know, at Cancun, so on the beach. What are some things that are on your mind where you're like, hmm, I'd really love to ask these people, these questions.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 40,
+      "start": 567.0,
+      "end": 622.43,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Well, all right, I would say there's kind of like two parts to how I would think about that. One is the things, like the actual specific protocol level stuff that I'm fascinated by, that I'm just curious to learn what kind of work is being done on it. So two examples of that, I guess, would be swarm, which is the decentralized file storage network that is being worked on by the Ethereum Foundation. And this is obviously an integral part of most decentralized applications is that they need some sort of file storage system. And yeah, the swarm project has been somewhat mysterious. They've kind of been clandestine with... what they've been doing. So I'd be very curious to learn more and more about how that work has been going and what the big problems that they're running into. And I think that'll probably be a pretty large component of DevCon, at least with some of the talks and with some of the people working on it. That's definitely one of them. I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 41,
+      "start": 622.43,
+      "end": 624.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "also curious about... Wait, so pause for a second. On",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 42,
+      "start": 624.95,
+      "end": 642.59,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Swarm, yeah, so that's the... And Swarm is the decentralized file storage, which is similar to, you know, the IPFS and FileCoin. Is there a... Is there something about Swarm that excites you more than... Or I guess, how is Swarm different than IPFS and or FileCoin?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 43,
+      "start": 643.39,
+      "end": 643.83,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 44,
+      "start": 643.97,
+      "end": 661.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I have a lot of concerns about FileCoin with the way that they raised money. I think that only raising from accredited investors was a massive mistake. I think it just is. I don't know why they chose to go that route. I think it really burned a lot of bridges. And I think that it's going to probably haunt them down the road because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 45,
+      "start": 661.76,
+      "end": 663.16,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 46,
+      "start": 663.52,
+      "end": 675.16,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "could see Filecoin not holding true to some of the core values that make a decentralized file storage system, you know, exciting. And that includes things like censorship resistance.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 47,
+      "start": 676.05,
+      "end": 676.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you know,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 48,
+      "start": 676.99,
+      "end": 687.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "open source code bases. I mean, I don't know if they're going to compromise on those kind of things, but I think it's a lot more likely that they would with the current way that they chose to raise money them with Swarm, which is,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 49,
+      "start": 687.65,
+      "end": 688.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 50,
+      "start": 688.17,
+      "end": 693.59,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "my knowledge right now, been completely transparent and open source about everything that they're doing. So.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 51,
+      "start": 693.92,
+      "end": 707.16,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Got it, got it. Yeah, so Swarm is the specific Ethereum foundation version of one of these decentralized storage networks. So what's the other one that you're excited about in this kind of not the, in the part of this Ethereum kind of base layer protocol?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 52,
+      "start": 708.66,
+      "end": 712.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, I'm also, I'm very interested in Whisper, which is the peer-to-peer messaging",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 53,
+      "start": 712.66,
+      "end": 714.56,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "code",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 54,
+      "start": 714.85,
+      "end": 734.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that lives on, like, Ethereum nodes. So if you're running an Ethereum node, you will run, like you'll have access to this protocol called Whisper, which allows you to send messages. to other Ethereum nodes that are somewhat like ephemeral. Like you just transmit like arbitrary text messages to them and then they can route them to other nodes but not necessarily store them permanently.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 55,
+      "start": 734.59,
+      "end": 735.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 56,
+      "start": 735.03,
+      "end": 773.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that would allow for, you know, for, you know, if you can think of the UX down the road, something like Metamask, which is a Chrome extension that has an Ethereum wallet, could then just pick up the message when it's broadcast and store it. And then you can have a little badge on your Metamask account for a new message from a specific address. And that solves a really big problem now of when you're using Ethereum addresses for identity that you don't have any way to get in contact with that Ethereum address because it's just a hex string. You don't actually know any contact info about it. But if you can send messages directly to Ethereum addresses, that's just another core thing that really needs to exist for a lot of decentralized applications to work properly.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 57,
+      "start": 774.05,
+      "end": 774.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 58,
+      "start": 774.49,
+      "end": 796.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think that, yeah, like that is something that should, has been being worked on, but I'm not really sure with the statuses because, again, it's kind of mysterious also. So, yeah, I'm curious to just get updates on these kind of core level protocols that really need to... have, be at a certain level of usability for a lot of the decentralized applications to actually be able to fulfill their promises.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 59,
+      "start": 796.69,
+      "end": 829.52,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that's interesting. I think it's, and these are some of the very initial ones. And you were, you were talking, you know, before we went live around how you actually personally want to use whisper. You know, you want to be able to communicate with specific, you know, Ethereum addresses and, and you have no way to do so right now. And so I think that, like you're saying, for these things to really exist and be part of this ecosystem is crucial for, even someone who's, you know, just a little bit closer to mainstream adoption here. Do you know why, by the way, they are both for Swarm and Whisper. You know, it's like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 60,
+      "start": 831.42,
+      "end": 836.96,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "is there a clear way to know their progress? Or you've said the word clandestine twice with respect",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 61,
+      "start": 836.96,
+      "end": 837.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "to them? No,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 62,
+      "start": 837.5,
+      "end": 839.76,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think it's not that they're clandestine.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 63,
+      "start": 840.1,
+      "end": 840.48,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's that,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 64,
+      "start": 840.7,
+      "end": 843.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you know, all the work, like, you have to follow it actively.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 65,
+      "start": 843.78,
+      "end": 844.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You can't,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 66,
+      "start": 844.36,
+      "end": 863.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like, pass it. like if you're not hanging out in the you know discord channels or whatever they're using now riot i am but if you're not if you're not in those channels like actively following it you're not going to get any information about it it's not like you could just go watch a video about whisper's progress like it's like you have to like make this like really active effort to follow it",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 67,
+      "start": 863.67,
+      "end": 864.17,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "interesting",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 68,
+      "start": 864.17,
+      "end": 865.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "and Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 69,
+      "start": 865.64,
+      "end": 871.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's like not everyone is going to be doing that. So there's a lot of people that just don't get updates on the status of these projects.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 70,
+      "start": 871.62,
+      "end": 886.02,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that makes sense. And a little bit more on, you know, some of the other side here is we have, you know, talking about, you know, we talked a little bit about scaling and Casper and Proof of Steak. And there's also the all the ZK Snarks stuff happening. What for you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 71,
+      "start": 886.02,
+      "end": 886.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "makes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 72,
+      "start": 886.86,
+      "end": 892.88,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "you more interested by some of the swarm and whisper things as compared to some of the like, you know, the other things like ZK Snarks?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 73,
+      "start": 894.28,
+      "end": 894.76,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Oh,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 74,
+      "start": 894.9,
+      "end": 896.52,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I'm super interested in ZK Snarks.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 75,
+      "start": 898.42,
+      "end": 899.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 76,
+      "start": 899.02,
+      "end": 900.46,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "fascinated by it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 77,
+      "start": 901.46,
+      "end": 902.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 78,
+      "start": 902.06,
+      "end": 903.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "guess it's just more like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 79,
+      "start": 903.52,
+      "end": 904.9,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I'm",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 80,
+      "start": 905.0,
+      "end": 913.82,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not, it's not like immediately applicable to be as a software developer in the sense that it's like a paradigm shift almost. Like when you're talking about",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 81,
+      "start": 913.82,
+      "end": 915.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 82,
+      "start": 915.26,
+      "end": 936.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "zero knowledge transactions, like that's like a complete paradigm shift in the way that you're even thinking about your application. And I'm not. at that level of software developer where I'm thinking about paradigm shifting applications. I'm just thinking about how to leverage existing things in Ethereum for like use cases that I'm interested in.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 83,
+      "start": 936.96,
+      "end": 937.2,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Great.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 84,
+      "start": 937.74,
+      "end": 937.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 85,
+      "start": 937.84,
+      "end": 938.86,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "but yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 86,
+      "start": 938.98,
+      "end": 946.26,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I mean like I'm very interested in ZK Snarks. The like math behind it I think is really interesting. And I think like doing token contracts because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 87,
+      "start": 946.26,
+      "end": 947.12,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 88,
+      "start": 947.12,
+      "end": 951.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "believe even with just the Byzantium update, you can do token contracts with.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 89,
+      "start": 953.22,
+      "end": 955.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like hidden, hidden balances. So you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 90,
+      "start": 955.48,
+      "end": 956.34,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "can have ERC 20",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 91,
+      "start": 956.34,
+      "end": 966.44,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "tokens where people don't know the actual account balances, but you can verify that there's only a fixed amount of tokens. So, like, I think there's probably like interesting things that can come out of that. But",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 92,
+      "start": 966.44,
+      "end": 967.26,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 93,
+      "start": 967.56,
+      "end": 972.58,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I'm super interested in it. I'm just not very optimistic that anyone's going to get on stage and explain it clearly",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 94,
+      "start": 972.58,
+      "end": 973.22,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "because",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 95,
+      "start": 973.22,
+      "end": 979.24,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "that is, I'm pretty sure. I don't think anyone's explained ZK. Snarks clearly anywhere on the internet yet.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 96,
+      "start": 980.3,
+      "end": 982.58,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Maybe you will at some other point in the future.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 97,
+      "start": 983.4,
+      "end": 984.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Let's know when that goes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 98,
+      "start": 984.28,
+      "end": 984.8,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "live. Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 99,
+      "start": 985.62,
+      "end": 988.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But I'm interested to talk to people about it for sure.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 100,
+      "start": 988.22,
+      "end": 1004.56,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, cool. So thinking more, let's say you're now, you're pretending you're at DefCon 3, you went in, you listen to some talks about Swarm, you listen to some talks about Whisper, now you're at the bar, you're standing next to some people. What kind of questions are you going to be asking them? What kind of things are you going to be interested to learn from the other people who are there?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 101,
+      "start": 1005.24,
+      "end": 1005.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 102,
+      "start": 1005.82,
+      "end": 1017.92,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "one of the cool things about a conference like DevCon. is that you're going to learn so much that you didn't even know about. So it's like you're going to learn things that you wouldn't have even known to ask because you didn't even know they existed.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 103,
+      "start": 1018.22,
+      "end": 1018.68,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Or",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 104,
+      "start": 1018.68,
+      "end": 1031.8,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you didn't realize that they were as important as they were. And that's the cool thing about conferences like this, like going in person is that like you don't know what you don't know, but you'll learn by being around so many smart people that are interested in the same space.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 105,
+      "start": 1032.31,
+      "end": 1032.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 106,
+      "start": 1032.71,
+      "end": 1036.31,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's kind of like what manifests itself to you is the interesting thing.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 107,
+      "start": 1036.67,
+      "end": 1037.07,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 108,
+      "start": 1037.07,
+      "end": 1039.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "not necessarily like you grilling someone else.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 109,
+      "start": 1039.95,
+      "end": 1055.81,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, yeah, yep, yep, yep. So I agree with that, and I think that that is a fascinating part of this. Was there something, by the way, for you last year at DevCon 2 in Shanghai where you like went there and you were like, whoa, now I, like, what was like a moment for you like that at DevCon 2?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 110,
+      "start": 1058.14,
+      "end": 1071.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "There was so much like that. Like to me, DevCon 2 is just. this complete, you know, arena of mystery and wonder. Like, it was, it was literally, like, walking into a movie or something. Like, it just didn't feel like the real world.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 111,
+      "start": 1073.52,
+      "end": 1082.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But I was just amazed by just the random encounters you would have with people that are talking about, like, working on the solidity compiler and what challenges they were having.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 112,
+      "start": 1083.04,
+      "end": 1083.52,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 113,
+      "start": 1083.52,
+      "end": 1089.14,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's just like, you just felt, like, so engrossed in this, like, bizarre ecosystem that was being created.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 114,
+      "start": 1090.72,
+      "end": 1096.65,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And... People were just so optimistic and so like steadfast in their belief that Ethereum would be big.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 115,
+      "start": 1096.71,
+      "end": 1097.07,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Wow.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 116,
+      "start": 1097.55,
+      "end": 1106.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "And yeah, it was just, it was super compelling to like hear all the different ideas people had. They weren't necessarily like projects, but they were like ideas",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 117,
+      "start": 1106.01,
+      "end": 1106.77,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "about what",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 118,
+      "start": 1106.77,
+      "end": 1109.29,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "could manifest itself. And.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 119,
+      "start": 1109.76,
+      "end": 1110.14,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 120,
+      "start": 1110.5,
+      "end": 1120.36,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's been interested to see to an extent it kind of manifests itself over the last year in that like Ethereum has gotten just absolute mainstream recognition.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 121,
+      "start": 1120.66,
+      "end": 1120.92,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 122,
+      "start": 1121.4,
+      "end": 1126.42,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "But the format that it's gotten mainstream recognition is, is in with like these like ICOs,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 123,
+      "start": 1126.84,
+      "end": 1126.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 124,
+      "start": 1126.92,
+      "end": 1127.28,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "are,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 125,
+      "start": 1127.44,
+      "end": 1128.02,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 126,
+      "start": 1128.02,
+      "end": 1131.4,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, not necessary. Like they feel a little like a boiler roomy.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 127,
+      "start": 1131.68,
+      "end": 1131.98,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "It's like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 128,
+      "start": 1131.98,
+      "end": 1161.95,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "people trading penny stocks more so than like actually building out like important. applications for the future. So again, it's like, it's like this interesting dichotomy that you have to hold in your head of, you know, this really, really, really large ambition for using something like Ethereum to really improve, you know, core, core underpinnings of our existence in the world. And then like this reality that the reason Ethereum's popular is because people are trading penny stocks and trying to scam each other.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 129,
+      "start": 1162.05,
+      "end": 1162.57,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 130,
+      "start": 1162.57,
+      "end": 1164.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "then",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 131,
+      "start": 1164.03,
+      "end": 1174.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's like, To what extent is that going to manifest itself? Like is one side going to have too much momentum? Or is one side going to be able to fight back? Or is this just like growing pains for a new paradigm?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 132,
+      "start": 1175.17,
+      "end": 1175.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 133,
+      "start": 1175.49,
+      "end": 1191.77,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "don't know. And like being able to look at all those forces, like I don't think there's a better way to get a gauge on the ecosystem and how strong each of those forces are and how much momentum they have than like going to a conference like DevCon and just talking to like everyone you can.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 134,
+      "start": 1191.95,
+      "end": 1192.21,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 135,
+      "start": 1192.37,
+      "end": 1196.27,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "You know, like that's the only way to really wrap your head around something so complex. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 136,
+      "start": 1196.27,
+      "end": 1199.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah, that's interesting. I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 137,
+      "start": 1199.41,
+      "end": 1259.13,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "feel like there's a, yeah, it's that that. The difference between the two is crazy. And I feel like there's another piece here, which I was personally interested by, which was, you know, from DevCon 1 and kind of DevCon 2, I've seen some talks. And I was just watching this talk by Vinay Gupta around the ability for Ethereum to build these metastructures, which allow for the people to make a new ecosystem while paying back the ecosystem itself. And it was a very, very powerful talk. And something that I was interested by was that at DevCon 3, it didn't seem like almost all the talks were more at the, at both either the code level or the kind of implementation level. But it doesn't necessarily seem like there's a... big like veney gupta style we're building the decentralized future kind of talk here and that's maybe because we already have enough hype and like we need to get to work or like you know is that does that like I mean talks like that happened at devcon 2 and just feels like they might not be happening as much here at devcon 3",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 138,
+      "start": 1259.48,
+      "end": 1260.6,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 139,
+      "start": 1260.6,
+      "end": 1282.09,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I that makes a lot of sense actually I think I can't speak to how the talks are organized, because I have no idea, like, who organized them or why, but I could see that being the case that whoever put this conference together was really thinking, like, we have enough of that. We really need to talk about the tech, or we're not going to be able to, like, realize that vision.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 140,
+      "start": 1282.63,
+      "end": 1282.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 141,
+      "start": 1282.99,
+      "end": 1315.04,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that makes sense. So kind of thinking a little bit more about this. I have a couple final thoughts on top of my mind. The first is back to this question, because I do want to push on it, because I agree with you that just being there, being in the context, being in the ether, and getting information through osmosis and spontaneity is the real power of these conferences. Are there things, though, that you specifically are like, oh, man, you know, I would love to chat in about these kinds of things. Are there stuff that comes to the top of your mind for that?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 142,
+      "start": 1318.51,
+      "end": 1318.95,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 143,
+      "start": 1319.17,
+      "end": 1323.39,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I'm interested. Like, I feel like if you get to talk to the,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 144,
+      "start": 1323.39,
+      "end": 1324.63,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "you",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 145,
+      "start": 1325.05,
+      "end": 1327.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "know, like lead developer or hold on, suck,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 146,
+      "start": 1329.89,
+      "end": 1330.71,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "or the, you know, like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 147,
+      "start": 1331.03,
+      "end": 1332.17,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "product",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 148,
+      "start": 1332.17,
+      "end": 1335.89,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "visionary of any project that's going to be interesting, it's not,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 149,
+      "start": 1336.25,
+      "end": 1337.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "like,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 150,
+      "start": 1337.09,
+      "end": 1341.01,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I'm interested in a lot of things that are going on in the Ethereum ecosystem. I'm not sure",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 151,
+      "start": 1341.71,
+      "end": 1344.69,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "necessarily which",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 152,
+      "start": 1344.69,
+      "end": 1360.66,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "one stands out in my head. more than anything. But yeah, it's cool. I mean, like, I remember at DevCon too, like, when we were having brunch and just Vitalik came and, like, sat down next to us. And we got to just hang out with Vitalik talking to him about random things and",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 153,
+      "start": 1360.66,
+      "end": 1361.94,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "watch",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 154,
+      "start": 1362.16,
+      "end": 1373.68,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "him speak Mandarin in China, which was crazy. It's like, oh, my God, this guy speaks Mandarin. And, yeah, it's like that kind of stuff is just really cool. So it's not like anything specific that I have in my head.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 155,
+      "start": 1374.3,
+      "end": 1374.62,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 156,
+      "start": 1374.78,
+      "end": 1394.72,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "that makes sense. I think that that as a heuristic though is true, which is like, hey, who are you? Why are you here? Why are you passionate about this stuff? And what are you building? And then they'll be able to say, well, I'm building, and then they'll just be able to dive into their project, which is likely to be interesting. So just kind of pulling that enthusiasm out of people.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 157,
+      "start": 1394.92,
+      "end": 1395.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah. And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 158,
+      "start": 1395.46,
+      "end": 1398.48,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "you'll probably get to talk to people, especially if you're new to the space.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 159,
+      "start": 1399.1,
+      "end": 1399.42,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "You'll",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 160,
+      "start": 1399.42,
+      "end": 1403.84,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "get to talk to people who have been in the space for a really long time. And that's also really interesting to me.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 161,
+      "start": 1404.09,
+      "end": 1404.41,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 162,
+      "start": 1404.61,
+      "end": 1409.61,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "It's like listening to people talk about being in Bitcoin in 2011 and all the stuff that went down.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 163,
+      "start": 1410.09,
+      "end": 1411.15,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yes, exactly. And like just",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 164,
+      "start": 1411.15,
+      "end": 1419.73,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "getting better grounding for the context at which Ethereum is evolving at, I think is really important too. And that's kind of hard to do otherwise.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 165,
+      "start": 1420.61,
+      "end": 1421.33,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yes, that makes",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 166,
+      "start": 1421.33,
+      "end": 1421.71,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "sense.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 167,
+      "start": 1422.51,
+      "end": 1438.25,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, because you can't go. Yeah, for me, it's tough to know what things were like a year ago, you know, but talking with people who were there. in 2015, early 2015, is they've kind of, they've been jaded. Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 168,
+      "start": 1440.19,
+      "end": 1463.86,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "it's crazy a thing, because I remember in Shanghai, when the price of Ethereum was $10, I remember thinking it's crazy how rich people have gotten. Because Ethereum ICOed at like 40 cents. So people had already like 20x at the time, like anyone that was in the pre-sale had already 20xed at $10. So now at $300. I mean, like, We're just in a different realm. Like we're at like 500x here. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 169,
+      "start": 1463.86,
+      "end": 1464.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 170,
+      "start": 1464.8,
+      "end": 1470.34,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "already thought it was excessive. So I have just no idea how like what this is going to be like.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 171,
+      "start": 1470.6,
+      "end": 1470.7,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 172,
+      "start": 1470.96,
+      "end": 1472.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "We're just orders",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 173,
+      "start": 1472.08,
+      "end": 1474.22,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "of magnitude that are just completely ridiculous.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 174,
+      "start": 1474.7,
+      "end": 1474.76,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 175,
+      "start": 1475.08,
+      "end": 1475.08,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 176,
+      "start": 1475.66,
+      "end": 1476.08,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 177,
+      "start": 1476.08,
+      "end": 1509.63,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "thinking maybe the final question here that I have is, you know, thinking about, so people are going here, they're at DevCon 3, they're both there, they're part of the context of both scaling and these new protocols and all the different projects that are happening, just talking with interesting people, asking them what they're excited about. Now thinking, though, back to this piece that you had about progress. You know, thinking about DevCon 4, whenever that, you know, a year from now, what are the things that you would, like, really like to see to make sure, okay, you know, it's DevCon 3, we're going to DevCon 3. Buy DevCon 4. What would you be hoping and expecting to see by then?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 178,
+      "start": 1511.3,
+      "end": 1511.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Well,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 179,
+      "start": 1511.66,
+      "end": 1538.3,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I think by DevCon 4, you have to have mainstream applications. I mean, I don't think there is really a single mainstream application on Ethereum right now that isn't trading. I think that's pretty much it. And I think that that's kind of okay because, again, like we're trying to build a protocol to let applications exist, but the protocol does not have all the pieces together.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 180,
+      "start": 1538.92,
+      "end": 1540.46,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "But if",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 181,
+      "start": 1540.46,
+      "end": 1545.5,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "by DevCon4, you don't have, you know, mainstream application use, I think it would be really concerning.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 182,
+      "start": 1545.92,
+      "end": 1553.86,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah, that makes sense. So we're looking for application use. If you are an application developer, develop those applications. Are there any",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 183,
+      "start": 1553.86,
+      "end": 1554.28,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "final?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 184,
+      "start": 1556.01,
+      "end": 1556.49,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "A",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 185,
+      "start": 1556.49,
+      "end": 1565.67,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "lot of it. So I actually have a pet theory that there's an EIP, so I think it's EIP 86. Don't quote me on the number though, but",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 186,
+      "start": 1565.67,
+      "end": 1566.81,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "it's",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 187,
+      "start": 1566.81,
+      "end": 1571.81,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "going to be part of the Constantinople fork that Ethereum does.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 188,
+      "start": 1572.47,
+      "end": 1573.03,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 189,
+      "start": 1573.03,
+      "end": 1589.51,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "I actually think that this is the missing piece to a lot of application use. So EIP 86 will let you essentially pay the gas cost for a transaction from a contract. So it doesn't need to be paid for by the initiating account.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 190,
+      "start": 1590.25,
+      "end": 1590.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "And",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 191,
+      "start": 1590.73,
+      "end": 1606.69,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "what that'll let you do is have somebody that has never used Ethereum before, create a wallet and interact with a smart contract without needing to go to Coinbase and register and buy ether and then use that to pay the gas cost. So it'll let them just interact with a contract in like one step.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 192,
+      "start": 1607.72,
+      "end": 1608.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 193,
+      "start": 1608.8,
+      "end": 1608.94,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 194,
+      "start": 1609.34,
+      "end": 1611.1,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "That makes a lot of sense that to have a",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 195,
+      "start": 1611.1,
+      "end": 1611.44,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "more",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 196,
+      "start": 1611.44,
+      "end": 1612.9,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "frictionless environment there.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 197,
+      "start": 1613.36,
+      "end": 1613.8,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 198,
+      "start": 1614.1,
+      "end": 1627.56,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "exactly. So there's just like there's things like that that I really think are like almost prerequisites to getting like so like all these people are out promising the world in terms of decentralized applications. And they very well maybe right also. But the question is like",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 199,
+      "start": 1627.94,
+      "end": 1628.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 200,
+      "start": 1629.22,
+      "end": 1655.78,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "like these are like basic things that probably need to get added to Ethereum in order to make that happen. And just again like I feel like you just need to I'm interested in getting a sense. of how close those things are to happening. And it might be way closer than I realize. It may be, you know, you talk to people and it's like, oh, wow, like all this is going to happen in the next couple months. Like, this is going down. Or it might be like, oh, man, like, where the card is really far ahead of the horse.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 201,
+      "start": 1656.04,
+      "end": 1656.2,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 202,
+      "start": 1656.9,
+      "end": 1659.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Yeah. Really hope one of these things is live by DevCon4.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 203,
+      "start": 1660.74,
+      "end": 1661.1,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 204,
+      "start": 1661.6,
+      "end": 1677.62,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "So, so again, it's like, it's just exciting too. When you asked me, like, what I'm really interested in, it's like, it's kind of parsing. the entire experience there and being able to update my mental model of this is where we're really at and this is what I can expect over the next year.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 205,
+      "start": 1677.84,
+      "end": 1678.3,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah,",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 206,
+      "start": 1678.48,
+      "end": 1702.82,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "I love that. And I think we should pretty much conclude on that. That yeah, there's a, by going to something like DevCon, you get to update your mental model based off of how far along Ethereum and this new decentralized future that we're all here to build and are so excited by where are we actually at and where and where. And what does it look like in terms of the progress we've made over the past year or so? Any final thoughts or feelings from you here on this, Jordan?",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 207,
+      "start": 1706.03,
+      "end": 1725.13,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Final thoughts is I think it's going to be an exhausting four days. There's a lot of content. And I think it's going to be really dense and technical. And it's going to be really interesting. And I think Ethereum is in a very interesting place because, again, it's like it's super interesting technology. And it's super.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 208,
+      "start": 1726.89,
+      "end": 1745.55,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "undetermined whether or not it will succeed, which adds like another layer of interest to it. Because, you know, like, it's like, oh, the new iPhone. Like, we know people are going to buy it and it's going to be successful. It's like, there's not like mystery around it the way there is with Ethereum where it's like, this could either be the operating system for humanity or it could be a complete Hindenburg just blow up.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 209,
+      "start": 1745.59,
+      "end": 1745.73,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yeah.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 210,
+      "start": 1745.89,
+      "end": 1763.6,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "We have no idea. And that makes it so exciting. That's like part of the narrative that drives a lot of mainstream attention from people that aren't even in, you know, software development. I think that's in such an interesting place, but like no matter what, you just can't ignore it. It's like too interesting of a project. So",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 211,
+      "start": 1763.6,
+      "end": 1764.58,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "I",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 212,
+      "start": 1764.58,
+      "end": 1770.88,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "hope people pay attention to what's going on because no matter what the outcome is, like this is just super interesting stuff.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 213,
+      "start": 1771.38,
+      "end": 1772.06,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Yep. Yep.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 214,
+      "start": 1773.6,
+      "end": 1773.92,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "Pay",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 215,
+      "start": 1773.92,
+      "end": 1808.69,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "attention. Pay attention to us. I agree with you. And I think that the, I think DevCon 3 will be the first, a big check mark in everybody's mind around, okay, where are we at with respect to these things? So with that, Jordan, thank you so much for coming on the show. If you want to, A, go and check out, I mean, really, if you're a developer who's interested in learning more about Ethereum, definitely check out Jordan's videos at Decipher Media. They are really, really high quality and very condensed to have nice visuals. So check that out. at DevCon say hi to me or say hi to Jordan as we're listening to talks or on the beach or whatever. Jordan, thanks so much",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 216,
+      "start": 1808.69,
+      "end": 1809.21,
+      "speaker_id": "unknown",
+      "speaker": "Unknown / overlap",
+      "text": "for being here.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 217,
+      "start": 1809.65,
+      "end": 1811.07,
+      "speaker_id": "speaker_1",
+      "speaker": "Guest Speaker 2",
+      "text": "Yeah, thanks, Reese. I appreciate it.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 218,
+      "start": 1811.61,
+      "end": 1812.87,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Sweet. And goodbye, everybody.",
+      "privacy_status": "public_source_automated_screen"
+    },
+    {
+      "index": 219,
+      "start": 1829.62,
+      "end": 1855.44,
+      "speaker_id": "speaker_0",
+      "speaker": "Rhys Lindmark",
+      "text": "Hello, everyone. Thanks so much for listening to today's episode. If you have any feedback, please tweet at me at... Rees-L-L-I-N-R-R-E-L-I-N-D-M-R-K at Rees-L-L-L-L-N-R-K on Twitter. If you have any feedback, that'd be awesome, or if you want to sign up for the newsletter, follow me on Twitter, or support me on Patreon. I have about 25 patrons supporting me, and that's how I make my money. So you can support me at patreon.com slash R-H-Y-S-L-I-N-D-M-R-K. Thanks so much, and bye.",
+      "privacy_status": "public_source_automated_screen"
+    }
+  ],
+  "turn_counts": {
+    "total": 220,
+    "withheld": 0,
+    "published": 220
+  },
+  "limitations": [
+    "Automatic ASR and diarization; no human audio audit or calibrated identity probability.",
+    "Rhys labels use only the upstream rhys_speaker_id; machine identity assignment can be wrong.",
+    "Other speaker IDs are local anonymous labels, not inferred guest names. Unknown/overlap is retained.",
+    "A speaker can quote someone else; transcript statements are not automatically Rhys beliefs.",
+    "Public privacy screening omits flagged turn text and can miss sensitive context.",
+    "Canonical text transcribes the declared RSS or YouTube recording. Corresponding editions are aliases, not identical recordings."
+  ],
+  "raw_audio_published": false,
+  "voiceprints_published": false
+}
