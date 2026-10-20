@@ -48,8 +48,71 @@ checks, examples and mode switches do not launch inference.
 Rhys explicitly authorized generating his own voice and confirmed the Digicene
 narration and all HEE narration as his. The private reference is a 12-second
 Digicene excerpt; the original recording/voice reference is not published in Git.
-The pinned model is `Qwen/Qwen3-TTS-12Hz-0.6B-Base`, revision
+The legacy research model is `Qwen/Qwen3-TTS-12Hz-0.6B-Base`, revision
 `5d83992436eae1d760afd27aff78a71d676296fc`, including its speech tokenizer.
+
+### Default CPU streaming voice
+
+The default now uses [Kyutai Pocket TTS](https://github.com/kyutai-labs/pocket-tts),
+with [KevinAHM's public INT8 ONNX export](https://huggingface.co/KevinAHM/pocket-tts-onnx), pinned to
+`58a6d00cf13d239b6748cb0769f35c580a8f606c`, English 2026-04. Models are CC BY 4.0;
+the export's inference wrapper is Apache 2.0. Source code is pinned and hash
+checked at remote image build. The original reference, derived state and model
+weights stay private on Modal; no model is installed on the developer Mac or
+visitor's browser. The user's consent and synthetic-voice label still apply.
+
+`training/pocket_voice.py` serves CPU speech directly through the authenticated
+`/api/rhysbot-voice-stream` bridge. It streams small PCM16/24kHz/mono SSE chunks;
+the browser schedules each chunk through Web Audio with a 60ms jitter buffer.
+There is no polling, WAV-part download or whole-utterance wait. AudioContext is
+resumed in the Listen click gesture. Stop and New chat cancel queued playback.
+Only a valid terminal event creates a complete WAV for local, unbilled replay.
+An interrupted stream cannot resume; another explicit click is a new request.
+
+One small CPU container stays ready (`min_containers=1`, `max_containers=1`).
+It requests 0.125 physical cores/384 MiB and is limited to four cores/768 MiB.
+ONNX CPU arenas and thread spinning are disabled; a ten-second idle probe used
+no measurable process CPU time. This removes normal scale-from-zero delays.
+Replacement, preemption and deployment can still require startup, so two seconds
+is a measured normal-case target, not a latency guarantee.
+
+At the published Modal rates (checked 2026-10-20), 31 days at the CPU floor and
+full memory limit costs $8.845416, rounded up to an $8.90 monthly reservation.
+This leaves $1.10 of the authorized shared $10 allowance for variable calls.
+Each new CPU stream reserves $0.02 before dispatch; this covers two bounded
+90-second inputs plus 60-second startup each at the hard resource limits.
+The activation month reserves whole remaining Los Angeles calendar days at
+$8.90/31 per day, rounded upward. These are conservative reservations, not
+provider invoices; free credits are not assumed.
+
+Deploy `platform/chat-standby-migration.sql` once before enabling
+`RHYSBOT_CPU_STANDBY_ENABLED=1` and its ISO timestamp
+`RHYSBOT_CPU_STANDBY_SINCE`. Every chat, voice and checkpoint charge atomically
+includes the same fixed standby amount, once per month, preserving previous
+usage. It refuses additional calls at $10. Keep the standby flag and the ready
+Modal worker paired: to roll back, stop that worker and disable the flag as one
+operational change. The CPU stream URL and flags belong in the website's
+Wrangler configuration; Pages rebuilds replace dashboard-only plaintext values.
+
+Client-bound IDs and atomic claims prevent repeat dispatch. Uncertain requests
+are never automatically retried; the private endpoint also rejects reused
+nonces. Audio is bounded to 149 seconds and 2,000 text characters. No new
+subscription or model training is required. Private voice conditioning and
+portable CPU graph optimization happen during the remote image build; runtime
+loads four synthesis sessions and the saved state, without the voice encoder.
+Loading, warm-up and every inference step run on one dedicated thread. This
+keeps ONNX floating-point settings on the inference thread and avoids the
+severe slowdown observed with the ASGI thread pool. Denormal values are flushed
+to zero. A request retains its busy lock through queued inference and iterator
+cleanup. The browser plays while the rest of the reply is being synthesized.
+
+The loaded-model pilot reached meaningful audio in 0.176s. The older scale-zero
+CPU route took 12.262s through the actual site when cold, versus 1.386s warm.
+The final ready-worker website measurements and limitations are recorded in
+`results/voice-fast.json`. Timing probes record received PCM and Web Audio
+scheduling; they do not measure physical speaker output or human voice likeness.
+
+### Legacy GPU research voice
 
 The “AI Rhys voice” control reads up to 2,000 characters from a reply after an
 explicit click; longer replies show that limit. The approved speaker embedding
@@ -88,7 +151,9 @@ no extra GPU request is made. Brief gaps between parts remain possible.
 
 Chat, speech and saved-checkpoint comparisons share a durable $10/month allowance
 in D1, resetting by calendar month in America/Los_Angeles. Conservative charges
-are $0.005 per model chat, $0.50 per synthesis and $0.20 per checkpoint pair.
+include the $8.90 standby baseline above, $0.005 per model chat, $0.02 per CPU
+stream ($0.50 per legacy GPU synthesis) and $0.20 per checkpoint pair. A
+scale-to-zero CPU deployment without standby instead reserves $0.05 per stream.
 These are internal cost reservations, not customer prices or provider invoices;
 failed/uncertain requests are not refunded automatically. Atomic updates refuse
 additional calls at the cap. Each HMAC-hashed client IP is limited to 40
@@ -97,8 +162,9 @@ Turnstile grants a one-hour HttpOnly/Secure/SameSite session after verification.
 A private server credential permits operator integration probes through the same
 meter, without disabling browser verification.
 
-Managed inference uses Cloudflare Workers AI. Modal functions have zero minimum
-containers and bounded timeouts; no always-on GPU was enabled. Voice/comparison
+Managed inference uses Cloudflare Workers AI. The default CPU voice keeps one
+small worker ready; legacy GPU and checkpoint functions have zero minimum
+containers and bounded timeouts. No always-on GPU was enabled. Voice/comparison
 calls need both Modal proxy credentials and an application Bearer credential.
 Single-use grants are persisted before dispatch, with provider call IDs retained.
 Private corpus training uses the separate original $200 research ledger and

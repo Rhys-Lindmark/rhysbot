@@ -221,3 +221,49 @@ test('voice UI plays opening WAV before the second exists, drains queued parts o
   await button.fire('click');await audio.fire('ended');assert.deepEqual(played,['blob:voice-0','blob:voice-1','blob:voice-2','blob:voice-2']);
   assert.equal(voiceCalls.length,2,'replay must not send any further generation or polling POST');assert.equal(voiceCalls.filter(body=>typeof body.text==='string').length,1);assert.equal(voiceCalls[0].request_id,voiceCalls[1].request_id);
 });
+
+test('fast voice mount resumes in the click, streams before done, caches only complete WAV, stops cleanly and replays locally', {timeout:5000}, async(t)=>{
+  const d=dom(),contexts=[],streams=[],calls=[],order=[],cached=[],revoked=[];
+  let nextStart,cacheReady;
+  const startSignal=()=>new Promise(resolve=>{nextStart=resolve;});
+  d.win.AudioContext=class {
+    constructor(){this.state='suspended';this.currentTime=1;this.destination={};this.sources=[];this.closed=false;contexts.push(this);order.push('context');}
+    resume(){order.push('resume');this.state='running';return Promise.resolve();}
+    async close(){this.closed=true;this.state='closed';}
+    createBuffer(channels,length,rate){assert.equal(channels,1);assert.equal(rate,24000);const data=new Float32Array(length);return{getChannelData:()=>data};}
+    createBufferSource(){const source={stopped:false,disconnected:false,connect(){},start(time){order.push('scheduled');this.time=time;nextStart?.();},stop(){this.stopped=true;},disconnect(){this.disconnected=true;}};this.sources.push(source);return source;}
+  };
+  d.win.URL.createObjectURL=blob=>{const url=`blob:fast-${cached.length}`;cached.push({blob,url});cacheReady?.();return url;};d.win.URL.revokeObjectURL=url=>revoked.push(url);
+  const samples=new Uint8Array(4),sampleView=new DataView(samples.buffer);sampleView.setInt16(0,-32768,true);sampleView.setInt16(2,16384,true);
+  const voiceFrame=value=>enc.encode(`data: ${JSON.stringify(value)}\n\n`);
+  const fetcher=async(url,init={})=>{
+    calls.push({url,init});
+    if(!init.method)return Response.json({available:true,turnstile_site_key:'public',voice_available:true,voice_stream_available:true});
+    if(url==='/api/rhysbot-voice-stream'){
+      order.push('POST');assert.equal(contexts.at(-1).state,'running');
+      let controller;const state={cancelled:false};
+      const body=new ReadableStream({start(value){controller=value;value.enqueue(voiceFrame({type:'audio',data:Buffer.from(samples).toString('base64')}));},cancel(){state.cancelled=true;}});
+      state.finish=()=>{controller.enqueue(voiceFrame({type:'done'}));controller.close();};streams.push(state);
+      return new Response(body,{headers:{'Content-Type':'text/event-stream'}});
+    }
+    assert.equal(url,'/api/rhysbot-chat');
+    return new Response(stream(['data: {"type":"delta","channel":"rhys","text":"This is a complete Rhys reply."}\n\n','data: {"type":"done","channel":"rhys"}\n\n']),{headers:{'Content-Type':'text/event-stream'}});
+  };
+  const app=mount(d.doc,d.win,fetcher);t.after(()=>app.reset());await app.initialized;d.doc.head.children[0].onload();d.verify()('proof');
+  const sendQuestion=async text=>{d.ids.message.value=text;await d.ids.composer.fire('submit');const card=d.ids.thread.children.at(-1).children[1].children[0];return{button:card.children.find(e=>e.tagName==='button'),audio:card.children.find(e=>e.tagName==='audio')};};
+  const first=await sendQuestion('First question'),started=startSignal(),reading=first.button.fire('click');
+  assert.deepEqual(order,['context','resume'],'AudioContext resumes synchronously inside the click before awaiting the POST');
+  await started;assert.deepEqual(order.slice(0,4),['context','resume','POST','scheduled']);assert.equal(cached.length,0,'first PCM starts while no complete WAV exists');assert.equal(first.audio.hidden,true);assert.equal(first.button.textContent,'Stop voice');assert.equal(contexts[0].sources[0].time,1.06);
+  const completeCached=new Promise(resolve=>{cacheReady=resolve;});streams[0].finish();await completeCached;
+  const full=new DataView(await cached[0].blob.arrayBuffer());assert.equal(full.byteLength,48);assert.equal(full.getUint32(24,true),24000);assert.equal(full.getUint32(40,true),4);assert.equal(full.getInt16(44,true),-32768);assert.equal(full.getInt16(46,true),16384);
+  // The network finished while PCM is still queued. Stop must leave a usable
+  // cached replay and update the UI, rather than remain labelled Stop voice.
+  await first.button.fire('click');await reading;assert.equal(contexts[0].closed,true);assert(contexts[0].sources.every(source=>source.stopped&&source.disconnected));assert.match(first.button.textContent,/Play again/);
+  const voicePostCount=()=>calls.filter(call=>call.url==='/api/rhysbot-voice-stream').length;
+  await first.button.fire('click');assert.equal(first.audio.played,true);assert.equal(first.audio.src,'blob:fast-0');assert.equal(voicePostCount(),1);assert.equal(contexts.length,1,'replay uses the local audio player, not another context or POST');
+  await d.ids.new.fire('click');assert.deepEqual(revoked,['blob:fast-0']);
+  const second=await sendQuestion('Second question'),secondStarted=startSignal(),interrupted=second.button.fire('click');await secondStarted;assert.equal(voicePostCount(),2);assert.equal(cached.length,1);
+  await d.ids.new.fire('click');await interrupted;assert.equal(contexts[1].closed,true);assert(contexts[1].sources.every(source=>source.stopped&&source.disconnected));assert.equal(streams[1].cancelled,true);assert.equal(cached.length,1,'New chat must never cache interrupted PCM as a full WAV');assert.equal(d.ids.thread.children.length,0);
+  assert.equal(calls.filter(call=>call.url==='/api/rhysbot-voice').length,0,'fast mode never starts legacy voice generation or status polling');
+  for(const call of calls.filter(call=>call.url==='/api/rhysbot-voice-stream')){assert.equal(call.init.credentials,'same-origin');const body=JSON.parse(call.init.body);assert.equal(body.text,'This is a complete Rhys reply.');assert.match(body.request_id,/^[a-f0-9-]{36}$/);assert.equal(body.action,undefined);}
+});

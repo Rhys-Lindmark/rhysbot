@@ -1,3 +1,4 @@
+import {createVoiceStream} from './voice-stream.js';
 const encoder = new TextEncoder();
 export const MAX_HISTORY_BYTES = 12000;
 export const MAX_PROMPT_BYTES = 4000;
@@ -224,8 +225,11 @@ export function mount(doc = document, win = window, fetcher = fetch) {
     if (['verification_required','verification_failed'].includes(code)) await needVerification();
     throw new Error(friendly(code));
   }
+  const streamPlayers=new Set(), audioContexts=new Set();
   function clearAudio() {
     voiceActive?.abort(); voiceActive = null;
+    for(const player of streamPlayers)player.stop();streamPlayers.clear();
+    for(const ctx of audioContexts)ctx.close().catch(()=>{});audioContexts.clear();
     for (const audio of audios) { audio.pause(); audio.removeAttribute('src'); audio.load?.(); } audios.clear();
     for (const url of audioURLs) win.URL.revokeObjectURL(url); audioURLs.clear();
   }
@@ -243,8 +247,43 @@ export function mount(doc = document, win = window, fetcher = fetch) {
     }
     details.append(summary,list); card.appendChild(details);
   }
+  function addStreamingVoice(card,reply) {
+    const button=element('button','voice','Listen · AI-generated Rhys voice');button.type='button';
+    const progress=element('span','answer-status');progress.setAttribute('role','status');
+    const audio=element('audio','audio');audio.controls=true;audio.hidden=true;audio.preload='none';audio.setAttribute('aria-label','AI-generated Rhys voice');audios.add(audio);
+    const spoken=[...reply].slice(0,2000).join('');let url,ownController;
+    if([...reply].length>2000)renderText(progress,'Reads the first 2,000 characters.');
+    button.addEventListener('click',async()=>{
+      if(ownController&&voiceActive===ownController){ownController.abort();audio.pause();return;}
+      if(url){audio.src=url;audio.hidden=false;await audio.play().catch(()=>status('Use the player to listen.'));return;}
+      if(voiceActive){status('One voice request is already in progress.');return;}
+      if(!sessionKnown&&!verification){await needVerification();status('Complete verification, then choose Listen again.');return;}
+      // Resume in the click gesture, before the first asynchronous network wait.
+      const ctx=new (win.AudioContext||win.webkitAudioContext)();audioContexts.add(ctx);const resumed=ctx.resume();
+      const controller=new AbortController(),epoch=generation;ownController=controller;voiceActive=controller;
+      let player;renderText(button,'Stop voice');renderText(progress,'Starting Rhys voice…');
+      try{
+        await resumed;
+        player=createVoiceStream({audioContext:ctx,text:spoken,requestId:win.crypto.randomUUID(),verification,fetcher,signal:controller.signal,onFirstPlayback:timing=>{
+          if(epoch!==generation)return;verifiedSession();renderText(progress,`Streaming Rhys voice · ${((timing.firstScheduledAtMs-timing.startedAtMs)/1000).toFixed(2)}s to first audio`);
+        }});streamPlayers.add(player);
+        const result=await player.finished;if(epoch!==generation||controller.signal.aborted)return;
+        verifiedSession();url=win.URL.createObjectURL(result.wav);audioURLs.add(url);audio.src=url;audio.hidden=false;
+        await player.playbackFinished;
+        if(controller.signal.aborted)throw new DOMException('Stopped','AbortError');
+        if(epoch===generation&&!controller.signal.aborted){renderText(button,'Play again · AI-generated Rhys voice');renderText(progress,`Rhys voice ready · ${((result.firstScheduledAtMs-result.startedAtMs)/1000).toFixed(2)}s to first audio · replay is local`);}
+      }catch(error){
+        if(epoch===generation){if(['verification_required','verification_failed'].includes(error.code))await needVerification();renderText(progress,controller.signal.aborted?(url?'Voice stopped. Play again uses the saved audio.':'Voice stopped. Another try starts a new request.'):error.message);renderText(button,url?'Play again · AI-generated Rhys voice':'Try voice again');}
+      }finally{
+        if(player){player.stop();streamPlayers.delete(player);}audioContexts.delete(ctx);await ctx.close().catch(()=>{});
+        if(voiceActive===controller)voiceActive=null;ownController=null;
+      }
+    });
+    card.append(button,progress,audio);
+  }
   function addVoice(card, reply) {
     if (!config?.voice_available || !reply.trim()) return;
+    if(config.voice_stream_available&&(win.AudioContext||win.webkitAudioContext)){addStreamingVoice(card,reply);return;}
     const button = element('button','voice','Listen · AI-generated Rhys voice'); button.type = 'button';
     const audio = element('audio','audio'); audio.controls = true; audio.preload = 'none'; audio.hidden = true; audio.setAttribute('aria-label','AI-generated Rhys voice'); audios.add(audio);
     const progress=element('span','answer-status');progress.setAttribute('role','status');

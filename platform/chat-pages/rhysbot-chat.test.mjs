@@ -1,4 +1,4 @@
-import test from 'node:test';import assert from 'node:assert/strict';import {DatabaseSync} from 'node:sqlite';import {readFileSync} from 'node:fs';import {createChatHandler,history,prompt,charge,serviceAuthorized,readSSE} from './rhysbot-chat.js';
+import test from 'node:test';import assert from 'node:assert/strict';import {DatabaseSync} from 'node:sqlite';import {readFileSync} from 'node:fs';import {createChatHandler,history,prompt,charge,standbyBaseMicros,serviceAuthorized,readSSE} from './rhysbot-chat.js';
 import {createVoiceHandler} from './rhysbot-voice.js';
 function db(){const sql=new DatabaseSync(':memory:');sql.exec("CREATE TABLE rb_rates(client TEXT,hour TEXT,uses INTEGER,PRIMARY KEY(client,hour));CREATE TABLE rb_spend(period TEXT PRIMARY KEY,micros INTEGER CHECK(micros BETWEEN 0 AND 10000000));CREATE TABLE rb_sessions(token_hash TEXT,client TEXT,expires INTEGER);CREATE VIRTUAL TABLE rb_sources USING fts5(id UNINDEXED,title,kind UNINDEXED,url UNINDEXED,attribution UNINDEXED,text);INSERT INTO rb_sources VALUES('source','Rhys Roote','substack','https://rhyslindmark.substack.com/p/example','author','SOURCE_ONLY_MARKER Rhys founded Roote.');");return {prepare(query){let args=[];return {bind(...v){args=v;return this},async first(){return sql.prepare(query).get(...args)},async all(){return {results:sql.prepare(query).all(...args)}},async run(){sql.prepare(query).run(...args);return {success:true}}}}}}
 const secret='s'.repeat(48), envBase={RHYSBOT_TRAIN_BRIDGE_SECRET:secret,RHYSBOT_CLIENT_SALT:'a'.repeat(40)};
@@ -74,4 +74,16 @@ test('sourced chat removes only redundant AI-belief handoffs and preserves uncer
  async function clean(text){async function* chunks(){for(const c of text)yield c;}let out='';for await(const c of conversationalOpening(chunks()))out+=c;return out;}
  assert.equal(await clean("I don't have personal political beliefs, but I can share perspectives from Rhys Lindmark's work. His work discusses governance [1]."),'His work discusses governance [1].');
  for(const text of ['I am an AI simulation of Rhys, not the human.','I cannot infer party affiliation from these sources.','Anki notes do not establish his beliefs.','I do not have personal beliefs.'])assert.equal(await clean(text),text);
+});
+
+test('CPU standby is reserved once atomically alongside existing usage, with the same total cap',async()=>{
+ const database=voiceDB(),now=new Date(),env={RHYSBOT_DB:database,RHYSBOT_CPU_STANDBY_ENABLED:'1',RHYSBOT_CPU_STANDBY_SINCE:new Date(now.getTime()-86400000).toISOString()};
+ const period=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles',year:'numeric',month:'2-digit'}).format(now),base=standbyBaseMicros(env,now);
+ database.sql.prepare('INSERT INTO rb_spend(period,micros) VALUES(?,?)').run(period,100000);
+ await Promise.all(Array.from({length:5},(_,i)=>charge(env,'operator'+i,5000)));
+ const r=database.sql.prepare('SELECT micros,fixed_voice_micros FROM rb_spend').get();assert.equal(r.micros,100000+25000+base);assert.equal(r.fixed_voice_micros,base);
+ await assert.rejects(charge(env,'over',10000000),/monthly_budget/);assert.equal(database.sql.prepare('SELECT micros FROM rb_spend').get().micros,r.micros);
+ assert.equal(standbyBaseMicros({RHYSBOT_CPU_STANDBY_ENABLED:'1',RHYSBOT_CPU_STANDBY_SINCE:'2026-10-20T03:00:00Z'},new Date('2026-10-21T03:00:00Z')),Math.ceil(8900000*13/31));
+ assert.equal(standbyBaseMicros({RHYSBOT_CPU_STANDBY_ENABLED:'1',RHYSBOT_CPU_STANDBY_SINCE:'2026-10-20T03:00:00Z'},new Date('2026-11-21T03:00:00Z')),8900000);
+ assert.throws(()=>standbyBaseMicros({RHYSBOT_CPU_STANDBY_ENABLED:'1',RHYSBOT_CPU_STANDBY_SINCE:'invalid'}),/standby_budget/);
 });

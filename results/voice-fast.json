@@ -1,0 +1,158 @@
+{
+  "verified_at": "2026-10-20T03:27:21.665092+00:00",
+  "service_url": "https://ai.rhyslindmark.com/rhysbot/chat/",
+  "status": "normal_case_two_second_target_verified",
+  "implementation": {
+    "model": "Kyutai Pocket TTS, KevinAHM public INT8 ONNX export",
+    "revision": "58a6d00cf13d239b6748cb0769f35c580a8f606c",
+    "models_license": "CC BY 4.0",
+    "wrapper_license": "Apache 2.0",
+    "speaker": "authorized private Rhys reference and cached voice state; no new model training",
+    "transport": "PCM16LE mono 24000 Hz SSE, scheduled incrementally with 60ms jitter",
+    "inference": "one dedicated thread for loading, warm-up, ONNX inference and iterator cleanup; denormals flushed to zero; idle spinning disabled",
+    "cpu_request": 0.125,
+    "cpu_limit": 4,
+    "memory_request_mib": 384,
+    "memory_limit_mib": 768,
+    "min_containers": 1,
+    "max_containers": 1,
+    "max_text_characters": 2000,
+    "max_audio_seconds": 149,
+    "input_timeout_seconds": 90,
+    "startup_timeout_seconds": 60,
+    "source_sha256": "eef1554fff936d5f39ae925de5b682506ede8cb17b1135a905f5f5470b594811"
+  },
+  "target_first_audio_seconds": 2,
+  "measurements": [
+    {
+      "success": true,
+      "characters": 87,
+      "chunks": 21,
+      "max_interchunk_receive_gap_seconds": 0.11023450000000048,
+      "first_pcm_seconds": 9.431051458,
+      "first_scheduled_seconds": 9.492653166000002,
+      "first_nontrivial_pcm_received_seconds": 9.433840416999999,
+      "complete_seconds": 11.184134084,
+      "duration_seconds": 4.56,
+      "bytes": 218924,
+      "sha256": "aef1363d136d07e06065e32c9823ea5ef6b2cb95a98767a6ca39da34ce0aad72",
+      "case": "deployment_startup"
+    },
+    {
+      "success": true,
+      "characters": 122,
+      "chunks": 29,
+      "max_interchunk_receive_gap_seconds": 0.10695233300000018,
+      "first_pcm_seconds": 1.508618584,
+      "first_scheduled_seconds": 1.5695140840000001,
+      "first_nontrivial_pcm_received_seconds": 1.5106611250000002,
+      "complete_seconds": 4.0029765,
+      "duration_seconds": 6.4,
+      "bytes": 307244,
+      "sha256": "3cb1a59400972a2224d903cd6dacf01739a1c1b98a4f6f2cccee8cbbfc0e6f59",
+      "case": "ready_worker"
+    },
+    {
+      "success": true,
+      "characters": 1935,
+      "chunks": 376,
+      "max_interchunk_receive_gap_seconds": 0.20137325000000056,
+      "first_pcm_seconds": 1.0936184169999998,
+      "first_scheduled_seconds": 1.1545861670000002,
+      "first_nontrivial_pcm_received_seconds": 1.0951782090000002,
+      "complete_seconds": 34.935070334,
+      "duration_seconds": 84.4,
+      "bytes": 4051244,
+      "sha256": "a4a6de5171b420ff1bec611da48a199ae39fc0352c905c7b1c3268e2f94c8067",
+      "case": "after_idle_long_reply"
+    }
+  ],
+  "idle_resource_probe": {
+    "idle_seconds": 10.001006075999982,
+    "idle_cpu_time_seconds": 0.01,
+    "process_memory": [
+      "VmRSS:\t709704 kB"
+    ],
+    "cgroup_usage_bytes": 720617472,
+    "cgroup_limit_bytes": 805306368
+  },
+  "budget": {
+    "shared_monthly_cap_usd": 10,
+    "standby_monthly_reservation_usd": 8.9,
+    "standby_31_day_resource_upper_estimate_usd": 8.845416,
+    "variable_allowance_after_standby_usd": 1.1,
+    "reservation_per_cpu_read_usd": 0.02,
+    "replay_extra_reservation_usd": 0,
+    "activation_month_fixed_reservation_usd": 3.732259,
+    "monthly_total_reservations_after_tests_usd": 9.327259,
+    "original_research_holds_usd": 158.8,
+    "new_model_training_runs": 0,
+    "account": "existing Modal account; no new subscription",
+    "accounting": "Conservative internal reservations, not provider invoices. Activation month uses whole remaining Los Angeles days; all chat, speech and checkpoint calls share the same cap. Free credits not assumed.",
+    "pricing_source": "https://modal.com/pricing"
+  },
+  "verification": {
+    "source_node_tests_passed": 65,
+    "website_node_tests_passed": 53,
+    "prior_full_python_tests_passed": 156,
+    "hosted_assets": [
+      {
+        "path": "/rhysbot/chat/",
+        "status": 200,
+        "bytes": 10066,
+        "same": true,
+        "sha256": "ac5e40785f460c617bcde425273887a0532c5f8dbe15dc7f172781ed8b1f369a"
+      },
+      {
+        "path": "/rhysbot/chat/app.js?v=cpu-stream-20261019",
+        "status": 200,
+        "bytes": 36929,
+        "same": true,
+        "sha256": "2305e9cded6b8807ecdbd43f94b450338ab4aa7da9ef57c36a5bf08909e5b941"
+      },
+      {
+        "path": "/rhysbot/chat/voice-stream.js",
+        "status": 200,
+        "bytes": 11042,
+        "same": true,
+        "sha256": "7d1526fc399e9e1eb98abc2fff4f664184a0e5c2421f6c9ae430e0c7ef945fac"
+      }
+    ],
+    "denial_and_single_dispatch_checks": [
+      {
+        "case": "repeat",
+        "status": 409,
+        "response": {
+          "error": "voice_already_dispatched",
+          "stage": "dispatch_claim"
+        }
+      },
+      {
+        "case": "missing_auth",
+        "status": 403,
+        "response": {
+          "error": "verification_required",
+          "stage": "authorize"
+        }
+      },
+      {
+        "case": "wrong_origin",
+        "status": 403,
+        "response": {
+          "error": "origin_not_allowed",
+          "stage": "authorize"
+        }
+      }
+    ],
+    "unused_cpu_prototypes": "v1, v2 and v3 stopped; one v4 worker intentionally remains ready",
+    "training_checkout": "Sandbox, available; no real payment activated",
+    "frozen_training_inputs_and_public_corpus": "unchanged"
+  },
+  "limitations": [
+    "The 2s target passed ready-worker and post-idle network probes; it is not a latency SLA. Deployment or infrastructure replacement can take longer (9.43s measured at deployment).",
+    "Network probes used the production URL and real PCM with a simulated AudioContext to record scheduling. Physical speaker-output latency and human voice similarity were not assessed.",
+    "Earlier ASGI thread-pool attempts failed to finish despite receiving initial PCM; isolated inference threading fixed full-read tests.",
+    "The single worker handles one voice generation at a time. Busy requests fail explicitly rather than spawning additional containers.",
+    "Interrupted streams cannot resume. Completed WAVs replay locally without another inference request."
+  ]
+}
