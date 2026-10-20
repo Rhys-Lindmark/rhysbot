@@ -205,13 +205,13 @@ def train_job(key,body):
  return report
 
 def claim_voice_attempt(store,nonce):
- # Modal restarts preempted inputs even with retries=0. Two 180s attempts fit
- # the same $0.15 reservation; public resubmission only replays the call handle.
+ # Modal restarts preempted inputs even with retries=0. Two 180s H100 attempts
+ # fit the same $0.50 reservation; resubmission only replays the call handle.
  for attempt in range(2):
   if store.put(f'execution:voice:{nonce}:{attempt}',True,skip_if_exists=True):return attempt+1
  raise ValueError('Voice recovery allowance exhausted')
 
-@APP.function(image=VOICE,gpu='L4',cpu=(2,4),memory=(8192,16384),timeout=180,retries=0,min_containers=0,max_containers=1,scaledown_window=15,volumes={'/artifacts':volume})
+@APP.function(image=VOICE,gpu='H100',cpu=(4,8),memory=(8192,16384),timeout=180,retries=0,min_containers=0,max_containers=1,scaledown_window=2,volumes={'/artifacts':volume})
 def voice_job(nonce,text):
  os.environ.update(HF_HOME='/artifacts/rhysbot-voice-hf',HF_HUB_CACHE='/artifacts/rhysbot-voice-hf',TOKENIZERS_PARALLELISM='false',OMP_NUM_THREADS='2')
  global _VOICE_MODEL,_VOICE_PROMPT

@@ -1,0 +1,91 @@
+{
+  "verified_at": "2026-10-20T01:17:22.907682+00:00",
+  "service_url": "https://ai.rhyslindmark.com/rhysbot/chat/",
+  "status": "live_tests_passed",
+  "implementation": {
+    "speaker_identity": "saved authorized Rhys speaker embedding, reused across cold starts",
+    "speech_model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "revision": "5d83992436eae1d760afd27aff78a71d676296fc",
+    "transport": "asynchronous dispatch and authenticated progress/result polling",
+    "integrity": "exact bytes and SHA256 required before playback",
+    "gpu": "H100",
+    "min_containers": 0,
+    "max_containers": 1,
+    "idle_seconds": 2,
+    "timeout_per_attempt_seconds": 180,
+    "max_execution_attempts": 2,
+    "max_reply_characters": 2000,
+    "max_audio_bytes": 8388608
+  },
+  "budget": {
+    "shared_monthly_allowance_usd": 10,
+    "reservation_per_new_voice_request_usd": 0.5,
+    "extra_reservation_for_replay_or_polling_usd": 0,
+    "operator_test_reservations_this_fix_usd": 1.15,
+    "monthly_reserved_after_tests_usd": 2.07,
+    "note": "Internal conservative reservations are not provider bills or customer payments. No new full-model training run was performed."
+  },
+  "benchmarks": [
+    {
+      "label": "small GPU baseline",
+      "configured_gpu": "L4",
+      "text_characters": 578,
+      "cold_wall_seconds": 119.942,
+      "audio_bytes": 1570604,
+      "audio_sha256": "f132a7411d22cd0f26956f77245f30b6ba0b47a56ac0167a987eafc93e0600dc",
+      "exact_recovery_download_verified": true,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 32.72,
+      "peak": 26752,
+      "rms": 4418.639846540069,
+      "clipped_samples": 0
+    },
+    {
+      "label": "deployed short paragraph",
+      "configured_gpu": "H100",
+      "text_characters": 578,
+      "cold_wall_seconds": 53.938,
+      "audio_bytes": 1440044,
+      "audio_sha256": "d8a87d71aa7e3c6e9ef614c19d77ed33211c51c0d3f8492c6659cab06324e9aa",
+      "exact_recovery_download_verified": true,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 30.0,
+      "peak": 24960,
+      "rms": 4192.450747484499,
+      "clipped_samples": 0
+    },
+    {
+      "label": "deployed long reply",
+      "configured_gpu": "H100",
+      "text_characters": 1935,
+      "cold_wall_seconds": 132.626,
+      "audio_bytes": 4681004,
+      "audio_sha256": "b276b7c3a550d7f6a1716e8c172170353bb144956df3a90a53cd61c7616f3899",
+      "exact_recovery_download_verified": true,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 97.52,
+      "peak": 24832,
+      "rms": 3846.3104063461396,
+      "clipped_samples": 0
+    }
+  ],
+  "short_paragraph_wall_time_reduction_percent": 55.0,
+  "tests": {
+    "python": 154,
+    "source_node": 42,
+    "website_node": 32,
+    "live_static_configuration_checks": 8,
+    "preemption_recovery_attempt_ceiling": "unit tested; the first live pilot exposed a real preemption before the fix"
+  },
+  "limitations": [
+    "Cold voice generation is not instant; long replies take longer.",
+    "Human resemblance to Rhys has not been listener-assessed.",
+    "DOM behavior and real hosted API/audio downloads were tested; no new browser session was launched during system memory recovery."
+  ]
+}

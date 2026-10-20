@@ -51,29 +51,31 @@ The model still has to synthesize each new text. No always-on GPU is required.
 Voice submission returns a background-job acknowledgement immediately. The UI
 polls short authenticated requests and shows loading/speaking progress, elapsed
 time, Stop waiting and Resume. Resume retrieves the same provider result;
-neither polling nor resubmission reserves another $0.15 or dispatches a second
+neither polling nor resubmission reserves another $0.50 or dispatches a second
 GPU job. Client-bound request IDs and text hashes prevent cross-client replay
 and changed-text reuse. Modal can recover a preempted input once, with at most
 two 180-second execution attempts within the original voice reservation.
 Failed or uncertain dispatches are not automatically re-dispatched by the app.
-Request grants expire after 24 hours; provider results have Modal's
-own retention for voice text and audio. Audio must match its authoritative byte length and SHA256 before
-playback. Replays in the same tab use the downloaded audio immediately.
+Request grants expire after 24 hours; provider results have Modal's own
+retention for voice text and audio. Audio must match its authoritative byte
+length and SHA256 before playback. Replays in the same tab use the downloaded audio immediately.
 
 Audio is labeled synthetic and plays after the explicit Listen click; browser
 autoplay restrictions may require pressing the audio player's Play control.
 This is speech synthesis plus optional browser dictation, not a live duplex
-audio model. Voice GPU execution is bounded to two 180-second attempts, with a 15-second
-idle reuse window and zero minimum containers. Long text can still take time.
+audio model. Voice GPU execution is bounded to two 180-second attempts on an
+H100 GPU, with a 2-second idle reuse window and zero minimum containers. Long
+text can still take time.
 
 ## Budget and authorization
 
 Chat, speech and saved-checkpoint comparisons share a durable $10/month allowance
 in D1, resetting by calendar month in America/Los_Angeles. Conservative charges
-are $0.005 per model chat, $0.15 per synthesis and $0.20 per checkpoint pair.
+are $0.005 per model chat, $0.50 per synthesis and $0.20 per checkpoint pair.
 These are internal cost reservations, not customer prices or provider invoices;
 failed/uncertain requests are not refunded automatically. Atomic updates refuse
-additional calls at the cap. Each HMAC-hashed client IP is limited to 40 generation calls/hour; voice status reads are exempt.
+additional calls at the cap. Each HMAC-hashed client IP is limited to 40
+generation calls/hour; voice status reads are exempt.
 Turnstile grants a one-hour HttpOnly/Secure/SameSite session after verification.
 A private server credential permits operator integration probes through the same
 meter, without disabling browser verification.

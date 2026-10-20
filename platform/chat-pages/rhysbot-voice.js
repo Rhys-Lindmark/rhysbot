@@ -21,7 +21,7 @@ export function createVoiceHandler({fetcher=fetch}={}) {return async ({request,e
       await db.prepare('DELETE FROM rb_voice WHERE expires<?').bind(now).run();
       const inserted=await db.prepare("INSERT INTO rb_voice(id,text_sha,state,expires) VALUES(?,?,'reserving',?) ON CONFLICT(id) DO NOTHING RETURNING id").bind(key,hash,now+86400).first();
       if(inserted) {
-        try {await charge(env,auth.client,150000);}
+        try {await charge(env,auth.client,500000);}
         catch(error) {await db.prepare("UPDATE rb_voice SET state='blocked' WHERE id=?").bind(key).run();throw error;}
         await db.prepare("UPDATE rb_voice SET state='charged' WHERE id=?").bind(key).run();
       }

@@ -21,7 +21,7 @@ test('voice start and resume reserve once; status and recovered audio never char
   const start={text:'A complete paragraph. '.repeat(40),request_id:voiceId};
   for(let i=0;i<2;i++)assert.equal((await handler({request:voiceRequest(start),env})).status,202);
   for(let i=0;i<2;i++){const r=await handler({request:voiceRequest({action:'status',request_id:voiceId}),env});assert.equal(r.status,200);assert.equal((await r.arrayBuffer()).byteLength,100);assert.equal(r.headers.get('X-Rhysbot-Audio-SHA256'),sum);}
-  assert.equal(database.sql.prepare('SELECT micros FROM rb_spend').get().micros,150000);assert.equal(calls[0].body.request_id,calls[3].body.request_id);
+  assert.equal(database.sql.prepare('SELECT micros FROM rb_spend').get().micros,500000);assert.equal(calls[0].body.request_id,calls[3].body.request_id);
   const before=calls.length;assert.equal((await handler({request:voiceRequest({...start,text:'Changed'}),env})).status,409);assert.equal((await handler({request:voiceRequest({action:'status',request_id:voiceId},'1.2.3.4'),env})).status,404);assert.equal(calls.length,before);
 });
 test('voice validation, missing authorization and exhausted budget never dispatch',async()=>{
@@ -37,7 +37,7 @@ test('voice download rejects truncated provider audio and resume reuses reservat
   const database=voiceDB(),env={...envBase,RHYSBOT_DB:database,RHYSBOT_PLATFORM_URL:'https://example.modal.run'};let calls=0;
   const handler=createVoiceHandler({fetcher:async(url)=>{calls++;if(calls===1)throw Error('Connection lost after dispatch');return url.pathname==='/voice'?Response.json({state:'queued'},{status:202}):new Response(new Uint8Array(50),{headers:{'Content-Type':'audio/wav','X-Rhysbot-Audio-Bytes':'100','X-Rhysbot-Audio-SHA256':'a'.repeat(64)}});}});
   const body={text:'Valid',request_id:voiceId};assert.equal((await handler({request:voiceRequest(body),env})).status,503);assert.equal((await handler({request:voiceRequest(body),env})).status,202);
-  const r=await handler({request:voiceRequest({action:'status',request_id:voiceId}),env});await assert.rejects(()=>r.arrayBuffer(),/incomplete_voice/);assert.equal(database.sql.prepare('SELECT micros FROM rb_spend').get().micros,150000);
+  const r=await handler({request:voiceRequest({action:'status',request_id:voiceId}),env});await assert.rejects(()=>r.arrayBuffer(),/incomplete_voice/);assert.equal(database.sql.prepare('SELECT micros FROM rb_spend').get().micros,500000);
 });
 
 test('voice acknowledgement sets the browser session cookie and status reuses it without CAPTCHA',async()=>{
@@ -45,5 +45,5 @@ test('voice acknowledgement sets the browser session cookie and status reuses it
   const handler=createVoiceHandler({fetcher:async(url)=>{if(String(url).includes('siteverify')){challenges++;return Response.json({success:true,hostname:'ai.rhyslindmark.com',action:'rhysbot_chat'});}providers++;return Response.json({state:providers===1?'queued':'speaking'},{status:202});}});
   const request=voiceRequest({text:'A browser reply.',request_id:voiceId,verification_token:'test-verification'});request.headers.delete('Authorization');
   const started=await handler({request,env});assert.equal(started.status,202);const cookie=started.headers.get('Set-Cookie');assert.match(cookie,/HttpOnly/);assert.match(cookie,/SameSite=Strict/);
-  const poll=voiceRequest({action:'status',request_id:voiceId});poll.headers.delete('Authorization');poll.headers.set('Cookie',cookie.split(';')[0]);const response=await handler({request:poll,env});assert.equal(response.status,202);assert.equal((await response.json()).state,'speaking');assert.equal(challenges,1);assert.equal(database.sql.prepare('SELECT micros FROM rb_spend').get().micros,150000);
+  const poll=voiceRequest({action:'status',request_id:voiceId});poll.headers.delete('Authorization');poll.headers.set('Cookie',cookie.split(';')[0]);const response=await handler({request:poll,env});assert.equal(response.status,202);assert.equal((await response.json()).state,'speaking');assert.equal(challenges,1);assert.equal(database.sql.prepare('SELECT micros FROM rb_spend').get().micros,500000);
 });
