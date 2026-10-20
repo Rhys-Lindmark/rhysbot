@@ -47,3 +47,31 @@ test('voice acknowledgement sets the browser session cookie and status reuses it
   const started=await handler({request,env});assert.equal(started.status,202);const cookie=started.headers.get('Set-Cookie');assert.match(cookie,/HttpOnly/);assert.match(cookie,/SameSite=Strict/);
   const poll=voiceRequest({action:'status',request_id:voiceId});poll.headers.delete('Authorization');poll.headers.set('Cookie',cookie.split(';')[0]);const response=await handler({request:poll,env});assert.equal(response.status,202);assert.equal((await response.json()).state,'speaking');assert.equal(challenges,1);assert.equal(database.sql.prepare('SELECT micros FROM rb_spend').get().micros,500000);
 });
+
+test('retrieval keeps an elliptical follow-up on topic and explicit medium requests are honored',async()=>{
+  const {retrievalPlan,retrieve}=await import('./rhysbot-retrieval.js');const database=db();
+  const fixtures=[['hee','Why Democracy Is Dying','hee_transcript','https://example.com/hee','Rhys narration','Democracy and political governance need new institutions.'],['pod','New power','podcast_transcript','https://example.com/podcast','Rhys voice match','I think democracy benefits from governance experiments and collective coordination.'],['tweet','Governance','x','https://x.com/RhysLindmark/status/1','Rhys public post','Thinking about platform governance versus democratic processes.'],['card','Political beliefs','anki','','study note','Political beliefs can be classified by many criteria.']];
+  for(const row of fixtures)await database.prepare('INSERT INTO rb_sources VALUES(?,?,?,?,?,?)').bind(...row).run();
+  const messages=[{role:'user',content:'What are your political beliefs?'},{role:'assistant',content:'Earlier answer'},{role:'user',content:'Come on you got it'}];
+  assert.match(retrievalPlan(messages).fts,/politic/);const sources=await retrieve({RHYSBOT_DB:database},messages);assert(sources.some(s=>s.kind==='hee_transcript'));assert(sources.some(s=>s.kind==='podcast_transcript'));assert(sources.some(s=>s.kind==='x'));assert(!sources.some(s=>s.kind==='anki'));
+  const hee=await retrieve({RHYSBOT_DB:database},[...messages,{role:'assistant',content:'Here are sources.'},{role:'user',content:'What about HEE on democracy?'}]);assert(hee.length>0);assert(hee.every(s=>s.kind==='hee_transcript'));
+});
+test('transcript evidence is excerpted near the matching passage, not cut off at the start',async()=>{
+ const {retrieve}=await import('./rhysbot-retrieval.js');const database=db();await database.prepare('INSERT INTO rb_sources VALUES(?,?,?,?,?,?)').bind('long','A long episode','hee_transcript','https://example.com/long','Rhys narration',('Unrelated opening words. '.repeat(300))+' The Digicene is the digital chapter of evolution.').run();
+ const rows=await retrieve({RHYSBOT_DB:database},'What does HEE say about Digicene?');assert(rows.length);assert(rows[0].text.includes('Digicene'));assert(rows[0].text.length<1500);
+});
+
+test('voice status forwards only a bounded ordered part and preserves integrity metadata',async()=>{
+ const database=voiceDB(),env={...envBase,RHYSBOT_DB:database,RHYSBOT_PLATFORM_URL:'https://example.modal.run'};const calls=[];let ready=false;
+ const handler=createVoiceHandler({fetcher:async(url,init)=>{const body=JSON.parse(init.body);calls.push(body);if(url.pathname==='/voice')return Response.json({state:'queued'},{status:202});if(!ready)return Response.json({state:'speaking',parts_ready:0,parts_total:3},{status:202});return new Response(new Uint8Array(100),{headers:{'Content-Type':'audio/wav','X-Rhysbot-Audio-Bytes':'100','X-Rhysbot-Audio-SHA256':'a'.repeat(64),'X-Rhysbot-Audio-Part':'0','X-Rhysbot-Audio-Parts':'3'}});}});
+ assert.equal((await handler({request:voiceRequest({text:'Valid words.',request_id:voiceId}),env})).status,202);
+ const request=()=>voiceRequest({action:'status',request_id:voiceId,part:0});let r=await handler({request:request(),env});assert.deepEqual(await r.json(),{state:'speaking',parts_ready:0,parts_total:3});ready=true;r=await handler({request:request(),env});assert.equal(r.headers.get('X-Rhysbot-Audio-Part'),'0');assert.equal(calls.at(-1).part,0);assert.equal((await r.arrayBuffer()).byteLength,100);
+ assert.equal((await handler({request:voiceRequest({action:'status',request_id:voiceId,part:32}),env})).status,400);assert.equal(database.sql.prepare('SELECT micros FROM rb_spend').get().micros,500000);
+});
+
+test('sourced chat removes only redundant AI-belief handoffs and preserves uncertainty and identity',async()=>{
+ const {conversationalOpening}=await import('./rhysbot-chat.js');
+ async function clean(text){async function* chunks(){for(const c of text)yield c;}let out='';for await(const c of conversationalOpening(chunks()))out+=c;return out;}
+ assert.equal(await clean("I don't have personal political beliefs, but I can share perspectives from Rhys Lindmark's work. His work discusses governance [1]."),'His work discusses governance [1].');
+ for(const text of ['I am an AI simulation of Rhys, not the human.','I cannot infer party affiliation from these sources.','Anki notes do not establish his beliefs.','I do not have personal beliefs.'])assert.equal(await clean(text),text);
+});

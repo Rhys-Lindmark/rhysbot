@@ -13,6 +13,7 @@ export function createVoiceHandler({fetcher=fetch}={}) {return async ({request,e
     const body=await boundedJSON(request,16000),id=body.request_id;
     if(!/^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/.test(id||'')||![undefined,'status'].includes(body.action))throw new ChatFailure(400,'invalid_voice_request');
     const poll=body.action==='status';
+    if(body.part!==undefined&&(!poll||!Number.isInteger(body.part)||body.part<0||body.part>=32))throw new ChatFailure(400,'invalid_voice_part');
     if(!poll&&(typeof body.text!=='string'||!body.text.trim()||[...body.text].length>2000||new TextEncoder().encode(body.text).length>8000))throw new ChatFailure(400,'invalid_voice_request');
     const auth=await authorize(request,env,body,fetcher),key=await sha(auth.client+':'+id),now=Math.floor(Date.now()/1000);
     const nonce=[key.slice(0,8),key.slice(8,12),key.slice(12,16),key.slice(16,20),key.slice(20,32)].join('-');
@@ -30,19 +31,21 @@ export function createVoiceHandler({fetcher=fetch}={}) {return async ({request,e
     if(!row||row.expires<=now)throw new ChatFailure(404,'voice_not_found');
     if(!poll&&row.text_sha!==hash)throw new ChatFailure(409,'voice_request_conflict');
     if(row.state!=='charged')throw new ChatFailure(409,'voice_reservation_incomplete');
-    const response=await platformCall(request,env,poll?'/voice-status':'/voice',poll?{request_id:nonce}:{text:body.text,request_id:nonce},{fetcher,timeout:20000});
+    const response=await platformCall(request,env,poll?'/voice-status':'/voice',poll?{request_id:nonce,...(body.part!==undefined?{part:body.part}:{})}:{text:body.text,request_id:nonce},{fetcher,timeout:20000});
     const headers=auth.cookie?{'Set-Cookie':auth.cookie}:{};
     if(response.status===202) {
       const result=await response.json();
       if(!['queued','loading_voice','speaking'].includes(result.state))throw new ChatFailure(503,'voice_recovery_required');
-      return reply({state:result.state},202,headers);
+      return reply({state:result.state,...(Number.isInteger(result.parts_ready)&&Number.isInteger(result.parts_total)&&result.parts_ready>=0&&result.parts_ready<=result.parts_total&&result.parts_total<=32?{parts_ready:result.parts_ready,parts_total:result.parts_total}:{})},202,headers);
     }
     if(!response.ok)throw new ChatFailure(503,'voice_temporarily_unavailable');
     const bytes=response.headers.get('X-Rhysbot-Audio-Bytes'),checksum=response.headers.get('X-Rhysbot-Audio-SHA256');
     if(!poll||!response.headers.get('Content-Type')?.startsWith('audio/wav')||!/^\d+$/.test(bytes||'')||Number(bytes)>8*1024*1024||Number(bytes)<44||!/^[a-f0-9]{64}$/.test(checksum||''))throw new ChatFailure(502,'invalid_voice_response');
+    const part=response.headers.get('X-Rhysbot-Audio-Part'),total=response.headers.get('X-Rhysbot-Audio-Parts');
+    if(part!==null&&(!/^\d+$/.test(part)||!/^\d+$/.test(total||'')||Number(part)!==body.part||Number(total)<1||Number(total)>32||Number(part)>=Number(total)))throw new ChatFailure(502,'invalid_voice_part');
     let size=0;
     const stream=response.body.pipeThrough(new TransformStream({transform(chunk,controller){size+=chunk.byteLength;if(size>Number(bytes))throw Error('voice_too_large');controller.enqueue(chunk)},flush(){if(size!==Number(bytes))throw Error('incomplete_voice')}}));
-    return new Response(stream,{headers:{'Content-Type':'audio/wav','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','X-Rhysbot-Voice':'AI-generated authorized Rhys voice','X-Rhysbot-Audio-Bytes':bytes,'X-Rhysbot-Audio-SHA256':checksum,...headers}});
+    return new Response(stream,{headers:{'Content-Type':'audio/wav','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','X-Rhysbot-Voice':'AI-generated authorized Rhys voice','X-Rhysbot-Audio-Bytes':bytes,'X-Rhysbot-Audio-SHA256':checksum,...(part!==null?{'X-Rhysbot-Audio-Part':part,'X-Rhysbot-Audio-Parts':total}:{}),...headers}});
   } catch(error) {return reply({error:error instanceof ChatFailure?error.code:'voice_temporarily_unavailable'},error.status||503);}
 };}
 export const onRequest=createVoiceHandler();

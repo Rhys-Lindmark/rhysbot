@@ -1,0 +1,184 @@
+{
+  "measured_date": "2026-10-19",
+  "live_url": "https://ai.rhyslindmark.com/rhysbot/chat/",
+  "default": "ongoing single AI Rhys conversation; optional independent Qwen comparison",
+  "session_storage": {
+    "max_turns_per_mode": 30,
+    "total_byte_limit": 240000,
+    "request_history": "up to five completed pairs, 12000 UTF-8 bytes"
+  },
+  "source_index": {
+    "excerpts": 37712,
+    "kinds": {
+      "anki": 20923,
+      "hee_transcript": 771,
+      "linked_writing": 46,
+      "podcast_transcript": 2582,
+      "substack": 765,
+      "x": 12070,
+      "youtube_transcript": 555
+    },
+    "missing_source_kinds": []
+  },
+  "retrieval_fixes": [
+    "removed writing format multiplier",
+    "recover prior user topic for elliptical follow-ups",
+    "excerpt near matching transcript passages",
+    "allow each relevant medium to contribute; explicit medium requests filter results",
+    "exclude curated Anki when authored evidence exists for personal-view questions"
+  ],
+  "voice": {
+    "model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "saved_authorized_profile": true,
+    "new_model_training": false,
+    "zero_minimum_containers": true,
+    "gpu_memory_snapshots": true,
+    "incremental_verified_wav_parts": true,
+    "probes": [
+      {
+        "snapshot_state": "created_new",
+        "text_characters": 413,
+        "first_audio_seconds": 64.514,
+        "complete_seconds": 89.355,
+        "parts": 4,
+        "bytes": 1305644,
+        "sha256": "3ba400599ebc5a5e2a788c19491c53cc239f00b2acd76ad4d08ea1bf250d3ad2",
+        "audio": {
+          "channels": 1,
+          "sample_rate": 24000,
+          "sample_width_bytes": 2,
+          "duration_seconds": 27.2
+        },
+        "clipped_samples": 0
+      },
+      {
+        "snapshot_state": "created_new",
+        "text_characters": 413,
+        "first_audio_seconds": 48.043,
+        "complete_seconds": 71.506,
+        "parts": 4,
+        "bytes": 1294124,
+        "sha256": "c5af7e75f71b5e9c691142e09e6d89edbec3cbc9efc8bfc286078939e4b97b86",
+        "audio": {
+          "channels": 1,
+          "sample_rate": 24000,
+          "sample_width_bytes": 2,
+          "duration_seconds": 26.96
+        },
+        "clipped_samples": 0
+      },
+      {
+        "snapshot_state": "restored_existing",
+        "text_characters": 413,
+        "first_audio_seconds": 22.948,
+        "complete_seconds": 43.511,
+        "parts": 4,
+        "bytes": 1294124,
+        "sha256": "c5af7e75f71b5e9c691142e09e6d89edbec3cbc9efc8bfc286078939e4b97b86",
+        "audio": {
+          "channels": 1,
+          "sample_rate": 24000,
+          "sample_width_bytes": 2,
+          "duration_seconds": 26.96
+        },
+        "clipped_samples": 0
+      }
+    ],
+    "limitations": [
+      "Individual samples, not latency percentiles.",
+      "New infrastructure variants or redeployment can require creating snapshots again.",
+      "Part boundaries can have gaps. Sentence prosody and voice similarity need human listening assessment.",
+      "No new full browser, microphone or speaker playback test; actual hosted APIs and DOM playback queue were tested."
+    ]
+  },
+  "unchanged_limits": {
+    "monthly_chat_voice_comparison_usd": 10,
+    "new_voice_reservation_usd": 0.5,
+    "private_payments": "Sandbox/test only",
+    "original_training_budget_usd": 200,
+    "new_training_runs": 0,
+    "hourly_heartbeat": "paused"
+  },
+  "verification": {
+    "python_tests": 156,
+    "source_node_tests": 51,
+    "website_all_focused_node_tests": 53
+  },
+  "source_probes": [
+    {
+      "case": "political",
+      "question": "What are your political beliefs?",
+      "source_kinds": [
+        "substack",
+        "hee_transcript",
+        "podcast_transcript",
+        "x",
+        "substack",
+        "substack"
+      ],
+      "complete_seconds": 1.601
+    },
+    {
+      "case": "followup",
+      "question": "Come on you got it. Be more specific.",
+      "source_kinds": [
+        "substack",
+        "hee_transcript",
+        "podcast_transcript",
+        "x",
+        "substack",
+        "substack"
+      ],
+      "complete_seconds": 1.808
+    },
+    {
+      "case": "hee",
+      "question": "What does How Everything Evolved say about democracy?",
+      "source_kinds": [
+        "hee_transcript"
+      ],
+      "complete_seconds": 0.802
+    },
+    {
+      "case": "podcast",
+      "question": "From your podcasts, what do you think about governance?",
+      "source_kinds": [
+        "podcast_transcript",
+        "youtube_transcript",
+        "podcast_transcript",
+        "podcast_transcript",
+        "podcast_transcript"
+      ],
+      "complete_seconds": 1.184
+    },
+    {
+      "case": "x",
+      "question": "What did you write on X about coordination?",
+      "source_kinds": [
+        "x",
+        "x",
+        "x",
+        "x",
+        "x"
+      ],
+      "complete_seconds": 1.407
+    },
+    {
+      "case": "topic_change",
+      "question": "What is the Digicene?",
+      "source_kinds": [
+        "linked_writing",
+        "hee_transcript",
+        "x",
+        "anki",
+        "linked_writing",
+        "x"
+      ],
+      "complete_seconds": 1.203
+    }
+  ],
+  "source_limitations": [
+    "Keyword retrieval remains incomplete; source diversity does not prove that a generated personal-view inference is correct.",
+    "Quotations, book discussions and interview questions can still be misinterpreted; inspect cited sources."
+  ]
+}

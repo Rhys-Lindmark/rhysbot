@@ -131,6 +131,8 @@ class PlatformTests(unittest.TestCase):
      seen.append((module,dict(environment)))
      return SimpleNamespace(**{field:object() for field in (fromlist or ())})
     if module=='soundfile':return SimpleNamespace()
+    if module=='voice_chunks':return SimpleNamespace(speech_chunks=object())
+    if module=='numpy':return SimpleNamespace()
     return builtins.__import__(module,globals,locals,fromlist,level)
    ns={'os':SimpleNamespace(environ=environment),'__builtins__':{**vars(builtins),'__import__':fake_import}}
    exec(compile(ast.Module(body=nodes,type_ignores=[]),str(SOURCE),'exec'),ns)

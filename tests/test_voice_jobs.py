@@ -38,7 +38,7 @@ class VoiceRouteTests(unittest.IsolatedAsyncioTestCase):
    if str(uuid.UUID(value))!=value:raise ValueError()
    return value
   class PollTimeout(Exception):pass
-  self.scope={'Request':object,'JSONResponse':Response,'Response':Response,'store':self.store,'auth':auth,'body':body,'nonce_id':canonical,'hashlib':hashlib,'voice_job':SimpleNamespace(spawn=AsyncMethod(spawn)),'modal':SimpleNamespace(FunctionCall=SimpleNamespace(from_id=lambda _:SimpleNamespace(get=AsyncMethod(get))),exception=SimpleNamespace(TimeoutError=PollTimeout)),'pending_poll_timeout':lambda e,t:type(e) in {TimeoutError,t}}
+  self.scope={'Request':object,'JSONResponse':Response,'Response':Response,'store':self.store,'auth':auth,'body':body,'nonce_id':canonical,'hashlib':hashlib,'RhysVoice':lambda:SimpleNamespace(speak=SimpleNamespace(spawn=AsyncMethod(spawn))),'modal':SimpleNamespace(FunctionCall=SimpleNamespace(from_id=lambda _:SimpleNamespace(get=AsyncMethod(get))),exception=SimpleNamespace(TimeoutError=PollTimeout)),'pending_poll_timeout':lambda e,t:type(e) in {TimeoutError,t}}
   exec(compile(ast.Module(body=ROUTES,type_ignores=[]),'voice-routes','exec'),self.scope)
 
  async def test_duplicate_dispatch_replays_handle_and_never_spawns_another_gpu(self):

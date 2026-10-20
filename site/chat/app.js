@@ -110,6 +110,33 @@ export async function requestVoice(fetcher,{text,requestId,verification,signal,o
     await wait(2500,signal);payload={action:'status',request_id:requestId};
   }
 }
+// Ordered independently verified WAV parts; the complete clip remains available
+// for replay and seeking after synthesis finishes.
+export async function joinVoiceParts(parts) {
+  let bytes=0;const pcm=[];
+  for(const blob of parts){const raw=new Uint8Array(await blob.arrayBuffer()),v=new DataView(raw.buffer);if(raw.length<44||new TextDecoder().decode(raw.slice(0,4))!=='RIFF'||new TextDecoder().decode(raw.slice(8,12))!=='WAVE'||v.getUint16(20,true)!==1||v.getUint16(22,true)!==1||v.getUint32(24,true)!==24000||v.getUint16(34,true)!==16||new TextDecoder().decode(raw.slice(36,40))!=='data'||v.getUint32(40,true)!==raw.length-44)throw new Error('Unsupported voice part.');pcm.push(raw.slice(44));bytes+=raw.length-44;if(bytes+44>8*1024*1024)throw new Error('Voice response is too large.');}
+  if(!pcm.length)throw new Error('No voice audio returned.');
+  const header=new Uint8Array(await parts[0].slice(0,44).arrayBuffer()),view=new DataView(header.buffer);view.setUint32(4,36+bytes,true);view.setUint32(40,bytes,true);return new Blob([header,...pcm],{type:'audio/wav'});
+}
+export async function requestVoiceParts(fetcher,{text,requestId,verification,signal,onProgress=()=>{},onAccepted=()=>{},onChunk=()=>{},parts=[],wait=voiceWait}) {
+  let payload={text,request_id:requestId,...(verification?{verification_token:verification}:{})},total,bytes=parts.reduce((n,p)=>n+p.size,0);const deadline=Date.now()+480000;
+  for(;;){
+    signal?.throwIfAborted();
+    const response=await fetcher('/api/rhysbot-voice',{method:'POST',credentials:'same-origin',redirect:'error',cache:'no-store',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),signal:AbortSignal.any([signal||new AbortController().signal,AbortSignal.timeout(30000)])});
+    if(!response.ok){let code;try{code=(await response.json()).error;}catch{}const error=new Error(friendly(code));error.code=code;throw error;}
+    onAccepted();
+    if(response.status===202){const state=await response.json();if(!['queued','loading_voice','speaking'].includes(state.state))throw new Error('Voice progress is unavailable.');onProgress(state.state,state);if(Date.now()>deadline)throw new Error('Voice is taking too long. Resume checks the same job.');await wait(1000,signal);}
+    else {
+      const index=response.headers.get('X-Rhysbot-Audio-Part'),count=response.headers.get('X-Rhysbot-Audio-Parts');
+      const blob=await boundedAudio(response);signal?.throwIfAborted();
+      if(index===null){onChunk(blob,{index:0,total:1});return blob;} // Earlier backend compatibility.
+      if(!/^\d+$/.test(index)||!/^\d+$/.test(count||'')||Number(index)!==parts.length||Number(count)<1||Number(count)>32||Number(index)>=Number(count)||(total!==undefined&&total!==Number(count)))throw new Error('Voice parts arrived out of order.');
+      total=Number(count);bytes+=blob.size;if(bytes>8*1024*1024)throw new Error('Voice response is too large.');parts.push(blob);onChunk(blob,{index:Number(index),total});
+      if(parts.length===total)return joinVoiceParts(parts);
+    }
+    payload={action:'status',request_id:requestId,part:parts.length};
+  }
+}
 export function renderText(element, value) { element.textContent = String(value ?? ''); }
 
 const MODE_NOTES = {
@@ -122,10 +149,61 @@ function friendly(code) {
   return ({ verification_required: 'Please complete verification to continue.', verification_failed: 'Verification expired or failed. Complete it again.', monthly_budget_reached: 'The shared $10 monthly chat and voice budget has been reached.', hourly_limit: 'This client’s hourly request limit has been reached.', model_busy: 'The model is busy. No automatic retry was sent.', recovery_required: 'The model requires operator reconciliation. No retry was sent.', chat_not_configured: 'Chat is not configured yet.', chat_temporarily_unavailable: 'Chat is temporarily unavailable.' })[code] || 'The request could not finish. No automatic retry was sent.';
 }
 
+export const CONVERSATION_KEY = 'rhysbot.conversations.v1';
+const MODES = ['rhys','compare','qwen','checkpoints'];
+const emptyConversations = () => Object.fromEntries(MODES.map(mode => [mode, []]));
+export function sourceLabel(kind) {
+  return ({ hee_transcript: 'How Everything Evolved', podcast_transcript: 'Podcasts / YouTube', youtube_transcript: 'Podcasts / YouTube', x: 'X', substack: 'Writing', linked_writing: 'Writing', anki: 'Anki' })[kind] || 'Public source';
+}
+function sourceProvenance(kind) {
+  if (kind === 'anki') return 'Curated study note; not necessarily Rhys’s views';
+  if (kind === 'hee_transcript') return 'Rhys’s narration';
+  if (['podcast_transcript','youtube_transcript'].includes(kind)) return 'Rhys’s speech · automatic transcript';
+  return 'Published by Rhys · may quote others';
+}
+function sourceMetadata(sources) {
+  return (Array.isArray(sources) ? sources : []).slice(0,8).filter(s => s && typeof s === 'object').map(s => Object.fromEntries(['id','title','url','kind','attribution'].filter(key => typeof s[key] === 'string').map(key => [key,s[key].slice(0,key === 'url' ? 2000 : 600)])));
+}
+export function restoreConversation(raw) {
+  const fallback = { mode: 'rhys', conversations: emptyConversations() };
+  if (typeof raw !== 'string' || encoder.encode(raw).length > 256000) return fallback;
+  try {
+    const value = JSON.parse(raw);
+    if (value?.version !== 1 || !MODES.includes(value.mode) || !value.conversations || typeof value.conversations !== 'object') return fallback;
+    const conversations = emptyConversations();
+    for (const mode of MODES) {
+      const channels = mode === 'rhys' ? ['rhys'] : mode === 'qwen' ? ['qwen'] : ['rhys','qwen'];
+      if (!Array.isArray(value.conversations[mode])) continue;
+      for (const row of value.conversations[mode].slice(-30)) {
+        if (!row || typeof row.user !== 'string' || !row.user.trim() || encoder.encode(row.user).length > MAX_PROMPT_BYTES || channels.some(c => typeof row[c] !== 'string' || !row[c].trim() || encoder.encode(row[c]).length > 128000)) continue;
+        conversations[mode].push({ user: row.user, rhys: channels.includes('rhys') ? row.rhys : '', qwen: channels.includes('qwen') ? row.qwen : '', sources: sourceMetadata(row.sources) });
+      }
+    }
+    return { mode: value.mode, conversations };
+  } catch { return fallback; }
+}
+
 export function mount(doc = document, win = window, fetcher = fetch) {
   const $ = id => doc.getElementById(id); const thread = $('thread');
-  let config, mode = 'compare', turns = [], active, voiceActive, timer, verification = '', sessionKnown = false, widget, turnstileLoaded = false, recognition, listening = false, generation = 0;
+  let saved; try { saved = win.sessionStorage?.getItem(CONVERSATION_KEY); } catch {}
+  const restored = restoreConversation(saved);
+  let conversations = restored.conversations;
+  let config, mode = restored.mode, turns = conversations[mode], active, voiceActive, timer, verification = '', sessionKnown = false, widget, turnstileLoaded = false, recognition, listening = false, generation = 0;
   const audioURLs = new Set(), audios = new Set();
+  $('mode').value = mode;
+  function persist() {
+    conversations[mode] = turns;
+    try {
+      let value = JSON.stringify({ version: 1, mode, conversations });
+      while (encoder.encode(value).length > 240000) {
+        const longest = MODES.reduce((a,b) => conversations[a].length >= conversations[b].length ? a : b);
+        if (!conversations[longest].length) break;
+        conversations[longest].shift();
+        value = JSON.stringify({ version: 1, mode, conversations });
+      }
+      win.sessionStorage?.setItem(CONVERSATION_KEY,value);
+    } catch {} // Storage may be disabled or full; the live conversation still works.
+  }
   const element = (tag, cls, text) => { const el = doc.createElement(tag); if (cls) el.className = cls; if (text !== undefined) renderText(el, text); return el; };
   const status = (text, error = false) => { renderText($('status'), text); $('status').classList.toggle('error', error); };
   function ready() { $('send').disabled = !config?.available || !!active || (!sessionKnown && !verification) || !$('message').value.trim(); $('mode').disabled = !!active; $('mic').disabled = !!active || !recognition; $('stop').hidden = !active; }
@@ -152,15 +230,16 @@ export function mount(doc = document, win = window, fetcher = fetch) {
     for (const url of audioURLs) win.URL.revokeObjectURL(url); audioURLs.clear();
   }
   function reset() {
-    generation++; active?.abort(); active = null; clearInterval(timer); recognition?.abort(); clearAudio(); turns = []; thread.replaceChildren(); $('empty').hidden = false; $('message').value = ''; status(config?.available ? 'New conversation. No request sent.' : 'Chat is unavailable.'); ready();
+    generation++; active?.abort(); active = null; clearInterval(timer); recognition?.abort(); clearAudio(); conversations = emptyConversations(); turns = conversations[mode]; thread.replaceChildren(); $('empty').hidden = false; $('message').value = ''; try { win.sessionStorage?.removeItem(CONVERSATION_KEY); } catch {} status(config?.available ? 'New conversation. No request sent.' : 'Chat is unavailable.'); ready(); $('message').focus();
   }
   function sourcesFor(card, sources) {
     if (!Array.isArray(sources) || !sources.length) return;
-    const details = element('details','sources'), summary = element('summary','',`${Math.min(sources.length,8)} retrieved source excerpts`), list = element('ol');
+    const kinds = [...new Set(sources.slice(0,8).map(source => sourceLabel(source?.kind)))];
+    const details = element('details','sources'), summary = element('summary','',`Sources · ${kinds.join(' · ')} (${Math.min(sources.length,8)})`), list = element('ol');
     for (const source of sources.slice(0,8).filter(s => s && typeof s === 'object')) {
       const li = element('li'), href = safeSourceURL(source.url); const title = String(source.title || source.id || 'Source').slice(0,240);
       if (href) { const a = element('a','',title); a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer'; li.appendChild(a); } else li.appendChild(element('span','',title));
-      li.appendChild(element('span','source-meta',[source.kind, source.attribution].filter(x => typeof x === 'string').join(' · ').slice(0,600))); list.appendChild(li);
+      li.appendChild(element('span','source-meta',`${sourceLabel(source.kind)} · ${sourceProvenance(source.kind)}`)); list.appendChild(li);
     }
     details.append(summary,list); card.appendChild(details);
   }
@@ -171,21 +250,23 @@ export function mount(doc = document, win = window, fetcher = fetch) {
     const progress=element('span','answer-status');progress.setAttribute('role','status');
     const spoken=[...reply].slice(0,2000).join('');
     if([...reply].length>2000)renderText(progress,'Reads the first 2,000 characters.');
-    let requestId, url, ownController;
+    let requestId, url, ownController, playingIndex=-1, waitingForPart=true, fullPlayback=false;const parts=[],partURLs=[];
+    const playPart=index=>{if(!partURLs[index]){waitingForPart=true;return;}playingIndex=index;waitingForPart=false;audio.src=partURLs[index];audio.hidden=false;audio.play().catch(()=>status('Audio is ready. Use the player to listen.'));};
+    audio.addEventListener('ended',()=>{if(fullPlayback)return;if(playingIndex+1<partURLs.length)playPart(playingIndex+1);else if(url){audio.src=url;playingIndex=-1;waitingForPart=false;fullPlayback=true;}else waitingForPart=true;});
     button.addEventListener('click', async () => {
-      if (url) { audio.hidden = false; await audio.play().catch(() => status('Use the audio player to listen.')); return; }
-      if (ownController && voiceActive===ownController) {ownController.abort();return;}
+      if (url) { fullPlayback=true;audio.src=url;audio.hidden = false; await audio.play().catch(() => status('Use the audio player to listen.')); return; }
+      if (ownController && voiceActive===ownController) {ownController.abort();audio.pause();return;}
       if (voiceActive) { status('One voice request is already in progress.'); return; }
       if (!sessionKnown && !verification) { await needVerification(); status('Complete verification, then choose Listen again.'); return; }
-      requestId ||= win.crypto.randomUUID();voiceActive=new AbortController();const controller=voiceActive,epoch=generation;ownController=controller;
+      if(playingIndex>=0&&!waitingForPart)audio.play().catch(()=>{});requestId ||= win.crypto.randomUUID();voiceActive=new AbortController();const controller=voiceActive,epoch=generation;ownController=controller;
       const started=Date.now();let phase='queued';
-      const update=()=>{renderText(button,'Stop waiting');renderText(progress,`${({queued:'Starting Rhys voice',loading_voice:'Loading saved Rhys voice',speaking:'Reading the reply in Rhys voice'})[phase]} · ${Math.round((Date.now()-started)/1000)}s. First use may take about a minute.`);};
+      const update=()=>{renderText(button,'Stop waiting');renderText(progress,`${({queued:'Starting Rhys voice',loading_voice:'Loading saved Rhys voice',speaking:'Reading the reply in Rhys voice'})[phase]} · ${Math.round((Date.now()-started)/1000)}s. Audio starts as soon as the opening is ready.`);};
       update();const ticker=setInterval(update,1000);
       try {
-        const blob=await requestVoice(fetcher,{text:spoken,requestId,verification,signal:controller.signal,onAccepted:verifiedSession,onProgress:value=>{phase=value;update();}});if(controller.signal.aborted||epoch!==generation)return;
-        verifiedSession(); url = win.URL.createObjectURL(blob); audioURLs.add(url); audio.src = url; audio.hidden = false; renderText(button,'Play AI-generated Rhys voice');
+        const blob=await requestVoiceParts(fetcher,{text:spoken,requestId,verification,parts,signal:controller.signal,onAccepted:verifiedSession,onProgress:value=>{phase=value;update();},onChunk:(blob,info)=>{if(epoch!==generation||controller.signal.aborted)return;const partURL=win.URL.createObjectURL(blob);audioURLs.add(partURL);partURLs[info.index]=partURL;renderText(progress,`Listening while the rest generates · part ${info.index+1} of ${info.total}`);if(waitingForPart)playPart(info.index);}});if(controller.signal.aborted||epoch!==generation)return;
+        verifiedSession(); url = win.URL.createObjectURL(blob); audioURLs.add(url); if(playingIndex<0){fullPlayback=true;audio.src=url;}audio.hidden=false;renderText(button,'Play again · AI-generated Rhys voice');
         renderText(progress,`AI audio ready · ${Math.round((Date.now()-started)/1000)}s${[...reply].length>2000?' · first 2,000 characters':''}`);
-        await audio.play().catch(() => status('AI audio is ready. Use the player to listen.'));
+        if(playingIndex<0)await audio.play().catch(() => status('AI audio is ready. Use the player to listen.'));
       } catch (error) {
         if(epoch===generation){if(['verification_required','verification_failed'].includes(error.code))await needVerification();renderText(progress,controller.signal.aborted?'Waiting stopped. Resume checks the same audio request; generation may continue.':error.message);renderText(button,'Resume · AI-generated Rhys voice');}
       } finally {clearInterval(ticker);if(voiceActive===controller)voiceActive=null;ownController=null;}
@@ -193,19 +274,32 @@ export function mount(doc = document, win = window, fetcher = fetch) {
     card.append(button,progress,audio);
   }
   function cardsFor(turn) {
-    const block = element('section','turn'), question = element('h2','question',turn.user), answers = element('div',`answers${turn.channels.length === 1 ? ' single' : ''}`); block.append(question,answers); const cards = {};
+    const block = element('section','turn'), question = element('article','user-message'), answers = element('div',`answers${turn.channels.length === 1 ? ' single' : ''}`); question.setAttribute('aria-label','Your message'); question.append(element('span','message-author','You'),element('p','question',turn.user)); block.append(question,answers); const cards = {};
     for (const channel of turn.channels) {
       const label = mode === 'checkpoints' ? (channel === 'rhys' ? 'Rhysbot · trained 4B adapter' : 'Qwen 4B base · adapter disabled') : (channel === 'rhys' ? 'Rhysbot · Qwen + Rhys sources' : 'Qwen · no corpus');
       const card = element('article',`answer ${channel}`), heading = element('h3','',label), text = element('div','answer-text pending','Waiting for reply…'), timing = element('div','answer-status'); card.append(heading,text,timing); answers.appendChild(card); cards[channel] = { card,text,timing };
     }
-    thread.appendChild(block); $('empty').hidden = true; block.scrollIntoView?.({block:'start',behavior:win.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'}); return cards;
+    thread.appendChild(block); $('empty').hidden = true; return cards;
+  }
+  function renderConversation() {
+    thread.replaceChildren(); $('empty').hidden = !turns.length;
+    for (const saved of turns) {
+      const turn = newTurn(saved.user,mode), cards = cardsFor(turn);
+      for (const channel of turn.channels) {
+        renderText(cards[channel].text,saved[channel]); cards[channel].text.classList.remove('pending');
+        if (channel === 'rhys') { sourcesFor(cards[channel].card,saved.sources); addVoice(cards[channel].card,saved[channel]); }
+      }
+    }
+  }
+  function followLatest() {
+    $('composer').scrollIntoView?.({block:'end',behavior:win.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
   }
   async function send(event) {
     event?.preventDefault(); if (active || !config?.available) return;
     const prompt = $('message').value.trim(); if (!prompt) return;
     if (!sessionKnown && !verification) { await needVerification(); status('Complete verification, then send your message.'); return; }
     let context; try { context = histories(turns,prompt,mode); } catch (error) { status(error.message,true); return; }
-    recognition?.abort(); const turn = newTurn(prompt,mode), cards = cardsFor(turn); const controller = new AbortController(), epoch = generation; active = controller; ready(); $('message').value = ''; const started = Date.now();
+    recognition?.abort(); const turn = newTurn(prompt,mode), cards = cardsFor(turn); const controller = new AbortController(), epoch = generation; active = controller; ready(); $('message').value = ''; followLatest(); const started = Date.now();
     const elapsed = () => status(`${mode === 'checkpoints' ? 'Loading saved checkpoints and comparing' : 'Generating'}… ${((Date.now()-started)/1000).toFixed(1)}s`);
     elapsed(); const ticker = setInterval(elapsed,250); timer = ticker; const deadline = setTimeout(() => controller.abort('deadline'),mode === 'checkpoints' ? 270000 : 90000);
     try {
@@ -220,7 +314,7 @@ export function mount(doc = document, win = window, fetcher = fetch) {
       } else {
         if (!response.headers.get('Content-Type')?.includes('text/event-stream') || !response.body) throw new Error('The service did not return a response stream.');
         for await (const item of sseEvents(response.body,{signal:controller.signal})) {
-          if (item.type === 'meta' && cards.rhys) sourcesFor(cards.rhys.card,item.sources);
+          if (item.type === 'meta' && cards.rhys) { turn.sources = sourceMetadata(item.sources); sourcesFor(cards.rhys.card,turn.sources); }
           if (!cards[item.channel]) continue;
           applyEvent(turn,item); const target = cards[item.channel];
           if (item.type === 'delta') { renderText(target.text,turn[item.channel]); target.text.classList.remove('pending'); }
@@ -230,20 +324,20 @@ export function mount(doc = document, win = window, fetcher = fetch) {
         }
       }
       if (controller.signal.aborted || epoch !== generation) throw new DOMException('Stopped','AbortError');
-      if (completeTurn(turn)) { turns.push({user:prompt,rhys:turn.rhys,qwen:turn.qwen}); turns = turns.slice(-5); for (const channel of turn.channels) if (channel === 'rhys') addVoice(cards[channel].card,turn[channel]); status(`Finished in ${((Date.now()-started)/1000).toFixed(1)}s. You can ask a follow-up.`); }
+      if (completeTurn(turn)) { turns.push({user:prompt,rhys:turn.rhys,qwen:turn.qwen,sources:turn.sources || []}); if (turns.length > 30) turns.splice(0,turns.length-30); persist(); for (const channel of turn.channels) if (channel === 'rhys') addVoice(cards[channel].card,turn[channel]); status('Your turn. Ask a follow-up or take the conversation somewhere new.'); }
       else status('A reply was incomplete. This turn was not added to either model’s follow-up history.',true);
     } catch (error) {
       if (epoch === generation) {
         status(error.name === 'AbortError' || controller.signal.aborted ? 'Stopped. Partial replies are shown; this turn was not saved to follow-up history.' : error.message,true);
         for (const channel of turn.channels) if (!turn[channel]) { renderText(cards[channel].text,'No completed reply.'); cards[channel].text.classList.remove('pending'); }
       }
-    } finally { clearInterval(ticker); clearTimeout(deadline); if (active === controller) { active = null; ready(); } }
+    } finally { clearInterval(ticker); clearTimeout(deadline); if (active === controller) { active = null; ready(); $('message').focus(); } }
   }
   $('composer').addEventListener('submit',send);
   $('message').addEventListener('input',ready);
   $('message').addEventListener('keydown',event => { if (event.key === 'Enter' && !event.shiftKey && !event.isComposing) { event.preventDefault(); send(); } });
   $('stop').addEventListener('click',() => active?.abort()); $('new').addEventListener('click',reset);
-  $('mode').addEventListener('change',() => { mode = $('mode').value; reset(); renderText($('mode-note'),MODE_NOTES[mode]); });
+  $('mode').addEventListener('change',() => { if (active || !MODES.includes($('mode').value)) return; generation++; recognition?.abort(); clearAudio(); conversations[mode] = turns; mode = $('mode').value; turns = conversations[mode]; renderConversation(); persist(); renderText($('mode-note'),MODE_NOTES[mode]); status(turns.length ? 'Conversation restored. Keep going.' : 'A separate conversation. No request sent.'); ready(); $('message').focus(); });
   for (const button of doc.querySelectorAll('[data-prompt]')) button.addEventListener('click',() => { $('message').value = button.dataset.prompt; $('message').focus(); ready(); });
   const Recognition = win.SpeechRecognition || win.webkitSpeechRecognition;
   if (Recognition) {
@@ -255,7 +349,7 @@ export function mount(doc = document, win = window, fetcher = fetch) {
     $('mic').addEventListener('click',() => { if (listening) recognition.stop(); else { prefix = $('message').value ? $('message').value+' ' : ''; try { recognition.start(); } catch { status('Microphone could not start. You can type instead.',true); } } });
   } else { renderText($('mic'),'Microphone unavailable'); $('mic').title = 'Speech recognition is unavailable in this browser. Type your message instead.'; }
   const initialized = (async () => {
-    try { const response = await fetcher('/api/rhysbot-chat',{credentials:'same-origin',cache:'no-store',redirect:'error',signal:AbortSignal.timeout(10000)}); if (!response.ok) throw new Error('Chat is unavailable.'); config = await response.json(); if (!config.available) throw new Error('Chat is not configured yet. No generation request was sent.'); renderText($('mode-note'),MODE_NOTES[mode]); await needVerification(); status('Complete verification to start. Later turns use a one-hour server session.'); }
+    try { const response = await fetcher('/api/rhysbot-chat',{credentials:'same-origin',cache:'no-store',redirect:'error',signal:AbortSignal.timeout(10000)}); if (!response.ok) throw new Error('Chat is unavailable.'); config = await response.json(); if (!config.available) throw new Error('Chat is not configured yet. No generation request was sent.'); renderText($('mode-note'),MODE_NOTES[mode]); renderConversation(); await needVerification(); status(turns.length ? 'Your conversation is restored. Complete verification to continue.' : 'Complete verification to start. Later turns use a one-hour server session.'); }
     catch(error) { status(error.message,true); }
     ready();
   })();

@@ -1,9 +1,10 @@
 # Conversational Rhysbot
 
-The [chat](https://ai.rhyslindmark.com/rhysbot/chat/) has two distinct comparison
-modes. The default streams Qwen3-30B-A3B-FP8 twice: the Rhys side receives retrieved
-approved source excerpts, while the Qwen side receives no corpus. This is a
-retrieval comparison, not a claim that this managed model was fine-tuned.
+The [chat](https://ai.rhyslindmark.com/rhysbot/chat/) opens an ongoing conversation
+with AI Rhys using Qwen3-30B-A3B-FP8 and approved source excerpts. Side-by-side
+comparison is optional: the Qwen side receives no corpus and retains its own
+assistant history. This is a retrieval comparison, not a claim that this managed
+model was fine-tuned.
 
 “Trained 4B vs Qwen 4B base” uses the actual saved `qwen-train-20261019a` CPT/SFT
 adapter with the pinned Qwen3.5-4B-Base. The other side disables that same adapter.
@@ -21,15 +22,23 @@ training inputs and saved research checkpoints are unchanged.
 
 The private D1 search index contains 37,712 approved excerpts. Speaker-aware
 records contribute only Rhys-matched lines, never guest or unknown turns.
-Writing receives search priority. Anki is explicitly described as curated
-knowledge rather than personal belief. Four excerpts of at most 1,500 characters
-are retrieved per question; citations link to public sources. Retrieval is
+Writing has no format multiplier. Each relevant medium can contribute matching
+evidence, with up to six excerpts, deduplicated by document. Transcript excerpts
+come from near the matching passage rather than the start of the transcript.
+Explicit requests for HEE, podcasts/YouTube, X, writing or Anki select that medium.
+Elliptical follow-ups recover the preceding user topic. Personal-view questions
+prefer public authored/spoken material over Anki; curated notes and quotations
+are not automatically treated as endorsements. Citations link to public sources.
+Retrieval is
 keyword-based and incomplete, and generated factual claims still need checking.
 The complete downloadable research corpus includes additional guest/unknown
 transcripts with attribution, so its excerpt count is larger than the chat index.
 
-Histories stay in the browser tab and are sent to the provider with each request.
-No server conversation archive is implemented. New chat clears local history and
+Completed histories persist in the tab's sessionStorage across refresh, with
+separate conversations per mode, at most 30 turns per mode and 240 KB total.
+The most recent five complete question/answer pairs, bounded to 12 KB, are sent
+with a new message. No server conversation archive is implemented. Browsers may
+restore sessionStorage when reopening tabs. New chat clears all local histories and
 cached generated audio. Text is rendered as text, not HTML. Browser microphone
 recognition is opt-in, fills a draft, and never sends automatically. Availability
 checks, examples and mode switches do not launch inference.
@@ -54,18 +63,26 @@ time, Stop waiting and Resume. Resume retrieves the same provider result;
 neither polling nor resubmission reserves another $0.50 or dispatches a second
 GPU job. Client-bound request IDs and text hashes prevent cross-client replay
 and changed-text reuse. Modal can recover a preempted input once, with at most
-two 180-second execution attempts within the original voice reservation.
+two 150-second execution attempts, with a 45-second startup deadline per attempt,
+within the original voice reservation.
 Failed or uncertain dispatches are not automatically re-dispatched by the app.
 Request grants expire after 24 hours; provider results have Modal's own
-retention for voice text and audio. Audio must match its authoritative byte
-length and SHA256 before playback. Replays in the same tab use the downloaded audio immediately.
+retention for voice text and audio. Private incremental audio parts expire after
+seven days of inactivity in the provider's Dict storage. Every part must match
+its authoritative byte length and SHA256 before playback. Replays in the same
+tab use the downloaded audio immediately.
 
 Audio is labeled synthetic and plays after the explicit Listen click; browser
 autoplay restrictions may require pressing the audio player's Play control.
 This is speech synthesis plus optional browser dictation, not a live duplex
-audio model. Voice GPU execution is bounded to two 180-second attempts on an
+audio model. Voice GPU execution is bounded to two 150-second attempts on an
 H100 GPU, with a 2-second idle reuse window and zero minimum containers. Long
-text can still take time.
+text can still take time. GPU memory snapshots retain the loaded model and
+approved voice profile across scale-to-zero. New infrastructure variants can
+require snapshot creation again. The opening is generated first (normally up to
+100 characters), then later parts (normally up to 180 characters) are played in
+order while generation continues. Full replay joins verified PCM parts locally;
+no extra GPU request is made. Brief gaps between parts remain possible.
 
 ## Budget and authorization
 
@@ -147,3 +164,11 @@ Cloudflare proxy uses native fixed-length streaming; the browser verifies both
 the complete size and digest before offering a file. A truncated response cannot
 be offered as a successful download. See [public verification data](../results/chat-upgrade.json)
 for measured results and limitations.
+
+The continuity/source/voice follow-up is recorded in
+[chat-continuity.json](../results/chat-continuity.json). A real 413-character read
+from an existing GPU snapshot delivered its first part at 22.948 seconds and
+finished at 43.511 seconds. Two initial snapshot-creation probes took
+48.043–64.514 seconds to first audio. These are individual samples, not latency
+guarantees. Model startup and synthesis remain the main delay; cached individual
+words would lose sentence prosody and do not remove model loading.

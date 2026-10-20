@@ -211,22 +211,13 @@ def claim_voice_attempt(store,nonce):
   if store.put(f'execution:voice:{nonce}:{attempt}',True,skip_if_exists=True):return attempt+1
  raise ValueError('Voice recovery allowance exhausted')
 
-@APP.function(image=VOICE,gpu='H100',cpu=(4,8),memory=(8192,16384),timeout=180,retries=0,min_containers=0,max_containers=1,scaledown_window=2,volumes={'/artifacts':volume})
-def voice_job(nonce,text):
+def load_voice_profile():
  os.environ.update(HF_HOME='/artifacts/rhysbot-voice-hf',HF_HUB_CACHE='/artifacts/rhysbot-voice-hf',TOKENIZERS_PARALLELISM='false',OMP_NUM_THREADS='2')
  global _VOICE_MODEL,_VOICE_PROMPT
- # Ongoing voice/compare are separately authorized by the CF $10/month ledger,
- # charged BEFORE this private service. They never consume the $200 training
- # ledger. Only the authenticated CF bridge can issue single-use nonce grants.
- store=jobs();state=store.get('voice:'+nonce)
- if state!={'text_sha256':hashlib.sha256(text.encode()).hexdigest()}:raise ValueError('No voice grant')
- attempt=claim_voice_attempt(store,nonce)
- store.put('voice-state:'+nonce,{'state':'loading_voice'})
- import torch,soundfile as sf
+ import torch
  from huggingface_hub import snapshot_download
  from qwen_tts import Qwen3TTSModel
  torch.set_num_threads(2)
- start=time.monotonic()
  if hashlib.sha256(Path('/voice/rhys.wav').read_bytes()).hexdigest()!='392b8c0ce6e2b70f1ed7bb4e00ce964d08190e892a3e9f5f274c4d5c644d1622':raise ValueError('Unapproved voice reference')
  if _VOICE_MODEL is None:
   try:model_path=snapshot_download(TTS_MODEL,revision=TTS_REV,cache_dir='/artifacts/rhysbot-voice-hf',local_files_only=True)
@@ -246,12 +237,56 @@ def voice_job(nonce,text):
    torch.save({'speaker_embedding':embedding.detach().cpu()},profile)
    volume.commit()
   _VOICE_PROMPT={'ref_code':[None],'ref_spk_embedding':[embedding],'x_vector_only_mode':[True],'icl_mode':[False]}
- store.put('voice-state:'+nonce,{'state':'speaking'})
- wavs,sr=_VOICE_MODEL.generate_voice_clone(text=text,language='English',voice_clone_prompt=_VOICE_PROMPT,max_new_tokens=1800,do_sample=False)
- audio=wavs[0]
- if len(audio)/sr>=149:raise ValueError('Speech exceeded duration limit; refusing truncated playback')
- output=io.BytesIO();sf.write(output,audio,sr,format='WAV',subtype='PCM_16');volume.commit()
- return {'audio':output.getvalue(),'sample_rate':sr,'duration_seconds':len(audio)/sr,'elapsed_seconds':time.monotonic()-start,'attempt':attempt,'profile_reused':profile_reused,'model':TTS_MODEL,'revision':TTS_REV}
+ return profile_reused
+
+def voice_job(nonce,text):
+ os.environ.update(HF_HOME='/artifacts/rhysbot-voice-hf',HF_HUB_CACHE='/artifacts/rhysbot-voice-hf',TOKENIZERS_PARALLELISM='false',OMP_NUM_THREADS='2')
+ global _VOICE_MODEL,_VOICE_PROMPT
+ # Ongoing voice/compare are separately authorized by the CF $10/month ledger,
+ # charged BEFORE this private service. They never consume the $200 training
+ # ledger. Only the authenticated CF bridge can issue single-use nonce grants.
+ store=jobs();state=store.get('voice:'+nonce)
+ if state!={'text_sha256':hashlib.sha256(text.encode()).hexdigest()}:raise ValueError('No voice grant')
+ attempt=claim_voice_attempt(store,nonce)
+ store.put('voice-state:'+nonce,{'state':'loading_voice'})
+ import torch,soundfile as sf
+ from huggingface_hub import snapshot_download
+ from qwen_tts import Qwen3TTSModel
+ torch.set_num_threads(2)
+ start=time.monotonic()
+ profile_reused=load_voice_profile()
+ from voice_chunks import speech_chunks
+ import numpy as np
+ chunks=speech_chunks(text);parts=modal.Dict.from_name('rhysbot-voice-parts',create_if_missing=True);audios=[];elapsed=0
+ for index,chunk in enumerate(chunks):
+  # Committed parts are replayed after preemption; never overwrite speech the
+  # browser may already have played with a different stochastic generation.
+  saved=parts.get(f'{nonce}:{index}')
+  if saved:
+   audio,sr=sf.read(io.BytesIO(saved['audio']),dtype='float32');audios.append(audio)
+  else:
+   wavs,sr=_VOICE_MODEL.generate_voice_clone(text=chunk,language='English',voice_clone_prompt=_VOICE_PROMPT,max_new_tokens=600,do_sample=False)
+   audio=wavs[0]
+   if len(audio)/sr>=49:raise ValueError('Speech chunk exceeded duration limit')
+   if elapsed+len(audio)/sr>=149:raise ValueError('Speech exceeded duration limit')
+   audios.append(audio)
+   output=io.BytesIO();sf.write(output,audio,sr,format='WAV',subtype='PCM_16')
+   parts.put(f'{nonce}:{index}',{'audio':output.getvalue(),'index':index,'total':len(chunks)})
+  elapsed+=len(audio)/sr
+  if elapsed>=149:raise ValueError('Speech exceeded duration limit')
+  store.put('voice-state:'+nonce,{'state':'speaking','parts_ready':index+1,'parts_total':len(chunks)})
+ audio=np.concatenate(audios);output=io.BytesIO();sf.write(output,audio,sr,format='WAV',subtype='PCM_16');volume.commit()
+ return {'audio':output.getvalue(),'sample_rate':sr,'duration_seconds':len(audio)/sr,'elapsed_seconds':time.monotonic()-start,'attempt':attempt,'profile_reused':profile_reused,'parts_total':len(chunks),'model':TTS_MODEL,'revision':TTS_REV}
+
+@APP.cls(image=VOICE,gpu='H100',cpu=(4,8),memory=(8192,16384),timeout=150,startup_timeout=45,retries=0,min_containers=0,max_containers=1,scaledown_window=2,volumes={'/artifacts':volume},enable_memory_snapshot=True,experimental_options={'enable_gpu_snapshot':True})
+class RhysVoice:
+ @modal.enter(snap=True)
+ def prepare(self):
+  load_voice_profile()
+  # Warm imports, CUDA and codec once before a reusable GPU memory snapshot.
+  _VOICE_MODEL.generate_voice_clone(text='Hello.',language='English',voice_clone_prompt=_VOICE_PROMPT,max_new_tokens=32,do_sample=False)
+ @modal.method()
+ def speak(self,nonce,text):return voice_job(nonce,text)
 
 @APP.function(image=GPU,gpu='L4',cpu=(2,4),memory=(12288,24576),timeout=180,retries=0,min_containers=0,max_containers=1,scaledown_window=2,volumes={'/artifacts':volume})
 def compare_job(nonce,messages,qwen_messages=None):
@@ -366,16 +401,23 @@ def api():
    if await store.get.aio('voice:'+nonce)!=grant:return JSONResponse({'error':'idempotency_conflict'},409)
    return JSONResponse({'state':'queued' if await store.get.aio('voice-call:'+nonce) else 'recovery_required'},202)
   try:
-   call=await voice_job.spawn.aio(nonce,text);await store.put.aio('voice-call:'+nonce,call.object_id)
+   call=await RhysVoice().speak.spawn.aio(nonce,text);await store.put.aio('voice-call:'+nonce,call.object_id)
   except Exception:return JSONResponse({'error':'voice_failed_no_retry'},503)
   return JSONResponse({'state':'queued'},202)
  @web.post('/voice-status')
  async def voice_status(request:Request):
   if not await auth(request):return JSONResponse({'error':'unauthorized'},403)
-  try:p=await body(request,256);nonce=nonce_id(p['request_id'])
+  try:
+   p=await body(request,256);nonce=nonce_id(p['request_id']);part=p.get('part')
+   if part is not None and (type(part) is not int or not 0<=part<32):raise ValueError()
   except Exception:return JSONResponse({'error':'invalid_voice'},400)
   call_id=await store.get.aio('voice-call:'+nonce)
   if not call_id:return JSONResponse({'error':'voice_not_found'},404)
+  if part is not None:
+   saved=await modal.Dict.from_name('rhysbot-voice-parts',create_if_missing=True).get.aio(f'{nonce}:{part}')
+   if saved:
+    audio=saved['audio']
+    return Response(audio,media_type='audio/wav',headers={'Cache-Control':'no-store','X-Rhysbot-Audio-Bytes':str(len(audio)),'X-Rhysbot-Audio-SHA256':hashlib.sha256(audio).hexdigest(),'X-Rhysbot-Audio-Part':str(saved['index']),'X-Rhysbot-Audio-Parts':str(saved['total'])})
   try:r=await modal.FunctionCall.from_id(call_id).get.aio(timeout=0)
   except Exception as error:
    if pending_poll_timeout(error,modal.exception.TimeoutError):
