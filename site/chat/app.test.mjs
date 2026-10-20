@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { clipUTF8, histories, requestPayload, safeSourceURL, sseEvents, newTurn, applyEvent, completeTurn, boundedAudio, renderText, mount } from './app.js';
+import { clipUTF8, histories, requestPayload, safeSourceURL, sseEvents, newTurn, applyEvent, completeTurn, boundedAudio, requestVoice, voiceWait, renderText, mount } from './app.js';
 const enc = new TextEncoder();
 const stream = parts => new ReadableStream({ start(c) { for (const part of parts) c.enqueue(typeof part === 'string' ? enc.encode(part) : part); c.close(); } });
 
@@ -82,14 +82,45 @@ test('saved-checkpoint mode is explicit, sends no RAG mode, and keeps independen
   d.ids.message.value='First';await d.ids.composer.fire('submit');assert.equal(calls[1].url,'/api/rhysbot-checkpoints');assert.equal(JSON.parse(calls[1].init.body).mode,undefined);
   d.ids.message.value='Second';await d.ids.composer.fire('submit');const body=JSON.parse(calls[2].init.body);assert.equal(body.messages[1].content,'Saved adapter reply');assert.equal(body.qwen_messages[1].content,'Actual base reply');app.reset();
 });
-test('AI voice is explicit, bounded to500characters, cached for replay and released by NewChat',async()=>{
+test('AI voice is explicit, supports full replies up to2000characters, cached for replay and released by NewChat',async()=>{
   const d=dom(),calls=[];let revoked=0;d.win.URL.revokeObjectURL=()=>revoked++;
-  const fetcher=async(url,init={})=>{calls.push({url,init});if(!init.method)return Response.json({available:true,turnstile_site_key:'public',voice_available:true});if(url==='/api/rhysbot-voice')return new Response('RIFFaudio',{headers:{'Content-Type':'audio/wav'}});return new Response(stream([`data: ${JSON.stringify({type:'delta',channel:'rhys',text:'🌱'.repeat(600)})}\n\n`,'data: {"type":"delta","channel":"qwen","text":"Qwen reply"}\n\n','data: {"type":"done","channel":"rhys"}\n\n','data: {"type":"done","channel":"qwen"}\n\n']),{headers:{'Content-Type':'text/event-stream'}});};
+  const fetcher=async(url,init={})=>{calls.push({url,init});if(!init.method)return Response.json({available:true,turnstile_site_key:'public',voice_available:true});if(url==='/api/rhysbot-voice')return new Response('RIFFaudio',{headers:{'Content-Type':'audio/wav'}});return new Response(stream([`data: ${JSON.stringify({type:'delta',channel:'rhys',text:'🌱'.repeat(2100)})}\n\n`,'data: {"type":"delta","channel":"qwen","text":"Qwen reply"}\n\n','data: {"type":"done","channel":"rhys"}\n\n','data: {"type":"done","channel":"qwen"}\n\n']),{headers:{'Content-Type':'text/event-stream'}});};
   const app=mount(d.doc,d.win,fetcher);await app.initialized;d.doc.head.children[0].onload();d.verify()('proof');d.ids.message.value='Question';await d.ids.composer.fire('submit');assert.equal(calls.length,2);
-  const left=d.ids.thread.children[0].children[1].children[0],button=left.children.find(e=>e.tagName==='button');assert.match(button.textContent,/AI-generated/);await button.fire('click');assert.equal(calls.length,3);const body=JSON.parse(calls[2].init.body);assert.equal([...body.text].length,500);assert.match(body.request_id,/^[a-f0-9-]{36}$/);assert.equal(calls[2].init.credentials,'same-origin');await button.fire('click');assert.equal(calls.length,3);app.reset();assert.equal(revoked,1);
+  const left=d.ids.thread.children[0].children[1].children[0],button=left.children.find(e=>e.tagName==='button');assert.match(button.textContent,/AI-generated/);await button.fire('click');assert.equal(calls.length,3);const body=JSON.parse(calls[2].init.body);assert.equal([...body.text].length,2000);assert.match(body.request_id,/^[a-f0-9-]{36}$/);assert.equal(calls[2].init.credentials,'same-origin');await button.fire('click');assert.equal(calls.length,3);app.reset();assert.equal(revoked,1);
 });
 test('microphone only fills input on explicit click; recognition never sends a message',async()=>{
   const d=dom();let recognition,starts=0,calls=0;
   d.win.SpeechRecognition=class{constructor(){recognition=this;}start(){starts++;this.onstart();}abort(){}stop(){this.onend();}};
   const app=mount(d.doc,d.win,async()=>{calls++;return Response.json({available:true,turnstile_site_key:'public',voice_available:false});});await app.initialized;assert.equal(starts,0);await d.ids.mic.fire('click');assert.equal(starts,1);recognition.onresult({results:[[{transcript:'Spoken draft'}]]});assert.equal(d.ids.message.value,'Spoken draft');assert.equal(calls,1);app.reset();
+});
+
+test('voice polls progress then verifies complete audio; polling never submits text again',async()=>{
+  const calls=[],phases=[],raw=enc.encode('RIFFaudio'),sum=Buffer.from(await crypto.subtle.digest('SHA-256',raw)).toString('hex');let accepted=0;
+  const fetcher=async(url,init)=>{calls.push(JSON.parse(init.body));const phase=['queued','loading_voice','speaking'][calls.length-1];return phase?Response.json({state:phase},{status:202}):new Response(raw,{headers:{'Content-Type':'audio/wav','X-Rhysbot-Audio-Bytes':String(raw.length),'X-Rhysbot-Audio-SHA256':sum}});};
+  const blob=await requestVoice(fetcher,{text:'Whole paragraph',requestId:'one',signal:new AbortController().signal,verification:'proof',onProgress:p=>phases.push(p),onAccepted:()=>accepted++,wait:async()=>{}});
+  assert.equal(blob.size,raw.length);assert.deepEqual(phases,['queued','loading_voice','speaking']);assert.equal(accepted,4);assert.equal(calls[0].text,'Whole paragraph');for(const row of calls.slice(1))assert.deepEqual(row,{action:'status',request_id:'one'});
+  await assert.rejects(()=>boundedAudio(new Response(raw,{headers:{'Content-Type':'audio/wav','X-Rhysbot-Audio-Bytes':String(raw.length),'X-Rhysbot-Audio-SHA256':'0'.repeat(64)}})),/incomplete/);
+});
+test('voice polling can stop immediately and provider errors finish with an actionable failure',async()=>{
+  const controller=new AbortController();let polls=0;
+  const task=requestVoice(async()=>{polls++;return Response.json({state:'speaking'},{status:202});},{text:'Reply',requestId:'same',signal:controller.signal,onProgress:()=>controller.abort()});
+  await assert.rejects(()=>task,{name:'AbortError'});assert.equal(polls,1);
+  await assert.rejects(()=>requestVoice(async()=>Response.json({error:'monthly_budget_reached'},{status:429}),{text:'Reply',requestId:'same'}),/monthly/);
+});
+
+test('voice Stop waiting and Resume remain usable after an interrupted connection',async()=>{
+  const d=dom(),voiceBodies=[];let pending;
+  const fetcher=async(url,init={})=>{
+    if(!init.method)return Response.json({available:true,turnstile_site_key:'public',voice_available:true});
+    if(url==='/api/rhysbot-voice'){
+      voiceBodies.push(JSON.parse(init.body));
+      if(voiceBodies.length===1)return new Promise((resolve,reject)=>{pending=true;init.signal.addEventListener('abort',()=>reject(new DOMException('Stopped','AbortError')),{once:true});});
+      return new Response('RIFFaudio',{headers:{'Content-Type':'audio/wav'}});
+    }
+    return new Response(stream(['data: {"type":"delta","channel":"rhys","text":"A complete answer."}\n\n','data: {"type":"delta","channel":"qwen","text":"Base answer."}\n\n','data: {"type":"done","channel":"rhys"}\n\n','data: {"type":"done","channel":"qwen"}\n\n']),{headers:{'Content-Type':'text/event-stream'}});
+  };
+  const app=mount(d.doc,d.win,fetcher);await app.initialized;d.doc.head.children[0].onload();d.verify()('proof');d.ids.message.value='Question';await d.ids.composer.fire('submit');
+  const card=d.ids.thread.children[0].children[1].children[0],button=card.children.find(e=>e.tagName==='button'),audio=card.children.find(e=>e.tagName==='audio');
+  const waiting=button.fire('click');assert.equal(pending,true);assert.equal(button.disabled,false);assert.equal(button.textContent,'Stop waiting');await button.fire('click');await waiting;assert.match(button.textContent,/Resume/);
+  await button.fire('click');assert.equal(voiceBodies[0].request_id,voiceBodies[1].request_id);assert.equal(audio.hidden,false);assert.equal(audio.played,true);assert.match(button.textContent,/Play/);app.reset();
 });

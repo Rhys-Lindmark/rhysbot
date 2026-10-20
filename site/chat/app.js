@@ -71,15 +71,44 @@ export function applyEvent(turn, event) {
   else if (event.type === 'error') turn.failed.add(event.channel);
 }
 export function completeTurn(turn) { return turn.channels.every(c => turn.completed.has(c) && !turn.failed.has(c) && turn[c].trim()); }
-export async function boundedAudio(response, limit = 4 * 1024 * 1024) {
+export async function boundedAudio(response, limit = 8 * 1024 * 1024) {
   if (!response.ok || response.headers.get('Content-Type')?.split(';')[0] !== 'audio/wav' || !response.body) throw new Error('AI voice is unavailable.');
-  const size = response.headers.get('Content-Length');
+  const size = response.headers.get('X-Rhysbot-Audio-Bytes') || response.headers.get('Content-Length');
   if (size && (!/^\d+$/.test(size) || Number(size) > limit)) throw new Error('AI voice response is too large.');
   const reader = response.body.getReader(); let total = 0; const chunks = [];
   try { for (;;) { const { done, value } = await reader.read(); if (done) break; total += value.byteLength; if (total > limit) throw new Error('AI voice response is too large.'); chunks.push(value); } }
   finally { try { await reader.cancel(); } catch {} reader.releaseLock(); }
   if (!total || (size && total !== Number(size))) throw new Error('AI voice response was incomplete.');
-  return new Blob(chunks, { type: 'audio/wav' });
+  const blob = new Blob(chunks, { type: 'audio/wav' });
+  const expected = response.headers.get('X-Rhysbot-Audio-SHA256');
+  if (expected) {
+    const actual = [...new Uint8Array(await crypto.subtle.digest('SHA-256',await blob.arrayBuffer()))].map(x=>x.toString(16).padStart(2,'0')).join('');
+    if (actual !== expected) throw new Error('AI voice download was incomplete. Choose Resume to download it again.');
+  }
+  return blob;
+}
+export function voiceWait(ms,signal) {
+  return new Promise((resolve,reject)=>{
+    const abort=()=>{clearTimeout(timer);signal?.removeEventListener('abort',abort);reject(new DOMException('Stopped','AbortError'));};
+    const timer=setTimeout(()=>{signal?.removeEventListener('abort',abort);resolve();},ms);
+    signal?.addEventListener('abort',abort,{once:true});if(signal?.aborted)abort();
+  });
+}
+export async function requestVoice(fetcher,{text,requestId,verification,signal,onProgress=()=>{},onAccepted=()=>{},wait=voiceWait}) {
+  let payload={text,request_id:requestId,...(verification?{verification_token:verification}:{})};
+  const deadline=Date.now()+480000;
+  for (;;) {
+    signal?.throwIfAborted();
+    const response=await fetcher('/api/rhysbot-voice',{method:'POST',credentials:'same-origin',redirect:'error',cache:'no-store',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),signal:AbortSignal.any([signal||new AbortController().signal,AbortSignal.timeout(30000)])});
+    if(!response.ok) {let code;try{code=(await response.json()).error;}catch{}const error=new Error(friendly(code));error.code=code;throw error;}
+    onAccepted();
+    if(response.status!==202)return boundedAudio(response);
+    const {state}=await response.json();
+    if(!['queued','loading_voice','speaking'].includes(state))throw new Error('Voice preparation could not finish. Choose Resume to check the same request.');
+    onProgress(state);
+    if(Date.now()>deadline)throw new Error('Voice is taking too long. Choose Resume to check the same request without generating again.');
+    await wait(2500,signal);payload={action:'status',request_id:requestId};
+  }
 }
 export function renderText(element, value) { element.textContent = String(value ?? ''); }
 
@@ -139,21 +168,29 @@ export function mount(doc = document, win = window, fetcher = fetch) {
     if (!config?.voice_available || !reply.trim()) return;
     const button = element('button','voice','Listen · AI-generated Rhys voice'); button.type = 'button';
     const audio = element('audio','audio'); audio.controls = true; audio.preload = 'none'; audio.hidden = true; audio.setAttribute('aria-label','AI-generated Rhys voice'); audios.add(audio);
-    let requestId, url;
+    const progress=element('span','answer-status');progress.setAttribute('role','status');
+    const spoken=[...reply].slice(0,2000).join('');
+    if([...reply].length>2000)renderText(progress,'Reads the first 2,000 characters.');
+    let requestId, url, ownController;
     button.addEventListener('click', async () => {
       if (url) { audio.hidden = false; await audio.play().catch(() => status('Use the audio player to listen.')); return; }
+      if (ownController && voiceActive===ownController) {ownController.abort();return;}
       if (voiceActive) { status('One voice request is already in progress.'); return; }
       if (!sessionKnown && !verification) { await needVerification(); status('Complete verification, then choose Listen again.'); return; }
-      button.disabled = true; renderText(button,'Preparing AI voice…'); requestId ||= win.crypto.randomUUID(); voiceActive = new AbortController(); const controller = voiceActive, epoch = generation; const timeout = setTimeout(() => controller.abort(), 230000);
+      requestId ||= win.crypto.randomUUID();voiceActive=new AbortController();const controller=voiceActive,epoch=generation;ownController=controller;
+      const started=Date.now();let phase='queued';
+      const update=()=>{renderText(button,'Stop waiting');renderText(progress,`${({queued:'Starting Rhys voice',loading_voice:'Loading saved Rhys voice',speaking:'Reading the reply in Rhys voice'})[phase]} · ${Math.round((Date.now()-started)/1000)}s. First use may take about a minute.`);};
+      update();const ticker=setInterval(update,1000);
       try {
-        const response = await checked(await fetcher('/api/rhysbot-voice', { method: 'POST', credentials: 'same-origin', redirect: 'error', cache: 'no-store', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ text: [...reply].slice(0,500).join(''), request_id: requestId, ...(verification ? { verification_token: verification } : {}) }), signal: controller.signal }));
-        const blob = await boundedAudio(response); if (controller.signal.aborted || epoch !== generation) return;
+        const blob=await requestVoice(fetcher,{text:spoken,requestId,verification,signal:controller.signal,onAccepted:verifiedSession,onProgress:value=>{phase=value;update();}});if(controller.signal.aborted||epoch!==generation)return;
         verifiedSession(); url = win.URL.createObjectURL(blob); audioURLs.add(url); audio.src = url; audio.hidden = false; renderText(button,'Play AI-generated Rhys voice');
+        renderText(progress,`AI audio ready · ${Math.round((Date.now()-started)/1000)}s${[...reply].length>2000?' · first 2,000 characters':''}`);
         await audio.play().catch(() => status('AI audio is ready. Use the player to listen.'));
-      } catch (error) { if (epoch === generation && error.name !== 'AbortError') status(error.message, true); renderText(button,'Listen · AI-generated Rhys voice'); }
-      finally { clearTimeout(timeout); if (voiceActive === controller) voiceActive = null; button.disabled = false; }
+      } catch (error) {
+        if(epoch===generation){if(['verification_required','verification_failed'].includes(error.code))await needVerification();renderText(progress,controller.signal.aborted?'Waiting stopped. Resume checks the same audio request; generation may continue.':error.message);renderText(button,'Resume · AI-generated Rhys voice');}
+      } finally {clearInterval(ticker);if(voiceActive===controller)voiceActive=null;ownController=null;}
     });
-    card.append(button,audio);
+    card.append(button,progress,audio);
   }
   function cardsFor(turn) {
     const block = element('section','turn'), question = element('h2','question',turn.user), answers = element('div',`answers${turn.channels.length === 1 ? ' single' : ''}`); block.append(question,answers); const cards = {};

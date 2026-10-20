@@ -42,11 +42,29 @@ Digicene excerpt; the original recording/voice reference is not published in Git
 The pinned model is `Qwen/Qwen3-TTS-12Hz-0.6B-Base`, revision
 `5d83992436eae1d760afd27aff78a71d676296fc`, including its speech tokenizer.
 
-The “AI Rhys voice” control synthesizes at most 500 characters from a reply, only
-after the user clicks it. Audio is clearly labeled synthetic, never autoplays,
-and is cached for replay in the tab. This is speech synthesis plus optional
-browser dictation, not a live duplex audio model. First synthesis can be slower
-because the GPU scales to zero.
+The “AI Rhys voice” control reads up to 2,000 characters from a reply after an
+explicit click; longer replies show that limit. The approved speaker embedding
+is created once and saved privately, then reused across GPU cold starts. This
+is voice cloning with a saved speaker profile, not a newly fine-tuned TTS model.
+The model still has to synthesize each new text. No always-on GPU is required.
+
+Voice submission returns a background-job acknowledgement immediately. The UI
+polls short authenticated requests and shows loading/speaking progress, elapsed
+time, Stop waiting and Resume. Resume retrieves the same provider result;
+neither polling nor resubmission reserves another $0.15 or dispatches a second
+GPU job. Client-bound request IDs and text hashes prevent cross-client replay
+and changed-text reuse. Modal can recover a preempted input once, with at most
+two 180-second execution attempts within the original voice reservation.
+Failed or uncertain dispatches are not automatically re-dispatched by the app.
+Request grants expire after 24 hours; provider results have Modal's
+own retention for voice text and audio. Audio must match its authoritative byte length and SHA256 before
+playback. Replays in the same tab use the downloaded audio immediately.
+
+Audio is labeled synthetic and plays after the explicit Listen click; browser
+autoplay restrictions may require pressing the audio player's Play control.
+This is speech synthesis plus optional browser dictation, not a live duplex
+audio model. Voice GPU execution is bounded to two 180-second attempts, with a 15-second
+idle reuse window and zero minimum containers. Long text can still take time.
 
 ## Budget and authorization
 
@@ -55,7 +73,7 @@ in D1, resetting by calendar month in America/Los_Angeles. Conservative charges
 are $0.005 per model chat, $0.15 per synthesis and $0.20 per checkpoint pair.
 These are internal cost reservations, not customer prices or provider invoices;
 failed/uncertain requests are not refunded automatically. Atomic updates refuse
-additional calls at the cap. Each HMAC-hashed client IP is limited to 40 calls/hour.
+additional calls at the cap. Each HMAC-hashed client IP is limited to 40 generation calls/hour; voice status reads are exempt.
 Turnstile grants a one-hour HttpOnly/Secure/SameSite session after verification.
 A private server credential permits operator integration probes through the same
 meter, without disabling browser verification.
