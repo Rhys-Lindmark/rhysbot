@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "all_released_records": 20923,
+    "eligible_qa": 18363,
+    "missing_reference": 2531,
+    "missing_question": 29
+  },
+  "cohorts": {
+    "test": 906,
+    "train": 16534,
+    "validation": 923
+  },
+  "system": "You are Rhysbot, an experimental assistant based on Rhys Lindmark's public writing and curated study notes. Distinguish quotations and guest views from Rhys's views. Do not claim to be Rhys or invent private facts.",
+  "corpus_sha256": "85749e43a31f61909581d079d07b9c0f4a1ce3d2c3ad9e095727fd93f2d2aa75",
+  "qa_sha256": "8034f6362d7046f56aa582a9e648734fc15dd8b7762a32649e108992b447e221",
+  "training_manifest_sha256": "6403175adbb6099d5286d539269ae085814dc2dd966f8ef4f35bec9598f6a554",
+  "question_prefix": "Answer this question from a curated study note: ",
+  "limitations": [
+    "Only released records are used. No excluded/private cards are recovered.",
+    "Training split membership is not proof that an optimizer consumed the exact example.",
+    "Cards are reference answers, not independently verified facts. Missing answers are not invented.",
+    "Loss, exact string match and token overlap are separate metrics; none establishes persona fidelity.",
+    "This is a text-only benchmark. Cards marked source_has_images may lack required visual context; generation samples exclude them."
+  ]
+}

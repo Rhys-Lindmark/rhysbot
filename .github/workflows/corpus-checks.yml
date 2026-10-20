@@ -17,4 +17,4 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - run: node --test platform/train.test.mjs platform/chat-pages/rhysbot-chat.test.mjs platform/chat-pages/rhysbot-voice-stream.test.mjs site/chat/app.test.mjs site/chat/voice-stream.test.mjs
+      - run: node --test platform/train.test.mjs platform/chat-pages/rhysbot-chat.test.mjs platform/chat-pages/rhysbot-voice-stream.test.mjs platform/chat-pages/rhysbot-nanochat.test.mjs platform/chat-pages/rhysbot-lab.test.mjs site/chat/app.test.mjs site/chat/voice-stream.test.mjs site/lab/app.test.mjs

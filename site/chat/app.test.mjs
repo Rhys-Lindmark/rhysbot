@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { clipUTF8, histories, requestPayload, safeSourceURL, sseEvents, newTurn, applyEvent, completeTurn, boundedAudio, requestVoice, voiceWait, renderText, mount, CONVERSATION_KEY, restoreConversation, sourceLabel } from './app.js';
+import { clipUTF8, histories, requestPayload, safeSourceURL, sseEvents, newTurn, applyEvent, completeTurn, boundedAudio, requestVoice, voiceWait, renderText, mount, CONVERSATION_KEY, restoreConversation, sourceLabel, nanochatProvenance } from './app.js';
 const enc = new TextEncoder();
 const stream = parts => new ReadableStream({ start(c) { for (const part of parts) c.enqueue(typeof part === 'string' ? enc.encode(part) : part); c.close(); } });
 
@@ -52,7 +52,7 @@ class FakeElement {
   set innerHTML(_){throw Error('HTML rendering forbidden');}
 }
 function dom(storage=new Map()){
-  const ids=Object.fromEntries(['thread','send','message','mode','mic','stop','human','status','empty','composer','new','mode-note'].map(x=>[x,new FakeElement()]));const head=new FakeElement('head');const example=new FakeElement('button');example.dataset.prompt='Example';let verify;
+  const ids=Object.fromEntries(['thread','send','message','mode','mic','stop','human','status','empty','composer','new','mode-note','nanochat-option'].map(x=>[x,new FakeElement()]));const head=new FakeElement('head');const example=new FakeElement('button');example.dataset.prompt='Example';let verify;
   const doc={getElementById:id=>ids[id],createElement:tag=>new FakeElement(tag),head,querySelectorAll:()=>[example]};
   const win={sessionStorage:{getItem:key=>storage.get(key)||null,setItem:(key,value)=>storage.set(key,value),removeItem:key=>storage.delete(key)},URL:{createObjectURL:()=> 'blob:test',revokeObjectURL(){}},crypto,turnstile:{render(_,options){verify=options.callback;return 1;},reset(){}},addEventListener(){}};
   return {ids,doc,win,example,verify:()=>verify};
@@ -266,4 +266,41 @@ test('fast voice mount resumes in the click, streams before done, caches only co
   await d.ids.new.fire('click');await interrupted;assert.equal(contexts[1].closed,true);assert(contexts[1].sources.every(source=>source.stopped&&source.disconnected));assert.equal(streams[1].cancelled,true);assert.equal(cached.length,1,'New chat must never cache interrupted PCM as a full WAV');assert.equal(d.ids.thread.children.length,0);
   assert.equal(calls.filter(call=>call.url==='/api/rhysbot-voice').length,0,'fast mode never starts legacy voice generation or status polling');
   for(const call of calls.filter(call=>call.url==='/api/rhysbot-voice-stream')){assert.equal(call.init.credentials,'same-origin');const body=JSON.parse(call.init.body);assert.equal(body.text,'This is a complete Rhys reply.');assert.match(body.request_id,/^[a-f0-9-]{36}$/);assert.equal(body.action,undefined);}
+});
+
+
+test('pure nanochat uses one independent channel, its own endpoint and provenance across mode switches and reload',async(t)=>{
+  const storage=new Map(),calls=[];let nanoReplies=0;
+  const provenance={weights_sha256:'b'.repeat(64),checkpoint_run_id:'nanochat-full-sft80',input_tokens:24,output_tokens:8,elapsed_seconds:0.42};
+  const fetcher=async(url,init={})=>{
+    calls.push({url,init});if(!init.method)return Response.json({available:true,nanochat_available:true,turnstile_site_key:'public',voice_available:false});
+    if(url==='/api/rhysbot-nanochat')return Response.json({text:`Scratch reply ${++nanoReplies}`,...provenance});
+    assert.equal(url,'/api/rhysbot-chat');return new Response(stream(['data: {"type":"delta","channel":"rhys","text":"Retrieved Rhys context only"}\n\n','data: {"type":"done","channel":"rhys"}\n\n']),{headers:{'Content-Type':'text/event-stream'}});
+  };
+  const d=dom(storage),app=mount(d.doc,d.win,fetcher);t.after(()=>app.reset());await app.initialized;assert.equal(d.ids['nanochat-option'].disabled,false);d.doc.head.children[0].onload();d.verify()('proof');
+  d.ids.message.value='RAG question';await d.ids.composer.fire('submit');d.ids.mode.value='nanochat';await d.ids.mode.fire('change');assert.match(d.ids['mode-note'].textContent,/no Qwen, retrieved sources or hidden fallback/);assert.equal(d.ids.thread.children.length,0);
+  d.ids.message.value='Scratch question';await d.ids.composer.fire('submit');let request=JSON.parse(calls.at(-1).init.body);assert.equal(calls.at(-1).url,'/api/rhysbot-nanochat');assert.deepEqual(Object.keys(request),['messages']);assert.equal(request.messages.length,1);assert.equal(calls.at(-1).init.credentials,'same-origin');
+  const answers=d.ids.thread.children[0].children[1];assert.equal(answers.children.length,1);const card=answers.children[0];assert.equal(card.children[0].textContent,'Pure nanochat Rhys · tiny from-scratch experiment');const meta=card.children.find(e=>e.className==='sources provenance');assert.equal(meta.children[0].textContent,'Scratch checkpoint · nanochat-full-sft80');assert(meta.children[1].textContent.includes(provenance.weights_sha256));assert.match(meta.children[2].textContent,/24 input tokens · 8 output tokens/);
+  d.ids.mode.value='rhys';await d.ids.mode.fire('change');d.ids.message.value='RAG follow-up';await d.ids.composer.fire('submit');request=JSON.parse(calls.at(-1).init.body);assert.equal(request.messages[1].content,'Retrieved Rhys context only');assert(!JSON.stringify(request).includes('Scratch reply'));
+  d.ids.mode.value='nanochat';await d.ids.mode.fire('change');d.ids.message.value='Scratch follow-up';await d.ids.composer.fire('submit');request=JSON.parse(calls.at(-1).init.body);assert.equal(request.messages[1].content,'Scratch reply 1');assert.equal(request.qwen_messages,undefined);assert.equal(request.mode,undefined);assert(!JSON.stringify(request).includes('Retrieved Rhys context'));
+  const beforeReload=calls.length,reload=dom(storage),restored=mount(reload.doc,reload.win,fetcher);t.after(()=>restored.reset());await restored.initialized;assert.equal(calls.length,beforeReload+1);assert.equal(reload.ids.mode.value,'nanochat');assert.equal(reload.ids.thread.children.length,2);assert.equal(reload.ids.thread.children[0].children[1].children[0].children.find(e=>e.className==='sources provenance').children[1].textContent,`Weights SHA-256: ${provenance.weights_sha256}`);
+  reload.doc.head.children[0].onload();reload.verify()('fresh-proof');reload.ids.message.value='Continue scratch';await reload.ids.composer.fire('submit');request=JSON.parse(calls.at(-1).init.body);assert.equal(request.messages.length,5);assert.equal(request.messages[3].content,'Scratch reply 2');assert.equal(request.verification_token,'fresh-proof');assert.equal(request.qwen_messages,undefined);
+  const saved=restoreConversation(storage.get(CONVERSATION_KEY));assert.equal(saved.conversations.nanochat[0].qwen,'');assert.equal(saved.conversations.nanochat[0].provenance.weights_sha256,provenance.weights_sha256);assert.deepEqual(saved.conversations.nanochat[0].sources,[]);
+});
+test('nanochat unavailable and oversized context fail explicitly without dispatch or fallback',async(t)=>{
+  const d=dom(),calls=[];
+  const app=mount(d.doc,d.win,async(url,init={})=>{calls.push({url,init});return Response.json({available:true,nanochat_available:false,turnstile_site_key:'public',voice_available:false});});t.after(()=>app.reset());await app.initialized;assert.equal(d.ids['nanochat-option'].disabled,true);d.doc.head.children[0].onload();d.verify()('proof');d.ids.mode.value='nanochat';await d.ids.mode.fire('change');d.ids.message.value='Question';await d.ids.composer.fire('submit');assert.equal(calls.length,1);assert.match(d.ids.status.textContent,/unavailable.*No fallback/);assert.equal(d.ids.send.disabled,true);assert.equal(d.ids.thread.children.length,0);
+  const available=dom(),requests=[];const working=mount(available.doc,available.win,async(url,init={})=>{requests.push({url,init});return Response.json({available:true,nanochat_available:true,turnstile_site_key:'public',voice_available:false});});t.after(()=>working.reset());await working.initialized;available.doc.head.children[0].onload();available.verify()('proof');available.ids.mode.value='nanochat';await available.ids.mode.fire('change');available.ids.message.value='🪴'.repeat(1001);await available.ids.composer.fire('submit');assert.equal(requests.length,1);assert.match(available.ids.status.textContent,/4,000 UTF-8 bytes/);assert.equal(available.ids.thread.children.length,0);
+});
+test('nanochat rejects malformed, empty or hashless replies and never saves failures or invokes another model',async(t)=>{
+  const valid={text:'Saved scratch answer',weights_sha256:'c'.repeat(64),checkpoint_run_id:'scratch-run',input_tokens:8,output_tokens:4,elapsed_seconds:0.5};
+  const invalid=[{...valid,text:''},{...valid,weights_sha256:undefined},{...valid,weights_sha256:'wrong'},{...valid,checkpoint_run_id:''},{...valid,input_tokens:0},{...valid,output_tokens:null},{...valid,elapsed_seconds:null},'not-json'];
+  const d=dom(),posts=[];let index=0;
+  const app=mount(d.doc,d.win,async(url,init={})=>{
+    if(!init.method)return Response.json({available:true,nanochat_available:true,turnstile_site_key:'public',voice_available:false});posts.push({url,init});const result=invalid[index++];return typeof result==='string'?new Response(result,{headers:{'Content-Type':'application/json'}}):Response.json(result||valid);
+  });t.after(()=>app.reset());await app.initialized;d.doc.head.children[0].onload();d.verify()('proof');d.ids.mode.value='nanochat';await d.ids.mode.fire('change');
+  for(let i=0;i<invalid.length;i++){d.ids.message.value=`Bad response ${i}`;await d.ids.composer.fire('submit');assert.equal(posts.at(-1).url,'/api/rhysbot-nanochat');assert.equal(JSON.parse(posts.at(-1).init.body).messages.length,1,'failed replies must not become history');assert.equal(d.ids.thread.children.at(-1).children[1].children.length,1);assert.notEqual(d.ids.status.textContent,'Your turn. Ask a follow-up or take the conversation somewhere new.');}
+  d.ids.message.value='Valid response';await d.ids.composer.fire('submit');assert.equal(posts.length,invalid.length+1);assert.equal(JSON.parse(posts.at(-1).init.body).messages.length,1);assert.deepEqual(nanochatProvenance(valid),{weights_sha256:valid.weights_sha256,checkpoint_run_id:valid.checkpoint_run_id,input_tokens:8,output_tokens:4,elapsed_seconds:0.5});
+  d.ids.message.value='Next';await d.ids.composer.fire('submit');assert.equal(JSON.parse(posts.at(-1).init.body).messages[1].content,'Saved scratch answer');assert(posts.every(call=>call.url==='/api/rhysbot-nanochat'));
+  const noProvenance=restoreConversation(JSON.stringify({version:1,mode:'nanochat',conversations:{nanochat:[{user:'Old question',rhys:'Unproven answer',qwen:''}]}}));assert.equal(noProvenance.conversations.nanochat.length,0);
 });

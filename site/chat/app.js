@@ -11,7 +11,7 @@ export function histories(turns, prompt, mode = 'compare') {
   if (!prompt.trim() || encoder.encode(prompt).length > MAX_PROMPT_BYTES) throw new Error('Please keep your message within 4,000 UTF-8 bytes.');
   const rows = turns.slice(-5); // Five complete pairs + current user = eleven messages.
   const build = channel => [...rows.flatMap(t => [{ role: 'user', content: t.user }, { role: 'assistant', content: t[channel] }]), { role: 'user', content: prompt }];
-  const channels = mode === 'rhys' ? ['rhys'] : mode === 'qwen' ? ['qwen'] : ['rhys','qwen'];
+  const channels = ['rhys','nanochat'].includes(mode) ? ['rhys'] : mode === 'qwen' ? ['qwen'] : ['rhys','qwen'];
   let result;
   for (;;) {
     result = Object.fromEntries(channels.map(c => [c, build(c)]));
@@ -28,7 +28,7 @@ export function requestPayload(context, mode, verification = '') {
   let messages = context.rhys || context.qwen, qwen = context.rhys && context.qwen ? context.qwen : null;
   let payload;
   for (;;) {
-    payload = { messages, ...(qwen ? { qwen_messages: qwen } : {}), ...(verification ? { verification_token: verification } : {}), ...(mode === 'checkpoints' ? {} : { mode }) };
+    payload = { messages, ...(qwen ? { qwen_messages: qwen } : {}), ...(verification ? { verification_token: verification } : {}), ...(['checkpoints','nanochat'].includes(mode) ? {} : { mode }) };
     // JSON escaping can expand otherwise valid history; stay below server's 30KiB body.
     if (encoder.encode(JSON.stringify(payload)).length <= 28000) return payload;
     if (messages.length === 1) throw new Error('The encoded request is too long. Shorten your message.');
@@ -59,7 +59,7 @@ export async function* sseEvents(stream, { signal, maxBytes = 512000 } = {}) {
   } finally { signal?.removeEventListener('abort', abort); try { await reader.cancel(); } catch {} reader.releaseLock(); }
 }
 export function newTurn(prompt, mode) {
-  const channels = mode === 'rhys' ? ['rhys'] : mode === 'qwen' ? ['qwen'] : ['rhys','qwen'];
+  const channels = ['rhys','nanochat'].includes(mode) ? ['rhys'] : mode === 'qwen' ? ['qwen'] : ['rhys','qwen'];
   return { user: prompt, channels, rhys: '', qwen: '', completed: new Set(), failed: new Set() };
 }
 export function applyEvent(turn, event) {
@@ -144,14 +144,15 @@ const MODE_NOTES = {
   compare: 'The same unmodified Qwen3-30B-A3B model on both sides; only the left receives Rhys source excerpts. Each side keeps its own answers. This is not the trained checkpoint.',
   rhys: 'Qwen3-30B-A3B with retrieved Rhys source excerpts. This is a source-grounded conversation, not the trained 4B checkpoint.',
   qwen: 'Unmodified Qwen3-30B-A3B with no Rhys corpus supplied. This conversation does not share Rhysbot’s previous answers.',
+  nanochat: 'A tiny 4-layer model with a 512-token context, trained from random weights and followed by short supervised training. Limited quality; no Qwen, retrieved sources or hidden fallback. Each reply includes its saved checkpoint run and weights hash.',
   checkpoints: 'Actual saved Qwen3.5-4B adaptation versus the same 4B base with the adapter disabled. No retrieved corpus context is added. Cold starts can be slow; experimental training does not guarantee reliable answers.',
 };
 function friendly(code) {
-  return ({ verification_required: 'Please complete verification to continue.', verification_failed: 'Verification expired or failed. Complete it again.', monthly_budget_reached: 'The shared $10 monthly chat and voice budget has been reached.', hourly_limit: 'This client’s hourly request limit has been reached.', model_busy: 'The model is busy. No automatic retry was sent.', recovery_required: 'The model requires operator reconciliation. No retry was sent.', chat_not_configured: 'Chat is not configured yet.', chat_temporarily_unavailable: 'Chat is temporarily unavailable.' })[code] || 'The request could not finish. No automatic retry was sent.';
+  return ({ verification_required: 'Please complete verification to continue.', verification_failed: 'Verification expired or failed. Complete it again.', monthly_budget_reached: 'The shared $10 monthly chat and voice budget has been reached.', hourly_limit: 'This client’s hourly request limit has been reached.', model_busy: 'The model is busy. No automatic retry was sent.', recovery_required: 'The model requires operator reconciliation. No retry was sent.', chat_not_configured: 'Chat is not configured yet.', chat_temporarily_unavailable: 'Chat is temporarily unavailable.', nanochat_unavailable: 'Pure nanochat Rhys is unavailable. No fallback was used.', nanochat_temporarily_unavailable: 'Pure nanochat Rhys could not finish. No fallback or automatic retry was used.', nanochat_context_too_long: 'This conversation exceeds nanochat’s small context window. Start a new chat or shorten your message; no fallback was used.' })[code] || 'The request could not finish. No automatic retry was sent.';
 }
 
 export const CONVERSATION_KEY = 'rhysbot.conversations.v1';
-const MODES = ['rhys','compare','qwen','checkpoints'];
+const MODES = ['rhys','compare','qwen','checkpoints','nanochat'];
 const emptyConversations = () => Object.fromEntries(MODES.map(mode => [mode, []]));
 export function sourceLabel(kind) {
   return ({ hee_transcript: 'How Everything Evolved', podcast_transcript: 'Podcasts / YouTube', youtube_transcript: 'Podcasts / YouTube', x: 'X', substack: 'Writing', linked_writing: 'Writing', anki: 'Anki' })[kind] || 'Public source';
@@ -165,6 +166,10 @@ function sourceProvenance(kind) {
 function sourceMetadata(sources) {
   return (Array.isArray(sources) ? sources : []).slice(0,8).filter(s => s && typeof s === 'object').map(s => Object.fromEntries(['id','title','url','kind','attribution'].filter(key => typeof s[key] === 'string').map(key => [key,s[key].slice(0,key === 'url' ? 2000 : 600)])));
 }
+export function nanochatProvenance(value) {
+  if (!value || typeof value !== 'object' || typeof value.weights_sha256 !== 'string' || !/^[a-f0-9]{64}$/.test(value.weights_sha256) || typeof value.checkpoint_run_id !== 'string' || !value.checkpoint_run_id.trim() || value.checkpoint_run_id.length > 200 || !Number.isSafeInteger(value.input_tokens) || value.input_tokens < 1 || !Number.isSafeInteger(value.output_tokens) || value.output_tokens < 1 || !Number.isFinite(value.elapsed_seconds) || value.elapsed_seconds < 0) return null;
+  return Object.fromEntries(['weights_sha256','checkpoint_run_id','input_tokens','output_tokens','elapsed_seconds'].map(key => [key,value[key]]));
+}
 export function restoreConversation(raw) {
   const fallback = { mode: 'rhys', conversations: emptyConversations() };
   if (typeof raw !== 'string' || encoder.encode(raw).length > 256000) return fallback;
@@ -173,11 +178,13 @@ export function restoreConversation(raw) {
     if (value?.version !== 1 || !MODES.includes(value.mode) || !value.conversations || typeof value.conversations !== 'object') return fallback;
     const conversations = emptyConversations();
     for (const mode of MODES) {
-      const channels = mode === 'rhys' ? ['rhys'] : mode === 'qwen' ? ['qwen'] : ['rhys','qwen'];
+      const channels = ['rhys','nanochat'].includes(mode) ? ['rhys'] : mode === 'qwen' ? ['qwen'] : ['rhys','qwen'];
       if (!Array.isArray(value.conversations[mode])) continue;
       for (const row of value.conversations[mode].slice(-30)) {
         if (!row || typeof row.user !== 'string' || !row.user.trim() || encoder.encode(row.user).length > MAX_PROMPT_BYTES || channels.some(c => typeof row[c] !== 'string' || !row[c].trim() || encoder.encode(row[c]).length > 128000)) continue;
-        conversations[mode].push({ user: row.user, rhys: channels.includes('rhys') ? row.rhys : '', qwen: channels.includes('qwen') ? row.qwen : '', sources: sourceMetadata(row.sources) });
+        const provenance = mode === 'nanochat' ? nanochatProvenance(row.provenance) : null;
+        if (mode === 'nanochat' && !provenance) continue;
+        conversations[mode].push({ user: row.user, rhys: channels.includes('rhys') ? row.rhys : '', qwen: channels.includes('qwen') ? row.qwen : '', sources: mode === 'nanochat' ? [] : sourceMetadata(row.sources), ...(provenance ? {provenance} : {}) });
       }
     }
     return { mode: value.mode, conversations };
@@ -207,7 +214,9 @@ export function mount(doc = document, win = window, fetcher = fetch) {
   }
   const element = (tag, cls, text) => { const el = doc.createElement(tag); if (cls) el.className = cls; if (text !== undefined) renderText(el, text); return el; };
   const status = (text, error = false) => { renderText($('status'), text); $('status').classList.toggle('error', error); };
-  function ready() { $('send').disabled = !config?.available || !!active || (!sessionKnown && !verification) || !$('message').value.trim(); $('mode').disabled = !!active; $('mic').disabled = !!active || !recognition; $('stop').hidden = !active; }
+  const modeAvailable = () => !!config?.available && (mode !== 'nanochat' || config.nanochat_available === true);
+  const modeNote = () => MODE_NOTES[mode] + (mode === 'nanochat' && config?.nanochat_available !== true ? ' Currently unavailable; no substitute model will be used.' : '');
+  function ready() { $('send').disabled = !modeAvailable() || !!active || (!sessionKnown && !verification) || !$('message').value.trim(); $('mode').disabled = !!active; $('mic').disabled = !!active || !recognition; $('stop').hidden = !active; }
   function verifiedSession() { sessionKnown = true; verification = ''; $('human').hidden = true; ready(); }
   async function needVerification() {
     sessionKnown = false; verification = ''; $('human').hidden = false; ready();
@@ -315,10 +324,15 @@ export function mount(doc = document, win = window, fetcher = fetch) {
   function cardsFor(turn) {
     const block = element('section','turn'), question = element('article','user-message'), answers = element('div',`answers${turn.channels.length === 1 ? ' single' : ''}`); question.setAttribute('aria-label','Your message'); question.append(element('span','message-author','You'),element('p','question',turn.user)); block.append(question,answers); const cards = {};
     for (const channel of turn.channels) {
-      const label = mode === 'checkpoints' ? (channel === 'rhys' ? 'Rhysbot · trained 4B adapter' : 'Qwen 4B base · adapter disabled') : (channel === 'rhys' ? 'Rhysbot · Qwen + Rhys sources' : 'Qwen · no corpus');
+      const label = mode === 'nanochat' ? 'Pure nanochat Rhys · tiny from-scratch experiment' : mode === 'checkpoints' ? (channel === 'rhys' ? 'Rhysbot · trained 4B adapter' : 'Qwen 4B base · adapter disabled') : (channel === 'rhys' ? 'Rhysbot · Qwen + Rhys sources' : 'Qwen · no corpus');
       const card = element('article',`answer ${channel}`), heading = element('h3','',label), text = element('div','answer-text pending','Waiting for reply…'), timing = element('div','answer-status'); card.append(heading,text,timing); answers.appendChild(card); cards[channel] = { card,text,timing };
     }
     thread.appendChild(block); $('empty').hidden = true; return cards;
+  }
+  function provenanceFor(card,value) {
+    const details = element('details','sources provenance'), summary = element('summary','',`Scratch checkpoint · ${value.checkpoint_run_id}`);
+    details.append(summary,element('p','',`Weights SHA-256: ${value.weights_sha256}`),element('p','',`${value.input_tokens} input tokens · ${value.output_tokens} output tokens · ${value.elapsed_seconds.toFixed(2)}s inference. No retrieved sources or Qwen fallback.`));
+    card.appendChild(details);
   }
   function renderConversation() {
     thread.replaceChildren(); $('empty').hidden = !turns.length;
@@ -326,7 +340,7 @@ export function mount(doc = document, win = window, fetcher = fetch) {
       const turn = newTurn(saved.user,mode), cards = cardsFor(turn);
       for (const channel of turn.channels) {
         renderText(cards[channel].text,saved[channel]); cards[channel].text.classList.remove('pending');
-        if (channel === 'rhys') { sourcesFor(cards[channel].card,saved.sources); addVoice(cards[channel].card,saved[channel]); }
+        if (channel === 'rhys') { if (mode === 'nanochat' && saved.provenance) provenanceFor(cards[channel].card,saved.provenance); else sourcesFor(cards[channel].card,saved.sources); addVoice(cards[channel].card,saved[channel]); }
       }
     }
   }
@@ -335,18 +349,26 @@ export function mount(doc = document, win = window, fetcher = fetch) {
   }
   async function send(event) {
     event?.preventDefault(); if (active || !config?.available) return;
+    if (!modeAvailable()) { status('Pure nanochat Rhys is currently unavailable. No fallback was used.',true); return; }
     const prompt = $('message').value.trim(); if (!prompt) return;
     if (!sessionKnown && !verification) { await needVerification(); status('Complete verification, then send your message.'); return; }
     let context; try { context = histories(turns,prompt,mode); } catch (error) { status(error.message,true); return; }
     recognition?.abort(); const turn = newTurn(prompt,mode), cards = cardsFor(turn); const controller = new AbortController(), epoch = generation; active = controller; ready(); $('message').value = ''; followLatest(); const started = Date.now();
     const elapsed = () => status(`${mode === 'checkpoints' ? 'Loading saved checkpoints and comparing' : 'Generating'}… ${((Date.now()-started)/1000).toFixed(1)}s`);
-    elapsed(); const ticker = setInterval(elapsed,250); timer = ticker; const deadline = setTimeout(() => controller.abort('deadline'),mode === 'checkpoints' ? 270000 : 90000);
+    elapsed(); const ticker = setInterval(elapsed,250); timer = ticker; const deadline = setTimeout(() => controller.abort('deadline'),mode === 'checkpoints' ? 270000 : mode === 'nanochat' ? 150000 : 90000);
     try {
       const request = requestPayload(context,mode,verification);
-      const response = await checked(await fetcher(mode === 'checkpoints' ? '/api/rhysbot-checkpoints' : '/api/rhysbot-chat', { method: 'POST', credentials: 'same-origin', cache: 'no-store', redirect: 'error', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(request), signal: controller.signal }));
+      const response = await checked(await fetcher(mode === 'nanochat' ? '/api/rhysbot-nanochat' : mode === 'checkpoints' ? '/api/rhysbot-checkpoints' : '/api/rhysbot-chat', { method: 'POST', credentials: 'same-origin', cache: 'no-store', redirect: 'error', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(request), signal: controller.signal }));
       if (controller.signal.aborted || epoch !== generation) throw new DOMException('Stopped','AbortError');
       verifiedSession();
-      if (mode === 'checkpoints') {
+      if (mode === 'nanochat') {
+        if (response.headers.get('Content-Type')?.split(';')[0] !== 'application/json') throw new Error('Pure nanochat returned an invalid response. No fallback was used.');
+        const result = await response.json(), provenance = nanochatProvenance(result);
+        if (controller.signal.aborted || epoch !== generation) throw new DOMException('Stopped','AbortError');
+        if (typeof result?.text !== 'string' || !result.text.trim() || !provenance) throw new Error('Pure nanochat returned no valid reply with checkpoint provenance. This turn was not saved; no fallback was used.');
+        applyEvent(turn,{type:'delta',channel:'rhys',text:result.text}); applyEvent(turn,{type:'done',channel:'rhys'}); turn.provenance = provenance;
+        renderText(cards.rhys.text,turn.rhys); cards.rhys.text.classList.remove('pending'); renderText(cards.rhys.timing,`Scratch checkpoint · ${provenance.elapsed_seconds.toFixed(2)}s · ${provenance.output_tokens} output tokens`); provenanceFor(cards.rhys.card,provenance);
+      } else if (mode === 'checkpoints') {
         const result = await response.json();
         if (controller.signal.aborted || epoch !== generation) throw new DOMException('Stopped','AbortError');
         for (const channel of turn.channels) { const row = result[channel]; if (typeof row?.text !== 'string' || !row.text.trim()) { turn.failed.add(channel); renderText(cards[channel].text,'The saved checkpoint returned no usable reply.'); continue; } applyEvent(turn,{type:'delta',channel,text:row.text}); applyEvent(turn,{type:'done',channel}); renderText(cards[channel].text,row.text); cards[channel].text.classList.remove('pending'); renderText(cards[channel].timing,`Actual saved weights · ${((Date.now()-started)/1000).toFixed(1)}s elapsed`); }
@@ -363,11 +385,16 @@ export function mount(doc = document, win = window, fetcher = fetch) {
         }
       }
       if (controller.signal.aborted || epoch !== generation) throw new DOMException('Stopped','AbortError');
-      if (completeTurn(turn)) { turns.push({user:prompt,rhys:turn.rhys,qwen:turn.qwen,sources:turn.sources || []}); if (turns.length > 30) turns.splice(0,turns.length-30); persist(); for (const channel of turn.channels) if (channel === 'rhys') addVoice(cards[channel].card,turn[channel]); status('Your turn. Ask a follow-up or take the conversation somewhere new.'); }
+      if (completeTurn(turn)) { turns.push({user:prompt,rhys:turn.rhys,qwen:turn.qwen,sources:turn.sources || [],...(turn.provenance ? {provenance:turn.provenance} : {})}); if (turns.length > 30) turns.splice(0,turns.length-30); persist(); for (const channel of turn.channels) if (channel === 'rhys') addVoice(cards[channel].card,turn[channel]); status('Your turn. Ask a follow-up or take the conversation somewhere new.'); }
       else status('A reply was incomplete. This turn was not added to either model’s follow-up history.',true);
     } catch (error) {
       if (epoch === generation) {
-        status(error.name === 'AbortError' || controller.signal.aborted ? 'Stopped. Partial replies are shown; this turn was not saved to follow-up history.' : error.message,true);
+        let message = error.name === 'AbortError' || controller.signal.aborted ? 'Stopped. Partial replies are shown; this turn was not saved to follow-up history.' : error.message;
+        if (mode === 'nanochat') {
+          if (controller.signal.reason === 'deadline') message = 'Pure nanochat timed out after 150 seconds. This turn was not saved; no fallback or automatic retry was used.';
+          else if (!message.toLowerCase().includes('no fallback')) message += ' This nanochat turn was not saved; no fallback was used.';
+        }
+        status(message,true);
         for (const channel of turn.channels) if (!turn[channel]) { renderText(cards[channel].text,'No completed reply.'); cards[channel].text.classList.remove('pending'); }
       }
     } finally { clearInterval(ticker); clearTimeout(deadline); if (active === controller) { active = null; ready(); $('message').focus(); } }
@@ -376,7 +403,7 @@ export function mount(doc = document, win = window, fetcher = fetch) {
   $('message').addEventListener('input',ready);
   $('message').addEventListener('keydown',event => { if (event.key === 'Enter' && !event.shiftKey && !event.isComposing) { event.preventDefault(); send(); } });
   $('stop').addEventListener('click',() => active?.abort()); $('new').addEventListener('click',reset);
-  $('mode').addEventListener('change',() => { if (active || !MODES.includes($('mode').value)) return; generation++; recognition?.abort(); clearAudio(); conversations[mode] = turns; mode = $('mode').value; turns = conversations[mode]; renderConversation(); persist(); renderText($('mode-note'),MODE_NOTES[mode]); status(turns.length ? 'Conversation restored. Keep going.' : 'A separate conversation. No request sent.'); ready(); $('message').focus(); });
+  $('mode').addEventListener('change',() => { if (active || !MODES.includes($('mode').value)) return; generation++; recognition?.abort(); clearAudio(); conversations[mode] = turns; mode = $('mode').value; turns = conversations[mode]; renderConversation(); persist(); renderText($('mode-note'),modeNote()); status(turns.length ? 'Conversation restored. Keep going.' : 'A separate conversation. No request sent.'); ready(); $('message').focus(); });
   for (const button of doc.querySelectorAll('[data-prompt]')) button.addEventListener('click',() => { $('message').value = button.dataset.prompt; $('message').focus(); ready(); });
   const Recognition = win.SpeechRecognition || win.webkitSpeechRecognition;
   if (Recognition) {
@@ -388,7 +415,7 @@ export function mount(doc = document, win = window, fetcher = fetch) {
     $('mic').addEventListener('click',() => { if (listening) recognition.stop(); else { prefix = $('message').value ? $('message').value+' ' : ''; try { recognition.start(); } catch { status('Microphone could not start. You can type instead.',true); } } });
   } else { renderText($('mic'),'Microphone unavailable'); $('mic').title = 'Speech recognition is unavailable in this browser. Type your message instead.'; }
   const initialized = (async () => {
-    try { const response = await fetcher('/api/rhysbot-chat',{credentials:'same-origin',cache:'no-store',redirect:'error',signal:AbortSignal.timeout(10000)}); if (!response.ok) throw new Error('Chat is unavailable.'); config = await response.json(); if (!config.available) throw new Error('Chat is not configured yet. No generation request was sent.'); renderText($('mode-note'),MODE_NOTES[mode]); renderConversation(); await needVerification(); status(turns.length ? 'Your conversation is restored. Complete verification to continue.' : 'Complete verification to start. Later turns use a one-hour server session.'); }
+    try { const response = await fetcher('/api/rhysbot-chat',{credentials:'same-origin',cache:'no-store',redirect:'error',signal:AbortSignal.timeout(10000)}); if (!response.ok) throw new Error('Chat is unavailable.'); config = await response.json(); if ($('nanochat-option')) $('nanochat-option').disabled = config.nanochat_available !== true; if (!config.available) throw new Error('Chat is not configured yet. No generation request was sent.'); renderText($('mode-note'),modeNote()); renderConversation(); await needVerification(); status(turns.length ? 'Your conversation is restored. Complete verification to continue.' : 'Complete verification to start. Later turns use a one-hour server session.'); }
     catch(error) { status(error.message,true); }
     ready();
   })();

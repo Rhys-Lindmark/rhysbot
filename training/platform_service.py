@@ -13,9 +13,9 @@ APP=modal.App('rhysbot-platform')
 app=APP  # Modal CLI discovers this conventional module attribute.
 TARGETS=json.loads(os.environ.get('RHYSBOT_SERVING_TARGETS','{}'))
 SECRET=modal.Secret.from_name('rhysbot-platform')
-CPU=modal.Image.debian_slim(python_version='3.12').pip_install('fastapi==0.115.12').add_local_dir(str(HERE),remote_path='/rhysbot/training',copy=True).env({'PYTHONPATH':'/rhysbot/training'})
-GPU=core_image.add_local_dir(str(HERE),remote_path='/rhysbot/training',copy=True).env({'PYTHONPATH':'/rhysbot/training','HF_HOME':'/artifacts/rhysbot-hf-cache','HF_HUB_CACHE':'/artifacts/rhysbot-hf-cache/hub','RHYSBOT_SERVING_TARGETS':json.dumps(TARGETS)})
-VOICE=(modal.Image.debian_slim(python_version='3.12').apt_install('libsndfile1','sox').pip_install('torch==2.9.1','torchaudio==2.9.1','qwen-tts==0.1.1','numpy==2.2.6','soundfile==0.13.1').add_local_dir(str(HERE),remote_path='/rhysbot/training',copy=True).env({'PYTHONPATH':'/rhysbot/training','HF_HOME':'/artifacts/rhysbot-voice-hf','HF_HUB_CACHE':'/artifacts/rhysbot-voice-hf'}))
+CPU=modal.Image.debian_slim(python_version='3.12').pip_install('fastapi==0.115.12').add_local_dir(str(HERE),remote_path='/rhysbot/training',copy=True,ignore=['**/__pycache__/**','**/*.pyc']).env({'PYTHONPATH':'/rhysbot/training'})
+GPU=core_image.add_local_dir(str(HERE),remote_path='/rhysbot/training',copy=True,ignore=['**/__pycache__/**','**/*.pyc']).env({'PYTHONPATH':'/rhysbot/training','HF_HOME':'/artifacts/rhysbot-hf-cache','HF_HUB_CACHE':'/artifacts/rhysbot-hf-cache/hub','RHYSBOT_SERVING_TARGETS':json.dumps(TARGETS)})
+VOICE=(modal.Image.debian_slim(python_version='3.12').apt_install('libsndfile1','sox').pip_install('torch==2.9.1','torchaudio==2.9.1','qwen-tts==0.1.1','numpy==2.2.6','soundfile==0.13.1').add_local_dir(str(HERE),remote_path='/rhysbot/training',copy=True,ignore=['**/__pycache__/**','**/*.pyc']).env({'PYTHONPATH':'/rhysbot/training','HF_HOME':'/artifacts/rhysbot-voice-hf','HF_HUB_CACHE':'/artifacts/rhysbot-voice-hf'}))
 if os.environ.get('RHYSBOT_VOICE_REFERENCE'):
  VOICE=VOICE.add_local_file(os.environ['RHYSBOT_VOICE_REFERENCE'],'/voice/rhys.wav',copy=True)
 TTS_MODEL='Qwen/Qwen3-TTS-12Hz-0.6B-Base'
@@ -314,6 +314,19 @@ def compare_job(nonce,messages,qwen_messages=None):
  volume.commit()
  return {'rhys':adapted,'qwen':baseline,'checkpoint_run_id':target['run_id'],'weights_sha256':target['weights_sha256'],'baseline':'same pinned Qwen3.5-4B-Base with adapter disabled','elapsed_seconds':time.monotonic()-start,'input_tokens':{'rhys':encoded_left['input_ids'].shape[1],'qwen':encoded_right['input_ids'].shape[1]},'comparison':'same system, template, retained user turns and decoding; independent assistant histories, saved CPT/SFT adapter enabled versus disabled'}
 
+@APP.function(image=GPU,cpu=(2,4),memory=(1024,2048),timeout=60,startup_timeout=60,retries=0,min_containers=0,max_containers=1,scaledown_window=2,volumes={'/artifacts':volume})
+def nanochat_job(nonce,messages):
+ # Shared monthly D1 reservation is made by the authenticated bridge first.
+ messages,_=comparison_histories(messages,messages);store=jobs()
+ if store.get('nanochat:'+nonce)!={'messages_sha256':digest(messages)}:raise ValueError('No nanochat grant')
+ if not store.put('execution:nanochat:'+nonce,True,skip_if_exists=True):raise ValueError('Nanochat already executed')
+ from nanochat_inference import generate
+ target=json.loads(os.environ['RHYSBOT_SERVING_TARGETS'])['nanochat']
+ try:return generate(messages,target,PINS)
+ except ValueError as e:
+  if str(e)=='tokenized_input_too_long':return {'error':'tokenized_input_too_long'}
+  raise
+
 @APP.function(image=CPU,cpu=.25,memory=512,timeout=240,min_containers=0,max_containers=1,scaledown_window=2,secrets=[SECRET],volumes={'/artifacts':volume})
 @modal.asgi_app(requires_proxy_auth=True)
 def api():
@@ -425,6 +438,20 @@ def api():
    return JSONResponse({'error':'voice_failed_no_retry'},503)
   audio=r['audio']
   return Response(audio,media_type='audio/wav',headers={'Cache-Control':'no-store','X-Rhysbot-Voice':'AI-generated authorized Rhys voice','X-Generation-Seconds':str(round(r['elapsed_seconds'],3)),'X-Rhysbot-Audio-Bytes':str(len(audio)),'X-Rhysbot-Audio-SHA256':hashlib.sha256(audio).hexdigest(),'X-Rhysbot-Profile-Reused':str(r['profile_reused']).lower()})
+ @web.post('/nanochat')
+ async def nanochat(request:Request):
+  if not await auth(request):return JSONResponse({'error':'unauthorized'},403)
+  try:
+   p=await body(request,30000);nonce=nonce_id(p['request_id']);messages,_=comparison_histories(p['messages'],p['messages'])
+  except Exception:return JSONResponse({'error':'invalid_history'},400)
+  if not store.put('nanochat:'+nonce,{'messages_sha256':digest(messages)},skip_if_exists=True):return JSONResponse({'error':'duplicate_request_not_replayed'},409)
+  try:
+   call=await nanochat_job.spawn.aio(nonce,messages);store.put('nanochat-call:'+nonce,call.object_id)
+   result=await call.get.aio(timeout=125)
+   if result.get('error')=='tokenized_input_too_long':return JSONResponse(result,400)
+   return result
+  except ValueError:return JSONResponse({'error':'tokenized_input_too_long'},400)
+  except Exception:return JSONResponse({'error':'nanochat_failed_no_retry'},503)
  @web.post('/compare')
  async def compare(request:Request):
   if not await auth(request):return JSONResponse({'error':'unauthorized'},403)
