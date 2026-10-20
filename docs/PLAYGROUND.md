@@ -60,6 +60,28 @@ results are shown separately. Review labels and corrections are stored locally
 with checkpoint and QA hashes, and exported only by explicit download. They are
 not automatically published or used for training.
 
+To rebuild the inventory and recompute the published aggregate locally without
+starting model inference:
+
+```sh
+python scripts/prepare_anki_eval.py --out /tmp/rhysbot-qa
+python scripts/summarize_anki_eval.py results/anki-evaluation --dataset data/evaluation --output /tmp/rhysbot-summary.json
+```
+
+The completed [recorded benchmark](../results/anki-evaluation/summary.json)
+scored all 18,363 eligible QA pairs and generated 96 answer pairs. Held-out test
+NLL was 2.352 for the Rhys adapter versus 2.744 for the same base. On 32 generated
+test answers, normalized exact match was 1/32 versus 0/32 and token F1 was 0.135
+versus 0.085. These small answer-overlap scores remain weak. The 34 truncated
+references and 1,330 image-bearing cards are reported separately; no images were
+supplied. See [artifact provenance](../results/anki-evaluation/provenance.json).
+
+The second command validates QA hashes, score coverage, split membership and
+sample provenance before aggregating. `results/anki-evaluation/` contains the
+recorded measurements, not model weights. Running a new remote measurement is a
+separate, finite paid job in `training/anki_eval_job.py`; unit tests and report
+aggregation do not start GPUs.
+
 ## Further experiments worth doing
 
 1. Build a first-person conversation dataset from matched Rhys podcast turns,

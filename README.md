@@ -28,6 +28,16 @@ Source: **https://github.com/Rhys-Lindmark/rhysbot**
 
 [Open conversational Rhysbot](https://ai.rhyslindmark.com/rhysbot/chat/): streaming source-grounded chat, side-by-side Qwen comparisons, a separate actual trained-4B comparison, and opt-in authorized synthetic Rhys voice. Chat and voice share a $10/month guard. [Train yours](https://ai.rhyslindmark.com/rhysbot/train/) is a private, bounded Sandbox pilot; no live payments. See [service methods and limits](docs/CHAT_SERVICE.md).
 
+Chat also offers **Pure nanochat Rhys**, the actual tiny scratch checkpoint with
+conversation history and no Qwen or retrieval fallback. Its current replies are
+often incoherent. The [model explainer](https://ai.rhyslindmark.com/rhysbot/learn/)
+shows how the corpus, training and inference paths differ. The
+[lab](https://ai.rhyslindmark.com/rhysbot/lab/) runs finite backroom conversations,
+an uploaded guest's writing as prompted context, and separate image tools. The
+[Anki evaluations](https://ai.rhyslindmark.com/rhysbot/evals/) expose paired saved
+adapter/base measurements, actual answer samples and local reviewer exports.
+See [playground methods and next experiments](docs/PLAYGROUND.md).
+
 ## Status
 
 **The reviewed corpus and measured model results are published. Both trained

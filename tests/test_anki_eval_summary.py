@@ -33,6 +33,8 @@ class SummaryTests(unittest.TestCase):
             self.assertEqual(result['cohorts']['test']['rhys_lower_loss'], 1)
             self.assertEqual(result['cohorts']['test']['base_lower_loss'], 1)
             self.assertEqual(result['generation']['qwen_base']['token_f1'], .5)
+            self.assertEqual(result['generation']['by_cohort']['test']['count'], 1)
+            self.assertIsNone(result['generation']['by_cohort']['train']['rhys']['exact_match'])
             self.assertIsNone(result['cohorts']['train']['rhys_nll'])
 
     def test_rejects_silent_omission_duplicate_score_and_wrong_sample_reference(self):

@@ -1,0 +1,440 @@
+{
+  "verified_at": "2026-10-20T04:19:21.082016+00:00",
+  "service_url": "https://ai.rhyslindmark.com/rhysbot/",
+  "status": "hosted_features_measured",
+  "nanochat": {
+    "actual_checkpoint": true,
+    "cpu_only": true,
+    "no_retrieval": true,
+    "no_qwen_fallback": true,
+    "measurements": [
+      {
+        "status": 200,
+        "elapsed_seconds": 15.011093417,
+        "response": {
+          "text": "selection.",
+          "model": "pure_nanochat",
+          "checkpoint_run_id": "nanochat-train-20261019a",
+          "weights_sha256": "228f3b6c3d8dc6c8820badc01bf414c1c625c7892ce13e4fcd7c91fc77ee9261",
+          "input_tokens": 21,
+          "output_tokens": 4,
+          "dropped_history_pairs": 0,
+          "elapsed_seconds": 3.4629816079999998,
+          "retrieval": false,
+          "qwen_fallback": false
+        }
+      },
+      {
+        "status": 200,
+        "elapsed_seconds": 15.879228875,
+        "response": {
+          "text": "Relection\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "model": "pure_nanochat",
+          "checkpoint_run_id": "nanochat-train-20261019a",
+          "weights_sha256": "228f3b6c3d8dc6c8820badc01bf414c1c625c7892ce13e4fcd7c91fc77ee9261",
+          "input_tokens": 35,
+          "output_tokens": 96,
+          "dropped_history_pairs": 0,
+          "elapsed_seconds": 4.302073653999999,
+          "retrieval": false,
+          "qwen_fallback": false
+        }
+      }
+    ],
+    "limitations": [
+      "Tiny scratch checkpoint is often incoherent, not an effective substitute for default Qwen chat.",
+      "512 token context, recent whole pairs trimmed to fit, output limited to96 tokens."
+    ]
+  },
+  "first_person_chat": {
+    "status": 200,
+    "elapsed_seconds": 2.021260792,
+    "first_token_ms": 503,
+    "text": "From my perspective, the meaning of life isn't something fixed or given—it's something we create. As I've written, \"if meaning is necessary, then it should be available to all,\" and research suggests many people do find purpose in their lives. But the question of meaning is deeply personal and often tied to how we relate to time, death, and our place in the universe. I've explored how death gives life meaning by making it scarce, yet also destroys it entirely. Ultimately, meaning emerges from our choices, relationships, and the stories we tell about ourselves. [1] [4]",
+    "source_kinds": [
+      "hee_transcript",
+      "podcast_transcript",
+      "substack",
+      "x"
+    ],
+    "change": "Prompt behavior, not another trained model."
+  },
+  "backroom": {
+    "status": 200,
+    "elapsed_seconds": 3.761780458,
+    "roles": [
+      "rhys",
+      "rhys_critic",
+      "qwen",
+      "guest"
+    ],
+    "completed_turns": 4,
+    "provider_model": "@cf/qwen/qwen3-30b-a3b-fp8",
+    "complete": true,
+    "guest_fixture": "Explicitly fictional supplied text; no invented Tyler corpus.",
+    "limits": "2–6 total turns; same managed model in separate roles; excerpts and transcript context differ. No autonomous background loop."
+  },
+  "images": {
+    "analysis": {
+      "status": 200,
+      "elapsed_seconds": 0.7115625829999999,
+      "response": {
+        "description": "The colors in this image are red and blue.",
+        "model": "@cf/moondream/moondream3.1-9B-A2B",
+        "budget": {
+          "period": "2026-10",
+          "reserved_usd": 9.462259,
+          "limit_usd": 10,
+          "standby_reserved_usd": 3.732259
+        }
+      }
+    },
+    "generation": {
+      "status": 200,
+      "elapsed_seconds": 1.7862374170000002,
+      "response": {
+        "model": "@cf/black-forest-labs/flux-1-schnell",
+        "budget": {
+          "period": "2026-10",
+          "reserved_usd": 9.437259,
+          "limit_usd": 10,
+          "standby_reserved_usd": 3.732259
+        },
+        "image_summary": {
+          "bytes": 72253,
+          "sha256": "70b66cf1f4a24cbff446e924f29352f173c1f567e5b9a62e1625a583694e16f8"
+        }
+      }
+    },
+    "distinct_helper_models": true,
+    "generated_fixture_visual_check": "Matches requested blue cube on a plain cream background, no text.",
+    "input": "Explicit prepared boundedJPEG/PNG; no remoteURL fetch.",
+    "output": "FLUX.1 Schnell,4fixedsteps; actualJPEGsha inmeasurement."
+  },
+  "verification": {
+    "hosted": {
+      "verified_at": "2026-10-20T04:18:56.724Z",
+      "assets": [
+        {
+          "path": "/rhysbot/",
+          "status": 200,
+          "bytes": 27881,
+          "same": true,
+          "sha256": "0483bba5361459c015e7ebdece44b011655582bce6f14da6c42b877d22a02045"
+        },
+        {
+          "path": "/rhysbot/chat/",
+          "status": 200,
+          "bytes": 10496,
+          "same": true,
+          "sha256": "db5a22c82955a44d53b40828ee69b93bacc9651154ff7765c7647a3804e9a500"
+        },
+        {
+          "path": "/rhysbot/chat/app.js",
+          "status": 200,
+          "bytes": 41262,
+          "same": true,
+          "sha256": "6c28cce0302a9943b5233c7418fabfc8544e09aff7815e945cfd7e03127f7b77"
+        },
+        {
+          "path": "/rhysbot/chat/voice-stream.js",
+          "status": 200,
+          "bytes": 11042,
+          "same": true,
+          "sha256": "7d1526fc399e9e1eb98abc2fff4f664184a0e5c2421f6c9ae430e0c7ef945fac"
+        },
+        {
+          "path": "/rhysbot/learn/",
+          "status": 200,
+          "bytes": 7615,
+          "same": true,
+          "sha256": "b3b713f72bd1c30676536d43b2e5fc67ab5a9ca4e35e59f2b26d87d7caa37f2b"
+        },
+        {
+          "path": "/rhysbot/learn/style.css",
+          "status": 200,
+          "bytes": 3114,
+          "same": true,
+          "sha256": "c17ac427ec4516c0ae993c842d81ef6db9f529ddc3b6217f436b65b0cc062e19"
+        },
+        {
+          "path": "/rhysbot/lab/",
+          "status": 200,
+          "bytes": 6820,
+          "same": true,
+          "sha256": "7b039b9a2ca25efdd2cdb5fdafe59ce3f3cc941ddaee2c9736c862d8435196c8"
+        },
+        {
+          "path": "/rhysbot/lab/app.js",
+          "status": 200,
+          "bytes": 21025,
+          "same": true,
+          "sha256": "4d6ce063059150a1aca393a642df23b54e17ff8836dcd16aa694288d5771a2ee"
+        },
+        {
+          "path": "/rhysbot/lab/style.css",
+          "status": 200,
+          "bytes": 5023,
+          "same": true,
+          "sha256": "0f6180aeefa1f0584ace0881a91205e54997945b682cb2341dde932ca2390477"
+        },
+        {
+          "path": "/rhysbot/evals/",
+          "status": 200,
+          "bytes": 7574,
+          "same": true,
+          "sha256": "9f20329f997da5b3ab45dac30707e42b1918d739bca1ee643d42847c3d1d2143"
+        },
+        {
+          "path": "/rhysbot/evals/app.js",
+          "status": 200,
+          "bytes": 20750,
+          "same": true,
+          "sha256": "4808070be36a9d0cef3cd3bff238734fdc32548c3cab8348f73e2ffda6131de1"
+        },
+        {
+          "path": "/rhysbot/evals/style.css",
+          "status": 200,
+          "bytes": 5783,
+          "same": true,
+          "sha256": "51dbaf87670c1063748494b82ae8cb808467f73586c8065562dd257e9f7da210"
+        }
+      ],
+      "denials": [
+        {
+          "path": "/api/rhysbot-nanochat",
+          "case": "missing_auth",
+          "status": 403,
+          "error": "verification_required"
+        },
+        {
+          "path": "/api/rhysbot-nanochat",
+          "case": "wrong_origin",
+          "status": 403,
+          "error": "origin_not_allowed"
+        },
+        {
+          "path": "/api/rhysbot-lab",
+          "case": "missing_auth",
+          "status": 403,
+          "error": "verification_required"
+        },
+        {
+          "path": "/api/rhysbot-lab",
+          "case": "wrong_origin",
+          "status": 403,
+          "error": "origin_not_allowed"
+        },
+        {
+          "path": "/api/rhysbot-image",
+          "case": "missing_auth",
+          "status": 403,
+          "error": "verification_required"
+        },
+        {
+          "path": "/api/rhysbot-image",
+          "case": "wrong_origin",
+          "status": 403,
+          "error": "origin_not_allowed"
+        }
+      ],
+      "configuration": {
+        "nanochat_available": true,
+        "voice_stream_available": true,
+        "monthly_budget_usd": 10
+      }
+    },
+    "source_python_tests_passed": 166,
+    "source_node_tests_passed": 91,
+    "website_node_tests_passed": 53,
+    "public_corpus_and_frozen_training_inputs": "Unchanged; evaluation inputs derive only from released cards.",
+    "visual_verification": "DOM/interaction tests and production HTTP tests; no new browser screenshot review.",
+    "evaluation_data": {
+      "verified_at": "2026-10-20T04:17:26.584Z",
+      "qa_records": 18363,
+      "scores": 18363,
+      "samples": 96,
+      "qa_sha256": "8034f6362d7046f56aa582a9e648734fc15dd8b7762a32649e108992b447e221",
+      "ui_validators": "All recorded rows pass the actual deployed viewer validators."
+    },
+    "hosted_evaluation_files": {
+      "verified_at": "2026-10-20T04:19:03.212Z",
+      "assets": [
+        {
+          "path": "/rhysbot/evals/data/manifest.json",
+          "status": 200,
+          "bytes": 1333,
+          "sha256": "a58f0bca8b4b7f9ed5c08b3aba509fba20dbabe38906f4f965647bae2ea7a5d0",
+          "same": true
+        },
+        {
+          "path": "/rhysbot/evals/data/anki.jsonl",
+          "status": 200,
+          "bytes": 8990576,
+          "sha256": "8034f6362d7046f56aa582a9e648734fc15dd8b7762a32649e108992b447e221",
+          "same": true
+        },
+        {
+          "path": "/rhysbot/evals/data/report.json",
+          "status": 200,
+          "bytes": 1236,
+          "sha256": "74dde6d8cc5e45a5c792ffb1ef7a0ad78479b37dd7140b2607fffbc66be2a890",
+          "same": true
+        },
+        {
+          "path": "/rhysbot/evals/data/summary.json",
+          "status": 200,
+          "bytes": 3672,
+          "sha256": "f3671ebb0f859796b8b4e1213d49525344462d87de20b51173a8acec600d68e6",
+          "same": true
+        },
+        {
+          "path": "/rhysbot/evals/data/scores.jsonl",
+          "status": 200,
+          "bytes": 3672931,
+          "sha256": "2440550a3851b1d30f7caf62eaf2b8086341b5c978b8e2ec7e0be923210925cf",
+          "same": true
+        },
+        {
+          "path": "/rhysbot/evals/data/samples.jsonl",
+          "status": 200,
+          "bytes": 104635,
+          "sha256": "8082e791bf1bb2a3b04f5d5df2c333b6ab7b822c3e68885af69114385238ba23",
+          "same": true
+        },
+        {
+          "path": "/rhysbot/evals/data/provenance.json",
+          "status": 200,
+          "bytes": 788,
+          "sha256": "f2db6f7252cf973e53bbd445f76323e6426461e61b311ab2ec1b34ec20c5af09",
+          "same": true
+        }
+      ]
+    },
+    "research_guard_free": true,
+    "temporary_evaluation_containers": "Stopped; only intended ready CPU voice worker remains.",
+    "production_deployment": {
+      "id": "8adfea01-2268-459c-8373-827e1ca1c8fd",
+      "website_commit": "1ec2778caea94fbc0ac6fcb2f566d3c4c9e76e62",
+      "status": "success"
+    }
+  },
+  "budget": {
+    "original_research_cap_usd": 200,
+    "shared_monthly_service_cap_usd": 10,
+    "standby_monthly_voice_reservation_usd": 8.9,
+    "monthly_total_reservations_after_feature_tests_usd": 9.462259,
+    "new_training_runs": 0,
+    "new_subscriptions": 0,
+    "heartbeat": "Remains paused.",
+    "accounting": "Conservative internal reservations; not provider invoices.",
+    "benchmark_total_reserved_usd": 15.2,
+    "original_research_committed_usd": 175.2,
+    "benchmark_reservations": {
+      "failed_pilot": 2.6,
+      "corrected_pilot": 2.6,
+      "full": 10
+    }
+  },
+  "limitations": [
+    "Prompted first-person style is not measured persona fidelity. A reviewed Rhys conversational dataset and held-out owner judgments remain the highest-value next experiment.",
+    "Guest upload uses selected excerpts in a prompt; it does not train a new Tyler or other person checkpoint.",
+    "Image models are separate tools, not modalities learned by the Rhys language checkpoints.",
+    "Backroom consensus or confident language is not evidence of factual correctness."
+  ],
+  "anki_evaluation": {
+    "status": "measured",
+    "input_records": 18363,
+    "scored_records": 18363,
+    "skipped_records": 0,
+    "generated_answer_pairs": 96,
+    "summary": "anki-evaluation/summary.json",
+    "cohorts": {
+      "train": {
+        "count": 16534,
+        "target_tokens": 660154,
+        "truncated": 28,
+        "image_bearing_cards": 1187,
+        "rhys_lower_loss": 16304,
+        "base_lower_loss": 230,
+        "ties": 0,
+        "rhys_nll": 2.312659095892398,
+        "qwen_base_nll": 2.762383229479751
+      },
+      "validation": {
+        "count": 923,
+        "target_tokens": 36845,
+        "truncated": 3,
+        "image_bearing_cards": 67,
+        "rhys_lower_loss": 904,
+        "base_lower_loss": 19,
+        "ties": 0,
+        "rhys_nll": 2.3845855843721164,
+        "qwen_base_nll": 2.763993837470147
+      },
+      "test": {
+        "count": 906,
+        "target_tokens": 35207,
+        "truncated": 3,
+        "image_bearing_cards": 76,
+        "rhys_lower_loss": 888,
+        "base_lower_loss": 18,
+        "ties": 0,
+        "rhys_nll": 2.35155480350284,
+        "qwen_base_nll": 2.7441294931727502
+      }
+    },
+    "generation": {
+      "count": 96,
+      "rhys": {
+        "exact_match": 0.041666666666666664,
+        "token_f1": 0.14432552138369725
+      },
+      "qwen_base": {
+        "exact_match": 0.0,
+        "token_f1": 0.09537400826077043
+      },
+      "cohorts": {
+        "test": 32,
+        "train": 32,
+        "validation": 32
+      },
+      "by_cohort": {
+        "train": {
+          "count": 32,
+          "rhys": {
+            "exact_match": 0.0625,
+            "token_f1": 0.19026765189123526
+          },
+          "qwen_base": {
+            "exact_match": 0.0,
+            "token_f1": 0.12152238394713774
+          }
+        },
+        "validation": {
+          "count": 32,
+          "rhys": {
+            "exact_match": 0.03125,
+            "token_f1": 0.10807986083245076
+          },
+          "qwen_base": {
+            "exact_match": 0.0,
+            "token_f1": 0.07977703236198215
+          }
+        },
+        "test": {
+          "count": 32,
+          "rhys": {
+            "exact_match": 0.03125,
+            "token_f1": 0.13462905142740572
+          },
+          "qwen_base": {
+            "exact_match": 0.0,
+            "token_f1": 0.08482260847319142
+          }
+        }
+      }
+    },
+    "full_report": "anki-evaluation/report.json"
+  }
+}

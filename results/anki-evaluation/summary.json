@@ -1,0 +1,117 @@
+{
+  "status": "measured",
+  "pilot": false,
+  "qa_sha256": "8034f6362d7046f56aa582a9e648734fc15dd8b7762a32649e108992b447e221",
+  "corpus_sha256": "85749e43a31f61909581d079d07b9c0f4a1ce3d2c3ad9e095727fd93f2d2aa75",
+  "checkpoint_run_id": "qwen-train-20261019a",
+  "weights_sha256": "493bfdbc2279e44edd33092dc50a7376a42a38e89c7e5e157aded3f4753b1637",
+  "base_model_id": "Qwen/Qwen3.5-4B-Base",
+  "base_revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+  "input_records": 18363,
+  "scored_records": 18363,
+  "skipped": [],
+  "timings": {
+    "rhys": 550.000088978,
+    "qwen_base": 385.770866123
+  },
+  "elapsed_seconds": 1516.111342447,
+  "metrics": "Assistant-reference teacher-forced NLL for all eligible records; deterministic generation exact/F1 on a fixed cohort sample. Lower NLL is not answer accuracy.",
+  "generation_samples": 96,
+  "max_sequence_length": 512,
+  "max_generation_tokens": 64,
+  "same_system_and_decoding": true,
+  "cohorts": {
+    "train": {
+      "count": 16534,
+      "target_tokens": 660154,
+      "truncated": 28,
+      "image_bearing_cards": 1187,
+      "rhys_lower_loss": 16304,
+      "base_lower_loss": 230,
+      "ties": 0,
+      "rhys_nll": 2.312659095892398,
+      "qwen_base_nll": 2.762383229479751
+    },
+    "validation": {
+      "count": 923,
+      "target_tokens": 36845,
+      "truncated": 3,
+      "image_bearing_cards": 67,
+      "rhys_lower_loss": 904,
+      "base_lower_loss": 19,
+      "ties": 0,
+      "rhys_nll": 2.3845855843721164,
+      "qwen_base_nll": 2.763993837470147
+    },
+    "test": {
+      "count": 906,
+      "target_tokens": 35207,
+      "truncated": 3,
+      "image_bearing_cards": 76,
+      "rhys_lower_loss": 888,
+      "base_lower_loss": 18,
+      "ties": 0,
+      "rhys_nll": 2.35155480350284,
+      "qwen_base_nll": 2.7441294931727502
+    }
+  },
+  "generation": {
+    "count": 96,
+    "rhys": {
+      "exact_match": 0.041666666666666664,
+      "token_f1": 0.14432552138369725
+    },
+    "qwen_base": {
+      "exact_match": 0.0,
+      "token_f1": 0.09537400826077043
+    },
+    "cohorts": {
+      "test": 32,
+      "train": 32,
+      "validation": 32
+    },
+    "by_cohort": {
+      "train": {
+        "count": 32,
+        "rhys": {
+          "exact_match": 0.0625,
+          "token_f1": 0.19026765189123526
+        },
+        "qwen_base": {
+          "exact_match": 0.0,
+          "token_f1": 0.12152238394713774
+        }
+      },
+      "validation": {
+        "count": 32,
+        "rhys": {
+          "exact_match": 0.03125,
+          "token_f1": 0.10807986083245076
+        },
+        "qwen_base": {
+          "exact_match": 0.0,
+          "token_f1": 0.07977703236198215
+        }
+      },
+      "test": {
+        "count": 32,
+        "rhys": {
+          "exact_match": 0.03125,
+          "token_f1": 0.13462905142740572
+        },
+        "qwen_base": {
+          "exact_match": 0.0,
+          "token_f1": 0.08482260847319142
+        }
+      }
+    }
+  },
+  "aggregation": "Target-token-weighted NLL; per-card lower-loss counts; unweighted generation exact-match and token-F1 means. These are reference agreement metrics, not verified factual accuracy.",
+  "limitations": [
+    "Only released records are used. No excluded/private cards are recovered.",
+    "Training split membership is not proof that an optimizer consumed the exact example.",
+    "Cards are reference answers, not independently verified facts. Missing answers are not invented.",
+    "Loss, exact string match and token overlap are separate metrics; none establishes persona fidelity.",
+    "This is a text-only benchmark. Cards marked source_has_images may lack required visual context; generation samples exclude them."
+  ]
+}

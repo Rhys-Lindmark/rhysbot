@@ -16,7 +16,7 @@ test('unmeasured or absent results never become invented zero metrics',()=>{
   assert.equal(measuredSummary({status:'pending',scored_records:0}),null);assert.equal(measuredSummary({...summary(),weights_sha256:''}),null);assert.equal(measuredSummary(summary()).checkpoint_run_id,'test-run');
 });
 test('QA, paired loss and generation validators preserve cohort metadata and reject missing or malformed values',()=>{
-  assert.equal(validateQA(qa(2)).frozen_sft_split,'test');assert.equal(validateQA(qa(2)).source_split,'train');assert.equal(validateScore(score(1)).truncated,true);assert.equal(validateSample(sample(1)).qwen_base.normalized_exact_match,true);
+  assert.equal(validateQA(qa(2)).frozen_sft_split,'test');assert.equal(validateQA(qa(2)).source_split,'train');assert.equal(validateQA({...qa(2),source_has_images:true}).source_has_images,true);assert.equal(validateSample({...sample(0),rhys:{...sample(0).rhys,text:''}}).rhys.text,'');assert.equal(validateScore(score(1)).truncated,true);assert.equal(validateSample(sample(1)).qwen_base.normalized_exact_match,true);
   for(const patch of [{reference:''},{qa_sha256:'wrong'},{frozen_sft_split:'invented'}])assert.throws(()=>validateQA({...qa(0),...patch}));
   for(const patch of [{rhys_nll:null},{qwen_base_nll:-1},{truncated:'yes'},{full_target_tokens:1}])assert.throws(()=>validateScore({...score(0),...patch}));
   assert.throws(()=>validateSample({...sample(0),rhys:{...sample(0).rhys,normalized_exact_match:1}}));assert.throws(()=>validateSample({...sample(0),qwen_base:{...sample(0).qwen_base,token_f1:2}}));
@@ -49,6 +49,10 @@ function dom(storage=new Map()){
 test('actual mount fetches onlymanifest+summary bydefault and handles missing report as evaluationinprogress with no fabricated metrics',async(t)=>{
   const d=dom(),calls=[];const app=mountEvals(d.doc,d.win,async(url,init)=>{calls.push({url,init});return url.endsWith('manifest.json')?Response.json(manifest):new Response('not ready',{status:404});});t.after(()=>app.dispose());await app.initialized;
   assert.deepEqual(calls.map(call=>call.url).sort(),['./data/manifest.json','./data/summary.json']);assert.equal(d.ids.measured.hidden,true);assert.equal(d.ids.pending.hidden,false);assert.match(d.ids.pending.textContent,/Evaluation in progress/);assert.equal(d.ids['summary-table'].children.length,0);assert.equal(d.ids['generation-table'].children.length,0);assert.equal(d.ids.eligible_qa.textContent,'18,363');assert.equal(d.ids['qa-rows'].children.length,0);assert(calls.every(call=>!call.init.method));
+});
+test('generated answer agreement keeps held-out cohorts separate from the combined sample',async(t)=>{
+  const d=dom(),measured=summary();measured.generation.by_cohort={test:{count:1,rhys:{exact_match:1,token_f1:1},qwen_base:{exact_match:0,token_f1:0}}};
+  const app=mountEvals(d.doc,d.win,async url=>Response.json(url.endsWith('manifest.json')?manifest:measured));t.after(()=>app.dispose());await app.initialized;const rows=d.ids['generation-table'].children;assert.equal(rows.length,4);assert.match(rows[2].children[0].textContent,/test.*Rhys adaptation.*1 pairs/);assert.equal(rows[0].children[1].textContent,'0.0%');assert.equal(rows[2].children[1].textContent,'100.0%');
 });
 test('explicit allQA loads scores and cards once, renders max30rows, preserves truncation and shows unscoredloss asdash',async(t)=>{
   const d=dom(),calls=[],cards=Array.from({length:65},(_,index)=>qa(index));

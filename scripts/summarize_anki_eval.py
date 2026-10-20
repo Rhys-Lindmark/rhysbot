@@ -48,9 +48,9 @@ def summarize(directory, dataset):
             answer = row[key]
             if type(answer['normalized_exact_match']) is not bool or not math.isfinite(answer['token_f1']) or not 0 <= answer['token_f1'] <= 1:
                 raise ValueError('Invalid generated metric')
-    generation = {'count': len(samples), 'cohorts': dict(Counter(row['frozen_sft_split'] for row in samples))}
-    for key in ['rhys', 'qwen_base']:
-        generation[key] = {'exact_match': sum(row[key]['normalized_exact_match'] for row in samples)/len(samples) if samples else None, 'token_f1': sum(row[key]['token_f1'] for row in samples)/len(samples) if samples else None}
+    def agreement(rows):
+        return {'count': len(rows), **{key: {'exact_match': sum(row[key]['normalized_exact_match'] for row in rows)/len(rows) if rows else None, 'token_f1': sum(row[key]['token_f1'] for row in rows)/len(rows) if rows else None} for key in ['rhys', 'qwen_base']}}
+    generation = {**agreement(samples), 'cohorts': dict(Counter(row['frozen_sft_split'] for row in samples)), 'by_cohort': {cohort: agreement([row for row in samples if row['frozen_sft_split'] == cohort]) for cohort in ['train', 'validation', 'test']}}
     return {**{k: v for k, v in report.items() if k != 'loading'}, 'cohorts': cohorts, 'generation': generation, 'aggregation': 'Target-token-weighted NLL; per-card lower-loss counts; unweighted generation exact-match and token-F1 means. These are reference agreement metrics, not verified factual accuracy.', 'limitations': manifest['limitations']}
 
 
