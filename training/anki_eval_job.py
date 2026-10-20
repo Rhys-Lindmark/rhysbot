@@ -32,7 +32,10 @@ def work(token,pilot,timeout,expected_sha):
     target=json.loads(os.environ['RHYSBOT_SERVING_TARGETS'])['qwen']
     from anki_evaluation import evaluate
     try:result=evaluate(data,Path('/artifacts/anki-evaluations')/token,target,PINS,pilot=pilot,deadline_seconds=timeout-90)
-    except Exception as e:result={'status':'failed','error_class':type(e).__name__,'elapsed_seconds':None}
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        result={'status':'failed','error_class':type(e).__name__,'elapsed_seconds':None}
     volume.commit()
     return result
 
@@ -41,8 +44,8 @@ def work(token,pilot,timeout,expected_sha):
 def pilot_gpu(token,expected_sha):return work(token,True,600,expected_sha)
 
 
-@app.function(image=image,gpu='A100-80GB',cpu=(2,4),memory=(16384,32768),timeout=3600,startup_timeout=120,retries=0,min_containers=0,max_containers=1,scaledown_window=2,volumes={'/artifacts':volume})
-def full_gpu(token,expected_sha):return work(token,False,3600,expected_sha)
+@app.function(image=image,gpu='A100-80GB',cpu=(2,4),memory=(16384,32768),timeout=2820,startup_timeout=120,retries=0,min_containers=0,max_containers=1,scaledown_window=2,volumes={'/artifacts':volume})
+def full_gpu(token,expected_sha):return work(token,False,2820,expected_sha)
 
 
 @app.function(image=control,cpu=.25,memory=512,timeout=4200,retries=0,min_containers=0,max_containers=1,scaledown_window=2,volumes={'/artifacts':volume})
@@ -50,7 +53,7 @@ def coordinate(token,pilot,expected_sha,release_commit):
     safe_run_id(token)
     singleton=modal.Dict.from_name('rhysbot-training-singleton',create_if_missing=False)
     if not singleton.put('active',token,skip_if_exists=True):raise ValueError('Existing research job owns the singleton')
-    reserved=False;terminal=False;accounted=False;result=None;timeout=600 if pilot else 3600
+    reserved=False;terminal=False;accounted=False;result=None;timeout=600 if pilot else 2820
     try:
         volume.reload();path=Path('/artifacts/spend-ledger.json');ledger=read_json(path)
         amount=reserve(ledger,token,'qwen','eval',timeout,CONFIG['budget']);reserved=True

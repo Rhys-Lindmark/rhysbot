@@ -65,8 +65,8 @@ def evaluate(data,out,target,pins,*,pilot=False,deadline_seconds=3300):
                 mask=torch.tensor([[1]*len(x['ids'])+[0]*(length-len(x['ids'])) for x in batch],device='cuda')
                 logits=model(input_ids=ids,attention_mask=mask,use_cache=False).logits
                 for i,item in enumerate(batch):
-                    target=labels[i,1:];valid=target!=-100
-                    nll=float(F.cross_entropy(logits[i,:-1][valid].float(),target[valid],reduction='mean'))
+                    target_labels=labels[i,1:];valid=target_labels!=-100
+                    nll=float(F.cross_entropy(logits[i,:-1][valid].float(),target_labels[valid],reduction='mean'))
                     if not math.isfinite(nll):raise ValueError('Nonfinite evaluation loss')
                     scores[item['row']['id']][variant+'_nll']=nll
                 del logits,ids,labels,mask
