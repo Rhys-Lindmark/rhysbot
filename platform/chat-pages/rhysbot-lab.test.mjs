@@ -1,5 +1,5 @@
 import test from'node:test';import assert from'node:assert/strict';import{DatabaseSync}from'node:sqlite';import{readFileSync}from'node:fs';
-import{createLabHandler,labRequest,turnPrompt}from'./rhysbot-lab.js';import{createImageHandler,imageInput}from'./rhysbot-image.js';
+import{createLabHandler,labRequest,turnPrompt}from'./rhysbot-lab.js';import{createImageHandler,imageInput,visionValue}from'./rhysbot-image.js';
 const secret='s'.repeat(48),topic='How should AI help coordination?';
 function setup(){const sql=new DatabaseSync(':memory:');sql.exec(readFileSync(new URL('../chat-schema.sql',import.meta.url),'utf8')+";CREATE VIRTUAL TABLE rb_sources USING fts5(id UNINDEXED,title,kind UNINDEXED,url UNINDEXED,attribution UNINDEXED,text);");const db={prepare(q){let a=[];return{bind(...v){a=v;return this},async first(){return sql.prepare(q).get(...a)},async all(){return{results:sql.prepare(q).all(...a)}},async run(){sql.prepare(q).run(...a)}}}};return{sql,env:{RHYSBOT_DB:db,RHYSBOT_CLIENT_SALT:'a'.repeat(40),RHYSBOT_TRAIN_BRIDGE_SECRET:secret}};}
 function request(body,origin='https://ai.rhyslindmark.com'){return new Request('https://ai.rhyslindmark.com/api/rhysbot-lab',{method:'POST',headers:{Origin:origin,'CF-Connecting-IP':'1.2.3.4',Authorization:'Bearer '+secret},body:JSON.stringify(body)});}
@@ -21,4 +21,14 @@ test('image tools validate binary dimensions before spending and use pinned boun
  const r=await h({request:request({action:'analyze',image:png(),prompt:'Describe'}),env});assert.equal(r.status,200);assert.equal((await r.json()).description,'A small test image.');assert.equal(sql.prepare('SELECT micros FROM rb_spend').get().micros,10000);
  env.AI={async run(model,input){assert.match(model,/flux-1-schnell/);assert.equal(input.steps,4);return{image:Buffer.from('\xff\xd8'+'a'.repeat(30),'binary').toString('base64')};}};
  assert.equal((await h({request:request({action:'generate',prompt:'A tiny blue square'}),env})).status,200);assert.equal(sql.prepare('SELECT micros FROM rb_spend').get().micros,30000);
+});
+
+test('vision accepts bounded raw JSON streams from the actual Workers binding and rejects malformed responses',async()=>{
+ const stream=text=>new ReadableStream({start(c){c.enqueue(new TextEncoder().encode(text));c.close();}});
+ assert.deepEqual(await visionValue(stream('{"answer":"Blue and red."}')),{answer:'Blue and red.'});
+ assert.deepEqual(await visionValue(new Response('{"answer":"A square."}')),{answer:'A square.'});
+ assert.deepEqual(await visionValue(stream('{"result":{"answer":"Blue."},"usage":{}}')),{answer:'Blue.'});
+ assert.deepEqual(await visionValue({result:{answer:'Red.'},usage:{}}),{answer:'Red.'});
+ await assert.rejects(visionValue(stream('not json')),/invalid_image_response/);
+ await assert.rejects(visionValue(stream('x'.repeat(131073))),/invalid_image_response/);
 });

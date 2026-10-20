@@ -14,6 +14,17 @@ research checkpoint’s 384-token input allowance fail rather than silently clip
 the question. Output is limited to 96 tokens per side. This comparison can still
 have a GPU cold start; the default managed chat avoids loading our GPU checkpoint.
 
+“Pure nanochat Rhys” now runs the actual pinned scratch checkpoint on CPU, with
+bounded conversation history and no retrieval or Qwen fallback. Each reply shows
+its run and weight hash. It is a tiny, often incoherent research model; CPU cold
+requests measured around 15 seconds, and its context is only 512 tokens.
+
+The [model explainer](https://ai.rhyslindmark.com/rhysbot/learn/),
+[lab](https://ai.rhyslindmark.com/rhysbot/lab/) and
+[Anki evaluation](https://ai.rhyslindmark.com/rhysbot/evals/) describe the different
+paths, run bounded experiments and expose paired checkpoint evidence. See
+[PLAYGROUND.md](PLAYGROUND.md) for models, controls and limitations.
+
 The original nanochat and Qwen checkpoint demos and measured training graphs
 remain available under the collapsed research demo on the corpus page. Frozen
 training inputs and saved research checkpoints are unchanged.
@@ -30,7 +41,10 @@ Elliptical follow-ups recover the preceding user topic. Personal-view questions
 prefer public authored/spoken material over Anki; curated notes and quotations
 are not automatically treated as endorsements. Citations link to public sources.
 Retrieval is
-keyword-based and incomplete, and generated factual claims still need checking.
+keyword-based and incomplete, and generated factual claims still need checking. First-person
+conversation is requested explicitly, with sources underneath rather than a
+stock third-person preamble. This prompt change does not retrain the weights or
+turn a guest quote or curated card into Rhys’s own belief.
 The complete downloadable research corpus includes additional guest/unknown
 transcripts with attribution, so its excerpt count is larger than the chat index.
 

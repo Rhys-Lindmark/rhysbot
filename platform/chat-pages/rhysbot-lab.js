@@ -7,7 +7,7 @@ export function labRequest(body){
  let guest;
  if(body.participants.includes('guest')){
   const g=body.guest;if(!g||typeof g.name!=='string'||!g.name.trim()||g.name.length>80||!Array.isArray(g.excerpts)||!g.excerpts.length||g.excerpts.length>4)throw new ChatFailure(400,'invalid_guest_corpus');
-  guest={name:g.name,excerpts:g.excerpts.map(x=>{if(!x||typeof x.text!=='string'||!x.text.trim()||x.text.length>2000||typeof x.title!=='string'||x.title.length>160)throw new ChatFailure(400,'invalid_guest_corpus');return {title:x.title,text:x.text};})};
+  guest={name:g.name,excerpts:g.excerpts.map(x=>{if(!x||typeof x.text!=='string'||!x.text.trim()||[...x.text].length>2000||typeof x.title!=='string'||x.title.length>160)throw new ChatFailure(400,'invalid_guest_corpus');return {title:x.title,text:x.text};})};
  }
  return{topic:body.topic,participants:body.participants,turns:body.turns,guest};
 }
